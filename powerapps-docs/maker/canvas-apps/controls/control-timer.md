@@ -23,7 +23,7 @@ ms.locfileid: "73649661"
 # <a name="timer-control-in-powerapps"></a>PowerApps のタイマー コントロール
 一定の時間が経過した後のアプリの反応を決定できるコントロールです。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 タイマーは、たとえば、コントロールが表示される時間の長さを決定したり、一定の時間が経過した後にコントロールの他のプロパティを変更したりできます。
 
 > [!NOTE]
@@ -102,7 +102,7 @@ ms.locfileid: "73649661"
 
 **[Text](properties-core.md)** – コントロールに表示されるテキスト、またはコントロールにユーザーが入力するテキストです。
 
-**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
 
@@ -144,7 +144,7 @@ ms.locfileid: "73649661"
 
 5. アニメーションを開始または停止するには、タイマー ボタンを選択します。 ラベル内のテキストが白色にフェードした後、最大輝度に戻り、このプロセスが繰り返されます。
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ユーザーがコントロールを操作できる場合は、 **[ボタン](control-button.md)** コントロールの同じガイドラインが**Timer**コントロールにも適用されます。
 
 ### <a name="background-timers"></a>バックグラウンドタイマー
