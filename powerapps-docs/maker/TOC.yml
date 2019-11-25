@@ -68,6 +68,8 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
             - name: Power BI ダッシュボードにピン留めする
               href: ../user/add-powerbi-dashboards.md
+            - name: SharePoint を使用した共同作業
+              href: ../user/collaborate-using-sharepoint.md
         - name: レコードを調べる
           items:
             - name: 検索オプションと検索オプションの比較
@@ -260,6 +262,8 @@
                   href: ./canvas-apps/working-with-form-layout.md
                 - name: カードについて
                   href: ./canvas-apps/working-with-cards.md
+                - name: フルサイズのイメージを表示する
+                  href: ./canvas-apps/display-full-image-on-form.md
             - name: リストを追加する
               items:
                 - name: リスト ボックス、ドロップダウン リスト、ラジオ ボタンを追加する
