@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: def132ebc0f8ef93121b10b221479a2452a1d4fb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708268"
 ---
-
 # <a name="available-liquid-conditional-operators"></a>使用可能な Liquid の条件演算子
 
 条件付きステートメント (**if**、**unless**) で使用される流動値の一部は true として扱われ、一部は false として扱われます。

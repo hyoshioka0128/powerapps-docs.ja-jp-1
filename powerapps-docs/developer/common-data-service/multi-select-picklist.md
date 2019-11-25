@@ -1,5 +1,5 @@
 ---
-title: 複数選択候補リストの属性 (Common Data Service) | Microsoft Docs
+title: " 複数選択候補リスト属性 (Common Data Service) | Microsoft Docs"
 description: 複数のオプション選択を単一属性に格納できる複数選択候補リスト属性について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: MicroSri
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 47f6b9f5aeda7bcf8fec0c0831d478683a811b44
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748985"
 ---
 # <a name="multi-select-picklist-attributes"></a>複数選択候補リスト属性
 
@@ -73,7 +79,7 @@ _serviceProxy.Create(contact);
 
 次の例は、`contact` エンティティの `sample_outdooractivities` という名前の複数選択複数の候補リスト属性に設定された次のデータに対して `FetchXML` を使用した `ContainValues` と`not-contain-values` の使用を示しています。
 
-### <a name="multi-select-picklist-sampleoutdooractivities-options"></a>複数選択候補リスト `sample_outdooractivities` オプション:
+### <a name="multi-select-picklist-sample_outdooractivities-options"></a>複数選択候補リスト `sample_outdooractivities` オプション:
 
 |Value|ラベル|
 |-----|-----|

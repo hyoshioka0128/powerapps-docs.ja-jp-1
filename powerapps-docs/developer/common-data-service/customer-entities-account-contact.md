@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 48a9f4e8a18fcf6db639e2a17c21779fa8de90c3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748997"
 ---
 # <a name="customer-entities-account-contact"></a>顧客エンティティ (取引先企業、取引先担当者)
 
@@ -26,7 +32,7 @@ Refactor so that the links to entity reference are in the body, not just in the 
 Add some h2 sections so it is skimmable
  -->
 
-Common Data Service の *アカウント* および *取引先担当者* エンティティは、顧客の特定、顧客の管理、製品やサービスの販売、および顧客への優れたサービスの提供に必要なエンティティです。 *顧客住所* エンティティは、顧客の住所と発送情報の保存に使用します。  
+Common Data Service では、*取引先企業* および *取引先担当者* エンティティは、顧客の特定と管理、製品やサービスの販売、および顧客への優れたサービスの提供に必要なエンティティです。 *顧客住所* エンティティは、顧客の住所と発送情報の保存に使用します。  
   
 ## <a name="account-entity"></a>取引先企業エンティティ
  

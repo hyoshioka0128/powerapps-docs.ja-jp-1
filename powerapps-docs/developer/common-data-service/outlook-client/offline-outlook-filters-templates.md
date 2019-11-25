@@ -1,6 +1,6 @@
 ---
-title: オフラインと Outlook のフィルターおよびテンプレート (Common Data Service) | Microsoft Docs
-description: Common Data Service と Dynamics 365 for Outlook で同期する必要があるデータは、Office Outlook 用データ フィルターで決定されます。
+title: オフラインと Outlook のフィルターおよびテンプレート (Common Data Service)| Microsoft Docs
+description: Common Data Service および Dynamics 365 for Outlook 間で同期する必要があるデータは、Office Outlook 用データ フィルターで決定されます。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: sriharibs
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b68f2013e49ce85d78efe588a9308efa55b361c8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749249"
 ---
 # <a name="offline-and-outlook-filters-and-templates"></a>オフラインと Outlook のフィルターおよびテンプレート
 
-Office Outlook 用データ フィルターは、Common Data Service と Dynamics 365 for Outlook で同期する必要があるデータを決定します。 Common Data Service は SDK を使用して既定のフィルターを変更し、一部またはすべてのユーザーに対してこの変更を配信する機能をサポートします。  
+Office Outlook のデータ フィルターは、Common Data Service と Dynamics 365 for Outlook の間で同期されるべきデータを決定します。 Common Data Service は、SDK を使用して既定のフィルターを変更し、一部またはすべてのユーザーに対してこの変更を配信する機能をサポートします。  
 管理者がフィルター テンプレートを作成して公開するためのコードを作成できます。 これにより、Common Data Service 管理者は、Outlook ストアやオフライン データベースと同期させるための共通のフィルターや目的のフィルターを作成し、ユーザーに公開できます。 また、テンプレートを最初に公開した後でシステムに追加されたユーザー向けに、既定のフィルター テンプレートをカスタマイズして適用することもできます。 管理者は、ユーザー フィルターを公開した後でそのフィルターを更新または削除することもできます。  
 これらのカスタマイズをサポートするため、保存済みクエリ (ビュー) 用の新しい 4 つのクエリの種類があります。 保存済みクエリ (ビュー) レコードを作成する場合は、<xref:Microsoft.Crm.Sdk.SavedQueryQueryType> 列挙体を使用して、`SavedQuery.QueryType` 属性でこれらの種類のいずれかを指定します。 これらには、ここで説明するメソッドを使用することによってのみアクセスできます。変更に使用できる UI はありません。 携帯電話の Outlook に対してすべてのデータを同期させることを回避するには、別のフィルターを指定できます。 フィルター テンプレートはソリューションに対応しているため、ソリューションと一緒にエクスポートできます。  
   
@@ -26,9 +32,9 @@ Office Outlook 用データ フィルターは、Common Data Service と Dynamic
 |クエリの種類|説明|  
 |----------------|-----------------|  
 |<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OutlookFilters>|Dynamics 365 for Outlook と同期させるエンティティのサブセットを定義します。 これらのフィルターで定義されるデータのサブセットは、取引先担当者、カレンダーなど、 Outlook のフォルダーに同期します。|  
-|<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OfflineFilters>|オフライン アクセス対応 Dynamics 365 for Microsoft Office Outlook と同期させるエンティティのサブセットを定義します。 これらのフィルターで定義されるデータのサブセットは、オフライン データベースに同期します。|  
+|<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OfflineFilters>|オフラインアクセスで Dynamics 365 for Microsoft Office Outlook と同期させるエンティティのサブセットを定義します。 これらのフィルターで定義されるデータのサブセットは、オフライン データベースに同期します。|  
 |<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OutlookTemplate>|Dynamics 365 for Outlook と同期させるために新しいユーザーに適用するフィルター テンプレートを定義します。|  
-|<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OfflineTemplate>|オフライン アクセス対応 Dynamics 365 for Microsoft Office Outlook と同期させるために新しいユーザーに適用するフィルター テンプレートを定義します。|  
+|<xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OfflineTemplate>|オフラインアクセスで Dynamics 365 for Microsoft Office Outlook と同期させるために新しいユーザーに適用するフィルター テンプレートを定義します。|  
   
 ## <a name="instantiate-a-filter"></a>フィルターのインスタンスの作成
 
@@ -40,7 +46,7 @@ Office Outlook 用データ フィルターは、Common Data Service と Dynamic
 
 システム フィルターと呼ばれる、管理者が定義できる新しい種類のフィルターがあります。 これらのフィルターは、クエリの種類が <xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OutlookFilters> または <xref:Microsoft.Crm.Sdk.SavedQueryQueryType.OfflineFilters> である `SavedQuery` レコードとして定義されます。 システム フィルターは、すべてのユーザーに自動的に適用されます。ユーザーはこのフィルターを変更できません。  
 
-追加できるフィルターの数には制限があります。 この設定は、ユーザーや管理者がフィルターを作成しすぎてサーバーのパフォーマンスに影響しないように、Common Data Service の展開管理者によって制御されます。 すべてのエンティティに対して同じ制限の設定が適用されます。  
+追加できるフィルターの数には制限があります。 この設定は、ユーザーや管理者がフィルターを作成しすぎてサーバーのパフォーマンスに影響しないように、Common Data Service 展開管理者によって制御されます。 すべてのエンティティに対して同じ制限の設定が適用されます。  
 
 既定では、システム フィルターとユーザー フィルターの両方で無制限に設定されます。  
 
@@ -54,7 +60,7 @@ Office Outlook 用データ フィルターは、Common Data Service と Dynamic
   
 ### <a name="see-also"></a>関連項目
 
-[Dynamics 365 for Outlook を拡張](extend-dynamics-365-outlook.md)<br />
+[Dynamics 365 for Outlook の拡張](extend-dynamics-365-outlook.md)<br />
 [SavedQuery エンティティ参照](../reference/entities/savedquery.md)<br />
 [サンプル: Outlook フィルターの取得](sample-create-retrieve-outlook-filters.md)<br /> 
 <xref:Microsoft.Crm.Sdk.Messages.InstantiateFiltersRequest><br />

@@ -1,6 +1,6 @@
 ---
-title: 別のユーザーを偽装する (Common Data Service) | Microsoft Docs
-description: 偽装を使用して、別の Common Data Service ユーザーに代わってビジネス ロジックを実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供します。
+title: 他のユーザーを偽装する (Common Data Service) | Microsoft Docs
+description: 偽装を使用して、Common Data Service ユーザーに代わってビジネス ロジックを実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供するために使用されます。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,16 +10,22 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0701f48caa7b45d49cd85c6d8c97ff6568e4813e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748857"
 ---
 # <a name="impersonate-another-user"></a>もう一方のユーザーの偽装
 
-偽装を使用して、別の Common Data Service ユーザーに代わってビジネス ロジックを実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供します。 
+偽装を使用して、Common Data Service ユーザーに代わってビジネス ロジックを実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供するために使用されます。 
 
-偽装が必要なのは、Common Data Service ユーザーに代わってさまざまなクライアントやサービスによって Common Data Service Web サービスを呼び出すことができるためです。
+これは、Common Data Serviceユーザーに代わってさまざまなクライアントとサービスから Common Data Service Web サービスを呼び出すことができることから必要です。
 
 偽装には、2 つの異なるユーザー アカウントが関与します。 
 
@@ -40,7 +46,7 @@ search.app:
 
 ## <a name="impersonation-with-server-to-server-authentication"></a>サーバー間認証を使用した偽装
 
-登録ユーザーの代理ができるユーザー アカウントを必要とする Web クライアント アプリケーションを作成している場合、特別な*アプリケーション ユーザー*を使用することにより、Common Data Service の有料ユーザー ライセンスを使用する必要がなくなります。
+登録ユーザーの代理ができるユーザー アカウントを必要とする Web クライアント アプリケーションを作成している場合、特別な *アプリケーション ユーザー* アカウントを使用することにより、アプリ用 CDS の有料の Common Data Service ユーザー ライセンスを使用する必要がなくなります。
 
 詳細情報: [サーバー間 (S2S) 認証を使用して Web アプリケーションを作成する](build-web-applications-server-server-s2s-authentication.md)。
 

@@ -1,19 +1,25 @@
 ---
-title: IOrganizationService インターフェイス (Common Data Service) | Microsoft Docs
+title: OrganizationService インターフェイス (Common Data Service) | Microsoft Docs
 description: Common Data Service を使ったデータ操作を実行するための、公開されている共通メソッドについて説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bccb65e72c967ab973de106f1010ad95164db3ee
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748972"
 ---
 # <a name="iorganizationservice-interface"></a>IOrganizationService インターフェイス
 

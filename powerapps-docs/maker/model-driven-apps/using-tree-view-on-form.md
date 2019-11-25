@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8e032cc95f64e842552308ccf9d179fc153b49fd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710424"
 ---
-
 # <a name="using-the-tree-view-in-the-form-designer"></a>フォーム デザイナーのツリー ビューを使用
 **ツリー ビュー** ウィンドウには、フォーム上のコンポーネントのビジュアル階層が表示されます。 ツリー ビュー内のアイコンは、フィールドまたはコンポーネントの種類を素早く識別するために役立ちます。 
 
@@ -31,7 +36,7 @@ search.app:
 ツリー ビュー内のノードを展開または折畳み、ノード内の要素を表示または非表示にすることができます。 ツリー ビューで要素を選択すると、フォーム プレビューでハイライト表示になり、プロパティ ウィンドウにはその要素のプロパティが表示されます。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerTreeView.png "ツリー ビュー")
+> ![](media/FormDesignerTreeView.png "Tree view")
 
 ### <a name="open-the-tree-view"></a>ツリー ビューを開く 
 1. フォーム デザイナーを開いてフォームを作成または編集します。 

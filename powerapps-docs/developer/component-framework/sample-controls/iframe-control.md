@@ -1,5 +1,5 @@
 ---
-title: ' IFRAME コンポーネント | Microsoft Docs'
+title: " IFRAME コンポーネント | Microsoft Docs"
 description: IFRAME コンポーネントの実装
 ms.custom: ''
 manager: kvivek
@@ -8,6 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: d10b03c478f238df02ee7e1309c0e39e758ce4c9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748889"
 ---
 # <a name="implementing-a-iframe-component"></a>IFRAME コンポーネントの実装
 
@@ -43,9 +49,9 @@ author: Nkrb
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 export class TSIFrameControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-  // Reference to Bing Map IFrame HTMLElement
+  // reference to Bing Map IFrame HTMLElement
   private _bingMapIFrame: HTMLElement;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
   // Flag if control view has been rendered
@@ -172,6 +178,6 @@ export class TSIFrameControl
 ### <a name="related-topics"></a>関連トピック
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps Component Framework のマニフェスト スキーマの参照](../manifest-schema-reference/index.md)<br />
+[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)<br />
 [PowerApps Component Framework API の参照](../reference/index.md)<br />
 [PowerApps Component Framework の概要](../overview.md)

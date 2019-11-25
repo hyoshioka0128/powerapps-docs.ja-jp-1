@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: プラグインのデバッグ (Common Data Service) | Microsoft Docs'
+title: 'チュートリアル: プラグインのデバッグ (Common Data Service)| Microsoft Docs'
 description: 'このチュートリアルは、プラグインの使用方法を説明するシリーズの 2 番目のチュートリアルです。 '
 ms.custom: ''
 ms.date: 1/28/2019
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cc96a611221dadb2f43926c1714414f09688b0e0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749095"
 ---
 # <a name="tutorial-debug-a-plug-in"></a>チュートリアル: プラグインをデバッグする
 
@@ -86,7 +92,7 @@ search.app:
 
     ![ブレークポイントの設定](media/tutorial-debug-plug-in-set-break-point.png)
 
-1. Visual Studio プロジェクトで、**デバッグ** > **プロセスにアタッチ…** を選択します。
+1. Visual Studio プロジェクトで、**デバッグ** > **プロセスにアタッチ**を選択します。
 
     ![プロセスにアタッチ コマンド](media/tutorial-debug-plug-in-attach-to-process.png)
 
@@ -110,7 +116,7 @@ search.app:
 
 ## <a name="repeat"></a>繰り返し
 
-繰り返すには、Visual Studio プロジェクトで **デバッグ** > **再アタッチ** を選択して処理し、**プラグイン実行の再生** ダイアログで **実行の開始** をもう一度クリックします。
+繰り返すには、Visual Studio プロジェクトで **デバッグ** > **再アタッチ** を選択して処理し、プラグイン実行の**プラグイン実行の再生** ダイアログで **実行の開始** をもう一度クリックします。
 
 ## <a name="stop-profiling"></a>プロファイリングの停止
 

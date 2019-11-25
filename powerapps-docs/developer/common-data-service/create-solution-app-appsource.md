@@ -1,5 +1,5 @@
 ---
-title: 'ステップ 3: アプリのマネージド ソリューションを作成 (Common Data Service) | Microsoft Docs'
+title: '手順3: アプリの管理ソリューションを作成する (Common Data Service) | Microsoft Docs'
 description: すべてのコンポーネントを含めるアプリの管理ソリューションを作成する方法を学習します。 これは Appsource にアプリを公開するために必要です。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8115e17ef999834e2134ef41c2a8472bf539438b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748999"
 ---
 # <a name="step-3-create-a-managed-solution-for-your-app"></a>手順3: アプリの管理ソリューションを作成する
 

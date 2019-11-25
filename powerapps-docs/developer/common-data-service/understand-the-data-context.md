@@ -10,12 +10,17 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a9efd1886e455241983bd43fa072ae71f40ea444
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749208"
 ---
-
 # <a name="understand-the-execution-context"></a>実行コンテキストを理解する
 
 **イベント実行パイプライン** は、登録されているプラグインに、処理中の現在の操作とプラグインの実行環境に関する豊富なデータを渡します。

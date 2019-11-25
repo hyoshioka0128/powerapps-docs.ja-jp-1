@@ -16,11 +16,17 @@ ms.workload: na
 ms.date: 12/12/2018
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
---- 
+- PowerApps
+- D365CE
+ms.openlocfilehash: 43e3cde28fb5f2d32f4372cf19c71f8639abee1a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748806"
+---
 # <a name="do-not-retrieve-entity-all-columns-via-query-apis"></a>クエリ API を使用してエンティティのすべての列を取得することはできません
 
 **カテゴリ**: パフォーマンス
@@ -40,7 +46,7 @@ search.app:
 
 ## <a name="guidance"></a>ガイダンス
 
-最良のパフォーマンスを得るためには、Common Data Service のクエリを実行時に、アプリケーション サービスと呼ばれるデータを使用して必要なデータの最小金額を選択する必要があります。 
+最良のパフォーマンスを得るためには、Common Data Service のクエリを実行時に、アプリケーションが必要とるす最小量のみを選択する必要があります。 
 
 ### <a name="columnset-parameter"></a>ColumnSet パラメーター
 
@@ -48,7 +54,7 @@ search.app:
 
 以下はその例です。
 
-- [ColumnSet (文字列パラメーター[] の列)](/dotnet/api/microsoft.xrm.sdk.query.columnset.-ctor#Microsoft_Xrm_Sdk_Query_ColumnSet__ctor_System_String___) <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> のコンストラクター オーバーロード。
+- <xref:Microsoft.Xrm.Sdk.Query.QueryExpression> の [ColumnSet(文字列パラメーター[] 列)](/dotnet/api/microsoft.xrm.sdk.query.columnset.-ctor#Microsoft_Xrm_Sdk_Query_ColumnSet__ctor_System_String___)コンストラクター オーバーロード。
 
     ```csharp
         var query = new QueryExpression("account")
@@ -59,7 +65,7 @@ search.app:
         var results = service.RetrieveMultiple(query);
     ```
 
-- [ColumnSet (文字列パラメーター[] の列)](/dotnet/api/microsoft.xrm.sdk.query.columnset.-ctor#Microsoft_Xrm_Sdk_Query_ColumnSet__ctor_System_String___) <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> のコンストラクター オーバーロード。
+- <xref:Microsoft.Xrm.Sdk.Messages.RetrieveRequest> の [ColumnSet(文字列パラメーター[] 列)](/dotnet/api/microsoft.xrm.sdk.query.columnset.-ctor#Microsoft_Xrm_Sdk_Query_ColumnSet__ctor_System_String___)コンストラクター オーバーロード。
 
     ```csharp
         var entity = service.Retrieve("account", Guid.NewGuid(), new ColumnSet("name", "address1_city"));

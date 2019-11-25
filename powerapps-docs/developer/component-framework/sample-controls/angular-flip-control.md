@@ -1,5 +1,5 @@
 ---
-title: ' フリップ コンポーネント | Microsoft Docs'
+title: " フリップ コンポーネント | Microsoft Docs"
 description: Angular JS を使用したフリップ コンポーネントの実装
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: 90d74124e21fe74a96ca31830508f3bbb99e17b9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748891"
 ---
-
 # <a name="implementing-flip-component"></a>フリップ コンポーネントの実装
 
 このサンプルでは、PowerApps Component Framework でサードパーティ製ライブラリを使用してコンポーネントを作成する方法を説明します。  フリップのサンプル コンポーネントは、angular.js、angular-ui、angle-animate、angle-sanitize、bootstrap に基づいて実装されます。 このコードは、言及したサードパーティ製ライブラリのベスト プラクティスを明らかにしない場合があります。
@@ -355,6 +360,6 @@ fieldset[disabled].btn-primary:hover {
 
 ### <a name="related-topics"></a>関連トピック
 
-[PowerApps Component Framework のマニフェスト スキーマの参照](../manifest-schema-reference/index.md)<br />
+[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)<br />
 [PowerApps Component Framework API の参照](../reference/index.md)<br />
 [PowerApps Component Framework の概要](../overview.md)

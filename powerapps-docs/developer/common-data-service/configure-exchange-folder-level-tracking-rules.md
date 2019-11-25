@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 09b7d273968f2d37b45ca5210924546a8bee6cd9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749149"
 ---
 # <a name="configure-exchange-folder-level-tracking-rules"></a>Exchange フォルダー レベルの追跡ルールの構成
 
-Microsoft Exchange の受信トレイ フォルダーを Common Data Service レコードにマップできるようにするフォルダー レベルの追跡ルールを構成します。これにより、Microsoft Exchange フォルダー内のすべての電子メールが Common Data Service のマップされたレコードに対して自動的に追跡されます。 電子メールのフォルダー レベルの追跡は、以下の場合にのみ使用できます。  
+Microsoft Exchange 受信トレイを Common Data Service レコードにマップするフォルダー レベルの追跡のルールを構成します。これにより、Microsoft Exchange フォルダーのすべての電子メールが Common Data Service 内のマップされたレコードと対照して自動的に追跡されます。 電子メールのフォルダー レベルの追跡は、以下の場合にのみ使用できます。  
 
 - フォルダー レベルの追跡機能が Common Data Service インスタンスに対して有効化されている。 Web クライアントや Dynamics 365 for Outlook を使用して、フォルダー レベルの追跡を有効にできます。 詳細: [フォルダー レベルの追跡](/dynamics365/customer-engagement/admin/configure-outlook-exchange-folder-level-tracking)  
 
@@ -33,8 +39,8 @@ Microsoft Exchange の受信トレイ フォルダーを Common Data Service レ
 |                                   属性                                   |                                                                                                                                                                                                                説明                                                                                                                                                                                                                 |
 |-------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  [ExchangeFolderId](/reference/entities/mailboxtrackingfolder.md#BKMK_ExchangeFolderId)  | マッピングする Microsoft Exchange フォルダー ID を指定します。 Exchange Web サービス (EWS) を使用して、受信トレイの下にあるフォルダーの ID を取得できます。 詳細については、「[MSDN: Exchange で EWS を使用してフォルダーを操作する方法について](https://msdn.microsoft.com/library/office/dn535504.aspx)」を参照してください。 これは必須の属性です。 |
-|         [MailboxId](/reference/entities/mailboxtrackingfolder.md#BKMK_MailboxId)         |                                                                                                                                         Common Data Service でルールを作成する対象のメールボックス ID を指定します。 これは必須の属性です。                                                                                                                                          |
-| [RegardingObjectId](/reference/entities/mailboxtrackingfolder.md#BKMK_RegardingObjectId) |                                                                                                       指定した Microsoft Exchange フォルダーのマップ先となる Common Data Service の関連オブジェクトを設定します。 これは任意の属性です。                                                                                                       |
+|         [MailboxId](/reference/entities/mailboxtrackingfolder.md#BKMK_MailboxId)         |                                                                                                                                         ルールを作成する対象の、Common Data Service 内のメールボックス ID を指定します。 これは必須の属性です。                                                                                                                                          |
+| [RegardingObjectId](/reference/entities/mailboxtrackingfolder.md#BKMK_RegardingObjectId) |                                                                                                       指定した Microsoft Exchange フォルダーのマップ先となる、Common Data Service 内の関連オブジェクトを設定します。 これは任意の属性です。                                                                                                       |
 
  次のサンプル コードは、フォルダー レベルの追跡のルールの作成方法を示しています。  
 
@@ -56,9 +62,9 @@ _folderTrackingId = _serviceProxy.Create(newTrackingFolder);
 Console.WriteLine("Created folder-level tracking rule for '{0}'.\n", _mailboxName);  
 ```  
 
- メールボックスごとに、フォルダー レベルの追跡のルールを最大 25 まで作成できます。 Microsoft Exchange フォルダーのフォルダー ID は、SDK を使用してマッピングの作成時点では検証できません。 ただし、マッピング ルールを作成した時点でそのフォルダー ID が無効な場合、マッピングが無効であることを示すために Common Data Service の UI に表示されます。  
+ メールボックスごとに、フォルダー レベルの追跡のルールを最大 25 まで作成できます。 Microsoft Exchange フォルダーのフォルダー ID は、SDK を使用してマッピングの作成時点では検証できません。 ただし、マッピング ルールを作成した時点で、そのフォルダー ID が無効な場合、そのことは、マッピングが無効であることを示すために、Common Data Service の UI に表示されます。  
 
- フォルダー レベルの追跡のルールの結果、Common Data Service に作成された追跡対象の活動レコードに含まれる関連オブジェクトに手動で変更を加えた場合、その変更は次のサーバー側同期が行われたときに上書きされます。 たとえば `Adventure Works` フォルダーと `Adventure Works` 取引先企業との間にマッピングを設定した場合、`Adventure Works` Microsoft Exchange フォルダーにあるすべての電子メールは、`Adventure Works` 取引先企業レコードとの関連を保った状態で Common Data Service の活動として追跡されます。 他のレコードとのいくつかの活動の関連を変更した場合は、次にサーバー側同期が動作したときにその変更は自動的に上書きされます。  
+ フォルダー レベルの追跡のルールの結果、Common Data Service 内に作成された、追跡対象の活動レコードに含まれる関連オブジェクトに手動で変更を加えた場合、その変更は、次のサーバー側同期が行われたときに上書きされます。 たとえば、`Adventure Works` フォルダーと `Adventure Works` 取引先企業との間にマッピングを設定した場合、`Adventure Works` Microsoft Exchange フォルダーにあるすべての電子メールは、`Adventure Works` 取引先企業レコードとの関連を保った状態で、Common Data Service の活動として追跡されます。 他のレコードとのいくつかの活動の関連を変更した場合は、次にサーバー側同期が動作したときにその変更は自動的に上書きされます。  
 
 <a name="Retrieve"></a>   
 

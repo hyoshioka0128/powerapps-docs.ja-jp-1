@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1f8db578a771cca7985a3a52110257ee35692a16
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749235"
 ---
 # <a name="recurring-appointment-partial-expansion-model"></a>定期的な予定の部分展開モデル
 
@@ -28,7 +34,7 @@ Common Data Service は、データベース内に定期的な予定のインス
 <a name="Scenario2"></a>   
 
 ## <a name="when-the-recurring-appointment-instances-are-more-than-n"></a>定期的な予定のインスタンス数が "N" より大のとき  
- Common Data Service 内で作成される定期的な予定ごとに、非同期展開ジョブが作成されます。 定期的な予定のインスタンスは、以下の段階で展開されます。  
+ Common Data Service 内で作成される定期的な予定ごとに非同期展開ジョブが作成されます。 定期的な予定のインスタンスは、以下の段階で展開されます。  
 
 1. **同期展開**: 定期的な予定の最初の "N" 個のインスタンスが有効開始日から同時的に作成されます。 各インスタンスは予定レコードとして保存され、その `Appointment.InstanceTypeCode` 属性は "2" (定期的なインスタンス) に設定されます。 残りのインスタンスの展開は、非同期ジョブに引き継がれます。 定期的な予定の系列をどうしても展開しなければならなくなったときの日付が有効開始日とされます。  
 
@@ -43,7 +49,7 @@ Common Data Service は、データベース内に定期的な予定のインス
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  Organization.RecurrenceExpansionSynchCreateMax  |                                                                                             これは、定期的な予定の作成時または同期時に作成される予定インスタンスの最大数です。 インスタンスの数に見合った整数値を指定する必要があります。 この値が "N" に相当します。                                                                                              |
 |         Organization.PastExpansionWindow         |    これは、定期的な予定の展開または同期を Dynamics 365 for Outlook で行える有効な最大の期間 (過去方向) です。 その月数に相当する整数を指定する必要があります。<br /><br /> この属性の値によって、定期的な予定インスタンスの展開または同期のための過去方向のインスタンスの締め日が決まります。    |
-|        Organization.FutureExpansionWindow        | これは、定期的な予定の展開または同期を Dynamics 365 for Outlook で行える有効な最大の期間 (将来方向) です。 その月数に相当する整数を指定する必要があります。<br /><br /> この属性の値によって、定期的な予定インスタンスの展開または同期のための未来方向のインスタンスの締め日が決まります。 |
+|        Organization.FutureExpansionWindow        | これは、定期的な予定の展開または同期を Dynamics 365 for Outlook で行える有効な最大の期間 (未来方向) です。 その月数に相当する整数を指定する必要があります。<br /><br /> この属性の値によって、定期的な予定インスタンスの展開または同期のための未来方向のインスタンスの締め日が決まります。 |
 | Organization.RecurrenceExpansionJobBatchInterval |                                                                                                                                                                               これは、部分展開ジョブの起動周期 (秒単位) です。                                                                                                                                                                                |
 |   Organization.RecurrenceExpansionJobBatchSize   |                                                                                                                                                                                  これは、非同期ジョブが実行されるたびに展開されるインスタンスの個数です。                                                                                                                                                                                   |
 

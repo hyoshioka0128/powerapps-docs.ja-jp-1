@@ -1,5 +1,5 @@
 ---
-title: 重複データ検出のメッセージ (Common Data Service) | Microsoft Docs
+title: 重複データ検出メッセージ (Common Data Service) | Microsoft Docs
 description: BulkDetectDuplicatesRequest または RetrieveDuplicatesRequest メッセージを使用して重複を検知します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ed2d9180bfb148c59efb679f6a44d8d184a9c2d7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748798"
 ---
 # <a name="duplicate-detection-messages"></a>重複データ検出のメッセージ
 
-次の表に示すメッセージを使用して、Common Data Service 内の重複データを検出することができます。  
+次の表に示すメッセージを使用して、Common Data Service 内の重複データを検出します。  
 
 
 |                                                                                                                                                                                                                   メッセージ                                                                                                                                                                                                                   |                                      Web API 操作                                       |                         SDK アセンブリ                          |

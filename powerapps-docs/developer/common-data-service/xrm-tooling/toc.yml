@@ -1,30 +1,30 @@
-- name: XRM ツールを使って Windows クライアント アプリケーションをビルドする
+- name: XRM ツールを使用して Windows のクライアント アプリケーションを作成する
   href: build-windows-client-applications-xrm-tools.md
   items:
-    - name: CrmServiceClient コンストラクターを使って接続する
+    - name: CrmServiceClient コンストラクターを使用して接続する
       href: use-crmserviceclient-constructors-connect.md
-    - name: XRM ツールの接続文字列を使って接続する
+    - name: XRM ツールの接続文字列を使用して接続する
       href: use-connection-strings-xrm-tooling-connect.md
-    - name: XRM ツール用の PowerShell コマンドレットを使って接続する
+    - name: XRM ツール用の PowerShell コマンドレットを使用して接続する
       href: use-powershell-cmdlets-xrm-tooling-connect.md
-    - name: XRM ツールを使ってアクションを実行する
+    - name: XRM ツールを使用してアクションを実行する
       href: use-xrm-tooling-execute-actions.md
       items:
-        - name: XRM ツールを使ってデータを作成する
+        - name: データを作成するために XRM ツールを使用する
           href: use-xrm-tooling-create-data.md
-        - name: XRM ツールを使ってデータを取得する
+        - name: データを取得するために XRM ツールを使用する
           href: use-xrm-tooling-retrieve-data.md
-        - name: XRM ツールを使ってデータを更新する
+        - name: XRM ツールを使用してデータを更新
           href: use-xrm-tooling-update-data.md
-        - name: XRM ツールを使ってデータを削除する
+        - name: XRM ツールを使用してデータを削除
           href: use-xrm-tooling-delete-data.md
-        - name: ExecuteCrmOrganizationRequestメソッドと共にメッセージを使う
+        - name: ExecuteCrmOrganizationRequest メソッドでメッセージを使用する
           href: use-messages-executecrmorganizationrequest-method.md
-    - name: クライアント アプリケーション内で XRM ツールの共通ログイン コントロールを使う
+    - name: クライアント アプリケーションで、XRM ツール共通ログイン コントロールを使用する
       href: use-xrm-tooling-common-login-control-client-applications.md
-    - name: XRM ツールのトレースを構成する
+    - name: XRM ツール用トレースの構成
       href: configure-tracing-xrm-tooling.md
-    - name: 簡略化された接続のクイック スタート
+    - name: 簡易接続のクイックスタート
       href: sample-simplified-connection-quick-start.md
-    - name: 'サンプル:XRM ツール API のクイック スタート'
+    - name: 'サンプル: XRM ツール API のクイック スタート'
       href: sample-quick-start-xrm-tooling-api.md

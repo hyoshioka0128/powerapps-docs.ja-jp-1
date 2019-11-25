@@ -1,0 +1,15 @@
+- name: Common Data Service 開発者向けの概要
+  href: ../overview.md
+- name: オンライン管理 API
+  href: overview.md
+- name: Online Management API に関する入門情報
+  href: get-started-online-management-api.md
+- name: Online Management API の使用を認証する
+  href: authentication.md
+  items:
+    - name: 'サンプル: Online Management API の認証ヘルパー'
+      href: sample-authentication-helper.md
+- name: Online Management API でサポートする操作
+  href: operations-supported.md
+- name: 'クイックスタートサンプル: テナントの環境を取得する'
+  href: sample-quick-start.md

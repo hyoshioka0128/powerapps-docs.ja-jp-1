@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 77fcc7db0adf68cd6decbcc95e11d8e803761535
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708576"
 ---
-
 # <a name="control-flow-tags"></a>制御フロー タグ
 
 フロー タグの管理は、特定の条件に基づいて実行する必要があるコード ブロックおよび表示する必要があるコンテンツを決定します。 条件は、利用可能な[Liquid の演算子](liquid-operators.md)を使用してビルド、または単に[指定された値の真偽](liquid-conditional-operators.md)に基づきビルドされます。  

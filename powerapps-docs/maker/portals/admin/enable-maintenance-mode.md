@@ -5,15 +5,18 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: e53380c39257645e9056a271226b6f7ef8c8c721
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709940"
 ---
-
 # <a name="maintenance-mode-for-a-portal"></a>ポータルのメンテナンス モード
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 ウェブサイトが予定されたメンテナンス状態か、一時的な停止でダウンしている時がある可能性があります。 メンテナンス中に顧客が Web サイトにアクセスすると、予期しない動作や断続的な利用不能状態が発生する可能性があります。 
 
@@ -45,7 +48,7 @@ ms.reviewer: null
 5. **有効化** を選択します。 メンテナンス モードが有効化される間、ポータルは再起動して数分間使用できなくなります。 
 
     > [!div class=mx-imgBorder]
-    > ![メンテナンス モード設定を有効化](../media/enable-maint-mode.png "メンテナンス モード設定を有効化")
+    > ![メンテナンス モード設定の有効化](../media/enable-maint-mode.png "メンテナンス モード設定の有効化")
 
 ## <a name="configure-or-disable-maintenance-mode"></a>メンテナンス モードを構成するか無効にする
 

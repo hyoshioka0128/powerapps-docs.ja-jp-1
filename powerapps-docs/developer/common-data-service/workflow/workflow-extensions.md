@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4abc6f224651e4e42bc9f4e40dd74341580274a9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748907"
 ---
 # <a name="workflow-extensions"></a>ワークフローの拡張機能
 
@@ -182,15 +188,15 @@ public InArgument<bool> Bool { get; set; }
 
 |型|例|
 |--|--|
-|[bool](/dotnet/api/system.boolean)|[既定値 ("True")]|
-|[DateTime](/dotnet/api/system.datetime)|[既定 ("2004-07-09T02:54:00Z")]|
-|[[小数]](/dotnet/api/system.decimal)|[既定 ("23.45")]|
-|[Double](/dotnet/api/system.double)|[既定 ("23.45")]|
-|<xref:Microsoft.Xrm.Sdk.Money>|[既定 ("23.45")]|
-|<xref:Microsoft.Xrm.Sdk.EntityReference>|[既定 ("3B036E3E-94F9-DE11-B508-00155DBA2902"、"取引先企業")]|
-|[int](/dotnet/api/system.int32)|[既定 ("23")]|
-|<xref:Microsoft.Xrm.Sdk.OptionSetValue>|[既定 ("3")]|
-|[string](/dotnet/api/system.string)|[既定 ("文字列既定")]|
+|[bool](/dotnet/api/system.boolean)|[既定値("True")]|
+|[DateTime](/dotnet/api/system.datetime)|[既定値("2004-07-09T02:54:00Z")]|
+|[[小数]](/dotnet/api/system.decimal)|[既定値("23.45")]|
+|[Double](/dotnet/api/system.double)|[既定値("23.45")]|
+|<xref:Microsoft.Xrm.Sdk.Money>|[既定値("23.45")]|
+|<xref:Microsoft.Xrm.Sdk.EntityReference>|[既定値("3B036E3E-94F9-DE11-B508-00155DBA2902", "取引先企業")]|
+|[int](/dotnet/api/system.int32)|[既定値("23")]|
+|<xref:Microsoft.Xrm.Sdk.OptionSetValue>|[既定値("3")]|
+|[string](/dotnet/api/system.string)|[既定値("文字列既定")]|
 
 ### <a name="entityreference-parameters"></a>EntityReference パラメーター
 

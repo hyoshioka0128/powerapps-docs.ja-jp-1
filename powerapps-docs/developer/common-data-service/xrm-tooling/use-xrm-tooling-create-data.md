@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: f6a03552-1f07-4d4b-b7ae-fa246a0d7c29
 caps.latest.revision: 14
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0ff7b7c8b1e6833a705d3a6f49e48b8518342763
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749065"
 ---
 # <a name="use-xrm-tooling-to-create-data"></a>データを作成するために XRM ツールを使用する
 
@@ -98,4 +104,4 @@ else
 ### <a name="see-also"></a>関連項目  
 
 [サンプル: XRM ツール API のクイック スタート](sample-quick-start-xrm-tooling-api.md)<br />
-[XRM ツール API を使用して Common Data Service のアクションを実行する](use-xrm-tooling-execute-actions.md)
+[Common Data Service で XRM ツール API を使用してアクションを実行する](use-xrm-tooling-execute-actions.md)

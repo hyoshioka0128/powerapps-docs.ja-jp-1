@@ -1,24 +1,30 @@
 ---
 title: 'サンプル: 簡易接続のクイック スタート ( Common Data Service の開発者ガイド) | MicrosoftDocs'
 description: 'この例では、CrmServiceClientを使用して Common Data Service Webサービスに接続し、エンティティに対して基本的な作成、更新、取得、削除の処理を実行する方法を説明します。 '
-ms.custom: null
+ms.custom: ''
 ms.date: 03/27/2019
 author: Nkrb
 ms.service: crm-online
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: samples
 applies_to:
-  - Common Data Service (online)
+- Common Data Service (online)
 ms.assetid: a4fb3634-948e-4bac-a32f-f626c78d83a0
 caps.latest.revision: 29
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - D365CE
-  - PowerApps
+- D365CE
+- PowerApps
+ms.openlocfilehash: aec27b41272c83a3baa1e35c39b757d1225ac20c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748901"
 ---
 # <a name="sample-simplified-connection-quick-start-using-common-data-service"></a>サンプル: Common Data Service を使用した単純化接続のクイック スタート
 

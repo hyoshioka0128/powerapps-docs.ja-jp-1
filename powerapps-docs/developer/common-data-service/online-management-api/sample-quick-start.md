@@ -9,9 +9,15 @@ author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
+- PowerApps
+ms.openlocfilehash: 8b900ff8a1d4eae9664289cdcb96e53a453579ad
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749129"
 ---
 # <a name="quick-start-sample-retrieve-common-data-service-environements-using-online-management-api"></a>クイックスタート サンプル: オンライン管理 API を使用して Common Data Service 環境を取得する 
 

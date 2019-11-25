@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: aace949be3cc191af5edd95c461e422b9c3217f5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708356"
 ---
-
 # <a name="render-up-to-three-levels-of-page-hierarchy-by-using-hybrid-navigation"></a>ハイブリッド ナビゲーションの使用により、ページ階層のレベルを 3 つまで描画
 
 この例では、ページ階層のレベルを 3 つまで描画するポータル サイト マップに基づいて、ハイブリッド ナビゲーションの種類を描画します。 このコンポーネントのルールは次のとおりです。

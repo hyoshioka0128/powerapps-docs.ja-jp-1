@@ -1,19 +1,25 @@
 ---
-title: オプション セットのカスタマイズ (Common Data Service) | Microsoft Docs
+title: オプションセットのユーザー定義 (Common Data Service) | Microsoft Docs
 description: コード内でグロバールおよびローカル オプション セットを操作する方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 91d619ad798c8911c50c5397eab093ae23f297b4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748970"
 ---
 # <a name="customize-option-sets"></a>オプション セットのカスタマイズ
 

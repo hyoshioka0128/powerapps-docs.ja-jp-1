@@ -10,18 +10,24 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 755ea7efd4c19bfed56595b9b10765b5455f6339
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749029"
 ---
 # <a name="resx-web-resources"></a>RESX Web リソース
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/resx-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources -->
 
 これらの Web リソースを使用して、任意のユーザー インターフェイスで、定義するまたはエラー メッセージと共に表示するローカライズされた文字列を管理します。 
 
-# <a name="using-resx-web-resources"></a>RESX Web リソースの使用
+## <a name="using-resx-web-resources"></a>RESX Web リソースの使用
 
 RESX Web リソースには、RESX XML 形式を使用して定義された単一言語のキーおよびローカライズされた文字列値が含まれます。 RESX XML 形式は Windows アプリケーション用のローカライズされるリソースを定義する一般的な形式で、この種類のファイルを操作するためのツールがあります。ローカライズ ベンダーはこれらの操作に慣れています。 ファイルが CRM で Web リソースとして公開される場合、必要であればアプリケーションにダウンロードされる JSON 形式に変換されます。
 

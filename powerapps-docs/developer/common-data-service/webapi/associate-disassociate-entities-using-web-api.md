@@ -1,5 +1,5 @@
 ---
-title: Web API を使用したエンティティの関連付けと関連付け解除 (Common Data Service) | Microsoft Docs
+title: Web API を使用したエンティティの関連付けまたは関連付けの解除 (Common Data Service) | Microsoft Docs
 description: Web API を使用してコレクション値のナビゲーション プロパティへ参照を追加、参照を削除、既存の参照を変更する方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: ad4e4eac-117a-4958-9df0-b7353305b0c7
 caps.latest.revision: 13
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1b1aee98b1fb6048c875ef41672d105cb096ed1a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749076"
 ---
 # <a name="associate-and-disassociate-entities-using-the-web-api"></a>Web API を使用したエンティティの関連付けと関連付け解除
 
@@ -130,7 +136,7 @@ OData-Version: 4.0
 
 ## <a name="associate-entities-on-update-using-single-valued-navigation-property"></a>単一値のナビゲーション プロパティを使用して更新プログラムのエンティティを関連付け
 
- [基本的な更新](update-delete-entities-using-web-api.md#bkmk_update) で記載された同じメッセージを使用して更新時のエンティティを関連付けることができますが、@odata.bind 注釈を使用して単一値ナビゲーション プロパティの値を設定する使用する必要があります。 次の例では、`customerid_account` 単一値ナビゲーション プロパティを使用して営業案件に関連付けられた取引先企業を変更します。  
+ [基本的な更新](update-delete-entities-using-web-api.md#bkmk_update) で記載された同じメッセージを使用して更新時のエンティティを関連付けることができますが、@odata.bind 注釈を使用して単一値ナビゲーション プロパティの値を設定する必要があります。 次の例では、`customerid_account` 単一値ナビゲーション プロパティを使用して営業案件に関連付けられた取引先企業を変更します。  
   
  **要求**
 

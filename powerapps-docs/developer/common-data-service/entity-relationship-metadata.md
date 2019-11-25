@@ -1,6 +1,6 @@
 ---
 title: エンティティの関連付けのメタデータ | Microsoft Docs
-description: Common Data Service で使用するエンティティ関係メタデータについて説明します。
+description: Common Data Service で使用されるエンティティ関連付けメタデータについて説明します 。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6d0f5aee398d83227f365ac5bb73ccea8068ed4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748865"
 ---
-
 # <a name="entity-relationship-metadata"></a>エンティティの関連付けのメタデータ
 
 ソリューション エクスプローラーまたは `EntityMetadata` の 3 つの関係コレクションを表示すると、3 種類のエンティティ関係があると思われる場合があります。 次の表に示したとおり、実際は 2 つだけです。

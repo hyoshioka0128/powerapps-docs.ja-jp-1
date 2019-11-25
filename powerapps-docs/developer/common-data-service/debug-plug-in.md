@@ -1,5 +1,5 @@
 ---
-title: プラグインのデバッグ (Common Data Service) | Microsoft Docs
+title: デバッグのプラグイン (Common Data Service) | Microsoft Docs
 description: プラグイン登録ツールを使用して、プラグインをデバッグする方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,17 +10,23 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a7cc74105b5724114ecaad9a9836b6ef118f805c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749138"
 ---
 # <a name="debug-plug-ins"></a>プラグインのデバッグ
 
 書き込み、登録、およびプラグインをデバッグするプロセスは次のとおりです:
 
 1. Visual Studio に .NET Framework クラス ライブラリ プロジェクトを作成します。
-1. `Microsoft.CrmSdk.CoreAssemblies` NuGet パッケージをプロジェクトに追加します。
+1. `Microsoft.CrmSdk.CoreAssemblies` NuGet パッケージをプロジェクトに追加する
 1. ステップとして登録されるクラスの <xref:Microsoft.Xrm.Sdk.IPlugin> インターフェイスを実装します。
 1. インターフェイスに必要な <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*> メソッドにコードを追加する
     1. 必要なサービスへの参照を取得する
@@ -54,7 +60,7 @@ search.app:
 
 [トレース サービスの使用](write-plug-in.md#use-the-tracing-service)でも説明されているように、 <xref:Microsoft.Xrm.Sdk.ITracingService>、<xref:Microsoft.Xrm.Sdk.ITracingService.Trace*> を使用してプラグインのコード内で [PluginTraceLog エンティティ](reference/entities/plugintracelog.md)にメッセージを書き込めます。 メソッド。
 
-このサービスを使用する前に Common Data Service 環境でトレースを有効にする必要があります。 [トレース ログを表示](tutorial-write-plug-in.md#view-trace-logs)で手順を詳しく説明します。
+このサービスを使用する前に、 Common Data Service 環境でトレースを有効にする必要があります。 [トレース ログを表示](tutorial-write-plug-in.md#view-trace-logs)で手順を詳しく説明します。
 
 > [!NOTE]
 > トレース ログは、特に多数のトレースと例外が生成されたときは、組織の保存領域を占有します。 トレースログは、デバッグとトラブルシューティングの場合にのみオンにして、調査の完了後はオフにする必要があります。

@@ -1,23 +1,22 @@
-# This TOC is a work in progress. The specific location of items is not locked down
 - name: Common Data Service
   href: ../../maker/common-data-service/data-platform-intro.md
-- name: 開発者向け概要
+- name: 開発者向けの概要
   href: overview.md
-- name: はじめる
+- name: はじめに
   href: get-started-cds-developers.md
   items:
     - name: サポートされているカスタマイズ
       href: supported-customizations.md
-- name: コードを使用してデータを操作する
+- name: コードを使用したデータに関する作業
   href: work-with-data-cds.md
   items:
-    - name: Web API の使用
+    - name: Web APIを使用
       href: webapi/index.md
-    - name: 組織サービスの使用
+    - name: 組織のサービスを使用する
       href: org-service/index.md
-    - name: サンプル データの追加と削除
-      href: sample-data.md
-    - name: FetchXML を使用したデータのクエリ
+    - name: 独自のアクションの作成
+      href: custom-actions.md
+    - name: FetchXML の使用によるクエリ データ
       href: use-fetchxml-construct-query.md
       items:
         - name: FetchXML 集計の使用
@@ -28,11 +27,11 @@
           href: use-fetchxml-left-outer-join-query-records-not-in.md
         - name: FetchXML による大量の結果セットのページング
           href: org-service/page-large-result-sets-with-fetchxml.md
-    - name: 保存されたクエリ
+    - name: 保存済みクエリ
       href: saved-queries.md
     - name: クエリ階層型データ
       href: query-hierarchical-data.md
-    - name: データの変更の監査
+    - name: データ変更を監査する
       href: auditing-overview.md
       items:
         - name: 監査のエンティティおよび属性の構成
@@ -41,45 +40,45 @@
           href: retrieve-and-delete-the-history-of-audited-data-changes.md
         - name: ユーザー アクセスの監査
           href: audit-user-access.md
-        - name: 自動付番の属性の作成
-          href: create-auto-number-attributes.md
     - name: 重複データの検出
       href: detect-duplicate-data-with-code.md
       items:
         - name: 重複データ検出の有効化と無効化
           href: enable-disable-duplicate-detection.md
-        - name: 重複データ検出の実行
+        - name: 重複データ検出を実行する
           href: run-duplicate-detection.md
-        - name: 重複データ検出メッセージ
+        - name: 重複データ検出のメッセージ
           href: duplicate-detection-messages.md
         - name: 重複ルール エンティティ
           href: duplicaterule-entities.md
     - name: データの一括削除
       href: delete-data-bulk.md
-    - name: オプティミスティック同時実行を使用してデータ損失の可能性を軽減する
+    - name: オプティミスティック同時実行を使用してデータ損失の見込みを削減する
       href: optimistic-concurrency.md
     - name: もう一方のユーザーの偽装
       href: impersonate-another-user.md
     - name: ベスト プラクティス
       href: best-practices/work-with-data/index.md
-- name: コードを使用したビジネス ロジックの適用
+    - name: サンプル データの追加と削除
+      href: sample-data.md
+- name: コードを使用してビジネス ロジックの適用
   href: apply-business-logic-with-code.md
   items:
     - name: イベント フレームワーク
       href: event-framework.md
       items:
-        - name: 実行コンテキストについて
+        - name: 実行コンテキストを理解する
           href: understand-the-data-context.md
-        - name: 特殊な更新操作の動作
+        - name: 特化された更新操作の動作
           href: special-update-operation-behavior.md
     - name: 非同期サービス
       href: asynchronous-service.md
     - name: プラグイン
       href: plug-ins.md
       items:
-        - name: プラグインの記述
+        - name: プラグインを記述する
           href: write-plug-in.md
-        - name: 例外を処理する
+        - name: 例外処理
           href: handle-exceptions.md
         - name: ユーザーを偽装する
           href: impersonate-a-user.md
@@ -87,35 +86,35 @@
           href: register-plug-in.md
         - name: プラグインのデバッグ
           href: debug-plug-in.md
-        - name: トレースとログ記録
+        - name: トレースおよびログ
           href: logging-tracing.md
-        - name: パフォーマンスを分析する
+        - name: パフォーマンスを解析する
           href: analyze-performance.md
-        - name: プラグインをトラブルシューティングする
+        - name: プラグインのトラブルシューティング
           href: troubleshoot-plug-in.md
-        - name: 外部の Web リソースにアクセスする
+        - name: 外部 Web リソースにアクセスする
           href: access-web-services.md
         - name: チュートリアル
           items:
-            - name: プラグインの記述と登録
+            - name: プラグインを書き込み登録する
               href: tutorial-write-plug-in.md
             - name: プラグインのデバッグ
               href: tutorial-debug-plug-in.md
-            - name: プラグインの更新
+            - name: プラグインを更新する
               href: tutorial-update-plug-in.md
-        - name: コード サンプル
+        - name: サンプル コード
           items:
-            - name: 基本的なプラグインを作成する
+            - name: 基本プラグインの作成
               href: org-service/samples/basic-followup-plugin.md
             - name: プラグインからの Web アクセス
               href: org-service/samples/web-access-plugin.md
     - name: ワークフローの拡張機能
       href: workflow/workflow-extensions.md
-    - name: スケーラブルなカスタマイズのデザイン
+    - name: スケーラブルなカスタマイズ設計
       href: scalable-customization-design/overview.md
     - name: ベスト プラクティス
       href: best-practices/business-logic/index.md
-- name: コードを使用してデータを統合する
+- name: コードを使用してデータを統合します。
   items:
     - name: データのインポート
       href: import-data.md
@@ -126,24 +125,24 @@
           href: create-data-maps-for-import.md
         - name: インポート用の変換マッピングの追加
           href: add-transformation-mappings-import.md
-        - name: データのインポートの構成
+        - name: データ インポートの構成
           href: configure-data-import.md
-        - name: データのインポートの実行
+        - name: データ インポートの実行
           href: run-data-import.md
-        - name: データのインポート エンティティ
+        - name: データ インポート エンティティ
           href: data-import-entities.md
-    - name: データのエクスポート サービス
+    - name: データ エクスポート サービス
       href: data-export-service.md
     - name: データの同期
       href: data-synchronization.md
       items:
-        - name: 代替キーを使用してレコードを作成する
+        - name: 代替キーを使用してレコードを作成
           href: use-alternate-key-create-record.md
         - name: 変更の追跡を使用してデータを外部システムに同期
           href: use-change-tracking-synchronize-data-external-systems.md
         - name: Upsert を使用してレコードを挿入または更新
           href: use-upsert-insert-update-record.md
-    - name: サーバー側の同期
+    - name: サーバー側同期
       href: server-side-synchronization-entities.md
       items:
         - name: Exchange フォルダー レベルの追跡ルールの構成
@@ -153,32 +152,32 @@
     - name: Azure 統合
       href: azure-integration.md
       items:
-        - name: Azure ソリューションでデータを操作する
+        - name: Azure ソリューションのデータとの連携
           href: work-data-azure-solution.md
-        - name: Azure イベント ハブ ソリューションでイベント データを操作する
+        - name: Azure イベント ハブ ソリューションのイベント データとの連携
           href: work-event-data-azure-event-hub-solution.md
-        - name: Common Data Service for App で Azure 統合を構成する
+        - name: Azure と Common Data Service との統合の構成
           href: configure-azure-integration.md
         - name: Azure 対応のカスタム プラグインの記述
           href: write-custom-azure-aware-plugin.md
         - name: Azure ソリューション用のリスナー アプリケーションの記述
           href: write-listener-application-azure-solution.md
-        - name: 'チュートリアル:顧客契約との統合のための Azure (SAS) の構成'
+        - name: 'チュートリアル: 統合用の Azure (SAS) の構成Common Data Service'
           href: walkthrough-configure-azure-sas-integration.md
-        - name: 'チュートリアル:プラグイン登録ツールを使用した Azure 対応プラグインの登録'
+        - name: 'チュートリアル: プラグイン登録ツールを使用した Azure 対応プラグインの登録'
           href: walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool.md
-        - name: 'チュートリアル:ソリューションからインポートしたサービス エンドポイントの更新'
+        - name: 'チュートリアル: ソリューションからインポートしたサービス エンドポイントの更新'
           href: walkthrough-update-service-endpoint-imported-solution.md
-    - name: web hook の使用
+    - name: Webhook の使用
       href: use-webhooks.md
       items:
-        - name: webhook を使用してサーバー イベント用に外部ハンドラーを作成する
+        - name: ｗebhook を使用してサーバー イベント用に外部ハンドラーを作成する
           href: use-webhooks.md
-        - name: web hook の登録
+        - name: Web hook の登録
           href: register-web-hook.md
-        - name: webhook 登録をテストする
+        - name: Web hook 登録テスト
           href: test-webhook-registration.md
-- name: Common Data Service エンティティを操作する
+- name: Common Data Service エンティティに関する作業
   href: entities.md
   items:
     - name: 顧客エンティティ
@@ -186,7 +185,7 @@
     - name: 活動エンティティ
       href: activity-entities.md
       items:
-        - name: カスタム アクティビティ
+        - name: ユーザー定義の活動
           href: custom-activities.md
         - name: 電子メール活動エンティティ
           href: email-activity-entities.md
@@ -243,7 +242,7 @@
               href: use-access-teams-owner-teams-collaborate-share-information.md
     - name: テンプレート エンティティ
       href: upload-manage-document-templates.md
-- name: コードを使用してメタデータを操作する
+- name: コードを使用してメタデータを扱う
   href: metadata-services.md
   items:
     - name: 環境のメタデータの参照
@@ -253,33 +252,37 @@
       items:
         - name: エンティティ メタデータのカスタマイズ
           href: customize-entity-metadata.md
-        - name: エンティティに代替キーを定義する
+        - name: エンティティの代替キーの定義
           href: define-alternate-keys-entity.md
     - name: 属性メタデータ
       href: entity-attribute-metadata.md
       items:
-        - name: エンティティ属性メタデータ メッセージ
+        - name: エンティティ属性のメタデータのメッセージ
           href: entity-attribute-metadata-messages.md
         - name: 日時属性の動作と形式
           href: behavior-format-date-time-attribute.md
         - name: 計算およびロールアップ属性
           href: calculated-rollup-attributes.md
+        - name: 自動付番の属性を作成
+          href: create-auto-number-attributes.md
         - name: 複数選択候補リスト属性
           href: multi-select-picklist.md
+        - name: ファイル属性
+          href: file-attributes.md
         - name: イメージ属性
           href: image-attributes.md
         - name: カスタムの状態モデルの遷移の定義
           href: define-custom-state-model-transitions.md
-    - name: エンティティ リレーションシップ メタデータ
+    - name: エンティティ関連付けメタデータ
       href: entity-relationship-metadata.md
       items:
         - name: エンティティの関連付けの有効性
           href: entity-relationship-eligibility.md
         - name: エンティティの関連付けのメタデータ メッセージ
           href: entity-relationship-metadata-messages.md
-        - name: エンティティ関係のカスケード動作
+        - name: エンティティ関係のカスケード動作の構成
           href: configure-entity-relationship-cascading-behavior.md
-    - name: エンティティと属性のマッピングをカスタマイズする
+    - name: エンティティ マッピングおよび属性マッピングのカスタマイズ
       href: customize-entity-attribute-mappings.md
     - name: レコードを相互にリンクする接続の使用
       href: connection-entities.md
@@ -309,13 +312,13 @@
           href: understand-managed-solutions-merged.md
         - name: 複数の言語をサポートするソリューションの作成
           href: create-solutions-support-multiple-languages.md
-        - name: ソリューションの管理方法
+        - name: ソリューションを管理する方法
           items:
             - name: アンマネージド ソリューションの作成、エクスポート、またはインポート
               href: create-export-import-unmanaged-solution.md
-            - name: ソリューションのアンインストールまたは削除
+            - name: ソリューションのインストールまたは削除
               href: uninstall-delete-solution.md
-            - name: ソリューションを操作する
+            - name: ソリューションに関する作業
               href: work-solutions.md
             - name: 管理ソリューションの作成、インストール、および更新
               href: create-install-update-managed-solution.md
@@ -323,53 +326,53 @@
               href: create-patches-simplify-solution-updates.md
             - name: カスタマイズ ファイルを編集するとき
               href: when-edit-customization-file.md
-    - name: Azure DevOps 用のビルド ツール
+    - name: Azure DevOps 構築ツール
       items:
         - name: 概要
           href: build-tools-overview.md
-        - name: タスク
+        - name: 仕事
           href: build-tools-tasks.md
-        - name: チュートリアルとよくあるご質問
+        - name: チュートリアルとよく寄せられる質問
           href: build-tools-tutorial-faq.md
-    - name: SolutionPackager ツール
+    - name: 'SolutionPackager ツール '
       href: compress-extract-solution-file-solutionpackager.md
       items:
         - name: ソリューション ファイルを使用したソース コントロール
           href: use-source-control-solution-files.md
     - name: Package Deployer ツール
       href: package-deployer/create-packages-package-deployer.md
-    - name: ソリューションとパッケージの品質を確認する
+    - name: ソリューションとパッケージの品質を検証する
       items:
         - name: PowerApps チェッカー Web API を使用する
           href: checker/webapi/overview.md
-        - name: 分析を呼び出す
+        - name: 分析の呼び出し
           href: checker/webapi/analyze.md
-        - name: 分析の状態を確認する
+        - name: 解析ステータスを確認する
           href: checker/webapi/check-status.md
-        - name: ルールの一覧を取得する
+        - name: ルールの一覧の取得
           href: checker/webapi/retrieve-rules.md
-        - name: ルールセットの一覧を取得する
+        - name: ルールセットの一覧の取得
           href: checker/webapi/retrieve-rulesets.md
-        - name: 分析対象のファイルをアップロードする
+        - name: 分析用のファイルをアップロードします。
           href: checker/webapi/upload-file.md
-    - name: AppSource 上にアプリを公開する
+    - name: AppSource でアプリを公開する
       href: publish-app-appsource.md
       items:
-        - name: '手順 1: AppSource 上のアプリ送信フォームに入力する'
+        - name: '手順1: AppSource のアプリ提出フォームに入力する'
           href: fill-app-submission-form-appsource.md
         - name: '手順 2: Microsoft Partner Network アカウントを登録する'
           href: register-microsoft-partner-network.md
-        - name: 手順 3.アプリの管理ソリューションを作成する
+        - name: '手順3: アプリの管理ソリューションを作成する'
           href: create-solution-app-appsource.md
-        - name: 手順 4.アプリの AppSource パッケージを作成する
+        - name: '手順4: アプリの AppSource パッケージを作成する'
           href: create-package-app-appsource.md
-        - name: 手順 5.AppSource パッケージを Azure Storage に保存し、SAS キーで URL を生成する
+        - name: '手順 5: AppSource パッケージをAzureストレージに保存し、SASキーでURLを生成する'
           href: store-appsource-package-azure-storage.md
-        - name: 関連情報Cloud パートナー ポータル上のアプリの送信
+        - name: '次の手順: パートナーセンターにアプリケーションを送信する'
           href: next-steps-submit-app-cloud-partner-portal.md
-        - name: '付録: アプリのデザインのベスト プラクティスのチェックリスト'
+        - name: '付録: アプリ設計のベスト プラクティス チェックリスト'
           href: appendix-app-design-best-practices-checklist.md
-        - name: '付録: アプリの認定のチェックリスト'
+        - name: '付録: アプリの認証チェックリスト'
           href: appendix-app-certification-checklist.md
     - name: ISV アプリの管理と監視
       items:
@@ -389,27 +392,29 @@
       items:
         - name: .NET Framework アプリケーション
           href: authenticate-dot-net-framework.md
-        - name: OAuth を使用する
+        - name: OAuth を使用
           href: authenticate-oauth.md
-    - name: 'チュートリアル:Azure Active Directory にアプリを登録する'
+    - name: 'チュートリアル: アプリを Azure Active Directory に登録する'
       href: walkthrough-register-app-azure-active-directory.md
     - name: サーバー間 (S2S) の認証を使用して Web アプリケーションを作成する
       href: build-web-applications-server-server-s2s-authentication.md
       items:
         - name: マルチ テナント型でのサーバー間認証の使用
           href: use-multi-tenant-server-server-authentication.md
-        - name: 単一テナント型のサーバー間認証を使用する
+        - name: 単一テナント型のサーバー間認証の使用
           href: use-single-tenant-server-server-authentication.md
     - name: OAuth を使用するクロス オリジン リソース共有を使用して、単一のページ アプリケーションに接続する
       href: oauth-cross-origin-resource-sharing-connect-single-page-application.md
-    - name: 'チュートリアル:adal.js で SPA アプリケーションを登録および構成する'
+    - name: 'チュートリアル: adal.js で SPA アプリを登録および構成する'
       href: walkthrough-registering-configuring-simplespa-application-adal-js.md
-    - name: XRM ツールを使用して Windows クライアント アプリをビルドする
+    - name: XRM ツールを使用して Windows のクライアント アプリを作成する
       href: xrm-tooling/
-    - name: ユーザーの組織の検出
+    - name: ユーザー組織の検出
       href: discovery-service.md
 - name: ベスト プラクティス
   href: best-practices/index.md
+- name: オンライン管理 API
+  href: online-management-api/overview.md
 - name: サンプル
   items:
     - name: Web API
@@ -418,18 +423,18 @@
       href: org-service/samples/toc.yml
 - name: リソース
   items:
-    - name: 開発者向けリソース ページ
-      href: developer-resources-page.md
+    - name: 開発者リソース ページ
+      href: view-download-developer-resources.md
     - name: 開発者ツール
       href: developer-tools.md
       items:
-        - name: NuGet からツールをダウンロード
+        - name: NuGetからツールをダウンロードする
           href: download-tools-nuget.md
     - name: コミュニティ ツール
       href: community-tools.md
     - name: テスト ツール
       href: testing-tools-server.md
-- name: 参考資料
+- name: 参照
   items:
     - name: エンティティ参照
       href: reference/entities/toc.yml
@@ -441,7 +446,7 @@
       href: /dotnet/api/?view=dynamics-xrmtooling-ce-9
     - name: 仮想エンティティ
       href: /dotnet/api/?view=dynamics-virtualentity-ce-9
-    - name: Workflow
+    - name: ワークフロー
       href: /dotnet/api/?view=dynamics-workflow-ce-9
     - name: Package Deployer
       href: /dotnet/api/?view=dynamics-deployer-ce-9

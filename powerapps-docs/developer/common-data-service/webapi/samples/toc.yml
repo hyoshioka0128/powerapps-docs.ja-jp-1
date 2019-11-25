@@ -1,26 +1,26 @@
 - name: '(C#) データ操作のサンプル'
   items:
-    - name: 'C# サンプルを試す'
+    - name: 'C# サンプルの使用の開始'
       href: ../web-api-samples-csharp.md
     - name: 基本操作
       href: basic-operations-csharp.md
-    - name: クエリ データ
+    - name: データのクエリ
       href: query-data-csharp.md
-    - name: 条件付きの操作
+    - name: 条件付き演算
       href: conditional-operations-csharp.md
-    - name: 関数とアクション
+    - name: 機能およびアクション
       href: functions-actions-csharp.md
-- name: クライアント側 JavaScript データ操作のサンプル
+- name: クライアント側の JavaScript データ操作のサンプル
   items:
-    - name: クライアント側 JavaScript サンプルの使用を開始する
+    - name: クライアント側 JavaScript のサンプルを使用して開始する
       href: ../web-api-samples-client-side-javascript.md
     - name: 基本操作
       href: basic-operations-client-side-javascript.md
-    - name: クエリ データ
+    - name: データのクエリ
       href: query-data-client-side-javascript.md
-    - name: 条件付きの操作
+    - name: 条件付き演算
       href: conditional-operations-client-side-javascript.md
-    - name: 関数とアクション
+    - name: 機能およびアクション
       href: functions-actions-client-side-javascript.md
-- name: 'グローバル探索サービスのサンプル (C#)'
+- name: 'グローバル検索サービスのサンプル (C#)'
   href: global-discovery-service-csharp.md

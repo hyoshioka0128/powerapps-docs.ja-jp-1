@@ -1,6 +1,6 @@
 ---
-title: Common Data Service のエンティティおよびメタデータ | MicrosoftDocs
-description: Common Data Service のエンティティとメタデータについて
+title: Common Data Service におけるエンティティとメタデータ | MicrosoftDocs
+description: Common Data Service におけるエンティティとメタデータについて
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
@@ -9,30 +9,35 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 88b18946-474c-4c94-8e4c-27532f930757
 caps.latest.revision: 28
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3aeb07c29178570ca17426cca46dd7cbc73a2aca
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2706992"
 ---
+# <a name="entities-and-metadata-in-common-data-service"></a>Common Data Serviceにおけるエンティティとメタデータ
 
-# <a name="entities-and-metadata-in-common-data-service"></a>Common Data Service のエンティティおよびメタデータについて
+Common Data Service は、アプリケーションのデータ モデルを素早く簡単に作成できるように設計されています。 通常、このトピックで紹介されるメタデータの詳細の一部について懸念する必要はありません。 しかし、 Common Data Service を使用するアプリがどのように動作するかをより深く理解したい場合や、何が実現できるのかを判定したい場合は、 Common Data Service が使用するメタデータを理解することで何らかの洞察が得られるかもしれません。
 
-Common Data Service はアプリケーションのデータ モデルをすばやく簡単に作成できるように設計されています。 通常、このトピックで紹介されるメタデータの詳細の一部について懸念する必要はありません。 しかし、Common Data Service を使うアプリの作業方法および可能な情報の評価方法について深い理解をもとめるなら、Common Data Service で使用されるメタデータに関して本質的に理解できる可能性があります。
-
-*メタデータ* はデータに関するデータを意味します。 環境で使用するデータの定義の編集がかなり容易になるので、Common Data Service はユーザーに柔軟なプラットフォームを提供します。 Common Data Serviceで、メタデータはエンティティ コレクションです。 エンティティは、データベースに保存されているデータの種類について説明します。  各エンティティはデータベース テーブルに対応して、エンティティ内の各フィールド (属性) はテーブル内の列を表します。 エンティティ メタデータは、作成できるレコードの種類と、それらのレコードに対して実行できるアクションの種類を制御するものです。 エンティティ、フィールドおよびエンティティの関連付けを作成または編集するためにカスタマイズ ツールを使用する場合は、このメタデータを編集します。 
+*メタデータ* はデータに関するデータを意味します。 Common Data Service は、環境で使用するデータの定義の編集がかなり容易になるので、ユーザーに柔軟なプラットフォームを提供します。 Common Data Service では、メタデータではエンティティの集合です。 エンティティは、データベースに保存されているデータの種類について説明します。  各エンティティはデータベース テーブルに対応して、エンティティ内の各フィールド (属性) はテーブル内の列を表します。 エンティティ メタデータは、作成できるレコードの種類と、それらのレコードに対して実行できるアクションの種類を制御するものです。 エンティティ、フィールドおよびエンティティの関連付けを作成または編集するためにカスタマイズ ツールを使用する場合は、このメタデータを編集します。 
   
 自分の環境内のデータとやり取りするために使用するさまざまなクライアントは、カスタマイズするメタデータによって異なり、エンティティ メタデータの変更に応じて変化します。 しかし、これらのクライアントも他のデータに依存して、表示するビジュアル要素、適用するユーザー定義ロジック、およびセキュリティの適用方法を制御します。 このシステム データもエンティティ内に格納されますが、エンティティ自体はカスタマイズに使用できません。
 
-Common Data Service で既定に含まれる標準エンティティ、属性およびエンティティの関連付けについては、[エンティティの参照](/powerapps/developer/common-data-service/reference/about-entity-reference) を確認してください。
+[エンティティのリファレンス](/powerapps/developer/common-data-service/reference/about-entity-reference) を確認することで、 Common Data Service に既定でで含まれている標準エンティティ、属性、およびエンティティ関係について学習できます。
 
 > [!TIP]
 > メタデータを編集できるデザイナーは、メタデータにあるすべての詳細を表示できません。 システムにあるメタデータ プロパティとすべてのエンティティを表示できるように、**メタデータ ブラウザ**というモデル駆動型のアプリをインストールできます。 詳細: [環境に適切なメタデータ ブラウザ](https://docs.microsoft.com/dynamics365/customer-engagement/developer/browse-your-metadata) を参照してください。
@@ -41,7 +46,7 @@ Common Data Service で既定に含まれる標準エンティティ、属性お
 
 ## <a name="create-new-metadata-or-use-existing-metadata"></a>メタデータの新規作成、または既存のメタデータの使用か。
 
-Common Data Service にはコアの業務アプリケーション機能をサポートする多くの標準エンティティが用意されています。 たとえば、顧客と潜在顧客に関するデータは、取引先企業または取引先担当者エンティティを使用して保存されるようになっています。  
+Common Data Service には、コア ビジネス アプリケーション機能をサポートする多くのの標準エンティティーが付属しています。 たとえば、顧客と潜在顧客に関するデータは、取引先企業または取引先担当者エンティティを使用して保存されるようになっています。  
   
 これらの各エンティティには、 システムが各エンティティについて保存が必要と考える共通データを表す複数のフィールドも含まれています。  
   

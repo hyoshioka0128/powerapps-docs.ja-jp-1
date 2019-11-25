@@ -10,14 +10,20 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2883724215396161a53d46de6cbb72e5a0f0b92b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749216"
 ---
 # <a name="specify-time-zone-settings-for-a-user"></a>ユーザーのタイム ゾーンの設定
 
-`UserSettings` エンティティを使用して、Common Data Service でユーザーのタイム ゾーンの設定を指定します。 タイム ゾーンに関連する `UserSettings` エンティティについて、次の属性が公開されています。 `UserSettings` エンティティのタイム ゾーン属性のデータ型はすべて `Integer` です。  
+Common Data Service でユーザー のタイム ゾーンの設定を指定するには、`UserSettings` エンティティを使用します。 タイム ゾーンに関連する `UserSettings` エンティティについて、次の属性が公開されています。 `UserSettings` エンティティのタイム ゾーン属性のデータ型はすべて `Integer` です。  
 
 
 |       属性名        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                      説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

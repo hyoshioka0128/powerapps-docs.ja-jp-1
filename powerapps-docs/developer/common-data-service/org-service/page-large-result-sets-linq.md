@@ -6,18 +6,24 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 386708448701c05a0896fcf05333c9054c350743
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748966"
 ---
 # <a name="page-large-result-sets-with-linq"></a>LINQ による大量の結果セットのページング
 
-Common Data Service で、`Take` および `Skip` 演算子を使用して大規模な .NET 統合言語クエリ (LINQ) のクエリ結果をページングできます。 `Take` 演算子は指定された数の結果を取得し、`Skip` 演算子は指定された数の結果をスキップします。  
+Common Data Service では、 `Take` および `Skip`  演算子を使用して大規模な .NET 言語統合クエリ (LINQ) の結果をページングできます。 `Take` 演算子は指定された数の結果を取得し、`Skip` 演算子は指定された数の結果をスキップします。  
   
 ## <a name="linq-paging-example"></a>LINQ ページングの例  
 

@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2c16f63c6c98c027dca30888e8283efed29df085
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749201"
 ---
 # <a name="use-single-tenant-server-to-server-authentication"></a>単一テナント型のサーバー間認証を使用する
 
@@ -52,7 +58,7 @@ Azure AD アプリケーション登録を作成するには、次の手順に�
 7. **+ アクセス許可の追加** を選択します
 8. **Microsoft APIs** タブで、**Dynamics CRM** を選択します
 9. **API アクセス許可の要求** フォームで、**委任されたアクセス許可** を選択し、**user_impersonation** を確認して、**アクセス許可の追加**を選択します <br />![API アクセス許可の設定](media/S2S-api-permission-started.PNG)
-10. **API のアクセス許可**ページの下部の**同意する** で、**「org-name」 に管理者の同意を与える**を選択し、確認メッセージが表示されたら **はい** を選択します <br />![API アクセス許可を付与しています](media/S2S-api-permission-completed.PNG)
+10. **API のアクセス許可**ページの下部の**同意する** で、**org-name に管理者の同意を与える**を選択し、確認メッセージが表示されたら **はい** を選択します <br />![API アクセス許可を付与しています](media/S2S-api-permission-completed.PNG)
 11. ナビゲーション ウィンドウの **概要** をクリックし、アプリ登録の **表示名**、**アプリケーション ID**、**ディレクトリ ID** の値を記録します。 これらの値は、後でコード サンプルで指定します。
 12. ナビゲーション ウィンドウで、**証明書とシークレット** を選択します
 13. **クライアント シークレット** で、**新しいクライアント シークレットの追加** を選択してシークレットを作成します
@@ -65,7 +71,7 @@ Dynamics 365 組織でライセンスを付与されていない「アプリケ�
 1. Azure Active Directory管理センターに移動します
 2. 左のナビゲーション ウィンドウで、**ユーザー** を選択します
 3. **+ 新しいユーザー** を選択します
-4. **ユーザー** フォームで、新しいユーザーの名前とユーザー名を入力し、**作成** を選択します。 ユーザー名に D365 テナントの組織ドメイン URL が含まれていることを確認します (たとえば、someuser@myorg.onmicrosoft.com)。 これで、Azure ADを終了できます。
+4. **ユーザー** フォームで、新しいユーザーの名前とユーザー名を入力し、**作成** を選択します。 ユーザー名に D365 テナントの組織ドメイン URL が含まれていることを確認します（すなわち、someuser@myorg.onmicrosoft.com）。 これで、Azure ADを終了できます。
 5. D365 組織に移動します。
 6. **設定** > **セキュリティ** > **ユーザー**の順に移動します
 7. ビュー フィルターで **アプリケーション ユーザー** を選択します

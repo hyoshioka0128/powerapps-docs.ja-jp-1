@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 75bccd3cbc7425279338fa58bd77592fbc5c3d64
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749099"
 ---
 # <a name="test-webhook-registration-with-request-logging-site"></a>要求ログ サイトで webhook 登録をテストする 
 
@@ -27,7 +33,7 @@ webhook を使用するサービスを作成または構成する前に、処理
     1. 名前と希望する認証プロパティを設定します。 webhook テスターは、データを処理する実際のサイトのようにこれらの値を評価しませんが、どのように受け渡されるかを確認することはできます。
 1. 「[webhook のステップの登録](register-web-hook.md#register-a-step-for-a-webhook)」で説明されているように、ステップ 4 で作成した webhook を使用してプラグイン登録ツールを活用しながらステップを登録します。 
     1. 取引先担当者エンティティの更新など、Common Data Service アプリケーションのデータを編集して簡単に実行できるイベントを使用します。
-1. Common Data Service アプリを使用して、イベントをトリガーする操作を実行します。
+1. Common Data Service アプリケーションを使用して、イベントをトリガーする操作を実行します。
 1. イベントをトリガーした後、ステップ 2 から CDS for Apps テスター ページに戻り、ページを更新します。 ページが更新され、要求で渡されるデータが表示されたことがわかります。
 
     ![Webhook テスター Web サイトでログされた要求の例](media/webhook-tester-example.png)

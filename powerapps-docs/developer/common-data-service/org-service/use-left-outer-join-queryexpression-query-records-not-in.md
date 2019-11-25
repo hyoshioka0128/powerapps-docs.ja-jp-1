@@ -1,19 +1,25 @@
 ---
-title: QueryExpression の左外部結合を &quot;not in&quot; レコードのクエリに使用する (Common Data Service) | Microsoft Docs
+title: 左外部結合を QueryExpression で使用して &quot;存在しない&quot; 記録をクエリする (Common Data Service) | Microsoft Docs
 description: 左外部結合を QueryExpression クラスで使用して、結合の表をフィルタリングするクエリを実行して、セットに &quot;存在しない&quot; 記録を探すクエリを作成する方法について説明します
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 009621e7e749255d64eae851629e5d7f0bd61e79
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749261"
 ---
 # <a name="use-a-left-outer-join-in-queryexpression-to-query-for-records-not-in"></a>左外部結合を QueryExpression で使用して "存在しない" 記録をクエリする
 

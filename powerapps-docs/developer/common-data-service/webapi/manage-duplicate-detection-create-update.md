@@ -1,5 +1,5 @@
 ---
-title: Web API を使用した重複データの検出 (Common Data Service) | Microsoft Docs
+title: Web API を使用して重複データを検出する (Common Data Service) | Microsoft Docs
 description: MSCRM.SuppressDuplicateDetection ヘッダーおよび Common Data Service Web API を使用して重複データを検出する方法の説明
 ms.custom: ''
 ms.date: 10/31/2018
@@ -8,19 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: AE107774-4545-44B4-94C8-A0271EFA7876
 caps.latest.revision: 11
 author: susikka
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e563b0bb6800f6c9028cb29993fd7b79908975c3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749192"
 ---
-
 # <a name="detect-duplicate-data-using-the-web-api"></a>Web API を使用した重複データの検出
 
 Common Data Service Web API を使用すると、データの整合性を維持するために、既存のレコードの重複レコードを検出できます。 コードを使用した重複データの検出の詳細については、[コードを使用した重複データの検出](../detect-duplicate-data-with-code.md) を参照してください。 
@@ -39,7 +44,7 @@ Common Data Service Web API を使用すると、データの整合性を維持�
 
 
 > [!NOTE]
-> 適切な重複データ検出ルールが存在することを確認します。 Common Data Service には、取引先企業、取引先担当者、および潜在顧客のための既定の重複データ検出ルールが含まれますが、他のレコードの種類のための既定のルールは含まれません。 システムが他のレコードの種類の重複データを検出するようにするには、新しいルールを作成する必要があります。 <br/>- UI を使用して重複データの検出ルールを作成する方法については、[データを整理するための重複データ検出ルールの設定](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean) を参照してください。<br/>- コードを使用して重複データ検出ルールを作成する方法の詳細については、[重複ルール エンティティを参照します](../duplicaterule-entities.md) 
+> 適切な重複データ検出ルールが存在することを確認します。 Common Data Service には、取引先企業、取引先担当者、および潜在顧客のための既定の重複データ検出ルールが組み込まれています。他のレコードの種類のための既定のルールは存在しません。 システムが他のレコードの種類の重複データを検出するようにするには、新しいルールを作成する必要があります。 <br/>- UI を使用して重複データの検出ルールを作成する方法については、[データを整理するための重複データ検出ルールの設定](/dynamics365/customer-engagement/admin/set-up-duplicate-detection-rules-keep-data-clean) を参照してください。<br/>- コードを使用して重複データ検出ルールを作成する方法の詳細については、[重複ルール エンティティを参照します](../duplicaterule-entities.md) 
 
 
 

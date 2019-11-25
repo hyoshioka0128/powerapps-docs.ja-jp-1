@@ -6,18 +6,24 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0fe094ecd43483d0fb6d91d5dcabd15b87472ee7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749256"
 ---
 # <a name="use-the-columnset-class"></a>ColumnSet クラスの使用
 
-Common Data Service で、<xref:Microsoft.Xrm.Sdk.Query.ColumnSet> クラスを使用して、<xref:Microsoft.Xrm.Sdk.Query.QueryExpression> および <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute> クラスを使用して定義されるクエリから返す属性を指定できます。 さらに、<xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*> のパラメーターです。 方法と、<xref:Microsoft.Xrm.Sdk.EntityCollection> のデータを返すいくつかのメッセージ要求クラスでプロパティとして使用されます。
+Common Data Serviceでは、<xref:Microsoft.Xrm.Sdk.Query.ColumnSet>クラスを使用して <xref:Microsoft.Xrm.Sdk.Query.QueryExpression>および <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute>クラスを使用して定義されたクエリから返す属性を指定できます。 さらに、<xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Retrieve*> のパラメーターです。 方法と、<xref:Microsoft.Xrm.Sdk.EntityCollection> のデータを返すいくつかのメッセージ要求クラスでプロパティとして使用されます。
 
 > [!NOTE]
 > <xref:Microsoft.Xrm.Sdk.Query.ColumnSet> クラスにはエンティティのすべての列が戻るように指定する <xref:Microsoft.Xrm.Sdk.Query.ColumnSet.AllColumns> プロパティがあります。 パフォーマンスのベスト プラクティスとして、運用コードにこれを使用しないでください。 詳細: [クエリ API を使用してエンティティのすべての列を取得することはできません](/dynamics365/customer-engagement/guidance/data/retrieve-specific-columns-entity-via-query-apis)

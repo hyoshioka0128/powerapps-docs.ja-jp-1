@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b0bcb58ceab5c0fd711bbe7316b93ce2b8c036e8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748948"
 ---
 # <a name="set-field-values-using-parameters-passed-to-a-form"></a>フォームに渡すパラメーターを使用してフィールド値を設定する
 

@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7434dd58137919d81486539d1ab843ad0c4aaf1f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748797"
 ---
 # <a name="duplicate-rule-entities"></a>重複ルール エンティティ
 

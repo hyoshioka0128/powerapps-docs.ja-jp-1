@@ -13,12 +13,17 @@ ms.component: model
 ms.date: 03/19/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1c44bd0ce65bd995d79f291bd6af36193c4165a5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711084"
 ---
-
 # <a name="share-a-model-driven-app-with-powerapps"></a>PowerApps を使用してモデル駆動型アプリを共有する
 
 [!INCLUDE [powerapps](../../includes/powerapps.md)] アプリは、共有にロールベースのセキュリティを使用します。 ロールベースのセキュリティの基本概念は、セキュリティ ロールにはアプリ内で実行できる一連の操作を定義する特権が含まれるということです。 すべてのアプリ ユーザーは、これらの中で 1 つ以上の定義済みロールまたはユーザー定義ロールに割り当てられる必要があります。 または、チームにもロールを割り当てることができます。 これらのロールのいずれかにユーザーまたはチームを割り当てると、そのロールに関連付けられた一連の特権がユーザーまたはチーム メンバーに付与されます。 

@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fa10c95e2b5345f70399d1b19c5e0df0bf1f8527
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748841"
 ---
 # <a name="activityparty-entity"></a>ActivityParty エンティティ
 
@@ -41,7 +47,7 @@ search.app:
   
 <a name="SupportedActivityPartyTypes"></a>   
 ## <a name="activity-party-types-available-for-each-activity"></a>それぞれの活動で使用可能な活動関係者の種類  
- ユーザー定義の活動を除き、Common Data Service の各活動ですべての活動関係者タイプを使用できません。 カスタム活動ではすべての活動関係者の種類をサポートします。 活動のそれぞれの属性を使用することにより、活動の活動関係者の種類を関連付けることができます。 たとえば、活動関係者の種類 `Organizer` を予定活動に関連付けるには、`Appointment.Organizer` 属性の `ActivityParty` 種類の値の配列を指定する必要があります。  
+ Common Data Service のそれぞれの活動において (カスタム活動を除く)、活動関係者のすべての種類が使用可能なわけではありません。 カスタム活動ではすべての活動関係者の種類をサポートします。 活動のそれぞれの属性を使用することにより、活動の活動関係者の種類を関連付けることができます。 たとえば、活動関係者の種類 `Organizer` を予定活動に関連付けるには、`Appointment.Organizer` 属性の `ActivityParty` 種類の値の配列を指定する必要があります。  
   
  活動関係者に電子メールを送信するために使用する電子メール アドレス、または活動関係者からの電子メールに返信するために使用する電子メール アドレスを制御するには、`ActivityParty.AddressUsed` 属性を設定します。  
   

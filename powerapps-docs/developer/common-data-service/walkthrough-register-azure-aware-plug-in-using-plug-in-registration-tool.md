@@ -4,21 +4,24 @@ description: 'このチュートリアルでは、プラグイン登録ツール
 keywords: ''
 ms.date: 06/01/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: b5ef50fa-8085-f425-3968-804d012fc840
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bf065cc4b2eb1c76156e5373fecfc0193a870380
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749078"
 ---
-
 # <a name="tutorial-register-an-azure-aware-plug-in-using-the-plug-in-registration-tool"></a>チュートリアル: プラグイン登録ツールを使用した Azure 対応プラグインの登録
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool -->
@@ -64,7 +67,7 @@ search.app:
   
 1. 対象組織のタブのタブの既存のサービス エンドポイントを選択します。  
 1. **登録**メニューに移動し、**新しい手順の登録**をクリックします。  
-1. 次の図のように、**新しい手順の登録**ダイアログ ボックスにアカウント作成イベントの情報を入力します。
+1. 次の図のように、**新しい手順の登録** ダイアログ ボックスにアカウント作成イベントの情報を入力します。
 
     ![サービス エンドポイントの手順の作成](media/crm-v6s-pr-service-endpoint-step.png "サービス エンドポイントの手順の作成")
   

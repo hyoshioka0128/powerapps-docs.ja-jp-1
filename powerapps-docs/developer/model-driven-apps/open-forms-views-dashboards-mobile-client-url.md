@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0c4e3c0fe4188b3b9f2d95cb479a23f6e54c193b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748846"
 ---
 # <a name="open-forms-views-and-dashboards-in-mobile-client-with-a-url"></a>URL を使用してモバイル クライアントでフォーム、ビュー、およびダッシュ ボードを開く
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/open-forms-views-dashboards-mobile-client-url
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/open-forms-views-dashboards-mobile-client-url
 
 At this point I understand this mobile client is still branded as 'Dynamics 365'
  -->

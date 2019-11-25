@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2053cb6fac411db7528d841cf76ea090ced136c9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749031"
 ---
 # <a name="web-resources-in-model-driven-apps"></a>モデル駆動型アプリの Web リソース
 
@@ -24,19 +30,19 @@ Web リソースは Common Data Service データベースに保存されてい�
   
 <a name="BKMK_CapabilitiesOfWebResources"></a>   
 ## <a name="capabilities-of-web-resources"></a>Web リソースの機能  
- Web リソースとは、html ファイル、JavaScript および CSS などの Common Data Service Web アプリケーションの拡張に使用できるファイル、またいくつかの画像の形式を意味します。 Web リソースは URL 構文を使用して参照できるので、フォームのカスタマイズ、`SiteMap`、またはアプリケーション リボンに使用できます。  
+ Web リソースは、HTML ファイル、JavaScript、CSS、およびいくつかの画像形式など、Common Data Service Webアプリケーションを拡張するために使用できるファイルを表します。 Web リソースは URL 構文を使用して参照できるので、フォームのカスタマイズ、`SiteMap`、またはアプリケーション リボンに使用できます。  
   
  Web リソースの URL 構文では、相対パス参照が許可されています。 開発ツールで、Web リソースと互換性のあるファイル タイプを使用することにより、開発サーバー上に相互依存ファイルのグループを作成できます。 一貫した命名規則と相対パス参照を使用する場合、すべてのファイルを Common Data Service にアップロードした後で、Web サイトが機能します。
   
- Web リソースは Common Data Service に保存されており、ソリューション コンポーネントなので、簡単にエクスポートして、他の Common Data Service 組織にインストールできます。 Web リソースは、ユーザーのデータと同期している場合、オフライン アクセス対応 Microsoft Office Outlook の Common Data Service のユーザーも使用できます。  
+ Web リソースは Common Data Service に保存されており、ソリューション コンポーネントなので、簡単にエクスポートして、他の Common Data Service 組織にインストールできます。 Web リソースは Microsoft Office Outlook の Common Data Service ユーザーのデータと同期しているため、オフライン時にも使用できます。  
   
  フォーム エディターを使用して、フォーム対応の Web リソースをエンティティ フォームに追加し、構成できます。  
   
- Web リソースはレコードとしてデータベースに保存されているので、レコードを作成、取得、更新する標準的な手法を使用して、プログラムによって管理できます。 テキストベースの Web リソース (JScript、CSS、XML、RESX、HTML) は、アプリケーションで編集して保存できます。  
+ Web リソースはレコードとしてデータベースに保存されているので、レコードを作成、取得、更新する標準的な手法を使用して、プログラムによって管理できます。 テキストベースの Web リソース (JScript、CSS、XML、XSL、RESX、HTML) は、アプリケーションで編集して保存できます。  
   
 <a name="BKMK_LimitationsOfWebResources"></a>   
 ### <a name="limitations-of-web-resources"></a>Web リソースに関する制限事項  
- サーバー上でコードを実行するための ASP.NET (.aspx) ページの機能をサポートしている Web リソースの種類はありません。 Web リソースは、ブラウザーで処理される静的ファイルに限られています。 Web リソースには、Web サービス呼び出しを実行して Common Data Service データを操作するためにブラウザーで処理されるコードを含めることができます。
+ サーバー上でコードを実行するための ASP.NET(.aspx) ページの機能をサポートしている Web リソースの種類はありません。 Web リソースは、ブラウザーで処理される静的ファイルに限られています。 Web リソースには、Web サービス呼び出しを実行して Common Data Service データを操作するためにブラウザーで処理されるコードを含めることができます。
   
  Web リソースは、Common Data Service Web アプリケーションのセキュリティ コンテキストを使用してのみ、使用できます。 スクリプト Web リソースにアクセスできるのは、必要な特権を持つ、ライセンスを受けた Common Data Service ユーザーだけです。  
   
@@ -47,7 +53,7 @@ Web リソースは Common Data Service データベースに保存されてい�
 ## <a name="web-resource-types"></a>Web リソースの種類  
  web リソースの作成には 10 種類のファイル形式を使用できます。 次の表は、それぞれで使用する各ファイル形式、許可されているファイル拡張子、種類の値の一覧を示します。  
   
-|ファイル|ファイル拡張子|種類|  
+|ファイル|ファイル拡張子|型|  
 |----------|---------------------|----------|  
 |Web ページ (HTML)|.htm、.html|1|  
 |スタイル シート (CSS)|.css|2|  
@@ -121,7 +127,7 @@ $webresource:<name of Web Resource>
   
  カスタマイズを公開するとバージョン値が更新され、ブラウザーで最新のキャッシュ済み Web リソースが確実に使用されます。 このため、Web リソースの相対パスか、Xrm.Navigation.[openWebResource](clientapi/reference/Xrm-Navigation/openWebResource.md) 関数、または可能であれば [$webresource ディレクティブ](web-resources.md#BKMK_WebResourceDirective) を使用します (バージョン値が自動的に含められるためです)。 大きな Web リソースの場合、ファイルのキャッシュされたバージョンを使用しないと、パフォーマンスにかなりの影響がある場合があります。  
   
- 次のサンプルは、Common Data Service の URLを示しており、ここで、`MyOrganization` は Common Data Service 環境名、`new_/test/test.htm` は web リソース名です。  
+ 次のサンプルは、Common Data Service の URL を示しており、ここで、`MyOrganization` はCommon Data Service 環境名で、`new_/test/test.htm` は Web リソース名です。  
   
 ```  
 https://MyOrganization.crm.dynamics.com/WebResources/new_/test/test.htm  
@@ -135,10 +141,10 @@ https://MyOrganization.crm.dynamics.com/WebResources/new_/test/test.htm
 
 ## <a name="community-tools"></a>コミュニティ ツール
 
-**WebResources マネージャー** は Common Data Service 用に XrmToolbox コミュニティが開発したツールです。 コミュニティ開発ツールのトピック、[開発者ツール](developer-tools.md) を参照してください。
+**WebResources マネージャー**は、Common Data Service 用に XrmToolbox コミュニティが開発したツールです。 コミュニティ開発ツールのトピック、[開発者ツール](developer-tools.md) を参照してください。
 
 > [!NOTE]
-> コミュニティ ツールは Common Data Service の製品ではなく、コミュニティ ツールに対するサポートは提供されません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。 
+> コミュニティ ツールは Common Data Service の製品ではなく、コミュニティ ツールに対するサポートは提供しません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。 
   
 ### <a name="see-also"></a>関連項目  
 

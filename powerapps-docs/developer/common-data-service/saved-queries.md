@@ -1,19 +1,25 @@
 ---
-title: 保存されたクエリ (Common Data Service) | Microsoft Docs
+title: 保存済みクエリ (Common Data Service) | Microsoft Docs
 description: Common Data Service で保存されたクエリによって検索環境を拡張する方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c466cb19fcc1b350fda1b85a05c24c2231d14815
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749228"
 ---
 # <a name="saved-queries"></a>保存済みクエリ
 

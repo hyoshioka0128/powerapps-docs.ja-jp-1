@@ -1,5 +1,5 @@
 ---
-title: 'チュートリアル: プラグインの更新 (Common Data Service) | Microsoft Docs'
+title: 'チュートリアル: プラグインを更新する (Common Data Service)| Microsoft Docs'
 description: 'このチュートリアルでは、プラグインの使用方法を説明するシリーズの 3 番目のチュートリアルです。 '
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e28493c3790e49e616157124d49acae65c5bd9a0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749205"
 ---
 # <a name="tutorial-update-a-plug-in"></a>チュートリアル: プラグインを更新する
 
@@ -59,7 +65,7 @@ search.app:
 
 ## <a name="create-a-new-plug-in-class"></a>新しいプラグイン クラスの作成
 
-1. Visual Studio で、`ValidateAccountName.cs` という名前の **BasicPlugin** プロジェクトに新しいクラスを追加します。
+1. Visual Studio で、`ValidateAccountName.cs` という名前の **BasicPlugin** プロジェクトへ新しいクラスを追加します。
 1. 次のコードをクラスに追加して、アセンブリを再作成します。
 
 

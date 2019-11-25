@@ -1,5 +1,5 @@
 ---
-title: Web API を使用したエンティティ定義の作成および更新 (Common Data Service) | Microsoft Docs
+title: Web API を使用してエンティティ定義を作成、更新する (Common Data Service) | Microsoft Docs
 description: Web API を使用したエンティティ定義の作成と更新について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 1f430d2d-e829-4ffa-922e-dfcfb7c9e86e
 caps.latest.revision: 24
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4718f47247907c7c3af6f826829a985b56a5ff08
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748936"
 ---
 # <a name="create-and-update-entity-definitions-using-the-web-api"></a>Web API を使用してエンティティ定義を作成および更新
 
@@ -497,7 +503,7 @@ OData-Version: 4.0
 |MaxLength|100|  
 |FormatName|テキスト|  
   
-次の例では、これらのプロパティを使用して文字列属性を作成し、その日時属性を MetadataId の値が 402fa40f-287c-e511-80d2-00155d2a68d2 のエンティティに追加します。
+次の例では、プロパティーを使用して文字列属性を作成し、MetadataId の値である 402fa40f-287c-e511-80d2-00155d2a68d2 とともにエンティティーに追加します。
 
 この属性の URI が応答で返されます。  
   
@@ -573,7 +579,7 @@ OData-EntityId: [Organization URI]/api/data/v9.0/EntityDefinitions(402fa40f-287c
 
 
   
-次の例では、これらのプロパティを使用して通貨属性を作成し、その日時属性を MetadataId の値が 402fa40f-287c-e511-80d2-00155d2a68d2 のエンティティに追加します。 この属性の URI が応答で返されます。  
+次の例では、プロパティーを使用してマネー属性を作成し、MetadataId の値である 402fa40f-287c-e511-80d2-00155d2a68d2 とともにエンティティーに追加します。 この属性の URI が応答で返されます。  
   
  **要求**  
 ```http   
@@ -640,7 +646,7 @@ OData-EntityId: [Organization URI]/api/data/v9.0/EntityDefinitions(402fa40f-287c
 |RequiredLevel|なし|  
 |書式|DateOnly **注:** このプロパティの有効なオプションについては、<xref href="Microsoft.Dynamics.CRM.DateTimeFormat?text=DateTimeFormat EnumType" /> を参照してください。|  
   
-次の例では、これらのプロパティを使用して日付属性を作成し、その日時属性を MetadataId の値が 402fa40f-287c-e511-80d2-00155d2a68d2 のエンティティに追加します。 この属性の URI が応答で返されます。  
+次の例では、プロパティーを使用して日付属性を作成し、MetadataId の値である 402fa40f-287c-e511-80d2-00155d2a68d2 とともにエンティティーに追加します。 この属性の URI が応答で返されます。  
   
  **要求**
 
@@ -792,7 +798,7 @@ OData-Version: 4.0
   
 ### <a name="see-also"></a>関連項目
 
-[Web API を Common Data Service メタデータで使用する](use-web-api-metadata.md)<br />
+[Common Data Service メタデータで Web API を使用する](use-web-api-metadata.md)<br />
 [Web API を使用したクエリ メタデータ](query-metadata-web-api.md)<br />
 [名前または MetadataId でのメタデータの取得](retrieve-metadata-name-metadataid.md)<br />
 [Web API を使用したエンティティ関係のモデリング](create-update-entity-relationships-using-web-api.md)<br />

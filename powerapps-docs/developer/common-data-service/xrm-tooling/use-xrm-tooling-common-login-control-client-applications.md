@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: f77b2a20-0a30-4211-a1d9-74923d3eeae1
 caps.latest.revision: 27
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 28342954a5ee996b151265f738673ffef3b4b0d2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749066"
 ---
 # <a name="use-the-xrm-tooling-common-login-control-in-your-client-applications"></a>クライアント アプリケーションで、XRM ツール共通ログイン コントロールを使用する
 
@@ -32,7 +38,7 @@ Visual Studio 用テンプレートが用意されており、これによりク
 ## <a name="prerequisites"></a>前提条件
   
 - .NET Framework 4.6.2 以上。
-- Visual Studio 2017 (推奨)
+- Visual Studio (2017 推奨)
 - プロジェクト テンプレート使用時に必要な Nuget パッケージをダウンロード/復元できるように、インターネットに接続していること。  
   
 <a name="NewProjectUsingTemplate"></a>
@@ -41,22 +47,22 @@ Visual Studio 用テンプレートが用意されており、これによりク
   
 これは、認証、資格情報の保管と再利用、および既定のトレースまたはロギングのために、共通ログイン コントロールおよび基本コード活用する **Windows Presentation Foundation (WPF)** アプリケーションを、素早く作成する方法です。  
   
-1.  Visual Studio を起動し、新しいプロジェクトを作成します。  
-2.  **新しいプロジェクト** ダイアログ ボックスで以下を実行します。  
-    1.  インストールされたテンプレートの一覧から **Visual C#** を展開して、**Common Data Service SDK のテンプレート** を選択します。  
-    2.  **.NET Framework 4.6.2** が選択されていることを確認します。  
+1.  Visual Studioを起動し、新しいプロジェクトを作成します。  
+2.  **新しいプロジェクト**ダイアログ ボックスで以下を実行します。  
+    1.  インストールされているテンプレートの一覧から、**Visual C#** を展開し、**Common Data Service SDK テンプレート**を選択します。  
+    2.  **.NET Framework 4.6.2**が選択されていることを確認します。  
     3.  **Dynamics 365 用 WPF アプリケーション**を選択します。  
     4.  プロジェクトの名前と場所を指定し、**OK** をクリックします。  
   
      > [!div class="mx-imgBorder"]
-     > ![Common Data Service テンプレート用の WPF アプリケーション](../media/crm-sdk-v6-xrm-tooling-newproject.png "Common Data Service テンプレート用の WPF アプリケーション")   
+     > ![Common Data Service のテンプレートの WPF アプリケーション](../media/crm-sdk-v6-xrm-tooling-newproject.png "Common Data Service のテンプレートの WPF アプリケーション")   
 
 > [!NOTE]
 > **Visual Studio 2015 に関する既知の問題**
 > 
 > VS 2015 のデバッグモードでプロジェクト/ソリューションを実行していると、接続できなくなることがあります。 これは、4.6.2 以降のターゲットフレームワークを使用しているかどうかにかかわらず発生します。 これは、Visual Studio ホスティングプロセスが .NET 4.5 に対してコンパイルされているために発生します。これは既定で TLS 1.2 がサポートされていないことを意味します。 回避策として、Visual Studio ホスティング プロセスを無効にできます。 
 >
-> Visual Studio でプロジェクトの名前を右クリックしてから、**プロパティ**をクリックします。 **デバッグ**タブで、**Visual Studio ホスティング プロセスの無効化**オプションをオフにできます。 
+> Visual Studio でプロジェクトの名前を右クリックしてから、**プロパティ**をクリックします。 **デバッグ**タブで、**Visual Studio ホスティング プロセスの有効化**オプションをオフにできます。 
 >
 > これは、VS 2015 のデバッグ エクスペリエンスにのみ影響を与えます。 これは構築されるバイナリまたは実行可能ファイルには影響しません。 同じ問題は、Visual Studio 2017 では発生しません。
   
@@ -64,10 +70,10 @@ Visual Studio 用テンプレートが用意されており、これによりク
   
     1. プロジェクトを保存して **F5** を押すか、**デバッグ** > **デバッグの開始** の順にクリックして、プロジェクトが正常にコンパイルされるか確認します。 コンパイルが成功すると、MainWindow が **Dynamics 365 にログイン**ボタンと共に表示されます。 ボタンをクリックして共通ログイン コントロールを表示します。  
 
-    2.  Common Data Service に接続するための資格情報を提供して認証をテストし、**ログイン** をクリックします。 メッセージに Common Data Service の接続状態が表示されます。  
+    2.  Common Data Service に接続するための資格情報を提供して認証をテストし、**ログイン**をクリックします。 メッセージに Common Data Service 接続状況が表示されます。  
 
   
- Common Data Service に接続して種々の操作を実行する共通ログイン コントロールのテンプレートを使用するサンプルについては、[サンプル: XRM ツール API のクイック スタート](sample-quick-start-xrm-tooling-api.md) を参照してください。  
+ Common Data Service に接続して種々の操作を実行するための、共通ログイン コントロールのテンプレートを使用するサンプルについては、「[サンプル: XRM ツール API のクイック スタート](sample-quick-start-xrm-tooling-api.md)」を参照してください。  
   
 <a name="Add"></a>
 
@@ -82,25 +88,25 @@ Visual Studio 用テンプレートが用意されており、これによりク
     1. **ソリューション エクスプローラー**ウィンドウで、オブジェクト名を右クリックし、**追加** > **新しい項目**の順にクリックします。  
   
 
-    2.  **新しい項目の追加** ダイアログ ボックスの、インストールされているテンプレートの一覧から、**Visual C#** を展開し、**Common Data Service SDK のテンプレート** を選択します。 **WPF アプリケーション用 Common Data Service のログイン フォーム** をクリックし、**OK** をクリックします。  
+    2.  **新しい項目の追加** ダイアログ ボックスの、インストールされているテンプレートの一覧から、**Visual C#** を展開し、**Common Data Service SDK のテンプレート** を選択します。 WPF アプリケーション用 **Common Data Service ログオン フォーム** をクリックし、**OK** をクリックします。  
 
           > [!div class="mx-imgBorder"]
           > ![共通ログイン コントロール テンプレートの追加](../media/crm-sdk-v6-xrmtooling-addtemplate01.png "共通ログイン コントロール テンプレートの追加")
   
-3. 新たに追加された `CrmLoginForm1.xaml` ログイン コントロールは XAML デザイナー領域に表示されます。 表示されない場合は、**ソリューション エクスプローラー**ウィンドウで、`CrmLoginForm1.xaml` ファイルをダブルクリックします。  
+3. 新たに追加された `CrmLoginForm1.xaml` ログイン コントロールは XAML デザイナー領域に表示されます。 表示されない場合は、**ソリューション エクスプローラー** ウィンドウで、`CrmLoginForm1.xaml` ファイルをダブルクリックします。  
   
     > [!div class="mx-imgBorder"]
     > ![ログインのコントロールが適切に表示されるか検証](../media/crm-sdk-v6-xrmtooling-addtemplate03.png "ログインのコントロールが適切に表示されるか検証")
   
 
-4.  ここで、新しく追加したログイン コントロールを、アプリケーションから呼び出す必要があります。 それには、**ボタン** コントロールを `MainWindow.xaml` ファイルに追加し、名前とコンテンツを **btnSignIn** および **Common Data Service にサインイン** それぞれに設定します。  
+4.  ここで、新しく追加したログイン コントロールを、アプリケーションから呼び出す必要があります。 そうするには、**ボタン** コントロールを `MainWindow.xaml` ファイルに追加し、名前とコンテンツを **btnSignIn** および **Common Data Service** のそれぞれに設定します。  
  
      > [!div class="mx-imgBorder"]
      > ![ログイン フォームを呼び出すコントロールを追加](../media/crm-sdk-v6-xrmtooling-addtemplate02.png "ログイン フォームを呼び出すコントロールを追加")
   
 5. ボタンをダブルクリックして、`MainWindow.xaml.cs` ファイル内の **btnSignIn** ボタンのクリック イベントにコードを追加します。  
   
-6.  以下のサンプル コードを **btnSignIn** ボタンのクリック イベントに追加して `CrmLoginForm1` コントロールを呼び出し、Common Data Service 接続オブジェクトのインスタンスを作成します。  
+6.  以下のサンプル コードを **btnSignIn** ボタンのクリック イベントに追加して `CrmLoginForm1` コントロールを呼出し、Common Data Service 接続オブジェクトのインスタンスを作成します。  
  
 ```csharp
     // Establish the Login control.  
@@ -149,9 +155,9 @@ Visual Studio 用テンプレートが用意されており、これによりク
   
 9. プロジェクトをテストするには:  
   
-    1.  プロジェクトを保存して F5 を押すか、**デバッグ** > **デバッグの開始**の順にクリックして、プロジェクトが正常に編集されるかどうか確認します。 コンパイルが成功すると、MainWindow が新しい **Common Data Service にサインイン** ボタンと共に表示されます。 それをクリックして共通ログイン コントロールを表示します。  
+    1.  プロジェクトを保存して F5 を押すか、**デバッグ** > **デバッグの開始**の順にクリックして、プロジェクトが正常に編集されるかどうか確認します。 コンパイルが成功すると、MainWindow が新しい **Common Data Service にサインイン**ボタンと共に表示されます。 それをクリックして共通ログイン コントロールを表示します。  
   
-    2.  Common Data Service に接続するための資格情報を提供して認証をテストし、**ログイン** をクリックします。 成功した場合、バージョンおよび接続する組織名を示すメッセージが表示されます。 **OK** をクリックしてメッセージを閉じます。  
+    2.  Common Data Service に接続するための資格情報を提供して認証をテストし、**ログイン**をクリックします。 成功した場合、バージョンおよび接続する組織名を示すメッセージが表示されます。 **OK** をクリックしてメッセージを閉じます。  
   
  
     > [!div class="mx-imgBorder"]

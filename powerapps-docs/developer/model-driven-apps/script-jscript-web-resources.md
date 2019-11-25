@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0dfaf5f41207106d217fa90f64bff1b3a2c4d124
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749020"
 ---
 # <a name="script-jscript-web-resources"></a>スクリプト (JScript) Web リソース
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/script-jscript-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/script-jscript-web-resources -->
 
 どこからでもアクセスできる JavaScript 関数のライブラリを作成するには、スクリプト (JScript) Web リソースを使用します。  
   
@@ -50,7 +56,7 @@ search.app:
  [JavaScript を使用したクライアント スクリプト](client-scripting.md)   
  [Web リソース](web-resources.md)   
  [Web ページ (HTML) の Web リソースの使用](webpage-html-web-resources.md)   
- [スタイル シート (CSS) Web リソースの使用](css-web-resources.md)   
+ [スタイルシート (CSS) ウェブ リソースを使用する](css-web-resources.md)   
  [データ (XML) Web リソースの使用](data-xml-web-resources.md)   
  [画像 (JPG、PNG、GIF、ICO) Web リソースの使用](image-web-resources.md)   
  [スタイルシート (XSL) Web リソースの使用](stylesheet-xsl-web-resources.md)   

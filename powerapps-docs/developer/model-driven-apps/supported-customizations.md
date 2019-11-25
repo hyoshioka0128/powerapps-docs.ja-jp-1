@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 53971f95f73824773477cf00660a7593e7d501b1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748947"
 ---
 # <a name="get-started-with-model-driven-apps-customization-using-code"></a>コードを使用してモデル駆動型アプリケーションのカスタマイズを開始する
 
@@ -47,7 +53,7 @@ PowerApps ポータルにあるツールまたは公式ドキュメントで説�
 
 ## <a name="customizations-applied-using-code"></a>コードを使用して適用されたカスタマイズ
 
-開発者向けのこのサイトのドキュメント、技術記事、このサイトのサンプル コードと、Common Data Service 開発者サポート チームによってリリースされる情報は、コードを使用して適用されるカスタマイズの領域に含まれます。 具体的な操作とそのサポートおよびアップグレードのレベルは後ほどこのトピックで説明します。
+開発者受けのこのサイトのドキュメント、技術記事、このサイトのサンプル コードと、Common Data Service 開発者サポート チームによってリリースされる情報は、コードを使用して適用されるカスタマイズの領域に含まれます。 具体的な操作とそのサポートおよびアップグレードのレベルは後ほどこのトピックで説明します。
 
 ### <a name="client-side-javascript"></a>クライアント側 JavaScript
 

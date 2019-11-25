@@ -1,6 +1,6 @@
 ---
-title: キュー エンティティ (Common Data Service) | Microsoft Docs
-description: PowerApps のキューは、キューは作業の進捗状況の編成、優先順位の指定、および監視を行う手段です。
+title: エンティティのキュー (Common Data Service) | Microsoft Docs
+description: PowerApps では、キューは作業の進捗状況の編成、優先順位の指定、および監視を行う手段です。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6452dd50cb54e1c7c3aa5a57b9d7751ba9f13af7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749236"
 ---
 # <a name="queue-entities"></a>キュー エンティティ
 
@@ -74,15 +80,15 @@ search.app:
   
  次の一覧に、Common Data Service において既定でキューが有効化されているエンティティを示します。  
   
--   予定  
+-   予定​​  
   
 -   Campaignactivity  
   
 -   CampaignResponse  
   
--   電子メール  
+-   電子メールの送信  
   
--   FAX  
+-   FAX   
   
 -   インシデント  
   

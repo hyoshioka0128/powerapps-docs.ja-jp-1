@@ -11,12 +11,17 @@ ms.component: model
 ms.date: 03/08/2018
 ms.author: brdang
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5e579b7054171222819b2d1dd6bb21d9cb7400a9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711568"
 ---
-
 # <a name="model-driven-sample-apps"></a>モデル駆動型サンプル アプリ
 
 [powerapps.com](https://powerapps.com) で、サンプル アプリを使ってデザインの可能性について調べ、独自のアプリの開発時に適用できる概念を知ります。 各サンプル アプリは、実際のシナリオを示すために架空のデータを使用します。 
@@ -28,7 +33,7 @@ search.app:
 
 ## <a name="get-sample-apps"></a>サンプル アプリの入手
 
-モデル駆動型サンプル アプリ再生または編集するには、アプリをまず Common Data Service データベースでプロビジョニングする必要があります。 まず、試用環境およびデータベースを作成し、必ず **サンプル アプリとデータを含める** をオンにしてください。
+モデル駆動型サンプル アプリを再生または編集するには、アプリをまず Common Data Service データベースでプロビジョニングする必要があります。 まず、試用環境およびデータベースを作成し、必ず **サンプル アプリとデータを含める** をオンにしてください。
 
 ![データベースの作成](media/overview-model-driven-samples/create-database1.png)
 
@@ -55,7 +60,7 @@ search.app:
 - カスタマイズがサンプル アプリに行われた場合、[依存関係](https://docs.microsoft.com/dynamics365/customer-engagement/developer/dependency-tracking-solution-components)が存在することがあります。ソリューションを削除する前に削除する必要があります。
 
 ### <a name="steps"></a>手順
-1. [PowerApps 管理ポータル](https://admin.powerapps.com)にログインします。
+1. [PowerApps 管理者ポータル](https://admin.powerapps.com)にログインします。
 
 2. 環境を選択します。
 

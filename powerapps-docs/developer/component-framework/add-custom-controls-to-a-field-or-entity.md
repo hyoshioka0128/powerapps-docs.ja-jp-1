@@ -1,7 +1,7 @@
 ---
 title: コード コンポーネントをフィールドやエンティティに追加する | Microsoft Docs
 description: コード コンポーネントのインポート処理
-keywords: null
+keywords: ''
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -10,8 +10,13 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
+ms.openlocfilehash: 63ecdde21328219b70af04b9b65edbb3073f3025
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749062"
 ---
-
 # <a name="add-code-components-to-a-field-or-entity-in-model-driven-apps"></a>モデル駆動型アプリでフィールドやエンティティにコード コンポーネントを追加する
 
 コード コンポーネントを使用すると、従来テキストを含むフィールドをビジュアル化に変換できます。 同様に、コード コンポーネントを使用して、ビューなどのデータセットを変換し、レコードの一覧ではなくより視覚的表現で表示することができます。 コード コンポーネントは、フォーム、ダッシュボード、ビュー、およびホームページ グリッド上にビジュアル化として表示することができます。 
@@ -51,7 +56,7 @@ ms.topic: article
 7. **最小**、**最大**、**ステップ** の横にある鉛筆アイコンを選択し、プロパティ オプションを設定してから **OK** を選択します。  
    
    > [!div class="mx-imgBorder"] 
-   > ![カスタム コントロールのプロパティを追加](../../maker/model-driven-apps/media/ccf-add-properties.png "カスタム コントロールのプロパティを追加")
+   > ![カスタム コントロールのプロパティを追加する](../../maker/model-driven-apps/media/ccf-add-properties.png "カスタム コントロールのプロパティを追加する")
 
    - **最小**。 許容される最小値を設定します。 入力する静的な値をバインド、または既存のフィールドに値をバインドすることができます。 この例で、**静的な値にバインド**は**通貨**で、入力することができる最小値は [*ゼロ*] です。  
   

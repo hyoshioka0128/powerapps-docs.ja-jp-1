@@ -1,5 +1,5 @@
 ---
-title: ExecuteCrmOrganizationRequest メソッドと共にメッセージを使用する (Common Data Service) | Microsoft Docs
+title: ExecuteCrmOrganizationRequest メソッドでメッセージを使用する(Common Data Service)| Microsoft Docs
 description: ExecuteCrmOrganizationRequest メソッドでメッセージを使用する方法について説明します。 サンプルは、CrmServiceClient.String) メソッドを使用して CreateRequest および RetrieveMultipleRequest メッセージを実行する方法について示しています。
 ms.custom: ''
 ms.date: 03/27/2019
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 1ba60f67-522d-4540-a6f9-0787d7074a79
 caps.latest.revision: 17
 author: MattB-msft
 ms.author: kvivek
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 02930412dfb6eb3825a9606befea3c24624914e2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749068"
 ---
 # <a name="use-messages-with-the-executecrmorganizationrequest-method"></a>ExecuteCrmOrganizationRequest メソッドでメッセージを使用する
   
@@ -98,4 +104,4 @@ else
 ### <a name="see-also"></a>関連項目  
 
 [XRM ツールを使用して Common Data Service に接続する](use-crmserviceclient-constructors-connect.md)<br />
-[XRM ツール API を使用して Common Data Service のアクションを実行する](use-xrm-tooling-execute-actions.md)
+[Common Data Service で XRM ツール API を使用してアクションを実行する](use-xrm-tooling-execute-actions.md)

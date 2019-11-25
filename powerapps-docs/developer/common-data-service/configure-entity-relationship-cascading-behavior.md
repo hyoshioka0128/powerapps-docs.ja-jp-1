@@ -1,6 +1,6 @@
 ---
 title: エンティティ関係のカスケード動作の構成 (Common Data Service) | Microsoft Docs
-description: データの整合性を維持してビジネス プロセスを自動化するため、Common Data Service で 1 対多のエンティティ関係のカスケード動作を構成します。
+description: データの整合性を維持してビジネス プロセスを自動化するため、 Common Data Service で一対多のエンティティ関係に対するカスケード動作を構成できます。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6c6d37d688ad60054be4387d813dcb7d9c9305fb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749005"
 ---
-
 # <a name="configure-entity-relationship-cascading-behavior"></a>エンティティ関係のカスケード動作の構成  
 
  データの整合性を維持してビジネス プロセスを自動化するため、一対多のエンティティ関係に対するカスケード動作を構成できます。 Web API および組織サービスの両方は、カスケード動作の構成をサポートしています。

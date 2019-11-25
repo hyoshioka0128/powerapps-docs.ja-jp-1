@@ -1,6 +1,6 @@
 ---
 title: ルールセットの一覧の取得 | Microsoft Docs
-description: 使用できるルールセットの一覧を取得する PowerApps チェッカー Web API を使用して GET 要求の形成方法を読む。
+description: PowerApps チェッカー Web API を使用して、使用できるルールセットの一覧を取得するための GET 要求の形成方法についてお読みください。
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 23c9391c-1697-47a3-a8f2-eedd5c862874
 caps.latest.revision: 21
 author: mhuguet
@@ -16,17 +16,22 @@ ms.author: mhuguet
 ms.reviewer: pehecke
 manager: maustinjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e575ca1eaf1c468d8f090bba7e4b84ea767b773c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749007"
 ---
-
 # <a name="retrieve-the-list-of-rulesets"></a>ルールセットの一覧の取得
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]
 
-ルールはルールセットを使用してグループ化されます。 ルールセットは制限なしで1つ以上のルールを持つことができます。 ルールには、ルールセットなしや複数のルールセットにすることはできません。 API、[Geographical URI]/api/ruleset を呼び出すことによって `GET` 要求を使用して、利用可能なすべてのルールセットの一覧を取得します。
+ルールはルールセットを使用してグループ化されます。 ルールセットは制限なしで1つ以上のルールを持つことができます。 ルールには、ルールセットなしや複数のルールセットにすることはできません。 API, [Geographical URI]/api/ruleset. を呼び出すことによって、利用可能なすべてのルールセットの一覧を取得するために `GET` 要求を使用する。
 
 > [!NOTE]
 >  この API は OAuth トークンは必要ではありませんが、提供されれば一つを受け取ることができます。
@@ -84,7 +89,7 @@ Content-Type: application/json; charset=utf-8
 
 ### <a name="see-also"></a>関連項目
 
-[PowerApps チェッカー Web API の使用](overview.md)<br />
+[PowerApps チェッカーの Web API を使用する](overview.md)<br />
 [ルールの一覧の取得](retrieve-rules.md)<br />
 [ファイルのアップロード](upload-file.md)<br />
 [分析の呼び出し](analyze.md)<br />

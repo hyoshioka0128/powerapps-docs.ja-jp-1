@@ -1,22 +1,28 @@
 ---
-title: PowerApps におけるモデル駆動型コンポーネントについて | MicrosoftDocs
+title: " PowerApps におけるモデル駆動型コンポーネントについて | MicrosoftDocs"
 description: データ、UI、ロジック、ビジュアル化など、モデル駆動型アプリのさまざまなコンポーネントについて説明します。
 Keywords: フィールド、属性、モデル駆動型アプリ
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/27/2018
+ms.date: 10/17/2019
 ms.service: powerapps
 ms.topic: article
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b84fa7a8bc0b77bddaa4e0a22d68cd983ac735ef
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711788"
 ---
 # <a name="understand-model-driven-app-components"></a>モデル駆動型アプリのコンポーネントについて
 適切に設計されたモデル駆動型アプリは、完成したアプリの外観と機能を構築するためにデザイナーを使用して選択したいくつかのコンポーネントで構成されます。 デザイナーがアプリの構成に使用するコンポーネントとコンポーネント プロパティがメタデータになります。 
@@ -24,14 +30,14 @@ search.app:
 これらの各コンポーネントがアプリの設計にどのように関連するかについて理解するため、*データ*、*UI*、*ロジック*、*ビジュアル化*のカテゴリに分割されています。 
 
 ## <a name="data"></a>データ
-これらのコンポーネントは、アプリのベースとなるデータを決めます。
+これらのコンポーネントは、どのデータをアプリに基づいて、コンポーネントの作成、または編集しますが、デザイナーを使用するかを決定します。
 
 
 |コンポーネント  |説明  |デザイナー  |
 |---------|---------|---------|
-|エンティティ     |取引先担当者または取引先企業などの、追跡するプロパティを持つ項目です。 多くの標準エンティティは、利用可能です。 非システム標準エンティティ (運用エンティティ) をカスタマイズしたり、ユーザー定義エンティティを最初から作成することもできます。     | [!INCLUDE [powerapps](../../includes/powerapps.md)] エンティティ デザイナー        |
+|エンティティ     |取引先担当者または取引先企業などの、追跡するプロパティを持つ項目です。 多くの標準エンティティは、使用できません。 非システム標準エンティティ (運用エンティティ) をカスタマイズしたり、ユーザー定義エンティティを最初から作成したりできます。     | [!INCLUDE [powerapps](../../includes/powerapps.md)] エンティティ デザイナー        |
+|[関連付け]     | エンティティの関連付けは、エンティティの相互関係を定義します。 1:N (1 対多)、N:1 (多対 1)、N:N (多対多い) の種類の関連付けがあります。 たとえば、エンティティに検索フィールドを追加することにより、2 つのエンティティ間の新しい 1:N の関連付けが作成され、フォームに検索フィールドを設定できるようにします。   | [!INCLUDE [powerapps](../../includes/powerapps.md)] エンティティ デザイナー        |
 |フィールド     | エンティティに関連付けられたプロパティ。 フィールドは、入力または選択できるデータの種類を決定するデータの種類によって定義されます。 例には、テキスト、数値、日時、通貨、または検索が含まれます (他のエンティティとの関連付けを作成します)。 フィールドは通常、フォーム、ビュー、および検索で使用されます。        | [!INCLUDE [powerapps](../../includes/powerapps.md)] エンティティ デザイナー   |
-|[リレーションシップ]     | エンティティのリレーションシップは、エンティティの相互関係を定義します。 1:N (1 対多)、N:1 (多対 1)、N:N (多対多) の種類のリレーションシップがあります。 たとえば、エンティティに参照フィールドを追加することにより、2 つのエンティティ間の新しい 1:N のリレーションシップが作成され、フォームに参照フィールドを設定できるようにします。   | [!INCLUDE [powerapps](../../includes/powerapps.md)] エンティティ デザイナー        |
 |オプション セット フィールド     | これは、ユーザーにあらかじめ決められたオプション セットを提供するフィールドの特別な種類です。 各オプションには、数値やラベルがあります。 フォームに追加すると、このフィールドはユーザーがオプションを選択するためのコントロールを表示します。  2 種類のオプション セットがあります。ユーザーが 1 つのオプションのみ選択できるオプション セットと、複数選択が許可される複数選択オプション セットです。  | [!INCLUDE [powerapps](../../includes/powerapps.md)] オプション セット デザイナー     |
 
 詳細情報: [モデル駆動型アプリのデータを定義する](define-data-model-driven-app.md) 
@@ -62,7 +68,11 @@ search.app:
 
 ![ワークフロー、操作、業務プロセス フローのデザイナー](media/model-driven-app-overview/designer-mash.png)
 
-詳細情報: [モデル駆動型アプリでビジネス ロジックを適用する](guide-staff-through-common-tasks-processes.md)
+詳細情報: [モデル駆動型アプリでビジネス ロジックを適用する](guide-staff-through-common-tasks-processes.md) 
+
+### <a name="additional-options-for-adding-custom-business-logic"></a>ユーザー定義のビジネス ロジックを追加するための追加オプション
+[ビジネス プロセスを拡張するためのプラグインの使用](../../developer/common-data-service/plug-ins.md) <br />
+[ワークフローの拡張機能](../../developer/common-data-service/workflow/workflow-extensions.md)
 
 ## <a name="visualizations"></a>ビジュアル化
 データのビジュアル化の種類およびアプリが使用可能なレポートを決定します。
@@ -72,7 +82,7 @@ search.app:
 |---------|---------|---------|
 |[グラフ]     | ビュー内に、フォーム上に表示できるか、ダッシュボードに追加できる単一グラフィック ビジュアル化。        | グラフ デザイナー        |
 |ダッシュボード     | 操作可能な業務データの概要を提供する 1 つ以上のグラフィック ビジュアル化のパレットとして機能します。        | ダッシュボード デザイナー        |
-|埋め込み Power BI     | 埋め込み Power BI タイルとダッシュボードをアプリに追加します。 Power BI は、ビジネス インテリジェンス インサイトを提供するクラウドベースのサービスです。        |  グラフ デザイナー、ダッシュボード デザイナー、Power BI の組み合わせ       |
+|埋め込み Power BI     | 埋め込み  Power BI タイルとダッシュボードをアプリに追加します。 Power BIは、ビジネス インテリジェンス インサイトを提供するクラウドベースのサービスです。        |  グラフ デザイナー、ダッシュボード デザイナー、および Power BI の組み合わせ       |
 
 ![サンプル ダッシュボード](media/model-driven-app-overview/dashboard-designer.png)
 

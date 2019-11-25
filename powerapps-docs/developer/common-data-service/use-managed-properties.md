@@ -1,5 +1,5 @@
 ---
-title: マネージド プロパティの使用 (Common Data Service) | Microsoft Docs
+title: マネージド プロパティを使用する (Common Data Service) | Microsoft Docs
 description: マネージド プロパティはどの管理ソリューションがカスタマイズ可能かを定義するのに役立ちます
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 413be04befc0c1b5cb6d6bed77fcaf1b28412bb5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749202"
 ---
 # <a name="use-managed-properties"></a>マネージド プロパティの使用
 

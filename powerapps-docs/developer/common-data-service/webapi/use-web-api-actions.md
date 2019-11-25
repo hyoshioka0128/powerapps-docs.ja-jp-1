@@ -1,5 +1,5 @@
 ---
-title: Web API アクションの使用 (Common Data Service) | Microsoft Docs
+title: Web API アクションの使用 (Common Data Service)| Microsoft Docs
 descriptions: Actions are reusable operations that can be performed using the Web API. These are used with a POST request to modify data on Common Data Service
 ms.custom: ''
 ms.date: 10/31/2018
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 53eafd67-385a-485b-9022-5127df08ea2f
 caps.latest.revision: 14
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a45ec3bf62719dd5b161deb9d117aa476f249c57
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749175"
 ---
 # <a name="use-web-api-actions"></a>Web API アクションの使用
 
@@ -160,10 +166,10 @@ If you define custom actions for your organization or solution these will also b
 
  **ステップ**
 
-|名前|ステップの種類|内容|
+|名前|ステップの種類|説明|
 |----------|---------------|-----------------|
-|メモの作成|レコードの作成|Title = {NoteTitle(Arguments)}<br /> Note Body = {NoteText(Arguments)}<br /> Regarding = {Contact{Contact}}|
-|メモへの参照を返す|値の割り当て|NoteReference Value = {Note(Create the note (Note))}|
+|メモの作成|[レコードの作成]|Title = {NoteTitle(Arguments)}<br /> Note Body = {NoteText(Arguments)}<br /> Regarding = {Contact{Contact}}|
+|メモへの参照を返す|[値の割り当て]|NoteReference Value = {Note(Create the note (Note))}|
 
  カスタム アクションを公開してアクティブ化した後、CSDL をダウンロードするときに、この新しいアクションが定義されていることがわかります。
 

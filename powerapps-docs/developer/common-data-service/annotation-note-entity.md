@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9b065d6fc88ecd0662034f6fa95667679d667922
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749015"
 ---
 # <a name="annotation-note-entity"></a>コメント (Annotation) (メモ) エンティティ
 
-*注釈 (メモ)* は Common Data Service データベース内の任意のレコードに追加的な情報を付加する簡便な手段を提供するものです。 注釈 (メモ) は Common Data Service の任意のエンティティに関連付けることができるテキスト エントリです。 ただし、注釈は、<xref:Microsoft.Xrm.Sdk.Messages.CreateEntityRequest.HasNotes> プロパティを <xref:Microsoft.Xrm.Sdk.Messages.CreateEntityRequest> クラスで `true` に設定して作成したカスタム エンティティにのみ関連付けることができます。 メモで有効になっていないカスタム エンティティは、<xref:Microsoft.Xrm.Sdk.Messages.UpdateEntityRequest>.<xref:Microsoft.Xrm.Sdk.Messages.UpdateEntityRequest.HasNotes> プロパティを `true` に設定することにより、メモを使用するよう更新することができます。  
+*注釈 (メモ)* は、Common Data Service データベース内の任意のレコードに追加的な情報を付加する簡便な手段を提供するものです。 注釈 (メモ) は、テキスト エントリとして Common Data Service 内の任意のエンティティに関連付けることができます。 ただし、注釈は、<xref:Microsoft.Xrm.Sdk.Messages.CreateEntityRequest.HasNotes> プロパティを <xref:Microsoft.Xrm.Sdk.Messages.CreateEntityRequest> クラスで `true` に設定して作成したカスタム エンティティにのみ関連付けることができます。 メモで有効になっていないカスタム エンティティは、<xref:Microsoft.Xrm.Sdk.Messages.UpdateEntityRequest>.<xref:Microsoft.Xrm.Sdk.Messages.UpdateEntityRequest.HasNotes> プロパティを `true` に設定することにより、メモを使用するよう更新することができます。  
 
 Web APIを使用して、<xref:Microsoft.Dynamics.CRM.EntityMetadata> EntityType の `HasNotes` プロパティをこれコントロールするように設定します。
   
@@ -29,7 +35,7 @@ Web APIを使用して、<xref:Microsoft.Dynamics.CRM.EntityMetadata> EntityType
   
 -   注釈 (メモ) にファイルが添付されているかどうか  
   
- 添付ファイルは、Office Wordドキュメント、Office Word スプレッドシート、CAD ファイル、PDF ファイルなどの、標準形式の任意のコンピューター ファイルです。 添付ファイルは、注釈 (メモ) を除く Common Data Service の任意のオブジェクトに関連付けることができます。  
+ 添付ファイルは、Office Wordドキュメント、Office Word スプレッドシート、CAD ファイル、PDF ファイルなどの、標準形式の任意のコンピューター ファイルです。 添付ファイルは、注釈 (メモ) を除く、Common Data Service のあらゆるオブジェクトに関連付けることができます。  
   
  添付ファイルをアップロードまたは削除するには、<xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*> メソッドまたは<xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> メッセージを使用して、`Annotation.Filename` および `Annotation.MimeType` プロパティを設定します。 このメッセージは、base64 文字列形式にデコードされた添付ファイルをアップロードします。 [System.Convert.ToBase64String](https://msdn.microsoft.com/library/system.convert.tobase64string.aspx) メソッドで、データ ファイルの内容を base64 形式の文字列に変換できます。 アップロードできる最大ファイル サイズは、**Organization.MaxUploadFileSize** プロパティによって決まります。 このプロパティは、Dynamics 365 アプリケーションの**システム設定**の**電子メール**タブで設定します。 この設定で電子メール メッセージ、メモ、および Web リソースに添付できるファイルのサイズを制限します。 既定の設定は 5 MB です。  
   

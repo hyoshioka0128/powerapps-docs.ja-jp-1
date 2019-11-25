@@ -8,12 +8,18 @@ ms.service: powerapps
 ms.topic: article
 author: KumarVivek
 ms.author: kvivek
-manager: null
+manager: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 34ca8223ecf08bda2ed38353684a0971ab289b19
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749023"
 ---
 # <a name="sample-charts"></a>サンプル グラフ
 
@@ -148,7 +154,7 @@ search.app:
 ## <a name="area-chart"></a>領域グラフ  
  次はに示すのは、特定の日付範囲の間に作成されたレコード数が示す領域グラフです。  
   
- ![領域グラフのサンプル](media/charts-count-of-records-areachart.gif "領域グラフのサンプル")  
+ ![サンプル領域グラフ](media/charts-count-of-records-areachart.gif "サンプル領域グラフ")  
   
 ### <a name="data-description"></a>データ記述  
  次に示すのは、このグラフのデータ記述 XML 文字列の内容です。  
@@ -208,7 +214,7 @@ search.app:
 ## <a name="line-chart"></a>折れ線グラフ  
  次に示すのは、過去 5 か月間に生成された潜在顧客の数を表す折れ線グラフです。 これは、MDA で `Lead` エンティティに使用できる既定のグラフの 1 つです。 
   
-![折れ線グラフのサンプル: 潜在顧客の生成率折れ線グラフのサンプル](media/lead-generation-rate-chart.png "折れ線グラフのサンプル: 潜在顧客の生成率折れ線グラフのサンプル") --> 
+![折れ線グラフのサンプル: 潜在顧客の生成率](media/lead-generation-rate-chart.png "折れ線グラフのサンプル: 潜在顧客の生成率") --> 
   
 ### <a name="data-description"></a>データ記述  
  次に示すのは、このグラフのデータ記述 XML 文字列の内容です。  

@@ -10,16 +10,21 @@ author: rogergilchrist
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 19ce32ee11075f716a1c3f032e90ab935744d44d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749225"
 ---
-
 # <a name="scalable-customization-design-concurrency-issues"></a>スケーラブル カスタマイズ設計:同時実行の問題
 
 > [!NOTE]
-> これはスケーラブル カスタマイズ設計に関する 3 つめのトピックです。 最初から始めるには [Common Data Service におけるスケーラブル カスタマイズ設計](overview.md) を参照してください。
+> これはスケーラブル カスタマイズ設計に関する 3 つめのトピックです。 最初から始めるには、[Common Data Service におけるスケーラブル カスタマイズ設計](overview.md) を参照してください。
 > 前のトピック [スケーラブル カスタマイズ 設計: データベース トランザクション](database-transactions.md) ではデータベース トランザクションが適用される方法、およびそれらがさまざまな種類のカスタマイズに与える影響について説明しました。
 
 同時実行の要求がある場合は、ロックで衝突する可能性が高くなります。 トランザクションに時間がかかるほどロックが長く保持されます。 衝突の可能性がさらに高まり、エンドユーザーの全体的な影響は大きくなります。 
@@ -40,7 +45,7 @@ search.app:
 
 同じレコードの同じイベントから複数の非同期活動を開始した場合、それらは並行して処理される可能性があります。 それらが同じレコードで開始したとき、共通のパターンは同じ親レコードに戻って更新されます; そのため競合する機会が高いです。 
 
-アカウントの作成などトリガーとなるイベントが発生すると、Common Data Service の非同期ロジックは各プロセスまたは行われる操作ごとに [非同期処理 (システム ジョブ) エンティティ](../reference/entities/asyncoperation.md) にエントリを作成することがあります。 非同期サービスはこのテーブルを監視し、待機中の要求をバッチとして取得して処理します。 ワークフローは同時にトリガーされるため、同じバッチに取得され同時に処理される可能性が非常に高いです。 
+アカウントの作成などトリガーとなるイベントが発生すると、Common Data Service の非同期ロジックは各プロセスまたは行われる操作ごとに[非同期処理 (システム ジョブ) エンティティ](../reference/entities/asyncoperation.md)にエントリを作成することがあります。 非同期サービスはこのテーブルを監視し、待機中の要求をバッチとして取得して処理します。 ワークフローは同時にトリガーされるため、同じバッチに取得され同時に処理される可能性が非常に高いです。 
 
 ## <a name="why-its-important-to-understand-transactions"></a>トランザクションの理解が重要な理由
 

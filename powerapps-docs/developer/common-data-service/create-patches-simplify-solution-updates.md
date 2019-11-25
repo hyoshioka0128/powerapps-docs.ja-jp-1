@@ -1,5 +1,5 @@
 ---
-title: ソリューションの更新プログラムを簡易化する修正プログラムの作成 (Common Data Service) | Microsoft Docs
+title: ソリューションの更新を簡略化する修正プログラムを作成する (Common Data Service) | Microsoft Docs
 description: エンティティをソリューションに追加して、そのソリューションをエクスポートするときにエンティティおよびすべての関連資産を管理するために役立つ修正プログラム
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,21 +10,27 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 24e1410afbf7323daad3e274f1aedfc4fe39ff6c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749000"
 ---
 # <a name="create-patches-to-simplify-solution-updates"></a>ソリューションの更新プログラムを簡易化する修正プログラムの作成
 
 エンティティをソリューションに追加して、そのソリューションをエクスポートする場合、そのエンティティおよびすべての関連資産は当該ソリューションにエクスポートされます。 これらの資産には、属性、フォーム、ビュー、関連付け、ビジュアル化、およびエンティティと共にパッケージ化される他のすべての資産が含まれます。 すべてのオブジェクトをエクスポートすることは、展開先のオブジェクトを誤って変更したり、意図しない依存関係を引き継ぐ場合があることを意味します。  
   
- これに対処するために、エンティティ全体とその資産すべてを公開するのではなく、エンティティのサブコンポーネントを含むソリューション パッチを作成および公開することができます。  元のソリューションおよび 1 つ以上の関連修正プログラムは、ソリューションの更新バージョンに後日ロールアップ (統合) される場合があり、これにより対象の Common Data Service 組織の元のソリューションを置き換えることができます。  
+ これに対処するために、エンティティ全体とその資産すべてを公開するのではなく、エンティティのサブコンポーネントを含むソリューション パッチを作成および公開することができます。  元のソリューションおよび 1 つ以上の関連修正プログラムは、ソリューションの更新バージョンに後日ロールアップ (統合) される場合があり、これにより対象Common Data Service組織の元のソリューションは置換可能です。  
   
 ## <a name="patches"></a>修正プログラム  
  マネージドまたはアンマネージド ソリューションに修正プログラムを適用し、エンティティとその関連の資産エンティティに対する変更のみ含めることができます。 修正プログラムには、当該コンポーネントが既に組織への展開に存在しているので、依存するカスタマイズ不可のシステム コンポーネントまたは関連付けが含まれていません。 開発サイクルのいずれかの時点で、すべての修正プログラムを新しいソリューションバージョンにロールアップして、修正プログラムが作成された元のソリューションを置換することができます。  
   
- 修正プログラムは Common Data Service のデータベースに `Solution` エンティティ レコードとして保存されます。 null 以外の `ParentSolutionId` 属性は、ソリューションが修正プログラムであることを示します。 修正プログラムは、組織サービスまたは Web API により作成および管理可能で、このことは、製品インストール スクリプトなどの自動化の開発に便利です。 ただし、Common Data Service の Webアプリケーションでは、修正プログラムを対話的に作成および管理可能な各種の Web フォームを提供します。  
+ 修正プログラムは、Common Data Service データベースに `Solution` エンティティ レコードとして保存されます。 null 以外の `ParentSolutionId` 属性は、ソリューションが修正プログラムであることを示します。 修正プログラムは、組織サービスまたは Web API により作成および管理可能で、このことは、製品インストール スクリプトなどの自動化の開発に便利です。 ただし、Common Data Service Webアプリケーションでは、修正プログラムを対話的に作成および管理可能な各種のWebフォームを提供します。  
   
 - 修正プログラムは、<xref:Microsoft.Crm.Sdk.Messages.CloneAsPatchRequest> または <xref href="Microsoft.Dynamics.CRM.CloneAsPatch?text=CloneAsPatch Action" /> を使用して上位のソリューションからのみ作成可能です。  
   
@@ -48,7 +54,7 @@ search.app:
   
 - 運用目的でアンマネージド修正プログラムを使用しないでください。  
   
-- 修正プログラムはバージョン 8.0 以降の Common Data Service 組織でのみサポートされています。  
+- 修正プログラムはバージョン8.0またはそれ以降の Common Data Service の組織のみでサポートされています。  
   
   このリリースの SolutionPackager および PackageDeployer ツールはソリューション更新プログラムをサポートします。 パッチに関連付けるいずれかのコマンド ライン オプションのツールのオンライン ヘルプを参照してください。  
   
@@ -56,7 +62,7 @@ search.app:
  <xref:Microsoft.Crm.Sdk.Messages.CloneAsPatchRequest>メッセージまたは<xref href="Microsoft.Dynamics.CRM.CloneAsPatch?text=CloneAsPatch Action" />を使用して、またはWebアプリケーションを使用して、組織のアンマネージド ソリューションから修正プログラムを作成します。 修正プログラムを作成すると、元のソリューションがロックされるので、上位のソリューションとしてソリューションを識別する、依存修正プログラムが組織に存在する限り、変更またはエクスポートすることはできません。 修正プログラムのバージョン管理はソリューションのバージョン管理と同様で、次の形式で指定されます: *major.minor.build.release*。 修正プログラムを作成すると、既存のメジャーまたはマイナーのバージョンのソリューションを変更することはできません。  
   
 ## <a name="export-and-import-a-patch"></a>修正プログラムのインポートとエクスポート  
- 修正プログラムをエクスポートまたはインポートするには、組織サービスまたは Web API、Web アプリケーションまたは Package Deployer ツール を使用することができます。 関連の組織サービスメッセージ要求は <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest>および<xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest>です。 Web APIの関連した操作は <xref href="Microsoft.Dynamics.CRM.ImportSolution?text=ImportSolution Action" />および<xref href="Microsoft.Dynamics.CRM.ExportSolution?text=ExportSolution Action" />です。  
+ 修正プログラムをエクスポートまたはインポートするには、組織サービスまたは Web API、あるいは Package Deployer ツールを使用できます。 関連の組織サービスメッセージ要求は <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest>および<xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest>です。 Web APIの関連した操作は <xref href="Microsoft.Dynamics.CRM.ImportSolution?text=ImportSolution Action" />および<xref href="Microsoft.Dynamics.CRM.ExportSolution?text=ExportSolution Action" />です。  
   
 ### <a name="patching-examples"></a>修正の例  
  次の表には、修正の例の詳細がリスト表示されています。 この例では、ソリューションおよび修正プログラムが番号順でインポートされ、追加され、これは、全般のソリューションのインポートと一致していることに注意してください。  
@@ -99,7 +105,7 @@ search.app:
   
  アンマネージド ソリューションの場合、ベースソリューションをアンインストール前に、それらが作成された反対のバージョン順序で、ベース ソリューションに対するすべての修正プログラムをアンインストールする必要があります。  
   
- マネージド ソリューションでは、単にベースソリューションをアンインストールするだけです。 Common Data Service システムは、ベース ソリューションをアンインストールする前に、反対のバージョン順序で修正プログラムを自動的にアンインストールします。 単一の修正プログラムだけをアンインストールすることもできます。  
+ マネージド ソリューションでは、単にベースソリューションをアンインストールするだけです。 Common Data Service システムでは、ベース ソリューションをアンインストールする前に、反対のバージョン順序で修正プログラムを自動的にアンインストールします。 単一の修正プログラムだけをアンインストールすることもできます。  
   
 ## <a name="update-a-solution"></a>ソリューションの更新  
  ソリューションの更新には、そのソリューションに対するすべての修正プログラムをソリューションの新しいバージョンにロールアップ(結合)することが含まれます。 その後、ソリューションはアンロックされるようになり、もう一度、変更(アンマネージド ソリューションのみ)またはエクスポートすることができます。 マネージド ソリューションの場合、新たに更新されたソリューションから修正プログラムを作成する場合の除き、ソリューションに対する変更が許可されません。 アンマネージド ソリューションに修正プログラムをロールアップするには、<xref:Microsoft.Crm.Sdk.Messages.CloneAsSolutionRequest> または <xref href="Microsoft.Dynamics.CRM.CloneAsSolution?text=CloneAsSolution Action" />を使用します。 ソリューションの複製によって新しいバージョンのアンマネージド ソリューションが作成され、より高い*major.minor*バージョン番号、同じ一意の名前、および表示名を含む、すべての修正プログラムが組み込まれます。  
@@ -112,4 +118,4 @@ search.app:
  [ソリューションを使用した拡張機能のパッケージ化および配布](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)   
  [ソリューション エンティティ](/reference/entities/solution.md)   
  [マネージド ソリューションの保守](maintain-managed-solutions.md)   
- [AppSource 上にアプリを公開する](publish-app-appsource.md)
+ [AppSourceでアプリを公開する](publish-app-appsource.md)

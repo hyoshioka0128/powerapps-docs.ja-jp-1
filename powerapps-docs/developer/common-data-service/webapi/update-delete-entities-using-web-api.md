@@ -1,5 +1,5 @@
 ---
-title: Web API を用いたエンティティの更新および削除 (Common Data Service) | Microsoft Docs
+title: Web API を使用したエンティティの更新と削除 (Common Data Service) | Microsoft Docs
 description: Web API を使用したエンティティの更新と削除の各操作を実行する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 694889fd-2b85-43a0-97bc-1e760695db31
 caps.latest.revision: 17
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d85a90b05d7da51a6f2de2585d87376d4354a8eb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748922"
 ---
 # <a name="update-and-delete-entities-using-the-web-api"></a>Web API を使用したエンティティの更新と削除
 
@@ -34,7 +40,7 @@ search.app:
 
 更新操作には HTTP 動詞 `PATCH` を使用します。 更新するプロパティが含まれる JSON オブジェクトを、エンティティを表す URI に渡します。 更新が成功した場合、状態 204 の応答が返されます。  
   
- この例は、`accountid` 値 00000000-0000-0000-0000-000000000001 で既存の取引先企業レコードを更新します。  
+ この例は、 00000000-0000-0000-0000-000000000001 の`accountid` 値で既存の取引先企業レコードを更新します。  
   
 > [!IMPORTANT]
 >  エンティティを更新するとき、要求本文には変更するプロパティのみを含めます。 先に取得したエンティティのプロパティを単純に更新して、その JSON を要求に含めることにより、値が同じであっても、各プロパティが更新されます。 これにより、値が変化したことを予期するビジネス ロジックをトリガーすることができる、システム イベントを発生させます。 これにより、プロパティが実際に変更されなかったとき、監査データではプロパティが更新されたように見えます。
@@ -124,7 +130,7 @@ OData-Version: 4.0
 
 単一のプロパティ値のみを更新するときは、エンティティの Uri にプロパティ名が付加された PUT 要求を使用します。  
   
- 次の例は、`accountid` 値 00000000-0000-0000-0000-000000000001 で既存の取引先企業エンティティの名前 プロパティを更新します。  
+ 次のように、例えば、 00000000-0000-0000-0000-000000000001 の`accountid` の値で既存の取引先企業エンティティの名前プロパティを更新します。  
   
  **要求**  
 
@@ -151,7 +157,7 @@ OData-Version: 4.0
 
 単一のプロパティ値を削除するには、エンティティの Uri にプロパティ名が付加された DELETE 要求を使用します。  
   
-次の例は、`accountid` 値 00000000-0000-0000-0000-000000000001 で取引先企業エンティティの `description` プロパティの値を削除します。  
+次の例は、 値 00000000-0000-0000-0000-000000000001 の`accountid` 値で取引先企業エンティティの `description` プロパティの値を削除します。  
   
  **要求**
 
@@ -185,7 +191,7 @@ OData-Version: 4.0
   
 ## <a name="basic-delete"></a>基本的な削除
 
-削除操作は非常に単純です。 削除するエンティティの URI に対して、DELETE 動詞を使用します。 この例のメッセージは、主キーの `accountid` 値が00000000-0000-0000-0000-000000000001 に等しい取引先企業エンティティを削除します。  
+削除操作は非常に単純です。 削除するエンティティの URI に対して、DELETE 動詞を使用します。 この例のメッセージは、00000000-0000-0000-0000-000000000001 に等しい主要キーの `accountid` の値を使用して取引先企業エンティティを削除します。  
   
  **要求**
 

@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 27809198af9348b246dd7d0c2a5401880c13eb73
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749017"
 ---
 # <a name="publish-customizations"></a>カスタマイズを公開します
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/publish-customizations -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/publish-customizations -->
 
 カスタマイズの公開は、ユーザー インターフェイスに影響するデータへの変更を Web アプリケーションに知らせるものです。  
   

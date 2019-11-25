@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 3cfd5ced4da80cae70b4f51d81e30b0d909a81c3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707872"
 ---
-
 # <a name="render-a-website-header-and-primary-navigation-bar"></a>Web サイト ヘッダーとプライマリ ナビゲーション バーの表示
 
 ポータル設定、スニペット、Web リンク、およびサイト マーカーを使用して、Web サイト ヘッダーとプライマリ ナビゲーション バーを表示します。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Web テンプレートを使用したソース コンテンツの保存](store-content-web-templates.md)  

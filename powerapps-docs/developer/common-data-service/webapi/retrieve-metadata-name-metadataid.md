@@ -1,5 +1,5 @@
 ---
-title: 名前または MetadataId でのメタデータの取得 (Common Data Service) | Microsoft Docs
+title: 名前または MetadataId によるメタデータの取得 (Common Data Service) | Microsoft Docs
 description: Common Data Service では、メタデータ駆動のアーキテクチャを使用して、ユーザー定義エンティティや追加のシステム エンティティ属性を柔軟に作成できます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 80bcdd8e-7c4f-4fd5-8708-00345f5d0408
 caps.latest.revision: 8
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f56f825b426843b5e3c1ad9747ac060d84100ae0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748924"
 ---
 # <a name="retrieve-metadata-by-name-or-metadataid"></a>名前または MetadataId でのメタデータの取得
 
@@ -294,7 +300,7 @@ OData-Version: 4.0
   
 ### <a name="see-also"></a>関連項目
 
-[Web API を Common Data Service メタデータで使用する](use-web-api-metadata.md)<br />
+[Common Data Service メタデータで Web API を使用する](use-web-api-metadata.md)<br />
 [Web API を使用したクエリ メタデータ](query-metadata-web-api.md)<br />
 [Web API を使用してエンティティ定義を作成および更新](create-update-entity-definitions-using-web-api.md)<br /> 
 [Web API を使用してエンティティ関係を作成および更新する](create-update-entity-relationships-using-web-api.md)

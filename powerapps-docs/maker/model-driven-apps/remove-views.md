@@ -1,27 +1,33 @@
 ---
-title: PowerApps 内でのモデル駆動型アプリのビューの削除または非アクティブ化 | MicrosoftDocs
+title: PowerApps 内でのモデル駆動型アプリ ビューの削除または非アクティブ化 | MicrosoftDocs
 description: ビューを削除または非アクティブ化する方法を説明します。
 ms.custom: ''
 ms.date: 06/12/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 60865f78-7482-42da-8960-adbd3c155028
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3dd7e6a6838f9ba148c8d90719746c4a1488c559
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711304"
 ---
 # <a name="delete-or-deactivate-a-model-driven-app-view"></a>モデル駆動型アプリのビューの削除または非アクティブ化 
 
@@ -30,7 +36,7 @@ search.app:
  人に見せたくないビューがあるかもしれません。 ビューの種類に基づいて、ビューを削除または非アクティブにすることができます。  
   
 ## <a name="delete-a-view"></a>ビューの削除  
- ユーザー定義の共有ビューはいずれも削除できます。 [ビュー定義へのアクセス](accessing-view-definitions.md) のステップを使用して、削除するビューを見つけ、![[削除] ボタン](media/delete.gif "[削除] ボタン")**削除**コマンドを使用します。 実際に削除することを確認すると、ビューは完全に削除されます。  
+ ユーザー定義の共有ビューはいずれも削除できます。 [ビュー定義へのアクセス](accessing-view-definitions.md) のステップを使用して、削除するビューを見つけ、![削除ボタン](media/delete.gif "[削除] ボタン")**削除**コマンドを使用します。 実際に削除することを確認すると、ビューは完全に削除されます。  
   
  ビューを完全に削除したくない場合は、削除する代わりに、それを非アクティブ化できます。  
   

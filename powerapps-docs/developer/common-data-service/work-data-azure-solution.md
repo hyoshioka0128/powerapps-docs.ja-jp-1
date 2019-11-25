@@ -4,21 +4,24 @@ description: ServiceBusPlugin プラグインには、Dynamics 365 メッセー�
 keywords: ''
 ms.date: 06/01/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 1ef66369-71c9-3b89-ac1a-09d523ca737b
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 949717fbf33ee27e77ce81672fd66c2920a15bf2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748915"
 ---
-
 # <a name="work-with-common-data-service-data-in-your-azure-solution"></a>Azure ソリューションの Common Data Service データとの連携
 
 `ServiceBusPlugin` という名前の内部プラグインが Common Data Service (CDS) で提供されます。 プラグインには、 CDS メッセージ実行コンテキストを Azure Service Bus に投稿するビジネス ロジックが含まれます。 このプラグインを使用するには、Azure Service Bus ソリューション エンドポイントとプラグインのステップを登録する必要があります。 このステップでは、コア CDS 操作によって処理されるメッセージおよびエンティティの組み合わせによって、実行するプラグインがトリガーされるかが定義されます。 `ServiceBusPlugin` は非同期に実行されるようにのみ登録できます。 詳細については、「[チュートリアル: プラグイン登録ツールを使用した Azure 対応プラグインの登録](walkthrough-register-azure-aware-plug-in-using-plug-in-registration-tool.md)」を参照してください。  

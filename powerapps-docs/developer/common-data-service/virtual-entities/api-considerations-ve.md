@@ -5,18 +5,23 @@ ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: d329dade-16c5-46e9-8dec-4b8efb996dea
 author: mayadumesh
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cbd3da97fcf4e2f8d21f5475221eb39455c09050
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749082"
 ---
-
 # <a name="api-considerations-of-virtual-entities"></a>仮想エンティティの API に関する考慮事項
 
 Common Data Service の仮想エンティティの導入に関連付けられるメタデータ システムに対する変更には 2 つの大きなカテゴリがあります。
@@ -43,11 +48,11 @@ Dynamics 365 Data SDK アセンブリ、`Microsoft.Xrm.Sdk.Data.dll` には、�
 
 ## <a name="changes-to-the-core-platform"></a>コア プラットフォームへの変更
 
-仮想エンティティをサポートするために標準の Common Data Service 参照の種類へ次の変更が導入されました。
+標準の Common Data Service 参照種類への次の変更が、仮想エンティティをサポートするために導入されました。
 
 ### <a name="new-entities"></a>新しいエンティティ
 
-Common Data Service は仮想エンティティ データ プロバイダーとソースを次の新しいエンティティとして公開します: [EntityDataProvider](../reference/entities/entitydataprovider.md) と [EntityDataSource](../reference/entities/entitydatasource.md)。 
+Common Data Service は、仮想エンティティ データ プロバイダーとソースを次の新しいエンティティとして公開します: [EntityDataProvider](../reference/entities/entitydataprovider.md) と [EntityDataSource](../reference/entities/entitydatasource.md)。 
 
 ### <a name="new-metadata-properties"></a>新しい metadata.properties.key
 

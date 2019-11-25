@@ -10,16 +10,22 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 082174a71cd36d5385015f5d51f63b9dc2d8b197
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749094"
 ---
 # <a name="understand-how-managed-solutions-are-merged"></a>管理ソリューションのマージ方法について
 
 マネージド ソリューションのインストールの準備をするときは、組織に複数のソリューションがインストールされている可能性や、将来、別のソリューションがインストールされる可能性があることを考慮します。 ソリューションをベスト プラクティスに従って構築して、他のソリューションと競合しないようにします。  
   
- Common Data Service がカスタマイズをマージするプロセスは、ソリューションの機能を保持することに重点が置かれています。 プレゼンテーションを保持するためにあらゆる処理が行われても、カスタマイズ間に非互換性があると、カスタマイズの機能を保持することが優先されて、プレゼンテーションの細部が変更されることがあります。  
+ Common Data Service のカスタマイズをマージするプロセスは、ソリューションの機能を保持することに重点が置かれています。 プレゼンテーションを保持するためにあらゆる処理が行われても、カスタマイズ間に非互換性があると、カスタマイズの機能を保持することが優先されて、プレゼンテーションの細部が変更されることがあります。  
   
 <a name="BKMK_MergingFormCustomizations"></a>   
 

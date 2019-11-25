@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: pehecke
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 43e914fd10d05b4c93857fe05b414562070c7907
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749105"
 ---
 # <a name="sample-create-a-basic-plug-in"></a>サンプル: 基本プラグインの作成
 
@@ -22,7 +28,7 @@ search.app:
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 
 1. [サンプル](https://github.com/Microsoft/PowerApps-Samples) リポジトリをダウンロードまたは複製して、ローカル コピーを用意します。 このサンプルは PowerApps-Samples-master\cds\orgsvc\C#\FollowupPlugin にあります。
-2. Visual Studio でサンプル ソリューションを開き、プロジェクトのプロパティに移動して、ビルド中にアセンブリが署名されることを確認します。 サンプルのアセンブリ (FollowupPlugin.dll) をビルドするに F6 を押します。
+2. Visual Studio でサンプル ソリューションを開き、プロジェクトのプロパティに移動して、ビルド中にアセンブリが署名されることを確認してください。 サンプルのアセンブリ (FollowupPlugin.dll) をビルドするに F6 を押します。
 3. プラグイン登録ツールを実行して D365 サーバーのサンドボックスおよびデータベースにサンプルのアセンブリを登録します。 ステップの登録時に、作成メッセージ、アカウント エンティティ、そして非同期モードを指定します。
 4. D365 アプリ を使用して適切な操作を実行して、メッセージとプラグインを登録したエンティティの要求を呼び出します（アカウントを作成）。
 5. プラグインが実行されると、"FollowupPlugin：タスク アクティビティが正常に作成されました" という新しい追跡ログ エントリ、および "新しい顧客に電子メールを送信する" という件名の新しいアクティビティが表示されます。 7 日以内に有効化する予定です。

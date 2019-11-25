@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 767f39d4-6a8e-48f0-bf7d-69ea1191acef
 caps.latest.revision: 8
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cdd453145c5b30642669e3a7a2b6a052753117a5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748938"
 ---
-# <a name="authenticate-to-common-data-service-with-the-web-api"></a>Web API を使用した Common Data Service への認証
+# <a name="authenticate-to-common-data-service-with-the-web-api"></a>Web API を使用して Common Data Service への認証
 
 
 [Common Data Service で OAuth を使用する](../authenticate-oauth.md) の説明に従って、OAuth を使用する必要があります。
@@ -39,5 +45,5 @@ JavaScript を使用して単一のページ アプリケーション (SPA) を�
 [Common Data Service Web API の使用](overview.md)<br />
 [Web API の種類および操作](web-api-types-operations.md)<br />
 [Web API を使用して演算を実行する](perform-operations-web-api.md)<br />
-[Common Data Service での OAuth の使用](../authenticate-oauth.md)<br />
+[Common Data Service で OAuth を使用する](../authenticate-oauth.md)<br />
 [OAuth を使用するクロス オリジン リソース共有を使用して、単一のページ アプリケーションに接続する](../oauth-cross-origin-resource-sharing-connect-single-page-application.md)

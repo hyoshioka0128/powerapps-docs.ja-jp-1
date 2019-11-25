@@ -1,6 +1,6 @@
 ---
-title: Web API データ操作サンプル (Common Data Service) | Microsoft Docs
-description: 'Common Data Service SDK では、Web API をさまざまな異なる方法で使用する方法を示すサンプルのマトリックスが提供されます。 ここから C# および JavaScript の基本操作、クエリ データ、条件付き演算および機能およびアクションのサンプルの実装を表示します。'
+title: Web API データ操作のサンプル (Common Data Service)| Microsoft Docs
+description: Common Data Service SDK では、Web API をさまざまな異なる方法で使用する方法を示すサンプルのマトリックスが提供されます。 ここから C# および JavaScript の基本操作、クエリ データ、条件付き演算および機能およびアクションのサンプルの実装を表示します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: cdcb02f5-3baa-4fb7-8fb3-6fe53c2d4271
 caps.latest.revision: 11
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a8f977c9969283702834c45e9c9aeee9a6459fd4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748918"
 ---
 # <a name="web-api-data-operations-samples"></a>Web API データ操作のサンプル
 

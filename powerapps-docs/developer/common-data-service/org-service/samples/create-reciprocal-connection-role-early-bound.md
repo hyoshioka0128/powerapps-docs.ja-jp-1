@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: 相互つながりロールの作成 (Common Data Service) | Microsoft Docs'
+title: 'サンプル: 相互の接続ロールの作成 (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、相互つながりロールの作成方法を説明します
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e61ee0a712ec8844776bc14231ef18ec82092e07
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748953"
 ---
 # <a name="sample-create-a-reciprocal-connection-role"></a>サンプル: 相互つながりロールの作成
 

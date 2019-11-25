@@ -14,12 +14,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 33d60e8f6359cee0a71e9f85fa4f97d432cacc94
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749034"
 ---
-
 # <a name="model-driven-apps-developer-guide"></a>モデル駆動型アプリの開発者ガイド
 
 PowerApps では、ユーザー、企業、パートナー、独立系ソフトウェア ベンダー (ISV)、およびシステム インテグレーター (SI) に、基幹業務アプリを構築するための強力なプラットフォームを提供します。 今回のリリースでは、新しい Common Data Service を使用したモデル駆動型アプリの構築が PowerApps に新しく追加されました。 Common Data Service にはアプリケーションのコア機能が含まれるようになりました。 モデル駆動型アプリで、これらのアプリケーションと同じ拡張機能を使用するアプリを構築できます。

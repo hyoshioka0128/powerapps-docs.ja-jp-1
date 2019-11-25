@@ -1,5 +1,5 @@
 ---
-title: マネージド ソリューションの作成、インストール、および更新 (Common Data Service) | Microsoft Docs
+title: マネージド ソリューションの作成、インストール、更新 (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9c9fe500fc2f3a7991b09c346b4fd931f8802160
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749001"
 ---
 # <a name="create-install-and-update-a-managed-solution"></a>管理ソリューションの作成、インストール、および更新
 

@@ -1,5 +1,5 @@
 ---
-title: Web API を使用した重複データの検出 (Common Data Service) | Microsoft Docs
+title: Web API を使用して重複データの検出 (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,13 +10,18 @@ ms.author: jdaly
 ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d2efa9e7a134a83ef081a677cdb168ba3f8b8883
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748934"
 ---
-
-## <a name="detect-duplicate-data-using-the-web-api"></a>Web API を使用した重複データの検出
+# <a name="detect-duplicate-data-using-the-web-api"></a>Web API を使用した重複データの検出
 
 <!-- 
 Related topics

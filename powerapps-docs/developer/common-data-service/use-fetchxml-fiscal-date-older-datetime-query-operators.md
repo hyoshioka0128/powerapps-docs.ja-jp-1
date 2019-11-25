@@ -1,23 +1,29 @@
 ---
-title: FetchXML における会計日演算子と older than 日付/時刻クエリ演算子 (Common Data Service) | Microsoft Docs
+title: FetchXML の会計日クエリ演算子および older than 日付/時刻クエリ演算子(Common Data Service) | Microsoft Docs
 description: 日付と時刻の値に、FetchXML の会計日付条件演算子および &quot;older than&quot; 句を使用する方法の説明
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f0285a18119b907cb27173524b35a08cece5601a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749085"
 ---
 # <a name="fiscal-date-and-older-than-datetime-query-operators-in-fetchxml"></a>FetchXML の会計日クエリ演算子および older than 日付/時刻クエリ演算子
 
-Common Data Service の FetchXML クエリは、クエリの日付と時刻の値に、特別な会計日の値と *older than* 句を使用できます。 たとえば、FetchXML クエリは、前の会計月に履行したすべての注文や、15 分経過した重大度の高い緊急のサポート案件を検索できます。  
+Common Data Service アプリの FetchXML クエリは特別な会計日の値と、日付と時刻の値にクエリで *older than* 句を使用できます。 たとえば、FetchXML クエリは、前の会計月に履行したすべての注文や、15 分経過した重大度の高い緊急のサポート案件を検索できます。  
   
 > [!NOTE]
 >  すべての会計日付クエリに対して、FetchXML クエリは組織の会計年度設定を使用します。  

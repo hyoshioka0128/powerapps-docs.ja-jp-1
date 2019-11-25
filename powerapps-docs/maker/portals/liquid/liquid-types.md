@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: dd6da4788f6563c2026f57914c8156caedfadad3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708092"
 ---
-
 # <a name="available-liquid-types"></a>使用可能な Liquid の種類
 
 流動オブジェクトは、7 つの基本的な種類のうち 1 つを返します。**文字列**、**数値**、**ブール値**、**配列**、**辞書**、**日時**、および **Null** があります。 流動変数は、**assign** タグ (割り当て) または **capture** (取得) タグで初期化できます。

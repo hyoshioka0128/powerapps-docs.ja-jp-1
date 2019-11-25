@@ -1,12 +1,12 @@
 ---
 title: Postman 環境の設定 (Common Data Service for Apps)| MicrosoftDocs
 description: Common Data Service 環境に接続する Postman 環境を設定と構成する方法を説明します。
-ms.custom: null
+ms.custom: ''
 ms.date: 04/09/2019
-ms.reviewer: null
+ms.reviewer: ''
 ms.service: powerapps
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 955BA444-A53D-4843-9429-833B1636E2B4
 caps.latest.revision: 7
@@ -14,11 +14,16 @@ author: susikka
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: 4ce6e11f599eedd6b44c4fbf7271760ecb3cd9c2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749177"
 ---
-
 # <a name="set-up-a-postman-environment"></a>Postman 環境の設定
 
 Postman を使用すると、Common Data Service インスタンスに接続して、Web API 要求を構成および送信し、応答を表示できます。 認証管理は多くの人たちにとって課題となります。 このトピックでは Postman 環境を Common Data Service 環境で機能するように構成する方法について説明します。
@@ -93,7 +98,7 @@ Common Data Service インスタンスと接続するのに使用できる Postm
 
 Common Data Service インスタンスと接続するテストのための新しい Web API 要求を作成します。 <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI function" />を使用するには、次の操作を実行します。
 1. HTTP メソッドとして `GET` を選択し、編集スペースで `{{webapiurl}}WhoAmI` を追加します。
-  ![WhoAmI 関数要求](media/postman-whoami-request.png "WhoAmI 関数要求")
+  ![WhoAmI 関数要求](media/postman-whoami-request.png "WWhoAmI 関数要求)
 2. この要求を送信するには **送信** を選択します。
 3. 要求が成功した場合は <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI Function" /> によって返される <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" /> からのデータを確認します。
 

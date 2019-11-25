@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: 保存済みクエリの検証および実行 (Common Data Service) | Microsoft Docs'
+title: 'サンプル: 保存されたクエリの検証と実行（Common Data Service）| Microsoft Docs'
 description: このサンプルでは、保存済みクエリを検証して実行する方法を示しています。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2ea9be760c08bb75b97cfeb234ce914eae9e014c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749273"
 ---
 # <a name="sample-validate-and-execute-a-saved-query"></a>サンプル: 保存済みクエリの検証および実行
 

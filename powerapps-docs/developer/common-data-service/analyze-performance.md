@@ -1,5 +1,5 @@
 ---
-title: プラグインのパフォーマンスを分析する (Common Data Service) | Microsoft Docs
+title: プラグインのパフォーマンスを解析する (Common Data Service) | Microsoft Docs
 description: 登録済みプラグインがどのように実行されているかについてのデータを検索および分析する方法を説明します。
 ms.custom: ''
 ms.date: 1/29/2019
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: pehecke
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e6a3d1a571e7a85ab328c2cd1b7e69770524d3be
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748837"
 ---
 # <a name="analyze-plug-in-performance"></a>プラグインのパフォーマンスを解析する
 

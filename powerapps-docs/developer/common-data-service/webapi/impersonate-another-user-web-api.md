@@ -1,6 +1,6 @@
 ---
-title: Web API (Common Data Service) を使用して別のユーザーを偽装する | Microsoft Docs
-description: 偽装は、別の Common Data Service ユーザーに代わってビジネス ロジック (コード) を実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供するために使用されます。 Web API を使用して別の Common Data Service ユーザーを偽装する方法について説明します。
+title: " Web API を使用して別のユーザーを偽装する (Common Data Service)| Microsoft Docs"
+description: 偽装は、Common Data Service ユーザーに代わってビジネス ロジック (コード) を実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供するために使用されます。 Web API を使用して Common Data Service の別のユーザーを偽装できる方法について説明します
 ms.custom: ''
 ms.date: 03/18/2019
 ms.service: powerapps
@@ -8,20 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 74d07683-63ff-4d05-a434-dcfd44cd634d
 caps.latest.revision: 9
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7958fa933701eb6ffc037dd8d5a04e641c6669ea
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749193"
 ---
-
 <!-- TOD0: The higher level topic [Impersonate another user](../impersonate-another-user.md) should include all generic concepts.
 This topic should only cover the Web API specific details -->
 
@@ -34,7 +39,7 @@ This topic should only cover the Web API specific details -->
 
 ## <a name="requirements-for-impersonation"></a>偽装の要件
 
-偽装は、別の Common Data Service ユーザーに代わってビジネス ロジック (コード) を実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供するために使用されます。 偽装が必要なのは、ワークフローやユーザー定義の ISV ソリューションなどで、Common Data Service ユーザーに代わってさまざまなクライアントやサービスによって Common Data Service Web サービスを呼び出すことができるためです。 偽装には 2 つの異なるユーザー アカウントが含まれ、1つのユーザー アカウント (A) が、もう一方のユーザー アカウント (B) に代わって何らかのタスクを行うコードの実行時に使用されます。  
+偽装は、Common Data Service ユーザーに代わってビジネス ロジック (コード) を実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供するために使用されます。 偽装が必要なのは、ワークフローやユーザー定義の ISV ソリューションなどで、Common Data Service ユーザーに代わってさまざまなクライアントやサービスによって Common Data Service Web サービスを呼び出すことができるためです。 偽装には 2 つの異なるユーザー アカウントが含まれ、1つのユーザー アカウント (A) が、もう一方のユーザー アカウント (B) に代わって何らかのタスクを行うコードの実行時に使用されます。  
   
 ユーザー アカウント (A) は、代理人セキュリティ ロールに含まれる `prvActOnBehalfOfAnotherUser` 特権を必要とします。 データ変更に使用される実際の特権のセットは、代理人の役割のユーザーが所有する特権と、偽装されたユーザーが所有する特権との共通部分です。 つまり、ユーザー (A) と偽装されたユーザー (B) が操作に必要な特権を持つ場合にのみ、ユーザー (A) は何かを実行できます。  
   
@@ -47,7 +52,7 @@ This topic should only cover the Web API specific details -->
  1. **希望する方法:** Azure Active Directory (AAD) オブジェクト ID に基づき、その値を `CallerObjectId` ヘッダーと共に渡すことにより、ユーザーを偽装します。
 2. **従来:** システム ユーザー ID に基づきユーザーを偽装するには、関連するグリッド値と共に `MSCRMCallerID` を活用することができます。
 
- この例では、Azure Active Directory オブジェクト ID `e39c5d16-675b-48d1-8e67-667427e9c084` を持つユーザのために新しい取引先企業エンティティが作成されます。   
+ この例では、Azure Active Directory オブジェクト ID  `e39c5d16-675b-48d1-8e67-667427e9c084` を持つユーザのために新しい取引先企業エンティティが作成されます。   
   
  **要求**  
 ```http 

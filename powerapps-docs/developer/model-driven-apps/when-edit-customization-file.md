@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 29aa934896638b65b20d8054379f0654ef5ee839
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748956"
 ---
 # <a name="when-to-edit-the-customizations-file"></a>カスタマイズ ファイルを編集するとき
 
@@ -48,7 +54,7 @@ search.app:
  エンティティのビューの定義を customizations.xml ファイルに含め、手動で編集することができます。 アプリケーションのビュー エディターは、この目的ため最もよく使用されるツールです。 customizations.xml ファイルを編集する方法もあります。 詳細については、[エンティティ ビューのカスタマイズ](customize-entity-views.md) を参照してください。  
   
  **ISV.Config の編集**  
-  Common Data Service では、リボンがアプリケーションの拡張方法を提供します。 ISV.Config に引き続き残っている唯一の機能は、サービス カレンダーの外観をカスタマイズすることです。 詳細については、[サービス カレンダーの外観の構成](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration) を参照してください。  
+  Common Data Serviceでは、リボンでアプリケーションを拡張できます。 ISV.Config に引き続き残っている唯一の機能は、サービス カレンダーの外観をカスタマイズすることです。 詳細については、[サービス カレンダーの外観の構成](/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration) を参照してください。  
   
 ## <a name="unsupported-tasks"></a>サポートされないタスク  
  エクスポートされた customizations.xml ファイルを編集することで、他のソリューション コンポーネントを定義することはサポートされていません。 このフェーズでは次のタスクを実行します。  

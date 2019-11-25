@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5600d4225868dc67096dc3f72ee30b3166ed30d5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748810"
 ---
 # <a name="retrieve-published-metadata"></a>公開済みメタデータの取得
 
@@ -144,7 +150,7 @@ public RetrieveEntityAttributesResponse GetEntity(IOrganizationService service, 
 
 ## <a name="additional-information"></a>追加情報
 
-Dynamics 365 サービスでは、公開済みまたは非公開の特定のメタデータを取得できます。 Dynamics CRM 2011 以降、開発者が `RetrieveAsIfPublished` プロパティ値に明示的に`true` を割り当てていない限り、公開済みメタデータは、既定でアプリケーションのメモリ内メタデータ キャッシュから取得されます。
+Dynamics 365 サービスでは、公開済みまたは非公開の特定のメタデータを取得できます。 Dynamics CRM 2011 以降、開発者が `RetrieveAsIfPublished` プロパティ値に `true` を割り当てていない限り、公開済みメタデータは、既定でアプリケーションのメモリ内メタデータ キャッシュから取得されます。
 
 非公開メタデータを取得すると、要求自体の処理にオーバーヘッドが追加され、処理が遅くなるだけでなく、要求者が予期しないメタデータを返す可能性もあります。 たとえば、非公開の optionset メタデータを取得すると、ユーザー インターフェイスに表示されないラベル値が返され、エンドユーザーが混乱する原因となります。
 

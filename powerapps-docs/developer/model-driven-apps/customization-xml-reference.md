@@ -4,21 +4,24 @@ description: customizations.xml ファイルは、エクスポートされるア
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 864699de-c22f-3504-f120-84ca5a4aeca6
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a5e4a9a44c7b3dcfb7131e5782bc680c114665e7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749050"
 ---
-
 # <a name="customization-xml-reference"></a>カスタマイズ XML リファレンス
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customization-xml-reference -->

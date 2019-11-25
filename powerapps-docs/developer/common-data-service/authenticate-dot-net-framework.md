@@ -1,6 +1,6 @@
 ---
-title: .NET Framework アプリケーションでの認証 (Common Data Service) | Microsoft Docs
-description: .NET Framework アプリケーションが Common Data Service で認証する方法
+title: .NET Framework アプリケーションによる認証 (Common Data Service) | Microsoft Docs
+description: Common Data Service を使用した .NET Framework アプリケーションの認証方法
 ms.custom: ''
 ms.date: 01/25/2019
 ms.reviewer: ''
@@ -10,12 +10,17 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1cfe6bf09d274f7b465ffbcc97f220e3374af72f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749162"
 ---
-
 # <a name="authentication-with-net-framework-applications"></a>.NET Framework アプリケーションでの認証
 
 .NET Framework を使用している場合、[Xrm.Tooling](/dotnet/api/?view=dynamics-xrmtooling-ce-9) 名前空間内でクラスを使用して認証し、組織サービスおよび Web API に接続できます。
@@ -52,7 +57,7 @@ Web API の使用を希望する場合は、<xref:Microsoft.Xrm.Tooling.Connecto
 > 
 > VS 2015 のデバッグモードでプロジェクト/ソリューションを実行していると、接続できなくなることがあります。 これは、4.6.2 以降のターゲットフレームワークを使用しているかどうかにかかわらず発生します。 これは、Visual Studio ホスティングプロセスが .NET 4.5 に対してコンパイルされているために発生します。これは既定で TLS 1.2 がサポートされていないことを意味します。 回避策として、Visual Studio ホスティング プロセスを無効にできます。 
 >
-> Visual Studio でプロジェクトの名前を右クリックしてから、**プロパティ**をクリックします。 **デバッグ**タブで、**Visual Studio ホスティング プロセスの無効化**オプションをオフにできます。 
+> Visual Studio でプロジェクトの名前を右クリックしてから、**プロパティ**をクリックします。 **デバッグ**タブで、**Visual Studio ホスティング プロセスの有効化**オプションをオフにできます。 
 >
 > これは、VS 2015 のデバッグ エクスペリエンスにのみ影響を与えます。 これは構築されるバイナリまたは実行可能ファイルには影響しません。 同じ問題は、Visual Studio 2017 では発生しません。
 
@@ -62,6 +67,6 @@ Web API の使用を希望する場合は、<xref:Microsoft.Xrm.Tooling.Connecto
 
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service Web サービスでの認証](authentication.md)<br />
-[Common Data Service での OAuth の使用](authenticate-oauth.md)
+[ Common Data Service ウェブサービス を使用した認証](authentication.md)<br />
+[Common Data Service で OAuth を使用する](authenticate-oauth.md)
 

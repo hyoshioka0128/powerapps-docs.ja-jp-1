@@ -1,5 +1,5 @@
 ---
-title: '手順 2: Microsoft Partner Network アカウントを登録する (Common Data Service) | Microsoft Docs'
+title: '手順 2: Microsoft Partner Network アカウントの登録 (Common Data Service) | Microsoft Docs'
 description: AppSource 上にアプリを公開するには、アプリ ビルダーは Microsoft Partner Network (MPN) のメンバーである必要があります。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c871191ae475f4e65db34746e7f208b3e581e697
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749233"
 ---
 # <a name="step-2-register-for-microsoft-partner-network-account"></a>手順 2: Microsoft Partner Network アカウントを登録する
 

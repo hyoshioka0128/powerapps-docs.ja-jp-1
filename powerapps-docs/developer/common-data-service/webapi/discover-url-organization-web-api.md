@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 2db13b4e-0e7c-4f25-b7be-70a612fb96e2
 caps.latest.revision: 18
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 429f199a9178c2d304331814ae1a9fa6e1ffaa96
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749075"
 ---
 # <a name="discover-the-url-for-your-organization-using-the-web-api"></a>Web API を使用して組織の URL を検出します
 
@@ -78,9 +84,9 @@ GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName
 探索サービスの Common Data Service Web API インスタンスは、OAuth アクセス トークンを使用した証明書が必要です。
 
 探索サービスが、OAuth 認証用に構成されている場合、アクセス トークンなしでサービス Web API に送信される要求は、共通エンドポイントの権限およびサービスのリソース ID と共にベアラー チャレンジをトリガーします。
-### <a name="cors-support"></a>CORS のサポート
+### <a name="cors-support"></a>CORS サポート
 
-DiscoveryサービスのWeb APIは、Web APIと同様にクロス オリジンアクセスの CORS 標準企画に対応しています。  CORS のサポートに関する詳細については、 [OAuthを使用してクロスオリジンリソース共有で単一ページアプリケーションに接続する](../oauth-cross-origin-resource-sharing-connect-single-page-application.md)を参照してください。  
+探索サービス Web API は、Web API のように、クロス オリジン アクセスの CORS 標準をサポートします。  CORS サポートの詳細については、[OAuth を使用するクロス オリジン リソース共有を使用して単一ページのアプリケーションへ接続する](../oauth-cross-origin-resource-sharing-connect-single-page-application.md) を参照してください。  
   
 ### <a name="examples"></a>例  
   

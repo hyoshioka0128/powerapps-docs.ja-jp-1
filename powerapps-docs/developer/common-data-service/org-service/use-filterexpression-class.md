@@ -6,18 +6,24 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ba077e5bf9c1f1f464e8cc71594d30684efc0824
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749263"
 ---
 # <a name="use-the-filterexpression-class"></a>FilterExpression クラスの使用
 
-Common Data Service では <xref:Microsoft.Xrm.Sdk.Query.FilterExpression> クラスを使用して、複数の条件を表すクエリをビルドできます。 たとえば、`([FirstName] = 'Joe' OR [FirstName] = 'John') AND [City] = 'Redmond'` のような SQL ステートメントと同等のクエリ式を作成できます。  
+Common Data Service では、<xref:Microsoft.Xrm.Sdk.Query.FilterExpression> クラスを使用して、複数の条件を表すクエリを作成できます。 たとえば、`([FirstName] = 'Joe' OR [FirstName] = 'John') AND [City] = 'Redmond'` のような SQL ステートメントと同等のクエリ式を作成できます。  
   
  次の表では、<xref:Microsoft.Xrm.Sdk.Query.FilterExpression> クラスのプロパティを示します。  
   

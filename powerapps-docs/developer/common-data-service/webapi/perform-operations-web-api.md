@@ -9,14 +9,20 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: b7ae4dd3-e9ee-45cc-a345-2fb7be5eddc6
 caps.latest.revision: 12
-author: brandonsimons
+author: JimDaly
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7bb68a1fd84b5af2f5d5fe5e78ea9fac8557e012
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748927"
 ---
 # <a name="perform-operations-using-the-web-api"></a>Web API を使用して演算を実行する
 

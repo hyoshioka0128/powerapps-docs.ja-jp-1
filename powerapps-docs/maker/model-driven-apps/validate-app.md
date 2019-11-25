@@ -3,29 +3,34 @@ title: アプリ デザイナーを使用してモデル駆動型のアプリを
 description: モデル駆動型のアプリを検証および公開する方法を学習
 keywords: ''
 ms.date: 06/08/2018
-ms.service: crm-online
-ms.custom: null
+ms.service: powerapps
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 5a9ec120-9ddc-4d92-b48c-0fee8c57d3c3
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 10
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2e6ae7ac84710e6558adde2949025868e6da6930
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710292"
 ---
-
 # <a name="validate-and-publish-a-model-driven-app-using-the-app-designer"></a>アプリ デザイナーを使用してモデル駆動型のアプリを検証および公開する
 
 アプリが動作するために必要であるがアプリにまだ追加されていない、資産の依存関係を確認するためにアプリを検証します。 検証に成功したら、アプリケーションを公開します。 
@@ -55,9 +60,9 @@ search.app:
     > [!NOTE]
     >  さまざまなアプリ コンポーネントにわたって共通アセットが必要でありたとえば、ダッシュボードおよびエンティティのフォームが必要である、そのアセットをダッシュボード依存関係ツリーから 1 回だけ追加すると、ダッシュボード タイル上の依存関係の数は減るが、エンティティ タイル上のその数は減りません。 ただし、依存関係は、両方のタイルで解決されます。  
     >   
-    >  **最新の依存関係の取得** ![アプリ デザイナーの [最新の依存関係の取得] ボタン](media/app-designer-get-latest-dependencies.png "アプリ デザイナーの [最新の依存関係の取得] ボタン") を選択するか、**検証**を再び選択して、最新の依存関係を取得します。 アプリを保存した後にのみこれらのボタンが表示されます。  
+    >  **最新の依存関係の取得** ![アプリ デザイナーの [最新の依存関係の取得] ボタン](media/app-designer-get-latest-dependencies.png "アプリ デザイナーの最新の依存関係ボタンを取得") を選択するか、または **検証** をもう 1 度クリックし、依存関係の最新の設定を取得します。 アプリを保存した後にのみこれらのボタンが表示されます。  
   
-     提案されている必須コンポーネントを追加しない場合は、**依存関係の非表示**を選択します。 アプリ デザイナーでアプリをオープンして**検証**または**最新の依存関係の取得** ![アプリ デザイナーの [最新の依存関係の取得] ボタン](media/app-designer-get-latest-dependencies.png "アプリ デザイナーの [最新の依存関係の取得] ボタン") を選択すると、未解決の警告は再び表示されます。  
+     提案されている必須コンポーネントを追加しない場合は、**依存関係の非表示**を選択します。 アプリ デザイナーでアプリをオープンして**検証**または**最新の依存関係の取得** ![アプリ デザイナーの [最新の依存関係の取得] ボタン](media/app-designer-get-latest-dependencies.png "アプリ デザイナーの最新の依存関係ボタンを取得")を選択します。  
   
     > [!NOTE]
     >  依存関係をここで非表示にし、後でこのアプリをエクスポートする場合は、これらすべての依存関係がもう 1 度表示されます。  

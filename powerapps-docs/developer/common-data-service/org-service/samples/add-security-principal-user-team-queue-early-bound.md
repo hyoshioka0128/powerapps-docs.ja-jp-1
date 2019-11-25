@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: セキュリティ プリンシパル (ユーザーまたはチーム) をキューに追加する (Common Data Service) | Microsoft Docs'
+title: 'サンプル: セキュリティ プリンシパル (ユーザーまたはチーム) をキューに追加 (Common Data Service) | Microsoft Docs'
 description: 'サンプル: キューへのセキュリティ プリンシパルの追加'
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ff883ffd2c90da491341a9ea03284c19bc564fab
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748964"
 ---
 # <a name="sample-add-a-security-principal-user-or-team-to-a-queue"></a>サンプル: キューへのセキュリティ プリンシパル (ユーザーまたはチーム) の追加 
 

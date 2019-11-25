@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3f1c948e5fa41a9eccaeb7ea27c42f4ad49c93b0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749156"
 ---
 # <a name="include-filtering-attributes-with-plug-in-registration"></a>プラグイン登録にフィルター属性を含める
 

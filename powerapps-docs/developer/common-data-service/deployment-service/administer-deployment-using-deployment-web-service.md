@@ -10,10 +10,16 @@ author: jamesol-msft
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b94bf8ce98e644cf1bbbbe856b42f2a31a228e6f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748988"
 ---
 # <a name="administer-the-deployment-using-the-deployment-web-service"></a>展開 Web サービスを使用した展開の管理
 

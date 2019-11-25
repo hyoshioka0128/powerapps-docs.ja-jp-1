@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 07/11/2019
 ms.author: prkoduku
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 49628d24d6d87f4cc541ba11e498b255c9b71a2f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748849"
 ---
-
 # <a name="introduction-to-isv-studio-for-the-power-platform"></a>Power Platform ISV Studio の概要
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -45,11 +50,11 @@ ISV Studio の共有プレビューにアクセスするには、ブラウザで
 
 ## <a name="pre-requisites"></a>前提条件
 
-1. ISVは、 [AppSource](https://appsource.microsoft.com/)で公開された1つまたは複数のサポート対象アプリケーションを持つ、Microsoft登録パートナーの組織 [ISV] と関連付けられている必要があります。 サポートされているアプリには、PowerApps と Dynamics 365 Sales や Dynamics 365 Customer Service などの Dynamics 365 のモデル駆動型アプリがあります。
+1. ISVは、[AppSource](https://appsource.microsoft.com/) で公開された 1 つまたは複数のサポート対象アプリを持つ、Microsoft 登録パートナー組織 [ISV] と関連付けられている必要があります。 サポートされているアプリには、PowerApps と Dynamics 365 Sales や Dynamics 365 Customer Service などの Dynamics 365 のモデル駆動型アプリがあります。
 
 2. ISVは [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD) アカウントを持っている必要があり、そのアカウントは ISV の クラウド パートナー ポータル(CPP) で、アプリのコントリビューターまたはオーナーとして設定されている必要があります。
 
-ISV Studio にアクセスできるユーザを追加する場合は、CPPにて アプリ コントリビュータとして追加することができます。  手順については、[クラウド パートナー ポータルでのユーザー管理](https://docs.microsoft.com/en-us/azure/marketplace/cloud-partner-portal-orig/cloud-partner-portal-manage-users)で確認することができます。
+ISV Studio にアクセスできるユーザを追加する場合は、CPPにて アプリ コントリビュータとして追加することができます。  手順については、[クラウド パートナー ポータルでのユーザー管理](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal-orig/cloud-partner-portal-manage-users)で確認することができます。
 
 ISV Studioの機能については、以下の「アプリ」と「テナント」ページのトピックを参照してください。
 

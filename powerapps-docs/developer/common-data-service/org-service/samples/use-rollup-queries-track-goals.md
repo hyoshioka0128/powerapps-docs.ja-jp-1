@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9d7b1f6f3f7d9af82e1b047da2ae760246c8ebdc
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749275"
 ---
 # <a name="sample-use-rollup-queries-to-track-goals"></a>サンプル: ロールアップ クエリを使用して目標を追跡する
 
@@ -21,7 +27,7 @@ search.app:
 
 このサンプルは、ロールアップ クエリを使用して目標を追跡する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueriesTrackGoals) からダウンロードできます。
 
-このサンプルではシステムに存在しない追加のユーザーが 3 人必要です。 次に **そのまま** 示すように、必要になった 3 人のユーザーを **Office 365**で手動で作成します。 `yourorg` を組織名で置換します。
+このサンプルではシステムに存在しない追加のユーザーが 3 人必要です。 次に**そのまま**示すように、必要になった 3 人のユーザーを **Office 365** で手動で作成します。 `yourorg` を組織名で置換します。
 
 **名**: Nancy<br/>
 **姓**: Anderson<br/>
@@ -53,7 +59,7 @@ search.app:
 ### <a name="setup"></a>セットアップ
 
 1. 組織の現在のバージョンをチェックします。
-2. **Office 365**で手動で作成された、セールス マネージャーおよび2名のセールス担当者を取得します。
+2. **Office 365**で手動で作成された、セールス マネージャーおよび 2 名のセールス担当者を取得します。
 3. `SalesOrder` レコードをサポートするためにレコードを作成します。
 4. サンプルの新しい出荷単位一覧を作成します。
 5. 新しい出荷単位一覧を作成した際に自動的に作成される、既定の出荷単位 ID を取得します。

@@ -1,14 +1,14 @@
-- name: コードを使用したビジネス ロジックの適用
+- name: < コードを使用してビジネス ロジックを適用する
   href: ../apply-business-logic-with-code.md
-- name: スケーラブルなカスタマイズのデザイン
+- name: スケーラブルなカスタマイズ設計
   href: overview.md
   items:
     - name: データベース トランザクション
       href: database-transactions.md
-    - name: 同時実行の問題
+    - name: 同時実行問題
       href: concurrency-issues.md
       items:
         - name: 自動付番の例
           href: auto-numbering-example.md
-    - name: トランザクションの設計パターン
+    - name: トランザクション設計パターン
       href: transaction-design-patterns.md

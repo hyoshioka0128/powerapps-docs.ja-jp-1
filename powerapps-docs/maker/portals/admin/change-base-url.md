@@ -5,15 +5,18 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 07/18/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: cfc2fd0ca753aebfe7bc77b73c7e7ec1ca011387
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709984"
 ---
-
 # <a name="change-the-base-url-of-a-portal"></a>ポータルの基本 URL を変更する
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 プロビジョニングの後、ポータルの基本 URL を変更することができます。 たとえば、ポータルをプロビジョニングするときに `contosocommunity.microsoftcrmportals.com` を基本 URL として選択する場合、要件を満たすように後から `contosocommunityportal.microsoftcrmportals.com` に変更することができます。
 
@@ -30,7 +33,7 @@ ms.reviewer: null
 3.  基本 URL ウィンドウで、ポータルの新しい基本 URL を入力します。
 
     > [!div class=mx-imgBorder]
-    > ![ポータルの新しい基本 URL の指定](../media/change-base-url.png "ポータルの新しい基本 URL の指定")
+    > ![ポータルの新しい基本 URL を指定する](../media/change-base-url.png "ポータルの新しい基本 URL を指定する")
 
 4.  確認メッセージで**URL の変更**を選択します。
 

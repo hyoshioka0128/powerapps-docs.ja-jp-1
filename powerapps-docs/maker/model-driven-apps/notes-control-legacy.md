@@ -3,28 +3,34 @@ title: PowerApps で投稿に関する情報にアクセスするためにモデ
 ms.custom: ''
 ms.date: 05/06/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: f10cdf1c-3540-439c-a171-27a10e72da45
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bb60588e34e66fc1a0222d18e90d50af672bcc69
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711700"
 ---
 # <a name="set-up-the-model-driven-app-notes-control-to-access-information-about-posts"></a>投稿に関する情報にアクセスするためにモデル駆動型アプリのメモ コントロールを設定する
 
- [更新されたフォーム](main-form-presentations.md#updated-forms)を使用する特定のシステム エンティティの PowerApps フォームでは、メモ コントロールによって、**投稿**、**アクティビティ**、および**メモ**に関する情報にアクセスする機能が提供されます。 メモと活動を有効にするユーザー定義エンティティでは、**メモ**と**活動**のみが表示されます。 **投稿**を含めるには、ユーザー定義エンティティに対して有効にする必要があります。  
+ [更新されたフォーム](main-form-presentations.md#updated-forms) を使用する特定のシステム エンティティの PowerApps フォームでは、メモ コントロールによって、**投稿**、**アクティビティ**、および**メモ**に関する情報にアクセスする機能が提供されます。 メモと活動を有効にするユーザー定義エンティティでは、**メモ**と**活動**のみが表示されます。 **投稿**を含めるには、ユーザー定義エンティティに対して有効にする必要があります。  
   
 ## <a name="enable-posts-for-a-custom-entity"></a>ユーザー定義エンティティに対して投稿を有効にする  
   

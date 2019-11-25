@@ -8,13 +8,19 @@ author: KumarVivek
 ms.author: kvivek
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
+- PowerApps
+ms.openlocfilehash: 30d9025b5fe4e1fc6135b83b59ce424f033abde3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748981"
 ---
 # <a name="online-management-api-for-common-data-service"></a>Common Data Service のオンライン管理 API
 
-オンライン管理 API は、Office 365 テナントの Common Data Service 環境を作成および管理するための REST API です。 
+オンライン管理 API は、Office 365  テナントの Common Data Service 環境を作成および管理するための REST API です。 
 
 アプリケーションの発行元および ISV は、Online Management API を使用して次のことを行うことができます。
 -  カスタム デモの作成を自動化する Common Data Service 環境
@@ -27,6 +33,6 @@ Online Management API を使用すると、インスタンスの作成、取得�
   
 ### <a name="related-sections"></a>関連セクション  
 
-[オンライン管理 REST API リファレンス](/rest/api/admin.services.crm.dynamics.com)
+[オンライン管理 REST API 参照](/rest/api/admin.services.crm.dynamics.com)
 
 [Common Data Service 開発者ガイド](/powerapps/developer/common-data-service/overview)

@@ -4,21 +4,24 @@ description: アンマネージド ソリューションの一部としてエク
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: cac303a6-70f9-3962-879a-fbf7fdc2364f
 author: shmcarth
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: dee119bec4c4a57995f0f2c4299c199c9a45caf1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749169"
 ---
-
 # <a name="when-to-edit-the-customizations-file"></a>カスタマイズ ファイルを編集するとき
 
 アンマネージド ソリューションの一部としてエクスポートされた customizations.xml ファイルは、特定のカスタマイズ タスクを実行するように編集できます。 ファイルを編集した後、アンマネージド ソリューションでエクスポートされる他のファイルとともに変更されたファイルを圧縮できます。 変更されたアンマネージド ソリューションをインポートして変更を適応します。  

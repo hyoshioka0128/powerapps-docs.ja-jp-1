@@ -1,6 +1,6 @@
 ---
-title: Web API を使用したエンティティ関係の作成および更新 (Common Data Service) | Microsoft Docs
-description: メタデータ駆動のアーキテクチャを使用してユーザー定義エンティティや追加のシステム エンティティ属性を柔軟に作成するのに役立つ Common Data Service エンティティの作成および更新について説明します。
+title: Web API を使用してエンティティの関連付けを作成、更新する (Common Data Service) | Microsoft Docs
+description: メタデータ駆動のアーキテクチャを使用してユーザー定義エンティティや追加のシステム エンティティ属性の柔軟な作成を実現する Common Data Service エンティティの作成と更新について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 923538e2-15fe-4718-8eae-d939c5d200cd
 caps.latest.revision: 15
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 90479dca5ecd6fcb230847533ed98533fda2e876
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748935"
 ---
 # <a name="create-and-update-entity-relationships-using-the-web-api"></a>Web API を使用してエンティティ関係を作成および更新する
 
@@ -241,7 +247,7 @@ Web API を使用して関連付けを削除するには、HTTP DELETE メソッ
 
 <!-- TODO:
 [Customize entity relationship metadata](../customize-entity-relationship-metadata.md)<br /> -->
-[Web API を Common Data Service メタデータで使用する](use-web-api-metadata.md)<br />
+[Common Data Service メタデータで Web API を使用する](use-web-api-metadata.md)<br />
 [Web API を使用したクエリ メタデータ](query-metadata-web-api.md)<br />
 [名前または MetadataId でのメタデータの取得](retrieve-metadata-name-metadataid.md)<br />
 [Web API を使用してエンティティおよび属性をモデリング](create-update-entity-definitions-using-web-api.md)

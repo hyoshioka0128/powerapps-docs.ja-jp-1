@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 28dac174671b4577a42e488afa4e007f7e0d9212
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749210"
 ---
 # <a name="transaction-currency-currency-entity"></a>トランザクション通貨 (通貨) エンティティ
 
@@ -43,7 +49,7 @@ Common Data Service は、複数通貨システムを使用して、各レコー
   
 取引通貨には、`TransactionCurrency.CurrencyPrecision` 属性を使用して精度を指定できます。 金額の属性の種類に精度の基準を指定するには、<xref:Microsoft.Xrm.Sdk.Metadata.MoneyAttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.MoneyAttributeMetadata.PrecisionSource>  属性を使用します。  
   
-同一の取引通貨がレコード内のすべての金額プロパティで共有されます。たとえば、`Account.CreditLimit` 属性では、 Common Data Service では、エンティティ内の金額属性ごとに、システムにより計算された読み取り専用の金額属性が自動的に作成されます。これを "基準" と呼びます。 これは、対応する属性の値が対応する基本通貨で格納される金額属性です。例として `Account.CreditLimit_Base` 属性で説明します。  
+同一の取引通貨がレコード内のすべての金額プロパティで共有されます。たとえば、`Account.CreditLimit` 属性では、 エンティティ内の金額属性ごとに、Common Data Service システムにより計算された読み取り専用の金額属性が自動的に作成されます。これを "基準" と呼びます。 これは、対応する属性の値が対応する基本通貨で格納される金額属性です。例として `Account.CreditLimit_Base` 属性で説明します。  
   
 次の計算式を使用して基準値を計算します。  
   

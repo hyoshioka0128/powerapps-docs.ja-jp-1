@@ -4,28 +4,33 @@ description: アプリのグリッド コントロールの構成方法を学習
 keywords: ''
 ms.date: 06/03/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 3ecea4a7-0d18-4ccd-9609-3a62179e9e1b
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 0
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: efca6e540a962295553222805052fda2c9a8ddf6
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710908"
 ---
-
 # <a name="specify-properties-for-model-driven-unified-interface-apps"></a>モデル駆動型統一インターフェイス アプリ用プロパティを指定する
 
 統一インターフェイス フレームワークは、応答性を高める設計原則を使用して、すべての画面サイズまたは表示方向に最適な表示および対話型エクスペリエンスを提供します。 統一インターフェイス フレームワークを使用するモデル駆動型アプリでは、グリッド (ビュー) コントロールは敏感に反応します。 コンテナのサイズが小さくなると—たとえば、電話およびより小さいビューポート上では—、グリッドがリストに変換されます。 

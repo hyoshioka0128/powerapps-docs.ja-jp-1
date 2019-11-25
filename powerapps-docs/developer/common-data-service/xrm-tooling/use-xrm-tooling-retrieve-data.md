@@ -1,6 +1,6 @@
 ---
 title: データを取得するために XRM ツールを使用する (Common Data Service)| Microsoft Docs
-description: CrmServiceClient クラスを使用して Common Data Service からデータを取得
+description: Common Data Service で CrmServiceClient クラスを使用してデータを取得
 ms.custom: ''
 ms.date: 03/27/2019
 ms.reviewer: ''
@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 2afc057e-8f70-4bea-bad4-d01e18ed92fd
 caps.latest.revision: 14
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7625f914327742f3c86fef6810b5082a47845904
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748897"
 ---
 # <a name="use-xrm-tooling-to-retrieve-data"></a>データを取得するために XRM ツールを使用する
 
-Common Data Service でデータを取得するために、<xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラスには、数多くのメソッドが用意されています。 次の例は ID または FetchXML クエリでレコードを取得する方法を示します。  
+Common Data Service でデータを取得するために、 <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラスには複数のメソッドが用意されています。 次の例は ID または FetchXML クエリでレコードを取得する方法を示します。  
   
 ## <a name="getentitydatabyid"></a>GetEntityDataById  
 
@@ -99,4 +105,4 @@ else
 
 [サンプル: XRM ツール API のクイック スタート](sample-quick-start-xrm-tooling-api.md)<br />
 [XRM ツールを使用して Common Data Service に接続する](use-crmserviceclient-constructors-connect.md)<br />
-[XRM ツール API を使用して Common Data Service のアクションを実行する](use-xrm-tooling-execute-actions.md)
+[Common Data Service で XRM ツール API を使用してアクションを実行する](use-xrm-tooling-execute-actions.md)

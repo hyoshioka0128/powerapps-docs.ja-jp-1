@@ -4,21 +4,24 @@ description: このトピックではグラフのビジュアル化と Web リ�
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 9dbed5ee-21a4-ab86-fc4c-08c3838e42f2
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2d5a7245b0e620885ab60ca57d674245641745fd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749046"
 ---
-
 # <a name="create-a-visualization-chart"></a>ビジュアル化の作成 (グラフ)
 
 ビジュアル化をプログラムで作成するには、[SavedQueryVisualization Entity](../common-data-service/reference/entities/savedqueryvisualization.md) または [UserQueryVisualization Entity](../common-data-service/reference/entities/userqueryvisualization.md) エンティティのレコードを作成して、組織所有またはユーザー所有のグラフをそれぞれ作成する必要があります。 このトピックでは、グラフ ビジュアル化と Web リソース ビジュアル化の作成方法を説明します。  

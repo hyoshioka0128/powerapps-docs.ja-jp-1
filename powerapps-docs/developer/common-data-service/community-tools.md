@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f87e8e6d6e56ccc82ae589b371edca3257370a42
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749152"
 ---
 # <a name="community-tools-for-common-data-service"></a>Common Data Service のコミュニティ ツール
 
@@ -27,7 +33,7 @@ Common Data Service コミュニティはツールを作成します。 最も�
 |[事前バインド ジェネレーター](https://www.xrmtoolbox.com/plugins/DLaB.Xrm.EarlyBoundGenerator/)|事前バインド エンティティ/オプション設定/操作を生成します。 SDK からの CrmSvcUtil を使用して、クラスを作成するために使用するコマンド ラインを示します。|
 |[Excel にエクスポート](https://www.xrmtoolbox.com/plugins/Ryr.XrmToolBox.ExportToExcel/)|レコードを、選択したビュー/FetchXml から Excel に簡単にエクスポートします。|
 |[FetchXML Builder](https://www.xrmtoolbox.com/plugins/Cinteros.Xrm.FetchXmlBuilder/)|FetchXml クエリを作成してテストします。|
-|[メタデータ ブラウザー](https://www.xrmtoolbox.com/plugins/MsCrmTools.MetadataBrowser/)|Dynamics CRM 組織のメタデータの参照|
+|[メタデータ ブラウザー](https://www.xrmtoolbox.com/plugins/MsCrmTools.MetadataBrowser/)|Dynamics CRM 組織からメタデータを参照する|
 |[プラグイン追跡ビューア](https://www.xrmtoolbox.com/plugins/Cinteros.XrmToolBox.PluginTraceViewer/)|容易なフィルタリングと表示の可能性を備えたプラグイン追跡ログの調査|
 |[ユーザー設定ユーティリティ](https://www.xrmtoolbox.com/plugins/MsCrmTools.UserSettingsUtility/)|ユーザーの個人設定の一括管理|
 

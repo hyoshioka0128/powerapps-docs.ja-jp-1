@@ -10,12 +10,17 @@ author: mikkelsen2000
 ms.author: pemikkel
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 69736094b6c15d8731ec61f614da3085bed14924
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749012"
 ---
-
 # <a name="tutorial-and-faq"></a>チュートリアルとよく寄せられる質問
 
 
@@ -52,10 +57,10 @@ search.app:
 
 **PowerApps Build Tools の価格を教えてください。**
 
-*PowerApps Build Tools は無料で使用することができます。ただし、Build Tools を使用するためは Azure DevOps の有効なサブスクリプションが必要となります。詳細については [こちら](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/) を参照してください。*
+*PowerApps Build Tools は無料で使用することができます。ただし、Build Tools を使用するためは Azure DevOps の有効なサブスクリプションが必要となります。詳細については [こちら](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) を参照してください。*
 
 **拡張機能が表示されますが、それをインストールするオプションがないのはなぜですか?**
 
-***インストール** オプション (以下のスクリーンショットに概要を表示しています) が表示されていない場合は、Azure DevOps で必要なインストール権限が付与されていないことが考えられます。詳細については [こちら](https://docs.microsoft.com/en-us/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops) を参照してください*。
+***インストール** オプション (以下のスクリーンショットに概要を表示しています) が表示されていない場合は、Azure DevOps で必要なインストール権限が付与されていないことが考えられます。詳細については [こちら](https://docs.microsoft.com/azure/devops/marketplace/how-to/grant-permissions?view=azure-devops) を参照してください*。
 
 ![タスクの構築画面](media/build-tasks.png)

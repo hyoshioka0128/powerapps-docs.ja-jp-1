@@ -1,19 +1,25 @@
 ---
-title: 組織サービスを用いたエンティティの作成 (Common Data Service) | Microsoft Docs
+title: 組織サービスを使用したエンティティの作成 (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9d5f21a51fdd63797fe6e4eb920d2294f5b3fb18
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749122"
 ---
 # <a name="create-entities-using-the-organization-service"></a>組織サービスを使用したエンティティの作成
 
@@ -229,7 +235,7 @@ account["primarycontactid"] = new EntityReference("contact", "sample_username", 
 
 アプリケーションで新しいレコードを作成すると、通常、別のレコードのコンテキストで作成されます。 たとえば、取引先企業のコンテキストで新しい取引先担当者レコードを作成することができます。 これが発生すると、取引先企業エンティティから特定の属性値が取引先担当者フォームにコピーされます。 新しいレコードにはいくつかの既定値が設定されているため、作成するレコードを編集する人にこれらの値を入力する必要がないため、新しい関連レコードの作成が迅速化されます。 保存する前に値を変更することができます。
 
-この方法で新しいレコードを作成するときにコピーされる値は、Common Data Service 環境に適用される構成によって制御されるため、環境によって異なる可能性があります。 
+この方法で新しいレコードを作成するときにコピーされる値は、 Common Data Service 環境に適用される構成によって制御されるため、環境によって異なる可能性があります。 
 
 詳細: 
 - [エンティティ フィールドのマップ](../../../maker/common-data-service/map-entity-fields.md)

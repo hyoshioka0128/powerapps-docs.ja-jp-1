@@ -1,5 +1,5 @@
 ---
-title: NuGet からのツールのダウンロード (Common Data Service) | Microsoft Docs
+title: NuGet からツールをダウンロード (Common Data Service) | Microsoft Docs
 description: Nuget からプラグイン登録、パッケージ展開、および他のコア ツールをダウンロードします。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -9,21 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: feb3e634-7c60-46fd-8b92-3f5682b1570b
 author: shmcarth
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c7c548751f54a813116cd18112bbfaa5e7e3f3a0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748799"
 ---
+# <a name="download-tools-from-nuget"></a>NuGetからツールをダウンロードする 
 
-# <a name="download-tools-from-nuget"></a>NuGet からツールをダウンロード 
-
-以下の powershell スクリプトを使用して、NuGet から開発で使用するツールをダウンロードすることができます。 これらのツールには以下の内容が含まれます。
+以下に記載の powershell スクリプトを使用して、 開発で使用するツールを NuGet からダウンロードすることができます。 これらのツールには以下の内容が含まれます。
 
 |ツール|NuGet パッケージ|
 |-|-|
@@ -104,5 +109,5 @@ search.app:
 [事前バインド型エンティティ クラスの作成](/dynamics365/customer-engagement/developer/org-service/create-early-bound-entity-classes-code-generation-tool)<br />
 [コード生成ツール用の拡張機能の作成](org-service/extend-code-generation-tool.md)<br />
 [組織のメタデータの参照](browse-your-metadata.md)<br />
-[TechNet: Dynamics 365 Package Deployer および Windows PowerShell を使用してパッケージを展開する](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell)<br />
+[Dynamics 365 Package Deployer および Windows PowerShell を使用してパッケージを展開する](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell)<br />
 [プラグインの登録](register-plug-in.md)<br />

@@ -4,21 +4,24 @@ description: フォームには、エンティティ レコードを作成、表
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: e6a25bbe-e484-cfe9-9ad9-20ac6f19336a
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d108949576e682e88a140f62426d4351cb3ef82c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749045"
 ---
-
 # <a name="customize-entity-forms"></a>エンティティ フォームのカスタマイズ
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-entity-forms -->

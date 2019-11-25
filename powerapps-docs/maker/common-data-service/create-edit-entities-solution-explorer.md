@@ -9,21 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2ec1fb0471ad1f47f4afad083ad89e87633ce9ed
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707300"
 ---
-
 # <a name="create-and-edit-entities-using-solution-explorer"></a>ソリューション エクスプローラーを使用してエンティティを作成および編集する
 
-最も一般的な状況で PowerApps ポータルを使用してエンティティを簡単に作成できますが、すべての機能が実装されているわけではありません。 [Common Data Service でのエンティティの作成および編集](create-edit-entities.md) に記載されている要件を満たす必要がある場合は、ソリューション エクスプローラーを使用してエンティティを作成または編集することでそれらを達成できます。
+一般的な状況では、 PowerApps ポータルを使用してエンティティーを簡単に作成することができますが、ポータルにすべての機能が実装されているわけではありません。 [Common Data Serviceでのエンティティの作成と編集](create-edit-entities.md) で説明されている要件を満たす必要がある場合は、ソリューションエクスプローラーを使用してエンティティを作成、編集することで、要件を満たすことができます。
 
 ## <a name="open-solution-explorer"></a>ソリューション エクスプローラーを開きます
 
@@ -106,7 +111,7 @@ Both should point to this include
 [!INCLUDE [cc_entity-changeable-options-table](../../includes/cc_entity-changeable-options-table.md)]
 
 次の変更を加えることもできます。
-- [Common Data Service のフィールドの作成および編集](create-edit-fields.md)
+- [Common Data Serviceのフィールドの作成と編集](create-edit-fields.md)
 - [エンティティ間の関連付けの作成および編集](create-edit-entity-relationships.md)
 - [フォームの作成および設計](../model-driven-apps/create-design-forms.md)
 - [プロセスを標準化する業務プロセス フローの作成](/flow/create-business-process-flow)
@@ -174,7 +179,7 @@ Both should point to this include
  - **メモ (添付ファイルを含む)**
  - **接続**
  - **キュー**
- - **Outlook 用 Dynamics 365 のオフライン機能**
+ - **Dynamics 365 for Outlookのオフライン機能**
 
 次のオプションは設定できません。
 
@@ -197,6 +202,6 @@ Both should point to this include
 詳細情報: [外部データ ソースからのデータを格納する仮想エンティティの作成および編集](create-edit-virtual-entities.md)
 
 ### <a name="see-also"></a>関連項目
-[Common Data Service でエンティティを作成および編集する](create-edit-entities.md)<br />
+[Common Data Serviceでエンティティを作成、編集する](create-edit-entities.md)<br />
 [チュートリアル: PowerApps でのコンポーネントがあるユーザー定義エンティティの作成](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [ソリューションの作成](create-solution.md)

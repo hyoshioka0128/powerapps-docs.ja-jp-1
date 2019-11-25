@@ -1,23 +1,29 @@
 ---
-title: エンティティ属性と LINQ を使用した結果の順序指定 (Common Data Service) | Microsoft Docs
+title: LINQ でエンティティ属性を使用して結果を並べ替える (Common Data Service) | Microsoft Docs
 description: 検索またはオプション セット (候補リスト) 属性を使用して、LINQ クエリ内の結果の順序を指定する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 90b98b99e84a544ae524af6ed56eaa458c351a11
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749110"
 ---
 # <a name="order-results-using-entity-attributes-with-linq"></a>エンティティ属性と LINQ を使用した結果の順序指定
 
-アプリ用 Common Data Service (Common Data Service) では、検索またはオプション セット (候補リスト) 属性を使用して、LINQ クエリ内の結果の順序を指定できます。 このトピックでは、この種類のクエリの例をいくつか示します。  
+アプリの Common Data Service (Common Data Service) では、検索または OptionSet (候補リスト) 属性を使用して、LINQ クエリ内の結果の順序を指定できます。 このトピックでは、この種類のクエリの例をいくつか示します。  
   
 ## <a name="using-a-lookup-value-to-order-by"></a>Order By に対する検索値の使用  
 

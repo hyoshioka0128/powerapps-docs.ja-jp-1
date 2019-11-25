@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: CRUD 電子メール添付ファイル <Topic Title> (Common Data Service) | Microsoft Docs'
+title: 'サンプル: CRUD 電子メールの添付ファイル <Topic Title> (Common Data Service) | Microsoft Docs Microsoft'
 description: このサンプルは電子メール添付ファイルに関する CRUD 操作の実行方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7b6531dee95230f028c13728dd27761b8783738c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748952"
 ---
 # <a name="sample-create-retrieve-update-and-delete-an-email-attachment"></a>サンプル: 電子メールの添付ファイルの作成、取得、更新、および削除
 

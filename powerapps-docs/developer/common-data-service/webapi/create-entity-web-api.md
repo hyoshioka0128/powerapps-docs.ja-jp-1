@@ -1,6 +1,6 @@
 ---
-title: Web API を使用したエンティティの作成 (Common Data Service) | Microsoft Docs
-description: データを送信する POST 要求の作成方法を読み取り、Web API を使用して Common Data Service 上でエンティティを作成する
+title: Web API を使用したエンティティ レコードの作成 (Common Data Service) | Microsoft Docs
+description: データを送信する POST 要求の作成方法を読み取り、Web API を使用して Common Data Service 上でエンティティ レコードを作製する
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,23 +8,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 244259ca-2fbc-4fd4-9a74-6166e6683355
 caps.latest.revision: 51
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 64561c0b655e02a7537af4268b2a92b7a1677f9a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748937"
 ---
+# <a name="create-an-entity-record-using-the-web-api"></a>Web API を使用してエンティティ レコードを作成する
 
-# <a name="create-an-entity-using-the-web-api"></a>Web API を使用してエンティティを作成する
-
-POST 要求を使用してエンティティを作成するデータを送信します。 "ディープ挿入" を使用して 1 回の操作で複数の関連するエンティティを作成できます。 また、@odata.bind 注釈を使用して既存のエンティティに新しいエンティティを関連付けるために値を設定する方法を知る必要があります。  
+POST 要求を使用してエンティティを作成するデータを送信します。 「deep insert」 を使用して 1 回の操作で複数の関連するエンティティ レコードを作成できます。 また、@odata.bind コメントを使用して既存のエンティティに新しいエンティティ レコードを関連付けるために値を設定する方法を身につける必要があります。  
 
 > [!NOTE]
 > Web API を使用したエンティティ メタデータの作成および更新方法の詳細については、[Web APIを使用してエンティティ定義を作成および更新](create-update-entity-definitions-using-web-api.md)を参照してください。
@@ -33,7 +38,7 @@ POST 要求を使用してエンティティを作成するデータを送信し
 
 ## <a name="basic-create"></a>基本的な作成
 
- この例では、新しい取引先企業エンティティを作成します。 応答 `OData-EntityId` ヘッダーには、作成したエンティティの URI が含まれています。
+ この例では、新しい取引先企業のエンティティ レコードを作成します。 応答 `OData-EntityId` ヘッダーには、作成したエンティティの URI が含まれています。
 
  **要求**
 
@@ -65,11 +70,11 @@ OData-EntityId: [Organization URI]/api/data/v9.0/accounts(7eb682f1-ca75-e511-80d
 
 ```
 
-新しいエンティティを作成するには、有効なプロパティの名前と型を識別する必要があります。 すべてのシステム エンティティと属性の詳細については、[エンティティの参照について](../reference/about-entity-reference.md) にある、そのエンティティのトピックでこの情報を見つけることができます。 ユーザー定義エンティティまたは属性については、[CSDL $metadata ドキュメント](web-api-types-operations.md#csdl-metadata-document) にあるそのエンティティの定義を参照してください。 詳細: [エンティティの種類](web-api-types-operations.md#entity-types)
+新しいエンティティ レコードを作成するには、有効なプロパティの名前と型を識別する必要があります。 すべてのシステム エンティティと属性の詳細については、[エンティティの参照について](../reference/about-entity-reference.md) にある、そのエンティティのトピックでこの情報を見つけることができます。 ユーザー定義エンティティまたは属性については、[CSDL $metadata ドキュメント](web-api-types-operations.md#csdl-metadata-document) にあるそのエンティティの定義を参照してください。 詳細: [エンティティの種類](web-api-types-operations.md#entity-types)
 
 <a name="bkmk_CreateRelated"></a>
 
-## <a name="create-related-entities-in-one-operation"></a>1 回の操作で関連するエンティティを作成する
+## <a name="create-related-entity-records-in-one-operation"></a>1 回の操作で関連するエンティティ レコードを作成する
 
  ナビゲーション プロパティの値として定義することで、相互に関連するエンティティを作成することができます。 これを*ディープ挿入*と言います。
 
@@ -125,7 +130,7 @@ OData-EntityId: [Organization URI]/api/data/v9.0/accounts(3c6e4b5f-86f6-e411-80d
 
 <a name="bkmk_associateOnCreate"></a>
 
-## <a name="associate-entities-on-create"></a>作成時にエンティティを関連付ける
+## <a name="associate-entity-records-on-create"></a>作成時にエンティティ レコードを関連付ける
 
  新しいエンティティを作成するときに、新しいエンティティを既存のエンティティに関連付けるには、`@odata.bind` 注釈を使用して、単一値ナビゲーション プロパティの値を設定する必要があります。
 
@@ -172,11 +177,11 @@ OData-EntityId: [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-000
 
 <a name="bkmk_initializefrom"></a>
 
-## <a name="create-a-new-entity-from-another-entity"></a>別のエンティティから新しいエンティティを作成する
+## <a name="create-a-new-entity-record-from-another-entity"></a>別のエンティティから新しいエンティティ レコードを作成する
 
 `InitializeFrom function` を使用して、レコードが属するエンティティ間にマッピングが存在する既存のレコードのコンテキスト内にレコードを新規作成します。 
 
-次の例は、c65127ed-2097-e711-80eb-00155db75426 と等しい値の `accountid` を持つ取引先企業エンティティの既存のレコードの属性値を使用して、取引先企業レコードを作成する方法を示します。
+次の例では、c65127ed-2097-e711-80eb-00155db75426 と等しい値の `accountid` を持つ取引先企業エンティティの既存レコードの属性値を使用して、取引先企業レコードを作成する方法を示します。
 
 **要求**
 
@@ -207,7 +212,7 @@ InitializeFrom 要求から受け取った反応は、ソース エンティテ�
 
 > [!NOTE]
 > 二つのエンティティをマッピング可能かどうか判断するには、このクエリを使用します。  
-GET [組織 URI]/api/data/v9.0/entitymaps?$select=sourceentityname,targetentityname&$orderby=sourceentityname
+GET [Organization URI]/api/data/v9.0/entitymaps?$select=sourceentityname,targetentityname&$orderby=sourceentityname
 
 また、以下の例に示すように、他の属性値を JSON 要求のボディ内に追加することにより、新しいレコードのために他の属性値をセットしたり修正したりすることができます。
 

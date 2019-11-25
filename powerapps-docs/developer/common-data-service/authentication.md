@@ -1,5 +1,5 @@
 ---
-title: Common Data Service Web サービスでの認証 (Common Data Service) | Microsoft Docs
+title: Common Data Service の Web サービスを使用した認証 (Common Data Service) | Microsoft Docs
 description: 使用するソフトウェア フレームワークに依存する認証オプションを紹介します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,12 +10,18 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 59351fbc8afa450a0de88e5e38ca9bcf812fee2b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748826"
 ---
-# <a name="authentication-with-common-data-service-web-services"></a>Common Data Service Web サービスでの認証
+# <a name="authentication-with-common-data-service-web-services"></a>Common Data Service の Web サービス を使用した認証
 
 Common Data Service の Web サービスを使用するクライアント アプリケーションを作成する場合、データへアクセスできるようにするための認証が必要です。 認証方法は、使用するソフトウェア フレームワークと、接続する Web サービスによって異なります。
 
@@ -39,9 +45,9 @@ OAuth は以下のものをサポートすることも必要です。
 
 ### <a name="office-365"></a>Office 365
 
-Office 365 認証では、SOAP Web サービスのみで .NET Framework SDK アセンブリを使用する必要があります。
+Office 365 の認証では、SOAP Web サービスのみで .NET Framework SDK アセンブリを使用する必要があります。
 
-Office 365 認証を使用する場合、OAuth で行うようにアプリケーションを登録する必要はありません。 有効なユーザーに対して、ユーザー プリンシパル名 (UPN) およびパスワードを単に提供する必要があります。
+Office 365 の認証を使用する場合、OAuth で行うようにアプリケーションを登録する必要はありません。 有効なユーザーに対して、ユーザー プリンシパル名 (UPN) およびパスワードを単に提供する必要があります。
 
 詳細: [.NET Framework アプリケーションでの認証](authenticate-dot-net-framework.md)
 

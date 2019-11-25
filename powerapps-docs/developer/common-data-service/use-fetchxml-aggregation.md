@@ -6,16 +6,21 @@ ms.date: 06/18/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a5498684de01d9268eb8331a128013a9f67e81ad
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749089"
 ---
-
 # <a name="use-fetchxml-aggregation"></a>FetchXML 集計の使用
 
 Common Data Service で、`FetchXML` にはグループ化および集計の機能が含まれています。この機能を使用すると、合計、平均、最小値、最大値、および件数を計算できます。  

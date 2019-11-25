@@ -5,15 +5,18 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: b361efd6a1f44485e9b7337e3e5b3a29c1a826d4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709632"
 ---
-
 # <a name="portal-checker"></a>ポータル チェッカー
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 ポータル チェッカーは、ポータルの一般的な問題を特定するためにポータル管理者が使用できるセルフサービス診断ツールです。 ポータル チェッカーは、さまざまな構成パラメーターを調べることでポータルで問題を特定し、修正方法に関する提案を示すことができます。
 
@@ -31,14 +34,14 @@ ms.reviewer: null
 問題を展開し、詳細情報と軽減の手順を表示できます。 軽減に操作が必要な場合、操作を実行するボタンが表示されます。 軽減が役立ったかどうかに関するフィードバックを送信することもできます。
 
 > [!div class=mx-imgBorder]
-> ![診断結果での問題の展開](../media/diagnostic-results-issue-expand.png "診断結果での問題の展開")
+> ![診断結果で問題を展開する](../media/diagnostic-results-issue-expand.png "診断結果で問題を展開する")
 
 必要に応じて、診断検査を再実行できます。更新されたデータで結果が更新されます。
 
 > [!NOTE]
 > ポータルがオフになったか IP アドレス フィルタリングが有効な場合、特定のチェックはポータルで実行されません。
 
-ポータル チェッカー ツールにより診断される一般的な問題の一覧については、[ポータル チェッカーにより診断される一般的なポータルの問題とそのベスト プラクティス](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/portals/portal-faq)を参照してください。
+ポータル チェッカー ツールにより診断される一般的な問題の一覧については、[ポータル チェッカーにより診断される一般的なポータルの問題とそのベスト プラクティス](https://docs.microsoft.com/dynamics365/customer-engagement/portals/portal-faq)を参照してください。
 
 ポータル チェッカーを実行する方法を説明します。
 

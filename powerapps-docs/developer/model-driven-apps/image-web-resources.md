@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a31cdc5c3c987f68ab9e46aef985501737d3c0f9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749037"
 ---
 # <a name="image-web-resources"></a>イメージ Web リソース
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/image-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/image-web-resources -->
 
 イメージ Web リソースを使用して、モデル駆動型アプリでイメージを利用可能にします。  
 
@@ -39,7 +45,7 @@ search.app:
 - ユーザー定義エンティティのアイコン  
 - ユーザー定義のリボン コントロールおよび`SiteMap`のサブ領域用のアイコン  
 - エンティティ フォーム用および Web ページの Web リソース用の装飾的なグラフィック  
-- CSS Web リソースが使用するバックグラウンド イメージ。  
+- CSS Web リソースが使用するバックグラウンド イメージ  
 
 アプリケーションに表示されるすべてのアイコンにベクター形式 (SVG) Web リソースを使用します。 ベクター イメージは、スケーラブル ベクター グラフィックス (SVG) (XML ベースのベクター イメージ形式) として定義されます。 他のイメージ Web リソースに対するベクター イメージの利点は、拡大縮小できることです。 サイズ別に複数のイメージを用意するのではなく、1 つのベクター イメージを定義して再利用できます。 これらを新しい <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IconVectorName> で使用します `IconLargeName`、`IconMediumName`、または `IconSmallName` プロパティではなく、ユーザー定義エンティティのアイコンを定義するプロパティ。
   
@@ -107,7 +113,7 @@ search.app:
 ### <a name="see-also"></a>関連項目  
  [Web リソース](web-resources.md)   
  [Web ページ (HTML) の Web リソースの使用](webpage-html-web-resources.md)   
- [スタイル シート (CSS) Web リソースの使用](css-web-resources.md)   
+ [スタイルシート (CSS) ウェブ リソースを使用する](css-web-resources.md)   
  [スクリプト (JScript) Web リソースの使用](script-jscript-web-resources.md)   
  [データ (XML) Web リソースの使用](data-xml-web-resources.md)   
  [Silverlight (XAP) Web リソースの使用](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)  

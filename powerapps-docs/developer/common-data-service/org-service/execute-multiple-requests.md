@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 86f19593028f2b618923e4e0b120b10d75ab5f63
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749118"
 ---
 # <a name="execute-multiple-requests-using-the-organization-service"></a>組織サービスを使用して複数の要求を実行する
 
@@ -111,9 +117,9 @@ foreach (var responseItem in responseWithResults.Responses)
   
 -   **再帰は許可されません** <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> は <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest>を起動できません。 要求コレクションで見つかる <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> は、その要求アイテムに関するエラーを生成します。  
   
--   **最大バッチ サイズ** 要求コレクションに追加できる要求の数には制限があります。 この制限を超えると、最初の要求が実行される前にフォールトがスローされます。 Common Data Service の展開に最大数を設定できますが、1000 個の制限が一般的です。
+-   **最大バッチ サイズ** 要求コレクションに追加できる要求の数には制限があります。 この制限を超えると、最初の要求が実行される前にフォールトがスローされます。 Common Data Service展開に最大数を設定できますが、1000 個の制限が一般的です。
   
--   **同時呼び出しの調整** Common Data Service には組織あたり 2 つの同時実行制限 <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> があります。 この制限を超えると、最初の要求が実行される前に*サーバー ビジー* フォールトがスローされます。 
+-   **同時呼び出しの調整** Common Data Service の場合、組織ごとに 2 つの同時 <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> 実行の制限があります。 この制限を超えると、最初の要求が実行される前に*サーバー ビジー* フォールトがスローされます。 
 
   
 <a name="fault"></a>
@@ -127,7 +133,7 @@ foreach (var responseItem in responseWithResults.Responses)
 ```csharp
 catch (FaultException<OrganizationServiceFault> fault)
 {
-    // Check if the maximum batch size has been exceeded. The maximum batch size is only included in the fault if it
+    // Check if the maximum batch size has been exceeded. The maximum batch size is only included in the fault if
     // the input request collection count exceeds the maximum batch size.
     if (fault.Detail.ErrorDetails.Contains("MaxBatchSize"))
     {

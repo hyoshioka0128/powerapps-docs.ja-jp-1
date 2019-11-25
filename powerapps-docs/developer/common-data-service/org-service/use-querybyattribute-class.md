@@ -6,16 +6,21 @@ ms.date: 05/03/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a6f56f5bb4cb9c0ef212a597ffb2076b24a683a0
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749258"
 ---
-
 # <a name="use-the-querybyattribute-class"></a>QueryByAttribute クラスの使用
 
 <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute> クラスを使用して、一群の値に対して一群の属性をテストするクエリを作成できます。 このクラスは <xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple*> メソッドまたは <xref:Microsoft.Xrm.Sdk.IOrganizationService>です。<xref:Microsoft.Xrm.Sdk.Messages.RetrieveMultipleRequest>  メソッドと共に使用します。

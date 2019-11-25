@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ee86c88222c0385f1fec8458af6ee9d2cfeabf18
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749141"
 ---
 # <a name="custom-activities"></a>ユーザー定義の活動
 
-Common Data Service でカスタム活動を作成し、インスタント メッセージング (IM) やショート メッセージ サービス (SMS) などの業務上の通信ニーズをサポートできます。 Common Data Service でユーザー定義の活動を作成するには、ユーザー定義エンティティを作成し、<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsActivity> を使用してこのエンティティを活動エンティティとして指定します。 にバインドされます。  
+Common Data Service でカスタム活動を作成し、インスタント メッセージング (IM) やショート メッセージ サービス (SMS) などの業務上の通信ニーズをサポートできます。 Common Data Service でカスタム活動を作成するには、ユーザー定義エンティティを作成し、<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsActivity> を使用してこのエンティティを活動エンティティとして指定します。 にバインドされます。  
   
  ただし、他のユーザー定義エンティティと異なり、ユーザー定義活動には主属性を指定できません。これは、ユーザー定義活動の主属性は既定で "Subject" という名前にする必要があるためです。  
   
@@ -27,7 +33,7 @@ Common Data Service でカスタム活動を作成し、インスタント メ�
   
 ## <a name="privileges-and-access-rights"></a>特権およびアクセス権 
  
- ユーザー定義の活動を操作するには、ユーザー定義エンティティを操作する場合と同等の Common Data Service の特権およびアクセス権セットが必要です。 ユーザー定義エンティティの詳細については、[エンティティ メタデータのカスタマイズ](customize-entity-metadata.md) を参照してください。  
+ ユーザー定義の活動を操作するには、ユーザー定義エンティティを操作する場合と同じ、 Common Data Service の特権およびアクセス権のセットが必要です。 ユーザー定義エンティティの詳細については、[エンティティ メタデータのカスタマイズ](customize-entity-metadata.md) を参照してください。  
   
 ## <a name="creating-a-custom-activity"></a>ユーザー定義の活動の作成  
  カスタム活動エンティティを作成するには、以下の表に示すプロパティの値を設定します。  

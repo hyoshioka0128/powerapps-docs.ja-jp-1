@@ -4,8 +4,6 @@ description: このチュートリアルでは、Common Data Service 環境に�
 keywords: ''
 ms.date: 04/01/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 86c4a8a8-7401-6d75-7979-3b04b506eb0c
 author: paulliew
@@ -13,15 +11,20 @@ ms.author: jdaly
 manager: ryjones
 ms.reviewer: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 79773316bd5ff4e6d2652e7dfae53add0a782dc3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749194"
 ---
-
 # <a name="walkthrough-register-an-app-with-azure-active-directory"></a>チュートリアル: アプリを Azure Active Directory に登録します
 
-このチュートリアルでは、PowerApps ユーザーアカウントを使用するユーザーが、、OAuth 認証を使用して外部クライアント アプリケーションから Common Data Service 環境に接続できるアプリケーションを Azure Active Directory に登録する方法について説明します。
+このチュートリアルでは、Azure Active Directory にアプリケーションを登録する方法について説明します。これにより、PowerApps ユーザーアカウントを持つユーザーは、OAuth 認証を使用して外部クライアントアプリケーションから Common Data Service 環境に接続できます。
 
 > [!IMPORTANT]
 > また、PowerApps には、外部アプリケーションから、および特別なアプリケーション ユーザー アカウントを使用するサービスからアプリ用 Common Data Service 環境のインスタンスに接続するためのサーバー間 (S2S) 認証オプションも用意されています。 S2S 認証は、Microsoft AppSource に登録されたアプリがサブスクライバーのデータにアクセスする際に使用する一般的な方法です。 詳細情報: [サーバー間 (S2S) 認証を使用して Web アプリケーションを作成する](build-web-applications-server-server-s2s-authentication.md)。
@@ -38,16 +41,16 @@ Azure Active Directory へのアプリの登録は一般的に、外部クライ
   
 ## <a name="create-an-application-registration"></a>アプリケーション登録の作成 
   
-1. 管理者権限を持つアカウントを使用して [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) にサインインします。 アプリの登録に使用するものと同じ Office 365 サブスクリプション (テナント) のアカウントを使用する必要があります。 Office 365 [管理センター](https://admin.microsoft.com/adminportal) から Azure portal にアクセスするには、左側のナビゲーションウィンドウで **管理センター** の項目を展開し、 **Azure Active Directory**を選択します。  
+1. 管理者権限を持つアカウントを使用して [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) にサインインします。 アプリの登録に使用するものと同じ Office 365 サブスクリプション (テナント) のアカウントを使用する必要があります。 Office 365 [管理センター](https://admin.microsoft.com/adminportal) から Azure portal にアクセスするには、左側のナビゲーション ウィンドウで **管理センター** の項目を展開し、 **Azure Active Directory**を選択します。  
   
    > [!NOTE]
-   > Azure のテナント (取引先企業) がない場合、またはテナントがあるが、 Common Data Service のOffice365 サブスクリプションが Azure サブスクリプションで利用できない場合は、 [開発者サイトへの Azure Active Directory アクセスの設定](https://msdn.microsoft.com/office/office365/HowTo/setup-development-environment) トピックの手順に従って、2つの取引先企業を関連付けます。<br><br> アカウントがない場合は、クレジット カードを使用して、アカウントにサインアップすることができます。 ただし、このトピックの手順を実行して 1 つまたは複数のアプリケーションを登録する場合は、アカウントは無料なのでクレジット カードに請求はありません。 詳細: [Active Directory 価格設定詳細](http://azure.microsoft.com/pricing/details/active-directory/)  
+   > Azure のテナント (取引先企業) がない場合、またはテナントがあるが、 Common Data Service のOffice365 サブスクリプションが Azure サブスクリプションで利用できない場合は、 [開発者サイトへの Azure Active Directory アクセスの設定](https://msdn.microsoft.com/office/office365/HowTo/setup-development-environment) トピックの手順に従って、2つの取引先企業を関連付けます。<br><br> アカウントがない場合は、クレジット カードを使用して、アカウントにサインアップすることができます。 ただし、このトピックの手順を実行して 1 つまたは複数のアプリケーションを登録する場合は、アカウントは無料なのでクレジット カードに請求はありません。 詳細: [Active Directory 価格設定詳細](https://azure.microsoft.com/pricing/details/active-directory/)  
   
-2. Azure portal では、左側のウィンドウの **Azure Active Directory** を選択し、 **アプリの登録**を選択し、 **新規登録**をクリックします。
+2. Azure portal では、左側のウィンドウの **Azure Active Directory** を選択し、 **アプリの登録** を選択し、 **新規登録** をクリックします。
     
     ![Azure アプリの登録](media/azure-app-registrations-page.png "Azure アプリの登録")  
 
-3. **アプリケーションの登録ページ**にて、アプリケーションの登録情報を入力します:
+3. **アプリケーション ページの登録**にて、アプリケーションの登録情報を入力します:
    - **名前** セクションで、ユーザーに表示するわかりやすいアプリケーションの名前を入力します。
    - **対応しているアカウントの種類** セクションで **組織ディレクトリ内のアカウント** オプションを選択します。
    - **リダイレクト URI** を設定します。
@@ -59,21 +62,21 @@ Azure Active Directory へのアプリの登録は一般的に、外部クライ
 
     ![アプリケーション ID のコピー](media/app-registration-overview-page.png "アプリケーション ID のコピー")
   
-5. **マニフェスト** タブを選択し、マニフェストエディタで *allowPublicClient**プロパティーを**true**に設定して**保存**をクリックします。
+5. **マニフェスト** タブを選択し、マニフェストエディタで *allowPublicClient**プロパティーを**true**に設定して**保存** をクリックします。
    
     ![アプリの登録マニフェスト](media/app-registration-manifest-page.png "アプリの登録マニフェスト")
 
-6. **APIアクセス許可** タブを選択し、 **アクセス許可の追加** をクリックします。 
+6. **API アクセス許可** タブを選択し、 **アクセス許可の追加** をクリックします。 
 
-    ![アプリケーションのアクセス許可の追加](media/azure-api-permissions-page.png "アプリケーションのアクセス許可の追加")
+    ![アプリのアクセス許可の追加](media/azure-api-permissions-page.png "アプリのアクセス許可の追加")
 
 7. **Microsoft API** タブ配下の **Dynamics CRM** を選択します。
     
-    ![APIの選択](media/app-registration-select-api-page.png "APIの選択")    
+    ![API を選択](media/app-registration-select-api-page.png "API を選択")    
 
-8. **代理人のアクセス許可** をクリックし、オプションをチェックしてし、 **アクセス許可の追加**をクリックします。 
+8. **代理人のアクセス許可** をクリックし、オプションをチェックしてし、 **アクセス許可の追加** をクリックします。 
     
-    ![代理人のアクセス許可](media/app-registration-delegate-permissions-page.png "代理人のアクセス許可")
+    ![パーミッション許可](media/app-registration-delegate-permissions-page.png "パーミッション許可")
 
 これにより、Azure Active Directory でのアプリケーションの登録が完了します。
 

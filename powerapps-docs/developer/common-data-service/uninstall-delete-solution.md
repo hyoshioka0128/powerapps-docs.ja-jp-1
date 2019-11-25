@@ -1,5 +1,5 @@
 ---
-title: ソリューションをアンインストールまたは削除する (Common Data Service) | Microsoftのドキュメント
+title: ソリューションのアンインストールまたは削除 (Common Data Service) | Microsoft Docs
 description: このドキュメントでは、Dynamics 365 の管理対象ソリューションとアンマネージドソリューションのアンインストールと削除の操作について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 851f899dd420fbd781ad0c216589eaf310859945
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749093"
 ---
 # <a name="uninstall-or-delete-a-solution"></a>ソリューションのインストールまたは削除
 

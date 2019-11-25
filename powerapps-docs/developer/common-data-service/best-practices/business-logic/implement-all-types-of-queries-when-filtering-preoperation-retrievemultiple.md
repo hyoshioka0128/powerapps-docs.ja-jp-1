@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 09/23/2019
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3dbe53cb136b4f73429b6c1e5cb57377a0445e6b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748824"
 ---
 # <a name="implement-all-types-of-queries-when-filtering-results-using-preoperation-retrievemultiple"></a>PreOperation RetrieveMultiple を使用したフィルター処理した場合に、すべての種類のクエリを実行する
 

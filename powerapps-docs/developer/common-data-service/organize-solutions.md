@@ -1,5 +1,5 @@
 ---
-title: ソリューションを組織する (Common Data Service) | Microsoft Docs
+title: ソリューションの整理 (Common Data Service) | Microsoft Docs
 description: このドキュメントでは、ソリューションを組織するいくつかの戦略をリストします。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cc6414a1d846b5bd601ce2c6f37164014f089631
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749253"
 ---
 # <a name="organize-your-solutions"></a>ソリューションを組織する
 

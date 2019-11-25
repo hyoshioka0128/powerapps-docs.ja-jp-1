@@ -5,18 +5,23 @@ ms.date: 09/05/2019
 ms.service: powerapps
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: d329dade-16c5-46e9-8dec-4b8efb996d22
 author: mayadumesh
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 50223ab21a885a43c6dcb91285545e67b43c144c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748943"
 ---
-
 # <a name="custom-virtual-entity-data-providers"></a>カスタム仮想エンティティ データ プロバイダー
 
 Common Data Service Data SDK の使用により、.NET Developers には、既存のデータ プロバイダーがサポートしていない外部データ ソースの種類を統合するために役立つ、カスタム仮想エンティティ データ プロバイダーを作成するオプションがあります。 各データ プロバイダーは、サポートされる CRUD 操作を実装する一連の再利用可能な Common Data Service プラグインで構成されます。 (初期リリースは **Retrieve** および **RetrieveMultiple** 読み取り命令に制限されます。) このセクションには、データ プロバイダー、およびコード例を含むカスタム プロバイダーを開発するためのアプローチに関する基本情報が用意されています。

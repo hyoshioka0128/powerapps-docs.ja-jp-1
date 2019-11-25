@@ -1,23 +1,28 @@
 ---
-title: 'サンプル: 探索サービスに関する作業 <Topic Title> (Common Data Service) | Microsoft Docs'
+title: 'サンプル: 探索サービス <Topic Title> に関する作業 (Common Data Service) | Microsoft Docs'
 description: このサンプル コードは、探索サービスの使用方法について説明します
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3f707eef358454053436d633c4ad48e30348ea17
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748965"
 ---
 # <a name="sample-access-the-discovery-service"></a>サンプル: 探索サービスへのアクセス
 
-# <a name="work-with-discovery-service"></a>探索サービスに関する作業 
 このサンプル コードは、SDK アセンブリで探索サービスの使用方法について説明します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/DiscoveryService) からダウンロードできます
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法

@@ -10,14 +10,20 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e5f0465a51114a7fc3fd2eecd33a243a5af74cae
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749206"
 ---
 # <a name="types-of-calendars"></a>カレンダーの種類
 
-カレンダー エンティティは Common Data Service で新しい種類のカレンダーに対応するために変更されました。  
+Common Data Service で他の種類のカレンダーをサポートするために、カレンダー エンティティが変更されました。  
   
 ## <a name="calendar-type"></a>カレンダーの種類  
  `Type` 候補リスト属性には、次のオプションが含まれています。  

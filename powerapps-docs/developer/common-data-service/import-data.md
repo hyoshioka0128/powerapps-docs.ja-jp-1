@@ -1,6 +1,6 @@
 ---
 title: データのインポート (Common Data Service) | Microsoft Docs
-description: Common Data Service にデータをインポートする場合は、*データのインポート*機能を使用できます。 "データ インポート" を使用して、さまざまな顧客関係管理システムやデータ ソースから Common Data Service にデータをアップロードできます。
+description: Common Data Service にデータをインポートする場合は、*データ インポート* 機能を使用できます。 データ インポートを使用して、さまざまな顧客関係管理システムやデータ ソースから Common Data Service にデータをアップロードできます。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 562072c6d63b0abfeaa6c9f44f9cccfc5fdc960c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748856"
 ---
 # <a name="import-data"></a>データのインポート
 
@@ -48,13 +54,13 @@ https://docs.microsoft.com/dynamics365/customer-engagement/web-api/importmapping
 Or should the core general content simply include both?
 
 -->
-Common Data Service にデータをインポートする場合は、*データのインポート*機能を使用できます。 "データ インポート" を使用して、さまざまな顧客関係管理システムやデータ ソースから Common Data Service にデータをアップロードできます。 ほとんどのビジネスおよびユーザー定義エンティティの標準属性やカスタム属性にデータをインポートできます。 メモや添付ファイルなどの関連データを含めることもできます。  
+Common Data Service にデータをインポートする場合は、*データ インポート* 機能を使用できます。 データ インポートを使用して、さまざまな顧客関係管理システムやデータ ソースから Common Data Service にデータをアップロードできます。 ほとんどのビジネスおよびユーザー定義エンティティの標準属性やカスタム属性にデータをインポートできます。 メモや添付ファイルなどの関連データを含めることもできます。  
   
-Common Data Service には、データ インポート ウィザードと呼ばれる Web アプリケーションが含まれています。 このツールを使用して、データ レコードを 1 つ以上のコンマ区切り値 (.csv) ファイル、XML Spreadsheet 2003 (.xml) ファイル、またはテキスト ファイルからインポートできます。  
+Common Data Service には、データ インポート ウィザードと呼ばれる Web アプリケーションが用意されています。 このツールを使用して、データ レコードを 1 つ以上のコンマ区切り値 (.csv) ファイル、XML Spreadsheet 2003 (.xml) ファイル、またはテキスト ファイルからインポートできます。  
   
- データ インポート ウィザードの詳細については Common Data Service のヘルプを参照してください。  
+ データ インポート ウィザードの詳細については、Common Data Service ヘルプを参照してください。  
   
- Common Data Service の Web サービスには、データ インポート ウィザードで利用できない以下の追加機能が用意されています。  
+ Common Data Service Web サービスには、データ インポート ウィザードで利用できない以下の追加機能が用意されています。  
   
 - 連結、分割、置換などの、複雑な変換マッピングを含むデータ マップを作成する。  
   
@@ -68,7 +74,7 @@ Common Data Service には、データ インポート ウィザードと呼ば�
   
 - `LookupMap` XML タグをデータ マップに追加して、インポートに使用するソース ファイル上でデータ検索の開始と実行を指示する。  
   
-- カスタム `OwnerMetadata` タグをデータ マップに追加して、ソース ファイル内のユーザー レコードと Common Data Service 内のユーザー (システム ユーザー) のレコードを突き合わせる。  
+- カスタム `OwnerMetadata` XML タグをデータ マップに追加して、ソース ファイル内のユーザー レコードと Common Data Service 内のユーザー (システム ユーザー) のレコードを突き合わせる。  
   
 - オプションの検証チェックを使用する。  
   

@@ -1,5 +1,5 @@
 ---
-title: エンティティ関係メタデータのメッセージ (Common Data Service) | Microsoft Docs
+title: エンティティ関連付けメタデータ メッセージ (Common Data Service) | Microsoft Docs
 description: この記事では、Web API と組織サービスを使用してエンティティの関連付けの作成、取得、更新、および削除に使用することができるメッセージについて説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8e574711366f7f47cdce758867293a17cb01bf3e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748869"
 ---
 # <a name="entity-relationship-metadata-messages"></a>エンティティの関連付けのメタデータ メッセージ
 

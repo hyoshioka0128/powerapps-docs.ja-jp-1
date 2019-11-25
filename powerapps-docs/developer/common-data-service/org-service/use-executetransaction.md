@@ -1,19 +1,25 @@
 ---
-title: 1 度のデータベース トランザクションでメッセージを実行する (Common Data Service) | Microsoft Docs
+title: 単一のデータベース トランザクションでメッセージを実行する (Common Data Service) | Microsoft Docs
 description: ExecuteTransactionRequest メッセージ要求を使用して、1 度のデータベース トランザクションで組織サービスの要求を 2 つ以上実行できます。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2e1d8b71ff915cc49f2c711adee4095043af000c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749264"
 ---
 # <a name="execute-messages-in-a-single-database-transaction"></a>単一のデータベース トランザクションでメッセージを実行する
 

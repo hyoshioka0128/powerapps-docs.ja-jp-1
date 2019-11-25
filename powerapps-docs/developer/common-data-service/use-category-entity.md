@@ -10,14 +10,20 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2f19ba3babc0d2a57395fc04296c6ccce5e07dc1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749203"
 ---
 # <a name="use-the-category-entity"></a>カテゴリ エンティティを使用してください。
 
-Common Data Service でエンティティ レコードを分類すると、レコードにタグをつけるのに便利で簡単に検索できます。 Common Data Service で新しい `Category` エンティティを使用して、カテゴリの階層構造を作成して管理し、次に 1 つまたは複数のカテゴリにエンティティ レコードを関連付けます。  
+Common Data Service でエンティティ レコードを分類すると、簡単に検索できるようにレコードにタグをつけるのに便利です。 `Category` エンティティを使用して、Common Data Service カテゴリの階層構造を作成して管理し、次に 1 つまたは複数のカテゴリにエンティティ レコードを関連付けます。  
   
  カテゴリは複数の子カテゴリを持つ場合がありますが、子カテゴリは親カテゴリを 1 つのみ持つことができます。 親 `Category` レコードを削除すると、そのすべての子レコードおよびエンティティ関係が自動的に削除されます。 あるカテゴリの親カテゴリは、`Category.ParentCategoryId` 属性を使用して定義します。  
   

@@ -1,12 +1,12 @@
 ---
 title: Postman を使用して Web API で演算を実行する (アプリ用 Common Data Service) | MicrosoftDocs
 description: Postman を使用して Web API 要求を構成して送信する方法を説明します。
-ms.custom: null
+ms.custom: ''
 ms.date: 03/22/2019
-ms.reviewer: null
+ms.reviewer: ''
 ms.service: powerapps
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: AB50128B-D8E3-47A3-A0F8-9594EF6B7022
 caps.latest.revision: 7
@@ -14,11 +14,16 @@ author: susikka
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: c651dbc8ba553192f4ff3b09b84518684ac4b866
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749172"
 ---
-
 # <a name="use-postman-to-perform-operations-with-the-web-api"></a>Postman を使用してその Web API で操作を実行する
 
 Postman を使用して Web API 要求を構成および送信し、応答を表示します。 このトピックでは、Postman を使用して作成、取得、更新、および削除 (CRUD) 操作を実行して機能とアクションを使用する Web API 要求を作成する方法について説明します。
@@ -42,7 +47,7 @@ Postman を使用して Web API 要求を構成および送信し、応答を表
 
 `GET` `{{webapiurl}}accounts?$select=name,accountnumber&$top=3`
 
-![Postman を使用した複数のレコードの取得](media/postman-retrieve-multiple.png "Postman を使用した複数のレコードの取得")
+![Postman を使用した複数レコードの取得](media/postman-retrieve-multiple.png "Postman を使用した複数のレコードの取得")
 
 応答の本文は次のようになります。
 

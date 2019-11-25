@@ -1,5 +1,5 @@
 ---
-title: コードを使用してメタデータを扱う (Common Data Service) | Microsoft Docs
+title: コードを使用してメタデータで作業する (Common Data Service) | Microsoft Docs
 description: '[Web API](webapi/overview.md) および [組織サービス](org-service/overview.md) の両方には、エンティティのスキーマの CRUD 操作を実行する機能があります。'
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,12 +10,17 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 853fc53221f82a25aeab271c5fca53b19d17eabe
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749134"
 ---
-
 # <a name="work-with-metadata-using-code"></a>コードを使用してメタデータを扱う
 
 [Web API](webapi/overview.md) および [組織サービス](org-service/overview.md) の両方には、エンティティのスキーマの CRUD 操作を実行する機能があります。 コードを使用してこれらの操作を実行できる一方で、通常デザイナーを使用して、カスタマイズされたスキーマ要素を追加、更新、削除します。 ユーザーは管理者特権を持ち、スキーマ変更を適用する必要がありますが、すべてのユーザーがメタデータを読み取ることができます。
@@ -30,10 +35,10 @@ search.app:
 
 ## <a name="browse-the-metadata-for-your-organization"></a>組織のメタデータの参照
 
-システム内のメタデータを正しく理解することで Common Data Service プラットフォームの動作を理解できます。 メタデータを編集できるデザイナーは、メタデータにあるすべての詳細を表示できません。 システムにあるメタデータ プロパティとすべての非表示エンティティを表示できるように、*Metadata Browser* というモデル駆動型のアプリをインストールできます。 *Metadata Browser* の詳細: [組織のメタデータをブラウズする](browse-your-metadata.md)
+システムのメタデータを十分に理解することで、 Common Data Service プラットフォームの働きを容易に把握することができます。 メタデータを編集できるデザイナーは、メタデータにあるすべての詳細を表示できません。 システムにあるメタデータ プロパティとすべての非表示エンティティを表示できるように、*Metadata Browser* というモデル駆動型のアプリをインストールできます。 *Metadata Browser* の詳細: [組織のメタデータをブラウズする](browse-your-metadata.md)
 
 ## <a name="programmatically-work-with-metadata"></a>メタデータをプログラムにより扱う
 
 次を使用してメタデータをプログラムにより扱う際の詳細について:
-- **Web API**: [Web API を Common Data Service メタデータで使用する](webapi/use-web-api-metadata.md)
-- **組織サービス**: [組織サービスを Common Data Service メタデータで使用する](org-service/work-with-metadata.md)
+- **Web API**: [ Common Data Service メタデータと Web API を使用する](webapi/use-web-api-metadata.md)
+- **組織サービス**: [Common Data Service メタデータを使って組織サービスを使用する](org-service/work-with-metadata.md)

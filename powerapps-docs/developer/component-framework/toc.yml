@@ -1,34 +1,34 @@
-- name: PowerApps コンポーネント フレームワーク
+- name: PowerApps component framework
   items:
     - name: 概要
       href: overview.md
-    - name: コードコンポーネントとは
+    - name: コード コンポーネントとは
       href: custom-controls-overview.md
-    - name: キャンバスアプリの可用性
+    - name: キャンバス アプリの可用性
       href: component-framework-for-canvas-apps.md
-    - name: PowerApps CLI の取得
+    - name: PowerApps CLI の入手
       href: get-powerapps-cli.md
-    - name: ヒント
+    - name: チュートリアル
       items:
-        - name: 実装 (サンプルコンポーネントを)
+        - name: サンプル コンポーネントの実装
           href: implementing-controls-using-typescript.md
-    - name: 操作方法
+    - name: 方法
       items:
-        - name: コードコンポーネントの作成とビルド
+        - name: コードコンポーネントを作成、構築する
           href: create-custom-controls-using-pcf.md
-        - name: コードコンポーネントのパッケージ化
+        - name: コード コンポーネントをパッケージ化する
           href: import-custom-controls.md
-        - name: コードコンポーネントのデバッグ
+        - name: コード コンポーネントをデバッグする
           href: debugging-custom-controls.md
-        - name: モデル駆動型アプリへのコンポーネントの追加
+        - name: モデル駆動型アプリにコンポーネントを追加する
           href: add-custom-controls-to-a-field-or-entity.md
-        - name: キャンバスアプリにコンポーネントを追加する
+        - name: キャンバス アプリにコンポーネントを追加する
           href: 'component-framework-for-canvas-apps.md#add-components-to-a-canvas-app'
-        - name: 既存のコードコンポーネントを更新する
+        - name: 既存のコード コンポーネントの更新
           href: updating-existing-controls.md
-        - name: AppSource でのコードコンポーネントの発行
+        - name: AppSource でのコード コンポーネントのを開
           href: publish-components-app-source.md
-    - name: 事項
+    - name: 制限
       href: limitations.md
     - name: サンプル コンポーネント
       items:
@@ -36,25 +36,25 @@
           href: sample-controls/increment-control.md
         - name: 線形入力コンポーネント
           href: sample-controls/linear-input-control.md
-        - name: ローカリゼーション API コンポーネント
+        - name: ローカライズ API のコンポーネント
           href: sample-controls/localization-api-control.md
-        - name: Angular Flip コンポーネント
+        - name: Angular JS を使用したコンポーネント
           href: sample-controls/angular-flip-control.md
         - name: コントロールの状態 API コンポーネント
           href: sample-controls/control-state-api.md
-        - name: データ セット グリッド コンポーネント
+        - name: データセット グリッド コンポーネント
           href: sample-controls/data-set-grid-control.md
-        - name: 書式設定 API コンポーネント
+        - name: API コンポーネントの書式設定
           href: sample-controls/formatting-api-control.md
         - name: IFRAME コンポーネント
           href: sample-controls/iframe-control.md
-        - name: イメージ アップロード コンポーネント
+        - name: 画像アップロード コンポーネント
           href: sample-controls/image-upload-control.md
         - name: マップ コンポーネント
           href: sample-controls/map-control.md
-        - name: ナビゲーション API コンポーネント
+        - name: API コンポーネントのナビゲーション
           href: sample-controls/navigation-api-control.md
-        - name: React Facepile コンポーネント
+        - name: リアクト フェイスパイル コンポーネント
           href: sample-controls/react-facepile-control.md
         - name: テーブル コンポーネント
           href: sample-controls/table-control.md
@@ -62,12 +62,12 @@
           href: sample-controls/table-grid-control.md
         - name: Web API コンポーネント
           href: sample-controls/webapi-control.md
-    - name: 「
+    - name: 参照
       items:
-        - name: PowerApps コンポーネント フレームワーク
+        - name: PowerApps component framework
           href: reference/index.md
           items:
-            - name: Client
+            - name: クライアント
               href: reference/client.md
               items:
                 - name: getClient
@@ -80,9 +80,9 @@
               href: reference/column.md
             - name: ConditionExpression
               href: reference/conditionexpression.md
-            - name: 関連
+            - name: コンテキスト
               href: reference/context.md
-            - name: DataSet
+            - name: データセット
               href: reference/dataset.md
               items:
                 - name: clearSelectedRecordIds
@@ -97,11 +97,11 @@
                   href: reference/dataset/getviewid.md
                 - name: openDatasetItem
                   href: reference/dataset/opendatasetitem.md
-                - name: refresh
+                - name: 最新の情報に更新
                   href: reference/dataset/refresh.md
                 - name: setSelectedRecordIds
                   href: reference/dataset/setselectedrecordids.md
-            - name: ドライブ
+            - name: デバイス
               href: reference/device.md
               items:
                 - name: captureAudio
@@ -118,7 +118,7 @@
                   href: reference/device/pickfile.md
             - name: DateFormattingInfo
               href: reference/dateformattinginfo.md
-            - name: エン
+            - name: エンティティ
               href: reference/entity.md
             - name: EntityFormOptions
               href: reference/entityformoptions.md
@@ -133,18 +133,18 @@
                   href: reference/entityrecord/getrecordid.md
                 - name: getValue
                   href: reference/entityrecord/getvalue.md
-            - name: Entityreference
+            - name: EntityReference
               href: reference/entityreference.md
-            - name: Factory
+            - name: ファクトリ
               href: reference/factory.md
               items:
                 - name: getPopupService
                   href: reference/factory/getpopupservice.md
                 - name: requestRender
                   href: reference/factory/requestrender.md
-            - name: ファ
+            - name: FileObject
               href: reference/fileobject.md
-            - name: フィルター処理
+            - name: フィルタリング
               href: reference/filtering.md
               items:
                 - name: clearFilter
@@ -155,7 +155,7 @@
                   href: reference/filtering/setfilter.md
             - name: FilterExpression
               href: reference/filterexpression.md
-            - name: Formatting
+            - name: 形式
               href: reference/formatting.md
               items:
                 - name: formatCurrency
@@ -180,7 +180,7 @@
                   href: reference/formatting/formattime.md
                 - name: getWeekOfYear
                   href: reference/formatting/getweekofyear.md
-            - name: Linking
+            - name: リンク
               href: reference/linking.md
               items:
                 - name: addLinkedEntity
@@ -198,7 +198,7 @@
                   href: reference/mode/setfullscreen.md
                 - name: trackContainerResize
                   href: reference/mode/trackcontainerresize.md
-            - name: 領域
+            - name: ナビゲーション
               href: reference/navigation.md
               items:
                 - name: openAlertDialog
@@ -217,18 +217,18 @@
                   href: reference/navigation/openwebresource.md
             - name: NumberFormattingInfo
               href: reference/numberformattinginfo.md
-            - name: Paging
+            - name: ページング
               href: reference/paging.md
               items:
                 - name: loadNextPage
                   href: reference/paging/loadnextpage.md
                 - name: loadPreviousPage
                   href: reference/paging/loadpreviouspage.md
-                - name: reset
+                - name: リセット
                   href: reference/paging/reset.md
                 - name: setPageSize
                   href: reference/paging/setpagesize.md
-            - name: Popup
+            - name: ポップアップ
               href: reference/popup.md
             - name: PopupService
               href: reference/popupservice.md
@@ -265,7 +265,7 @@
             - name: StandardControl
               href: reference/control.md
               items:
-                - name: destroy
+                - name: 破棄
                   href: reference/control/destroy.md
                 - name: getOutputs
                   href: reference/control/getOutputs.md
@@ -273,7 +273,7 @@
                   href: reference/control/init.md
                 - name: updateView
                   href: reference/control/updateview.md
-            - name: UserSettings
+            - name: usersettings
               href: reference/usersettings.md
             - name: ユーティリティ
               href: reference/utility.md
@@ -302,35 +302,35 @@
           items:
             - name: コード
               href: manifest-schema-reference/code.md
-            - name: control
+            - name: コントロール
               href: manifest-schema-reference/control.md
             - name: css
               href: manifest-schema-reference/css.md
-            - name: data-set
+            - name: データセット
               href: manifest-schema-reference/data-set.md
-            - name: 形式
+            - name: HTML
               href: manifest-schema-reference/html.md
             - name: img
               href: manifest-schema-reference/img.md
-            - name: manifest
+            - name: マニフェスト
               href: manifest-schema-reference/manifest.md
-            - name: property
+            - name: プロパティ
               href: manifest-schema-reference/property.md
-            - name: property-set
+            - name: プロパティ セット
               href: manifest-schema-reference/property-set.md
-            - name: resources
+            - name: リソース
               href: manifest-schema-reference/resources.md
             - name: resx
               href: manifest-schema-reference/resx.md
-            - name: type
+            - name: 種類
               href: manifest-schema-reference/type.md
-            - name: type-group
+            - name: 種類のグループ
               href: manifest-schema-reference/type-group.md
-            - name: 機能-使用法
+            - name: feature-usage
               href: manifest-schema-reference/feature-usage.md
-            - name: 使用-機能
+            - name: uses-feature
               href: manifest-schema-reference/uses-feature.md
-    - name: コミュニティリソース
+    - name: コミュニティ リソース
       href: 'https://powerusers.microsoft.com/t5/PowerApps-Component-Framework/Community-content-sample-components-blogs-etc-Link-to-this-page/m-p/280710#M100'
-    - name: フィードバックを共有する
+    - name: フィードバックの共有
       href: share-your-feedback-for-pcf.md

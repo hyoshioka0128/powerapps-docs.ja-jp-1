@@ -8,9 +8,14 @@ ms.service: powerapps
 ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
+ms.openlocfilehash: aabcf4518e71648797c795a006c2d842f3e5ff01
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749055"
 ---
-
-# <a name="limitations-of-powerapps-component-framework"></a>PowerApps Component Framework の制限
+# <a name="limitations"></a>制限 
 
 PowerApps Component Framework のリリースにより、モデル駆動型アプリとキャンバス アプリのユーザー エクスペリエンスを向上させる、独自のコード コンポーネントを作成できるようになりました。 独自のコンポーネントを作成することができますが、コード コンポーネントには機能を実装する時に開発者を制限するいくつかの制約があります。 以下にその制限をいくつか示します:
 

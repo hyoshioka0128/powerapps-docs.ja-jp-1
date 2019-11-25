@@ -9,18 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: d329dade-16c5-46e9-8dec-4b8efb996d24
 author: mayadumesh
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 27b274a04a704c5db1cf2f94e9535bde1914862c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749080"
 ---
-
 # <a name="sample-generic-virtual-entity-data-provider-plug-in"></a>サンプル: 汎用仮想エンティティ データ プロバイダー プラグイン
 
 ## <a name="demonstrates"></a>説明

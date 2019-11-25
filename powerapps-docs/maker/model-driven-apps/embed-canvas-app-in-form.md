@@ -8,22 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 00e62904-2ce9-4730-a113-02b1fedbf22e
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1d763fd341c3537f908720ea9616b1646bda1745
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2704836"
 ---
-
 # <a name="embed-a-canvas-app-on-a-model-driven-form"></a>モデル駆動型フォーム上にキャンバス アプリを埋め込む
 
 キャンバス アプリを使用すると、メーカーはわずかなコードを記述するだけで使用できる、WYSIWYG キャンバス アプリ デザイナーを使用して、カスタム レイアウトを容易に設計および作成することができます。 また、キャンバス アプリを使用すると、メーカーはそれらのフォーム上で 200 を超えるデータ ソースに接続してデータを表示することができます。
@@ -40,7 +45,7 @@ search.app:
 埋め込みキャンバス アプリの作業のガイドラインおよび発生する可能性がある問題のトラブルシューティングに役立つヒントについては、[埋め込みキャンバス アプリの作業のガイドライン](embedded-canvas-app-guidelines.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
-[PowerApps のキャンバス アプリとは](../canvas-apps/getting-started.md) <br />
+[PowerApps のキャンバス アプリとは?](../canvas-apps/getting-started.md) <br />
 [PowerApps のキャンバス アプリ コントロールの追加および構成](../canvas-apps/add-configure-controls.md) <br />
 [PowerApps のキャンバス アプリ コネクタの概要](../canvas-apps/connections-list.md) <br />
 [埋め込み型キャンバス アプリケーションをモデル駆動フォームに追加する](embedded-canvas-app-add-classic-designer.md) <br />

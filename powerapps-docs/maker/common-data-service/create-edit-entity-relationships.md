@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: c765b6d9-4d87-4c2d-aae2-5b1c3b664a71
 caps.latest.revision: 28
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 400fb236df41fefc8a9cfa7175ebfd8260ec96bd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2707476"
 ---
 # <a name="entity-relationships-overview"></a>エンティティの関連付けの概要
 エンティティ関係は、データベースでレコードがどのように相互に関連しているかを定義します。 最も簡単なレベルでは、エンティティに検索フィールドを追加することにより、2 つのエンティティ間の新しい 1:N (1 対多数) の関連付けが作成され、フォームに検索フィールドを設定できるようにします。 検索フィールドを使用すると、ユーザーはエンティティの複数の*子*レコードを一つの*親*エンティティ レコードに関連付けることができます。  

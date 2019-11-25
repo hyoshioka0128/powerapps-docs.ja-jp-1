@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: daa8e5a4a8aaff4b2aecb0942783a84eed328dfb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748880"
 ---
 # <a name="avoid-using-windowtop"></a>window.top を使用しないでください
 
@@ -32,7 +38,7 @@ search.app:
 ## <a name="symptoms"></a>現象
 
 - 次のスクリプト エラーがユーザーに表示されるか、またはエラー ログに含まれます: `Error: Blocked a frame with origin "https://<yourinstance>.dynamics.com" from accessing a cross-origin frame.`
-- Dynamics 365 App for Outlook、Dynamics 365 for phones and tablets、または Iframe 内で Common Data Service をホストする外部アプリケーションのコンテキストでは、カスタマイズが正しく動作しない場合があります。
+- Dynamics 365 App for Outlook、電話およびタブレット PC 用 Dynamics 365、または Iframe 内で Common Data Service をホストする外部アプリケーションのコンテキストでは、カスタマイズが正しく動作しない場合があります。
 
   > [!NOTE]
   > エラー処理がエラーをマスクしてスクリプト処理を続行する場合、予期しない動作を引き起こす可能性があります。
@@ -41,7 +47,7 @@ search.app:
 
 ## <a name="guidance"></a>ガイダンス
 
-Dynamics 365 App for Outlook、Dynamics 365 for phones and tablets、または Iframe 内で Common Data Service をホストする外部アプリケーションのコンテキストで動作しているスクリプトで `window.top` の使用を避けてください。 これらのシナリオが現在は組織に当てはまらないとしても、`window.top` を使わないようにするか、この問題を回避してください。
+Dynamics 365 App for Outlook、電話およびタブレット PC 用 Dynamics 365、または Iframe 内で Common Data Service をホストする外部アプリケーションのコンテキストで動作するスクリプトに `window.top` を使用することはできません。 これらのシナリオが現在は組織に当てはまらないとしても、`window.top` を使わないようにするか、この問題を回避してください。
 
  > [!IMPORTANT]
  > `window.parent` または親階層のバリエーション（例えば `window.parent.parent`）を使用した場合も同様の症状が発生する可能性があります。

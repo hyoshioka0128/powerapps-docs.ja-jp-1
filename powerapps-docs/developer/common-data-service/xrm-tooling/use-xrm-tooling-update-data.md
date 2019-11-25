@@ -1,5 +1,5 @@
 ---
-title: データを更新するために XRM ツールを使用する (Common Data Service)| Microsoft Docs
+title: XRM ツールを使用してデータを更新 (Common Data Service)| Microsoft Docs
 description: Common Data Service で CrmServiceClient クラスを使用してデータを更新
 ms.custom: ''
 ms.date: 03/27/2019
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 8ec3d4ca-d836-4e7e-b2bf-9d9f806bd145
 caps.latest.revision: 14
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b8e591e818aa51158262d575d3e18c22cf322bc5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748896"
 ---
 # <a name="use-xrm-tooling-to-update-data"></a>XRM ツールを使用してデータを更新
 
@@ -112,5 +118,5 @@ else
 
 [サンプル: XRM ツール API のクイック スタート](sample-quick-start-xrm-tooling-api.md)<br />
 [XRM ツールを使用して Common Data Service に接続する](use-crmserviceclient-constructors-connect.md)<br />
-[XRM ツール API を使用して Common Data Service のアクションを実行する](use-xrm-tooling-execute-actions.md)<br />
+[Common Data Service で XRM ツール API を使用してアクションを実行する](use-xrm-tooling-execute-actions.md)<br />
 

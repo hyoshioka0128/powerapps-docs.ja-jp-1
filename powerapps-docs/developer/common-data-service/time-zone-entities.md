@@ -1,5 +1,5 @@
 ---
-title: タイム ゾーン エンティティ (Common Data Service) | Microsoft Docs
+title: タイム ゾーンのエンティティ (Common Data Service) | Microsoft Docs
 description: タイム ゾーン エンティティには、サポートされているタイム ゾーン、タイム ゾーン コード、ローカライズされたタイム ゾーンなどタイム ゾーンの情報が含まれ、時間の計算方法に関する情報が格納されています。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: edff87a40b10e99024df4e85d4d46a073a79f6d8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749097"
 ---
 # <a name="time-zone-entities"></a>タイム ゾーンのエンティティ
 
-*タイム ゾーン*のエンティティは、複数のタイム ゾーンで機能するコードを作成する際に使用します。 タイム ゾーン情報を含む Common Data Service の読み取り専用のエンティティには次の 3 種類があります。  
+*タイム ゾーン*のエンティティは、複数のタイム ゾーンで機能するコードを作成する際に使用します。 タイム ゾーン情報を含むCommon Data Serviceの読み取り専用のエンティティには次の 3 種類があります。  
   
 - *タイム ゾーン定義エンティティ*には、タイム ゾーン コードや標準のタイム ゾーン名など、サポートされている各タイム ゾーンの基本情報が格納されます。  
   

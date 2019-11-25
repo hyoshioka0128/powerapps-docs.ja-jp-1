@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b0724ccf7c44240fd3d3fd80fb69b6d91a80d1ed
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705760"
 ---
-
 # <a name="configure-header-properties-in-the-form-designer"></a>フォーム デザイナーでヘッダーのプロパティを構成する
 
 作成者はフォームを使用している誰かのニーズに合わせてモデル駆動型のアプリケーション フォームのヘッダー密度を制御できます。
@@ -75,7 +80,7 @@ search.app:
 低密度フォームヘッダーを使用することで、たとえば、フォームの幅の設定が原因でフォームがヘッダーに直接表示できないフィールドなど、ヘッダーのポップアップには表示しきれないフィールドのみが表示されます。 また、ヘッダーのポップアップは、ヘッダーのフィールド数とフォームの幅の設定に基づいて、自動的に表示または非表示になります。 低密度ヘッダーを使用する場合、作成者はヘッダーのポップアップの表示/非表示を制御できません。
 
 > [!div class="mx-imgBorder"] 
-> ![低密度ヘッダーを持つヘッダー ポップアップ](media/form-header-flyout-low-density.png "低密度ヘッダーを持つヘッダー ポップアップ")
+> ![低密度ヘッダーのヘッダー ポップアップ](media/form-header-flyout-low-density.png "低密度ヘッダーのヘッダー ポップアップ")
 
 ### <a name="show-or-hide-the-header-flyout"></a>ヘッダーのポップアップの表示または非表示
 モデル駆動型フォームのヘッダー ポップアップを表示または非表示にするには、以下の手順に従います。

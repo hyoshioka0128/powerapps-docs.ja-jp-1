@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 for Outlook を拡張する (Common Data Service) | Microsoft Docs
-description: Outlook 用 Dynamics 365 では、ユーザーはオフラインでサーバーに接続していない状態でも、データとやり取りすることができます。 Common Data Service は、カスタム コードから Web サービス オフラインを呼び出すことによってソリューションをオフラインのシナリオに拡張する機能を備えています。 また、SDK アセンブリで、同期、オフラインとオンラインの切り替え、Outlook 用 Dynamics 365 の状態の検証など、Outlook の基本的なアクションのプログラム的なサポートが提供されています。 オフライン プログラミングでは、ASP.NET Development Server を使用します。
+title: Dynamics 365 for Outlook の拡張 (Common Data Service) | Microsoft Docs
+description: Dynamics 365 for Outlook を使うと、ユーザーはオフラインでサーバーに接続していない状態でも、データと対話することができます。 Common Data Service は、カスタム コードから Web サービス オフラインを呼び出すことによってソリューションをオフラインのシナリオを拡張する機能を備えています。 また、SDK アセンブリで、同期、オフラインとオンラインの切り替え、 Dynamics 365 for Outlook クライアントの状態の検証など、Outlookの基本的なアクションに対するプログラム的なサポートが提供されています。 オフラインのプログラムでは、 ASP.NET Development Server を使用します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,24 +10,30 @@ author: sriharibs
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8004814b49fb54a902f09fd77807d817a7800b69
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749250"
 ---
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/extend-customer-engagement-outlook 
 
 This topic should be in powerapps-docs/developer/common-data-service/outlook-client/
 -->
 
-# <a name="extend-dynamics-365-for-outlook"></a>Dynamics 365 for Outlook を拡張
+# <a name="extend-dynamics-365-for-outlook"></a>Dynamics 365 for Outlook を拡張する
 
 > [!IMPORTANT]
-> 2018 年 1 月 29 日の時点で、圧倒される顧客フィードバックおよび顧客へのサポートを継続したいという願いに基づき、**Dynamics 365 for Outlook を廃止しないことを決定しました** (Outlook アドイン)。 詳細については、[このブログの投稿](https://blogs.msdn.microsoft.com/crm/2018/01/29/continued-support-for-outlook-add-in-dynamics-365-for-outlook/)をお読みください。
+> 2018 年 1 月 29 日の時点で、お客様から多数のフィードバックをいただき、お客様を継続的にサポートすることは弊社の願うところであることから、 **Dynamics 365 for Outlook を廃止しないことを決定しました** (Outlook アドイン)。 詳細については、[このブログの投稿](https://blogs.msdn.microsoft.com/crm/2018/01/29/continued-support-for-outlook-add-in-dynamics-365-for-outlook/)をお読みください。
 
-Microsoft Dynamics 365 for Outlook では、オフラインでサーバーに接続していない状態でも、データのやり取りすることができます。 Common Data Service は、カスタム コードから Web サービス オフラインを呼び出すことによってソリューションをオフラインのシナリオに拡張する機能を備えています。 さらに、<xref:Microsoft.Crm.Outlook.Sdk> アセンブリでは、同期、オフラインとオンラインの切り替え、Dynamics 365 for Outlook の状態の検証など、Outlook の基本的なアクションのプログラム的なサポートを提供しています。 オフライン プログラミングでは、ASP.NET Development Server を使用します。  
+Microsoft Dynamics 365 for Outlook を使うと、ユーザーはオフラインでサーバーに接続していない状態でも、データと対話することができます。 Common Data Service は、カスタム コードから Web サービス オフラインを呼び出すことによってソリューションをオフラインのシナリオを拡張する機能を備えています。 また、 <xref:Microsoft.Crm.Outlook.Sdk> アセンブリで、同期、オフラインとオンラインの切り替え、 Dynamics 365 for Outlook の状態の検証など、Outlookの基本的なアクションに対するプログラム的なサポートが提供されています。 オフラインのプログラムでは、 ASP.NET Development Server を使用します。  
   
- Dynamics 365 では、管理者がユーザーのフィルターをカスタマイズして管理できるようにする機能を備えています。 フィルター テンプレートは、Dynamics 365 for Outlook のエンティティの同期の開始点を提供します。 フィルターは、オフライン対応の Dynamics 365 ソリューションのために Outlook および SQL Server 2008 Express Edition に同期するエンティティ コレクションを決定します。  
+ Dynamics 365 では、管理者がユーザーのフィルターをカスタマイズして管理できるようにする機能を備えています。 フィルターのテンプレートは、Dynamics 365 for Outlook のエンティティの同期の開始点を提供します。 フィルターは、オフライン対応の Dynamics 365 ソリューションのために Outlook および SQL Server 2008 Express Edition に同期するエンティティ コレクションを決定します。  
   
 ## <a name="in-this-section"></a>このセクションの内容
 

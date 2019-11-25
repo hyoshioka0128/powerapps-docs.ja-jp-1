@@ -4,21 +4,24 @@ description: Common Data Service ウェブサービス (SDK) または、customi
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: da41f997-1f61-7ea8-db83-5d670d708d67
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8dfbf28255f3e36d6b5fcb28a52bf02f738b9860
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749047"
 ---
-
 # <a name="create-a-dashboard"></a>ダッシュボードを作成する
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/create-dashboard -->

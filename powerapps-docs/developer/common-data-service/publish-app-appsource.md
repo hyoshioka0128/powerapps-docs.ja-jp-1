@@ -1,6 +1,6 @@
 ---
 title: AppSourceでアプリケーションを公開 する (Common Data Service) | Microsoft Docs
-description: サブスクリプションの登録者がPowerAppsを検索して試用、購入できるよう、 Microsoft AppSource にて PowerApps を公開する方法を説明します。
+description: Microsoft AppSource の PowerApps 公開して、サブスクライバーを検索して試用、購入できる方法について説明します。
 ms.custom: ''
 ms.date: 03/20/2019
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: AnnBe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d5d14f30fc5877a8021f61e8ba9b4d5176c7af9c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749238"
 ---
 # <a name="publish-your-app-on-appsource"></a>AppSource でアプリを公開する
 
-アプリを [Microsoft AppSource](https://appsource.microsoft.com) に公開して、アプリの登録者がそれを見つけ、試し、購入できるようにします。 PowerApps で作成して発行するアプリは、Web 上の Dynamics 365 で探索して使用されます。 詳細については次を参照してください: [ AppSourceでアプリを見つける](/powerapps/user/app-source). 
+アプリを [Microsoft AppSource](https://appsource.microsoft.com) に公開して、アプリの登録者がそれを見つけ、試し、購入できるようにします。 PowerApps で作成および公開するアプリは、Web 上の Dynamics 365 で探索して使用されます。 詳細については次を参照してください: [ AppSourceでアプリを見つける](/powerapps/user/app-source). 
 
 ## <a name="prepare-for-submitting-your-app-on-appsource"></a>AppSource上にアプリを提出する準備をする
 

@@ -1,19 +1,25 @@
 ---
-title: コード生成ツールの拡張機能を作成する (Common Data Service) | Microsoft Docs
+title: コード生成ツール用の拡張機能の作成 (Common Data Service) | MicrosoftDocs
 description: SDK ダウンロード パッケージには、グローバル オプション セット、候補リスト、状態、ステータスの値などすべてのオプション セット値の列挙体を生成するために使用できる、CrmSvcUtil コード生成ツールへの拡張が含まれています。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fdeea48a4bcdb996580d542a01a61fef22625b98
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748973"
 ---
 # <a name="create-extensions-for-the-code-generation-tool"></a>コード生成ツール用の拡張機能の作成
 
@@ -37,7 +43,7 @@ search.app:
 `MyNamingService`(`IDictionary`<`string`, `string`> `parameters`)<br />
 `MyNamingService`(`INamingService``defaultService`, `IDictionary`<`string`, `string`> `parameters`)
 
-`Microsoft.Crm.Services.Utility` 名前空間は、CrmSvcUtil.exe で定義されています。 Visual Studio コード生成ツール拡張機能プロジェクトに CrmSvcUtil.exe への参照を追加します。
+`Microsoft.Crm.Services.Utility` 名前空間は、CrmSvcUtil.exe で定義されています。 CrmSvcUtil.exe の参照を Visual Studio コード生成ツール拡張機能プロジェクトに追加します。
 
 <a name="Generate_Enums"></a>
 

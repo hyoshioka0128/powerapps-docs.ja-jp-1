@@ -1,19 +1,25 @@
 ---
-title: FetchXML の左外部結合を &bdquo;not in&bdquo; レコードのクエリに使用する (Common Data Service) | Microsoft Docs
+title: 左外部結合を FetchXML で使用して &bdquo; に存在しない &bdquo; 記録をクエリする (Common Data Service) | Microsoft
 description: 左外部結合を FetchXML で使用して、結合の表をフィルタリングするクエリを実行して、セットに "存在しない" 記録を探すクエリを作成する方法について説明します
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e50ff095affda6c976b838b1f368026640fcb2b2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749084"
 ---
 # <a name="use-a-left-outer-join-in-fetchxml-to-query-for-records-not-in"></a>左外部結合を FetchXML で使用して "存在しない" 記録をクエリする
 

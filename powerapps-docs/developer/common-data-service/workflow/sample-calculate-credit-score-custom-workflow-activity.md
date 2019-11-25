@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: ユーザー定義ワークフロー活動でクレジット スコアを計算する (Common Data Service) | Microsoft Docs'
+title: 'サンプル: ユーザー定義ワークフロー活動でクレジット スコアを計算する(Common Data Service) | Microsoft Docs'
 description: このサンプルでは、ワークフロー活動は、社会保障番号 (SSN) と名前に基づいて信用度を計算します。
 ms.custom: ''
 ms.date: 12/03/2018
@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 9cb7eb41-1a73-44a8-ae58-14120e84243f
 caps.latest.revision: 19
 author: JimDaly
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f706266b2a8e1fe6a28c35e6b30f2d55df8d9e3a
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748912"
 ---
 # <a name="sample-calculate-a-credit-score-with-a-custom-workflow-activity"></a>サンプル: ユーザー定義ワークフロー活動でクレジット スコアを計算する
 
-このサンプル コードは、Common Data Service 用です。 ここから、サンプル全体をダウンロードします [ユーザー定義のワークフロー活動のサンプル](https://code.msdn.microsoft.com/Custom-Workflow-Activities-eee57285)。
+このサンプル コードは、Common Data Service 向けです。 ここから、サンプル全体をダウンロードします [ユーザー定義のワークフロー活動のサンプル](https://code.msdn.microsoft.com/Custom-Workflow-Activities-eee57285)。
 
 ## <a name="prerequisites"></a>前提条件
 

@@ -1,5 +1,5 @@
 ---
-title: Common Data Service の日付と時間フィールドの動作と形式 | MicrosoftDocs
+title: Common Data Service における日時フィールドの動作と形式 | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/25/2018
 ms.reviewer: ''
@@ -8,23 +8,29 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 73d691c7-344e-4c96-8979-c661c290bf81
 caps.latest.revision: 47
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cbb327956558e57713040ec8ab1a26d3af78c6c7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2711832"
 ---
 # <a name="behavior-and-format-of-the-date-and-time-field"></a>日時フィールドの動作と形式
 
-Common Data Service では、日付と時間のデータ型が多数の標準エンティティ フィールドで使用されます。 フィールドが表す日付の種類に応じて、**ユーザー ローカル**、**日付のみ**、または**タイム ゾーン非依存**という異なるフィールドの動作を選択できます。  
+Common Data Service では、日付と時刻のデータ型は標準エンティティの多くのフィールドで使用されます。 フィールドが表す日付の種類に応じて、**ユーザー ローカル**、**日付のみ**、または**タイム ゾーン非依存**という異なるフィールドの動作を選択できます。  
   
 <a name="Behavior"></a>   
 

@@ -1,6 +1,6 @@
 ---
 title: エンティティ メタデータ | Microsoft Docs
-description: Common Data Service で使用するエンティティ メタデータについて説明します。
+description: Common Data Service でエンティティ メタデータの使用について説明します 。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7c6845a68f5f076b668f3604fe899991827077f2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748868"
 ---
 <!-- 
 Was Mike Carter
@@ -55,7 +61,7 @@ Overlap with content in https://docs.microsoft.com/dynamics365/customer-engageme
 |`DisplayCollectionName`|表示名の複数形。 例 Accounts|
 |`Description`|エンティティを表す短い文、つまり、*顧客または見込み顧客を表す部署です。この会社には、業務取引で請求が行われます。*|
 
-これらは、アプリ内のエンティティを参照するために使用されるローカライズ可能な値です。 これらの値は、いつでも変更できます。 ローカライズされた値を追加または編集するには、[Common Data Service カスタマイズ ガイド: カスタマイズされたエンティティおよびフィールド テキストを他の言語に翻訳する](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation) を参照してください。
+これらは、アプリ内のエンティティを参照するために使用されるローカライズ可能な値です。 これらの値は、いつでも変更できます。 ローカライズされた値を追加または編集するには、 [Common Data Service カスタマイズ ガイド: カスタマイズされたエンティティおよびフィールド テキストを他の言語に翻訳する](/dynamics365/customer-engagement/customize/export-customized-entity-field-text-translation)を参照してください。
 
 
 ## <a name="primary-key"></a>主キー
@@ -91,7 +97,7 @@ Overlap with content in https://docs.microsoft.com/dynamics365/customer-engageme
 
 詳細: 
 - [Common Data Service 開発者ガイド イメージ属性](/dynamics365/customer-engagement/developer/image-attributes)
-- [Common Data Service 開発者ガイドのサンプル: エンティティ イメージの設定と取得](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
+- [Common Data Service 開発者ガイド サンプル: エンティティ イメージを設定および取得する](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
 
 > [!NOTE]
 > これは、モデル駆動型アプリのエンティティ用に表示されるアイコンとは異なります。 `IconVectorName` プロパティには、これを設定する SVG Web リソースの名前が含まれます。
@@ -156,8 +162,8 @@ Overlap with content in https://docs.microsoft.com/dynamics365/customer-engageme
 各代替キー定義は、エンティティ インスタンスを一意に識別する 1 つ以上の属性を組み合わせて記述します。 代替キーは、通常、外部システムとの統合にのみ適用されます。 代替キーを定義して、レコードを一意に識別することができます。 これは、GUID 固有の識別子キーをサポートしていないシステムとデータを統合する場合に便利です。 エンティティを一意に識別するために、単一のフィールド値またはフィールド値の組み合わせを定義できます。 代替キーを追加すると、これらの属性に一意性制約が適用されます。 同じ値を持つ別のエンティティ レコードを作成または更新することはできません。
 
 詳細: 
- - [Common Data Service カスタマイズ ガイド: Common Data Service レコードを参照する代替キーを定義](/dynamics365/customer-engagement/customize/define-alternate-keys-reference-records)
- - [エンティティの代替キーの定義および開発者ガイド: Common Data Service データを外部システムと同期する](/dynamics365/customer-engagement/developer/synchronize-dynamics-365-data-with-external-systems)
+ - [Common Data Service カスタマイズ ガイド: Common Data Service レコードを参照する代替キーの定義](/dynamics365/customer-engagement/customize/define-alternate-keys-reference-records)
+ - [エンティティの代替キーの定義および開発者ガイド: Common Data Service を外部システムと同期](/dynamics365/customer-engagement/developer/synchronize-dynamics-365-data-with-external-systems)
 
 ## <a name="entity-states"></a>エンティティの状態
 

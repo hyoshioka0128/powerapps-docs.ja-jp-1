@@ -7,14 +7,20 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5c51d0914b1f198e880dcbeb451a49592fd9240b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749174"
 ---
 # <a name="use-the-web-api-with-metadata"></a>Web API をメタデータで使用する
 

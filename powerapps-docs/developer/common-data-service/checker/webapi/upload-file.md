@@ -8,7 +8,7 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 08d7d73b-1377-4d3f-b8ef-5c89b19dd735
 caps.latest.revision: 21
 author: mhuguet
@@ -16,12 +16,17 @@ ms.author: mhuguet
 ms.reviewer: pehecke
 manager: maustinjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8945db30eaad8f8b47c2c933330b63dd12ed1662
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749153"
 ---
-
 # <a name="upload-a-file-for-analysis"></a>分析用のファイルをアップロードします。
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -81,7 +86,7 @@ Content-Type: application/json; charset=utf-8
 
 ### <a name="see-also"></a>関連項目
 
-[PowerApps チェッカー Web API の使用](overview.md)<br />
+[PowerApps チェッカーの Web API を使用する](overview.md)<br />
 [ルールセットの一覧の取得](retrieve-rulesets.md)<br />
 [ルールの一覧の取得](retrieve-rules.md)<br />
 [分析の呼び出し](analyze.md)<br />

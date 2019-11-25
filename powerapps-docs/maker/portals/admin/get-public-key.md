@@ -5,15 +5,18 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 09/16/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 39e909acb325bd870f73e16a72da78b4bec07c79
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2709852"
 ---
-
 # <a name="download-public-key-of-portal"></a>ポータルの公開キーのダウンロード
-
-[!include[cc-beta-prerelease-disclaimer](../../../includes/cc-beta-prerelease-disclaimer.md)]
 
 ポータルの公開キーは、ポータルの認証済み訪問者と作業する Dynamics 365 のモデル駆動型アプリの Live Assist を構成するために使用します。 CafeX の [Live Assist](https://www.cafex.com/en/products/live-assist-dynamics-365/) は、ユーザーが自分のポータルにライブ チャット アシスタンスを埋め込むことができる、チャット ソリューションを提供します。 ポータルにチャットを埋め込む公開キーの使用方法については、[Dynamics カスタマー ポータルの認証済みビジター](https://www.liveassistfor365.com/en/support/authenticated-visitors-in-the-dynamics-customer-portal/)を参照してください
 

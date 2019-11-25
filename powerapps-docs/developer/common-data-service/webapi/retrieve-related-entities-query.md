@@ -1,6 +1,6 @@
 ---
-title: クエリで関連エンティティを取得する (Common Data Service)| Microsoft Docs
-description: ead ナビゲーション プロパティの拡張による関連エンティティの取得方法。
+title: クエリで関連エンティティ レコードを取得する (Common Data Service)| Microsoft Docs
+description: ナビゲーション プロパティの拡張によって関連エンティティを取得できる方法についてお読みください。
 ms.custom: ''
 ms.date: 07/15/2019
 ms.service: powerapps
@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 3D8FB9AF-3663-437A-988E-CBAE9579F167
 caps.latest.revision: 78
 author: susikka
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1119734dd8d61aacdbb3dc553b65c12b4d6c20a9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749189"
 ---
-# <a name="retrieve-related-entities-with-a-query"></a>クエリで関連エンティティを取得します。
+# <a name="retrieve-related-entity-records-with-a-query"></a>クエリで関連エンティティを取得する
 
 ナビゲーション プロパティの `$expand` システム クエリ オプションを使用して、関連エンティティからどのデータが返されるかをコントロールします。 ナビゲーション プロパティには次の 2 種類があります。  
   
@@ -35,7 +41,7 @@ search.app:
 
 <a bkmk="bkmk_retrieverelatedentityexpandsinglenavprop"></a>
 
-## <a name="retrieve-related-entities-by-expanding-single-valued-navigation-properties"></a>単一値のナビゲーション プロパティの拡張による関連エンティティの取得
+## <a name="retrieve-related-entity-records-by-expanding-single-valued-navigation-properties"></a>単一値のナビゲーション プロパティの拡張によって関連エンティティを取得する
 
 以下の例は、すべての取引先企業レコードの取引先担当者を取得する方法を示します。 関連する取引先担当者レコードの場合、取引先担当者 ID およびフルネームのみを取得します。  
   

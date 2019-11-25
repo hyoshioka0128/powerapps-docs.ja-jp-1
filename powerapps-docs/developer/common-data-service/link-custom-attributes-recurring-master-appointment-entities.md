@@ -1,5 +1,5 @@
 ---
-title: 定期的な予定マスターと予定エンティティのユーザー定義属性をリンクする (Common Data Service) | MicrosoftDocs
+title: 定期的な予定マスターと予定エンティティのユーザー定義属性をリンクする (Common Data Service) | Microsoft Docs
 description: 定期的な予定マスター エンティティを予定エンティティのユーザー定義属性にリンクして、自動的にデータをコピーします。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b592f23ee8907902a206be8012249c4db2e7bac2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748848"
 ---
 # <a name="link-custom-attributes-of-the-recurring-appointment-master-and-appointment-entities"></a>定期的な予定マスター エンティティと予定エンティティのユーザー定義属性をリンクする
 

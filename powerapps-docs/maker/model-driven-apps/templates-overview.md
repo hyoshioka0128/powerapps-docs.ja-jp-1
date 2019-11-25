@@ -9,21 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ece68f5f-ad40-4bfa-975a-3e5bafb854aa
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6109721781e4a73858527daa7aeabe09c3435dd9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710776"
 ---
-   
 # <a name="use-excel-and-word-templates"></a>Excel および Word テンプレートの使用
 
 作業速度を上げて一貫性を高めるために、様々な方法でテンプレートを使用できます。 Excelのテンプレートを使うことで、カスタマイズした分析データを作成し、チームと共有することが簡単に実現できます。 Word テンプレートを使用して、Common Data Service データを自動的に用いて設定された標準ドキュメントを作成できます。
@@ -37,19 +42,19 @@ search.app:
 3. 公開済みのアプリを表示している場合は、アプリを選択してそれを開きます。 それ以外の場合は、手順 5 に進みます。
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/published-apps.png "公開済みアプリ") 
+   > ![](media/published-apps.png "Published apps") 
 
 4. 右上の歯車アイコンを選択して、**詳細設定** を選択します。 **詳細設定** が表示されない場合は、次の手順に進みます。
 
 5. **設定** > **テンプレート**を選択してください。
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/settings-templates.png "テンプレート設定") 
+   > ![](media/settings-templates.png "Settings Templates") 
 
 6. **テンプレート** ページで、Excel または Word テンプレートで作業するためには**ドキュメント テンプレート**を選択します。
 
    > [!div class="mx-imgBorder"] 
-   > ![](media/document-templates.png "ドキュメント テンプレート") 
+   > ![](media/document-templates.png "Document Templates") 
 
 テンプレートの使用の詳細については、次のドキュメントを参照してください。
 

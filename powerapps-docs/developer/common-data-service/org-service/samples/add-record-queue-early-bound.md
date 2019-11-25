@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e342e7192f85112d682727e145aaf12f73a65ff8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749106"
 ---
 # <a name="sample-add-a-record-to-a-queue"></a>サンプル: キューへのレコードの追加
 
@@ -44,7 +50,7 @@ search.app:
 2. `Queue` メソッドでは元のキューおよび宛先キューを作成し、変数で返された GUID を保存します。
 3. レター エンティティを作成します。
 4. `AddToQueueRequest` メソッドではエンティティ レコードをキューに追加し、このサンプルでは文字を最初のキューに関連付けます。
-5. キュー アイテムをユーザー キューに割り当てるため、**Office 365** で手動で作成されたユーザーを取得します。
+5. キュー アイテムをユーザー キューに割り当てるため、**Office 365** で手動で作成したユーザーを取得します。
 
 ### <a name="demonstrate"></a>使用方法
 

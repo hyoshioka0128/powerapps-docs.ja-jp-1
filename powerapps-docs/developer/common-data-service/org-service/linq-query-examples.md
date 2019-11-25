@@ -1,21 +1,27 @@
 ---
-title: Linq クエリの例の (Common Data Service) | Microsoft Docs
+title: Linq クエリの例 (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8537f927cce391ff755e4db8b70b4abb2ef4b2e7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749115"
 ---
-# <a name="linq-query-examples-using-organizationservicecontext-with-common-data-service"></a>Common Data Service で OrganizationServiceContext を使用した LINQ クエリの例
+# <a name="linq-query-examples-using-organizationservicecontext-with-common-data-service"></a>Common Data Service で OrganizationServiceContext を使用した LINQ クエリ例
 
 ここでは、LINQ クエリの多数のコード例を紹介します。  
   
@@ -999,7 +1005,7 @@ using (ServiceContext svcContext = new ServiceContext(_serviceProxy))
   
 <a name="BKMK_UseLoadProperty"></a>   
 ## <a name="use-loadproperty-to-retrieve-related-records"></a>関連するレコードを取得するために LoadProperty を使用します。  
- 次のサンプルは、関連レコードにアクセスする [Relationship)]<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.LoadProperty(Microsoft.Xrm.Sdk.Entity,Microsoft.Xrm.Sdk.Relationship)> の方法を示します。  
+ 次のサンプルは、関連レコードにアクセスする [関係]<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceContext.LoadProperty(Microsoft.Xrm.Sdk.Entity,Microsoft.Xrm.Sdk.Relationship)> 方法を示しています。  
   
 ```csharp
 Contact benAndrews = svcContext.ContactSet.Where(c => c.FullName == "Ben Andrews").FirstOrDefault();

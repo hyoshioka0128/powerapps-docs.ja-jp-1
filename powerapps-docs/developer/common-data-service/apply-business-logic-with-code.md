@@ -1,6 +1,6 @@
 ---
-title: コードを使用するビジネス ロジックの適用 (Common Data Service)| Microsoft Docs
-description: 開発者が Common Data Service でビジネス ロジックを適用するコードの使用方法を学習します。
+title: コードを使用してビジネス ロジックを適用する (Common Data Service) | Microsoft Docs
+description: 開発者が Common Data Service でビジネス ロジックを適用するコードの使用方法を説明します。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -14,15 +14,20 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ac1f673b927280cd2cdedb967a1f504f4ce68688
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748832"
 ---
-
 # <a name="apply-business-logic-using-code"></a>コードを使用してビジネス ロジックの適用
 
-可能な限り、ビジネスロジックを定義または適用するいくつかの宣言型プロセス オプションの 1 つを適用することを最初に検討する必要があります。 詳細: [Common Data Service でビジネス ロジックの適用](../../maker/common-data-service/cds-processes.md)
+可能な限り、ビジネスロジックを定義または適用するいくつかの宣言型プロセス オプションの 1 つを適用することを最初に検討する必要があります。 詳細: [Common Data Service でビジネスロジックを適用](../../maker/common-data-service/cds-processes.md)
 
 宣言型プロセスが要件を満たさない場合、開発者にはいくつかのオプションがあります。 このトピックではコードを記述する共通オプションを紹介します。
 

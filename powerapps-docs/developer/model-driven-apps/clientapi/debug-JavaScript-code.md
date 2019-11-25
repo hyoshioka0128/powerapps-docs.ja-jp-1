@@ -1,29 +1,35 @@
 ---
 title: モデル駆動型アプリ用 JavaScript コードのデバッグ | MicrosoftDocs
 ms.date: 10/31/2018
-ms.service: crm-online
+ms.service: powerapps
 ms.topic: conceptual
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 3edad039-4397-4984-a29b-9307a7a2aaee
 author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2b95ef2604b226629f87e37f5a54e79447d1a494
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748875"
 ---
 # <a name="debug-your-javascript-code-for-model-driven-apps"></a>モデル駆動型アプリ用 JavaScript コードのデバッグ
 
 
 
-各ブラウザーは特定の種類のデバッグ拡張機能を提供します。 Microsoft Edge および Internet Explorer には、モデル駆動型アプリ内のスクリプトをデバッグするために使用可能な F12 開発者ツールが用意されています。 F12 開発者ツールは、Microsoft Edge または Internet Explorer を使用してページを表示するときに F12 を押すと開くことができます。 詳細については、[F12 開発者ツール ガイド](https://docs.microsoft.com/microsoft-edge/f12-devtools-guide) を参照してください。
+各ブラウザーは特定の種類のデバッグ拡張機能を提供します。 Microsoft Edge および Internet Explorer には、モデル駆動型アプリ内のスクリプトをデバッグするために使用可能な F12 開発者ツールが用意されています。 Microsoft Edge や Internet Explorerを使用してページを表示している際には、F12 開発者ツールは F12 を押して開くことができます。 詳細については、[F12 開発者ツール ガイド](https://docs.microsoft.com/microsoft-edge/f12-devtools-guide) を参照してください。
 
 Google Chrome の場合は、F12 を押して開発者ツールを開きます。 Firebug は、Mozilla Firefox を使用する Web 開発の一般的なブラウザー拡張機能です。 Apple Safari では、最初に**高度な設定**の**開発を表示**メニューを選択する必要があります。 次に**開発**メニューから **Web 検査の表示**を選択できます。
 
-モデル駆動型アプリで JavaScript ライブラリを使用するとき、ライブラリは Web ページでロードされます。 デバッグ環境では、自分の特定なライブラリを分離することが困難な場合があります。 Microsoft Edge でデバッグ ツールを使用している場合、**デバッガー**タブで、左上隅でフォルダー アイコンをクリックして、使用可能なスクリプトを展開し、次に示す **new_myCustomJavaScript.js** Web リソースなど JavaScript Web リソース名に対応する名前を持つスクリプトを検索します。 検索ボックスにファイル名を入力することにより、JavaScript ライブラリも検索できます。
+モデル駆動型アプリで JavaScript ライブラリを使用するとき、ライブラリは Web ページでロードされます。 デバッグ環境では、自分の特定なライブラリを分離することが困難な場合があります。 Microsoft Edge でデバッグ ツールを使用している場合、 **デバッガー** タブで、左上隅のフォルダアイコンをクリックし、使用可能なスクリプトを展開して、以下に示す **new_myCustomJavaScript.js** Webリソースなど、JavaScript Webリソースの名前に対応する名前のスクリプトを探します。 検索ボックスにファイル名を入力することにより、JavaScript ライブラリも検索できます。
 
 ![JavaScript のデバッグ](../media/form-script-debugging.png)
 

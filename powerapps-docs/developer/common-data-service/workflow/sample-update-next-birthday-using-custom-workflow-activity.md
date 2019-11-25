@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: ユーザー定義ワークフロー活動を使用した次回の誕生日の更新 (Common Data Service) | Microsoft Docs'
+title: 'サンプル: ユーザー定義ワークフロー活動を使用した次回の誕生日の更新(Common Data Service) | Microsoft Docs'
 description: 'サンプル ワークフロー活動は次回の誕生日を返します。 顧客に誕生日の挨拶を送信するワークフローでこれを使用します。 '
 ms.custom: ''
 ms.date: 12/03/2018
@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: samples
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 1cff83b0-1f7b-4ddb-a2af-b85f9f785529
 caps.latest.revision: 21
 author: JimDaly
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 819f6f03b6f110508c0705bb2916c83dfb880dbc
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748910"
 ---
 # <a name="sample-update-next-birthday-using-a-custom-workflow-activity"></a>サンプル: ユーザー定義ワークフロー活動を使用した次回の誕生日の更新
 

@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 08377156-32c7-492a-8e66-50a47a330dc6
 caps.latest.revision: 14
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fa12284b6ca3eeca25ba01d52e4132319586eea4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748933"
 ---
 # <a name="enhanced-quick-start"></a>拡張クイック スタート
 
@@ -35,7 +41,7 @@ search.app:
 
 1. [Visual Studio プロジェクトで参照を System.Configuration に追加](#add-reference-to-systemconfiguration-to-the-visual-studio-project)
 1. [アプリケーション構成ファイルの編集](#edit-the-application-configuration-file)
-1. [using ステートメントを Program.cs に追加](#add-using-statement-to-programcs)
+1. [using ディレクティブを Program.cs に追加](#add-using-directive-to-programcs)
 
 
 ### <a name="add-reference-to-systemconfiguration-to-the-visual-studio-project"></a>Visual Studio プロジェクトで参照を System.Configuration に追加
@@ -76,9 +82,9 @@ search.app:
 
 Common Data Service 環境への接続に必要なものに一致するように、 `connectionString` の接続文字列 `Url` 、 `Username` および `Password` の値を編集します。
 
-### <a name="add-using-statement-to-programcs"></a>using ステートメントを Program.cs に追加
+### <a name="add-using-directive-to-programcs"></a>using ディレクティブを Program.cs に追加
 
-Program.cs ファイルの先頭に、この using ステートメントを追加します。
+Program.cs ファイルの先頭に、この using ディレクティブを追加します:
 
 ```csharp
 using System.Configuration;
@@ -96,7 +102,7 @@ using System.Configuration;
     > [!NOTE]
     > クラスの名前によって、 `Program.cs` 内でのこれらのヘルパー プロパティとメソッドの参照方法が決まります。 残りの指示では `SampleHelpers` と名前を付けたとみなしますので、ほかの名前を付けた場合は覚えていてください。
 
-1. 次の `using` ステートメントを追加します。
+1. 次の `using` ディレクティブを追加する:
 
     ```csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -274,10 +280,10 @@ static void Main(string[] args)
 
 F5 キーを押してプログラムを実行します。 [クイック スタート](quick-start-console-app-csharp.md) サンプルのように、出力は次のようになります。
 
-    ```
-    Your UserId is 969effb0-98ae-478c-b547-53a2968c2e75
-    Press any key to exit.
-    ```
+```
+Your UserId is 969effb0-98ae-478c-b547-53a2968c2e75
+Press any key to exit.
+```
 
 ## <a name="create-re-usable-methods"></a>再利用可能なメソッドを作成
 
@@ -343,7 +349,7 @@ Visual Studio プロジェクトで、次のステップを実行します:
 
     このように、`ProgramMethods.cs` ファイルの `Program` クラスは、`Program.cs` ファイルの元の `Program` クラスの単なる拡張です。 
 
-1. 次の using ステートメントを `ProgramMethods.cs` ファイルの上位に追加します。
+1. 次の using ディレクティブを `ProgramMethods.cs` ファイルの上位に追加します。
 
     ```csharp
     using Newtonsoft.Json.Linq;
@@ -419,7 +425,7 @@ Visual Studio プロジェクトで、次のステップを実行します:
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-これらのサンプルを実行するときに問題がある場合、[https://github.com/Microsoft/PowerApps-Samples](https://github.com/Microsoft/PowerApps-Samples) の GitHub のリポジトリから、すべての PowerApps のサンプルをダウンロードできます 。
+これらのサンプルを実行するときに問題がある場合、 [https://github.com/Microsoft/PowerApps-Samples](https://github.com/Microsoft/PowerApps-Samples) の GitHub のリポジトリから、すべての PowerApps のサンプルをダウンロードできます 。
 
 このサンプルは、`PowerApps-Samples-master\PowerApps-Samples-master\cds\webapi\C#\SimpleWebApi` フォルダーにある [SimpleWebApi](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23/SimpleWebApi) に基づいています。
 

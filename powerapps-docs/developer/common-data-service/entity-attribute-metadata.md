@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6dc0aeb076aa97950b2049cc8054a809bf268e0d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748871"
 ---
-
 <!-- This topic was not migrated it was written for PowerApps 
 Was Mike Carter
 Overlap with https://docs.microsoft.com/dynamics365/customer-engagement/developer/introduction-entity-attributes
@@ -82,7 +87,8 @@ Overlap with https://docs.microsoft.com/dynamics365/customer-engagement/develope
 |集荷|`CalendarRulesType`|なし|`CalendarRules` エンティティ レコードのコレクションを含みます。<br />このタイプを使用する属性はありません。 プロキシを生成する際、コード生成ツールは、メタデータに存在しない 2 つのシミュレーション属性を作成します。 これらの属性は、一対多でエンティティ レコードに関連付けられているカレンダー ルール レコードのビューを表します。|
 |集荷|`PartyListType`|なし|`ActivityParty` エンティティ レコードのコレクションを含みます。<br />詳細: [ActivityParty エンティティ](reference/entities/activityparty.md)|
 |日付と時間|`DateTimeType`<br />[DateTimeAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.datetimeattributemetadata)|あり<br />**日付と時間**|日付と時刻の値を含みます。<br />すべての日付と時刻の属性は、1753 年 1 月 1 日午前 12:00 以降の日付をサポートします。|
-|イメージ|`ImageType`<br />[ImageAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|あり<br />**画像**|エンティティ レコードのイメージ データの取得をサポートするためのデータが含まれています。<br />詳細: [エンティティ イメージ](entity-metadata.md#entity-images)|
+|ファイル|`FileType`<br />[FileAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.fileattributemetadata)|あり<br />**ファイル**|エンティティ レコードのバイナリ データの取得をサポートするためのデータが含まれています。<br />詳細: [ファイル属性](file-attributes.md)|
+|イメージ|`ImageType`<br />[ImageAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata)|あり<br />**イメージ**|エンティティ レコードのイメージ データの取得をサポートするためのデータが含まれています。<br />詳細: [エンティティ イメージ](entity-metadata.md#entity-images)|
 |管理プロパティ|`ManagedPropertyType`<br />[ManagedPropertyAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.managedpropertyattributemetadata)|なし|エンティティ レコードに格納されているソリューション コンポーネントを、管理ソリューションに含めるときにカスタマイズできるかどうかを示すデータが含まれています。<br />詳細: [管理プロパティ](introduction-solutions.md#managed-properties)|
 |数量|`BigIntType`<br />[BigIntAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.bigintattributemetadata)|なし|`BigInt` 値を含みます。 内部のみで使用|
 |数量|`DecimalType`<br />[DecimalAttributeMetadata](/dotnet/api/microsoft.xrm.sdk.metadata.decimalattributemetadata)|あり<br />**10 進数**|`Decimal` 値を含みます。 `Precision` プロパティで精度を設定します。|

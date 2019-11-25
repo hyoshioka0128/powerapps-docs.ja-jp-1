@@ -10,12 +10,17 @@ author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 38a9109faf5d8ae45aa2a0bdecfb0d25037742dd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749267"
 ---
-
 # <a name="test-for-a-null-value"></a>null 値のテスト
 
 次のコード例は、<xref:Microsoft.Xrm.Sdk.Query.FilterExpression> クラスおよび <xref:Microsoft.Xrm.Sdk.Query.QueryByAttribute> クラスを使用して null 値をテストする方法を示しています。  

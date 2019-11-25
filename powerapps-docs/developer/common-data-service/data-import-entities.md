@@ -1,5 +1,5 @@
 ---
-title: データのインポート エンティティ (Common Data Service) | Microsoft Docs
+title: データ インポートのエンティティ (Common Data Service) | Microsoft Docs
 description: データ マップを作成し、データのインポートを構成して実行し、エラー情報を記録するために使用するデータ インポート エンティティをリスト表示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 83d77703b9ec5190f2852283b0f661a6af818324
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749137"
 ---
 # <a name="data-import-entities"></a>データ インポート エンティティ
 
@@ -36,7 +42,7 @@ Common Data Service データ インポート エンティティを使用して�
 |                  columnmapping (列マッピング)                   |                                                           ソース ファイル内の列と Common Data Service 内のターゲット属性間のマッピング。                                                           |
 |                  lookupmapping (検索マッピング)                   |       ソース ファイル内の列 (または複雑な変換の出力) と <xref:Microsoft.Xrm.Sdk.EntityReference> 型のターゲット属性間のマッピング。 列マッピングまたは複雑な変換マッピングと組み合わせて使用されます。        |
 |                   ownermapping (所有者マッピング)                    |                                                             ソース ファイルに指定されたユーザーと Common Data Service 内のユーザー間のマッピング。                                                             |
-|                picklistmapping (候補リスト マッピング)                 | ソース ファイル内の列と Common Data Service 内の <xref:Microsoft.Xrm.Sdk.OptionSetValue>、ブール値、状態、または状態の種類のターゲット属性間のマッピング。 列マッピングと組み合わせて使用されます。 |
+|                picklistmapping (候補リスト マッピング)                 | ソース ファイル内の列と、Common Data Service 内の <xref:Microsoft.Xrm.Sdk.OptionSetValue>、ブール値、状態、またはステータスの各型のターゲット属性間のマッピング。 列マッピングと組み合わせて使用されます。 |
 |          transformationmapping (変換マッピング)           |                                                                                                            複雑な変換のマッピング。                                                                                                             |
 | transformationparametermapping (変換パラメーター マッピング) |                                                                                           複雑な変換マッピングで使用されるパラメーター マッピング                                                                                            |
 

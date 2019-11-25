@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5eb692c38d7a8dac779c827c09d7b767e89bb6e2
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748990"
 ---
 # <a name="delete-data-in-bulk"></a>データの一括削除
 
-*一括削除* 機能を使用すると、データ品質を維持し、必要なくなったデータを削除して Common Data Service のシステム ストレージ消費を管理するために役立ちます。 たとえば、次のデータを一括で削除できます。  
+[*一括削除*] 機能を使用すると、データ品質を維持し、必要なくなったデータを削除して Common Data Service のシステム ストレージ消費を管理するために役立ちます。 たとえば、次のデータを一括で削除できます。  
   
 - 古いデータ。  
   

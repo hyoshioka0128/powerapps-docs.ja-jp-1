@@ -1,5 +1,5 @@
 ---
-title: ' テーブル コンポーネント | Microsoft Docs'
+title: " テーブル コンポーネント | Microsoft Docs"
 description: テーブル コンポーネントの実装
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: d25283531665a0e1c534bd0e797cbaa722c44bba
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748885"
 ---
-
 # <a name="implementing-table-component"></a>テーブル コンポーネントの実装
 
 このサンプル コンポーネントは 2 列のテーブルを表示します。 左側の列は API メソッドやプロパティの名前を示し、右側の列は API によって返される値を示します。 値がテーブル内で正しく調整されていることを確認するには、さまざまな種類のデバイスでこのコンポーネントを開くか、言語やユーザー設定を変更します。
@@ -43,19 +48,19 @@ export class TSTableControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Flag to track if control is in full screen mode or not
   private _isFullScreen: boolean;
-  // Reference to HTMLTableElement rendered by control
+  // reference to HTMLTableElement rendered by control
   private _tableElement: HTMLTableElement;
-  // Reference to 'Set Full Screen' HTMLButtonElement
+  // reference to 'Set Full Screen' HTMLButtonElement
   private _setFullScreenButton: HTMLButtonElement;
-  // Reference to 'Lookup Objects' HTMLButtonElement
+  // reference to 'Lookup Objects' HTMLButtonElement
   private _lookupObjectsButton: HTMLButtonElement;
-  // Reference to 'Lookup Result Div' HTMLDivElement
+  // reference to 'Lookup Result Div' HTMLDivElement
   // Used to display information about the item selected by the lookup
   private _lookupObjectsResultDiv: HTMLDivElement;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
-  // Reference to ComponentFramework Context object
+  // reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Flag if control view has been rendered
   private _controlViewRendered: Boolean;
@@ -440,4 +445,4 @@ export class TSTableControl
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps Component Framework のマニフェスト スキーマの参照](../manifest-schema-reference/index.md)
+[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

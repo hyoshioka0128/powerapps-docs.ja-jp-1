@@ -1,19 +1,25 @@
 ---
-title: 組織サービスを使用したエンティティの更新および削除 (Common Data Service) | Microsoft Docs
+title: 組織サービスを使用してエンティティを更新または削除 (Common Data Service) | Microsoft Docs
 description: 組織サービスを使用したエンティティの更新と削除の各操作を実行する方法を説明します。
 ms.custom: ''
 ms.date: 04/21/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 974835002e6c65ce553d93393132dfa225baba7e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749117"
 ---
 # <a name="update-and-delete-entities-using-the-organization-service"></a>組織サービスを使用したエンティティの更新と削除
 

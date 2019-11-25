@@ -10,14 +10,20 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 646cfaae94072aff8328070b4bae0e955f8bc01c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749219"
 ---
 # <a name="solution-component-file-reference-solutionpackager"></a>ソリューション コンポーネント ファイル リファレンス (SolutionPackager)
 
-このトピックでは、SolutionPackagerツールで使用されるフォルダー構造とそのファイル命名について説明します。 このツールは、Common Data Service ソリューション ファイルをソース コード管理システムで管理できる XML ファイルに分解 (解凍) するために使用されます。 ツールは、これらの個々の XML ファイルを Common Data Service にインポートできるソリューションファイルにコンパイル (パック) することもできます。 SolutionPackager ツールの詳細については、[SolutionPackager ツール ](compress-extract-solution-file-solutionpackager.md)を参照してください。  
+このトピックでは、SolutionPackagerツールで使用されるフォルダー構造とそのファイル命名について説明します。 このツールは、Common Data Service ソリューション ファイルをソース コード管理システムで管理できる XML ファイルに分解 (解凍)するために使用されます。 ツールは、これらの個々の XML ファイルを Common Data Service にインポートできるソリューションファイルにコンパイル (パック) することもできます。 SolutionPackager ツールの詳細については、[SolutionPackager ツール ](compress-extract-solution-file-solutionpackager.md)を参照してください。  
   
  以下のセクションでは、各ソリューション コンポーネントの種類に対して作成されるファイルと、ソース管理に含めるのに適していないファイルについて説明します。 セクションに示されているフォルダーはすべて、**SolutionPackager**コマンドの `/folder` パラメーターで指定されたフォルダーに関連しています。  
   
@@ -71,7 +77,7 @@ RibbonDiff.xml
 ## <a name="option-set"></a>オプション セット  
  管理ソリューションでは異なります: いいえ  
   
-### <a name="notes"></a>メモ​​  
+### <a name="notes"></a>注意  
  各オプション セットは個々のファイルに保存されます。  
   
 ### <a name="files"></a>ファイル  
@@ -185,7 +191,7 @@ SiteMap_managed.xml
 ## <a name="workflow"></a>ワークフロー  
  管理ソリューションでは異なります: いいえ  
   
-### <a name="notes"></a>メモ​​  
+### <a name="notes"></a>注意  
   
 1.  各ワークフローの XAML は個別のファイルに保存されます。  
   
@@ -357,7 +363,7 @@ Structurexml.xml
 ## <a name="serviceendpoint"></a>ServiceEndpoint  
  管理ソリューションでは異なります: いいえ  
   
-### <a name="notes"></a>メモ​​  
+### <a name="notes"></a>注意  
  すべてのサービス エンド ポイントのメタデータは、1 つのファイルにまとめて保存されます。  
   
 ### <a name="files"></a>ファイル  

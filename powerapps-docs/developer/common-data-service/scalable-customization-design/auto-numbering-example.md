@@ -10,17 +10,23 @@ author: rogergilchrist
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d414b589fada6251172113a2016c3c286edc28aa
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749226"
 ---
 # <a name="scalable-customization-design-auto-numbering-example"></a>スケーラブル カスタマイズ設計: 自動付番の例
 
 > [!NOTE]
-> この例では、スケーラブル カスタマイズ設計に関する一連のトピックをサポートします。 最初から始めるには [Common Data Service におけるスケーラブル カスタマイズ設計](overview.md) を参照してください。
+> この例では、スケーラブル カスタマイズ設計に関する一連のトピックをサポートします。 最初から始めるには、[Common Data Service におけるスケーラブル カスタマイズ設計](overview.md) を参照してください。
 
-Common Data Service でトランザクションが処理される方法について一般的に誤解するシナリオは、自動付番スキームを実装することです。
+Common Data Service でトランザクションが処理される方法について一般的な誤解を示すシナリオは、自動付番スキームを実装することです。
 
 このシナリオにおける通常の要件:
 

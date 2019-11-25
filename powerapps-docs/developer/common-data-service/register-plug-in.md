@@ -1,6 +1,6 @@
 ---
-title: プラグインの登録 (Common Data Service) | Microsoft Docs
-description: プラグインを登録して Common Data Service にカスタム ビジネス ロジックを適用する方法について説明します。
+title: プラグインを登録する (Common Data Service)| Microsoft Docs
+description: プラグインを登録して  Common Data Service にカスタム ビジネス ロジックを適用する方法について説明します。
 ms.custom: ''
 ms.date: 02/19/2019
 ms.reviewer: ''
@@ -10,19 +10,24 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 893e10844ee6e4c5f4e35b228d23ddf06e3c90e7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749234"
 ---
-
 # <a name="register-a-plug-in"></a>プラグインの登録
 
 
 書き込み、登録、およびプラグインをデバッグするプロセスは次のとおりです:
 
 1. Visual Studio に .NET Framework クラス ライブラリ プロジェクトを作成します。
-1. `Microsoft.CrmSdk.CoreAssemblies` NuGet パッケージをプロジェクトに追加します。
+1. `Microsoft.CrmSdk.CoreAssemblies` NuGet パッケージをプロジェクトに追加する
 1. ステップとして登録されるクラスの <xref:Microsoft.Xrm.Sdk.IPlugin> インターフェイスを実装します。
 1. インターフェイスに必要な <xref:Microsoft.Xrm.Sdk.IPlugin.Execute*> メソッドにコードを追加する
     1. 必要なサービスへの参照を取得する
@@ -44,18 +49,18 @@ search.app:
 
 ## <a name="plugin-registration-tool-prt"></a>Plugin Registration Tool (PRT)
 
-Plugin Registration Tool (PRT) を使用してプラグイン アセンブリと手順を登録します。
+Plugin Registration Tool (PRT)を使用してプラグイン アセンブリと手順を登録します。
 
-PRT は、NuGet からダウンロード可能なツールの 1 つです。 [NuGet からのダウンロード](download-tools-nuget.md)の手順に従います。 そのトピックには、最新の NuGet ツールをダウンロードするために PowerShell スクリプトを使用するための手順が含まれます。
+PRT は、NuGet からダウンロード可能なツールの 1 つです。 [NuGet からのツールをダウンロード](download-tools-nuget.md) の手順に従います。 そのトピックには、PowerShell スクリプト使用の手引きが含まれており、NuGetから最新ツールをダウンロードできます。
 
-PRT をダウンロードしたら、[チュートリアル: プラグインの作成と登録](tutorial-write-plug-in.md)にある [Plug-in Registration Tool を使用した接続](tutorial-write-plug-in.md#connect-using-the-plug-in-registration-tool)の手順を使用して、Common Data Service 環境に接続します。
+PRT をダウンロードしたら、[チュートリアル: プラグインの書き込みと登録](tutorial-write-plug-in.md) にある [プラグイン登録ツールを使用して接続する](tutorial-write-plug-in.md#connect-using-the-plug-in-registration-tool)の手順を使用して、Common Data Service 環境に接続します。
 
 ## <a name="register-an-assembly"></a>アセンブリの登録
 
 アセンブリの登録は、Common Data Service データベースにアセンブリをアップロードするプロセスです。 [チュートリアル: プラグインの作成と登録](tutorial-write-plug-in.md)の[アセンブリの登録](tutorial-write-plug-in.md#register-your-assembly)にある説明を参照してください。
 
 > [!NOTE]
-> アセンブリの *分離モード* と *場所* に関連するオプションがあります。 これらは、設置型展開に適用されるオプションを示します。 Common Data Service は、設置型展開では使用できませんので、これらのオプションの既定のオプション **サンドボックス** および **データベース** を常に使用できます。
+> アセンブリの *分離モード* と *場所* に関連するオプションがあります。 これらは、設置型展開に適用されるオプションを示します。 Common Data Service は、オンプレミス展開では使用できませんので、これらのオプションの**サンドボックス**と**データベース**の既定のオプションを常に受け入れます。
 
 アセンブリがアップロードされると、`PluginAssembly` エンティティに格納されます。 プロパティの大半は、インポートされたエンティティのリフレクションを使用して設定されます。 アセンブリの base64 エンコードされたバイトは、`Content` 属性に格納されます。 PRT でアセンブリの **プロパティ** を参照しているときは、**説明** 属性値の編集のみ行うことができます。
 
@@ -214,7 +219,7 @@ version
 
 #### <a name="messages-that-support-entity-images"></a>エンティティ イメージをサポートするメッセージ
 
-Common Data Service では、以下のメッセージだけがエンティティ イメージをサポートしています。
+Common Data Service では、以下のメッセージだけがエンティティ イメージをサポートしています:
 
 |メッセージ|要求クラス プロパティ| 説明|
 |--|--|--|
@@ -268,7 +273,7 @@ Common Data Service では、以下のメッセージだけがエンティティ
 
 展開されたマネージド ソリューションの一部であるプラグイン アセンブリに変更を加える場合、そのマネージド ソリューションを更新した場合に変更が与える可能性がある影響を考慮する必要があります。 アセンブリのバージョンによって動作が制御されます。
 
-Microsoft Visual Studio プロジェクトの `Assembly.info` ファイルで定義されている `major.minor.build.revision` のセマンティック バージョン管理形式を使用して、プラグイン アセンブリのバージョンを管理できます。 新しいソリューションでアセンブリ バージョン番号のどの部分が変更されるかにより、インポートによって既存のソリューションが更新されるときに、次の動作が適用されます。
+プラグイン アセンブリは、Microsoft Visual Studio プロジェクトの `Assembly.info` ファイルで定義されている `major.minor.build.revision` のセマンティック バージョン形式を使用してバージョンを管理できます。 新しいソリューションでアセンブリ バージョン番号のどの部分が変更されるかにより、インポートによって既存のソリューションが更新されるときに、次の動作が適用されます。
 
 - **ビルドまたはリビジョンのアセンブリ バージョン番号が変更されます**
 

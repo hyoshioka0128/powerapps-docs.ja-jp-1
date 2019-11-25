@@ -1,6 +1,6 @@
 ---
-title: 'Web API 基本操作のサンプル (C#) (Common Data Service) | Microsoft Docs'
-description: このサンプルによって、Common Data Service Web API を使用して基本的な CRUD (作成、取得、更新、削除) の実行方法および Common Data Service エンティティ インスタンス上での関連付けと関連付け解除の操作の実行方法を示します
+title: Web API の基本操作のサンプル (C#) (Common Data Service) | Microsoft Docs
+description: このサンプルによって、Common Data Service Web API を使用して基本的な CRUD (Create、Retrieve、Update、および Delete) の実行方法および Common Data Service エンティティ インスタンス上での関連付けおよび関連付け解除の操作の実行方法を示します。
 ms.custom: ''
 ms.date: 1/09/2019
 ms.service: powerapps
@@ -8,30 +8,36 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 45cdefe5-0776-496a-9b06-b5cad768e543
 caps.latest.revision: 20
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 766f9f16690ad111115db163b79641f8e4ec5683
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749185"
 ---
 # <a name="web-api-basic-operations-sample-c"></a>Web API 基本操作のサンプル (C#)
 
-このサンプルによって、Common Data Service Web API を使用して基本的な CRUD (作成、取得、更新、削除) の実行方法および Common Data Service エンティティ インスタンス上での関連付けと関連付け解除の操作の実行方法を示します。  
+このサンプルによって、Common Data Service Web API を使用して基本的な CRUD (Create、Retrieve、Update、および Delete) の実行方法および Common Data Service エンティティ インスタンス上での関連付けおよび関連付け解除の操作の実行方法を示します。  
   
 > [!NOTE]
-> この Common Data Service 操作のサンプルの実装とコンソール出力は [Web API 基本操作のサンプル](../web-api-basic-operations-sample.md) で詳しく説明されています。またコモン C# の構成の使用は [Web API のサンプル (C#)](../web-api-samples-csharp.md) で説明されています。  
+> この Common Data Service 操作のサンプルの実装とコンソール出力は [Web API の基本操作のサンプル](../web-api-basic-operations-sample.md) で詳しく説明されています。またコモン C# の構成の使用は [Web API のサンプル (C#)](../web-api-samples-csharp.md) で説明されています。  
   
 <a name="bkmk_prerequisites"></a>
 
 ## <a name="prerequisites"></a>前提条件
 
-すべての Common Data Service Web API C# サンプルの前提条件は、親トピック [Web API サンプル (C#)](../web-api-samples-csharp.md) の [前提条件](../web-api-samples-csharp.md#bkmk_prerequisites) セクションで説明されています。  
+すべての Common Data Service Web API C# サンプルの前提条件は、親トピックの [Web API サンプル (C#)](../web-api-samples-csharp.md) の [前提条件](../web-api-samples-csharp.md#bkmk_prerequisites) セクションで説明されています。  
   
 <a name="bkmk_runSample"></a>
   
@@ -42,15 +48,15 @@ search.app:
 |ファイル|目的/説明|  
 |----------|--------------------------|  
 |SampleProgram.cs|このサンプルのプライマリ ソース コードが含まれます。|  
-|App.config|プレースホルダーの Common Data Service サーバー接続情報を含むアプリケーション構成ファイルです。 このファイルはリポジトリのすべての Web API のサンプルと共有されます。 ひとつのサンプル用に接続情報を構成する場合、同じ構成の他のサンプルを実行できます。|  
+|App.config|プレースホルダー Common Data Service サーバー接続情報を含むアプリケーション構成ファイルです。 このファイルはリポジトリのすべての Web API のサンプルと共有されます。 ひとつのサンプル用に接続情報を構成する場合、同じ構成の他のサンプルを実行できます。|  
 |SampleHelper.cs|アプリケーション構成、認証、`HTTP` レスポンス エラー処理などの一般的なタスクの実行を支援するためのヘルパーコードを含みます。<br/>このファイルはリポジトリのすべての Web API のサンプルと共有されます。 これには例外および OAuthトークンを管理するためのヘルパー メソッドも含まれます。 このファイル内のメソッドの詳細については、簡単な Web API のサンプルを参照してください。|  
 |SampleMethod.cs|サンプルのソース・コードをサポートするすべてのメソッドが含まれます。 SampleProgram.cs で使用する関数をこのファイルで定義できます。 |
-|BasicOperations.sln <br />BasicOperations.csproj <br />Packages.config <br />AssemblyInfo.cs|このサンプルの標準 Visual Studio 2017 ソリューション、プロジェクト、NuGet パッケージ構成、およびアセンブリ情報ファイルです。|  
+|BasicOperations.sln <br />BasicOperations.csproj <br />Packages.config <br />AssemblyInfo.cs|このサンプルの標準 Visual Studio 2017 ソリューション、プロジェクト、 NuGet パッケージ構成、およびアセンブリ情報ファイルです。|  
   
  次に、以下の手順を使用して、このサンプルを実行します。  
   
-1. ソリューション ファイル、BasicOperations.sln を探してダブルクリックし、Visual Studio にソリューションを読み込みます。 BasicOperations ソリューションを作成します。 これにより、見あたらないまたはアップグレードする必要がある必要なすべての NuGet パッケージは自動的にダウンロードされ、インストールされます。
-2. アプリケーション構成ファイルである App.config を編集して Common Data Service サーバーに接続情報を指定します。
+1. ソリューション ファイル、BasicOperations.sln を探しダブル クリックして、ソリューションを Visual Studio に読み込みます。 BasicOperations ソリューションを作成します。 これにより、見あたらないまたはアップグレードする必要がある必要なすべての NuGet パッケージは自動的にダウンロードされ、インストールされます。
+2. アプリケーション構成ファイル、App.config を編集し、 Common Data Service サーバーに接続情報を指定します。
 3. Visual Studio で BasicOperations プロジェクトを実行します。 すべてのサンプル ソリューションは、既定では、デバッグ モードで実行するように構成されています。
 
 <a name="bkmk_codeListing"></a>
@@ -563,7 +569,7 @@ HttpResponseMessage disassocResponse2 = client.DeleteAsync(dis2Uri).Result;
   
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service Web API の使用](../overview.md)<br />
+[ Common Data Service Web API を使用する](../overview.md)<br />
 [Web API を使用してエンティティを作成する](../create-entity-web-api.md)<br />
 [Web API を使用したエンティティの更新と削除](../update-delete-entities-using-web-api.md)<br />
 [Web API を使用してエンティティを取得する](../retrieve-entity-using-web-api.md)<br />

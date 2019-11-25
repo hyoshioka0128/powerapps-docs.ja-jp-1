@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: CRUD の定期的な予定 (Common Data Service) | Microsoft Docs'
+title: 'サンプル: CRUD 定期的な一連の予定 (Common Data Service) | Microsoft Docs'
 description: このサンプルは定期的な予定に関する CRUD 操作の実行方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d5c5ca8034f515e5e150c71b376c391660f3e920
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748951"
 ---
 # <a name="sample-create-retrieve-update-and-delete-a-recurring-appointment"></a>サンプル: 定期的な予定を作成、取得、更新、および削除する
 

@@ -1,34 +1,42 @@
-- name: Common Data Service のベスト プラクティスとガイダンス
+- name: Common Data Service に関するベスト プラクティスとガイダンス
   href: index.md
   items:
-    - name: コードを使用したビジネス ロジックの適用
+    - name: コードを使用してビジネス ロジックの適用
       href: business-logic/index.md
       items:
-        - name: プラグインとワークフローのアクティビティでバッチ要求の種類の使用を避ける
+        - name: プラグインおよびワークフロー活動でバッチ要求の種類の使用を回避する
           href: business-logic/avoid-batch-requests-plugin.md
-        - name: IPlugin 実装をステートレスとして開発する
+        - name: '詳細: IPlugin の実装をステートレスとして開発する'
           href: business-logic/develop-iplugin-implementations-stateless.md
-        - name: プラグイン手順の登録を重複させないでください
+        - name: プラグイン ステップ登録を重複させない
           href: business-logic/do-not-duplicate-plugin-step-registration.md
-        - name: プラグインの登録でフィルター属性を含める
+        - name: プラグインおよびワークフロー アクティビティ内でパラレル実行を使用しないでください
+          href: business-logic/do-not-use-parallel-execution-in-plug-ins.md
+        - name: PreOperation RetrieveMultiple を使用したフィルター処理した場合に、すべての種類のクエリを実行する
+          href: business-logic/implement-all-types-of-queries-when-filtering-preoperation-retrievemultiple.md
+        - name: プラグイン登録にフィルター属性を含める
           href: business-logic/include-filtering-attributes-plugin-registration.md
-        - name: Retrieve メッセージと RetrieveMultiple メッセージのプラグインの登録を制限する
+        - name: retrieve および RetrieveMultiple メッセージ用のプラグインの登録を制限する
           href: business-logic/limit-registration-plugins-retrieve-retrievemultiple.md
-        - name: カスタム アセンブリの開発を最適化する
+        - name: ユーザー定義のアセンブリ開発を最適化する
           href: business-logic/optimize-assembly-development.md
-        - name: プラグインで外部ホストとやりとりするときに KeepAlive を false に設定する
+        - name: カスタム ワークフロー アクティビティーでリフレクションを使用している非対応コードを削除する
+          href: business-logic/remove-unsupported-code-using-reflection-workflow-activities.md
+        - name: プラグインで外部ホストを操作するときは、キープアライブを false に設定する
           href: business-logic/set-keepalive-false-interacting-external-hosts-plugin.md
-        - name: プラグインとワークフローのアクティビティで InvalidPluginExecutionException を使用する
+        - name: プラグインで外部呼び出しをする場合のタイムアウトを設定する
+          href: business-logic/set-timeout-for-external-calls-from-plug-ins.md
+        - name: プラグインおよびワークフロー活動で InvalidPluginExecutionException を使用する
           href: business-logic/use-invalidpluginexecutionexception-plugin-workflow-activities.md
-    - name: コードを使用してデータを操作する
+    - name: コードを使用したデータに関する作業
       href: work-with-data/index.md
       items:
         - name: API の制限
           href: ../api-limits.md
-    - name: コードを使用してメタデータを操作する
+    - name: コードを使用してメタデータを扱う
       href: work-with-metadata/index.md
       items:
-        - name: 公開済みのメタデータを取得する
+        - name: 公開済みメタデータの取得
           href: work-with-metadata/retrieve-published-metadata.md
-        - name: クエリ API 経由でエンティティに対して特定の列を取得する
+        - name: クエリ API によってエンティティの特定の列を取得
           href: work-with-metadata/retrieve-specific-columns-entity-via-query-apis.md

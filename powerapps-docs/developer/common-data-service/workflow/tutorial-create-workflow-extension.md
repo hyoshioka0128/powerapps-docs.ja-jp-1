@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e3ef73edca48bf9a72f8078a6985ee299baee702
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748908"
 ---
 # <a name="tutorial-create-workflow-extension"></a>チュートリアル: ワークフロー拡張の作成
 
@@ -78,7 +84,7 @@ search.app:
 
     ![クラス ライブラリ (.NET Framework) を検索する](media/create-new-class-library-project.png)
 
-1. **[次へ]** をクリックします。
+1. **次へ** をクリックします。
 1. ソリューションの名前と場所を指定します。
 
     ![Visual Studio 2019に新しいプロジェクト ダイアログを構成します。](media/configure-your-new-project.png)
@@ -86,7 +92,7 @@ search.app:
     > [!NOTE]
     > プロジェクトにわかりやすいプロジェクト名を選択します。 この例では、`SampleWorkflowActivity` が使用されます。
 
-1. **[作成]** をクリックします。
+1. **作成** をクリックします。
 1. **ソリューション エクスプローラー** でプロジェクトを右クリックし、 **プロパティ**を選択します。 **アプリケーション** タブで、  **.NET Framework 4.6.2** が対象のフレームワークとして設定されていることを確認します。
 
     ![プロジェクト プロパティの設定](media/tutorial-create-workflow-activity-workflow-project.png)
@@ -248,7 +254,7 @@ search.app:
 
 新しいワークフロー活動を使用するプロセスを作成することでその新しいワークフロー活動をテストできます。 上の[目標](#goal)セクションで説明されているワークフローを作成するためにこれらの手順を使用します。
 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開く
+1. [[PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開く]
 1. **ソリューション**を選択します。
 1. **CDS 既定の発行者** ソリューションを開きます。
 1. メニューで **...** を展開し、 **クラシックに切り替える**を選択します。

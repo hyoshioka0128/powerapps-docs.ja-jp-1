@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: 予定から定期的な予定へ変換する (Common Data Service) | Microsoft Docs'
+title: 予定を定定期的な予定へ変換する (Common Data Service) | Microsoft Docs
 description: このサンプルは 1 つの予定を一連の定期的な予定に変換する方法を説明します
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4125ffa1bf8d5c21646265fc2020484916af291f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748959"
 ---
 # <a name="sample-convert-an-appointment-to-a-recurring-appointment"></a>サンプル: 予定から定期的な予定へ変換する
 

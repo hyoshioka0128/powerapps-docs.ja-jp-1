@@ -4,21 +4,24 @@ description: このトピックでは、Azure イベント ハブ ソリュー�
 keywords: ''
 ms.date: 05/08/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: a3732c49-7f47-d87c-5062-585ef28ab511
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 ms.reviewer: pehecke
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e004b1b5699e0f4fa21241af23eb14987ba781ec
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749167"
 ---
-
 # <a name="work-with-common-data-service-event-data-in-your-azure-event-hub-solution"></a>Azure イベント ハブ ソリューションの Common Data Service イベント データで作業
 
 Azure Event Hub は非常に拡張性の高いパブリッシュ/サブスクライブ サービスであり、毎秒数百万のイベントを取得して、複数のアプリケーションに流すことができます。 Common Data Service Azure インターフェイスにより、 イベント データを Azure Service Bus で公開可能になり、イベント ハブ ソリューションのサブスクライバーで利用できます。 次の情報は、イベント ハブ ソリューションに Azure イベント データを送信するために実行する必要がある一般的なタスクについて説明します。  

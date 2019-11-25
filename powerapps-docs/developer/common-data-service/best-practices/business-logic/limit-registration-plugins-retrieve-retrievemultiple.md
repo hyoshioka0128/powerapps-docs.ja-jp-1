@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d17772aab805ae6d7969db19b888b3565926ca6c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748821"
 ---
 # <a name="limit-the-registration-of-plug-ins-for-retrieve-and-retrievemultiple-messages"></a>retrieve および RetrieveMultiple メッセージ用のプラグインの登録を制限する
 
@@ -49,15 +55,15 @@ Retrieve メッセージおよび RetrieveMultiple メッセージに登録さ�
 
 - 時間のかかるタスクは避けます。特に、外部サービスの呼び出しや Dynamics 365 への複雑なクエリといった、非確定的なタスクです。
 
-- Common Data Service の追加データのクエリは制限または回避します。
+- Common Data Service からの追加データのクエリの制限または回避をします。
 
 ### <a name="virtual-entities"></a>仮想エンティティ
 
-外部ソースからデータを取得するための最も一般的な Retrieve および RetrieveMultiple はプラグイン内で呼び出されます。 外部ソースのデータは PowerApps 内で表示されるか、既存のデータを処理 / 操作するために使用されます。 バージョン 9.0 の Dynamics 365 (online) には、[仮想エンティティ](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) と呼ばれる機能が導入されました。この機能により、外部システムに常駐しているデータをシームレスに統合し、そのデータを PowerApps 内のエンティティとして表示することができ、データのレプリケーションやカスタム コーディングは不要です。 機能、制限、構成の詳細については、[仮想エンティティ](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) のドキュメントを参照してください。
+外部ソースからデータを取得するための最も一般的な Retrieve および RetrieveMultiple はプラグイン内で呼び出されます。 外部ソースからのデータは、PowerApps 内で表示されるか、既存のデータを処理 / 操作するために使用されます。 Dynamics 365 (online)、バージョン 9.0 の Dynamics 365 (online) には、[仮想エンティティ](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) と呼ばれる機能が導入されました。この機能により、外部システムに常駐しているデータをシームレスに統合し、そのデータを PowerApps 内のエンティティとして表示することができ、データのレプリケーションやカスタム コーディングは不要です。 機能、制限、構成の詳細については、[仮想エンティティ](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) のドキュメントを参照してください。
 
 ### <a name="retrieve-caution"></a>取得に関する注意
 
-Common Data Service は、エンティティ フォームを読み込むごとに少なくとも 2 つの Retrieve メッセージをトリガーします。  1 つの取得に含まれる属性は限られています。これらの属性はエンティティによって変わり、後続の呼び出しにより多くの属性が含まれます。  フォームの読み込み時に 1 つのアクションが発生することを期待している場合は、Retrieve メッセージのトリガーに厳密に依存しません。
+Common Data Serviceは、エンティティ フォームを読み込むごとに少なくとも 2 件の取得メッセージをトリガーします。  1 つの取得に含まれる属性は限られています。これらの属性はエンティティによって変わり、後続の呼び出しにより多くの属性が含まれます。  フォームの読み込み時に 1 つのアクションが発生することを期待している場合は、Retrieve メッセージのトリガーに厳密に依存しません。
 
 <a name='additional'></a>
 

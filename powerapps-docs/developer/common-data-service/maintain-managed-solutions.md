@@ -1,5 +1,5 @@
 ---
-title: 管理ソリューションの保守 (Common Data Service) | Microsoft Docs
+title: 管理ソリューションの維持 (Common Data Service) | Microsoft Docs
 description: ''
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 72d1960bcdab96f1bd2f899bb4573f8f20d0e9a5
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748847"
 ---
 # <a name="maintain-managed-solutions"></a>管理ソリューションの保守
 
@@ -22,7 +28,7 @@ search.app:
 <a name="BKMK_VersionCompatibilty"></a>   
 
 ## <a name="version-compatibility"></a>バージョン互換性  
- Common Data Service の新しいバージョンからエクスポートされたソリューションは、Dynamics 365 の以前のバージョンにはインポートできません。 これにはメジャー バージョンとマイナー バージョンが含まれます。 次の表に示すように、旧バージョンの Dynamics 365 からエクスポートされたソリューションは、それ以降のバージョンにインポートできます。  
+ Common Data Service の新バージョンからエクスポートしたソリューションは、Dynamics 365 の旧バージョンにインポートできません。 これにはメジャー バージョンとマイナー バージョンが含まれます。 次の表に示すように、旧バージョンの Dynamics 365 からエクスポートされたソリューションは、それ以降のバージョンにインポートできます。  
   
 ![ソリューション バージョンの互換性](media/crm_v9.0_solution_compatibility_chart.png)
   
@@ -53,4 +59,4 @@ search.app:
   
 ### <a name="see-also"></a>関連項目  
  [ソリューション開発の計画](/dynamics365/customer-engagement/developer/plan-solution-development)   
- [AppSource 上にアプリを公開する](publish-app-appsource.md)
+ [AppSourceでアプリを公開する](publish-app-appsource.md)

@@ -6,18 +6,24 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5e05b1124c8c1453b0e14208451068026e6570f1
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749266"
 ---
 # <a name="use-the-conditionexpression-class"></a>ConditionExpression クラスの使用
 
-Common Data Service で <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression> class を用いることにより、 “等しい”、“より大きい”といった演算子で属性を値もしくは一連の値と比較することができます。 `ConditionExpression` クラスは、条件式をパラメーターとして他のクラス (<xref:Microsoft.Xrm.Sdk.Query.QueryExpression>、<xref:Microsoft.Xrm.Sdk.Query.FilterExpression> など) に引き渡せるようにします。  
+Common Data Serviceでは、 <xref:Microsoft.Xrm.Sdk.Query.ConditionExpression> クラスで "等しい"、"より大きい" などの演算子を使用して、特定の属性と値または一連の値を比較できます。 `ConditionExpression` クラスは、条件式をパラメーターとして他のクラス (<xref:Microsoft.Xrm.Sdk.Query.QueryExpression>、<xref:Microsoft.Xrm.Sdk.Query.FilterExpression> など) に引き渡せるようにします。  
   
  `ConditionExpression` クラスを使用して条件を作成する際に設定できるプロパティを次の表に示します。  
   

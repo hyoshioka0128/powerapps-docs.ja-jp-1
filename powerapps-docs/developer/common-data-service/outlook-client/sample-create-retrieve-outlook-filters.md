@@ -1,6 +1,6 @@
 ---
 title: 'サンプル: Outlook フィルターの作成および取得 (Common Data Service)| Microsoft Docs'
-description: このサンプルは Microsoft Dynamics 365 for Outlook のフィルターの取得方法を示します
+description: このサンプルは Microsoft Dynamics 365 for Outlook のフィルターの取得方法を示しています。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: sriharibs
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a144c6166bf14737d0258a962306eb24f1aebc3b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749247"
 ---
 # <a name="sample-create-and-retrieve-outlook-filters"></a>サンプル: Outlook フィルターの作成および取得
 
-このサンプル コードは、Common Data Service 用です。 サンプルをダウンロードするには、「[サンプル: Outlook フィルターの作成および取得](/dynamics365/customer-engagement/developer/outlook-client/sample-create-retrieve-outlook-filters)」を参照してください。
+このサンプル コードは、Common Data Service 向けです。 サンプルをダウンロードするには、「[サンプル: Outlook フィルターの作成および取得](/dynamics365/customer-engagement/developer/outlook-client/sample-create-retrieve-outlook-filters)」を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -25,7 +31,7 @@ search.app:
 
 ## <a name="demonstrates"></a>説明  
 
- このサンプルは Microsoft Dynamics 365 for Outlook のフィルターの取得方法を示します。  
+ このサンプルは Microsoft Dynamics 365 for Outlook のフィルターの取得方法を示しています。  
   
 ## <a name="example"></a>例  
 
@@ -87,7 +93,7 @@ Console.WriteLine();
   
 ### <a name="see-also"></a>関連項目  
 
-[Dynamics 365 for Outlook を拡張](extend-dynamics-365-outlook.md)<br />
+[Dynamics 365 for Outlook の拡張](extend-dynamics-365-outlook.md)<br />
 [サンプル: Outlook メソッドの使用](sample-outlook-methods.md)<br />
 [オフラインと Outlook のフィルターおよびテンプレート](offline-outlook-filters-templates.md)<br />
 [SavedQuery エンティティ参照](../reference/entities/savedquery.md) 

@@ -1,6 +1,6 @@
 ---
 title: ソリューション コンポーネントの依存関係の追跡 (Common Data Service) | Microsoft Docs
-description: 'ソリューション コンポーネントの依存関係は、ソリューションの操作の信頼性を確保するのに役立ちます。 [依存関係の表示] をクリックすることによりアプリケーション内に表示することができます'
+description: ソリューション コンポーネントの依存関係は、ソリューションの操作の信頼性を確保するのに役立ちます。 [依存関係の表示] をクリックすることによりアプリケーション内に表示することができます
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,14 +10,20 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bf8e53658fce9599cb0f0415f130fb5afd5e7e01
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748811"
 ---
 # <a name="dependency-tracking-for-solution-components"></a>ソリューション コンポーネントの依存関係の追跡
 
-ソリューションはソリューション コンポーネントで構成されます。 Common Data Service の **ソリューション** 領域を使用して、ソリューション コンポーネントを作成または追加します。 この操作をプログラムによって実行する場合は、<xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> メッセージを使用するか、`SolutionUniqueName` パラメーターを含むソリューション コンポーネントを作成または更新する任意のメッセージを使用します。  
+ソリューションはソリューション コンポーネントで構成されます。 ソリューション コンポーネントを作成または追加するには、Common Data Service の **ソリューション** 領域を使用します。 この操作をプログラムによって実行する場合は、<xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> メッセージを使用するか、`SolutionUniqueName` パラメーターを含むソリューション コンポーネントを作成または更新する任意のメッセージを使用します。  
   
  ソリューション コンポーネントは、多くの場合、他のソリューション コンポーネントに依存しています。 他のソリューション コンポーネントへの依存関係があるソリューション コンポーネントは削除できません。 たとえば、一般に、カスタマイズされたリボンにはアイコンの表示やスクリプトを使用した操作を行うためにイメージまたはスクリプト Web リソースが必要になります。 カスタマイズされたリボンがソリューションに存在する場合、そのリボンが使用する Web リソースが必要です。 Web リソースを削除する前に、カスタマイズされたリボン内の対象 Web リソースへの参照を削除する必要があります。 ソリューション コンポーネントの依存関係をアプリケーションで表示するには、**依存関係を表示します**をクリックします。  
   
@@ -170,7 +176,7 @@ search.app:
  Web 開発で使用されるファイルに相当するデータです。 Web リソースはカスタム ユーザー インターフェイス要素の提供に使用されるクライアント側のコンポーネントを提供します。 Web リソースにはエンティティ フォーム、リボン、およびサイトマップとの公開済み依存関係が生じる場合があります。 `$webresource:` ディレクティブを使用してリボンまたはサイトマップに関連付けを設定すると、公開済み依存関係が作成されます。 詳細については、[$webresource ディレクティブ](/dynamics365/customer-engagement/developer/web-resources#BKMK_WebResourceDirective) を参照してください。  
   
 > [!NOTE]
->  Web リソースが、相対リンクに基づいて他の Web リソースに依存することがあります。 たとえば、HTML Web リソースが CSS またはスクリプト Web リソースを使用する可能性があります。 エンティティ フォームやグラフ以外に表示される Silverlight Web リソースには、ホストする HTML Web リソースが必要です。 このような依存関係はソリューションの依存関係として追跡されません。  
+>  Web リソースが、相対リンクに基づいて他の Web リソースに依存することがあります。 たとえば、HTML Web リソースが CSS またはスクリプト Web リソース を使用する可能性があります。 エンティティ フォームやグラフ以外に表示される Silverlight Web リソースには、ホストする HTML Web リソースが必要です。 このような依存関係はソリューションの依存関係として追跡されません。  
   
 ### <a name="see-also"></a>関連項目  
  [Dynamics 365 ソリューションを使用した拡張機能のパッケージ化および配布](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)   

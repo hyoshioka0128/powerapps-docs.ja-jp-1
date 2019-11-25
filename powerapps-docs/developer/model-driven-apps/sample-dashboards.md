@@ -10,10 +10,16 @@ author: Kumarvivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ac9ec8cf1572c657422ae77330024346be79ad5d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749024"
 ---
 # <a name="sample-dashboards"></a>サンプル ダッシュボード
 
@@ -25,7 +31,7 @@ search.app:
 ## <a name="dashboard-with-charts-and-grids"></a>グラフとグリッドを使用したダッシュボード  
  次に示すのは、4 つのコンポーネント (3 つのグラフと 1 つのグリッド) を持つサンプル ダッシュボードです。 これは、モデル駆動型アプリで提供される既定の組織所有ダッシュボードの 1 つです。  
   
- ![サンプル ダッシュボード](media/dashboard-sample.png "サンプル ダッシュボード: Microsoft Dynamics 365 の概要")  
+ ![サンプル ダッシュボード](media/dashboard-sample.png "ダッシュボードのサンプル: Microsoft Dynamics 365 の概要")  
   
 ### <a name="formxml"></a>FormXML  
  次の例は、このダッシュボードの FormXML を示したものです。  

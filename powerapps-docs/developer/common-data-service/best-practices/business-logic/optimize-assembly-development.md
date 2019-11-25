@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 1/15/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ae7b61fde2de24d68e9debab4ae61ad9c18718b4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748820"
 ---
 # <a name="optimize-assembly-development"></a>アセンブリ開発を最適化する
 
@@ -37,7 +43,7 @@ search.app:
     - 保守性の複雑さの増大
     - プラグイン実行期間の増大の可能性
 
-2. サンドボックスのアセンブリ サイズ制約は、Common Data Service では 16 MBです。
+2. Common Data Service でのサンドボックス アセンブリ サイズの制約は16 MBです。
 
 <a name='guidance'></a>
 
@@ -48,7 +54,7 @@ search.app:
 
 ### <a name="consolidate-plug-ins-or-custom-workflow-activities-into-a-single-assembly"></a>プラグインまたはユーザー定義ワークフロー活動を単一のアセンブリに統合します。
 
-Common Data Service ソリューション用に開発されたプラグインおよびユーザー定義ワークフロー活動は、単一の Visual Studio プロジェクト内にまとめて存在させる必要があります。 プラグインが次の例外に当てはまらない限り、個別のプラグインおよびユーザー定義ワークフロー活動を単一の Visual Studio プロジェクトまたはアセンブリに統合することを考量してください。
+Common Data Service ソリューション用に開発されたプラグインおよびユーザー定義ワークフロー活動は、単一の Visual Studio プロジェクト内に存在させる必要があります。 プラグインが次の例外に当てはまらない限り、個別のプラグインまたはユーザー定義ワークフロー活動を単一の Visual Studio プロジェクトまたはアセンブリに統合することを考量してください。
 
 1. プラグイン / ユーザー定義のワークフロー活動は、選択的に 1 つの環境に展開する必要があります。
 
@@ -66,12 +72,12 @@ PowerApps および Dynamics 365 (online) には 16 MB のアセンブリ サイ
 ### <a name="multiple-assemblies"></a>複数のアセンブリ
 複数の領域に影響を与える可能性のあるアセンブリが複数ある:
 
-1. パフォーマンス - 各アセンブリには、Common Data Service によって統合されるライフサイクルがあります。  これにはアセンブリの読み込み、キャッシュ、アンロードが含まれます。  複数のアセンブリが原因でサーバー上で多くの作業 (アセンブリの読み込みやキャッシュ) が実行されており、プラグイン/ユーザー定義ワークフロー活動の全体の実行時間に影響を与える可能性がある。
+1. パフォーマンス - 各アセンブリには、Common Data Service によって管理されるライフサイクルがあります。  これにはアセンブリの読み込み、キャッシュ、アンロードが含まれます。  複数のアセンブリが原因でサーバー上で多くの作業 (アセンブリの読み込みやキャッシュ) が実行されており、プラグイン/ユーザー定義ワークフロー活動の全体の実行時間に影響を与える可能性がある。
 
 2. 保守性 - 複数のプラグイン/ユーザー定義ワークフロー活動があると、Visual Studio プロジェクトのアプリケーション ライフサイクル管理 (ALM) が複雑化する原因となります。 これにより、特定のプラグイン/ユーザー定義ワークフロー活動のプロジェクトを更新またはパッチする場合、プラグイン/ユーザー定義ワークフロー活動をソリューション内にパッケージする場合、プラグイン/ユーザー定義ワークフロー活動を展開内で管理する場合のリスクと作業時間が増大します。
 
 ### <a name="assembly-larger-than-16-mb"></a>16 MB より大きいアセンブリ
-16 MB より大きいユーザー定義アセンブリは、Common Data Service 内に登録できません。
+16 MB より大きい ユーザー定義アセンブリは、Common Data Service 内に登録できません。
 
 <a name='additional'></a>
 

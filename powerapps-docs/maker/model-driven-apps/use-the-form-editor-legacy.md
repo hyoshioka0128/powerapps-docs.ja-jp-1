@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 4c379202-9f0e-4003-a49c-efff53e7f79f
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0d2a8be9daa7a98ab0ddd838b5a1c7388f2eb21f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2710336"
 ---
 # <a name="change-navigation-within-a-model-driven-app-form"></a>モデル駆動型アプリ フォーム内でナビゲーションを変更する
 
@@ -29,7 +35,7 @@ search.app:
   
  表示されるように構成されているエンティティ関係は、フォーム エディター内で上書きされます。 フォーム ナビゲーションを介して Web リソースや他の Web サイトを表示するナビゲーション リンクを含めることができます。  
   
- 詳細な手順については、「[Common Data Service のエンティティ関係の作成および編集](../common-data-service/create-edit-entity-relationships.md)」を参照してください  
+ 詳細な手順については、[Common Data Service のエンティティ関連付けの作成および編集](../common-data-service/create-edit-entity-relationships.md)  
   
  ナビゲーションの編集を可能にするには、最初にフォーム デザイナーの**ホーム**タブの**選択**グループから**ナビゲーション**を選択する必要があります。  
  

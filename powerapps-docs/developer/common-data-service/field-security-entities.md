@@ -10,14 +10,20 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7c149a31766878bf50b6c846e587de01bb36667b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748863"
 ---
 # <a name="field-security-entities"></a>フィールド セキュリティ エンティティ
 
-フィールドレベルのセキュリティを適用するには、フィールド セキュリティ エンティティを使用します。これにより、フィールド アクセスを指定のユーザーとチームに限定できます。 フィールドレベルのセキュリティの適用範囲はグローバルです。つまり、レコードやユーザーが属している部署階層レベルに関係なく、組織内のすべてのレコードに適用されます。 フィールド セキュリティは、Web クライアント、Dynamics 365 for Outlook、Dynamics などを含むすべての Common Data Service クライアントで動作します。 Common Data Service Web サービス、レポート、検索、オフライン、フィルター ビュー、監査、重複データ検出など、すべてのコンポーネントに適用されます。 このリリースでは、フィールドのセキュリティはカスタム フィールドと多くの標準 (OOB) フィールドの両方に適用できます。  
+フィールドレベルのセキュリティを適用するには、フィールド セキュリティ エンティティを使用します。これにより、フィールド アクセスを指定のユーザーとチームに限定できます。 フィールドレベルのセキュリティの適用範囲はグローバルです。つまり、レコードやユーザーが属している部署階層レベルに関係なく、組織内のすべてのレコードに適用されます。 フィールド セキュリティは Common Data Service のすべてのクライアントで機能します。これには、Web クライアント、 Dynamics 365 for Outlook、 Dynamics が含まれます。 Common Data Service Web サービス、レポート、検索、オフライン、フィルター ビュー、監査、重複データ検出など、すべてのコンポーネントに適用されます。 このリリースでは、フィールドのセキュリティはカスタム フィールドと多くの標準 (OOB) フィールドの両方に適用できます。  
   
  セキュリティで保護されたフィールドでのメソッドの動作変更方法の詳細については、「[フィールド セキュリティを使用して Dynamics 365 でフィールド値へのアクセスを制御する方法](/dynamics365/customer-engagement/developer/security-dev/use-field-security-control-access-field-values)」を参照してください。  
   

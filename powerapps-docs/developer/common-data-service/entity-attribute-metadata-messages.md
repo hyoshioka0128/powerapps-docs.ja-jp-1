@@ -1,5 +1,5 @@
 ---
-title: エンティティ属性メタデータのメッセージ (Common Data Service) | Microsoft Docs
+title: エンティティ属性のメタデータのメッセージ (Common Data Service) | Microsoft Docs
 description: プロパティまたはフィールドとも呼ばれる、エンティティ属性メタデータの編集に使用されるメッセージについて。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d99931592887405c6c3f3d2b057719c85f1b8d2e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2748870"
 ---
 # <a name="entity-attribute-metadata-messages"></a>エンティティ属性のメタデータのメッセージ
 

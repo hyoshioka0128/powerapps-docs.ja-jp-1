@@ -5,12 +5,17 @@ author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
-ms.custom: null
-ms.date: 08/30/2019
+ms.custom: ''
+ms.date: 10/07/2019
 ms.author: shjais
-ms.reviewer: null
+ms.reviewer: ''
+ms.openlocfilehash: 4a27a5364a4ae12fecc3a72dbb52115e415dcdb8
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2708180"
 ---
-
 # <a name="understand-liquid-operators"></a>Liquid の演算子の認識
 
 Liquid は、すべての一般的な論理演算子および比較演算子を使用できます。 これらは、**if**や**unless**などのタグで使用できます。
