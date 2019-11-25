@@ -1,6 +1,6 @@
 ---
 title: 検索フィールドを使用してエンティティ間の関連付けの作成 | Microsoft Docs
-description: 検索フィールドを使用して PowerApps でエンティティ間の関連付けを作成する方法の詳細な手順。
+description: 検索フィールドを使用して PowerApps でエンティティ間の関連付けを作成する方法の手順。
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 02/21/2019
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ac4b57853e6dfc4c0969a4207538e15db0b58bc8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757537"
 ---
-
 # <a name="create-a-relationship-between-entities"></a>エンティティ間の関連付けを作成
 1 つのエンティティのデータは、多くの場合、別のエンティティのデータに関連しています。 たとえば、**教師**エンティティと**クラス**エンティティがある場合、**クラス**エンティティには**教師**エンティティへの検索関係があり、どの教師がクラスを教えるかを示します。 **教師**エンティティからのデータを表示するための検索フィールドを使用できます。 これは一般的に検索フィールドと呼ばれます。
 
@@ -31,7 +36,7 @@ search.app:
 
 エンティティへの検索関連を追加するには、**関連付け**タブで関連付けを作成し、関連付けを作成するエンティティを指定します。
 
-1. [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。
+1. [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。
 
 2. 既存のエンティティ、または [エンティティの新規作成](data-platform-create-entity.md) をクリックまたはタップします
 
@@ -55,7 +60,7 @@ search.app:
 
 一対多の関連付けを追加するには、**関連付け**タブで関連付けを作成し、関連付けを作成するエンティティを指定します。
 
-1. [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。
+1. [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。
 
 2. 既存のエンティティ、または [エンティティの新規作成](data-platform-create-entity.md) をクリックまたはタップします
 
@@ -81,7 +86,7 @@ search.app:
 ## <a name="add-a-many-to-many-relationship"></a>多対多関連付けの追加
 多対多の関連付けを追加するには、**関連付け** タブで関連付けを作成し、関連付けを作成するエンティティを指定します。
 
-1. [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。
+1. [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。
 
 2. 既存のエンティティ、または [エンティティの新規作成](data-platform-create-entity.md) をクリックまたはタップします
 
@@ -121,7 +126,7 @@ search.app:
 * **カスタム:** ふたつのエンティティ間のカスタム関連付けでは、一連の可能なアクションのそれぞれに関連する動作を選択します。 
 
     > [!div class="mx-imgBorder"] 
-    > ![カスタム動作](./media/data-platform-cds-newrelationship/advanced-2.png "カスタム動作")
+    > ![ユーザー定義の動作](./media/data-platform-cds-newrelationship/advanced-2.png "ユーザー定義の動作")
 
 既定とカスタム動作の詳細: [エンティティ関係の動作の構成](entity-relationship-behavior.md)。
 
@@ -131,9 +136,9 @@ search.app:
 検索フィールドを含むエンティティから [アプリを自動的に作成](../canvas-apps/data-platform-create-app.md) する場合、エンティティの**プライマリ名**フィールドからのデータを含む**ドロップダウン**コントロールとして表示されます。
 
 ## <a name="add-1n-and-nn-relationships-for-canvas-apps"></a>キャンバス アプリの 1:N および N:N の関連付けを追加
-**関連付け** 機能を使用して、Common Data Service の 1 対多または多対多の関係を通じて 2 つのレコードをリンクします。 詳細: [PowerApps の関連付けと関連付け解除関数](../canvas-apps/functions/function-relate-unrelate.md)
+**関連付け** 機能を使用して、 Common Data Service の 1 対多、または多対多の関係を通じて 2 つのレコードをリンクします。 詳細については次を参照してください: [PowerAppsの関連付け と 関連付け解除の関数](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>次のステップ
-* [Common Data Service データベースを使用してアプリを生成](../canvas-apps/data-platform-create-app.md)
-* [Common Data Service データベースを使用してアプリを最初から作成](../canvas-apps/data-platform-create-app-scratch.md)
+* [Common Data Service データベースを使用してアプリケーションを作成する](../canvas-apps/data-platform-create-app.md)
+* [Common Data Service データベースを使用してアプリケーションを最初から作成する](../canvas-apps/data-platform-create-app-scratch.md)
 

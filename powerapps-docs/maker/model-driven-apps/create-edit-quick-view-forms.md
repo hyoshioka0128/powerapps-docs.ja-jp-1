@@ -1,29 +1,34 @@
 ---
-title: PowerApps でモデル駆動型アプリ簡易表示フォームを作成または編集 | MicrosoftDocs
+title: PowerApps でモデル駆動型アプリの簡易作成ビューを作成、編集する | MicrosoftDocs
 description: 簡易表示フォームの作成または編集の方法を学習する
 ms.custom: ''
 ms.date: 05/23/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 9b101734-cc11-4d05-bd45-eb611eae9931
 caps.latest.revision: 14
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0384b233ddd9df0f88019df6064f5a99ef8af0bd
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759121"
 ---
-
 # <a name="create-a-model-driven-app-quick-view-form-to-view-information-about-a-related-entity"></a>モデル駆動型アプリの簡易表示フォームを作成して関連エンティティに関する情報を表示する
 
 このトピックでは、簡易ビュー フォームを作成する方法、および簡易ビュー コントロールをメイン フォームに追加する方法について説明します。 
@@ -38,7 +43,7 @@ search.app:
 ## <a name="create-a-quick-view-form"></a>簡易表示フォームの作成  
  簡易表示フォームは、他のフォームの作成と同様な方法で、フォーム エディターを使用して作成されます。 簡易表示フォームは読み取り専用です。 これを使用して、読み取り専用のフォームを作成します。  
   
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 
     > [!IMPORTANT]
@@ -74,7 +79,7 @@ search.app:
 ## <a name="add-a-quick-view-control-to-a-main-form"></a>メイン フォームへの簡易表示コントロールの追加  
  簡易表示フォームは、簡易表示フォームのエンティティを対象とした検索フィールドが存在するメイン フォームにのみ追加できます。  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
     > [!IMPORTANT]
     > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。     

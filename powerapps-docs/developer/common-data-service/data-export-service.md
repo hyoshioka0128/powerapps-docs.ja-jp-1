@@ -10,10 +10,16 @@ author: sabinn-msft
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a00d4e751452be55c824727af238900e964a649f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752995"
 ---
 # <a name="data-export-service"></a>データ エクスポート サービス
 
@@ -57,12 +63,12 @@ GRANT ALTER, REFERENCES, INSERT, DELETE, UPDATE, SELECT, EXECUTE ON SCHEMA::dbo 
   
 ```  
   
-オンライン ソリューションとサービスの場合、Azure は、[Key Vault](https://azure.microsoft.com/services/key-vault/) サービスを使用して、暗号鍵、パスワード、およびその他の秘密を保護します。  Azure Key Vault を使用するには、アクセス許可が「Dynamics 365 データ エクスポート サービス」に与えられ、SQL Azure 接続文字列を安全に保存するために使用されるように、この顧客所有のサービスを設定する必要があります。 PowerShell スクリプトでこの構成を行うには、[Azure Key Vault の設定方法](https://technet.microsoft.com/library/mt744592.aspx) を参照してください。 または、このサービスは REST APIを使用して管理することができます。 [Key Vault management](https://msdn.microsoft.com/library/azure/mt620024.aspx) を参照してください。  
+オンライン ソリューションとサービスの場合、Azure は、[Key Vault](https://azure.microsoft.com/services/key-vault/) サービスを使用して、暗号鍵、パスワード、およびその他の秘密を保護します。  Azure Key Vault を使用するには、アクセス許可が「Dynamics 365 データ エクスポート サービス」に与えられ、SQL Azure 接続文字列を安全に保存するために使用されるように、この顧客所有のサービスを設定する必要があります。 PowerShell スクリプトでこの構成を行うには、[Azure Key Vault の設定方法](https://technet.microsoft.com/library/mt744592.aspx) を参照してください。 また、このサービスは REST API を使用して管理できます。[Key Vault 管理](https://msdn.microsoft.com/library/azure/mt620024.aspx) を参照してください。  
   
 ブラウザーの信頼済みサイトにドメイン https://discovery.crmreplication.azure.net/ を追加し、このサイトでポップアップを有効にすることもお勧めします。  
   
 ## <a name="programming-for-the-data-export-service"></a>データ エクスポート サービスのためのプログラミング  
- データ エクスポート サービスは、２つのグループに分けられた REST ベース API を公開します: Common Data Service の組織構造、関係、および接続情報を調べるための一連の `Metadata`操作、そして各データ レプリケーションを構成し管理するための一連の `Profiles` 操作です。  この API は、次の [Swagger](http://swagger.io/) URL で完全に定義および文書化されています。  
+ データ エクスポート サービスは、２つのグループに分けられた REST ベース API を公開します: Common Data Service の組織構造、関係、および接続情報を調べるための一連の `Metadata`操作、そして各データ レプリケーションを構成し管理するための一連の `Profiles` 操作です。  この API は、次の [Swagger](https://swagger.io/) URL で完全に定義および文書化されています。  
   
 |Swagger エンドポイント|説明|  
 |----------------------|-----------------|  

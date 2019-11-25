@@ -11,10 +11,16 @@ author: nhelgren
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 676c70f9287202f537827a5950ab84049ab81a34
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753019"
 ---
 # <a name="create-auto-number-attributes"></a>自動付番の属性を作成
 
@@ -266,7 +272,7 @@ OData-Version: 4.0
 ### <a name="auto-number-manager"></a>自動付番マネージャ
 
 XrmToolBox の **[自動付番マネージャ](https://www.xrmtoolbox.com/plugins/Rappen.XrmToolBox.AutoNumManager/)** は Common Data Service のコミュニティ駆動型ツールで、新規または既存の特性に対して自動付番のフォーマットの設定、更新、削除を行うUIを提供します。
-自動付番マネージャの詳細については、コミュニティ開発ツールの[開発者ツール](developer-tools.md)のトピックおよび [anm.xrmtoolbox.com](http://anm.xrmtoolbox.com) を参照してください。
+自動付番マネージャの詳細については、コミュニティ開発ツールの[開発者ツール](developer-tools.md)のトピックおよび [anm.xrmtoolbox.com](https://anm.xrmtoolbox.com) を参照してください。
 
 > [!NOTE]
 > コミュニティ ツールは Common Data Service の製品ではなく、コミュニティ ツールに対するサポートは提供しません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。 

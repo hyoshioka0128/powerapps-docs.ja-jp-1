@@ -10,20 +10,26 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 42f69903abb225f2746e0ff79eb2d13232e8cc12
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753783"
 ---
 # <a name="run-data-import"></a>データ インポートの実行
 
-データ インポートは、Common Data Service サーバーで直接実行されます。 データ インポートを実行するには、次の内容を実行する非同期ジョブが、次の順序でバックグラウンド実行されるように設定します。  
+データ インポートは、Common Data Service サーバー上で直接実行されます。 データ インポートを実行するには、次の内容を実行する非同期ジョブが、次の順序でバックグラウンド実行されるように設定します。  
   
 - インポート ファイルに含まれているソース データを解析します。  
   
 - データ マップを使用して、解析されたデータを変換します。  
   
-- 変換したデータを Common Data Service にアップロードします。  
+- 変換されたデータを Common Data Service にアップロードします。  
   
   適切なアクセス許可を持つすべての Common Data Service ユーザーが、データ インポートを実行できます。  
   
@@ -84,4 +90,4 @@ search.app:
 [データ インポート エンティティ](data-import-entities.md)<br />
 [サンプル: データ マップのエクスポートおよびインポート](org-service/samples/export-import-data-map.md)<br />
 [サンプル: 複雑なデータ マップを使用してデータをインポートする](org-service/samples/import-data-complex-data-map.md)<br />
-[ブログの投稿: 添付をプログラムでインポートする方法](http://blogs.msdn.com/b/crm/archive/2012/08/06/how-to-import-attachments-programmatically.aspx) 
+[ブログの投稿: 添付をプログラムでインポートする方法](https://blogs.msdn.com/b/crm/archive/2012/08/06/how-to-import-attachments-programmatically.aspx) 

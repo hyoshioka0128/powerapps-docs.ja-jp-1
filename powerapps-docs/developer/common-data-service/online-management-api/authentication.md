@@ -9,13 +9,19 @@ author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: 7243f2fccc8356ecac5eedba2b740bc39df1913a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752939"
 ---
 # <a name="authenticate-to-use-the-online-management-api"></a>Online Management API の使用を認証
 
-Online Management API は、OAuth 2.0 プロトコル をサポートし認証します。 [Azure Active Directory (AAD)](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-whatis) を使用して、有効な OAuth 2.0 アクセス トークン を取得して認証し、Online Management API へのリクエストの **認証** ヘッダーを使い送ります。
+Online Management API は、OAuth 2.0 プロトコル をサポートし認証します。 [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) を使用して、有効な OAuth 2.0 アクセス トークン を取得して認証し、Online Management API へのリクエストの **認証** ヘッダーを使い送ります。
 
 Online Management API で使用する推奨認証 API は、[Azure Active Directory Authentication Library (ADAL)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) で、これはさまざまなプラットフォームやプログラミング言語で利用できます。 
 

@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: キューへのキュー アイテムの解放 (Common Data Service) | Microsoft Docs'
+title: 'サンプル: キュー アイテムのキューへのリリース (Common Data Service) | Microsoft Docs'
 description: このサンプルは、ReleaseToQueueRequest メッセージの使用方法を示しています
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8830d879ff6f8de08cb0fdacbbb5436226ebb377
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749305"
 ---
 # <a name="sample-release-a-queue-item-to-the-queue"></a>サンプル: キュー アイテムのキューへの解放
 

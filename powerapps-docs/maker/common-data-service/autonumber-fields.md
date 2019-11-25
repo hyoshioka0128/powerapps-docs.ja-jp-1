@@ -4,30 +4,36 @@ description: 自動付番フィールドを作成、管理、そして使用す�
 keywords: ''
 ms.date: 02/26/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: daemelia
-ms.assetid: null
+ms.assetid: ''
 ms.author: daemelia
 manager: kvivek
 ms.reviewer: Mattp123
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5735e425dd0d19dd5e52603433d56cc37e897cd6
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758394"
 ---
 # <a name="autonumber-fields"></a>自動付番フィールド
 
 自動付番フィールドは、作成されるたびに自動的に英数字文字列を生成するフィールドです。 作成者はこれらのフィールドのフォーマットを好みに合わせてカスタマイズし、そして実行時に自動的に入力される一致する値の生成をシステムに頼ることができます。
 
-自動付番フィールドは正式にはその上に追加機能を構築したテキスト フィールドですが、[PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) は **自動付番** を **テキスト** カテゴリの下に個別のデータ型として単純に公開することでこの概念を単純化しています。 [クラシック ソリューション エクスプローラー](use-solution-explorer.md#classic-solution-explorer) が自動付番フィールドの作成または管理をサポートしていないことに注意する必要があります。
+自動付番フィールドは正式にはその上に追加機能を構築したテキスト フィールドですが、[PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) は **自動付番** を **テキスト** カテゴリの下に個別のデータ型として単純に公開することでこの概念を単純化しています。 [クラシック ソリューション エクスプローラー](use-solution-explorer.md#classic-solution-explorer) が自動付番フィールドの作成または管理をサポートしていないことに注意する必要があります。
 
 自動付番フィールドを作成するには、[フィールドの作成](create-edit-field-portal.md#create-a-field) まで同じ手順に従って、**データの種類** ドロップダウン リスト ボックスから単純に **自動付番** を選択します。 
 
@@ -64,7 +70,7 @@ search.app:
 
 ## <a name="create-an-autonumber-field"></a>自動付番フィールドの作成
   
-1.  [PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1.  [PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
   
 2.  左のウィンドウで **データ** を展開して **エンティティ** を選択します。
   
@@ -75,7 +81,7 @@ search.app:
 5.  右のウィンドウで **表示名** を入力して **データの種類** に **自動付番** を選択します。
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/create-autonumber-field.png "自動付番フィールドの作成")
+    > ![](media/create-autonumber-field.png "Create an autonumber field")
   
 6. 必要に応じてオプション フィールドを設定します。 詳細: [フィールドの作成と編集](create-edit-field-portal.md#create-a-field)
 

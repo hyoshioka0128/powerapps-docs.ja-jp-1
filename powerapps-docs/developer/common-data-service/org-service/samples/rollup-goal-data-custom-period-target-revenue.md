@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 90867101361c8f2ca5bf9ed29e8712890ba162c3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749292"
 ---
 # <a name="sample-rollup-goal-data-for-a-custom-period-against-the-target-revenue"></a>サンプル: カスタム期間の目標データを、対象の売上に対してロールアップする
 
@@ -21,7 +27,7 @@ search.app:
 
 このサンプルは、対象の売り上げに対するカスタム期間の目標のデータをロールアップする方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RollupGoalData) からダウンロードできます。
 
-このサンプルではシステムに存在しない追加のユーザーが 3 人必要です。 次に **そのまま** 示すように、必要になった 3 人のユーザーを **Office 365**で手動で作成します。 `yourorg` を組織名で置換します。
+このサンプルではシステムに存在しない追加のユーザーが 3 人必要です。 次に**そのまま**示すように、必要になった 3 人のユーザーを **Office 365** で手動で作成します。 `yourorg` を組織名で置換します。
 
 **名**: Nancy<br/>
 **姓**: Anderson<br/>
@@ -53,7 +59,7 @@ search.app:
 ### <a name="setup"></a>セットアップ
 
 1. 組織のバージョンをチェックします。
-2. **Office 365** で手動で作成された、セールス マネージャーおよび 2 名のセールス担当者を取得します。
+2. **Office 365**で手動で作成された、セールス マネージャーおよび 2 名のセールス担当者を取得します。
 3. 抜き取り出荷単位一覧を作成し、既定の出荷単位 ID を取得します。 
 4. いくつかの製品および新しい値引き表を作成します。
 5. `PriceLevel` は、価格表を作成します。

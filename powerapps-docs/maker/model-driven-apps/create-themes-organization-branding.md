@@ -13,10 +13,16 @@ caps.latest.revision: 17
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b1aae7d51b22939f84478ad0537ef9285daf7631
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753826"
 ---
 # <a name="create-a-theme"></a>テーマの作成
 
@@ -68,7 +74,7 @@ search.app:
 ## <a name="copy-and-alter-the-existing-theme"></a>既存のテーマのコピーと変更  
  新しいをテーマ作成する最も簡単で最も早い方法は、既存のテーマを複製し、それを変更した後、それを保存、プレビュー、公開することです。 
  
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 2.  **モデル駆動型** (左下) を選択します。 
 
@@ -88,12 +94,12 @@ search.app:
  次のスクリーンショットは、新しいナビゲーションの色を示しています。  
  
  > [!div class="mx-imgBorder"] 
- > ![穏やかな緑のテーマ色](media/theme-gentle-green.png "穏やかな緑のテーマ色")  
+ > ![穏やかな緑色のテーマ カラー](media/theme-gentle-green.png "穏やかな緑色のテーマ カラー")  
   
  次のスクリーンショットは、新しいハイライト色の取引先企業エンティティ グリッドを示しています。  
  
  > [!div class="mx-imgBorder"] 
- > ![穏やかな緑色のテーマの取引先企業グリッド](media/themes-gentle-green-account-grid.png "穏やかな緑色のテーマの取引先企業グリッド")  
+ > ![穏やかな緑色の取引先企業グリッド](media/themes-gentle-green-account-grid.png "穏やかな緑色の取引先企業グリッド")  
   
 <a name="Publish"></a>   
 ## <a name="preview-and-publish-a-theme"></a>テーマのプレビューと公開  
@@ -143,5 +149,5 @@ search.app:
   
 ## <a name="see-also"></a>関連項目  
          
- [ビデオ: テーマ](http://go.microsoft.com/fwlink/p/?LinkId=529568) [組織のテーマのクエリと編集](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
+ [ビデオ: テーマ](https://go.microsoft.com/fwlink/p/?LinkId=529568) [組織のテーマのクエリと編集](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme)
 

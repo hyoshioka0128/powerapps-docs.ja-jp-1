@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 7920ef78-2540-48ad-ba25-9ce9cb995ed1
 caps.latest.revision: 63
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: dc5f2c366d77ca49e5103c89d7114f1defd44b52
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752357"
 ---
 # <a name="additional-controls-for-dynamics-365-for-phones-and-tablets"></a>電話およびタブレット PC 用 Dynamics 365 の追加のコントロール 
 
@@ -149,7 +155,7 @@ search.app:
  URL フィールドをマップし、Web サイトのプレビューを表示するには、Web サイト プレビュー コントロールを使用します。  
   
 > [!IMPORTANT]
->  このコントロールを有効にすることで、ユーザーがデバイスを特定できる特定の情報を外部システムと共有することに同意するものとします。 外部システムから PowerApps アプリ、Dynamics 365 Sales、Dynamics 365 Customer Service などの Dynamics 365アプリにインポートされたデータは、[Microsoft のプライバシーと Cookie](http://go.microsoft.com/fwlink/p/?LinkId=521839) のプライバシーに関する声明の対象となります。  
+>  このコントロールを有効にすることで、ユーザーがデバイスを特定できる特定の情報を外部システムと共有することに同意するものとします。 外部システムから PowerApps アプリ、Dynamics 365 Sales、Dynamics 365 Customer Service などの Dynamics 365アプリにインポートされたデータは、[Microsoft のプライバシーと Cookie](https://go.microsoft.com/fwlink/p/?LinkId=521839) のプライバシーに関する声明の対象となります。  
 >   
 >  [プライバシーに関する声明](use-the-form-editor-legacy.md#BKMK_PrivacyNotices)  
   

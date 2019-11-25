@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2a8656eb85ff7812aff2c395b4a63e239dfdb375
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753607"
 ---
 # <a name="open-forms-views-dialogs-and-reports-with-a-url"></a>URL を使用してフォーム、ビュー、ダイアログ、およびレポートを開く
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/open-forms-views-dialogs-reports-url -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/open-forms-views-dialogs-reports-url -->
 
 URL アドレス指定が可能な要素を使用すると、他のアプリケーションにフォーム、ビュー、ダイアログ、およびリポートへのリンクを含めることができます。 これにより、他のアプリケーション、レポート、または Web サイトを容易に拡張できるため、ユーザーはアプリケーションを切り替えなくても情報を表示したりアクションを実行したりできるようになります。  
 
@@ -30,26 +36,26 @@ URL アドレス指定が可能な要素を使用すると、他のアプリケ�
 
 ## <a name="url-addressable-forms-and-views"></a>URL アドレス指定が可能なフォームとビュー
 
- すべてのエンティティ フォームとビューが main.aspx ページに表示されます。 このページに渡されたクエリ文字列パラメーターによって、表示される内容が制御されます。 たとえば、次のようになります。  
+ すべてのエンティティ フォームとビューが main.aspx ページに表示されます。 このページに渡されたクエリ文字列パラメーターによって、表示される内容が制御されます。 たとえば、次のようなものです。  
 
 <!-- To open a new account entity record form for on-premises [!INCLUDE[pn_microsoftcrm](../includes/pn-microsoftcrm.md)]:  
  ```  
-http://mycrm/myOrg/main.aspx?etn=account&pagetype=entityrecord  
+https://mycrm/myOrg/main.aspx?etn=account&pagetype=entityrecord  
  ```  -->
 
- id が {91330924-802A-4B0D-A900-34FD9D790829} の取引先企業エンティティ レコード フォームを開く場合:  
+ ID が {91330924-802A-4B0D-A900-34FD9D790829} のアカウント エンティティ レコード フォームを開く:  
  ```  
-http://myorg.crm.dynamics.com/main.aspx?etn=account&pagetype=entityrecord&id=%7B91330924-802A-4B0D-A900-34FD9D790829%7D  
+https://myorg.crm.dynamics.com/main.aspx?etn=account&pagetype=entityrecord&id=%7B91330924-802A-4B0D-A900-34FD9D790829%7D  
  ```  
 
  **クローズされた営業案件** ビューを開く場合:  
  ```  
-http://myorg.crm.dynamics.com/main.aspx?etn=opportunity&pagetype=entitylist&viewid=%7b00000000-0000-0000-00AA-000010003006%7d&viewtype=1039  
+https://myorg.crm.dynamics.com/main.aspx?etn=opportunity&pagetype=entitylist&viewid=%7b00000000-0000-0000-00AA-000010003006%7d&viewtype=1039  
  ```  
 
  ナビゲーション バーやコマンド バーなしで、 **アクティブな連絡先** ビューを開くには  
  ```  
-http://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid={00000000-0000-0000-00AA-000010001004}&viewtype=1039&navbar=off&cmdbar=false  
+https://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid={00000000-0000-0000-00AA-000010001004}&viewtype=1039&navbar=off&cmdbar=false  
  ```  
 
 > [!NOTE]
@@ -65,9 +71,9 @@ http://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid={
 > [!TIP]
 >  レコードの ID 値を取得するには、コマンド バーの**リンクの送信**ボタンを使用します。 電子メール アプリケーションで開かれる例を次に示します。  
 >   
->  `<http://mycrm/myOrg/main.aspx?etc=4&id=%7b899D4FCF-F4D3-E011-9D26-00155DBA3819%7d&pagetype=entityrecord>`。  
+>  `<https://mycrm/myOrg/main.aspx?etc=4&id=%7b899D4FCF-F4D3-E011-9D26-00155DBA3819%7d&pagetype=entityrecord>`。  
 >   
->  URL に渡される id パラメーターは、レコードのエンコードされた id 値です。 この例では、id 値は `{899D4FCF-F4D3-E011-9D26-00155DBA3819}` です。 GUID のエンコードされたバージョンは、開く中カッコ "{" と閉じる中カッコ "}" をそれぞれ "%7B" と "%7D" で置換します。  
+>  URL に渡される id パラメーターは、レコードのエンコードされた id 値です。 この例では、id 値は `{899D4FCF-F4D3-E011-9D26-00155DBA3819}` です。 GUID のエンコードされたバージョンは、「%7B」および「%7D」のそれぞれがある開閉括弧「{”および“}」を置き換えます。  
 
  次に、エンティティ フォームやビューを開くために main.aspx ページで使用されるクエリ文字列パラメーターを示します。  
 
@@ -75,9 +81,9 @@ http://myorg.crm.dynamics.com/main.aspx?etn=contact&pagetype=entitylist&viewid={
 |  パラメーター   |                                                                                                                                                                                                                                                                                                                                            内容                                                                                                                                                                                                                                                                                                                                            |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   **etn**    |                                                                                                                                                                                                                                    エンティティの論理名。 **重要:** エンティティに整数コードを含む **etc** (エンティティの種類コード) パラメーターは使用しないでください。 この整数コードは、異なる組織のユーザー定義エンティティでは異なります。                                                                                                                                                                                                                                     |
-| **extraqs**  |     フォームではオプションです。 このパラメーターには、このパラメータ内のエンコードされたパラメーターが含まれます。<br /><br /> このパラメーターを使用してフォームに値を渡します。 詳細については、「[フォームに渡すパラメーターを使用してフィールド値を設定する](set-field-values-using-parameters-passed-form.md)」を参照してください。<br /><br /> エンティティに複数のフォームが定義されている場合は、このパラメーターを使用して、フォームの ID 値と等しい値を持つエンコードされたパラメーター `formid` を渡すことで、開くフォームを指定できます。 たとえば、"6009c1fe-ae99-4a41-a59f-a6f1cf8b9daf" という ID のフォームを開くには、`extraqs` パラメーターに `formid%3D6009c1fe-ae99-4a41-a59f-a6f1cf8b9daf%0D%0A` という値を含めます。     |
+| **extraqs**  |     フォームではオプションです。 このパラメーターには、このパラメータ内のエンコードされたパラメーターが含まれます。<br /><br /> このパラメーターを使用してフォームに値を渡します。 詳細については、「[フォームに渡すパラメーターを使用してフィールド値を設定する](set-field-values-using-parameters-passed-form.md)」を参照してください。<br /><br /> エンティティに複数のフォームが定義されている場合は、このパラメーターを使用して、フォームの ID 値と等しい値を持つエンコードされたパラメーター `formid` を渡すことで、開くフォームを指定できます。 たとえば、‘6009c1fe-ae99-4a41-a59f-a6f1cf8b9daf’ の ID を持つフォームを開くためには、`extraqs` パラメーターにある次の値を含ませます: `formid%3D6009c1fe-ae99-4a41-a59f-a6f1cf8b9daf%0D%0A`。     |
 | **pagetype** |                                                                                                                                                                                                                                                        ページの種類です。 指定できる値は 2 つあります。<br /><br /> - **entityrecord**<br />     エンティティ レコード フォームを表示します。<br />- **entitylist**<br />     エンティティ ビューを表示します。                                                                                                                                                                                                                                                         |
-|    **id**    |                                                                                                                                                                      フォームではオプションです。 特定のエンティティ レコードを開く場合に使用します。 エンティティのエンコードされた GUID 識別子を渡します。 GUID のエンコードされたバージョンは、開く中カッコ "{" と閉じる中カッコ "}" をそれぞれ "%7B" と "%7D" で置換します。たとえば、`{91330924-802A-4B0D-A900-34FD9D790829}` は `%7B91330924-802A-4B0D-A900-34FD9D790829%7D` です。                                                                                                                                                                      |
+|    **id**    |                                                                                                                                                                      フォームではオプションです。 特定のエンティティ レコードを開く場合に使用します。 エンティティのエンコードされた GUID 識別子を渡します。 GUID のエンコードされたバージョンは、「%7B」および「%7D」のそれぞれがある開閉括弧「{”および“}」を置き換えます。たとえば、`{91330924-802A-4B0D-A900-34FD9D790829}` は `%7B91330924-802A-4B0D-A900-34FD9D790829%7D` です。                                                                                                                                                                      |
 |  **viewid**  |                                                                                                                                                                                                        ビューでは必須です。 これは、ビューを定義する `savedquery` または `userquery` エンティティ レコードの ID です。 ビューの URL を取得する最も簡単な方法は、その URL をコピーすることです。 詳細については、「[ビューの URL のコピー](open-forms-views-dialogs-reports-url.md#BKMK_CopyViewURL)」を参照してください。                                                                                                                                                                                                         |
 | **viewtype** |                                                                                                                                                                                                        ビューの種類を定義します。 使用できる値は次のとおりです。<br /><br /> - **1039**<br />     システム ビューに使用します。 `viewid` は `savedquery` レコードの ID を表します。<br />- **4230**<br />     個人用ビューに使用します。 `viewid` は `userquery` レコードの ID を表します。                                                                                                                                                                                                         |
 |   `navbar`   | サイト マップで定義されているエリアとサブエリアを使用して、ナビゲーション バーを表示するかどうか、およびアプリケーションのナビゲーションを使用可能にするかどうかを制御します。<br /><br /> -   `on`<br />     ナビゲーション バーが表示されます。 `navbar`パラメーターが使用されていない場合の既定の動作です。<br />-   `off`<br />     ナビゲーション バーが表示されません。 他のユーザー インターフェイス要素、または戻るボタンと進むボタンを使用して移動できます。<br />-   `entity`<br />     エンティティ フォームでは、関連するエンティティのナビゲーション オプションのみが利用可能です。 関連エンティティへの移動の後は、ナビゲーション バーに [戻る] ボタンが表示され、元のレコードに戻ることができます。 |
@@ -142,14 +148,14 @@ Url=“/_root/homepage.aspx?etn=<entity logical name >&amp;viewid=%7b<GUID value
 [organization url]/cs/dialog/rundialog.aspx?DialogId=[dialog unique identifier]&EntityName=[entity logical name]&ObjectId=[unique identifier for the record]  
 ```  
 
- たとえば、ID ={6A6E93C9-1FE6-4C07-91A9-E0E2A7C70976}、取引先企業レコード ID = {40C9ADFD-90A8-DF11-840E-00155DBA380F} のダイアログを開くには、次の例の URL を使用します。  
+ たとえば、ダイアログを開くには、アカウント レコード ID = {40C9ADFD-90A8-DF11-840E-00155DBA380F} を持つ ID ={6A6E93C9-1FE6-4C07-91A9-E0E2A7C70976} でダイアログを開くには、次の例にある URL を使用します  
 
 ```
 [organization url]/cs/dialog/rundialog.aspx?DialogId=%7b6A6E93C9-1FE6-4C07-91A9-E0E2A7C70976%7d&EntityName=account&ObjectId=%7b40C9ADFD-90A8-DF11-840E-00155DBA380F%7d  
 ```  
 
 > [!TIP]
->  Internet Explorer 以外のブラウザーでは、ダイアログ プロセスをリンクから開いた場合に、 **完了** ボタンが機能しないことがあります。 この場合、データは保存されますが、ウィンドウの**閉じる**ボタンをクリックしないとウィンドウが閉じません。 これは、他のブラウザーでは、別のウィンドウから JavaScript を使用してウィンドウを開いた場合に `window.close` メソッドが提供されないためです。 可能なら、ダイアログ プロセスを開くときは、単にリンクを用意するのではなく、 JavaScript と `window.open` メソッドを使用するようにしてください。  
+>  Internet Explorer 以外のブラウザーでは、ダイアログ プロセスをリンクから開いた場合に、**完了**ボタンが機能しないことがあります。 この場合、データは保存されますが、ウィンドウの**閉じる**ボタンをクリックしないとウィンドウが閉じません。 これは、他のブラウザーでは、別のウィンドウから JavaScript を使用してウィンドウを開いた場合に `window.close` メソッドが提供されないためです。 可能なら、ダイアログ プロセスを開くときは、単にリンクを用意するのではなく、 JavaScript と `window.open` メソッドを使用するようにしてください。  
 
  次の例に示すように、ダイアログを開くための JavaScript 関数を作成できます。  
 

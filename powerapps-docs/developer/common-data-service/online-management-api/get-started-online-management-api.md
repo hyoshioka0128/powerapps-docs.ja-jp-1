@@ -9,9 +9,15 @@ author: KumarVivek
 ms.author: kvivek
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
+- PowerApps
+ms.openlocfilehash: 22ea4e2dc02ee272af3cb8fa916d8d20219b6b6a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752955"
 ---
 # <a name="get-started-with-online-management-api"></a>Online Management API に関する入門情報 
 
@@ -24,11 +30,11 @@ Online Management API を使用するには、 Office 365 のテナントで割�
 - グローバル管理者
 - サービス管理者
 
-これらのロールについては、 [ Office 365 の管理者ロールについて](https://support.office.com/en-us/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)を参照してください。
+これらのロールについては、 [ Office 365 の管理者ロールについて](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)を参照してください。
 
 ## <a name="service-url"></a>サービス URL
 
-サービス URL は REST APIにアクセスするためのエンドポイント アドレスを定義します。 Online Management API を使用して操作を実行するには、次の形式で URL を指定する必要があります:
+サービス URL は REST API にアクセスするためのエンドポイント アドレスを定義します。 Online Management API を使用して操作を実行するには、次の形式で URL を指定する必要があります:
 
 `{ServiceUrl}/api/v1.2/{resource}`
 
@@ -61,8 +67,8 @@ Online Management API は、次の規格要求および応答ヘッダーがあ�
 
 | ヘッダー​​ | 種類​​ | 内容  |
 |--------|------|--------------|
-|**言語の承諾**|String|応答に優先する言語を指定します。 ヘッダーに関する詳細: [言語の承諾 (MDN Webドキュメント) ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language)|
-|**認証**|String|資格情報を指定して、Online Management API サービスでユーザーを認証します。 ヘッダーに関する詳細: [認証 (MDN Web ドキュメント) ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization)|
+|**言語の承諾**|String|応答に優先する言語を指定します。 ヘッダーに関する詳細: [言語の承諾 (MDN Webドキュメント) ](https://developer.mozilla.org/docs/Web/HTTP/Headers/Accept-Language)|
+|**認証**|String|資格情報を指定して、Online Management API サービスでユーザーを認証します。 ヘッダーに関する詳細: [認証 (MDN Web ドキュメント) ](https://developer.mozilla.org/docs/Web/HTTP/Headers/Authorization)|
 
 要求でのこれらのヘッダーの設定については、「[Online Management API の使用を認証](authentication.md)」を参照してください。
 

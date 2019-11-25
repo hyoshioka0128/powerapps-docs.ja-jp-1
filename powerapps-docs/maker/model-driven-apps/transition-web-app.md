@@ -9,25 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 14c4c18c-927c-4ea2-ba66-0531285a99a7
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: eed1efac81b882d076e0e809c93ddec63f6a75f7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759737"
 ---
 # <a name="quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface"></a>クイックスタート: 従来の Web クライアント アプリケーションの統合インターフェイスへの移行
 
 統一インターフェイス フレームワークは、応答性を高める Web 設計原則を使用して、すべての画面サイズ、デバイス、表示方向に最適な表示および操作エクスペリエンスを提供します。 このクイックスタート トピックでは、新しい非本番環境を使用して、従来の Web クライアント アプリケーションを統合インターフェイスに移行する方法について説明します。 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3JwWU]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3JwWU]
 
 既存の非本番環境を使用してWeb クライアント アプリケーションを移行するには、[既存の環境を使用して、統合インターフェイスで旧式のWebクライアント アプリケーションを検証するためのクイックスタート](transition-web-app-existing.md)を参照してください。 
 ## <a name="prerequisites"></a>前提条件
@@ -37,7 +43,7 @@ search.app:
 ## <a name="prepare-the-environment"></a>環境の準備
 まず、非本番環境を選択し、 **統合インターフェイスのみを使用する** モードを有効にします。このモードでは、環境内のすべてのモデル駆動型アプリに統合インターフェイスが使用されます。 これには、元々旧式の Web クライアント用に構成された Dynamics 365 アプリケーションモジュールも含まれています。
 
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、**環境** を選択し、サンドボックス環境を選択します。 
+1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、**環境** を選択し、サンドボックス環境を選択します。 
 
 2. **設定** > **動作** を選択し、 **統合インターフェイスのみを使用する** を有効にします。
 
@@ -47,7 +53,7 @@ search.app:
 これは、設定領域で設定することもできます。 **設定** > **管理** > **システム設定** へと移動し、 **一般** タブにて **統合インターフェイスのみを使用する** を **はい**に設定します。
 
 > [!div class="mx-imgBorder"] 
-> ![新しい統合インターフェイスのみを使用する](media/use-unified-interface-only.png "新しい統合インターフェイスのみを使用する")
+> ![新しい統一インターフェイスのみを使用する](media/use-unified-interface-only.png "新しい統一インターフェイスのみを使用する")
 
 
 > [!NOTE]
@@ -56,7 +62,7 @@ search.app:
 ## <a name="run-and-validate-your-application-in-the-unified-interface"></a>統合インターフェイスでのアプリケーションの実行と検証
 元々Webクライアントアプリケーションであったアプリケーションを実行します。 **統合インターフェイスのみを使用する**を有効にすると、本来Webクライアント用に設定されていたアプリケーションを含む、環境内で使用可能となっているすべてのアプリケーションが統合インターフェイスを使用することに留意してください。
 
-アプリケーションを実行するには、[PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、**アプリ** を選択して実行するアプリケーションを選択します。 または、*https://contoso.crm.dynamics.com/apps/* など、**マイ アプリ** ページに直接アクセスすることもできます。
+アプリケーションを実行するには、[PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、**アプリ** を選択して実行するアプリケーションを選択します。 または、*https://contoso.crm.dynamics.com/apps/* など、**マイ アプリ** ページに直接アクセスすることもできます。
 
 ### <a name="validate-your-app-processes-and-customizations"></a>アプリケーション、プロセス、およびカスタマイズの検証 
 すべての使用例を考慮したテストを行うことを推奨します。 最も重要なテストケースから開始することも、論理的な設計パターンにまとめてテストをすることも可能です。 統合インターフェイスは応答性の高い設計がなされているため、画面解像度が異なる複数のデバイスでテストをすることを推奨します。 アプリケーションのテストを進めていく中で、行ったカスタマイズが統合インターフェイスと互換性があること、および再設計が必要な機能や不足している機能について認識することができます。 これらの要素を確認するにあたっての計画設定をし、Microsoft のコミュニティフォーラムに質問やフィードバックを投稿してください。 
@@ -77,7 +83,7 @@ Dynamics 365 Field Service または Dynamics 365 Project Service Automation ア
 3. **環境のコピー** ページで **すべて**を選択し、 **上書きする環境の選択** リストから、新しいサンドボックス環境を選択して、 **コピー**を選択します。 
 
     > [!div class="mx-imgBorder"] 
-    > ![環境の上書](media/ppac-copy-overwrite.png "環境の上書")
+    > ![環境の上書き](media/ppac-copy-overwrite.png "環境の上書き")
 
 4. **環境の上書** ダイアログ ボックスが表示されます。 正しい環境を選択し、正しいオプションが選択されていることを確認してから、 **確認**を選択します。 
 

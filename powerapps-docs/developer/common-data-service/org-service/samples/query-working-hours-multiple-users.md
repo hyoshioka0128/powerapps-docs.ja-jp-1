@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c9c6b691312f9ed46a236e65d6b18b0bfc4f6894
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749307"
 ---
 # <a name="sample-query-the-working-hours-of-multiple-users"></a>サンプル: 複数ユーザーの作業時間のクエリ
 
@@ -21,7 +27,7 @@ search.app:
 
 このサンプルは、[QueryMultipleSchedulesRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.querymultipleschedulesrequest?view=dynamics-general-ce-9) メッセージを使用して複数のユーザーの作業時間を取得する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23) からダウンロードできます。
 
-このサンプルではシステムに存在しない追加のユーザーが必要です。 サンプルの実行前に、**次に示したとおりに** 、必要になったユーザーを **Office 365**で手動で作成します。 `yourorg` を組織の `OrgName` で置換します。
+このサンプルではシステムに存在しない追加のユーザーが必要です。 サンプルの実行前に、次に **Office 365** で示した**通り**、手動で必要になったユーザーを作成します。 `yourorg` を組織の `OrgName` で置換します。
 
 **名**: Kevin<br/>
 **姓**: Cook<br/>
@@ -43,7 +49,7 @@ search.app:
 ### <a name="setup"></a>セットアップ
 
 1. 組織の現在のバージョンをチェックします。
-2. 現在のユーザーの情報および**Office 365** で手動で作成されたユーザーを取得します。
+2. **Office 365** で手動で作成された現在のユーザーの情報および ユーザーも取得します。
 
 ### <a name="demonstrate"></a>使用方法
 

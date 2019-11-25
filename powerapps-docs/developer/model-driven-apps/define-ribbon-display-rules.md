@@ -4,21 +4,24 @@ description: 'リボン要素の構成中にそのリボン要素をいつ表示
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 70e5687f-4d0e-3d43-03f3-10e5aa5b0713
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 560946f5b3ea614e5ac3635c9ada81ddae67f3c3
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749332"
 ---
-
 # <a name="define-ribbon-display-rules"></a>リボンの表示ルールの定義
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/define-ribbon-display-rules -->
@@ -42,9 +45,9 @@ search.app:
  `Type` の値は、次に対応します。  
 
 
-|   値   |                                                                               プレゼンテーション                                                                               |
+|   Value   |                                                                               プレゼンテーション                                                                               |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `Modern`  |                                       コマンド バーは、Dynamics 365 for tabletsを使用して表現されます。                                       |
+| `Modern`  |                                       コマンド バーは、Dynamics 365 for tablets を使用して表示されます。                                       |
 | `Refresh` |                                                      コマンド バーは、更新されたユーザー インターフェイスを使用して表示されます。                                                      |
 | `Legacy`  | リボンは、更新されなかったエンティティのフォーム、または Dynamics 365 for Outlookのリスト ビューで表示されます。 |
 

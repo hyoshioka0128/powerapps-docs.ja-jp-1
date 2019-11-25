@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 9/05/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9a0a91420cf29a2f44e8d1f32520e7fb529e07eb
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753063"
 ---
 # <a name="develop-iplugin-implementations-as-stateless"></a>詳細: IPlugin の実装をステートレスとして開発する
 
@@ -204,4 +210,4 @@ IPlugins がステートレスでなければならないもう 1 つの理由�
 ### <a name="see-also"></a>関連項目
 
 [プラグインを記述する](../../write-plug-in.md)<br />
-[CRMチームのブログ: プラグインのスレッドの安全性](http://blogs.msdn.com/b/crm/archive/2008/11/18/member-static-variable-and-thread-safety-in-plug-in-for-crm-4-0.aspx)<br />
+[CRMチームのブログ: プラグインのスレッドの安全性](https://blogs.msdn.com/b/crm/archive/2008/11/18/member-static-variable-and-thread-safety-in-plug-in-for-crm-4-0.aspx)<br />

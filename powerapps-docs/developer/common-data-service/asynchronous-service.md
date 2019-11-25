@@ -6,18 +6,24 @@ ms.date: 11/27/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3a387c23af14a8772eb42900c63aed45dd8c13cb
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753079"
 ---
 # <a name="asynchronous-service"></a>非同期サービス
 
-非同期サービスはメインの Common Data Service コア操作から独立して長時間の操作を実行します。 そのため、システム全体のパフォーマンスとスケーラビリティが向上します。 非同期サービスの機能として、非同期の登録プラグイン、ワークフロー、および大容量メール、一括インポート、キャンペーン活動の伝達などの非同期の操作を実行するための管理された先入先出 (FIFO) キューがあります。 これらの操作は非同期サービスに登録され、サービスによってキューが処理されるときに定期的に実行されます。
+非同期サービスは、Common Data Service のメインのコア操作から独立して長時間の操作を実行します。 そのため、システム全体のパフォーマンスとスケーラビリティが向上します。 非同期サービスの機能として、非同期の登録プラグイン、ワークフロー、および大容量メール、一括インポート、キャンペーン活動の伝達などの非同期の操作を実行するための管理された先入先出 (FIFO) キューがあります。 これらの操作は非同期サービスに登録され、サービスによってキューが処理されるときに定期的に実行されます。
 
 
 イベントが発生して同期拡張が処理された後、プラットフォームは非同期拡張のコンテキストをシリアル化し、[AsyncOperation エンティティ](reference/entities/asyncoperation.md) の**システム ジョブ**としてデータベースに保存されます。 システム ジョブは非同期操作の実行を定義および追跡します。 リソースが利用可能になると、システムジョブが処理され、定義する操作が実行されます。 拡張で定義された任意のデータ操作は、イベント実行パイプラインにより再度処理されますが、今回は同期操作として処理されます。
@@ -221,7 +227,7 @@ owninguser($select=fullname)
 
 `RecurrencePattern` 属性は、定期的なシステム ジョブの発生頻度に関する情報を格納します。 この値は、新しい asyncoperation エンティティが作成されたときにプラットフォームにより設定されていることがあります。 この値を設定してパターンを変更することができます。
 
-この属性の値は [RFC2445 Internet standard (Internet Calendaring and Scheduling Core Object Specification)](http://www.rfc-editor.org/info/rfc2445) の一部を使用します。
+この属性の値は [RFC2445 Internet standard (Internet Calendaring and Scheduling Core Object Specification)](https://www.rfc-editor.org/info/rfc2445) の一部を使用します。
 
 以下の表で、例を示します。
 

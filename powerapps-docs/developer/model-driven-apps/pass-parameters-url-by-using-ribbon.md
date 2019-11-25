@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a8c24b6d48b5d9330cdc3761cad458e399aec898
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754580"
 ---
 # <a name="pass-parameters-to-a-url-by-using-the-ribbon"></a>リボンの使用による URL へのパラメーターの受け渡し
 
@@ -48,13 +54,13 @@ search.app:
  次のサンプルは、パラメーターのない URL の表示方法を示しています。  
   
 ```  
-http://myserver/mypage.aspx  
+https://myserver/mypage.aspx  
 ```  
   
  次のサンプルは、ユーザーの言語および組織の基本言語が英語で、取引先企業レコードの GUID が DBD5DBFB-0666-DC11-A5D9-0003FF9CE217 であるときに、"AdventureWorksCycle" という組織の、取引先企業エンティティに対するリボン コントロールを表示する場合に含めるパラメーターを示しています。  
   
 ```  
-http://myserver/mypage.aspx?orgname=AdventureWorksCycle&userlcid=1033&orglcid=1033&type=1&typename=account&id=%7BDBD5DBFB-0666-DC11-A5D9-0003FF9CE217%7D  
+https://myserver/mypage.aspx?orgname=AdventureWorksCycle&userlcid=1033&orglcid=1033&type=1&typename=account&id=%7BDBD5DBFB-0666-DC11-A5D9-0003FF9CE217%7D  
 ```  
   
 ## <a name="use-a-querystring-parameter-in-the-url"></a>URL での Querystring パラメーターの使用  

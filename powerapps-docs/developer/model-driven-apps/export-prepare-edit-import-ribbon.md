@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 41b33926303c6211636c6a20e4e12651ae6a7586
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749329"
 ---
 # <a name="export-prepare-to-edit-and-import-the-ribbon"></a>リボンのエクスポート、編集の準備、およびインポート
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/export-prepare-edit-import-ribbon -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/export-prepare-edit-import-ribbon -->
 
 リボンを編集するには、次の手順を実行します。  
   
@@ -103,7 +109,7 @@ search.app:
 <a name="BKMK_ImportTheRibbon"></a>   
 ## <a name="import-the-ribbon"></a>リボンをインポートする  
   
-1. Visual Studio または Visual Web Developer 2010 Express から customization.xml ファイルを編集した後、customization.xml タブを右クリックし、**Open Containing Folder** を選択します。  
+1. Visual Studio または Visual Web Developer 2010 Express から customization.xml ファイルを編集した後、customization.xml タブを右クリックし、 **含んでいるフォルダーを開く** を選択します。  
   
 2. ソリューションを展開したときに含まれていたすべてのファイルまたはフォルダーを選択します。 選択中のファイルを右クリックし、**送る**をポイントし、**圧縮 (zip 形式) フォルダー**をクリックします。  
   
@@ -128,7 +134,7 @@ search.app:
   
 1.  エラーが発生し、インポートが失敗に終わったことを通知するメッセージが表示された場合は、**ログのエクスポート**をクリックします。  
   
-2.  エクスポート ログ ファイルを保存します。 ファイルを選択し、右クリックします。 **プログラムから開く**をクリックし、**Microsoft Office Excel** をクリックします。  
+2.  エクスポート ログ ファイルを保存します。 ファイルを選択し、右クリックします。 **ファイル形式で開く** をクリックし、 **Microsoft Office Excel**を選択します。  
   
 3.  **コンポーネント**ワークシートを選択し、**ErrorText** 列に格納されているメッセージに注目します。  
   

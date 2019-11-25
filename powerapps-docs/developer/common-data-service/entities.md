@@ -1,6 +1,6 @@
 ---
 title: Common Data Service エンティティ | Microsoft Docs
-description: Common Data Service で利用可能なエンティティについて学びます。
+description: Common Data Service で使用可能なエンティティについて説明します。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8173ba424ea9c6af3c29443db106e9feac02179a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752987"
 ---
 <!-- 
 Was Mike Carter
@@ -46,18 +52,18 @@ Overlap with content in https://docs.microsoft.com/dynamics365/customer-engageme
 
 |デザイナー  |説明  |
 |---------|---------|
-|powerapps.com|スキーマを修正する最も簡単で一般的なアプローチは、[powerapps.com](https://web.powerapps.com/) サイトを使用して、環境に関連した Common Data Service を編集することです。 ここで申請された変更は、管理されていない Common Data Service における既定のソリューションのコンテキストで実行されます。 <!-- TODO: Add link to topic that describes this -->|
-|Common Data Service の既定のソリューション エクスプローラー|Common Data Service の編集時に、[powerapps.com](https://web.powerapps.com/) サイトから利用可能な別のデザイナーがいます。 左下にある**詳細設定**ボタンで、ソリューション エクスプローラーを Common Data Service の既定のソリューションに開きます。 |
+|powerapps.com|スキーマを修正する最も簡単で一般的なアプローチは、 [powerapps.com](https://make.powerapps.com/) サイトを使用して、環境に関連した Common Data Service を編集することです。 ここで申請された変更は、管理されていない Common Data Service の既定ソリューションのコンテキストで実行されます。 <!-- TODO: Add link to topic that describes this -->|
+|Common Data Service 既定のソリューション エクスプローラー|Common Data Service の編集時に、 [powerapps.com](https://make.powerapps.com/) サイトから利用可能な別のデザイナーがあります。 左下にある **詳細設定** ボタンで、ソリューション エクスプローラーから Common Data Service の既定のソリューションを開きます。 |
 |独自のソリューション エクスプローラー |管理されていないソリューションのコンテキストで新しいエンティティ、属性または関連付けを作成すべきソリューションを配布する場合は、独自のソリューションを開発するために使用します。 <br /> 詳細: [ソリューション発行者およびソリューションを作成](introduction-solutions.md#create-a-solution-publisher-and-solution)|
 |フォーム エディターから|エンティティのモデル駆動型アプリ フォームを編集する場合、**フィールド エクスプローラー**で**新しいフィールド**ボタンをクリックします。 ルックアップ フィールドを作成する場合、新しいエンティティの関連付けを作成してサポートします。|
 
 ### <a name="import-a-solution"></a>ソリューションのインポート
 
-ソリューションには、エンティティ メタデータおよびその他のカスタマイズ コンポーネントが含まれます。 マネージドまたはアンマネージド ソリューションを Common Data Service テナントにインポートすると、これらのエンティティを含んだり、既存のエンティティを含まれる新しいエンティティ メタデータで拡張します。
+ソリューションには、エンティティ メタデータおよびその他のカスタマイズ コンポーネントが含まれます。 管理ソリューションまたはアンマネージド ソリューションを Common Data Service テナントにインポートすると、これらのエンティティを含んだり、既存のエンティティに含まれる新しいエンティティ メタデータで拡張します。
 
 ### <a name="from-a-data-source-using-power-query"></a>データ ソースから Power Query を使用
 
-Power Query を使用して、新しいエンティティを作成しデータを入力できます。 詳細: [Power Query を使用して Common Data Service のエンティティにデータを追加](../../maker/common-data-service/data-platform-cds-newentity-pq.md)
+Power Query を使用して、新しいエンティティを作成しデータを入力できます。 詳細: [Power Query を使用して Common Data Service のエンティティにデータを追加する](../../maker/common-data-service/data-platform-cds-newentity-pq.md)
 
 ### <a name="use-metadata-services"></a>メタデータ サービスを使用
 
@@ -65,7 +71,7 @@ Common Data Service で公開されている Web サービスには、エンテ�
 
 ## <a name="entity-metadata"></a>エンティティ メタデータ
 
-データ モデルは、Common Data Service 内に格納されたメタデータとして定義されます。 スキーマについてのデータは、*エンティティ メタデータ*として知られています。 
+データ モデルは、 Common Data Service 内に格納されたメタデータとして定義されます。 スキーマについてのデータは、*エンティティ メタデータ*として知られています。 
 
 - [EntityMetadata クラス](/dotnet/api/microsoft.xrm.sdk.metadata.entitymetadata) は、組織サービスを定義します。 
 - [EntityMetadata EntityType](/dynamics365/customer-engagement/web-api/entitymetadata) は、Web API 用に定義します。 
@@ -82,7 +88,7 @@ Common Data Service で公開されている Web サービスには、エンテ�
 |キー|既定では各エンティティは単一の GUID (globally unique identifier) 属性を所有し、`Keys` プロパティは空のコレクションです。 エンティティに代替キーを追加できます。 詳細: [エンティティ キー](entity-metadata.md#entity-keys)|
 
 > [!TIP]
-> システム内のエンティティ メタデータを理解することで、Common Data Service の動作を理解できます。 多くのプロパティはまた、モデル駆動型アプリのエンティティが出来ることコントロールします。 メタデータを編集できるデザイナーは、メタデータにあるすべての詳細を表示できません。 システムにあるメタデータ プロパティとすべての非表示エンティティを表示できるように、Metadata Browser というモデル駆動型のアプリをインストールできます。 詳細: [組織のメタデータをブラウザ](/dynamics365/customer-engagement/developer/browse-your-metadata)
+> システム内のエンティティ メタデータの理解を深めると、 Common Data Service の仕組みを理解するのに役立ちます。 多くのプロパティはまた、モデル駆動型アプリのエンティティが出来ることコントロールします。 メタデータを編集できるデザイナーは、メタデータにあるすべての詳細を表示できません。 システムにあるメタデータ プロパティとすべての非表示エンティティを表示できるように、Metadata Browser というモデル駆動型のアプリをインストールできます。 詳細: [組織のメタデータをブラウザ](/dynamics365/customer-engagement/developer/browse-your-metadata)
 
 ### <a name="see-also"></a>関連項目
 

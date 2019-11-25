@@ -1,25 +1,31 @@
 ---
-title: 'サンプル: 目標の合計件数を上書きして目標をクローズする (Common Data Service) | Microsoft Docs'
+title: 'サンプル: 目標の合計件数を上書きし目標をクローズする (Common Data Service) | Microsoft Docs'
 description: このサンプルは、目標の合計件数を上書きして目標をクローズする方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 62d02e77e0008778e0526f7620bc5bda168c6f26
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749313"
 ---
 # <a name="sample-override-goal-total-count-and-close-the-goal"></a>サンプル: 目標の合計件数を上書きして目標をクローズする
 
 このサンプルは、目標の合計件数を上書きして目標をクローズする方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/OverrideGoalTotal) からダウンロードできます。
 
-このサンプルでは、システムに存在しない追加のユーザーが必要です。 次に**示したとおりに**、必要になったユーザーを **Office 365**で手動で作成します。 `yourorg` を組織の `OrgName` で置換します。
+このサンプルでは、システムに存在しない追加のユーザーが必要です。 次に示すとおり、必要なユーザーを **そのまま** **Office 365** に手動で作成します。 `yourorg` を組織の `OrgName` で置換します。
 
 **名**: Samantha<br/>
 **姓**: Smith<br/>
@@ -42,7 +48,7 @@ search.app:
 ### <a name="setup"></a>セットアップ
 
 1. 組織のバージョンをチェックします。
-2. **Office 365**で手動で作成された、セールス マネージャー ユーザーを取得します。
+2. **Office 365** に手動で作成された、営業課長ユーザーを取得します。
 3. サンプル用に `PhoneCall` のレコードおよびサポートする取引先企業レコードを作成します。
 4. 電話の差出人フィールドの ActivityParty を作成します。
 5. オープンな電話を作成します。

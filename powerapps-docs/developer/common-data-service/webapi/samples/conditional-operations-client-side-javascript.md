@@ -1,6 +1,6 @@
 ---
-title: Web API 条件付き演算サンプル (クライアント側の JavaScript) (Common Data Service) | Microsoft Docs
-description: このサンプルでは、クライアント側の JavaScript および Common Data Service Web API を使用して、条件付き演算を実行する方法を説明します。
+title: Web API における条件付き操作のサンプル (クライアントサイド JavaScript) (Common Data Service)| Microsoft Docs
+description: このサンプルでは、Common Data Service Web API およびクライアント側の JavaScript を使用して、条件付き演算を実行する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,22 +8,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-author: brandonsimons
+- Dynamics 365 (online)
+author: JimDaly
 ms.assetid: 7f097d9f-8fe7-428a-9ef7-ca79ec501d81
 caps.latest.revision: 23
 ms.author: jdaly
 ms.reviewer: susikka
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: db5c01620da508203f27d4c826b9748f94e0f950
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753671"
 ---
 # <a name="web-api-conditional-operations-sample-client-side-javascript"></a>Web API 条件付き演算のサンプル (クライアント側の JavaScript)
 
-このサンプルでは、クライアント側の JavaScript を使用した Common Data Service Web API により条件付き演算を実行する方法を説明します。  
+このサンプルでは、クライアント側の JavaScript を使用する Common Data Service Web API を使用して、条件付き演算を実行する方法を説明します。  
   
 > [!NOTE]
 >  このサンプルでは、[Web API 条件付き演算 サンプル](../web-api-conditional-operations-sample.md) で詳細を説明されている操作を実装し、[Web API のサンプル (クライアント側の JavaScript)](../web-api-samples-client-side-javascript.md) で説明されている共通のクライアント側の JavaScript 構造を使用します。  
@@ -34,7 +40,7 @@ search.app:
 
  このサンプルを実行するには、次が必要です:  
   
--   Common Data Service オンラインのバージョン 8.0 以上へのアクセス  
+-   Common Data Service オンライン バージョン 8.0 以降へアクセスします。  
   
 -   ソリューションのインポートと CRUD 操作を実行する特権を持つユーザー アカウント、通常はシステム管理者またはシステム カスタマイザーのセキュリティ ロールを持つアカウントです。  
   
@@ -42,7 +48,7 @@ search.app:
  
 ## <a name="run-this-sample"></a>このサンプルの実行
 
-このサンプルを実行するには、[Microsoft CRM Web API 条件付き演算 サンプル (クライアント側の JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824046) に移動し、Microsoft CRM Web API 条件付き演算 サンプル (クライアント側の JavaScript).zip サンプル ファイルをダウンロードします。 コンテンツを取得し、WebAPIConditionalOperations_1_0_0_0_managed.zip の管理 ソリューションを検索します。 マネージド ソリューションを Common Data Service 組織にインポートして、ソリューション構成ページを表示してサンプルを実行します。 サンプル ソリューションをインポートする方法の詳細については、[Web API サンプル (クライアント側の JavaScript) ](../web-api-samples-client-side-javascript.md) を参照してください。  
+このサンプルを実行するには、[Microsoft CRM Web API 条件付き演算 サンプル (クライアント側の JavaScript)](https://go.microsoft.com/fwlink/p/?LinkId=824046) に移動し、Microsoft CRM Web API 条件付き演算 サンプル (クライアント側の JavaScript).zip サンプル ファイルをダウンロードします。 コンテンツを取得し、WebAPIConditionalOperations_1_0_0_0_managed.zip の管理 ソリューションを検索します。 管理ソリューションを Common Data Service 組織にインポートして、サンプルを実行するにはソリューション構成ページを表示します。 サンプル ソリューションをインポートする方法の詳細については、[Web API サンプル (クライアント側の JavaScript) ](../web-api-samples-client-side-javascript.md) を参照してください。  
   
 <a name="bkmk_sampleCode"></a>
 
@@ -441,7 +447,7 @@ Sdk.startSample = function () {
   
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service Web API の使用](../overview.md)<br />
+[ Common Data Service Web API を使用する](../overview.md)<br />
 [Web API を使用する条件付き演算を実行する](../perform-conditional-operations-using-web-api.md)<br />
 [Web API のサンプル](../web-api-samples.md)<br />
 [Web API 条件付き演算サンプル](../web-api-conditional-operations-sample.md)<br />

@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: テンプレートを使用した電子メールの送信 (Common Data Service) | Microsoft Docs'
+title: 'サンプル: テンプレートを使用した電子メールの作成 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、テンプレートを使用した電子メール メッセージの送信方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f87c0cd4ea803628307e87a7a5125a6cafa1c72d
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749289"
 ---
 # <a name="sample-send-an-email-using-a-template"></a>サンプル: テンプレートを使用した電子メールの送信
 

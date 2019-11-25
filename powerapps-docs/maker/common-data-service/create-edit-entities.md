@@ -1,5 +1,5 @@
 ---
-title: Common Data Service でのエンティティの作成および編集 | MicrosoftDocs
+title: Common Data Service でエンティティ間の関連付けの作成と編集をする | MicrosoftDocs
 description: エンティティの作成および編集する方法に関する説明
 ms.custom: ''
 ms.date: 04/16/2019
@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: fa04f99d-a5f9-48cb-8bfb-f0f50718ccee
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ba8fe12a9ecffa0ffb1116546d2bfe9ab2c62ac8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758065"
 ---
-# <a name="create-and-edit-entities-in-common-data-service"></a>Common Data Service でのエンティティの作成および編集
+# <a name="create-and-edit-entities-in-common-data-service"></a>Common Data Serviceでエンティティを作成、編集する
 
 ユーザー定義エンティティを作成する場合は、その前に、既存のエンティティの使用が要件を満たしているかどうかを確認します。 詳細: [新しいメタデータを作成するか既存のメタデータを使用するか](create-edit-metadata.md#create-new-metadata-or-use-existing-metadata)
 
@@ -30,19 +36,19 @@ search.app:
 
 |デザイナー| 説明|
 |--|--|
-|[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細: <br />[チュートリアル: PowerApps でのコンポーネントがあるユーザー定義エンティティの作成](/powerapps/maker/common-data-service/create-custom-entity)<br />[PowerApps ポータルを使用してエンティティを作成および編集する](create-edit-entities-portal.md)|
+|[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細: <br />[チュートリアル: PowerApps でのコンポーネントがあるユーザー定義エンティティの作成](/powerapps/maker/common-data-service/create-custom-entity)<br />[PowerApps ポータルを使用してエンティティを作成、編集する](create-edit-entities-portal.md)|
 |ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。 <br />詳細 [ソリューション エクスプローラーを使用してエンティティを作成および編集する](create-edit-entities-solution-explorer.md)|
 
 > [!NOTE]
 > 以下を使用して、環境にエンティティを作成することもできます:
 > - エンティティの定義を含むソリューションをインポートします。
-> - Power Query を使用して、新しいエンティティを作成しデータを入力します。 詳細: [Power Query を使用してアプリ用 Common Data Service のエンティティにデータを追加する](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq).
+> - Power Query を使用して、新しいエンティティを作成しデータを入力します。 詳細については、 [Power Query を使用して Common Data Service のエンティティにデータを追加する](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)を参照してください。
 > - 開発者は[メタデータ サービス](/powerapps/developer/common-data-service/use-web-services#metadata-services)を使用してプログラムを作成できます。
 
 
 ## <a name="entity-options-not-available-in-the-powerapps-portal"></a>PowerApps ポータルで使用できないエンティティ オプション
 
-このトピックの情報は、使用できるデザイナーの選択に役立ちます。 次のいずれかの要件に対処する必要がない限り、PowerApps ポータルを使用してエンティティを作成することができます。
+このトピックの情報は、使用できるデザイナーの選択に役立ちます。 次のいずれかの要件に対処する必要がない限り、  PowerApps ポータルを使用してエンティティを作成することができます。
 
 - カスタマイズの接頭辞を制御する
 
@@ -50,7 +56,7 @@ search.app:
 
 - 組織所有エンティティを作成する
 
-  既定では、PowerApps ポータルは、**ユーザーまたはチーム**が所有するエンティティを作成します。 **組織**の所有権を設定するには、ソリューション エクスプローラーを使用します。 詳細情報: [エンティティの所有権](types-of-entities.md#entity-ownership)
+  既定では、 PowerApps ポータルは、 **ユーザーまたはチーム** が所有するエンティティを作成します。 **組織**の所有権を設定するには、ソリューション エクスプローラーを使用します。 詳細情報: [エンティティの所有権](types-of-entities.md#entity-ownership)
 
 - アクティビティ エンティティの作成
 
@@ -74,13 +80,13 @@ search.app:
   |**監査**|監査が組織に対して有効になっている場合、エンティティ レコードの変化を時系列で取得することができます。 エンティティの監査を有効にすると、そのエンティティのすべてのフィールドの監査も有効になります。 監査を有効にするフィールドを選択またはクリアできます。|
   |**変更履歴**|データが最初に抽出されてから、または最後に同期されてからどのデータが変更されたかを検出することによって、効率の良いデータ同期を可能にします。  |
   |**色**|モデル駆動型アプリでエンティティに使用する色を設定します。|
-  |**ドキュメント管理**|組織のドキュメント管理を有効にするための他のタスクが完了した後、この機能を有効にすることによって、エンティティは SharePoint との統合に関与できるようになります。 |
+  |**ドキュメント管理**|組織のドキュメント管理を有効にするための他のタスクの実行が完了すると、この機能を有効にすることによって、このエンティティは SharePoint との統合に関与できるようになります。 |
   |**重複データ検出**|重複データ検出が組織に対して有効になっている場合、このオプションを有効にすることによって、このエンティティの重複データ検出ルールを作成できます。|
   |**モバイルの有効化**|このエンティティを、Dynamics 365 for phones と Dynamics 365 for tablets のアプリで使用できるようにします。 また、このエンティティを**モバイルでは読み取り専用**にすることも選択できます。<br /><br /> エンティティのフォームで、Dynamics 365 for phones と Dynamics 365 for tablets のアプリでサポートされていない拡張機能が必要な場合は、この設定を使用して、これらのエンティティのデータをモバイル アプリ ユーザーが編集できないようにします。|
   |**Phone Express の有効化**|このエンティティを、Dynamics 365 for phones アプリで使用できるようにします。|
   |**差し込み印刷**|差し込み印刷でこのエンティティを使用できます。|
-  |**Dynamics 365 for Outlook のオフライン機能**|Dynamics 365 for Outlook アプリケーションがネットワークに接続していない間、このエンティティのデータが使用可能かどうか。|
-  |**Outlook 用 Dynamics 365 の閲覧ウィンドウ**|エンティティが Dynamics 365 for Outlook アプリ用の閲覧ウィンドウに表示されるかどうか。|
+  |**Dynamics 365 for Outlookのオフライン機能**|Dynamics 365 for Outlook アプリケーションがネットワークに接続されていないときに、このエンティティー内のデータ使用の可否。|
+  |**Dynamics 365 for Outlookの閲覧ウィンドウ**|Dynamics 365 for Outlook アプリケーションの閲覧ウィンドウにおけるエンティティの表示の有無。|
   |**カスタム ヘルプを使用する**|有効にした場合、ヘルプ URL を設定して、ユーザーがアプリケーションのヘルプ ボタンをクリックしたときに表示されるページをコントロールします。 これを使用して、エンティティの企業プロセスに特有のガイダンスを提供します。|
 
 

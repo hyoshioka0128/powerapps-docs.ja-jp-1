@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ce8aa1363ea0e9abdc48043ce7730880ff720c52
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749320"
 ---
 # <a name="sample-export-and-import-a-data-map"></a>サンプル: データ マップのエクスポートおよびインポート
 
-このサンプルでは Common Data Service でインポートマップ (データ マップ) を作成し、XML 形式のデータとしてエクスポートし、変更されたマッピングをインポートし、インポート済みマッピングに基づいて新しい Common Data Service インポート マップを作成する方法を示します。 サンプルは[ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExportImportDataMap)からダウンロードできます。
+このサンプルは、 Common Data Service でインポート マップ (データ マップ) を作成し、それを XML 形式のデータとしてエクスポートしてから、変更したマッピングをインポートし、そのインポート済みのマッピングに基づいて新しいインポート マップ Common Data Service を作成する方法を示します。 サンプルは[ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/ExportImportDataMap)からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

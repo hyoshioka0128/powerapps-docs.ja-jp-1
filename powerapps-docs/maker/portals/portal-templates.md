@@ -1,6 +1,6 @@
 ---
-title: PowerApps で利用可能なポータルテンプレート |Microsoft Docs
-description: PowerApps で使用できるさまざまなポータルテンプレートについて説明します。
+title: PowerApps で使用可能なポータル テンプレート | Microsoft Docs
+description: PowerApps で使用可能なさまざまなポータル テンプレートについて説明します。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,70 +11,70 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 01995c7d1d23d4986441e8ccdcbba59029004cdf
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541899"
+ms.locfileid: "2755689"
 ---
-# <a name="portal-templates"></a>ポータルのテンプレート
+# <a name="portal-templates"></a>ポータル テンプレート
 
-PowerApps で選択されている環境に基づいて、Dynamics 365 のモデル駆動型アプリを含む環境で、Common Data Service のスターターポータルまたはポータルを作成できます。
+PowerApps での指定環境に基づいて、Common Data Service スターター ポータルまたは Dynamics 365 のモデル駆動型のアプリ含む環境のポータルを作成できます。
 
 > [!NOTE]
-> 既存のポータルと既存のポータルテンプレート (コミュニティ、パートナー、従業員のセルフサービス、カスタマーセルフサービス) は、PowerApps ポータル Studio では完全にはサポートされておらず、一部のコンポーネントはレンダリングされない場合があります。 ただし、残りのコンポーネントの編集は、通常どおり行うことができます。
+> 既存のポータルと既存のポータル テンプレート (コミュニティ、パートナー、従業員セルフサービス、顧客セルフサービス) は、PowerApps ポータル Studioではサポートされていないため、一部のコンポーネントは表示されない可能性があります。 ただし、通常通り、残りのコンポーネントの編集を継続できます。
 
-## <a name="environment-with-common-data-service"></a>Common Data Service がある環境
+## <a name="environment-with-common-data-service"></a>Common Data Service を使用する環境
 
-Common Data Service が含まれている環境を選択した場合は、Common Data Service スターターポータルを作成できます。 Common Data Service starter portal には、すぐに使い始めるためのサンプルデータが付属しています。 また、次の組み込みのサンプルページも用意されています。
+Common Data Service を含む環境を選択して、Common Data Service スターター ポータルを作成できます。 Common Data Service スターター ポータルには、すぐ始めるためのサンプル データが付属します。 また、下記の組み込みのサンプル ページもあります:
 
-- 既定の studio テンプレート
-- タイトル付きページ
-- 子リンクがあるページ
+- 既定のスタジオ テンプレート
+- タイトルを含むページ
+- 子リンクのあるページ
 
-## <a name="environment-with-model-driven-apps-in-dynamics-365"></a>Dynamics 365 でモデル駆動型アプリを使用する環境 
+## <a name="environment-with-model-driven-apps-in-dynamics-365"></a>Dynamics 365 のモデル駆動型アプリを含む環境 
 
-Dynamics 365 (Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing、Dynamics 365 Project Service Automation) でモデル駆動型アプリを含む環境を選択した場合は、次のポータルを作成できます。:
+Dynamics 365 (Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing、または Dynamics 365 Project Service Automation) のモデル駆動型アプリを含む環境を選択する場合は、次のポータルを作成できます:
 
-- **カスタマーセルフサービスポータル**: 顧客のセルフサービスポータルを使用すると、セルフサービスのナレッジへのアクセス、リソースのサポート、ケースの進行状況の表示、フィードバックの提供を行うことができます。
-- **パートナーポータル**: パートナーポータルを使用すると、リセラー、ディストリビューター、サプライヤー、パートナーを持つすべての組織が、共有活動のすべてのステージにリアルタイムでアクセスできるようになります。
+- **顧客セルフサービス ポータル**: 顧客セルフサービス ポータルでは、顧客がセルフサービス方式で技術情報にアクセスしたり、リソースをサポートしたり、サポート案件の進捗状況を確認したりできます。フィードバックを送信することもできます。
+- **パートナー ポータル**: パートナー ポータルを使用すると、再販業者、卸売業者、納入業者、またはパートナーと取引のあるあらゆる組織が、共有した活動のすべてのステージにリアルタイムでアクセスできます。
 
     > [!NOTE]
-    > 各オプションを有効にするには、Dynamics 365 組織にフィールドサービスパッケージとプロジェクトサービスパッケージがインストールされている必要があります。 詳細については、「 [Project Service Automation の統合](https://docs.microsoft.com/dynamics365/portals/integrate-project-service-automation)」および「[フィールドサービスの統合](https://docs.microsoft.com/dynamics365/portals/integrate-field-service)」を参照してください。
+    > 各オプションを有効にするにいは、Field Service と Project Service パッケージが、Dynamics 365 組織にインストールさっれている必要があります。 詳細については、[Project Service Automation の統合](https://docs.microsoft.com/dynamics365/portals/integrate-project-service-automation) および [Field Serviceの統合](https://docs.microsoft.com/dynamics365/portals/integrate-field-service) を参照してください。
 
-- **従業員のセルフサービスポータル**: 従業員のセルフサービスポータルは、一般的なタスクを合理化し、すべての従業員に明確な知識のあるソースを持つことで、効率的で十分な情報を得られた従業員を作成します。
-- **コミュニティポータル**: コミュニティポータルでは、お客様と専門家の間でピアツーピアの相互作用を活用して、サポート技術情報の記事、フォーラム、ブログから利用可能なナレッジのカタログを有機拡張し、フィードバックを提供します。コメントと評価
-- **空のポータル**: 外部および内部ユーザーとデータを共有するための web サイトを作成します。 このテンプレートには、すぐに作業を開始するためのサンプルページが付属しています。 
+- **従業員セルフサービス ポータル**: 一般的なタスクを合理化し、信頼できる技術情報ソースを提供してあらゆる従業員の能力を高めることにより、効率的で十分に情報を得た労働力を生み出します。
+- **コミュニティ ポータル**: コミュニティ ポータルでは、顧客とエキスパートの間でのピアツーピアの活発なやり取りを促し、サポート情報の記事、フォーラム、ブログから入手できる技術情報を有機的に拡大しながら、コメントや評価からフィードバックを得ることができます。
+- **空のポータル**: 外部および内部ユーザーとデータを共有するための Web サイトを作成します。 このテンプレートでは、迅速に開始するためのサンプル ページが取得できます。 
 
-## <a name="portal-templates-features"></a>ポータルテンプレートの機能
+## <a name="portal-templates-features"></a>ポータル テンプレート機能
 
-次の表は、各ポータルテンプレートに関連付けられている機能をまとめたものです。
+以下の表は、各ポータル オプションに関連する機能をまとめたものです。
 
-| 機能 | カスタマーセルフサービスポータル | パートナーポータル | 従業員のセルフサービスポータル | コミュニティポータル | 空のポータル | Common Data Service スターターポータル|
+| 機能 | 顧客セルフサービス ポータル | パートナー ポータル | 従業員セルフサービス ポータル | コミュニティ ポータル | 空のポータル | Common Data Service スターター ポータル|
 |------------------|---------------|----------------|---------------|------------------|---------------|------|
-| 国際対応 | •  | • | • | • | • |• |
+| ワールド レディ | •  | • | • | • | • |• |
 | 複数言語のサポート | •  | • | • | • | • |• |
-| ポータルの管理| • | • | • | • | •  |• |
+| ポータル管理| • | • | • | • | •  |• |
 | カスタマイズと拡張性  | •   | •  | •   | •  | • |• |
-| テーマ   | •   | •   | •    | •   | •   |• |
+| テーマ化   | •   | •   | •    | •   | •   |• |
 | コンテンツ管理                     | •                            |                | •                            | •                |               |
-| ナレッジ管理                   | •                            | •              | •                            | •                |               |
-| サポート/ケース管理                | •                            |                | •                            | •                |               |
+| ナレッジ マネージメント                   | •                            | •              | •                            | •                |               |
+| サポート/Case Management                | •                            |                | •                            | •                |               |
 | フォーラム                                 | •                            |                | •                            | •                |               |
 | ファセット検索                         | •                            |                | •                            |                  |               |
-| プロファイルの管理                     | •                            |                | •                            |                  |               |
-| フォーラムスレッドの購読              | •                            |                | •                            |                  |               |
-| Comments                               | •                            |                | •                            | •                |               |
+| プロファイル管理                     | •                            |                | •                            |                  |               |
+| フォーラム スレッドの購読              | •                            |                | •                            |                  |               |
+| コメント                               | •                            |                | •                            | •                |               |
 | [!INCLUDE[pn-azure-shortest](../../includes/pn-azure-shortest.md)] AD 認証                |                              |                | •                            |                  |               |
-| よい                                  |                              |                |                              | •                |               |
-| Blog                                  |                              |                |                              | •                |               |
-| Project Service Automation の統合 |                              | •              |                              |                  |               |
-| フィールドサービスの統合              |                              | •              |                              |                  |               |
-| パートナーのオンボード                     |                              | •              |                              |                  |               |
-| ポータルベース  |  •    | •      |  •| •| •|• |
+| アイデア                                  |                              |                |                              | •                |               |
+| ブログ                                  |                              |                |                              | •                |               |
+| Project Service Automation 統合 |                              | •              |                              |                  |               |
+| Field Service 統合              |                              | •              |                              |                  |               |
+| パートナーのオンボーディング                     |                              | •              |                              |                  |               |
+| ポータル ベース  |  •    | •      |  •| •| •|• |
 | ポータルのワークフロー|  •| •|  •| •| •|• |
 | Web 通知|  •| •|  •| •| •|• |
-| [!INCLUDE[cc-microsoft](../../includes/cc-microsoft.md)] Id|   •|  •|  •|   •| •|• |
-| Id ワークフロー| •|  •| •|   •| •|• |
+| [!INCLUDE[cc-microsoft](../../includes/cc-microsoft.md)] ID|   •|  •|  •|   •| •|• |
+| ID ワークフロー| •|  •| •|   •| •|• |
 | Web フォーム|  •| •|    •| •| •|• |
-| 皆様|   •|  •|  •| •| •|• |
+| フィードバック|   •|  •|  •| •| •|• |
 ||

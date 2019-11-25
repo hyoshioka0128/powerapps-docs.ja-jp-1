@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 48737a053227cbe5daa6b07ef727a4eba31c1ba7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749364"
 ---
 # <a name="use-localized-labels-with-ribbons"></a>リボンでのローカライズされたラベルの使用
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/use-localized-labels-ribbons -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/use-localized-labels-ribbons -->
 
 テキストを表示するリボン要素にはテキストを直接入力できますが、リボンに表示するテキストを定義するには、ローカライズされたラベルを使用することがベスト プラクティスです。 この方法では、多言語を使用でき、共有テキストの管理が向上します。  
   

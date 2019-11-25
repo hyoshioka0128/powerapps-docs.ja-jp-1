@@ -1,5 +1,5 @@
 ---
-title: PowerApps を使用してモデル駆動型でオートセーブを無効にする | MicrosoftDocs
+title: PowerApps でモデル駆動型アプリの自動保存を無効にする | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: 2e7f75dd-7a3f-4716-b995-b626929c0501
 caps.latest.revision: 14
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fda8a194a47101eb26d000ea60ede5b38b0f235d
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759473"
 ---
 # <a name="disable-auto-save-in-a-model-driven-app"></a>モデル駆動型でオートセーブを無効にする
 
@@ -30,7 +36,7 @@ search.app:
 ## <a name="how-auto-save-works"></a>自動保存が機能する仕組み  
  既定で、[更新されたエンティティと従来のエンティティ](create-design-forms.md#updated-versus-classic-entities) のメイン フォームすべてで自動保存が有効です。 レコードの作成 (最初の保存) の後、フォームに対する変更は変更の 30 秒後に自動的に保存されます。 フォームの変更がない場合は、フォームが開いている間に自動保存は実行されません。 変更が行われると、自動保存の前の 30 秒期間が再度発生します。 ユーザーを現在編集しているフィールドは自動保存には含まれません。 ユーザーがレコードを編集中に別のだれかが同じレコードを更新した場合は、これらの変更は取り込まれて、自動保存が行われるときにフォームに表示されます。  
   
- 自動保存が有効になっている状態では、保存ボタンはレコードの最初の保存の場合にのみ表示されます。 レコードが作成された後、コマンド バーに保存ボタンは表示されませんが、未保存の変更が存在するかどうかを示す ![[自動保存] ボタン](media/auto-save-icon.png "[自動保存] ボタン") ボタンを右下隅に表示することができます。 このコントロールは、自動保存が無効になっている場合も表示されます。  
+ 自動保存が有効になっている状態では、保存ボタンはレコードの最初の保存の場合にのみ表示されます。 レコードが作成された後、コマンド バーに保存ボタンは表示されませんが、未保存の変更が存在するかどうかを示す ![自動保存ボタン](media/auto-save-icon.png "自動保存ボタン") を右下隅に表示することができます。 このコントロールは、自動保存が無効になっている場合も表示されます。  
   
  このボタンを選択して、レコードを保存し、フォームのデータを迅速に更新することができます。 自動保存が有効になっているときは、レコードから離れるとき、またはレコードを表示している個別のウィンドウを閉じるときはいつでも、レコードは保存されます。 更新されないエンティティのフォームに表示される**保存して閉じる**ボタンは必要ありません。  
   
@@ -55,9 +61,9 @@ search.app:
  特定のエンティティ フォームの自動保存を無効にする場合は、エンティティの `OnSave` イベントにコードを追加できます。  
   
 > [!NOTE]
->  フォームの自動保存は無効になりますが、右下隅の ![自動保存ボタン](media/auto-save-icon.png "自動保存ボタン") ボタンを選択してデータを保存することは可能です。 フォームから移動するかまたはデータが変更されたフォームを閉じる場合、フォームから移動またはフォームを閉じる前に変更の保存を促すプロンプトが表示されます。  
+>  フォームの自動保存は無効になりますが、右下隅の ![自動保存ボタン](media/auto-save-icon.png "A自動保存ボタン) ボタンを選択してデータを保存することは可能です。 フォームから移動するかまたはデータが変更されたフォームを閉じる場合、フォームから移動またはフォームを閉じる前に変更の保存を促すプロンプトが表示されます。  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**フォーム** タブを選択します。  
   
@@ -118,7 +124,7 @@ search.app:
   
          **ハンドラーのプロパティ**ダイアログはこのようにする必要があります。 カスタマイズの接頭辞: "new_"は、組織の既定の発行者に対して設定されるカスタマイズ接頭辞に基づいて変化する場合があります。  
   
- ![Dynamics 365 で自動保存させないようにする OnSave イベント ハンドラー](media/prevent-auto-save-script.png "Dynamics 365 で自動保存させないようにする OnSave イベント ハンドラー")  
+         ![Dynamics 365 で自動保存させないようにする OnSave イベント ハンドラー](media/prevent-auto-save-script.png "Dynamics 365 で自動保存させないようにする OnSave イベント ハンドラー")  
   
     7.  **OK** をクリックして**ハンドラーのプロパティ**ダイアログを閉じます。  
   
@@ -130,7 +136,7 @@ search.app:
   
 8. ソリューション エクスプローラーで、**すべてのカスタマイズの公開**を選択します。  
   
- `OnSave` イベントにこのスクリプトを追加した後、他のユーザーがこのフォームを使用してレコードを編集するとき、自動保存が無効になっていた場合と同じように、メッセージ**変更が保存されていません**がフォームの右下隅に表示されます。 ただし、このメッセージは、ユーザーがその横にある ![[自動保存] ボタン](media/auto-save-icon.png "[自動保存] ボタン") ボタンを選択するまで消えません。  
+ `OnSave` イベントにこのスクリプトを追加した後、他のユーザーがこのフォームを使用してレコードを編集するとき、自動保存が無効になっていた場合と同じように、メッセージ**変更が保存されていません**がフォームの右下隅に表示されます。 ただし、このメッセージは、ユーザーがその横にある ![自動保存ボタン](media/auto-save-icon.png "自動保存ボタン") ボタンを選択するまで消えません。  
   
 ## <a name="next-steps"></a>次のステップ  
  [フォームの作成および設計](create-design-forms.md)      

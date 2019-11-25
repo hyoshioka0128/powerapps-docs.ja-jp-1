@@ -9,12 +9,17 @@ ms.topic: article
 ms.date: 06/27/2019
 ms.author: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c0608363a450de89acf509ec5c1a3cece2037a40
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753975"
 ---
-
 # <a name="apply-business-logic-using-client-scripting-in-model-driven-apps-using-javascript"></a>JavaScript を使用するモデル駆動型アプリでクライアント スクリプトを使用してビジネス ロジックを適用
 
 JavaScript を使用したクライアント サイド スクリプトは、モデル駆動型アプリケーションのフォームにデータを表示するにあたってのカスタム ビジネス プロセス ロジックを適用する方法の1つです。
@@ -22,7 +27,7 @@ JavaScript を使用したクライアント サイド スクリプトは、モ�
 > [!IMPORTANT]
 > このドキュメントで説明するすべてのクライアント スクリプトの概念と API は、Dynamics 365 Customer Engagement (on-premises) ユーザーにも適用されます。
 
-しかし、モデル駆動型のアプリケーション フォームにカスタマイズしたビジネス プロセス ロジックを適用する場合には、クライアント スクリプトを最初に選択することは推奨しません。 *ビジネスルール* では、JavaScriptの知識がない、開発者ではないユーザーがフォームにてビジネス プロセス ロジックを適用する方法を提供します。 詳細については次を参照してください: [ロジックを適用するビジネスルールを作成する](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form) [powerapps.com](http://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の **Common Data Service** エリアにてビジネス ルール デザイナを確認します。 エンティティを表示するとき、**業務ルール**タブを検索します。
+しかし、モデル駆動型のアプリケーション フォームにカスタマイズしたビジネス プロセス ロジックを適用する場合には、クライアント スクリプトを最初に選択することは推奨しません。 *ビジネスルール* では、JavaScriptの知識がない、開発者ではないユーザーがフォームにてビジネス プロセス ロジックを適用する方法を提供します。 詳細については次を参照してください: [ロジックを適用するビジネスルールを作成する](/powerapps/maker/model-driven-apps/create-business-rules-recommendations-apply-logic-form) [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の **Common Data Service** エリアにてビジネス ルール デザイナを確認します。 エンティティを表示するとき、**業務ルール**タブを検索します。
 
 ビジネス ルールを使用しても業務上の要件を達成できない場合は、アプリケーションの動作を拡張し、クライアントでの自動化を実現する強力な方法として、クライアントAPIオブジェクト モデルを使用したクライアント スクリプト作成する方法があります。
 

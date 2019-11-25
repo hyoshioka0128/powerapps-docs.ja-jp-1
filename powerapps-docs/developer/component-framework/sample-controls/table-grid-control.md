@@ -1,5 +1,5 @@
 ---
-title: ' テーブル グリッド コンポーネント | Microsoft Docs'
+title: " テーブル グリッド コンポーネント | Microsoft Docs"
 description: テーブル グリッド コンポーネントの実装
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: 6a8c8dd1ef90203901ec4a675620a91ae1431f13
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754067"
 ---
-
 # <a name="implementing-table-grid-component"></a>テーブル グリッド コンポーネントの実装
 
 このサンプルでは、簡単なデータセット コンポーネントの作成方法、ビューの列メタデータのバインド、レコード バインド、ページングからのレコード追加、フォームへのレコード ナビゲーションを紹介します。
@@ -279,12 +284,12 @@ export class TSTableGrid
       RowRecordId
     );
     if (rowRecordId) {
-      let entityReference = this.contextObj.parameters.simpleTableGrid.records[
+      let entityreference = this.contextObj.parameters.simpleTableGrid.records[
         rowRecordId
-      ].getNamedReference();
+      ].getNamedreference();
       let entityFormOptions = {
-        entityName: entityReference.entityType!,
-        entityId: entityReference.id
+        entityName: entityreference.entityType!,
+        entityId: entityreference.id
       };
       this.contextObj.navigation.openForm(entityFormOptions);
     }
@@ -407,8 +412,8 @@ export class TSTableGrid
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
   <xsd:complexType>
     <xsd:choice maxOccurs="unbounded">
@@ -501,4 +506,4 @@ allocatedHeight が –1 の場合、高さに制限がありません。 コン
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps Component Framework のマニフェスト スキーマの参照](../manifest-schema-reference/index.md)
+[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

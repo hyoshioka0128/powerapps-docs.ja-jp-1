@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 639b8631f1d953408d30a1fdbba9c9ae8161af4d
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755140"
 ---
-
 # <a name="pass-the-current-record-as-data-context-to-an-embedded-canvas-app"></a>埋め込みキャンバス アプリに現在のレコードをデータ コンテキストとして渡す
 > [!IMPORTANT]
 > モデル駆動型フォームに埋め込まれたキャンバス アプリケーションがプレビューから外され、一般的に、使用可能です。 以下に示す手順は古すぎて、モデル駆動型フォームに埋め込まれたキャンバス アプリケーションの共有プレビューリリースに対してのみ適用可能です。
@@ -32,7 +37,7 @@ search.app:
 
 埋め込みキャンバス アプリを取引先企業のメイン フォーム上に追加して、現在の取引先企業レコードを埋め込みキャンバス アプリに渡すことを想定します。 これを行うには、次の手順を実行します。 
 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインして、取引先企業エンティティなどのエンティティのメイン フォームのためにフォーム エディターを開きます。 
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインして、取引先企業エンティティなどのエンティティのメイン フォーム用にフォーム エディターを開きます。 
 2.  埋め込みキャンバス アプリを表示するフォーム上のセクションを選択します。
 3.  フィールド エクスプローラー ウィンドウを使用して、**取引先企業名**などの必須フィールドを追加します。
       > [!IMPORTANT]
@@ -49,7 +54,7 @@ search.app:
          - **アプリ ID** の値を変更すると、モデル駆動型フォームから埋め込みキャンバス アプリへのリンクが切断されることに注意してください。
 10. キャンバス アプリを作成または編集するには**カスタマイズ**を選択します。 これは新規タブの、 PowerApps Studio で開きます。
        > [!NOTE]
-       > Webブラウザのポップアップブロックが原因でPowerApps Studio を開くことができない場合は、サイト web.powerapps.com を有効にするか、ポップアップブロックを一時的に無効にしてから、もう一度 **カスタマイズ** を選択する必要があります。
+       > PowerApps Studio を開くことが Web ブラウザーのポップアップ ブロッカーによりブロックされた場合は、make.powerapps.com  サイトを有効にするか、一時的にポップアップ ブロッカーを無効にしてから、再び **カスタマイズ** を選択する必要があります。
 11. PowerApps Studio の通知には、 ウィンドウの左側に特別な **ModelDrivenFormIntegration** コントロールが表示されます。 このコントロールは、ホストのモデル駆動型フォームから埋め込みキャンバス アプリにコンテキスト データを取り込みます。
 12. **Gallery1** コントロールを選択して、**アイテム** プロパティに **ModelDrivenFormIntegration.Data** がセットされていることを確認します。
       > [!NOTE]

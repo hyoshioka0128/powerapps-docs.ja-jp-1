@@ -1,5 +1,5 @@
 ---
-title: ' 増分コンポーネント | Microsoft Docs'
+title: " 増分コンポーネント | Microsoft Docs"
 description: 増分コンポーネントの実装
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: 71c3418de53792b71987f1c0f4fd205a88760dab
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754092"
 ---
-
 # <a name="implementing-increment-component"></a>増分コンポーネントの実装
 
 このサンプル コンポーネントは、 PowerApps Component Framework とエラー処理を使用してデータをバインドする方法を示します。 このコンポーネントは実行時に `Increment` ボタンを持つテキストボックスとして表示します。 テキストボックスは現在の値を示し `Increment` ボタンはクリック可能です。 ボタンをクリックするたびに、テキストボックスの値は 1 ずつ増えます。 増加する値は任意の数に変更できます。
@@ -59,7 +64,7 @@ export class TSIncrementControl
   private label: HTMLInputElement;
   // button element created as part of this control
   private button: HTMLButtonElement;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
   /**
@@ -177,8 +182,8 @@ export class TSIncrementControl
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
   <xsd:complexType>
     <xsd:choice maxOccurs="unbounded">
@@ -253,4 +258,4 @@ export class TSIncrementControl
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps Component Framework のマニフェスト スキーマの参照](../manifest-schema-reference/index.md)
+[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

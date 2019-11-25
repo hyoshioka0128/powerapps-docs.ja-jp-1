@@ -1,6 +1,6 @@
 ---
-title: Common Data Service で業務ルールを作成する | Microsoft Docs
-description: Common Data Service で業務ルールを作成する方法に関する詳細な手順。
+title: Common Data Service でビジネス ルールを作成する | Microsoft Docs
+description: Common Data Service でビジネス ルールを作成する方法についての手順。
 author: lancedMicrosoft
 manager: kfile
 ms.service: powerapps
@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 45d0d4ce80d1552ace70ae5b25a67e570141d261
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754744"
 ---
-
 # <a name="create-a-business-rule-for-an-entity"></a>エンティティの業務ルールの作成
 
 業務ルールおよびビジネス レコメンデーションを作成し、 コードの記述またはプラグインの作成を行わずにロジックおよび検証を適用できます。業務ルールは、変化が急速で、よく使用される業務ルールを実装および保守するための、単純なインターフェイスを提供します。
@@ -46,7 +51,7 @@ search.app:
 
 ## <a name="create-a-business-rule"></a>業務ルールの作成
   
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左端の近くにある**データ**の下矢印をクリックまたはタップします。
+1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左端にある **データ** の下矢印をクリックまたはタップします。
 
 2. 表示される一覧で、**エンティティ**をクリックまたはタップします。
   
@@ -79,7 +84,7 @@ search.app:
   
         ![ビジネス ルールに条件を追加する](./media/data-platform-cds-create-business-rule/add-condition-business-rule.png "ビジネス ルールに条件を追加する")  
   
-    2. 条件のプロパティを設定するには、デザイナー ウィンドウの**条件**をクリックし、画面の右側にある**プロパティ**タブでプロパティを設定します。 プロパティを設定すると、Common Data Service creates によって**プロパティ**タブの下部に式が作成されます。  
+    2. 条件のプロパティを設定するには、デザイナー ウィンドウの**条件**をクリックし、画面の右側にある**プロパティ**タブでプロパティを設定します。 プロパティを設定すると、 Common Data Service が **プロパティ** タブの下部に式を作成します。  
   
     3. 付加的な節 (AND または OR) を条件に追加するには、**プロパティ**タブの**新規**をクリックし、新しいルールを作成してからそのルールのプロパティを設定します。 **ルール ロジック**フィールドで、AND または OR として新しいルールを追加するかを指定できます。  
   
@@ -106,7 +111,7 @@ search.app:
     3. さらに多数のアクションをレコメンデーションに追加するには、**コンポーネント**タブからそれらをドラッグし、**プロパティ**タブで各アクションに対するプロパティを設定します。  
   
         > [!NOTE]
-        >  レコメンデーションを作成するとき、Common Data Service により単一のアクションが既定で追加されます。 レコメンデーションにおけるすべてのアクションを表示するには、**レコメンデーション**コンポーネントの**詳細**をクリックします。  
+        >  レコメンデーションを作成すると、 既定で Common Data Service が単一のアクションを追加します。 レコメンデーションにおけるすべてのアクションを表示するには、**レコメンデーション**コンポーネントの**詳細**をクリックします。  
   
     4. プロパティの設定が終了したら、**適用**をクリックします。  
   
@@ -123,5 +128,5 @@ search.app:
     > - 条件、アクション、ビジネス レコメンデーションを業務ルールに追加すると、Common Data Service により、業務ルールのコードがデザイナー ウィンドウの下部に作成されます。 このコードは読み取り専用です。  
   
 ## <a name="localize-error-messages-used-in-business-rules"></a>業務ルールで使用されるエラー メッセージのローカライズ  
- 組織で使用する複数の言語が存在する場合は、設定したエラー メッセージのローカライズが必要になると思われます。 メッセージを設定するたびに、ラベルがシステムによって生成されます。 組織で翻訳をエクスポートする場合、メッセージのローカライズされたバージョンを追加してから、それらのラベルを Common Data Service にインポートできます。これにより、基本言語以外の言語を使用するユーザーは翻訳されたメッセージを表示することができます。  
+ 組織で使用する複数の言語が存在する場合は、設定したエラー メッセージのローカライズが必要になると思われます。 メッセージを設定するたびに、ラベルがシステムによって生成されます。 組織内で翻訳をエクスポートする場合は、メッセージのローカライズバージョンを追加してからラベルを Common Data Service にインポートし直し、ベース言語以外の言語を使用しているユーザーが翻訳されたメッセージを表示できるようにします。  
   

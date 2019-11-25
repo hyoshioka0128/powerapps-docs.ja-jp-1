@@ -4,28 +4,33 @@ description: ソリューションを使用してモデル駆動型アプリを�
 keywords: ''
 ms.date: 08/06/2018
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: e82e7f64-37ad-41e5-acd7-16309881c6a2
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 9
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 72f5ad809983738526a03f306c3479f53745d991
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755404"
 ---
-
 # <a name="distribute-a-model-driven-app-using-a-solution"></a>ソリューションを使用してモデル駆動型アプリを配布する
 
 モデル駆動型アプリはソリューション コンポーネントとして配布されます。 モデル駆動型アプリの作成後、そのアプリをソリューションにパッケージ化した後、ZIPファイルにエクスポートすることにより、別の環境でそのアプリを使用できるようになります。 ソリューション (.zip ファイル) がターゲット環境で適切にインポートされると、パッケージ化されたアプリが使用可能になります。 
@@ -33,7 +38,7 @@ search.app:
 ## <a name="add-an-app-to-a-solution"></a>ソリューションへのアプリの追加
 アプリを配布するために、ソリューションを作成してアプリをエクスポート用にパッケージできるようにします。
 
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 2. **ソリューション** を選択し、**新しいソリューション** を選択します。
 3. **新しいソリューション** ページのフィールドに入力し、**保存** を選択します。 詳細: [ソリューションの作成](../common-data-service/create-solution.md)
@@ -45,7 +50,7 @@ search.app:
 6. **ソリューション** ページで、**保存して閉じる** を選択します。
 
 ## <a name="export-a-solution"></a>ソリューションのエクスポート
-アプリを配布して他の環境にインポートできるようにしあり、[Microsoft AppSource](https://appsource.microsoft.com/) で使用できるようにするには、ソリューションを zip ファイルにエクスポートします。 次に、アプリおよびコンポーネントを含む zip ファイルを他の環境にインポートできます。
+アプリを配布して他の環境にインポートできるように、または [Microsoft AppSource](https://appsource.microsoft.com/) で使用できるようにするには、ソリューションを zip ファイルにエクスポートします。 次に、アプリおよびコンポーネントを含む zip ファイルを他の環境にインポートできます。
 
 1. [ソリューション ページj](advanced-navigation.md#solutions)を開きます。 
 2. エクスポートするソリューションを選択し、ツール バーで **エクスポート** を選択します。 
@@ -61,7 +66,7 @@ search.app:
 ## <a name="import-a-solution"></a>ソリューションのインポート  
 インポートするアプリを含むソリューション ZIP ファイルを受け取ったとき、ソリューションのコンポーネント ページを開いて、ソリューションをインポートします。 ソリューションが正常にインポートされると、環境でアプリを使用できるようになります。
 
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 2. **ソリューション** を選択し、ツール バーで **インポート** を選択します。
 3. インポートするファイルを参照し、**次へ** を選択します。

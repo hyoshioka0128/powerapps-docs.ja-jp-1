@@ -6,14 +6,20 @@ ms.date: 06/01/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5d5bce76dd9e123d6d6c5db1e8d1dc59293471f2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753059"
 ---
 # <a name="azure-integration"></a>Azure 統合
 
@@ -64,7 +70,7 @@ Azure対応のOOBプラグインは Common Data Service に付属しており、
   
 ### <a name="asynchronous-service"></a>非同期サービス
 
-サービス エンドポイント通知サービスにより通知されると、非同期サービスは、イベント実行パイプラインが現在処理している要求メッセージのデータ コンテキストの、Azure Service Bus に対する投稿を処理します。 各ポストは非同期サービスのシステム ジョブによって実行されます。 ユーザーは、PowerApps Web アプリケーションの**システム ジョブ**ビューを使用して、各システム ジョブのステータスを表示することができます。  
+サービス エンドポイント通知サービスにより通知されると、非同期サービスは、イベント実行パイプラインが現在処理している要求メッセージのデータ コンテキストの、Azure Service Bus に対する投稿を処理します。 各ポストは非同期サービスのシステム ジョブによって実行されます。 ユーザーは、 PowerApps Web アプリケーションの**システム ジョブ**ビューを使用して、各システム ジョブのステータスを表示することができます。  
   
 非同期サービスの詳細については、「[非同期サービス](asynchronous-service.md)」を参照してください。  
   
@@ -89,7 +95,7 @@ Common Data Service は Azure イベント ハブ ソリューションへのエ
   
 次の図は、シナリオを構成する物理要素を示しています。  
   
-![Dynamics 365 Service Bus シナリオ](media/crm-v5s-az.png "Common Data Service Service Bus シナリオ")  
+![Dynamics 365 からサービス バスへのシナリオ](media/crm-v5s-az.png "Common Data Service からサービス バスへのシナリオ")  
   
 この図に示すイベントの順序は次のとおりです。  
   
@@ -131,7 +137,7 @@ REST 契約は REST エンドポイントでの二方向契約に似ています
 この契約の種類は Azure イベント ハブ ソリューションに適用されます。  
   
 > [!IMPORTANT]
->  これらの契約を使用するには、[Azure SDK](http://www.windowsazure.com/develop/downloads/) v1.7 またはそれ以降を使用して、リスナー アプリケーションを記述する必要があります。  
+>  これらの契約を使用するには、[Azure SDK](https://www.windowsazure.com/develop/downloads/) v1.7 またはそれ以降を使用して、リスナー アプリケーションを記述する必要があります。  
   
 契約の構成では、契約で使用されるセキュリティの種類を指定します。 契約は、Transport Layer Security (TLS) または Secure Sockets Layer (SSL) (https) を使用するトランスポート セキュリティを使用できます。  
   

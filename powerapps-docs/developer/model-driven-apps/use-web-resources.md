@@ -16,12 +16,17 @@ ms.workload: na
 ms.date: 10/31/2018
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8786c43f78438e993853b683e31a602bf86c3584
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749363"
 ---
-
 # <a name="use-web-resources"></a>Web リソースの使用
 
 各 Common Data Service インスタンス内には `webresources` と呼ばれる仮想フォルダーがあり、ここでは、名前で HTML、JS、CSS、イメージ、および他ファイルを要求し、ブラウザーでアクセスできます。 これらのファイルは、アプリケーションを使用してをアップロードしたり、または [WebResource エンティティ](../common-data-service/reference/entities/webresource.md) レコードとしてプログラムによって追加できます。 [XrmToolBox WebResources マネージャ](https://www.xrmtoolbox.com/plugins/MsCrmTools.WebResourcesManager/) は、これらのレコードの使用を容易にできるコミュニティ ツールです。

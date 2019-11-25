@@ -1,33 +1,37 @@
-- name: クライアント スクリプトを使用してビジネス ロジックを適用する
+- name: クライアント スクリプトを使用してビジネス ロジックを適用
   href: ../client-scripting.md
   items:
-    - name: クライアント API リファレンス
+    - name: クライアント API 参照
       href: reference.md
       items:
         - name: クライアント側のイベント
           href: ./reference/events.md
           items:
-            - name: 属性の OnChange イベント
+            - name: 属性 OnChange イベント
               href: ./reference/events/attribute-onchange.md
-            - name: フォームの OnLoad イベント
+            - name: フォーム OnLoad イベント
               href: ./reference/events/form-onload.md
-            - name: フォームの OnSave イベント
+            - name: フォーム OnSave イベント
               href: ./reference/events/form-onsave.md
-            - name: フォーム データの OnLoad イベント
+            - name: フォーム データ OnLoad イベント
               href: ./reference/events/form-data-onload.md
-            - name: グリッドの OnChange イベント
+            - name: グリッド OnChange イベント
               href: ./reference/events/grid-onchange.md
-            - name: グリッドの OnRecordSelect イベント
+            - name: グリッド OnRecordSelect イベント
               href: ./reference/events/grid-onrecordselect.md
-            - name: グリッドの OnSave イベント
+            - name: グリッド OnSave イベント
               href: ./reference/events/grid-onsave.md
             - name: OnProcessStatusChange イベント
               href: ./reference/events/onprocessstatuschange.md
+            - name: OnPreProcessStatusChange イベント
+              href: ./reference/events/onpreprocessstatuschange.md
+            - name: OnPreStageChange
+              href: ./reference/events/onprestagechange.md
             - name: OnReadyStateComplete イベント
               href: ./reference/events/onreadystatecomplete.md
             - name: OnResultOpened イベント
               href: ./reference/events/onresultopened.md
-            - name: OnSelection イベント
+            - name: addOnSelection イベント
               href: ./reference/events/onselection.md
             - name: OnStageChange イベント
               href: ./reference/events/onstagechange.md
@@ -37,7 +41,7 @@
               href: ./reference/events/postsearch.md
             - name: PreSearch イベント
               href: ./reference/events/presearch.md
-            - name: サブグリッドの OnLoad イベント
+            - name: Subgrid OnLoad イベント
               href: ./reference/events/subgrid-onload.md
             - name: TabStateChange イベント
               href: ./reference/events/tabstatechange.md
@@ -50,7 +54,7 @@
               href: reference/collections/get.md
             - name: getLength
               href: reference/collections/getLength.md
-        - name: GetGlobalContext 関数と ClientGlobalContext.js.aspx
+        - name: GetGlobalContext 関数および ClientGlobalContext.js.aspx
           href: reference/GetGlobalContext-ClientGlobalContext.js.aspx.md
         - name: 実行コンテキスト
           href: reference/execution-context.md
@@ -67,7 +71,7 @@
               href: reference/executioncontext/getSharedVariable.md
             - name: setSharedVariable
               href: reference/executioncontext/setSharedVariable.md
-        - name: イベント引数を保存する
+        - name: イベント引数の保存
           href: reference/save-event-arguments.md
           items:
             - name: getSaveMode
@@ -129,6 +133,8 @@
               href: reference/attributes/isValid.md
             - name: removeOnChange
               href: reference/attributes/removeOnChange.md
+            - name: setIsValid
+              href: reference/attributes/setIsValid.md
             - name: setPrecision
               href: reference/attributes/setPrecision.md
             - name: setRequiredLevel
@@ -182,6 +188,8 @@
               href: reference/controls/getName.md
             - name: getObject
               href: reference/controls/getObject.md
+            - name: getOptions
+              href: reference/controls/getOptions.md
             - name: getParent
               href: reference/controls/getParent.md
             - name: getSearchQuery
@@ -202,7 +210,7 @@
               href: reference/controls/getVisible.md
             - name: openSearchResult
               href: reference/controls/openSearchResult.md
-            - name: refresh
+            - name: 最新の情報に更新
               href: reference/controls/refresh.md
             - name: removeOnPostSearch
               href: reference/controls/removeOnPostSearch.md
@@ -245,11 +253,11 @@
               href: reference/formContext-data/getIsDirty.md
             - name: isValid
               href: reference/formContext-data/isValid.md
-            - name: refresh
+            - name: 最新の情報に更新
               href: reference/formContext-data/refresh.md
             - name: removeOnLoad
               href: reference/formContext-data/removeOnLoad.md
-            - name: save
+            - name: 上書き保存​​
               href: reference/formContext-data/save.md
         - name: formContext.data.entity
           href: reference/formContext-data-entity.md
@@ -272,26 +280,34 @@
               href: reference/formContext-data-entity/isvalid.md
             - name: removeOnSave
               href: reference/formContext-data-entity/removeOnSave.md
-            - name: save
+            - name: 上書き保存​​
               href: reference/formContext-data-entity/save.md
         - name: formContext.data.process
           href: reference/formContext-data-process.md
           items:
             - name: イベント ハンドラー メソッド
               items:
+                - name: addOnPreProcessStatusChange
+                  href: reference/formContext-data-process/eventhandlers/addOnPreProcessStatusChange.md
+                - name: addOnPreStageChange
+                  href: reference/formContext-data-process/eventhandlers/addonprestagechange.md
                 - name: addOnProcessStatusChange
                   href: reference/formContext-data-process/eventhandlers/addOnProcessStatusChange.md
                 - name: addOnStageChange
                   href: reference/formContext-data-process/eventhandlers/addOnStageChange.md
                 - name: addOnStageSelected
                   href: reference/formContext-data-process/eventhandlers/addOnStageSelected.md
+                - name: removeOnPreProcessStatusChange
+                  href: reference/formContext-data-process/eventhandlers/removeOnPreProcessStatusChange.md
+                - name: removeOnPreStageChange
+                  href: reference/formContext-data-process/eventhandlers/removeOnPreStageChange.md
                 - name: removeOnProcessStatusChange
                   href: reference/formContext-data-process/eventhandlers/removeOnProcessStatusChange.md
                 - name: removeOnStageChange
                   href: reference/formContext-data-process/eventhandlers/removeOnStageChange.md
                 - name: removeOnStageSelected
                   href: reference/formContext-data-process/eventhandlers/removeOnStageSelected.md
-            - name: Active Process メソッド
+            - name: アクティブ プロセス メソッド
               items:
                 - name: getActiveProcess
                   href: reference/formContext-data-process/activeprocess/getActiveProcess.md
@@ -299,7 +315,7 @@
                   href: reference/formContext-data-process/activeprocess/setActiveProcess.md
             - name: getEnabledProcesses
               href: reference/formContext-data-process/getEnabledProcesses.md
-            - name: Process メソッド
+            - name: プロセス メソッド
               items:
                 - name: getId
                   href: reference/formContext-data-process/process/getId.md
@@ -315,7 +331,7 @@
                   href: reference/formContext-data-process/getProcessInstances.md
                 - name: setActiveProcessInstance
                   href: reference/formContext-data-process/setActiveProcessInstance.md
-            - name: Instance メソッド
+            - name: インスタンス メソッド
               items:
                 - name: getInstanceId
                   href: reference/formcontext-data-process/instance/getInstanceId.md
@@ -325,7 +341,7 @@
                   href: reference/formcontext-data-process/instance/getStatus.md
                 - name: setStatus
                   href: reference/formcontext-data-process/instance/setStatus.md
-            - name: Active Stage メソッド
+            - name: アクティブ ステージ メソッド
               items:
                 - name: getActiveStage
                   href: reference/formContext-data-process/activestage/getActiveStage.md
@@ -335,7 +351,7 @@
               href: reference/formContext-data-process/activepath/getActivePath.md
             - name: getSelectedStage
               href: reference/formContext-data-process/getSelectedStage.md
-            - name: Stage メソッド
+            - name: ステージ メソッド
               items:
                 - name: getCategory
                   href: reference/formContext-data-process/stage/getCategory.md
@@ -351,7 +367,7 @@
                   href: reference/formContext-data-process/stage/getStatus.md
                 - name: getSteps
                   href: reference/formContext-data-process/stage/getSteps.md
-            - name: Step メソッド
+            - name: ステップ メソッド
               items:
                 - name: getAttribute
                   href: reference/formContext-data-process/step/getAttribute.md
@@ -363,7 +379,7 @@
                   href: reference/formContext-data-process/step/isRequired.md
                 - name: setProgress
                   href: reference/formContext-data-process/step/setProgress.md
-            - name: Navigation メソッド
+            - name: ナビゲーション メソッド
               items:
                 - name: moveNext
                   href: reference/formContext-data-process/navigation/moveNext.md
@@ -376,7 +392,7 @@
               href: reference/formcontext-ui/addOnLoad.md
             - name: clearFormNotification
               href: reference/formcontext-ui/clearFormNotification.md
-            - name: 閉じる
+            - name: クローズ
               href: reference/formcontext-ui/close.md
             - name: getFormType
               href: reference/formcontext-ui/getFormType.md
@@ -423,7 +439,7 @@
               href: reference/formcontext-ui-process/getDisplayState.md
             - name: getVisible
               href: reference/formcontext-ui-process/getVisible.md
-            - name: reflow
+            - name: リフロー
               href: reference/formcontext-ui-process/reflow.md
             - name: setDisplayState
               href: reference/formcontext-ui-process/setDisplayState.md
@@ -448,7 +464,7 @@
               href: reference/formcontext-ui-quickForms/getVisible.md
             - name: isLoaded
               href: reference/formcontext-ui-quickForms/isLoaded.md
-            - name: refresh
+            - name: 最新の情報に更新
               href: reference/formcontext-ui-quickForms/refresh.md
             - name: setDisabled
               href: reference/formcontext-ui-quickForms/setDisabled.md
@@ -461,8 +477,6 @@
         - name: formContext.ui.tabs
           href: reference/formcontext-ui-tabs.md
           items:
-            - name: addtabStateChange
-              href: reference/formcontext-ui-tabs/addtabStateChange.md
             - name: addtabStateChange
               href: reference/formcontext-ui-tabs/addtabStateChange.md
             - name: getDisplayState
@@ -500,7 +514,7 @@
               href: reference/formcontext-ui-sections/setLabel.md
             - name: setVisible
               href: reference/formcontext-ui-sections/setVisible.md
-        - name: グリッドとサブグリッド
+        - name: グリッドおよびサブグリッド
           href: reference/grids.md
           items:
             - name: GridControl
@@ -524,13 +538,13 @@
                   href: reference/grids/gridcontrol/getViewSelector.md
                 - name: openRelatedGrid
                   href: reference/grids/gridcontrol/openRelatedGrid.md
-                - name: refresh
+                - name: 最新の情報に更新
                   href: reference/grids/gridcontrol/refresh.md
                 - name: refreshRibbon
                   href: reference/grids/gridcontrol/refreshRibbon.md
                 - name: removeOnLoad
                   href: reference/grids/gridcontrol/removeOnLoad.md
-            - name: Grid
+            - name: グリッド
               href: reference/grids/grid.md
               items:
                 - name: getRows
@@ -604,6 +618,8 @@
         - name: Xrm.Navigation
           href: reference/xrm-navigation.md
           items:
+            - name: 移動先
+              href: reference/xrm-navigation/navigateTo.md
             - name: openAlertDialog
               href: reference/xrm-navigation/openAlertDialog.md
             - name: openConfirmDialog
@@ -635,7 +651,7 @@
             - name: getGlobalContext
               href: reference/xrm-utility/getGlobalContext.md
               items:
-                - name: client
+                - name: クライアント
                   href: reference/xrm-utility/getGlobalContext/client.md
                 - name: organizationSettings
                   href: reference/xrm-utility/getGlobalContext/organizationSettings.md

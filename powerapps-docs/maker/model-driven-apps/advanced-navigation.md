@@ -1,7 +1,7 @@
 ---
 title: PowerApps でアプリ、ソリューション エクスプローラー、設定にナビゲートする | Microsoft Docs
 description: PowerApps で高度なアプリの作成とカスタマイズ領域を特定する方法を説明します
-keywords: null
+keywords: ''
 author: Mattp123
 ms.author: matp
 manager: kvivek
@@ -13,31 +13,36 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 60281cab-23d5-4421-ae51-f7e6c1176729
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9e28fdd31aa77a718f3a805214900954afcc3a74
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752287"
 ---
-
 # <a name="navigate-to-advanced-model-driven-app-making-and-customization-areas"></a>高度なモデル駆動型アプリの作成とカスタマイズ領域にナビゲートする
 
-このトピックでは、PowerApps 環境内で使用された高度なカスタマイズおよび管理領域にアクセスする方法について説明します。
+このトピックでは、PowerApps 環境で使用する高度なカスタマイズおよび管理領域にアクセスする方法について説明します。
 
-## <a name="solutions"></a>ソリューション 
+## <a name="solutions"></a>ソリューション
 ソリューション領域は、アンマネージド ソリューションの表示、編集、作成、インポート、エクスポート、および削除する場所です。 
 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 2.  左のナビゲーション ウィンドウで、**ソリューション** を選択します。 
 
 ## <a name="solution-explorer"></a>ソリューション エクスプローラー
 PowerApps ホーム ページから完了できないアプリの作成およびカスタマイズ タスクを実行するには、ソリューション エクスプローラーを使用します。
 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
 2.  左のナビゲーション ウィンドウで、**ソリューション** を選択します。  
 3.  ツールバーの **クラシックに切り替え** を選択して **すべてのソリューション** ビューを開きます。 
     リストでソリューションを選択する場合、**クラシックに切り替え**コマンドは使用できないことに注意してください。
@@ -47,7 +52,7 @@ PowerApps ホーム ページから完了できないアプリの作成および
 アプリ領域では、環境内で特権のあるすべてのモデル駆動型およびキャンバスがリストされます。 アプリの起動に加えて、アプリ領域からセキュリティ ロールを割り当てることもできます。 
 
 アプリを共有するには:
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 2.  **アプリ**を選択します。
  
@@ -64,7 +69,7 @@ PowerApps ホーム ページから完了できないアプリの作成および
 まず、必要な設定が ![[設定] アイコン](media/powerapps-gear.png)  > **高度なカスタマイズ** メニューにあるかどうかを確認します。
 
 **高度なカスタマイズ**から使用可能な設定を見つけるには:  
-1.  PowerApps のモデル駆動型アプリから、アプリ ツールバーの **設定** ![設定](../model-driven-apps/media/powerapps-gear.png)を選択し、その後**詳細設定**を選択します。 
+1.  PowerApps のモデル駆動型アプリから、アプリ ツールバーの **設定** ![設定](../model-driven-apps/media/powerapps-gear.png) を選択し、その後 **詳細設定** を選択します。 
 2.  **設定** を選択し、その後希望の設定領域を選択します。
 
     > [!div class="mx-imgBorder"] 

@@ -1,5 +1,5 @@
 ---
-title: 複数言語をサポートするためのラベルのカスタマイズ (Common Data Service) | Microsoft Docs
+title: ラベルのカスタマイズして複数言語に対応する (Common Data Service) | Microsoft Docs
 description: 複数の言語をサポートするためのラベルのカスタマイズについて学習します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 759dcce9d209a904a1c8f0705414eccb88216e26
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752999"
 ---
 # <a name="customize-labels-to-support-multiple-languages"></a>複数言語をサポートするためのラベルのカスタマイズ
 
@@ -28,7 +34,7 @@ Common Data Service でカスタマイズを作成するときは、ラベルを
 |<xref:Microsoft.Xrm.Sdk.Label> クラス|<xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" />|
 |<xref:Microsoft.Xrm.Sdk.LocalizedLabel> クラス|<xref href="Microsoft.Dynamics.CRM.LocalizedLabel?text=LocalizedLabel ComplexType" />|
 
- ラベルは、クライアント アプリケーションでユーザーに表示されるローカライズされた文字列です。 それらは、言語パックをサポートする `Label` (<xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" /> または <xref:Microsoft.Xrm.Sdk.Label> クラス) を使用して実装されます。 エンティティの表示名やオプション セット内のオプションなど、ユーザーに表示される文字列は複数の言語で保存できます。 ユーザーは Common Data Service でフォームおよびビューに表示する言語を選択できます。  
+ ラベルは、クライアント アプリケーションでユーザーに表示されるローカライズされた文字列です。 それらは、言語パックをサポートする `Label` (<xref href="Microsoft.Dynamics.CRM.Label?text=Label ComplexType" /> または <xref:Microsoft.Xrm.Sdk.Label> クラス) を使用して実装されます。 エンティティの表示名やオプション セット内のオプションなど、ユーザーに表示される文字列は複数の言語で保存できます。 ユーザーは、Common Data Service のフォームおよびビューに表示する言語を選択できます。  
 
  次の表に、`Label` を使用するすべてのメタデータの一覧を示します。  
 
@@ -75,7 +81,7 @@ Common Data Service でカスタマイズを作成するときは、ラベルを
 
  エクスポートされたテキストは、Office Excel を使用して開く CrmTranslations.xml を含む、圧縮ファイルとして保存されます。 翻訳担当者、翻訳会社、およびローカリゼーション会社にはこのファイルを送信できます。  
 
- 詳細は、[Office 2003 XML リファレンス スキーマ](http://www.microsoft.com/downloads/details.aspx?FamilyID=fe118952-3547-420a-a412-00a2662442d9)を参照してください。  
+ 詳細は、[Office 2003 XML リファレンス スキーマ](https://www.microsoft.com/downloads/details.aspx?FamilyID=fe118952-3547-420a-a412-00a2662442d9)を参照してください。  
 
 ### <a name="import-translated-text"></a>翻訳されたテキストのインポート  
  カスタマイズされたエンティティまたは属性のテキストをエクスポートし、翻訳したら、`ImportTranslation` メッセージ (<xref href="Microsoft.Dynamics.CRM.ImportTranslation?text=ImportTranslation Action" /> または <xref:Microsoft.Crm.Sdk.Messages.ImportTranslationRequest> クラス) を使用して、Web アプリケーション内に翻訳済みのテキスト文字列をインポートすることができます。 インポートするファイルは、エクスポートされたときの CrmTranslations.xml および [Content_Types].xml ファイルを格納する圧縮ファイルである必要があります。  
@@ -83,14 +89,14 @@ Common Data Service でカスタマイズを作成するときは、ラベルを
  完了した翻訳をインポートした後、カスタマイズされたテキストは、そのテキストの翻訳後の言語を使用するユーザーに表示されます。  
 
 > [!NOTE]
-> Common Data Service は 500 文字を超える長さの翻訳済みテキストをインポートすることができません。 翻訳ファイル内の任意のアイテムが 500 文字を超える長さの場合、インポート プロセスは失敗します。 インポート プロセスが失敗した場合は、失敗の原因となったファイル中の行を確認し、文字数を減らしてから再度インポートを試みてください。  
+> Common Data Service では、500 文字を超える長さの翻訳済みテキストをインポートすることはできません。 翻訳ファイル内の任意のアイテムが 500 文字を超える長さの場合、インポート プロセスは失敗します。 インポート プロセスが失敗した場合は、失敗の原因となったファイル中の行を確認し、文字数を減らしてから再度インポートを試みてください。  
 
- カスタマイズは基本言語でのみサポートされるので、Common Data Service で言語選択で設定した基本言語で作業する場合があります。 翻訳済みテキストが表示されることを確認するには、Common Data Service のユーザー インターフェイスの言語選択を変更する必要があります。 カスタマイズに関する追加の作業を行うには、基本言語に戻す必要があります。  
+ カスタマイズは基本言語でのみサポートされるので、言語選択で設定した基本言語で Common Data Service を操作している可能性があります。 翻訳済みテキストが表示されることを確認するには、Common Data Service のユーザー インターフェイスの言語選択を変更する必要があります。 カスタマイズに関する追加の作業を行うには、基本言語に戻す必要があります。  
 
 <a name="BKMK_ManagingLanguages"></a>   
 
 ## <a name="manage-languages-for-your-organization"></a>組織で使用する言語の管理  
- Common Data Service ではサーバー上に複数の言語パックをインストールして、ユーザーが言語パックを選択することができます。 言語パックをインストールする方法については、[言語を有効にする](/dynamics365/customer-engagement/admin/enable-languages) を参照してください。 このセクションには、組織のためにインストールされた言語の管理で使用するメッセージに関する情報が含まれています。  
+ Common Data Service では、サーバー上に複数の言語パックをインストールして、ユーザーが言語パックを選択できるようにすることができます。 言語パックをインストールする方法については、[言語を有効にする](/dynamics365/customer-engagement/admin/enable-languages) を参照してください。 このセクションには、組織のためにインストールされた言語の管理で使用するメッセージに関する情報が含まれています。  
 
  次の表に、言語パックを操作する際に使用するメッセージを示します。 これらのメッセージは <xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Execute*> メソッドとともに使用します。  
 

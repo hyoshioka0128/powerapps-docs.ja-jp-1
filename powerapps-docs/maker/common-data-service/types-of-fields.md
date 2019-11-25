@@ -4,28 +4,34 @@ description: アプリケーションで使用可能な異なるフィールド 
 keywords: ''
 ms.date: 09/30/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 734b4ffa-5543-4f88-8517-299589f433f7
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cf8a30ae29712804cea2da42b0e448acc6286553
+ms.sourcegitcommit: e4b3b6b610f91a0c704a4fa87c6ec238aa81d25f
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "2767244"
 ---
 # <a name="types-of-fields"></a>フィールドの種類
 
-種類に使用される名前は、使用するデザイナーによって異なります。 [PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では、データの形式が決定される方法が含まれる規則が使用されています。 ソリューション エクスプローラーの種類では、形式修飾子を持つデータベース データ型に沿った名前が使用されます。 次の表には、対応する `AttributeTypeDisplayName` API の種類が含まれています。
+種類に使用される名前は、使用するデザイナーによって異なります。 [PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では、データの形式が決定される方法が含まれる規則が使用されています。 ソリューション エクスプローラーの種類では、形式修飾子を持つデータベース データ型に沿った名前が使用されます。 次の表には、対応する `AttributeTypeDisplayName` API の種類が含まれています。
 
 |ポータルのデータの種類 |ソリューション エクスプローラーの種類| API の種類|
 |--|--|--|
@@ -37,8 +43,9 @@ search.app:
 |**10 進数**|**10 進数**|`DecimalType`|
 |**期間**|**整数**<br />*期間*の形式|`IntegerType`|
 |**電子メール**|**1 行テキスト**<br />*メール*形式|`StringType`|
+|**ファイル** | **ファイル**   | `FileType`  |
 |**浮動小数点数**|**浮動小数点数**|`DoubleType`|
-|**画像**|**画像**|`ImageType`|
+|**イメージ**|**イメージ**|`ImageType`|
 |**言語**|**整数**<br />*言語*形式|`IntegerType`|
 |**検索**|**検索**|`LookupType`|
 |**複数選択オプション セット**|**MultiSelect オプション セット**|`MultiSelectPicklistType`|
@@ -152,7 +159,6 @@ search.app:
 <a name="BKMK_ImageFields"></a>
 
 ## <a name="image-fields"></a>イメージ フィールド  
-
 イメージ フィールドを使用して、アプリケーションにレコードごとに単一の画像を表示します。 各エンティティでは 1 だけイメージ フィールドを設定できます。 標準エンティティではなく、ユーザー定義エンティティにイメージにフィールドを追加できます。 一部の標準エンティティには、イメージ フィールドが定義されています。
   
 エンティティにイメージ フィールドであっても、モデル駆動型アプリにイメージを表示するには 2 つの設定を設定を有効にする必要があります。 
@@ -164,7 +170,7 @@ search.app:
 > [!div class="mx-imgBorder"] 
 > ![既定のエンティティ イメージ](../common-data-service/media/account-record-default-image.png "既定のアカウント エンティティ イメージ")
   
-ユーザーは既定イメージを選択して、各自のコンピューターから写真をアップロードすることができます。 イメージは 5120 KB 未満で、次の形式の 1 つである必要があります。  
+ユーザーは既定イメージを選択して、各自のコンピューターから写真をアップロードすることができます。 イメージは 10 MB 未満で、次の形式の 1 つである必要があります。  
   
 - jpg
 - jpeg
@@ -176,7 +182,24 @@ search.app:
   
 イメージをアップロードするとき、.jpg 形式に変換され、すべてのダウンロードされた画像もこの形式を使用します。 動画の .gif をアップロードした場合、最初のフレームのみが保存されます。  
   
-イメージをアップロードすると、144 x 144 ピクセルの最大サイズまでサイズ変更されます。 ユーザーはイメージがこのサイズで問題なく表示されるように、それをアップロードする前にサイズ変更するか端を切り取る必要があります。 すべての画像は正方形に切り取られます。 イメージの両側が 144 ピクセルより小さければ、イメージは小さなほうの側面に合わせて正方形に切り取られます。  
+イメージをアップロードすると、サムネイル画像として 144 x 144 ピクセルの最大サイズまでサイズ変更されます。 ユーザーはイメージがこのサイズで問題なく表示されるように、それをアップロードする前にサイズ変更するか端を切り取る必要があります。 すべての画像は正方形に切り取られます。 イメージの両側が 144 ピクセルより小さければ、イメージは小さなほうの側面に合わせて正方形に切り取られます。  
+
+<!-- 
+By default, when an app user adds an image to display to a form or canvas app, the image displayed is the thumbnail image. To display a full image for a canvas app, see [Display a full-sized image on a canvas app form](../canvas-apps/display-full-image-on-form.md).
+
+
+### Add an image field to an entity using the PowerApps site
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+1. Sign in to [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+2.  Select **Data** > **Entities** and then select the entity where you want to add an image field. 
+3. Select **Add field** on the command bar, enter the following properties, and then select **Done**: 
+   - **Display name**. Enter a friendly name for the field. 
+   - **Data type**. Select **Image**. 
+   - **Primary image**. When selected, the primary image field becomes the image field for the entity. You can only have one primary image for each entity. 
+   - **Maximum image size**. The maximum file size that an app user can upload to the record. 10,240 KB is the default maximum size and 10 MB is the maximum size limit. 
+   - **Can store full images**. When selected, in addition to the rescaled thumbnail image described earlier, the full image is stored when uploaded by the user for each record. Full size images are limited to 30 MB.  -->
 
 ### <a name="add-image-support-for-a-form-in-a-custom-entity-using-solution-explorer"></a>ソリューション エクスプローラーを使用してユーザー定義エンティティのフォームに関するイメージ サポートを追加
 1. [ソリューション エクスプローラー](../model-driven-apps/advanced-navigation.md#solution-explorer)を開きます。 
@@ -186,7 +209,8 @@ search.app:
 5. *ユーザー定義エンティティ イメージ*などの **表示名** を入力します。 
 6. 必要に応じて、そのほかのフィールドに入力します。 **Name**、**Field Requirement**、**Searchable** フィールドは、変更できないことに注意してください。 **保存して閉じる**を選択します。 
 7. **プライマリ イメージ** プロパティの横のエンティティ定義で、値が前の手順で作成したカスタム イメージに設定されていることを確認します。 そうでない場合は選択します。  
-    ![プライマリ イメージ プロパティを選択](media/primary-image-property.png)
+    > [!div class="mx-imgBorder"] 
+    > ![プライマリ イメージ プロパティを選択](media/primary-image-property.png "プライマリ イメージ プロパティを選択")
 
 8.  イメージ サポートが必要なフォームを開きます (エンティティ メイン フォームなど)。 
 9.  フォーム エディター リボンで、**フォーム プロパティ** を開きます。 
@@ -202,16 +226,30 @@ search.app:
 > [!IMPORTANT]
 > レコードが、保存されていない新しいレコードの場合、イメージを変更しようとすると無効な引数エラーが返されます。 
 
-#### <a name="change-the-image-for-a-record"></a>レコードに関するイメージを変更
+### <a name="change-the-image-for-a-record"></a>レコードに関するイメージを変更
+エンティティ フォームに画像フィールドがある場合、アプリのユーザーは特定のレコードに関する画像を変更できます。 
+
 1. エンティティ フォームが含まれたアプリを開き、フォームでイメージを選択します。 
    > [!div class="mx-imgBorder"] 
    > ![既定のエンティティ イメージ](../common-data-service/media/default-entity-image-on-form.png "既定のエンティティ イメージ")
 
 2. **イメージをアップロード** を選択し、エンティティ フォームに表示するイメージを参照して選択し、**変更** を選択します。 イメージがレコードに表示されます。 
    > [!div class="mx-imgBorder"] 
-   > ![レコードに保存される変更されたイメージ](../common-data-service/media/custom-entity-icon-record.png "レコードに保存される変更されたイメージ")
+   > ![レコードに保存される変更されたイメージ](../common-data-service/media/custom-entity-icon-record.png "レコードに保存される変更済みのイメージ")
 
 
 画像データを操作する開発者の詳細:
 - [エンティティ メタデータ > エンティティ イメージ](/powerapps/developer/common-data-service/entity-metadata#entity-images)
 - [イメージ属性](/powerapps/developer/common-data-service/image-attributes)
+
+
+## <a name="file-fields"></a>ファイル フィールド
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+現在、ファイル データの種類はキャンバス アプリとフローでのみ使用できます。 
+
+**ファイル** フィールドはバイナリ データを格納するために使用されます。 このフィールドの主目的の一つは、単一のイメージ、メモ、添付ファイルを保存することです。 ただし、そのほかの形式のバイナリ データの保存もできます。 このデータの種類に対して一つ以上のフィールドで、カスタマイズ可能な既存の標準のエンティティまたはユーザー定義エンティティに追加できます。
+
+既定の **最大ファイル サイズ** は 32 MBで、設定できる最大のサイズは128 MBです。 ファイル サイズ制限は、エンティティに追加するファイルの種類別のフィールドに個別に設定できます。 
+
+ファイル データを操作する開発者のための詳細: [ファイル属性](/powerapps/developer/common-data-service/file-attributes)

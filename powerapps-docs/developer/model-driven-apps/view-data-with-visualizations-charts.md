@@ -1,6 +1,6 @@
 ---
 title: ビジュアル化を使用したデータの表示 (グラフ) (モデル駆動型アプリ) | MicrosoftDocs
-description: ビジュアル化を使用すると、ビジネス データを視覚的に表示することができます。 ビジュアル化は、Common Data Service のエンティティに添付されます。 複数のビジュアル化を1つのエンティティに添付できますが、1つのビジュアル化だけグリッドの横で一度に表示できます。 ダッシュボードを使用すると、同時に複数のビジュアル化を表示できます。
+description: ビジュアル化を使用すると、ビジネス データを視覚的に表示することができます。 ビジュアル化はCommon Data Serviceのエンティティに添付されます。 複数のビジュアル化を1つのエンティティに添付できますが、1つのビジュアル化だけグリッドの横で一度に表示できます。 ダッシュボードを使用すると、同時に複数のビジュアル化を表示できます。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,16 +10,22 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4ede56a8ab217b81580c036e45309db214b273b4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754552"
 ---
 # <a name="view-data-with-visualizations-charts"></a>ビジュアル化を使用したデータの表示 (グラフ)
 
-ビジュアル化を使用すると、ビジネス データを視覚的に表示することができます。 ビジュアル化は、Common Data Service のエンティティに添付されます。 複数のビジュアル化を1つのエンティティに添付できますが、1つのビジュアル化だけグリッドの横で一度に表示できます。 ダッシュボードを使用すると、同時に複数のビジュアル化を表示できます。 詳細情報: [ダッシュボードによるデータの分析](analyze-data-with-dashboards.md)  
+ビジュアル化を使用すると、ビジネス データを視覚的に表示することができます。 ビジュアル化はCommon Data Serviceのエンティティに添付されます。 複数のビジュアル化を1つのエンティティに添付できますが、1つのビジュアル化だけグリッドの横で一度に表示できます。 ダッシュボードを使用すると、同時に複数のビジュアル化を表示できます。 詳細情報: [ダッシュボードによるデータの分析](analyze-data-with-dashboards.md)  
   
- Common Data Service ではグラフまたは Web リソースをビジュアル化として使用できます。 グラフの場合、モデル駆動型アプリのグラフ デザイナーを使用できます。 ただし、ビジュアル化で Web リソースを使用するには、SDK を使用するか、カスタム ビジュアル化 XML を モデル駆動型アプリにインポートする必要があります。
+ Common Data Service では、グラフまたは Web リソースをビジュアル化として使用できます。 グラフの場合、モデル駆動型アプリのグラフ デザイナーを使用できます。 ただし、ビジュアル化で Web リソースを使用するには、SDK を使用するか、カスタム ビジュアル化 XML を モデル駆動型アプリにインポートする必要があります。
   
 <a name="VisualizationTypes"></a>   
 ## <a name="visualization-ownership"></a>ビジュアル化の所有権  
@@ -33,7 +39,7 @@ search.app:
   
 <a name="Charts"></a>   
 ## <a name="chart-visualizations"></a>グラフのビジュアル化  
- グラフを使用して、グリッド データの概要を表示できます。 グラフは、Microsoft Chart Controls for Microsoft .NET Framework 3.5 を使用して構築されます。 Microsoft Chart Controls の詳細については、[ダウンロード: .NET Framework のグラフ コントロール](http://go.microsoft.com/fwlink/p/?LinkId=128852) を参照してください。  
+ グラフを使用して、グリッド データの概要を表示できます。 グラフは、Microsoft Chart Controls for Microsoft .NET Framework 3.5 を使用して構築されます。 Microsoft Chart Controls の詳細については、[ダウンロード: .NET Framework のグラフ コントロール](https://go.microsoft.com/fwlink/p/?LinkId=128852) を参照してください。  
   
  これらのグラフは、Web アプリケーションでグリッドと統合されます。 フィルター (クエリ) をグリッドのデータに適用すると、フィルターはグラフにも適用され、それに応じてグラフが更新されます。 同様に、グラフに対してドリルダウン操作を実行すると、グリッド データが自動的に更新されます。  
   
@@ -47,7 +53,7 @@ search.app:
 ### <a name="chart-types-in-microsoft-chart-controls"></a>Microsoft グラフ コントロールのグラフの種類  
  Microsoft Chart Controls はモデル駆動型アプリでグラフを構築するために使用されます。 Microsoft Chart Controls では、縦棒グラフ、横棒グラフ、面グラフ、積み上げ棒グラフ、折れ線グラフ、バブル チャート、円グラフなどさまざまな種類のグラフを作成できます。  
   
- Common Data Service で標準的に使用できるグラフの種類は、*縦棒グラフ*、*面グラフ*、*横棒グラフ*、*折れ線グラフ*、*円グラフ*、*じょうご*グラフです。 ただし、データ記述とプレゼンテーション記述のための XML 文字列に、グラフに対応する適切な内容を指定することにより、多系列グラフ、積み上げ棒グラフ、および 100% 積み上げ (比較) グラフなどの、サポートされている他の Microsoft Chart Controls のグラフの種類を作成することで、機能を拡張することができます。 詳細: [グラフ データの指定](understand-charts-underlying-data-chart-representation.md)  
+ Common Data Service で標準的に使用できるグラフの種類は、*縦棒グラフ*、*面*、*横棒グラフ*、*折れ線グラフ*、*円グラフ*、*じょうごグラフ*です。 ただし、データ記述とプレゼンテーション記述のための XML 文字列に、グラフに対応する適切な内容を指定することにより、多系列グラフ、積み上げ棒グラフ、および 100% 積み上げ (比較) グラフなどの、サポートされている他の Microsoft Chart Controls のグラフの種類を作成することで、機能を拡張することができます。 詳細: [グラフ データの指定](understand-charts-underlying-data-chart-representation.md)  
   
 <a name="WebResources"></a>   
 ## <a name="web-resource-visualizations"></a>Web リソースのビジュアル化  
@@ -122,8 +128,8 @@ UoMSchedule
  [グラフの作成](create-visualization-chart.md)   
  [サンプル グラフ](sample-charts.md)   
  [SavedQueryVisualization エンティティ](../common-data-service/reference/entities/savedqueryvisualization.md)   
- [UserQueryVisualization エンティティ](../common-data-service/reference/entities/userqueryvisualization.md) [ダウンロード: .NET Framework 言語パック用 Chart Controls](http://www.microsoft.com/downloads/details.aspx?FamilyId=581FF4E3-749F-4454-A5E3-DE4C463143BD&displaylang=en)   
- [ダウンロード: Visual Studio 用 Chart Controls アドオン](http://www.microsoft.com/downloads/details.aspx?FamilyId=1D69CE13-E1E5-4315-825C-F14D33A303E9&displaylang=en)   
- [ダウンロード: .NET Framework ドキュメント用 Chart Controls](http://go.microsoft.com/fwlink/p/?LinkId=128301)   
- [Microsoft Chart Controls 用サンプル環境](http://code.msdn.microsoft.com/mschart)   
- [Chart Controls フォーラム](http://go.microsoft.com/fwlink/p/?LinkId=128713)
+ [UserQueryVisualization エンティティ](../common-data-service/reference/entities/userqueryvisualization.md) [ダウンロード: .NET Framework 言語パック用 Chart Controls](https://www.microsoft.com/downloads/details.aspx?FamilyId=581FF4E3-749F-4454-A5E3-DE4C463143BD&displaylang=en)   
+ [ダウンロード: Visual Studio 用 Chart Controls アドオン](https://www.microsoft.com/downloads/details.aspx?FamilyId=1D69CE13-E1E5-4315-825C-F14D33A303E9&displaylang=en)   
+ [ダウンロード: .NET Framework ドキュメント用 Chart Controls](https://go.microsoft.com/fwlink/p/?LinkId=128301)   
+ [Microsoft Chart Controls 用サンプル環境](https://code.msdn.microsoft.com/mschart)   
+ [Chart Controls フォーラム](https://go.microsoft.com/fwlink/p/?LinkId=128713)

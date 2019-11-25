@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: 相互ロールによるつながりの照会 (Common Data Service) | Microsoft Docs'
+title: 'サンプル: 相互ロールによる接続のクエリ (Common Data Service) | Microsoft Docs'
 description: このサンプルは、相互関係ロールによりつながりを照会する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 35237064a89309f2345e92122479ad059369a495
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749309"
 ---
 # <a name="sample-query-connections-by-reciprocal-roles"></a>サンプル: 相互ロールによるつながりの照会
 

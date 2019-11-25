@@ -5,18 +5,23 @@ ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 14c5fbbc-98db-4e49-b245-2c84c1cd11cd
 author: mayadumesh
 ms.author: jdaly
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d64aa3a4802917f0ed03dec5c22cafaffcd5ce5f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753703"
 ---
-
 # <a name="get-started-with-virtual-entities"></a>仮想エンティティに関する入門情報
 
 仮想エンティティは、 Common Data Service のエンティティとしてシームレスに表すことで、データの重複なしに、また、多くの場合、カスタム コーディングなしに、外部システムに存在するデータの統合を可能にします。 この機能の初期実装では、このようなエンティティに対して読み取り専用サポートのみを提供し、下の [仮想エンティティの制限](#limitations-of-virtual-entities) で説明されているその他のいくつかの制限があります。 これらの制限を除いて、仮想エンティティは他のユーザー定義エンティティと同じ様に動作します。 
@@ -34,7 +39,7 @@ search.app:
 A data provider is a particular type of Common Data Service plug-in, which is registered against CRUD events that occur in the platform. This initial release only supports READ operations. More information: [Write a plug-in](../write-plugin.md) -->
 
 次のデータ プロバイダーは Common Data Service に付属します。
-- [OData v4](http://www.odata.org/documentation/) プロバイダーがサービスに含まれており、既定でインストールされます。
+- [OData v4](https://www.odata.org/documentation/) プロバイダーがサービスに含まれており、既定でインストールされます。
 - [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db) (以前の *Microsoft ドキュメント DB*) プロバイダーは [AppSource](https://appsource.microsoft.com) から入手できます。
 
 追加のプロバイダーが、Microsoft、そのパートナー、およびサード パーティによって使用可能になります。 外部データ ソースのデータ プロバイダーが見つからない場合、 *ユーザー定義仮想エンティティ データ プロバイダー* を開発することができます。詳細については、 [仮想エンティティ データ プロバイダー](custom-ve-data-providers.md) を参照してください。

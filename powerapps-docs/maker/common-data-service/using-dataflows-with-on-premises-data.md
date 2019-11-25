@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4a47f082520b4680c9045209f85c26beb3586875
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752243"
 ---
 # <a name="using-an-on-premises-data-gateway-in-power-platform-dataflows"></a>Power Platform データフローでオンプレミス データ ゲートウェイを使う
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -46,7 +52,7 @@ Power Platform データフローと、オンプレミス SQL Server データ�
 
 ## <a name="prerequisites"></a>前提条件
 
--   PowerApps アカウント。 持っていない場合は、 [30 日間無料でサインアップできます](https://docs.microsoft.com/en-us/powerapps/maker/signup-for-powerapps)。
+-   PowerApps アカウント。 持っていない場合は、 [30 日間無料でサインアップできます](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)。
 
 -   ゲートウェイの管理者権限。 これらのアクセス許可は、インストールするゲートウェイにより既定で提供されます。 管理者が、他のユーザーにゲートウェイのアクセス許可を与えることができます。 
 
@@ -55,11 +61,11 @@ Power Platform データフローと、オンプレミス SQL Server データ�
 -   ゲートウェイおよびオンプレミス接続は、ユーザーの既定の環境で作成および使用できます。 詳細: [環境および Microsoft PowerApps に関する作業](../canvas-apps/working-with-environments.md)
 
 ## <a name="install-a-gateway"></a>ゲートウェイをインストールする
-1.  [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の左側のナビゲーション ウィンドウで、**ゲートウェイ**を選択します。
+1.  [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の左側のナビゲーション ウィンドウで、**ゲートウェイ**を選択します。
 
     ![左側のナビゲーション バーのゲートウェイ](media/nav-pane-gateways.png)
 
-2.  一覧からゲートウェイを選択してください。 ゲートウェイの管理者権限がない場合、[ゲートウェイをすぐにインストール](http://go.microsoft.com/fwlink/?LinkID=820931)を選択し、ウィザードのプロンプトに従います。
+2.  一覧からゲートウェイを選択してください。 ゲートウェイの管理者権限がない場合、[ゲートウェイをすぐにインストール](https://go.microsoft.com/fwlink/?LinkID=820931)を選択し、ウィザードのプロンプトに従います。
 
      ![ゲートウェイ インストール](media/install-gateway-now.png)
 
@@ -81,7 +87,7 @@ Power Platform データフローと、オンプレミス SQL Server データ�
 
 
 ## <a name="view-and-manage-gateway-permissions"></a>ゲートウェイのアクセス許可を表示および管理する
-1.  [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の左側のナビゲーション ウィンドウで、**ゲートウェイ** を選択して、目的のゲートウェイを選択します。
+1.  [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の左側のナビゲーション ウィンドウで、**ゲートウェイ** を選択して、目的のゲートウェイを選択します。
 
 2.  ゲートウェイにユーザーを追加するには、**ユーザー** を選択してユーザーまたはグループを指定し、アクセス許可レベルを指定します。
 

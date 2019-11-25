@@ -9,23 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 32fb0c402fce458f728b44c63e337fe07b36fd76
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754656"
 ---
-
-
 <!--note from editor: I think "dataflows" should be lowercase based on this entry in the Microsoft style guide (scroll down to find dataflows): https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=42299 -->
 
 
@@ -59,7 +63,7 @@ Common Data Model で使用される、ビジネス、分析的アプリケー�
 > データフローを使用するには、有料の PowerApps プランを使用する必要がありますが、データフローを使用することによって別々に請求されることはありません。 
 
 ### <a name="load-data-to-common-data-service"></a>Common Data Service へのデータの読み込み
-PowerApps アプリケーションで使用される [Common Data Service](https://docs.microsoft.com/en-us/powerapps/maker/common-data-service/data-platform-intro) のエンティティを設定しても使用できます。 数回のクリック操作で、オンラインのデータとオンプレミスのソース データのソースを統合できます。
+PowerApps アプリケーションで使用される [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro) のエンティティを設定しても使用できます。 数回のクリック操作で、オンラインのデータとオンプレミスのソース データのソースを統合できます。
 
 <!--from editor: In the last sentence above, should it change to "...on-premises data sources." ? -->
 
@@ -70,7 +74,7 @@ Common Data Model で拡張、ビルドを行う組織の場合、データフ�
 ### <a name="extend-your-capabilities-with-azure-data-and-ai-services"></a>Azure Data and AI サービスで機能を拡張する
 Power Platform データフローでは、データフローのデータを Azure Data Lake Storage Gen2 のアカウントに格納するように設定できます。 環境が組織の Data Lake に接続すると、データ科学者および開発者は、Azure Machine Learning、Azure Databricks、Azure Data Factoryなどの強力な Azure 製品を活用できます。
 
-組織の Azure Data Lake に存在するデータフローを作成する方法など Azure Data Lake Storage Gen2 とデータフローとの統合の詳細については、 [データフローと Azure Data Lake の統合（プレビュー）](/power-bi/service-dataflows-azure-data-lake-integration)を参照してください。
+組織の Azure Data Lake に存在するデータフローを作成する方法など Azure Data Lake Storage Gen2 とデータフローとの統合の詳細については、 [ Azure Data Lake Storage Gen2 をデータフロー ストレージに接続 (プレビュー)](connect-azure-data-lake-storage-for-dataflow.md)を参照してください。
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-powerapps"></a>PowerApps のビッグ データのための、セルフサービス データの準備の概要
 データフローを使用すればビジネス データからより優れた制御とより高速のインサイトを実行できるという複数のシナリオと例があります。 組織内の他のユーザーは、Common Data Service、Power BI の Power Platform データフロー コネクタ、あるいは組織の Azure Data Lake Storage Gen2 アカウントのデータフローの **Common Data Service** フォルダーへの直接アクセスのいずれかを介することによってデータフローを活用できます。 Common Data Model で定義された標準データモデル（スキーマ）を使用すると、ビジネス アプリケーションはエンティティのスキーマに依存し、データがどのように作成されたのか、またはどのデータソースからなのかを抽出できます。 データフローがスケジュールの実行を完了すると、データは、アプリ、フロー、BI インサイトのモデリングと作成の準備を非常に短期間で整えることができます ... かつては、作成に数か月、あるいはそれ以上かかっていました。

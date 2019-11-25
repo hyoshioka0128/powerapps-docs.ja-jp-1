@@ -4,9 +4,9 @@ description: メイン フォームのサブグリッド プロパティにつ�
 Keywords: メイン フォーム; サブグリッドのプロパティ; Dynamics 365
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
 ms.date: 06/07/2018
@@ -14,17 +14,23 @@ ms.service: powerapps
 ms.topic: article
 ms.assetid: 82892cd3-3436-4677-b96b-f2ccd0a4f078
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a6bb86fde69554808f8cbf75f0366dc49ea485f4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759693"
 ---
 # <a name="sub-grid-properties-for-model-driven-app-main-forms-overview"></a>モデル駆動型アプリのメイン フォーム用サブグリッドのプロパティの概要
 
 レコードまたはグラフの一覧を表示するフォーム上のサブグリッドを構成することができます。 一覧ではなくグラフを表示するには、**ディスプレイ**タブの**グラフのみを示します**を選択します。  
 
 PowerApps サイトから **サブグリッド プロパティ** にアクセスできます。 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
 
      ![モデル駆動型の設計モード](media/model-driven-switch.png)
 
@@ -59,14 +65,14 @@ PowerApps サイトから **サブグリッド プロパティ** にアクセス
   
 
 ## <a name="show-list-behavior"></a>リストの表示動作  
- [更新されたフォーム](main-form-presentations.md#updated-forms) を使用するフォームにリストを表示するとき、フォーム エディターのナビゲーション領域に含まれるエンティティの一部としてエンティティも表示される場合は、各サブグリッドの右上隅に**ビューを開く**ボタン ![[ビューを開く] ボタン](media/crm-itpro-cust-openview.PNG "[ビューを開く] ボタン") が表示されます。 このボタンを選択すると、ビューが開きます。 動作は、**レコード**プロパティに選択したオプションに応じて異なります。  
+ [更新されたフォーム](main-form-presentations.md#updated-forms) でフォームの一覧を表示する場合、各サブグリッドには右上隅に **ビューを開く** ボタン ![ビューを開くボタン](media/crm-itpro-cust-openview.PNG "[ビューを開く] ボタン") が表示されます。エンティティもフォーム エディターのナビゲーション領域に含まれるエンティティの 1 つとして表示されます。 このボタンを選択すると、ビューが開きます。 動作は、**レコード**プロパティに選択したオプションに応じて異なります。  
   
  **関連レコードのみ**を選択すると、ビューが同じウィンドウで関連ビューの 1 つを使用して開きます。 フォームに戻るには、[戻る] ボタンを使用するかナビゲーション バーの現在のレコードのプライマリ名の値を選択します。  
   
  **すべてのレコードの種類**を選択すると、ビューは新しいウィンドウで開かれます。  
 
 ## <a name="add-record-behavior"></a>レコードの動作を追加する  
- [更新されたフォーム](main-form-presentations.md#updated-forms) を使用するフォームにリストを表示するとき、各サブグリッドの右上隅に**レコードの追加**ボタン ![[追加] ボタン](media/crm-itpro-cust-subgridadd.PNG "[追加] ボタン") が表示されます。 このボタンを選択すると、レコードを追加することができます。 この動作は、**レコード**プロパティに選択したオプションによって、また検索が活動レコードであるかどうかによって異なります。  
+ [更新されたフォーム](main-form-presentations.md#updated-forms) を使用するフォームにリストを表示するとき、各サブグリッドの右上隅に**レコードの追加**ボタン![追加ボタン](media/crm-itpro-cust-subgridadd.PNG "[追加] ボタン") が表示されます。 このボタンを選択すると、レコードを追加することができます。 この動作は、**レコード**プロパティに選択したオプションによって、また検索が活動レコードであるかどうかによって異なります。  
   
  **関連レコードのみ**を選択すると、既定で、既存のレコードを追加します。 既存レコードを検索するインライン検索がまず表示されます。 これにより、重複レコードを作成することを防げます。  既存レコードが見つからない場合は、**新規**のオプションを選択できます。 新しいレコードを作成すると、関連付けで定義されるフィールドのマッピングが適用されます。 詳細情報: [エンティティ フィールドのマップ](../common-data-service/map-entity-fields.md)   
   
@@ -75,7 +81,7 @@ PowerApps サイトから **サブグリッド プロパティ** にアクセス
  サブグリッドに活動が表示される場合、ユーザーはまず活動の種類を選択する必要があり、それから"新規レコードを追加する"動作が表示されます。  
   
 ## <a name="delete-record-behavior"></a>レコードの削除動作  
- サブグリッド内でレコードを選択するときは、行の右側に**削除**ボタン ![サブリストの削除アイコン](media/crm-itpro-cust-subgriddelete.PNG "サブリストの削除アイコン") が表示されます。 この削除アクションの動作は、現在のエンティティとの関連付けの種類によって異なります。  
+ サブグリッド内でレコードを選択するときは、行の右側に**削除**ボタン ![サブリストの削除アイコン](media/crm-itpro-cust-subgriddelete.PNG "サブリストの削除アイコン")が表示されます。 この削除アクションの動作は、現在のエンティティとの関連付けの種類によって異なります。  
   
  サブグリッドが 1:N (1 対多数) の関連付けを使用する場合、一般的なレコードの削除動作とは、レコードを削除する前に確認ダイアログを示すことです。  
   

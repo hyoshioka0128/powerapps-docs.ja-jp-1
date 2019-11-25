@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: QueryExpression クラスを使用した複数の取得 (Common Data Service) | Microsoft Docs'
+title: 'サンプル: QueryExpression を使用した複数の取得 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、QueryExpression を使用して複数を取得する方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7f85fe38e5f300d0f5a7a1a2d4e796837054bf9f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749297"
 ---
 # <a name="sample-retrieve-multiple-with-the-queryexpression-class"></a>サンプル: QueryExpression クラスを使用した複数取得
 

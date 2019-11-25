@@ -10,18 +10,24 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 60d552a0f5a03513e758775571868eeeba3665cf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754568"
 ---
 # <a name="ribbon-types-schema"></a>リボン タイプのスキーマ
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/ribbon-types-schema -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/ribbon-types-schema -->
 
 以下は、インポート/エクスポート カスタマイズ ファイルのリボンのタイプ部分のスキーマ定義です。 リボン タイプのスキーマは、[リボン コアのスキーマ](ribbon-core-schema.md)から取り込まれています。 スキーマの ZIP ファイルをダウンロードすると、`Schemas\9.0.0.2090\RibbonTypes.xsd` フォルダーにスキーマが見つかります。
 
-[スキーマ](http://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) をダウンロードします。
+[スキーマ](https://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) をダウンロードします。
 
 詳細については、[ソリューションを使用した拡張機能のパッケージ化および配布](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)を参照してください。
 
@@ -30,7 +36,7 @@ search.app:
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="CrmRibbonTypes" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+<xs:schema id="CrmRibbonTypes" xmlns:xs="https://www.w3.org/2001/XMLSchema" >
 
     <!-- Command Definition Types -->
     <xs:complexType name="ActionsType">

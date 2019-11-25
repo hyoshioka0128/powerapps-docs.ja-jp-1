@@ -7,18 +7,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 6df7cccb-071d-4853-8acb-01bceef973ca
 caps.latest.revision: 22
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 573f07f76c9e2d8eb77da5b72d93510a438c2b15
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753663"
 ---
 # <a name="web-api-query-data-sample-client-side-javascript"></a>Web API クエリ データのサンプル (クライアント側の JavaScript)
 
@@ -41,7 +47,7 @@ search.app:
 
 ## <a name="run-this-sample"></a>このサンプルの実行
 
-このサンプルを実行するには、[Microsoft CRM Web API クエリ データ サンプル (クライアント側の JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824050) に移動し、次のサンプル アーカイブ ファイルをダウンロードします: Microsoft CRM Web API クエリ データ サンプル (クライアント側の JavaScript).zip。 サンプル アーカイブの内容を抽出して、WebAPIQueryData_1_0_0_0_managed.zip 管理ソリューションのファイルを確認します。 管理ソリューションを Common Data Service 組織にインポートして、サンプルを実行します。 サンプル ソリューションをインポートする方法の詳細については、[Web API サンプル (クライアント側の JavaScript) ](../web-api-samples-client-side-javascript.md) を参照してください。  
+このサンプルを実行するには、[Microsoft CRM Web API クエリ データ サンプル (クライアント側の JavaScript)](https://go.microsoft.com/fwlink/p/?LinkId=824050) に移動し、次のサンプル アーカイブ ファイルをダウンロードします: Microsoft CRM Web API クエリ データ サンプル (クライアント側の JavaScript).zip。 サンプル アーカイブの内容を抽出して、WebAPIQueryData_1_0_0_0_managed.zip 管理ソリューションのファイルを確認します。 管理ソリューションを Common Data Service 組織にインポートして、サンプルを実行します。 サンプル ソリューションをインポートする方法の詳細については、[Web API サンプル (クライアント側の JavaScript) ](../web-api-samples-client-side-javascript.md) を参照してください。  
   
 <a name="bkmk_codeSample"></a>
 

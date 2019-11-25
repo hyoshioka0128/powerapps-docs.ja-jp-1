@@ -9,17 +9,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 81816457-c963-46ca-b350-615fa75f56a7
 caps.latest.revision: 27
 author: MattB-msft
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bdf7fd2f1fe10d23b0d99d03e9c5652a98dc3dfa
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753627"
 ---
 # <a name="use-powershell-cmdlets-for-xrm-tooling-to-connect-to-common-data-service"></a>XRMツールにPowerShell cmdlets を使用して Common Data Serviceに接続する
 
@@ -89,7 +95,7 @@ PowerShell または PowerShell ISE を管理モードで開き、次のコマ�
       $CRMOrgs  
       ```  
       > [!div class="mx-imgBorder"]
-      > ![Common Data Service組織情報](../media/xrmtooling-powershell-1.png "Common Data Service")
+      > ![Common Data Service 組織情報](../media/xrmtooling-powershell-1.png "Common Data Service")
   
 
 > [!TIP]
@@ -140,11 +146,11 @@ PowerShell または PowerShell ISE を管理モードで開き、次のコマ�
        ```  
 
        > [!div class="mx-imgBorder"]
-       > ![Common Data Service 接続情報と状態](../media/xrm-tooling-powershell-2.png "Common Data Service 接続情報と状態") 
+       > ![Common Data Service 接続情報とステータス](../media/xrm-tooling-powershell-2.png "Common Data Service の接続情報とステータス") 
 
   
 ### <a name="see-also"></a>関連項目
   
 [XRMツールAPIを使用してCommon Data Serviceに接続する](use-crmserviceclient-constructors-connect.md)<br />
 [XRM ツールを使用して Windows のクライアント アプリケーションを作成する](build-windows-client-applications-xrm-tools.md)<br />
-[ブログ: Common Data Serviceでデータ操作およびユーザー設定とシステム設定を行う PowerShell モジュール](http://blogs.msdn.com/b/crm/archive/2015/09/25/powershell-module-for-performing-data-operations-and-manipulating-user-and-system-settings-in-crm.aspx)
+[ブログ: Common Data Serviceでデータ操作およびユーザー設定とシステム設定を行う PowerShell モジュール](https://blogs.msdn.com/b/crm/archive/2015/09/25/powershell-module-for-performing-data-operations-and-manipulating-user-and-system-settings-in-crm.aspx)

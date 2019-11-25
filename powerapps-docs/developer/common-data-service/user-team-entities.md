@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6915cd693589ed0e5d9b41ca96ffb96450d1132c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753739"
 ---
 # <a name="user-and-team-entities"></a>ユーザーとチームのエンティティ
 
@@ -54,10 +60,10 @@ search.app:
 
 ## <a name="community-tools"></a>コミュニティ ツール
 
-**ユーザー設定ユーティリティ** は Common Data Service 用に XrmToolbox コミュニティが開発したツールです。 コミュニティ開発ツールのトピック、[開発者ツール](developer-tools.md) を参照してください。
+**ユーザー設定ユーティリティ**は、Common Data Service 向けに XrmToolbox コミュニティが開発したツールです。 コミュニティ開発ツールのトピック、[開発者ツール](developer-tools.md) を参照してください。
 
 > [!NOTE]
-> コミュニティ ツールは Common Data Service の製品ではなく、コミュニティ ツールに対するサポートは提供されません。
+> コミュニティ ツールは Common Data Service の製品ではなく、コミュニティ ツールに対するサポートは提供しません。
 > このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。
 
 ### <a name="see-also"></a>関連項目  
@@ -71,5 +77,5 @@ search.app:
  [サンプル: ユーザーを無効にする](/dynamics365/customer-engagement/developer/sample-disable-user)   
  [サンプル: GrantAccess、ModifyAccess、および RevokeAccess メッセージを使用したレコードの共有](org-service/samples/share-records-using-grantaccess-modifyaccess-revokeaccess-messages.md)   
  [サンプル: アクセス チームを使用してレコードを共有](org-service/samples/share-record-using-access-team.md)   
- [ブログ: Service Accounts – Non-Interactive Users (サービス アカウント – 非対話型ユーザー)](http://go.microsoft.com/fwlink/p/?LinkId=234350)   
+ [ブログ: Service Accounts – Non-Interactive Users (サービス アカウント – 非対話型ユーザー)](https://go.microsoft.com/fwlink/p/?LinkId=234350)   
  [特権およびロール エンティティ](/dynamics365/customer-engagement/developer/privilege-role-entities)

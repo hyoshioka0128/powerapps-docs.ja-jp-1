@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ab98ceb55faaefdc015fb969daab844428b7b53a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753767"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>マルチ テナント型でのサーバー間認証の使用
 
@@ -84,7 +90,7 @@ search.app:
   
  これらのオプションを使用してプロジェクトを構成すると、このシナリオをサポートする基本的なアプリケーションの [OWIN] ミドルウェアおよびスキャフォールディングを使用するよう構成されます。 基本的な変更を加えれば、[Common Data Service] で動作するように変更することができます。 
   
- 開発用アプリケーションを作成して登録するプロセスについては、[`http://localhost`] を **URL にサインオン**と**返答 URL** 値として使用し、公開前にアプリケーションをローカルでテストしてデバッグすることができます。 アプリの公開前にこれらの値を変更する必要があります。  
+ 開発用アプリケーションを作成して登録するプロセスについては、[`https://localhost`] を **URL にサインオン**と**返答 URL** 値として使用し、公開前にアプリケーションをローカルでテストしてデバッグすることができます。 アプリの公開前にこれらの値を変更する必要があります。  
   
  アプリを登録する場合、`ClientSecret` としても呼ばれるキーを生成する必要があります。 これらのキーは 1 年、または 2 年間構成することができます。 アプリケーションのホストは、この値をパスワードのように扱う必要があり、期限が切れる前にキーの更新を管理する責任があります。 [Key Vault] を使用することができます。 詳細: [https://azure.microsoft.com/services/key-vault/](https://azure.microsoft.com/services/key-vault/)  
   

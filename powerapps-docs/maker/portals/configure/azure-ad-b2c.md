@@ -1,6 +1,6 @@
 ---
-title: ポータルの Azure AD B2C プロバイダーの設定 |MicrosoftDocs
-description: ポータルの Azure AD B2C プロバイダー設定を有効にする手順。
+title: ポータルの Azure AD B2C プロバイダー設定 | MicrosoftDocs
+description: ポータルの Azure AD B2C プロバイダー設定を有効にするための手順。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,129 +11,129 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 5f902dd900e074c2e6b3f08f8848475dcd907ee4
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542842"
+ms.locfileid: "2755492"
 ---
-# <a name="azure-ad-b2c-provider-settings-for-portals"></a>ポータルの Azure AD B2C プロバイダーの設定
+# <a name="azure-ad-b2c-provider-settings-for-portals"></a>ポータルの Azure AD B2C プロバイダー設定
 
-[!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory (Azure AD) は、従業員または内部認証のために Office 365 および Dynamics 365 サービスの電源を入れます。 [!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory B2C は、その認証モデルの拡張機能であり、ローカルの資格情報を使用した外部の顧客サインインと、さまざまな一般的なソーシャル id プロバイダーとのフェデレーションを可能にします。
+[!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory (Azure AD) は従業員または内部認証のために Office 365 および Dynamics 365 サービスを強化します。 [!include[Azure](../../../includes/pn-azure-shortest.md)] Active Directory B2C はその認証モデルを拡張したもので、ローカルの資格情報およびさまざまな一般的なソーシャル ID プロバイダーとのフェデレーションを通して外部顧客のサインインを可能にします。
 
-ポータルの所有者は、ポータルで id プロバイダーとして [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C を受け入れるように構成できます。 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C では、フェデレーションの Open ID Connect がサポートされています。
+ポータルの所有者は、[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C を ID プロバイダーとして受け入れるようにポータルを構成できます。 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C はフェデレーション用の Open ID 接続をサポートしています。
 
-ポータルの id プロバイダーとして [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C を構成するプロセスでは、ポータルの構成時に後で使用する複数の値が生成されます。 これらの値は、次の表で確認できます。 ポータルの構成中に、変数名をここでメモした値に置き換えます。
+[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C をポータル用の ID プロバイダーとして構成するプロセス中に、後にポータルを構成する間に使用することになる複数の値が生成されます。 次の表にこれらの値を書き留めることができます。 ポータルの構成中に、変数名をここで書き留めた値に置き換えます。
 
-| 変数名     | Value | Description                                                           |
+| 変数名     | 値 | 内容                                                           |
 |-------------------|-------|-----------------------------------------------------------------------|
-| アプリケーション名  |       | 証明書利用者としてポータルを表すアプリケーションの名前 |
+| アプリケーション名  |       | 証明書利用者としてのポータルを表すアプリケーションの名前 |
 | アプリケーション ID    |       | Azure Active Directory B2C で作成されたアプリケーションに関連付けられているアプリケーション ID。  |
-| ポリシー-サインイン URL |       | メタデータエンドポイントで定義されている発行者 (iss) の URL。                |
-| フェデレーション-名前   |       | ' B2C ' などのフェデレーションプロバイダーの種類を識別する一意の名前。 これは、この特定のプロバイダーの構成設定をグループ化するために、サイト設定名に使用されます。                                                                      |
+| ポリシー サインイン URL |       | メタデータ エンドポイントで定義された発行者 (iss) URL。                |
+| フェデレーション名   |       | 'B2C' などのフェデレーション プロバイダーの種類を識別する一意の名前。 これは、この特定のプロバイダの構成設定をグループ化するためにサイト設定名の中で使用されます。                                                                      |
 | | | |
 
-### <a name="use-azure-ad-b2c-as-an-identity-provider-for-your-portal"></a>ポータルの id プロバイダーとして Azure AD B2C を使用する
+### <a name="use-azure-ad-b2c-as-an-identity-provider-for-your-portal"></a>Azure AD B2C をポータル用の ID プロバイダーとして使用する
 
-1. [Azure portal](https://portal.azure.com/)にサインインします。
-2. [Azure AD B2C テナントを作成](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started)します。
-3. 左端のナビゲーションバーで [ **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** ] を選択します。
+1. [Azure ポータル](https://portal.azure.com/)にサインインします。
+2. [Azure AD B2C テナントの作成](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started)。
+3. 左端のナビゲーション バーの **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** を選択します。
 4. [Azure アプリケーションを作成](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application)します。
 
    > [!Note]
-   > **[暗黙的なフローを許可]** する フィールドで [**はい]** を選択し、 **[応答 URL]** フィールドにポータルの URL を指定する必要があります。 **[応答 URL]** フィールドの値は、[ポータルドメイン]/Signin-[フェデレーション名] の形式にする必要があります。 たとえば、`https://contosocommunity.microsoftcrmportals.com/signin-B2C`のようにします。
+   > **暗黙的なフローの許可**フィールドで**はい**を選択し、**返信 URL** フィールドでポータルの URL を指定する必要があります。 **返信 URL** フィールドの値は [ポータル ドメイン]/signin-[フェデレーション名] という形式である必要があります。 たとえば、`https://contosocommunity.microsoftcrmportals.com/signin-B2C` などとします。
 
-5. アプリケーション名をコピーし、前の表のアプリケーション名の値として入力します。
-6. [アプリケーション ID] をコピーし、前の表の [アプリケーション ID] の値として入力します。
-7. [サインアップまたはサインインポリシーを作成](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy)します。
-8. ポリシーを選択し、 **[編集]** を選択します。
-9. [**トークン]、[セッション & SSO 構成**] を選択します。
-10. **[発行者 (iss) 要求]** の一覧から、パスに **/tfp**が含まれている URL を選択します。
+5. アプリケーション名をコピーして、それを上記の表の「アプリケーション名」の値として入力します。
+6. アプリケーション ID をコピーして、それを上記の表の「アプリケーション ID」の値として入力します。
+7. [サインアップまたはサインイン ポリシーを作成](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy)します。
+8. ポリシーを選択し、**編集**を選択します。
+9. **トークン、セッション & SSO 構成**を選択します。
+10. **発行者 (iss) 要求**リストから、パスに **/tfp** が入っている URL を選択します。
 11. ポリシーを保存します。
-12. **[このポリシーのメタデータエンドポイント]** フィールドで URL を選択します。
-13. [発行者] フィールドの値をコピーし、前の表のポリシーとサインインの URL の値として入力します。 
+12. **このポリシーの メタデータ エンドポイント**フィールドで URL を選択します。
+13. 発行者フィールドの値をコピーして、それを上記の表の「ポリシー サインイン URL」の値として入力します。 
 
-## <a name="portal-configuration"></a>ポータルの構成
+## <a name="portal-configuration"></a>ポータル構成
 
-[!include[Azure](../../../includes/pn-azure-shortest.md)]で B2C テナントを作成して構成した後、Open ID Connect プロトコルを使用して [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C とフェデレーションするようにポータルを構成する必要があります。 B2C&mdash;などの AD B2C&mdash;を [!include[Azure](../../../includes/pn-azure-shortest.md)] するには、フェデレーションの一意の名前を作成し、上記の表の*federation-name*変数の値として保存する必要があります。
+[!include[Azure](../../../includes/pn-azure-shortest.md)] で B2C テナントを作成および構成したら、Open ID 接続プロトコルを使用して [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C とフェデレーションするようにポータルを構成する必要があります。 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C へのフェデレーションの一意の名前&mdash;たとえば B2C&mdash;を作成し、それを上記の表の*フェデレーション名*変数の値として保存する必要があります。
 
-### <a name="configure-your-portal"></a>ポータルの構成
+### <a name="configure-your-portal"></a>ポータルを構成する
 1. ポータル管理アプリを開きます。
-2. **ポータル** > **web サイト**にアクセスします。
-3. [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C を有効にする必要がある web サイトレコードを選択します。
-4. **[サイトの設定]** にアクセスします。
+2. **ポータル** > **Web サイト**に移動します。
+3. [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C を有効にする必要がある Web サイト レコードを選択します。
+4. **サイト設定**に移動します。
 5. 次のサイト設定を作成します。
-   -   **名前**: Authentication/OpenIdConnect/[Federation-Name]/Authority
+   -   **名前**: Authentication/OpenIdConnect/[フェデレーション名]/Authority
 
-       **値**: [ポリシー-サインイン URL]
-   -   **名前**: Authentication/OpenIdConnect/[Federation-Name]/ClientId
+       **Value**: [ポリシー サインイン URL]
+   -   **名前**: Authentication/OpenIdConnect/[フェデレーション名]/ClientId
 
        **値**: [アプリケーション ID]
-   -   **名前**: Authentication/OpenIdConnect/[Federation-Name]/redirecturi
+   -   **名前**: Authentication/OpenIdConnect/[フェデレーション名]/RedirectUri
 
-       **値**: [ポータルドメイン]/Signin-[フェデレーション名]
+       **値**: [ポータル ドメイン]/signin-[フェデレーション名]
 
-       たとえば、`https://mysite.com/signin-b2c` 
-6. フェデレーションサインアウトをサポートするには、次のサイト設定を作成します。
-   - **名前**: Authentication/OpenIdConnect/[Federation-Name]/externallogoutenabled
+       例: `https://mysite.com/signin-b2c` 
+6. フェデレーション サインアウトをサポートするには、次のサイト設定を作成します。
+   - **名前**: Authentication/OpenIdConnect/[フェデレーション名]/ExternalLogoutEnabled
 
      **値**: true
-7. 1つの id プロバイダーにポータルをハードコーディングするには、次のサイト設定を作成します。
+7. ポータルを単一の ID プロバイダーにハードコードするには、次のサイト設定を作成します。
    - **名前**: Authentication/Registration/LoginButtonAuthenticationType
 
-     **値**: [ポリシー-サインイン URL]
+     **値**: [ポリシー サインイン URL]
 
-8. パスワードのリセットをサポートするには、[ここで](#password-reset)説明する必要なサイト設定を作成します。
-9. 要求のマッピングをサポートするには、[ここで](#claims-mapping)説明する必要なサイト設定を作成します。
+8. パスワード リセットをサポートするには、[こちら](#password-reset)で説明されている必要なサイト設定を作成します。
+9. クレーム マッピングをサポートするには、[こちら](#claims-mapping)で説明されている必要なサイト設定を作成します。
 
-関連するサイト設定の完全な一覧については、[こちら](#related-site-settings)を参照してください。
+関連するサイト設定の完全なリストについては、[こちら](#related-site-settings)を参照してください。
 
 ### <a name="password-reset"></a>パスワードのリセット
 
-[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C ローカルアカウントを使用したパスワードのリセットをサポートする場合は、次のサイト設定が必要です。
+[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C ローカル アカウントでパスワード リセットをサポートする場合は、次のサイト設定が必要です。
 
-| サイト設定                                                        | Description                                                                                                          |
+| サイト設定                                                        | 説明                                                                                                          |
 |---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Authentication/OpenIdConnect/[Federation-Name/PasswordResetPolicyId | パスワードリセットポリシーの ID。                                                                                     |
-| Authentication/OpenIdConnect/[Federation-Name]/ValidIssuers         | [ポリシー-サインイン URL] とパスワードリセットポリシーの発行者を含む、発行者のコンマ区切りの一覧。 |
-|Authentication/OpenIdConnect/[Federation-Name]/defaultpolicyid | サインインまたはサインアップポリシーの ID。|
+| Authentication/OpenIdConnect/[フェデレーション名]/PasswordResetPolicyId | パスワード リセット ポリシーの ID。                                                                                     |
+| Authentication/OpenIdConnect/[フェデレーション名]/ValidIssuers         | ポリシー サインイン URL とパスワード リセット ポリシーの発行者を含む、発行者のコンマ区切りリスト。 |
+|Authentication/OpenIdConnect/[フェデレーション名]/DefaultPolicyId | サインインまたはサインアップ ポリシーの ID。|
 |||
 
-### <a name="related-site-settings"></a>関連サイトの設定
+### <a name="related-site-settings"></a>関連するサイト設定
 
-ポータルで次のサイト設定を作成または構成して、id プロバイダーとして [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C をサポートすることができます。
+ポータルで次のサイト設定を作成または構成し、[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C を ID プロバイダーとしてサポートすることができます。
 
 
-| サイト設定                                                         | Description                                                                                                                                                                                                                                                        |
+| サイト設定                                                         | 内容                                                                                                                                                                                                                                                        |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Authentication/Registration/ProfileRedirectEnabled                   | サインインに成功した後に、ポータルがユーザーをプロファイルページにリダイレクトできるかどうかを指定します。 既定では、true に設定されています。                                                                                                                                            |
-| 認証/登録/EmailConfirmationEnabled                 | 電子メールの検証が必要かどうかを指定します。 既定では、true に設定されています。                                                                                     |
-| Authentication/Registration/LocalLoginEnabled                        | ローカルサインインが必要かどうかを指定します。 既定では、true に設定されています。                                                                        |
-| 認証/登録/ExternalLoginEnabled                     | 外部認証を有効または無効にします。       |
-| 認証/登録/AzureADLoginEnabled                      | 外部 id プロバイダーとして [!include[Azure](../../../includes/pn-azure-shortest.md)] AD を有効または無効にします。 既定では、true に設定されています。                                                                                                                                                                      |
-| Authentication/OpenIdConnect/[Federation-Name]/externallogoutenabled | フェデレーションサインアウトを有効または無効にします。True に設定すると、ユーザーはポータルからサインアウトするときに、フェデレーションサインアウトユーザーエクスペリエンスにリダイレクトされます。 False に設定すると、ユーザーはポータルからのみサインアウトされます。 既定では、false に設定されています。               |
-| Authentication/LoginTrackingEnabled                                  | ユーザーの最後のサインインの追跡を有効または無効にします。 True に設定すると、連絡先レコードの [**最後に成功**したサインイン] フィールドに日付と時刻が表示されます。 既定では、これは false に設定されています。                                                            |
-| Authentication/OpenIdConnect/[Federation-Name]/registrationenabled   | 既存の id プロバイダーの登録要件を有効または無効にします。 True に設定すると、サイト設定の [認証/登録/有効化] も [true] に設定されている場合にのみ、既存のプロバイダーに対して登録が有効になります。 既定では、true に設定されています。 |
-|Authentication/OpenIdConnect/[Federation-Name]/postlogoutredirecturi |ユーザーがサインアウトした後にリダイレクトする、ポータル内の URL を指定します。 |
+| Authentication/Registration/ProfileRedirectEnabled                   | 正常なサインインの後に、ポータルがユーザーをプロフィール ページにリダイレクトできるかどうかを指定します。 既定では true に設定されています。                                                                                                                                            |
+| Authentication/Registration/EmailConfirmationEnabled                 | 電子メールの検証が必要かどうかを指定します。 既定では true に設定されています。                                                                                     |
+| Authentication/Registration/LocalLoginEnabled                        | ローカル サインインが必要かどうかを指定します。 既定では true に設定されています。                                                                        |
+| Authentication/Registration/ExternalLoginEnabled                     | 外部認証を有効または無効にします。       |
+| Authentication/Registration/AzureADLoginEnabled                      | [!include[Azure](../../../includes/pn-azure-shortest.md)] AD を外部 ID プロバイダーとして有効または無効にします。 既定では true に設定されています。                                                                                                                                                                      |
+| Authentication/OpenIdConnect/[フェデレーション名]/ExternalLogoutEnabled | フェデレーションによるサインアウトを有効または無効にします。true に設定すると、ユーザーはポータルからサインアウトしたときにフェデレーション サインアウト ユーザー エクスペリエンスにリダイレクトされます。 false に設定すると、ユーザーはポータルからのみサインアウトします。 既定では false に設定されています。               |
+| Authentication/LoginTrackingEnabled                                  | ユーザーの最後のサインインの追跡を有効または無効にします。 true に設定すると、取引先担当者レコードの**最後のサインイン成功**フィールドに日時が表示されます。 既定では、これは false に設定されています。                                                            |
+| Authentication/OpenIdConnect/[フェデレーション名]/RegistrationEnabled   | 既存の ID プロバイダーの登録要件を有効または無効にする。 true に設定すると、サイト設定 Authentication/Registration/Enabled も true に設定されている場合にのみ、既存のプロバイダーの登録が有効になります。 既定では true に設定されています。 |
+|Authentication/OpenIdConnect/[フェデレーション名]/PostLogoutRedirectUri |ユーザーがサインアウトした後にリダイレクトする先の、ポータル内の URL を指定します。 |
 | | |
 
-### <a name="related-content-snippet"></a>関連するコンテンツスニペット
+### <a name="related-content-snippet"></a>関連コンテンツ スニペット
 
-ユーザーが招待を受けた後にユーザーの登録が無効になっている場合は、次のコンテンツスニペットを使用してメッセージを表示します。
+ユーザーが招待状を引き換えた後にユーザーの登録が無効である場合、次のコンテンツ スニペットを使用してメッセージを表示します。
 
 **名前**: Account/Register/RegistrationDisabledMessage
 
 **値**: 登録が無効になっています。
 
-## <a name="customize-the-includeazureincludespn-azure-shortestmd-ad-b2c-user-interface"></a>[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C ユーザーインターフェイスをカスタマイズする
+## <a name="customize-the-includeazureincludespn-azure-shortestmd-ad-b2c-user-interface"></a>[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C のユーザー インターフェイスをカスタマイズする
 
-[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C では、ユーザーインターフェイスのカスタマイズがサポートされています。 サインアップとサインインのシナリオでユーザーエクスペリエンスをカスタマイズできます。
+[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C はユーザー インターフェイスのカスタマイズをサポートしています。 サインアップおよびサインイン シナリオのユーザー エクスペリエンスをカスタマイズできます。
 
-### <a name="step-1-create-a-web-template"></a>手順 1: web テンプレートを作成する
-次の値を使用して、web テンプレートを作成します。
+### <a name="step-1-create-a-web-template"></a>ステップ 1: Web テンプレートの作成
+次の値を使用して Web テンプレートを作成します。
 
-**[名前]** : [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C カスタムページ
+**名前**: [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C カスタム ページ
 
-**ソース**: 次のサンプル web テンプレートソース HTML を使用します。
+**ソース**: 次のサンプルの Web テンプレート ソース HTML を使用します。
 
 ```html
 <!DOCTYPE html>
@@ -438,88 +438,88 @@ ms.locfileid: "73542842"
   </body>
 </html>
 ```
-### <a name="step-2-create-a-page-template"></a>手順 2: ページテンプレートを作成する
+### <a name="step-2-create-a-page-template"></a>ステップ 2: ページ テンプレートの作成
 
-次のページテンプレートを作成します。
-- **[名前]** : [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C カスタムページ
+次のページ テンプレートを作成します
+- **名前**: [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C カスタム ページ
 - **種類**: Web テンプレート
-- **Web テンプレート**: [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C カスタムページ
-- **Web サイトのヘッダーとフッターを使用する**: このチェックボックスをオフにします
+- **Web テンプレート**: [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C カスタム ページ
+- **Web サイトのヘッダーとフッターの使用**: このチェック ボックスをオフにする
 
-### <a name="step-3-create-a-webpage"></a>手順 3: web ページを作成する
+### <a name="step-3-create-a-webpage"></a>ステップ 3: Web ページの作成
 
-次の web ページを作成します。
+次の Web ページを作成します。
 - **名前**: サインイン
 - **親**ページ: ホーム
-- **部分的な Url**: azure-ad-b2c-サインイン
-- **ページテンプレート**: [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C カスタムページ
-- **発行状態**: 発行済み
+- **部分 URL**: azure-ad-b2c-sign-in
+- **ページ テンプレート**: [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C カスタム ページ
+- **公開状態**: 公開済み
 
-### <a name="step-4-create-site-settings"></a>手順 4: サイト設定を作成する
+### <a name="step-4-create-site-settings"></a>ステップ 4: サイト設定の作成
 
-クロスオリジンリソース共有 (CORS) を構成して [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C がカスタムページを要求し、サインインまたはサインアップユーザーインターフェイスを挿入できるようにするには、サイト設定が必要です。 次のサイト設定を作成します。
+[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C がカスタム ページを要求し、サインインまたはサインアップのユーザー インターフェイスを挿入できるようにするには、クロス オリジン リソース共有 (CORS) を構成するサイト設定が必要です。 次のサイト設定を作成します。
 
-| 名前                              | Value                             |
+| 名前                              | 値                             |
 |-----------------------------------|-----------------------------------|
-| HTTP/アクセス制御メソッド | GET、OPTIONS                      |
-| HTTP/アクセス制御-オリジン  | `https://login.microsoftonline.com` |
+| HTTP/Access-Control-Allow-Methods | GET、OPTIONS                      |
+| HTTP/Access-Control-Allow-Origin  | `https://login.microsoftonline.com` |
 | | |
 
-その他の CORS 設定の完全な一覧については、「 [cors プロトコルのサポート](../add-web-resource.md#cors-protocol-support)」を参照してください。
+他の CORS 設定の完全なリストについては、「[CORS プロトコル サポート](../add-web-resource.md#cors-protocol-support)」を参照してください。
 
-### <a name="step-5-includeazureincludespn-azure-shortestmd-configuration"></a>手順 5: [!include[Azure](../../../includes/pn-azure-shortest.md)] 構成
+### <a name="step-5-includeazureincludespn-azure-shortestmd-configuration"></a>ステップ 5: [!include[Azure](../../../includes/pn-azure-shortest.md)] の構成
 
 1. [!include[Azure portal](../../../includes/pn-azure-portal.md)]にサインインします。
-2. [ **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C テナント管理**] ブレードに移動します。
-3. **サインアップまたはサインインポリシー** >  **[設定]** に移動します。 使用可能なポリシーの一覧が表示されます。
+2. **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C テナント管理** ブレードに移動します。
+3. **設定** > **サインアップまたはサインイン ポリシー**に移動します。 使用できるポリシーの一覧が表示されます。
 4. 編集するポリシーを選択します。
-5. **[編集]** を選択します。
-6. **[ポリシーの編集]**  > **ページの UI カスタマイズ** > 統合された**サインアップまたはサインインページの**選択
-7. [**カスタムページ**の使用 **] を [はい]** に設定します。
-8. **カスタムページ URI**を、この手順の手順3で作成した [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C カスタムページ web ページの URL に設定します。 たとえば、`https://mydomain.com/azure-ad-b2c-sign-in`のようにします。
-9. **[OK]** を選択します。
+5. **編集**を選択します。
+6. **ポリシーの編集** > **ページの UI カスタマイズ** > **統合サインアップまたはサインイン ページ**を選択します。
+7. **カスタムページを使用する**を**はい**に設定します。
+8. **カスタム ページ URI** を、この手順のステップ 3 で作成した [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C カスタム ページ Web ページの URL に設定します。 たとえば、`https://mydomain.com/azure-ad-b2c-sign-in` などとします。
+9. **OK** を選びます。
 
-## <a name="claims-mapping"></a>要求のマッピング
+## <a name="claims-mapping"></a>クレーム マッピング
 
-ユーザーが初めてサインインしたとき、またはその後、フェデレーション id プロバイダーは、ユーザーのサインインに関して、そのデータベースに基づいてクレームを提供します。 これらの要求は、id プロバイダーで構成できます。
+初めてでもそれ以降でも、ユーザーがサインインすると、フェデレーション ID プロバイダーはユーザーのサインインに関するデータベースに基づいたクレームを提供します。 これらのクレームは、ID プロバイダーで構成できます。
 
-### <a name="includeazureincludespn-azure-shortestmd-ad-b2c-email-claims"></a>AD B2C 電子メール要求の [!include[Azure](../../../includes/pn-azure-shortest.md)]
+### <a name="includeazureincludespn-azure-shortestmd-ad-b2c-email-claims"></a>[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C 電子メール クレーム
 
-AD B2C [!include[Azure](../../../includes/pn-azure-shortest.md)] は、電子メール要求をコレクションとして送信します。 ポータルは、コレクションで指定された最初の電子メールを、連絡先のプライマリ電子メールアドレスとして受け入れます。
+[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C はコレクションとして電子メール クレームを送信します。 ポータルは、コレクション内で提供される最初の電子メールを取引先担当者の既定電子メールアドレスとして受け取ります。
 
-### <a name="claims-to-support-sign-up-scenarios"></a>サインアップシナリオをサポートするための要求
+### <a name="claims-to-support-sign-up-scenarios"></a>サインアップ シナリオをサポートするクレーム
 
-Common Data Service に存在しない新しい顧客がプロビジョニングされると、入力方向の要求を使用して、ポータルによって作成される新しい連絡先レコードをシードすることができます。 一般的な要求には、姓と名、電子メールアドレス、および電話番号を含めることができますが、構成することは可能です。 次のサイト設定が必要です。
+Common Data Service に存在しない新規顧客がプロビジョニングされると、インバウンド クレームを使用してポータルが作成する新しい取引先担当者レコードをシードできます。 一般的なクレームには名と姓、電子メール アドレス、および電話番号を含めることができますが、それらは構成可能です。 次のサイト設定が必要です。
 
-**名前**: Authentication/openidconnect/[Federation-Name]/registrationclaimsmdump
+**名前**: Authentication/OpenIdConnect/[フェデレーション名]/RegistrationClaimsMapping
 
-**説明**: 登録時に作成された連絡先レコードの属性に要求値をマップするために使用される論理名/要求ペアの一覧。
+**説明**: 登録中に作成された取引先担当者レコードの属性にクレーム値をマップするのに使用される、論理名 / クレーム ペアのリスト。
 
-**形式**: attribute1 = claim1、attribute2 = claim2、attribute3 = claim3
+**形式**: attribute1=claim1,attribute2=claim2,attribute3=claim3
 
-例: firstname =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
+例: firstname=<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle>
 
 > [!NOTE]
-> 電子メールアドレスが連絡先のプライマリ電子メール (emailaddress1) にマップされていることを確認します。 連絡先レコードにセカンダリ電子メール (emailaddress2) または連絡用電子メール (emailaddress3) を追加して電子メールにマップした場合、id 情報は連絡先に追加されず、の登録に使用された電子メールアドレスを使用して新しいアドレス帳が作成されます。プライマリ電子メール (emailaddress1)。
+> 電子メール アドレスを、取引先担当者の主要電子メール (emailaddress1) にマッピングします。 第二電子メール (emailaddress2) または代替電子メール (emailaddress3) を取引先担当者レコードに追加して、それを電子メールにマッピングした場合、ID 情報はその取引先担当者に追加されず、第一電子メール (emailaddress1) 内の登録セットに使用する電子メール アドレスで新しい ID 情報が作成されます。
 
-### <a name="claims-to-support-sign-in-scenarios"></a>サインインシナリオをサポートするための要求
+### <a name="claims-to-support-sign-in-scenarios"></a>サインイン シナリオをサポートするクレーム
 
-Common Data Service と id プロバイダーのデータは直接リンクされていないため、データが同期されない可能性があります。ポータルには、Common Data Service で更新するために、サインインイベントから受け入れたい要求の一覧が含まれている必要があります。 これらの要求は、サインインシナリオから送信される要求のサブセットまたはそれと同等のものにすることができます。 キーポータルの一部の属性を上書きしないようにする必要があるため、この設定は、サインイン要求のマッピングとは別に構成する必要があります。 次のサイト設定が必要です。
+Common Data Service と ID プロバイダーのデータは直接リンクされていませんので、同期しなくなるかもしれません。ポータルには、Common Data Service で更新するサインイン イベントから受け入れるクレームのリストが必要です。 これらのクレームは、サインイン シナリオから入ってくるクレームのサブセット、またはそれと同等である可能性があります。 重要なポータル属性を上書きしてしまうことがないように、これはサインイン クレーム マッピングとは別に構成する必要があります。 次のサイト設定が必要です。
 
-**名前**: Authentication/openidconnect/[Federation-Name]/loginclaimsmdump
+**名前**: Authentication/OpenIdConnect/[フェデレーション名]/LoginClaimsMapping
 
-**説明**: サインイン後に作成された連絡先レコードの属性に要求値をマップするために使用される論理名/要求ペアの一覧。
+**説明**: サインイン後に作成された取引先担当者レコードの属性にクレーム値をマップするのに使用される、論理名 / クレーム ペアのリスト。
 
-**形式**: attribute1 = claim1、attribute2 = claim2、attribute3 = claim3
+**形式**: attribute1=claim1, attribute2=claim2, attribute3=claim3
 
-例: firstname =<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
+例: firstname=<https://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname,lastname=https://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname,jobtitle=jobTitle> 
 
-要求名は、サインインポリシーのアプリケーション要求の属性の横に表示される [要求の種類] フィールドです。
+クレーム名は、サインイン ポリシーの [アプリケーション] クレームで属性の横に表示されている [クレームの種類] フィールドです。
 
-### <a name="allow-auto-association-to-a-contact-record-based-on-email"></a>電子メールに基づく連絡先レコードへの自動関連付けを許可する 
+### <a name="allow-auto-association-to-a-contact-record-based-on-email"></a>電子メールに基づいて取引先担当者レコードへの自動関連付けを許可する 
 
-メールが関連付けられた連絡先レコードを持っているお客様は、電子メール検証メカニズムを使用して、外部ユーザーが [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C でサインインする web サイトを起動します。 新しいサインインは、重複するレコードを作成するのではなく、既存の連絡先レコードに関連付ける必要があります。 この機能は、アクティブな id を持たない連絡先のみを正常にマップします。また、電子メールアドレスは一意である必要があります (複数の連絡先レコードに関連付けられていません)。 次のサイト設定が必要です。
+電子メールが関連付けられて取引先担当者レコードを取得した顧客は、外部ユーザーが電子メール検証メカニズムを使用して [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C でサインインする Web サイトを立ち上げます。 新しいサインインは、重複レコードを作成するのではなく、既存の取引先担当者レコードと関連付ける必要があります。 この機能は、アクティブな ID を持たない取引先担当者のみを正常にマップするので、電子メール アドレスは一意である (複数の取引先担当者レコードに関連しない) 必要があります。 次のサイト設定が必要です。
 
-**名前**: Authentication/[Protocol]/[Provider]/allowcontactmappingwithemail
+**名前**: Authentication/[プロトコル]/[プロバイダー]/AllowContactMappingWithEmail
 
-**説明**: 連絡先が対応する電子メールにマップされるかどうかを指定します。 True に設定すると、この設定によって、一意の連絡先レコードが対応する電子メールアドレスに関連付けられ、ユーザーが正常にサインインした後に、外部 id プロバイダーが連絡先に自動的に割り当てられます。 既定では、false に設定されています。
+**説明**: 取引先担当者が対応する電子メールにマップされるかどうかを指定します。 この設定を true に設定すると、一意の取引先担当者レコードが一致する電子メールアドレスに関連付けられ、ユーザーが正常にサインインした後に自動的に外部 ID プロバイダーがその取引先担当者に割り当てられます。 既定では false に設定されています。

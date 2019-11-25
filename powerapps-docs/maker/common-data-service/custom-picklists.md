@@ -1,29 +1,34 @@
 ---
 title: オプション セットの作成 | Microsoft Docs
 description: オプション セットを作成する方法の詳細な手順。
-author: clwesene
-manager: kfile
+author: lancedMicrosoft
+manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
 ms.date: 03/21/2018
-ms.author: clwesene
+ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6f3f47882800252c91de0efc572954f7397ac251
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757625"
 ---
-
 # <a name="create-an-option-set"></a>オプション セットの作成
 
-オプション セットを使用して、アプリケーション内のユーザーに固定値のドロップダウン リストを含めることができ、データの一貫性を保証します。他のアプリケーションのピックリストまたは選択フィールドと呼ばれることもあります。 エンティティと似ていますが、両方の標準オプション セットがあり、アプリケーション内で使用するユーザー定義のオプション セットを作成できます。
+オプション セットを使用して、アプリケーション内のユーザーに固定値のドロップダウン リストを含めることができ、データの一貫性を保証します。他のアプリケーションのピックリストまたは選択フィールドと呼ばれることもあります。 エンティティと同様に、標準のオプション セットと、アプリ内で使用するユーザー定義のオプション セットを作成する機能があります。
 
 オプション セットは、ポータル内のオプション セット リストから、またはフィールド作成中にエンティティ内で直接にという、2 つの方法で作成できます。 エンティティを作成する方法の詳細については、「[エンティティの作成](data-platform-create-entity.md)」を参照してください。
 
 ## <a name="creating-an-option-set-while-adding-a-field"></a>フィールドを追加する際にオプション セットを作成します。
 
-1. [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。
+1. [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。
 
     ![エンティティの詳細](./media/data-platform-cds-create-entity/entitylist.png "エンティティ リスト")
 
@@ -34,7 +39,7 @@ search.app:
 4. 新しいフィールド パネルで、フィールドの**表示名**を入力すると、フィールドで**名前**が自動的に設定され、一意の名前として使用されます。 **表示名**はこのフィールドをユーザーに表示するときに使用され、**名前**は式や数式でアプリを構築するときに使用されます。
 
     > [!div class="mx-imgBorder"] 
-    > ![新しいフィールド](./media/data-platform-cds-create-entity/newfieldpanel.png "新しいフィールド パネル")
+    > ![新しいフィールド](./media/data-platform-cds-create-entity/newfieldpanel.png "新規フィールドのパネル")
 
 5. **データの種類**ドロップダウンをクリックし、**オプション セット**、または**複数選択オプション セット**をクリックします。
 
@@ -43,44 +48,44 @@ search.app:
     > [!NOTE]
     > 既存のオプション セットがエンティティに使用できる場合、新規作成するのではなく、このリストから選択できます。
 
-    ![オプション セット リスト](./media/data-platform-cds-newoptionset/fieldpanel-1.png "オプション セット リスト")
+    ![オプション セットのリスト](./media/data-platform-cds-newoptionset/fieldpanel-1.png "オプション セットのリスト")
 
 7. オプション セットの作成に新しいパネルが開き、**表示名**および**名前**がフィールドの名前から既定で設定されますが、必要に応じて変更できます。 **新しい項目の追加**をクリックしてオプションの一覧を作成し始めます。 項目がすべて作成されるまで、この手順を繰り返します。
 
     > [!div class="mx-imgBorder"] 
-    > ![新しいオプション セット](./media/data-platform-cds-newoptionset/field-optionsetpanel.png "新しいオプション セット")
+    > ![新規オプション セット](./media/data-platform-cds-newoptionset/field-optionsetpanel.png "新規オプション セット")
 
 8. 項目を一度入力したら、オプション セットを作成するため**保存**をクリックします。
 
     > [!div class="mx-imgBorder"] 
-    > ![新しいオプション セット](./media/data-platform-cds-newoptionset/field-optionsetpanel-values.png "新しいオプション セット")
+    > ![新規オプション セット](./media/data-platform-cds-newoptionset/field-optionsetpanel-values.png "新規オプション セット")
 
-9. **完了**をクリックしてフィールド パネルを閉じてから、**エンティティの保存**をクリックしてエンティティを Common Data Service に保存します。
+9. **完了** をクリックしてフィールド パネルを閉じてから、 **エンティティの保存** をクリックしてエンティティを Common Data Service に保存します。
 
     > [!NOTE]
     > このフィールドの**既定**として項目の 1 つを選択でき、ユーザーがエンティティで新しいレコードを作成するときには既定で選択されます。
 
     > [!div class="mx-imgBorder"] 
-    > ![新しいフィールド](./media/data-platform-cds-newoptionset/fieldpanel-2.png "新しいフィールド パネル")
+    > ![新しいフィールド](./media/data-platform-cds-newoptionset/fieldpanel-2.png "新規フィールドのパネル")
 
 ## <a name="creating-an-option-set-from-the-option-set-list"></a>オプション セット リストからオプション セットの作成
 
-1. [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**オプション セット**をクリックまたはタップします。
+1. [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**オプション セット**をクリックまたはタップします。
 
     > [!div class="mx-imgBorder"] 
-    > ![オプション セット](./media/data-platform-cds-newoptionset/optionsetlist.png "オプション セット リスト")
+    > ![オプション セット](./media/data-platform-cds-newoptionset/optionsetlist.png "オプション セットのリスト")
 
 2. **新しいオプション セット**をクリックします
 
 3. オプション セットを作成するため新しいパネルを開き、**表示名**および**名前**を入力します。 **新しい項目の追加**をクリックしてオプションの一覧を作成し始めます。 項目がすべて作成されるまで、この手順を繰り返します。
 
     > [!div class="mx-imgBorder"] 
-    > ![オプション セット作成](./media/data-platform-cds-newoptionset/optionset-create.png "オプション セット作成")
+    > ![オプション セットの作成](./media/data-platform-cds-newoptionset/optionset-create.png "オプション セットの作成")
 
 4. 項目を一度入力したら、オプション セットを作成するため**保存**をクリックします。
 
     > [!div class="mx-imgBorder"] 
-    > ![新しいオプション セット](./media/data-platform-cds-newoptionset/optionset-create-values.png "新しいオプション セット")
+    > ![新規オプション セット](./media/data-platform-cds-newoptionset/optionset-create-values.png "新規オプション セット")
 
 5. エンティティに新しいフィールドを作成して、このオプション セットを使用できるようになります。
 

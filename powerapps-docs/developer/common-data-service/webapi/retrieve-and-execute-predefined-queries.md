@@ -8,20 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 3d771a18-3dc5-4372-a7c7-40b3b1f986d8
 caps.latest.revision: 16
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e805a4919bcdfa8b61c097dc09455f7ca5783999
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753683"
 ---
-
 # <a name="retrieve-and-execute-predefined-queries"></a>定義済みクエリの取得と実行
 
 Common Data Service は、すべてのユーザーが利用できるシステム ビューを管理者が作成する方法を提供します。 個々のユーザーはアプリケーション再利用できるように高度な検索のクエリを保存できます。 これらはどちらも、Web API を使用して取得して実行できる定義済みクエリです。 また、FetchXml を使用してクエリを構成し、そのクエリを使用してデータを取得することもできます。
@@ -86,7 +91,7 @@ FetchXML は集計を実行する機能を提供する独自のクエリ言語�
 %3Cfetch%20mapping='logical'%3E%3Centity%20name='account'%3E%3Cattribute%20name='accountid'/%3E%3Cattribute%20name='name'/%3E%3C/entity%3E%3C/fetch%3E
 ```
 
-ほとんどのプログラミング言語には、文字列を URL エンコードする関数が含まれています。 たとえば、JavaScript では、[encodeURI](http://www.ecma-international.org/ecma-262/5.1/) 関数を使用します。 RESTful Web サービスに送信する要求を URL エンコードする必要があります。 URL をブラウザーのアドレス バーに貼り付ける場合、ブラウザーはそのアドレスを自動的に URL エンコードする必要があります。 次の例は、取引先企業用のエンティティ セット パスを使用して、先に示した FetchXML を使用して GET 要求を示します。
+ほとんどのプログラミング言語には、文字列を URL エンコードする関数が含まれています。 たとえば、JavaScript では、[encodeURI](https://www.ecma-international.org/ecma-262/5.1/) 関数を使用します。 RESTful Web サービスに送信する要求を URL エンコードする必要があります。 URL をブラウザーのアドレス バーに貼り付ける場合、ブラウザーはそのアドレスを自動的に URL エンコードする必要があります。 次の例は、取引先企業用のエンティティ セット パスを使用して、先に示した FetchXML を使用して GET 要求を示します。
 
 **要求**
 

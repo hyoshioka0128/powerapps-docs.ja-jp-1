@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: fc3ade34-9c4e-4c33-88a4-aa3842c5eee1
 caps.latest.revision: 78
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 61b958e6f08757154dba415ec59ca6f12e80fb5f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753691"
 ---
 # <a name="query-data-using-the-web-api"></a>Web API を使用したクエリ データ
 
@@ -159,7 +165,7 @@ Preference-Applied: odata.maxpagesize=3
 
 ## <a name="apply-system-query-options"></a>システム クエリ オプションの適用
 
- エンティティ セットのために URL に追加する各システム クエリ オプションは、クエリ文字列の構文を使用して追加されます。 最初のクエリは [?] の後に追加され、それ以降のクエリ オプションは [&] を使用して分離されます。 すべてのクエリ オプションは、次の例のように大文字と小文字が区別されます。  
+ エンティティ セットのために URL に追加する各システム クエリ オプションは、クエリ文字列の構文を使用して追加されます。 最初のクエリは [?] の後に追加され、それ以降のクエリ オプションは [&] を使用して分割されます。 すべてのクエリ オプションは、次の例のように大文字と小文字が区別されます。  
   
 ```http 
 GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue
@@ -215,7 +221,7 @@ GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue
 |`( )`|優先順位によるグループ化|`(contains(name,'sample') or contains(name,'test')) and revenue gt 5000`|  
   
 > [!NOTE]
->  これは [11.2.5.1.1 組み込みフィルター処理](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html) の一部です。 算術演算子と比較演算子は Web API ではサポートされていません。  
+>  これは [11.2.5.1.1 組み込みフィルター処理](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html) の一部です。 算術演算子と比較演算子は Web API ではサポートされていません。  
   
 <a name="bkmk_buildInQueryFunctions"></a>
 
@@ -230,7 +236,7 @@ Web API では、以下の標準 OData 文字列クエリ機能がサポート�
 |`startswith`|`$filter=startswith(name,'a')`|  
   
 > [!NOTE]
->  これは [11.2.5.1.2 組み込みフィルター処理](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html) の一部です。 `Date`、`Math`、`Type`、`Geo` および他の文字列機能は Web API ではサポートされません。  
+>  これは [11.2.5.1.2 組み込みフィルター処理](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html) の一部です。 `Date`、`Math`、`Type`、`Geo` および他の文字列機能は Web API ではサポートされません。  
   
 ### <a name="common-data-service-web-api-query-functions"></a>Common Data Service Web API クエリ機能
  
@@ -478,7 +484,7 @@ GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue
 
 集計機能は 50,000 レコードのコレクションに制限されます。  Common Data Service での集約機能の使用に関する詳細は、次を参照してください: [FetchXML を使用してクエリを構築する](../use-fetchxml-construct-query.md)
 
-OData データ集計の追加の詳細はこちらを参照してください: [データ集計用 OData 拡張 バージョン 4.0](http://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)。  Common Data Service はこれらの集計手法のサブセットのみをサポートすることに注意してください。
+OData データ集計の追加の詳細はこちらを参照してください: [データ集計用 OData 拡張 バージョン 4.0](https://docs.oasis-open.org/odata/odata-data-aggregation-ext/v4.0/cs01/odata-data-aggregation-ext-v4.0-cs01.html)。  Common Data Service はこれらの集計手法のサブセットのみをサポートすることに注意してください。
 
 
 <a name="bkmk_useParameterAliases"></a>

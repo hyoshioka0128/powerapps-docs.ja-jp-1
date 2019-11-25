@@ -1,29 +1,32 @@
 ---
 title: コードを使用してモデル駆動型アプリを作成、管理、公開する | Microsoft Docs
-description: コードを使用して PowerApps 内のモデル駆動型アプリを作成、管理、および公開する方法について学習します。
+description: コードを使用して PowerApps 内のモデル駆動型アプリを作成、管理、公開する方法について学習します。
 keywords: ''
 ms.date: 03/04/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 4261c476-2eff-10e3-a334-d02e0cbbb9d5
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9d33c07aa54a0a971f3d246a6390f736daa11627
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749338"
 ---
-
 # <a name="create-manage-and-publish-model-driven-apps-using-code"></a>コードを使用してモデル駆動型アプリを作成、管理、公開する
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-manage-custom-business-apps-using-code -->
 
-PowerApps アプリ デザイナーを使用してモデル駆動型アプリを作成することに加えて、モデル駆動型アプリをプログラムで作成および管理できます。 
+PowerApps アプリ デザイナーを使用してモデル駆動型アプリを作成することに加えて、モデル駆動型アプリをプログラムで作成、管理することができます。 
 
 > [!IMPORTANT]
 > 必要でない限り、モデル駆動型アプリを構築するコードを記述する必要はありません。 アプリ デザイナーには、タイル ベースの情報構造およびさらに単純なインターフェイスを提供することにより、コードを記述する必要なしにモデル駆動型アプリを構築するための非常に単純で直観的なエクスペリエンスが用意されています。 確認: [アプリ デザイナーを使用して、モデル駆動型アプリを設計](../../maker/model-driven-apps/design-custom-business-apps-using-app-designer.md)  

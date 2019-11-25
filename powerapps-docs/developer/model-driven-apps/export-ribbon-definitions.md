@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6c342d1b5c3b5864aaf556af800c0f439a3e272
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753619"
 ---
 # <a name="export-ribbon-definitions"></a>リボン定義のエクスポート
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/export-ribbon-definitions -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/export-ribbon-definitions -->
 
 既定の RibbonXml に対する変更を効率的に定義するには、リボンを定義する RibbonXml データを参照できる必要があります。  
   
@@ -27,7 +33,7 @@ search.app:
   
 <a name="BKMK_AccessDefaultRibbonData"></a>   
 ## <a name="access-the-default-ribbon-data"></a>既定のリボン データへのアクセス  
- モデル駆動型アプリの既定のリボン定義は、[Microsoft ダウンロード: ExportedRibbonXml.zip](http://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip) からダウンロードできます。 
+ モデル駆動型アプリの既定のリボン定義は、[Microsoft ダウンロード: ExportedRibbonXml.zip](https://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip) からダウンロードできます。 
   
  applicationRibbon.xml ファイルには、コア アプリケーション リボンの定義が含まれています。  
   
@@ -45,7 +51,7 @@ search.app:
  リボン データは、圧縮ファイルとしてエクスポートされます。 このファイルを XML に解凍するには、[System.IO.Packaging.ZipPackage](https://msdn.microsoft.com/library/system.io.packaging.zippackage.aspx) クラスを使用する必要があります。 次の例は、SDK サンプルの中でファイルを解凍するために使用されるヘルパー メソッドです。  
  ``` C# 
 /// <summary>
-/// A helper method that decompresses the the Ribbon data returned
+/// A helper method that decompresses the Ribbon data returned
 /// </summary>
 /// <param name="data">The compressed ribbon data</param>
 /// <returns></returns>

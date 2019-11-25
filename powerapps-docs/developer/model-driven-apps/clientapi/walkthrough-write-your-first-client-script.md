@@ -9,10 +9,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 15ba73e097a03b1fd1b200f3653f169ec5afaf7f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754588"
 ---
 # <a name="walkthrough-write-your-first-client-script"></a>チュートリアル: 最初のクライアント スクリプトを記述する
 
@@ -83,7 +89,7 @@ search.app:
         // Automatically set some field values if the account name contains "Contoso"
         var accountName = formContext.getAttribute("name").getValue();
         if (accountName.toLowerCase().search("contoso") != -1) {
-            formContext.getAttribute("websiteurl").setValue("http://www.contoso.com");
+            formContext.getAttribute("websiteurl").setValue("https://www.contoso.com");
             formContext.getAttribute("telephone1").setValue("425-555-0100");
             formContext.getAttribute("description").setValue("Website URL, Phone and Description set using custom script.");
         }
@@ -139,7 +145,7 @@ search.app:
    ![フォーム OnLoad](../media/clientapi_walkThrough-img5.png)
 1. **ハンドラー プロパティ**ダイアログ ボックスで次を行います。   
 
-    - **ライブラリ**ドロップダウン リストから Web リソースの名前を選択し、**関数**フィールドで **Sdk.formOnLoad** を指定します。 関数名は JavaScript コードの [名前空間].[関数]です。
+    - **ライブラリ**ドロップダウン リストから Web リソースの名前を選択し、**関数**フィールドで **Sdk.formOnLoad** を指定します。 関数名は JavaScript コードの [名前空間].[関数] です。
     - この関数にパラメーターとして実行コンテキストを渡すには、**実行コンテキストを最初のパラメーターとして渡す**を選択します。 コードの関数の定義を確認すると、関数の定義に **executionContext** オブジェクトを渡しており、このオプションを選択するとそれらが関連付けられます。
     
       ![フォーム OnLoad](../media/clientapi_walkThrough-img6.png)
@@ -219,7 +225,7 @@ var Sdk = window.Sdk || {};
         // Automatically set some field values if the account name contains "Contoso"
         var accountName = formContext.getAttribute("name").getValue();
         if (accountName.toLowerCase().search("contoso") != -1) {
-            formContext.getAttribute("websiteurl").setValue("http://www.contoso.com");
+            formContext.getAttribute("websiteurl").setValue("https://www.contoso.com");
             formContext.getAttribute("telephone1").setValue("425-555-0100");
             formContext.getAttribute("description").setValue("Website URL, Phone and Description set using custom script.");
         }

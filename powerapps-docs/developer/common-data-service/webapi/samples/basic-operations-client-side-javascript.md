@@ -1,6 +1,6 @@
 ---
 title: Web API における基本的な操作のサンプル (クライアント-サイド JavaScript) (Common Data Service)| Microsoft Docs
-description: 'このサンプルでは基本的な CRUD (作成、取得、更新、削除) を行う方法、およびクライアントサイドの JavaScript と Common Data Service Web API を使用した,エンティティ インスタンスへの関連付けと県連付の解除のデモを行います。'
+description: このサンプルでは基本的な CRUD (作成、取得、更新、削除) を行う方法、およびクライアントサイドの JavaScript と Common Data Service Web API を使用した,エンティティ インスタンスへの関連付けと県連付の解除のデモを行います。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 11847c67-2807-4cb5-998b-90f45d3d98a7
 caps.latest.revision: 27
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: amyla
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5e788cc42f0db9fec992493cb943c06848723ad2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753675"
 ---
 # <a name="web-api-basic-operations-sample-client-side-javascript"></a>Web API 基本操作のサンプル (クライアント側の JavaScript)
 
@@ -42,7 +48,7 @@ search.app:
 
 ## <a name="run-this-sample"></a>このサンプルの実行
 
-このサンプルを実行するには、こちらの [Microsoft CRM Web API 基本操作のサンプル (クライアント側 JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824043) でソルーション パッケージをダウンロードします。 Microsoft CRM Web API 基本操作のサンプル (クライアント側 JavaScript).zip ファイルをダウンロードし、コンテンツを抽出します。 WebAPIBasicOperations_1_0_0_1_managed.zip のソリューションを検索して、Common Data Service 組織にインポートし、サンプルを実行します。 サンプル ソリューションをインポートする方法の詳細については、[Web API サンプル (クライアント側の JavaScript) ](../web-api-samples-client-side-javascript.md) を参照してください。  
+このサンプルを実行するには、こちらの [Microsoft CRM Web API 基本操作のサンプル (クライアント側 JavaScript)](https://go.microsoft.com/fwlink/p/?LinkId=824043) でソルーション パッケージをダウンロードします。 Microsoft CRM Web API 基本操作のサンプル (クライアント側 JavaScript).zip ファイルをダウンロードし、コンテンツを抽出します。 WebAPIBasicOperations_1_0_0_1_managed.zip のソリューションを検索して、Common Data Service 組織にインポートし、サンプルを実行します。 サンプル ソリューションをインポートする方法の詳細については、[Web API サンプル (クライアント側の JavaScript) ](../web-api-samples-client-side-javascript.md) を参照してください。  
   
 <a name="bkmk_codesample"></a>
 

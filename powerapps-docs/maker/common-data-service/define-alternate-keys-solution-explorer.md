@@ -1,6 +1,6 @@
 ---
 title: ソリューション エクスプローラーを使用して代替キーを定義 | MicrosoftDocs
-description: ソリューション エクスプローラーを使用して、Common Data Service でレコードを参照するために使用できる代替キーを定義する方法を説明します
+description: ソリューション エクスプローラーを使用して、Common Data Service でレコードの参照に使用できる代替キーを定義する方法を説明します
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
@@ -9,25 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8b1b38c94cbd4615ff0ab449944e65089865a823
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758725"
 ---
 # <a name="define-alternate-keys-using-solution-explorer"></a>ソリューション エクスプローラーを使用した代替キーの定義
 
-ソリューション エクスプローラーでは、Common Data Service の代替キーを表示および作成する方法の 1 つを提供します。
+ソリューション エクスプローラーでは、Common Data Service の代替キーを表示および作成する方法を提供します。
 
-[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 <br />詳細: 
+[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ではほとんどの一般的なオプションを構成することができますが、ソリューション エクスプローラーを使用して設定する必要があるオプションもあります。 <br />詳細: 
 - [レコードを参照する代替キーの定義](define-alternate-keys-reference-records.md)<br />
-- [PowerApps ポータルを使用した代替キーの定義](define-alternate-keys-portal.md)
+- [PowerApps ポータルを使用して代替キーを定義する](define-alternate-keys-portal.md)
 
 ## <a name="open-solution-explorer"></a>ソリューション エクスプローラーを開きます
 
@@ -66,5 +72,5 @@ search.app:
 ### <a name="see-also"></a>関連項目
 
 [レコードを参照する代替キーの定義](define-alternate-keys-reference-records.md)<br />
-[PowerApps ポータルを使用した代替キーの定義](define-alternate-keys-portal.md)<br />
+[PowerApps ポータルを使用して代替キーを定義する](define-alternate-keys-portal.md)<br />
 [開発者向けドキュメント: エンティティの代替キーを定義](/dynamics365/customer-engagement/developer/define-alternate-keys-entity)

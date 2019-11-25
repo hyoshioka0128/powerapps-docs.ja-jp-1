@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5c2a4a12834cbaabbe9d44639b73025f2380c4dd
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754560"
 ---
 # <a name="script-web-resource-development-using-fiddler-autoresponder"></a>Fiddler の AutoResponder を使用したスクリプト Web リソース開発
 
@@ -24,7 +30,7 @@ JavaScript Web リソースの開発およびデバッグ中に、[Telerik の F
 1. Fiddler を[ダウンロード](https://www.telerik.com/download/fiddler)してインストールします。
 1. Fiddler を開いて、メニュー バーから、**ツール**に移動し、**オプション**を選択します。
 2. HTTPS トラフィックをキャプチャして、復号化するように、ダイアログ ボックスで **HTTPS** タブを選択して、**HTTPS 接続をキャプチャ**および **HTTPS トラフィックを復号化**チェック ボックスをオンにします。<br />
- ![[HTTP] タブでマークの付いたチェックボックスをオンにする](media/fiddler-https-options.png "[HTTP] タブでマークの付いたチェックボックスをオンにする")</br>
+ ![[HTTP] タブでマークの付いたチェックボックスをオンにする](media/fiddler-https-options.png "S[HTTP] タブでマークの付いたチェックボックスをオンにする)</br>
 3. **OK** をクリックしてダイアログ ボックスを閉じます。
 
 > [!NOTE]
@@ -35,19 +41,19 @@ JavaScript Web リソースの開発およびデバッグ中に、[Telerik の F
 
 1. Dynamics 365 インスタンスでデバッグするページを開きます。
 2. 左下隅にある**キャプチャ**ボタンをクリックして、Fiddler トレース キャプチャを開始します。
-   ![[キャプチャ] ボタンをクリックして HTTPS トラフィックのキャプチャを開始する](media/fiddler-start-capturing.png "[キャプチャ] ボタンをクリックして HTTPS トラフィックのキャプチャを開始する")</br>
+   ![[キャプチャ] ボタンをクリックして HTTPS トラフィックのキャプチャを開始する](media/fiddler-start-capturing.png "C[キャプチャ] ボタンをクリックして HTTPS トラフィックのキャプチャを開始する)</br>
 
    > [!NOTE]
-   > 特定のホストからの HTTPS トラフィックのみキャプチャする場合は、**フィルター**タブの**ホスト**領域にある **-ホスト フィルターなし-** ドロップダウンで、メニューから**次のホストのみ表示**を選択して、トラフックを表示するドメインのリストをセミコロンで区切って入力します。 詳細: [フィルターの参照](http://docs.telerik.com/fiddler/KnowledgeBase/Filters)。
-   > ![Fiddler UI に表示されるトラフィックをフィルター](media/fiddler-filter-traffic.png "Fiddler UI に表示されるトラフィックをフィルター")
+   > 特定のホストからの HTTPS トラフィックのみキャプチャする場合は、**フィルター**タブの**ホスト**領域にある **-ホスト フィルターなし-** ドロップダウンで、メニューから**次のホストのみ表示**を選択して、トラフックを表示するドメインのリストをセミコロンで区切って入力します。 詳細: [フィルターの参照](https://docs.telerik.com/fiddler/KnowledgeBase/Filters)。
+   > ![Fiddler UI に表示されるトラフィックをフィルター](media/fiddler-filter-traffic.png "FFiddler UI に表示されるトラフィックをフィルター)
 
 3. テストするスクリプトを読み込むのに必要な操作を実行します。 同じ**キャプチャ**ボタンをもう一度クリックして、キャプチャを停止できます。
 4. 左側のウィンドウからトレース ログ セッションを選択して、AutoResponder をセットアップするファイルを検索します。<br /> たとえば、デバッグするコードが `new_testscript.js` という名前の JavaScript Web リソース内にある場合、**検索**ボタンを使用して、**セッションを検索**ダイアログ ボックス開き、その Web リソースの名前を検索します。 <br />![Fiddler でセッションを検索する](media/fiddler-find-sessions.PNG)<br />検索条件と一致する行が左側のウィンドウに強調表示されるのがわかります。
 5. その行を選択します。 右側のウィンドウで、**AutoResponder** タブを選択します。 <br /> ![[AutoResponder] タブを選択する](media/fiddler-auto-responder.png)
 6. **AutoResponder** タブで、**有効化ルール**および**一致しない要求のパススルー**チェック ボックスを選択します。<br />
-   ![強調表示された 2 つのチェックボックスを選択する](media/fiddler-select-checkbox.png "強調表示された 2 つのチェックボックスを選択する")<br />
+   ![強調表示された 2 つのチェックボックスを選択する](media/fiddler-select-checkbox.png "S強調表示された 2 つのチェックボックスを選択する)<br />
 7. ターゲット ファイルに関連するセッションがまだ選択されていることを確認してから、**AutoResponder** セクションの**ルールの追加**ボタンをクリックします。 これによって、新しいエントリがルール テーブルに追加されます。<br />
-   ![新しいルールの追加](media/fiddler-add-rule.png "新しいルールの追加")
+   ![新しいルールの追加](media/fiddler-add-rule.png "A新しいルールの追加)
 8. ルールを選択すると、下部の**ルール エディター**の先頭行にファイルに関連するセッション URL が入力され、`EXACT:` のような文字列が接頭辞として付加されます。<br />
    その後、一致する文字列を編集して簡略化できます。 Web リソースでは、最後に発行されたバージョンが応答に含まれていることを確認するために、URL には URL またはクエリ文字列で生成された値が含まれます。 `EXACT` 値が次のように表示されることを確認するでしょう。<br />
     ```
@@ -55,24 +61,25 @@ JavaScript Web リソースの開発およびデバッグ中に、[Telerik の F
     ```<br />
     You can simplify this to remove the generated values and use this instead:<br />
     ```
-    /WebResources/new_testscript.js ```<br />
-   最下行は空白のままになっています。 この最下行にディスク上のローカル ファイルへのパスを入力して、<strong>保存</strong>します。<br />
-   ![ルール エディタでローカル ファイルへのパスを追加する](media/fiddler-save-rule.png "ルール エディタでローカル ファイルへのパスを追加する")<br />
+    /WebResources/new_testscript.js
+    ```<br />
+   The bottom row is left blank. Type the path to your local file on your disk on this bottom row and <strong>Save</strong>.<br />
+   ![Add path to your local file in Rule editor](media/fiddler-save-rule.png "Add path to your local file in Rule editor")<br />
 
  
 
  
-上記の手順に従うことで、要求をネットワークに伝えるのではなく、ローカル ファイルで要求と応答をリスニングするように、Fiddler が構成されます。
+By following the above steps, Fiddler is configured to listen to the requests and responds with the local file instead of passing the request over the network.
 
-## <a name="update-and-test-your-code"></a>コードの更新およびテスト
+## Update and test your code
 
-1. ローカル ファイルに変更を適用します。
-2. Fiddler トレース キャプチャを再び開始して、ブラウザーに戻り、空のキャッシュでページを再読み込みします。
-3. ブラウザー開発者ツールで、現在受信されているファイルがローカル ファイルになることを確認できます。
-4. 必要とする結果を得るまで、コードを更新しながらこのプロセスを繰り返すことを続けます。
+1. Apply changes to your local file.
+2. Start Fiddler trace capture again and go back to your browser and hard reload the page with empty cache.
+3. In the browser developer tools you can see that the file that is now received will be the local one.
+4. Continue repeating this process while updating your code until you get the results you require.
 
 
-## <a name="see-also"></a>関連項目
+## See Also
 
-[Web リソース](web-resources.md)<br />
-[JavaScript を使用したクライアント スクリプト](client-scripting.md)
+[Web resources](web-resources.md)<br />
+[Client scripting using JavaScript](client-scripting.md)

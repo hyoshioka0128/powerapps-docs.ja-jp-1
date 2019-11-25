@@ -4,31 +4,36 @@ description: ロールアップ フィールドを定義する方法を説明し
 ms.custom: ''
 ms.date: 05/23/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ff0504a1-01bd-4f9b-b884-7f84911d86c3
 caps.latest.revision: 58
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9691912bab995fac0b3489580aaa1fef82f9dcc8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758637"
 ---
-
 # <a name="define-rollup-fields-that-aggregate-values"></a>値を集約するロールアップ フィールドを定義
 
 ロールアップ フィールドは、主要業務指標を監視することによって、ユーザーがデータを把握するのに役立ちます。 ロールアップ フィールドには、指定したレコードに関連するレコードに対して計算された集計値が含まれています。 これには、電子メールや予定など定期的なエンティティと活動エンティティが含まれます。
 
-より複雑なシナリオでは、レコードの階層にわたるデータを集計できます。 管理者またはカスタマイザーの場合は、PowerApps のカスタマイズ ツールを使用してコードを記述する必要なく、ロールアップ フィールドを定義できます。  
+より複雑なシナリオでは、レコードの階層にわたるデータを集計できます。 管理者またはカスタマイザーの場合は、 PowerApps のカスタマイズ ツールを使用してコードを記述することなく、ロールアップ フィールドを定義することができます。  
   
 <a name="BKMK_benefitsandcapabilities"></a> 
  
@@ -75,7 +80,7 @@ search.app:
 
 ロールアップ ジョブを表示するには:
 
-1. **Common Data Service の既定のソリューション**を表示しながら URL を編集し、`dynamics.com` の後にすべてを削除してページを更新します。
+1. **Common Data ServiceCommon Data Service** の既定のソリューションを表示している間に URL を編集し、 `dynamics.com` 以降のすべてを削除してページを更新します。
 2. **設定**領域で**システム** > **システム ジョブ**を選択します。<br />![システム ジョブに移動](media/navigate-system-jobs.png)
 1. ビュー セレクターで、**定期システム ジョブ**を選択します。
 2. 関連するジョブをすばやく見つけるため、システム ジョブの種類によってフィルター処理できます: **ロールアップ フィールドの一括計算**または**ロールアップ フィールドの計算**。
@@ -212,5 +217,5 @@ search.app:
 [計算フィールドの定義](define-calculated-fields.md)<br />
 [日時フィールドの動作と形式](behavior-format-date-time-field.md)<br />
 [階層的に関連するデータの定義とクエリ](define-query-hierarchical-data.md)<br />
-[ビデオ: ロールアップ フィールドと計算フィールド](http://www.youtube.com/watch?v=RoahCH1p3T8&list=PLC3591A8FE4ADBE07&index=8)<br />
-[ビデオ: Power BI の使用](http://www.youtube.com/watch?v=PkQe4BFlBS8&list=PLC3591A8FE4ADBE07&index=3)
+[ビデオ: ロールアップ フィールドと計算フィールド](https://www.youtube.com/watch?v=RoahCH1p3T8&list=PLC3591A8FE4ADBE07&index=8)<br />
+[Power BIを使用したビデオ](https://www.youtube.com/watch?v=PkQe4BFlBS8&list=PLC3591A8FE4ADBE07&index=3)

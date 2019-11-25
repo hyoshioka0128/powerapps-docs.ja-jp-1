@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 29e53691-0b18-4fde-a1d0-7490aa227898
 caps.latest.revision: 10
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6c620f518331f46ef3e662040975cd8c6c5625a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758813"
 ---
 # <a name="define-alternate-keys-to-reference-records"></a>レコードを参照する代替キーの定義
 
@@ -32,7 +38,7 @@ search.app:
 たとえば、代替キーを使用してアカウント レコードを識別するには、変更しない値を持つ他のフィールドと組み合わせて、アカウント番号または取引先企業番号フィールドを使用できます。
 
 > [!NOTE]
-> PowerApps で代替キーを定義できますが、コード内でプログラムのみ使用できます。 プログラムで代替キーを使用する場合の詳細については、以下を参照してください。   
+> PowerApps で代替キーを定義することができますが、これらはコード内のプログラムでのみ使用することができます。 プログラムで代替キーを使用する場合の詳細については、以下を参照してください。   
 > - [開発者向けドキュメント: 代替キーを使用してレコードを作成](/dynamics365/customer-engagement/developer/use-alternate-key-create-record) 
 > - [開発者向けドキュメント: 代替キーを使用して Web API でレコードを取得](/dynamics365/customer-engagement/developer/webapi/retrieve-entity-using-web-api#retrieve-using-an-alternate-key)
 
@@ -49,7 +55,7 @@ search.app:
 
 |デザイナー| 説明|
 |--|--|
-|[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部のオプションは使用できません。<br />詳細: [PowerApps ポータルを使用した代替キーの定義](define-alternate-keys-portal.md)|
+|[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部のオプションは使用できません。<br />詳細については次を参照してください: [PowerApps ポータルを使用して代替キーを定義する](define-alternate-keys-portal.md)|
 |ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。<br />詳細: [ソリューション エクスプローラーを使用した代替キーの定義](define-alternate-keys-solution-explorer.md) |
 
 > [!NOTE]
@@ -59,7 +65,7 @@ search.app:
 
 このトピックの情報は、使用できるデザイナーの選択に役立ちます。 
 
-次のいずれかの要件に対処する必要がない限り、[PowerApps portal ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)を使用して代替キーを作成する必要があります。
+次のいずれかの要件に対処する必要がない限り、[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を使用して代替キーを作成する必要があります。
 
 - Common Data Service の既定となっているソリューション以外のソリューションにて代替キーを作成する
 - サポート インデックスの作成の進行状況を追跡するシステム ジョブを簡単に追跡します
@@ -114,7 +120,7 @@ search.app:
   
 ### <a name="see-also"></a>関連項目  
 
-[PowerApps ポータルを使用した代替キーの定義](define-alternate-keys-portal.md)<br />
+[PowerApps ポータルを使用して代替キーを定義する](define-alternate-keys-portal.md)<br />
 [ソリューション エクスプローラーを使用した代替キーの定義](define-alternate-keys-solution-explorer.md)<br />
 [開発者向けドキュメント: エンティティの代替キーを定義](/dynamics365/customer-engagement/developer/define-alternate-keys-entity)<br />
 [開発者向けドキュメント: 代替キーを使用してレコードを作成](/dynamics365/customer-engagement/developer/use-alternate-key-create-record)

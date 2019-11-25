@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: d80cfb87-d4f1-4c75-bcc8-4f54d1351e26
 caps.latest.revision: 27
-author: brandonsimons
+author: JimDaly
 ms.author: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 714ac2ede999e423ef310a2d0fe738bc6bad97da
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753643"
 ---
 # <a name="web-api-types-and-operations"></a>Web API の種類および操作
 
@@ -28,7 +34,7 @@ Web API を使用するには、使用できるものに関する情報を検索
   
 ## <a name="terminology"></a>用語 
 
-Web API は、精通する必要のある特定の用語を使用する OData v4 標準を使用して実装されます。 *エンティティ データ モデル (EDM)* は OData サービスで公開されるデータを表すのに使用される抽象データ モデルです。 以下の表は、[OData バージョン 4.0 パート 1: Protocol Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html) で定義された、理解する必要のある用語の抜粋リストです。  
+Web API は、精通する必要のある特定の用語を使用する OData v4 標準を使用して実装されます。 *エンティティ データ モデル (EDM)* は OData サービスで公開されるデータを表すのに使用される抽象データ モデルです。 以下の表は、[OData バージョン 4.0 パート 1: Protocol Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html) で定義された、理解する必要のある用語の抜粋リストです。  
   
 |用語|定義|  
 |----------|----------------|  
@@ -80,7 +86,7 @@ GET [Organization URI]/api/data/v9.0/$metadata
   
 このドキュメントは、サービスに厳密に型指定したオブジェクトを提供するクラスを生成するためのデータ ソースとして使用できます。 生成されたクラスを使用しない場合、代わりにこの情報から生成されたドキュメントを確認する必要がある場合があります。 [Web API リファレンス](/dynamics365/customer-engagement/web-api/about)は、一般的な追加ソリューションをインストールしてあるシステムから取得された、主にこの文書からの情報を使用します。  
   
-このドキュメントに関する詳細については、[OData バージョン 4.0 パート 3: Common Schema Definition Language (CSDL) Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part3-csdl.html) を参照してください。  
+このドキュメントに関する詳細については、[OData バージョン 4.0 パート 3: Common Schema Definition Language (CSDL) Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part3-csdl.html) を参照してください。  
   
 > [!TIP]
 >  このトピックを読み進める前に、組織で使用する `$metadata` をダウンロードし、説明されている種類、関数、アクションが `$metadata` やサポート ドキュメントにどのように含まれているかを確認してください。  
@@ -99,7 +105,7 @@ GET [Organization URI]/api/data/v9.0/$metadata
   
 -   要求に `Prefer: odata.include-annotations="*"` ヘッダーを追加します。  
   
-各 `Annotation` 要素には、注釈の種類を示す `Term` 属性が含まれます。 OData V4 で使用できるすべての注釈の定義は、[OData Vocabularies バージョン 4.0](http://docs.oasis-open.org/odata/odata-vocabularies/v4.0/csprd01/odata-vocabularies-v4.0-csprd01.html) で参照できます。 以下の表で、Web API で使用されるいくつかの例を示します。  
+各 `Annotation` 要素には、注釈の種類を示す `Term` 属性が含まれます。 OData V4 で使用できるすべての注釈の定義は、[OData Vocabularies バージョン 4.0](https://docs.oasis-open.org/odata/odata-vocabularies/v4.0/csprd01/odata-vocabularies-v4.0-csprd01.html) で参照できます。 以下の表で、Web API で使用されるいくつかの例を示します。  
   
 |用語|説明|  
 |----------|-----------------|  

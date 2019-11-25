@@ -6,20 +6,26 @@ ms.date: 03/21/2019
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: bsimons
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6b332b1e71a8d440c02cc79f7566eec59533cce
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753083"
 ---
 # <a name="api-limits"></a>API の制限
 
 組織インスタンスごとに各ユーザーが 5 分間のスライド枠で実行する API 要求の数を制限します。 また、一度に受信する同時リクエストの数を制限します。  これらの制限のひとつを超えると、例外がプラットフォームによってスローされます。
 
-この制限はアプリケーションを実行しているユーザーが、リソースの制約に基づいて互いに干渉できないようにします。 これらの制限はプラットフォームの標準ユーザーに影響しません。 影響を受ける可能性があるのは多数の API 要求を実行するアプリケーションのみです。 この制限は Common Data Service プラットフォームの可用性とパフォーマンス特性に対する脅威となる、ランダムに発生する予期しない要求数の急増に備えて一定レベルの保護を提供します。
+この制限はアプリケーションを実行しているユーザーが、リソースの制約に基づいて互いに干渉できないようにします。 これらの制限はプラットフォームの標準ユーザーに影響しません。 影響を受ける可能性があるのは多数の API 要求を実行するアプリケーションのみです。 この制限は、Common Data Service プラットフォームの可用性とパフォーマンス特性に対する脅威となる、ランダムに発生する予期しない要求数の急増に備えて一定レベルの保護を提供します。
 
 プラグインとカスタム ワークフロー活動はログオンしているユーザーから独立してサーバー上で実行されるため、プラグイン コードからの API 呼び出しはこの外部 API 要求制限にはカウントされません。
 
@@ -48,7 +54,7 @@ API 要求の量が制限を下回るまで、すべての要求に対してこ�
 
 ベスト プラクティスの詳細については、[Azure アーキテクチャ ベスト プラクティスでの一時的なエラー処理](/azure/architecture/best-practices/transient-faults)を参照してください
 
-[Polly Project](http://www.thepollyproject.org/) は、実行ポリシーを使用して一時的なエラーを処理する機能を含むライブラリです。
+[Polly Project](https://www.thepollyproject.org/) は、実行ポリシーを使用して一時的なエラーを処理する機能を含むライブラリです。
 
 ### <a name="http-requests"></a>HTTP 要求
 
@@ -133,7 +139,7 @@ public class Retry
 
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service Web API の使用](webapi/overview.md)<br />
+[Common Data Service Web API を使用する](webapi/overview.md)<br />
 [Common Data Service 組織サービスを使用する](org-service/overview.md)<br />
 [Web API を使用してバッチ操作を実行する](webapi/execute-batch-operations-using-web-api.md)<br />
 [大量データ負荷でパフォーマンスを向上させる ExecuteMultiple を使用する](org-service/execute-multiple-requests.md)

@@ -1,5 +1,5 @@
 ---
-title: PowerAppsでエンティティを編集する| MicrosoftDocs
+title: PowerApps でエンティティの編集 | MicrosoftDocs
 description: エンティティが編集可能なさまざまな方法を説明する
 ms.custom: ''
 ms.date: 05/15/2018
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 8b00780c-74f0-4e3a-b570-b9289d0d5383
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3ec64583e2146703711b88456ff7bc91ece3e921
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757449"
 ---
 # <a name="edit-an-entity"></a>エンティティの編集
 
@@ -34,12 +40,12 @@ search.app:
 
 |デザイナー|説明|
 |--|--|
-|[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。|
+|[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。|
 |ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。|
 
 PowerApps ポータルとソリューション エクスプローラーの両方で、以下を実行できます。
 
-- **エンティティ フィールドを編集する**。 詳細情報: [Common Data Service のフィールドの作成および編集](create-edit-fields.md)
+- **エンティティ フィールドを編集する**。 詳細: [Common Data Service のフィールドの作成と編集](create-edit-fields.md)
   
 - **エンティティ関係を編集する**。 詳細情報: [エンティティ間の関連付けの作成と編集](create-edit-entity-relationships.md)
 

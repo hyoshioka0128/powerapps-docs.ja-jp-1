@@ -1,19 +1,25 @@
 ---
-title: 'クイック スタート: Web API サンプル (C#) (Common Data Service)| Microsoft Docs'
-description: このサンプルでは、Common Data Service サーバーの認証方法、および基本的な Web API 操作、WhoAmI Function を呼び出す方法を示しています。
+title: 'クイック スタート: Web API サンプル (C#) (Common Data Service) | Microsoft Docs'
+description: このサンプルでは、Common Data Service サーバーの認証方法、その後、基本的な Web API 操作である、WhoAmI Function を呼び出す方法を示しています。
 ms.custom: ''
 ms.date: 02/02/2019
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 995fbc4e4d21549d59c5d1c135fd7448c8abedc0
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753687"
 ---
 # <a name="quick-start-web-api-sample-c"></a>クイック スタート: Web API のサンプル (C#)
 
@@ -26,18 +32,18 @@ search.app:
 
 ## <a name="prerequisites"></a>前提条件
 
- - Visual Studio (2017 を推奨)
+ - Visual Studio (2017 推奨)
  - インターネット接続
- - Common Data Service インスタンスの有効なユーザー アカウント
+ - Common Data Service インスタンスに有効なユーザー アカウント
     - ユーザー名
     - パスワード
- - 接続に使用する Common Data Service 環境の URL
+ - 接続に使用したい Common Data Service 環境への URL
  - Visual C# 言語の基本的な理解
 
 > [!NOTE]
-> 認証するには、Azure Active Directory に登録されているアプリケーションが必要です。 このクイック スタート サンプルは、Microsoft が公開している実行中のサンプル コードの目的で使用できるアプリ登録 `clientid` 値を示します。 独自のアプリケーションの場合、アプリを登録する必要があります。 詳細: [チュートリアル: Azure Active Directory にアプリを登録する](../walkthrough-register-app-azure-active-directory.md)
+> 認証するには、Azure Active Directory に登録されているアプリが必要です。 このクイック スタート サンプルは、Microsoft が公開している実行中のサンプル コードの目的で使用できるアプリ登録 `clientid` 値を示します。 独自のアプリケーションの場合、アプリを登録する必要があります。 詳細: [チュートリアル: Azure Active Directory でアプリを登録する](../walkthrough-register-app-azure-active-directory.md)
 
-## <a name="create-visual-studio-project"></a>Visual Studio プロジェクトの作成
+## <a name="create-visual-studio-project"></a> Visual Studio プロジェクトの作成
 
 1. **.NET Framework 4.6.2** を使用して新しいコンソール アプリ (.NET Framework) を作成する
 
@@ -51,30 +57,30 @@ search.app:
     > 
     > VS 2015 のデバッグモードでプロジェクト/ソリューションを実行していると、接続できなくなることがあります。 これは、4.6.2 以降のターゲットフレームワークを使用しているかどうかにかかわらず発生します。 これは、Visual Studio ホスティングプロセスが .NET 4.5 に対してコンパイルされているために発生します。これは既定で TLS 1.2 がサポートされていないことを意味します。 回避策として、Visual Studio ホスティング プロセスを無効にできます。 
     >
-    > Visual Studio でプロジェクトの名前を右クリックしてから、**プロパティ**をクリックします。 **デバッグ**タブで、**Visual Studio ホスティング プロセスの無効化**オプションをオフにできます。 
+    > Visual Studio でプロジェクトの名前を右クリックしてから、**プロパティ**をクリックします。 **デバッグ**タブで、**Visual Studio ホスティング プロセスの有効化**オプションをオフにできます。 
     >
     > これは、VS 2015 のデバッグ エクスペリエンスにのみ影響を与えます。 これは構築されるバイナリまたは実行可能ファイルには影響しません。 同じ問題は、Visual Studio 2017 では発生しません。
 
-1. **ソリューション エクスプローラー**で、作成したプロジェクトを右クリックして、コンテキスト メニューで **NuGet Packages の管理...** を選択します。
+1. **Solution Explorer** で、作成したプロジェクトを右クリックして、コンテキスト メニューで **NuGet パッケージの管理...** を選択します。
 
-    ![NuGet パッケージの追加](../media/quick-start-web-api-console-app-csharp-2.png)
+    ![NuGet  パッケージの追加](../media/quick-start-web-api-console-app-csharp-2.png)
 
-1. NuGet パッケージ `Microsoft.IdentityModel.Clients.ActiveDirectory` を参照します。
+1. `Microsoft.IdentityModel.Clients.ActiveDirectory` NuGet パッケージを参照する。
 1. **バージョン** 2.29.0 を選択し、をインストールします。
 
-    ![Microsoft.IdentityModel.Clients.ActiveDirectory NuGet パッケージをインストールする](../media/quick-start-web-api-console-app-csharp-3.png)
+    ![Microsoft.IdentityModel.Clients.ActiveDirectory NuGet パッケージをインストールする。](../media/quick-start-web-api-console-app-csharp-3.png)
 
     > [!IMPORTANT]
-    > **この NuGet パッケージの最新バージョンをインストールしないでください。**
+    > **この NuGet パッケージの最新バー所音をインストールしないでください。**
     >
     > このサンプルは、このライブラリの 3.x バージョンでは使用できない別個の Azure ログイン ダイアログを持たないユーザーのログイン資格情報を渡す機能に応じて異なります。
 
     > [!NOTE]
     > **ライセンスの承認** ダイアログで **同意する** を選択する必要があります。
 
-1. NuGet パッケージ `Newtonsoft.Json` を参照して、最新バージョンをインストールします。
+1.  `Newtonsoft.Json` NuGet パッケージを参照して、最新バージョンをインストールします。
 
-    ![Microsoft.IdentityModel.Clients.ActiveDirectory NuGet パッケージをインストールする](../media/quick-start-web-api-console-app-csharp-4.png)
+    ![Microsoft.IdentityModel.Clients.ActiveDirectory NuGet パッケージをインストールする。](../media/quick-start-web-api-console-app-csharp-4.png)
 
 ## <a name="edit-programcs"></a>Program.cs を編集する
 
@@ -152,12 +158,12 @@ search.app:
     ```
     `url` を取得する: 
 
-    1. 適切な環境が選択されている [https://web.powerapps.com](https://web.powerapps.com) サイトで、**設定** ![設定ボタン](media/settings-icon.png) を選択し、設定ボタン [設定] ボタンを選択し、**高度なカスタマイズ**を選択します。 **開発者リソース**を選択します。
+    1. 適切な環境が選択されている [https://make.powerapps.com](https://make.powerapps.com) サイトで、**設定** ![設定ボタン](media/settings-icon.png) を選択し、設定ボタン [設定] ボタンを選択し、**高度なカスタマイズ**を選択します。 **開発者リソース**を選択します。
     1. **開発者リソース** ページで、**インスタンスの Web API** 値を探してコピーします。 
 
         `https://yourorgname.api.crm.dynamics.com/api/data/v9.1/` のようになります。 ただし、このサンプルでは、最後の部分 (`/api/data/v9.1/`) を切り取って `https://yourorgname.api.crm.dynamics.com` にする必要があります。
 
-    `userName` 変数と `password` 変数の場合は、[https://web.powerapps.com](https://web.powerapps.com) サイトにログインするのと同じ資格情報を使用します。
+    `userName` 変数と `password` 変数の場合は、[https://make.powerapps.com](https://make.powerapps.com) サイトにログインするのと同じ資格情報を使用します。
 
 ## <a name="run-the-program"></a>プログラムを実行する
 
@@ -172,7 +178,7 @@ search.app:
 
 Web API に正常に接続されました。
 
-クイック スタートのサンプルでは、Visual Studio プロジェクトを作成する簡単な方法を示しており、例外処理やアクセス トークンを更新するメソッドは使用していません。 
+クイック スタートのサンプルでは、 Visual Studio プロジェクトを作成する簡単な方法を示しており、例外処理やアクセス トークンを更新するメソッドは使用していません。 
 
 これは接続を確認するには十分ですが、アプリを構築するための優れたパターンは示しません。
 

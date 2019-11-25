@@ -1,5 +1,5 @@
 ---
-title: エンティティ メタデータのカスタマイズ (Common Data Service) | MicrosoftDocs
+title: エンティティ メタデータのカスタマイズ (Common Data Service) | Microsoft Docs
 description: エンティティは、メタデータによって定義されます。 エンティティ メタデータを定義または変更することによって、エンティティの機能を制御できます。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,14 +10,20 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7be52e8fb5eae18e709ab10765a0684b5a65ef81
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753003"
 ---
 # <a name="customize-entity-metadata"></a>エンティティ メタデータのカスタマイズ
 
-エンティティは、メタデータによって定義されます。 エンティティ メタデータを定義または変更することによって、エンティティの機能を制御できます。 組織のメタデータを表示するには、メタデータ ブラウザーを使用します。 [メタデータ ブラウザーのダウンロード](http://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip)。
+エンティティは、メタデータによって定義されます。 エンティティ メタデータを定義または変更することによって、エンティティの機能を制御できます。 組織のメタデータを表示するには、メタデータ ブラウザーを使用します。 [メタデータ ブラウザーのダウンロード](https://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip)。
 
 詳細: [組織のメタデータの参照](browse-your-metadata.md)  
   
@@ -87,11 +93,11 @@ Web API は RESTful エンドポイントであるため、メタデータの作
 |                                   **プライマリ イメージ**                                    |                                                                                             エンティティにイメージ属性がある場合、`PrimaryImageAttribute`を使用してアプリケーションへのその画像の表示を有効または無効にできます。 詳細については、[エンティティ イメージ](/dynamics365/customer-engagement/developer/introduction-entities#BKMK_EntityImages)を参照してください。                                                                                             |
 |                                **表示テキストの変更**                                 |                                                                                             マネージド プロパティ `IsRenameable` のために、アプリケーションで表示名を変更できません。 `DisplayName` および `DisplayCollectionName` プロパティを更新することによって、ラベルをプログラム的に変更することができます。                                                                                             |
 |                            **エンティティの説明の編集**                             |                                                                                                         マネージド プロパティ `IsRenameable` のために、アプリケーションでエンティティの説明を変更できません。 `Description` プロパティを更新することによって、ラベルをプログラム的に変更することができます。                                                                                                         |
-|                            **オフライン時の使用の有効化**                            |                                                                                                          オフライン アクセス対応 Dynamics 365 for Microsoft Office Outlook のユーザーが、オフライン時にこのエンティティのデータを取得できるかどうかを切り替えるには、`IsAvailableOffline`を使用します。                                                                                                           |
+|                            **オフライン時の使用の有効化**                            |                                                                                                          オフライン アクセス対応 Dynamics 365 for Microsoft Office Outlook のユーザーが、オフライン時にこのエンティティのデータを取得できるかどうかを切り替えるには、`IsAvailableOffline` を使用します。                                                                                                           |
 |                          **Outlook の閲覧ウィンドウの有効化**                           | **メモ**:<br /><br /> `IsReadingPaneEnabled`エンティティは内部のみで使用します。<br /><br /> Office Outlook のユーザーがこのエンティティのデータを表示できるかどうかを切り替えるには、Outlook の閲覧ウィンドウを使用します。 このプロパティは、アプリケーションで設定する必要があります。 |
 |                                 **差し込み印刷の有効化**                                  |                                                                                                                 このエンティティからのデータを使用する Office Word の結合された文書を生成できるかどうかを切り替えるには、`IsMailMergeEnabled`を使用します。                                                                                                                  |
 |                             **重複データ検出の有効化**                             |                                                                                                       エンティティの重複データ検出の有効と無効を切り替えるには、`IsDuplicateDetectionEnabled` を使用します。 詳細については、[Dynamics 365 の重複データの検出](/dynamics365/customer-engagement/developer/detect-duplicate-data-for-developers) を参照してください。                                                                                                        |
-|                           **SharePoint の統合の有効化**                            |                                                          エンティティの SharePoint サーバー統合の有効と無効を切り替えるには、`IsDocumentManagementEnabled`を使用します。 詳細については、[エンティティに対するドキュメント管理の有効化](/dynamics365/customer-engagement/developer/integration-dev/enable-document-management-entities) を参照してください。                                                          |
+|                           **SharePoint 統合の有効化**                            |                                                          エンティティの SharePoint 統合の有効/無効を切り替えるには、`IsDocumentManagementEnabled` を使用します。 詳細については、[エンティティに対するドキュメント管理の有効化](/dynamics365/customer-engagement/developer/integration-dev/enable-document-management-entities) を参照してください。                                                          |
 | **Dynamics 365 for phones の有効化** |                                                                                                                      Dynamics 365 for phones のユーザーがこのエンティティのデータを表示できるかどうかを切り替えるには、`IsVisibleInMobile`を使用します。                                                                                                                       |
 |              **Dynamics 365 for tablets**               |                             Dynamics 365 for tablets のユーザーがこのエンティティのデータを表示できるかどうかを切り替えるには、`IsVisibleInMobileClient`を使用します。<br /><br /> エンティティが Dynamics 365 for tablets で利用可能な場合は、レコードのデータが読み取り専用であることを指定するために`IsReadOnlyInMobileClient`を使用することができます。                              |
 |                                  **監査の有効化**                                   |                                                                                                              エンティティの監査の有効と無効を切り替えるには、`IsAuditEnabled` を使用します。 詳細については、[監査のエンティティおよび属性の構成](configure-entities-attributes-auditing.md) を参照してください。                                                                                                              |

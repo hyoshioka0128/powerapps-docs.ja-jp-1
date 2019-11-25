@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c839738bb0ab1a533a432ea4d6e8ad6be1f7a6ce
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754564"
 ---
 # <a name="ribbons-available"></a>利用できるリボン
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365 -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365 -->
 
 このトピックでは、モデル駆動型アプリでリボンを定義および変更する場所について説明します。
 
@@ -29,7 +35,7 @@ search.app:
 
  このように、既存のリボン要素の定義を参照する必要があるため、組織の現在のリボン定義を理解することは非常に重要です。 リボンの現在の状態を表す XML ファイルのエクスポートに使用できるメッセージは 2 つあります。 これらの定義には、既にシステムに適用されているすべてのカスタマイズが含まれているので、以前適用されたすべてのユーザー定義リボンをカスタマイズできます。 詳細については、「[リボン定義のエクスポート](export-ribbon-definitions.md)」を参照してください。  
 
- 簡単に開始するために、[Microsoft ダウンロード: ExportedRibbonXml.zip](http://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip) から MDA の既定のリボン定義をダウンロードできます。 ExportedRibbonXml.zip ファイルには、リボンがカスタマイズされていない組織のための出力ファイルが含まれています。 このデータをエクスポートするために、サンプル アプリケーションを実行する必要はありません。 リボンがカスタマイズされている場合は、サンプル アプリケーションを実行して、このフォルダーのファイルをこれまで組織に適用されたすべてのカスタマイズで更新する必要があります。  
+ 簡単に開始するために、[Microsoft ダウンロード: ExportedRibbonXml.zip](https://download.microsoft.com/download/C/2/A/C2A79C47-DD2D-4938-A595-092CAFF32D6B/ExportedRibbonXml.zip) から MDA の既定のリボン定義をダウンロードできます。 ExportedRibbonXml.zip ファイルには、リボンがカスタマイズされていない組織のための出力ファイルが含まれています。 このデータをエクスポートするために、サンプル アプリケーションを実行する必要はありません。 リボンがカスタマイズされている場合は、サンプル アプリケーションを実行して、このフォルダーのファイルをこれまで組織に適用されたすべてのカスタマイズで更新する必要があります。  
 
  エクスポートされたリボン XML ファイルの中で、applicationRibbon.xml ファイルには、特定のエンティティに対して定義されていないすべてのリボンが含まれます。 これらのリボンは、**アプリケーション リボン**ソリューション コンポーネントに対応しています。 エンティティごとに、*エンティティ名*ribbon.xml ファイルがあります。 このファイルは、各エンティティに含まれる `RibbonDiffXml` に対応しています。 特定のエンティティのリボンを編集する場合は、そのエンティティのリボン XML ファイルを見つける必要があります。  
 
@@ -88,7 +94,7 @@ search.app:
 
  エンティティのレコードのリストが別のエンティティのフォームまたはグラフのサブグリッド内に表示される場合、サブグリッドの上部または内で直接使用できるコントロールは 3 種類のみです。 これらのコントロールの動作は、関連付けられているコマンドの変更で、変更できます。  
 
-- **追加** ![[追加] ボタン](media/customization-subgrid-add.PNG "[追加] ボタン")のアイコンを含むコマンドの既定動作は、 サブグリッドのレコードが現在のレコードに関連しているかどうかによって異なります。  
+- **追加** ![追加ボタン](media/customization-subgrid-add.PNG "[追加] ボタン") アイコンを持つコマンドの既定動作は、サブグリッドのレコードが現在のレコードに関連しているかどうかによって異なります。  
 
      レコードが現在のレコードに関連する場合、既定動作では既存レコードを探します。 既存のレコードを検索できない場合、またはユーザーが新しいレコードを作成するときには、**新規追加**をクリックできます。  
 
@@ -99,13 +105,13 @@ search.app:
      > [!NOTE]
      >  Dynamics 365 のオフライン モードはユーザー定義エンティティの多対多関連付けをサポートしていません。 このため、Dynamics 365 のオフライン モードではサブグリッドの**新規追加**ボタンは表示されません。
 
-- **リストの表示** ![[ビューを開く] ボタン](media/customization-open-view.PNG "[ビューを開く] ボタン")のアイコンを含むコマンドにより、使用できるすべてコマンドが使用できる一覧が開かれます。  
+- **リストの表示**  ![ビューの表示ボタン](media/customization-open-view.PNG "[ビューを開く] ボタン") のアイコンを含むコマンドにより、使用できるすべてコマンドが使用できる一覧が開かれます。  
 
      サブグリッドが現在のレコードに関連付けられている場合、このコマンドの既定動作は、関連ビューをオープンすることです。  
 
      サブグリッドが現在のレコードに関連付けられていない場合、このコマンドの既定動作は、メインリストビューのビューをオープンすることです。  
 
-- **削除** ![サブリストの削除アイコン](media/customization-subgrid-delete.PNG "サブリストの削除アイコン")が、 一覧内のレコードにカーソルを置くと、行の右側に表示されます。  
+- **削除**  ![サブリストの削除アイコン](media/customization-subgrid-delete.PNG "サブリストの削除アイコン") アイコンが、一覧内のレコードにカーソルを置くと、行の右側に表示されます。  
 
      1:N の関連付けのレコードまたは関連付けがないレコードの場合、既定動作はレコードを削除することです。 関係構成のために許可されていない場合、削除はブロックされている可能性があります。 オープンしている活動および請求書は、関連構成のために削除されない可能性があるレコードで共通の例です。  
 

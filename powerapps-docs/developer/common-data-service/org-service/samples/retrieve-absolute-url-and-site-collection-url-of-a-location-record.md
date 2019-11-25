@@ -1,25 +1,31 @@
 ---
-title: 'サンプル: 場所レコードの絶対 URL およびサイト コレクション URL の取得 (Common Data Service) | Microsoft Docs'
-description: このサンプルは、SharePoint の場所の絶対 URL およびサイト コレクション URL を取得する方法を示します。
+title: 'サンプル: 絶対 URL およびサイト コレクション URL の取得 (Common Data Service) | Microsoft Docs'
+description: このサンプルは、SharePoint の場所の絶対 URL とサイト コレクション URL を取得する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fa73f1dc5cb711291e5e6f441a69386913419800
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749302"
 ---
 # <a name="sample-retrieve-absolute-url-and-site-collection-url-of-a-location-record"></a>サンプル: 場所レコードの絶対 URL およびサイト コレクション URL の取得
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/integration-dev/sample-retrieve-absolute-url-and-site-collection-url-of-a-location-record -->
 
-このサンプルは、[RetrieveAbsoluteAndSiteCollectionUrlRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.retrieveabsoluteandsitecollectionurlrequest?view=dynamics-general-ce-9) メッセージを使用して SharePoint Server の場所レコードの絶対 URL およびサイト コレクション URL を取得する方法を示します。
+このサンプルは、[RetrieveAbsoluteAndSiteCollectionUrlRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.retrieveabsoluteandsitecollectionurlrequest?view=dynamics-general-ce-9) メッセージを使用して SharePoint サーバー絶対 URL とサイト コレクション URL を取得する方法を示します。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

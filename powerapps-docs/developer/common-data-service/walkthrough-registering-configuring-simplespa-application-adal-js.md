@@ -4,21 +4,24 @@ description: このチュートリアルでは、adal.js および Cross-origin 
 keywords: ''
 ms.date: 08/26/2019
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: a327d2ff-e252-61cf-1190-6a974130ef19
 author: paulliew
 ms.author: nabuthuk
 manager: ryjones
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1d71e39bc36d948894947bf7a665f6c0b3ead2ec
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753759"
 ---
-
 # <a name="walkthrough-registering-and-configuring-a-spa-application-with-adaljs"></a>チュートリアル: adal.js で SPA アプリケーションを登録および構成する
 
 このチュートリアルでは、adal.js および Cross-origin Resource Sharing (CORS) を使用して Common Data Service のデータをアクセスするために、最も単純化された Single Page Application (SPA) の登録および構成プロセスについて説明されます。 詳細: [OAuth を使用するクロス オリジン リソース共有を使用して単一ページのアプリケーションを Common Data Service に接続する](oauth-cross-origin-resource-sharing-connect-single-page-application.md)
@@ -81,7 +84,7 @@ search.app:
       var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL of your Common Data Service organization  
       var tenant = "[xxx.onmicrosoft.com]"; //The name of the Azure AD organization you use  
       var clientId = "[client id]"; //The ClientId you got when you registered the application  
-      var pageUrl = "http://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
+      var pageUrl = "https://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
   
       var user, authContext, message, errorMessage, loginButton, logoutButton, getAccountsButton, accountsTable, accountsTableBody;  
   
@@ -272,7 +275,7 @@ search.app:
   
 3. SimpleSPA.html ファイルで右クリックし、**開始ページに設定** を選択してこのページをプロジェクトの開始ページに設定します。  
   
-4. プロジェクトのプロパティでは、**Web** を選択し、**サーバー**では、**Project URL** を記録します。 `http://localhost:62111/` のようになる必要があります。 生成されるポート番号を記録します。 次の手順でこれが必要になります。  
+4. プロジェクトのプロパティでは、**Web** を選択し、**サーバー**では、**Project URL** を記録します。 `https://localhost:62111/` のようになる必要があります。 生成されるポート番号を記録します。 次の手順でこれが必要になります。  
   
 5. SimpleSPA.html ページ内では、次の構成変数を見つけ、それに応じて設定します。 チュートリアルの次の部分が完了した後に、`clientId` が設定できるようになります。  
   
@@ -281,7 +284,7 @@ search.app:
     var organizationURI = "https://[organization name].crm.dynamics.com"; //The URL to connect to PowerApps Common Data Service  
     var tenant = "[xxx.onmicrosoft.com]"; //The name of the Azure AD organization you use  
     var clientId = "[client id]"; //The ClientId you got when you registered the application  
-    var pageUrl = "http://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
+    var pageUrl = "https://localhost:[PORT #]/SimpleSPA.html"; //The URL of this page in your development environment when debugging.  
   
     ```  
   
@@ -290,7 +293,7 @@ search.app:
 1. 管理者権限を持つアカウントを使用して [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) にサインインします。 アプリの登録に使用するものと同じ Office 365 サブスクリプション (テナント) のアカウントを使用する必要があります。 左のナビゲーション ウィンドウで **管理** アイテムを展開し、**Azure AD** を選択することによって、Microsoft 365 管理センターから Azure ポータルにもアクセスできます。  
   
     > [!NOTE]
-    > ユーザーが Azure テナント (アカウント) を持っていないか、または持っているが Office 365 Azure でのサブスクリプションCommon Data Serviceが Azure サブスクリプションで使用できない場合は、トピック[設定Azure Active Directoryの手順に従って開発者サイト](https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program)にアクセスし、2 つのアカウントを関連付けます。<br/><br/> アカウントがない場合は、クレジット カードを使用して、アカウントにサインアップすることができます。 ただし、このトピックの手順を実行して 1 つまたは複数のアプリケーションを登録する場合は、アカウントは無料なのでクレジット カードに請求はありません。 詳細: [Active Directory 価格設定詳細](http://azure.microsoft.com/pricing/details/active-directory/)。  
+    > ユーザーが Azure テナント (アカウント) を持っていないか、または持っているが Office 365 Azure でのサブスクリプションCommon Data Serviceが Azure サブスクリプションで使用できない場合は、トピック[設定Azure Active Directoryの手順に従って開発者サイト](https://docs.microsoft.com/office/developer-program/office-365-developer-program)にアクセスし、2 つのアカウントを関連付けます。<br/><br/> アカウントがない場合は、クレジット カードを使用して、アカウントにサインアップすることができます。 ただし、このトピックの手順を実行して 1 つまたは複数のアプリケーションを登録する場合は、アカウントは無料なのでクレジット カードに請求はありません。 詳細: [Active Directory 価格設定詳細](https://azure.microsoft.com/pricing/details/active-directory/)。  
   
 2. ページの左側の列で、**Azure Active Directory** をクリックします。 左側の列をスクロールして、**Azure Active Directory** アイコンおよびラベルを参照する必要があります。  
   
@@ -316,7 +319,7 @@ search.app:
 
    - **サポートされているアカウントの種類**<br />**組織ディレクトリ内のアカウント** を選択します。
 
-   - **リダイレクト URL**<br />これは、ユーザーがサインインした後にリダイレクトされる URL です。 ドロップダウン リストで **Web** を選択します。 Visual Studio でデバッグするため、その URL は [Web アプリケーション プロジェクトの作成](#bkmk_createwebapp)手順の 4 から取得したポート番号を表記する `http://localhost:####/SimpleSPA.html` となります。 そしてページの最後で **登録** をクリックします。
+   - **リダイレクト URL**<br />これは、ユーザーがサインインした後にリダイレクトされる URL です。 ドロップダウン リストで **Web** を選択します。 Visual Studio でデバッグするため、その URL は [Web アプリケーション プロジェクトの作成](#bkmk_createwebapp)手順の 4 から取得したポート番号を表記する `https://localhost:####/SimpleSPA.html` となります。 そしてページの最後で **登録** をクリックします。
 
    ![詳細を入力](media/new-app-registration-page.png)
 

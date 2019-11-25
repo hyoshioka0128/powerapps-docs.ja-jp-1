@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 346bbf75e614fc7b7b3d3f2958825de538a757e1
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753051"
 ---
 # <a name="build-web-applications-using-server-to-server-s2s-authentication"></a>サーバー間 (S2S) の認証を使用して Web アプリケーションを作成する
 
@@ -23,7 +29,7 @@ S2S 認証は、Common Data Service 環境に接続する時に、有料の Powe
 
  S2S を使用してアプリケーションまたはサービスによって実行するすべての操作は、ユーザーのアプリケーションにアクセスしているユーザーとしてではなく、ユーザーが提供するアプリケーションのユーザーとして実行されます。 ユーザーのアプリケーションと対話しているユーザーなど、特定のユーザーに代わってデータ操作をアプリケーションが実行することを希望する場合、アプリケーション サービス プリンシパルに適用するユーザー定義のセキュリティ ロールが必要な特権を持っている場合に、偽装を適用できます。 詳細情報: [もう一方のユーザーの偽装](impersonate-another-user.md)  
 
- S2S 認証を使用する Web アプリケーションまたはサービスはアクセス権を持っているデータへのアクセスを制御します。 これは通常、OpenID 接続プロバイダーを使用して行われます。 詳細については、「<http://openid.net/connect/>」を参照してください。  
+ S2S 認証を使用する Web アプリケーションまたはサービスはアクセス権を持っているデータへのアクセスを制御します。 これは通常、OpenID 接続プロバイダーを使用して行われます。 詳細については、「<https://openid.net/connect/>」を参照してください。  
 
 ## <a name="server-to-server-authentication-scenarios"></a>サーバー間の認証シナリオ  
  S2S 認証が適用できる 2 つのシナリオがあります。  
@@ -32,7 +38,7 @@ S2S 認証は、Common Data Service 環境に接続する時に、有料の Powe
 |   シナリオ    |   説明  |
 |---------------|---------------|
 | マルチテナント  | これは最も一般的なシナリオで、 Microsoft AppSource を使用して配布されたアプリケーションに対して使用されるものです。<br /><br /> 各 Common Data Service テナントは、Azure AD テナントに関連付けられます。 Web アプリケーションまたはサービスは、独自の Azure AD テナントで登録されます。<br /><br /> このシナリオでは、アプリケーションがテナントのデータにアクセスする許可を取得した後に、すべての Common Data Service テナントはマルチテナント型アプリケーションを潜在的に使用できます。                                                           |
-| 単一テナント | このシナリオは通常、独自のテナントのアプリを開発し、それをその他の [Common Data Service 環境 へ配布する意図のない Common Data Service 環境に対して適用されます。<br /><br /> エンタープライズは、テナントのすべての Common Data Service 環境に接続する Web アプリケーションまたはサービスを作成できます。<br /><br /> このシナリオでは、Web アプリケーションやサービスが、同じ Azure AD テナント情報を使用して Common Data Service 環境のみに接続することができます。 |
+| 単一テナント | このシナリオは通常、独自のテナントのアプリを開発し、それをその他の Common Data Service 環境 へ配布する意図のない Common Data Service 環境に対して適用されます。<br /><br /> エンタープライズは、テナントのすべての Common Data Service 環境に接続する Web アプリケーションまたはサービスを作成できます。<br /><br /> このシナリオでは、Web アプリケーションやサービスが、同じ Azure AD テナント情報を使用して Common Data Service 環境のみに接続することができます。 |
 
  両方のシナリオに共通要素がありますが、異なる要素もあります。 マルチテナント型は最も共通なシナリオであるため、 [マルチテナント型サーバー間認証を使用](use-multi-tenant-server-server-authentication.md) コンテンツでは、このシナリオで S2S を使用する方法が説明され、単一テナントの構成のオプションが異なる場合に関するメモが追加されています。 
 

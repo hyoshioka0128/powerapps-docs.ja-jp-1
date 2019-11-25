@@ -1,5 +1,5 @@
 ---
-title: PowerApps ポータルを使用して Common Data Service のフィールドの作成、編集を行う | MicrosoftDocs
+title: PowerApps ポータルを使用して Common Data Service のフィールドを作成、編集する | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/13/2019
 ms.reviewer: ''
@@ -8,21 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 231970fb08886b993b55dcc6506ef387c9a20018
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757977"
 ---
-# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>PowerApps ポータルを使用して Common Data Service のフィールドの作成、編集を行います
+# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>PowerApps ポータルを使用して Common Data Service のフィールドを作成、編集する
 
-[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、 Common Data Serviceを使用することで簡単にエンティティ フィールドを作成、編集することができます。
+[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、 Common Data Serviceを使用してエンティティ フィールドを簡単に作成、編集することができます。
 
 ポータルでは一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 <br />詳細: 
 - [Common Data Serviceのフィールドの作成と編集](create-edit-fields.md)
@@ -30,7 +36,7 @@ search.app:
 
 ## <a name="view-fields"></a>ビュー フィールド
 
-1. [PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、**モデル駆動型**または**キャンバス**設計モードを選択します。
+1. [PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、 **モデル駆動型** または **キャンバス** 設計モードを選択します。
 2. **データ** > **エンティティ** を選択し、表示するフィールドを持つエンティティを選択します。
 3. **フィールド** タブでは、次のビューを選択できます。 
 

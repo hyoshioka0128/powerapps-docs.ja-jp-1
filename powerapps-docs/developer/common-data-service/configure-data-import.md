@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: de387cf362a8cef5971f7abf16afdd06a07cb32f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753031"
 ---
 # <a name="configure-data-import"></a>データ インポートの構成
 
@@ -49,12 +55,12 @@ powerapps-docs/developer/common-data-service/import-data.md
 - ソース ファイルの内容を `ImportFile.Content` に読み込みます。  
   
 > [!IMPORTANT]
->  プログラムでのデータ インポートを使用してレコードを更新することはお勧めしません。 更新するには、Common Data Service Web アプリケーションのデータのエクスポートおよびインポートの機能を使用してください。 **Excel にエクスポート**を使用して、レコードを XML Spreadsheet 2003 (.xml) ファイルにエクスポートします。 これは更新モードで有効な唯一のソース ファイルの種類です。 データを XML Spreadsheet 2003 (.xml) ソース ファイルから再インポートすると、Common Data Service のデータ整合性が維持されます。 更新されたデータをインポートするには Common Data Service データ インポート ウィザードを使用します。 データ インポート ウィザードの詳細については Common Data Service のヘルプを参照してください。  
+>  プログラムでのデータ インポートを使用してレコードを更新することはお勧めしません。 それを更新するには、Common Data Service Web アプリケーションのデータのエクスポートおよびインポートの機能を使用してください。 **Excel にエクスポート**を使用して、レコードを XML Spreadsheet 2003 (.xml) ファイルにエクスポートします。 これは更新モードで有効な唯一のソース ファイルの種類です。 データを XML Spreadsheet 2003 (.xml) ソース ファイルから再インポートすると、Common Data Service のデータ整合性が保持されます。 更新されたデータをインポートするには、Common Data Service データ インポート ウィザードを使用します。 データ インポート ウィザードの詳細については、Common Data Service ヘルプを参照してください。  
  
 ### <a name="see-also"></a>関連項目
 
 [データのインポート](import-data.md)<br />
-[ブログの投稿: 添付をプログラムでインポートする方法](http://blogs.msdn.com/b/crm/archive/2012/08/06/how-to-import-attachments-programmatically.aspx)<br />
+[ブログの投稿: 添付をプログラムでインポートする方法](https://blogs.msdn.com/b/crm/archive/2012/08/06/how-to-import-attachments-programmatically.aspx)<br />
 [ソース ファイルのインポートを準備する](prepare-source-files-import.md)<br />
 [インポート用データ マップの作成](create-data-maps-for-import.md)<br />
 [インポート用の変換マッピングの追加](add-transformation-mappings-import.md)<br />

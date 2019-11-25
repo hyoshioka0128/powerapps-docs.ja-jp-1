@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a53a0d1568e271ec49b44d757666d0365c246ec6
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752663"
 ---
 # <a name="organize-your-team-to-develop-solutions"></a>ソリューション開発のためのチーム編成
 
@@ -44,7 +50,7 @@ search.app:
   
 <a name="BKMK_DeployingSolutionsFromDevThroughToProduction"></a>   
 ## <a name="deploy-solutions-from-development-through-test-and-production-environments"></a>開発環境からテスト環境および運用環境までのソリューションの展開  
- 開発組織では、ソリューションはさまざまなテスト環境やステージング環境に展開されて分析され、最終的に運用環境に展開されます。 ホワイトペーパー [Microsoft Dynamics CRM 2011 および CRM Online ソリューションの開発からテスト、運用環境への展開](http://go.microsoft.com/fwlink/p/?LinkId=232288)では、Dynamics 365 の実際のソリューションを、テスト環境および運用環境全体にわたって展開する方法について、自動化を利用した、信頼性が高く繰り返し可能なやり方の中で紹介しています。 また、Common Data Service でソリューションを展開およびテストする際の制約についても説明しています。  
+ 開発組織では、ソリューションはさまざまなテスト環境やステージング環境に展開されて分析され、最終的に運用環境に展開されます。 ホワイトペーパー [Microsoft Dynamics CRM 2011 および CRM Online ソリューションの開発からテスト、運用環境への展開](https://go.microsoft.com/fwlink/p/?LinkId=232288)では、Dynamics 365 の実際のソリューションを、テスト環境および運用環境全体にわたって展開する方法について、自動化を利用した、信頼性が高く繰り返し可能なやり方の中で紹介しています。 また、Common Data Service でソリューションを展開およびテストする際の制約についても説明しています。  
   
 ### <a name="see-also"></a>関連項目  
  [ソリューション開発の計画](/dynamics365/customer-engagement/developer/plan-solution-development)   

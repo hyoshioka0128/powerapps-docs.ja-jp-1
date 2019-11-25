@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 48bc0b00dbb5a2a75cb8bf5f87ca912db83e48f7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753395"
 ---
 # <a name="visualization-data-description-schema"></a>ビジュアル化データ記述スキーマ
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/visualization-data-description-schema -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/visualization-data-description-schema -->
 
 次に示すのは、ビジュアル化のグラフのデータ記述 XML 文字列のスキーマです。 グラフを作成する際に、データ記述 XML 文字列の内容を確認するのに使用できます。 詳細については、「[グラフの詳細: 基盤となるデータとグラフ表現](understand-charts-underlying-data-chart-representation.md)」を参照してください。 [!INCLUDE[schema_download](../../includes/schema-download.md)] およびフォルダーの `VisualizationDataDescription.xsd` ファイルを参照してください。  
   
@@ -27,7 +33,7 @@ search.app:
 <?xml version='1.0' encoding='utf-8'?>  
 <xs:schema attributeFormDefault='unqualified'  
            elementFormDefault='qualified'  
-           xmlns:xs='http://www.w3.org/2001/XMLSchema'>  
+           xmlns:xs='https://www.w3.org/2001/XMLSchema'>  
  <xs:element name='datadefinition'>  
   <xs:complexType>  
    <xs:sequence>  

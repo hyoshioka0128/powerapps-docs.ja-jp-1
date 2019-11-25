@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: d88677fa-2caf-47b0-aec6-10a25a7ec9c3
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fd5d17f33490aab049a166fa53ce541bdea2235a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757933"
 ---
 # <a name="how-to-create-and-edit-fields"></a>フィールドの作成と編集方法
 
@@ -32,7 +38,7 @@ Common Data Service フィールドでは、エンティティにデータを格
 
 |デザイナー| 説明|
 |--|--|
-|[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細については、 [PowerApps ポータルを使用して Common Data Service にフィールドを作成、編集する](create-edit-field-portal.md)を参照してください。|
+|[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細については、 [PowerApps ポータルを使用して Common Data Service にフィールドを作成、編集する](create-edit-field-portal.md)を参照してください。|
 |ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。<br />詳細については、 [PowerApps ソリューションエクスプローラーを使用して Common Data Service にフィールドを作成、編集する](create-edit-field-solution-explorer.md)を参照してください。 |
 
 > [!NOTE]

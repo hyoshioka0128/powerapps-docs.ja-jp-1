@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 42882b630cfe34cc17e310b32c9c072f0c2d5d8a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758461"
 ---
-
 # <a name="guidelines-on-working-with-embedded-canvas-apps"></a>埋め込みキャンバス アプリの作業のガイドライン
 このトピックでは、埋め込みキャンバス アプリの作業のガイドライン、および発生する可能性がある問題のトラブルシューティングを実行するために役立つヒントを提供します。
 
@@ -34,7 +39,7 @@ search.app:
 -   埋め込みキャンバス アプリをモデル駆動型フォームに追加する時は、常に値があることを保証されている必須フィールドを使用します。 フィールドに値がない場合、埋め込みキャンバス アプリはホストのモデル駆動型フォーム上のデータが変更されるときにリフレッシュされません。
 -   モデル駆動型フォームを公開しても、埋め込みキャンバス アプリは公開されません。
      - 埋め込みキャンバス アプリはホストのモデル駆動型フォームと独立して公開する必要があります。 詳細: [アプリの公開](../canvas-apps/save-publish-app.md#publish-an-app)。
--   キャンバス アプリ コントロール プロパティ内の **カスタマイズ** ボタンを介して埋め込みキャンバス アプリを作成または編集するために PowerApps Studio を開くことが Web ブラウザーのポップアップ ブロッカーによりブロックされる場合、web.powerapps.com サイトを有効化、または一時的にポップアップ ブロッカーを無効化してから、再度 **カスタマイズ** を選択する必要があります。
+-   キャンバス アプリ コントロール プロパティ内の **カスタマイズ** ボタンを介して埋め込みキャンバス アプリを作成または編集するために PowerApps Studio を開くことが Web ブラウザーのポップアップ ブロッカーによりブロックされる場合、make.powerapps.com サイトを有効化、または一時的にポップアップ ブロッカーを無効化してから、再度 **カスタマイズ** を選択する必要があります。
 -   新しいレコードを作成するときは、それに渡すためにレコード コンテキストが必要なため、埋め込みキャンバス アプリは表示されません。
 -   ModelDrivenFormIntegration.Item オブジェクトは読み取り専用です。 
      - データを記述するには、 Common Data Service コネクタを使用する必要があります。 詳細: [Common Data Service](/connectors/commondataservice/)

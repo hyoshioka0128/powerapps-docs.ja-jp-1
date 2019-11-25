@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 50a7c59ac5655fdcf6928f626c5714a75fe3f57e
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753055"
 ---
 # <a name="browse-the-metadata-for-your-environment"></a>環境のメタデータの参照
 
@@ -22,7 +28,7 @@ search.app:
 
 |                                                                                               [バージョン]                                                                                                |                                                                                     Download                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Common Data Service | [Microsoft ダウンロード: MetadataBrowser_3_0_0_5_managed.zip](http://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip) |
+| Common Data Service | [Microsoft ダウンロード: MetadataBrowser_3_0_0_5_managed.zip](https://download.microsoft.com/download/8/E/3/8E3279FE-7915-48FE-A68B-ACAFB86DA69C/MetadataBrowser_3_0_0_5_managed.zip) |
 
 ソリューションをダウンロードした後、インストールする必要があります。 管理ソリューションをインストールする方法の詳細については、「[ソリューションのインポート、更新およびエクスポート](/dynamics365/customer-engagement/developer/customize/import-update-export-solutions)」を参照してください。  
 

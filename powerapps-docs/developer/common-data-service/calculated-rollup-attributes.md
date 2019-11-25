@@ -10,16 +10,22 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 826e535e823ffa433816c7d97a2e4aded7c51309
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753043"
 ---
 # <a name="calculated-and-rollup-attributes"></a>計算およびロールアップ属性
 
 *計算*および*ロールアップ*属性を使用すると、手動で計算を実行する必要がなくなるので、作業に集中できます。 システム管理者は、開発者と協力しないで、多くの共通計算の値を含むフィールドを定義できるようになりました。 開発者も、自分のコード内ではなく、プラットフォーム機能を活用してこれらの計算を実行できます。  
   
- [ビデオ: Microsoft Dynamics CRM 2015 のロールアップ フィールドと計算フィールド](http://youtu.be/RoahCH1p3T8)  
+ [ビデオ: Microsoft Dynamics CRM 2015 のロールアップと計算フィールド](https://youtu.be/RoahCH1p3T8)  
   
 <a name="BKMK_CommonElements"></a>   
 ## <a name="common-elements-and-characteristics"></a>共通の要素と特性  
@@ -178,7 +184,7 @@ search.app:
 ```  
   
 ### <a name="see-also"></a>関連項目  
- [ビデオ: Microsoft Dynamics CRM 2015 のロールアップ フィールドと計算フィールド](http://youtu.be/RoahCH1p3T8)   
+ [ビデオ: Microsoft Dynamics CRM 2015 のロールアップと計算フィールド](https://youtu.be/RoahCH1p3T8)   
  [エンティティ属性の概要](/dynamics365/customer-engagement/developer/introduction-to-entity-attributes)   
  [計算フィールドの定義](https://technet.microsoft.com/library/dn832103.aspx)   
  [ロールアップ フィールドを定義する](https://technet.microsoft.com/library/dn832103.aspx)

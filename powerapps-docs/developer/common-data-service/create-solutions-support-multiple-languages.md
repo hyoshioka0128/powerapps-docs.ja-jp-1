@@ -1,5 +1,5 @@
 ---
-title: 複数の言語をサポートするソリューションを作成 (Common Data Service) | Microsoft Docs
+title: 複数の言語に対応するソリューションの作成 (Common Data Service) | Microsoft Docs
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,14 +10,20 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2eef717e694013295adba3946b2f3f7bc3e888c7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753011"
 ---
 # <a name="create-solutions-that-support-multiple-languages"></a>複数の言語をサポートするソリューションの作成
 
-Common Data Service は複数の言語をサポートしています。 ソリューションを、異なる基本言語を含む組織や複数言語が準備されている組織にインストールする場合は、ソリューションの計画時に検討してください。 次の表は複数の言語がサポートされるソリューションに含めるソリューション コンポーネントで使用する戦略の一覧です。  
+複数言語に対応するCommon Data Service ソリューションを、異なる基本言語を含む組織や複数言語が準備されている組織にインストールする場合は、ソリューションの計画時に検討してください。 次の表は複数の言語がサポートされるソリューションに含めるソリューション コンポーネントで使用する戦略の一覧です。  
   
 |戦略|ソリューション コンポーネントの種類|  
 |------------|-----------------------------|  
@@ -34,7 +40,7 @@ Common Data Service は複数の言語をサポートしています。 ソリ�
  <a name="BKMK_Localizable_Web_Resources"></a>
 
  ## <a name="string-resx-web-resources"></a>文字列 (RESX) Web リソース
- Common Data Service で文字列 (RESX) Web リソースを追加すると、開発者は複数言語をサポートする Web リソースを作成するための強力なオプションをさらに取得することができます。 詳細については、[文字列 (RESX) Web リソース](/dynamics365/customer-engagement/developer/resx-web-resources) を参照してください。
+ 文字列 (RESX) Web リソースを追加すると、Common Data Service 開発者は複数言語をサポートする Web リソースを作成するための強力なオプションをさらに取得することができます。 詳細については、[文字列 (RESX) Web リソース](/dynamics365/customer-engagement/developer/resx-web-resources) を参照してください。
 
  以前のバージョンの場合は、[開発者のオプション](https://msdn.microsoft.com/library/hh670609(v=crm.8).aspx#BKMK_DeveloperOption) を参照してください
   
@@ -100,21 +106,21 @@ Common Data Service は複数の言語をサポートしています。 ソリ�
   
  ワークシートのテキストをローカライズ後、CrmTranslations.xml および [Content_Types].xml の両方のファイルを 1 つの圧縮 .zip ファイルに追加します。 これで、このファイルをインポートできます。  
   
- XML ドキュメントとしてファイルをプログラムでエクスポートする場合は、これらのファイルが使用するスキーマについての情報を「[Office 2003 XML Reference Schemas (Office 2003 XML リファレンス スキーマ)](http://www.microsoft.com/downloads/details.aspx?FamilyID=fe118952-3547-420a-a412-00a2662442d9)」で参照してください。  
+ XML ドキュメントとしてファイルをプログラムでエクスポートする場合は、これらのファイルが使用するスキーマについての情報を「[Office 2003 XML Reference Schemas (Office 2003 XML リファレンス スキーマ)](https://www.microsoft.com/downloads/details.aspx?FamilyID=fe118952-3547-420a-a412-00a2662442d9)」で参照してください。  
   
 #### <a name="importing-translated-text"></a>翻訳済みテキストのインポート  
   
 > [!IMPORTANT]
 >  エクスポート元と同じ組織にのみ、翻訳済みテキストをインポートして戻すことができます。  
   
- カスタマイズされたエンティティまたは属性のテキストをエクスポートし、翻訳したら、<xref:Microsoft.Crm.Sdk.Messages.ImportTranslationRequest> メッセージを使用して、Web アプリケーションに翻訳済みのテキスト文字列をインポートできます。 インポートするファイルは、ルートの CrmTranslations.xml と [Content_Types].xml ファイルを含む圧縮ファイルである必要があります。 詳細については、「[エンティティおよびフィールドの翻訳済みテキストのインポート](/dynamics365/customer-engagement/customize/import-translated-entity-field-text)」を参照してください。  
+ カスタマイズされたエンティティまたは属性のテキストをエクスポートし、翻訳したら、<xref:Microsoft.Crm.Sdk.Messages.ImportTranslationRequest> メッセージを使用して、Web アプリケーションに翻訳済みのテキスト文字列をインポートできます。 インポートするファイルは、ルートに CrmTranslations.xml と [Content_Types].xml ファイルを含む圧縮ファイルである必要があります。 詳細については、「[エンティティおよびフィールドの翻訳済みテキストのインポート](/dynamics365/customer-engagement/customize/import-translated-entity-field-text)」を参照してください。  
   
  完了した翻訳をインポートした後、カスタマイズされたテキストは、そのテキストの翻訳後の言語を使用するユーザーに表示されます。  
   
 > [!NOTE]
-> Common Data Service は 500 文字を超える長さの翻訳済みテキストをインポートすることができません。 翻訳ファイル内の任意のアイテムが 500 文字を超える長さの場合、インポート プロセスは失敗します。 インポート プロセスが失敗した場合は、失敗の原因となったファイル中の行を確認し、文字数を減らしてから再度インポートを試みてください。  
+> Common Data Service では、500 文字を超える長さの翻訳済みテキストをインポートすることはできません。 翻訳ファイル内の任意のアイテムが 500 文字を超える長さの場合、インポート プロセスは失敗します。 インポート プロセスが失敗した場合は、失敗の原因となったファイル中の行を確認し、文字数を減らしてから再度インポートを試みてください。  
   
- カスタマイズは基本言語でのみサポートされるので、Common Data Service で言語選択で設定した基本言語で作業する場合があります。 翻訳済みテキストが表示されることを確認するには、Common Data Service のユーザー インターフェイスの言語選択を変更する必要があります。 カスタマイズに関する追加の作業を行うには、基本言語に戻す必要があります。  
+ カスタマイズは基本言語でのみサポートされるので、言語選択で設定した基本言語で Common Data Service を操作している可能性があります。 翻訳済みテキストが表示されることを確認するには、Common Data Service のユーザー インターフェイスの言語選択を変更する必要があります。 カスタマイズに関する追加の作業を行うには、基本言語に戻す必要があります。  
   
 <a name="BKMK_LocalizationInBaseLanguageStrings"></a>   
 
@@ -171,14 +177,14 @@ Common Data Service は複数の言語をサポートしています。 ソリ�
   
 6. 組織の基本言語を使用している間は、**設定**の**ソリューション**領域に移動して、ソリューションの一部としてローカライズされたダイアログを追加できます。  
   
-   他の言語で作成したダイアログは、その言語を使用して Common Data Service を表示するユーザーにのみ表示されます。  
+   他の言語で作成したダイアログはその言語を使用して Common Data Service を表示するユーザーにのみ表示されます。  
   
 <a name="BKMK_UseXMLWebResourcesAsLanguageResources"></a>   
 
 ## <a name="use-xml-web-resources-as-language-resources"></a>言語リソースとして XML Web リソースを使用する  
  プラグイン アセンブリ ソリューション コンポーネントでは、エンド ユーザーに <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> をスローしたり、レコードを作成、更新してメッセージを送信できます。 Silverlight Web リソースと違って、プラグインではリソース ファイルは使用できません。  
   
- プラグインでローカライズされたテキストが必要なときは、XML Web リソースを使用してローカライズされた文字列を格納し、必要になったときにプラグインにアクセスできるようにします。 XML の構造はオプションですが、ASP.NET リソース (.resx) ファイルで使用されている構造に従って各言語別の XML Web リソースを作成することができます。 たとえば、以下は **localizedString.en_US** という名前の XML Web リソースで、 resx ファイルで使用されるパターンに従います。  
+ プラグインでローカライズされたテキストが必要なときは、XML Web リソースを使用してローカライズされた文字列を格納し、必要になったときにプラグインにアクセスできるようにします。 XML の構造はオプションですが、ASP.NET リソース (.resx) ファイルで使用されている構造に従って、各言語別の XML Web リソースを作成できます。 たとえば、以下は **localizedString.en_US** という名前の XML Web リソースで、 resx ファイルで使用されるパターンに従います。  
   
 ```xml  
 <root>  

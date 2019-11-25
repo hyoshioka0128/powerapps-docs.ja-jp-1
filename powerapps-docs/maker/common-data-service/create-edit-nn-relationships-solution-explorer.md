@@ -1,6 +1,6 @@
 ---
-title: 'ソリューション エクスプローラーを使用して Common Data Service で N:N (多対多) のエンティティ関係を作成する | MicrosoftDocs'
-description: 'N:N (多対多) の関連付けを作成する方法を学習する'
+title: ソリューション エクスプローラーを使用して Common Data Service で N:N (多対多) のエンティティ関係を作成する | MicrosoftDocs
+description: N:N (多対多) の関連付けを作成する方法を学習する
 ms.custom: ''
 ms.date: 05/29/2018
 ms.reviewer: ''
@@ -9,26 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 68b64d5ec7c7f81352a2b9733310d2ec5e51d9c1
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757801"
 ---
-
 # <a name="create-nn-many-to-many-entity-relationships-in-common-data-service-using-solution-explorer"></a>ソリューション エクスプローラーを使用して Common Data Service で N:N (多対多) のエンティティ関係を作成する
 
 ソリューション エクスプローラーは Common Data Serviceの N:N (多対多) を作成、編集することができます。
 
-[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 詳細:
+[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ではほとんどの一般的なオプションを構成することができますが、ソリューション エクスプローラーを使用して設定する必要があるオプションもあります。 詳細:
 - [多対多 (N:N) のエンティティの関連付けを作成する](create-edit-nn-relationships.md)
-- [PowerApps ポータルを使用して Common Data Service に多対多のエンティティー リレーションシップを作成する](create-edit-nn-relationships-portal.md)
+- [ PowerApps ポータルを使用して Common Data Service で多対多の関係を作成する](create-edit-nn-relationships-portal.md)
 
   
 ## <a name="open-solution-explorer"></a>ソリューション エクスプローラーを開きます
@@ -107,5 +112,5 @@ search.app:
 ### <a name="see-also"></a>関連項目
 
 [多対多 (N:N) のエンティティの関連付けを作成する](create-edit-nn-relationships.md)<br />
-[PowerApps ポータルを使用して Common Data Service に多対多のエンティティー リレーションシップを作成する](create-edit-nn-relationships-portal.md)<br />
+[ PowerApps ポータルを使用して Common Data Service で多対多の関係を作成する](create-edit-nn-relationships-portal.md)<br />
 [1:N (一対多) または N:1 (多対一) のエンティティの作成および編集](create-edit-1n-relationships.md)

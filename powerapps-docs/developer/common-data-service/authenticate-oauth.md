@@ -10,10 +10,16 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a0777bcb4f67a01a894600176bd68ec3793034c4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753067"
 ---
 # <a name="use-oauth-with-common-data-service"></a>Common Data ServiceでOAuthを使用する
 
@@ -46,7 +52,7 @@ Azure AD にてアプリを登録する際には、アプリケーションの�
 |
 |ネイティブ モード|デバイスでネイティブにインストールされる [クライアント アプリケーション](/azure/active-directory/develop/developer-glossary#client-application) の種類。 |
 
-**Web アプリ /API** を選択する際に、 **サインオンするURL** を指定する必要があります。これは Azure AD が認証の応答を送信するURLであり、認証が成功した際にはトークンが含まれます。 アプリの開発中に、これは通常 `http://localhost/appname:[port]` に設定され、アプリをローカルに開発およびデバッグできます。 アプリを公開する場合、アプリの公開された URL へのこの値を変更する必要があります。
+**Web アプリ /API** を選択する際に、 **サインオンするURL** を指定する必要があります。これは Azure AD が認証の応答を送信するURLであり、認証が成功した際にはトークンが含まれます。 アプリの開発中に、これは通常 `https://localhost/appname:[port]` に設定され、アプリをローカルに開発およびデバッグできます。 アプリを公開する場合、アプリの公開された URL へのこの値を変更する必要があります。
 
 **ネイティブ**を選択する場合、リダイレクト URI を提供する必要があリます。 Azure AD がOAuth 2.0リクエストにて、ユーザエージェントをリダイレクトするために使用する一意の識別子です。 これは通常、次のように書式設定された値です: `//app:<guid>`。 
 

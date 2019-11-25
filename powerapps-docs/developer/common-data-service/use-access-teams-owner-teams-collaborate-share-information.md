@@ -1,5 +1,5 @@
 ---
-title: アクセス チームと所有者チームを使用して、データを共有し共同作業を行う (Common Data Service) | Microsoft Docs
+title: アクセス チームおよび所有者チームを使用して、共同作業したり情報を共有したりする (Common Data Service) | Microsoft Docs
 description: アクセス チームおよび所有者チームを使用して、共同作業したり情報を共有したりします。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,14 +10,20 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1454c5db803851d5d691db05e57af0beeb90a2b3
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753779"
 ---
 # <a name="use-access-teams-and-owner-teams-to-collaborate-and-share-information"></a>アクセス チームおよび所有者チームを使用して、共同作業したり情報を共有したりする
 
-*所有者* チームや *アクセス* チームでビジネス オブジェクトを共有し、Common Data Service の部署を超えてユーザーと共同作業ができます。 1 つのチームは 1 つの部署に属しますが、他の部署からのユーザーを含めることができます。 一人のユーザーを複数のチームに関連付けることができます。  
+*所有者*チームまたは*アクセス* チームを使用して、ビジネス オブジェクトを共有し、Common Data Service の部署を超えてユーザーと共同作業ができる簡単な方法を提供します。 1 つのチームは 1 つの部署に属しますが、他の部署からのユーザーを含めることができます。 一人のユーザーを複数のチームに関連付けることができます。  
   
  所有者チームはレコードを所有し、チームにセキュリティ ロールが割り当てられています。 チームの特権は、セキュリティ ロールによって定義されます。 チームによって得られる特権に加えて、チームのメンバーは個々のセキュリティ ロールによって定義される特権と、メンバーとなっている他のチームの役割によって定義される特権を所有します。 チームは、チームが所有するレコードに対するフル アクセス権を所有しています。  
   
@@ -36,7 +42,7 @@ search.app:
   
 - 会社のビジネス ポリシーにより、ユーザー以外のエンティティで所有されるレコードが必要です。  
   
-- Common Data Service のシステム設計時にはチーム数がわかっています。  
+- Common Data Service システムの設計時にチーム数が分かっています。  
   
 - 所有チームによる進行状況に関する日時レポートが必要です。  
   
@@ -44,7 +50,7 @@ search.app:
   
 - チームは動的に形成されて解散されます。 通常これは、確立した担当地域、製品またはボリュームなどの、チームを定義する明確な基準が提供されない場合に発生します。  
   
-- Common Data Service のシステム設計時にはチーム数がわかっていません。  
+- Common Data Service システムの設計時にチーム数が分かっていません。  
   
 - チーム メンバーにはレコードに対する別個のアクセス権が必要です。 複数のアクセス チームでレコードを共有でき、各チームにレコードに対する異なるアクセス権を提供できます。 たとえば、あるチームには取引先企業に対する読み取り専用アクセス権が与えられ、他のチームには同じ取引先企業に対する読み取り、書き込み、および共有アクセス権が与えられます。  
   
@@ -114,8 +120,8 @@ search.app:
 ### <a name="see-also"></a>関連項目  
  [サンプル: アクセス チームを使用してレコードを共有](org-service/samples/share-record-using-access-team.md)   
  [チームの管理](https://technet.microsoft.com/library/dn531089.aspx)   
- [ホワイトペーパー: Microsoft Dynamics CRM 2013 を使用するアクセス チーム](http://download.microsoft.com/download/E/9/0/E9009308-CA01-4B37-B03C-435B8ACB49B4/Access%20Teams%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)   
- [ホワイトペーパー: Microsoft Dynamics CRM による拡張できるセキュリティ モデリング](http://go.microsoft.com/fwlink/p/?LinkID=328757)   
+ [ホワイトペーパー: Microsoft Dynamics CRM 2013 を使用するアクセス チーム](https://download.microsoft.com/download/E/9/0/E9009308-CA01-4B37-B03C-435B8ACB49B4/Access%20Teams%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)   
+ [ホワイトペーパー:  Microsoft Dynamics CRM による拡張できるセキュリティ モデリング](https://go.microsoft.com/fwlink/p/?LinkID=328757)   
  [ユーザーとチームのエンティティ](user-team-entities.md)   
  [チーム エンティティ](reference/entities/team.md)   
  [チーム テンプレート エンティティ](reference/entities/teamtemplate.md)   

@@ -1,5 +1,5 @@
 ---
-title: PowerApps を使用してモデル駆動型アプリを最初から作成する | Microsoft Docs
+title: PowerApps を使用して初めてのモデル駆動型アプリを最初から作成する | Microsoft Docs
 description: 簡単なモデル駆動型の構築する方法を学習
 documentationcenter: ''
 author: Mattp123
@@ -13,12 +13,17 @@ ms.component: model
 ms.date: 02/05/2019
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9c41feb81fbe90c1ca675105fe898b667f61b2b9
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752560"
 ---
-
 # <a name="build-your-first-model-driven-app-from-scratch"></a>モデル駆動型アプリを最初から作成する
 モデル駆動型アプリの設計は、アプリ開発へのコンポーネントを重視した手法です。 このトピックでは、PowerApps 環境で使える標準エンティティの 1 つを使用してモデル駆動型アプリを作成する方法を簡略化します。
 
@@ -26,16 +31,16 @@ search.app:
 > モデル駆動型アプリを構築の詳細は、まず「[モデル駆動型アプリのコンポーネントについて](model-driven-app-components.md)」を参照してください。 
 
 ## <a name="sign-in-to-powerapps"></a>PowerApps へのサインイン
-[PowerApps](https://web.powerapps.com/) にサインインします。 まだ [!INCLUDE [powerapps](../../includes/powerapps.md)] アカウントを持っていない場合、**無料で使用開始**リンクを選択します。 
+[PowerApps](https://make.powerapps.com/) にサインインします。 まだ [!INCLUDE [powerapps](../../includes/powerapps.md)] アカウントを持っていない場合、**無料で使用開始**リンクを選択します。 
 
 ## <a name="create-your-model-driven-app"></a>駆動型モデル アプリを作成する
 
-1.  目的の環境を選択するか、[PowerApps 管理センター](https://admin.powerapps.com/)に移動して環境を作成します。
+1.  目的の環境を選択するか、[PowerApps 管理センター](https://admin.powerapps.com/) に移動して環境を作成します。
 
   > [!IMPORTANT]
   > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。   
 
-2. **ホーム** ページで、**モデル駆動型アプリを一から作成** を選択します。
+2. **ホーム** ページで、**空のモデル駆動型アプリ** を選択します。
 <!-- ![Start-from-blank_model](media/build-first-model-driven-app/start-from-blank-model-driven.png) -->
 
 3.  **新しいアプリの作成** ページで、以下の情報を入力し、**完了** を選択します。 
@@ -45,7 +50,7 @@ search.app:
 追加のアプリのプロパティについては、「[アプリの作成](create-edit-app.md#create-an-app)」を参照してください。
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/create-new-app.png "新しいアプリを作成") 
+    > ![](media/create-new-app.png "Create a new app") 
 
 
 ## <a name="add-components-to-your-app"></a>アプリにコンポーネントを追加する

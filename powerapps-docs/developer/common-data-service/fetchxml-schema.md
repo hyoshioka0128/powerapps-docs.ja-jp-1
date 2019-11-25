@@ -1,6 +1,6 @@
 ---
 title: FetchXML スキーマ (Common Data Service) | Microsoft Docs
-description: FetchXML クエリ言語を使用して Common Data Service データベースに対するクエリを作成します。
+description: FetchXML クエリ言語は、 Common Data Service データベースに対するクエリを作成するために使用されます
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,24 +10,30 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: cb2720eac36aab2b84eaa2b973c4aab7551be123
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752975"
 ---
 # <a name="fetchxml-schema"></a>FetchXML スキーマ
 
-FetchXML クエリ言語を使用して Common Data Service データベースに対するクエリを作成します 次は、FetchXML クエリ言語のスキーマです。 詳細については、「[FetchXML の使用によるクエリの作成](use-fetchxml-construct-query.md)」を参照してください。
+FetchXML クエリ言語は、 Common Data Service データベースに対するクエリを作成するために使用されます。 次は、FetchXML クエリ言語のスキーマです。 詳細については、「[FetchXML の使用によるクエリの作成](use-fetchxml-construct-query.md)」を参照してください。
 
 スキーマの ZIP ファイルをダウンロードすると、`Schemas\9.0.0.2090\Fetch.xsd` フォルダーにこのスキーマが見つかります。
-[スキーマ](http://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) をダウンロードします。
+[スキーマ](https://download.microsoft.com/download/B/9/7/B97655A4-4E46-4E51-BA0A-C669106D563F/Schemas.zip) をダウンロードします。
   
 ## <a name="fetchxml-schema"></a>FetchXML Schema  
   
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<xs:schema id="fetch" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:mstns="http://tempuri.org/fetch/unique">
+<xs:schema id="fetch" elementFormDefault="qualified" xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    xmlns:mstns="https://tempuri.org/fetch/unique">
   <xs:annotation>
     <xs:documentation>Schema name: fetch-schema</xs:documentation>
   </xs:annotation>

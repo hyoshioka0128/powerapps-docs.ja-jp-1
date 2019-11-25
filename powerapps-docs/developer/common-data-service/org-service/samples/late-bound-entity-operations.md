@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: 遅延バインドの作成、取得、更新および削除 (Common Data Service) | Microsoft Docs'
+title: 'サンプル: 作成、取得、更新、および削除 (遅延バインド) (Common Data Service) | Microsoft Docs'
 description: このサンプルは、遅延バインド エンティティ クラスを使用して、アカウントの作成、取得、更新、および削除の各操作を実行する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 126d73385a9b3e2aca78f74f7132b87865801d52
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749318"
 ---
 # <a name="sample-late-bound-entity-operations"></a>サンプル: 遅延バインド エンティティの操作
 

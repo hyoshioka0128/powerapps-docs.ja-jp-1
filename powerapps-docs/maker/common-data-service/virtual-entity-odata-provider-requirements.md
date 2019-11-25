@@ -8,20 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-ms.assetid: null
-caps.latest.revision: null
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+ms.assetid: ''
+caps.latest.revision: ''
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bd2d19b18b1de7bad4d6f661ec983af49fb8f4e4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752155"
 ---
-
 # <a name="odata-v4-data-provider-configuration-requirements-and-best-practices"></a>OData v4 データ プロバイダーの構成、要件、ベスト プラクティス
 
 このトピックでは、OData v4 プロバイダーの構成方法、および OData v4 データ プロバイダーを使用して OData v4 Webサービスに接続するための要件と推奨されるベスト プラクティスについて説明します。 
@@ -75,7 +80,7 @@ search.app:
 1. **新規データ ソース** プロパティ ページで、以下のフィールドに入力してから、レコードを保存します。  
   
     - **名前**. データ ソースを説明する名前を入力します。  
-    - **URI**。 OData データ プロバイダーを使用する場合、OData Web サービスの URI を入力します。 たとえば、OData プロバイダーを使用して Azure でホストされている Web サービスに接続する場合、URI は *`http://contosodataservice.azurewebsites.net/odata/`* のようになります。  
+    - **URI**。 OData データ プロバイダーを使用する場合、OData Web サービスの URI を入力します。 たとえば、OData プロバイダーを使用して Azure でホストされている Web サービスに接続する場合、URI は *`https://contosodataservice.azurewebsites.net/odata/`* のようになります。  
     - **タイムアウト (秒)**。 データ リクエストがタイムアウトする前に Web サービスからの応答を待機する時間を秒数で入力します。たとえば、タイムアウトが発生する前に最大 30 秒待つには、30 を入力します。  
     - **改ページ モード**。 クエリの結果のページングを制御するために、クライアント側またはサーバー側のページングを使用するかどうかを選択します。 既定値は、クライアント側のページングです。 サーバー側のページングでは、クエリ文字列に追加される $skiptoken パラメーターを使用して結果のページングを制御します。 詳細情報: [スキップ トークン システム クエリ オプション ($skiptoken)](https://msdn.microsoft.com/library/dd942121.aspx)  
         -  **インライン カウントを返す**。 結果セットの総レコード数を返します。 この設定は、グリッドにデータを返す際に次のページの機能を有効にするために使用します。 OData エンドポイントが OData $inlinecount パラメータに対応していない場合は、値に false を使用します。 既定値は false です。

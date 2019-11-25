@@ -10,12 +10,17 @@ ms.component: cds
 ms.date: 03/21/2018
 ms.author: millopis
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 22920502b75d16dedba7a70ced60b9b3f373ff10
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2757581"
 ---
-
 # <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>パワークエリを使用して Common Data Service エンティティにデータを追加する
 この処理では、 [Common Data Service](data-platform-intro.md) にエンティティを作成し、パワークエリを使用してエンティティにODataフィードから取得したデータを入力します。 同じ技術を使用してこれらのオンライン ソースおよび設置型ソースなどからデータを統合できます。
 
@@ -30,14 +35,14 @@ search.app:
 
 新規または既存のエンティティへ読み込む前に、データをフィルター処理、変換、さらに結合できます。
 
-PowerApps のライセンスがない場合、[無料のサインアップ](../signup-for-powerapps.md) ができます。
+PowerApps のライセンスがない場合は、 [無料で新規登録](../signup-for-powerapps.md) することができます。
 
 ## <a name="prerequisites"></a>前提条件
 このトピックに従って、エンティティを作成できるよう [環境](../canvas-apps/working-with-environments.md) を切替える必要があります。
 
 ## <a name="specify-the-source-data"></a>ソース データの指定
 
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左端の近くにある**データ**の下矢印をクリックまたはタップします。
+1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左端にある **データ** の下矢印をクリックまたはタップします。
 
     ![PowerApps ホーム ページ](./media/data-platform-cds-newentity-pq/sign-in.png)
 
@@ -48,9 +53,9 @@ PowerApps のライセンスがない場合、[無料のサインアップ](../s
     ![OAuth コネクタを選択します](./media/data-platform-cds-newentity-pq/choose-odata.png)
 
 1. **接続設定**で、この URL を入力または貼り付けてから、**次へ**を選択します。<br>
-`http://services.odata.org/V4/Northwind/Northwind.svc/`
+`https://services.odata.org/V4/Northwind/Northwind.svc/`
 
-1. 表の一覧で、**[Customers] 顧客**チェック ボックスを選択し、**次へ**をクリックまたはタップします。
+1. 表の一覧で、**顧客**チェック ボックスを選択し、**次へ**をクリックまたはタップします。
 
     ![顧客テーブルを選択します](./media/data-platform-cds-newentity-pq/select-table.png)
 

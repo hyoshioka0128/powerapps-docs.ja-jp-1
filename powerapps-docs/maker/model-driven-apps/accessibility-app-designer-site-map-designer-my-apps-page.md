@@ -8,20 +8,25 @@ manager: kvivek
 ms.date: 05/20/2019
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 26c79c20-2987-476e-983a-406e0db13034
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c0f845b1b1b390bb6033efa282792b0b5116e6fc
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752067"
 ---
-
 # <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>PowerApps アプリ デザイナー、サイト マップ デザイナー、およびマイ アプリ ページのユーザー補助
 
-Microsoft は、すべての人に使いやすい製品とサービスの提供に取り組んでいます。 詳細: [Microsoft のユーザー補助](http://www.microsoft.com/enable/default.aspx)  
+Microsoft は、すべての人に使いやすい製品とサービスの提供に取り組んでいます。 詳細: [Microsoft のユーザー補助](https://www.microsoft.com/enable/default.aspx)  
  
 このトピックでは、モデル駆動型アプリで使用できるユーザー補助の機能について説明します。  
   
@@ -96,11 +101,11 @@ PowerApps には、手先の器用さや動作に障碍のある方が抱える�
  ご使用のブラウザーのユーザー補助については、次のサイトを参照してください:  
   
   
--   [Windows のユーザー補助機能](http://www.microsoft.com/enable/products/ie9/default.aspx)  
+-   [Windows のユーザー補助機能](https://www.microsoft.com/enable/products/ie9/default.aspx)  
   
--   [Firefox のユーザー補助機能](http://support.mozilla.org/kb/accessibility-features-firefox-make-firefox-and-we?redirectlocale=en-US&redirectslug=accessibility)  
+-   [Firefox のユーザー補助機能](https://support.mozilla.org/kb/accessibility-features-firefox-make-firefox-and-we?redirectlocale=en-US&redirectslug=accessibility)  
   
--   [Safari のユーザー補助機能](http://www.apple.com/accessibility/)  
+-   [Safari のユーザー補助機能](https://www.apple.com/accessibility/)  
   
 -   [Google Chrome の Accessibility Technical Documentation (ユーザー補助に関する技術文書)](https://sites.google.com/a/chromium.org/dev/developers/design-documents/accessibility)
 

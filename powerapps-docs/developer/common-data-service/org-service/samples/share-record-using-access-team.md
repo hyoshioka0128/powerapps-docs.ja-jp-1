@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: アクセス チームを使用してレコードを共有する (Common Data Service) | Microsoft Docs'
+title: 'サンプル: アクセス チームを使用してレコードを共有(Common Data Service) | Microsoft Docs'
 description: このサンプルは、アクセス チームを使用してレコードにアクセスを許可する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 186de98e91ac125ff29b7d007de129ec4979c898
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749285"
 ---
 # <a name="sample-share-a-record-using-an-access-team"></a>サンプル: アクセス チームを使用してレコードを共有
 

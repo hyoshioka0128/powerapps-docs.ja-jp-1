@@ -1,6 +1,6 @@
 ---
-title: 'Web API データ操作のサンプル (C#) (Common Data Service)| Microsoft Docs'
-description: 'このトピックには、C# を使用して実装されたさまざまな Web API サンプルに関する説明が記載されています'
+title: Web API データ操作のサンプル (C#) (Common Data Service)| Microsoft Docs
+description: このトピックには、C# を使用して実装されたさまざまな Web API サンプルに関する説明が記載されています
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 66e26684-819e-45f7-bec4-c250be4d6fed
 caps.latest.revision: 14
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7f253c8585d7bac93ed08b4d33637c9c9d7960d3
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753635"
 ---
 # <a name="web-api-data-operations-samples-c"></a>Web API データ操作のサンプル (C#)
 
@@ -69,13 +75,13 @@ search.app:
   
 - [System.Net.Http namespace](/dotnet/api/system.net.http) に含まれている標準 .NET Framework HTTP メッセージング クラスは、特に [HttpClient](/dotnet/api/system.net.http.httpclient)、[HttpRequestMessage](/dotnet/api/system.net.http.httprequestmessage)、および [HttpResponseMessage](/dotnet/api/system.net.http.httpresponsemessage) は HTTP メッセージングに使用されます。  
   
-- Newtonsoft [Json.NET](http://www.newtonsoft.com/json) ライブラリは JSON データ形式をサポートします。  
+- Newtonsoft [Json.NET](https://www.newtonsoft.com/json) ライブラリは JSON データ形式をサポートします。  
   
 #### <a name="jsonnet-library"></a>Json.NET Library
 
-C# およびその他の管理言語は JSON データ形式をネイティブにサポートしていないため、最適な方法として、この機能のライブラリを使用することです。 詳細については、「[JavaScript および .NET の JavaScript Object Notation (JSON) の概要](https://msdn.microsoft.com/library/bb299886.aspx)」を参照してください。 Json.NET は .NET プロジェクトによく使用されます。 JSON データのシリアル化、変換、クエリ、および形式設定を行う堅牢で、パフォーマンスの高い、オープンソース ([MIT ライセンス](https://opensource.org/licenses/MIT)) のフレームワークを提供します。 詳細については、「[Json.NET ドキュメント](http://www.newtonsoft.com/json/help/html/Introduction.htm)」を参照してください。  
+C# およびその他の管理言語は JSON データ形式をネイティブにサポートしていないため、最適な方法として、この機能のライブラリを使用することです。 詳細については、「[JavaScript および .NET の JavaScript Object Notation (JSON) の概要](https://msdn.microsoft.com/library/bb299886.aspx)」を参照してください。 Json.NET は .NET プロジェクトによく使用されます。 JSON データのシリアル化、変換、クエリ、および形式設定を行う堅牢で、パフォーマンスの高い、オープンソース ([MIT ライセンス](https://opensource.org/licenses/MIT)) のフレームワークを提供します。 詳細については、「[Json.NET ドキュメント](https://www.newtonsoft.com/json/help/html/Introduction.htm)」を参照してください。  
   
-C# サンプルでは、このライブラリは主に .NET オブジェクトと HTTP のメッセージ本文間でのデータのシリアル化に使用されます。 ライブラリには、このタスクを実行する複数のメソッドがありますが、サンプルで使用されている方法では、個々の [JObject](http://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm) インスタンスを作成し、Common Data Service エンティティ インスタンス (レコード) を表示します。  たとえば、次のコードは Common Data Service<xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" /> インスタンスを表示する様々な `contact1` を作成し、この種類における一意のプロパティに関する値を指定します。  
+C# サンプルでは、このライブラリは主に .NET オブジェクトと HTTP のメッセージ本文間でのデータのシリアル化に使用されます。 ライブラリには、このタスクを実行する複数のメソッドがありますが、サンプルで使用されている方法では、個々の [JObject](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_Linq_JObject.htm) インスタンスを作成し、Common Data Service エンティティ インスタンス (レコード) を表示します。  たとえば、次のコードは Common Data Service<xref href="Microsoft.Dynamics.CRM.contact?text=contact EntityType" /> インスタンスを表示する様々な `contact1` を作成し、この種類における一意のプロパティに関する値を指定します。  
   
 ```csharp  
   
@@ -87,7 +93,7 @@ contact1["jobtitle"] = "Junior Developer";
   
 ```  
   
- 最後のステートメントでのブラケット記法の使用は、[Add](http://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_Linq_JObject_Add.htm) メソッドと同じです。 また、[Parse](http://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_Linq_JObject_Parse.htm) 静的メソッドを使用することによって、このインスタンス化を実行できます。  
+ 最後のステートメントでのブラケット記法の使用は、[Add](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_Linq_JObject_Add.htm) メソッドと同じです。 また、[Parse](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_Linq_JObject_Parse.htm) 静的メソッドを使用することによって、このインスタンス化を実行できます。  
   
 ```csharp  
   

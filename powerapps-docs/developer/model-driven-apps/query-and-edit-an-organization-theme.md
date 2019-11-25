@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8abda26be50d31f734d3143c9cfa79b38fd3f130
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753599"
 ---
 # <a name="query-and-edit-an-organization-theme"></a>組織のテーマのクエリと編集
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/query-and-edit-an-organization-theme -->
 
 組織に対して視覚的なテーマを定義して適用できます。 これは、アプリケーションに組織のロゴと色の選択を適用する、サポートされている方法を提供します。 カスタマイズされていないモデル駆動型アプリ システムで提供される既定の色と視覚要素を変更して、自分のアプリケーションに合わせて、ユーザー定義のテーマを作成できます。 たとえば、個人用の製品ブランドの作成、会社ロゴの追加、エンティティ固有の色の指定を行うことができます。 テーマ色は、一部の従来の領域を除く、アプリケーション全体にグローバルに適用されます。  
   
@@ -26,7 +32,7 @@ search.app:
   
  テーマのカスタマイズは、このリリースでは、Web アプリケーションに対してのみサポートされます。 組織のテーマに対する変更は、組織からエクスポートされるソリューションには含まれません。 複数のテーマを定義できますが、既定のテーマとして設定して公開できるのは 1 つだけです。  
   
- ビデオ: [テーマに合わせての構成](http://go.microsoft.com/fwlink/p/?LinkId=529568)  
+ ビデオ: [テーマに合わせての構成](https://go.microsoft.com/fwlink/p/?LinkId=529568)  
   
 <a name="BKMK_QueryTheme"></a>
 

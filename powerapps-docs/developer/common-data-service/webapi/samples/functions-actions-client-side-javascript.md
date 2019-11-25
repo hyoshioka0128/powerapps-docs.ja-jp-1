@@ -8,17 +8,23 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 337f5d15-66be-46db-a96a-309951a37a2a
 caps.latest.revision: 20
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b084896ee7b44df1d96c33dcd426231816c2c1e4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753667"
 ---
 # <a name="web-api-functions-and-actions-sample-client-side-javascript"></a>Web API 機能およびアクションのサンプル (クライアント側 JavaScript)
 
@@ -46,7 +52,7 @@ search.app:
  
 ## <a name="run-this-sample"></a>このサンプルの実行
 
-このサンプルを実行するには、[Microsoft CRM Web API 機能およびアクション サンプル (クライアント側の JavaScript)](http://go.microsoft.com/fwlink/p/?LinkId=824048) に移動し、Microsoft CRM Web API 機能およびアクション サンプル (クライアント側の JavaScript).zip サンプル ファイルをダウンロードします。 コンテンツを取得し、 WebAPIFunctionsandActions_1_0_0_0_managed.zip の管理 ソリューションを検索します。 マネージド ソリューションを Common Data Service 組織にインポートして、サンプルを実行するにはソリューションの構成ページを表示します。 サンプル ソリューションをインポートする方法の詳細については、[Web API サンプル (クライアント側の JavaScript) ](../web-api-samples-client-side-javascript.md) を参照してください。  
+このサンプルを実行するには、[Microsoft CRM Web API 機能およびアクション サンプル (クライアント側の JavaScript)](https://go.microsoft.com/fwlink/p/?LinkId=824048) に移動し、Microsoft CRM Web API 機能およびアクション サンプル (クライアント側の JavaScript).zip サンプル ファイルをダウンロードします。 コンテンツを取得し、 WebAPIFunctionsandActions_1_0_0_0_managed.zip の管理 ソリューションを検索します。 マネージド ソリューションを Common Data Service 組織にインポートして、サンプルを実行するにはソリューションの構成ページを表示します。 サンプル ソリューションをインポートする方法の詳細については、[Web API サンプル (クライアント側の JavaScript) ](../web-api-samples-client-side-javascript.md) を参照してください。  
   
 <a name="bkmk_codeSample"></a>
 

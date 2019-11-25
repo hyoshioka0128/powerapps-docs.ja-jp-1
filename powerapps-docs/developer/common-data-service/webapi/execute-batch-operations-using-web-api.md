@@ -8,18 +8,24 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 799b2346-bda1-4a26-a330-79d0927a7743
 caps.latest.revision: 11
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4029b07d07505d15f216279edbfc774026463a4f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753699"
 ---
 # <a name="execute-batch-operations-using-the-web-api"></a>Web API を使用してバッチ操作を実行する
 
@@ -209,7 +215,7 @@ Prefer: odata.include-annotations="*"
   
 --batch_AAA123-- 
 ```
-基本設定ヘッダーの詳細については、 [ヘッダーの基本設定](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752234)を参照してください。
+基本設定ヘッダーの詳細については、 [ヘッダーの基本設定](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752234)を参照してください。
 
 ## <a name="reference-uris-in-an-operation"></a>運用における参照URI
 
@@ -392,7 +398,7 @@ OData-Version: 4.0
 --batchresponse_2cb48f48-39a8-41ea-aa52-132fa8ab3c2d--
 ```
 
-### <a name="reference-uris-in-url-and-request-body-using-odataid"></a>URLの参照URIと @odata.idを使用する要求本体
+### <a name="reference-uris-in-url-and-request-body-using-odataid"></a>@odata.id を使用して URL および要求本体の URI を参照する
 
 以下の例では、取引先担当者 エンティティー レコードを、取引先企業 エンティティー レコードにリンクする方法を示しています。 取引先企業 エンティティー レコードのURIは `$1` として参照され、取引先担当者 エンティティー レコードのURIは `$2`として参照されます。
 

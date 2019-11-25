@@ -8,27 +8,33 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: 15c4039e-a3ca-4116-ba1d-3ac88cba3ae1
 caps.latest.revision: 15
-author: brandonsimons
+author: JimDaly
 ms.author: susikka
 ms.reviewer: susikka
 manager: shujoshi
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 168bb77cfe97d0239da0786c093e3c1960736802
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753695"
 ---
 # <a name="use-the-common-data-service-web-api"></a>Common Data Service Web API の使用
 
 Web API は、Common Data Service でデータとメタデータを連携するために使用できる 2 つの Web サービスのひとつです。 もう一方は[組織サービス](../org-service/overview.md)です。
 
-Common Data Service は、各種のプログラミング言語、プラットフォーム、およびデバイスで使用できる開発作業を提供します。 Web API は、多様なデータ ソースに対して RESTful API を構築して使用するための OASIS 標準規格 OData (オープン データ プロトコル)、バージョン 4.0 を実装します。 このプロトコルの詳細については、[http://www.odata.org/](http://www.odata.org/) を参照してください。 この標準規格の詳細については、[https://www.oasis-open.org/standards#odatav4.0](https://www.oasis-open.org/standards#odatav4.0) を参照してください。 
+Common Data Service は、各種のプログラミング言語、プラットフォーム、およびデバイスで使用できる開発作業を提供します。 Web API は、多様なデータ ソースに対して RESTful API を構築して使用するための OASIS 標準規格 OData (オープン データ プロトコル)、バージョン 4.0 を実装します。 このプロトコルの詳細については、[https://www.odata.org/](https://www.odata.org/) を参照してください。 この標準規格の詳細については、[https://www.oasis-open.org/standards#odatav4.0](https://www.oasis-open.org/standards#odatav4.0) を参照してください。 
 
 
-Web API はオープン スタンダードに基づいて構築されるので、特定の開発者環境用のアセンブリを提供しません。 特定の操作に対する HTTP 要求を作成でき、サードパーティのライブラリを使用して必要な任意の言語またはプラットフォームに対応するクラスを生成することができます。 OData バージョン 4.0 をサポートするライブラリ一覧については、[http://www.odata.org/libraries/](http://www.odata.org/libraries/) を参照してください。  
+Web API はオープン スタンダードに基づいて構築されるので、特定の開発者環境用のアセンブリを提供しません。 特定の操作に対する HTTP 要求を作成でき、サードパーティのライブラリを使用して必要な任意の言語またはプラットフォームに対応するクラスを生成することができます。 OData バージョン 4.0 をサポートするライブラリ一覧については、[https://www.odata.org/libraries/](https://www.odata.org/libraries/) を参照してください。  
 
 ## <a name="web-api-and-the-organization-service"></a>Web API および組織サービス
 
@@ -40,7 +46,7 @@ Web API により組織サービスと同じ操作が可能になりますが、
 ### <a name="related-sections"></a>関連セクション
 
 [コードを使用したデータに関する作業](../work-with-data-cds.md)<br />
-[OData - REST への最善の方法](http://www.odata.org/)<br />
-[OData バージョン 4.0 パート 1: Protocol Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)<br />
-[OData バージョン 4.0 パート 2: URL Conventions Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html)<br />
-[OData バージョン 4.0 パート 3: Common Schema Definition Language (CSDL) Plus Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part3-csdl.html)
+[OData - REST への最善の方法](https://www.odata.org/)<br />
+[OData バージョン 4.0 パート 1: Protocol Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)<br />
+[OData バージョン 4.0 パート 2: URL Conventions Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html)<br />
+[OData バージョン 4.0 パート 3: Common Schema Definition Language (CSDL) Plus Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part3-csdl.html)

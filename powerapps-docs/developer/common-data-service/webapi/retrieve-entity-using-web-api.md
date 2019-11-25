@@ -1,6 +1,6 @@
 ---
-title: Web API を使用したエンティティの取得 (Common Data Service) | Microsoft Docs
-description: Common Data Service Web API を使用して GET 要求を作成する方法を調べて、一意の識別子を含むリソースとして指定されたエンティティのデータを取得する
+title: Web API を使用してエンティティ レコードを取得する (Common Data Service) | Microsoft Docs
+description: 一意の識別子を含むリソースとして指定されたエンティティのデータを取得するために Common Data Service Web API を使用して GET 要求を作成する方法について
 ms.custom: ''
 ms.date: 10/31/2018
 ms.service: powerapps
@@ -8,23 +8,28 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
+- Dynamics 365 (online)
 ms.assetid: abae4614-9e03-45e7-94fa-9e6e7225ece5
 caps.latest.revision: 21
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 767c0ed29643c51057d9f3d794136dc56915e161
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753679"
 ---
+# <a name="retrieve-an-entity-record-using-the-web-api"></a>Web API を使用してエンティティ レコードを取得する
 
-# <a name="retrieve-an-entity-using-the-web-api"></a>Web API を使用してエンティティを取得する
-
-一意の識別子を含むリソースとして指定されたエンティティのデータを取得するには、`GET`要求を使用します。 エンティティの取得時に、さらに、特定のプロパティを要求して、関連エンティティからプロパティを戻すために、ナビゲーション プロパティを展開できます。  
+一意の識別子を含むリソースとして指定されたエンティティのデータを取得するには、`GET`要求を使用します。 エンティティ レコードの取得時に、特定のプロパティの要求もおこない、関連エンティティからプロパティを戻すために、ナビゲーション プロパティを展開できます。  
 
 > [!NOTE]
 >  エンティティ メタデータの取得については、「[Web API を使用してメタデータをクエリする](query-metadata-web-api.md)」を参照してください。
@@ -33,13 +38,13 @@ search.app:
 
 ## <a name="basic-retrieve-example"></a>基本的な取得例
 
-この例では、00000000-0000-0000-0000-000000000001 に等しい主キーの値を含む、取引先企業エンティティ インスタンスのデータを返します。
+この例では、00000000-0000-0000-0000-000000000001に等しい主キーの値を含む取引先企業エンティティ インスタンスのデータを返します。
 
 ```http
 GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-000000000001)
 ```
 
-複数のエンティティを一度に取得するには、「[Web API を使用してデータをクエリする](query-data-web-api.md)」トピックの「[ベーシック クエリの例](query-data-web-api.md#bkmk_basicQuery)」を参照してください。
+1 件のエンティティ レコードを一度に取得するには、[Web API を使用してデータをクエリする](query-data-web-api.md)トピックの[ベーシック クエリの例](query-data-web-api.md#bkmk_basicQuery)を参照してください。
 
 > [!CAUTION]
 >  上の例では、データを取得するためのパフォーマンスのベスト プラクティスに対して、取引先企業レコードのすべてのプロパティが返されます。 この例は、Common Data Service のエンティティ インスタンスの基本取得ができる方法を単に図示していました。 すべてのプロパティは戻されたので、この例の要求に対する応答情報は含めていませんでした。
@@ -52,7 +57,7 @@ GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-0000000000
 
 プロパティ名のコンマ区切りリストを含めることにより返されるプロパティを制限するためには `$select` システム クエリ オプションを使用します。 これは重要なパフォーマンスのベスト プラクティスです。 プロパティが `$select` を使用して指定されない場合、すべてのプロパティが返されます。  
 
-次の例では、00000000-0000-0000-0000-000000000001 に等しい主キーの値を含むアカウント エンティティの `name` および `revenue` プロパティを取得します。
+次の例では、00000000-0000-0000-0000-000000000001 に等しい主キーの値を含むアカウント エンティティの `name` および `revenue` プロパティを取得します
 
 **要求**
 ```http
@@ -94,6 +99,11 @@ OData-Version: 4.0
 
 ```http
 GET [Organization URI]/api/data/v9.0/contacts(firstname='Joe',emailaddress1='abc@example.com')
+```
+代替キー定義が検索型フィールド (たとえば、取引先企業エンティティの primarycontactid プロパティ) に含まれる場合、次のように、[検索プロパティ](/powerapps/developer/common-data-service/webapi/web-api-types-operations#lookup-properties)を使用して取引先企業を取得できます。
+
+```http
+GET [Organization URI]/api/data/v9.0/accounts(_primarycontactid_value=00000000-0000-0000-0000-000000000001) 
 ```
 
 取得、更新、または削除するエンティティを一意に識別する必要のある場合には必ず、エンティティに対して構成された代替キーを使用できます。 既定では、エンティティに構成された代替キーがありません。 代替キーは、組織がそれらを追加する場合にのみ使用できます。
@@ -311,7 +321,7 @@ OData-Version: 4.0
   ```
   
  > [!NOTE]
- > コレクション値ナビゲーション パラメーターを拡張して*エンティティ セット*の関連エンティティを取得すると、@odata.nextLink プロパティが関連エンティティの代わりに返されます。 必要なデータを返すには、新しい GET リクエストで、@odata.nextLink プロパティの値を 使用する必要があります。 詳細: [ナビゲーション プロパティの拡張による関連エンティティの取得](query-data-web-api.md#bkmk_expandRelated)
+ > コレクション値ナビゲーション パラメーターを拡張して *エンティティ セット* の関連エンティティを取得すると、@odata.nextLink プロパティが関連エンティティの代わりに返されます。 必要なデータを返すには、新しい GET リクエストで @odata.nextLink プロパティの値を使用する必要があります。 詳細: [ナビゲーション プロパティの拡張による関連エンティティの取得](query-data-web-api.md#bkmk_expandRelated)
 
 - **単一値およびコレクション値ナビゲーション プロパティ両方の拡張によるエンティティ インスタンスの関連エンティティの取得**: 以下の例は、単一およびコレクション値ナビゲーション プロパティの両方を使用して、エンティティ インスタンスの関連エンティティを拡張する方法を示します。  
 
@@ -382,7 +392,7 @@ GET [Organization URI]/api/data/v9.0/accounts(00000000-0000-0000-0000-0000000000
 ```
 
 > [!NOTE]
-> これは、[OData バージョン 4.0 パート 1: プロトコル プラス Errata 02](http://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html) の「11.2.4.2.1 展開オプション」セクションに記載のシステム クエリ オプションの一部です。 オプション `$skip`、`$count`、`$search`、`$expand`、および`$levels` は Web API ではサポートされていません。
+> これは、[OData バージョン 4.0 パート 1: プロトコル プラス Errata 02](https://docs.oasis-open.org/odata/odata/v4.0/errata02/os/complete/part1-protocol/odata-v4.0-errata02-os-part1-protocol-complete.html) の「11.2.4.2.1 展開オプション」セクションに記載のシステム クエリ オプションの一部です。 オプション `$skip`、`$count`、`$search`、`$expand`、および`$levels` は Web API ではサポートされていません。
 
 <a name="bkmk_DetectIfChanged"></a>
 

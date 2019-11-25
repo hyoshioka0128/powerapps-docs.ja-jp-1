@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: 添付ファイルをアップロード、取得、およびダウンロードする (Common Data Service) | Microsoft Docs'
+title: 'サンプル: 添付ファイルのアップロード、取得、およびダウンロード (Common Data Service) | Microsoft Docs'
 description: このサンプルでは添付ファイルをアップロード、取得、ダウンロードする方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 51496631551d87b269030a07ed482584b3c93ece
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749281"
 ---
 # <a name="sample-upload-retrieve-and-download-an-attachment"></a>サンプル: 添付ファイルのアップロード、取得、およびダウンロード
 

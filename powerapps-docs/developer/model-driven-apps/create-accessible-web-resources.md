@@ -4,21 +4,24 @@ description: このトピックでは、障碍のある方がアクセス可能�
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 307269ac-674c-5b8a-fee7-767f060af15f
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 5bdae4cf6754fb99f0045b17aaf1a81ab3e7e726
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753611"
 ---
-
 # <a name="create-accessible-web-resources"></a>アクセス可能な Web リソースの作成
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-accessible-web-resources -->
@@ -63,7 +66,7 @@ search.app:
  [Visual Studio アクセシビリティ チェッカー](https://msdn.microsoft.com/library/ms228004)  <!--TODO No relevant microsoft docs link-->
  HTML Web リソース ファイルを編集するために Visual Studio を使用している場合、アクセシビリティに関する問題をチェックするための組み込みツールがあります。 **ツール**メニューで、**アクセシビリティのテスト**を選択し、アクセシビリティ関連の問題に関するガイダンスを提供するレポートを表示します。  
   
- [UI Accessibility Checker](http://acccheck.codeplex.com/)  
+ [UI Accessibility Checker](https://acccheck.codeplex.com/)  
  UI Accessibility Checker (AccChecker) は、テスターが簡単に Microsoft Active Accessibility (MSAA) や他のユーザー インターフェイス (UI) の Windows への実装に関するアクセシビリティの問題を発見できます。 AccChecker は、既存の実装についての詳細を提供する Windows API ツール (Inspect など) の実現から生まれましたが、実装が正しいかどうかについての情報はありません。  
   
  [Inspect (Inspect.exe)](https://docs.microsoft.com/windows/desktop/WinAuto/inspect-objects)  
@@ -76,7 +79,7 @@ search.app:
 ## <a name="additional-resources"></a>その他のリソース  
  次の Web リソースは、リソースをアクセシブルにするための条件を定義するための開始点を提供します。  
   
--   [CRM、アクセシビリティ、および 508](http://blogs.msdn.com/b/devkeydet/archive/2013/01/29/crm-accessibility-and-508.aspx)  
+-   [CRM、アクセシビリティ、および 508](https://blogs.msdn.com/b/devkeydet/archive/2013/01/29/crm-accessibility-and-508.aspx)  
   
 -   [Web アクセシビリティの概要](https://docs.microsoft.com/previous-versions/windows/apps/hh452681(v=win.10))  
   
@@ -84,11 +87,11 @@ search.app:
   
 -   [開発者向けの Silverlight のアクセシビリティ](https://docs.microsoft.com/previous-versions/windows/)  
   
--   [アクセシビリティの概要](https://developer.microsoft.com/en-us/windows/accessible-apps)  
+-   [アクセシビリティの概要](https://developer.microsoft.com/windows/accessible-apps)  
   
--   [ユーザー補助 - W3C](http://www.w3.org/standards/webdesign/accessibility)  
+-   [ユーザー補助 - W3C](https://www.w3.org/standards/webdesign/accessibility)  
   
--   [Web コンテンツのアクセシビリティに関するガイドライン (WCAG) 2.0](http://www.w3.org/TR/WCAG20/)  
+-   [Web コンテンツのアクセシビリティに関するガイドライン (WCAG) 2.0](https://www.w3.org/TR/WCAG20/)  
   
 ### <a name="see-also"></a>関連項目  
  [Web ページ (HTML) の Web リソース](webpage-html-web-resources.md)   

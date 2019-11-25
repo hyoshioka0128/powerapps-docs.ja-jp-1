@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: 0d6064cd-4d38-4fc2-a564-735cb453a4b2
 caps.latest.revision: 8
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b34354a1bc0bdfb3556acc6ca999a1e0e8dcec74
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756041"
 ---
 # <a name="use-custom-controls-for-model-driven-app-data-visualizations"></a>モデル駆動型アプリのデータのビジュアル化のためのカスタム コントロールの使用
 
@@ -42,7 +48,7 @@ search.app:
 ## <a name="use-a-custom-control-to-add-visualizations-to-a-field"></a>カスタム コントロールを使用してビジュアル化をフィールドに追加する  
  この手順のステップに従うと、**予算金額**フィールドの既定のラベルとテキスト ボックス フィールドが、営業案件エンティティ上のスライダー カスタム コントロールに変更されます。 同様のステップを使用して、既存のフィールドをカスタム コントロールに置き換え、またはカスタム フィールド用カスタム コントロールを構成することができます。  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
      
 
@@ -70,10 +76,10 @@ search.app:
    > [!div class="mx-imgBorder"] 
    > ![クライアント アプリを選択してカスタム コントロールを表示する](media/choose-client.png "クライアント アプリを選択してカスタム コントロールを表示する")  
   
-7.  **最小**、**最大**、および**ステップ**の横の ![カスタム コントロール プロパティの編集アイコン](media/ccf-pencil-icon.png "カスタム コントロール プロパティの編集アイコン") 鉛筆アイコンを選択して、以下に説明されるプロパティ オプションを設定してから、**OK** を選択します。  
+7.  **最小**、**最大**、および**ステップ**の横の ![カスタム コントロール プロパティの編集アイコン](media/ccf-pencil-icon.png "カスタム コントロール プロパティの編集アイコン")鉛筆アイコンを選択して、以下に説明されるプロパティ オプションを設定してから、**OK** を選択します。  
   
    > [!div class="mx-imgBorder"] 
-   > ![カスタム コントロールのプロパティを追加](media/ccf-add-properties.png "カスタム コントロールのプロパティを追加")
+   > ![カスタム コントロールのプロパティを追加する](media/ccf-add-properties.png "カスタム コントロールのプロパティを追加する")
   
    - **最小**。 許容される最小値を設定します。 入力する静的な値をバインド、または既存のフィールドに値をバインドすることができます。 この例で、**静的な値にバインド**は**通貨**で、入力することができる最小値は [*ゼロ*] です。  
   

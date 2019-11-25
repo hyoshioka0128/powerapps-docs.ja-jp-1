@@ -1,23 +1,29 @@
 ---
 title: ソリューション チェッカーの一般的な問題と解決策 | Microsoft Docs
-description: ' ソリューション チェッカーにおける一般的な問題と解決策の一覧'
+description: " ソリューション チェッカーにおける一般的な問題と解決策の一覧"
 keywords: ''
 ms.date: 02/11/2019
 ms.service: powerapps
 ms.custom:
-  - ''
+- ''
 ms.topic: article
 ms.assetid: caa4e3f2-9700-49b8-87ed-8a68e8878b02
 author: jowells1
 ms.author: jowells
 manager: austinj
-ms.reviewer: null
-robots: 'noindex,nofollow'
+ms.reviewer: ''
+robots: noindex,nofollow
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6f9168f51f8bfffc2ef9519e183e951706b7a024
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758329"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>ソリューション チェッカーの一般的な問題と解決策
 
@@ -27,7 +33,7 @@ search.app:
 
 ソリューション チェックや、結果のダウンロードの要求を送信した直後に、処理が完了せずに次のようなエラーメッセージが表示される:
 
-> ***[ソリューション名称]** のソリューション チェックを実行することができませんでした。再度実行をしてください。*
+> *"**[ソリューション名称]** のソリューション チェックを実行することができませんでした。再度実行をしてください。"*
 
 実行が可能な時に、ソリューション チェッカーは潜在的な原因と解決手順の詳細へのリンクを含む特定のエラーメッセージが返されます。 詳細については **さらに詳しく** を選択してください。
 
@@ -58,7 +64,7 @@ search.app:
 
 PowerApps チェッカー ソリューションをアンインストールする方法:
 
-1. システム管理者またはシステム カスタマイザーとして https://web.powerapps.com/environments にアクセスして PowerApps ポータルを開きます。
+1. システム管理者またはシステム カスタマイザーとして https://make.powerapps.com/environments にアクセスして PowerApps ポータルを開きます。
 2. **ソリューション**を選択します。
 3. **PowerApps チェッカー** を選択し、ソリューション ツールバーで **削除** を選択します。
 
@@ -66,13 +72,13 @@ PowerApps チェッカー ソリューションをアンインストールする
 
 PowerApps チェッカーを Common Data Service 環境に再インストールする方法:
 
-1. システム管理者またはシステム カスタマイザーとして、https://web.powerapps.com/environments にアクセスして PowerApps ポータルを開きます。
+1. システム管理者またはシステム カスタマイザーとして、https://make.powerapps.com/environments にアクセスして PowerApps ポータルを開きます。
 2. **ソリューション**を選択します。
 3. ソリューション ツールバーで **ソリューション チェッカー** を選択し、次に **Install** を選択します。
 
 ## <a name="solution-checker-cant-access-organizations-in-administration-mode"></a>ソリューションチェッカー は管理者モードでは組織にアクセスすることができません
 
-[管理者モード](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/manage-sandbox-instances#administration-mode) に設定された組織は、システム管理者およびシステム カスタマイザの役割を持つユーザーだけに意図的なアクセスを制限を行います。 PowerApps チェッカー アプリケーション ID に既定でこれらのロールが割り当てられておらず、このモードで動作する組織にアクセスできません。
+[管理者モード](https://docs.microsoft.com/dynamics365/customer-engagement/admin/manage-sandbox-instances#administration-mode) に設定された組織は、システム管理者およびシステム カスタマイザの役割を持つユーザーだけに意図的なアクセスを制限を行います。 PowerApps チェッカー アプリケーション ID に既定でこれらのロールが割り当てられておらず、このモードで動作する組織にアクセスできません。
 
 ソリューションチェッカー をこの組織にて使用するには、管理者モードを無効にする必要があります。
 

@@ -1,6 +1,6 @@
 ---
-title: Common Data Service からデータをインポートまたはエクスポートする
-description: Excel のデータを取得してデータをエクスポートする機能を使用して、Excel または CSV ファイルから Common Data Service のエンティティにデータを一括インポートおよびエクスポートする
+title: Common Data Service からデータをインポート/エクスポートする方法
+description: Excelから Get Data および Export Data 機能を使用して、ExcelまたはCSVファイルのデータを Common Data Service のエンティティに一括インポートおよびエクスポートする
 author: sabinn-msft
 ms.service: powerapps
 ms.topic: conceptual
@@ -8,14 +8,20 @@ ms.component: cds
 ms.date: 05/14/2018
 ms.author: sabinn
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8aad3e440e93becd4741223f1450dd8e3b34921a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755580"
 ---
-# <a name="import-or-export-data-from-common-data-service"></a>Common Data Service からデータをインポートまたはエクスポートする
+# <a name="import-or-export-data-from-common-data-service"></a>Common Data Service からデータをインポート/エクスポートする方法
 
-Microsoft Excel または CSV ファイルからデータを一括インポートおよびエクスポートするには、更新された Common Data Service 環境に対して、Excel ファイルからデータを取得し、データをエクスポートする機能を使用します。
+Microsoft Excel または CSV ファイル からデータを一括インポートおよびエクスポートするには、更新された Common Data Service 環境に対して Get Data 機能と Export Data  機能を使用します。
 
 Excel または CSV ファイルからエンティティへファイルをインポートする方法は 2 つあります。
 
@@ -34,12 +40,12 @@ Excel または CSV ファイルからエンティティへファイルをイン
     - Excel または CSV ファイルから作成したテンプレートにデータをコピーします。
 
 1. ファイルをインポートします。  
-    a. [powerapps.com](https://web.powerapps.com/) で、**データ** セクションを展開します。 左側のナビゲーション ウィンドウで、**エンティティ**を選択します。  
+    a. [powerapps.com](https://make.powerapps.com/) で、**データ** セクションを展開します。 左側のナビゲーション ウィンドウで、**エンティティ**を選択します。  
     b. データをインポートするエンティティを選択します。  
     c. 上の省略記号またはメニューを選択します。 **データ取得**を選択します。 **Excel からデータを取得**を選択します。  
 
     > [!NOTE]
-    > 複数のエンティティにデータをインポートするには、トップ メニューの**データを取得**を選択します。 **Excel ファイルからデータを取得**を選択します。 その後、複数のエンティティを選択し**次へ**をクリックします。
+    > 複数のエンティティにデータをインポートするには、トップ メニューの**データ取得**を選択します。 **Excel からデータを取得**を選択します。 その後、複数のエンティティを選択し**次へ**をクリックします。
 
     > [!div class="mx-imgBorder"] 
     > ![**アカウント** エンティティにデータをインポートする例](./media/data-platform-import-export/import-data-to-account.png)
@@ -66,7 +72,7 @@ Excel または CSV ファイルからエンティティへファイルをイン
 
 ## <a name="option-2-import-by-bringing-your-own-source-file"></a>オプション 2: 独自のソース ファイルを使用してインポート
 
-Common Data Service エンティティの特定のエンティティに必要なフィールドを知っている上級ユーザーの場合は、独自の Excel または CSV ソース ファイルを定義します。 **ファイルのインポート**の手順を実行してください。
+Common Data Service エンティティの特定のエンティティに必要なフィールドを認識している上級ユーザーの場合は、独自の Excel または CSV ソース ファイルを定義します。 **ファイルのインポート**の手順を実行してください。
 
 ## <a name="navigate-mapping-errors"></a>マッピング エラーをナビゲートします。
 
@@ -92,7 +98,7 @@ Common Data Service エンティティの特定のエンティティに必要な
 
 ## <a name="ensure-uniqueness-when-you-import-data-into-an-entity-from-excel-or-csv"></a>Excel または CSV からエンティティにデータをインポートする際の一意性を保証する
 
-Common Data Service エンティティは、Common Data Service エンティティ テーブル内のレコードを一意に識別するために主キーを使用します。 Common Data Service エンティティの主キーは、グローバル一意識別子 (GUID) です。 これは、レコードの識別のための既定の基準となります。 Common Data Service エンティティにデータをインポートするなどのデータ操作では、既定の主キーが表示されます。
+Common Data Service エンティティは、 Common Data Service エンティティテーブル内のレコードを一意に識別するために主キーを使用します。 Common Data Service エンティティの主キーは、グローバル一意識別子 (GUID) です。 これは、レコードの識別のための既定の基準となります。 Common Data Service エンティティにデータをインポートするなどのデータ操作では、既定の主キーが表示されます。
 
 例:   
 **アカウント**のエンティティの主キーは **accountid** です。
@@ -100,10 +106,10 @@ Common Data Service エンティティは、Common Data Service エンティテ�
    > [!div class="mx-imgBorder"] 
    > ![**アカウント** エンティティからのサンプル エクスポート ファイルは、主キーとしての **accountid** を示しています](./media/data-platform-import-export/export-pk.png)
 
-場合によっては、外部ソースからのデータを統合するときに主キーが機能しないことがあります。 主キーの代わりにレコードを識別する代替キーを定義するには、Common Data Service を使用します。
+場合によっては、外部ソースからのデータを統合するときに主キーが機能しないことがあります。 Common Data Service を使用して、主キーの代わりにレコードを一意に識別する代替キーを定義します。
 
 例:   
-**アカウント**のエンティティ用に、代替キーとして自然キー ベースの ID を使用して **transactioncurrencyid** を設定する場合があります。 たとえば前述した GUID 値 **88c6c893-5b45-e811-a953-000d3a33bcb9** の代わりに **US Dollar** を使用します。 キーとして**通貨記号**または**通貨の名前**を選択できます。
+**アカウント**のエンティティ用に、代替キーとして自然キー ベースの ID を使用して **transactioncurrencyid** を設定する場合があります。 たとえば、前述のGUID値 **88c6c893-5b45-e811-a953-000d3a33bcb9** の代わりに **US ドル** を使用します。 キーとして**通貨記号**または**通貨の名前**を選択できます。
 
    > [!div class="mx-imgBorder"] 
    > ![**通貨**エンティティで代替キーを作成する例](./media/data-platform-import-export/create-ak.png)
@@ -117,7 +123,7 @@ Common Data Service エンティティは、Common Data Service エンティテ�
 
 標準エンティティまたはカスタム エンティティから一度だけデータをエクスポートできます。 また、一度に複数のエンティティからデータをエクスポートすることもできます。 複数のエンティティからデータをエクスポートすると、各エンティティは独自の Microsoft CSV ファイルにエクスポートされます。
 
-1. [powerapps.com](https://web.powerapps.com/) で、**データ** セクションを展開します。 左側のナビゲーション ウィンドウで、**エンティティ**を選択します。
+1. [powerapps.com](https://make.powerapps.com/) で、**データ** セクションを展開します。 左側のナビゲーション ウィンドウで、**エンティティ**を選択します。
 1. データをエクスポートするエンティティを選択します。
 1. 上の省略記号またはメニューを選択します。 **エクスポート**を選択します。 **データ**を選択します。
 

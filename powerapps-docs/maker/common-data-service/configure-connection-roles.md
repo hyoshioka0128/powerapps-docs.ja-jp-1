@@ -1,24 +1,30 @@
 ---
 title: つながりロールを構成 | MicrosoftDocs
 ms.custom: ''
-ms.date: 05/27/2018
+ms.date: 10/17/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.author: matp
 manager: kvivek
 author: Mattp123
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 028be1172621c9bdb510f5e57d16eb226b10f92b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758241"
 ---
 # <a name="configure-connection-roles"></a>つながりロールの構成
 
@@ -28,16 +34,30 @@ Common Data Service を使用することで、エンティティの関係性を
 
 **つながりロール**エンティティへの書き込みアクセスを持つユーザーは、ユーザーが使うことができるつながりを確立できます。
 
+> [!IMPORTANT]
+> エンティティを新規または既存のつながりロールのレコードの種類として使用可能にするには、エンティティに対して**つながりの有効化** プロパティを有効にする必要があります。 
+
+## <a name="enable-connection-roles-for-an-entity"></a>エンティティのつながりロールを有効にする
+1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
+2. **データ**を展開し、**エンティティ**を選択します。 
+3. つながりロールに対して有効にするエンティティを選択し、コマンド バーで**設定**を選択します。 
+4. **設定**ウィンドウで、**コラボレーション** エリアを展開し、**つながりを有効にする**を選択します。
+    > [!div class="mx-imgBorder"] 
+    > ![つながりの設定を有効にする](media/enable-connections.png "つながりの設定を有効にする")
+
+6. **完了**を選択します。 
+
 ## <a name="view-connection-roles"></a>つながりロールの表示
 
 Common Data Service には、標準的な接続に関するロールが多く含まれています。 これらを表示するには、設定領域に移動する必要があります。 
 
 ### <a name="navigate-to-the-settings-area"></a>設定領域への移動
 
-1. モデル駆動型アプリを表示しながら、URL を編集し、`dynamics.com` の後のすべてを削除してページを更新します。
-1. **設定** > **業務** > **事業部管理**に移動し、**つながりロール**を選択します。
+1. モデル駆動型アプリで、**設定** > **詳細設定**を選択します。 
+2. **設定** > **業務** > **事業部管理**に移動し、**つながりロール**を選択します。
 
-![事業部管理設定のつながりロール](media/navigate-settings-connection-roles.png)
+   > [!div class="mx-imgBorder"] 
+    > ![事業部管理設定のつながりロール](media/navigate-settings-connection-roles.png "事業部管理設定のつながりロール")
 
 このビューでは、この環境で使用できるすべてのつながりロールを確認し、編集できます。
 

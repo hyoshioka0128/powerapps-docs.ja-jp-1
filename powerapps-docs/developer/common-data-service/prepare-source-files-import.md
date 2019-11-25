@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 19ddeb03ffc6132e67da8140c63f392769db4fe2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752667"
 ---
 # <a name="prepare-source-files-for-import"></a>ソース ファイルのインポートを準備する
 
@@ -23,7 +29,7 @@ search.app:
   
 ソース ファイルには、取引先企業や取引先担当者など、1 種類以上のエンティティのデータを含めることができます。 複数のエンティティ データを含むソース ファイルの場合、`<EntitiesPerFile>` タグを含むマップを提供する必要があります。 このタグの値を "Multiple" に設定して、ソース ファイルに複数の種類のエンティティが存在することを指定します。 `Dedupe = “Eliminate”` 属性を `<EntityMap>` タグに追加します。 これにより、ソース ファイル内で、特定の種類のエンティティの行が重複していても、単一の行しか使用されないことで、ルックアップ関連のエラーが最小限に抑えられます。  
   
-複数の種類のエンティティがあるデータ マップの例を、 [Microsoft ダウンロード: DataImportMaps.zip](http://download.microsoft.com/download/D/5/F/D5F73E15-439B-4EBC-BFFB-C6837B146C76/DataImportMaps.zip) からダウンロードできます。 `MapForSalesForceContactAccount.xml` ファイルを参照します。  
+複数の種類のエンティティがあるデータ マップの例を、 [Microsoft ダウンロード: DataImportMaps.zip](https://download.microsoft.com/download/D/5/F/D5F73E15-439B-4EBC-BFFB-C6837B146C76/DataImportMaps.zip) からダウンロードできます。 `MapForSalesForceContactAccount.xml` ファイルを参照します。  
   
  ソース ファイルのフィールド値は、コンマ、タブ、または `ImportFile.FieldDelimiterCode` 属性で定義されているその他の文字で区切ることができます。  
   

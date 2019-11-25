@@ -4,28 +4,33 @@ description: アプリ デザイナーを使用してビューを作成または
 keywords: ''
 ms.date: 11/27/2018
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 666ab3f3-abda-468c-b248-3a0b410286b0
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 1
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3c3e7133076eb46718ed3f60d1df4f36a012c520
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753895"
 ---
-
 # <a name="create-and-edit-public-or-system-model-driven-app-views"></a>共有またはシステム モデル駆動型アプリ ビューを作成および編集
 
 このトピックでは、共有ビューの作成、既存のビューをアプリに追加する、ビューの列、フィルター、並べ替え順序の変更など、ビューを使用するために必要ないくつかのタスクを実行します。
@@ -45,7 +50,7 @@ PowerApps において、ビューは特定のエンティティのレコード�
 
 ## <a name="create-a-public-view-in-powerapps"></a>PowerAppsで共有ビューを作成する
 アプリの作成者は、PowerApps を使用して、共有ビューを作成および編集することができます。
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 
     > [!IMPORTANT]
@@ -85,7 +90,7 @@ PowerApps において、ビューは特定のエンティティのレコード�
 
     この例では、**取引先企業**エンティティから、**ビュー**選択します。
 
-    ![アプリ デザイナー ビュー](media/ViewAppDesigner_AccountAppDesignerView.png "取引先企業 エンティティのアプリ デザイナー ビュー")
+    ![アプリ デザイナー](media/ViewAppDesigner_AccountAppDesignerView.png "取引先企業エンティティのアプリ デザイナー ビュー")
 
 3. ビューを追加するには、共有、高度な検索そして検索ダイアログなどの種類のビューを使用し選択します。 ビューは自動的に**ビュー**一覧に追加されます。
 
@@ -101,7 +106,7 @@ PowerApps において、ビューは特定のエンティティのレコード�
 1. アプリ デザイナーで、目的のエンティティ ビューを選択してから、右のウィンドウの目的のビューの隣で編集を選択します (鉛筆ボタン)。  
 2. **コンポーネント**タブで、**プライマリ エンティティ**または**関連エンティティ**のどちらかの**列の属性**リストを選択します。
 
-    ![コラムを追加](media/ViewAppDesigner_AddColumn.png "コラムをビューへ追加") 
+    ![列の追加](media/ViewAppDesigner_AddColumn.png "ビューへの列の追加") 
 
 3. リストから、必要な属性を選択して列のヘッダーにドラッグします。 ダブル クリックして、属性を追加することもできます。
 4. ビューに表示したい全ての属性が追加するまで、ステップ 3 を繰り返します。
@@ -119,7 +124,7 @@ PowerApps において、ビューは特定のエンティティのレコード�
 3. 最初の列のドロップダウン リストから属性を選択します。 
 4. 次のの列のドロップダウン リストから演算子を選択します。
 
-    ![フィルター条件の演算子を設定](media/ViewAppDesigner_FilterCriteriaOption.png "フィルター条件の演算子を設定")
+    ![フィルター条件演算子の設定](media/ViewAppDesigner_FilterCriteriaOption.png "フィルター条件演算子の設定")
 
 5. 3 番目の列にフィルター処理する値を入力します。
 
@@ -137,9 +142,9 @@ PowerApps において、ビューは特定のエンティティのレコード�
 複数のフィールドを使用してレコードをフィルター処理する場合は、複数のビューにフィルターを追加できます。 
 
 1. グループ化したいフィルターを選択します。
-    ![グループ フィルターを設定](media/ViewAppDesigner_GroupFilter.png "グループ フィルターを設定")
+    ![グループフィルターの設定](media/ViewAppDesigner_GroupFilter.png "Seグループフィルターの
 2. フィルターをグループ化するために、グループ AND または グループ OR を選択します。
-    ![グループ フィルター セクション](media/ViewAppDesigner_GroupFilterSelection.png "グループ フィルターを選択") **グループ And** をセレクトすると、両方の条件に合うレコードのみがビューに表示されます。 **グループ Or** を選択すると、フィルター条件のいずれかに合うレコードが表示されます。 たとえば、高または標準およびアクティブ状態の優先度を持つレコードのみが表示される場合は、**グループ And** を選択します。
+    ![グループ フィルター の選択](media/ViewAppDesigner_GroupFilterSelection.png "Seフィルター グループの **グループ And**を選択すると、両方の条件に合うレコードのみがビューに表示されます。 **グループ Or** を選択すると、フィルター条件のいずれかに合うレコードが表示されます。 たとえば、高または標準およびアクティブ状態の優先度を持つレコードのみが表示される場合は、**グループ And** を選択します。
 
 グループからフィルターを削除するには、そのグループを選び、**グループ化の解除**を選択します。 
 
@@ -152,7 +157,7 @@ PowerApps において、ビューは特定のエンティティのレコード�
 1. 並び替えに使用したい列を選択してください。
 2. 下矢印を選び、**プライマリの並べ替え**または**セカンダリの並べ替え**を選択します。
  
-    ![レコードの並び替え](media/ViewAppDesigner_SortRecords.png "プライマリとセカンダリの並び変え順に基づくレコードを並び替え") 
+    ![レコードの並べ替え](media/ViewAppDesigner_SortRecords.png "プライマリとセカンダリの並び変え順に基づくレコードを並び替え") 
 
 プライマリの並び替え順に選択したデータ列を削除すると、セカンダリの並べ替え順に選択した列はプライマリになります。
 
@@ -166,9 +171,9 @@ PowerApps において、ビューは特定のエンティティのレコード�
 
 ### <a name="edit-a-public-or-system-view-in-app-designer"></a>アプリ デザイナーで共有ビューまたはシステム ビューを編集する
 列の追加、構成、または削除による共有またはシステム ビューの表示方法を変更することができます。
-1. エンティティの**ビュー**一覧で、**参照の一覧を表示**の下矢印 ![ドロップダウン](media/DownArrow.png "ドロップダウン矢印") を選択します。
-    ![ビューの編集](media/ViewAppDesigner_EditView.png "共有またはシステム ビューの編集")
-2. 編集したいビューの横で、**ビュー デザイナーを開く** ![ビュー デザイナーを開く](media/dynamics365-open-designer.png "ビュー デザイナーを開く") を選択します。 
+1. エンティティの **ビュー** 一覧で、 **参照の一覧を表示** の下向き矢印 ![ドロップダウン](media/DownArrow.png "ドロップダウンアロー") を選択します。
+    ![ビューの編集](media/ViewAppDesigner_EditView.png "Ed共有またはシステム ビューの
+2. 編集をするビューの横で、 **ビュー デザイナーを開く** ![ビュー デザイナーを開く](media/dynamics365-open-designer.png "ビュー デザイナーを開く") を選択します。 
 
     ビューはビュー デザイナーで開きます。 
 

@@ -16,22 +16,27 @@ ms.workload: na
 ms.date: 01/28/2019
 ms.author: jdaly
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a621bf0ff0093a5100a14ccad9f3e4c3ebb9e1e7
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752943"
 ---
-
 # <a name="introduction-to-solutions"></a>ソリューションの概要
 
 *ソリューション*とは、カスタマイザーと開発者が Common Data Service を拡張した単体ソフトウェアを作成、パッケージ化、および保守する方法です。 たとえば、Dynamics 365 for Sales、Marketing、Customer Service アプリはソリューションで構成されています。 カスタマイザーと開発者は、ソリューションによって定義されたビジネス機能を組織が Common Data Service を使用してインストールおよびアンインストールできるように、ソリューションを配布します。
 
-Common Data Service へのカスタマイズまたは以前にインストールされたソリューションすべては、ソリューションの一部です。 適用する変更すべては追跡され、依存関係すべては計算されます。 マネージド ソリューションをエクスポートする場合、ソルーションに適用されている変更すべては、異なる Common Data Service 環境へインポート可能なファイルに含められます。
+Common Data Service または以前にインストールされたソリューションにおこなった各カスタマイズは、ソリューションの一部です。 適用する変更すべては追跡され、依存関係すべては計算されます。 管理ソリューションをエクスポートする場合、ソルーションに適用されている変更すべては、異なる Common Data Service 環境へインポート可能なファイルに含められます。
 
 異なる Common Data Service 環境間のカスタマイズまたは拡張を転送する場合、また AppSource を使用してソリューションを配布する場合、ソリューション フレームワークを理解している必要があります。
 
 > [!NOTE]
-> ソリューションを効率的に使用してアプリケーション ライフサイクル管理 (ALM) の実装を成功させる方法の詳細については、[ホワイトペーパー: ライフサイクル管理ソリューション](https://www.microsoft.com/en-us/download/details.aspx?id=57777) を参照してください
+> ソリューションを効率的に使用してアプリケーション ライフサイクル管理 (ALM) の実装を成功させる方法の詳細については、[ホワイトペーパー: ライフサイクル管理ソリューション](https://www.microsoft.com/download/details.aspx?id=57777) を参照してください
 
 ## <a name="managed-and-unmanaged-solutions"></a>管理ソリューションとアンマネージド ソリューション
 
@@ -72,18 +77,18 @@ Common Data Service へのカスタマイズまたは以前にインストール
 
 ソリューション発行者およびソリューションを作成するために、Common Data Service カスタマイズ領域に移動する必要があります。
 
-発信元 [powerapps.com](https://web.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+発信元 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 
 1. 左上隅の*ワッフル* アイコンの選択
 2. フライアウトで、**すべてのアプリ** を選択します。
-3. **Common Data Service** - カスタム アプリを検索します。
+3. **Common Data Service - カスタム アプリ**を検索します。
  省略記号 (...) をクリックして、**Pin this app** を選択すると、次回は簡単に移動することができます。
 4. **Common Data Service - カスタム アプリ** アプリをクリックして、選択します。
 5. **設定** > **カスタマイズ** > **カスタマイズ**に移動します。
 
-発信元 [home.dynamics.com](http://home.dynamics.com/)
+発信元 [home.dynamics.com](https://home.dynamics.com/)
 
-1. **Common Data Service - カスタム アプリ** アプリをクリックして、選択します。
+1.  **Common Data Service - カスタム** タイルを検索して、クリックします。
 2. **設定** > **カスタマイズ** > **カスタマイズ**に移動します。
 
 ### <a name="create-a-solution-publisher"></a>ソリューション発行者の作成
@@ -113,7 +118,7 @@ Common Data Service へのカスタマイズまたは以前にインストール
 
 相互に矛盾する 2 つのマネージド ソリューションをインストールすること、または一部のカスタマイズを環境に適用してマネージド ソリューションを上書きすることは可能です。 どのように使用するのですか?
 
-Common Data Service は、インストールされたマネージド ソリューション、そして最後に、評価されたマネージド ソリューションにはないすべてのカスタマイズの順で評価することによって動作します。
+Common Data Service は、インストールされた順に管理ソリューションを評価し、管理ソリューション内にないすべてのカスタマイズは最後に評価されるため、これは動作します。
 
 次の図で、マネージド ソリューションおよびアンマネージド カスタマイズが対話し、アプリケーションのランタイムに含まれているものを制御する方法を紹介します。
 
@@ -147,13 +152,13 @@ Common Data Service は、インストールされたマネージド ソリュ�
 - パッケージが展開される前、展開中、またはその後に実行できるカスタム コード。
 - 展開プロセスの最初か最後に表示可能なパッケージに固有の HTML コンテンツ。 これは、パッケージに展開されるソリューションおよびファイルの説明を提供するのに便利です。
 
-詳細: [Common Data Service Package Deployer のパッケージを作成する](package-deployer/create-packages-package-deployer.md)。
+詳細: [Common Data Service Package Deployerにパッケージを作成する](package-deployer/create-packages-package-deployer.md)。
 
 ## <a name="team-development-of-solutions"></a>ソリューションのチーム開発
 
 ソリューション ファイルは単一のバイナリ ファイルで、ソース コード コントロールやチーム展開に活用できません。 ソリューションのカスタム コンポーネントで複数の開発者が作業する方法はありません。
 
-*SolutionPackager* ツールは、ソリューション ファイルのソース コード管理とチーム展開の問題を解決します。 ツールは、圧縮されているソリューション ファイル内の個々コンポーネントを特定して、個別のファイルに解凍されます。 ツールは、以前に解凍されたファイルをパッキングしてソリューション ファイルを再作成することもできます。 これにより、複数のユーザーが単一のソリューションで独立して作業し、共通の場所への変更を抽出できます。 ソリューション ファイルの各コンポーネントは複数のファイルに分割されるので、以前の変更を上書きしないでカスタマイズをマージすることが可能になります。 SolutionPackager ツールの別の用途は、自動化作成プロセスから起動し、アクティブな Common Data Service インスタンスのサーバーを必要とせずに以前に解凍したコンポーネント ファイルから圧縮ソリューション ファイルを生成できることです。
+*SolutionPackager* ツールは、ソリューション ファイルのソース コード管理とチーム展開の問題を解決します。 ツールは、圧縮されているソリューション ファイル内の個々コンポーネントを特定して、個別のファイルに解凍されます。 ツールは、以前に解凍されたファイルをパッキングしてソリューション ファイルを再作成することもできます。 これにより、複数のユーザーが単一のソリューションで独立して作業し、共通の場所への変更を抽出できます。 ソリューション ファイルの各コンポーネントは複数のファイルに分割されるので、以前の変更を上書きしないでカスタマイズをマージすることが可能になります。 SolutionPackager ツールの二次用途は、自動化作成プロセスから起動して、 のアクティブな Common Data Service インスタンスを必要とせず、以前に解凍したコンポーネント ファイルから圧縮ソリューション ファイルを生成にできることです。
 
 詳細については、[チーム開発のソリューション ツール](/dynamics365/customer-engagement/developer/solution-tools-team-development) を参照してください。
 

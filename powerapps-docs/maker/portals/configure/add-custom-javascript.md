@@ -1,6 +1,6 @@
 ---
-title: ポータルでカスタム JavaScript を使用する |MicrosoftDocs
-description: ポータルでカスタム JavaScript をフォームに追加する手順
+title: ポータルのカスタム JavaScript を使用 | MicrosoftDocs
+description: ポータルのフォームへカスタム JavaScript を追加する指示
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,20 +11,20 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 42e31fc2ecb18d4f26327f8ccbeabe034d7a1700
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73553649"
+ms.locfileid: "2760647"
 ---
-# <a name="add-custom-javascript"></a>カスタム JavaScript の追加
+# <a name="add-custom-javascript"></a>カスタム JavaScript を追加する
 
-Web フォームステップレコードには、**カスタム javascript**という名前のフィールドが含まれています。このフィールドを使用すると、フォームのビジュアル表示または機能を拡張または変更するための javascript コードを格納できます。
+Web フォーム ステップ レコードには、フォームの表示や機能を拡張または変更できる JavaScript コードの保存に使用できる **カスタム JavaScript** という名前のフィールドが含まれています。
 
-JavaScript のカスタムブロックは、フォームの終了タグ要素の直前にページの下部に追加されます。
+JavaScript のカスタム ブロックは、ページの下部のクローズ フォーム タグ要素の直前に追加されます。
 
-## <a name="form-fields"></a>フォームフィールド
+## <a name="form-fields"></a>フォーム フィールド
 
-エンティティフィールドの HTML 入力 ID は、属性の論理名に設定されます。 これにより、 [jQuery](https://jquery.com/)を使用して、フィールドの選択、値の設定、またはその他のクライアント側の操作を簡単に行うことができます。  
+エンティティ フィールドの HTML インプット ID が、属性の論理名に設置されています。 これにより、フィールドの選択や値または他のクライアント側の操作の設置を [jQuery](https://jquery.com/) で簡単にします。  
 
 ```JavaScript
 $(document).ready(function() {
@@ -32,11 +32,11 @@ $(document).ready(function() {
 });
 ```
 
-## <a name="additional-client-side-field-validation"></a>追加のクライアント側フィールドの検証
-場合によっては、フォームのフィールドの検証のカスタマイズが必要になることがあります。 次の例は、カスタム検証を追加する方法を示しています。 この例では、優先する contact メソッドの他のフィールドが Email に設定されている場合にのみ、電子メールを指定するようユーザーに強制します。
+## <a name="additional-client-side-field-validation"></a>追加したクライアント側フィールドの検証
+フォーム上で、フィールドの検証を時々カスタマイズする必要があります。 次の例は、カスタム 検証の追加を示します。 この例では、希望の連絡方法の為の他フィールドが電子メールに設置される場合のみ、ユーザーに電子メールを指定させます。
 
 > [!NOTE]
-> クライアント側のフィールドの検証は、サブグリッドではサポートされていません。
+> クライアント側のフィールド検証はサブグリッドではサポートされません。
 
 ```JavaScript
 if (window.jQuery) {
@@ -73,9 +73,9 @@ if (window.jQuery) {
 }
 ```
 
-## <a name="general-validation"></a>一般的な検証
+## <a name="general-validation"></a>全般の検証
 
-[**次**の/の**送信**] ボタンをクリックすると、 **webformclientvalidate**という名前の関数が実行されます。 このメソッドを拡張して、カスタム検証ロジックを追加できます。
+**次**/**送信**のボタンを押すと、**webFormClientValidate** という機能が実行されます。 この方法を拡張して、カスタム検証のロジックを追加できます。
 
 ```JavaScript
 if (window.jQuery) {
@@ -98,8 +98,8 @@ if (window.jQuery) {
 ### <a name="see-also"></a>関連項目
 
 [ポータルの構成](configure-portal.md)  
-[エンティティフォームの定義](entity-forms.md)  
+[エンティティ フォームの定義](entity-forms.md)  
 [ポータルの Web フォームの手順](web-form-steps.md)  
-[フォームの読み込み/読み込みタブのステップの種類](load-form-step.md)  
-[リダイレクトステップの種類](add-redirect-step.md)  
-[条件付きステップの種類](add-conditional-step.md)
+[フォームの読み込みまたはタブの読み込みのステップの種類](load-form-step.md)  
+[リダイレクト ステップの種類](add-redirect-step.md)  
+[条件付きのステップの種類](add-conditional-step.md)

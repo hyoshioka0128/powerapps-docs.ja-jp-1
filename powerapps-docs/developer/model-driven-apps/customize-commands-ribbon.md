@@ -1,24 +1,27 @@
 ---
 title: コマンドとリボンのカスタマイズ (モデル駆動型アプリ) | MicrosoftDocs
-description: Common Data Service は、エンティティおよびクライアントに応じてさまざまな方法でコマンドを表示します。 Web アプリケーションの大抵の場所で、リボンの代わりにコマンド バーが表示されます。 また、Dynamics 365 for tablets はリボンとして定義されたデータを使用して、タッチ操作のために最適化されたコマンド バーを使用してどのコマンドを使用できるかコントロールします。
+description: Common Data Service は、エンティティおよびクライアントに応じてさまざまな方法でコマンドを表示します。 Web アプリケーションの大抵の場所で、リボンの代わりにコマンド バーが表示されます。 また、タブレット PC 用 Dynamics 365 はリボンとして定義されたデータを使用して、タッチ操作のために最適化されたコマンド バーを使用してどのコマンドを使用できるかコントロールします。
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 926364b0-ede6-00e9-39d4-5aae5e00be0b
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 508ea8788f0fbaf9823721958229c3ed3cd21d55
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754584"
 ---
-
 # <a name="customize-commands-and-the-ribbon"></a>コマンド、およびリボンをカスタマイズする
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-commands-ribbon -->
@@ -36,11 +39,11 @@ search.app:
   
  SDK では、customization.xml ファイルを直接編集することでリボンを編集するプロセスについて説明します。 リボンの編集を簡単にするためのユーザー インターフェイスを提供するリボン エディターは、複数の担当者によって作成されました。 現在、Codeplex と他の場所で使用できるプロジェクトは以下のとおりです。  
   
-- [リボン ワークベンチ](http://www.develop1.net/public/rwb/ribbonworkbench.aspx)  
+- [リボン ワークベンチ](https://www.develop1.net/public/rwb/ribbonworkbench.aspx)  
   
-- [MS CRM 2011 : プラグマ ツールキット: リボン, サイトマップ エディタ](http://pragmatoolkit.codeplex.com/)  
+- [MS CRM 2011 : プラグマ ツールキット: リボン, サイトマップ エディタ](https://pragmatoolkit.codeplex.com/)  
   
-- [CRM 2011 Visual Ribbon Editor (CRM 2011 Visual のリボン エディター)](http://crmvisualribbonedit.codeplex.com/)  
+- [CRM 2011 Visual Ribbon Editor (CRM 2011 Visual のリボン エディター)](https://crmvisualribbonedit.codeplex.com/)  
   
   これらのプログラムを使用するためのサポートまたヘルプを得るには、プログラムの発行元にお問い合わせください。  
   

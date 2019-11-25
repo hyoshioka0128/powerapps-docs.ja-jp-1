@@ -9,26 +9,31 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: ece68f5f-ad40-4bfa-975a-3e5bafb854aa
 caps.latest.revision: 55
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 391220159917462833afac204183cdc68a94f898
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759033"
 ---
-   
 # <a name="solutions-overview"></a>ソリューションの概要  
 
   PowerApps では、別の環境にアプリケーションおよびコンポーネントを移動したり、既存のアプリケーションに一連のカスタマイズを適用するために、ソリューションが利用されます。 ソリューションには、1 つ以上のアプリに加えて、サイト マップ、エンティティ、プロセス、Web リソース、オプション セットなど、それ以外のコンポーネントを含めることができます。  ソリューションは [AppSource](https://appsource.microsoft.com/) または独立系ソフトウェア ベンダー (ISV) から取得することができます。
   
-詳細: [ホワイトペーパー: ラソリューションのライフサイクルの管理](https://www.microsoft.com/en-us/download/details.aspx?id=57777)  
+詳細: [ホワイトペーパー: ラソリューションのライフサイクルの管理](https://www.microsoft.com/download/details.aspx?id=57777)  
   
 > [!NOTE]
 >  配布するアプリを作成する ISV の場合は、ソリューションを使用する必要があります。 ソリューションの使用に関する詳細は [開発者ガイド: ソリューションの概要](/powerapps/developer/common-data-service/introduction-solutions) を参照してください。  
@@ -38,6 +43,8 @@ search.app:
 ### <a name="components"></a>[コンポーネント]  
  コンポーネントは、カスタマイズできる可能性のあるものを示します。 ソリューションに含めることのできるものは、コンポーネントです。 次に、ソリューション内で表示できるコンポーネントの一覧を示します。  
   
+-   AI モデル
+
 -   アプリケーション リボン  
   
 -   記事テンプレート  
@@ -51,6 +58,8 @@ search.app:
 -   つながりロール  
   
 -   契約テンプレート  
+
+-   カスタム コネクタ
  
 -   カスタム コントロール
   
@@ -61,6 +70,8 @@ search.app:
 -   エンティティ  
   
 -   エンティティ関係  
+
+-   環境変数
   
 -   フィールド  
   
@@ -90,7 +101,7 @@ search.app:
   
 -   サービス エンドポイント  
   
--   サイト マップ   
+-   サイト マップ  
 
 -   仮想エンティティ データ プロバイダー
 

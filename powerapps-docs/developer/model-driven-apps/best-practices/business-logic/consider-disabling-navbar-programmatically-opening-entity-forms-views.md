@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 3/04/2019
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 359c505c3df1f2b88268dba2e7da005465f29d84
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749347"
 ---
 # <a name="consider-disabling-navbar-when-programmatically-opening-entity-forms-or-views"></a>エンティティ フォームやビューをプログラムから開くときに NavBar の無効化を検討する
 
@@ -80,7 +86,7 @@ function enabledNavBarExplicit() {
 
 ## <a name="additional-information"></a>追加情報
 
-モデル駆動型アプリから他のレコードを開くと、サイトマップ内に定義された領域とサブエリアと一緒にナビゲーション バーがロードされます。  さらに、ユーザーがアクセスできる Office 365 アプリを表示する [Office アプリ起動ツール](https://support.office.com/article/Meet-the-Office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a) も表示します。<br/>
+モデル駆動型アプリから他のレコードを開くと、サイトマップ内に定義された領域とサブエリアと一緒にナビゲーション バーがロードされます。  さらに、ユーザーがアクセスできる Office 365 アプリを表示する [Office アプリ起動ツールr](https://support.office.com/article/Meet-the-Office-365-app-launcher-79f12104-6fed-442f-96a0-eb089a3f476a) も表示します。<br/>
 ![NavBar の有効化と無効化の比較](../media/navbar_comparison_enabled_disabled.png)
 
 <a name='seealso'></a>

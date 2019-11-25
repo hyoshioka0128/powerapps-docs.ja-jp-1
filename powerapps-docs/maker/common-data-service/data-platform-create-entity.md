@@ -1,6 +1,6 @@
 ---
 title: ユーザー定義エンティティの作成 | Microsoft Docs
-description: PowerApps でユーザー定義エンティティの作成方法について説明します。
+description: PowerApps でユーザー定義のエンティティを作成する方法について説明します。
 author: Mattp123
 ms.service: powerapps
 ms.component: cds
@@ -8,14 +8,19 @@ ms.topic: quickstart
 ms.date: 05/01/2018
 ms.author: matp
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b1331d272b30bb3455ae06a8dd726eb3a9dc630f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754964"
 ---
-
 # <a name="create-a-custom-entity"></a>ユーザー定義エンティティの作成
-PowerApps では、*エンティティ*は、レコードの形式で追跡する情報を定義します。通常は会社名、場所、製品、電子メール、電話などのプロパティが含まれます。 次に、エンティティを参照するアプリを開発して、そのデータを表示できます。 PowerApps には、組織内の一般的なシナリオをカバーする標準エンティティ (予定の追跡など) が提供されていますが、組織に固有のデータを格納するユーザー定義エンティティを作成する必要がある場合があります。
+PowerApps では、 *エンティティ* は、通常は会社名、所在地、製品、電子メール、電話などのプロパティを含むレコード形式で追跡する情報を定義します。 次に、エンティティを参照するアプリを開発して、そのデータを表示できます。 PowerApps は、組織内の一般的なシナリオ(アポイントメントの追跡など)をカバーする標準の「すぐに使える」エンティティが用意されていますが、組織固有のデータを格納するためにカスタムエンティティを作成する必要が生じる場合があります。
 
 このトピックでは、会社が販売する製品の評価やコメントを表示するアプリの作成に使用できる、製品レビューと呼ばれるユーザー定義エンティティを作成する方法について説明します。
 
@@ -23,7 +28,7 @@ PowerApps では、*エンティティ*は、レコードの形式で追跡す�
 この手順を実行するには、 Common Data Service内にシステム管理者またはシステムカスタマイズ者のいずれかのセキュリティ役割が必要です。
 
 ## <a name="sign-in-to-powerapps"></a>PowerApps へのサインイン
-[https://web.powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で PowerApps にサインインします。
+[https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で PowerApps にサインインする
 
 ## <a name="create-an-entity"></a>エンティティの作成
 1. ナビゲーション ウィンドウで、**データ**をクリックまたはタップして展開し、**エンティティ**をクリックまたはタップします。
@@ -36,17 +41,17 @@ PowerApps では、*エンティティ*は、レコードの形式で追跡す�
 
 3. **新規エンティティ** パネルで、次の操作を行います。
 
-    a. **表示名称** ボックス にて、 **Product Review**を入力します。
+    a. **表示名称** ボックス にて、 **製品レビュー**を入力します。
 
     表示名称を入力すると、以下ののボックスに自動的に入力がされます。
 
-    * **表示名の複数形** 表示名称に値を入力すると、このボックスに自動的に値が入力されます。必要に応じて変更することも可能です。 複数の表示名称は Common Data Service WebAPI のエンティティの名称であり、PowerApps または Flow からこのエンティティーとやり取りが行われる際に使用されます。
+    * **表示名の複数形** 表示名称に値を入力すると、このボックスに自動的に値が入力されます。必要に応じて変更することも可能です。 複数の表示名は、 Common Data Service WebAPI内のエンティティーの名前であり、 PowerApps または Flow からこのエンティティーと対話するときに使用されます。
     * **名称** 表示名称に値を入力すると、このボックスに自動的に値が入力されます。 接頭辞は、環境が作成されたときにセットアップされました。作成したエンティティが、他のエンティティ名と競合せずに他の環境にエクスポートおよびインポートできることが確証されます。 Common Data Service 既定のソリューションのパブリッシャにて接頭辞を更新することで、この接頭辞を更新することができます。 既存のアプリの破損を防止するため、エンティティを保存した後で名前は変更できません。
 
        > [!NOTE]
        > [Dynamics 365 for Customer Service の埋め込み型ナレッジ検索](/dynamics365/customer-engagement/customer-service/set-up-knowledge-management-embedded-knowledge-search)にてエンティティ名称を使用するには、パブリッシャの接頭辞を含むエンティティ名の最大長は24文字以内に収める必要があります。
 
-    b. **表示名称** ボックスの **プライマリ フィールド** セクションにて、 **名称** を **Product Review**に置き換えます。 
+    b. **表示名称** ボックスの **プライマリ フィールド** セクションにて、 **名称** を **製品レビュー**に置き換えます。 
 
     既定では、すべてのエンティティには **プライマリ フィールド**が含まれており、これは他のエンティティとの関係を確立する際の検索処理に使用されます。 通常プライマリフィールドには、エンティティに格納されているデータの名称または主要な説明が格納されています。 エンティティを最初に保存する前に、プライマリフィールドの名称と表示名称を変更することが可能です。
 
@@ -56,11 +61,11 @@ PowerApps では、*エンティティ*は、レコードの形式で追跡す�
     
     d. 作業が完了したら、 **作成** をクリックします。
      
-    ![新規エンティティ](./media/data-platform-cds-create-entity/newentitypanel.png "新規エンティティパネル")
+    ![新規 エンティティ](./media/data-platform-cds-create-entity/newentitypanel.png "新規エンティティのパネル")
 
 4. エンティティの詳細ページでは、エンティティがバックグラウンドでプロビジョニングされていることが確認できます。 プロビジョニングが完了すると、エンティティが保存されご利用のアプリケーションにて利用可能となります。 プロビジョニングの途中であってもフィールド、関係、キーはエンティティに追加することが可能ですが、ビュー、フォーム、チャート、ダッシュボード、ビジネス ルールはプロビジョニングが完了するまで追加ができません。
 
-    ![エンティティの詳細](./media/data-platform-cds-create-entity/newentitydetails.png "新しいエンティティの詳細")
+    ![エンティティの詳細](./media/data-platform-cds-create-entity/newentitydetails.png "新規エンティティの詳細")
 
 5. **フィールド** タブの配下で、前の手順で名前を付けた **プライマリ フィールド** を確認します。 **プライマリ フィールド** を開くことで、 **プライマリ フィールド** パネルを開き、必要に応じてフィールドへのカスタマイズを行うことができます。 **名称** は、エンティティが保存された後は変更ができなくなります。
 
@@ -79,7 +84,7 @@ PowerApps では、*エンティティ*は、レコードの形式で追跡す�
     詳細については、「[エンティティでのフィールドの管理](data-platform-manage-fields.md)」を参照してください。
 
     > [!div class="mx-imgBorder"] 
-    > ![新しいフィールド](./media/data-platform-cds-create-entity/newfieldpanel-2.png "新しいフィールド パネル")
+    > ![新しいフィールド](./media/data-platform-cds-create-entity/newfieldpanel-2.png "新規フィールドのパネル")
 
 6. 次の構成を持つ 3 つのフィールドをさらに追加するために前の手順を実行します。
     * **表示名** = [Product Rating] 製品評価、**データの種類** = 整数。**必須**チェック ボックスをクリックまたはタップします。
@@ -88,7 +93,7 @@ PowerApps では、*エンティティ*は、レコードの形式で追跡す�
 
     完了すると、エンティティの詳細のページにフィールドが 5 つリストされます。
 
-    ![フィールド一覧](./media/data-platform-cds-create-entity/addedfields.png "フィールドの一覧")
+    ![フィールド リスト ](./media/data-platform-cds-create-entity/addedfields.png "フィールド リスト")
 
     すべてのエンティティが読み取り専用システム フィールドであることに注意してください。 既定では、システム フィールドは、エンティティにあってもフィールドの一覧に表示されません。 すべてのフィールドを表示するには、**既定**から**すべて**にコマンド バーのフィルターを変更します。 エンティティに関連するメタデータの詳細については、「[エンティティ メタデータ](../../developer/common-data-service/entity-metadata.md)」を参照してください。
 
@@ -97,7 +102,7 @@ PowerApps では、*エンティティ*は、レコードの形式で追跡す�
     製品レビュー エンティティは、データベース内のエンティティの一覧に表示されます。 表示されない場合、**既定**から**ユーザー定義**にコマンド バーのフィルターを変更します。
 
     > [!div class="mx-imgBorder"] 
-    > ![フィルター](./media/data-platform-cds-create-entity/filter.png "フィールター選択")
+    > ![Filter](./media/data-platform-cds-create-entity/filter.png "フィルターの選択")
 
 ## <a name="next-steps"></a>次のステップ
 このトピックでは、特定の会社が販売する各製品の評価やコメントを表示するアプリの作成に使用できる、製品レビューと呼ばれるユーザー定義エンティティを作成する方法について説明しました。 次に、各製品と受け取ったレビューおよびコメントを関連付けることができるように、エンティティ間の関連付けを定義する方法について説明します (この場合は、標準製品エンティティとカスタム製品レビュー エンティティの間)。

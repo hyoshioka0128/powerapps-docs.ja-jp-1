@@ -1,6 +1,6 @@
 ---
-title: ポータルの OAuth2 プロバイダー設定を構成する |MicrosoftDocs
-description: ポータルの OAuth2 プロバイダー設定を追加して構成する方法について説明します。
+title: ポータル用 OAuth2 プロバイダー設定の構成 | MicrosoftDocs
+description: ポータルの OAuth2 プロバイダー設定を追加およびコンフィギュレーションする指示をします。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -14,13 +14,13 @@ ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542820"
+ms.locfileid: "2755448"
 ---
-# <a name="configure-oauth2-provider-settings-for-portals"></a>ポータルの OAuth2 プロバイダー設定を構成する
+# <a name="configure-oauth2-provider-settings-for-portals"></a>ポータル用 OAuth2 プロバイダー設定を構成します
 
-OAuth 2.0 ベースの外部 id プロバイダーでは、"クライアント ID" と "クライアントシークレット" のペアを取得するために、サードパーティのサービスに "アプリケーション" を登録する必要があります。 多くの場合、このアプリケーションでは、id プロバイダーがユーザーをポータル (証明書利用者) に返信できるようにするリダイレクト URL を指定する必要があります。 クライアント ID とクライアントシークレットは、証明書利用者から id プロバイダーへのセキュリティで保護された接続を確立するために、ポータルサイト設定として構成されます。 設定は、 [[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]AccountAuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.aspx)、 [TwitterAuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.twitter.twitterauthenticationoptions.aspx)、 [FacebookAuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.facebook.facebookauthenticationoptions.aspx)、および[GoogleOAuth2AuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.google.googleoauth2authenticationoptions.aspx)クラスのプロパティに基づいています。  
+OAuth 2.0 ベースの外部 ID プロバイダーは、「クライアント ID」と「クライアント シークレット」の組を取得するために、サード パーティ サービスの「アプリケーション」の登録を行います。 通常このアプリケーションは、ID プロバイダーがユーザーをポータル (証明書利用者) に送り返すためのリダイレクト URL を指定することを要求します。 クライアント ID とクライアント シークレットはポータル サイトの設定として構成され、証明書利用者から ID プロバイダーへの保護された接続が確立されます。 設定は、[[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]AccountAuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.aspx)、[TwitterAuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.twitter.twitterauthenticationoptions.aspx)、[FacebookAuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.facebook.facebookauthenticationoptions.aspx)、および [GoogleOAuth2AuthenticationOptions](https://msdn.microsoft.com//library/microsoft.owin.security.google.googleoauth2authenticationoptions.aspx) クラスのプロパティーに基づいています。  
 
-サポートされているプロバイダーは次のとおりです。
+サポートされるプロバイダーは次のとおりです。
 
 - [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] アカウント
 - Twitter
@@ -29,116 +29,116 @@ OAuth 2.0 ベースの外部 id プロバイダーでは、"クライアント I
 - LinkedIn
 - Yahoo
 
-## <a name="create-oauth-applications"></a>OAuth アプリケーションの作成
+## <a name="create-oauth-applications"></a>OAuth アプリケーションを作成する
 
-一般に、OAuth プロバイダーがリダイレクト URI 値を必要とするアプリ設定を使用する場合は、プロバイダーがリダイレクト URI 検証を実行する方法に応じて <https://portal.contoso.com/or> https://portal.contoso.com/signin-\[プロバイダー\] を指定します (一部のプロバイダーでは、完全な URL パスをドメイン名と共に指定する必要があります)。 リダイレクト URI で \[プロバイダーの\] の代わりにプロバイダーの名前を置き換えます。
+一般に、OAuth プロバイダーがリダイレクト URI の値を必要とするアプリケーションを使用する場合、プロバイダーがリダイレクト URI を検証する方法に合わせて (一部のプロバイダでは、ドメイン名のほかに URL の完全なパスを指定する必要があります) <https://portal.contoso.com/or>https://portal.contoso.com/signin-\[プロバイダー\] を指定します。 リダイレクト URI の \[プロバイダー\] を、プロバイダーの名前に置き換えます。
 
 ### <a name="google"></a>Google
 
-[Google OAuth2 API 資格情報の手順](https://developers.google.com/accounts/docs/OpenIDConnect#appsetup)  
+[Google OAuth2 API の資格情報の説明](https://developers.google.com/accounts/docs/OpenIDConnect#appsetup)  
 
-1. [Google 開発者コンソール](https://console.developers.google.com/)を開く  
-2. API プロジェクトを作成するか、既存のプロジェクトを開きます。
-3. [**Api & auth** &gt;**api**] にアクセスし、 **[ソーシャル api]** で **[Google + API]** を選択し、 **[api の有効化]** を選択します。
-4. **Api & 認証**&gt;**同意画面**にアクセスします。
-    - **電子メールアドレス**を指定してください。
-    - カスタムの**製品名**を指定してください。
-    - **[保存]** を選択します。
-5. [**Api & auth** &gt;の**資格情報**] にアクセスし、新しいクライアント ID を作成します。
-   - アプリケーションの種類:**Web アプリケーション**
-   - 承認された [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] オリジン: https://portal.contoso.com
-   - 承認されたリダイレクト Uri: https://portal.contoso.com/signin-google 
-   - **[クライアント ID の作成]** を選択します。
+1. [Google 開発者コンソール](https://console.developers.google.com/) を開きます  
+2. API プロジェクトを作成するか、または既存プロジェクトを開きます。
+3. **APIs & auth** &gt;**APIs** へ進み、**ソーシャル APIs** の下部で、**Google+ API** を選択し、**有効化 API** を選択します。
+4. **APIs & auth** &gt;**同意スクリーン**へ進みます。
+    - **電子メール アドレス**を指定します。
+    - **製品名**を指定します。
+    - **保存**を選択します。
+5. **APIs & auth** &gt;**資格情報**へ進み、新クライアント ID を作成します。
+   - アプリケーションの種類: **Web アプリケーション**
+   - 承認済み [!INCLUDE[pn-javascript](../../../includes/pn-javascript.md)] 提供元: https://portal.contoso.com
+   - 承認済みのリダイレクト URI: https://portal.contoso.com/signin-google 
+   - **クライアント ID の作成**を選択します。
 
 ### <a name="facebook-app-settings"></a>Facebook アプリの設定
 
-1. [Facebook 開発者アプリダッシュボード](https://developers.facebook.com/apps)を開く  
-2. **[新しいアプリの追加]** を選択します。
-3. **[Web サイト]** を選択します。
-4. **[スキップしてアプリ ID を作成する]** を選択します。
-    - **表示名**を指定します。
-    - **カテゴリ**を選択してください。
-    - **[アプリ ID の作成]** を選択します。
+1. [Facebook 開発者アプリ ダッシュボード](https://developers.facebook.com/apps) を開きます  
+2. **新アプリの追加**を選択します。
+3. **ウェブサイト**を選択します。
+4. **アプリ ID スキップと作成**を選択します。
+    - **名前表示**を選択します。
+    - **カテゴリー**を選択します。
+    - **アプリ ID 作成**を選択します。
 
-5. 新しいアプリのダッシュボードで、 **[設定]** [&gt;**基本**] (タブ) にアクセスし、次の詳細を追加します。
-    - アプリケーションドメイン (オプション): portal.contoso.com 
-    - 連絡先の電子メール:*選択した電子メールアドレス&lt;&gt;* 
-    - **[プラットフォームの追加]** を選択し、 **[web サイト]** を選択します。 
+5. 新しいアプリのダッシュボードにいる間、**設定** &gt; **基本**(タブ) へ進み、次の詳細へ追加します。
+    - アプリケーションのドメイン (任意) : portal.contoso.com 
+    - 担当者の電子メール: *&lt;自分で選択した電子メール アドレス&gt;* 
+    - **プラットフォームの追加**を選択し、**ウェブサイト**を選びます。 
     - サイトの URL: https://portal.contoso.com/ または https://portal.contoso.com/signin-facebook
 
-6. **[変更の保存]** を選択します。
-7. [**状態] & [確認**&gt; の**状態**] タブを開きます。
-8. アプリとそのすべての機能を一般公開で使用できるようにするよう求めるメッセージが表示されたら、[**はい]** を選択します。 この設定を有効にするには、上記の手順5で有効なデータを入力しておく必要があります。
+6. **変更を保存**を選択します。
+7. **ステイタス & リビュー** &gt; **ステイタス**タブへ進みます。
+8. アプリとそのすべての機能を一般に公開するように促された時、**はい**を選択します。 この設定を有効にするには、上記の手順 5 で有効なデータを入力する必要があります。
 
-### <a name="includecc-microsoftincludescc-microsoftmd-application-settings"></a>アプリケーション設定の [!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]
+### <a name="includecc-microsoftincludescc-microsoftmd-application-settings"></a>[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] アプリケーションの設定
 
-1. [[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] アカウントデベロッパーセンター](https://account.live.com/developers/applications/index)を開く  
-2. **[アプリケーションの作成]** を選択し、**アプリケーション名**を指定します。
-3. [**同意**する] を選択して、使用条件に同意します。
-4. [**設定**&gt;**API 設定**] にアクセスし、[リダイレクト URL] を https://portal.contoso.com/signin-microsoft に設定します。 
+1. [[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)] アカウント デベロッパー センター](https://account.live.com/developers/applications/index)を開きます  
+2. **アプリケーションの作成**を選択し、**アプリケーションの名前**を指定します。
+3. 使用条件に同意したら、**同意する**を選択します。
+4. **設定** &gt;**API 設定**の順に移動してから、リダイレクト URL を https://portal.contoso.com/signin-microsoft として設定します 
 
-### <a name="twitter-apps-settings"></a>Twitter アプリの設定
+### <a name="twitter-apps-settings"></a>Twitter アプリケーションの設定
 
-1. [Twitter アプリケーション管理](https://apps.twitter.com/)を開きます。 
-2. **[新しいアプリの作成]** を選択します。
+1. [Twitter アプリケーション管理](https://apps.twitter.com/) を開きます。 
+2. **新アプリを作成**を選択します。
 
-    - アプリの**名前**と**説明**を指定します。
-    - Web サイトの URL を https://portal.contoso.comとして設定します。
-    - コールバック URL を https://portal.contoso.com または https://portal.contoso.com/signin-twitterとして設定します。
+    - アプリの**名前**と**内容**を指定します。
+    - Web サイトの URL を https://portal.contoso.com として設定します。
+    - コールバック URL を https://portal.contoso.com または https://portal.contoso.com/signin-twitter として設定します。
 
-3. **[Twitter アプリケーションの作成]** を選択します。
+3. **Twitter アプリケーションの作成**を選択します。
 
-### <a name="linkedin-app-settings"></a>LinkedIn アプリの設定
+### <a name="linkedin-app-settings"></a>LinkedIn アプリケーションの設定
 
-1. [LinkedIn Developer Network](https://www.linkedin.com/secure/developer)を開きます。  
-2. **[新しいアプリケーションの追加]** を選択します。
+1. [LinkedIn 開発者ネットワーク](https://www.linkedin.com/secure/developer) を開きます。  
+2. **新アプリケーションの追加**を選択します。
 
-    - **アプリケーション名**、**説明**などを指定します。
-    - Web サイトの URL を https://portal.contoso.comとして設定します。
-    - OAuth ユーザーアグリーメント/既定のスコープを設定する: r\_basicprofie と r\_emailaddress
-    - Set OAuth 2.0 リダイレクト url: https://portal.contoso.com/signin-linkedin。
+    - **アプリケーションの名前**や**内容**などを指定します。
+    - Web サイトの URL を https://portal.contoso.com として設定します。
+    - OAuth のユーザー許諾/既定スコープの設定: r\_basicprofie および r\_emailaddress
+    - OAuth 2.0 のリダイレクト URL を https://portal.contoso.com/signin-linkedin に設定します。
 
-3. **[アプリケーションの追加]** を選択します。
+3. **アプリケーションの追加**を選択します。
 
-### <a name="yahoo-ydn-app-settings"></a>! YDN アプリの設定
+### <a name="yahoo-ydn-app-settings"></a>Yahoo! YDN アプリケーションの設定
 
-1. [Yahoo! Developer Network](https://developer.yahoo.com/apps)を開きます。
-2. **[アプリの作成]** を選択します。
+1. [Yahoo! 開発者ネットワーク](https://developer.yahoo.com/apps) を開きます。
+2. **アプリ作成**を選択します。
     
-    - **アプリケーション名**を指定してください。
-    - アプリケーションの種類: **Web アプリケーション**。
-    - コールバックドメイン: portal.contoso.com
+    - **アプリケーションの名前**を指定します。
+    - アプリケーション タイプ: **Web アプリケーション**。
+    - コールバック ドメイン: portal.contoso.com
 
-3. **[アプリの作成]** を選択します。
+3. **アプリ作成**を選択します。
 
-## <a name="create-site-settings-by-using-oauth2"></a>OAuth2 を使用してサイト設定を作成する
+## <a name="create-site-settings-by-using-oauth2"></a>OAuth2 使いサイト設定を作成
 
-各プロバイダーのアプリケーションダッシュボードには、各アプリケーションのクライアント ID (アプリ ID、コンシューマーキー) とクライアントシークレット (アプリシークレット、コンシューマーシークレット) が表示されます。 ポータルサイトの設定を構成するには、次の2つの値を使用します。
+各プロバイダのアプリケーション ダッシュボードには、各アプリケーションについて、クライアント ID (アプリケーション ID、コンシューマ キー) およびクライアント シークレット (アプリケーション シークレット、コンシューマ シークレット) が表示されます。 これら 2 つの値を使用して、ポータル サイトの設定を構成します。
 
 >[!Note]
-> 標準 OAuth2 構成で必要となるのは、次の設定のみです (Facebook を例として)。
+> 標準 OAuth2 構成には次の設定のみが必要です (例として Facebook を使用)。
 > - `Authentication/OpenAuth/Facebook/ClientId`
 > - `Authentication/OpenAuth/Facebook/ClientSecret`
 
-サイト設定名の `[provider]` タグを特定の id プロバイダー名 (Facebook、Google、Yahoo、[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]、LinkedIn、Twitter) に置き換えます。
+サイト設定名の `[provider]` タグを、特定の ID プロバイダー名に置き換えてください: Facebook、Google、Yahoo、[!INCLUDE[cc-microsoft](../../../includes/cc-microsoft.md)]、 LinkedIn、または Twitter。
 
-|**サイト設定名**                                           |**Description**                                                                                                                                                                                                                                                                                                                                      |
+|**サイト設定の名前**                                           |**説明**                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 認証/登録/ExternalLoginEnabled                | 外部アカウントのサインインと登録を有効または無効にします。 既定値: true                                                                                                                                                                                                                                                                         |
-| Authentication/OpenAuth/\[provider\]/ClientId                   | 必須。 プロバイダーアプリケーションからのクライアント ID 値。 アプリ ID またはコンシューマーキーと呼ばれることもあります。  旧バージョンとの互換性のために次の設定名が許可されています: Authentication/OpenAuth/Twitter/ConsumerKey <ul><li>Authentication/OpenAuth/Facebook/AppId</li><li>Authentication/OpenAuth/LinkedIn/ConsumerKey</li> |
-| Authentication/OpenAuth/\[プロバイダー\]/clientsecret               | 必須。 プロバイダーアプリケーションからのクライアントシークレット値。 アプリシークレットまたはコンシューマーシークレットと呼ばれることもあります。  旧バージョンとの互換性のために次の設定名が許可されています: Authentication/OpenAuth/Twitter/ConsumerSecret <ul><li>Authentication/OpenAuth/Facebook/AppSecret</li><li>Authentication/OpenAuth/LinkedIn/ConsumerSecret</li> |
-| Authentication/OpenAuth/\[provider\]/AuthenticationType         | OWIN authentication ミドルウェア型。 例: yahoo。 [authenticationoptions. authenticationtype](https://msdn.microsoft.com//library/microsoft.owin.security.authenticationoptions.authenticationtype.aspx)。                                                                                                                                |  
-| Authentication/OpenAuth/\[provider\]/Scope                      | 要求するアクセス許可のコンマ区切りの一覧。 [microsoft accountauthenticationoptions。スコープ](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.scope.aspx)。                                                                                                                |  
-| Authentication/OpenAuth/\[プロバイダー\]/キャプション                    | ユーザーがサインインユーザーインターフェイスに表示できるテキスト。 [microsoft accountauthenticationoptions。キャプション](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.caption.aspx)。                                                                                              |  
-| Authentication/OpenAuth/\[provider\]/backchanneltimeout         | バックチャネル通信のタイムアウト値 (ミリ秒)。 [microsoft accountauthenticationoptions。 backchanneltimeout](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.backchanneltimeout.aspx)。                                                                         |  
-| Authentication/OpenAuth/\[プロバイダー\]/tcp/ip パス               | ユーザーエージェントが返されるアプリケーションの基本パス内の要求パス。 [microsoft accountauthenticationoptions./パス](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.callbackpath.aspx)。                                                         |  
-| Authentication/OpenAuth/\[provider\]/SignInAsAuthenticationType | **UserClaimsIdentity**を実際に発行するための、別の認証ミドルウェアの名前。 [signinasauthenticationtype を選択](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.signinasauthenticationtype.aspx)します。 |  
-| Authentication/OpenAuth/\[provider\]/AuthenticationMode         | OWIN 認証ミドルウェアモード。 [authenticationmode を選択](https://msdn.microsoft.com//library/microsoft.owin.security.authenticationoptions.authenticationmode.aspx)します。                                                                                                                                       |  
+| Authentication/Registration/ExternalLoginEnabled                | 外部アカウントのサインインと登録を有効化または無効化します。 既定値: true                                                                                                                                                                                                                                                                         |
+| Authentication/OpenAuth/\[プロバイダー\]/ClientId                   | 必須。 プロバイダーのアプリケーションから取得した クライアント ID の値。 アプリ ID またはコンシューマ キーと呼ばれる場合もあります。  下位互換性のために次の設定名が使用できます: Authentication/OpenAuth/Twitter/ConsumerKey <ul><li>Authentication/OpenAuth/Facebook/AppId</li><li>Authentication/OpenAuth/LinkedIn/ConsumerKey</li> |
+| Authentication/OpenAuth/\[プロバイダー\]/ClientSecret               | 必須。 プロバイダーのアプリケーションから取得した クライアント シークレットの値。 アプリ シークレットまたはコンシューマ シークレットと呼ばれる場合もあります。  下位互換性のために次の設定名が使用できます: Authentication/OpenAuth/Twitter/ConsumerSecret <ul><li>Authentication/OpenAuth/Facebook/AppSecret</li><li>Authentication/OpenAuth/LinkedIn/ConsumerSecret</li> |
+| Authentication/OpenAuth/\[プロバイダー\]/AuthenticationType         | OWIN 認証のミドルウェアの種類を指定します。 例: yahoo。 [authenticationoptions.authenticationtype](https://msdn.microsoft.com//library/microsoft.owin.security.authenticationoptions.authenticationtype.aspx)。                                                                                                                                |  
+| Authentication/OpenAuth/\[プロバイダー\]/Scope                      | 要求に対するアクセス許可のコンマ区切りの一覧。 [microsoftaccountauthenticationoptions.scope](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.scope.aspx)。                                                                                                                |  
+| Authentication/OpenAuth/\[プロバイダー\]/Caption                    | ユーザーがサインインのユーザー インターフェイスに表示できるテキストです。 。[microsoftaccountauthenticationoptions.caption](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.caption.aspx).                                                                                              |  
+| Authentication/OpenAuth/\[プロバイダー\]/BackchannelTimeout         | バック チャネル コミュニケーション用のミリ秒単位のタイムアウト値。 [microsoftaccountauthenticationoptions.backchanneltimeout](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.backchanneltimeout.aspx)。                                                                         |  
+| Authentication/OpenAuth/\[プロバイダー\]/CallbackPath               | ユーザー エージェントが返される、アプリケーションの基本パス内におけるリクエスト パス。 [microsoftaccountauthenticationoptions.callbackpath](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.callbackpath.aspx)。                                                         |  
+| Authentication/OpenAuth/\[プロバイダー\]/SignInAsAuthenticationType | 実際に**userClaimsIdentity**の発行を担当する、別の認証ミドルウェアの名前。 [microsoftaccountauthenticationoptions.signinasauthenticationtype](https://msdn.microsoft.com//library/microsoft.owin.security.microsoftaccount.microsoftaccountauthenticationoptions.signinasauthenticationtype.aspx)。 |  
+| Authentication/OpenAuth/\[プロバイダー\]/AuthenticationMode         | OWIN 認証のミドルウェアのモードを指定します。 [security.authenticationoptions.authenticationmode](https://msdn.microsoft.com//library/microsoft.owin.security.authenticationoptions.authenticationmode.aspx)。                                                                                                                                       |  
 
 ### <a name="see-also"></a>関連項目
 
-[ポータル認証を構成する](configure-portal-authentication.md)  
-[ポータルの認証 id を設定する](set-authentication-identity.md)  
-[ポータル  の OPEN ID Connect プロバイダー設定](configure-openid-settings.md)  
-[ポータルの WS-FEDERATION プロバイダーの設定](configure-ws-federation-settings.md)  
-[ポータルの SAML 2.0 プロバイダー設定](configure-saml2-settings.md)
+[ポータル認証の構成](configure-portal-authentication.md)  
+[ポータル用の認証 ID の設定](set-authentication-identity.md)  
+[ポータルの Open ID 接続プロバイダーの設定](configure-openid-settings.md)   
+[ポータル用 WS-Federation プロバイダーの設定](configure-ws-federation-settings.md)  
+[ポータルの SAML 2.0 プロバイダーの設定](configure-saml2-settings.md)

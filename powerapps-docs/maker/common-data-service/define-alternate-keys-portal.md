@@ -1,6 +1,6 @@
 ---
-title: PowerApps ポータルを使用した代替キーの定義 | MicrosoftDocs
-description: PowerApps ポータルを使用して代替キーを定義する方法を説明します
+title: PowerApps ポータルを使用した代替キーを定義する | MicrosoftDocs
+description: PowerApps ポータルを使用した代替キーを定義する方法
 ms.custom: ''
 ms.date: 05/31/2018
 ms.reviewer: ''
@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fec01122ad00710507fb3e0976ec9f80115f06cf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758889"
 ---
-# <a name="define-alternate-keys-using-powerapps-portal"></a>PowerApps ポータルを使用した代替キーの定義
+# <a name="define-alternate-keys-using-powerapps-portal"></a>PowerApps ポータルを使用した代替キーを定義する
 
-[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) は Common Data Service でエンティティの代替キーを表示および作成する簡単な方法を提供します。
+[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、 Common Data Serviceを使用してエンティティの代替キーを簡単に確認、作成することができます。
 
 ポータルでは一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 <br />詳細: 
 - [レコードを参照する代替キーの定義](define-alternate-keys-reference-records.md)
@@ -31,7 +37,7 @@ search.app:
 
 ## <a name="view-alternate-keys"></a>代替キーを表示
 
-1. [PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、**モデル駆動型**または**キャンバス**設計モードを選択します。
+1. [PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、 **モデル駆動型** または **キャンバス** 設計モードを選択します。
 2. **データ** > **エンティティ**を選択し、表示するエンティティを選択します。
 3. **キー**を選択すると、定義された代替キーのリストが表示されます。
 

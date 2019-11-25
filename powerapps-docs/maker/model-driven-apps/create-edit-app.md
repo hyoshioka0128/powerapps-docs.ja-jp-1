@@ -1,44 +1,49 @@
 ---
-title: PowerApps でアプリ デザイナーを使用してモデル駆動型アプリを作成または編集 | MicrosoftDocs
+title: PowerApps でアプリ デザイナーを使用してモデル駆動型アプリを作成、編集する | MicrosoftDocs
 description: アプリ デザイナーを使用してアプリを作成または編集する方法を学習する
 keywords: ''
 ms.date: 02/05/2019
-ms.service: crm-online
-ms.custom: null
+ms.service: powerapps
+ms.custom: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 2a44229e-44f0-4c4e-ba21-a476210d0a12
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 caps.latest.revision: 19
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: fb852ce8b6137d16eb8544da4eb6c9b92c12e29e
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759297"
 ---
-
 # <a name="create-a-model-driven-app-by-using-the-app-designer"></a>アプリ デザイナーを使用してモデル駆動型アプリを作成する
 
 このトピックでは、タイル ベースのアプリ デザイナーを使用してモデル駆動型アプリを作成および編集する方法の基本事項について説明します。
 
 ## <a name="prerequisites"></a>前提条件
 アプリを作成する前に、以下の前提条件を確認してください。
-- PowerApps 環境。 詳細情報: [環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)
+- PowerApps の新しい環境 詳細情報: [環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)
 - システム管理者またはシステム カスタマイザー セキュリティ ロール。 詳細情報: [定義済みのセキュリティ ロールについて](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app#about-predefined-security-roles)
  
 <a name="createApp"></a>   
 ## <a name="create-an-app"></a>アプリの作成  
 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **ホーム** ページで、モデル駆動型アプリの **空のモデル駆動型アプリ** オプションを選択します。  
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **ホーム** ページで、 **空白からモデル駆動型アプリケーション** オプションを選択します。  
 
     > [!IMPORTANT]
     > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。 
@@ -52,7 +57,7 @@ search.app:
         > [!NOTE]
         >  発行者の接頭辞は、この発行者が含まれているソリューションに対して作成されたエンティティまたはフィールドに追加されるテキストです。   
   
-    - **説明**: アプリの種類と動作に関する短い説明を入力します。  
+    - **Description**: アプリの種類と動作に関する短い説明を入力します。  
   
     - **アイコン**: 既定では、**既定のアプリケーションの使用**サムネイル チェック ボックスがチェック済みです。 アプリケーションのアイコンとして、異なる Web リソースを選択するには、チェック ボックスをオフにし、次に、ドロップダウン リストからアイコンを選択します。 このアイコンはアプリのプレビュー タイルに表示されます。  
   
@@ -61,7 +66,7 @@ search.app:
       > [!NOTE]
       > サイト マップの追加時に**既定のソリューション**を選択することにより、そのサイト マップに関連付けられたコンポーネントは自動的にアプリに追加されます。  
 
-      ![既存のソリューションを使用してアプリ ページを作成する](media/use-existing-solution-to-create-the-app.png "既存のソリューションを使用してアプリを作成する") 
+      ![既存のソリューションを使用してアプリ ページを作成する](media/use-existing-solution-to-create-the-app.png "既存のソリューションを使用してアプリを作成する。") 
 
     - **アプリの [ようこそ] ページを選択**: このオプションを使用すると、組織で利用できる Web リソースの中から選択することができます。 作成した [ようこそ] ページには、ビデオへのリンク、アップグレードの手順、開始方法に関する情報など、ユーザーにとって有用な情報を含めることができます。 [ようこそ] ページはアプリを開くと表示されます。 ユーザーは、[ようこそ] ページの**この [ようこそ] 画面を次回は表示しない**を選択して、アプリを次回起動するときにこのページを表示させないようにすることができます。 **次回このようこそ画面を表示しない** オプションはユーザーレベルの設定であり、管理者やアプリ メーカーによって制御できないことに注意してください。 [ようこそ] ページとして使用することができる HTML ファイルなどの Web リソースの作成方法の詳細については、[Web リソースを作成および編集して Web アプリケーションを拡張](create-edit-web-resources.md)を参照してください。  
       
@@ -77,7 +82,7 @@ search.app:
 <a name="editApp"></a>   
 ## <a name="edit-an-app"></a>アプリの編集  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 > [!IMPORTANT]
 > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。 

@@ -1,5 +1,5 @@
 ---
-title: ' マップ コンポーネント | Microsoft Docs'
+title: " マップ コンポーネント | Microsoft Docs"
 description: Angular JS を使用したマップ コンポーネントの実装
 ms.custom: ''
 manager: kvivek
@@ -8,14 +8,19 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: f4b8702ef39688bdfc5f3ce9a51bf5c8c6e0ff20
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749355"
 ---
-
 # <a name="implementing-map-component"></a>マップ コンポーネントの実装
 
 このサンプル コンポーネントは、フォームの住所フィールドを操作する際のユーザー エクスペリエンスを変更します。 住所のテキスト値とともに、このコンポーネントは別のタブや画面に移動せずに地図上で特定の住所を視覚的に識別する機能を提供します。 
 
 > [!div class="mx-imgBorder"]
-> ![マップ コンポーネント](../media/map-control.png "マップ コンポーネント")
+> ![コンポーネントのマップ](../media/map-control.png "コンポーネントのマップ")
 
 ## <a name="available-for"></a>以下に使用できます 
 
@@ -46,7 +51,7 @@ export class TSMapControl
   private _iFrameElement: HTMLIFrameElement;
   // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
-  // Reference to ComponentFramework Context object
+  // reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // API Key used to activate and embed the maps automatically
   // NOTE: You can follow the documentation at https://developers.google.com/maps/documentation/embed/get-api-key to generate your own API Key
@@ -170,4 +175,4 @@ Google Map API を使用すると `IFRAME` にマップを表示することの�
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps Component Framework のマニフェスト スキーマの参照](../manifest-schema-reference/index.md)
+[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

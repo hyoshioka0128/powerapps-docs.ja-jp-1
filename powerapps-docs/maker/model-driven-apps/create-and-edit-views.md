@@ -1,27 +1,33 @@
 ---
-title: PowerApps でモデル駆動型アプリ ビューを作成または編集 | MicrosoftDocs
+title: PowerApps でモデル駆動型アプリ ビューを作成、編集する | MicrosoftDocs
 description: ビューを作成または編集する方法を学習する
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: bd1d393d-16ea-40ac-8136-26643c37dd2a
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7a83134fb655e67dba8b0aa211ba6f25ec383832
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759341"
 ---
 # <a name="create-or-edit-a-model-driven-app-view"></a>モデル駆動型アプリ ビューを作成または編集する
 
@@ -31,7 +37,7 @@ search.app:
   
 ### <a name="create-a-new-view"></a>ビューの新規作成  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
     
 
@@ -59,11 +65,11 @@ search.app:
 
 7.  **OK** を選択して **フィルター条件の編集** ダイアログ ボックスを閉じ、ビュー エディターの **保存して閉じる** を選択します。  
   
-8.  ビューが PowerApps サイトの **ビュー** タブから使用できるようになり、アプリに追加できるようになったことに注意してください。
+8.  ビューが PowerApps サイトの **ビュー** タブから使用できるようになり、アプリに追加できるようになっていることに注意してください。
   
 ### <a name="edit-a-view"></a>ビューの編集  
   
-1.  PowerApps サイトの **ビュー** タブから、**従業員数** ビューを選択します。
+1.  PowerApps サイトの **ビュー** タブから、 **従業員数** ビューを選択します。
   
 2.  ビューの **名前** を **アリゾナ州の 25 人以上の従業員を持つ従業員数** に変更して、**OK** を選択します。  
 

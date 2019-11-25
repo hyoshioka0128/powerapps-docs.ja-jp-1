@@ -4,21 +4,24 @@ description: Common Data Service のコマンドを定義するデータは、�
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: 5b1d7633-ab0d-94ec-166f-f5bc1af2a657
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3e1f1bc810923f7a470c9e89569a33c4222ed735
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749341"
 ---
-
 # <a name="command-bar-or-ribbon-presentation"></a>バーまたはリボンの表示
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/command-bar-ribbon-presentation -->
@@ -32,7 +35,7 @@ Common Data Service のコマンドを定義するデータは、クライアン
 ### <a name="updated-user-experience"></a>更新済みのユーザー エクスペリエンス  
  これは、アプリケーション全体のコマンド バーと、ユーザー エクスペリエンスを更新したエンティティのフォームの表示です。  
   
- ![取引先企業のコマンド バー](media/customization-account-grid-command-bar.PNG "Dynamics 365 の取引先企業のコマンド バー")
+ ![アカウントのコマンド バー](media/customization-account-grid-command-bar.PNG "Dynamics 365 のアカウントのコマンド バー")
   
  このエクスペリエンスでは、最初の 7 つのコマンドのみが表示され、そのほかのコマンドはポップアップ メニューに表示されます。  
   
@@ -49,7 +52,7 @@ Common Data Service のコマンドを定義するデータは、クライアン
 ### <a name="classic-user-experience"></a>従来のユーザー エクスペリエンス  
  これはリボンを使用した表示です。 また、Outlook クライアント内の一覧と、更新されたユーザー エクスペリエンスを使用しないエンティティ フォームで使用されます。  
   
- ![記事リボン](media/customization-article-ribbon.PNG "Dynamics 365 の記事リボン")  
+ ![記事のリボン](media/customization-article-ribbon.PNG "Dynamics 365 の記事リボン")  
   
  このエクスペリエンスでは、タブを使用でき、タブの使用できるコマンドを画面の幅の変更に合わせてすべて表示できるようグループでスケーリングを定義できます。  
   
@@ -57,28 +60,28 @@ Common Data Service のコマンドを定義するデータは、クライアン
   
  サブグリッドが選択されている場合、サブグリッド コマンドがページの上部リスト ツールのコンテキスト タブに表示されます。  
   
- ![記事コメントのサブグリッド リボン](media/customization-article-comments-subgrid-ribbon.PNG "Dynamics 365 の記事コメントのサブグリッド リボン")  
+ ![記事のコメントのサブグリッド リボン](media/customization-article-comments-subgrid-ribbon.PNG "Dynamics 365 の記事のコメントのサブグリッド リボン")  
   
 <a name="BKMK_CRMForTablets"></a>   
-### <a name="dynamics-365-for-tablets"></a>Dynamics 365 for tablets  
+### <a name="dynamics-365-for-tablets"></a>タブレット PC 用 Dynamics 365  
  Dynamics 365 for tablets は、タッチ操作に最適になるようにコマンドが表示されます。 コマンドは、画面の右下のコマンド バーに右から左の順で表示されます。  
   
- ![Dynamics 365 for tabletsのアカウントフォームコマンド](media/customization-nobile-app-account-form-command.PNG "Dynamics 365 for tabletsのアカウントフォームコマンド")  
+ ![タブレット用の Dynamics 365 のアカウント フォーム コマンド](media/customization-nobile-app-account-form-command.PNG "タブレット用の Dynamics 365 のアカウント フォーム コマンド")  
   
 > [!NOTE]
 >  コマンド用に構成済みのアイコンは表示されず、長すぎるラベルは途中で切り捨てられます。  
 > 
-> Dynamics 365 for tablets は `<FlyoutAnchor>` または `<SplitButton>` 動的要素の追加をサポートしていません。  
+> Dynamics 365 for tablets は実行時に `<FlyoutAnchor>` または `<SplitButton>` 要素への動的要素の追加をサポートしていません。  
   
  サブグリッド コマンドは、サブグリッド コントロールをタップしたり押したりすると表示されます。 これらのコマンドは、画面の左下に右から左の順で表示されます。  
   
- ![Dynamics 365 for tabletsのアクティビティサブグリッドコマンド](media/customization-mobile-app-activity-subgrid.PNG "Dynamics 365 for tabletsのアクティビティサブグリッドコマンド")  
+ ![タブレット PC 用 Dynamics 365 のアクティビティ サブグリッド コマンド](media/customization-mobile-app-activity-subgrid.PNG "タブレット PC 用 Dynamics 365 のアクティビティ サブグリッド コマンド")  
   
 <a name="BKMK_CommandData"></a>   
 ## <a name="command-data"></a>コマンド データ  
  これらの非常に異なる表示に関わらず、エンティティのコマンドを定義するデータはコマンドの表示方法に関わらず一定です。 これには、タブおよびグループがスケーリングとともに定義されていますが、コントロールのこれらのコンテナーの表示部分は、従来のユーザー インターフェイスにのみ表示されます。  
   
- 更新されたユーザー エクスペリエンスと Dynamics 365 for tabletsでは、タブとグループは引き続きコントロールのコンテナとして機能しますが、これらのコンテナは分かりやすく視覚的に示されず、スケールの適用もされません。  
+ 更新されたユーザー エクスペリエンスおよびタブレット、タブ、グループ用の Dynamics 365 は両方とも、コントロールのコンテナーとして機能しますが、これらのコンテナーの表示はなく、スケーリングは適用されません。  
   
 <a name="BKMK_FilteringCommands"></a>   
 ## <a name="filtering-commands-based-on-presentation-and-client"></a>表示およびクライアントに基づいたコマンドのフィルター  
@@ -94,11 +97,11 @@ Common Data Service のコマンドを定義するデータは、クライアン
   
 - `Legacy`: 従来のユーザー エクスペリエンス  
   
-- `Modern`: Dynamics 365 for tablets  
+- `Modern`: タブレット PC 用 Dynamics 365  
   
   表示方法別に表示するかどうかを制御するコマンドを定義するには、この要素を使用します。  
   
-  また既存の `<CrmClientTypeRule>` 要素が含まれていますが、その要素の `Type` 属性は `Web` と `Outlook` クライアントの間でのみ識別できます。 このルールでは Dynamics 365 for tablets クライアントをWebクライアントとして評価を行います。  
+  また既存の `<CrmClientTypeRule>` 要素が含まれていますが、その要素の `Type` 属性は `Web` と `Outlook` クライアントの間でのみ識別できます。 このルールは、Web クライアントとしてタブレット クライアント用 Dynamics 365 を評価します。  
   
 ### <a name="see-also"></a>関連項目  
  [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   

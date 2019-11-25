@@ -1,6 +1,6 @@
 ---
-title: PowerAppsでのモデル駆動型アプリの対話型エクスペリエンス ダッシュボードの構成 | Microsoft Docs
-description: PowerAppsでの対話型エクスペリエンス ダッシュボードの構成に関するノウハウ
+title: PowerApps でのモデル駆動型アプリの対話型エクスペリエンス ダッシュボードの構成 | Microsoft Docs
+description: PowerApps での対話型エクスペリエンス ダッシュボードの構成に関するノウハウ
 keywords: 対話型ダッシュボード; カスタマー サービス; Microsoft Dynamics 365; 対話型サービス ハブ
 author: Mattp123
 ms.author: matp
@@ -13,17 +13,22 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.assetid: d1446a95-14bf-4b15-a905-72fce07f4c76
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4e73097b6b02f98b6ac5dc83a7f1d833e07a8696
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752579"
 ---
-
 # <a name="configure-model-driven-app-interactive-experience-dashboards"></a>モデル駆動型アプリの対話型エクスペリエンス ダッシュボードの構成
 
 対話型エクスペリエンス ダッシュボードは、サービス担当者などのアプリ ユーザーがワークロード情報を確認しアクションを実行するための総合的なワークプレースとなります。 それらは完全に構成可能であり、セキュリティロール ベースで、リアルタイムで複数のストリームにわたるワークロード情報を提供します。 対話型ダッシュボード ユーザーは特定のレコードを検索するアプリケーションをページ移動する必要はありません。ダッシュボードから直接対応できます。 
@@ -67,13 +72,13 @@ search.app:
 ### <a name="single-stream-dashboard"></a>単一ストリーム ダッシュボード  
  単一ストリーム ダッシュボードには、左側にデータ ストリーム、右側にビジュアル フィルターとタイルが含まれます。  
   
- ![単一ストリーム対話型サービス ハブのダッシュボード](media/interactive-dashboards-single-stream.png "単一ストリーム対話型サービス ハブのダッシュボード")  
+ ![単一ストリーム 対話型サービス ハブのダッシュボード](media/interactive-dashboards-single-stream.png "単一ストリーム 対話型サービス ハブのダッシュボード")  
   
 ### <a name="single-stream-dashboard-layouts"></a>単一ストリーム ダッシュボードのレイアウト  
  単一ストリーム ダッシュボードは、4 種類のレイアウトから選択することができます。  
  
  > [!div class="mx-imgBorder"] 
- > ![単一ストリーム ダッシュボードのレイアウト。](media/interactive-dashboards-single-stream-layout.png "単一ストリーム ダッシュボードのレイアウト。")  
+ > ![単一ストリーム ダッシュボードのレイアウト](media/interactive-dashboards-single-stream-layout.png "単一ストリーム ダッシュボードのレイアウト")  
   
 <a name="BKMK_Enable"></a>   
 ## <a name="configure-filter-fields-and-security-roles-for-the-interactive-dashboards"></a>対話型ダッシュボードのフィルター フィールドとセキュリティ ロールを構成する  
@@ -102,7 +107,7 @@ search.app:
   
  グローバル フィルターのポップアップ ウィンドウをここに示します。  
   
- ![2つのグローバル フィルタを追加する](media/global-filter-escalated.png "グローバル フィルタ フィールド")  
+ ![2 つのグローバル フィルターのフィールド](media/global-filter-escalated.png "グローバル フィルター フィールド")  
   
 > [!TIP]
 >  優先度または状態などのフィールドに基づいてビジュアル フィルターを構成するときのベスト プラクティスは、これらのフィールド (優先度、状態) がグローバル フィルターにも表示できるようにすることです。  
@@ -144,7 +149,7 @@ search.app:
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>4 列レイアウトを使用するマルチストリーム対話型ダッシュボードを構成する  
  
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
   
 2.  **データ** > **エンティティ** > 必要なエンティティの順に選択します。 
 
@@ -170,7 +175,7 @@ search.app:
  **優先度別サポート案件**ドーナツ グラフを追加します。
   
  > [!div class="mx-imgBorder"] 
- > ![ドーナツ グラフ コンポーネントの追加。](media/interactive-dashboards-add-chart-circle.png "ドーナツ グラフ コンポーネントの追加。")  
+ > ![ドーナツ グラフ コンポーネントの追加](media/interactive-dashboards-add-chart-circle.png "ドーナツ グラフ コンポーネントの追加")  
   
  縦棒グラフや円グラフなどのいくつかのグラフが、システムに保存されているデータを表示します。 ドーナツ グラフとタグ グラフは静止画像として読み込み、実際のデータのプレビューは表示しません。  
   
@@ -178,13 +183,13 @@ search.app:
 >  ビジュアル フィルター用に構成されているグラフは、**フィルター**エンティティや関連するエンティティのフィールドを使用することができます。 関連エンティティ フィールドに基づいてグラフを使用するとき、顧客サービス担当者はこれらの関連エンティティのフィールドを使用して、グラフをフィルター処理することができます。 関連エンティティに基づくフィールドは、通常、グラフ構成ウィンドウに**修正者 (代理人)** フィールドなどのような、“フィールド名 (エンティティ名)” の形式があります。 複数エンティティのグラフを作成するには、関連エンティティのフィールドを任意のビューに追加してから、グラフの作成中にこれらのフィールドを使用する必要があります。  
  
  > [!div class="mx-imgBorder"] 
- > ![ビジュアル フィルターの作成](media/interactive-dashboard-visual-charts-x-y-axes.PNG "ビジュアル フィルターの作成")  
+ > ![ビジュアル フィルターのグラフの作成](media/interactive-dashboard-visual-charts-x-y-axes.PNG "ビジュアル フィルターのグラフの作成")  
   
  次に、ストリームを構成します。 グラフへのコンポーネントの追加と同様に、ストリーム パネル内の要素を選択します。 ダイアログが表示されたら、ストリームで使用する要素に応じて、**ビュー**または**キュー**を選択します。 次の図に示すとおりに、必要な情報を入力します。  
   
  ここに示されているように、**作業可能なアイテム**のストリームを構成します。  
   
- ![自分のアクティブなサポート案件のストリームの追加。](media/add-stream-dashboard.png "自分のアクティブなサポート案件のストリームの追加。")  
+ ![自分のアクティブなサポート案件のストリームの追加](media/add-stream-dashboard.png "自分のアクティブなサポート案件のストリームの追加")  
 
 > [!NOTE]
 >  **キュー**のオプションは、キューが有効化されたエンティティのダイアログ ボックスでのみ使用することができます。 エンティティ ダッシュボードの場合、エンティティでキューを有効化されていない場合、ダイアログ ボックスには**キュー**のオプションが表示されません。 キューが有効化されていないエンティティの場合は、ダッシュボードのストリームでは**ビュー オプション**のみを使用できます。    
@@ -198,7 +203,7 @@ search.app:
   
 #### <a name="edit-or-delete-individual-streams-of-an-existing-dashboard"></a>既存のダッシュボード個々のストリームを編集または削除する  
   
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。   
+1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。   
   
 2. **データ** > **エンティティ** > 必要なエンティティの順に選択します。 **ダッシュボード** タブを選択します。  
   
@@ -221,7 +226,7 @@ search.app:
 
 たとえば、エンティティを選択する代わりに、エンティティ固有のダッシュボードの一部のフィールドは、ダッシュボードを作成しているエンティティに事前設定されています。  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 2.  **データ** > **エンティティ** > 必要なエンティティの順に選択します。 
 
@@ -268,7 +273,7 @@ search.app:
 
 同様に、**優先度**フィールドに移動してサポート案件の優先度のオプションの色を変更する場合は、次に示すように、**概要**タブの**オプション**サブ領域で色を選択します。
 
- ![ダッシュボードの色を変更する](media/priority-color-modify.png "優先度に応じてダッシュボードの色を変更する")  
+ ![ダッシュボードの色の変更](media/priority-color-modify.png "優先度に応じてダッシュボードの色を変更する")  
   
 ### <a name="see-also"></a>関連項目  
  

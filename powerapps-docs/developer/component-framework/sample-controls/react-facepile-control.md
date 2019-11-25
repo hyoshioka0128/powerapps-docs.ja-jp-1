@@ -9,14 +9,19 @@ ms.service: powerapps
 ms.topic: article
 ms.author: grhurl
 ms.reviewer: nkrb
+ms.openlocfilehash: 62a46acf98c8cdd93524f17b8a3a28ac999e325b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749354"
 ---
-
 # <a name="implementing-the-facepile-component"></a>フェイスパイル コンポーネントの実装
 
 このサンプルは、PowerApps component framework を利用してコンポーネントを作成するリアクトの使用方法を示します。  フェイスパイル サンプルコンポーネントは、リアクトと Office UI Fabric リアクト コンポーネントに基づいて実装されます。 このコードは、言及したサードパーティ製ライブラリのベスト プラクティスを明らかにしない場合があります。
 
 > [!div class="mx-imgBorder"]
-> ![リアクト フェイスパイル](../media/react-facepile.png "リアクト フェイスパイル")
+> ![応答 Facepile](../media/react-facepile.png "応答 Facepile")
 
 ## <a name="available-for"></a>以下に使用できます 
 
@@ -64,11 +69,11 @@ import { FacepileBasicExample, IFacepileBasicExampleProps } from "./Facepile";
 
 export class ReactStandardControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-  // Reference to the notifyOutputChanged method
+  // reference to the notifyOutputChanged method
   private notifyOutputChanged: () => void;
-  // Reference to the container div
+  // reference to the container div
   private theContainer: HTMLDivElement;
-  // Reference to the React props, prepopulated with a bound event handler
+  // reference to the React props, prepopulated with a bound event handler
   private props: IFacepileBasicExampleProps = {
     numberFacesChanged: this.numberFacesChanged.bind(this)
   };
@@ -415,6 +420,6 @@ export const TestImages = {
 
 ### <a name="related-topics"></a>関連トピック
 
-[PowerApps Component Framework のマニフェスト スキーマの参照](../manifest-schema-reference/index.md)<br />
+[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)<br />
 [PowerApps Component Framework API の参照](../reference/index.md)<br />
 [PowerApps Component Framework の概要](../overview.md)

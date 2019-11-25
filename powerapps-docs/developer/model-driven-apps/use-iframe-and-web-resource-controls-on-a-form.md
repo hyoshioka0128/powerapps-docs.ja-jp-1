@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a42b5b1456700e93ba5cde5a8aaf2dddd63325d4
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753531"
 ---
 # <a name="use-iframe-and-web-resource-controls-on-a-form"></a>フォーム上で IFRAME および Web リソース コントロールを使用する
 
@@ -23,9 +29,9 @@ search.app:
 IFRAME および Web リソース コントロールでは、HTML IFRAME 要素を使用して、ページ内に別の場所からコンテンツを埋め込みます。  
 
 > [!NOTE]
->  フォーム用に選択したデザインは Dynamics 365 for Outlook の閲覧ウィンドウや Dynamics 365 for tablets のフォームにも使用されます。 Web リソースおよび IFRAME の閲覧ウィンドウは Dynamics 365 for Outlook の閲覧ウィンドウを使用して表示されません。しかし Dynamics 365 for tablets ではサポートされています。 IFRAME がページの `Xrm` オブジェクトやフォーム イベント ハンドラーへのアクセスに依存する場合は、IFRAME を既定で表示しないように構成してください。  
+>  フォーム用に選択したデザインは、Dynamics 365 for Outlook の閲覧ウィンドウおよび Dynamics 365 for tablets で使用されるフォームにも使用されます。 Web リソースと IFRAME は、Dynamics 365 for Outlook 閲覧ウィンドウ使用時に表示されませんが、タブレット PC 用 Dynamics 365 でサポートされています。 IFRAME がページの `Xrm` オブジェクトやフォーム イベント ハンドラーへのアクセスに依存する場合は、IFRAME を既定で表示しないように構成してください。  
 
- ASP.NET ページのように、別の Web サイトのコンテンツをフォームに表示するには IFRAME を使用します。 別のエンティティ フォームに埋め込まれた IFrame 内のエンティティ フォームの表示はサポートされていません。  
+ ASP.NET ページなど、別の Web サイトのコンテンツをフォームに表示するには、IFRAME を使用します。 別のエンティティ フォームに埋め込まれた IFrame 内のエンティティ フォームの表示はサポートされていません。  
 
  Web リソースのコンテンツをフォームに表示するには、次のいずれかの Web リソースを使用できます。  
 
@@ -43,15 +49,15 @@ IFRAME および Web リソース コントロールでは、HTML IFRAME 要素�
 
 |        属性        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `security="restricted"` |                                                                                                                                                                                                                                                                                                    この属性はバージョン 6 以降の Internet Explorer でのみサポートされます。 この security 属性により、ユーザーの [制限付きサイト] のセキュリティ設定が IFRAME のソース ファイルに適用されます  (ゾーンの設定は**インターネット オプション**ダイアログ ボックスの**セキュリティ**タブにあります)。規定では、制限付きサイト ゾーンでは、スクリプトは無効になっています。 ゾーンのセキュリティ設定を変更すると、スクリプトの実行が許可されるなど、さまざまな悪い結果を招くことがあります。 詳細については、「[security 属性](https://msdn.microsoft.com/library/ie/ms534622.aspx)」を参照してください。                                                                                                                                                                                                                                                                                                     |
-|      `sandbox=""`       | この属性をサポートするブラウザーで、IFRAME のコンテンツが基本的に情報の表示だけに制限されます。 次の制限が適用されます。<br /><br /> -   ブラウザーのプラグインが無効になります。<br />-   フォームとスクリプトが無効になります。<br />-   他の参照コンテキストへのリンクが無効になります。<br />-   同じドメインのコンテンツの場合でも別のドメインのコンテンツとして扱われます。<br /><br /> これは W3C が定義した属性で、次のブラウザーでサポートされます。<br /><br /> - Internet Explorer 10、Internet Explorer 11 および Microsoft Edge <br />- Google Chrome<br />- Apple Safari<br />- Mozilla Firefox<br /><br /> 属性の詳細については、以下を参照してください。<br /><br /> -   [How to Safeguard your Site with HTML5 Sandbox (HTML5 Sandbox を使用してサイトを保護する方法)](https://msdn.microsoft.com/hh563496)<br />-   [WC3 Sandbox 属性](http://dev.w3.org/html5/spec-author-view/the-iframe-element.html)<br />-   [サンドボックス](https://msdn.microsoft.com/library/ie/hh673561.aspx) |
+| `security="restricted"` |                                                                                                                                                                                                                                                                                                    この属性は、バージョン 6 以降の Internet Explorer のバージョンでのみサポートされます。 この security 属性により、ユーザーの [制限付きサイト] のセキュリティ設定が IFRAME のソース ファイルに適用されます  (ゾーンの設定は**インターネット オプション**ダイアログ ボックスの**セキュリティ**タブにあります)。規定では、制限付きサイト ゾーンでは、スクリプトは無効になっています。 ゾーンのセキュリティ設定を変更すると、スクリプトの実行が許可されるなど、さまざまな悪い結果を招くことがあります。 詳細については、「[security 属性](https://msdn.microsoft.com/library/ie/ms534622.aspx)」を参照してください。                                                                                                                                                                                                                                                                                                     |
+|      `sandbox=""`       | この属性をサポートするブラウザーで、IFRAME のコンテンツが基本的に情報の表示だけに制限されます。 次の制限が適用されます。<br /><br /> -   ブラウザーのプラグインが無効になります。<br />-   フォームとスクリプトが無効になります。<br />-   他の参照コンテキストへのリンクが無効になります。<br />-   同じドメインのコンテンツの場合でも別のドメインのコンテンツとして扱われます。<br /><br /> これは W3C が定義した属性で、次のブラウザーでサポートされます。<br /><br /> - Internet Explorer 10、Internet Explorer 11、および Microsoft Edge <br />- Google Chrome<br />- Apple Safari<br />- Mozilla Firefox<br /><br /> 属性の詳細については、以下を参照してください。<br /><br /> -   [How to Safeguard your Site with HTML5 Sandbox (HTML5 Sandbox を使用してサイトを保護する方法)](https://msdn.microsoft.com/hh563496)<br />-   [WC3 Sandbox 属性](https://dev.w3.org/html5/spec-author-view/the-iframe-element.html)<br />-   [サンドボックス](https://msdn.microsoft.com/library/ie/hh673561.aspx) |
 
 <a name="BKMK_EnableIFrameCommunicationAcrossDomains"></a>   
 
 ### <a name="enabling-iframe-communication-across-domains"></a>ドメイン間での IFRAME 通信の有効化  
- 異なるドメインにコンテンツを含む IFRAME の通信を有効化する場合があります。 `Window.postMessage` は Internet Explorer 8 以降のバージョンでこの機能を提供するブラウザー メソッドです。 Google Chrome、Mozilla Firefox および Apple Safari でもサポートされます。 `postMessage` の使用方法の詳細については、次のブログ記事を参照してください。  
+ 異なるドメインにコンテンツを含む IFRAME の通信を有効化する場合があります。 `Window.postMessage` は、Internet Explorer 以降の Internet Explorer 8 のバージョンでこの機能を提供するブラウザー メソッドです。 Google Chrome、Mozilla Firefox および Apple Safari でもサポートされます。 `postMessage` の使用方法の詳細については、次のブログ記事を参照してください。  
 
--   [親フォームに対するクロス ドメイン呼び出し](http://blogs.msdn.com/b/devkeydet/archive/2012/02/14/cross-domain-calls-to-the-parent-crm-2011-form.aspx)  
+-   [親フォームに対するクロス ドメイン呼び出し](https://blogs.msdn.com/b/devkeydet/archive/2012/02/14/cross-domain-calls-to-the-parent-crm-2011-form.aspx)  
 
 -   [Cross-Document Messaging and RPC (クロス ドキュメント メッセージングと RPC)](https://msdn.microsoft.com/magazine/ff800814.aspx)  
 
@@ -80,18 +86,18 @@ IFRAME および Web リソース コントロールでは、HTML IFRAME 要素�
  次のサンプルは、パラメーターのない URL の表示方法を示しています。  
 
 ```  
-http://myserver/mypage.aspx  
+https://myserver/mypage.aspx  
 ```  
 
  次のサンプルは、パラメーターのない URL の表示方法を示しています。  
 
 ```  
-http://myserver/mypage.aspx?id=%7bB2232821-A775-DF11-8DD1-00155DBA3809%7d&orglcid=1033&orgname=adventureworkscycle&type=1&typename=account&userlcid=1033  
+https://myserver/mypage.aspx?id=%7bB2232821-A775-DF11-8DD1-00155DBA3809%7d&orglcid=1033&orgname=adventureworkscycle&type=1&typename=account&userlcid=1033  
 ```  
 
 ### <a name="read-passed-parameters"></a>渡されたパラメーターを読み取る  
 
- 通常、渡されたパラメーターは、ターゲットの .aspx ページで **HttpRequest.QueryString** プロパティを使用して読み取られます。 HTML ページでは JavaScript の **window.location.search** プロパティを使用してパラメータにアクセスできます。 詳細については、「[HttpRequest.QueryString プロパティ](http://msdn2.microsoft.com/library/system.web.httprequest.querystring.aspx)」および「[検索文字](http://msdn2.microsoft.com/library/ms534620.aspx)」を参照してください。  
+ 通常、渡されたパラメーターは、ターゲットの .aspx ページで **HttpRequest.QueryString** プロパティを使用して読み取られます。 HTML ページでは JavaScript の **window.location.search** プロパティを使用してパラメータにアクセスできます。 詳細については、「[HttpRequest.QueryString プロパティ](https://msdn2.microsoft.com/library/system.web.httprequest.querystring.aspx)」および「[検索文字](https://msdn2.microsoft.com/library/ms534620.aspx)」を参照してください。  
 
 <a name="BKMK_PassFormData"></a>  
 
@@ -123,10 +129,10 @@ var newTarget = "";
 //Set the target based on the value of the option set  
 switch (value) {  
     case 100000001:  
-        newTarget = "http://myServer/test/pageOne.aspx";  
+        newTarget = "https://myServer/test/pageOne.aspx";  
         break;  
     default:  
-        newTarget = "http://myServer/test/pageTwo.aspx";  
+        newTarget = "https://myServer/test/pageTwo.aspx";  
         break;  
 }  
 //Get the default URL for the IFRAME, which includes the   

@@ -10,28 +10,34 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1137ee735e36a6ab36a4f3e9eed9a9abb48c6464
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753015"
 ---
 # <a name="create-data-maps-for-import"></a>インポート用データ マップの作成
 
 Common Data Service にデータをインポートするには、適切なデータ マップを指定する必要があります。  
   
- データ マップの例を、 [Microsoft ダウンロード: DataImportMaps.zip](http://download.microsoft.com/download/D/5/F/D5F73E15-439B-4EBC-BFFB-C6837B146C76/DataImportMaps.zip)からダウンロードできます。
+ データ マップの例を、 [Microsoft ダウンロード: DataImportMaps.zip](https://download.microsoft.com/download/D/5/F/D5F73E15-439B-4EBC-BFFB-C6837B146C76/DataImportMaps.zip)からダウンロードできます。
   
- データ マップを使用してソース ファイルに含まれるデータを Common Data Service のエンティティ属性にマップします。 ソース ファイルのすべての列を適切な属性にマップする必要があります。 マップされていない列のデータは、データ インポートの操作中にインポートされません。  
+ データ マップを使用して、ソース ファイルに含まれるデータを Common Data Service のエンティティ属性にマップします。 ソース ファイルのすべての列を適切な属性にマップする必要があります。 マップされていない列のデータは、データ インポートの操作中にインポートされません。  
   
  データ マップは、インポート マップ (データ マップ) エンティティによって表されます。 <xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> メッセージを使用して新しいマップを作成したり、<xref:Microsoft.Xrm.Sdk.IOrganizationService>.<xref:Microsoft.Xrm.Sdk.IOrganizationService.Update*>  メソッドを使用して既存のマップを更新したりすることができます。 マップには一意の名前があります。この名前は、`ImportMap.Name` 属性に格納されています。 このデータ マップが作成されるインポート ソースの名前は、`ImportMap.Source` 属性を使用して指定できます。  
   
 <a name="BKMK_Column"></a>   
 ## <a name="column-list-value-and-lookup-mappings"></a>列、リスト値、検索マッピング  
- ソース ファイルの列、リスト値、または検索値を Common Data Service の属性にマップするには、次のマッピングを使用します:  
+ ソース ファイルの列、リスト値、または検索値を Common Data Service の属性にマップするには、次のマッピングを使用します。  
   
  **列マッピング**  
   
- ソース ファイルの列を Common Data Service のエンティティ属性にマップします。 列マッピングの場合は、列マッピング (`ColumnMapping`) エンティティを使用します。 ソース属性とターゲット属性との間には、1:1 (1 対 1) または 1:N (1 対多) の関連付けを使用することができます。 たとえば、取引先企業の住所情報を、受注の請求先住所と送付先住所にマップできます。  
+ ソース ファイルの列を、Common Data Service のエンティティ属性にマップします。 列マッピングの場合は、列マッピング (`ColumnMapping`) エンティティを使用します。 ソース属性とターゲット属性との間には、1:1 (1 対 1) または 1:N (1 対多) の関連付けを使用することができます。 たとえば、取引先企業の住所情報を、受注の請求先住所と送付先住所にマップできます。  
   
  **リスト値マッピング**  
   
@@ -43,11 +49,11 @@ Common Data Service にデータをインポートするには、適切なデー
   
  ソース ファイルの検索値を、<xref:Microsoft.Xrm.Sdk.EntityReference> 型の Common Data Service 属性にマップします。 検索マッピングの場合は、検索マッピング (`LookupMapping`) エンティティを使用します。  
   
- ソース ファイルで指定された値がエンティティを参照している場合は、この値に対して検索マッピングを指定する必要があります。 参照されているエンティティをソース ファイル内または Common Data Service 内のどちらで検索するかを指定するには、`LookupMapping.LookupSourceCode` 属性を使用します。 事前バインド型を使用している場合は、`LookupSourceType` 列挙体を使用して検索値を設定できます。 ソース ファイル内を検索するには、値 `LookupSourceType.Source` を使用します。 Common Data Service 内を検索するには `LookupSourceType.System` 値を使用します。 LookupSourceCode値の一覧については、エンティティの候補リスト値を参照してください。 組織のエンティティ メタデータを表示するには、メタデータ ブラウザー ソリューションをインストールしてください。メタデータ ブラウザー ソリューションについては、「[組織のメタデータの参照](/dynamics365/customer-engagement/developer/browse-your-metadata)」を参照してください。 「[エンティティ参照](reference/about-entity-reference.md)」でエンティティの参照ドキュメントを参照することもできます。 複数の検索マッピングを指定できます。 非同期の変換ジョブでは、有効なすべてのマッピングが処理されます。 このジョブでは、参照されているレコードが検索されて、レコードの一意の識別子で解析テーブルが更新されます。 詳細については、「[データインポートの実行](run-data-import.md)」を参照してください。  
+ ソース ファイルで指定された値がエンティティを参照している場合は、この値に対して検索マッピングを指定する必要があります。 参照されているエンティティをソース ファイル内または Common Data Service 内のどちらで検索するかを指定するには、`LookupMapping.LookupSourceCode` 属性を使用します。 事前バインド型を使用している場合は、`LookupSourceType` 列挙体を使用して検索値を設定できます。 ソース ファイル内を検索するには、値 `LookupSourceType.Source` を使用します。 Common Data Service 内を検索するには、値 `LookupSourceType.System` を使用します。 LookupSourceCode値の一覧については、エンティティの候補リスト値を参照してください。 組織のエンティティ メタデータを表示するには、メタデータ ブラウザー ソリューションをインストールしてください。メタデータ ブラウザー ソリューションについては、「[組織のメタデータの参照](/dynamics365/customer-engagement/developer/browse-your-metadata)」を参照してください。 「[エンティティ参照](reference/about-entity-reference.md)」でエンティティの参照ドキュメントを参照することもできます。 複数の検索マッピングを指定できます。 非同期の変換ジョブでは、有効なすべてのマッピングが処理されます。 このジョブでは、参照されているレコードが検索されて、レコードの一意の識別子で解析テーブルが更新されます。 詳細については、「[データインポートの実行](run-data-import.md)」を参照してください。  
   
 <a name="BKMK_Owner"></a>   
 ## <a name="owner-mapping"></a>所有者マッピング  
- ソース ファイルで指定されたユーザーを Common Data Service のユーザーにマップするには所有者マッピングを使用します。 ログ情報には Common Data Service ユーザーのログオン名を使用します。 所有者マッピングの場合は、所有者マッピング (`OwnerMapping`) エンティティを使用します。  
+ 所有者マッピングは、ソース ファイルで指定されたユーザーを Common Data Service のユーザーにマップする場合に使用します。 ログ情報の場合は、Common Data Service ユーザーのログオン名を使用します。 所有者マッピングの場合は、所有者マッピング (`OwnerMapping`) エンティティを使用します。  
   
 <a name="BKMK_Notes"></a>   
 ## <a name="notes-and-attachments"></a>メモおよび添付ファイル  
@@ -70,11 +76,11 @@ Common Data Service にデータをインポートするには、適切なデー
   コメント (メモ) エンティティにマッピングを行わない場合は、インポート ジョブによってメモに既定のマッピングが生成されます。  
   
 > [!NOTE]
-> アップロードできる最大ファイル サイズは、**Organization.MaxUploadFileSize** プロパティによって決まります。 このプロパティは Common Data Service アプリケーションの **システム設定** の **電子メール** タブで設定します。 この設定で電子メール メッセージ、メモ、および Web リソースに添付できるファイルのサイズを制限します。 既定の設定は 5 MB です。 ただし、添付ファイルのサイズが、HTTP 要求サイズの最大値 (既定では 16MB) を超えてはいけません。 変更を有効にするには、インターネット インフォメーション サービスをリセットします。 この操作を行うには、**スタート**、**ファイル名を指定して実行**の順にクリックし、「`iisreset`」を入力して、**OK** をクリックします。  
+> アップロードできる最大ファイル サイズは、**Organization.MaxUploadFileSize** プロパティによって決まります。 このプロパティは、 Common Data Service アプリケーション内の **システム設定** の **電子メール** タブに設定されています。 この設定で電子メール メッセージ、メモ、および Web リソースに添付できるファイルのサイズを制限します。 既定の設定は 5 MB です。 ただし、添付ファイルのサイズが、HTTP 要求サイズの最大値 (既定では 16MB) を超えてはいけません。 変更を有効にするには、インターネット インフォメーション サービスをリセットします。 この操作を行うには、**スタート**、**ファイル名を指定して実行**の順にクリックし、「`iisreset`」を入力して、**OK** をクリックします。  
   
 <a name="BKMK_ImportExport"></a>   
 ## <a name="import-and-export-data-maps"></a>データ マップのインポートとエクスポート  
- 既存のデータ マップを XML ファイルにエクスポートでき、XML のデータ マッピングを Common Data Service にインポートできます。 データ マップを Common Data Service からエクスポートするには <xref:Microsoft.Crm.Sdk.Messages.ExportMappingsImportMapRequest> メッセージを使用します。 XML のデータ マッピングをインポートして Common Data Service にデータ マップを作成するには、<xref:Microsoft.Crm.Sdk.Messages.ImportMappingsImportMapRequest> メッセージを使用します。  
+ 既存のデータ マップを XML ファイルにエクスポートしたり、XML のデータ マッピングを Common Data Service にインポートできます。 データ マップを Common Data Service からエクスポートするには、<xref:Microsoft.Crm.Sdk.Messages.ExportMappingsImportMapRequest> メッセージを使用します。 XML のデータ マッピングを Common Data Service にインポートしてデータ マップを作成するには、<xref:Microsoft.Crm.Sdk.Messages.ImportMappingsImportMapRequest> メッセージを使用します。  
   
 ### <a name="see-also"></a>関連項目
 

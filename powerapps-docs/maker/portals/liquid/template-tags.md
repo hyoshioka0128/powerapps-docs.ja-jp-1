@@ -1,6 +1,6 @@
 ---
-title: ポータルにテンプレートタグを使用する |MicrosoftDocs
-description: ポータルで使用できるテンプレートタグについて説明します。
+title: ポータルでテンプレート タグを使用する | MicrosoftDocs
+description: ポータルで使用可能なテンプレート タグについて説明します
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -11,56 +11,56 @@ ms.author: shjais
 ms.reviewer: ''
 ms.openlocfilehash: 4475e9e2ccc474a6eeb3e7a2e959b360b3250aa8
 ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543286"
+ms.locfileid: "2757053"
 ---
 # <a name="template-tags"></a>テンプレート タグ
 
-テンプレートタグは、さまざまな方法でテンプレートの出力を制御し、複数のテンプレートを組み合わせて1つの出力にすることを許可します。
+テンプレート タグは、さまざまな方法でテンプレートの出力を制御し、複数のテンプレートを 1 つの出力にまとめることができます。
 
-## <a name="include"></a>用意
+## <a name="include"></a>include
 
-名前によって、あるテンプレートの内容を別のテンプレートに含めます。 PowerApps ポータルでは、この他のテンプレートのソースは通常、 [web テンプレート](store-content-web-templates.md)になります。 これにより、複数の場所で共通のテンプレートフラグメントを再利用できます。  
+名前により、1 つのテンプレートの内容を別のテンプレートに含めます。 PowerApps ポータルでは、これ以外のテンプレートのソースは、通常 [Web テンプレート](store-content-web-templates.md)です。 これにより、複数の場所で共通のテンプレートのフラグメントを再利用できます。  
 
-テンプレートを別のテンプレートに含めると、含まれているテンプレートは親テンプレートで定義されている任意の変数にアクセスできるようになります。
+テンプレートが別のテンプレートに含まれている場合、含まれたテンプレートは親のテンプレートで定義された変数にアクセスできます。
 
 `{% include 'My Template' %}`
 
-任意の数の名前付きパラメーターを include タグに渡すこともできます。 これらは、含まれているテンプレートの変数として定義されます。
+include タグに、名前の付けられた任意の数のパラメーターを渡すこともできます。 これらは、含まれたテンプレートで変数として定義されます。
 
 `{% include 'My Template' a:x, b:y %}`
 
-## <a name="block"></a>帯
+## <a name="block"></a>block
 
-テンプレートの継承を実現するために、拡張と組み合わせて使用されます。 「使用するための拡張」を参照してください。
+テンプレートを継承するために、拡張と組み合わせて使用されます。 使用方法については、拡張を参照してください。
 
-## <a name="extends"></a>拡張
+## <a name="extends"></a>extends
 
-ブロックタグと組み合わせて使用され、テンプレートの継承を提供します。 これにより、複数のテンプレートで共有レイアウトを使用しながら、親レイアウトの特定の領域を上書きすることができます。
+テンプレートを継承するために、ブロック タグと組み合わせて使用されます。 これにより、親のレイアウトのオーバーライド指定領域でも、複数のテンプレートで共有レイアウトを使用できす。
 
-PowerApps ポータルでは、タグに指定された親テンプレート名は、通常、 [web テンプレート](store-content-web-templates.md)の名前を参照します。  
+PowerApps ポータルでは、タグに提供された親のテンプレート名は、通常 [Web テンプレート](store-content-web-templates.md)の名前を参照します。  
 
-拡張を使用する場合は、テンプレートの最初のコンテンツにする必要があり、その後に1つ以上のブロックタグを指定できます。
+拡張を使用する場合は、テンプレートの最初の内容である必要があり、1 つ以上のブロック タグのみ続けることができます。
 
-親テンプレートで定義されているブロックがオーバーライドされていない場合は、親テンプレート (存在する場合) の内容がレンダリングされます。
+親のテンプレートで定義された block がオーバーライドされなかった場合、親のテンプレートの内容 (ある場合) が表示されます。
 
 ## <a name="comment"></a>comment
 
-レンダリングされていないコードを液体テンプレート内に残すことができます。 ブロック内のすべてのコンテンツはレンダリングされず、内の液体コードは実行されません。
+流動テンプレート内の非表示コードをそのままの状態にすることができます。 ブロック内のコンテンツが表示されない場合、内部の流動コードは実行されません。
 
 **コード**
 
 `Hello{% comment %}, {{ user.fullname }}{% endcomment %}. My name is Charles.`
 
-**Output**
+**出力**
 
 `Hello. My name is Charles.`
 
-## <a name="raw"></a>素材
+## <a name="raw"></a>raw
 
-ページで液体コードを解析して実行しなくても出力できるようにします。
+解析および実行せずに、ページの流動コードを出力できます。
 
 **Output**
 
@@ -68,7 +68,7 @@ PowerApps ポータルでは、タグに指定された親テンプレート名�
 
 ### <a name="see-also"></a>関連項目
 
-[制御フロータグ](control-flow-tags.md)<br>
-[イテレーションタグ](iteration-tags.md)<br>
-[可変タグ](variable-tags.md)<br>
-[PowerApps common data service エンティティタグ](portals-entity-tags.md)
+[制御フロー タグ](control-flow-tags.md)<br>
+[反復タグ](iteration-tags.md)<br>
+[変数タグ](variable-tags.md)<br>
+[PowerApps common data service エンティティ タグ](portals-entity-tags.md)

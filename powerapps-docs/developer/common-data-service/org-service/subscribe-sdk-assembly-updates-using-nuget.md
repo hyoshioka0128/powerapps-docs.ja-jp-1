@@ -6,18 +6,24 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: dd5d967cae6988c7949c1c6eca0b862cf42281b0
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752951"
 ---
 # <a name="subscribe-to-sdk-assembly-updates-using-nuget"></a>NuGet を使用した SDK のアセンブリ更新の購読
 
-.NET SDK アセンブリと一部のコマンドライン ツールは、ソフトウェア配布のWebサイト [nuget.org](http://www.nuget.org) から利用できます。アプリケーションプロジェクトで NuGet パッケージを使用すると、SDK アセンブリおよびツールの最新リリースでプロジェクトを最新の状態に保つことができます。 Visual Studio はバージョン 2010 以降でこの機能をサポートしています。Visual Studio で開発を行わない開発者用に、スタンドアロン型 NuGet クライアントもあります。 プロジェクトで NuGet パッケージを使用する他の利点は、アセンブリの参照と依存関係が自動的に処理されることです。  
+.NET SDK アセンブリと一部のコマンドライン ツールは、ソフトウェア配布のWebサイト [nuget.org](https://www.nuget.org) から利用できます。アプリケーションプロジェクトで NuGet パッケージを使用すると、SDK アセンブリおよびツールの最新リリースでプロジェクトを最新の状態に保つことができます。 Visual Studio はバージョン 2010 以降でこの機能をサポートしています。Visual Studio で開発を行わない開発者用に、スタンドアロン型 NuGet クライアントもあります。 プロジェクトで NuGet パッケージを使用する他の利点は、アセンブリの参照と依存関係が自動的に処理されることです。  
   
 <a name="BKMK_GetNuGetPackages"></a>
 
@@ -43,7 +49,7 @@ NuGet SDK は、[crmsdk](https://www.nuget.org/profiles/crmsdk) プロファイ�
 |[Microsoft.CrmSdk.XrmTooling.WpfControls](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.WpfControls/)|Microsoft.Xrm.Tooling.CrmConnectControl.dll、Microsoft.Xrm.Tooling.Ui.St yles.dll、Microsoft.Xrm.Tooling.WebResourceUtility.dllアセンブリが含まれています。|
 
 ## <a name="how-to-install-a-package-in-your-project"></a>プロジェクトでパッケージをインストールする方法  
- プロジェクトに NuGet パッケージをインストールするための詳細は、[ダイアログを使用した NuGet パッケージの管理](http://docs.nuget.org/docs/start-here/managing-nuget-packages-using-the-dialog)を参照してください。  
+ プロジェクトに NuGet パッケージをインストールするための詳細は、[ダイアログを使用した NuGet パッケージの管理](https://docs.nuget.org/docs/start-here/managing-nuget-packages-using-the-dialog)を参照してください。  
 
 ## <a name="download-tools-from-nuget"></a>NuGet からツールをダウンロード
 
@@ -51,4 +57,4 @@ NuGet SDK は、[crmsdk](https://www.nuget.org/profiles/crmsdk) プロファイ�
   
 ### <a name="see-also"></a>関連項目  
  [NuGetドキュメント](/nuget/)   
- [インストール中NuGet](http://docs.nuget.org/docs/start-here/installing-nuget)
+ [インストール中NuGet](https://docs.nuget.org/docs/start-here/installing-nuget)

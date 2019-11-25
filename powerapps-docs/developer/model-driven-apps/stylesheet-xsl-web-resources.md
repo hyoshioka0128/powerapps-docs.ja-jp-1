@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4b4c0145cae08ecc144c48eb4dfe1d0e32ea22d2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753535"
 ---
 # <a name="stylesheet-xsl-web-resources"></a>スタイルシート (XSL) Web リソース
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources -->
 
 
 XML データを変換するには、スタイルシート (XSL) Web リソースを使用します。  
@@ -25,11 +31,11 @@ XML データを変換するには、スタイルシート (XSL) Web リソー�
 ## <a name="capabilities-of-xsl-web-resources"></a>XSL Web リソースの機能  
  ソリューションで使用されている XML データを変換するには、XSL Web リソースを使用します。  
   
- 以下の Web リソースが連動することで、XML Web リソースのデータを使用してテーブルを表示するページがレンダリングされます。 これらの Web リソースのソース ファイルは、**filestoimport** フォルダーの下の  Import Web Resources サンプルの一部です。 [Web リソースとしてのファイルのインポート](https://code.msdn.microsoft.com/Import-files-as-web-f84ad8dc) のサンプルをダウンロードします。  
+ 以下の Web リソースが連動することで、XML Web リソースのデータを使用してテーブルを表示するページがレンダリングされます。 これらの Web リソースのソース ファイルは、**filestoimport** フォルダーの下の Import Web Resources サンプルの一部です。 [Web リソースとしてのファイルのインポート](https://code.msdn.microsoft.com/Import-files-as-web-f84ad8dc) のサンプルをダウンロードします。  
   
  **HTML Web リソース:** sample_/ImportWebResources/Content/ShowData.htm  
  ```html  
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
 <html>  
 <head>  
  <title></title>  
@@ -46,7 +52,7 @@ XML データを変換するには、スタイルシート (XSL) Web リソー�
  ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <xsl:stylesheet version="1.0"  
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
+                xmlns:xsl="https://www.w3.org/1999/XSL/Transform"  
                 xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
                 exclude-result-prefixes="msxsl"  
 >  
@@ -167,7 +173,7 @@ td
 ### <a name="see-also"></a>関連項目  
  [Web リソース](web-resources.md)   
  [Web ページ (HTML) の Web リソースの使用](webpage-html-web-resources.md)   
- [スタイル シート (CSS) Web リソースの使用](css-web-resources.md)   
+ [スタイルシート (CSS) ウェブ リソースを使用する](css-web-resources.md)   
  [スクリプト (JScript) Web リソースの使用](script-jscript-web-resources.md)   
  [データ (XML) Web リソースの使用](data-xml-web-resources.md)   
  [画像 (JPG、PNG、GIF、ICO) Web リソースの使用](image-web-resources.md)   

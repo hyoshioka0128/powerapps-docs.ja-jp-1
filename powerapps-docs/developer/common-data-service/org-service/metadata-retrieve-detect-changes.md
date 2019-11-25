@@ -1,19 +1,25 @@
 ---
-title: メタデータへの変更を取得および検出する (Common Data Service) | Microsoft Docs
+title: メタデータへの変更の取得および検出 (Common Data Service) | Microsoft Docs
 description: Query 名前空間のクラスと RetrieveMetadataChangesRequest および RetrieveMetadataChangesResponse クラスで、有効なメタデータ クエリの構築と時間経過に伴って発生するメタデータへの変更の取得が可能です。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ce5d1442fce4720d2d0d489f8dbadd7c5f7db43b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752959"
 ---
 # <a name="retrieve-and-detect-changes-to-metadata"></a>メタデータへの変更の取得および検出
 
@@ -292,7 +298,7 @@ AttributeProperties.PropertyNames.Add("AttributeType");
   
 ### <a name="retrieve-labels"></a>ラベルの取得
   
- 最後に、<xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression>.<xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression.LabelQuery> プロパティは、1 つまたは複数の整数 `LCID` 値を指定してどのローカライズされたラベルを返すかを決定できる <xref:Microsoft.Xrm.Sdk.Metadata.Query.LabelQueryExpression> を受け取ります。 有効なロケール ID 値は、[ロケール ID (LCID) の一覧](http://go.microsoft.com/fwlink/?LinkId=122128)のページで確認できます。 組織で複数の言語パックがインストールされている場合は、<xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression.LabelQuery> を指定しないとすべての言語が返されます。  
+ 最後に、<xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression>.<xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression.LabelQuery> プロパティは、1 つまたは複数の整数 `LCID` 値を指定してどのローカライズされたラベルを返すかを決定できる <xref:Microsoft.Xrm.Sdk.Metadata.Query.LabelQueryExpression> を受け取ります。 有効なロケール ID 値は、[ロケール ID (LCID) の一覧](https://go.microsoft.com/fwlink/?LinkId=122128)のページで確認できます。 組織で複数の言語パックがインストールされている場合は、<xref:Microsoft.Xrm.Sdk.Metadata.Query.EntityQueryExpression.LabelQuery> を指定しないとすべての言語が返されます。  
   
  次の例では、ユーザーが使用する言語を表すラベルのみに制限する  <xref:Microsoft.Xrm.Sdk.Metadata.Query.LabelQueryExpression> の定義を示します。  
   

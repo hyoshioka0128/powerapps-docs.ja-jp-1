@@ -10,19 +10,25 @@ author: paulliew
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 85f8f71c633d1a89aa20b5325123ce6e57b6298b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753075"
 ---
 # <a name="auditing-overview"></a>監査の概要
 
-組織では、通常、さまざまな規制に従って、顧客とのやり取りの履歴、監査ログ、アクセス レポート、セキュリティ インシデント追跡レポートを入手できるようにしておく必要があります。 組織ではセキュリティと分析のために Common Data Service データの変更を追跡する必要がある場合があります。  
+組織では、通常、さまざまな規制に従って、顧客とのやり取りの履歴、監査ログ、アクセス レポート、セキュリティ インシデント追跡レポートを入手できるようにしておく必要があります。 組織では、セキュリティと分析のために Common Data Service データの変更を追跡することが必要な場合があります。  
   
  Common Data Service がサポートする監査機能では、組織でのエンティティおよび属性データの変更を、分析やレポートで使用できるように記録できます。 監査は、すべてのユーザー定義エンティティと属性、およびほとんどのカスタマイズ可能なエンティティと属性でサポートされます。 メタデータの変更、取得操作、エクスポート操作については、または認証中は、監査はサポートされません。 監査を構成する方法の詳細については、「[監査のエンティティおよび属性の構成](configure-entities-attributes-auditing.md)」を参照してください。  
   
 ## <a name="supported-for-auditing"></a>監査のサポート  
- Common Data Service の監査機能を次の一覧に示します:  
+ Common Data Service の監査機能を次に示します:  
 <!-- TODO: Jim, I don't think this is online only. Please correct the tokens here. -->
   
 * カスタマイズ可能なエンティティの監査
@@ -78,4 +84,4 @@ search.app:
  [Dynamics 365 でのデータ管理](/dynamics365/customer-engagement/developer/manage-data)   
  [監査エンティティのデータ変更](/dynamics365/customer-engagement/developer/audit-entity-data-changes)   
  [監査のエンティティおよび属性の構成](configure-entities-attributes-auditing.md)       
- [ブログ: 削除した CRM データの復元と再作成 (CRM API を使用)](http://blogs.msdn.com/b/crm/archive/2011/05/23/recover-your-deleted-crm-data-and-recreate-them-using-crm-api.aspx)
+ [ブログ: 削除した CRM データの復元と再作成 (CRM API を使用)](https://blogs.msdn.com/b/crm/archive/2011/05/23/recover-your-deleted-crm-data-and-recreate-them-using-crm-api.aspx)

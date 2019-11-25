@@ -10,10 +10,16 @@ author: hazhouMSFT
 ms.author: hazhou
 manager: annbe
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 329e9f1845bfdfc9f2afa87528fbfd10bc4aa886
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753603"
 ---
 # <a name="pass-data-from-a-page-as-a-parameter-to-ribbon-actions"></a>データをページからパラメーターとしてリボン操作に渡す
 
@@ -21,7 +27,7 @@ search.app:
 
 ## <a name="form-and-grid-context-in-ribbon-actions"></a>リボン アクションのフォームとグリッドのコンテキスト
 
-実行コンテキスト (*フォーム コンテキスト*または*グリッドコンテキスト*) 情報をリボン操作の Javascript 関数に渡すには、リボン定義で `<CrmParameter>` 値として、フォーム コンテキストには **PrimaryControl**、グリッド コンテキストには **SelectedControl** を指定します。 **SelectedControl** は、サブグリッドおよびホームページ グリッドの両方に、グリッド コンテキストを渡します。 渡された **PrimaryControl** または**SelectedControl** の値は、それぞれ*フォーム コンテキスト*または*グリッド コンテキスト*の JavaScript 関数で引数として使用されます。 
+実行コンテキスト (*フォーム コンテキスト* または *グリッド コンテキスト*) 情報をリボン操作の Javascript 関数に渡すには、リボン定義で `<CrmParameter>` 値として、フォーム コンテキストには **PrimaryControl**、グリッド コンテキストには **SelectedControl** を指定します。 **SelectedControl** は、サブグリッドおよびホームページ グリッドの両方に、グリッド コンテキストを渡します。 **PrimaryControl** または **SelectedControl** で渡された値は、それぞれ *フォーム コンテキスト* または *グリッド コンテキスト* の JavaScript 関数で引数として使用されます。 
 
 たとえば、ここに **PrimaryControl** パラメーターを JavaScript 関数に渡す場所であるサンプル リボン定義があります:
 
@@ -37,7 +43,7 @@ search.app:
 </CommandDefinition>
 ```
 
-次に、上記のサンプルで参照される **new_mySampleScript.js** Web リソース ファイルで、**primaryControl** 変数を引数として指定して Javascript 関数を定義します。 この引数は、リボン コマンドが実行される場合は*フォーム* コンテキストを提供します。
+次に、上記のサンプルで参照される **new_mySampleScript.js** Web リソース ファイルで、**primaryControl** 変数を引数として指定して Javascript 関数を定義します。 この引数は、リボン コマンドが実行されるところで *フォーム* コンテキストを提供します:
 
 ```JavaScript
 function mySampleFunction(primaryControl) {
@@ -64,7 +70,7 @@ function mySampleFunction(primaryControl) {
 
     // Set the WebSiteURL field if account name contains "Contoso"
     if (accountName.toLowerCase().search("contoso") != -1) {
-        formContext.getAttribute("websiteurl").setValue("http://www.contoso.com");
+        formContext.getAttribute("websiteurl").setValue("https://www.contoso.com");
     }
     else {
         Xrm.Navigation.openAlertDialog({ text: "Account name does not contain 'Contoso'." });

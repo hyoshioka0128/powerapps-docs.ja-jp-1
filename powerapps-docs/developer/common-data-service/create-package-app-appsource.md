@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9696ad4bafbd9556203243cb7ba785e3d0d8444c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753023"
 ---
 # <a name="step-4-create-an-appsource-package-for-your-app"></a>手順4: アプリの AppSource パッケージを作成する
 
@@ -40,11 +46,11 @@ search.app:
   
     - **\<PackageName>.dll**: アセンブリには、パッケージのカスタム コードが含まれています。 例: **SamplePackage.dll**。
 
-2. 次に、パッケージに含まれるファイル拡張子のMIMEタイプ情報を提供する **[Content_Types].xml** ファイルを作成します。 これは、 AppSource パッケージに再び含まれるものとは別のものです。 これは一覧表示されるファイルの種類の Content_Types].xml ファイルのサンプル コンテンツです。
+2. 次に、パッケージに含まれるファイル拡張子のMIMEタイプ情報を提供する **[Content_Types].xml** ファイルを作成します。 これは、 AppSource パッケージに再び含まれるものとは別のものです。 ファイルタイプがリストされた Content_Types.xml ファイルの内容例を次に示します。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
-    <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+    <Types xmlns="https://schemas.openxmlformats.org/package/2006/content-types">
       <Default Extension="xml" ContentType="application/octet-stream" />
       <Default Extension="xaml" ContentType="application/octet-stream" />
       <Default Extension="dll" ContentType="application/octet-stream" />
@@ -95,7 +101,7 @@ Dynamics 365 管理センター ポータルに目的のソリューション名
   <StartDate>12/01/2017</StartDate>
   <EndDate>01/01/2021</EndDate>
   <SupportedCountries>US,CA</SupportedCountries>
-  <LearnMoreLink>http://www.microsoft.com</LearnMoreLink>
+  <LearnMoreLink>https://www.microsoft.com</LearnMoreLink>
   <Locales>
     <PackageLocale Code="1033" IsDefault="true">
       <Logo>logo32x32.png</Logo>

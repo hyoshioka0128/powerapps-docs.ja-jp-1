@@ -1,5 +1,5 @@
 ---
-title: カスタムの状態モデルの遷移を定義する (Common Data Service) | Microsoft Docs
+title: ユーザー定義の状態モデルの遷移を定義する (Common Data Service) | Microsoft Docs
 description: インシデント (サポート案件) エンティティまたはユーザー定義エンティティの、カスタムの状態モデルの遷移の定義について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: mayadumesh
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a7172755f75a2d39ff1ad2b0bf7dcbfb88bdf72d
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752991"
 ---
 # <a name="define-custom-state-model-transitions"></a>カスタムの状態モデルの遷移の定義
 
@@ -51,12 +57,12 @@ search.app:
 <a name="BKMK_DetectValidStatusTransitions"></a>   
 
 ## <a name="detect-valid-status-transitions"></a>有効な状態遷移の検出  
- `statuscode` 属性を変更して、現在の状態からの有効な遷移を表すその他の状態オプションを定義できます。 手順については、カスタマイズ ガイドのトピック、[ステータスの遷移の定義](http://go.microsoft.com/fwlink/p/?LinkId=393657) を参照してください。  
+ `statuscode` 属性を変更して、現在の状態からの有効な遷移を表すその他の状態オプションを定義できます。 手順については、カスタマイズ ガイドのトピック、[ステータスの遷移の定義](https://go.microsoft.com/fwlink/p/?LinkId=393657) を参照してください。  
   
  ユーザー定義の状態遷移をエンティティに適用するとき、<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.EnforceStateTransitions> プロパティは `true` になります。 また、<xref:Microsoft.Xrm.Sdk.Metadata.StatusAttributeMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.OptionSetMetadata.Options> 内の各 <xref:Microsoft.Xrm.Sdk.Metadata.StatusOptionMetadata> コレクションには新しい <xref:Microsoft.Xrm.Sdk.Metadata.StatusOptionMetadata.TransitionData> プロパティがあります。 このプロパティには、XML ドキュメントを表す文字列値が含まれます。 このドキュメントには、有効な遷移の定義が含まれます。 たとえば、既定の `Incident` (**ケース**) `StatusCode`属性オプションは、次の `TransitionData` 値を持つことができます。  
   
 ```xml  
-<allowedtransitions xmlns="http://schemas.microsoft.com/crm/2009/WebServices">  
+<allowedtransitions xmlns="https://schemas.microsoft.com/crm/2009/WebServices">  
 <allowedtransition sourcestatusid="1" tostatusid="6" />  
 <allowedtransition sourcestatusid="1" tostatusid="1000" />   
 <allowedtransition sourcestatusid="1" tostatusid="2000" />  
@@ -68,7 +74,7 @@ search.app:
 >  このデータが Web サービスからアンマネージ コードで読み込まれるとき、たとえば JavaScript を使用するとき、このデータはエスケープされ、次の例のように表示されます。  
   
 ```xml  
-<allowedtransitions xmlns="http://schemas.microsoft.com/crm/2009/WebServices">  
+<allowedtransitions xmlns="https://schemas.microsoft.com/crm/2009/WebServices">  
 <allowedtransition sourcestatusid="1" tostatusid="6">  
 <allowedtransition sourcestatusid="1" tostatusid="1000">  
 <allowedtransition sourcestatusid="1" tostatusid="2000">  
@@ -82,4 +88,4 @@ search.app:
  [サンプル: 有効な状態の遷移を取得する](org-service/samples/retrieve-valid-status-transitions.md)   
  [レコードの状態とステータス](/dynamics365/customer-engagement/developer/introduction-entities#bkmk_RecordStateandStatus)   
  [メタデータの変更の取得および検出](/dynamics365/customer-engagement/developer/retrieve-detect-changes-metadata)   
- [ステータスの遷移の定義](http://go.microsoft.com/fwlink/p/?LinkId=393657)
+ [ステータスの遷移の定義](https://go.microsoft.com/fwlink/p/?LinkId=393657)

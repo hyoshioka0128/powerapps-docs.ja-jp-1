@@ -1,5 +1,5 @@
 ---
-title: クライアント側開発のテスト ツール (Common Data Service) | Microsoft Docs
+title: クライアント側開発のためのテスト ツール (Common Data Service) | Microsoft Docs
 description: クライアント側開発のテスト フレームワークについて説明します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -10,10 +10,16 @@ author: aengusheaney
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7ce54c1f02fa702a41b045b8f83e511c5017e45c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753583"
 ---
 # <a name="testing-tools-for-client-side-development"></a>クライアント側開発のためのテスト ツール
 
@@ -33,5 +39,5 @@ Easy Repro は、モデル駆動型アプリの各種ページを操作する一
 
 [サーバ側開発のためのテスト ツール](../common-data-service/testing-tools-server.md)<br />
 [ビデオ: UI テストの作成および実行](https://youtu.be/ryWgK34Akt0)<br />
-[ブログの投稿: Easy Repro とは](http://www.itaintboring.com/dynamics-crm/easy-repro-what-is-it/)<br />
+[ブログの投稿: Easy Repro とは](https://www.itaintboring.com/dynamics-crm/easy-repro-what-is-it/)<br />
 [ビデオ: DevOps の概要](https://youtu.be/AorM792M8nY)

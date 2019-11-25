@@ -1,5 +1,5 @@
 ---
-title: ' 画像アップロード コンポーネント | Microsoft Docs'
+title: " 画像アップロード コンポーネント | Microsoft Docs"
 description: Typescript を使用した画像アップロード コンポーネントの実装
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
+ms.openlocfilehash: 1ca8e97d32f6003b26c511e3ad2aee96bff42322
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754100"
 ---
-
 # <a name="implementing-an-image-upload-component"></a>画像アップロード コンポーネントの実装
 
 このサンプル コンポーネントは、画像と既定の画像をアップロードする `Upload` ボタンとしてコンポーネントが初めて読み込まれたとき表示されます。 `Upload` をクリックすると、 画像を選択するファイル エクスプローラがポップアップします。
@@ -292,8 +297,8 @@ export class TSImageUploadControl
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
   <xsd:complexType>
     <xsd:choice maxOccurs="unbounded">
@@ -389,4 +394,4 @@ export class TSImageUploadControl
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps Component Framework のマニフェスト スキーマの参照](../manifest-schema-reference/index.md)
+[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

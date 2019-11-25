@@ -1,54 +1,54 @@
-- name: アクティビティ
+- name: 活動
   items:
     - name: FAX をタスクに変換する
       href: convert-fax-task.md
-    - name: テンプレートを使用して電子メールを作成する
+    - name: テンプレートを使用した電子メールの作成
       href: create-email-template.md
-    - name: 電子メールの添付ファイルを作成、取得、更新、削除する
+    - name: 電子メールの添付ファイルの作成、取得、更新、および削除
       href: create-retrieve-update-delete-email-attachment.md
-    - name: 電子メール メッセージのレベルを上げる
+    - name: 電子メール メッセージのレベル上げ
       href: promote-email-message.md
-    - name: 電子メール テンプレート用に電子メールの添付ファイルを取得する
+    - name: 電子メール テンプレート用の電子メールの添付ファイルの取得
       href: retrieve-email-attachments-email-template.md
-    - name: テンプレートを使用して電子メールを送信する
+    - name: テンプレートを使用した電子メールの送信
       href: send-email-template.md
-    - name: 電子メールを送信する
+    - name: 電子メールの送信
       href: send-email.md
-    - name: 電子メールを一括送信して結果を監視する
+    - name: 電子メール広告を送信して結果を監視する
       href: send-bulk-email-monitor-results.md
-    - name: 活動関係者レコードを操作する
+    - name: 活動関係者レコードの操作方法
       href: work-activity-party-records.md
 - name: 予定
   items:
-    - name: 予定を予約する
+    - name: 予定の予約
       href: book-appointment.md
-    - name: 予定を定期的な予定に変換する
+    - name: 予定から定期的な予定への変換
       href: convert-appointment-recurring-appointment.md
-    - name: 定期的な予定を作成、取得、更新、削除する
+    - name: 定期的な予定の作成、取得、更新、および削除
       href: create-retrieve-update-delete-recurring-appointment.md
     - name: 定期的な予定の系列を終了する
       href: end-recurring-appointment-series.md
-    - name: 系列とインスタンスの間でカスタム属性をリンクする
+    - name: 系列とインスタンスとの間のユーザー定義属性のリンク
       href: link-custom-attributes-between-series-instances.md
-    - name: ユーザーの作業時間のクエリを実行する
+    - name: ユーザーの作業時間のクエリ
       href: query-working-hours-user.md
-    - name: 複数ユーザーの作業時間のクエリを実行する
+    - name: 複数ユーザーの作業時間のクエリ
       href: query-working-hours-multiple-users.md
-    - name: 定期的な予定の再スケジュールと取り消し
+    - name: 定期的な予定の再スケジュールおよび取り消し
       href: reschedule-cancel-recurring-appointment.md
-    - name: 予定を検証する
+    - name: 予定の検証
       href: validate-appointment.md
 - name: 監査
   items:
-    - name: エンティティのデータ変更を監査する
+    - name: 監査エンティティのデータ変更
       href: audit-entity-data-changes.md
     - name: ユーザー アクセスの監査
       href: audit-user-access.md
-- name: Azure 統合
+- name: Azure統合
   items:
     - name: Azure 対応のカスタム プラグイン
       href: azure-aware-custom-plugin.md
-    - name: Azure 対応のカスタム ワークフロー活動
+    - name: Azure 対応のユーザー定義ワークフロー活動
       href: azure-aware-custom-workflow-activity.md
     - name: 一方向リスナー
       href: one-way-listener.md
@@ -60,141 +60,143 @@
       href: two-way-listener.md
 - name: 一括削除
   items:
-    - name: エクスポート済みレコードを一括削除する
+    - name: エクスポート済みレコードの一括削除
       href: bulk-delete-exported-records.md
-    - name: 共通条件に一致するレコードを一括削除する
+    - name: 共通の条件に合致するレコードを一括して削除する
       href: bulk-delete-records-match-common-criteria.md
-- name: 変更追跡
+- name: 変更の追跡
   items:
-    - name: 変更追跡を使用してデータを外部システムと同期する
+    - name: 変更の追跡を使用してデータを外部システムに同期
       href: synchronize-data-external-systems-using-change-tracking.md
-- name: 接続
+- name: つながり
   items:
-    - name: 接続を作成する
+    - name: つながりの作成
       href: create-connection-early-bound.md
-    - name: つながりロールを作成する
+    - name: つながりロールの作成
       href: create-connection-role-early-bound.md
-    - name: 相互つながりロールを作成する
+    - name: 相互つながりロールの作成
       href: create-reciprocal-connection-role-early-bound.md
-    - name: レコードでつながりを照会する
+    - name: レコードによるつながりの照会
       href: query-connections-record-early-bound.md
-    - name: エンティティ種類コードでつながりロールを照会する
+    - name: エンティティの種類コードによるつながりロールの照会
       href: query-connection-roles-entity-type-code-early-bound.md
-    - name: 相互ロールでつながりを照会する
+    - name: 相互ロールによるつながりの照会
       href: query-connections-reciprocal-roles-early-bound.md
-- name: 通貨
+- name: '[通貨]'
   items:
     - name: 通貨為替レートを取得する
       href: retrieve-currency-exchange-rate.md
 - name: カスタマイズとメタデータ
   items:
-    - name: カスタム活動を作成する
+    - name: カスタム活動の作成
       href: create-custom-activity.md
-    - name: エンティティ メタデータをファイルにダンプする
+    - name: エンティティ メタデータのファイルへのダンプ
       href: dump-entity-metadata-file.md
     - name: 有効な状態の遷移を取得する
       href: retrieve-valid-status-transitions.md
-- name: 重複データの検出
+- name: 重複データ検出
   items:
     - name: 複数の重複レコードを検出する
       href: detect-multiple-duplicate-records.md
-    - name: 重複データ検出を有効にして重複を取得する
+    - name: 重複データ検出を有効にし、重複を取得する
       href: enable-duplicate-detection-and-retrieve-duplicates.md
-    - name: レコードの作成および更新時に重複データ検出を使用する
+    - name: レコードの作成および更新時の重複データ検出の使用
       href: use-duplicate-detection-when-creating-and-updating-records.md
 - name: エンティティ レコード
   items:
-    - name: 事前バインド エンティティの操作
+    - name: 事前バインド エンティティのオペレーション
       href: early-bound-entity-operations.md
     - name: 遅延バインド エンティティの操作
       href: late-bound-entity-operations.md
-    - name: 操作の更新と削除でオプティミスティック同時実行を使用する
+    - name: オペレーションの更新プログラムおよび削除でオプティミスティック同時実行を使用する
       href: use-optimistic-concurrency-update-delete-operations.md
-    - name: アクセス チームを使用してレコードを共有する
+    - name: アクセス チームを使用してレコードを共有
       href: share-record-using-access-team.md
-    - name: GrantAccess、ModifyAccess、RevokeAccess メッセージを使用してレコードを共有する
+    - name: GrantAccess、ModifyAccess、および RevokeAccess メッセージを使用したレコードの共有
       href: share-records-using-grantaccess-modifyaccess-revokeaccess-messages.md
-    - name: 添付ファイルをアップロード、取得、ダウンロードする
+    - name: 添付ファイルのアップロード、取得、およびダウンロード
       href: upload-retrieve-download-attachment.md
-    - name: Upsert を使用してレコードを挿入または更新する
+    - name: Upsert を使用してレコードを挿入または更新
       href: insert-update-record-upsert.md
-- name: フィールド レベルのセキュリティ
+- name: フィールド レベル セキュリティ
   items:
-    - name: フィールドのアクセス許可を取得する
+    - name: フィールドのアクセス許可の取得
       href: retrieve-field-permissions.md
-    - name: フィールド共有レコードを取得する
+    - name: フィールド共有レコードの取得
       href: retrieve-field-sharing-records.md
-    - name: エンティティでフィールド セキュリティを有効にする
+    - name: エンティティでのフィールド セキュリティの有効化
       href: enable-field-security-entity.md
 - name: 目標管理
   items:
     - name: カスタム期間の目標データを、対象の売上に対してロールアップする
       href: rollup-goal-data-custom-period-target-revenue.md
-    - name: 会計期間の目標データを、件数の拡大対象に対してロールアップする
+    - name: 件数の拡大対象に対する会計期間の目標データのロールアップ
       href: rollup-goal-data-fiscal-period-stretch-target-count.md
     - name: ロールアップ クエリを使用して目標を追跡する
       href: use-rollup-queries-track-goals.md
-    - name: 目標の合計件数をオーバーライドして目標をクローズする
+    - name: 目標の合計件数を上書きして目標をクローズする
       href: override-goal-total-count-close-goal.md
-- name: データをインポートする
+- name: データのインポート
   items:
-    - name: データ マップをエクスポートおよびインポートする
+    - name: データ マップのエクスポートおよびインポート
       href: export-import-data-map.md
     - name: 複雑なデータ マップを使用してデータをインポートする
       href: import-data-complex-data-map.md
 - name: プラグイン
   items:
+    - name: 基本プラグインの作成
+      href: basic-followup-plugin.md
+    - name: PreOperation ステージのクエリの変更
+      href: modify-query-preoperation-stage.md
     - name: プラグインからの Web アクセス
       href: web-access-plugin.md
-    - name: 基本的なプラグインを作成する
-      href: basic-followup-plugin.md
 - name: キュー
   items:
-    - name: キューにレコードを追加する
+    - name: キューへのレコードの追加
       href: add-record-queue-early-bound.md
-    - name: キューにセキュリティ プリンシパル (ユーザーまたはチーム) を追加する
+    - name: キューへのセキュリティ プリンシパル (ユーザーまたはチーム) の追加
       href: add-security-principal-user-team-queue-early-bound.md
-    - name: キューの履歴をクリーンアップする
+    - name: キューの履歴のクリーンアップ
       href: clean-up-history-queue-early-bound.md
-    - name: キュー アイテムをキューに解放する
+    - name: キュー アイテムのキューへの解放
       href: release-queue-item-queue-early-bound.md
-    - name: 作業するキュー アイテムを指定する
+    - name: 作業するキュー アイテムの指定
       href: specify-queue-item-work-early-bound.md
 - name: SharePoint
   items:
-    - name: 場所レコードの絶対 URL とサイト コレクション URL を取得する
+    - name: 場所レコードの絶対 URL およびサイト コレクション URL の取得
       href: retrieve-absolute-url-and-site-collection-url-of-a-location-record.md
-- name: 特別な操作
+- name: 特殊な操作
   items:
-    - name: 複数の要求を実行する
+    - name: 複数の要求の実行
       href: execute-multiple-requests.md
 - name: ソリューション
   items:
-    - name: ソリューションを操作する
+    - name: ソリューションに関する作業
       href: work-solutions.md
-    - name: ソリューションの依存関係を検出する
+    - name: ソリューションの依存関係の検出
       href: detect-solution-dependencies.md
 - name: タイム ゾーン
   items:
-    - name: タイム ゾーン情報を取得する
+    - name: タイム ゾーン情報の取得
       href: retrieve-time-zone-information.md
-- name: クエリ データ
+- name: データのクエリ
   items:
-    - name: ページング Cookie で QueryExpression を使用する
+    - name: ページング Cookie を使用した QueryExpression の使用
       href: use-queryexpression-with-a-paging-cookie.md
-    - name: QueryExpression クラスを使用して複数を取得する
+    - name: QueryExpression クラスを使用した複数取得
       href: retrieve-multiple-queryexpression-class.md
-    - name: QueryByAttribute クラスを使用して複数を取得する
+    - name: QueryByAttribute クラスを使用した複数取得
       href: retrieve-multiple-querybyattribute-class.md
-    - name: FetchXML と QueryExpression の間でクエリを変換する
+    - name: Fetch と QueryExpression 式の間でのクエリの変換
       href: convert-queries-fetch-queryexpression.md
     - name: 交差テーブルからレコードを取得する
       href: retrieve-records-intersect-table.md
-    - name: 保存済みクエリを検証および実行する
+    - name: 保存済みクエリの検証および実行
       href: validate-execute-saved-query.md
-    - name: FetchXML で集計を使用する
+    - name: FetchXML での集計の使用
       href: use-aggregation-fetchxml.md
-    - name: ページング Cookie で FetchXML を使用する
+    - name: ページング Cookie を使用した FetchXML の使用
       href: use-fetchxml-paging-cookie.md
-- name: 探索サービスにアクセスする
+- name: 検出サービスへのアクセス
   href: access-discovery-service.md

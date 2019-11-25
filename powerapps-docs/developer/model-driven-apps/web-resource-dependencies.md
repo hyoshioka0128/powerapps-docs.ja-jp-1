@@ -1,6 +1,6 @@
 ---
 title: Web リソースの依存関係 (モデル駆動型アプリ) | MicrosoftDocs
-description: Common Data Serviceの Web リソース間の依存関係の定義について説明します。
+description: Common Data Service の Web リソース間の依存関係の定義について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4c48a508a9e42e60dc3b9e9e0e374c7d72f1b11c
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749367"
 ---
 # <a name="web-resource-dependencies"></a>Web リソースの依存関係
 
@@ -41,14 +47,14 @@ search.app:
 
 <a name="attribute-dependencies"></a>
 
-# <a name="attribute-dependencies"></a>属性の依存関係
+## <a name="attribute-dependencies"></a>属性の依存関係
 <!--TODO: Add links to the attribute and attribute.controls collection definitions in the Client API reference -->
  モデル駆動型アプリ以降、JavaScript Web リソースがフォームに表示したくないエンティティ属性の値に依存する場合は、その属性を JavaScript Web リソースの依存関係として設定できます。 つまり、属性をクライアント API の attributes コレクション内で使用できるようになるため、コード内の値を取得または設定できるようになります。 この方法で依存関係を追加すると、フォームにコントロールがないため、属性の controls コレクションが空になります。
 
 この機能の前は、フォームに属性を手動で追加してからコントロールを非表示にするように構成する必要がありました。 今では、この依存関係をより直接的に確立し、誰かがフォームから非表示フィールドを削除する可能性を排除できます。 
 
 
-## <a name="see-also"></a>関連項目
+### <a name="see-also"></a>関連項目
 [Web リソース](web-resources.md)<br />
 [アクセス可能な Web リソースの作成](create-accessible-web-resources.md)<br />
 [Webpage (HTML) の Web リソース](webpage-html-web-resources.md)<br />

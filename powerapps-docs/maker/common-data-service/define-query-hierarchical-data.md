@@ -1,5 +1,5 @@
 ---
-title: Common Data Service での階層データの定義とクエリ | MicrosoftDocs
+title: Common Data Service で階層データを定義し、クエリする | MicrosoftDocs
 description: 階層的に関連するデータを定義およびクエリする方法を説明する
 ms.custom: ''
 ms.date: 06/02/2018
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 0cf62817-5ff5-40bb-ad17-e1f6b0921720
 caps.latest.revision: 42
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c829665baf2688c755bdfba7debb19d7b69a1c46
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758681"
 ---
 # <a name="define-and-query-hierarchically-related-data"></a>階層的に関連するデータの定義とクエリ
 
@@ -35,7 +41,7 @@ search.app:
 
 ## <a name="define-hierarchical-data"></a>階層データの定義
 
-Common Data Service では、階層データ構造は、関連レコードの *自己参照* の一対多 (1:N) の関連付けでサポートされます。 
+Common Data Service では、階層データ構造は、関連レコードの *自己参照* の一対多 (1:N) の関連付けによってサポートされます。 
 
 > [!NOTE]
 > *自己参照*では、エンティティがそれ自体に関連していることを意味します。 たとえば、取引先企業エンティティには別の取引先企業エンティティと関連付ける検索フィールドがあります。
@@ -92,5 +98,5 @@ Common Data Service では、階層データ構造は、関連レコードの *�
 [1:N (一対多) または N:1 (多対一) のエンティティの作成および編集](create-edit-1n-relationships.md)<br />
 [ソリューション エクスプローラーを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成および編集する](create-edit-1n-relationships-solution-explorer.md)<br />
 [モデル駆動型アプリによる階層型データのビジュアル化](visualize-hierarchical-data.md)<br />
-[ビデオ: 階層セキュリティ モデル](http://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)<br />
-[ビデオ: 階層ビジュアル化](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)
+[ビデオ: 階層セキュリティ モデル](https://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)<br />
+[ビデオ: 階層ビジュアル化](https://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)

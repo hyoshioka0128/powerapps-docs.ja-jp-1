@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: フィールド権限の取得 (Common Data Service) | Microsoft Docs'
+title: 'サンプル: フィールド アクセス許可の取得 (Common Data Service) | Microsoft Docs'
 description: このサンプルは、ユーザーのセキュリティで保護されたフィールドを取得する方法を説明します
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1f4f8257a5567e1a4dcb982b960d5d3f8d1c8602
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749298"
 ---
 # <a name="sample-retrieve-field-permissions"></a>サンプル: フィールドのアクセス許可の取得
 

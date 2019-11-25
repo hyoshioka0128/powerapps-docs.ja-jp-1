@@ -6,16 +6,21 @@ ms.date: 05/09/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: ef32c596a2740d5a459975061058d1bb682505fe
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753071"
 ---
-
 # <a name="web-service-error-codes"></a>Web サービス エラー コード
 
 このトピックでは、コードをデバッグする際に発生する可能性のあるエラー コードの一覧を示します。
@@ -790,7 +795,7 @@ search.app:
 > |**名前**:<br />CorruptedHiddensheetData<br />**16 進数**:<br />800609B7<br />**数値**:<br />-2147087945|非表示シート データが破損しています。|
 > |**名前**:<br />CouldNotDecryptOAuthToken<br />**16 進数**:<br />8005F110<br />**数値**:<br />-2147094256|Yammer OAuth トークンを暗号化解除できませんでした。 もう一度 Yammer の構成を再試行してください。|
 > |**名前**:<br />CouldNotFindQueueItemInQueue<br />**16 進数**:<br />80040524<br />**数値**:<br />-2147220188|指定された SourceQueueId でターゲットと関連付けられているキュー アイテムが見つかりませんでした。 SourceQueueId または [ターゲット] が無効であるか、またはキュー アイテムが存在しないかのどちらかです。|
-> |**名前**:<br />CouldNotObtainLockOnResource<br />**16 進数**:<br />80044339<br />**数値**:<br />-2147204295|データベース リソース ロックを取得できませんでした。 詳細については、「http://docs.microsoft.com/dynamics365/customer-engagement/customize/best-practices-workflow-processes#limit-the-number-of-workflows-that-update-the-same-entity」を参照してください。|
+> |**名前**:<br />CouldNotObtainLockOnResource<br />**16 進数**:<br />80044339<br />**数値**:<br />-2147204295|データベース リソース ロックを取得できませんでした。 詳細については、「https://docs.microsoft.com/dynamics365/customer-engagement/customize/best-practices-workflow-processes#limit-the-number-of-workflows-that-update-the-same-entity」を参照してください。|
 > |**名前**:<br />CouldNotReadAccessToken<br />**16 進数**:<br />8005F105<br />**数値**:<br />-2147094267|空でないコードが渡されましたが、システムがユーザーの Yammer アクセス トークンを読み込めませんでした。|
 > |**名前**:<br />CouldNotSetLocationTypeToOneNote<br />**16 進数**:<br />80060905<br />**数値**:<br />-2147088123|ドキュメントの場所を表す場所の種類を OneNote に設定できません。|
 > |**名前**:<br />CountSpecifiedWithoutOrder<br />**16 進数**:<br />8004E01F<br />**数値**:<br />-2147164129|ビジュアル化のデータ記述は、件数属性の受注ノードを指定していないため無効です。|
@@ -1577,7 +1582,7 @@ search.app:
 > |**名前**:<br />InvalidEntitySetName<br />**16 進数**:<br />8006089B<br />**数値**:<br />-2147088229|特定のエンティティ セット名 {0} のエンティティは既に存在します。 一意の名前を指定してください。|
 > |**名前**:<br />InvalidEntitySpecified<br />**16 進数**:<br />800609B1<br />**数値**:<br />-2147087951|テンプレートでは、エンティティは指定されません。|
 > |**名前**:<br />InvalidExchangeRate<br />**16 進数**:<br />80048cfd<br />**数値**:<br />-2147185411|為替レートは無効です。|
-> |**名前**:<br />InvalidExportProcessFlowNotActivated<br />**16 進数**:<br />80060376<br />**数値**:<br />-2147089546|ビジネス プロセス “{0}” をエクスポートできませんでした。対応するビジネス プロセス エンティティ “{1}” がソリューションに含まれていません。 これがドラフト状態で新しく作成されたビジネス プロセスである場合は、一度アクティブ化してビジネス プロセス エンティティを生成し、それをソリューションに含めます。 詳細については、「http://support.microsoft.com/kb/4337537」を参照してください。|
+> |**名前**:<br />InvalidExportProcessFlowNotActivated<br />**16 進数**:<br />80060376<br />**数値**:<br />-2147089546|ビジネス プロセス “{0}” をエクスポートできませんでした。対応するビジネス プロセス エンティティ “{1}” がソリューションに含まれていません。 これがドラフト状態で新しく作成されたビジネス プロセスである場合は、一度アクティブ化してビジネス プロセス エンティティを生成し、それをソリューションに含めます。 詳細については、「https://support.microsoft.com/kb/4337537」を参照してください。|
 > |**名前**:<br />InvalidExternalCollectionName<br />**16 進数**:<br />80046BA7<br />**数値**:<br />-2147193945|指定した外部コレクション名が無効です。|
 > |**名前**:<br />InvalidExternalName<br />**16 進数**:<br />80046BC0<br />**数値**:<br />-2147193920|指定した外部名が無効です。|
 > |**名前**:<br />InvalidExternalPartyConfiguration<br />**16 進数**:<br />8006110F<br />**数値**:<br />-2147086065|複数の外部パーティ アイテムが要求パラメーターに対して存在します。|
@@ -2662,7 +2667,7 @@ search.app:
 > |**名前**:<br />SharePointUnableToRemoveUserFromGroup<br />**16 進数**:<br />8004F0F2<br />**数値**:<br />-2147159822|SharePoint のグループ {1} からユーザー {0} を削除できません。|
 > |**名前**:<br />SharePointUnableToRetrieveGroup<br />**16 進数**:<br />8004F0F4<br />**数値**:<br />-2147159820|SharePoint からグループ {0} を取得できません。|
 > |**名前**:<br />SharePointUrlHostValidator<br />**16 進数**:<br />8004F301<br />**数値**:<br />-2147159295|URL を IP に解決できません。|
-> |**名前**:<br />SharePointUrlIsRootWebValidator<br />**16 進数**:<br />8004F306<br />**数値**:<br />-2147159290|無効な URL です。 URL は有効なサイト コレクションである必要があり、サブサイトを含めることはできません。 URL は http://SharePointServer/sites/CrmSite などの、有効な形式である必要があります。|
+> |**名前**:<br />SharePointUrlIsRootWebValidator<br />**16 進数**:<br />8004F306<br />**数値**:<br />-2147159290|無効な URL です。 URL は有効なサイト コレクションである必要があり、サブサイトを含めることはできません。 URL は https://SharePointServer/sites/CrmSite などの、有効な形式である必要があります。|
 > |**名前**:<br />SharePointVersionUnsupported<br />**16 進数**:<br />800608B6<br />**数値**:<br />-2147088202|Sharepoint バージョンがサポートされていないため、Microsoft Dynamics 365 は Sharepoint に接続できません。 正しいバージョンをインストールし、もう一度実行してください。 |
 > |**名前**:<br />SimilarityRuleDisabled<br />**16 進数**:<br />80071016<br />**数値**:<br />-2147020778|このエンティティでアクティブな類似ルールはありません。|
 > |**名前**:<br />SimilarityRuleFCBOff<br />**16 進数**:<br />80071018<br />**数値**:<br />-2147020776|類似ルールが有効になっていません。|

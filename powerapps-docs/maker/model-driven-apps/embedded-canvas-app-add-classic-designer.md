@@ -8,27 +8,32 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: d6881aaa3a55f16324e5d995e70be1e186a816bf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759385"
 ---
-
 # <a name="add-an-embedded-canvas-app-on-a-model-driven-form"></a>埋め込み型キャンバス アプリケーションをモデル駆動フォームに追加する
 ことトピックでは、埋め込み型キャンバス アプリケーションをモデル駆動フォームに追加する方法を説明します。
 
 たとえば、新しいキャンバス アプリケーションを作成し、アカウントのエンティティ上のメインフォームに埋め込むとします。 これを行うには、次の手順を実行します。 
 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 2.  この例では、会計エンティティの[メイン フォームの作成または編集](create-and-edit-forms.md) を行います。 
 3.  コマンドバーの **クラシックに切り替える** を選択して、クラシック フォームデザイナでフォームを開きます。
 4.  クラシックフォームデザイナで、埋め込み型キャンバス アプリケーションを表示させるフォーム上のセクションを選択します。
@@ -47,7 +52,7 @@ search.app:
          - **アプリ ID** の値を変更すると、モデル駆動型フォームから埋め込みキャンバス アプリへのリンクが切断されることに注意してください。
 12. キャンバス アプリを作成または編集するには**カスタマイズ**を選択します。 これは新規タブの、 PowerApps Studio で開きます。
        > [!NOTE]
-       > Webブラウザのポップアップブロックが原因でPowerApps Studio を開くことができない場合は、サイト web.powerapps.com を有効にするか、ポップアップブロックを一時的に無効にしてから、もう一度 **カスタマイズ** を選択する必要があります。
+       > PowerApps Studio を開くことが Web ブラウザーのポップアップ ブロッカーによりブロックされた場合は、make.powerapps.com  サイトを有効にするか、一時的にポップアップ ブロッカーを無効にしてから、再び **カスタマイズ** を選択する必要があります。
 13. PowerApps Studio の通知には、 ウィンドウの左側に特別な **ModelDrivenFormIntegration** コントロールが表示されます。 このコントロールは、ホストのモデル駆動型フォームから埋め込みキャンバス アプリにコンテキスト データを取り込みます。
 14. 埋め込み型キャンバス アプリケーションに[キャンバスアプリケーション フォーム コントロール](../canvas-apps/controls/control-form-detail.md) が自動的に追加され、ModelDrivenFormIntegrationコントロールを介してホストのモデル駆動フォームから渡されたデータが表示されていることを確認します。 
 15. **ビュー** タブを選択し、 **データ ソース**を選択します。 ご利用のホストモデル駆動型フォーム (この例ではアカウント) の親エンティティであるデータソースが、埋め込み型キャンバス アプリケーションに自動的に追加されていることに留意してください。

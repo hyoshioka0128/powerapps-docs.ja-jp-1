@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 03728912350057f8db3cd1ed4c59a97f66362507
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752947"
 ---
 # <a name="use-linq-to-construct-a-query"></a>LINQ を使用したクエリの構築
 
@@ -153,4 +159,4 @@ select new Contact
  [サンプル: LINQ クエリの例](/dynamics365/customer-engagement/developer/org-service/sample-complex-linq-queries)   
  [LINQ (.NET Language-Integrated Query) を使用してクエリを作成する](/dynamics365/customer-engagement/developer/org-service/build-queries-with-linq-net-language-integrated-query)   
  [LINQ クエリでの遅延バインド エンティティ クラスの使用](/dynamics365/customer-engagement/developer/org-service/use-late-bound-entity-class-linq-query)   
- [ブログ: Dynamics CRM REST/Web API 向けの LINQPad 4 Driverは、 CodePlex で使用できます](http://blogs.msdn.com/b/crminthefield/archive/2015/06/11/linqpad-4-driver-for-dynamics-crm-rest-webapi-are-available-on-codeplex.aspx)
+ [ブログ: Dynamics CRM REST/Web API 向けの LINQPad 4 Driverは、 CodePlex で使用できます](https://blogs.msdn.com/b/crminthefield/archive/2015/06/11/linqpad-4-driver-for-dynamics-crm-rest-webapi-are-available-on-codeplex.aspx)

@@ -4,21 +4,24 @@ description: エンティティ ビューのカスタマイズについて学習
 keywords: ''
 ms.date: 10/31/2018
 ms.service: powerapps
-ms.custom:
-  - ''
 ms.topic: article
 ms.assetid: da2a9b57-fcd2-38c5-c670-63acf1767efa
 author: JimDaly
 ms.author: jdaly
 manager: shilpas
-ms.reviewer: null
+ms.reviewer: ''
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 26070652e0cafe91731384a75ae66334288eef9e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749333"
 ---
-
 # <a name="customize-entity-views"></a>エンティティ ビューのカスタマイズ
 
 エンティティ ビューは、特定のフィルターを使用することによってデータを取得する特殊な保存済みクエリです。 このビューには、アプリケーションでのビュー内のデータの表示方法に関する情報も含まれます。 エンティティ ビューは、プログラム的に作成できる `SavedQuery` レコードです。 また、XML として定義し、アンマネージド ソリューションでインポートすることもできます。  
@@ -263,7 +266,7 @@ System.String layoutXml =
   
  事前定義された限定のオプション セットによるオプション セット型の属性でカスタム アイコンを追加する可能性が最も高いと想定される場合は、ラベルの代わりにオプションの整数値を使用して、ローカライズされたラベル文字列の変更によるコードの破損を回避することを確認します。 または、JavaScript関数で、属性の値のアイコンとして使用するイメージ Web リソースの名前を指定します。 イメージは、16 x 16 ピクセル サイズであるべきです; より大きな画像は、16 x 16 ピクセル サイズに自動的に縮小されます。  
   
- 次のサンプル コードは、`opportunityratingcode (Rating)` 属性内の値 (1: 高、2: 中、3: 低) のいずれかに基づき、異なるアイコンおよびツールヒント テキストを表示します。 サンプル コードは、ローカライズしたツールヒントのテキストを表示する方法についても示します。 このサンプルが機能するには、それぞれ 16x16 イメージの 3 つのイメージ Web リソース (![高評価ボタン](media/dynamics365hotgridicon.png "高評価ボタン")、![中評価シンボル](media/dynamics365warmgridicon.png "中評価シンボル")、および![低評価ボタン](media/dynamics365coldgridicon.png "低評価ボタン")) をインスタンス内に`new_Hot`、`new_Warm`、および`new_Cold`という名前で作成します。  
+ 次のサンプル コードは、`opportunityratingcode (Rating)` 属性内の値 (1: 高、2: 中、3: 低) のいずれかに基づき、異なるアイコンおよびツールヒント テキストを表示します。 サンプル コードは、ローカライズしたツールヒントのテキストを表示する方法についても示します。 このサンプルを機能させるには、それぞれ 16x16 イメージの 3 つのイメージ Web リソース (![高評価ボタン](media/dynamics365hotgridicon.png "高評価ボタン")、 ![中評価シンボル](media/dynamics365warmgridicon.png "中評価記号")、 ![低評価ボタン](media/dynamics365coldgridicon.png "低評価ボタン")) をそれぞれ `new_Hot`、 `new_Warm`、 `new_Cold`、の名前で作成します。  
   
 ```javascript 
 function displayIconTooltip(rowData, userLCID) {      

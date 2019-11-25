@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 0cf62817-5ff5-40bb-ad17-e1f6b0921720
 caps.latest.revision: 42
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 563c773bd2bec365a3459097e4c4e8428d624c00
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755272"
 ---
 # <a name="query-and-visualize-hierarchically-related-data"></a>階層的に関連するデータのクエリと視覚化
 
@@ -56,7 +62,7 @@ search.app:
  データを階層としてクエリするには、エンティティの 1 対多または多対 1 の自己参照の関連付けのひとつを階層として設定する必要があります。 階層の有効化:  
   
 
-1. [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。
+1. [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。
 
 2. 既存のエンティティ、または [エンティティの新規作成](data-platform-create-entity.md) をクリックまたはタップします
 
@@ -80,7 +86,7 @@ search.app:
  階層アイコンを選択すると、次に示すように、左側にツリー ビュー、右側にタイルビューの形で階層を表示できます。  
   
 > [!div class="mx-imgBorder"] 
-> ![取引先企業ツリーとタイル ビュー](media/hierachy-security-accounts-tile-view.png "取引先企業ツリーとタイル ビュー")  
+> ![[取引先企業] ツリーとタイル ビュー](media/hierachy-security-accounts-tile-view.png "[取引先企業] ツリーとタイル ビュー")  
   
  階層のいくつかのそのほかの既定のシステム エンティティを有効にすることができます。 これらのエンティティには、`Case`、 `Contact`、`Opportunity`、`Order`、`Quote`、`Campaign`、 `Team`があります。 階層のすべてのユーザー定義エンティティは有効にすることができます。  
   
@@ -123,5 +129,5 @@ search.app:
  > ![ウィジェットのツリーとタイルの表示](media/widget-tree-tiles.png "ウィジェットのツリーとタイルの表示")  
   
 ## <a name="see-also"></a>関連項目  
- [ビデオ: 階層セキュリティ モデル](http://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)   
- [ビデオ: 階層ビジュアル化](http://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)
+ [ビデオ: 階層セキュリティ モデル](https://www.youtube.com/watch?v=kx5So32DrCo&index=10&list=PLC3591A8FE4ADBE07)   
+ [ビデオ: 階層ビジュアル化](https://www.youtube.com/watch?v=_dGBE6icLNw&index=9&list=PLC3591A8FE4ADBE07)

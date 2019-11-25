@@ -1,5 +1,5 @@
 ---
-title: ' ローカライズ API コンポーネント | Microsoft Docs'
+title: " ローカライズ API コンポーネント | Microsoft Docs"
 description: ローカライズ API コンポーネントの実装
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: 4917728c08323c0c0e96f452621cd14298116a12
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754096"
 ---
-
 # <a name="implementing-localization-api-component"></a>ローカライズ API コンポーネントの実装
 
 このサンプルはカスタム コントロールのローカライズ方法を紹介します。 このサンプルでは [増分コンポーネント](increment-control.md) を使用して、ユーザーが選択した言語に基づいた増分ボタンに表示されるテキストをローカライズします。 
@@ -17,7 +22,7 @@ author: Nkrb
 PowerApps component framework は、ローカライズされた文字列の管理に使用される文字列 (resx) Web リソースを実装する概念を使用し、任意のユーザー インターフェイスに表示されます。 詳細: [文字列 (Resx) Web リソース](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources) 
 
 > [!div class="mx-imgBorder"]
-> ![ローカライズ API コンポーネント](../media/localization-api-control.png "ローカライズ API コンポーネント")
+> ![ローカライズ API のコンポーネント](../media/localization-api-control.png "ローカライズ API のコンポーネント")
 
 ## <a name="available-for"></a>以下に使用できます 
 
@@ -61,7 +66,7 @@ export class TSLocalizationAPI
   private label: HTMLInputElement;
   // button element created as part of this control
   private button: HTMLButtonElement;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
   /**
@@ -181,8 +186,8 @@ export class TSLocalizationAPI
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
 <xsd:complexType>
 <xsd:choice maxOccurs="unbounded">
@@ -265,8 +270,8 @@ export class TSLocalizationAPI
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
 <xsd:complexType>
 <xsd:choice maxOccurs="unbounded">
@@ -349,8 +354,8 @@ export class TSLocalizationAPI
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
 <xsd:complexType>
 <xsd:choice maxOccurs="unbounded">
@@ -452,4 +457,4 @@ PowerApps component framework はユーザーの言語を識別し、`context.re
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps Component Framework のマニフェスト スキーマの参照](../manifest-schema-reference/index.md)
+[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

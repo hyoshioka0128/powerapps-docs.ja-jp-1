@@ -1,5 +1,5 @@
 ---
-title: ' 線形入力コンポーネント | Microsoft Docs'
+title: " 線形入力コンポーネント | Microsoft Docs"
 description: 線形入力コンポーネントの実装
 ms.custom: ''
 manager: kvivek
@@ -8,8 +8,13 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
+ms.openlocfilehash: f7dcc3fef22c354b1fed684a09fb091f2d2c6cb7
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749358"
 ---
-
 # <a name="implementing-linear-input-component"></a>線形入力コンポーネントの実装
 
 このサンプル コンポーネントは、フォームの数値型を操作する際のユーザー エクスペリエンスを変更します。 数値をタイプ入力する代わりに、線形入力コンポーネントは線形スライダーを提供し、その属性の値を使用してフォームに設定できます。  
@@ -58,10 +63,10 @@ export class TSLinearInputControl
   private labelElement: HTMLLabelElement;
   // input element that is used to create the range slider
   private inputElement: HTMLInputElement;
-  // Reference to the control container HTMLDivElement
+  // reference to the control container HTMLDivElement
   // This element contains all elements of our custom control example
   private _container: HTMLDivElement;
-  // Reference to ComponentFramework Context object
+  // reference to ComponentFramework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Event Handler 'refreshData' reference
   private _refreshData: EventListenerOrEventListenerObject;
@@ -266,4 +271,4 @@ public updateView(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>): 
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps Component Framework のマニフェスト スキーマの参照](../manifest-schema-reference/index.md)
+[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

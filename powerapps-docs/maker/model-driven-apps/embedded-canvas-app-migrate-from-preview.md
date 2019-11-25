@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e53f4b1cfd01225285fb50626aa9ace3b804d9c2
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2756921"
 ---
-
 # <a name="migrate-embedded-canvas-apps-on-model-driven-forms-created-using-the-public-preview-release"></a>共有プレビュー リリースを使用して作成されたモデル駆動型フォーム上の埋め込みキャンバス アプリに移行します。
 > [!IMPORTANT]
 > 最新のリリースでは、モデル駆動型フォーム上の埋め込みキャンバス アプリが利用可能になりました。 共有プレビュー リリースを使用して作成されたモデル駆動型フォーム上の埋め込みキャンバス アプリは、最新リリースを使用して作成された新しい埋め込みキャンバス アプリに移行する必要があります。
@@ -30,7 +35,7 @@ search.app:
 
 共有プレビュー リリースを使用して作成されたモデル駆動型フォーム上の埋め込みキャンバス アプリを最新のものに移行するには、作成者はまず最新リリースを使用して新しい埋め込みキャンバス アプリを作成する必要があります。 作成者は既存のものから新しい埋め込みキャンバス アプリにコントロールをコピーして、必要なデータ ソースを追加して、破損した参照があれば更新します。 詳細な手順を以下に示します。
 
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 2. PowerApps Studioで編集するために共有プレビュー リリースを使用して作成した埋め込みキャンバス アプリを開きます 。 キャンバス アプリの編集手順については [キャンバス アプリの編集](../canvas-apps/edit-app.md) をご覧ください。
 3. 新しいブラウザー タブで、手順に従って [新しい埋め込みキャンバス アプリをモデル駆動型フォームを追加 ](embedded-canvas-app-add-classic-designer.md) します。
 4. 以下の手順に従って、共有プレビュー リリースを使用して作成された埋め込みキャンバス アプリから新しい埋め込みキャンバス アプリにコントロールを一度に一画面ずつコピーします。
@@ -58,7 +63,7 @@ search.app:
 現在の (メイン フォーム) レコードに関連するレコードの一覧を使用するモデル駆動型フォーム上の埋め込みキャンバス アプリへ移行するために、以下の手順に従ってください。
 
 1. 上記セクションの手順にしたがって、共有プレビュー リリースを使用して、作成されたモデル駆動型フォーム上の埋め込みキャンバス アプリを最新のものに移行します。
-2. Common Data Service コネクタを使用して、関連エンティティのデータ ソースをアプリに追加します。 キャンバス アプリにデータ ソースを追加する方法ついては、 [PowerAppsでキャンバス アプリにデータ接続を追加](../canvas-apps/add-data-connection.md) を参照してください。
+2. Common Data Service コネクタを使用して、関連エンティティのデータ ソースをアプリに追加します。 キャンバス アプリにデータ ソースを追加する方法ついては、 [PowerApps でキャンバス アプリにデータ接続を追加](../canvas-apps/add-data-connection.md) を参照してください。
 3. [ギャラリー](../canvas-apps/controls/control-gallery.md) や [データ テーブル](../canvas-apps/controls/control-data-table.md) などのコントロールに関連エンティティのデータ ソースを使用する場合は、 **[フィルター](../canvas-apps/functions/function-filter-lookup.md)** 関数をを使用します。レコードを現在の (メイン フォーム) レコードに関連するレコードにフィルタ処理します。 現在の (メイン フォーム) レコードが、**ModelDrivenFormIntegration.Item**を介して利用できます。
     > [!NOTE]
     > 埋め込み型キャンバス アプリケーションは、ModelDrivenFormIntegration.Itemを経由してホストのモデル駆動フォームからのすべてのレコードにアクセスすることができます。 たとえば、**accountnumber** という名称と **アカウント番号** という表示名称を持つフィールドの値を取得するには、 **ModelDrivenFormIntegration.Item.accountnumber** または **ModelDrivenFormIntegration.Item.'Account Number'** を使用することができます。

@@ -1,6 +1,6 @@
 ---
-title: PowerApps ポータルを使用したエンティティの作成および編集 | MicrosoftDocs
-description: PowerApps ポータルを使用してエンティティを作成および編集する方法について説明します。
+title: PowerApps ポータルを使用してエンティティを作成、編集する | MicrosoftDocs
+description: PowerApps ポータルを使用してエンティティを作成および編集する方法について
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
@@ -9,31 +9,36 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
 author: Mattp123
 ms.assetid: fa04f99d-a5f9-48cb-8bfb-f0f50718ccee
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 6b1fb1e479237face89e0a19ee145f7fa428cb62
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758109"
 ---
+# <a name="create-and-edit-entities-using-powerapps-portal"></a>PowerApps ポータルを使用してエンティティを作成、編集する
 
-# <a name="create-and-edit-entities-using-powerapps-portal"></a>PowerApps ポータルを使用してエンティティを作成および編集する
-
-[PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、Common Data Service のエンティティを簡単に作成および編集できます。
+[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、  Common Data Service のエンティティを簡単に作成、編集することができます。
 
 ポータルでは一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 詳細: 
-- [Common Data Service でエンティティを作成および編集する](create-edit-entities.md)
+- [Common Data Serviceでエンティティを作成、編集する](create-edit-entities.md)
 - [ソリューション エクスプローラーを使用してエンティティを作成および編集する](create-edit-entities-solution-explorer.md)
 
 ## <a name="view-entities"></a>エンティティの表示
 
-1. [PowerApps ポータル](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、**モデル駆動型**または**キャンバス**設計モードを選択します。
+1. [PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、 **モデル駆動型** または **キャンバス** 設計モードを選択します。
 2. **データ** > **エンティティ** を選択します。
 
 ![エンティティの表示](media/view-entities-portal.png)
@@ -61,8 +66,8 @@ search.app:
 |フィールド|説明|
 |--|--|
 |**表示名**|これは、アプリに表示されるエンティティの単数形の名前です。 これは後で変更できます。|
-|**複数形の表示名**|これは、アプリに表示されるエンティティの複数形の名前です。 これは後で変更できます。|
-|**名前**|このフィールドは、ユーザーが入力する**表示名**に基づいて事前設定されます。 これには Common Data Service ソリューション発行者のカスタマイズ接頭辞が含まれます。 エンティティが保存されたら、これを変更できません。|
+|**表示名の複数形**|これは、アプリに表示されるエンティティの複数形の名前です。 これは後で変更できます。|
+|**名前**|このフィールドは、ユーザーが入力する**表示名**に基づいて事前設定されます。 これには、 Common Data Service ソリューション発行者のカスタマイズ接頭辞が含まれます。 エンティティが保存されたら、これを変更できません。|
 |**説明**|エンティティの目的でわかりやすい説明を入力してください。|
 
 **次へ**を選択して続行します。**新しいエンティティ** ウィンドウが閉じてフィールドの一覧が表示されます。
@@ -79,7 +84,7 @@ search.app:
 
 [エンティティを表示](#view-entities)しているときに、編集するエンティティを選択します。
 
-エンティティの**表示名**、**複数形の表示名**、**説明**を編集する場合、メニューから [設定] を選択します。
+エンティティの**表示名**、**表示名の複数形**、**説明** を編集する場合、メニューから [設定] を選択します。
 
 ![エンティティ設定](media/entity-settings-portal.png)
 
@@ -144,7 +149,7 @@ search.app:
 
 ### <a name="see-also"></a>関連項目
 
-[Common Data Service でエンティティを作成および編集する](create-edit-entities.md)<br />
+[Common Data Serviceでエンティティを作成、編集する](create-edit-entities.md)<br />
 [ソリューション エクスプローラーを使用してエンティティを作成および編集する](create-edit-entities-solution-explorer.md)
 
 

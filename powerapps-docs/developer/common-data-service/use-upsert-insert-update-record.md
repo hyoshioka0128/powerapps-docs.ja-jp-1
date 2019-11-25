@@ -1,19 +1,25 @@
 ---
-title: Upsert を使用したレコードの挿入または更新 (Common Data Service) | Microsoft Docs
+title: Upsert を使用してレコードを挿入または更新 (Common Data Service) | Microsoft Docs
 description: UpsertRequest (更新または挿入) メッセージのヘルプは、Dynamics 365 にレコードが存在するかどうかわからない場合にさまざまなデータ統合シナリオを簡略化するのに役立ちます。 このような場合、UpdateRequest または CreateRequest 操作を呼び出す必要があるかどうかが分かりません。 この結果、適切な操作を実行する前に、そのレコードが存在するかどうかを決定するために、最初にそのレコードをクエリすることになります。 UpsertRequest メッセージはそのような問題の解決に役立ちます
 ms.custom: ''
 ms.date: 02/23/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 67b8793ae57633d6e5ffa15b1aa68f4104829c67
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753712"
 ---
 # <a name="use-upsert-to-insert-or-update-a-record"></a>Upsert を使用してレコードを挿入または更新
 
@@ -67,7 +73,7 @@ search.app:
   
 <a name="BKMK_SampleCode"></a>   
 ## <a name="sample-code"></a>サンプル コード  
- [Upsert を使用してレコードを挿入または更新](http://go.microsoft.com/fwlink/p/?LinkId=532924) のサンプル ファイル [ProductUpsertSample.cs](https://code.msdn.microsoft.com/Insert-or-update-a-record-aa160870/sourcecode?fileId=136218&pathId=1243320355) には `ProcessUpsert` メソッドが含まれています。このメソッドは、`UpsertRequest` メッセージを XML ファイルのコンテンツに適用して、新しいレコードを作成するか、または既存のレコードを更新します。  
+ [Upsert を使用してレコードを挿入または更新](https://go.microsoft.com/fwlink/p/?LinkId=532924) のサンプル ファイル [ProductUpsertSample.cs](https://code.msdn.microsoft.com/Insert-or-update-a-record-aa160870/sourcecode?fileId=136218&pathId=1243320355) には `ProcessUpsert` メソッドが含まれています。このメソッドは、`UpsertRequest` メッセージを XML ファイルのコンテンツに適用して、新しいレコードを作成するか、または既存のレコードを更新します。  
   
 ```csharp
 public void ProcessUpsert(String Filename)

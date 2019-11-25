@@ -9,24 +9,30 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
-ms.assetid: null
+ms.assetid: ''
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e39cb11b9883e93d341232bcdcbb43dc17fa491a
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759781"
 ---
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>クイックスタート: 既存の環境を使用して、統合インターフェイスで旧式のWebクライアント アプリケーションを検証する
 このクイックスタート トピックでは、既存の環境を使用して現在の構成あるいは既定のソリューションに基づいた、統合インターフェイス アプリケーションを作成する方法について説明します。 これにより、既存の旧式のWebクライアントアプリケーションを並行稼働しながら、統合インターフェイスを調査、テストすることができます。 これにより、ユーザーは環境を切り替えて並列のビューを表示することができます。 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE3JzyI]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3JzyI]
 
 新しいサンドボックス環境を作成することでテスト環境を分離し、統合インターフェースのエクスペリエンスのみを表示する方法については、 [クイックスタート: Dynamics 365 レガシー Web クライアントアプリケーションから統合インターフェイスへの移行](transition-web-app.md) を参照してください。
 
@@ -40,7 +46,7 @@ search.app:
 ## <a name="overview"></a>概要 
 このトピックは、統合インターフェイスへの移行を計画/実行する必要がある、旧式のWebクライアントアプリケーションを現在使用しているユーザーを対象としています。 並列環境をセットアップするには、現在の既定のソリューションを元にして新しいアプリケーションを作成します。 これによって既存の作業に影響を与えることなく、現在の開発サンドボックス環境内で実行することができます。
 
-この記事に記載している手順を完了すると、適切な役割を持つユーザーは、Dynamics 365 ドロップダウン アプリケーション リスト、または Dynamics 365 ホームページ (http://home.dynamics.com) のアプリケーションリストに新しいアプリケーションが表示されるようになります。
+この記事に記載している手順を完了すると、適切な役割を持つユーザーは、Dynamics 365 ドロップダウン アプリケーション リスト、または Dynamics 365 ホームページ (https://home.dynamics.com) のアプリケーションリストに新しいアプリケーションが表示されるようになります。
 
 ![アプリ の一覧](media/app-list.png)
 
@@ -90,7 +96,7 @@ search.app:
 ブラウザに新しいウィンドウが開き、既定の Dynamics 365 アプリケーション に存在したすべてのエンティティ、サイトマップ、サイトマップのカスタマイズを含む、新たなモデル駆動型アプリケーションが表示されます。  
 
 > [!div class="mx-imgBorder"] 
-> ![新規統合インターフェースアプリ](media/new-unified-interface-app.png "新規統合インターフェースアプリ")
+> ![新しい統一インターフェイス アプリ](media/new-unified-interface-app.png "新しい統一インターフェイス アプリ")
 
 PowerApps メーカーポータル **ソリューション** エリアのブラウザ タブに戻ると、新しいモデル駆動型アプリケーションと、共通する名前の サイトマップ クライアント 拡張機能は、両方とも作成したソリューションの一部であることに注意してください。  
 
@@ -111,7 +117,7 @@ PowerApps メーカーポータル **ソリューション** エリアのブラ�
 3. アプリのタイルで省略記号を選択し、 **ロールの管理**を選択します。   
 
    > [!div class="mx-imgBorder"] 
-   > ![ロールの管理](media/select-app-ellipsis.png "ロールの管理")
+   > ![[ロールの管理]](media/select-app-ellipsis.png "[ロールの管理]")
 
 4. 使用可能なロールの領域が右側のウィンドウに一覧表示されます。 必要に応じてロールを選択し、管理者以外のユーザーにアプリケーションへのアクセス権を付与します。 
 
@@ -119,20 +125,20 @@ PowerApps メーカーポータル **ソリューション** エリアのブラ�
     > すべてのユーザーに、 **モデル駆動型アプリ** 権限への **読み取り** アクセス権を含む1つ以上のセキュリティ ロールが付与されている必要があります。 この権限は、セキュリティーロールの カスタマイズ タブにあります。 この権限を持たないユーザーがモデル駆動型アプリを開くと、エラーとなります。  システム管理者およびシステム カスタマイザのセキュリティーロールでは、この権限がすでに有効となっていることに留意してください。 
  
    > [!div class="mx-imgBorder"] 
-   > ![モデル駆動型アプリの権限](media/model-driven-app-privilege.png "モデル駆動型アプリの権限")
+   > ![モデル駆動型アプリ](media/model-driven-app-privilege.png "モデル駆動型アプリ特権")
 
 5. 必要に応じて、 **ロールの管理** ウィンドウで **アプリ URLの接頭辞** を展開して、モデル駆動型アプリのわかりやすいURLにカスタマイズすることができます。 ほとんどすべてのものを指定できることに留意してください。 たとえば、 *new* と入力すると、プレビューに次のURLが表示されます *https://YourEnvironment.crm.dynamics.com/apps/new*.   
 
    > [!div class="mx-imgBorder"] 
-   > ![アプリURLの接頭辞](media/app-url-suffix.png "アプリURLの接頭辞")
+   > ![アプリの URL の接頭辞](media/app-url-suffix.png "アプリの URL の接頭辞")
 
    これによって、使いやすく共有しやすいURLになり、ユーザが統合インターフェースを直接起動して使用することができます。 このリンクをブックマークすると便利になります。 
 
 6. **保存**を選択します。 
 
-これで、適切なロールを持つユーザは、Dynamics 365 ドロップダウンのアプリ リスト、あるいは Dynamics 365 Home page (http://home.dynamics.com) の両方のアプリ リストで新しいアプリを確認することができます。 
+これで、適切なロールを持つユーザは、Dynamics 365 ドロップダウンのアプリ リスト、あるいは Dynamics 365 Home page (https://home.dynamics.com) の両方のアプリ リストで新しいアプリを確認することができます。 
   
-   ![アプリのリスト](media/app-list.png "アプリのリスト")
+   ![アプリ の一覧](media/app-list.png "アプリ の一覧")
 
 **統合インターフェイスのみを使用する** モードが **オフ** に設定されていると、ユーザが環境のルートURLに移動しても、以前と同様に既定の **Dynamics 365 – カスタム** アプリケーションが表示されます。 これは、統合インターフェース アプリケーションのテストおよび作業をしている状態で、既存の旧式のWebクライアント アプリケーションの運用を継続している場合に発生する可能性があります。  
 

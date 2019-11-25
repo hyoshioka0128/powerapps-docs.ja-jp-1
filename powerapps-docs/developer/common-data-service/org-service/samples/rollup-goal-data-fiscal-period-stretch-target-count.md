@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 747691cdff9504a5c2ddc00da66f405a896a3518
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749290"
 ---
 # <a name="sample-rollup-goal-data-for-a-fiscal-period-against-the-stretch-target-count"></a>サンプル: 件数の拡大対象に対する会計期間の目標データのロールアップ
 
@@ -21,7 +27,7 @@ search.app:
 
 このサンプルでは、完了した電話の件数を表す拡大対象件数に対して会計期間の目標データをロールアップする方法を示しています。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/GoalDataForFiscalYear) からダウンロードできます。
 
-このサンプルでは、システムに存在しない追加のユーザーが必要です。 次に **そのまま** 示すように、必要になった 3 人のユーザーを **Office 365**で手動で作成します。 `yourorg` を組織名で置換します。
+このサンプルでは、システムに存在しない追加のユーザーが必要です。 次に**そのまま**示すように、必要になった 3 人のユーザーを **Office 365** で手動で作成します。 `yourorg` を組織名で置換します。
 
 **名**: Nancy<br/>
 **姓**: Anderson<br/>
@@ -53,7 +59,7 @@ search.app:
 ### <a name="setup"></a>セットアップ
 
 1. 組織のバージョンをチェックします。
-2. **Office 365**で手動で作成された、セールス マネージャーおよび2名のセールス担当者を取得します。
+2. **Office 365**で手動で作成された、セールス マネージャーおよび 2 名のセールス担当者を取得します。
 3. サンプル用に `PhoneCall` のレコードおよびサポートする取引先企業レコードを作成します。
 4. 電話の**差出人**フィールドの ActivityParty を作成します。
 5. オープンな電話を作成します。

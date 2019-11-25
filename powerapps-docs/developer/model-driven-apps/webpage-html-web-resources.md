@@ -10,10 +10,16 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 642d4f74e8d4e0c613bbc42381fecd4418f93030
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754548"
 ---
 # <a name="webpage-html-web-resources"></a>Webpage (HTML) の Web リソース
 
@@ -44,7 +50,7 @@ HTML Web リソースはユーザーのブラウザーにストリームされ�
  たとえば、スクリプトを使用してページのコンテンツを表示する複雑な HTML ページの先頭部分は次のようになります。
 
 ```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
  <title></title>
@@ -84,7 +90,7 @@ HTML Web リソースはユーザーのブラウザーにストリームされ�
 
 -   page.htm
 
--   [スタイル]
+-   [Styles]
 
     -   style.css
   

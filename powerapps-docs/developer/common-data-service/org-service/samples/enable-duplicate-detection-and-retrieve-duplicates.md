@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: 重複データ検出の有効化および重複データの取得 (Common Data Service) | Microsoft Docs'
+title: 'サンプル: 重複データ検出を有効にし、重複を取得する (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、重複データ検出機能を有効にして重複レコードを取得する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 717fc8ea120c235dafe99d9385a8e8885dd841ec
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749324"
 ---
 # <a name="sample-enable-duplicate-detection-and-retrieve-duplicates"></a>サンプル: 重複データ検出を有効にし、重複を取得する
 

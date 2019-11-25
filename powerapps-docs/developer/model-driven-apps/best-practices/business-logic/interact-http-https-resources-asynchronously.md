@@ -16,10 +16,16 @@ ms.workload: na
 ms.date: 02/20/2018
 ms.author: jowells
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 37f5a91cc70614006a3525a033dac6df2d7e9d98
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753971"
 ---
 # <a name="interact-with-http-and-https-resources-asynchronously"></a>HTTP および HTTPS リソースを非同期に操作
 
@@ -83,7 +89,7 @@ search.app:
   requestXhr.open('GET', '/test/test.txt', false);
   ```
 
-- `async` パラメーター値に `false` を渡す [`jQuery`](https://www.jquery.com) [`ajax` 関数](http://api.jquery.com/jquery.ajax/) を使用する
+- `async` パラメーター値に `false` を渡す [`jQuery`](https://www.jquery.com) [`ajax` 関数](https://api.jquery.com/jquery.ajax/) を使用する
 
   ```javascript
   // Explicitly setting the async parameter to false or supplying a variable with a value of false will force this as a synchronous call.

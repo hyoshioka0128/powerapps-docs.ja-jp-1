@@ -6,14 +6,20 @@ ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 61f1103153a2ad70de050ce2980fb2ed6bc9c3a8
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753771"
 ---
 # <a name="use-change-tracking-to-synchronize-data-with-external-systems"></a>変更の追跡を使用してデータを外部システムに同期
 
@@ -35,7 +41,7 @@ Common Data Service の新しい変更追跡機能は、データが最初に抽
 ## <a name="retrieve-changes-for-an-entity-using-the-web-api"></a>Web API を使用してエンティティの変更を取得する  
 エンティティの変更は、`odata.track-changes` を基本設定ヘッダーとして追加し、Web API リクエストを使用して追跡できます。 基本設定ヘッダー `odata.track-changes` は *差分リンク* が返され、続いてエンティティの変更の取得に使用されることを要求するために使用します。
 
-差分リンクは、クライアントが結果に対する後続の変更を取得するために使用する、不透明なサービス生成リンクです。 それらは、変更が追跡されている結果のセットを記述する定義的なクエリに基づいています。たとえば、差分リンクを含む結果を生成した要求です。 差分リンクは、変更が追跡されているエンティティのコレクションと、変更を追跡するための開始点をエンコードします。 差分リンクに関する詳細については、「[OASIS OData バージョン 4.0 - 差分リンク](http://docs.oasis-open.org/odata/odata/v4.0/cs01/part1-protocol/odata-v4.0-cs01-part1-protocol.html#_Toc365046305)」を参照してください
+差分リンクは、クライアントが結果に対する後続の変更を取得するために使用する、不透明なサービス生成リンクです。 それらは、変更が追跡されている結果のセットを記述する定義的なクエリに基づいています。たとえば、差分リンクを含む結果を生成した要求です。 差分リンクは、変更が追跡されているエンティティのコレクションと、変更を追跡するための開始点をエンコードします。 差分リンクに関する詳細については、「[OASIS OData バージョン 4.0 - 差分リンク](https://docs.oasis-open.org/odata/odata/v4.0/cs01/part1-protocol/odata-v4.0-cs01-part1-protocol.html#_Toc365046305)」を参照してください
 
 <a name="BKMK_webapiexample"></a>   
 ## <a name="retrieve-changes-in-entities-using-web-api-example"></a>Web API 例を使用してエンティティの変更を取得します
@@ -128,7 +134,7 @@ Web API 要求で `odata.track-changes` をヘッダーとして使用する場�
   
 <a name="BKMK_SampleCode"></a>   
 ## <a name="sample-code"></a>サンプル コード  
- 次のコード スニペットは、`RetrieveEntityChangesRequest` メッセージを使用してエンティティの変更を取得する方法を示しています。 完全なサンプルについては、「[変更の追跡を使用して外部システムにデータを同期](http://go.microsoft.com/fwlink/p/?LinkId=533957)」を参照してください。  
+ 次のコード スニペットは、`RetrieveEntityChangesRequest` メッセージを使用してエンティティの変更を取得する方法を示しています。 完全なサンプルについては、「[変更の追跡を使用して外部システムにデータを同期](https://go.microsoft.com/fwlink/p/?LinkId=533957)」を参照してください。  
   
 ```csharp
 string token;

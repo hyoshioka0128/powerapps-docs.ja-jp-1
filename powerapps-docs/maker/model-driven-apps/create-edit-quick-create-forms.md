@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 68ca9059-cc5a-45e7-88bd-cc57186bbb48
 caps.latest.revision: 18
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b1496fcb600524e7934fe55ca17a7a7bafb54c75
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759165"
 ---
 # <a name="create-or-edit-model-driven-app-quick-create-forms-for-a-streamlined-data-entry-experience"></a>効率的なデータ入力のエクスペリエンスを実現するためのモデル駆動型アプリの簡易作成フォームの作成または編集
 
@@ -50,11 +56,12 @@ search.app:
   
 > [!NOTE]
 >  - エンティティは、**簡易作成を許可**オプションを有効にして、簡易作成フォームが表示されるようにする必要があります。 
+>  - また、エンティティーと簡易作成フォームもアプリケーションに追加する必要があります。
 >  - CREATEDON フィールドなど、一部のフィールドは簡易作成フォームに追加できません。  
   
 ### <a name="how-to-create-a-quick-create-form"></a>簡易作成フォームを作成する方法  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 
 > [!IMPORTANT]
@@ -92,7 +99,7 @@ search.app:
   
 ### <a name="to-edit-a-quick-create-form"></a>簡易作成フォームを編集するには  
   
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 > [!IMPORTANT]
 > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。    
@@ -113,7 +120,7 @@ search.app:
 更新プログラム 9.1.0.2007 で導入された **簡易作成を許可** プロパティは、定期的な予定を除くすべての標準の活動に対して有効または無効にできます。 このプロパティを使用してほとんどの活動について既定で表示されるフォームを変更できます。 既定では **簡易作成を許可** プロパティは有効になっており、簡易作成フォームはそれをサポートするアプリ領域および活動エンティティに表示されるフォームです。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/allow-quick-create.png "予定エンティティで簡易作成プロパティを許可する")
+> ![](media/allow-quick-create.png "Allow Quick Create property on appointment entity")
 
 
 ### <a name="unified-interface-client-form-display-behavior"></a>統一インターフェイス クライアント フォームの表示動作

@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: レコードを作成および更新する際に重複データ検出を使用する (Common Data Service) | Microsoft Docs'
+title: 'サンプル: レコードの作成および更新時の重複データ検出の使用(Common Data Service) | Microsoft Docs'
 description: このサンプルではエンティティ レコードの作成および更新のために、重複データ検出を呼び出す方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 1e4716bb11d4c7eb035426035d9a62468e1f4b06
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749279"
 ---
 # <a name="sample-use-duplicate-detection-when-creating-and-updating-records"></a>サンプル: レコードの作成および更新時の重複データ検出の使用
 

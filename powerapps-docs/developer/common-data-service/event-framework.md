@@ -1,5 +1,5 @@
 ---
-title: ' イベント フレームワーク (Common Data Service) | Microsoft Docs'
+title: " イベント フレームワーク (Common Data Service) | Microsoft Docs"
 description: イベント フレームワークと、開発者がそれを扱う際に知っておくべき情報について説明します。
 ms.custom: ''
 ms.date: 06/18/2019
@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 4c055dbac811186dde54cc4a002ee721e3ca25cf
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752983"
 ---
 # <a name="event-framework"></a>イベント フレームワーク
 
@@ -62,10 +68,10 @@ $filter=iscustomprocessingstepallowed eq true and isvisible eq true)
 ```
 
 > [!TIP]
-> クエリとブログ投稿で提供されている手順を使用して、Excelワークシートにデータをエクスポートできます: [Common Data Service を使用してプラグインに適したメッセージとエンティティを検索します。](https://powerapps.microsoft.com/en-us/blog/find-messages-and-entities-eligible-for-plug-ins-using-the-common-data-service/)
+> クエリとブログ投稿で提供されている手順を使用して、Excelワークシートにデータをエクスポートできます: [Common Data Service を使用してプラグインに適したメッセージとエンティティを検索します。](https://powerapps.microsoft.com/blog/find-messages-and-entities-eligible-for-plug-ins-using-the-common-data-service/)
 
 
-この情報を以下のFetchXMLを使って取得することもできます。 [FetchXML Builder](http://fxb.xrmtoolbox.com) は、この種類のクエリを実行するのに役立つツールです。
+この情報を以下のFetchXMLを使って取得することもできます。 [FetchXML Builder](https://fxb.xrmtoolbox.com) は、この種類のクエリを実行するのに役立つツールです。
 
 ```xml
 <fetch>

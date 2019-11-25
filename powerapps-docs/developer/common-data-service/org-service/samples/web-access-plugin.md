@@ -10,10 +10,16 @@ author: JimDaly
 ms.author: pehecke
 manager: kvivek
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c12d9eff40db2afb20eebf787b360ab4c49be18b
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752929"
 ---
 # <a name="sample-web-access-from-a-plug-in"></a>サンプル: プラグインからの Web アクセス
 
@@ -27,8 +33,8 @@ search.app:
     - HttpClientPlugin は [HttpClient Class](/dotnet/api/system.net.http.httpclient) を使用
 1. Visual Studio でサンプル ソリューションを開き、プロジェクトのプロパティに移動して、ビルド中にアセンブリが署名されることを確認してください。 サンプルのアセンブリ (WebAccessPlugin.dll) をビルドするには F6 を押します。
 1. プラグイン登録ツールを実行して Common Data Service サーバーのサンドボックスおよびデータベースにアセンブリを登録します。 
-1. どちらのプラグインの種類でも、ステップを登録するときは、セキュリティ保護されていない設定フィールドに Web URI 文字列 (例: `http://www.microsoft.com`) を指定します。
-    - 何も指定しない場合、既定値 `http://www.bing.com` が使用されます。
+1. どちらのプラグインの種類でも、ステップを登録するときは、セキュリティ保護されていない設定フィールドに Web URI 文字列 (例: `https://www.microsoft.com`) を指定します。
+    - 何も指定しない場合、既定値 `https://www.bing.com` が使用されます。
 1. アプリを使用するかコードを記述して適切な操作を実行し、メッセージとプラグインを登録したエンティティの要求を呼び出します。
 1. プラグインを実行すると、呼び出しの期間が15 秒の制限を超えた場合、エラーがスローされます。 それ以外の場合、正常に実行されます。
 1. テストを完了したらアセンブリとステップの登録を解除します。
@@ -39,7 +45,7 @@ search.app:
 
 - `WebClientPlugin` プラグインが失敗した場合、プラグイン トレース ログに次のようなものが書き込まれます。
     ```
-    Downloading the target URI: http://www.bing.com
+    Downloading the target URI: https://www.bing.com
     Exception: Microsoft.Xrm.Sdk.InvalidPluginExecutionException: The timeout elapsed while attempting to issue the request. ---> System.Net.WebException: The operation has timed out
       at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
       at System.Net.WebClient.DownloadData(Uri address)
@@ -50,7 +56,7 @@ search.app:
 
 - `HttpClientPlugin` プラグインが失敗した場合、プラグイン トレース ログに次のようなものが書き込まれます。
     ```
-    Downloading the target URI: http://www.bing.com
+    Downloading the target URI: https://www.bing.com
     Inner Exceptions:
       Exception: System.Threading.Tasks.TaskCanceledException: A task was canceled.
     Exception: Microsoft.Xrm.Sdk.InvalidPluginExecutionException: An exception occurred while attempting to issue the request.

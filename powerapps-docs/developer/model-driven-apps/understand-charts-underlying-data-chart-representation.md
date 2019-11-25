@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a1e3e41e35d3d4a20e0234269ba66e2ec26942da
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754556"
 ---
 # <a name="understand-charts-underlying-data-and-chart-representation"></a>グラフの理解: 基盤となるデータとグラフ表現
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/customize-dev/understand-charts-underlying-data-chart-representation -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/understand-charts-underlying-data-chart-representation -->
 
 グラフには、水平 (x) と垂直 (y) の 2 つの軸にテキスト値をマップすることでデータが視覚的に表示されます。 x 軸は *カテゴリ* 軸と呼ばれ、y 軸は *series* 軸と呼ばれます。 カテゴリ軸には数値と数値以外を表示できますが、系列軸には数値のみ表示されます。  
   
@@ -89,7 +95,7 @@ search.app:
  データ記述 XML 文字列のその他の例については、「[サンプル グラフ](sample-charts.md)」を参照してください。  
   
 ## <a name="use-the-presentation-description-xml-string-to-specify-data-representation"></a>プレゼンテーション記述 XML 文字列を使用してデータ プレゼンテーションを指定する  
- プレゼンテーション記述 XML 文字列には、グラフ タイトル、グラフの色、グラフの種類 (横棒、縦棒、折れ線など) など、グラフの外観に関する情報が含まれます。 この XML 文字列に対するスキーマ定義はありません。 ただし XML はシリアル化された Microsoft Chart Controls における [Chart](https://msdn.microsoft.com/library/system.web.ui.datavisualization.charting.chart.aspx) class です。 詳細: [グラフ コントロール](http://go.microsoft.com/fwlink/p/?LinkId=128301)  
+ プレゼンテーション記述 XML 文字列には、グラフ タイトル、グラフの色、グラフの種類 (横棒、縦棒、折れ線など) など、グラフの外観に関する情報が含まれます。 この XML 文字列に対するスキーマ定義はありません。 ただし XML はシリアル化された Microsoft Chart Controls における [Chart](https://msdn.microsoft.com/library/system.web.ui.datavisualization.charting.chart.aspx) class です。 詳細: [グラフ コントロール](https://go.microsoft.com/fwlink/p/?LinkId=128301)  
   
  グラフを作成する際に、組織所有のグラフまたはユーザー所有のグラフでそれぞれ `SavedQueryVisualization.PresentationDescription` 属性と `UserQueryVisualization.PresentationDescription` 属性を使用してプレゼンテーション記述 XML 文字列を指定できます。  
   

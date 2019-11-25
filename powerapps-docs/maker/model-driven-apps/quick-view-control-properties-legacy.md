@@ -4,30 +4,36 @@ description: メイン フォーム用簡易表示コントロールのプロパ
 Keywords: 簡易表示コントロールのプロパティ; Dynamics 365; メイン フォーム
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
-ms.date: 06/06/2018
+ms.date: 10/28/2019
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 68f68d5b-6c71-4b95-bb46-d48c59d9008e
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b2d4a8f55bf9b6f3e54f948ad16be36fdecb6d20
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2755096"
 ---
 # <a name="model-driven-app-quick-view-control-properties"></a>モデル駆動型アプリの簡易表示コントロールのプロパティ
 
 モデル駆動型アプリ フォームの簡易表示コントロールには、フォーム内の検索フィールドで選択されたレコードのデータが表示されます。 コントロールに表示されるデータは、簡易表示フォームを使用して定義されます。 表示されたデータは編集できませんが、主フィールドが簡易表示フォームに含まれると、関連のレコードを開くリンクになります。 詳細: [簡易表示フォームの作成および編集](create-edit-quick-view-forms.md)  
 
 > [!div class="mx-imgBorder"] 
-> ![取引先企業フォーム上の取引先担当者簡易表示フォーム](media/quick-view-form-contact.png "取引先企業フォーム上の取引先担当者簡易表示フォーム")  
+> ![取引先企業フォームの取引先担当者簡易表示フォーム](media/quick-view-form-contact.png "取引先企業フォームの取引先担当者簡易表示フォーム")  
 
 PowerApps サイトから **簡易表示コントロールのプロパティ** にアクセスできます。 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**フォーム** タブを選択します。 

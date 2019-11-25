@@ -1,6 +1,6 @@
 ---
-title: Package Deployer ツールのためにパッケージを作成する (Common Data Service) | Microsoft Docs
-description: Common Data Service インスタンスで管理者が展開できるパッケージを作成します。
+title: Package Deployer のパッケージを作成する (Common Data Service) | Microsoft Docs
+description: Common Data Service インスタンスで管理者が展開することが可能なパッケージを作成します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -10,21 +10,27 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: f9a379824587f9e399ea215fa20d0b676480ab05
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752671"
 ---
-# <a name="create-packages-for-the-package-deployer"></a>Package Deployer のパッケージを作成する
+# <a name="create-packages-for-the-package-deployer"></a>Package Deployerのパッケージを作成する
 
-Package Deployer は Common Data Service インスタンスで管理者がパッケージを展開できるようにします。 *パッケージ*は、次の一部またはすべてで構成されます。  
+Package Deployer を使用すると、管理者は Common Data Service  のインスタンスにパッケージを展開できます。 *パッケージ*は、次の一部またはすべてで構成されます。  
 
-- ひとつ以上の Common Data Service のソリューション ファイル。  
+- 1 つ以上のCommon Data Serviceソリューション ファイル。  
 - フラット ファイルまたは Configuration Migration ツールからエクスポートされた構成データ ファイル。 ツールの詳細については、[構成移行ツールでインスタンスと組織間を移動する構成データを移動](/dynamics365/customer-engagement/admin/manage-configuration-data) を参照してください。  
-- パッケージの前、間、または後に実行できるカスタム コードが Common Data Service インスタンスに展開されます。  
+- パッケージの前、間、または後に実行できるカスタム コードは、Common Data Service インスタンスに展開されます。  
 - 展開プロセスの最初か最後に表示可能なパッケージに固有の HTML コンテンツ。 これは、パッケージに展開されるソリューションおよびファイルの説明を提供するのに便利です。  
 
-Common Data Service インスタンスに展開するために Package Deployer ツールと共に使用することができる、これらのパッケージを作成するための Visual Studio テンプレートが Common Data Service に用意されています。
+Common Data Service には、これらのパッケージを作成するための Visual Studio テンプレートが用意されており、Package Deployer ツールを使用して Common Data Service インスタンスに展開することができます。
 
 <a name="Prereq"></a>
  
@@ -33,9 +39,9 @@ Common Data Service インスタンスに展開するために Package Deployer 
 - パッケージに含めるすべてのソリューションとファイルがそろっていることを確認します。  
 - Microsoft .NET Framework 4.6.2
 - Visual Studio 2015 または Visual Studio 2017
-- [Visual Studio 2015](https://visualstudiogallery.msdn.microsoft.com/5d345edc-2e2d-4a9c-b73b-d53956dc458d) 向け NuGet パッケージ マネージャ
-    - Visual Studio 2017 では、NuGet および NuGet Package Manager は任意の .NET-related ワークロードを選択するときに自動的にインストールされました。
-- パッケージ テンプレートを含む Visual Studio 用の Microsoft Dynamics CRM SDK テンプレート。 [Microsoft Dynamics CRM SDK テンプレート](http://go.microsoft.com/fwlink/p/?LinkId=400925) をダウンロードして `CRMSDKTemplates.vsix` ファイルをダブルクリックし、テンプレートを Visual Studio にインストールすることにより取得できます。  
+- [Visual Studio 2015](https://visualstudiogallery.msdn.microsoft.com/5d345edc-2e2d-4a9c-b73b-d53956dc458d) 向けNuGet パッケージ マネージャー
+    - Visual Studio 2017 では、 NuGet および NuGet Package Manager は任意の .NET 関連のワークロードを選択すると、パッケージマネージャーが自動的にインストールされます。
+- パッケージ テンプレートを含む Visual Studio 向けのMicrosoft Dynamics CRM SDK テンプレート。 [Microsoft Dynamics CRM SDK テンプレート](https://go.microsoft.com/fwlink/p/?LinkId=400925) をダウンロードして `CRMSDKTemplates.vsix` ファイルをダブルクリックすると、 Visual Studio にテンプレートがインストールされます。  
 
 
 
@@ -55,8 +61,8 @@ Common Data Service インスタンスに展開するために Package Deployer 
  
 #### <a name="step-1-create-a-project-using-the-template"></a>ステップ 1: テンプレートを使用してプロジェクトを作成する  
 
-1. Visual Studio を起動し、新しいプロジェクトを作成します。  
-2. **新しいプロジェクト** ダイアログ ボックスで以下を実行します。 
+1. Visual Studioを起動し、新しいプロジェクトを作成します。  
+2. **新しいプロジェクト**ダイアログ ボックスで以下を実行します。 
 
    1. インストールされているテンプレートの一覧から、**Visual C#** を展開し、**Dynamics 365 SDK のテンプレート**を選択します。  
    2. **.NET Framework 4.6.2** が選択されていることを確認します。  
@@ -91,7 +97,7 @@ Common Data Service インスタンスに展開するために Package Deployer 
 1. **PkgFolder** にある **ImportConfig.xml** ファイル内にパッケージに関する情報を追加することにより、パッケージ構成を定義します。 編集するファイルをダブルクリックして、開きます。 以下のリストは、構成ファイル内の各パラメーターとノードに関する情報を提供します。  
 
     `installsampledata`  
-    `True` または `false`。 `true` の場合は Common Data Service インスタンスにサンプル データがインストールされます。 これは Common Data Service で **設定** > **データ管理** 領域からインストールできるのと同じサンプル データです。  
+    `True`、または `false`。 `true`の場合は、サンプル データをCommon Data Serviceインスタンスにインストールします。 これは Common Data Service 内の**設定** > **データ管理**領域からインストールすることができるのと同じサンプル データです。  
 
     `waitforsampledatatoinstall`  
    **true** または **false**。 **true**が設定されており、**installsampledata** も**true**に設定されている場合、パッケージを展開する前に、サンプル データがインストールされるのを待ちます。  
@@ -114,9 +120,9 @@ Common Data Service インスタンスに展開するために Package Deployer 
 
    - Package Deployer の実行中、新しいランタイム設定を使用して指定されたロケール ID (LCID) に基づいて構成データ ファイルのローカライズ済みファイルをインポートできます。 `<cmtdatafile>` ノード (後で説明) を使用してパッケージ内のローカライズ済みの構成データ ファイルを指定し、 `OverrideConfigurationDataFileLanguage` メソッド (後で説明) を使用してランタイム設定を使用して指定されたロケール ID に基づいて構成データ ファイルをインポートするためのロジックを指定します。 パッケージを使用して一度に複数の構成データ ファイルをインポートすることはできません。  
 
-   - Common Data Service (設置型) では、構成データファイルにユーザー情報が含まれ、ソースとターゲットの両方の Common Data Service インスタンスが同じ Active Directory ドメインにある場合、ユーザー情報がターゲットの Common Data Service インスタンスにインポートされます。 異なるドメインの Common Data Service (設置型) インスタンスにユーザー情報をインポートするには、プロジェクトで 構成移行ツールを使用して生成されたユーザー マップ ファイル (.xml) を含め、それを後で説明される `<cmtdatafile>` ノードの `usermapfilename` 属性を使用して構成データ ファイルに沿って指定する必要があります。 ユーザー情報は Common Data Service インスタンスにインポートできません。  
+   - Common Data Service (設置型) の場合、構成データ ファイルにユーザー情報が含まれており、ソースとターゲットの Common Data Service インスタンスの両方が同じ Active Directory ドメイン上にある場合、ユーザー情報は対象の Common Data Service インスタンスにインポートされます。 異なるドメインの Common Data Service (設置型) インスタンスにユーザー情報をインポートするには、プロジェクトで Configuration Migration ツールを使用して生成されたユーザー マップ ファイル (.xml) を含め、それを後で説明される `<cmtdatafile>` ノードの `usermapfilename` 属性を使用して構成データ ファイルに沿って指定する必要があります。 ユーザー情報はCommon Data Serviceインスタンスにインポートすることはできません。  
      `<solutions>`ノード  
-     インポートするソリューションについて説明する`<configsolutionfile>`ノードの配列が含まれます。 このノードの下のソリューションの順序は、対象の Common Data Service インスタンス上にソリューションがインポートされる順序を示します。  
+     インポートするソリューションについて説明する`<configsolutionfile>`ノードの配列が含まれます。 このノードの下のソリューションの順序は、ターゲットCommon Data Serviceインスタンス上にソリューションがインポートされる順序を示します。  
 
      `<configsolutionfile>`ノード  
      `<solutions>` ノードの下のこのノードを使用して、個々のソリューションおよびインポートする各ソリューションの次の情報を指定します:  
@@ -147,7 +153,7 @@ Common Data Service インスタンスに展開するために Package Deployer 
     インポートする個々のファイルとzip ファイルを別々に説明するのに使用する`<configimportfile>`と`<zipimportdetails>`ノードの配列が含まれます。  
 
     `<configimportfile>`ノード  
-    `<configimportfile>` ノードの下のこのノードを使用して Common Data Service にインポートされるファイルを説明します。 `<configimportfile>`ノードを必要なだけ追加することによって、パッケージに複数のファイルを追加できます。  
+    `<configimportfile>`ノードの下のこのノードを使用して、Common Data Service にインポートされるファイルを説明します。 `<configimportfile>`ノードを必要なだけ追加することによって、パッケージに複数のファイルを追加できます。  
 
    ```xml  
 
@@ -185,7 +191,7 @@ Common Data Service インスタンスに展開するために Package Deployer 
    |--|-|
    |`filename`| インポート データを格納しているファイルの名前。 ファイルが.zip ファイルの場合、`<zipimportdetails>` ノードは、.zip ファイル内の各ファイル用の `<zipimportdetail>` ノードと共にあります。 |
    |`filetype`|これは、csv、xml、または zipになります。          |
-   |`associatedmap`|このファイルで使用する Common Data Service のインポート データ マップの名前。 空白の場合、このファイルにシステムが決定したインポート データ マップ名を使用しようとします。|
+   |`associatedmap`|このファイルで使用するCommon Data Serviceインポート データ マップの名前。 空白の場合、このファイルにシステムが決定したインポート データ マップ名を使用しようとします。|
    |`importtoentity`| プロセスの最後に呼び出すリンクを提供する zip ファイル内の exe ファイル、URL、または .msi ファイルの名前になります。|
    |`datadelimiter`| インポート ファイルで使用される、データ区切り文字の名前。 有効な値は singlequote または doublequotesです。|
    |`fielddelimiter`|インポート ファイルで使用される、フィールド区切り文字の名前。 有効な値は、comma または colon、または singlequoteです。|
@@ -225,7 +231,7 @@ Common Data Service インスタンスに展開するために Package Deployer 
     このノードには、インポートする`<configmapimportfile>`ノードの配列が含まれます。 このノードのマップ ファイルの順序は、インポートされた順序を示します。 データ マップの詳細については、[インポート用データ マップの作成](../create-data-maps-for-import.md) を参照してください。  
 
     `<configimportmapfile>`ノード  
-    `<filesmapstoimport>` ノードの下にあるこのノードを使用して、Common Data Service でインポートする個々のマップ ファイルに関する情報を提供します。  
+    `<filesmapstoimport>` ノードの下のこのノードを使用して、Common Data Service でインポートする個々のマップ ファイルの情報を提供します。  
 
    ```xml  
    <filesmapstoimport>  
@@ -254,8 +260,8 @@ Common Data Service インスタンスに展開するために Package Deployer 
 
    ```xml  
    <?xml version="1.0" encoding="utf-16"?>  
-   <configdatastorage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
-   xmlns:xsd="http://www.w3.org/2001/XMLSchema"  
+   <configdatastorage xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"  
+   xmlns:xsd="https://www.w3.org/2001/XMLSchema"  
    installsampledata="true"  
    waitforsampledatatoinstall="true"  
    agentdesktopzipfile=""  
@@ -329,7 +335,7 @@ Common Data Service インスタンスに展開するために Package Deployer 
 
        パッケージの実行中、このメソッドは、ユーザーがランタイム パラメータを使用できるようにするのに使用することができます。 開発者として、ユーザーの入力によって処理するコードが存在する限り、<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.RuntimeSettings> プロパティを使用することで、任意のランタイム パラメーターのサポートをパッケージに追加することができます。  
 
-       たとえば、次のサンプル コードは、可能性のある 2 つの値 true または false を持つパッケージに対して `SkipChecks` と呼ばれるランタイム パラメーターを有効にします。 サンプル コードは、ユーザーが Package Deployer の実行中 (コマンドラインまたはPowerShellのいずれかを使用して) に、いずれかのランタイム パラメーターを指定しているかどうかをチェックして、次にそれに従って情報を処理します。 パッケージの実行中にユーザーがランタイム パラメーターを指定しない場合、<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.RuntimeSettings> プロパティの値は null になります。  
+       たとえば、次のサンプル コードは、可能性のある 2 つの値 true または false を持つパッケージに対して `SkipChecks` と呼ばれるランタイム パラメーターを有効にします。 サンプル コードは、ユーザーが Package Deployerの実行中 (コマンドラインまたはPowerShellのいずれかを使用して) に、いずれかのランタイム パラメーターを指定しているかどうかをチェックして、次にそれに従って情報を処理します。 パッケージの実行中にユーザーがランタイム パラメーターを指定しない場合、<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.RuntimeSettings> プロパティの値は null になります。  
 
       ```csharp  
       public override void InitializeCustomExtension()  
@@ -360,9 +366,9 @@ Common Data Service インスタンスに展開するために Package Deployer 
 
        これによって、管理者はコマンド ラインまたは [Import-CrmPackage](/powershell/module/microsoft.xrm.tooling.packagedeployment/import-crmpackage) コマンドレットを使用して、パッケージをインポートするために、Package Deployer ツールの実行中にセーフティ チェックを回避するかどうかを指定することができます。 詳細情報: [Dynamics 365 Package Deployer および Windows PowerShell を使用してパッケージを展開する](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell)  
 
-   2. ソリューションが `PreSolutionImport` の上書きメソッドの定義にインポートされる前に実行するカスタム コードを入力して、対象の Common Data Service インスタンスの指定されたソリューションの更新中に、カスタマイズを維持または上書きするかどうか、プラグインとワークフローを自動的にアクティブ化するかどうかを指定します。  
+   2. ソリューションが`PreSolutionImport`の上書きメソッドの定義にインポートされる前に実行するカスタム コードを入力して、ターゲットCommon Data Serviceインスタンスの指定されたソリューションの更新中に、カスタマイズを維持または上書きするかどうか、プラグインとワークフローを自動的にアクティブ化するかどうかを指定します。  
 
-   3. `RunSolutionUpgradeMigrationStep` の上書きメソッド定義を使用して、データ転送を実行または 2 つのバージョンのソリューション間でアップグレードします。このメソッドは、ユーザーがインポートするソリューションが既に対象の Common Data Service インスタンスに存在する場合にのみ呼び出されます。  
+   3. `RunSolutionUpgradeMigrationStep` の上書きメソッド定義を使用して、データ転送を実行または 2つのバージョンのソリューション間でアップグレードします。このメソッドは、ユーザーがインポートするソリューションが既に対象の Common Data Service インスタンスに存在する場合にのみ呼び出されます。  
 
         この関数は、次のパラメーターが必要です。  
 
@@ -381,7 +387,7 @@ Common Data Service インスタンスに展開するために Package Deployer 
 
        `ImportConfig.xml` ファイルの `<cmtdatafiles>` ノードの構成データに対して利用可能な言語を指定します。 既定の構成データ インポート ファイルは `crmmigdataimportfile` ファイルの`ImportConfig.xml` 属性で指定されます 。  
 
-       データ チェックのスキップ (<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> = true) は、対象の Common Data Service インスタンスにデータ何も含まれていないことがはっきりしている場合に、ここで有効にすることができます。  
+       データ チェック(<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> = true) は、対象のCommon Data Serviceインスタンスにデータ何も含まれていないことを確認する場合に、ここで有効になります。  
 
    6. インポートが `AfterPrimaryImport`>メソッドの上書き定義で完了した後に実行するカスタム コードを入力します。 ソリューションのインポートが開始する前に、これまでにインポートされなかった残りのフラット ファイルがインポートされるようになりました。  
 
@@ -408,7 +414,7 @@ Common Data Service インスタンスに展開するために Package Deployer 
       }  
       ```  
 
-       これは、Dynamics 365 Package Deployer ウィザードのパッケージの選択ページで表示されるパッケージの名前です。  
+       このパッケージの名称は、Dynamics 365 Package Deployerウィザードのパッケージの選択ページで表示されます。  
 
    9. `GetImportPackageDescriptionText`プロパティで戻り値を編集することによって、パッケージの説明を変更します。  
 
@@ -421,7 +427,7 @@ Common Data Service インスタンスに展開するために Package Deployer 
 
        ```  
 
-        これは、Package Deployer のウィザードのパッケージの選択ページで、パッケージの名前の横に表示されるパッケージの説明です。  
+        これは、Package Deployer ウィザードのパッケージの選択ページで、パッケージの名前の横に表示されるパッケージの説明です。  
 
    10. `GetLongNameOfImport`プロパティで戻り値を編集することによって、パッケージの詳しい名前を変更します。  
 
@@ -449,8 +455,8 @@ Common Data Service インスタンスに展開するために Package Deployer 
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.PackageLog>| クラスのポインター|これは、パッケージの初期化されたログ インターフェイスへのポインターです。 このインターフェイスは、パッケージのログ ファイルにメッセージと例外をログするのに、パッケージによって使用されます。|
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.RootControlDispatcher>|プロパティ|パッケージの展開時に、コントロールが独自の UI をレンダリングするのを許可するのに使用されるディスパッチャーのインターフェイスです。 UI 要素やコマンドをラップするのにも、このインターフェイスを使用します。 値を設定しているかどうかわからないので、それを使用する前にnull 値のこの変数を確認することは重要です。  |
    |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.ImportExtension.CrmSvc>|プロパティ |これは、パッケージがパッケージ内から Dynamics 365 に対応できるようにする <xref:Microsoft.Xrm.Tooling.Connector.CrmServiceClient> クラスに対するポインターです。 これを使用して、上書きされたメソッドで SDK メソッドと他のアクションを実行します。|
-   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.DataImportBypass> |プロパティ|これを使用して Dynamics 365 Package Deployer が、Common Data Service のサンプル データ、フラット ファイル データ、および構成移行ツールからエクスポートされたデータのインポートなどのすべてのデータ インポート操作をスキップするかどうかを指定します。 true または false を指定します。 既定は`false`です。|
-   | <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> |プロパティ|これを使用して、インポートのパフォーマンスの向上に役立つ、安全チェックの一部を、Dynamics 365 Package Deployer がスキップするかどうかを指定します。 `true`または`false`を指定します。 既定は`false`です。<br /><br /> 対象の Common Data Service インスタンスにデータが含まれていない場合のみ、これを `true` に設定する必要があります。|
+   |<xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.DataImportBypass> |プロパティ|これを使用して、 Common Data Service サンプルデータ、フラットファイルデータ、および 設定移行 ツールからエクスポートされたデータのインポートなど、Dynamics 365 Package Deployer がすべてのデータインポート操作をスキップするかどうかを指定します。 true または false を指定します。 既定は`false`です。|
+   | <xref:Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.IImportExtensions2.OverrideDataImportSafetyChecks> |プロパティ|これを使用して、インポートのパフォーマンスの向上に役立つ安全性チェックの一部を、Dynamics 365 Package Deployer がスキップするかどうかを指定します。 `true`または`false`を指定します。 既定は`false`です。<br /><br /> 対象の`true`インスタンスにデータが含まれていない場合のみ、これをCommon Data Serviceに設定する必要があります。|
 
 
 4. プロジェクトを保存し、ビルドして (**ビルド** > **ソリューションのビルド**) パッケージを作成します。 パッケージは *\<Project>* \Bin\Debug フォルダーの下の以下のファイルです。  
@@ -465,11 +471,11 @@ Common Data Service インスタンスに展開するために Package Deployer 
   
 ## <a name="deploy-a-package"></a>パッケージ展開  
 
- パッケージを作成した後、Package Deployer ツールまたは Windows PowerShell のいずれかを使用して、Common Data Service インスタンスに展開することができます。 
+ パッケージの作成後、 Package Deployer ツールまたは Windows PowerShell のいずれかを使用して、 Common Data Service インスタンスに展開することができます。 
 
  Package Deployer ツールは [Microsoft.CrmSdk.XrmTooling.PackageDeployment.WPF](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment) NuGet パッケージの一部として配布されます。Package Deployer ツールをダウンロードするには、[NuGet からツールをダウンロード](../download-tools-nuget.md) を参照してください。
 
- 詳細については、「[Dynamics 365 Package Deployer または Windows PowerShell を使用してパッケージを展開する](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell)」を参照してください。  
+ 詳細については、 [Dynamics 365 Package Deployer または Windows PowerShell を使用してパッケージを展開する](/dynamics365/customer-engagement/admin/deploy-packages-using-package-deployer-windows-powershell) を参照してください。  
 
 <a name="BestPractices"></a>   
 
@@ -477,7 +483,7 @@ Common Data Service インスタンスに展開するために Package Deployer 
 
 パッケージの作成中に、開発者はパッケージのアセンブリが署名されていることを確認する必要があります。  
 
-パッケージを展開するときに、Common Data Service 管理者は下記をする必要があります。  
+パッケージを展開するときに、Common Data Service管理者は、次をする必要があります。  
 
 - 署名付きパッケージのアセンブリに対して主張して、アセンブリをそのソースにまで追跡できます。  
 - 運用環境インスタンスにそれを実行する前に、事前運用インスタンス (可能であれば、運用環境インスタンスのミラー イメージ) にパッケージをテストします。  

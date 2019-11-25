@@ -9,12 +9,17 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: lanced
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b0c576b8eab2b547c66a90f0693becf516b01207
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2758593"
 ---
-
 # <a name="manage-custom-fields-in-an-entity"></a>エンティティのカスタム フィールドの管理
 すべてのエンティティの 1 つ以上のカスタム フィールドの作成および更新を行うことができます。 カスタム フィールドを作成する場合、フィールド名、表示名、および含まれるデータの種類などのプロパティ セットを指定します。 詳細については、[エンティティ属性のメタデータ](../../developer/common-data-service/entity-attribute-metadata.md) を参照してください。
 
@@ -22,7 +27,7 @@ search.app:
 > すべてのエンティティには、レコードが最後に更新された時間、更新した人を示すフィールドなどのシステム フィールドがあります。 さらに、標準エンティティには標準 (既定) フィールドがあります。 システム フィールドまたは標準フィールドの変更または削除はできません。 カスタム フィールドを作成する場合、これらの組み込みフィールド上で機能を提供する必要があります。
 
 ## <a name="create-a-field"></a>フィールドを作成する
-1. [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。
+1. [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。
 
     ![エンティティの詳細](./media/data-platform-cds-create-entity/entitylist.png "エンティティ リスト")
 
@@ -36,17 +41,17 @@ search.app:
     > **表示名**フィールドは、いつでも更新してアプリ内で異なる方法で表示させることができます。**名前**フィールドは、既存のアプリを破損させる可能性があるため、エンティティが保存された後は変更できません。
 
     > [!div class="mx-imgBorder"] 
-    > ![新しいフィールド](./media/data-platform-cds-create-entity/newfieldpanel.png "新しいフィールド パネル")
+    > ![新しいフィールド](./media/data-platform-cds-create-entity/newfieldpanel.png "新規フィールドのパネル")
 
 5. フィールドの**データの種類**を選択することにより、情報の保存方法およびアプリ内での表示方法を制御します。 たとえば、テキストが保存される方法は、10 進数または URL とは異なります。 使用可能なデータの種類の詳細については、[エンティティ属性のメタデータ](../../developer/common-data-service/entity-attribute-metadata.md) を参照してください。
 
     要求された場合、指定したデータの種類に対する追加の情報を指定します。 データの種類に応じて、異なるフィールドが表示されます。 種類のオプション セットまたは複数選択オプション セットのフィールドを作成する場合、フィールドの作成中に**新しいオプション セット**を選択し、新しいオプション セットを作成することができます。 詳細については、[オプション セットの作成](custom-picklists.md) を参照してください。
 
     > [!div class="mx-imgBorder"] 
-    > ![新しいフィールド](./media/data-platform-cds-create-entity/newfieldpanel-2.png "新しいフィールド パネル")
+    > ![新しいフィールド](./media/data-platform-cds-create-entity/newfieldpanel-2.png "新規フィールドのパネル")
 
 
-7. **必須**で、アプリ内でこのフィールドを必須にすることを推奨する場合、チェックボックスをオンにします。 これは Common Data Service へのすべての接続を通じた強制実施は提供しません。 フィールドが設定されていることを確認する必要がある場合、[業務ルール](data-platform-create-business-rule.md) を作成します。
+7. **必須**で、アプリ内でこのフィールドを必須にすることを推奨する場合、チェックボックスをオンにします。 これは Common Data Service へのすべての接続を通じて強制を提供するわけではありません。 フィールドが設定されていることを確認する必要がある場合、[業務ルール](data-platform-create-business-rule.md) を作成します。
 
 8. **検索可能**で、このフィールドをビュー、グラフ、ダッシュボードおよび高度な検索で使用可能にする必要がある場合、チェックボックスをオンにします。 通常、このチェックボックスをオンにする必要があります。
 
@@ -55,7 +60,7 @@ search.app:
     > [!IMPORTANT]
     > エンティティへの変更を保存するまで、フィールドの保存および作成は行われません。
 
-10. **エンティティの保存**をクリックまたはタップして変更を確定し、Common Data Service に保存します。
+10. **エンティティの保存** をクリックまたはタップして変更を確定し、 Common Data Service に保存します。
 
     操作が正常に完了すると通知を受け取ります。 操作が失敗した場合、発生した問題および修正する方法をエラー メッセージが示します。
 
@@ -73,7 +78,7 @@ search.app:
 サポートされる式の種類および例の詳細については、[計算フィールドの定義](/dynamics365/customer-engagement/customize/define-calculated-fields) を参照してください。
 
 ## <a name="update-or-delete-a-field"></a>フィールドの更新または削除
-1. [powerapps.com](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ** セクションを展開して左側のナビゲーション ウィンドウの**エンティティ**をクリックまたはタップし、それからエンティティをクリックまたはタップします。
+1. [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ** セクションを展開して左側のナビゲーション ウィンドウの**エンティティ**をクリックまたはタップし、それからエンティティをクリックまたはタップします。
 2. 選択したエンティティのフィールド一覧でフィールドをクリックまたはタップし、以下の手順の 1 つに従います。
    
    * フィールドの 1 つ以上のプロパティを変更します。
@@ -98,8 +103,8 @@ search.app:
 * [エンティティ間での関連付けの定義](data-platform-entity-lookup.md)
 * [業務ルールの作成](data-platform-create-business-rule.md)
 * [エンティティを使用するアプリの作成](../canvas-apps/data-platform-create-app.md)
-* [Common Data Service データベースを使用してアプリを最初から作成](../canvas-apps/data-platform-create-app-scratch.md)
+* [Common Data Service データベースを使用してアプリケーションを最初から作成する](../canvas-apps/data-platform-create-app-scratch.md)
 
 ## <a name="privacy-notice"></a>プライバシーに関する声明
-Microsoft PowerApps 共通データ モデルでは、ユーザー定義エンティティおよびフィールド名を収集し、診断システムに保存します。  この情報を使って、お客様の共通データ モデルを改善します。 作成者が作成するエンティティ名およびフィールド名は、Microsoft PowerApps コミュニティに共通するシナリオを理解し、組織に関連するスキーマなど、サービスの標準エンティティの範囲でのすきまを確認するのに役立ちます。 これらのエンティティに関連付けられたデータベース テーブル内のデータは、Microsoft によりアクセスまたは使用されず、データベースがプロビジョニングされた地域の外部にレプリケーションされません。 注、しかし、カスタム エンティティおよびフィールド名は、地域間でレプリケーションされ、データ保持ポリシーに基づいて削除される可能性がある点に注意してください。 マイクロソフトは、[セキュリティ センター](https://www.microsoft.com/trustcenter/Privacy/default.aspx) で詳しく説明されているとおりにプライバシー保護に努めています。
+Microsoft PowerApps 共通データ モデルでは、ユーザー定義エンティティおよびフィールド名を収集し、診断システムに保存します。  この情報を使って、お客様の共通データ モデルを改善します。 作成者が作成するエンティティ名称とフィールド名称は、 Microsoft PowerApps コミュニティに通底するシナリオの理解に役立ち、組織に関連するスキーマなど、サービスの標準的なエンティティ カバレッジのギャップを確認する際に役立てられます。 これらのエンティティに関連付けられたデータベース テーブル内のデータは、Microsoft によりアクセスまたは使用されず、データベースがプロビジョニングされた地域の外部にレプリケーションされません。 注、しかし、カスタム エンティティおよびフィールド名は、地域間でレプリケーションされ、データ保持ポリシーに基づいて削除される可能性がある点に注意してください。 マイクロソフトは、[セキュリティ センター](https://www.microsoft.com/trustcenter/Privacy/default.aspx) で詳しく説明されているとおりにプライバシー保護に努めています。
 

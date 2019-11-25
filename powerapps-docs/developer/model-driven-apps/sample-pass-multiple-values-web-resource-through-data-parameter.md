@@ -10,14 +10,20 @@ author: KumarVivek
 ms.author: kvivek
 manager: shilpas
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 2a4b4a6bf2da6cc6588a0fcf8b7523bae1c7da5f
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753587"
 ---
 # <a name="sample-pass-multiple-values-to-a--web-resource-through-the-data-parameter"></a>サンプル: データ パラメーターを使用した Web リソースへの複数の値の引き渡し
 
-<!-- https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/sample-pass-multiple-values-web-resource-through-data-parameter -->
+<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-pass-multiple-values-web-resource-through-data-parameter -->
 
 (HTML) Web リソース ページは、`data` という単一のカスタム パラメーターのみを受け取ることができます。 data パラメーターで複数の値を渡すには、パラメーターをエンコードし、ページ内でパラメーターをデコードする必要があります。  
   
@@ -177,7 +183,7 @@ search.app:
      ページを開き、エンコードされたパラメーターを data パラメーターの値として渡します。  
   
     ```  
-    http://<server name>/WebResources/new_/ShowDataParams.htm?Data=first%3DFirst%20Value%26second%3DSecond%20Value%26third%3DThird%20Value  
+    https://<server name>/WebResources/new_/ShowDataParams.htm?data=first%3DFirst%20Value%26second%3DSecond%20Value%26third%3DThird%20Value  
     ```  
   
     > [!NOTE]

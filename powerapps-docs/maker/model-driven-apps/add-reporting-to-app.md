@@ -10,17 +10,23 @@ ms.assetid: b4098c96-bce1-4f57-804f-8694e6254e81
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: aba6196680d674b8ee42096e340a105b19ac8d07
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752379"
 ---
 # <a name="add-reporting-features-to-your-model-driven-app"></a>レポート機能をモデル駆動型アプリに追加
 
 PowerApps アプリに有益な事業情報をユーザーに提供するレポートを含めることができます。 このレポートは SQL Server Reporting Services に基づいており、典型的な SQL Server Reporting Services レポートで使用できる機能と同じ一連の機能を備えています。
 
 > [!div class="mx-imgBorder"] 
-> ![](media/progress-against-goals-report.png "目標に対しての進行状況の標準レポート")
+> ![](media/progress-against-goals-report.png "Progress against goals standard report")
 
 システム レポートは、すべてのユーザーが使用できます。 ユーザーが作成または所有するレポートは、特定の同僚またはチームと共有することや、すべてのユーザーがレポートを使用できるように、組織に対してそのレポートを使用可能にすることができます。 これらのレポートは Common Data Service に独自の FetchXML クエリを使用して、データを取得してレポートを作成します。 PowerApps アプリで作成したレポートは、フェッチ ベースのレポートです。
 
@@ -36,7 +42,7 @@ PowerApps アプリに有益な事業情報をユーザーに提供するレポ�
 ## <a name="add-reporting-to-a-unified-interface-app"></a>レポートを統一インターフェイス アプリに追加
 フェッチ ベースのレポート機能をアプリに追加できます。それにより、ユーザーがレポートを実行、共有、作成、および編集できます。 これを行うためには、アプリのサイト マップにレポート エンティティを追加します。 
 
-1. [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインして、編集用の既存アプリを開きます。 
+1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインして、編集用の既存アプリを開きます。 
 2. アプリ デザイナーで、**サイト マップ**の隣りの![サイト マップ編集のための鉛筆アイコン](media/ccf-pencil-icon.png)を選択します。 
 3. サイトマップ デザイナーで**追加**を選択し、その後**領域**を選択します。 
 4. **タイトル** ボックスに、*レポート*などの領域のタイトル名を入力します。 
@@ -57,7 +63,7 @@ PowerApps アプリに有益な事業情報をユーザーに提供するレポ�
 これでアプリには**レポート**領域が表示され、ユーザーはアクセス許可を持つレポートを表示、実行、割り当て、共有、および編集できます。また、レポート ウィザードを使って新しいレポートを作成することもできます。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/report-feature-in-app.png "レポート ビュー")
+> ![](media/report-feature-in-app.png "Report view")
 
 ## <a name="options-for-creating-new-reports"></a>新規レポートを作成するオプション
 次の 2 つの方法のいずれかで新しいレポートを作成できます。
@@ -73,7 +79,7 @@ PowerApps アプリに有益な事業情報をユーザーに提供するレポ�
 レポートが組織で表示可能かどうか確認する方法: レポートの一覧からモデル駆動型アプリを開き、レポートを選択して **編集** を選択します。 **管理**タブで**公開対象**が**組織**に設定されているかどうかを確認します。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/report-scope.png "組織レベル レポートの表示")
+> ![](media/report-scope.png "Organization level report visibility")
 
 レポートのスナップショットは、ソリューションの一部として追加、インポート、エクスポートできます。 モデル駆動型アプリでは、レポート、サブレポート、レポート カテゴリ、レポート表示領域、およびレポート関連のレコードの種類がレポート セットのコンポーネントと見なされます。 ソリューションの更新を非上書きモードでインポートする際に、カスタマイズされたレポート セットのコンポーネントが存在した場合、そのソリューションによるレポートの更新はすべて無視されます。
 

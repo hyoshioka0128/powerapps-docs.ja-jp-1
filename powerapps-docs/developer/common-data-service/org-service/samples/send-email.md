@@ -1,19 +1,25 @@
 ---
-title: 'サンプル: 電子メールの送信 (Common Data Service) | Microsoft Docs'
+title: 'サンプル: 電子メールを送信する (Common Data Service) | Microsoft Docs Microsoft'
 description: このサンプルは、電子メールを送信する方法を説明します
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: samples
-author: brandonsimons
+author: JimDaly
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 0484580dd9e385866feb18cb25999436b726f4de
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2749288"
 ---
 # <a name="sample-send-an-email"></a>サンプル: 電子メールの送信
 

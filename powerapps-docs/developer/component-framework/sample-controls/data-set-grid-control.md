@@ -1,7 +1,7 @@
 ---
 title: データセット グリッド コンポーネント | Microsoft Docs
-description: null
-keywords: null
+description: ''
+keywords: ''
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,8 +11,13 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
+ms.openlocfilehash: 958afe9136117112153d7f285b03ffc1e5cf7aed
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2754104"
 ---
-
 # <a name="implementing-data-set-component"></a>データセット コンポーネントの実装
 
 このサンプル コンポーネントは、データセットを操作する際のユーザー エクスペリエンスを変更する方法を示します。 たとえば、エンティティ ホームページのホームページ グリッドはテーブルとしてのみ表示されます。 独自の選択によってデータを表示できるコード コンポーネントを構築できます。 このサンプルは、通常の表形式グリッドではなく、タイルとしてレコードを表示します。
@@ -236,12 +241,12 @@ export class TSDataSetGrid
       RowRecordId
     );
     if (rowRecordId) {
-      let entityReference = this.contextObj.parameters.dataSetGrid.records[
+      let entityreference = this.contextObj.parameters.dataSetGrid.records[
         rowRecordId
-      ].getNamedReference();
+      ].getNamedreference();
       let entityFormOptions = {
-        entityName: entityReference.name,
-        entityId: entityReference.id
+        entityName: entityreference.name,
+        entityId: entityreference.id
       };
       this.contextObj.navigation.openForm(entityFormOptions);
     }
@@ -350,8 +355,8 @@ export class TSDataSetGrid
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+<xsd:schema id="root" xmlns="" xmlns:xsd="https://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+<xsd:import namespace="https://www.w3.org/XML/1998/namespace" />
 <xsd:element name="root" msdata:IsDataSet="true">
   <xsd:complexType>
     <xsd:choice maxOccurs="unbounded">
@@ -439,4 +444,4 @@ export class TSDataSetGrid
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
 [PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps Component Framework のマニフェスト スキーマの参照](../manifest-schema-reference/index.md)
+[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

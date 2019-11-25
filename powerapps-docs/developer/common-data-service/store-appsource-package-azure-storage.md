@@ -10,10 +10,16 @@ author: shmcarth
 ms.author: jdaly
 manager: ryjones
 search.audienceType:
-  - developer
+- developer
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b2924e93ed341293b79dada0023c36854df83583
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2753775"
 ---
 # <a name="step-5-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>手順 5: AppSource パッケージをAzureストレージに保存し、SASキーでURLを生成する
 
@@ -23,7 +29,7 @@ Microsoft Azure ストレージは Microsoft が管理するクラウドサー�
 
 ## <a name="before-you-upload-your-package"></a>パッケージをアップロードする前に
 
-[http://storageexplorer.com](http://storageexplorer.com)から Microsoft Azure ストレージ エクスプローラー をダウンロードしてインストールします。
+[https://storageexplorer.com](https://storageexplorer.com)から Microsoft Azure ストレージ エクスプローラー をダウンロードしてインストールします。
 
 Azure Storage Explorer を使用すると、ストレージ アカウントの内容を簡単に管理できます。
 

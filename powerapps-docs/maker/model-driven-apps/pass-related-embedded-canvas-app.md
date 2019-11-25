@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 44112fee976b12f12b43ca2bf70157266be4d8ce
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2759429"
 ---
-
 # <a name="pass-a-list-of-related-records-as-data-context-to-an-embedded-canvas-app"></a>関連付けられたレコードのリストをデータ コンテキストとして埋め込みキャンバス アプリに渡す
 > [!IMPORTANT]
 > モデル駆動型フォームに埋め込まれたキャンバス アプリケーションがプレビューから外され、一般的に、使用可能です。 以下に示す手順は古すぎて、モデル駆動型フォームに埋め込まれたキャンバス アプリケーションの共有プレビューリリースに対してのみ適用可能です。
@@ -32,7 +37,7 @@ search.app:
 
 埋め込みキャンバス アプリを取引先企業のメイン フォーム上に追加して、現在の取引先企業レコードに関連付けられた取引先担当者のリストを埋め込みキャンバス アプリに渡すとしましょう。 これを行うには、次の手順を実行します。
 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインして、取引先企業エンティティなどのエンティティのメイン フォームのためにフォーム エディターを開きます。
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインして、取引先企業エンティティなどのエンティティのメイン フォーム用にフォーム エディターを開きます。
 2.  埋め込みキャンバス アプリを表示するフォーム上のセクションを選択します。
 3.  選択したセクションの、**挿入**タブの、**コントロール** グループで、**サブグリッド**を選択します。
 4.  **プロパティの設定**ダイアログ ボックスで、**表示**タブを選択してから、**名前**ボックスにグリッド コントロールの名前を入力します。
@@ -50,7 +55,7 @@ search.app:
          -  アプリ ID の値を変更すると、モデル駆動型フォームから埋め込みキャンバス アプリへのリンクが切断されることに注意してください。
 10. キャンバス アプリを作成または編集するには**カスタマイズ** ボタンを選択します。 これにより新規ブラウザタブに PowerApps Studio が開きます。
      > [!IMPORTANT]
-     > PowerApps Studio を開くことが Web ブラウザーのポップアップ ブロッカーによりブロックされた場合、web.powerapps.com サイトを有効にするか、一時的にポップアップ ブロッカーを無効にしてから、再び **カスタマイズ** を選択する必要があります。 
+     > PowerApps Studio が Web ブラウザーのポップアップ ブロッカーにより開くことがブロックされた場合は、make.powerapps.com  サイトを有効にするか、一時的にポップアップ ブロッカーを無効にしてから、再び **カスタマイズ** を選択する必要があります。 
 11. PowerApps Studio で、左のウィンドウに配置された **ModelDrivenFormIntegration** コントロールがあることに注意してください。 このコントロールは、ホストのモデル駆動型フォームから埋め込みキャンバス アプリにコンテキスト データを取り込みます。 
 12. **Gallery1** コントロールを選択して、**アイテム** プロパティに **ModelDrivenFormIntegration.Data** がセットされていることを確認します。
 13. プロパティ ウィンドウの右の、**フィールド**の横の、**編集**を選択します。

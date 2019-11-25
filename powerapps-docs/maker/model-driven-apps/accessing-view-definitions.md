@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Mattp123
 ms.assetid: 034c8bef-0d1c-4ef9-8da7-f81343c4553a
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3b29f863399c8a49ca0c0d60ebe2196d6de6414c
+ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "2752023"
 ---
-# <a name="access-a-model-driven-app-view-definition-in-powerapps"></a>PowerApps でモデル駆動型のアプリ ビュー定義にアクセスします
+# <a name="access-a-model-driven-app-view-definition-in-powerapps"></a>PowerApps でモデル駆動型アプリのビュー定義にアクセスする
 
  このトピックでは、プロパティを表示するためにビュー定義を開き、ビューを構成するためにオプションを開きます。 PowerApps でビュー定義にアクセスするには、次のようないくつかの方法があります。 
   
@@ -33,7 +39,7 @@ search.app:
 > [!IMPORTANT]
 > 最新バージョンのビュー デザイナーは現在プレビュー中です。 高度なフィルター処理、カスタム コントロール、および列のプロパティなどの一部の機能はまだサポートされていません。 これらのタスクを完了するには [ソリューション エクスプローラーで編集するためにビューを開きます](#open-a-view-for-editing-in-solution-explorer)。
 
-1.  [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 
     > [!IMPORTANT]
