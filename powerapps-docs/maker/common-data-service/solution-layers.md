@@ -1,27 +1,32 @@
 ---
 title: ソリューションの階層の表示 | MicrosoftDocs
 description: ソリューションの階層を使用する方法を説明します。
-keywords: null
+keywords: ''
 ms.date: 04/18/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
-ms.assetid: null
+ms.assetid: ''
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
-caps.latest.revision: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+caps.latest.revision: ''
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a5b507384b3fdf157aa029ad98d4d4203f624d8f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702108"
 ---
-
 <!--note from editor: Best practice is that H1 title and title in metadata are different.    -->
 
 # <a name="view-solution-layers"></a>ソリューションの階層の表示
@@ -45,17 +50,17 @@ search.app:
 2. ソリューション階層 ページが表示されます。 最新のレイヤーが一番上になるように、 個々の表示されている **取引先企業** エンティティのようなコンポーネントの各階層が表示されます。 ソリューションの階層の詳細を表示するには、それを選択します。 
 
    > [!div class="mx-imgBorder"] 
-   > ![ソリューション階層リスト](media/solution-layers-list.png "ソリューション階層リスト")
+   > ![ソリューションの階層リスト](media/solution-layers-list.png "ソリューションの階層リスト")
 
 3. **ソリューション階層** ダイアログ ボックスで、**変更されたプロパティ** タブには特定のソリューション階層の一部として変更されたプロパティだけが表示されます。 
 
    > [!div class="mx-imgBorder"] 
-   > ![ソリューション階層変更プロパティ](media/solution-layers-change-prop.png "ソリューション階層変更プロパティ")
+   > ![ソリューションの階層の変更されたプロパティ](media/solution-layers-change-prop.png "ソリューションの階層の変更されたプロパティ")
 
 4. **すべてのプロパティ** タブを選択して、変更されたプロパティと変更されていないプロパティを含む、ソリューションの階層のすべてのプロパティを表示します。 
 
    > [!div class="mx-imgBorder"] 
-   > ![ソリューション階層変更プロパティ](media/solution-layers-all-prop.png "ソリューション階層変更プロパティ")
+   > ![ソリューションの階層のすべてのプロパティ](media/solution-layers-all-prop.png "ソリューションの階層のすべてのプロパティ")
 
 ### <a name="see-also"></a>関連項目
 [ソリューションの概要](solutions-overview.md)

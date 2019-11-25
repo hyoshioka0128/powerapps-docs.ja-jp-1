@@ -1,27 +1,33 @@
 ---
-title: PowerApps を使用したビューのモデル駆動型管理プロパティ | MicrosoftDocs
+title: " PowerApps を使用したビューのモデル駆動型アプリの管理プロパティ | MicrosoftDocs"
 description: ビューの管理プロパティの設定方法について学習
 ms.custom: ''
 ms.date: 06/12/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: a9014576-8fb2-4f28-b8bb-5d2d49d76e12
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: b99fe00731066a4ee0f029bdba09c7eab9d8d67b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702988"
 ---
 # <a name="model-driven-app-managed-properties-for-views"></a>ビューのモデル駆動型管理プロパティ
 

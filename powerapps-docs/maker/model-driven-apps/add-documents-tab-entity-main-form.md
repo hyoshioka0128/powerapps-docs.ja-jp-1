@@ -1,22 +1,28 @@
 ---
 title: エンティティのメイン フォームにドキュメント タブを追加する | MicrosoftDocs
 description: エンティティのメインフォームにドキュメント タブを追加する方法を説明します
-s.custom: null
+s.custom: ''
 ms.date: 09/05/2019
-ms.reviewer: null
+ms.reviewer: ''
 ms.service: crm-online
-ms.suite: null
-ms.tgt_pltfrm: null
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: Mattp123
-ms.assetid: null
-caps.latest.revision: null
+ms.assetid: ''
+caps.latest.revision: ''
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - customizer
+- customizer
 search.app:
-  - D365CE
+- D365CE
+ms.openlocfilehash: d8a81b531f43f3e252f2df348b8ae95551e068d4
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702812"
 ---
 # <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>エンティティのメイン フォームに SharePoint ドキュメント タブを追加する
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -45,7 +51,7 @@ search.app:
 11. **control id="address1_city"** などのコントロール id="*フィールド名*" 要素までスクロールし、このトピックの要素全体を [XML サンプル](#xml-sample-for-adding-the-documents-tab-to-a-form) に置き換えます。 
 
     > [!div class="mx-imgBorder"] 
-    > ![](media/form-xml.png "XML サンプル挿入ポイント")
+    > ![](media/form-xml.png "XML sample insertion point")
 
 12. XML サンプルにこれらの変更を加えます。 
     

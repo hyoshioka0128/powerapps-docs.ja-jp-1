@@ -8,21 +8,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 ms.assetid: 00e62904-2ce9-4730-a113-02b1fedbf22e
 caps.latest.revision: 31
 author: Mattp123
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 3937b56ea5ed9aa03085f48de8f4846328d6e836
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700568"
 ---
 # <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>モデル駆動型アプリ フォームでロジックを適用するための業務ルールと推奨事項を作成
 
@@ -143,12 +149,12 @@ search.app:
 4.  ビジネス ルール デザイナーで各条件およびアクションを選択して、各条件およびアクションで参照されるすべてのフィールドを検証します。 
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/business-rule-field.png "ビジネス ルールで参照されるフィールドがエンティティ内に存在")
+     > ![](media/business-rule-field.png "Field referenced in business rule exists in entity")
 
  5. また、ビジネス ルールで参照される各フィールドがフォーム上にも含まれていることを確認します。 含まれていない場合、不足しているフィールドをフォームに追加します。
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/account-name-on-form.png "フォーム上のアカウント名フィールド")
+     > ![](media/account-name-on-form.png "Account name field on form")
 
 ## <a name="frequently-asked-questions-faq"></a>よくあるご質問 (FAQ)
 *業務ルールは読み取り専用フォームのフィールドのロックを解除できますか。*

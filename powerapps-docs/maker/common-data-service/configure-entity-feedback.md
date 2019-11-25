@@ -1,5 +1,5 @@
 ---
-title: PowerAppsを使用したフィードバックのエンティティの構成 | MicrosoftDocs
+title: PowerApps でフィードバックのためにエンティティを構成する | MicrosoftDocs
 description: エンティティのフィードバックを有効にする方法を説明する
 ms.custom: ''
 ms.date: 05/18/2018
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 5b25cf09-d43b-4165-9eaa-7549f4855e7c
 caps.latest.revision: 13
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: bdcc864aeb8c0cf63eccbc75c7b78d5352136ff9
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2704968"
 ---
 # <a name="configure-an-entity-for-feedbackratings"></a>フィードバック/評価のためにエンティティを構成する
 

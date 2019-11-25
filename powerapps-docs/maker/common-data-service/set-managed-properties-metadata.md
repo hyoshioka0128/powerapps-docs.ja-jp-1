@@ -1,5 +1,5 @@
 ---
-title: Common Data Service メタデータで管理プロパティを設定する | MicrosoftDocs
+title: Common Data Service メタデータの管理プロパティの設定 | MicrosoftDocs
 description: ソリューションでメタデータ アイテムの管理プロパティを設定する方法を説明します
 ms.custom: ''
 ms.date: 05/30/2018
@@ -9,21 +9,27 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: edaa7d4a-a95f-4d66-a9d9-2ad6051332f7
 caps.latest.revision: 41
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: c58e70e596bc2382907da5baebfe8d901cb9f420
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702328"
 ---
-# <a name="set-managed-properties-in-common-data-service-metadata"></a>Common Data Service メタデータで管理プロパティを設定する 
+# <a name="set-managed-properties-in-common-data-service-metadata"></a>Common Data Service メタデータの管理プロパティの設定 
 
 管理プロパティは、管理ソリューションを使用してメタデータを含め、別の環境にインポートするときにのみ適用されます。 これらの設定により、ソリューション作成者は、管理ソリューションをインストールするユーザーに許可するカスタマイズのレベルをある程度制御することができます。 
 
@@ -58,7 +64,7 @@ search.app:
 
 ## <a name="field-managed-properties"></a>フィールド管理プロパティ
 
-フィールドの編集方法の詳細は、[PowerApps ソリューション エクスプローラーを使用して Common Data Service のフィールドを作成および編集する](create-edit-field-solution-explorer.md) を参照してください。
+[PowerApps ソリューション エクスプローラーを使用して Common Data Service のフィールド作成、編集する](create-edit-field-solution-explorer.md) を参照してください。
 
 [フィールドを表示](create-edit-field-solution-explorer.md#view-fields)しながら、カスタム フィールドをアンマネージド ソリューションから選択し、メニュー バーで **その他の操作** >  **管理プロパティ** を選択します。
 
@@ -94,6 +100,6 @@ search.app:
 
 [マネージド プロパティ](solutions-overview.md#managed-properties)<br />
 [ソリューション エクスプローラーを使用してエンティティを作成および編集する](create-edit-entities-solution-explorer.md)<br />
-[PowerApps ソリューション エクスプローラーを使用した Common Data Service のフィールドの作成および編集](create-edit-field-solution-explorer.md)<br />
+[PowerApps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する](create-edit-field-solution-explorer.md)<br />
 [ソリューション エクスプローラーを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成および編集する](create-edit-1n-relationships-solution-explorer.md)<br />
 [ソリューション エクスプローラーを使用して Common Data Service で N:N (多対多) のエンティティ関係を作成する](create-edit-nn-relationships-solution-explorer.md)

@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: af866aed-2586-4b6f-bb1c-3519baae3645
 caps.latest.revision: 25
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: e1facad3d5d6cb95e0441800f4d743d429f50787
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2705496"
 ---
 # <a name="display-custom-icons-alongside-values-in-list-views"></a>リスト ビューに値とともにユーザー定義アイコンを表示
 
@@ -30,7 +36,7 @@ search.app:
  PowerApps 環境の管理者とカスタマイザーは、ビューにグラフィックスを追加して、JavaScriptを使用した列の値に基づいてグラフィックを選択するために使用するロジックを設定できます。 この機能により、テキストまたは数値とともにアイコンを表示するリスト ビューをカスタマイズできます。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/icon-in-opportunity-view.png " [評価] 列にアイコンとテキスト値を表示する [すべての営業案件] ビュー")
+> ![](media/icon-in-opportunity-view.png "All Opportunities view with Rating column displaying icons and text value")
   
 > [!NOTE]
 >  グリッド アイコンは、Web インターフェイスにのみ表示されます。 [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] やモバイル アプリでは表示されません。  

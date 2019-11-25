@@ -1,5 +1,5 @@
 ---
-title: PowerApps でエンティティ フィールドをマップする | MicrosoftDocs
+title: PowerApps でエンティティをマッピングする | MicrosoftDocs
 description: エンティティ フィールドのマップ方法を解説します
 ms.custom: ''
 ms.date: 05/29/2018
@@ -9,20 +9,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 7c5aa1c3-bde9-43f1-a369-fdcdbf14dec0
 caps.latest.revision: 33
 ms.author: matp
 manager: kvivek
-tags: null
+tags: ''
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 7175a56b4658d19510c007efbf4bdcd02d88db2f
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2704616"
 ---
 # <a name="map-entity-fields"></a>エンティティ フィールドのマップ
  
@@ -98,7 +104,7 @@ search.app:
 - フィールドがオプション セットの場合、各オプションの整数値が同一である必要があります。  
   
 > [!NOTE]
->  オプション セット フィールドをマップする必要がある場合、同じグローバル オプション セットを使用するように両方のフィールドを構成するようお勧めします。 そうしないと、別々の 2 種類のオプションのセットの同期を手動で保つことが難しくなります。 各オプションの整数値が正しくマップされていない場合、データに問題が発生することがあります。 詳細: [Common Data Service のグローバル オプション設定の作成および編集 (候補リスト)](create-edit-global-option-sets.md)  
+>  オプション セット フィールドをマップする必要がある場合、同じグローバル オプション セットを使用するように両方のフィールドを構成するようお勧めします。 そうしないと、別々の 2 種類のオプションのセットの同期を手動で保つことが難しくなります。 各オプションの整数値が正しくマップされていない場合、データに問題が発生することがあります。 詳細: [Common Data Service グローバル オプション設定の作成および編集](create-edit-global-option-sets.md)  
   
 ## <a name="automatically-generate-field-mappings"></a>フィールド マッピングを自動的に生成する  
 

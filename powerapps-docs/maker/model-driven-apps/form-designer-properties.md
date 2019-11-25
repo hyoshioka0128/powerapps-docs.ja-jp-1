@@ -8,31 +8,36 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 38a2ebe769fdff6ebeeebd82824fffecae5ff00e
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2700348"
 ---
-
 # <a name="properties-available-in-the-form-designer"></a>フォーム デザイナーで使用可能なプロパティ
 
 モデル駆動型フォーム デザイナーの右ウィンドウにあるプロパティ ウィンドウでは、プレビューまたはツリー ビューから選択した任意の要素のプロパティをすばやく表示および更新できます。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/form-designer-property-pane.png "フォーム デザイナーのプロパティ ウィンドウ")
+> ![](media/form-designer-property-pane.png "Form designer property pane")
 
 ## <a name="form-properties"></a>フォームのプロパティ
 
-|Name  |説明  |
+|名前  |説明  |
 |---------|---------|
 |**タイトル**     | ユーザーにとって意味がある名前を入力します。 この名前は、ユーザーがフォームを使用するときに表示されます。 エンティティ用に構成されている複数のフォームを使用する場合、利用できるフォームを区別するためにこの名前を使用します。 <br /> このプロパティが必要です。        |
 |**説明**     |  このフォームが他メイン フォームとは異なる点を示す説明を入力します。 この説明は、ソリューション エクスプローラーのエンティティのフォームの一覧にのみ表示されます。        |

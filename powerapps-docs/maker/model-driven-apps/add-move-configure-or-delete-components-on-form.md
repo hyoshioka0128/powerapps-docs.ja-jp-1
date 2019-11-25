@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: a40b0b9e5fc64856be931a2407a451c8d27ef8ec
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702372"
 ---
-
 # <a name="add-configure-move-or-delete-components-on-a-form"></a>フォーム上のコンポーネントを追加、構成、移動、削除する  
 フォーム デザイナーを使用すると、メーカーは [サブグリッド](form-designer-add-configure-subgrid.md)、[簡易表示](form-designer-add-configure-quickview.md)、アーク ノブ、リニア スライダーなどの一般的なコンポーネントを簡単に追加および構成できます。
 
@@ -30,7 +35,7 @@ search.app:
 フォームにコンポーネントを追加するには、**コンポーネント** ウィンドウを使用します。 **コンポーネント** ウィンドウで検索してコンポーネントをすばやく見つけることもできます。  
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerComponentsPane.PNG "コンポーネント ウィンドウ")
+> ![](media/FormDesignerComponentsPane.PNG "Components pane")
 
 ### <a name="add-components-to-a-form-using-drag-and-drop"></a>ドラッグ アンド ドロップを使用してフォームにコンポーネントを追加する
 > [!NOTE]

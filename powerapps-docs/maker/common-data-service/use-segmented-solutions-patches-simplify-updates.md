@@ -1,5 +1,5 @@
 ---
-title: セグメント化したソリューションと修正プログラムを使用して PowerApps でのソリューション更新を簡易化 | MicrosoftDocs
+title: PowerApps でソリューションの更新を簡素化するために、セグメント化されたソリューションとパッチを使用します| MicrosoftDocs
 description: ソリューションのセグメント化を使用してソリューションを更新する方法の学習
 ms.custom: ''
 ms.date: 06/18/2018
@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 5c05f683-e1bd-4885-be23-b6973128773f
 caps.latest.revision: 15
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 8f2b890766c6643da0a5363f49ef9b5c233b0b0b
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2703120"
 ---
 # <a name="use-segmented-solutions-and-patches-to-export-selected-entity-assets"></a>セグメント化されたソリューションおよびパッチを使用して選択したエンティティ資産をエクスポート
 
@@ -82,19 +88,19 @@ search.app:
   
  ウィザードに従います。 手順 1 で、アルファベット順に開始して、次のように、最初のエンティティである`Account`エンティティの資産を選択します。  
   
- ![ウィザードを開始。](media/solution-segmentation-wizard-starts-admin.png "ウィザードを開始。")  
+ ![ウィザードを開始します。](media/solution-segmentation-wizard-starts-admin.png "ウィザードを開始します。")  
   
  **フィールド**タブを開き、**取引先企業番号**フィールドを選択します。  
   
- ![取引先企業のエンティティ資産を選択。](media/solution-segmentation-select-account-assets-admin.png "取引先企業のエンティティ資産を選択。")  
+ ![取引先企業のエンティティ資産を選択します。](media/solution-segmentation-select-account-assets-admin.png "取引先企業のエンティティ資産を選択します。")  
   
  手順 2 で、**サポート案件**エンティティについて、すべての資産を追加します。  
   
- ![サポート案件のエンティティ資産を選択。](media/solution-segmentation-select-case-assets-admin.png "サポート案件のエンティティ資産を選択。")  
+ ![サポート案件のエンティティ資産を選択します。](media/solution-segmentation-select-case-assets-admin.png "サポート案件のエンティティ資産を選択します。")  
   
  手順 3 で、**取引先担当者**エンティティの**記念日**フィールドを追加します。  
   
- ![取引先担当者のエンティティ資産を選択。](media/solution-segmentation-select-contact-assets-admin.png "取引先担当者のエンティティ資産を選択。")  
+ ![取引先担当者のエンティティ資産を選択します。](media/solution-segmentation-select-contact-assets-admin.png "取引先担当者のエンティティ資産を選択します。")  
   
  その結果、作成したセグメント化されたソリューションには、`Account`、`Case`、および`Contact`の 3 つのエンティティが含まれます。 各エンティティには選択した資産のみが含まれます。  
   
@@ -151,5 +157,5 @@ search.app:
  > ![ロールアップ パッチを含む複製されたソリューション。](media/solution-segmentation-solution-rolled-up-patch-admin.png "ロールアップ パッチを含む複製されたソリューション。")  
   
 ## <a name="next-steps"></a>次のステップ  
- [ソリューションの概要](solutions-overview.md) [修正プログラムを作成してソリューションの更新を簡素化]
+ [ソリューションの概要](solutions-overview.md) [ソリューションの更新を簡略化する修正プログラムの作成]
 

@@ -8,19 +8,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 96cae5273855fd6458a501aa0757da12ba8e1701
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701668"
 ---
 # <a name="overview-of-the-model-driven-form-designer"></a>モデル駆動型フォーム デザイナーの概要
 新しいモデル駆動型フォーム デザイナーには、モデル駆動型フォームで作業するときのモダンな WYSIWYG 作成エクスペリエンスが用意されています。 これには、クラシック モデル駆動型フォーム デザイナーでは利用することができない、複数の拡張機能が含まれています。 
@@ -40,7 +46,7 @@ search.app:
 - 幅に適合 - フォームのプレビューを使用可能な幅に合わせる簡易動作。
 
 > [!div class="mx-imgBorder"] 
-> ![](media/FormDesignerOverview.png "フォーム デザイナーのレイアウト")
+> ![](media/FormDesignerOverview.png "Form designer layout")
 
 ## <a name="see-also"></a>関連項目
 [フォーム デザイナーを使用してフォームを作成、編集、構成する](create-and-edit-forms.md)  

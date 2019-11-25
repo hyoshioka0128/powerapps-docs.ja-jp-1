@@ -8,21 +8,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - PowerApps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- PowerApps
 author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-  - PowerApps maker portal impact
+- PowerApps maker portal impact
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: eaa02abdc4c85d4d6abd5e5ca3afe176144c4027
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701536"
 ---
-
 # <a name="add-configure-move-or-delete-fields-on-a-form"></a>フォーム上のフィールドを追加、構成、移動、削除する  
 フォーム デザイナーを使用して、フィールドを追加、構成、移動、削除します。
 
@@ -30,7 +35,7 @@ search.app:
 フォームにフィールドを追加するには、**フィールド** ウィンドウを使用します。 **フィールド** ウィンドウを使用すると、検索およびフィルター処理を実行して、フィールドを素早く検索することができます。 また、使用されていないフィールドのみ表示するオプションが含まれています。 
 
 > [!div class="mx-imgBorder"] 
->    ![](media/FormDesignerFieldsPane.png "フィールド ウィンドウ")
+>    ![](media/FormDesignerFieldsPane.png "Fields pane")
 
 ### <a name="add-fields-to-a-form-using-drag-and-drop"></a>ドラッグ アンド ドロップを使用してフォームにフィールドを追加
 > [!NOTE]

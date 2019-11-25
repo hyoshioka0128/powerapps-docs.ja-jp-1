@@ -1,38 +1,43 @@
 ---
 title: ソリューションの履歴の表示 | MicrosoftDocs
 description: ソリューションの履歴の表示方法に関する説明 | MicrosoftDocs
-keywords: null
+keywords: ''
 ms.date: 05/19/2019
 ms.service: powerapps
-ms.custom: null
+ms.custom: ''
 ms.topic: article
-ms.assetid: null
+ms.assetid: ''
 author: Mattp123
 ms.author: matp
 manager: kvivek
-ms.reviewer: null
-ms.suite: null
-ms.tgt_pltfrm: null
-caps.latest.revision: null
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+caps.latest.revision: ''
 topic-status: Drafting
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 67239062f30efb80fb8ee416614c1088e20c4075
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702196"
 ---
-
 # <a name="view-the-history-of-a-solution"></a>ソリューションの履歴の表示
 モデル駆動型アプリケーション **ソリューション** 領域からソリューションの操作の詳細を表示できます。 操作は、ソリューションのインポート、エクスポート、または削除のいずれかです。 ソリューションの履歴はソリューション バージョン、ソリューション発行者、操作などの一部の情報を、操作の開始時刻と終了時刻、および操作の状態の表示されます。
 
 > [!div class="mx-imgBorder"] 
-> ![](media/solutions-history-custom-view.png "ソリューション履歴表示")
+> ![](media/solutions-history-custom-view.png "Solutions history custom view")
 
 ## <a name="view-solution-history"></a>ソリューション履歴表示
 1. **設定**を選択して、その後**ソリューション履歴**を選択します。
 
      > [!div class="mx-imgBorder"] 
-     > ![](media/solution-history-sitemap.png "ソリューション履歴エリア")
+     > ![](media/solution-history-sitemap.png "Solution History area")
 
      > [!NOTE]
      > PowerApps 統一インターフェイスのモデル駆動型アプリから、**設定** 領域を取得するには、アプリのツールバーにある **設定** ![設定](../model-driven-apps/media/powerapps-gear.png) を選択してから、**詳細設定** を選択します。 
@@ -57,12 +62,12 @@ search.app:
 ソリューション操作に失敗が含まれている場合は、追加のエラーの詳細を記載したページを表示することを選択できます。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/solution-history-with-failure.png " 操作エラー込のソリューション履歴")
+> ![](media/solution-history-with-failure.png "Solution history with operation error")
 
 操作エラーの根本原因の診断に役立つ可能性がある **例外メッセージ** を含む情報が含まれる詳細ページ。 ソリューション依存エラーを含む一部のエラーは、問題の診断を簡単におこなうための **ソリューション階層** へのリンクも含まれることがあります。 **活動ID** は、Microsoft カスタマ サポートに問い合わせる必要があるケースに有用です。 
 
 > [!div class="mx-imgBorder"] 
-> ![](media/solution-history-error-details.png "ソリューションの操作エラーの詳細表示")
+> ![](media/solution-history-error-details.png "Solution operation error details")
 
 ### <a name="see-also"></a>関連項目
 [ソリューションの階層の表示](solution-layers.md)  <br />

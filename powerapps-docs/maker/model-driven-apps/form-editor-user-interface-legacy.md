@@ -3,17 +3,23 @@ title: PowerApps のモデル駆動型アプリ フォーム エディターの�
 description: フォーム エディターのユーザー インターフェイスを把握して PowerApps でフォームを編集する
 author: Mattp123
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 ms.author: matp
 manager: kvivek
 ms.assetid: 146f8035-4fcd-4572-8e71-4270cd150495
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 512156d6ffd4f1817fa06a1e8865386e637bfa24
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701844"
 ---
 # <a name="overview-of-the-model-driven-app-form-editor-user-interface"></a>モデル駆動型アプリ フォーム エディターのユーザー インターフェイスの概要
 

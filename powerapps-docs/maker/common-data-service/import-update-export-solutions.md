@@ -9,19 +9,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: 56363ea3-ea76-4311-9b7a-b71675e446fb
 caps.latest.revision: 57
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: de2c4a4ecefe303f607a9d7f19d892eae2c4bffb
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2701580"
 ---
 # <a name="import-update-and-export-solutions"></a>ソリューションのインポート、更新およびエクスポート 
 
@@ -32,7 +38,7 @@ search.app:
 2.  ソリューションの一覧メニューで、**インポート**を選択します。  
 
     > [!div class="mx-imgBorder"]  
-    > ![インポート ソリューション](media/solution-import.png "インポート ソリューション") 
+    > ![ソリューションのインポート](media/solution-import.png "ソリューションのインポート") 
   
 3.  **ソリューションのインポート** ダイアログの、**ソリューション パッケージの選択**のステップにおいて、**ファイルの選択**を選択し、インポートするソリューションが含まれている圧縮 (.zip または .cab) ファイルを参照します。 
   
@@ -101,7 +107,7 @@ search.app:
 3.  **アンマネージド**または**マネージド**のパッケージ タイプを選択します。 エクスポートを開始するのに、数分間かかる場合があります。 終了後、エクスポートされた zip ファイルは、Web ブラウザーで指定されたダウンロード フォルダーで使用可能になります。
 
     > [!div class="mx-imgBorder"]  
-    > ![エクスポート ソリューション](media/solution-export.png "エクスポート ソリューション") 
+    > ![ソリューションのエクスポート](media/solution-export.png "ソリューションのエクスポート") 
 
 ### <a name="export-from-the-classic-experience"></a>クラシック エクスペリエンスからのエクスポート
 

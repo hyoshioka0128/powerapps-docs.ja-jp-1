@@ -1,31 +1,37 @@
 ---
-title: PowerApps におけるモデル駆動型アプリのメイン フォームの表示 | MicrosoftDocs
+title: PowerApps におけるモデル駆動型アプリのメイン フォームのプレゼンテーション | MicrosoftDocs
 description: さまざまなデバイス上でメイン フォームが表示される様子を説明します。
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 applies_to:
-  - Dynamics 365 (online)
-  - Dynamics 365 Version 9.x
-  - powerapps
+- Dynamics 365 (online)
+- Dynamics 365 Version 9.x
+- powerapps
 author: Mattp123
 ms.assetid: da3ac59a-5413-46cb-b355-1987e42e3853
 caps.latest.revision: 35
 ms.author: matp
 manager: kvivek
 search.audienceType:
-  - maker
+- maker
 search.app:
-  - PowerApps
-  - D365CE
+- PowerApps
+- D365CE
+ms.openlocfilehash: 9ed031f75235cfb47a2206de0a814fb008a335bd
+ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "2702548"
 ---
 # <a name="how-model-driven-app-main-forms-appear-on-different-devices"></a>モデル駆動型アプリのメイン フォームはさまざまなデバイス上に表示されます
 
-メイン フォームはすべてのモデル駆動型アプリのクライアントで使用されます。 このフォームは、Web ブラウザー、Dynamics 365 for phones、Dynamics 365 for tablets、Dynamics 365 for Outlook のどれを使っていても一貫性のあるユーザー エクスペリエンスを提供します。  
+メイン フォームはすべてのモデル駆動型アプリのクライアントで使用されます。 このフォームは、誰かが Web ブラウザー、電話用 Dynamics 365、タブレット用 Dynamics 365、または Dynamics 365 for Outlook のいずれかをつかった一貫性のあるユーザー エクスペリエンスを提供します。  
   
 <a name="BKMK_MainFormPresentations"></a>   
 ## <a name="main-forms"></a>メイン フォーム  
@@ -33,7 +39,7 @@ search.app:
   
 |プレゼンテーション|内容|  
 |------------------|-----------------|  
-|**更新**|Dynamics 365 (online) および Dynamics 365 On-premises における[更新されたエンティティと従来のエンティティ ](create-design-forms.md#updated-versus-classic-entities)および任意のユーザー定義エンティティの場合、更新されたフォームは新しいユーザー エクスペリエンスを提供します。 これらのフォームはより新しい設計のコマンド バーを備えていて、自動保存、業務プロセス フローなどの追加機能を有効にします。|  
+|**更新**|Dynamics 365 (online) および Dynamics 365 On-premises における [更新されたエンティティと従来のエンティティ](create-design-forms.md#updated-versus-classic-entities) および任意のユーザー定義エンティティについては、更新されたフォームは新しいユーザー エクスペリエンスを提供します。 これらのフォームはより新しい設計のコマンド バーを備えていて、自動保存、業務プロセス フローなどの追加機能を有効にします。|  
 |**Dynamics 365 for tablets**| Dynamics 365 for tablets には、タブレット用に最適化された方法でメイン フォームの内容が表示されます。|  
 |**Dynamics 365 for phones**| Dynamics 365 for phones には、電話用に最適化された方法でメイン フォームの内容が表示されます。|  
 |**クラシック**|これらのフォームは未更新のエンティティ用です。 これらは、コマンド バーやフォームの左側のナビゲーション ウィンドウではなく、リボンを使用します。<br /><br /> これらのフォームは 2 列のレイアウトがあります。|  
@@ -51,7 +57,7 @@ search.app:
 |コンポーネント|概要|  
 |---------------|-------------|  
 |**ナビゲーション バー**|サイト マップのデータを使用して、アプリケーションを別の場所に移動する機能を提供できます。<br /><br /> クラッシックなフォームで使用されているナビゲーション ウィンドウは、更新フォームに含まれません。 レコードのコンテキストでは、ナビゲーション バーは関連レコードのビューへのアクセスを提供します。 ナビゲーション ウィンドウやナビゲーション バーを使用して関連レコードへ移動するのではなく、役立つ関連エンティティ レコード フォームを表示するように構成されたサブグリッドを追加することで、多くのユーザーに優れたエクスペリエンスを提供します。|  
-|**コマンド バー**|レコードに関連するコマンドを表示するには、リボン用に定義されているデータを使用します。<br /><br /> 最初の 5 つのコマンドに続いて省略記号 (![[その他のコマンド] ボタン](media/not-available.gif "[その他のコマンド] ボタン")) が表示され、追加コマンドを選択するためのポップアップ メニューが表示されます。|  
+|**コマンド バー**|レコードに関連するコマンドを表示するには、リボン用に定義されているデータを使用します。<br /><br /> 最初の 5 つのコマンドに続いて省略記号 (![その他のコマンドボタン](media/not-available.gif "M操作要求要素コマンド ボタン)) が表示され、追加コマンドを選択するためのポップアップ メニューが表示されます。|  
 |**画像**|エンティティに画像フィールドが含まれ、エンティティ**主イメージ**のオプションが**既定の画像**に設定され、フォームが画像を表示するように構成されていると、画像がヘッダーに表示されます。|  
 |**ヘッダー**|ヘッダーに表示されているフィールドは、ユーザーがフォームの全体をスクロールダウンしても表示されたままになります。<br /><br /> 最高 4 個のフィールドをヘッダーに表示できます。 複数行のテキスト、Web リソース、または iFrame はヘッダーでは使用できません。 ヘッダーおよびフッターは、セクションと同じプロパティを共有します。|  
 |**プロセス コントロール**|エンティティにアクティブな業務プロセス フローがあるとき、ヘッダー下にプロセス コントロールが表示されます。 詳細: [業務プロセス フロー](/flow/business-process-flows-overview)|  
@@ -116,7 +122,7 @@ search.app:
   
  Dynamics 365 for tablets では、最初のパネルには、レコードに存在する関連付けに関する取引先担当者情報が表示されます。 Dynamics 365 for phones では、最初のパネルには、関連付けのタイルの上に、フォームのヘッダー フィールドも表示されます。  
   
- ![タブレット PC 用 Dynamics 365 のリレーションシップ パネル](media/mobile-app-form-relationships.png "タブレット PC 用 Dynamics 365 のリレーションシップ パネル")  
+ ![タブレット関連付けウィンドウ用 Dynamics 365](media/mobile-app-form-relationships.png "タブレット関連付けウィンドウ用 Dynamics 365")  
   
  取引先担当者フォームおよびユーザー フォームの場合、表示される最初のアイテムはレコードの通信カードです。 通信カードは、相手との通信を始めるのに使用するボタンを提供します。 他のエンティティでは、メイン フォームに埋め込まれた取引先担当者簡易ビューフォームがある場合、通信カードが表示されます。  
   
@@ -133,7 +139,7 @@ search.app:
   
  Dynamics 365 for tablets では、2 番目のパネルは、フォームの最初のタブの名前で始まります。 ヘッダーに含まれているどのフィールドも含まれており、次に最初のタブのコンテンツも含まれます。Dynamics 365 for phones では、ヘッダーは最初の列に表示されます。  
   
- ![タブレット PC 用 CRM フォームの最初のパネル](media/mobile-app-form-first-panel.png "タブレット PC 用 CRM フォームの最初のパネル")  
+ ![タブレット PC 用 CRM の最初のウィンドウを構築する](media/mobile-app-form-first-panel.png "タブレット PC 用 CRM の最初のウィンドウを構築する")  
   
  フォームにアクティブなプロセス フローがある場合、3 番目のタブに、Dynamics 365 for tablets のプロセスの現在のステージのタスクが表示されます。 Dynamics 365 for phones で、プロセス コントロールがウィンドウの上に浮動状態にあり、選択されるとユーザーの現在のウィンドウの上に広がり、常時表示され、すぐ使用可能です。  
   
