@@ -32,7 +32,7 @@ ms.locfileid: "73542385"
 
 1.  [ポータルを編集](manage-existing-portals.md#edit)して PowerApps ポータル Studio で開きます。  
 
-2.  画面の左側にある toolbelt から [**テンプレート**![テンプレート] アイコン](media/templates-icon.png "テンプレートアイコン")を選択します。 使用可能なテンプレートが表示されます。  
+2.  画面の左側にある toolbelt から **テンプレート**![テンプレート アイコン](media/templates-icon.png "テンプレートアイコン")を選択します。 使用可能なテンプレートが表示されます。  
 
     > [!div class=mx-imgBorder]
     > ![テンプレートペイン](media/templates-pane.png "テンプレートペイン")  
