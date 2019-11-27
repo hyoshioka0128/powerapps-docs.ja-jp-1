@@ -24,30 +24,30 @@ ms.locfileid: "74177710"
 この記事では、ご利用の PowerApps アカウントおよびアプリの共有相手のアカウントからアプリを削除する方法について説明します。
 
 ## <a name="delete-an-app-from-your-account"></a>アカウントからアプリを削除する
-1. Open [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), and then select **Apps** in the left **Tree view** pane.
+1. [Powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)を開き、左側の**ツリービュー**ウィンドウで **[アプリ]** を選択します。
    
-    ![Apps](./media/delete-app/file-apps.png)
-2. (optional) Near the upper-right corner, filter the list of apps to show only those apps that you own or only those apps to which you contribute.
+    ![選ぶ](./media/delete-app/file-apps.png)
+2. optional右上隅にあるアプリの一覧をフィルター処理して、自分が所有しているアプリまたは投稿先のアプリのみを表示します。
    
     ![アプリ フィルター](./media/delete-app/filter-list.png)
    
     > [!NOTE]
    > 削除するアプリが表示されない場合は、適切な環境を使用していることを確認してください。
-3. Select **More Commands** (...) for the app that you want to delete.
+3. 削除するアプリの [**その他のコマンド**(...)] を選択します。
    
-    ![More Commands](./media/delete-app/app-options.png)
-4. Select the trash-can icon to delete the app.
+    ![その他のコマンド](./media/delete-app/app-options.png)
+4. ごみ箱アイコンを選択して、アプリを削除します。
    
-    ![Delete](./media/delete-app/delete-icon.png)
+    ![デリート](./media/delete-app/delete-icon.png)
    
     > [!NOTE]
    > アプリを削除するには、アプリに対する**共同作成者**のアクセス許可が必要です。
-5. In the dialog box that appears, select **Delete from cloud**.  
+5. 表示されるダイアログボックスで、 **[クラウドから削除]** を選択します。  
    
     > [!IMPORTANT]
    > この操作を実行すると、自身のアカウントだけでなく、アプリを共有する全ユーザーのアカウントからも対象のアプリが完全に削除されます。
    
-    ![Delete from cloud](./media/delete-app/delete-button.png)
+    ![クラウドから削除](./media/delete-app/delete-button.png)
 
 ## <a name="more-resources"></a>その他のリソース
 [アプリを共有する](share-app.md)  
