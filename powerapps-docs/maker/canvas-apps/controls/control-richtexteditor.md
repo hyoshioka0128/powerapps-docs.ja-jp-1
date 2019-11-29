@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec991f54ff4b395026c9a869c315f75a549da79e
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 26ba133612e1c69ed470984fabafe6a6cdfddb1c
+ms.sourcegitcommit: d03915b4e2583327526b448ec10474cedfd7efe0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649793"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74550585"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>PowerApps のリッチテキストエディターコントロール
 エンドユーザーが WYSIWYG 編集領域内のテキストを書式設定できるようにします。  出力形式は、HTML です。
@@ -50,6 +50,8 @@ ms.locfileid: "73649793"
 **[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。 添付ファイルの目的を説明する必要があります。
 
 **[DisplayMode](properties-core.md)** – コントロールで、ファイルの追加と削除を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
+
+**EnableSpellCheck** –ブラウザーのスペルチェックを有効にするかどうかを指定します。 この機能は、ブラウザーの既定の言語でのみスペルチェックを行うことに注意してください。  Windows 用の Power Apps では、このプロパティはサポートされていません。
 
 **[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
 
