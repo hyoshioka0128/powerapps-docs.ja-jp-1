@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm-msft
-ms.date: 9/20/2019
+ms.date: 11/26/2019
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dfed631c695cd764396a24311826bedc63eacffb
-ms.sourcegitcommit: 7016ff837eff2cb0985fc71edab95cbf99335677
+ms.openlocfilehash: 53b4adc44addb08432ad6abbe11bf2b217be1534
+ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159834"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74598471"
 ---
 # <a name="controls-and-properties-in-powerapps"></a>PowerApps のコントロールとプロパティ
 
@@ -60,7 +60,7 @@ ms.locfileid: "71159834"
 
 **[フォームの編集](controls/control-form-detail.md)** – フォームを使用してデータ ソースのレコードを編集および作成します。
 
-**[エンティティフォーム](entity-form-control.md)** -試験的な機能:ユーザーが Common Data Service からリレーショナルデータを表示、移動、編集できる動的なフォームを追加します。
+**[エンティティ フォーム](entity-form-control.md)** - 試験的機能: ユーザーが Common Data Service からリレーショナル データを表示、移動、編集できる動的フォームを追加します。
 
 **[エクスポート](controls/control-export-import.md)** – PowerApps の他の場所で使用するためにデータをエクスポートします。
 
@@ -240,7 +240,7 @@ ms.locfileid: "71159834"
 
 **[Font](controls/properties-text.md)** – テキストを表記するフォントのファミリー名です。  多くのコントロールに適用されます。
 
-**[FontWeight](controls/properties-text.md)** –コントロール内のテキストの重み:**Bold**、 **Semibold**、 **Normal**、または**淡い**。  多くのコントロールに適用されます。
+**[FontWeight](controls/properties-text.md)** – コントロール内のテキストの太さです。**Bold** (太字)、**Semibold** (中太)、**Normal** (標準)、**Lighter** (細字) から指定します。  多くのコントロールに適用されます。
 
 ### <a name="g"></a>G
 
@@ -440,9 +440,9 @@ ms.locfileid: "71159834"
 
 **[SelectedDate](controls/control-date-picker.md)** – 日付コントロールで現在選択されている日付です。  **[日付の選択](controls/control-date-picker.md)** コントロールに適用されます。
 
-**[SelectionColor](controls/properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色です。  **[ドロップダウン](controls/control-drop-down.md)** 、 **[リスト ボックス](controls/control-list-box.md)** 、および **[ペン入力](controls/control-pen-input.md)** の各コントロールに適用されます。
+**[SelectionColor](controls/properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色です。  **[ドロップ ダウン](controls/control-drop-down.md)** 、 **[リスト ボックス](controls/control-list-box.md)** 、および **[ペン入力](controls/control-pen-input.md)** の各コントロールに適用されます。
 
-**[SelectionFill](controls/properties-color-border.md)** – リストで選択された項目またはペン コントロールの選択領域の背景色です。  **[ドロップダウン](controls/control-drop-down.md)** コントロールと **[リスト ボックス](controls/control-list-box.md)** コントロールに適用されます。
+**[SelectionFill](controls/properties-color-border.md)** – リストで選択された項目またはペン コントロールの選択領域の背景色です。  **[ドロップ ダウン](controls/control-drop-down.md)** コントロールと **[リスト ボックス](controls/control-list-box.md)** コントロールに適用されます。
 
 **[SelectionThickness](controls/control-pen-input.md)** – ペン入力コントロールの選択ツールの太さです。  **[ペン入力](controls/control-pen-input.md)** コントロールに適用されます。
 
@@ -514,7 +514,7 @@ ms.locfileid: "71159834"
 
 **ValueFill** – 値が **true** の場合の、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
 
-**ValueHoverFill** – 値が **true** の場合に、トグル コントロールまたはスライダーにポインターを合わせたときの、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
+**ValueHoverFill** – 値が **true** の場合に、トグル コントロールまたはスライダーをポイントしたときの、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
 
 **[VerticalAlign](controls/properties-text.md)** – コントロールの垂直方向の中心に対するコントロール上でのテキストの位置です。  多くのコントロールに適用されます。
 
