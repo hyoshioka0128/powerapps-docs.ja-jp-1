@@ -262,8 +262,6 @@
                   href: ./canvas-apps/working-with-form-layout.md
                 - name: カードについて
                   href: ./canvas-apps/working-with-cards.md
-                - name: フルサイズのイメージを表示する
-                  href: ./canvas-apps/display-full-image-on-form.md
             - name: リストを追加する
               items:
                 - name: リスト ボックス、ドロップダウン リスト、ラジオ ボタンを追加する
@@ -1534,6 +1532,8 @@
       href: ./common-data-service/import-translated-entity-field-text.md
     - name: Common Data Service のセキュリティ
       href: /power-platform/admin/wp-security
+    - name: API の制限の概要
+      href: ./common-data-service/api-limits-overview.md
     - name: 開発者向け
       href: ../developer/common-data-service/overview.md
 - name: AI ビルダー
