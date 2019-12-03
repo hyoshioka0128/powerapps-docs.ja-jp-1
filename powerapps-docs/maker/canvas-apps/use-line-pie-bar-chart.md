@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリでグラフを作成する | Microsoft Docs
-description: PowerApps で、さまざまなカテゴリのデータを折れ線グラフ、円グラフ、棒グラフとしてキャンバス アプリに表示します
+description: Power Apps で、キャンバスアプリの折れ線グラフ、円グラフ、または横棒グラフとしてデータのカテゴリを表示する
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2841da7f5d7b19cd727f169c6fe89588f69bf1ec
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 65076c38a1beeb41c9f6f308b6c0c7e82d30fc80
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541695"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674414"
 ---
 # <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>PowerApps でデータを折れ線グラフ、円グラフ、棒グラフで表示する
 
@@ -31,11 +31,11 @@ ms.locfileid: "73541695"
 
 ![][9]
 
-これらのグラフは PowerApps 内で作成し、使用することができます。 それでは、始めましょう。
+これらのグラフは、Power Apps 内で作成して使用できます。 それでは、始めましょう。
 
 ## <a name="prerequisites"></a>前提条件
 
-* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報で[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
+* Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したものと同じ資格情報を使用して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 * [テンプレート](get-started-test-drive.md)、[データ](get-started-create-from-data.md)、または[ゼロ](get-started-create-from-blank.md)からアプリを作成していること。
 * PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
 * [ChartData.zip](https://pwrappssamples.blob.core.windows.net/samples/ChartData.zip) をダウンロードします。このファイルには、サンプル データが XML ファイルとして格納されています。 このトピックの手順に従って直接アプリにインポートしてください。 または .zip ファイルを展開し、XML ファイルを Excel で開いて、[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)に保存します。

@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4bb09a9aefd3db1981727642d766f308ad9d0ede
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: d90d26c3cbc00b621ee2857c5c0d8ce3169f8939
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73900112"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674743"
 ---
 # <a name="publish-the-power-bi-project-report-and-create-a-dashboard"></a>Power BI プロジェクト レポートの発行とダッシュボードの作成
 > [!NOTE]
-> この記事は、SharePoint Online での PowerApps の使用、Power オートメーション、および Power BI に関するチュートリアルシリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
+> この記事は、Power Apps の使用に関するチュートリアルシリーズの一部であり、Power App の自動化と、SharePoint Online での Power BI について説明しています。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
 このタスクでは、データセットとレポートを Power BI サービスに発行します。その後、レポートに基づくダッシュボードを作成します。 多くの場合、レポートには多数の視覚エフェクトが含まれますが、ダッシュボードではその一部しか使用されません。 ここでは、ダッシュボードに 4 つの視覚エフェクトをすべて追加します。
 

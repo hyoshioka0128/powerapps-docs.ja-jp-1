@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 114474696f85980da315b6dd225250dc1b197805
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0a0871374bad90156f9b3626b58a68eb77bfb499
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992796"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680238"
 ---
 # <a name="errors-function-in-powerapps"></a>PowerApps の Errors 関数
 [データ ソース](../working-with-data-sources.md)に対する以前の変更のエラー情報を提供します。
@@ -30,7 +30,7 @@ ms.locfileid: "71992796"
 
 **[Validate](function-validate.md)** 関数と **[DataSourceInfo](function-datasourceinfo.md)** 関数を使用すると、一部のエラーを発生前に回避することができます。  エラーの対処方法と回避方法の詳細な推奨事項については、[データ ソースの操作](../working-with-data-sources.md)に関するページを参照してください。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Errors** 関数は、エラーの[テーブル](../working-with-tables.md)を返します。このテーブルには、次の[列](../working-with-tables.md#columns)が含まれています。
 
 * **Record**。  データ ソース内のエラーが発生したレコード。  レコードの作成中にエラーが発生した場合、この列は "*空白*" になります。
@@ -38,7 +38,7 @@ ms.locfileid: "71992796"
 * **Message**。  エラーの説明。  このエラー文字列は、エンド ユーザーに表示できます。  このメッセージはデータ ソースによって生成される場合があり、長くなったり、ユーザーにとっては無意味な元の列名が含まれていたりする可能性があることに注意してください。
 * **Error**。  次に示すような、エラーを解決できるように数式で使用できるエラー コード。
 
-| ErrorKind | 説明 |
+| ErrorKind | Description |
 | --- | --- |
 | ErrorKind.Conflict |同じレコードに対して別の変更が行われた結果、変更が競合しています。  **[Refresh](function-refresh.md)** 関数を使用して、レコードを再読み込みし、もう一度変更を試してください。 |
 | ErrorKind.ConstraintViolation |1 つ以上の制約に違反しました。 |
@@ -74,15 +74,15 @@ ms.locfileid: "71992796"
 
 ユーザーは、アプリを使用して Chocolate レコードをデータ入力フォームに読み込み、**Quantity** の値を 90 に変更します。  操作対象のレコードは、[コンテキスト変数](../working-with-variables.md#use-a-context-variable) **EditRecord** に配置されています。
 
-* **UpdateContext ({レコードの場合:最初 (Filter (IceCream, フレーバー = "チョコレート"))})**
+* **UpdateContext( { EditRecord: First( Filter( IceCream, Flavor = "Chocolate" ) ) } )**
 
 データ ソースでこの変更を行うには、次のように **[Patch](function-patch.md)** 関数を使用します。
 
 * **Patch( IceCream, EditRecord, Gallery.Updates )**
 
-ここでは、 **{Quantity: に評価さ**れます。** 90}** 。**Quantity**プロパティのみが変更されているためです。
+ここで、**Gallery.Updates** は **{ Quantity: 90 }** に評価されます。変更されたのは **Quantity** プロパティのみであるためです。
 
-残念ながら、 **[Patch](function-patch.md)** 関数が呼び出される直前に、他のユーザーによって Chocolate の **Quantity** が 80 に変更されます。  PowerApps はこれを検出し、競合する変更が行われないようにします。  この状況を次の数式で確認できます。
+残念ながら、 **[Patch](function-patch.md)** 関数が呼び出される直前に、他のユーザーによって Chocolate の **Quantity** が 80 に変更されます。  この問題は、電源アプリによって検出され、競合する変更が発生することはありません。  この状況を次の数式で確認できます。
 
 * **IsEmpty( Errors( IceCream, EditRecord ) )**
 
@@ -90,7 +90,7 @@ ms.locfileid: "71992796"
 
 | レコード | 列 | メッセージ | エラー |
 | --- | --- | --- | --- |
-| 特徴"チョコレート"、Quantity:100} |"*空白*" |"別のユーザーにより変更しようとしているレコードは変更されています。 レコードを再読み込みしてからやり直してください。" |ErrorKind.Conflict |
+| { Flavor: "Chocolate", Quantity: 100 } |"*空白*" |"別のユーザーにより変更しようとしているレコードは変更されています。 レコードを再読み込みしてからやり直してください。" |ErrorKind.Conflict |
 
 このエラーをユーザーに表示するためのラベルをフォーム上に配置することができます。
 

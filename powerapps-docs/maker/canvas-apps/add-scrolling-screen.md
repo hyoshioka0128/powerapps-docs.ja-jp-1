@@ -1,6 +1,6 @@
 ---
 title: スクロール画面をキャンバス アプリに追加する | Microsoft Docs
-description: PowerApps で、スクロール可能な画面を作成します。スクロールすると、画面に一度に表示できるより多くのコンテンツをキャンバス アプリで表示できます。
+description: Power Apps で、ユーザーがスクロールして、キャンバスアプリで画面に表示できるコンテンツの種類を増やすことができる画面を作成します。
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e1d6f19803e5856083266ff65497e4c0b017eff
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 8f2ff84ba79b202a888ab3909a09b3e66dd45640
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71987471"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678927"
 ---
 # <a name="add-a-scrolling-screen-to-a-canvas-app-in-powerapps"></a>PowerApps でスクロール画面をキャンバス アプリに追加する
 

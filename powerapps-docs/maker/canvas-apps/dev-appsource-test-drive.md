@@ -13,40 +13,40 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 570d9430d7dbcc5e8d41b7128060677fe1ff45a1
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3970c5181939f8ab6e8bd1ad4f396595d7083ff3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993070"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679571"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>AppSource でのお客様によるキャンバス アプリ体験版の使用
 
-PowerApps でのキャンバス アプリの作成に関心がありますか。 キャンバス アプリをお客様と共有したいですか。 アプリをお客様と共有し、ビジネスの潜在顧客を開拓する方法として、[AppSource.com](https://appsource.microsoft.com) では PowerApps 体験版ソリューションをサポートしています。
+Power Apps でキャンバスアプリを構築することに情熱を持っていますか。 キャンバス アプリをお客様と共有したいですか。 [AppSource.com](https://appsource.microsoft.com)は、お客様とアプリを共有し、ビジネスの潜在顧客を生み出する手段として、Power Apps Test Drive ソリューションをサポートしています。
 
 ## <a name="what-is-a-test-drive-solution"></a>体験版ソリューションとは
 
-体験版ソリューションを使用すると、お客様は、PowerApps プランにサインアップしたり、アプリケーションをインストールしたりせずに、実際のアプリを試すことができます。 お客様は、Azure Active Directory (AAD) アカウントを使用して AppSource.com にサインインして、Web ブラウザーでアプリを実行するだけです。 体験版がなければ、お客様はアプリに関する説明を読んだり、ビデオを見たりするしかありません。 体験版を使用すると、ソリューションの内容やアプリの機能についてよく理解することができます。 アプリを実際に使用する経験を持つことができます。 お客様がアプリの内部の構築方法を見ることはできないため、知的財産は保護されます。 体験版アプリを起動するユーザーについて、潜在顧客の情報を収集して共有し、ビジネスの成長に役立てます。
+体験ソリューションを使用すると、お客様は実際のアプリを試すことができます。これには、Power Apps プランにサインアップしたり、アプリケーションをインストールしたりする必要はありません。 お客様は、Azure Active Directory (AAD) アカウントを使用して AppSource.com にサインインして、Web ブラウザーでアプリを実行するだけです。 体験版がなければ、お客様はアプリに関する説明を読んだり、ビデオを見たりするしかありません。 体験版を使用すると、ソリューションの内容やアプリの機能についてよく理解することができます。 アプリを実際に使用する経験を持つことができます。 お客様がアプリの内部の構築方法を見ることはできないため、知的財産は保護されます。 体験版アプリを起動するユーザーについて、潜在顧客の情報を収集して共有し、ビジネスの成長に役立てます。
 
 AppSource.com で[公開されているアプリ](https://go.microsoft.com/fwlink/?linkid=848867)の例を次に示します。
 
 ![サンプル AppSource 一覧 ](./media/dev-appsource-test-drive/sample-app-source-listing.png)
 
-**[無料試用版]** リンクを上のアプリ一覧から選択すると、関連付けられた PowerApps 体験版アプリがユーザーのブラウザーで直接起動されます。
+上記のアプリの一覧から **[無料試用版]** リンクを選択すると、関連付けられている Power Apps Test Drive アプリがユーザーのブラウザー内で直接起動します。
 
 ![サンプル アプリ Web プレーヤー](./media/dev-appsource-test-drive/sample-app-web-player.png)
 
 ## <a name="how-do-i-build-a-test-drive-solution"></a>体験版ソリューションを構築する方法
-体験版ソリューション用のアプリの構築は、PowerApps でアプリを構築する方法と同じですが、外部データ接続の代わりに埋め込みデータを使用します。 埋め込みデータを使用することで、アプリをお客様にデプロイする障壁が低くなり、体験版に対する抵抗がなくなります。通常、最終的にお客様に配布する完成したソリューションにはデータ接続が含まれますが、埋め込みデータは体験版ソリューションでは十分に機能します。
+体験ソリューション用のアプリの構築は、Power Apps でのアプリの構築と同じですが、外部データ接続ではなく埋め込みデータを使用します。 埋め込みデータを使用すると、お客様にアプリを展開するための障壁を減らすことができるため、お客様に対してお客様による問題の発生を防ぐことができます。最終的に顧客に配布する完全なソリューションには、通常、データ接続が含まれますが、埋め込みデータは体験版ソリューションに適しています。
 
-PowerApps では、埋め込みデータによるアプリの構築がネイティブにサポートされるため、アプリで使用するサンプル データが必要になるだけです。 このデータは Excel ファイルに 1 つ以上のテーブルとしてキャプチャする必要があります。 PowerApps は、外部接続を介する代わりに、Excel テーブルのデータをアプリに取得して処理します。 この後の 3 つの手順のプロセスで、アプリにデータを取得して使用する方法を説明します。
+Power Apps では、埋め込みデータを使用したアプリの構築がネイティブにサポートされているため、アプリで使用するサンプルデータのみが必要です。 このデータは Excel ファイルに 1 つ以上のテーブルとしてキャプチャする必要があります。 Power Apps では、Excel テーブルからアプリにデータを取り込み、外部接続ではなく、そこで操作します。 この後の 3 つの手順のプロセスで、アプリにデータを取得して使用する方法を説明します。
 
-### <a name="step-1-import-data-into-the-app"></a>手順 1:アプリへのデータのインポート
-2つのテーブルを含む Excel ファイルがあるとします。**Siteinspector**と**siteinspector**。
+### <a name="step-1-import-data-into-the-app"></a>手順 1: アプリにデータをインポートする
+2 つのテーブル **SiteInspector** と **SitePhotos** を含む Excel ファイルがあるとします。
 
 ![インポートする Excel テーブル](./media/dev-appsource-test-drive/excel-file.png)
 
-オプション **[静的データをアプリに追加します]** を使用して、これら 2 つのテーブルを PowerApps にインポートします。
+**[静的データをアプリに追加する]** オプションを使用して、これら2つのテーブルを Power Apps にインポートします。
 
 ![[静的データをアプリに追加します]](./media/dev-appsource-test-drive/static-data.png)
 
@@ -54,10 +54,10 @@ PowerApps では、埋め込みデータによるアプリの構築がネイテ�
 
 ![データ ソースとしてインポートされた Excel テーブル](./media/dev-appsource-test-drive/data-sources.png)
 
-### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>手順 2:読み取り専用シナリオと読み取り/書き込みシナリオの処理
+### <a name="step-2-handling-read-only-and-read-write-scenarios"></a>手順 2: 読み取り専用シナリオと読み取り/書き込みシナリオを扱う
 インポートしたデータは、*静的*つまり読み取り専用です。 アプリが読み取り専用の場合 (ユーザーへのデータの表示のみを行うアプリなど)、アプリ内でテーブルを直接参照します。 たとえば、**SiteInspector**テーブルの **Title** フィールドにアクセスする場合、式で **SiteInspector.Title** を使用します。
 
-アプリが読み取り/書き込みの場合は、最初に各テーブルのデータを*コレクション*に取得します。これは PowerApps の表形式データ構造です。 その後、テーブルではなくコレクションを処理します。 **SiteInspector** テーブルと **SitePhotos** テーブルから **SiteInspectorCollect** コレクションと **SitePhotosCollect** コレクションにデータを取得するには、次のようにします。
+アプリが読み取り/書き込みの場合は、まず各テーブルのデータを、Power Apps の表形式のデータ構造である*コレクション*にプルします。 その後、テーブルではなくコレクションを処理します。 **SiteInspector** テーブルと **SitePhotos** テーブルから **SiteInspectorCollect** コレクションと **SitePhotosCollect** コレクションにデータを取得するには、次のようにします。
 
 ```powerapps-dot
 ClearCollect( SiteInspectorCollect, SiteInspector ); 
@@ -72,7 +72,7 @@ ClearCollect( SitePhotosCollect, SitePhotos )
 
 ここで、**Title** フィールドにアクセスする場合は、式で **SiteInspectorCollect.Title** を使用します。
 
-### <a name="step-3-add-update-and-delete-data-in-your-app"></a>手順 3:アプリでのデータの追加、更新、および削除
+### <a name="step-3-add-update-and-delete-data-in-your-app"></a>手順 3: アプリのデータを追加、更新、削除する
 これまで、データを直接読み取る方法とコレクションから読み取る方法を説明しました。次は、コレクションのデータの追加、更新、削除を行う方法について説明します。
 
 **行をコレクションに追加する**には、[Collect( DataSource, Item, ... )](../canvas-apps/functions/function-clear-collect-clearcollect.md) を使用します。

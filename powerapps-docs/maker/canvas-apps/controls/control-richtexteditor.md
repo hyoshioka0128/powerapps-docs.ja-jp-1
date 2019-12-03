@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 26ba133612e1c69ed470984fabafe6a6cdfddb1c
-ms.sourcegitcommit: d03915b4e2583327526b448ec10474cedfd7efe0
+ms.openlocfilehash: cd6d16a86dbe9c3a7a6ea60be11b9054c54790f2
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74550585"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679709"
 ---
 # <a name="rich-text-editor-control-in-powerapps"></a>PowerApps のリッチテキストエディターコントロール
 エンドユーザーが WYSIWYG 編集領域内のテキストを書式設定できるようにします。  出力形式は、HTML です。
@@ -28,7 +28,7 @@ ms.locfileid: "74550585"
 
 コントロールにより、(Web ブラウザーまたは Word から) コピーしたリッチ テキストを コントロールに貼り付けることができます。  
 
-コントロールの目的はテキストの書式設定であるため、入力 HTML の整合性の保持は保証されません。  すべてのスクリプト、スタイル、オブジェクト、その他の影響を受ける可能性のあるタグがエディターによって削除されます。  これは、リッチ テキストが PowerApps の外部で作成された場合、元々作成された製品と同じように表示されない可能性があることを意味します。
+コントロールの目的はテキストの書式設定であるため、入力 HTML の整合性の保持は保証されません。  すべてのスクリプト、スタイル、オブジェクト、その他の影響を受ける可能性のあるタグがエディターによって削除されます。  これは、リッチテキストが Power Apps 以外で作成された場合、それが作成された製品と同じように見えない可能性があることを意味します。
 
 現在サポートされている機能は次のとおりです。
 - 太字、斜体、下線

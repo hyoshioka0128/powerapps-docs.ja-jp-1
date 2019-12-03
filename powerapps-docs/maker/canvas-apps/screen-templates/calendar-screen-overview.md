@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9ca7e5f14508a2dcd70967e77b29989819bfe7ba
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 945a4fd3c017363a8c43171c8e891e0c32c84a0f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541595"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675219"
 ---
 # <a name="overview-of-the-calendar-screen-template-for-canvas-apps"></a>キャンバスアプリのカレンダー画面テンプレートの概要
 
@@ -42,7 +42,7 @@ Canvas アプリで、Office 365 Outlook アカウントからの今後のイベ
 
 テンプレートから予定表画面を追加するには、次のようにします。
 
-1. PowerApps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、PowerApps Studio でアプリを作成するか、既存のアプリを開きます。
+1. Power Apps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、アプリを作成するか、Power apps Studio で既存のアプリを開きます。
 
     このトピックでは phone アプリについて説明しますが、同じ概念がタブレットアプリにも当てはまります。
 
@@ -210,7 +210,7 @@ Calendar screen は独自の機能を備えた強力なコントロールです�
 1. 柔軟な高さのギャラリーで、**ラベル**コントロールと**HTML テキスト**コントロールを追加し、両方の**autoheight**プロパティを**true**に設定します。
 
     > [!NOTE]
-    > PowerApps は、各イベントのメッセージ本文を HTML テキストとして取得するため、そのコンテンツを**html テキスト**コントロールに表示する必要があります。
+    > Power Apps は、各イベントのメッセージ本文を HTML テキストとして取得するため、そのコンテンツを**html テキスト**コントロールに表示する必要があります。
 
 1. **HTML テキスト**コントロールの**Y**プロパティを次の式に設定します。
 
@@ -233,7 +233,7 @@ Calendar screen は独自の機能を備えた強力なコントロールです�
     )
     ```
 
-    この数式は、 **_selectedCalendarEvent**のフィールド値に設定された動的データのギャラリーを作成します。これは、ユーザーが**CalendarEventsGallery**コントロールでイベントを選択するたびに設定されます。 このギャラリーを拡張して、さらに多くのフィールドを含めることができます。ただし、このセットには適切な開始点が用意されています。
+    この数式により、 **_selectedCalendarEvent**のフィールド値に設定される動的データのギャラリーが作成されます。これは、ユーザーが**CalendarEventsGallery**コントロールでイベントを選択するたびに設定されます。 このギャラリーを拡張して、さらに多くのフィールドを含めることができます。ただし、このセットには適切な開始点が用意されています。
 
 1. ギャラリー項目を配置した状態で、 **Label**コントロールの**Text**プロパティを `ThisItem.Title`に設定し、 **HTML テキスト**コントロールの**HtmlText**プロパティを `ThisItem.Value`に設定します。
 
@@ -245,7 +245,7 @@ Calendar screen は独自の機能を備えた強力なコントロールです�
     ```
 
     > [!Note]
-    > 代わりに、 **_selectedCalendarEvent**変数を使用する代わりに、 **CalendarEventsGallery**を使用することもできます。オフ.
+    > **_SelectedCalendarEvent**変数を使用する代わりに、 **CalendarEventsGallery**を使用することもできます。オフ.
 
 ### <a name="show-event-attendees"></a>イベント出席者を表示する
 
@@ -304,13 +304,13 @@ Calendar screen は独自の機能を備えた強力なコントロールです�
         )
     );
     ```
-    この数式は、参加者が組織内にあるかどうかを大まかに判断します。 **Userdomain**の定義は、アプリを実行しているユーザーの電子メールアドレスのドメイン URL にすぎません。 この行では、 **AttendeeEmailsTemp**コレクションに**inorg**という名前の追加の true/false 列が作成されます。 この列には、 **Userdomain**が、その特定の行の**AttendeeEmailsTemp**の電子メールアドレスのドメイン URL と等しい場合に**true**が格納されます。
+    この数式は、参加者が組織内にあるかどうかを大まかに判断します。 **_UserDomain**の定義は、単に、アプリを実行しているユーザーの電子メールアドレスのドメイン URL です。 この行では、 **AttendeeEmailsTemp**コレクションに**inorg**という名前の追加の true/false 列が作成されます。 この列には、 **Userdomain**が、その特定の行の**AttendeeEmailsTemp**の電子メールアドレスのドメイン URL と等しい場合に**true**が格納されます。
 
-    この方法は常に正確ではありませんが、かなり近いものになります。 たとえば、組織内の特定の参加者は Jane@OnContoso.comのような電子メールアドレスを持つことがありますが、 **Userdomain**は Contoso.com です。 アプリのユーザーと加藤さんは同じ会社で仕事をしているかもしれませんが、電子メールアドレスに多少の違いがあります。 次のような場合は、次の式を使用することをお勧めします。
+    この方法は常に正確ではありませんが、かなり近いものになります。 たとえば、組織内の特定の参加者は、Jane@OnContoso.comのような電子メールアドレスを持つことがありますが、 **_userDomain**は Contoso.com です。 アプリのユーザーと加藤さんは同じ会社で仕事をしているかもしれませんが、電子メールアドレスに多少の違いがあります。 次のような場合は、次の式を使用することをお勧めします。
 
     `Upper(_userDomain) in Upper(Right(Result, Len(Result) - Find("@", Result)))`
 
-    ただし、この数式は、Jane@NotTheContosoCompany.com のような電子メールアドレスと Contoso.com のような**Userdomain**を照合し、それらのユーザーが同じ会社で作業しないようにします。
+    ただし、この数式は、Jane@NotTheContosoCompany.com のような電子メールアドレスと Contoso.com のような **_userDomain**に一致しますが、これらのユーザーは同じ会社では使用できません。
 
 - ClearCollect (MyPeople)
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6f2dfae897a19c66e493cbdecd897df87b8194c2
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 55e38d2be5f43e1b13fc1894f88aac26a26bd57e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992213"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678214"
 ---
 # <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>PowerApps の AddColumns、DropColumns、RenameColumns、および ShowColumns 関数
 [列](../working-with-tables.md#columns)の追加、削除、名前の変更、選択により、[テーブル](../working-with-tables.md)の表示を調整します。
@@ -30,14 +30,14 @@ ms.locfileid: "71992213"
 * 計算列をテーブルに追加します (たとえば、**Quantity** を **Unit Price** で乗算した結果を示す **Total Price** 列)。
 * ユーザーに表示するため、または数式で使用するために、列の名前をよりわかりやすく変更します。
 
-テーブルは、文字列や数値と同様、PowerApps 内での値です。  テーブルは数式内で引数として指定できるほか、関数から結果として返すことができます。
+テーブルは、文字列や数値と同じように、Power Apps の値です。  テーブルは数式内で引数として指定できるほか、関数から結果として返すことができます。
 
 > [!NOTE]
 > このトピックで説明する関数は、元のテーブルを変更しません。 代わりに、そのテーブルを引数として受け取り、変換が適用された新しいテーブルを返します。 詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。  
 
 これらの関数を使用しても、[データ ソース](../working-with-data-sources.md)の列は変更できません。 そのデータは、ソースで変更する必要があります。 **[Collect](function-clear-collect-clearcollect.md)** 関数を使用して、[コレクション](../working-with-data-sources.md#collections)に列を追加できます。 詳細については、[データ ソースの使用](../working-with-data-sources.md)に関するページを参照してください。  
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **AddColumns** 関数は、テーブルに列を追加し、数式でその列内の値を定義します。 既存の列は変更されません。
 
 数式はテーブルの各レコードについて評価されます。
@@ -94,7 +94,7 @@ AddColumns( RealEstateAgents,
 
 これらの例ではいずれも、**IceCreamSales** データ ソースは変更されません。 各関数は、データ ソースの値をテーブルに変換し、その値を結果として返します。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )** |結果に **Revenue** 列を追加します。  各レコードで **UnitPrice * QuantitySold** が評価され、その結果が新しい列に配置されます。 |<style> img { max-width: none; } </style> ![](media/function-table-shaping/icecream-add-revenue.png) |
 | **DropColumns( IceCreamSales, "UnitPrice" )** |結果から **UnitPrice** 列を除外します。 この関数は列の除外に使用し、**ShowColumns** は列の表示に使用します。 |![](media/function-table-shaping/icecream-drop-price.png) |

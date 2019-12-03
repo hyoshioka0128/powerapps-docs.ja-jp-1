@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d514342bc51cdd6aa737da1b893530d702127bd1
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: ed104f5ae4e7244e5a49b6cbc67745fd2f9e24dc
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650490"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678605"
 ---
 # <a name="html-text-control-in-powerapps"></a>PowerApps の HTML テキスト コントロール
 テキストを表示し、書式設定のための HTML タグを変換するボックスです。
@@ -102,4 +102,4 @@ ms.locfileid: "73650490"
 * **HtmlText** を指定する必要があります。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
-* **HtmlText** には、`<button>`、`<a>`、`<input>` などの対話型の要素を含めることはできません。 PowerApps の **[TabIndex](properties-accessibility.md)** システムでは、**HtmlText** 内の要素は考慮されません。
+* **HtmlText** には、`<button>`、`<a>`、`<input>` などの対話型の要素を含めることはできません。 Power Apps の **[TabIndex](properties-accessibility.md)** システムでは、 **HtmlText**内の要素は考慮されません。

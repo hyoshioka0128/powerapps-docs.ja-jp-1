@@ -13,21 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1fda14b7117334290c67d4d5727d93484ded7471
-ms.sourcegitcommit: 6c91c6dae20437f263e4eb827c6b938d6aa1b6a5
+ms.openlocfilehash: 6cda843ea95f79e907aa738a6546d63a6a3be270
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261932"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678858"
 ---
 # <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 用のキャンバス アプリ コネクタの概要
-データは、PowerApps でビルドするものを含め、ほとんどのアプリの中核にあります。 *データ ソース*に格納されたデータは、*接続*を作成することでアプリに取り込まれます。 接続は特定の*コネクタ*を使用してデータ ソースと通信します。 PowerApps には SharePoint、SQL Server、Office 365、Salesforce、Twitter などの一般的なサービスやオンプレミスのデータ ソースのためのコネクタがあります。 キャンバス アプリへのデータの追加を開始するには、[PowerApps でのデータ接続の追加](add-data-connection.md)に関するページを参照してください。
+データは、Power Apps で構築したものも含め、ほとんどのアプリの中核になります。 *データ ソース*に格納されたデータは、*接続*を作成することでアプリに取り込まれます。 接続は特定の*コネクタ*を使用してデータ ソースと通信します。 Power Apps には、多くの人気のあるサービスやオンプレミスのデータソース (SharePoint、SQL Server、Office 365、Salesforce、Twitter など) 用のコネクタが用意されています。 キャンバス アプリへのデータの追加を開始するには、[PowerApps でのデータ接続の追加](add-data-connection.md)に関するページを参照してください。
 
 コネクタから、データの**テーブル**または**アクション**が提供される場合があります。 コネクタの中には、テーブルのみを提供するもの、アクションのみを提供するもの、そして両方を提供するものがあります。 また、ご利用のコネクタは、標準コネクタのまたはカスタム コネクタのいずれかとなります。
 
 ## <a name="tables"></a>テーブル
 
-ご利用のコネクタでテーブルが提供されている場合は、使用するテーブル ソースを追加してから、管理するデータ ソース内でテーブルを選択します。 PowerApps では、ご利用のアプリにテーブル データが取得されると共に、ご利用のデータ ソース内のデータが自動的に更新されます。 たとえば、**Lessons** という名前のテーブルが含まれているデータ ソースを追加してから、数式バー内でギャラリーやフォームなどのコントロールの **Items** プロパティを次の値に設定することができます。
+ご利用のコネクタでテーブルが提供されている場合は、使用するテーブル ソースを追加してから、管理するデータ ソース内でテーブルを選択します。 Power Apps はどちらも、テーブルデータをアプリに取得し、データソース内のデータを更新します。 たとえば、**Lessons** という名前のテーブルが含まれているデータ ソースを追加してから、数式バー内でギャラリーやフォームなどのコントロールの **Items** プロパティを次の値に設定することができます。
 
  ![プレーン データ ソースの Items プロパティ](./media/connections-list/ItemPropertyPlain.png)
 
@@ -58,7 +58,7 @@ ms.locfileid: "74261932"
 [Patch](functions/function-patch.md)<br>[Collect](functions/function-clear-collect-clearcollect.md)<br>[Update](functions/function-update-updateif.md)
 
 > [!NOTE]
->  **PowerApps は動的スキーマでは機能しません**。 "動的スキーマ" とは、同じアクションが異なる列を持つ別のテーブルを返す可能性を意味します。 テーブル内の列が異なる可能性のある条件としては、アクションの入力パラメーター、アクションを実行しているユーザーまたはロール、およびユーザーが作業しているグループなどがあります。 たとえば、SQL Server のストアドプロシージャでは、異なる入力を使用して実行すると、異なる列が返される場合があります。 動的スキーマを使用するアクションの場合、コネクタのドキュメントは、**この操作の出力が動的**であることを示しています。 戻り値として。 これに対して、Power の自動化は動的スキーマを使用して機能し、シナリオの回避策を提供する場合があります。
+>  **Power Apps は動的スキーマでは動作しません**。 "動的スキーマ" とは、同じアクションが異なる列を持つ別のテーブルを返す可能性を意味します。 テーブル内の列が異なる可能性のある条件としては、アクションの入力パラメーター、アクションを実行しているユーザーまたはロール、およびユーザーが作業しているグループなどがあります。 たとえば、SQL Server のストアドプロシージャでは、異なる入力を使用して実行すると、異なる列が返される場合があります。 動的スキーマを使用するアクションの場合、コネクタのドキュメントは、**この操作の出力が動的**であることを示しています。 戻り値として。 これに対して、Power の自動化は動的スキーマを使用して機能し、シナリオの回避策を提供する場合があります。
 
 ## <a name="popular-connectors"></a>一般的なコネクタ
 
@@ -77,9 +77,9 @@ ms.locfileid: "74261932"
 \* * Azure Blob、Box、Dropbox、Google Drive、OneDrive、OneDrive for Business に適用されます。
 
 ## <a name="standard-and-custom-connectors"></a>標準コネクタとカスタム コネクタ
-PowerApps では、上記に一覧したような一般的に使用されている多くのデータ ソース用に "*標準*" コネクタが提供されています。 使用するデータ ソースの種類に対して PowerApps から標準コネクタが提供されている場合は、そのコネクタを使用する必要があります。 自分で構築したサービスなど、別の種類のデータ ソースに接続する必要がある場合は、「[Microsoft Flow でカスタム コネクタを登録して使用する](../canvas-apps/register-custom-api.md)」を参照してください。
+Power Apps には、上記のような一般的に使用される多くのデータソース用の*標準*コネクタが用意されています。 使用するデータソースの種類に対して、Power Apps に標準コネクタがある場合は、そのコネクタを使用する必要があります。 自分で構築したサービスなど、別の種類のデータ ソースに接続する必要がある場合は、「[Microsoft Flow でカスタム コネクタを登録して使用する](../canvas-apps/register-custom-api.md)」を参照してください。
 
 ## <a name="all-standard-connectors"></a>すべての標準コネクタ
-すべての標準コネクタの一覧については、[Microsoft Connector リファレンス](https://docs.microsoft.com/connectors/)に関するページを参照してください。 Premium コネクタを使用するには、PowerApps Plan 1 または Plan 2 が必要です。 詳細については、[PowerApps のプラン](https://powerapps.microsoft.com/pricing/)に関するページをご覧ください。
+すべての標準コネクタの一覧については、[Microsoft Connector リファレンス](https://docs.microsoft.com/connectors/)に関するページを参照してください。 Premium コネクタには、Power Apps プラン1またはプラン2が必要です。 詳細については、「 [Power Apps のプラン](https://powerapps.microsoft.com/pricing/)」を参照してください。
 
-[PowerApps フォーラム](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)では特定のコネクタについて質問することができます。さらに [PowerApps のアイデア](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)に関するページでは、追加すべきコネクタまたは他の改善事項を提案することができます。
+[Power apps フォーラム](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)で特定のコネクタに関する質問をすることができます。また、追加するコネクタや、 [Power apps のアイデア](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)を作成するためのその他の機能強化を提案することもできます。

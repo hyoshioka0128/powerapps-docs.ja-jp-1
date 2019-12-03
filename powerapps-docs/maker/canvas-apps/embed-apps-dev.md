@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c107e337733f771212359618c5761cb7a89d3177
-ms.sourcegitcommit: a7f2313a048d3b8a03516a2e4c349f3fb08f4a22
+ms.openlocfilehash: 3d67ef4b05b61f59fec49b0bbc0961970d8070bf
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072535"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678513"
 ---
 # <a name="integrate-canvas-apps-into-websites-and-other-services"></a>キャンバス アプリを Web サイトなどのサービスに統合する
 作成するアプリは、ユーザーが作業を行うときに使用できるときに最も役に立ちます。 Iframe にキャンバスアプリを埋め込むことで、これらのアプリを web サイトやその他のサービス (Power BI や SharePoint など) に統合することができます。
@@ -29,10 +29,10 @@ ms.locfileid: "74072535"
 
 次の制限事項を考慮してください。
 
-- 埋め込みアプリにアクセスできるのは、同じテナント内の PowerApps ユーザーだけです。
-- Internet Explorer 11 を使用して PowerApps にアクセスするには、互換表示をオフにする必要があります。
+- 同じテナント内のユーザーのみが埋め込みアプリにアクセスできます。
+- Internet Explorer 11 を使用して電源アプリにアクセスするには、互換性ビューを無効にする必要があります。
 
-Iframe を使用せずに、キャンバスアプリを SharePoint Online に統合することもできます。 詳細につい[ては、「PowerApps web パーツを使用する](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c)」を参照してください。
+Iframe を使用せずに、キャンバスアプリを SharePoint Online に統合することもできます。 詳細につい[ては、「Power Apps web パーツの使用](https://support.office.com/article/use-the-powerapps-web-part-6285f05e-e441-408a-99d7-aa688195cd1c)」を参照してください。
 
 ## <a name="set-uri-parameters-for-your-app"></a>アプリの URI パラメーターの設定
 アプリを埋め込む場合は、まず Uniform Resource Identifier (URI) のパラメーターを設定して、iframe がアプリの場所を認識できるようにします。 URI の形式は次のとおりです。

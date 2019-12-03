@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2e61a312aa3824c24b7058da4b34aa9c5cf462c
-ms.sourcegitcommit: 4ed29d83e90a2ecbb2f5e9ec5578e47a293a55ab
+ms.openlocfilehash: 9e96b0733e139657c3105ec020470d55fe5008dd
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63321540"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679196"
 ---
 # <a name="add-images-to-excel-from-powerapps"></a>PowerApps から Excel へのイメージの追加
 ユーザーがファイルのイメージを表示、追加、または削除したり、**ペン** コントロールを使用して描画したりできるアプリを自動的に作成します。 アプリは、作成してクラウド ストレージ アカウントにアップロードする Excel ファイルに基づきます。
@@ -27,7 +27,7 @@ ms.locfileid: "63321540"
 
 * [コントロールの追加と構成](add-configure-controls.md)に慣れている。
 * [テーブルとしての Excel データの構成](https://support.office.com/article/Format-an-Excel-table-6789619F-C889-495C-99C2-2F971C0E2370?ui=en-US&rs=en-US&ad=US)に慣れている。
-* Excel ファイルを格納できる、クラウド ストレージ アカウント (Dropbox、OneDrive、Google Drive など) への [PowerApps の接続](add-data-connection.md)。
+* Excel ファイルを格納することができるクラウドストレージアカウント (Dropbox、OneDrive、Google Drive など) への[Power Apps 接続](add-data-connection.md)。
 
 ## <a name="create-the-data-source-and-the-app"></a>データ ソースとアプリの作成
 1. Excel で、隣接しており、2 つの空のセルのすぐ上にある 2 つのセル (A1 と B1 など) に**キャプション**と**イメージ [image]** を追加します。
@@ -35,16 +35,16 @@ ms.locfileid: "63321540"
    
     ![テーブルの作成](./media/add-images-to-excel/create-table.png)
 3. ファイル (**ImageDemo** など) を保存し、クラウド ストレージ アカウントにアップロードします。
-4. PowerApps で、(アプリをまだ開いていない場合は左端にある) **[ファイル]** メニューの **[新規]** をクリックまたはタップし、クラウド ストレージ アカウントのタイルの **[携帯電話レイアウト]** をクリックまたはタップします。
+4. Power Apps で、(アプリをまだ開いていない場合は左端にある) **[ファイル]** メニューの **[新規]** をクリックまたはタップし、クラウドストレージアカウントのタイルで **[電話レイアウト]** をクリックまたはタップします。
    
     ![クラウド ストレージ アカウントの選択](./media/add-images-to-excel/select-account.png)
 5. **[Excel ファイルの選択]** で、作成したファイルをクリックまたはタップします。
    
     ![ブックの選択](./media/add-images-to-excel/select-workbook.png)
-6. **[テーブルの選択]** で、作成したテーブルをクリックまたはタップし、**[接続]** をクリックまたはタップします。
+6. **[テーブルの選択]** で、作成したテーブルをクリックまたはタップし、 **[接続]** をクリックまたはタップします。
    
     ![テーブルの選択](./media/add-images-to-excel/select-table.png)
-7. クイック ツアーが表示された場合は、それを実行するか、**[スキップ]** をクリックまたはタップします。
+7. クイック ツアーが表示された場合は、それを実行するか、 **[スキップ]** をクリックまたはタップします。
    
     ![クイック ツアーの最初の画面](./media/add-images-to-excel/quick-tour.png)
 
@@ -66,7 +66,7 @@ ms.locfileid: "63321540"
 1. 左側のナビゲーション バーで **EditScreen1** をクリックまたはタップして表示し、イメージ カードをクリックまたはタップして選択します。
    
     ![イメージ カードの選択](./media/add-images-to-excel/select-card.png)
-2. 右側のウィンドウで、イメージ カードのカード セレクターをクリックまたはタップし、**[メモの追加]** をクリックまたはタップします。
+2. 右側のウィンドウで、イメージ カードのカード セレクターをクリックまたはタップし、 **[メモの追加]** をクリックまたはタップします。
    
     ![メモの追加](./media/add-images-to-excel/add-notes.png)
 3. 左側のナビゲーション バーで **BrowseScreen1** をクリックまたはタップして表示し、プレビュー モードを開始します。

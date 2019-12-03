@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7750ad239df87e99d2321be20293b64153110fc1
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 646a5de203c713d59965f7787dabe087c0a33f51
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71991824"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678168"
 ---
 # <a name="updatecontext-function-in-powerapps"></a>PowerApps の UpdateContext 関数
 現在の画面の[コンテキスト変数](../working-with-variables.md#use-a-context-variable)を作成または更新します。
@@ -28,10 +28,10 @@ ms.locfileid: "71991824"
 
 コンテキスト変数のスコープは 1 画面に限定されています。このため、別の画面のコンテキスト変数を参照する数式を作成することはできません。 他のプログラミング ツールの使用経験がある方は、コンテキスト変数をローカル変数とほぼ同じものだと考えてもよいでしょう。  アプリ全体で使用できるグローバル変数を操作するには、[**Set**](function-set.md) 関数を使用します。  
 
-PowerApps では基本的に、ユーザーがアプリを操作すると、数式が自動的に再計算されます。  しかし、コンテキスト変数には再計算が実行されません。このため、コンテキスト変数を使うと、アプリの作成や理解が難しくなることがあります。  コンテキスト変数を使用する前に、[変数の利用](../working-with-variables.md)に関するページをもう一度確認してください。
+Power Apps は、ユーザーがアプリと対話するときに自動的に再計算される数式に基づいています。  しかし、コンテキスト変数には再計算が実行されません。このため、コンテキスト変数を使うと、アプリの作成や理解が難しくなることがあります。  コンテキスト変数を使用する前に、[変数の利用](../working-with-variables.md)に関するページをもう一度確認してください。
 
-## <a name="description"></a>説明
-コンテキスト変数を作成または更新するには、[UpdateContext](../working-with-tables.md#records) 関数に**レコード**を 1 つ渡す必要があります。 各レコードでは、変数の名前の定義または照合に使用するデータとしての[列](../working-with-tables.md#columns)の名前と、その変数に設定する値を指定します。
+## <a name="description"></a>Description
+コンテキスト変数を作成または更新するには、**UpdateContext** 関数に[レコード](../working-with-tables.md#records)を 1 つ渡す必要があります。 各レコードでは、変数の名前の定義または照合に使用するデータとしての[列](../working-with-tables.md#columns)の名前と、その変数に設定する値を指定します。
 
 * 以前に定義した変数の名前を指定した場合には、**UpdateContext** によって変数が指定された値に設定されます。
 * まだ存在しない変数の名前を指定した場合には、**UpdateContext** ではその名前の変数を作成したうえで、その変数に対して指定された値を設定します。
@@ -70,7 +70,7 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 
 ## <a name="examples"></a>例
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **UpdateContext( {&nbsp;Counter:&nbsp;1&nbsp;} )** |コンテキスト変数 **Counter** を作成または変更し、その値を **1** に設定します。 |**Counter** に値 **1** が設定されます。 この変数は、数式で名前 **Counter** を使用することによって参照できます。 |
 | **UpdateContext( {&nbsp;Counter:&nbsp;2&nbsp;} )** |前の例のコンテキスト変数 **Counter** の値を **2** に設定します。 |**Counter** に値 **2** が設定されます。 |
@@ -81,8 +81,8 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 ### <a name="step-by-step-example"></a>ステップバイステップの例
 1. 既定の画面に **Source** という名前を付けてから、画面を 1 つ追加して、その画面の名前を **Target** に設定します。
 2. **Source** 画面にボタンを 2 つ追加し、その一方の **[Text](../controls/properties-core.md)** プロパティに「**English**」、もう一方に「**Spanish**」を、それぞれ入力します。
-3. **English[ ボタンの ](../controls/properties-core.md)** OnSelect プロパティに、次の式を設定します。<br>**Navigate(Target, ScreenTransition.Fade, {Language:"English"})**
-4. **Spanish[ ボタンの ](../controls/properties-core.md)** OnSelect プロパティを次の数式に設定します。<br>**Navigate(Target, ScreenTransition.Fade, {Language:"Spanish"})**
+3. **English** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティに、次の式を設定します。<br>**Navigate(Target, ScreenTransition.Fade, {Language:"English"})**
+4. **Spanish** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>**Navigate(Target, ScreenTransition.Fade, {Language:"Spanish"})**
 5. **Target** 画面にラベルを追加し、その **[Text](../controls/properties-core.md)** プロパティを次の式に設定します。<br>**If(Language="English", "Hello!", "Hola!")**
 6. **Target** 画面の **[挿入]** タブで **[図形]** を選択し、戻る矢印を選択します。
 7. 戻る矢印の **[OnSelect](../controls/properties-core.md)** プロパティを次の式に設定します。<br>**Navigate(Source, ScreenTransition.Fade)**

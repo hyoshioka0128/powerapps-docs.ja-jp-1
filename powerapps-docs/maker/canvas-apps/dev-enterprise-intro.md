@@ -1,5 +1,5 @@
 ---
-title: 企業の開発者、パートナー、ISV のための PowerApps | Microsoft Docs
+title: 企業の開発者、パートナー、Isv 向けのパワーアプリ |Microsoft Docs
 description: キャンバスアプリを使用してソリューションを開発する方法について説明します。
 author: ImadYanni
 manager: kvivek
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 824ce3d3767ada450d9590d9b14e539ce66cf4e7
-ms.sourcegitcommit: da16207fe9bf4e2382a9a25463b2ee8c3a680a3b
+ms.openlocfilehash: d2ec1d3fc39749f29a57fd8ca8e518e325c2a11a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74086485"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679498"
 ---
 # <a name="canvas-apps-for-enterprise-developers-partners-and-isvs"></a>企業の開発者、パートナー、ISV のためのキャンバス アプリ
 
-開発者は、PowerApps でキャンバス アプリを拡張して、これまで以上に強力なソリューションを組織や顧客に提供できます。
+開発者は、Power Apps でキャンバスアプリを拡張して、組織や顧客にとってさらに強力なソリューションを実現できます。
 
 ## <a name="canvas-apps-for-enterprise-developers"></a>企業開発者向けキャンバスアプリ
 
@@ -40,8 +40,8 @@ ms.locfileid: "74086485"
 
 Microsoft パートナーまたは独立系ソフトウェア ベンダー (ISV) は、顧客のデータやビジネス プロセスと統合するように自社製品を拡張することによって、顧客による製品の採用を加速化できます。
 
-- **カスタム コネクタの作成と認定**: PowerApps とサービスとの通信を可能にするコネクタを作成することで、製品を Microsoft クラウドで利用できるようにします。 [詳細情報](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
+- **カスタムコネクタの構築と認定**: Microsoft cloud に製品を持ち込むことができます。このコネクタを使用して、Power Apps がサービスと通信できるようにします。 [詳細情報](https://docs.microsoft.com/connectors/custom-connectors/submit-certification)
 
-- **AppSource でのソリューションの公開**: PowerApps を使用してアプリを開発し、新しい顧客が試用できるように AppSource に公開することで、新しいビジネス チャンスを生み出すことができます。 [詳細情報](dev-appsource-test-drive.md)
+- **Appsource でのソリューションのリスト**: Power Apps でアプリを構築し、それを appsource に公開して、新しい顧客が体験を受けられるようにすることで、ビジネスの新しい潜在顧客を生み出します。 [詳細情報](dev-appsource-test-drive.md)
 
-- **無料で今すぐ利用開始**: PowerApps Community Plan に無料でサインアップし、専用の独立した環境でアプリの開発を始めましょう。 [詳細情報](../dev-community-plan.md)
+- **無料で今すぐ開始**: Power Apps コミュニティプランに無料でサインアップし、専用の個人環境でアプリの構築を開始しましょう。 [詳細情報](../dev-community-plan.md)

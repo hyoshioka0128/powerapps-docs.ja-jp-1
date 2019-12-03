@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bbc6111800a817ecb71eec60fdba1d2dabd6c698
-ms.sourcegitcommit: 32542f1d17fee757dcdaf9c247f4051f59b86434
+ms.openlocfilehash: 06c3a02d1ea3943f64661334ca419f6f205e8b7e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73741489"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675820"
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>キャンバスアプリでの注文書ギャラリーの作成
 
@@ -48,10 +48,10 @@ Northwind Traders データベースで架空のデータを管理するため�
     > [!div class="mx-imgBorder"]
     > 空のダイアログボックスからキャンバスアプリを ![](media/northwind-orders-canvas-part1/start-02.png)
 
-    データソースとコントロールをアプリに追加できるように、PowerApps Studio が開きます。
+    アプリにデータソースとコントロールを追加できるように、Power Apps Studio が開きます。
 
     > [!div class="mx-imgBorder"]
-    > ![PowerApps Studio](media/northwind-orders-canvas-part1/start-03.png)
+    > ![Power Apps Studio](media/northwind-orders-canvas-part1/start-03.png)
 
 ## <a name="add-the-data"></a>データを追加する
 
@@ -77,11 +77,11 @@ Northwind Traders データベースで架空のデータを管理するため�
 
     各フィールドには、**表示名**と**名前**があります。これは、論理名と呼ばれることもあります。 どちらの名前も同じことを意味します。 通常は、アプリをビルドするときに表示名を使用しますが、手順に記載されているように、より暗号化された**名前**が必要になる場合もあります。
 
-1. 次に、画面とコントロールを操作するために、[PowerApps Studio] で、左側にある**ツリービュー**に戻り、3つの積み上げ四角のアイコンを押します。 シリンダーアイコンを押すと、いつでも**データソース**に戻ることができます。
+1. 次に画面とコントロールを操作するため、Power Apps Studio では、3つの積み上げ四角アイコンを押すことで左側の**ツリービュー**に戻ります。 シリンダーアイコンを押すと、いつでも**データソース**に戻ることができます。
 
 ## <a name="create-the-order-gallery"></a>注文ギャラリーを作成する
 
-1. **[挿入]** タブで [**ギャラリー**  >  **[縦]** を選択して[**ギャラリー**](controls/control-gallery.md)コントロールを追加し、注文を表示します。
+1. **[挿入]** タブで **ギャラリー** >  **[縦]** を選択して[**ギャラリー**](controls/control-gallery.md)コントロールを追加し、注文を表示します。
 
     > [!div class="mx-imgBorder"]
     > ![挿入、ギャラリー、垂直方向の空白](media/northwind-orders-canvas-part1/orders-01.png)
@@ -203,7 +203,7 @@ Northwind Traders データベースで架空のデータを管理するため�
 
     セット内の各オプションには、ラベルに表示すると表示される名前が付いています。 これらの名前はローカライズできます。アプリは、英語のユーザーが**Apple**を選択した場合、フランス語のユーザーが**Pomme**を選択した場合、またはスペイン語のユーザーが**Manzana**を選択した場合と同じオプションを認識します。 このため、このトピックでは後ほど説明するように、ハードコーディングされた文字列に依存する数式をオプションに対して作成することはできません。
 
-    数式では、スペースが含まれているため、**注文状態**を単一引用符で囲む必要があります。 ただし、この名前は、PowerApps の他の名前 ( **Customer**や**Company**など) と同じように機能します。
+    数式では、スペースが含まれているため、**注文状態**を単一引用符で囲む必要があります。 ただし、この名前は、**顧客**や**会社**など、Power Apps の他の名前と同じように機能します。
 
 1. **[ホーム]** タブで、状態ラベルのフォントサイズを20ポイントに増やし、テキストを右揃えにします。
 
@@ -224,7 +224,7 @@ Northwind Traders データベースで架空のデータを管理するため�
     > [!div class="mx-imgBorder"]
     > 状態ラベルの Color プロパティを設定 ![](media/northwind-orders-canvas-part1/status-08.png)
 
-    PowerApps では、セット内の各オプションにハードコーディングされた文字列に依存する数式を作成できません。これは、オプション名がローカライズされている場合に、このような式が不適切な結果を生成する可能性があるためです。 代わりに、**スイッチ**関数は、ユーザーの設定に基づいてラベルに表示される文字列に基づいて色を決定します。
+    Power Apps を使用すると、オプション名がローカライズされている場合に、このような数式によって不適切な結果が生じる可能性があるため、セット内の各オプションにハードコーディングされた文字列に依存する数式を作成することはできません。 代わりに、**スイッチ**関数は、ユーザーの設定に基づいてラベルに表示される文字列に基づいて色を決定します。
 
     この数式を使用すると、前の図に示したように、異なるステータス値が異なる色で表示されます。
 

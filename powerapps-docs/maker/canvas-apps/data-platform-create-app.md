@@ -1,6 +1,6 @@
 ---
 title: Common Data Service | からキャンバスアプリを生成します。Microsoft Docs
-description: PowerApps で、データを管理するためのキャンバスアプリを自動的に生成し Common Data Service
+description: Power Apps で、データを管理するためのキャンバスアプリを自動的に生成し Common Data Service
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7175ac7d96989de4abd7e9fa3446631ca04d5f1b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f1737a70a8b9f6be30c73a91116c88df38609966
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540141"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678559"
 ---
 # <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>PowerApps で Common Data Service からキャンバスアプリを生成する
 
-PowerApps では、 [Common Data Service](../common-data-service/data-platform-intro.md)のサンプルアカウントの一覧に基づいて、キャンバスアプリが自動的に生成されます。 このアプリでは、すべてのアカウントの参照、1 つのアカウントの詳細の表示、アカウントの作成、更新および削除が可能です。
+Power Apps では、 [Common Data Service](../common-data-service/data-platform-intro.md)のサンプルアカウントの一覧に基づいて、キャンバスアプリが自動的に生成されます。 このアプリでは、すべてのアカウントの参照、1 つのアカウントの詳細の表示、アカウントの作成、更新および削除が可能です。
 
-PowerApps にサインアップしていない場合は、始める前に[無料でサインアップ](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してください。
+Power Apps にサインアップしていない場合は、開始する前に[無料でサインアップ](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してください。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -44,7 +44,7 @@ PowerApps にサインアップしていない場合は、始める前に[無料
 
 1. **[テーブルの選択]** で、 **[アカウント]** を選び、 **[接続]** を選びます。
 
-1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、 **[スキップ]** を選択します。
+1. **[Power Apps Studio へようこそ]** ダイアログボックスが表示されたら、 **[スキップ]** を選択します。
 
 ブラウザー画面でアプリが開き、ギャラリーと呼ばれるコントロールにアカウントの一覧が表示されます。 画面上部近くのタイトル バーには、ギャラリー内のデータの更新、ギャラリー内のデータのアルファベット順の並べ替え、およびギャラリーへのデータの追加を行うアイコンが表示されます。 オプションで、タイトル バーの下の検索ボックスを使用して、入力または貼り付けたテキストに基づいてギャラリーのデータをフィルタリングできます。 
 

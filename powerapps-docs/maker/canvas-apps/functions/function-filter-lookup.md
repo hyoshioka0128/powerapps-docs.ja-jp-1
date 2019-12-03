@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1412cdd79531f70a1c029d7657940200823e5ba0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b66997884d39e7e584eca7b6413e1fc8ae3caea9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992867"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680261"
 ---
 # <a name="filter-search-and-lookup-functions-in-powerapps"></a>PowerApps の Filter、Search、および LookUp 関数
 [テーブル](../working-with-tables.md)内の 1 つ以上の[レコード](../working-with-tables.md#records)を検索します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Filter** 関数は、数式を満たすレコードをテーブル内で検索します。  1 つ以上の条件に一致する一連のレコードを検索したり、そのような条件に一致しないレコードを除外したりするには、**Filter** を使用します。
 
 **LookUp** 関数は、テーブル内で数式を満たす最初のレコードを検索します。  1 つ以上の条件に一致する 1 つのレコードを検索するには、**LookUp** を使用します。
@@ -36,7 +36,7 @@ ms.locfileid: "71992867"
 
 **Filter** と **Search** は、元のテーブルと同じ列および条件と一致するレコードを含むテーブルを返します。 **LookUp** は、レコードを 1 つの値まで減らす数式を適用した後に、最初に見つかったレコードのみを返します。 レコードが見つからなかった場合、**Filter** と **Search** は[空](function-isblank-isempty.md)のテーブルを返し、**LookUp** は "*空白*" を返します。  
 
-文字列または数値と同じように、[テーブル](../working-with-tables.md)は PowerApps 内の値です。 関数に渡して、関数から返すことができます。  **Filter**、**Search**、**LookUp** は、テーブルを変更しません。 代わりに、引数としてテーブルを受け取り、そこからテーブル、レコード、または 1 つの値を返します。 詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。
+[テーブル](../working-with-tables.md)は、文字列や数値と同じように、Power Apps の値です。 関数に渡して、関数から返すことができます。  **Filter**、**Search**、**LookUp** は、テーブルを変更しません。 代わりに、引数としてテーブルを受け取り、そこからテーブル、レコード、または 1 つの値を返します。 詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。
 
 [!INCLUDE [delegation](../../../includes/delegation.md)]
 
@@ -67,7 +67,7 @@ ms.locfileid: "71992867"
 
 ![](media/function-filter-lookup/icecream.png)
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Filter( IceCream, OnOrder > 0 )** |**OnOrder** が 0 より大きいレコードを返します。 |<style> img { max-width: none; } </style> ![](media/function-filter-lookup/icecream-onorder.png) |
 | **Filter( IceCream, Quantity + OnOrder > 225 )** |**Quantity** 列と **OnOrder** 列の合計が 225 より大きいレコードを返します。 |![](media/function-filter-lookup/icecream-overstock.png) |
@@ -78,7 +78,7 @@ ms.locfileid: "71992867"
 | **LookUp( IceCream, Flavor = "Chocolate", Quantity )** |**Flavor** が "Chocolate" に等しいレコードを検索します (その中で 1 つあります)。  見つかった最初のレコードについて、そのレコードの **Quantity** を返します。 |100 |
 | **LookUp( IceCream, Quantity > 150, Quantity + OnOrder )** |**Quantity**が 100 を超えるレコードを検索します (その中で複数あります)。  見つかった最初のレコード (**Flavor** が "Vanilla") について、**Quantity** 列と **OnOrder** 列の合計を返します。 |250 |
 | **LookUp( IceCream, Flavor = "Pistachio", OnOrder )** |**Flavor** が "Pistachio" に等しいレコードを検索します (その中には存在しません)。  見つからなかったため、**Lookup** は "*空白*" を返します。 |"*空白*" |
-| **LookUp( IceCream, Flavor = "Vanilla" )** |**Flavor** が "Vanilla" に等しいレコードを検索します (その中で 1 つあります)。  換算公式が指定されていなかったため、レコード全体が返されます。 |特徴"バニラ"、Quantity:200、OnOrder:75} |
+| **LookUp( IceCream, Flavor = "Vanilla" )** |**Flavor** が "Vanilla" に等しいレコードを検索します (その中で 1 つあります)。  換算公式が指定されていなかったため、レコード全体が返されます。 |{ Flavor: "Vanilla", Quantity: 200, OnOrder: 75 } |
 
 ### <a name="search-user-experience"></a>検索のユーザー エクスペリエンス
 多くのアプリでは、検索ボックスに 1 つ以上の文字を入力して、大きなデータ セット内のレコードの一覧をフィルター処理することができます。 入力すると、一覧には、検索条件に一致するレコードのみが表示されます。
@@ -89,7 +89,7 @@ ms.locfileid: "71992867"
 
 このデータ ソースをコレクションとして作成するには、 **[ボタン](../controls/control-button.md)** コントロールを作成し、その **OnSelect** プロパティを次の数式に設定します。
 
-**ClearCollect (Customers, Table ({Name:"Fred さん"、Company:"Northwind Traders"}、{Name:"Cole 明美"、会社:"Contoso"}、{Name:"Glenda ジョンソン"、会社:"Contoso"}、{Name:"Mike Collins"、会社:"Adventure Works"}, {Name:"Colleen Jones"、会社:"Adventure Works"}))**
+**ClearCollect( Customers, Table( { Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" } ) )**
 
 この例に示すように、画面下部にある[**ギャラリー コントロール**](../controls/control-gallery.md)にレコードの一覧を表示できます。 画面の上部には、ユーザーが関心のあるレコードを指定できるように、**SearchInput** という名前の[**テキスト入力**](../controls/control-text-input.md)コントロールを追加できます。
 
@@ -101,7 +101,7 @@ ms.locfileid: "71992867"
 
 **Name** 列に基づいてフィルター処理するには、ギャラリー コントロールの **Items** プロパティを次の数式のいずれかに設定します。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Filter( Customers, StartsWith( Name, SearchInput.Text ) )** |**Customers** データ ソースで、検索文字列が **Name** 列の先頭に出現するレコードをフィルター処理します。 このテストでは、大文字と小文字が区別されません。 ユーザーが検索ボックスに「**co**」と入力した場合、ギャラリーには、**Colleen Jones** と **Cole Miller** が表示されます。 ギャラリーに **Mike Collins** が表示されないのは、そのレコードの **Name** 列の先頭に検索文字列がないためです。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-startswith.png) |
 | **Filter( Customers, SearchInput.Text in Name )** |**Customers** データ ソースで、検索文字列が **Name** 列のどこかに出現するレコードをフィルター処理します。 このテストでは、大文字と小文字が区別されません。 ユーザーが検索ボックスに「**co**」と入力した場合、ギャラリーには、**Colleen Jones**、**Cole Miller**、および **Mike Collins** が表示されます。これは、検索文字列が、これらすべてのレコードの **Name** 列のどこかに出現しているためです。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-name-co-contains.png) |
@@ -109,7 +109,7 @@ ms.locfileid: "71992867"
 
 **Name** 列だけでなく **Company** 列を含めるように検索範囲を広げることができます。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Filter( Customers, StartsWith( Name, SearchInput.Text ) &#124;&#124; StartsWith( Company, SearchInput.Text ) )** |**Customers** データ ソースで、**Name** 列または **Company** 列の先頭に検索文字列 (たとえば、**co**) があるレコードをフィルター処理します。  どちらか一方の **StartsWith** 関数が *true* の場合、[ **&#124;&#124;** 演算子](operators.md)は *true* になります。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-startswith.png) |
 | **Filter( Customers, SearchInput.Text in Name &#124;&#124; SearchInput.Text in Company )** |**Customers** データ ソースで、**Name** 列または **Company** 列の中に検索文字列 (たとえば、**co**) が含まれているレコードをフィルター処理します。 |<style> img { max-width: none } </style> ![](media/function-filter-lookup/customers-all-co-contains.png) |

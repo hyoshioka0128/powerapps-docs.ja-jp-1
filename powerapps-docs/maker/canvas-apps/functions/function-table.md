@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 91d3c43ee4cd5b640a4501fde8c5cc7c1fafab2a
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 2388df10fbc735f619497dc9b93dd049c8a46afa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983857"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680100"
 ---
 # <a name="table-function-in-powerapps"></a>PowerApps の Table 関数
 一時[テーブル](../working-with-tables.md)を作成します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Table** 関数は、[レコード](../working-with-tables.md#records)の引数リストからテーブルを作成します。
 
 テーブルの[列](../working-with-tables.md#columns)は、すべての引数レコードのすべてのプロパティの集合になります。 レコードに値が含まれていない列には、"*空白*" の値が追加されます。
 
-テーブルは、文字列や数値と同様、PowerApps 内での値です。 テーブルは関数の引数として指定できるほか、関数から結果として返すことができます。 **Table** は、永続テーブルは作成しません。 その代わりに、引数で構成された一時テーブルを返します。  この一時テーブルは、別の関数の引数として指定できるほか、ギャラリーで視覚化したり、別のテーブルに埋め込んだりもできます。  詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。
+テーブルは、文字列や数値と同じように、Power Apps の値です。 テーブルは関数の引数として指定できるほか、関数から結果として返すことができます。 **Table** は、永続テーブルは作成しません。 その代わりに、引数で構成された一時テーブルを返します。  この一時テーブルは、別の関数の引数として指定できるほか、ギャラリーで視覚化したり、別のテーブルに埋め込んだりもできます。  詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。
 
 **[ value1, value2, ... ]** という構文を使って、単一列テーブルを作成することもできます。
 

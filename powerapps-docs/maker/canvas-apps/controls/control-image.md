@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb0ce1bca968d0e23dc10544a824b340ab336936
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 02c9e680582b6d51a613fd8089709401f1e80b32
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650456"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679755"
 ---
 # <a name="image-control-in-powerapps"></a>PowerApps のイメージ コントロール
 ローカル ファイルやデータ ソースの画像を表示するコントロールです。
@@ -125,7 +125,7 @@ ms.locfileid: "73650456"
 
 ### <a name="show-a-set-of-images-from-a-data-source"></a>データ ソースの画像セットの表示
 1. こちらの [Excel ファイル](https://pwrappssamples.blob.core.windows.net/samples/FlooringEstimates.xlsx)をダウンロードして、ローカル デバイスに保存します。
-2. PowerApps Studio で、アプリを作成するか開き、右のウィンドウで **[データ ソースの追加]** をクリックまたはタップします。
+2. Power Apps Studio でアプリを作成するか開き、右側のウィンドウで **[データソースの追加]** をクリックまたはタップします。
 
     右のウィンドウに **[データ ソースの追加]** が表示されない場合、左のナビゲーション バーの画面をどれかクリックまたはタップします。
 3. **[静的データをアプリに追加します]** をクリックまたはタップして、ダウンロードした Excel ファイルをクリックまたはタップし、 **[開く]** をクリックまたはタップします。

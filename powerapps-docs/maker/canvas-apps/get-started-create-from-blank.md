@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 81426f24eea958b40f6d03da787a729603ec6f7f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 79d59c484f82f4d356f3b2ac40f02bdddd125901
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537024"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676601"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Excel データを基にして最初からキャンバス アプリを作成する
 
@@ -39,7 +39,7 @@ Excel データを基にしてテーブルとして書式設定された独自�
     | Sunday | noon-2pm |Singh |Morgan |
     | Sunday | 2pm-4pm |Batye |Nguyen |
 
-2. そのデータを **Schedule** という名前のテーブルとして書式設定し、PowerApps が情報を解析できるようにします。
+2. データを**Schedule**という名前のテーブルとして書式設定し、Power Apps で情報を解析できるようにします。
 
     詳細については、「[Excel でテーブルを書式設定する](how-to-excel-tips.md)」をご覧ください。
 
@@ -64,9 +64,9 @@ Excel データを基にしてテーブルとして書式設定された独自�
     > [!div class="mx-imgBorder"]
     >![アプリの名前と形式を指定する](./media/get-started-create-from-blank/excel-demo.png)
 
-    PowerApps Studio で、携帯電話用の空のアプリが作成されます。
+    Power Apps Studio は、携帯電話用の空のアプリを作成します。
 
-1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが開いたら、 **[スキップ]** を選びます。
+1. **[Power Apps Studio へようこそ]** ダイアログボックスが表示されたら、 **[スキップ]** を選択します。
 
 ## <a name="connect-to-data"></a>データに接続する
 

@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 76d4a1ffdc569a3ccfc2567229c99136e744191a
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: cba5d7bd1214866cc24ba01c64909cf15e0ca96d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899313"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674672"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>完成した SharePoint Online 統合シナリオ全体の説明
 > [!NOTE]
-> この記事は、SharePoint Online での PowerApps の使用、Power オートメーション、および Power BI に関するチュートリアルシリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
+> この記事は、Power Apps の使用に関するチュートリアルシリーズの一部であり、Power App の自動化と、SharePoint Online での Power BI について説明しています。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
 このチュートリアル シリーズでは、キャンバス アプリとフローの構築からレポートの作成と SharePoint への埋め込みに至るまで、幅広い内容を説明しました。 多くのことを学び、これらのテクノロジの統合の仕組みをしっかりと理解し、お客様自身のニーズに応じてキャンバス アプリやフロー、レポートを SharePoint に統合できるようになっていただきたいと思います。 このチュートリアル シリーズを終える前にシナリオ全体をおさらいして、すべての部分がどのように連携しているかを見ていきましょう。
 

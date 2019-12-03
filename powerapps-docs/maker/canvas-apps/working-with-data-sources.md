@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b4dde9c7b24352c1fefc62ff9ec73ba5ec82ee25
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0bb04f9c3c1fc0d2b330e53dd39b355421af84aa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988120"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674291"
 ---
 # <a name="understand-data-sources-for-canvas-apps-in-powerapps"></a>PowerApps でのキャンバス アプリのデータ ソースについて
 
-PowerApps では、ほとんどのキャンバス アプリが、**データ ソース**と呼ばれるクラウド サービスに格納されている外部情報を使用します。 一般的な例は、OneDrive for Business に格納されている Excel ファイル内のテーブルです。 アプリは、**接続**を使用してこれらのデータ ソースにアクセスします。
+Power Apps では、ほとんどのキャンバスアプリで、**データソース**と呼ばれるクラウドサービスに格納されている外部情報が使用されます。 一般的な例は、OneDrive for Business に格納されている Excel ファイル内のテーブルです。 アプリは、**接続**を使用してこれらのデータ ソースにアクセスします。
 
 この記事では、さまざまな種類のデータ ソースと、テーブル データ ソースの操作方法について説明します。
 
@@ -40,27 +40,27 @@ PowerApps では、ほとんどのキャンバス アプリが、**データ ソ
 
 ### <a name="local-data-sources"></a>ローカル データ ソース
 
-**[ギャラリー](controls/control-gallery.md)** 、 **[表示フォーム](controls/control-form-detail.md)** 、 **[編集フォーム](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。  最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。  
+**[ギャラリー](controls/control-gallery.md)** 、 **[フォームの表示](controls/control-form-detail.md)** 、および **[フォームの編集](controls/control-form-detail.md)** コントロールを使用すると、データ ソースからデータを読み書きするアプリを簡単に作成できます。  最初に、[データ フォームについて](working-with-forms.md)の記事をご覧ください。  
 
-データからアプリを作成するよう PowerApps に要求すると、これらのコントロールが使用されます。 その背後で、アプリは、データ ソースから取得したデータを格納して操作するために内部テーブルを使用します。
+データからアプリを作成するように Power Apps に要求すると、これらのコントロールが使用されます。 その背後で、アプリは、データ ソースから取得したデータを格納して操作するために内部テーブルを使用します。
 
 特別な種類のデータ ソースに[コレクション](working-with-data-sources.md#collections)があります。コレクションは、アプリに対してローカルであり、クラウドのサービスへの接続に基づきません。したがって、同じユーザーのデバイス間または複数のユーザー間で情報を共有することはできません。 コレクションの読み込みと保存はローカルで行うことができます。
 
 ### <a name="kinds-of-tables"></a>テーブルの種類
 
-PowerApps アプリの内部テーブルは、数や文字列が値であるのと同じように固定値を保持します。 内部テーブルはどこにも格納されず、アプリのメモリにのみ存在します。 テーブルの構造とデータを直接変更することはできません。 その代わり、数式を使用して新しいテーブルを作成することができます。その数式を使用して、元のテーブルに変更を加えたコピーを作成します。
+Power Apps アプリの内部にあるテーブルは、数値または文字列が値である場合と同様に、固定値です。 内部テーブルはどこにも格納されず、アプリのメモリにのみ存在します。 テーブルの構造とデータを直接変更することはできません。 その代わり、数式を使用して新しいテーブルを作成することができます。その数式を使用して、元のテーブルに変更を加えたコピーを作成します。
 
-外部テーブルはデータ ソースに格納され、後で取得して共有することができます。  PowerApps は、格納されたデータを読み書きするための "接続" を提供します。  接続内では、複数の情報テーブルにアクセスできます。  アプリで使用するテーブルを選択すると、それぞれのテーブルが別個の "*データ ソース*" になります。  
+外部テーブルはデータ ソースに格納され、後で取得して共有することができます。  Power Apps は、格納されているデータの読み取りと書き込みを行う "接続" を提供します。  接続内では、複数の情報テーブルにアクセスできます。  アプリで使用するテーブルを選択すると、それぞれのテーブルが別個の "*データ ソース*" になります。  
 
 [作業テーブル](working-with-tables.md)に関するページで内部テーブルについて詳しく説明されていますが、その説明はクラウド サービスに存在する外部テーブルにも当てはまります。
 
 ## <a name="working-with-tables"></a>テーブルの操作
-テーブルのデータ ソースは、PowerApps の内部テーブルと同じ方法で使用できます。  各データ ソースには、内部テーブルと同じように、[レコード](working-with-tables.md#records)、[列](working-with-tables.md#columns)、数式で使用できるプロパティがあります。 さらに、次の条件があります。
+テーブルデータソースは、内部の Power Apps テーブルを使用するのと同じ方法で使用できます。  各データ ソースには、内部テーブルと同じように、[レコード](working-with-tables.md#records)、[列](working-with-tables.md#columns)、数式で使用できるプロパティがあります。 さらに、次の条件があります。
 
 * データ ソースの列名とデータ型は、接続の基になるテーブルと同じになります。
   
     > [!NOTE]
-  > 名前にスペースが使われている列を含む SharePoint および Excel のデータ ソースの場合、PowerApps ではスペースが **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint または Excel の **"Column Name"** は、PowerApps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
+  > 列名にスペースが含まれている SharePoint および Excel データソースの場合、Power Apps ではスペースが **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint または Excel の **"列名"** は、データレイアウトに表示されている場合や数式で使用されている場合に、Power Apps の **"Column_x0020_Name"** として表示されます。
 * データ ソースは、アプリが読み込まれるときにサービスから自動的に読み込まれます。  **[Refresh](functions/function-refresh.md)** 関数を使用して、強制的にデータを更新できます。
 * ユーザーはアプリを実行するとき、レコードを作成、変更、削除して、その変更をサービスの基になるテーブルにプッシュ転送できます。
   * レコードを作成するには、 **[Patch](functions/function-patch.md)** 関数と **[Collect](functions/function-clear-collect-clearcollect.md)** 関数を使用します。  
@@ -70,7 +70,7 @@ PowerApps アプリの内部テーブルは、数や文字列が値であるの�
 * **[DataSourceInfo](functions/function-datasourceinfo.md)** 関数、 **[Defaults](functions/function-defaults.md)** 関数、 **[Validate](functions/function-validate.md)** 関数は、ユーザー エクスペリエンスを最適化するために使用できる、データ ソースに関する情報を提供します。
 
 ### <a name="creating-data-sources"></a>データ ソースの作成
-PowerApps を使用して、接続されたデータ ソースを作成したり、データ ソースの構造を変更したりすることはできません。データ ソースは、既にいずれかのサービスに存在している必要があります。 たとえば、OneDrive に保存された Excel ブックにテーブルを作成するには、最初に OneDrive で Excel Online を使用してブックを作成します。 次に、アプリからそのブックへの接続を作成します。  
+Power Apps を使用して接続されたデータソースを作成したり、その構造を変更したりすることはできません。データソースは、サービス内のどこかに既に存在している必要があります。 たとえば、OneDrive に保存された Excel ブックにテーブルを作成するには、最初に OneDrive で Excel Online を使用してブックを作成します。 次に、アプリからそのブックへの接続を作成します。  
 
 コレクションのデータ ソースは、アプリ内で作成と変更を "*行えます*" が、これは一時的なものです。
 
@@ -80,7 +80,7 @@ PowerApps を使用して、接続されたデータ ソースを作成したり
 * 情報は、ストレージ サービス (この場合は Office 365 サイトの SharePoint リスト) を介して保存され、共有されます。
 * 接続により、この情報をアプリで利用できるようになります。  接続は、情報にアクセスするためのユーザーの認証を処理します。
 * アプリが起動されるか、 **[Refresh](functions/function-refresh.md)** 関数が押されると、接続から情報がアプリのデータ ソースに取得され、ローカルで使用できるようになります。
-* 数式は、情報を読み取り、その情報をユーザーに表示されるコントロールに公開するために使用されます。 画面でギャラリーを使用し、 **[アイテム](controls/properties-core.md)** のプロパティをデータソースに接続することで、データソースのレコードを表示できます。**Gallery. Items = DataSource**。  コントロールの **[Default](controls/properties-core.md)** プロパティを使用して、ギャラリー内のコントロールをギャラリーに関連付けます。  
+* 数式は、情報を読み取り、その情報をユーザーに表示されるコントロールに公開するために使用されます。 データ ソースのレコードを表示するには、画面のギャラリーを使用し、 **[Items](controls/properties-core.md)** プロパティをデータ ソースに関連付けます (**Gallery.Items = DataSource**)。  コントロールの **[Default](controls/properties-core.md)** プロパティを使用して、ギャラリー内のコントロールをギャラリーに関連付けます。  
 * データ ソースは、テーブルでもあります。  したがって、データ ソースを全体として使用する前に、 **[Filter](functions/function-filter-lookup.md)** 、 **[Sort](functions/function-sort.md)** 、 **[AddColumns](functions/function-table-shaping.md)** 、その他の関数を使用して、改良と拡張を行えます。  また、 **[Lookup](functions/function-filter-lookup.md)** 、 **[First](functions/function-first-last.md)** 、 **[Last](functions/function-first-last.md)** などの関数を使用して、個々のレコードを操作することもできます。
 
 ### <a name="modify-a-record"></a>レコードの変更
@@ -104,7 +104,7 @@ PowerApps を使用して、接続されたデータ ソースを作成したり
 * "*ユーザーへの即座のフィードバック*"。  問題を修正するのに最適なタイミングは、ユーザーの記憶に新鮮な、その問題が発生したときです。  実際、タッチ操作またはキー入力ごとに、入力の問題を示す赤いテキストを表示できます。
 * "*ネットワーク トラフィックの削減とユーザーの待ち時間の短縮*"。  アプリで問題を多く検出できれば、問題を検出して解決するためのネットワーク経由の会話を減らすことができます。  この会話を行うのに時間がかかり、ユーザーは処理を進めるのにその都度待たなければなりません。
 
-PowerApps には、検証用に 2 つのツールが用意されています。
+Power Apps には、次の2つの検証ツールが用意されています。
 
 * データ ソースは、有効な値と有効でない値に関する情報を提供できます。  たとえば、数値に最小値と最大値を設定したり、1 つ以上のエントリを必須に設定したりできます。  この情報には、 **[DataSourceInfo](functions/function-datasourceinfo.md)** 関数を使用してアクセスできます。  
 * **[Validate](functions/function-validate.md)** 関数では、これと同じ情報を使用して、1 つの列またはレコード全体の値を確認できます。

@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6354862823122d332c7e70fba08829d3fc8147eb
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: c5b5ddf05201743a5ea4848793fcd05aea7def24
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985030"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680169"
 ---
 # <a name="groupby-and-ungroup-functions-in-powerapps"></a>PowerApps の GroupBy 関数と Ungroup 関数
 [テーブル](../working-with-tables.md)の[レコード](../working-with-tables.md#records)のグループ化とグループ化解除を行います。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **GroupBy** 関数は、1 つ以上の[列](../working-with-tables.md#columns)の値に基づいてレコードをグループ化したテーブルを返します。 同じグループのレコードは単一のレコードにまとめられ、列が追加されます。この列には、残りの列が入れ子になったテーブルが保持されます。   
 
 **Ungroup** 関数では、**GroupBy** と逆の処理が行われます。 この関数は、グループ化されていたレコードを個別のレコードに分割してテーブルを返します。
@@ -42,7 +42,7 @@ ms.locfileid: "71985030"
 
 **Ungroup** は、**GroupBy** に渡されたレコードの順番を元のまま保持しようとしますが、  必ずしも可能ではありません (元のテーブルに "*空白*" のレコードが含まれている場合など)。
 
-テーブルは、文字列や数値と同様、PowerApps 内での値です。 テーブルは関数の引数として指定できるほか、関数で返すことができます。 **GroupBy** と **Ungroup** では、テーブルは変更されません。代わりに、これらの関数はテーブルを引数として受け取り、別のテーブルを返します。 詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。
+テーブルは、文字列や数値と同じように、Power Apps の値です。 テーブルは関数の引数として指定できるほか、関数で返すことができます。 **GroupBy** と **Ungroup** では、テーブルは変更されません。代わりに、これらの関数はテーブルを引数として受け取り、別のテーブルを返します。 詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。
 
 ## <a name="syntax"></a>構文
 **GroupBy**( *Table*, *ColumnName1* [, *ColumnName2*, ... ], *GroupColumnName* )

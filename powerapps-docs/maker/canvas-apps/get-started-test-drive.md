@@ -1,6 +1,6 @@
 ---
 title: テンプレートからキャンバス アプリを作成する | Microsoft Docs
-description: PowerApps テンプレートを基にして自動的にキャンバス アプリを作成する手順について説明します。
+description: Power Apps テンプレートに基づいて、キャンバスアプリを自動的に作成するための詳細な手順です。
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e127aa75d0d99a80fab5532efd555eb00b7262de
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eac22ce84d5864e79c2964d42ffa5fe37853bc97
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537009"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676251"
 ---
 # <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>PowerApps でテンプレートからキャンバス アプリを作成する
 
@@ -26,7 +26,7 @@ ms.locfileid: "73537009"
 
 テンプレートからアプリを作成するには、テンプレートのサンプル データを格納するクラウド ストレージ アカウント (DropBox、OneDrive、Google Drive など) が必要です。
 
-PowerApps のライセンスを持っていない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
+Power Apps のライセンスをお持ちでない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
 
 ## <a name="create-an-app"></a>アプリを作成する
 
@@ -42,7 +42,7 @@ PowerApps のライセンスを持っていない場合は、[無料でサイン
 
 4. テンプレートの一覧で、いずれかのテンプレートをクリックまたはタップし、右下隅にある **[Use (使用)]** をクリックまたはタップします。
 
-    ![PowerApps テンプレートを開く](./media/get-started-test-drive/open-template.png)
+    ![Power Apps テンプレートを開く](./media/get-started-test-drive/open-template.png)
 
     サンプル データがクラウド ストレージ アカウントにコピーされ、アプリが作成されて、そのホーム ページが表示されます。
 

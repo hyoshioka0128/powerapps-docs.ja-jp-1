@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリのフォームについて | Microsoft Docs
-description: PowerApps でキャンバス アプリにフォームを追加して、データ ソースから情報を収集して表示できるようにします。
+description: Power Apps で、データソースの情報を収集して表示できるように、キャンバスアプリにフォームを追加します。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 476964166a57bea23469baf0c1e7497be10ab73f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 462830806165b4eb52eebb17436e11798dbdb267
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541662"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674454"
 ---
 # <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>Microsoft PowerApps のキャンバス アプリ フォームについて
 
@@ -38,11 +38,11 @@ ms.locfileid: "73541662"
 
 ## <a name="prerequisites"></a>前提条件
 
-* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
+* Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 * PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
 
 ## <a name="explore-a-generated-app"></a>生成されたアプリの詳細
-PowerApps では、指定したデータ ソースに基づいて自動的にアプリを生成することができます。 各アプリには、先ほど説明したコントロールとそれらを接続する数式を使用した 3 つの画面があります。 これらのアプリは、"そのまま" 実行することも、具体的な目標に合わせてカスタマイズすることもできます。また、アプリのしくみを調べて、自分のアプリに当てはまる有用な概念を習得することもできます。 以降のセクションでは、生成されたアプリを動作させる画面、コントロール、数式について確認します。  
+Power Apps では、指定したデータソースに基づいてアプリを自動的に生成できます。 各アプリには、先ほど説明したコントロールとそれらを接続する数式を使用した 3 つの画面があります。 これらのアプリは、"そのまま" 実行することも、具体的な目標に合わせてカスタマイズすることもできます。また、アプリのしくみを調べて、自分のアプリに当てはまる有用な概念を習得することもできます。 以降のセクションでは、生成されたアプリを動作させる画面、コントロール、数式について確認します。  
 
 ### <a name="browse-screen"></a>ブラウズ画面
 ![閲覧画面のコントロール](./media/working-with-forms/afd-browse-screen-basic.png)
@@ -144,13 +144,13 @@ PowerApps では、指定したデータ ソースに基づいて自動的にア
 ![[オプション] ウィンドウを開いた状態の編集画面](./media/working-with-forms/edit-screen.png)
 
 ## <a name="build-an-app-from-scratch"></a>アプリをゼロから作成
-PowerApps でアプリが生成されるしくみを理解すると、このトピックの前半で説明したのと同じ構成要素と数式を使用するアプリを自分で作成できます。
+アプリがどのように生成されるかを理解することで、このトピックで既に説明したのと同じ構成要素と数式を使用する独自のアプリを作成できます。
 
 ## <a name="identify-test-data"></a>テスト データの識別
 このトピックを最大限に活用するために、実験に使用できるデータ ソースから見ていきましょう。 このデータ ソースには、心配なしに読み取りおよび更新できるテスト データが含まれている必要があります。
 
 > [!NOTE]
-> データ ソースに列名がスペースの列を含む SharePoint リストまたは Excel テーブルを使用する場合、PowerApps はスペースを **"\_x0020\_"** に置き換えます。 たとえば、SharePoint または Excel の **"Column Name"** は、PowerApps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
+> データソースとしてスペースが含まれている列名を含む SharePoint リストまたは Excel テーブルを使用する場合、Power Apps ではスペースが **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint または Excel の **"列名"** は、データレイアウトに表示されている場合や数式で使用されている場合に、Power Apps の **"Column_x0020_Name"** として表示されます。
 
 このトピックの残りの部分に忠実に従うために、次のデータを含む、"Ice Cream" という名前の SharePoint リストを作成します。
 
@@ -314,7 +314,7 @@ PowerApps でアプリが生成されるしくみを理解すると、このト�
 
     ![[Edit] ボタンが追加された表示フォーム](./media/working-with-forms/edit-icecream-error.png)
 
-PowerApps によってデータから生成されるアプリでは、このコントロールの **[AutoHeight](controls/control-text-box.md)** プロパティが *true* に設定されているため、エラーが発生しなければ領域が使用されません。 **[編集フォーム](controls/control-form-detail.md)** コントロールの **[Height](controls/properties-size-location.md)** プロパティと **[Y](controls/properties-size-location.md)** プロパティも、エラーが発生したときに拡張されるこのコントロールに合わせて動的に調整されます。 詳細については、既存のデータからアプリを生成し、これらのプロパティを調べてください。 エラー用のテキスト ボックス コントロールは、エラーが発生していないときは非常に短くなっています。このコントロールを選択するには、( **[表示]** タブにある) **[詳細]** ビューを開く必要がある場合もあります。
+Power Apps がデータから生成するアプリでは、このコントロールの **[Autoheight](controls/control-text-box.md)** プロパティを*true*に設定して、エラーが発生しない場合に領域が消費されないようにします。 **[編集フォーム](controls/control-form-detail.md)** コントロールの **[Height](controls/properties-size-location.md)** プロパティと **[Y](controls/properties-size-location.md)** プロパティも、エラーが発生したときに拡張されるこのコントロールに合わせて動的に調整されます。 詳細については、既存のデータからアプリを生成し、これらのプロパティを調べてください。 エラー用のテキスト ボックス コントロールは、エラーが発生していないときは非常に短くなっています。このコントロールを選択するには、( **[表示]** タブにある) **[詳細]** ビューを開く必要がある場合もあります。
 
 ![データから生成されたアプリ (エラーのテキスト コントロールが選択された編集フォーム)](./media/working-with-forms/edit-assets-error1.png)
 
@@ -330,7 +330,7 @@ PowerApps によってデータから生成されるアプリでは、このコ�
     ![データ ソースの更新](./media/working-with-forms/browse-icecream-refresh.png)
 
 ## <a name="search-and-sort-the-gallery"></a>ギャラリーの検索と並べ替え
-PowerApps によってデータから生成されたアプリでは、閲覧画面の上部にある 2 つのコントロールを無視してきました。 ユーザーは、これらのコントロールを使用すると、1 つ以上のレコードの検索、レコードの一覧の並べ替え (昇順または降順)、またはその両方を実行できます。
+アプリでデータから生成されたアプリでは、ブラウズ画面の上部にある2つのコントロールについては説明しませんでした。 ユーザーは、これらのコントロールを使用すると、1 つ以上のレコードの検索、レコードの一覧の並べ替え (昇順または降順)、またはその両方を実行できます。
 
 ![閲覧画面でのコントロールの並べ替えと検索](./media/working-with-forms/afd-browse-search-sort.png)
 

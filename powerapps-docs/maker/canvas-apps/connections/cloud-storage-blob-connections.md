@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 41536592493a2f17b187829fb778d2a6ca94134a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d2da924310d07869972e8d0a9a4b26649d6a56b8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540762"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679962"
 ---
 # <a name="connect-to-cloud-storage-from-powerapps"></a>PowerApps からクラウド ストレージに接続する
-PowerApps には、クラウド ストレージ接続がいくつか用意されています。 いずれかの接続を利用し、Excel ファイルを保存したり、それに含まれる情報をアプリ全体で利用したりできます。 接続の種類:  
+Power Apps には、いくつかのクラウドストレージ接続が用意されています。 いずれかの接続を利用し、Excel ファイルを保存したり、それに含まれる情報をアプリ全体で利用したりできます。 接続の種類:  
 
 | **Azure Blob** | **Box** | **Dropbox** | **Google ドライブ** | **OneDrive** | **OneDrive<br>for Business** |
 | --- | --- | --- | --- | --- | --- |

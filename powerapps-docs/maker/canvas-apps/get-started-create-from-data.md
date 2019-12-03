@@ -1,6 +1,6 @@
 ---
 title: Excel からキャンバス アプリを生成する | Microsoft Docs
-description: PowerApps を使用し、クラウド ストレージ アカウントに格納されている Excel ファイルを使用して自動的にキャンバス アプリを生成する
+description: Power Apps を使用して、クラウドストレージアカウントに格納されている Excel ファイルを使用してキャンバスアプリを自動的に生成する
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cb1757da9a5b0a99dad22a43ac844b192651f6df
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 979c24de10eab4d91a89fbaf9e33b53a09b0ba58
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541305"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676306"
 ---
 # <a name="generate-a-canvas-app-from-excel-in-powerapps"></a>PowerApps で Excel からキャンバス アプリを生成する
 
-このトピックでは、PowerApps で、Excel テーブルからのデータを使用して最初のキャンバス アプリを自動的に生成します。 Excel ファイルを選択して、アプリを生成し、生成したアプリを実行します。 生成されたすべてのアプリには、レコードの参照、レコードの詳細の表示、レコードの作成または更新のための画面が含まれています。 アプリを生成して、Excel のデータを使用して作業用アプリをすばやく入手することができ、その後でニーズに合わせてアプリをカスタマイズできます。 
+このトピックでは、Excel テーブルのデータを使用して、Power Apps で最初のキャンバスアプリを自動的に生成します。 Excel ファイルを選択して、アプリを生成し、生成したアプリを実行します。 生成されたすべてのアプリには、レコードの参照、レコードの詳細の表示、レコードの作成または更新のための画面が含まれています。 アプリを生成して、Excel のデータを使用して作業用アプリをすばやく入手することができ、その後でニーズに合わせてアプリをカスタマイズできます。 
 
 Excel ファイルは、OneDrive、Dropbox、Google Drive などのクラウドストレージ アカウントに置かれている必要があります。 このトピックでは、OneDrive for Business を使用します。
 
-PowerApps のライセンスを持っていない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
+Power Apps のライセンスをお持ちでない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
 
 ## <a name="prerequisites"></a>前提条件
 

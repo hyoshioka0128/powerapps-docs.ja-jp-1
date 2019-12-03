@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8ba2d504cc731725d154d8141854373fbf67dc2a
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: eb698f5e2775f1acfed6a7af70475a6079753abb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992927"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678467"
 ---
 # <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -207,7 +207,7 @@ ms.locfileid: "71992927"
 
 **[Ln](functions/function-numericals.md)** – 自然対数を返します。
 
-**[LoadData](functions/function-savedata-loaddata.md)** – PowerApps プライベート ストレージからコレクションを読み込みます。
+**[LoadData](functions/function-savedata-loaddata.md)** – Power Apps プライベートストレージからコレクションを読み込みます。
 
 **[Location](functions/signals.md)** – GPS (Global Positioning System) などの情報を使用して現在地を地図座標として返します。
 
@@ -295,7 +295,7 @@ ms.locfileid: "71992927"
 **[RoundUp](functions/function-round.md)** – 元の数値以上の最小値になるように切り上げます。
 
 ## <a name="s"></a>S
-**[SaveData](functions/function-savedata-loaddata.md)** – PowerApps プライベート ストレージにコレクションを保存します。
+**[SaveData](functions/function-savedata-loaddata.md)** –アプリのプライベートストレージにコレクションを保存します。
 
 **[Search](functions/function-filter-lookup.md)** – テーブル内で、いずれかの列に文字列が含まれているレコードを検索します。  
 

@@ -1,6 +1,6 @@
 ---
 title: Excel でテーブルを書式設定する | Microsoft Docs
-description: PowerApps で Excel データを使用するには、データをテーブルとして書式設定する必要があります。 列の名に "image" というキーワードを追加します。
+description: Power Apps で Excel データを使用するには、データをテーブルとして書式設定する必要があります。 列の名に "image" というキーワードを追加します。
 author: yifwang
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 164de5c1b2534901563ab888cfd83641dbe5a9c5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: da70ef7fe2447653c97bb17dbcd40a126ceb6888
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990030"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675699"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Excel でのテーブルの書式設定と名前付けのヒント
-PowerApps で Excel データに基づいてキャンバス アプリを作成できるのは、Excel データがテーブルとして書式設定されている場合に限られます。 このコンテンツに従うことで、Excel でテーブルを書式設定する方法と、Excel で列の名前を付けるときのヒントがわかります。
+Power Apps では、Excel データをテーブルとして書式設定している場合にのみ、そのデータに基づいてキャンバスアプリを作成できます。 このコンテンツに従うことで、Excel でテーブルを書式設定する方法と、Excel で列の名前を付けるときのヒントがわかります。
 
 ## <a name="how-to-format-a-table-in-excel"></a>Excel でテーブルの書式を設定する方法
 Excel の **[ホーム]** タブの **[テーブルとして書式設定]** をクリックすることで、データをテーブルに変換できます。

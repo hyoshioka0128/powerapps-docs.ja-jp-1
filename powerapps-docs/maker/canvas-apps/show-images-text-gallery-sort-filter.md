@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3144f2f6517cbaa641227ff7b2f9482ed1d2e476
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6b65a2a6fcc4899ac92238ec76d45cb4fd2d62c8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542451"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674642"
 ---
-# <a name="show-sort-and-filter-data-in-a-powerapps-gallery"></a>PowerApps ギャラリーでのデータの表示、並べ替え、およびフィルター
+# <a name="show-sort-and-filter-data-in-a-power-apps-gallery"></a>Power Apps ギャラリーでのデータの表示、並べ替え、およびフィルター処理
 さまざまな製品についての画像やテキストを表示して、その情報を並べ替えたりフィルター処理したりするためのギャラリーを作成します。
 
-PowerApps では、ちょうどカタログで商品を見るときのように、関連性のある項目をギャラリーを使って表示することができます。 商品の名前や価格など、製品に関する情報を表示するうえでギャラリーは最適な手段といえます。 このトピックでは、ギャラリーを作成し、Excel と似た関数を使ってその情報を並べ替えたりフィルター処理したりします。 また、項目が選択されたときに、その周囲に枠線を表示します。
+Power Apps では、ギャラリーを使用して、カタログに表示されるのと同じように、複数の関連項目を表示できます。 商品の名前や価格など、製品に関する情報を表示するうえでギャラリーは最適な手段といえます。 このトピックでは、ギャラリーを作成し、Excel と似た関数を使ってその情報を並べ替えたりフィルター処理したりします。 また、項目が選択されたときに、その周囲に枠線を表示します。
 
 > [!NOTE]
 > このトピックでは、タブレット アプリを使用します。 スマートフォン アプリを使うこともできますが、コントロールの一部はサイズ変更が必要となります。
@@ -31,10 +31,10 @@ PowerApps では、ちょうどカタログで商品を見るときのように�
 > 
 
 ### <a name="prerequisites"></a>前提条件
-* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報で[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
+* Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したものと同じ資格情報を使用して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 * [テンプレート](get-started-test-drive.md)、[データ](get-started-create-from-data.md)、または[ゼロ](get-started-create-from-blank.md)からタブレット アプリを作成します。
 * [コントロールを構成する](add-configure-controls.md)方法を確認しておきます。
-* これらの手順では、[CreateFirstApp](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) をサンプルの入力データとして使用します (.jpg 画像が含まれています)。 この zip ファイルには、Excel に変換できる XML ファイルが含まれています。 変換できなくても、.zip ファイル内のファイルは PowerApps によって自動的に読み取られ、正常にインポートされます。 このサンプル データをダウンロードして使用することも、独自のデータをインポートすることもできます。
+* これらの手順では、[CreateFirstApp](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) をサンプルの入力データとして使用します (.jpg 画像が含まれています)。 この zip ファイルには、Excel に変換できる XML ファイルが含まれています。 それ以外の場合、Power Apps は .zip ファイル内のファイルを自動的に読み取り、正常にインポートします。 このサンプル データをダウンロードして使用することも、独自のデータをインポートすることもできます。
 
 ## <a name="show-data-in-a-gallery"></a>ギャラリーのデータの表示
 1. サンプル データを使用して、**Inventory** という名前のコレクションを作成します。 手順を次に示します。  

@@ -1,5 +1,5 @@
 ---
-title: Power BI 用の PowerApps カスタム ビジュアル | Microsoft Docs
+title: Power BI 用の Power Apps カスタムビジュアル |Microsoft Docs
 description: 同じデータ ソースを使用し、Power BI の他のレポート項目と同様にフィルタリングできるキャンバス アプリの埋め込みに関する手順と制限
 author: chmoncay
 manager: kvivek
@@ -13,26 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 422cbc151b6ee5c4adfd295800bf9747519132cf
-ms.sourcegitcommit: 6c91c6dae20437f263e4eb827c6b938d6aa1b6a5
+ms.openlocfilehash: ebce627faebf5df32ce27990086fe914d2a3823b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74262109"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675477"
 ---
-# <a name="powerapps-custom-visual-for-power-bi"></a>Power BI 用の PowerApps カスタム ビジュアル
+# <a name="power-apps-custom-visual-for-power-bi"></a>Power BI 用の Power Apps カスタムビジュアル
 
-Power BI を利用すると、データの洞察と適切な意思決定を行うことができ、同時に PowerApps を使用して、すべてのユーザーが、ビジネス データに接続するアプリを構築して使用することができます。 PowerApps カスタム ビジュアルを使用すると、状況に応じたデータをキャンバス アプリに渡すことができます。キャンバス アプリは、レポートを変更するとリアルタイムで更新されます。 これで、アプリ ユーザーは、ビジネスの動向を把握し、Power BI レポートとダッシュ ボードから直接アクションを実行できます。
+Power BI を使用すると、データの洞察が向上し、より的確な意思決定が可能になります。一方、Power Apps では、すべてのユーザーがビジネスデータに接続するアプリをビルドして使用できます。 Power Apps カスタムビジュアルを使用すると、コンテキストに対応したデータを canvas アプリに渡すことができます。これは、レポートに変更を加えたときにリアルタイムで更新されます。 これで、アプリ ユーザーは、ビジネスの動向を把握し、Power BI レポートとダッシュ ボードから直接アクションを実行できます。
 
-## <a name="using-the-powerapps-custom-visual"></a>PowerApps のカスタム ビジュアルを使用する
+## <a name="using-the-power-apps-custom-visual"></a>Power Apps カスタムビジュアルの使用
 
-PowerApps カスタム ビジュアルを Power BI レポートで使用するための手順を見てみましょう。
+Power BI レポートで、Power Apps カスタムビジュアルを使用するために必要な手順を見てみましょう。
 
 1. [AppSource](https://appsource.microsoft.com/product/power-bi-visuals/WA104381378?tab=Overview) からカスタム ビジュアルを取得したり、Power BI サービスに直接インポートしたりします。
 
     ![Marketplace のカスタム ビジュアル](./media/powerapps-custom-visual/powerapps-store.png) 
 
-2. PowerApps ビジュアルをレポートに追加し、それに関連付けられているデータ フィールドを設定します。
+2. Power Apps ビジュアルをレポートに追加し、関連付けられているデータフィールドを設定します。
 
     ![レポート データの選択](./media/powerapps-custom-visual/add-visual-set-data.png)
 
@@ -42,50 +42,50 @@ PowerApps カスタム ビジュアルを Power BI レポートで使用する�
 
     ![新規または既存のアプリ](./media/powerapps-custom-visual/create-new-or-choose-app.png)
 
-    既存のアプリを使用する場合は、ビジュアルによって PowerApps でアプリを開くように求められます。 ビジュアルは、Power BI が PowerApps にデータを送信できるように、アプリで必要なコンポーネントが設定されます。
+    既存のアプリを使用することを選択した場合は、アプリを Power Apps で開くようにというメッセージが表示されます。 ビジュアルは、Power BI が PowerApps にデータを送信できるように、アプリで必要なコンポーネントが設定されます。
 
-    新しいアプリを作成する場合、PowerApps は既にセットアップされている必要なコンポーネントで簡単なアプリを作成します。
+    新しいアプリを作成する場合、Power Apps では、必要なコンポーネントが既に設定されている単純なアプリを作成します。
 
     ![新しいアプリ](./media/powerapps-custom-visual/new-app.png)
 
-4. 現在、PowerApps Studio では、手順 2. で設定するデータ フィールドを使用できます。 `PowerBIIntegration` オブジェクトは他の PowerApps 読み取り専用データ ソースまたはコレクションと同様に動作します。 オブジェクトを使用して、すべてのコントロールに入力できるほか、他のデータ ソースを結合したりフィルタリングしたりすることができます。
+4. 現在、Power Apps Studio では、手順 2. で設定したデータフィールドを使用できます。 `PowerBIIntegration` オブジェクトは、他のすべての Power Apps 読み取り専用データソースまたはコレクションと同様に機能します。 オブジェクトを使用して、すべてのコントロールに入力できるほか、他のデータ ソースを結合したりフィルタリングしたりすることができます。
 
     ![ユーザー定義式](./media/powerapps-custom-visual/custom-formula.png)
 
     この数式は、顧客のデータ ソースと Power BI のデータを結合します。`LookUp(Customer,Customer_x0020_Name=First(PowerBIIntegration.Data).Customer_Name)`
 
-   Power BI レポートと起動された PowerApps Studio のインスタンスは、ライブ データの接続を共有します。 これらは、どちらも開かれていますが、レポートのデータをフィルタリングまたは変更し、更新されたデータが PowerApps Studio でアプリにすぐに反映されるようにすることができます
+   Power BI レポートと、起動された Power Apps Studio のインスタンスは、ライブデータ接続を共有します。 どちらも開いている間は、レポート内のデータをフィルター処理または変更して、更新されたデータが Power Apps Studio でアプリにすぐに反映されるようにすることができます。
 
-5. アプリの構築または変更を完了した後で、PowerApps でアプリを保存および公開し、Power BI レポートにアプリを表示します。
+5. アプリのビルドまたは変更が完了したら、アプリを Power Apps に保存して発行し、Power BI レポートにアプリを表示します。
 
-6. 変更が完了したら、PowerApps アプリをレポートのユーザーと共有していることを確認し、レポートを保存します。
+6. 変更が完了したら、Power Apps アプリをレポートのユーザーと共有し、レポートを保存してください。
 
 7. これで、ユーザー アクションを実行してデータから洞察を得ることができるレポートが作成されました。
 
     ![レポートの操作](./media/powerapps-custom-visual/working-report.gif)
 
-    アプリを変更する必要がある場合は、編集モードでレポートを開き、PowerApps ビジュアルの **[その他のオプション]** ( **. . .** ) をクリックまたはタップし、 **[編集]** を選択します。
+    アプリに変更を加える必要がある場合は、レポートを編集モードで開き、[Power Apps] ビジュアルの [**その他のオプション**( **...** )] をクリックまたはタップして、 **[編集]** を選択します。
 
     ![アプリの編集](./media/powerapps-custom-visual/edit-app.png)
 
-## <a name="limitations-of-the-powerapps-custom-visual"></a>PowerApps のカスタム ビジュアルの制限
+## <a name="limitations-of-the-power-apps-custom-visual"></a>Power Apps カスタムビジュアルの制限事項
 
-PowerApps のカスタムビジュアルには、次の制限事項が適用されます。
+Power Apps カスタムビジュアルには、次の制限事項が適用されます。
 
-- ビジュアルに関連付けられているデータ フィールドを変更する場合、省略記号 (...) を選択し、 **[編集]** を選択して Power BI サービス内でアプリを編集する必要があります。 それ以外の場合、PowerApps に変更が反映されず、アプリは予期しない方法で動作します。
-- PowerApps のカスタムビジュアルでは、Power BI Desktop 内から Power BI レポートと Power BI データソースの更新をトリガーすることはできません。 アプリケーションからレポートと同じデータソースにデータを書き戻す場合、変更内容はすぐに Power BI Desktop に反映されません。 変更は、次回のスケジュールされた更新で反映されます。
-- PowerApps のカスタム ビジュアルでは、データをフィルター処理したり、データをレポートに送信したりできません。
-- レポートとは別に PowerApps アプリを共有する必要があります。 [PowerApps でのアプリの共有](share-app.md)の詳細を参照してください。
-- Power BI Report Server と Power BI 用のモバイルアプリは、PowerApps のカスタムビジュアルをサポートしていません。
+- ビジュアルに関連付けられているデータ フィールドを変更する場合、省略記号 (...) を選択し、 **[編集]** を選択して Power BI サービス内でアプリを編集する必要があります。 そうしないと、変更は Power Apps に反映されず、アプリは予期しない方法で動作します。
+- Power Apps カスタムビジュアルでは、Power BI Desktop 内から Power BI レポートの更新とデータソースの Power BI をトリガーすることはできません。 アプリケーションからレポートと同じデータソースにデータを書き戻す場合、変更内容はすぐに Power BI Desktop に反映されません。 変更は、次回のスケジュールされた更新で反映されます。
+- Power Apps カスタムビジュアルでは、データをフィルター処理したり、レポートにデータを送信したりすることはできません。
+- Power Apps アプリは、レポートとは別に共有する必要があります。 [PowerApps でのアプリの共有](share-app.md)の詳細を参照してください。
+- Power BI Report Server と Power BI 用のモバイルアプリは、Power Apps カスタムビジュアルをサポートしていません。
 - PowerBIIntegration. Refresh () 関数を使用する場合は、 [directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources)をサポートするソースを使用する必要があり、データ接続は directquery メソッドを使用して作成する必要があります。
-- Power BI Desktop の PowerApps は、編集中ではなく、アプリを作成するときに PowerApps Studio するデータを提供します。 Power BI Web を使用して、アプリの編集中にデータをプレビューします。
+- Power BI Desktop の power Apps は、アプリを作成するときに Power Apps Studio にデータを提供しますが、編集中は提供しません。 Power BI Web を使用して、アプリの編集中にデータをプレビューします。
 
 > [!NOTE]
 > 最初にレポートを Power BI サービスに発行してから、アプリを作成または変更することをお勧めします。
 
 ## <a name="browser-support"></a>ブラウザーサポート
 
-次の表に、PowerApps のカスタムビジュアルの表示、作成、および変更アクションのブラウザーのサポートを示します。 サポートされているブラウザーとアクションは、チェックマーク (&check;) によって識別されます。
+次の表に、Power Apps カスタムビジュアルの表示、作成、および変更アクションのブラウザーのサポートを示します。 サポートされているブラウザーとアクションは、チェックマーク (&check;) によって識別されます。
 
 |ブラウザー|モード|生成|更新
 |-|-|-|-
@@ -100,9 +100,9 @@ Safari で \*、サイト間の追跡を有効にする必要があります ( *
 
 ## <a name="accessibility-support"></a>ユーザー補助機能のサポート
 
-キーボードを使用して PowerApps ビジュアル内を移動するには、次の手順を実行します。
+キーボードを使用して Power Apps ビジュアル内を移動するには、次の手順を実行します。
 
-1. 目的の PowerApps ビジュアルの Power BI レポートでフォーカスを選択します。
+1. 目的の Power Apps ビジュアルの Power BI レポートでフォーカスを選択します。
 2. ビジュアルが強調表示されるまで、キーボードの**Tab**キーを使用します。
 3. キーボードの**Ctrl + Right**キーを使用してビジュアルを入力します。
 3. ビジュアルの必要なコンポーネントが選択されるまで、キーボードの**Tab**キーを使用します。

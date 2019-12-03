@@ -1,5 +1,5 @@
 ---
-title: SharePoint Online と PowerApps、Power オートメーション、および Power BI | を設定します。Microsoft Docs
+title: Power Apps、Power オートメーション、および Power BI | と SharePoint Online との統合のリストを設定します。Microsoft Docs
 description: このタスクでは SharePoint リストを設定して、アプリ、フロー、レポート、およびダッシュボードのデータ ソースとして使用します。
 author: NickWaggoner
 manager: kvivek
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ec34399818120464a2ad2caca5834baa87d8a25c
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: c1b2e7dc4bb3f56983ddcdec39ecf7d37a283754
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73898923"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674714"
 ---
-# <a name="set-up-lists-for-sharepoint-online-integration-with-powerapps-power-automate-and-power-bi"></a>SharePoint Online と PowerApps、Power オートメーション、および Power BI を統合するためのリストを設定する
+# <a name="set-up-lists-for-sharepoint-online-integration-with-power-apps-power-automate-and-power-bi"></a>SharePoint Online と Power Apps との統合、電源自動化、および Power BI のリストを設定する
 > [!NOTE]
-> この記事は、SharePoint Online での PowerApps の使用、Power オートメーション、および Power BI に関するチュートリアルシリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
+> この記事は、Power Apps の使用に関するチュートリアルシリーズの一部であり、Power App の自動化と、SharePoint Online での Power BI について説明しています。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
 SharePoint には共有やコラボレーションの機能が多数ありますが、このシナリオでは [SharePoint リスト](https://support.office.com/article/Introduction-to-lists-0A1C3ACE-DEF0-44AF-B225-CFA8D92C52D7)の機能に焦点を当てて説明します。 リストとは、チーム メンバーやその他のサイト ユーザーと共有できる単なるデータのコレクションです。 ここではこのシナリオに使用するリストについて説明しますので、ご使用の SharePoint Online サイトでリストを作成できるようになります。
 
@@ -40,7 +40,7 @@ SharePoint には共有やコラボレーションの機能が多数あります
 | Approved |1 行テキスト |値: 保留中、はい、いいえ |
 
 > [!NOTE]
-> この他に **[ID]** 列も使用します。この列は SharePoint によって生成されますが、既定では非表示になっています。 ここでは簡単にするために基本的なデータ型を使用していますが、 **[Requestor]** 列の **[ユーザーまたはグループ]** のように、実際のアプリでは複雑な型を使用する場合があります。 PowerApps がサポートするデータ型について詳しくは、「[Microsoft PowerApps から SharePoint に接続する](connections/connection-sharepoint-online.md#known-issues)」をご覧ください。
+> この他に **[ID]** 列も使用します。この列は SharePoint によって生成されますが、既定では非表示になっています。 ここでは簡単にするために基本的なデータ型を使用していますが、 **[Requestor]** 列の **[ユーザーまたはグループ]** のように、実際のアプリでは複雑な型を使用する場合があります。 Power Apps でサポートされるデータ型の詳細については、「 [Microsoft Power apps から SharePoint への接続](connections/connection-sharepoint-online.md#known-issues)」を参照してください。
 
 2 つ目のリストは、**Project Details** です。承認されたすべてのプロジェクトに関する詳細 (割り当てられたプロジェクト管理者など) を追跡します。
 
@@ -112,15 +112,15 @@ SharePoint には共有やコラボレーションの機能が多数あります
 
 ### <a name="update-connections-for-the-sample-apps"></a>サンプル アプリの接続を更新する
 
-1. [PowerApps Studio](https://create.powerapps.com/studio/) で、左側のウィンドウから **[開く]** をクリックまたはタップします。 
+1. [Power Apps Studio](https://create.powerapps.com/studio/)で、左側のウィンドウの **[開く]** をクリックまたはタップします。 
 
 2. **[参照]** をクリックまたはタップし、ダウンロードした **project-management-app.msapp** ファイルを開きます。
 
-3. **[許可]** をクリックまたはタップします。これにより、PowerApps で SharePoint を使用できるようになります。
+3. **[許可]** をクリックまたはタップして、Power Apps で SharePoint を使用できるようにします。
 
 4. リボンの **[ビュー]** タブで、 **[データ ソース]** をクリックまたはタップします。
 
-    ![PowerApps の [データ ソース]](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
+    ![Power Apps のデータソース](./media/sharepoint-scenario-setup/01-03-01-data-sources.png)
 5. **[データ]** パネルで、**Project Details** の隣にある省略記号 ( **[. . .]** ) をクリックまたはタップし、 **[削除]** をクリックまたはタップします。
    
     ![Project Details のデータ ソースの削除](./media/sharepoint-scenario-setup/01-03-02-remove.png)
@@ -128,7 +128,7 @@ SharePoint には共有やコラボレーションの機能が多数あります
    
     ![データ ソースの追加](./media/sharepoint-scenario-setup/01-03-03-add.png)
 
-7. PowerApps で SharePoint への接続が既に確立されているか否かによりますが、リストに接続するための方法が 2 つ表示されます。 
+7. この一覧に接続するには、Power Apps に SharePoint 接続が既に確立されているかどうかに応じて、次の2つの方法をお見せします。 
 
     * SharePoint への接続が既に表示されている場合は、その接続をクリックまたはタップします。
 

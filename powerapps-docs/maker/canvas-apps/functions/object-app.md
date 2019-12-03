@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b0ab20ce5e0700337bb059644c458a2665d20f1e
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: c2e34a9f466fcb64bcf14ef6a504d5b18b0a596d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71983581"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676739"
 ---
 # <a name="app-object-in-powerapps"></a>PowerApps のアプリオブジェクト
 
@@ -64,7 +64,7 @@ ms.locfileid: "71983581"
 > **Confirmexit**は、Power BI や SharePoint など、に埋め込まれているアプリでは機能しません。
 
 > [!NOTE]
-> 現時点では、**遅延読み込み**のプレビュー機能が有効になっている場合 (新しいアプリでは既定)、これらのプロパティは最初の画面でのみコントロールを参照できます。 参照が行われた場合、PowerApps Studio にエラーは表示されませんが、結果として発行されるアプリは PowerApps Mobile またはブラウザーで開かれません。 この制限を引き上げるために積極的に取り組んでいます。 それまでの間は、[**ファイル** > **アプリの設定**]  >  **[詳細設定]** ( **[プレビュー機能]** の下) で**遅延読み込み**をオフにすることができます。
+> 現時点では、**遅延読み込み**のプレビュー機能が有効になっている場合 (新しいアプリでは既定)、これらのプロパティは最初の画面でのみコントロールを参照できます。 参照が行われた場合、Power Apps Studio ではエラーは表示されませんが、結果として発行されるアプリは、Power Apps モバイルまたはブラウザーで開かれません。 この制限を引き上げるために積極的に取り組んでいます。 それまでの間は、[**ファイル** > **アプリの設定**] >  **[詳細設定]** ( **[プレビュー機能]** の下) で**遅延読み込み**をオフにすることができます。
 
 ### <a name="confirmexit"></a>ConfirmExit
 
@@ -78,14 +78,14 @@ ms.locfileid: "71983581"
 - アプリがブラウザーで実行されている場合:
   - ブラウザーを閉じるか、アプリが実行されているブラウザータブを閉じます。
   - ブラウザーの [戻る] ボタンを選択します。
-- アプリが PowerApps Mobile (iOS または Android) で実行されている場合:
+- アプリが Power Apps Mobile (iOS または Android) で実行されている場合:
   - [**Launch**](function-param.md)関数を実行しています。<br>**起動**関数は、データが失われないように別のタブが開いているため、ブラウザーでダイアログボックスをトリガーしません。
-  - PowerApps Mobile で別のアプリに切り替えるためのスワイプ。
+  - Power Apps Mobile で別のアプリに切り替えるためのスワイプ。
   - Android デバイスで [戻る] ボタンを選択します。
 
 確認ダイアログボックスの正確な外観は、デバイスと PowerApps のバージョンによって異なります。
 
-[確認] ダイアログボックスは PowerApps Studio に表示されません。
+[確認] ダイアログボックスは、Power Apps Studio には表示されません。
 
 ### <a name="confirmexitmessage"></a>ConfirmExitMessage
 

@@ -1,6 +1,6 @@
 ---
 title: キャンバスアプリに依存するドロップダウンリストを作成する |Microsoft Docs
-description: PowerApps で、キャンバスアプリ内の別のドロップダウンリストをフィルター処理するドロップダウンリストを作成します。
+description: Power Apps で、キャンバスアプリ内の別のドロップダウンリストをフィルター処理するドロップダウンリストを作成します。
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 57abde44541a2a1e40e3a8ffc55a89e37a8c6478
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 233fd99eeba86151f616a22955cf28c2114de43e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71985744"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679617"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>キャンバスアプリに依存するドロップダウンリストを作成する
 
@@ -66,12 +66,12 @@ ms.locfileid: "71985744"
 
 ## <a name="open-the-form"></a>フォームを開く
 
-1. **インシデント**の一覧を開き、[ **PowerApps**  > **フォームのカスタマイズ**] を選択します。
+1. **インシデント**の一覧を開き、[ **PowerApps** > **フォームのカスタマイズ**] を選択します。
 
     > [!div class="mx-imgBorder"]
-    > ![インシデントの一覧を開き、[PowerApps > フォームのカスタマイズ] を選択します。](./media/dependent-drop-down-lists/open-form.png "インシデントの一覧を開き、[PowerApps > フォームのカスタマイズ] を選択します。")
+    > ![インシデントの一覧を開き、[Power Apps > フォームのカスタマイズ] を選択します。](./media/dependent-drop-down-lists/open-form.png "インシデントの一覧を開き、[Power Apps > フォームのカスタマイズ] を選択します。")
 
-    [ブラウザー] タブが開き、PowerApps Studio に既定のフォームが表示されます。
+    [ブラウザー] タブが開き、Power Apps Studio に既定のフォームが表示されます。
 
 1. optional **[フィールド]** ウィンドウで、 **[タイトル]** フィールドの上にマウスポインターを移動し、表示される省略記号 (...) を選択して、 **[削除]** を選択します。
 
@@ -101,7 +101,7 @@ ms.locfileid: "71985744"
 
 ## <a name="add-the-locations-list"></a>場所の一覧を追加する
 
-1. [データ**ソースの追加** **]  >  [データソース**の  > **表示**] を選択します。
+1. [データ**ソースの追加** **] > [データソース**の > **表示**] を選択します。
 
 1. SharePoint 接続を選択または作成し、 **[場所]** ボックスの一覧を含むサイトを指定します。
 
@@ -180,7 +180,7 @@ Alt キーを押したまま、場所の一覧を開き、1つを選択して、
 
 ## <a name="save-and-open-the-form-optional"></a>フォームを保存して開きます (省略可能)。
 
-1. **ファイル** メニューを開き、Sharepoint に**発行** ** >  sharepoint に発行**を選択して **保存** >  ます。
+1. **ファイル** メニューを開き、Sharepoint に**発行** ** > sharepoint に発行**を選択して **保存** > ます。
 
 1. 左上隅で、戻る矢印を選択し、 **[SharePoint に戻る]** を選択します。
 
@@ -202,10 +202,10 @@ Alt キーを押したまま、場所の一覧を開き、1つを選択して、
     > コンボボックス](./media/dependent-drop-down-lists/combo-box-display-field.png) を変更 ![
 
 **[マイ子] ドロップダウンリストに重複する項目が含まれています。**
-この現象は、SharePoint で**参照**列を使用しているか、PowerApps で**choice**関数が使用されていることが原因である可能性があります。 重複を削除するには、適切にデータを返すように**個別**の関数をラップします。 詳細については、「 [Distinct 関数](functions/function-distinct.md)」を参照してください。
+この現象は、SharePoint で**参照**列を使用しているか、Power Apps で**choice**機能が使用されていることが原因である可能性があります。 重複を削除するには、適切にデータを返すように**個別**の関数をラップします。 詳細については、「 [Distinct 関数](functions/function-distinct.md)」を参照してください。
 
 ## <a name="known-limitations"></a>既知の制限
 
 この構成は、**ドロップダウン**コントロールと、一度に1つの選択を可能にする**コンボボックス**コントロールと**リストボックス**コントロールで使用できます。 複数の選択が許可されている場合、これらのコントロールのいずれに対しても、**依存**関係を使用することはできません。 Common Data Service のオプションセットを使用する場合、この方法は推奨されません。
 
-**依存**関係は、静的データまたはコレクションをサポートしていません。 これらのソースで依存するドロップダウンリストを構成するには、数式バーで式を直接編集します。 さらに、PowerApps では、一致するデータテーブルを使用せずに、SharePoint で2つの選択肢フィールドを使用することはできません。また、この UI 内で**一致するフィールド**を定義することもできません。
+**依存**関係は、静的データまたはコレクションをサポートしていません。 これらのソースで依存するドロップダウンリストを構成するには、数式バーで式を直接編集します。 さらに、Power Apps では、一致するデータテーブルを使用せずに、SharePoint の2つの選択肢フィールドの使用がサポートされていません。また、この UI 内で**一致するフィールド**を定義することもできません。

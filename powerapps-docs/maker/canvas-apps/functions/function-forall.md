@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 73f197c7d4038748649261f4686cb07b456595e0
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3d53a721e5abba3ce7e844420d9e8415b908cdde
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985205"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680215"
 ---
 # <a name="forall-function-in-powerapps"></a>PowerApps の ForAll 関数
 値を計算し、[テーブル](../working-with-tables.md)のすべての[レコード](../working-with-tables.md#records)に対して操作を実行します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **ForAll** 関数は、テーブルのすべてのレコードについて数式を評価します。  数式は、値を計算したり、操作 (データの変更や接続の操作など) を実行したりできます。  1つのレコードの数式を評価するには、 [ **With**関数](function-with.md)を使用します。
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "71985205"
 **Collect**、**Remove**、**Update** など、データ ソースを変更するいくつかの関数は、戻り値として変更後のデータ ソースを返します。  このような戻り値は大きくなり、**ForAll** テーブルのレコードごとに返される場合に多くのリソースを使用する可能性があります。  また、これらの戻り値が予想したものとは異なることに気付く場合もあります。これは、**ForAll** が並行して動作できることで、これらの関数の副作用が結果の取得から切り離される可能性があるためです。  さいわいにも、**ForAll** からの戻り値が実際には使用されない場合 (データ変更関数の場合によく見られます)、戻り値は作成されないため、リソースまたは順序付けに関する懸念事項はありません。  ただし、**ForAll** の結果やデータ ソースを返す関数のいずれかを使用している場合は、結果の構築方法について慎重に考えて、最初は小さいデータ セットで試してください。  
 
 ### <a name="alternatives"></a>代替手段
-PowerApps の多くの関数は、単一列テーブルを利用して複数の値を一度に処理することができます。  たとえば、**Len** 関数は、テキスト値のテーブルを処理して、**ForAll** と同じように、長さのテーブルを返すことができます。  これにより、多くの場合は **ForAll** を使用する必要性がなくなり、効率が向上し、読みやすくなります。
+Power Apps の多くの関数は、単一列テーブルを使用して一度に複数の値を処理できます。  たとえば、**Len** 関数は、テキスト値のテーブルを処理して、**ForAll** と同じように、長さのテーブルを返すことができます。  これにより、多くの場合は **ForAll** を使用する必要性がなくなり、効率が向上し、読みやすくなります。
 
 もう 1 つの考慮事項は、**ForAll** が委任できないのに対して、**Filter** などの他の関数は委任できることです。  
 
@@ -66,7 +66,7 @@ PowerApps の多くの関数は、単一列テーブルを利用して複数の�
 
 `ClearCollect( Squares, [ "1", "4", "9" ] )`
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **ForAll(&nbsp;Squares, Sqrt(&nbsp;Value&nbsp;)&nbsp;)**<br><br>**Sqrt(&nbsp;Squares&nbsp;)** |入力テーブルのすべてのレコードについて、**Value** 列の平方根を計算します。  **Sqrt** 関数も単一列テーブルで使用できます。これにより、**ForAll** を使用しなくてもこの例を実行できます。 |<style> img { max-width: none } </style> ![](media/function-forall/sqrt.png) |
 | **ForAll(&nbsp;Squares, Power(&nbsp;Value,&nbsp;3&nbsp;)&nbsp;)** |入力テーブルのすべてのレコードについて、**Value** 列の 3 乗を計算します。  **Power** 関数は、単一列テーブルをサポートしていません。 そのため、この場合は、**ForAll** を使用する必要があります。 |<style> img { max-width: none } </style> ![](media/function-forall/power3.png) |
@@ -82,15 +82,15 @@ PowerApps の多くの関数は、単一列テーブルを利用して複数の�
 
 この例では、[Microsoft Translator](../connections/connection-microsoft-translator.md) 接続も使用します。  アプリにこの接続を追加するには、[接続を管理する](../add-manage-connections.md)方法に関するトピックを参照してください。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **ForAll( Expressions, MicrosoftTranslator.Translate( Value, "es" ) )** |Expressions テーブルのすべてのレコードについて、**Value** 列の内容をスペイン語 (略語は "es") に翻訳します。 |<style> img { max-width: none } </style> ![](media/function-forall/translate-es.png) |
 | **ForAll( Expressions, MicrosoftTranslator.Translate( Value, "fr" ) )** |Expressions テーブルのすべてのレコードについて、**Value** 列の内容をフランス語 (略語は "fr") に翻訳します。 |<style> img { max-width: none } </style> ![](media/function-forall/translate-fr.png) |
 
 ### <a name="copying-a-table"></a>テーブルのコピー
-場合によっては、データのフィルター処理、形成、並べ替え、操作が必要になります。  PowerApps には、**Filter**、**AddColumns**、**Sort** など、この処理を行うための多数の関数が用意されています。  PowerApps では、各テーブルが値として扱われるため、これは数式にの対象として簡単に使用できるようになります。      
+場合によっては、データのフィルター処理、形成、並べ替え、操作が必要になります。  Power Apps には、**フィルター**、 **Addcolumns**、 **Sort**など、これを行うためのさまざまな機能が用意されています。  Power Apps は、各テーブルを値として扱い、式を通過して簡単に使用できるようにします。      
 
-さらに、後で使用できるように、この結果のコピーを作成する場合があります。  また、データ ソース間で情報を移動する場合もあります。  PowerApps には、データをコピーするための **Collect** 関数が用意されています。
+さらに、後で使用できるように、この結果のコピーを作成する場合があります。  また、データ ソース間で情報を移動する場合もあります。  Power Apps には、データをコピーする**Collect**関数が用意されています。
 
 ただし、コピーを作成する前に、本当に必要かどうかを十分検討してください。  数式で必要に応じて基のデータ ソースのフィルター処理や形成を行うことで、多くの状況に対処することができます。 コピーの作成の欠点のいくつかを次に示します。
 

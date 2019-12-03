@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b3a33f327aab7e4f02c954dbd31c412e35dd661
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a3afda5686c6b791243126c70b9c6d33762beae0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73539176"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679663"
 ---
 # <a name="tutorial-customize-a-gallery-in-powerapps"></a>チュートリアル: PowerApps でのギャラリーのカスタマイズ
 
-このチュートリアルでは、Microsoft PowerApps で自動的に生成されたアプリで、ギャラリーと呼ばれるレコードの一覧をカスタマイズし、他の変更を行います。 これらの変更を行わなくてもユーザーはアプリ内のデータを管理できますが、組織のニーズに合わせてカスタマイズすれば、アプリが使いやすくなります。
+このチュートリアルでは、ギャラリーと呼ばれるレコードの一覧をカスタマイズし、Microsoft Power Apps で自動的に生成されたアプリにその他の変更を加えます。 これらの変更を行わなくてもユーザーはアプリ内のデータを管理できますが、組織のニーズに合わせてカスタマイズすれば、アプリが使いやすくなります。
 
 たとえば、このチュートリアルのギャラリーは、既定で次の図と一致します。 メール アドレスは他の種類のデータより目立つように表示され、ユーザーはそのアドレスのテキストに基づいてギャラリーの並べ替えやフィルター処理を行うことができます。
 
@@ -41,9 +41,9 @@ ms.locfileid: "73539176"
 > * 画面のタイトルを変更する
 > * スクロールバーを表示する
 
-このチュートリアルでは、特定のデータ ソースから既に生成されているアプリを使います。 ただし、SharePoint リスト、Excel テーブル、または他のデータ ソースのいずれが基になっていても、PowerApps で生成するすべてのアプリに、同じ概念が適用されます。
+このチュートリアルでは、特定のデータ ソースから既に生成されているアプリを使います。 ただし、SharePoint リスト、Excel テーブル、またはその他のデータソースから、Power Apps で生成するアプリにも同じ概念が適用されます。
 
-PowerApps にサインアップしていない場合は、始める前に[無料でサインアップ](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してください。
+Power Apps にサインアップしていない場合は、開始する前に[無料でサインアップ](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してください。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -57,7 +57,7 @@ Common Data Service の**Accounts**エンティティから[アプリを生成](
 
     ![編集用にアプリを開く](./media/customize-layout-sharepoint/open-app.png)
 
-1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、 **[スキップ]** を選択します。
+1. **[Power Apps Studio へようこそ]** ダイアログボックスが表示されたら、 **[スキップ]** を選択します。
 
 ## <a name="change-the-layout"></a>レイアウトを変更する
 

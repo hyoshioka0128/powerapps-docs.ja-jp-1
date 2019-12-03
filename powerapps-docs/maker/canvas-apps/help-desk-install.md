@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリ用の Help Desk サンプルをインストールして構成する | Microsoft Docs
-description: PowerApps でキャンバス アプリ用の Help Desk サンプルをインストールして構成する詳細な手順を示します。
+description: Power Apps での、キャンバスアプリ用ヘルプデスクサンプルのインストールと構成に関する詳細な手順です。
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dd5d8b8e6757b18feb5da03c503b19e689ca3efe
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fce460ffe808b7a604e1cdceac05a2696b8e10ed
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541244"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676147"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>PowerApps で Help Desk サンプルをインストールして構成する
 
-PowerApps でキャンバス アプリ用の Help Desk サンプルをインストールして構成する詳細な手順を示します。
+Power Apps での、キャンバスアプリ用ヘルプデスクサンプルのインストールと構成に関する詳細な手順です。
 
 この手順の推定所要時間: **10 - 15 分**
 
@@ -140,7 +140,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
 
 ## <a name="download-the-app"></a>アプリをダウンロードする
 
-1.  PowerApps パッケージを[ダウンロード](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip)し、コンピューターに保存します。
+1.  Power Apps パッケージを[ダウンロード](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip)し、コンピューターに保存します。
 
 ## <a name="create-connections"></a>接続を作成する
 
@@ -242,7 +242,7 @@ PowerApps でキャンバス アプリ用の Help Desk サンプルをインス�
     
    > [!TIP]
    > 複数の管理者がいる場合は、コンマを使用して管理者の一覧を区切ります。 例: "admin1@microsoft.com","admin2@microsoft.com"。
-   > AdminList のアドレスが PowerApps で必要な形式と一致していることを確認するには、[表示] > [変数] > [グローバル] > [MyProfile] の順に選び、"Mail" 列のメール形式を調べます。
+   > Power Apps が想定する形式に AdminList のアドレスが一致していることを確認するには、[> Variables > グローバル > MyProfile] を選択し、[メール] 列を参照して、予想される電子メール形式を確認します。
 
 1. **[ファイル]**  >  **[保存]**  >  **[発行]**  >  **[このバージョンの発行]** の順に選択します。
 

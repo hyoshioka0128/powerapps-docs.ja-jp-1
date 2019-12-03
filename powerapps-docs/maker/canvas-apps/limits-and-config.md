@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1c8591790fe14d184f5d5e4ef5fc79ff0bfe0e2a
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: 0b67dda758140608b67fa8df44eca711270b663c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74177893"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675631"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>キャンバス アプリのシステム要件、制限、構成値
 このトピックには、PowerApps についての、デバイス プラットフォーム、Web ブラウザーの要件、制限と構成値が含まれています。
 
-## <a name="supported-platforms-for-running-canvas-apps-using-the-powerapps-app"></a>PowerApps アプリを使用してキャンバス アプリを実行するためにサポートされているプラットフォーム
+## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-app"></a>Power Apps アプリを使用してキャンバスアプリを実行するためにサポートされるプラットフォーム
 
 | **最小構成** | **推奨** |
 | --- | --- |
@@ -32,7 +32,7 @@ ms.locfileid: "74177893"
 | Windows 8.1 以降 (PC のみ) |Windows 10 Fall Creators Update と少なくとも 8 GB の RAM)|
 
 > [!NOTE]
-> 現在、Windows platform for PowerApps アプリの新機能はサポートされていません。 強化された Common Data Service オプションやゲストアクセスなどの機能は、このプラットフォームでは使用できません。 すべての機能を利用するには、Windows で web プレーヤーを使用することをお勧めします。 Windows プラットフォーム用の PowerApps アプリの更新プログラムは、今後発表される予定です。
+> 現在、Windows platform for Power Apps アプリの新機能はサポートされていません。 強化された Common Data Service オプションやゲストアクセスなどの機能は、このプラットフォームでは使用できません。 すべての機能を利用するには、Windows で web プレーヤーを使用することをお勧めします。 Windows プラットフォーム用の Power Apps アプリの更新プログラムは、今後発表される予定です。
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>キャンバス アプリを実行するためにサポートされているブラウザー
 
@@ -44,7 +44,7 @@ ms.locfileid: "74177893"
 | Mozilla Firefox (最新バージョン) |Windows 7 SP1、8.1、および 10 <br> Android 5 以降 <br>iOS 8 以降 <br>macOS |
 | Apple Safari (最新バージョン) |iOS 8 以降 <br>macOS |
 
-## <a name="supported-browsers-for-powerapps-studio"></a>PowerApps Studio のサポートされているブラウザー
+## <a name="supported-browsers-for-power-apps-studio"></a>Power Apps Studio でサポートされているブラウザー
 
 | **ブラウザー** | **オペレーティング システム** |
 | --- | --- |
@@ -64,14 +64,14 @@ ms.locfileid: "74177893"
 > 再試行回数が異なる場合があります。 エラーの状況によっては、再試行は無意味です。
 
 ## <a name="ip-addresses"></a>IP アドレス
-PowerApps からの要求では、アプリが存在する[環境](../../administrator/environments-overview.md)のリージョンによって、使用する IP アドレスが異なります。 PowerApps のシナリオで利用できる完全修飾ドメイン名は公開されていません。
+パワーアプリからの要求では、アプリが存在する[環境](../../administrator/environments-overview.md)のリージョンに依存する IP アドレスを使用します。 Power Apps のシナリオで利用できる完全修飾ドメイン名は公開されません。
 
 アプリ経由で接続される API (たとえば、SQL API や SharePoint API) から行われる呼び出しでは、このトピックの後半で説明する IP アドレスを使用します。
 
 たとえば、Azure SQL データベース用に IP アドレスをホワイトリスト登録する必要がある場合は、これらのアドレスを使用する必要があります。
 
 > [!IMPORTANT]
->   既存の構成がある場合は、PowerApps アプリが存在するリージョンについてこの一覧の IP アドレスが追加され、対応付けられるように、2018 年 9 月 30 日の前にできるだけ早く更新してください。
+>   既存の構成がある場合は、2018年9月30日までにできるだけ早く更新してください。そのため、Power Apps アプリが存在するリージョンについて、この一覧の IP アドレスが含まれ、一致していることを確認してください。
 
 | リージョン | 送信 IP |
 | --- | --- |
@@ -88,7 +88,7 @@ PowerApps からの要求では、アプリが存在する[環境](../../adminis
 | 米国 (早期アクセス)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
 
 ## <a name="required-services"></a>必要なサービス
-この一覧で、PowerApps Studio が通信するすべてのサービスと用途を確認できます。 ネットワークでこれらのサービスをブロック**しないでください**。
+このリストは、Power Apps Studio が通信するすべてのサービスとその使用状況を識別します。 ネットワークでこれらのサービスをブロック**しないでください**。
 
 | ドメイン | プロトコル | 使用するサービス |
 | --- | --- | --- |
@@ -104,20 +104,20 @@ PowerApps からの要求では、アプリが存在する[環境](../../adminis
 | \*。 flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および make.powerapps.com |
 | *. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |製品利用統計情報 |
-| localhost | https | PowerApps Mobile
+| localhost | https | Power Apps モバイル
 
 > [!NOTE]
-> VPN を使用している場合は、PowerApps Mobile のトンネリングから localhost を除外するように構成する必要があります。
+> VPN を使用している場合は、Power Apps Mobile のトンネリングから localhost を除外するように構成する必要があります。
 
 ## <a name="size-limits"></a>サイズ制限
 
 テキスト、ハイパーリンク、画像、メディアのサイズ制限に関する情報については、「[データ型](functions/data-types.md#text-hyperlink-image-and-media)」を参照してください。
 
-## <a name="powerapps-per-app-plan"></a>アプリプランごとの PowerApps
+## <a name="power-apps-per-app-plan"></a>アプリごとの電源アプリの計画
 
-アプリプランごとの PowerApps を使用すると、個々のユーザーは、PowerApps のすべての機能に基づいて、特定のビジネスシナリオに対して1つのポータルで2つのアプリケーションを実行できます。 このプランでは、大規模なスケーリングを導入する前に、ユーザーが簡単にプラットフォームを使い始めることができます。
+アプリごとの power Apps プランでは、個々のユーザーは、Power Apps のすべての機能に基づいて、特定のビジネスシナリオに対して1つのポータルで2つのアプリケーションを実行できます。 このプランでは、大規模なスケーリングを導入する前に、ユーザーが簡単にプラットフォームを使い始めることができます。
 
-管理者がアプリ計画ごとに PowerApps を環境に割り当てると、その環境内のアプリがその環境で共有されている場合は、ライセンスが割り当てられていないユーザーに割り当てられます。 管理者がアプリプランごとに割り当てる方法については、[こちら](https://docs.microsoft.com/power-platform/admin/capacity-add-on)を参照してください。
+管理者がアプリプランごとにアプリプランを割り当てると、その環境内のアプリがその環境と共有されるときに、ライセンスのないユーザーに割り当てられます。 管理者がアプリプランごとに割り当てる方法については、[こちら](https://docs.microsoft.com/power-platform/admin/capacity-add-on)を参照してください。
 
 次の手順に従って、アプリを共有するときにユーザーに割り当てられるアプリごとのプランをオフにします。
 

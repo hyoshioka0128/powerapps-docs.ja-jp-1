@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c1ee3d00bab865bf63dc06181a9430fd0a9a6674
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: fbfe1b62091ff7a4fb84b899518fc941f99d7abb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988378"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674854"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>SharePoint フォームの統合について
-PowerApps で[あらゆる SharePoint リスト フォームを簡単にカスタマイズ](customize-list-form.md)できるようになりました。 この記事では、これらのフォームの動作と、フォームをさらにカスタマイズする方法を詳しく見てみましょう。
+Power Apps で[SharePoint リストフォーム](customize-list-form.md)を簡単にカスタマイズできるようになりました。 この記事では、これらのフォームの動作と、フォームをさらにカスタマイズする方法を詳しく見てみましょう。
 
 SharePoint リストのフォームをカスタマイズしたことがある方は、既定の生成されたフォームは、アイテムの作成、表示、編集などのすべての操作に対応していることをご存知でしょう。 これは、生成された数式と **SharePointIntegration** コントロールによって実現されています。
 
@@ -35,7 +35,7 @@ SharePoint リストのフォームをカスタマイズしたことがある方
 
     * **Data Source** - フォームがカスタマイズされているリストです。
 
-    * **Item** - リストから選択されたアイテムです。 これは、PowerApps Studio で操作するとき便利なように、リストの First() アイテムに設定されています。
+    * **Item** - リストから選択されたアイテムです。 これは、Power Apps Studio で作業するときに便利なように、一覧の First () 項目に設定されています。
 
         **If(IsBlank(SharePointIntegration.Selected) || IsEmpty(SharePointIntegration.Selected),First('*YourListName*'),SharePointIntegration.Selected)**
 
@@ -69,7 +69,7 @@ SharePoint リストのフォームをカスタマイズしたことがある方
 
         **ResetForm(SharePointForm1)**
 
-これらの既定値によって、SharePoint 内で実行したときにフォームが機能し、ユーザーが SharePoint でフォームと対話したときに PowerApps フォーム モードが変更され、変更内容が SharePoint に確実に送信されます。
+これらの既定値を使用すると、SharePoint 内で実行されるときにフォームが動作するようになります。ユーザーが sharepoint で Power Apps フォームモードを操作すると、その変更が SharePoint に送信されるようになります。
 
 ## <a name="understand-the-sharepointintegration-control"></a>SharePointIntegration コントロールについて
 **SharePointIntegration** コントロールは、SharePoint と PowerApps の間でユーザー アクションを伝達します。
@@ -77,7 +77,7 @@ SharePoint リストのフォームをカスタマイズしたことがある方
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 
 >[!NOTE]
->**SharePointIntegration** コントロールのプロパティには、フォームが SharePoint で実行されているときにのみアクセスでき、PowerApps Studio でフォームをカスタマイズしているときにはアクセスできません。 これらのプロパティは、**OnStart** または **OnVisible** では使用できないことがあります。 
+>**Sharepointintegration**コントロールのプロパティにアクセスできるのは、フォームが SharePoint で実行されている場合のみです。 Power Apps Studio でフォームをカスタマイズしている場合は対象になりません。 これらのプロパティは、**OnStart** または **OnVisible** では使用できないことがあります。 
 
 **SharePointIntegration** コントロールには、次のプロパティがあります。
 

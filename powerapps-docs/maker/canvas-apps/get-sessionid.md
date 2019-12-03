@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 11f749f241f978ebd94e460833e98cca894fe7fa
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 81c1db4ab44f3ca8517c6154f0516ca9dad5f825
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990199"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676513"
 ---
 # <a name="get-a-session-id-or-a-canvas-app-id"></a>セッション ID またはキャンバス アプリ ID を取得する
-PowerApps で作成したキャンバス アプリに問題が発生した場合、問題のセッション ID、アプリ ID、またはその両方を Microsoft に提供すると、問題をより効果的にトラブルシューティングできます。
+Power Apps で作成された canvas アプリで問題が発生した場合は、その問題について、セッション ID、アプリ ID、またはその両方を使用して、問題のトラブルシューティングを行うことができます。
 
 ## <a name="get-the-session-id"></a>セッション ID を取得する
 
@@ -32,7 +32,7 @@ PowerApps で作成したキャンバス アプリに問題が発生した場合
 
 1. **[診断]** の下で、 **[セッションの詳細]** を選択します。
 
-    ![PowerApps Studio からセッション ID を取得する](media/get-sessionid/studio.png)
+    ![Power Apps Studio からセッション ID を取得する](media/get-sessionid/studio.png)
 
 ### <a name="when-running-an-app-in-a-browser"></a>アプリケーションをブラウザーで実行する場合
 1. 右上隅にある歯車アイコンを選択します。

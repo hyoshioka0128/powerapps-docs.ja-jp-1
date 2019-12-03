@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: daf6c3f0c067822b590535b9807af3bc0d96ec16
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6027589bc1cb5ae5a7e23ce2969e303d62151b96
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993978"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679870"
 ---
-# <a name="connect-from-microsoft-powerapps-to-dynamics-ax"></a>Microsoft PowerApps から Dynamics AX に接続する
+# <a name="connect-from-microsoft-power-apps-to-dynamics-ax"></a>Microsoft Power Apps から Dynamics AX に接続する
 ![Dynamics AX Online](./media/connection-dynamicsax/dynamics-ax.png)
 
 次のバージョンの Dynamics AX からデータを読み取り、更新し、削除するアプリを容易に構築するには、この接続を使用します。

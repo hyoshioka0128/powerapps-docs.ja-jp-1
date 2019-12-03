@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: df9ad0aead9681d3458d70f44f929c15c073f35a
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 31bf18342de1191dbd816093186fe33e31755232
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73897804"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678743"
 ---
 # <a name="connect-to-an-oracle-database-from-powerapps"></a>PowerApps から Oracle データベースへの接続
-PowerApps で接続を作成すると、Oracle データベースのテーブルを一覧表示してテーブルの行の作成、読み取り、更新、削除を行い、アプリを作成することができます。 Oracle データベースへの接続では、フィルター処理や並び替えなど、トリガーとストアド プロシージャを除く機能の完全委任がサポートされています。
+接続を作成し、Power Apps でアプリを構築した後、Oracle データベースでテーブルを一覧表示したり、テーブル行を作成、読み取り、更新、削除したりします。 Oracle データベースへの接続では、フィルター処理や並び替えなど、トリガーとストアド プロシージャを除く機能の完全委任がサポートされています。
 
 ## <a name="prerequisites"></a>前提条件
 * Oracle 9 以降
@@ -32,13 +32,13 @@ PowerApps で接続を作成すると、Oracle データベースのテーブル
 ### <a name="install-an-on-premises-data-gateway"></a>オンプレミス データ ゲートウェイをインストールする
 ゲートウェイをインストールするには、[こちらのチュートリアル](../gateway-management.md)の手順に従います。
 
-オンプレミスデータゲートウェイはブリッジとして機能し、オンプレミスのデータ (クラウドにないデータ) と、Power BI、Power の自動化、Logic Apps、PowerApps サービスの間で迅速かつ安全なデータ転送を提供します。 複数のサービスやデータ ソースで、同一のゲートウェイを使用できます。 詳細については、[ゲートウェイの概要](../gateway-reference.md)に関する記事を参照してください。
+オンプレミスデータゲートウェイはブリッジとして機能し、オンプレミスのデータ (クラウドにないデータ) と、Power BI、電力の自動化、Logic Apps、および Power Apps のサービスの間で、迅速かつ安全なデータ転送を提供します。 複数のサービスやデータ ソースで、同一のゲートウェイを使用できます。 詳細については、[ゲートウェイの概要](../gateway-reference.md)に関する記事を参照してください。
 
 ### <a name="install-oracle-client"></a>Oracle クライアントをインストールする
 オンプレミス データ ゲートウェイと同じコンピューターに、[64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html) をインストールします。 このインストールを行わないと、既知の問題の一覧で説明しているように、接続の作成時または使用時にエラーが発生します。
 
 ## <a name="create-an-app-from-a-table-in-an-oracle-database"></a>Oracle データベースのテーブルからアプリを作成する
-1. PowerApps Studio の **[File (ファイル)]** メニュー (画面左側) の **[New (新規)]** をクリックまたはタップします。
+1. Power Apps Studio で、 **[ファイル]** メニュー (左端近く) の **[新規]** をクリックまたはタップします。
    
    ![[新規] オプション](./media/connection-oracledb/new-app.png)
 2. **[データを使用して開始]** の下にある矢印をクリックまたはタップします。
@@ -74,7 +74,7 @@ PowerApps で接続を作成すると、Oracle データベースのテーブル
     
     ![新規](./media/connection-oracledb/connect-button.png)
 
-PowerApps により、選択したテーブルのデータが次の 3 つの画面に表示されるアプリが作成されます。
+Power Apps は、3つの画面を含むアプリを作成し、選択したテーブルのデータを表示します。
 
 * **BrowseScreen1** には、テーブルに含まれるすべてのエントリが一覧表示されます。
 * **DetailScreen1** には、1 つのエントリに関する詳細が表示されます。

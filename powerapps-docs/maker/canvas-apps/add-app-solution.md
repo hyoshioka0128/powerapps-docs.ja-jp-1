@@ -1,6 +1,6 @@
 ---
 title: ソリューションにキャンバスアプリを作成する |Microsoft Docs
-description: PowerApps では、別の環境にアプリを配置できるように、ソリューションにキャンバスアプリを作成します。
+description: Power Apps で、アプリを別の環境にデプロイできるように、ソリューションにキャンバスアプリを作成します。
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0748f78665b389d57989c9170ca21077721f6633
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f6b34a5ea1b2f269a26ad70de6a6a530a30bc240
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540997"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679341"
 ---
 # <a name="create-a-canvas-app-from-within-a-solution"></a>ソリューション内からキャンバスアプリを作成する
 
@@ -34,7 +34,7 @@ ms.locfileid: "73540997"
 
 アプリを作成する、またはアプリをリンクするソリューションが既にある場合は、この手順を省略できます。
 
-1. PowerApps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、必要に応じて適切な環境に切り替えます。
+1. Power Apps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、必要に応じて適切な環境に切り替えます。
 
     - ソリューション内からアプリを作成する場合は、Common Data Service データベースを含む任意の環境に切り替えます。
     - 既存のアプリをソリューションにリンクする場合は、そのアプリを含む環境に切り替えます。
@@ -81,7 +81,7 @@ ms.locfileid: "73540997"
     > [!div class="mx-imgBorder"]
     > ![ソリューションにアプリを作成するためのオプション](./media/add-app-solution/new-option.png "ソリューションにアプリを作成するためのオプション")
 
-    PowerApps Studio、別のブラウザータブに空白のキャンバスが表示されます。
+    Power Apps Studio では、別のブラウザータブに空のキャンバスが表示されます。
 
 1. アプリを作成し (または、少なくとも1つの変更を加え)、変更を保存します。
 
@@ -107,7 +107,7 @@ ms.locfileid: "73540997"
 
 1. ソリューションの一覧で、アプリをリンクするソリューションを選択します。
 
-1. タイトルバーの下のバナーで、[**既存**の  > **アプリ** > **キャンバスアプリ**の追加] を選択します。
+1. タイトルバーの下のバナーで、[**既存**の > **アプリ** > **キャンバスアプリ**の追加] を選択します。
 
     > [!div class="mx-imgBorder"]
     > ![既存のアプリをリンクするバナーオプション](./media/add-app-solution/add-existing.png "既存のアプリをリンクするバナーオプション")

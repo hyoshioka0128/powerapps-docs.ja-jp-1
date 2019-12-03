@@ -1,6 +1,6 @@
 ---
 title: Calendar および Clock 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Calendar および Clock 関数の参照情報
+description: 構文と例を含む、Power Apps の Calendar および Clock 関数に関するリファレンス情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a4b3540d8a7d499d4da1206f70298ea4a2541b16
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 62a500ad6e39451a3fb62932b9eeafb1d38f772a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985435"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679387"
 ---
 # <a name="calendar-and-clock-functions-in-powerapps"></a>PowerApps の Calendar および Clock 関数
 現在のロケールのカレンダーおよび時計の情報を取得します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Calendar** 関数と **Clock** 関数は、現在のロケールに関する情報を取得する関数です。
 
 これらの関数を使用して、現在のユーザーの言語で日付と時刻を表示できます。  **Calendar** 関数と **Clock** 関数によって返される単一列テーブルは、ドロップダウン コントロールとリストボックス コントロールの **[Items](../controls/properties-core.md)** プロパティで直接使用できます。
 
-| 関数 | 説明 |
+| 関数 | Description |
 | --- | --- |
 | **Calendar.MonthsLong()** |"January" から始まる、各月の完全な名前を含む単一列テーブル。 |
 | **Calendar.MonthsShort()** |January の "Jan" から始まる、各月の省略された名前を含む単一列テーブル。 |
@@ -64,7 +64,7 @@ ms.locfileid: "71985435"
 
 **[Language](function-language.md)** で "en-US" が返される米国では、**Calendar** 関数で以下が返されます。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Calendar.MonthsLong()** |戻り値には、"January" から始まる各月の完全名が含まれます。 |[ "January"、"February"、"March"、"April"、"May"、"June"、"July"、"August"、"September"、"October"、"November"、"December" ] |
 | **Calendar.MonthsShort()** |戻り値には、"January" から始まる各月の省略名が含まれます。 |[ "Jan"、"Feb"、"Mar"、"Apr"、"May"、"Jun"、"Jul"、"Aug"、"Sep"、"Oct"、"Nov"、"Dec" ] |

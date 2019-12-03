@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f704b96150b0021b7170fc095cc6561cd3aac908
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 44c94a712402ef26a4fa6b36d84e287d3fa506e1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987777"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679295"
 ---
 # <a name="accessible-colors-for-canvas-apps-in-powerapps"></a>PowerApps のキャンバス アプリ向けのアクセシビリティ対応色
-キャンバス アプリで使用する色は、色覚や視力に障碍のあるユーザーでも認識できるものにする必要があります。 PowerApps のすべてのテーマは、既定でアクセシビリティ対応になっています。 アプリで使う色を変更するときは、この記事のガイドラインに従って、アクセシビリティを維持するようにしてください。 色コントラストの問題の特定に役立つ、オンラインで入手できるツールがいくつかあります。
+キャンバス アプリで使用する色は、色覚や視力に障碍のあるユーザーでも認識できるものにする必要があります。 既定では、すべての Power Apps テーマにアクセスできます。 アプリで使う色を変更するときは、この記事のガイドラインに従って、アクセシビリティを維持するようにしてください。 色コントラストの問題の特定に役立つ、オンラインで入手できるツールがいくつかあります。
 
 ## <a name="minimum-contrast-for-text"></a>テキストの最低限のコントラスト
 * テキストとその背景のコントラスト比を、4.5:1 以上にする必要があります
@@ -29,7 +29,7 @@ ms.locfileid: "71987777"
 * 無効になっているテキストについては、コントラストの要件はありません
 
 実際には、すべての対話型コントロールで次のものの間が適切な色コントラストになっている必要があります。
-* **[Color](controls/properties-color-border.md)** と **[Fill](controls/properties-color-border.md)**
+* **[色](controls/properties-color-border.md)** と **[塗りつぶし](controls/properties-color-border.md)**
 * **[PressedColor](controls/properties-color-border.md)** と **[PressedFill](controls/properties-color-border.md)**
 * **[HoverColor](controls/properties-color-border.md)** と **[HoverFill](controls/properties-color-border.md)**
 
@@ -55,7 +55,7 @@ ms.locfileid: "71987777"
 * **[HoverFill](controls/properties-color-border.md)** とコントロールの外側の色
 
 ### <a name="graphical-objects"></a>グラフィック オブジェクト
-画像が重要な情報を伝達する場合は、画像についてコントラストの問題を確認することを検討します。 これは、イメージを表示できるコントロールに適用されます。 **[オーディオ](controls/control-audio-video.md)** 、 **[画像](controls/control-image.md)** 、 **[マイク](controls/control-microphone.md)** 、および **[ビデオ](controls/control-audio-video.md)** 。
+画像が重要な情報を伝達する場合は、画像についてコントラストの問題を確認することを検討します。 これは、 **[オーディオ](controls/control-audio-video.md)** 、 **[イメージ](controls/control-image.md)** 、 **[マイク](controls/control-microphone.md)** 、 **[ビデオ](controls/control-audio-video.md)** など、画像を表示できるコントロールに当てはまります。
 
 ビデオ コンテンツの場合、コントラストの問題を確認することを検討します。 その代わりに、またはそれに加えて、ビデオについて説明する[クローズド キャプション](controls/control-audio-video.md)を提供します。
 
@@ -65,4 +65,4 @@ ms.locfileid: "71987777"
 **[アイコン](controls/control-shapes-icons.md)** または **[斜体](controls/properties-text.md)** や **[下線](controls/properties-text.md)** などのテキスト スタイルといった追加の手掛かりは、意味を伝えるのに役立ちます。
 
 ## <a name="next-steps"></a>次の手順
-PowerApps コントロールの[アクセシビリティのプロパティ](controls/properties-accessibility.md)を確認して、[アクセシビリティ チェックを使用](accessibility-checker.md)してみます。
+Power Apps コントロールの[アクセシビリティのプロパティ](controls/properties-accessibility.md)について学習し、[アクセシビリティチェッカーを使用](accessibility-checker.md)してみてください。

@@ -13,21 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f29b3a782ce62c475c80804225787a0a42e85a2c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 6c41407397cc0f9a7ca12ec2c9cc3bbb7fa8c95f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993805"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679824"
 ---
 # <a name="data-table-control-in-powerapps"></a>PowerApps のデータ テーブル コントロール
 データのセットを表形式で表示します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **データ テーブル** コントロールには、コントロールに表示される各フィールドの列ヘッダーを含む形式でデータセットが表示されます。 アプリ メーカーとして、表示されるフィールドやその順序を詳細にコントロールできます。 **ギャラリー** コントロールなど、**データ テーブル** コントロールには、選択した行をポイントする **Selected** プロパティが保持されます。 したがって、**データ テーブル** コントロールは他のコントロールにリンクすることできます。
 
 ## <a name="capabilities"></a>機能
-PowerApps では、2017 年 5 月 5 日に**データ テーブル** コントロールを導入しました。 このセクションでは、サポートされている機能とサポートされていない機能に関する情報を提供します。
+Power Apps では、2017年5月5日に**データテーブル**コントロールが導入されました。 このセクションでは、サポートされている機能とサポートされていない機能に関する情報を提供します。
 
 ### <a name="now-available"></a>提供開始
 * **データ テーブル** コントロールの読み取り専用データ。
@@ -146,10 +146,10 @@ PowerApps では、2017 年 5 月 5 日に**データ テーブル** コント�
     ![データ テーブルに接続さた編集フォーム](./media/control-data-table/connected-form-data-table.png)
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
 以下の間には適切な色のコントラストが必要です。
-* [**Color**](properties-color-border.md) と [**Fill**](properties-color-border.md)
+* [**色**](properties-color-border.md)と[**塗りつぶし**](properties-color-border.md)
 * **HeadingColor** と **HeadingFill**
 * **SelectedColor** と **SelectedFill**
 * [**HoverColor**](properties-color-border.md) と [**HoverFill**](properties-color-border.md)

@@ -13,21 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 46b5cb0761027c7e39ac95619974d2c0187225a2
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 349365c84e9d59ea2edf3c61077e468ba16ab27e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649661"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679640"
 ---
 # <a name="timer-control-in-powerapps"></a>PowerApps のタイマー コントロール
 一定の時間が経過した後のアプリの反応を決定できるコントロールです。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 タイマーは、たとえば、コントロールが表示される時間の長さを決定したり、一定の時間が経過した後にコントロールの他のプロパティを変更したりできます。
 
 > [!NOTE]
-> PowerApps Studio では、タイマーはプレビューモードでのみ実行されます。
+> Power Apps Studio では、タイマーはプレビューモードでのみ実行されます。
 
 
 ## <a name="key-properties"></a>主要なプロパティ
@@ -102,7 +102,7 @@ ms.locfileid: "73649661"
 
 **[Text](properties-core.md)** – コントロールに表示されるテキスト、またはコントロールにユーザーが入力するテキストです。
 
-**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
 
@@ -144,7 +144,7 @@ ms.locfileid: "73649661"
 
 5. アニメーションを開始または停止するには、タイマー ボタンを選択します。 ラベル内のテキストが白色にフェードした後、最大輝度に戻り、このプロセスが繰り返されます。
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 ユーザーがコントロールを操作できる場合は、 **[ボタン](control-button.md)** コントロールの同じガイドラインが**Timer**コントロールにも適用されます。
 
 ### <a name="background-timers"></a>バックグラウンドタイマー

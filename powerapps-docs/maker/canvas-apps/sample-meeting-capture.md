@@ -1,6 +1,6 @@
 ---
 title: Meeting Capture サンプル テンプレート | Microsoft Docs
-description: PowerApps で Meeting Capture サンプル テンプレートについて説明すると共に、設定、概要、およびアプリの構築方法の詳細について説明します。
+description: アプリがどのように構築されたかについては、セットアップ、概要、ディープダイブを使用した Power Apps のミーティングのキャプチャのサンプルテンプレートについて説明します。
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 28ec571fc167f7233abed5d1448e5e441c6913a0
-ms.sourcegitcommit: 0e7bdaea83adaa15da4d5c9ddbcd0b2bcbee01df
+ms.openlocfilehash: 763e8a3cd84b4644787ce30398f8c36f016fe986
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73063349"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675308"
 ---
 # <a name="set-up-and-learn-about-the-meeting-capture-sample-template-in-powerapps"></a>PowerApps での Meeting Capture サンプル テンプレートについて、またその設定について説明します。
 
 ## <a name="overview"></a>概要
 
- PowerApps における Meeting Capture サンプル テンプレートは、会議が開かれたときに、その会議から情報をキャプチャするためのオールインワン ツールです。 アプリを実行すると、会議の詳細の表示、メモの記録、ホワイト ボードの写真撮影、スケッチ、タスクの割り当てを行うことができます。 また、このような項目すべてのエクスポート、すべての会議参加者への送信、フォローアップ会議のスケジュール設定を迅速かつ簡単に行うこともできます。
+ Power Apps では、会議のキャプチャサンプルテンプレートは、会議から情報を取得するためのオールインワンのツールです。 アプリを実行すると、会議の詳細の表示、メモの記録、ホワイト ボードの写真撮影、スケッチ、タスクの割り当てを行うことができます。 また、このような項目すべてのエクスポート、すべての会議参加者への送信、フォローアップ会議のスケジュール設定を迅速かつ簡単に行うこともできます。
 
 [![Meeting Capture](media/sample-meeting-capture/MeetingCapture.png)](https://aka.ms/previewmeetingcapture)
 
@@ -41,9 +41,9 @@ ms.locfileid: "73063349"
 
 ## <a name="how-do-i-build-the-app-myself"></a>アプリを自分でビルドするにはどうすればよいですか
 
-Meeting Capture には、PowerApps でよく使用される機能が多数含まれています。 次のビデオを視聴すれば、この機能を探索し、実装方法を確認できるので、同じ機能およびパターンを独自のアプリに実装できるようになります。
+会議のキャプチャには、多くの機能が組み込まれています。 次のビデオを視聴すれば、この機能を探索し、実装方法を確認できるので、同じ機能およびパターンを独自のアプリに実装できるようになります。
 
-- PowerApps から OneNote に [コンテンツをエクスポート](https://youtu.be/D6kmeM0UFH0)する。
+- Power Apps から OneNote に[コンテンツをエクスポート](https://youtu.be/D6kmeM0UFH0)します。
 - 出席者が[会議に出席できる時間を見つける](https://youtu.be/gSD8m6d_Gv0)。
 
 Meeting Capture は Office 365 内で以下のサービスに接続されます。

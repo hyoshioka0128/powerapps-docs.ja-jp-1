@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5883e5f091d5454b00aead80a9daf919a2bcfc2c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 56e5ec7f303706ded114655e5c6d473408e9ddd7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994281"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680031"
 ---
 # <a name="create-accessible-canvas-apps-in-powerapps"></a>PowerApps でアクセシビリティ対応キャンバス アプリを作成する
 アクセシビリティ対応のキャンバス アプリでは、視覚や聴覚などに障碍のあるユーザーが、アプリを正しく使えるように配慮されています。  これは、多くの政府機関や組織にとっての要件というだけではありません。以下のガイドラインに従うことで、能力に関係なくあらゆるユーザーの使いやすさが向上します。
@@ -26,7 +26,7 @@ ms.locfileid: "71994281"
 **[アクセシビリティ チェック](accessibility-checker.md)** を使用して、アプリの潜在的なアクセシビリティの問題を確認します。 
 
 ## <a name="layout-and-color"></a>レイアウトと色
-常識的でシンプルなデザインを採用することで、アプリはすべてのユーザーにとってアクセスしやすいものとなります。  アプリを大幅にカスタマイズする場合は、以下の推奨事項に留意してください。  PowerApps のテーマは、既定でアクセシビリティ対応です。
+常識的でシンプルなデザインを採用することで、アプリはすべてのユーザーにとってアクセスしやすいものとなります。  アプリを大幅にカスタマイズする場合は、以下の推奨事項に留意してください。  Power Apps のテーマは、既定でアクセス可能です。
 - すべての要素が明確に表示され、テキストが十分なサイズであることを確認します。  すべてのコンテンツを、肉眼で簡単に読んで理解できるようにする必要があります。
 - 要素を表示するための項目の可視性プロパティは、使わないでください。  何かを条件付きで表示する必要がある場合は、新しい画面にコンテンツを作成して、そこにユーザーを移動させ、再び戻らせます。
 - 入力要素が画面上でラベル付けされていることを確認します。 スクリーン リーダーが読み上げる内容は、 **[AccessibilityLabel](controls/properties-accessibility.md)** プロパティによって定義されます。
@@ -42,12 +42,12 @@ ms.locfileid: "71994281"
 - タブのインデックスを 0 より大きい値に設定しないでください。
 
 ## <a name="screen-reader-support"></a>スクリーン リーダーのサポート
-以下のソフトウェアの組み合わせは、スクリーン リーダーと共に PowerApps を使用するためにサポートされる推奨事項です。
+次のソフトウェアの組み合わせは、スクリーンリーダーでのパワーアプリの使用に関してサポートされている推奨事項です。
 
-- **Windows**:Microsoft Edge/ナレーター
-- **macOS**:Safari/VoiceOver
-- **Android**:PowerApps アプリ/Talkback
-- **iOS**:PowerApps アプリ/VoiceOver
+- **Windows**: Microsoft Edge/ナレーター
+- **macOS**: Safari / VoiceOver
+- **Android**: Power Apps アプリ/Talkback
+- **iOS**: Power Apps アプリ/VoiceOver
 
 スクリーン リーダーを使った体験を満足のいくものにするには、次の操作を実行することをお勧めします。
 

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fb051ffcdfed2aef2cb635d8dd2bf2bcfb44176e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 712d7ed6166b2ea655a086b1f9a4416af1e8065f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990326"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676572"
 ---
-# <a name="show-items-of-different-heights-in-a-powerapps-gallery"></a>PowerApps ギャラリーで異なる高さのアイテムを表示する
+# <a name="show-items-of-different-heights-in-a-power-apps-gallery"></a>Power Apps ギャラリーで異なる高さの項目を表示する
 データ セットの各アイテムの同一フィールドに含まれるデータ量が異なる場合、含まれるデータを量が少ないアイテムの後にスペースを挿入しなくても、データ量が多いアイテムの全体を表示することができます。 **高さ可変**ギャラリーを追加し、次の操作を行えるように構成します。
 
 * コンテンツに合わせて伸縮するように**ラベル** コントロールを構成する。
@@ -41,7 +41,7 @@ ms.locfileid: "71990326"
 
 2. Excel ファイルを、OneDrive、Dropbox、Google Drive などのクラウドストレージ アカウントにアップロードします。
 
-3. PowerApps Studio の **[ファイル]** メニューの **[新規]** をクリックまたはタップします。
+3. Power Apps Studio で、 **[ファイル]** メニューの **[新規作成]** をクリックまたはタップします。
 
 4. **[空のアプリ]** タイルで、 **[携帯電話レイアウト]** をクリックまたはタップします。
 

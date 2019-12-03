@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリのルックアップ フィールドを使用して SharePoint リスト間のリレーションシップを作成する | Microsoft Docs
-description: PowerApps で、キャンバス アプリのルックアップ フィールドを使用して SharePoint リスト間のリレーションシップを作成します。
+description: Power Apps で、キャンバスアプリのルックアップフィールドを使用して SharePoint リスト間のリレーションシップを作成します。
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2c1cce350c394d2809de4c3354b7b471af987236
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bef5a66569a201a76c36da9b1e828169df7f3cb9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541404"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674841"
 ---
 # <a name="how-to-link-sharepoint-lists-using-a-lookup-field-in-powerapps"></a>PowerApps でルックアップ フィールドを使用して SharePoint リストをリンクする方法
 
@@ -96,7 +96,7 @@ SharePoint には、次の 2 種類のルックアップ フィールドがあ�
 ## <a name="create-an-app-from-the-assets-list"></a>Assets リストからアプリを作成する
 このアプリを使用して **Assets** リストにデータを追加します。
 
-1. [PowerApps Studio にサインインします](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。 PowerApps を初めて利用する場合は、組織の電子メール アドレスを使って[無料でサインアップします](https://powerapps.microsoft.com)。
+1. [Power Apps Studio にサインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。 Power Apps を初めて使用する場合は、組織の電子メールアドレスを使用して[無料でサインアップ](https://powerapps.microsoft.com)してください。
 
 2. **[ファイル]** メニュー (画面左側) の **[新規]** をクリックまたはタップし、 **[SharePoint]** をクリックまたはタップします。
 

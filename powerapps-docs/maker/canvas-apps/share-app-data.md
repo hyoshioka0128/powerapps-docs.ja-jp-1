@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3348db5897b0c58d7addef775d2a871809fc491b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b2eca27d418a762820bf0955edafff435a176efb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995205"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674923"
 ---
 # <a name="share-excel-data-used-by-your-app"></a>アプリで使用される Excel データの共有
 OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-connections.md)でアプリのユーザーと Excel データを共有することができます。
@@ -30,7 +30,7 @@ OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-
 このトピックでは、Dropbox、OneDrive、Google Drive を使用して Excel スプレッドシートのデータを共有する方法について説明します。 Excel ファイルのデータを表示するアプリを作成するには、[一連のデータからアプリを作成する方法](get-started-create-from-data.md)に関するページを参照してください。
 
 ## <a name="share-data-in-dropbox"></a>Dropbox でデータを共有する
-1. PowerApps から Dropbox への接続を作成したときと同じアカウントで Dropbox にサインインします。
+1. Power Apps から Dropbox への接続の作成に使用したものと同じアカウントを使用して、Dropbox にサインインします。
 2. Excel ファイルが格納されているフォルダーを選択し、 **[共有]** を選択します。  
    
     ![[共有] コマンド](./media/share-app-data/dropbox-share.png)
@@ -43,7 +43,7 @@ OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-
 詳細については、[Dropbox でのフォルダーの共有](https://www.dropbox.com/en/help/19)に関するページを参照してください。
 
 ## <a name="share-data-in-onedrive"></a>OneDrive でデータを共有する
-1. PowerApps から OneDrive への接続を作成したときと同じアカウントで OneDrive にサインインします。
+1. Power Apps から OneDrive への接続を作成したときに使用したものと同じアカウントを使用して OneDrive にサインインします。
 2. ファイルが格納されているフォルダーを選択し、 **[共有]** を選択します。  
    
     ![[共有] コマンド](./media/share-app-data/onedrive-share.png)
@@ -60,7 +60,7 @@ OneDrive などの[クラウド アカウント](connections/cloud-storage-blob-
 詳細については、「[OneDrive のファイルとフォルダーの共有](https://support.office.com/article/Share-OneDrive-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07)」を参照してください。
 
 ## <a name="share-data-in-google-drive"></a>Google Drive でデータを共有する
-1. PowerApps から Google Drive への接続を作成したときと同じアカウントで Google Drive にサインインします。
+1. Power Apps から Google Drive への接続を作成したときと同じアカウントを使用して Google Drive にサインインします。
 2. Excel ファイルが格納されているフォルダーを右クリックし、 **[共有]** を選択します。  
    
     ![[共有] コマンド](./media/share-app-data/googledrive-share.png)

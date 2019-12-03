@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bcadf4abfd55a317cf67196c9ba2158a001a015a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eed7a0bd6b9ee269877b6dfe4fcfd5bc6c56e3af
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541132"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678812"
 ---
 # <a name="connect-to-sql-server-from-powerapps"></a>PowerApps から SQL Server に接続する
 ![SQL Server アイコン](./media/connection-azure-sqldatabase/sqlicon.png)
@@ -27,7 +27,7 @@ Azure またはオンプレミス データベースで SQL Server に接続し�
 
 ## <a name="prerequisites"></a>前提条件
 
-* PowerApps に[サインアップ](../../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
+* Power Apps に[サインアップ](../../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 * 主キーを持つテーブルが 1 つ以上含まれるデータベースに関して次の情報を集めます。
   
   * データベースの名前
@@ -42,7 +42,7 @@ Azure またはオンプレミス データベースで SQL Server に接続し�
   > ゲートウェイとオンプレミス接続は、ユーザーの[既定の環境](../working-with-environments.md)でのみ作成し、使用できます。
 
 ## <a name="generate-an-app-automatically"></a>アプリを自動的に生成する
-1. PowerApps Studio の **[ファイル]** メニュー (画面左側) の **[新規]** をクリックまたはタップします。
+1. Power Apps Studio で、 **[ファイル]** メニュー (左端) の **[新規]** をクリックまたはタップします。
    
     ![[ファイル] メニューの [新規] オプション](./media/connection-azure-sqldatabase/file-new.png)
 2. **[データを使用して開始]** で、コネクタの行端にある右矢印をクリックまたはタップします。
@@ -64,7 +64,7 @@ Azure またはオンプレミス データベースで SQL Server に接続し�
 6. **[接続]** をクリックまたはタップします。
 7. **[データセットの選択]** のオプションをクリックまたはタップし、 **[テーブルの選択]** のオプションをクリックまたはタップし、 **[接続]** をクリックまたはタップします。
    
-    PowerApps により、3 つの画面にデータを表示するアプリが作成されます。 ヒューリスティックスにより表示するデータの種類が提案されますが、場合によっては、自分のニーズに合わせて UI をカスタマイズする必要があります。
+    Power Apps は、3つの画面にデータを表示するアプリを作成します。 ヒューリスティックスにより表示するデータの種類が提案されますが、場合によっては、自分のニーズに合わせて UI をカスタマイズする必要があります。
 8. アプリのカスタマイズは、「[Create an app from Excel](../get-started-create-from-data.md)」 (Excel からアプリを作成する) にある説明と同様の手法で行います。最初にアプリのレイアウトを変更します。
 
 ## <a name="build-an-app-from-scratch"></a>アプリをゼロから作成
@@ -88,7 +88,7 @@ Azure またはオンプレミス データベースで SQL Server に接続し�
 6. 「[アプリをゼロから作成](../get-started-create-from-blank.md)」の説明と同様の手法でアプリを作成します。
 
 ## <a name="update-an-existing-app"></a>既存のアプリを更新する
-1. PowerApps Studio で、更新するアプリを開きます。
+1. Power Apps Studio で、更新するアプリを開きます。
 2. リボンの **[ビュー]** タブで、 **[データ ソース]** をクリックまたはタップします。
 3. 右側のウィンドウで、 **[データ ソースの追加]** をクリックまたはタップします。
    

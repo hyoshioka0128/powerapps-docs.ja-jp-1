@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b6f977154a350c6ca4b0b630cb4a4050e6d015c8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ff3e2db1c0d02fda91215ae0e5cc6dd4ae712dd9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541489"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675118"
 ---
 # <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>キャンバスアプリの電子メール画面テンプレートの概要
 
@@ -42,7 +42,7 @@ Canvas アプリで、ユーザーが Office 365 Outlook アカウントから�
 
 テンプレートから電子メール画面を追加するには、次のようにします。
 
-1. PowerApps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、PowerApps Studio でアプリを作成するか、既存のアプリを開きます。
+1. Power Apps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、アプリを作成するか、Power apps Studio で既存のアプリを開きます。
 
     このトピックでは phone アプリについて説明しますが、同じ概念がタブレットアプリにも当てはまります。
 

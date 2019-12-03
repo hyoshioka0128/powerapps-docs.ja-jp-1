@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 55174184cf0a94b6a398e6441c919ba5ad51dc85
-ms.sourcegitcommit: 249d710ec06c078eb71faa6d5eb48494c8435abd
+ms.openlocfilehash: b1d8dbc97082cc2a7eeee2c5eae093a665d74d70
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73962520"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674256"
 ---
 # <a name="understand-experimental-preview-and-deprecated-features-in-powerapps"></a>PowerApps の試験段階、プレビュー版、非推奨の機能について
 
-すべてのリリースで、PowerApps がユーザーのニーズに最適なツールになるように変更を加えたり、機能を追加したりしています。 製品を上位に進めます。  
+各リリースでは、変更を加え、機能を追加して、お客様のニーズに合った最適なツールをパワーアプリに設定します。 製品を上位に進めます。  
 
 Microsoft は下位互換性を重要視しています。 しかし、どのような変更や改善でも、意図しない副作用が導入されてしまう可能性があり、ご利用のアプリが以前とまったく同じようには動作しないこともあります。
 
@@ -38,7 +38,7 @@ Microsoft は下位互換性を重要視しています。 しかし、どのよ
 
 各ステージでは、機能を使用するユーザーの数が増加し、機能が必要であることを検証し、意図しない副作用が発生することはありません。
 
-**このプロセスには、お客様のフィードバックが不可欠です。**  [PowerApps コミュニティ フォーラム](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)からフィードバックを投稿してください。
+**このプロセスには、お客様のフィードバックが不可欠です。**  [Power Apps コミュニティフォーラム](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)にフィードバックを投稿してください。
 
 機能が各ステージにとどまる期間は、 機能によって異なります。 Microsoft では、機能を使用するアプリの数、報告された問題の数、機能の必要性に関する緊急度など、多くの要因を確認します。 機能が 1 つのステージにとどまる期間は数週間のことも数か月のこともあります。  場合によっては、役に立たない段階もあります。
 
@@ -55,9 +55,9 @@ Microsoft は下位互換性を重要視しています。 しかし、どのよ
 ## <a name="documentation"></a>書
 
 これらの機能に関する情報を確認できる場所  Microsoft はプレビュー機能を完了した機能として扱うので、他の製品の機能を実行するように、それらの機能について詳しく確認することができます。 
-- [PowerApps の概要](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started)。 新機能の基本 (利点、作業を開始する方法、参照情報) を提供します。
-- [PowerApps コミュニティ フォーラム](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)。  他のユーザーがお客様と共に新機能を調べます。 他のユーザーの体験から学んで、自分の体験を共有しましょう。
-- [PowerApps ブログ](https://powerapps.microsoft.com/blog/)。  常にではありませんが、ブログの投稿には新機能を伴うことが多いです。
+- [Power Apps のドキュメント](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started)。 新機能の基本 (利点、作業を開始する方法、参照情報) を提供します。
+- [Power Apps コミュニティフォーラム](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)。  他のユーザーがお客様と共に新機能を調べます。 他のユーザーの体験から学んで、自分の体験を共有しましょう。
+- [Power Apps ブログ](https://powerapps.microsoft.com/blog/)。  常にではありませんが、ブログの投稿には新機能を伴うことが多いです。
 
 試験的な機能は異なります。  これらの機能は作業中であり、完了したとは見なしていません。 **[アプリの設定]** ウィンドウ (以下を参照) にある簡単な説明は、それらに関する情報のみである可能性があります。 通常、試験的な機能は、ドキュメントには表示されません。 コミュニティ フォーラムは、情報における最適なソースである可能性が高いです。  場合によっては、初期のブログの投稿で機能について説明されています。  十分な情報が見つからない場合は、フォーラムで質問するか、この機能がプレビュー ステージに移るまで待ちます。
 

@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0a1626583300e6fe696415a91de68ff08596f081
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: ab4b7683d4ea550ebe5704cb7e5580ccbae48deb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71989379"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674973"
 ---
 # <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>Canvas apps の people screen テンプレートに関するリファレンス情報
 
-PowerApps のキャンバスアプリの場合、people 画面テンプレートの各重要なコントロールが画面の既定の機能全体にどのように影響するかを理解します。 この詳細では、動作の数式と、コントロールがユーザー入力にどのように応答するかを決定するその他のプロパティの値を示します。 この画面の既定の機能の概要については、「 [people screen の概要](people-screen-overview.md)」を参照してください。
+Power Apps のキャンバスアプリの場合は、people 画面テンプレートの各重要なコントロールが画面の既定の機能全体にどのように影響するかを理解します。 この詳細では、動作の数式と、コントロールがユーザー入力にどのように応答するかを決定するその他のプロパティの値を示します。 この画面の既定の機能の概要については、「 [people screen の概要](people-screen-overview.md)」を参照してください。
 
 ここでは、いくつかの重要なコントロールについて説明し、これらのコントロールのさまざまなプロパティ ( **Items**や**onselect**など) が設定される式または数式について説明します。
 

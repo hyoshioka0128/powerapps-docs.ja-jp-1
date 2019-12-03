@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8456e82cfd2680fcbb722c8b4b2b5b32ef73dbde
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: eec6400b4953f1183ffbb294093c13aebb53fe8d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540291"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678651"
 ---
-# <a name="container-control-in-powerapps-experimental"></a>PowerApps のコンテナーコントロール (試験段階)
+# <a name="container-control-in-power-apps-experimental"></a>Power Apps でのコンテナーコントロール (試験段階)
 階層を作成する機能を提供します。
 
 > [!IMPORTANT]

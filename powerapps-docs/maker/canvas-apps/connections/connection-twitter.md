@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f58f8e15d1bd522bd9c24d7e3e1dfe9a69b4d257
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 21effecae904675e39c914145ee10df9c81ec752
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541025"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679847"
 ---
 # <a name="connect-to-twitter-from-powerapps"></a>PowerApps から Twitter に接続する
 ![Twitter](./media/connection-twitter/twittericon.png)
@@ -32,7 +32,7 @@ Twitter では、Twitter アカウントからツイートの投稿、ツイー�
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="connect-to-twitter"></a>Twitter への接続
-1. PowerApps を開き、 **[新規]** を選んで **[空のアプリ]** を作成します。 携帯電話またはタブレットのレイアウトを選択します。 タブレットのレイアウトの方がワークスペースが広くなります。  
+1. Power Apps を開き、**新規** を選択して、**空のアプリ**を作成します。 携帯電話またはタブレットのレイアウトを選択します。 タブレットのレイアウトの方がワークスペースが広くなります。  
 
    ![空のアプリを開く](./media/connection-twitter/blank-app.png)
 2. 右側のウィンドウで **[データ]** タブをクリックまたはタップし、 **[データソースの追加]** をクリックまたはタップします。

@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e96c7bda3740143339130d3e56a04703aae5fc7c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8c44db7094425366822d7924b771070d9e9a5ec5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71990229"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676631"
 ---
 # <a name="operators-in-powerapps"></a>PowerApps の演算子
 
 これらの演算子の一部は、作成者の言語に依存します。  詳細については、[グローバル アプリ](../global-apps.md)に関する記事を参照してください。
 
 
-|                               記号                                |                        種類                         |                                                                                    構文                                                                                    |                                                                                                                           説明                                                                                                                            |
+|                               記号                                |                        種類                         |                                                                                    構文                                                                                    |                                                                                                                           Description                                                                                                                            |
 |---------------------------------------------------------------------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                **.**                                |                  プロパティ セレクター                  |                                                               **Slider1.Value<br>Color.Red<br>Acceleration.X**                                                               |                                               [テーブル](../working-with-tables.md)、コントロール[、シグナル](signals.md)または列挙からプロパティを抽出します。  旧バージョンとの互換性のために **!** を使用することもできます。                                                |
 | **.**<br>[[言語依存](../global-apps.md)]  |                  小数点                  |                                                             **1.23**                                                           |                                                                              数値の整数部分と小数部分の区切り記号。 文字は言語によって異なります。                                                                              |
@@ -52,7 +52,7 @@ ms.locfileid: "71990229"
 |                               **in**                                |                       &nbsp;                        |                                                      **&quot;The&quot; in &quot;The keyboard and the monitor...&quot;**                                                      |                                                                                                                部分文字列をテストします (大文字小文字を区別しません)                                                                                                                 |
 |                                **@**                                | [曖昧性除去演算子](#disambiguation-operator) |                                                                           **MyTable[@fieldname]**                                                                            |                                                                                                                       フィールドの曖昧性を除去します                                                                                                                       |
 |                                **@**                                |                       &nbsp;                        |                                                                              **[@MyVariable]**                                                                               |                                                                                                                      グローバルの曖昧性を除去します                                                                                                                       |
-| **,**<br>[[言語依存](../global-apps.md)]  |                   リストの区切り記号                    | **If( X < 10, "Low", "Good" )**<br>**{X:12、Y:32}**<br>**[ 1, 2, 3 ]** | 以下の要素を区切ります。 <ul><li>関数呼び出しの引数</li><li>[レコード](../working-with-tables.md#elements-of-a-table)のフィールド</li><li>[テーブル](../working-with-tables.md#inline-value-tables)内のレコード</li></ul> この文字は言語によって異なります。 |
+| **,**<br>[[言語依存](../global-apps.md)]  |                   リストの区切り記号                    | **If( X < 10, "Low", "Good" )**<br>**{ X: 12, Y: 32 }**<br>**[ 1, 2, 3 ]** | 以下の要素を区切ります。 <ul><li>関数呼び出しの引数</li><li>[レコード](../working-with-tables.md#elements-of-a-table)のフィールド</li><li>[テーブル](../working-with-tables.md#inline-value-tables)内のレコード</li></ul> この文字は言語によって異なります。 |
 | **;**<br>[[言語依存](../global-apps.md)] |                  数式のチェーン                   |                                     **Collect(T, A); Navigate(S1, &quot;&quot;)**                                     |                                                                          関数の呼び出しの動作プロパティを区切ります。 チェーン演算子は言語に依存します。                                                                          |
 |                             **Parent**                              |         [Parent 演算子](#parent-operator)         |                                                                               **Parent.Fill**                                                                                |                                                                                                           コントロール コンテナーのプロパティにアクセスします                                                                                                            |
 |                            **ThisItem**                             |       [ThisItem 演算子](#thisitem-operator)       |                                                                            **ThisItem.FirstName**                                                                            |                                                                                                          ギャラリーまたはフォーム コントロールのフィールドにアクセスします                                                                                                           |
@@ -80,9 +80,9 @@ ms.locfileid: "71990229"
 ## <a name="parent-operator"></a>Parent 演算子
 一部のコントロールは、その他のコントロールをホストします。 たとえば、 **[画面](../controls/control-screen.md)** **[ギャラリー](../controls/control-gallery.md)** **[カード](../controls/control-card.md)** **[編集フォーム](../controls/control-form-detail.md)** および **[表示フォーム](../controls/control-form-detail.md)** コントロールは、すべてがコントロールのコンテナーです。 ホストしているコントロールは、その中に含まれているコントロールの "親" と呼ばれます。
 
-PowerApps のコントロールは、アプリ内のどこからでも、名前で参照することができます。 **Screen1** がアプリの画面名であるとします。 この画面の背景色を取得するには、**Screen1.Fill** を使用できます。
+アプリ内の任意の場所から、Power Apps の任意のコントロールを名前で参照できます。 **Screen1** がアプリの画面名であるとします。 この画面の背景色を取得するには、**Screen1.Fill** を使用できます。
 
-この画面上のコントロールには、別のオプションがあります。 相対参照を使用できます。**親。 Fill**。 **[Parent](operators.md#parent-operator)** 演算子は、コントロールをホストしているコントロールを参照して、ホストしているコントロールのすべてのプロパティを使用できるようにします。 **[Parent](operators.md#parent-operator)** コントロールはコントロールの名前に依存しないため、便利に使用できます。 コンテナー コントロールは、コンテナー内の参照の調整なしで、コピーして貼り付けることができます。 さらに、この演算子は、数式を読み取るときに、コントロールの親子関係を理解しやすくします。
+この画面上のコントロールには、別のオプションがあります。 それらは、相対参照である **Parent.Fill** を使用することができます。 **[Parent](operators.md#parent-operator)** 演算子は、コントロールをホストしているコントロールを参照して、ホストしているコントロールのすべてのプロパティを使用できるようにします。 **[Parent](operators.md#parent-operator)** コントロールはコントロールの名前に依存しないため、便利に使用できます。 コンテナー コントロールは、コンテナー内の参照の調整なしで、コピーして貼り付けることができます。 さらに、この演算子は、数式を読み取るときに、コントロールの親子関係を理解しやすくします。
 
 ## <a name="disambiguation-operator"></a>曖昧性除去演算子
 一部の関数では、各レコードの処理中に、テーブルのフィールドにアクセスするための[レコード スコープ](../working-with-tables.md#record-scope)を作成します (**Filter**、**AddColumns**、**Sum** など)。  レコード スコープによって追加されたフィールド名は、アプリの別の場所にある同じ名前をオーバーライドします。  これが発生した場合でも、 **@** 曖昧性除去演算子を使用して、レコード スコープの外部の値にアクセスできます。

@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9bfd103d2f8e6503e2897855a0d424807b9573e6
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 42ca4a12f75c82bb685396a857e5ae825d8d7fa1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899419"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674787"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>プロジェクト申請を処理するキャンバス アプリを生成する
 > [!NOTE]
-> この記事は、SharePoint Online での PowerApps の使用、Power オートメーション、および Power BI に関するチュートリアルシリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
+> この記事は、Power Apps の使用に関するチュートリアルシリーズの一部であり、Power App の自動化と、SharePoint Online での Power BI について説明しています。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
-SharePoint リストの用意ができたため、最初のアプリを作成し、カスタマイズできます。 PowerApps は SharePoint に統合されているため、基本の *3 つの画面アプリ*をリストから直接、簡単に生成できます。 このアプリを使用すると、各リスト アイテムの概要と詳細情報を表示し、既存のリスト アイテムを更新し、新規リスト アイテムを作成できます。 リストから直接アプリを作成すると、アプリがそのリストの*ビュー*として表示されます。 その後、そのアプリをブラウザーや携帯電話で実行できます。
+SharePoint リストの用意ができたため、最初のアプリを作成し、カスタマイズできます。 Power Apps は SharePoint と統合されているので、基本的な*3 画面アプリ*をリストから直接生成するのは簡単です。 このアプリを使用すると、各リスト アイテムの概要と詳細情報を表示し、既存のリスト アイテムを更新し、新規リスト アイテムを作成できます。 リストから直接アプリを作成すると、アプリがそのリストの*ビュー*として表示されます。 その後、そのアプリをブラウザーや携帯電話で実行できます。
 
 > [!TIP]
 > このシナリオ用の[ダウンロード パッケージ](https://aka.ms/o4ia0f)には、このアプリの完成版 (project-requests-app.msapp) が含まれています。
@@ -35,19 +35,19 @@ SharePoint リストの用意ができたため、最初のアプリを作成し
    
     ![アプリを作成する](./media/sharepoint-scenario-generate-app/02-01-01-create-app.png)
 
-2. アプリに「Project Requests アプリ」のような名前を指定し、 **[作成]** をクリックまたはタップします。 アプリの準備が整うと、PowerApps Studio でそのアプリが開きます。
+2. アプリに「Project Requests アプリ」のような名前を指定し、 **[作成]** をクリックまたはタップします。 アプリの準備が整うと、Power Apps Studio でアプリが開きます。
    
     ![アプリの名前を指定する](./media/sharepoint-scenario-generate-app/02-01-02-create-app-name.png)
 
-## <a name="step-2-review-the-app-in-powerapps-studio"></a>手順 2: PowerApps Studio でアプリを確認する
+## <a name="step-2-review-the-app-in-power-apps-studio"></a>手順 2: Power Apps Studio でアプリを確認する
 
-1. PowerApps Studio では、既定では左側のナビゲーション バーに、画面の階層ビューとアプリのコントロールが表示されます。
+1. Power Apps Studio では、左側のナビゲーションバーに、アプリ内の画面とコントロールの階層ビューが既定で表示されます。
    
-    ![階層ビューが表示された PowerApps Studio](./media/sharepoint-scenario-generate-app/02-02-01-studio-screens-hierarchy.png)
+    ![階層ビューを使用した Power Apps Studio](./media/sharepoint-scenario-generate-app/02-02-01-studio-screens-hierarchy.png)
 
 2. サムネイル アイコンをクリックまたはタップしてビューを切り替えます。
    
-    ![PowerApps Studio ビュー セレクター](./media/sharepoint-scenario-generate-app/02-02-02-studio-view-selector.png)
+    ![Power Apps Studio ビューセレクター](./media/sharepoint-scenario-generate-app/02-02-02-studio-view-selector.png)
 
 3. 各画面をクリックまたはタップして画面を中央のウィンドウに表示します。 画面は 3 つあります。
    
@@ -57,7 +57,7 @@ SharePoint リストの用意ができたため、最初のアプリを作成し
     
     (c). **編集/作成**画面では、既存の項目を編集したり、新規の項目を作成したりできます。
       
-      ![サムネイル ビューが表示された PowerApps Studio](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
+      ![Power Apps Studio と縮小表示ビュー](./media/sharepoint-scenario-generate-app/02-02-03-studio-screens-thumbnails.png)
 
 ## <a name="step-3-customize-the-apps-browse-screen"></a>手順 3: アプリのブラウズ画面をカスタマイズする
 
@@ -89,7 +89,7 @@ SharePoint リストの用意ができたため、最初のアプリを作成し
    
     ![数式バー](./media/sharepoint-scenario-generate-app/02-03-04-formula.png)
    
-    これにより、PowerApps での既定ではなく、**Title** フィールドを基に、並べ替えおよび検索を行うことができます。 詳細については、「[数式の詳細](#formula-deep-dive)」をご覧ください。
+    これにより、Power Apps が選択した既定値ではなく、 **[タイトル]** フィールドで並べ替えと検索を行うことができます。 詳細については、「[数式の詳細](#formula-deep-dive)」をご覧ください。
 
 6. **[ファイル]** 、 **[保存]** の順にクリックまたはタップします。 ![アプリに戻るアイコン](./media/sharepoint-scenario-generate-app/icon-back-to-app.png)をクリックまたはタップして、アプリに戻ります。
 
@@ -137,7 +137,7 @@ SharePoint リストの用意ができたため、最初のアプリを作成し
 これは非常に単純なアプリで、基本的なカスタマイズをいくつか行っただけですが、面白いものをすばやく構築できます。 次のタスクに移りますが、必要に応じて、アプリについてさらに深く考察し、コントロールと数式がどのように連携してアプリの動作を制御するかを確認してください。
 
 ## <a name="formula-deep-dive"></a>数式の詳細
-このセクションは省略可能ですが、数式の使用方法を深く理解するのに役立ちます。 このタスクの手順 3 では、**BrowseGallery1** の **Items** プロパティの数式を変更しました。 具体的には、PowerApps の既定フィールドではなく**Title** フィールドを使用するように、並び替えと検索を変更しました。 次に、変更した式を示します。
+このセクションは省略可能ですが、数式の使用方法を深く理解するのに役立ちます。 このタスクの手順 3 では、**BrowseGallery1** の **Items** プロパティの数式を変更しました。 具体的には、Power Apps で選択されたフィールドではなく、 **[タイトル]** フィールドを使用するように並べ替えと検索を変更しました。 次に、変更した式を示します。
 
 **SortByColumns ( Filter ( 'Project Requests', StartsWith ( Title, TextSearchBox1.Text ) ), "Title", If ( SortDescending1, Descending, Ascending ) )**
 

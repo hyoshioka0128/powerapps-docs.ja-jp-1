@@ -1,6 +1,6 @@
 ---
 title: SharePoint リストからキャンバス アプリを作成する | Microsoft Docs
-description: PowerApps で、SharePoint リストのデータを管理するキャンバス アプリを自動的に生成する
+description: Power Apps で、SharePoint リストのデータを管理するキャンバスアプリを自動的に生成する
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 50f84e06206a73c39feaee286ce1f4c9258c4958
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3181c00a4ef0836c043ee0402a29d3b7dadbef21
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541102"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678881"
 ---
-# <a name="generate-a-canvas-app-in-powerapps-from-a-sharepoint-list"></a>PowerApps で SharePoint リストからキャンバス アプリを作成する
+# <a name="generate-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>SharePoint リストから Power Apps でキャンバスアプリを生成する
 
-このトピックでは、PowerApps を使用することで、SharePoint リスト内の項目に基づいてキャンバス アプリを自動的に作成します。 PowerApps または SharePoint Online 内からアプリを作成することができます。 PowerApps 内では、データ ゲートウェイを介して[オンプレミスの SharePoint サイトに接続](connections/connection-sharepoint-online.md#create-a-connection)した場合、そのサイト内のリストに基づいてアプリを作成することができます。
+このトピックでは、Power Apps を使用して、SharePoint リスト内の項目に基づいてキャンバスアプリを自動的に生成します。 アプリは、Power Apps または SharePoint Online 内から生成できます。 データゲートウェイ経由で[接続](connections/connection-sharepoint-online.md#create-a-connection)する場合、Power Apps 内から、オンプレミスの SharePoint サイトの一覧に基づいてアプリを生成できます。
 
 作成するアプリには、次の 3 つの画面が含まれます。
 
@@ -38,7 +38,7 @@ ms.locfileid: "73541102"
 テキスト、日付、数字、通貨など、さまざまな種類の多くの列を含むはるかに複雑なリストを作成する場合でも、アプリを作成するための原則に変わりはありません。
 
 > [!IMPORTANT]
-> PowerApps は全種類の SharePoint データをサポートするわけではありません。 詳細については、「[Known issues (既知の問題)](connections/connection-sharepoint-online.md#known-issues)」を参照してください。
+> Power Apps は、すべての種類の SharePoint データをサポートしているわけではありません。 詳細については、「[Known issues (既知の問題)](connections/connection-sharepoint-online.md#known-issues)」を参照してください。
 
 ## <a name="generate-an-app-from-within-powerapps"></a>PowerApps 内からアプリを作成する
 
@@ -80,7 +80,7 @@ SharePoint Online コマンド バーからカスタム リストのアプリを
 
     ![アプリの名前の指定](./media/app-from-sharepoint/app-name.png)
 
-    新しいタブが Web ブラウザーに表示され、SharePoint リストに基づいて自動的に生成したアプリが表示されます。 PowerApps Studio にアプリが表示され、カスタマイズすることができます。
+    新しいタブが Web ブラウザーに表示され、SharePoint リストに基づいて自動的に生成したアプリが表示されます。 アプリは、カスタマイズ可能な Power Apps Studio で表示されます。
 
     ![既定のアプリ](./media/app-from-sharepoint/default-app.png)
 
@@ -93,10 +93,10 @@ SharePoint Online コマンド バーからカスタム リストのアプリを
 
     - SharePoint からビューを削除するには、 **[Remove this view]\(このビューを削除する\)** を選択します。
 
-        PowerApps からアプリを削除するには、[アプリを削除します](delete-app.md)。
+        アプリを Power Apps から削除するには、[アプリを削除](delete-app.md)します。
 
 > [!NOTE]
-> 現在、SharePoint リストから作成されたアプリは、PowerApps Mobile には表示されません。
+> 現在、SharePoint リストから作成されたアプリは、Power Apps モバイルには表示されません。
 
 ## <a name="next-steps"></a>次の手順
 このトピックでは、SharePoint リスト内のデータを管理するアプリを作成しました。 次の手順として、より複雑なリストからアプリを生成し、ニーズに合わせて ([参照] 画面から) アプリをカスタマイズします。

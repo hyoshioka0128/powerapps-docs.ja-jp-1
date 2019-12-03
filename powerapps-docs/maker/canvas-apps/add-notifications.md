@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d55245a6fba0383ce897030e87ccf5c4e7c6749d
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: d3f526b8795c8771d3f0e43c2951d207f7f1bfb0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73897918"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678904"
 ---
 # <a name="send-a-push-notification-in-powerapps"></a>PowerApps でプッシュ通知を送信する
-プッシュ通知は、主にアプリのユーザーに注意を促したり、ユーザーが重要なタスクを優先したりできるようにするため、コンシューマー向けおよびビジネス向けのシナリオにおいてモバイル アプリで使用されます。 PowerApps では PowerApps Notification コネクタを使用して通知を送信できます。 PowerApps で作成したすべてのアプリに、ネイティブのプッシュ通知を送信できます。 通知の種類は今後追加される予定です。
+プッシュ通知は、主にアプリのユーザーに注意を促したり、ユーザーが重要なタスクを優先したりできるようにするため、コンシューマー向けおよびビジネス向けのシナリオにおいてモバイル アプリで使用されます。 Power Apps では、Power Apps 通知コネクタを使用して通知を送信できます。 ネイティブプッシュ通知は、Power Apps で作成したすべてのアプリに送信できます。 通知の種類は今後追加される予定です。
 
 ![プッシュ通知の外観の例](./media/add-notifications/pic1-notification-screenshot.png)
 
@@ -32,10 +32,10 @@ ms.locfileid: "73897918"
 * 一定の間隔でユーザーに注意を促す必要がある、またはユーザーが特定のコンテキストでアプリを起動する必要がある。
 
 > [!NOTE]
-> プッシュ通知を受信するには、各ユーザーが PowerApps Mobile でアプリを一度開いているか、[Dynamics 365](https://home.dynamics.com/) の AppSource からアプリを取得している必要があります。
+> プッシュ通知を受信するには、各ユーザーが Power Apps Mobile でアプリを一度開いているか、 [Dynamics 365](https://home.dynamics.com/)の appsource からアプリを取得している必要があります。
 
 ## <a name="before-you-start"></a>開始する前に
-**[共同作成者]** のアクセス許可を持つアプリで、PowerApps Notification の接続を追加します。 まだアプリを持っていない場合は、すぐに[テンプレートから作成](get-started-test-drive.md)できます。既定では、必要なアクセス許可が与えられます。 そのチュートリアルとこのページでは、ケース管理のテンプレートに基づいたアプリを使用します。
+**共同作成者**のアクセス許可を持っているアプリで、Power Apps の通知接続を追加します。 まだアプリを持っていない場合は、すぐに[テンプレートから作成](get-started-test-drive.md)できます。既定では、必要なアクセス許可が与えられます。 そのチュートリアルとこのページでは、ケース管理のテンプレートに基づいたアプリを使用します。
 
 ## <a name="send-a-notification-from-a-flow"></a>フローから通知を送信する
 > [!NOTE]
@@ -46,11 +46,11 @@ ms.locfileid: "73897918"
     たとえば、Common Data Service の **[Case]** エンティティにレコードが追加されたときに通知を送信するとします。
 
     ![Common Data Service のトリガーによるフローの作成のスクリーンショット](./media/add-notifications/pic4-step1-flowupdated.png)
-2. **PowerApps Notification** コネクタを使用してフローのアクションを作成し、通知を送信するアプリの **[アプリ ID]** を入力します。
+2. [ **Power Apps] 通知**コネクタを使用してフローのアクションを作成し、通知を送信するアプリの**アプリ ID**を入力します。
 
     自分のシナリオが反映されるように、接続の名前を変更することもできます。
 
-    ![プッシュ通知を受信する PowerApps への接続の作成のスクリーン ショット](./media/add-notifications/pic5-step2-create-connection.jpg)
+    ![これらのプッシュ通知を受信するパワーアプリへの接続を作成するスクリーンショット](./media/add-notifications/pic5-step2-create-connection.jpg)
 3. (省略可能) アプリの起動時 (ユーザーによるプッシュ通知のタップ後) にアプリにパラメーターを渡します。
 
     この例では、選択した連絡先の **[Case ID]** と **[Initial Owner]** フィールドを渡します。
@@ -64,7 +64,7 @@ ms.locfileid: "73897918"
 2. **[詳細]** タブで、そのアプリの **[アプリ ID]** をコピーします。
 
     ![アプリ ID を取得する](./media/add-notifications/grab-id.png)
-3. **[接続]** タブに進み、PowerApps Notification コネクタへの接続を作成し、前の手順のアプリ ID に貼り付けます。
+3. **[接続]** タブで、Power Apps 通知コネクタへの接続を作成し、前の手順で作成したアプリ ID を貼り付けます。
 
     ![接続の作成](./media/add-notifications/create-connection.png)
 4. トリガー アプリへの接続を追加します。
@@ -76,7 +76,7 @@ ms.locfileid: "73897918"
 
     この例では、フォームの **OnSuccess** プロパティを使用してこの通知をトリガーします。
 
-    ![PowerApps の数式](./media/add-notifications/powerapps-function.png)
+    ![Power Apps の式](./media/add-notifications/powerapps-function.png)
 
 ## <a name="load-a-specific-page-and-context-when-a-user-taps-the-notification"></a>ユーザーが通知をタップしたときに、特定のページとコンテキストを読み込む
 ### <a name="pass-parameters"></a>パラメーターを渡す
@@ -137,10 +137,10 @@ PowerAppsNotification.SendPushNotification(
 ```
 
 ## <a name="known-limitations"></a>既知の制限
-* 現時点では、通知は Windows Phone の PowerApps Mobile に表示されません。
+* 現時点では、通知は Windows Phone 用の Power Apps Mobile には表示されません。
 * 現時点では、Web ブラウザーでのみアプリを実行するユーザーにはプッシュ通知を提供していません。
-* 通知には、特定のアプリ アイコンの代わりに汎用的な PowerApps アイコンが表示されます。
+* 通知には、特定のアプリアイコンではなく、汎用の [Power Apps] アイコンが表示されます。
 * Power の自動化を使用する場合は、一度に1人の受信者にプッシュ通知を送信できます。
 
-参照情報については、[PowerApps 通知の参照](https://docs.microsoft.com/connectors/powerappsnotification/)に関するページを参照してください。
+参照情報については、「 [Power Apps の通知リファレンス](https://docs.microsoft.com/connectors/powerappsnotification/)」を参照してください。
 

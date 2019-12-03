@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリで数式を使用する | Microsoft Docs
-description: PowerApps で数式を使用して、キャンバス アプリをカスタマイズします。
+description: Power Apps では、式を使用してキャンバスアプリをカスタマイズします。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 715f82a1db2c8a4bb495e41b45a3911182024158
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 42f5f188f107e8a5768ed9a74f463d1fc9bbc286
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541604"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74673205"
 ---
 # <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>PowerApps でキャンバス アプリの数式を使用する
 
 (Excel で行われるように) 値を計算してその他のタスクを実行するだけでなく、(アプリが必要とするように) ユーザー入力に応答する数式を利用して、キャンバス アプリを構成します。
 
 * Excel では、たとえばセルに入力を行ってテーブルとグラフを作成する数式を構築します。
-* PowerApps では、セルではなくコントロールを構成し、同様の数式を構築します。 さらに、スプレッドシートではなく特定のアプリに適用される数式を構築します。
+* Power Apps では、セルではなくコントロールを構成するときに、同様の数式を作成します。 さらに、スプレッドシートではなく特定のアプリに適用される数式を構築します。
 
 たとえば、ボタンの選択、スライダーの調整、またはその他の入力がユーザーによって行われた場合にアプリがどのように応答するかを決定する数式を構築します。 これらの数式により、異なる画面を表示したり、アプリの外部にあるデータ ソースを更新したり、既存のテーブルに存在するデータのサブセットが含まれたテーブルを作成したりできます。
 
@@ -35,12 +35,12 @@ ms.locfileid: "73541604"
 
 ## <a name="prerequisites"></a>前提条件
 
-* PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
+* Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 * PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
 
 ## <a name="show-a-simple-value"></a>単純な値の表示
 
-Excel では、「**42**」という数字や「**Hello World**」というフレーズなど、特定のデータをセルに打ち込んで入力できます。 このセルには、常に入力したとおりにデータが表示されます。 PowerApps では、同じように変更されないデータを指定できます。これを行うには、ラベルの **[Text](controls/properties-core.md)** プロパティに目的の一連の文字を二重引用符で囲んで正確に設定します。
+Excel では、「**42**」という数字や「**Hello World**」というフレーズなど、特定のデータをセルに打ち込んで入力できます。 このセルには、常に入力したとおりにデータが表示されます。 Power Apps では、同じようなデータを指定することもできます。これを行うには、ラベルの **[Text](controls/properties-core.md)** プロパティに、必要な文字の正確なシーケンスを二重引用符で囲んで設定します。
 
 1. (画面の左端にある) **[File (ファイル)]** メニューの **[New (新規)]** を選択します。
 2. **[Create an app (アプリの作成)]** で、 **[Blank app (空のアプリ)]** タイルの **[Phone layout (Phone レイアウト)]** を選択します。
@@ -70,10 +70,10 @@ Excel では、「**42**」という数字や「**Hello World**」というフ�
 
     入力が済むと、新しいこの値がラベルに反映されます。  入力中、黄色の感嘆符アイコンが画面に表示される場合があります。 これらのアイコンはエラーを示します。しかし、有効な値の入力を完了すると、表示されなくなります。 たとえば、両側に二重引用符のない文字列は無効です。
 
-    Excel では、**42** などの数値を表示するには、その数値をセルに入力したり、その数値が解となる数式 ( **=SUM(30,12)** など) を入力したりします。 PowerApps では、ラベルなどのコントロールの **Text** プロパティに **42** または **Sum(30,12)** を設定することで、同じ結果を得ることができます。 ワークシートまたはアプリのその他の変更に関係なく、セルとラベルにはいつもこの数値が表示されます。
+    Excel では、**42** などの数値を表示するには、その数値をセルに入力したり、その数値が解となる数式 ( **=SUM(30,12)** など) を入力したりします。 Power Apps では、ラベルなどのコントロールの**Text**プロパティを**42**または**Sum (30, 12)** に設定することにより、同じ効果を得ることができます。 ワークシートまたはアプリのその他の変更に関係なく、セルとラベルにはいつもこの数値が表示されます。
 
     > [!NOTE]
-   > PowerApps では、Excel のように数式の前に等号またはプラス記号を使用することはありません。 数式バーでは、そこに入力したものはすべて既定で数式として処理されます。 さらに、先ほどテキストの文字列を指定したときのように、二重引用符 (") で数式を囲むことはしません。
+   > Power Apps では、Excel の場合と同じように、数式の前に等号またはプラス記号を付けません。 数式バーでは、そこに入力したものはすべて既定で数式として処理されます。 さらに、先ほどテキストの文字列を指定したときのように、二重引用符 (") で数式を囲むことはしません。
 5. ラベルの **[Text](controls/properties-core.md)** プロパティで、 **"Hello World"** を **Sum(1,2,3)** に置き換えます。
 
     ![「Sum(1,2,3」のように部分関数を終わりかっこなしで入力すると、エラーが発生します。](./media/working-with-formulas/label-sum-partial.png)
@@ -88,17 +88,17 @@ Excel では、セル**A1**と**a2**に含まれるすべての値の合計を�
 
 ![2つの数値の合計を再計算する Excel のアニメーション](./media/working-with-formulas/excel-recalc.gif)
 
-PowerApps では、画面にコントロールを追加し、そのプロパティを設定することで、同様の結果を得ることができます。 この例では、 **Label1**という名前のラベルコントロールと、 **TextInput1**および**TextInput2**という名前の2つの **[テキスト入力](controls/control-text-input.md)** コントロールを示します。
+Power Apps では、画面にコントロールを追加し、そのプロパティを設定することで、同様の結果を得ることができます。 この例では、 **Label1**という名前のラベルコントロールと、 **TextInput1**および**TextInput2**という名前の2つの **[テキスト入力](controls/control-text-input.md)** コントロールを示します。
 
-![2つの数値の合計を再計算する PowerApps の図](./media/working-with-formulas/recalc1.png)
+![2つの数値の合計を再計算する電源アプリの図](./media/working-with-formulas/recalc1.png)
 
 テキスト入力コントロールにどのような数値を入力しても、ラベルにはいつもその数値の合計が表示されます。これは、 **[Text](controls/properties-core.md)** プロパティに次の数式が設定されているためです。
 
 `TextInput1 + TextInput2`
 
-![2つの数値の合計を再計算する PowerApps のアニメーション](./media/working-with-formulas/recalc2.gif)
+![2つの数値の合計を再計算するパワーアプリのアニメーション](./media/working-with-formulas/recalc2.gif)
 
-Excel では、条件付き書式の数式を使用して、たとえば赤で負の値を表示することができます。 PowerApps では、数式を使用して、コントロールのプライマリ値だけでなく、書式設定などのプロパティも決定できます。 次の例では、ラベルの **[Color](controls/properties-color-border.md)** プロパティの数式によって、負の値が赤で自動的に表示されます。 **[If](functions/function-if.md)** 関数は Excel と非常によく似ています。
+Excel では、条件付き書式の数式を使用して、たとえば赤で負の値を表示することができます。 Power Apps では、式を使用して、コントロールのプライマリ値だけでなく、書式設定などのプロパティも決定できます。 次の例では、ラベルの **[Color](controls/properties-color-border.md)** プロパティの数式によって、負の値が赤で自動的に表示されます。 **[If](functions/function-if.md)** 関数は Excel と非常によく似ています。
 
 `If( Value(Label1.Text) < 0, Red, Black )`
 

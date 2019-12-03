@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリの現在のユーザーに関する詳細の表示 | Microsoft Docs
-description: PowerApps で、キャンバス アプリにサインインしているユーザーの名前や電子メール アドレスを表示する
+description: Power Apps で、サインインしているユーザーの名前と電子メールアドレスを canvas アプリに表示する
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afd5dffc75dea4186058ba96adbaf0dbde8dc3d8
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: f77ec80cfaf579c836277f0e29d3b84b325a0462
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71988555"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674612"
 ---
-# <a name="show-information-about-a-powerapps-user-in-a-canvas-app"></a>キャンバス アプリの PowerApps ユーザーに関する情報を表示する
+# <a name="show-information-about-a-power-apps-user-in-a-canvas-app"></a>Power Apps ユーザーに関する情報を canvas アプリに表示する
 
-PowerApps で、キャンバス アプリにサインインしているユーザーに関連付けられているフル ネーム、電子メール アドレス、写真を表示します。 この情報を使用すると、たとえば、自動的にフォームへの入力を行うことができます。
+Power Apps で、フルネーム、電子メールアドレス、および canvas アプリにサインインしたユーザーに関連付けられている画像を表示します。 この情報を使用すると、たとえば、自動的にフォームへの入力を行うことができます。
 
 たとえば、この機能を使うと次のことができます。
 

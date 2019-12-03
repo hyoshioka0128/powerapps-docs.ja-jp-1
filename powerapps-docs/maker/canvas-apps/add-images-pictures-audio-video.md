@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 78f091705a01a54b7e6eb008630949796ffac453
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5612f97a3dde96fdb9ea017e34986b7e21c43bd7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541178"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679226"
 ---
 # <a name="using-multimedia-files-in-powerapps"></a>PowerApps でマルチ メディア ファイルを使用する
 
@@ -26,7 +26,7 @@ ms.locfileid: "73541178"
 
 ## <a name="prerequisites"></a>前提条件
 
-PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報で[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
+Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したものと同じ資格情報を使用して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 
 ## <a name="add-media-from-a-file-or-the-cloud"></a>ファイルまたはクラウドからメディアを追加する
 
@@ -67,7 +67,7 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
 
 2. 発行したら、ビデオの URL をコピーします。
 
-3. PowerApps の **[挿入] > [メディア]** から、**ビデオ** コントロールを追加します。
+3. Power Apps から、**挿入 > メディア**から**ビデオ**コントロールを追加します。
 
 4. **Media** プロパティを、コピーした URL に設定します。
 
@@ -81,7 +81,7 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
 このシナリオでは、いくつかの .jpeg ファイルを格納している [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) を使用します。
 
 > [!NOTE]
-> Excel ファイル内のこれらのイメージのパスでは、スラッシュを使用する必要があります。 PowerApps で Excel テーブルにイメージのパスを保存すると、パスに円記号が使われます。 このようなテーブルからのイメージのパスを使用する場合は、Excel テーブル内のパスを円記号ではなくスラッシュを使用するように変更します。 そうしないと、イメージは表示されません。  
+> Excel ファイル内のこれらのイメージのパスでは、スラッシュを使用する必要があります。 Power Apps が画像パスを Excel テーブルに保存する場合、パスは円記号を使用します。 このようなテーブルからのイメージのパスを使用する場合は、Excel テーブル内のパスを円記号ではなくスラッシュを使用するように変更します。 そうしないと、イメージは表示されません。  
 
 1. [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) をダウンロードし、**Assets** フォルダーをクラウド ストレージ アカウントに抽出します。
 
@@ -130,7 +130,7 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
 
 3. Excel ファイルを **SavePen.xlsx** という名前で、OneDrive for Business に保存します。
 
-4. PowerApps で、[空のアプリ](get-started-create-from-blank.md)を作成します。
+4. Power Apps で、空の[アプリ](get-started-create-from-blank.md)を作成します。
 
 5. アプリで、[データ ソース](add-data-connection.md)として、OneDrive for Business アカウントを追加します。
 

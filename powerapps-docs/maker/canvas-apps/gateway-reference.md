@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 60f8fb3c0c6d28bb30140017c2af07040d5ade7f
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 879fc0df86f05191941c6ff6b3b6403fe34fecea
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73898210"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74676546"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>オンプレミスデータゲートウェイとは
 
-オンプレミスデータゲートウェイは、オンプレミスのデータ (クラウドにないデータ) と複数の Microsoft クラウドサービスの間で迅速かつ安全なデータ転送を提供するブリッジとして機能します。 これらのクラウドサービスには、Power BI、PowerApps、Power の自動化、Azure Analysis Services、Azure Logic Apps が含まれます。 ゲートウェイを使用することにより、組織はオンプレミスネットワーク上のデータベースやその他のデータソースを維持しながら、クラウドサービスでオンプレミスのデータを安全に使用することができます。
+オンプレミスデータゲートウェイは、オンプレミスのデータ (クラウドにないデータ) と複数の Microsoft クラウドサービスの間で迅速かつ安全なデータ転送を提供するブリッジとして機能します。 これらのクラウドサービスには、Power BI、電源アプリ、電源自動化、Azure Analysis Services、Azure Logic Apps が含まれます。 ゲートウェイを使用することにより、組織はオンプレミスネットワーク上のデータベースやその他のデータソースを維持しながら、クラウドサービスでオンプレミスのデータを安全に使用することができます。
 
 ## <a name="how-the-gateway-works"></a>ゲートウェイのしくみ
 

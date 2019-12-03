@@ -13,24 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aa927559c13726bd2d780c7ce3841c5a53317c8f
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 6b135f29ac020f933e4bc2c8276c3fa74d6fd762
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73899212"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674987"
 ---
 # <a name="create-a-canvas-app-to-manage-projects"></a>プロジェクトを管理するキャンバス アプリを作成する
 > [!NOTE]
-> この記事は、SharePoint Online での PowerApps の使用、Power オートメーション、および Power BI に関するチュートリアルシリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
+> この記事は、Power Apps の使用に関するチュートリアルシリーズの一部であり、Power App の自動化と、SharePoint Online での Power BI について説明しています。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
 このタスクでは、キャンバス アプリを最初から作成します。 ユーザーはこのアプリを使用してプロジェクトの管理者を割り当てたり、プロジェクトの詳細な情報を更新したりできます。 最初のアプリで学習したときと同じコントロールと数式がいくつか出てきますが、今回はそのときよりも多くの機能を自分で作成します。 今回の方がより複雑ですが、より多くのことが学べますので、学習して損しません。
 
 > [!TIP]
 > このシナリオの[ダウンロード パッケージ](https://aka.ms/o4ia0f)には、このアプリの完成版 (project-details-app.msapp) が含まれています。
 
-## <a name="quick-review-of-powerapps-studio"></a>PowerApps Studio の復習
-PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成されているため、PowerPoint でスライド デッキを作成するのと同じような感覚でアプリを作成できます。
+## <a name="quick-review-of-power-apps-studio"></a>Power Apps Studio のクイックレビュー
+Power Apps Studio には、次の3つのウィンドウとリボンがあり、PowerPoint でのスライドデッキの構築と同じようにアプリ作成を行うことができます。
 
 1. 左側のナビゲーション バー。アプリのすべての画面の階層ビューとコントロールが表示され、画面のサムネイルも表示されます
 2. 中央のウィンドウ。作業しているアプリの画面が表示されます
@@ -39,13 +39,13 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
 5. 数式バー。アプリの動作を定義する数式を (Excel のように) 追加します
 6. リボン。コントロールを追加し、デザイン要素をカスタマイズします
 
-![PowerApps Studio](./media/sharepoint-scenario-build-app/04-00-00-powerapps-studio.png)
+![Power Apps Studio](./media/sharepoint-scenario-build-app/04-00-00-powerapps-studio.png)
 
 ## <a name="step-1-create-screens"></a>手順 1: 画面を作成する
 復習はほどほどにして、さっそくアプリの作成を開始しましょう。
 
 ### <a name="create-and-save-the-app"></a>アプリの作成と保存
-1. PowerApps Studio で、 **[新規]** をクリックまたはタップして、 **[空のアプリ]** の下にある **[電話レイアウト]** をクリックまたはタップします。
+1. Power Apps Studio で、 **[新規]** をクリックまたはタップし、 **[空のアプリ]** で **[電話レイアウト]** をクリックまたはタップします。
    
     ![空のアプリ - 電話レイアウト](./media/sharepoint-scenario-build-app/04-01-01-blank-phone-app.png)
 2. **[ファイル]** をクリックまたはタップして、 **[アプリの設定]** タブを開きます。 "プロジェクト管理アプリ" という名前を入力します。
@@ -114,7 +114,7 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
     ![[データ ソース] タブ](./media/sharepoint-scenario-build-app/04-02-06-data-sources.png)
 
 ## <a name="step-3-build-the-selecttask-screen"></a>手順 3: SelectTask 画面を作成する
-この手順では、PowerApps のコントロール、数式、書式設定オプションを使用して、アプリの他の画面に移動する方法を説明します。
+この手順では、アプリ内の他の画面に移動する方法を提供します。これには、Power Apps が提供するコントロール、数式、書式設定のオプションの一部を使用します。
 
 ### <a name="update-the-title-and-insert-introductory-text"></a>タイトルを更新して概要テキストを挿入する
 1. 左側のナビゲーション バーで、**SelectTask** 画面を選択します。
@@ -161,7 +161,7 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
 ### <a name="run-the-app"></a>アプリの実行
 アプリの完成にはまだほど遠いですが、一度アプリを実行してみることができます。
 
-1. **SelectTask** 画面をクリックまたはタップします (アプリは常に PowerApps Studio のプレビュー モードで選択した画面から開始します)。
+1. **Selecttask**画面をクリックまたはタップします (アプリは常に、Power Apps Studio のプレビューモードで選択した画面から開始します)。
 
 2. 右上にある ![アプリの実行アイコン](./media/sharepoint-scenario-build-app/icon-run-arrow.png) をクリックまたはタップし、アプリを実行します。
 
@@ -410,9 +410,9 @@ PowerApps Studio は 3 つのウィンドウと 1 つのリボンで構成され
 ### <a name="add-a-link-to-the-app"></a>アプリへのリンクを追加する
 1. Office 365 アプリ起動ツールで、**PowerApps** をクリックまたはタップします。
    
-    ![Office 365 アプリ起動ツール内の PowerApps](./media/sharepoint-scenario-build-app/04-07-02a-waffle.png)
+    ![Office 365 アプリランチャーの Power Apps](./media/sharepoint-scenario-build-app/04-07-02a-waffle.png)
 
-2. PowerApps で、**Project Management アプリ**の省略記号 ( **. . .** ) を選択して **[開く]** をクリックまたはタップします。
+2. Power Apps で、 **[プロジェクト管理アプリ]** の省略記号 ( **...** ) をクリックまたはタップし、を**開き**ます。
    
     ![Project Management アプリの選択](./media/sharepoint-scenario-build-app/04-07-02b-select-app.png)
 
@@ -494,7 +494,7 @@ SharePoint サイトでアプリの準備ができたので、続いてプロジ
     ![SharePoint リストの更新](./media/sharepoint-scenario-build-app/04-07-11-updated-list.png)
 
 ## <a name="formula-deep-dive"></a>数式の詳細
-このセクションは、PowerApps の数式に関する 2 つ目の省略可能なセクションです。 最初の詳細では、PowerApps が生成し、3 画面アプリ内のブラウズ ギャラリーで使用される数式の 1 つを確認しました。 この詳細では、2 つ目のアプリの **AssignManager** 画面で使用する数式を確認します。 数式は次のとおりです。
+これは、Power Apps の数式に関する2番目の省略可能なセクションです。 最初の詳細では、3画面アプリでブラウザーギャラリー用に Power Apps が生成する数式の1つを見てきました。 この詳細では、2 つ目のアプリの **AssignManager** 画面で使用する数式を確認します。 数式は次のとおりです。
 
 **Patch (' Project Details ', LookUp (' Project Details ', ID = Gallery1.Selected.ID), {PMAssigned: TextInput1})**
 

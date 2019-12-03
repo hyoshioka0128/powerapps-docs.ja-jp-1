@@ -1,6 +1,6 @@
 ---
 title: Color 列挙型と ColorFade、ColorValue、および RGBA 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Color 列挙型と ColorFade、ColorValue、および RGBA 関数の参照情報
+description: 構文と例を含む、Power Apps の Color 列挙型と ColorFade、Colorfade、および RGBA 関数に関するリファレンス情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4af851160ea8a2add22add9f79dcc181a734e715
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 1b2c12805fc3ea8c9c7f8cee7432ac58c1183a18
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71994864"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679364"
 ---
 # <a name="color-enumeration-and-colorfade-colorvalue-and-rgba-functions-in-powerapps"></a>PowerApps の Color 列挙型と ColorFade、ColorValue、および RGBA 関数
 

@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリ用の Expense Report サンプルをインストールして構成する | Microsoft Docs
-description: PowerApps でキャンバス アプリ用の Expense Report サンプルをインストールして構成する詳細な手順を示します。
+description: Power Apps での詳細な手順については、「キャンバスアプリの経費報告書サンプルのインストールと構成」を参照してください。
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afdeb89b0bd026b20e0c940b05be60d4d3238b81
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f66ae4ba95d19e871e101979496760931b6821e3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540221"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679525"
 ---
 # <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>PowerApps でキャンバス アプリ用の Expense Report サンプルをインストールして構成する
 
@@ -206,7 +206,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 
     [https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/myexpenses/docs/MyExpenses(SP_List).zip)
 
-2. Expense Report PowerApps サンプル パッケージをダウンロードして、お使いのコンピューターに保存します。
+2. 経費報告書の Power Apps サンプルパッケージをダウンロードし、コンピューターに保存します。
 
 ## <a name="create-connections"></a>接続を作成する
 

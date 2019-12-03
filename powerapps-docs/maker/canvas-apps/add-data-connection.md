@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 420728d60555c3aeaf5fd5e844a900d412b0c3ef
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d81b1648fc3c45d0498efb9eba0cc14ffbc6142b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540963"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679272"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリにデータ接続を追加する
 
-PowerApps で、既存のキャンバス アプリまたはゼロから作成するアプリにデータ接続を追加します。 アプリは、SharePoint、Common Data Service、Salesforce、OneDrive など、[他の多くのデータソース](connections-list.md)に接続できます。
+Power Apps で、既存のキャンバスアプリ、または最初から構築しているアプリにデータ接続を追加します。 アプリは、SharePoint、Common Data Service、Salesforce、OneDrive など、[他の多くのデータソース](connections-list.md)に接続できます。
 
 この記事の後に来る[次のステップ](#next-steps)は、以下に示す例のように、接続したデータ ソースのデータをアプリで表示および管理することです。
 
@@ -33,7 +33,7 @@ PowerApps で、既存のキャンバス アプリまたはゼロから作成す
 
 ## <a name="prerequisites"></a>前提条件
 
-PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
+Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 
 ## <a name="open-a-blank-app"></a>空のアプリを開く
 
@@ -41,7 +41,7 @@ PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインア�
 
 1. アプリの名前を指定し、 **[作成]** を選択します。
 
-1. **[PowerApps Studio へようこそ]** ダイアログ ボックスが表示されたら、 **[スキップ]** を選択します。
+1. **[Power Apps Studio へようこそ]** ダイアログボックスが表示されたら、 **[スキップ]** を選択します。
 
 ## <a name="add-data-source"></a>データ ソースの追加
 

@@ -1,6 +1,6 @@
 ---
 title: データ カードについて | Microsoft Docs
-description: PowerApps で、フォーム カードを使用して、データ ソースから情報を収集して表示します。
+description: Power Apps では、フォームカードを使用してデータソースの情報を収集および表示します。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 113d76a3b80c2ef68f5e267714e4f792c988d237
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 4e895cbd482e24a1e61d499e6baae7d1ec9c1e82
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71988892"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674509"
 ---
 # <a name="understand-data-cards-in-powerapps"></a>PowerApps のデータ カードについて
 
@@ -32,7 +32,7 @@ ms.locfileid: "71988892"
 
 ## <a name="predefined-cards"></a>定義済みのカード
 
-PowerApps には、文字列、数値、その他のデータ型用の定義済みのカードのセットが用意されています。 右側のウィンドウでは、使用できるバリエーションを確認したり、フィールドに使用するカードを変更したりできます。
+Power Apps には、文字列、数値、およびその他のデータ型に対して定義済みのカードセットが用意されています。 右側のウィンドウでは、使用できるバリエーションを確認したり、フィールドに使用するカードを変更したりできます。
 
 ![](./media/working-with-cards/selected-card.png)
 
@@ -108,7 +108,7 @@ PowerApps には、文字列、数値、その他のデータ型用の定義済�
 ## <a name="interact-with-a-form"></a>フォームの操作
 カードのロックを解除すると、カードとそこに含まれるフォームとの間の操作方法を変更できます。
 
-コントロールがカードとどのように連携する必要があるか、およびカードがフォームとどのように連携する必要があるかに関するいくつかのガイドラインを次に示します。 これらはガイドラインにすぎません。 PowerApps の他のコントロールと同様に、PowerApps の他のコントロールを参照する数式を作成できます。これは、カードとカード内のコントロールにも当てはまります。 創造力を生かして、さまざまな方法でアプリを作成できます。  
+コントロールがカードとどのように連携する必要があるか、およびカードがフォームとどのように連携する必要があるかに関するいくつかのガイドラインを次に示します。 これらはガイドラインにすぎません。 Power Apps の他のコントロールと同様に、Power Apps の他のコントロールを参照する数式を作成することができ、カード内のカードやコントロールについてはそれほど当てはまりません。 創造力を生かして、さまざまな方法でアプリを作成できます。  
 
 ### <a name="datafield-property"></a>DataField プロパティ
 カードで最も重要なプロパティは **[DataField](controls/control-card.md)** プロパティです。  このプロパティは、検証、更新されるフィールド、カードのその他の側面に作用します。
@@ -142,7 +142,7 @@ PowerApps には、文字列、数値、その他のデータ型用の定義済�
 
 このカードは、次の 4 つのコントロールで構成されています。
 
-| 名前 | 種類 | 説明 |
+| 名前 | 種類 | Description |
 | --- | --- | --- |
 | **TextRequiredStar** |**[ラベル](controls/control-text-box.md)** コントロール |星印を表示します。この印は、データ入力フォームで必須フィールドを示すためによく使用されます。 |
 | **TextFieldDisplayName** |**[ラベル](controls/control-text-box.md)** コントロール |このフィールドのユーザー フレンドリ名を表示します。 この名前は、データ ソースのスキーマに含まれる名前と同じである必要はありません。 |
@@ -151,7 +151,7 @@ PowerApps には、文字列、数値、その他のデータ型用の定義済�
 
 これらのコントロールにデータを入力するために、これらの重要な数式を使用して、そのプロパティをカードのプロパティから設定することができます。 これらの数式のいずれも特定のフィールドを参照していないことに注意してください。 代わりに、すべての情報がカードから取得されます。
 
-| コントロールのプロパティ | 数式 | 説明 |
+| コントロールのプロパティ | 数式 | Description |
 | --- | --- | --- |
 | **TextRequiredStar.Visible** |**Parent.Required** |星印は、フィールドが必須フィールドの場合にのみ表示されます。 Required は、開発者またはデータ ソースのメタデータによって設定される数式です。 |
 | **TextFieldDisplayName.Text** |**Parent.DisplayName** |このテキスト ボックス コントロールには、ユーザー フレンドリ名が表示されます。ユーザー フレンドリ名は、開発者またはデータ ソースのメタデータから提供され、カードの **[DisplayName](controls/control-card.md)** プロパティに設定されます。 |
@@ -163,7 +163,7 @@ PowerApps には、文字列、数値、その他のデータ型用の定義済�
 
 これらのコントロールから情報を取得し、データ ソースにプッシュ転送するための重要な数式として、次の数式があります。
 
-| コントロール名 | 数式 | 説明 |
+| コントロール名 | 数式 | Description |
 | --- | --- | --- |
 | **DataCard.DataField** |**"ApproverEmail"** |このカードでユーザーが表示して編集できるフィールドの名前。 |
 | **DataCard.Update** |**InputText.Text** |**[SubmitForm](functions/function-form.md)** が実行されたときに検証され、データ ソースにプッシュ転送される値。 |

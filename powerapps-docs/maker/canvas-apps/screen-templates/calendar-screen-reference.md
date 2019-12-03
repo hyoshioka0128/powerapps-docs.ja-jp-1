@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b9e5425244d819816fa05c4b780a6be092b0d22c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: a586f705780ef370c63dc35e0d63658a437b549e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995726"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675364"
 ---
 # <a name="reference-information-about-the-calendar-screen-template-for-canvas-apps"></a>キャンバスアプリのカレンダー画面テンプレートに関する参照情報
 
-PowerApps のキャンバスアプリの場合、カレンダー画面テンプレートの各重要なコントロールが画面全体の既定の機能にどのように影響するかを理解します。 この詳細では、動作の数式と、コントロールがユーザー入力にどのように応答するかを決定するその他のプロパティの値を示します。 この画面の既定の機能の概要については、「[カレンダー画面の概要](calendar-screen-overview.md)」を参照してください。
+Power Apps のキャンバスアプリでは、カレンダー画面テンプレートの各重要なコントロールが画面全体の既定の機能にどのように影響するかを理解します。 この詳細では、動作の数式と、コントロールがユーザー入力にどのように応答するかを決定するその他のプロパティの値を示します。 この画面の既定の機能の概要については、「[カレンダー画面の概要](calendar-screen-overview.md)」を参照してください。
 
 ここでは、いくつかの重要なコントロールについて説明し、これらのコントロールのさまざまなプロパティ ( **Items**や**onselect**など) が設定される式または数式について説明します。
 
@@ -126,7 +126,7 @@ PowerApps のキャンバスアプリの場合、カレンダー画面テンプ�
 
     上記のコードでは、適切なカレンダービューを表示するために必要なすべての日付変数がリセットされます。
 
-    - **選択した dateselected**が今日にリセットされます。\_
+    - **選択した dateselected**が今日にリセットされます。
     - **\_firstDayOfMonth**は、今日の月の最初の日にリセットされます。
     - **\_firstDayInView**は、今日の月を選択したときに表示される最初の日にリセットされます。
     - **\_lastDayOfMonth**は、今日の月の最終日にリセットされます。

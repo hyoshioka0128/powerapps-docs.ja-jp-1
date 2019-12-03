@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ca0b81cb1150fb744251b3dfca30c9b6ed8f90a5
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 94400c88740ea93b3966db8a62a461b5616eaeef
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537103"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678352"
 ---
 # <a name="relate-and-unrelate-functions-in-powerapps"></a>PowerApps の関連付け関数と関連付け解除関数
 
 一対多または多対多のリレーションシップを通じて、2つのエンティティのレコードを関連付けると、関連付けを解除します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 
 **関連付け**関数は、Common Data Service で一対多または多対多のリレーションシップを介して2つのレコードをリンクします。 **Unrelate**関数はプロセスを反転し、リンクを削除します。
 
@@ -39,7 +39,7 @@ ms.locfileid: "73537103"
 これらの関数は、動作の[数式](../working-with-formulas-in-depth.md)でのみ使用できます。
 
 > [!NOTE]
-> これらの関数はプレビュー機能に含まれており、その動作は、**リレーショナルデータ、オプションセット、およびその他の cd**機能の新機能が有効になっている場合にのみ使用できます。 これは、新しいアプリで既定で有効になるアプリレベルの設定です。 この機能スイッチを見つけるには、 **[ファイル]** メニューの **[アプリの設定]** を選択し、 **[詳細設定]** を選択します。 お客様のフィードバックは弊社にとって非常に重要です。ご意見を [PowerApps コミュニティ フォーラム](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To)にお寄せください。
+> これらの関数はプレビュー機能に含まれており、その動作は、**リレーショナルデータ、オプションセット、およびその他の cd**機能の新機能が有効になっている場合にのみ使用できます。 これは、新しいアプリで既定で有効になるアプリレベルの設定です。 この機能スイッチを見つけるには、 **[ファイル]** メニューの **[アプリの設定]** を選択し、 **[詳細設定]** を選択します。 お客様からのご意見をお待ちしております。 [Power Apps コミュニティフォーラム](https://powerusers.microsoft.com/t5/Expressions-and-Formulas/bd-p/How-To)でご意見をお聞かせください。
 
 ## <a name="syntax"></a>構文
 
@@ -55,7 +55,7 @@ ms.locfileid: "73537103"
 
 ## <a name="examples"></a>例
 
-[PowerApps ポータルのエンティティビューアー](../../common-data-service/create-edit-entities-portal.md)に表示される次のようなリレーションシップを持つ**Products**エンティティを考えてみましょう。
+[Power Apps ポータルのエンティティビューアー](../../common-data-service/create-edit-entities-portal.md)に表示される次のような関係を持つ**製品**エンティティを考えてみましょう。
 
 | リレーションシップの表示名 | 関連エンティティ | リレーションシップの種類 |
 | --- | --- |

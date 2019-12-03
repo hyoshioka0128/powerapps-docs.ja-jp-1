@@ -1,6 +1,6 @@
 ---
 title: リスト ボックス、ドロップダウン リスト、またはラジオ ボタンをキャンバス アプリに追加する | Microsoft Docs
-description: PowerApps で、キャンバス アプリに複数選択オプションを作成または構成する
+description: Power Apps で、キャンバスアプリの複数選択オプションを作成または構成する
 author: fikaradz
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 211a5be4a97780a440bf151157576a5ab56933a5
-ms.sourcegitcommit: 57b968b542fc43737330596d840d938f566e582a
+ms.openlocfilehash: 9bf03693a182a9c6f85ad43c431b10fabf21b48d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "71987491"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678950"
 ---
 # <a name="add-a-list-box-a-drop-down-list-or-radio-buttons-to-a-canvas-app"></a>リスト ボックス、ドロップダウン リスト、またはラジオ ボタンをキャンバス アプリに追加する
 

@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ff143e9d73de25b5ba2c0076fc4b02d5f101a85b
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 5e89e0f5e9fc6c862f068ea7766bfc4e54ad5aeb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984760"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680123"
 ---
 # <a name="if-and-switch-functions-in-powerapps"></a>PowerApps の If および Switch 関数
 セット内の条件が true かどうか (**If**)、または数式の結果がセット内のいずれかの値に一致するかどうか (**Switch**) を判断し、結果を返すかアクションを実行します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **If** 関数は、**true** の結果が見つかるまで、1 つ以上の条件をテストします。 このような結果が見つかった場合は、対応する値が返されます。 このような結果が見つからない場合、既定値が返されます。 どちらの場合も、返される値は、表示する文字列、評価する対象の数式、または別の形式の結果になります。
 
 **Switch** 関数は、数式を評価し、結果が指定したシーケンス内の値に一致するかどうかを判断します。 一致が見つかった場合は、対応する値が返されます。 一致が見つからない場合は、既定値が返されます。 どちらの場合も、返される値は、表示する文字列、評価する対象の数式、または別の形式の結果になります。
@@ -31,7 +31,7 @@ ms.locfileid: "71984760"
 **If** と **Switch** はよく似ていますが、状況に合わせて適切な関数を使用する必要があります。
 
 * 単一の条件を評価する場合は、**If** を使用します。 この関数の最も一般的な構文は、**If**( *Condition*, *ThenResult*, *DefaultResult* ) です。これは、他のプログラミング ツールで見られる一般的な "if …  then … else …" パターンを提供します。
-* 関連性のない複数の条件を評価する場合は、**If** を使用します。 PowerApps では (Microsoft Excel とは異なり)、**If** の数式を入れ子にすることなく、複数の条件を指定できます。
+* 関連性のない複数の条件を評価する場合は、**If** を使用します。 Power Apps (Microsoft Excel とは異なります) では、 **If**数式を入れ子にせずに複数の条件を指定できます。
 * 可能な複数の一致を求めて単一の条件を評価する場合は、**Switch** を使用します。 この場合、**If** も使用できますが、可能なそれぞれの一致について数式を繰り返す必要があります。
 
 これらの関数は両方とも、2 つ以上のアクション間で分岐するために、[動作の数式](../working-with-formulas-in-depth.md)で使用できます。 アクションをトリガーする分岐は 1 つだけです。 条件と一致が順番に評価され、条件が **true** になるか一致が見つかった時点で停止します。
@@ -56,7 +56,7 @@ ms.locfileid: "71984760"
 ### <a name="values-in-formulas"></a>数式の値
 次の例では、**Slider1** という名前の**スライダー** コントロールに **25** という値が設定されています。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **If( Slider1.Value&nbsp;=&nbsp;25, "Result1" )** |条件は **true** であり、対応する結果が返されます。 |"Result1" |
 | **If( Slider1.Value&nbsp;=&nbsp;25, "Result1", "Result2" )** |条件は **true** であり、対応する結果が返されます。 |"Result1" |
@@ -72,9 +72,9 @@ ms.locfileid: "71984760"
 ### <a name="branching-in-behavior-formulas"></a>動作の数式での分岐
 次の例では、**FirstName** という名前の **[テキスト入力](../controls/control-text-input.md)** コントロールに値 "John" が入力されています。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
-| **If( !IsBlank( FirstName.Text ), Navigate(&nbsp;Screen1, ScreenTransition.None ) )** |条件は **true** であり、 **[Navigate](function-navigate.md)** 関数が実行されます。 **[IsBlank](function-isblank-isempty.md)** 関数を使用して、必要なフォーム フィールドが入力済みかどうかをテストすることができます。  **FirstName** が "[空白](function-isblank-isempty.md)" だった場合、この数式には効果がありません。 |**true**<br><br>表示が **Screen1** に変更されます。 |
+| **If (!IsBlank (FirstName)、Navigate (&nbsp;Screen1、ScreenTransition、None))** |条件は **true** であり、 **[Navigate](function-navigate.md)** 関数が実行されます。 **[IsBlank](function-isblank-isempty.md)** 関数を使用して、必要なフォーム フィールドが入力済みかどうかをテストすることができます。  **FirstName** が "[空白](function-isblank-isempty.md)" だった場合、この数式には効果がありません。 |**true**<br><br>表示が **Screen1** に変更されます。 |
 | **If( IsBlank( FirstName.Text ), Navigate(&nbsp;Screen1, ScreenTransition.None ), Back() )** |**!** 演算子がない場合、条件は **false** であり、 **[Navigate](function-navigate.md)** 関数は実行されません。 **[Back](function-navigate.md)** 関数が *DefaultResult* として指定されているため、それが実行されます。 |**true**<br><br>表示は、前に表示されていた画面に戻ります。 |
 | **Switch( FirstName.Text, "Carlos", Navigate(&nbsp;Screen1, ScreenTransition.None ), "Kirstin", Navigate( Screen2, ScreenTransition.None ), "John", Navigate( Screen3, ScreenTransition.None ) )** |**FirstName.Text** の値は "Carlos"、"Kirstin"、"John" と、この順に比較されます。 "John" との一致が見つかり、アプリは **Screen3** に移動します。 |**true**<br><br>表示が **Screen3** に変更されます。 |
 

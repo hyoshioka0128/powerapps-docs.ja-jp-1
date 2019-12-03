@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b8495c22a703a267cd3ab888247e5cbf6ef6a81d
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: 37ea7a123562cf4ec9216d484bd6173f33046d72
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73900415"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674799"
 ---
 # <a name="set-up-data-alerts-for-the-power-bi-dashboard"></a>Power BI ダッシュボードのデータ アラートを設定する
 > [!NOTE]
-> この記事は、SharePoint Online での PowerApps の使用、Power オートメーション、および Power BI に関するチュートリアルシリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
+> この記事は、Power Apps の使用に関するチュートリアルシリーズの一部であり、Power App の自動化と、SharePoint Online での Power BI について説明しています。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
 このタスクでは、保留中のプロジェクトの承認に時間がかかりすぎる場合に通知するアラート、およびアラート発生時に対応するフローを Power BI に追加します。 アラートについて詳しくは、「[Power BI サービスでのデータ アラート](https://docs.microsoft.com/power-bi/service-set-data-alerts)」を参照してください。
 

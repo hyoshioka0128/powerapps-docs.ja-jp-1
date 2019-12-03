@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d104bc88fb8f5306a9d086fa04bc946b6a719129
-ms.sourcegitcommit: c3e7be17c8b39bf17b2089ad3bd424e63b5645e5
+ms.openlocfilehash: 52deddf87a1c3ee4604591110cfb08eb2d2680b8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72822100"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74672990"
 ---
 # <a name="create-a-rule-in-canvas-apps"></a>キャンバス アプリでルールを作成する
 指定した条件に基づいてアプリを自動的に変更するためのルールを作成します。 たとえば、状態に基づいてリスト項目を赤、黄、または緑で表示したり、特定のユーザー (管理者など) に対してのみ承認ボタンを表示したりします。 ルールは、さまざまなコントロールに追加できます。 このトピックでは、**スライダー** コントロールの値が 70 を超えている場合に、**ラベル**のテキストの色を変更するルールを追加します。
@@ -51,13 +51,13 @@ ms.locfileid: "72822100"
     このトピックでは、この式が取る値を 0 から 70 に変更します。 <br>**Slider1.Value > 70**
 
 ## <a name="add-an-action"></a>アクションの追加
-アクションは、ルールが適用されたときの動作を定義します。 PowerApps では、コントロールに加えた変更に基づいて、自動的にアクションを作成できます。
+アクションは、ルールが適用されたときの動作を定義します。 Power Apps では、コントロールに対して行った変更に基づいてアクションを自動的に作成できます。
 
 1. **[アクションの定義]** をクリックまたはタップします。
 
     ![アクションの定義](./media/working-with-rules/rule-define-actions.png)
 
-1. 確認ダイアログ ボックスで **[始めましょう]** をクリックまたはタップして、PowerApps で次の変更を 1 つまたは複数のアクションとしてキャプチャできるようにします。
+1. 確認のダイアログボックスで [ **Let to** action] をクリックまたはタップして、次の変更を1つ以上のアクションとして電源アプリがキャプチャできるようにします。
 
 1. 条件が true のときに希望通りに動作するように、1 つまたは複数のコントロールを構成します。
 

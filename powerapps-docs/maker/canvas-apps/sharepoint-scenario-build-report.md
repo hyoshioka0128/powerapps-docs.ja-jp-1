@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9693e45da894348acd27b96f73d1358819812ae4
-ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
+ms.openlocfilehash: dbe706b19ccc974eda95f47145ced2e9ff14a4c6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73900349"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674871"
 ---
 # <a name="create-a-power-bi-report-to-analyze-projects"></a>Power BI レポートを作成してプロジェクトを分析する
 > [!NOTE]
-> この記事は、SharePoint Online での PowerApps の使用、Power オートメーション、および Power BI に関するチュートリアルシリーズの一部です。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
+> この記事は、Power Apps の使用に関するチュートリアルシリーズの一部であり、Power App の自動化と、SharePoint Online での Power BI について説明しています。 シリーズ全般に関することや、関連するファイルのダウンロードの詳細については、[シリーズの概要](sharepoint-scenario-intro.md)に関する記事をご覧ください。
 
 このタスクでは、2 つの SharePoint リストをベースに Power BI レポートを作成します。 リストのデータを Power BI Desktop に取り込み、少し修正を加えたり、基本的なデータ モデリングを行ったりします。その後、データの分析に役立つ視覚エフェクトを作成します。
 

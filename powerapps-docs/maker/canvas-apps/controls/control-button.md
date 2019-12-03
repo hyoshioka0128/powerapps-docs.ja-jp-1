@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 750b02bdd3363f03ad0f32ae1fcbc59d7c5c3f3e
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 430452514cd37930e145e8061ee6ac64c697b6e9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650735"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679801"
 ---
 # <a name="button-control-in-powerapps"></a>PowerApps のボタン コントロール
 クリックまたはタップするとアプリを操作できるコントロールです。
@@ -161,7 +161,7 @@ ms.locfileid: "73650735"
 
 ### <a name="change-a-buttons-appearance"></a>ボタンの外観を変更する
 #### <a name="change-a-buttons-shape"></a>ボタンの形を変更する
-PowerApps の既定では、角の丸い四角形の**ボタン** コントロールが作成されます。 **ボタン** コントロールの形に基本的な変更を加えることができます。そのためには、 **[Height](properties-size-location.md)** 、 **[Width](properties-size-location.md)** 、 **[Radius](properties-size-location.md)** の各プロパティを変更します。
+既定では、Power Apps は角が丸い四角形の**ボタン**コントロールを作成します。 **ボタン** コントロールの形に基本的な変更を加えることができます。そのためには、 **[Height](properties-size-location.md)** 、 **[Width](properties-size-location.md)** 、 **[Radius](properties-size-location.md)** の各プロパティを変更します。
 
 > [!NOTE]
 > [アイコンとシェイプ](control-shapes-icons.md)には、さまざまなデザインが用意されていて、**ボタン** コントロールで実行できるのと同じ基本的な機能のいくつかを実行できます。 ただし、 **[アイコンとシェイプ](control-shapes-icons.md)** に **[Text](properties-core.md)** プロパティはありません。

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 565f751017bc8c145c34058bd4dd57d047127d45
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 455ffff4813b457c2a439f2081c10418ace2e306
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71987170"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678720"
 ---
 # <a name="connect-to-excel-from-powerapps"></a>PowerApps から Excel に接続する
 ![Excel](./media/connection-excel/excelicon.png)
@@ -31,7 +31,7 @@ Excel は接続*のようなもの*です。 アプリで Excel データを表�
 4. [アプリを自動的に生成する](../get-started-create-from-data.md)か、または**ギャラリー** コントロールのようなものを追加して構成することで、この情報を表示します。
 
 > [!NOTE]
-> PowerApps から Excel テーブルに接続すると、PowerApps は **\_PowerAppsId_** という列を作成します。Excel テーブルの各行には一意の ID が付けられます。
+> Power Apps から Excel テーブルに接続すると **\_PowerAppsId_** という名前の列が作成され、excel テーブルの各行に一意の ID が付けられます。
 
 「[クラウド ストレージ接続の概要](cloud-storage-blob-connections.md)」では、接続を追加し、データ ソースとして Excel テーブルを追加して、アプリで Excel のデータを使う方法が示されています。
 

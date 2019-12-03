@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7663668b77c6f8186ef54c3182230fa843f86577
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7226433c5e95537346841f2e2f9474ea68e42dda
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995699"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675084"
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>キャンバスアプリの電子メール画面テンプレートに関するリファレンス情報
 
-PowerApps のキャンバスアプリの場合、電子メール画面テンプレートの各重要なコントロールが画面の既定の機能全体にどのように影響するかを理解します。 この詳細では、動作の数式と、コントロールがユーザー入力にどのように応答するかを決定するその他のプロパティの値を示します。 この画面の既定の機能の概要については、[電子メール画面の概要](email-screen-overview.md)に関するページを参照してください。
+Power Apps のキャンバスアプリの場合、電子メール画面テンプレートの各重要なコントロールが画面の既定の機能全体にどのように影響するかを理解します。 この詳細では、動作の数式と、コントロールがユーザー入力にどのように応答するかを決定するその他のプロパティの値を示します。 この画面の既定の機能の概要については、[電子メール画面の概要](email-screen-overview.md)に関するページを参照してください。
 
 ここでは、いくつかの重要なコントロールについて説明し、これらのコントロールのさまざまなプロパティ ( **Items**や**onselect**など) が設定される式または数式について説明します。
 

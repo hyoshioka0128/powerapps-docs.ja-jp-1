@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9f7349faf01d2270427c8cd5862a55e413033023
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: f7e1b4ff10a12d454380c394b2f6ae64389bc23e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650387"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679732"
 ---
 # <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps の PDF ビューアー コントロール (試験段階)
 PDF ファイルの内容を表示する試験段階のコントロールです。
@@ -27,7 +27,7 @@ PDF ファイルの内容を表示する試験段階のコントロールです�
 PDF ファイルのテキスト、グラフィック、他の内容を表示するには、この種類のコントロールを追加し、その **Document** プロパティに、表示するファイルの URL を二重引用符で囲んで設定します。
 
 ## <a name="limitations"></a>事項
-1. PowerApps のセキュリティアーキテクチャでは、PDF ビューアーは HTTP ではなく HTTPS リンクのみをサポートする必要があります。  
+1. Power Apps のセキュリティアーキテクチャでは、PDF ビューアーでは HTTP ではなく HTTPS リンクのみがサポートされている必要があります。  
 
 2. **Document**プロパティは、PDF ファイルに直接リンクする必要があります。 ドキュメントのサーバーリダイレクトまたは HTML ビューはサポートされていません。
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4eab4585a2abd8633704c76b57cde52702982e97
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 387089ea2ee40e8a0d418ab110d7544c17d7c423
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994031"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679893"
 ---
 # <a name="connect-to-microsoft-translator-from-powerapps"></a>PowerApps から Microsoft Translator に接続する
 ![Microsoft Translator](./media/connection-microsoft-translator/translatoricon.png)
@@ -33,7 +33,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 [!INCLUDE [connection-requirements](../../../includes/connection-requirements.md)]
 
 ## <a name="connect-to-microsoft-translator"></a>Microsoft Translator に接続する
-1. PowerApps を開き、 **[新規]** を選択して **[空のアプリ]** を作成します。 携帯電話またはタブレットのレイアウトを選択します。 タブレットのレイアウトの方がワークスペースが広くなります。  
+1. Power Apps を開き、**新規** を選択して、**空のアプリ**を作成します。 携帯電話またはタブレットのレイアウトを選択します。 タブレットのレイアウトの方がワークスペースが広くなります。  
 
    ![空のアプリを開く](./media/connection-microsoft-translator/blank-app.png)
 2. 右側のウィンドウで、 **[データ]** タブをクリックまたはタップし、 **[データソースの追加]** をクリックまたはタップします。
@@ -72,7 +72,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 3. **[挿入]** メニューの **[メディア]** から**オーディオ** コントロールを追加し、**Media** プロパティに次の式を設定します。  
 
     `MicrosoftTranslator.TextToSpeech(Target.Text, TargetLang.Selected.Value)`
-4. F5 キーを押すか、[プレビュー] ボタン (![](./media/connection-microsoft-translator/preview.png)) を選択します。 **Source** にテキストを入力して **TargetLang** で言語を選択してから、オーディオ コントロールの再生ボタンを選択します。
+4. F5 キーを押すか、[プレビュー] ボタン (![](./media/connection-microsoft-translator/preview.png)) を選びます。 **Source** にテキストを入力して **TargetLang** で言語を選択してから、オーディオ コントロールの再生ボタンを選択します。
 
     入力した言語が選択した言語の音声で読み上げられます。
 5. Esc キーを押して既定のワークスペースに戻ります。
@@ -90,7 +90,7 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 ## <a name="view-the-available-functions"></a>使用可能な関数の確認
 この接続には、次の関数が含まれています。
 
-| 関数名 | 説明 |
+| 関数名 | Description |
 | --- | --- |
 | [Languages](connection-microsoft-translator.md#languages) |Microsoft Translator でサポートされるすべての言語を取得します。 |
 | [Translate](connection-microsoft-translator.md#translate) |Microsoft Translator を使用してテキストを指定された言語に翻訳します。 |
@@ -99,24 +99,24 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 | [TextToSpeech](connection-microsoft-translator.md#texttospeech) |入力したテキストを、WAVE 形式の音声ストリームの音声に変換します。 |
 
 ### <a name="languages"></a>言語:
-言語の取得:Microsoft Translator でサポートされるすべての言語を取得します。
+言語の取得: Microsoft Translator でサポートされるすべての言語を取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 なし。
 
 #### <a name="output-properties"></a>出力プロパティ
 
-| プロパティ名 | データ型 | 必須 | 説明 |
+| プロパティ名 | データ型 | 必須 | Description |
 | --- | --- | --- | --- |
 | コード |string |いいえ | |
 | 名前 |string |いいえ | |
 
 ### <a name="translate"></a>Translate
-テキストの翻訳：Microsoft Translator を使用してテキストを指定された言語に翻訳します。
+テキストの翻訳: Microsoft Translator を使用してテキストを指定された言語に翻訳します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
-| 名前 | データ型 | 必須 | 説明 |
+| 名前 | データ型 | 必須 | Description |
 | --- | --- | --- | --- |
 | query |string |はい |翻訳するテキスト |
 | languageTo |string |はい |翻訳先言語のコード (例: fr (フランス語)) |
@@ -127,40 +127,40 @@ Microsoft Translator コネクタを追加すると、アプリの**ラベル** 
 なし。
 
 ### <a name="detect"></a>Detect
-言語の検出:入力したテキストのソース言語を検出します。
+言語の検出: 入力したテキストのソース言語を検出します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
-| 名前 | データ型 | 必須 | 説明 |
+| 名前 | データ型 | 必須 | Description |
 | --- | --- | --- | --- |
 | query |string |はい |言語を特定するテキスト |
 
 #### <a name="output-properties"></a>出力プロパティ
 
-| プロパティ名 | データ型 | 必須 | 説明 |
+| プロパティ名 | データ型 | 必須 | Description |
 | --- | --- | --- | --- |
 | コード |string |いいえ | |
 | 名前 |string |いいえ | |
 
 ### <a name="speechlanguages"></a>SpeechLanguages
-音声の言語を取得します。音声合成に使用できる言語を取得します。
+音声言語の取得: 音声合成に使用できる言語を取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 なし。
 
 #### <a name="output-properties"></a>出力プロパティ
 
-| プロパティ名 | データ型 | 必須 | 説明 |
+| プロパティ名 | データ型 | 必須 | Description |
 | --- | --- | --- | --- |
 | コード |string |いいえ | |
 | 名前 |string |いいえ | |
 
 ### <a name="texttospeech"></a>TextToSpeech
-テキスト読み上げ:入力したテキストを、WAVE 形式の音声ストリームの音声に変換します。
+テキストの音声変換: 入力したテキストを、WAVE 形式の音声ストリームの音声に変換します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
-| 名前 | データ型 | 必須 | 説明 |
+| 名前 | データ型 | 必須 | Description |
 | --- | --- | --- | --- |
 | query |string |はい |変換するテキスト |
 | language |string |はい |音声を生成する言語コード (例: en-us (米国英語)) |

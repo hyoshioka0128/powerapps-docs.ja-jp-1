@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e534d5b3cf21cbbed78b16960a5f4a83a44bfe24
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5c099f68c7dd8833b2ee494ff83cbbdb2c88b923
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540348"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678766"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>キャンバスアプリから SharePoint に接続する
 
@@ -33,7 +33,7 @@ SharePoint サイトに接続してカスタムリストからアプリを自動
 
 ## <a name="generate-an-app"></a>アプリを生成する
 
-カスタムリストのデータを管理する場合は、PowerApps で[自動的に3画面のアプリを生成](../app-from-sharepoint.md)することができます。 ユーザーは、最初の画面で一覧を参照し、2番目の画面に項目の詳細を表示し、3番目の画面で項目を作成または更新できます。
+カスタムリストのデータを管理する場合は、Power Apps で[自動的に3画面のアプリを生成](../app-from-sharepoint.md)できます。 ユーザーは、最初の画面で一覧を参照し、2番目の画面に項目の詳細を表示し、3番目の画面で項目を作成または更新できます。
 
 > [!NOTE]
 > SharePoint リストに**選択肢**、**ルックアップ**、または**ユーザーまたはグループ**の列が含まれている場合は、このトピックの「[ギャラリーにデータを表示](connection-sharepoint-online.md#show-list-columns-in-a-gallery)する」を参照してください。
@@ -81,7 +81,7 @@ SharePoint サイトに接続してカスタムリストからアプリを自動
 
 ## <a name="add-data-to-an-existing-app"></a>既存のアプリにデータを追加する
 
-1. PowerApps Studio で、更新するアプリを開き、 **[表示]** タブを選択し、 **[データソース]** を選択します。
+1. Power Apps Studio で、更新するアプリを開き、 **[表示]** タブを選択し、 **[データソース]** を選択します。
 
     > [!div class="mx-imgBorder"]
     > [表示] タブの ![、[データソース] を選択し](./media/connection-sharepoint-online/view-data-sources.png)
@@ -98,7 +98,7 @@ SharePoint サイトに接続してカスタムリストからアプリを自動
     > [!div class="mx-imgBorder"]
     > [一覧の選択] で、使用するドキュメントまたは1つ以上の一覧のチェックボックスをオンにし、[接続] を選択し](./media/connection-sharepoint-online/select-sp-tables.png) ![
 
-    すべての種類のリストが既定で表示されるわけではありません。 PowerApps ではカスタム リストはサポートされますが、テンプレート ベースのリストはサポートされません。 使用するリストの名前が表示されない場合は、一番下までスクロールし、[**カスタムテーブル名を入力**してください] と表示されているボックスにリストの名前を入力します。
+    すべての種類のリストが既定で表示されるわけではありません。 Power Apps では、テンプレートベースのリストではなく、カスタムリストがサポートされています。 使用するリストの名前が表示されない場合は、一番下までスクロールし、[**カスタムテーブル名を入力**してください] と表示されているボックスにリストの名前を入力します。
 
     > [!div class="mx-imgBorder"]
     > [カスタムリスト名を入力してください] ボックスにリストの名前を入力 ![ます。](./media/connection-sharepoint-online/custom-list.png)
@@ -160,7 +160,7 @@ SharePoint ライブラリに複数のイメージがある場合は、表示す
 
 SharePoint ライブラリからデータを表示するためのより複雑な方法を示す[サンプルアプリをダウンロード](https://pwrappssamples.blob.core.windows.net/samples/spdoclib_blogapp.msapp)できます。
 
-1. アプリをダウンロードした後、 [PowerApps Studio](https://us.create.powerapps.com/studio/#)を開き、左側のナビゲーションバーで **[開く]** を選択し、 **[参照]** を選択します。
+1. アプリをダウンロードしたら、 [Power Apps Studio](https://us.create.powerapps.com/studio/#)を開き、左側のナビゲーションバーで **[開く]** を選択し、 **[参照]** を選択します。
 1. **[開く]** ダイアログボックスで、ダウンロードしたファイルを見つけて開き、このトピックの最初の2つの手順に従って、データソースとして SharePoint ライブラリを追加します。
 
 > [!NOTE]
@@ -180,7 +180,7 @@ SharePoint ライブラリからデータを表示するためのより複雑な
 
 ### <a name="lists"></a>表示
 
-PowerApps では、スペースを含む列名を読み取ることができますが、スペースは、16進数のエスケープコード **"\_x0020\_"** で置き換えられます。 たとえば、SharePoint の **"Column Name"** は、PowerApps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
+Power Apps では、スペースを含む列名を読み取ることができますが、スペースは16進数のエスケープコード **"\_x0020\_"** で置き換えられます。 たとえば、SharePoint の **"列名"** は、データレイアウトに表示されている場合や数式で使用されている場合に、Power Apps の **"Column_x0020_Name"** として表示されます。
 
 すべての種類の列がサポートされているわけではありません。また、すべての種類の列でサポートされている種類の列もありません。
 
@@ -206,10 +206,10 @@ PowerApps では、スペースを含む列名を読み取ることができま�
 
 ### <a name="libraries"></a>ライブラリ
 
-- PowerApps からライブラリにファイルをアップロードすることはできません。
+- Power Apps からライブラリにファイルをアップロードすることはできません。
 - Pdf ビューアーコントロールのライブラリから PDF ファイルを表示することはできません。
-- PowerApps Mobile では、**ダウンロード**機能がサポートされていません。
-- ユーザーが PowerApps Mobile または Windows 10 アプリでアプリを実行する場合は、 **Launch**関数を使用してライブラリコンテンツをギャラリーに表示します。
+- Power Apps Mobile は、**ダウンロード**機能をサポートしていません。
+- ユーザーがアプリを Power Apps Mobile または Windows 10 アプリで実行する場合は、 **Launch**関数を使用してライブラリコンテンツをギャラリーに表示します。
 
 ## <a name="next-steps"></a>次の手順
 

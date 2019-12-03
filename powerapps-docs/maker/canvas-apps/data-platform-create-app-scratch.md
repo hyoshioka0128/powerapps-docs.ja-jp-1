@@ -1,6 +1,6 @@
 ---
 title: Common Data Service を使用してキャンバス アプリを最初から作成する | Microsoft Docs
-description: PowerApps で、Common Data Service のレコードを追加、更新、削除するキャンバス アプリを作成します。
+description: Power Apps で、Common Data Service でレコードを追加、更新、削除するためのキャンバスアプリを作成します。
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bec8524ac6afc265eba5d9a6edf381c5ebf2c340
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 48cd98481cff354d4e54cb54dc38865f6dfa6a14
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540382"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679686"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Common Data Service を使用してキャンバス アプリを最初から作成する
 
 Common Data Service に保存されているデータを、標準エンティティ (組み込み)、カスタム エンティティ (組織が作成)、またはその両方を使用して管理するキャンパス アプリを構築します。
 
-Common Data Service からアプリを構築する場合、SharePoint、Dynamics 365、Salesforce などのデータ ソースが利用できるので、PowerApps から接続を作成する必要はありません。 必要な作業は、アプリでの表示と管理の対象となるエンティティの指定のみです。
+Common Data Service からアプリを構築する場合、SharePoint、Dynamics 365、Salesforce などのデータソースの場合と同じように、Power Apps から接続を作成する必要はありません。 必要な作業は、アプリでの表示と管理の対象となるエンティティの指定のみです。
 
 ## <a name="prerequisites"></a>前提条件
 
-- 新規にアプリを作成する前に、[アプリを生成し](data-platform-create-app.md)、そのアプリの[ギャラリー](customize-layout-sharepoint.md)、[フォーム](customize-forms-sharepoint.md)、[カード](customize-card.md)をカスタマイズして PowerApps の基礎を詳しく理解してください。
+- アプリを最初から作成する前に、[アプリを生成](data-platform-create-app.md)し、そのアプリの[ギャラリー](customize-layout-sharepoint.md)、[フォーム](customize-forms-sharepoint.md)、[カード](customize-card.md)をカスタマイズして、Power Apps の基本について理解しておく必要があります。
 - サンプル データを使用してデータベースが作成された[環境に切り替えます](working-with-environments.md)。 適切なライセンスがある場合は、ニーズを満たす[環境を作成する](../../administrator/create-environment.md)ことができます。
 - アプリを作成するには、[環境作成者](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles)セキュリティ ロールが割り当てられている必要があります。
 

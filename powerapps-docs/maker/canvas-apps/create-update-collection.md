@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1c930c233f96a481700748960f90d731be397af0
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 47233d4ead10ab01fe57c1f0573a4123894f9e58
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540337"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678674"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>キャンバスアプリでのコレクションの作成と更新
 
@@ -26,13 +26,13 @@ ms.locfileid: "73540337"
 
 ## <a name="prerequisites"></a>前提条件
 
-- PowerApps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
+- Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 - PowerApps で、アプリを作成するか既存のアプリを開きます。
 - PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
 
 ## <a name="create-a-multicolumn-collection"></a>複数列のコレクションを作成する
 
-1. PowerApps Studio で、**テキスト入力**コントロールを追加します。
+1. Power Apps Studio で、**テキスト入力**コントロールを追加します。
 
     ![テキスト入力コントロールを挿入する](./media/create-update-collection/add-textbox.png)
 

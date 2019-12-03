@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7b6f1056a6d2b5ceaf1fcefe1ccc7d583470450c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f2b401fb4054d63e19b1dcab29cbabf27cc3c117
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541718"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674622"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>画像を Excel ファイルに保存してアプリに追加する方法
 
@@ -49,7 +49,7 @@ ms.locfileid: "73541718"
 3. Excel ファイルに **SavePen.xlsx** という名前を付けて、ご利用のクラウド ストレージ アカウント (OneDrive for Business、Dropbox など) に保存します。
 
 ## <a name="create-an-app-with-the-pen-control"></a>ペン コントロールを使ったアプリを作成する
-1. PowerApps で、[空のアプリ](get-started-create-from-blank.md)を作成します。
+1. Power Apps で、空の[アプリ](get-started-create-from-blank.md)を作成します。
 2. アプリで、クラウド ストレージ アカウントを[データ ソース](add-data-connection.md)として追加します。 データ ソースとして追加したら、**SavePen.xlsx** を接続として追加し、**Drawings** テーブルを選択します。  
    ![接続](./media/tutorial-working-with-images-in-excel/savepen.png)  
    
@@ -77,7 +77,7 @@ ms.locfileid: "73541718"
 この例では、いくつかの .jpeg ファイルを格納している [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) を使用します。
 
 > [!NOTE]
-> Excel ファイルから画像を表示するときは、それらの画像のパスにスラッシュを使う必要があります。 PowerApps で (前の手順のように) 画像を Excel テーブルに保存すると、パスに円記号が使用されます。 前の例で使用した **SavePen_images** を使用することもできますが、 その場合は、円記号ではなくスラッシュを使用するように Excel テーブル内のパスを変更してください。 そうしないと、画像は表示されません。  
+> Excel ファイルから画像を表示するときは、それらの画像のパスにスラッシュを使う必要があります。 Power Apps が画像を Excel テーブルに保存するとき (前の手順と同様)、パスは円記号を使用します。 前の例で使用した **SavePen_images** を使用することもできますが、 その場合は、円記号ではなくスラッシュを使用するように Excel テーブル内のパスを変更してください。 そうしないと、画像は表示されません。  
 
 1. [CreateFirstApp.zip](https://pwrappssamples.blob.core.windows.net/samples/CreateFirstApp.zip) をダウンロードし、**Assets** フォルダーをクラウド ストレージ アカウントに抽出します。
 2. Excel スプレッドシートで、次のようなテーブルを作成します。

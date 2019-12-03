@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7ab695d461cb980556a3027297c3e7f5ac5bde61
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0f2f51596e8973bf41e26e4ed56df9f1c6e34844
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985519"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680307"
 ---
 # <a name="concurrent-function-in-powerapps"></a>PowerApps の Concurrent 関数
 複数の数式をそれぞれ同時に評価します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Concurrent** 関数では、同時に複数の数式を評価します。 通常、複数の数式は、それぞれが順番に評価される、 [ **;** ](operators.md)演算子と共に連結することによって評価されます。 アプリによって操作を同時に実行すると、同じ結果がユーザーに返されるまでの時間は短くなります。
 
 アプリの [ **OnStart**](../controls/control-screen.md) プロパティで、**Concurrent** を使用すると、アプリがデータを読み込む際のパフォーマンスが向上します。 前の呼び出しが完了するまで、データ呼び出しが開始されない場合、アプリはすべての要求時間を合計した期間、待機する必要があります。 データ呼び出しが同時に開始される場合、アプリは最長の要求時間を待機するだけで済みます。 Web ブラウザーは、多くの場合、データ操作を同時に実行することによってパフォーマンスを向上させます。
 
-**Concurrent** 関数内の数式が評価を開始および終了する順番は予測できません。 **Concurrent** 関数内の数式には、同じ **Concurrent** 関数内の他の数式との依存関係を含めないでください。それを行うと、PowerApps によってエラーが表示されます。 **Concurrent** 関数内にある数式は、この関数の外側にある数式に安全に依存することができます。外側にある数式は **Concurrent** 関数が開始する前に完了するからです。 **同時実行**関数の後の数式は、内の数式に対して安全に依存関係を取得できます。これらはすべて、**同時**実行関数が終了してから、チェーン内の次の式に移動します ( **;** 演算子を使用する場合)。 副作用がある関数またはサービス メソッドを呼び出す場合は、微妙な順序の依存関係に注意してください。
+**Concurrent** 関数内の数式が評価を開始および終了する順番は予測できません。 **同時実行**関数内の数式には、同じ**同時**関数内の他の数式に依存関係を含めることはできません。また、試してみると、Power Apps にはエラーが表示されます。 **Concurrent** 関数内にある数式は、この関数の外側にある数式に安全に依存することができます。外側にある数式は **Concurrent** 関数が開始する前に完了するからです。 **同時実行**関数の後の数式は、内の数式に対して安全に依存関係を取得できます。これらはすべて、**同時**実行関数が終了してから、チェーン内の次の式に移動します ( **;** 演算子を使用する場合)。 副作用がある関数またはサービス メソッドを呼び出す場合は、微妙な順序の依存関係に注意してください。
 
 数式を、引数内の **;** 演算子と共に**同時**に連結できます。 たとえば、**Concurrent( Set( a, 1 ); Set( b, a+1 ), Set( x, 2 ); Set( y, x+2 ) )** は **Set( a, 1 ); Set( b, a+1 )** を **Set( x, 2 ); Set( y, x+2 )** と同時に評価します。 この場合、数式内の依存関係は問題ありません: **a** は **b** の前に設定されます。**x** は **y** の前に設定されます。
 
@@ -49,7 +49,7 @@ ms.locfileid: "71985519"
 
 1. アプリを作成し、Common Data Service、SQL Server、または SharePoint から4つのデータソースを追加します。 
 
-    この例では、[SQL Azure 上のサンプル Adventure Works データベース](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)からの 4 つの表を使用します。 データベースを作成したら、完全修飾サーバー名 (たとえば、srvname.database.windows.net) を使用して PowerApps からデータベースに接続します。
+    この例では、[SQL Azure 上のサンプル Adventure Works データベース](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal)からの 4 つの表を使用します。 データベースを作成したら、完全修飾サーバー名 (たとえば、srvname.database.windows.net) を使用して Power Apps から接続します。
 
     ![Azure 内の Adventure Works データベースに接続する](media/function-concurrent/connect-database.png)
 
@@ -74,7 +74,7 @@ ms.locfileid: "71985519"
 
 5. アプリを保存し、閉じてから、もう一度開きます。
 
-    PowerApps ではデータがキャッシュされるので、ボタンをもう一度選択しても 4 つの新しい要求が発生するとは限りません。 パフォーマンスをテストするたびに、アプリを閉じて再度開きます。 帯域幅調整がオンになっている場合、別のテストの準備が整うまで帯域幅調整をオフにしておきたい場合があります。
+    Power Apps はデータをキャッシュするので、ボタンをもう一度選択しても、必ずしも4つの新しい要求が発生するとは限りません。 パフォーマンスをテストするたびに、アプリを閉じて再度開きます。 帯域幅調整がオンになっている場合、別のテストの準備が整うまで帯域幅調整をオフにしておきたい場合があります。
 
 1. 2 つ目の **[[ボタン]](../controls/control-button.md)** コントロールを追加し、その **OnSelect** プロパティに次の式を設定します。
 
@@ -149,4 +149,4 @@ ms.locfileid: "71985519"
 
     場合によっては、フランス語への翻訳はドイツ語への翻訳よりも速く行われます。その逆もあります。 両方が同時に開始されても、ネットワーク待機時間やサーバー側の処理など、さまざまな理由により、一方の翻訳が他方の翻訳よりも前に返されます。
 
-    アプリが最初に終了した 1 つの翻訳に依存している場合は、[競合状態](https://en.wikipedia.org/wiki/Race_condition)が発生します。 さいわいにも、PowerApps では、検出できるほとんどのタイミングの依存関係にフラグを付けています。
+    アプリが最初に終了した 1 つの翻訳に依存している場合は、[競合状態](https://en.wikipedia.org/wiki/Race_condition)が発生します。 幸いなことに、Power Apps は検出できるほとんどのタイミングの依存関係にフラグを付いています。

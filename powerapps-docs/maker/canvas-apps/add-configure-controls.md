@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 29fcc240bdf0dbe926acb702c26d535fb4536c16
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b2a2aa1baf93008fa908ca3f73aebfde64c9b239
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73537133"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680054"
 ---
 # <a name="add-and-configure-a-canvas-app-control-in-powerapps"></a>PowerApps でキャンバス アプリ コントロールを追加および構成する
 
@@ -26,9 +26,9 @@ ms.locfileid: "73537133"
 
 ## <a name="prerequisites"></a>前提条件
 
-1. PowerApps ライセンスをまだお持ちでない場合は、[サインアップ](../signup-for-powerapps.md)して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
+1. Power Apps のライセンスをまだ持っていない場合は、[サインアップ](../signup-for-powerapps.md)して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 1. **[独自のアプリを作成する]** で、[**キャンバスアプリ] を空白から**ポイントし、 **[このアプリを作成]** する を選択します。
-1. イントロツアーを実行するように求められたら、 **[次]** へ を選択して、PowerApps インターフェイスの主要な領域について理解を深めます (または **[スキップ]** を選択します)。
+1. 概要ツアーを実行するように求められたら、 **[次]** へ を選択して、Power Apps インターフェイスの主要な領域について理解します (または、 **[スキップ]** を選択します)。
 
     後でツアーを実行するには、画面の右上隅にある疑問符アイコンを選択し、[**入門ツアーを実行**する] を選択します。
 

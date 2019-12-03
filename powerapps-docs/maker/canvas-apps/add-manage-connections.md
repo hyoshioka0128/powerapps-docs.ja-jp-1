@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e8f40f9cd3b15dddfd9fdadbcd15495e33464967
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5eb7bac0197856988f344ae2779bf2b43d1f797f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540909"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679985"
 ---
 # <a name="manage-canvas-app-connections-in-powerapps"></a>PowerApps でキャンバス アプリの接続を管理する
 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、1 つまたは複数のデータ ソースへの接続を作成したり、接続を削除したり、接続の資格情報を更新したりします。
@@ -39,7 +39,7 @@ ms.locfileid: "73540909"
 2. サインアップに使用した資格情報で [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 ## <a name="background-on-data-connections"></a>データ接続の背景
-ほとんどの PowerApps アプリでは、クラウド サービスに格納されている**データ ソース**と呼ばれる外部情報を使用します。 一般的な例は、OneDrive for Business に格納されている Excel ファイル内のテーブルです。 これらのデータ ソースには、アプリから**接続**を使用してアクセスできます。
+ほとんどの Power Apps アプリは、クラウドサービスに格納されている**データソース**と呼ばれる外部情報を使用します。 一般的な例は、OneDrive for Business に格納されている Excel ファイル内のテーブルです。 これらのデータ ソースには、アプリから**接続**を使用してアクセスできます。
 
 最も一般的なデータ ソースの種類はテーブルで、情報の取得および保存に使用できます。 データ ソースへの接続を使用すると、Microsoft Excel ブック、SharePoint リスト、SQL テーブル、およびその他の多くの形式でデータの読み書きを行うことができ、それらを OneDrive for Business、DropBox、SQL Server などのクラウド サービスに格納できます。
 
@@ -54,7 +54,7 @@ ms.locfileid: "73540909"
 * 別のユーザーが作成したアプリを開き、[自分と共有する](share-app.md)。
 
 > [!NOTE]
-> 代わりに PowerApps Studio を使用する場合は、 **[ファイル]** メニューを開き、 **[接続]** をクリックまたはタップすると、[powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) が開くので、そこで接続の作成と管理を行うことができます。
+> 代わりに Power Apps Studio を使用する場合は、 **[ファイル]** メニューを開き、 **[接続]** をクリックまたはタップすると、 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)が開き、そこで接続を作成して管理できるようになります。
 
 ## <a name="create-a-new-connection"></a>新しい接続を作成する
 1. [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にまだログインしていない場合は、ログインします。

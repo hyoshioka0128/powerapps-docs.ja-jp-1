@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリのパフォーマンスを最適化する | Microsoft Docs
-description: このトピックのベスト プラクティスに従い、PowerApps で作成するキャンバス アプリのパフォーマンスを改善します。
+description: このトピックのベストプラクティスに従って、Power Apps で作成したキャンバスアプリのパフォーマンスを向上させます。
 author: yingchin
 manager: kvivek
 ms.service: powerapps
@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9943678815b53df048ad197e3cdcbd56f4070fa3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0bf2502d22adb90993f5f7ebb8e05c72f51215a5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995788"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74675447"
 ---
 # <a name="optimize-canvas-app-performance-in-powerapps"></a>PowerApps でキャンバス アプリのパフォーマンスを最適化する
-Microsoft は PowerApps で実行されるあらゆるアプリのパフォーマンス改善に取り組んでいますが、 このトピックのベスト プラクティスに従うことでも、作成するキャンバス アプリのパフォーマンスを改善できます。
+Microsoft は、Power Apps プラットフォームで実行されるすべてのアプリのパフォーマンスの向上に努めています。 このトピックのベスト プラクティスに従うことでも、作成するキャンバス アプリのパフォーマンスを改善できます。
 
 ユーザーがアプリを開くと、次の一連の段階を実行してからユーザー インターフェイスが表示されます。 
-1. **ユーザーを認証する** - ユーザーが以前にアプリを開いたことがない場合、アプリに必要な接続の資格情報でサインインするようにユーザーに求めます。 同じユーザーが再びアプリを開くとき、組織のセキュリティに関する方針によっては、資格情報の入力が再び求められることがあります。 
-2. **メタデータを取得する** - アプリを実行している PowerApps プラットフォームのバージョンやデータの取得元など、メタデータを取得します。 
+1. **ユーザーを認証する** - ユーザーが以前にアプリを開いたことが名井場合、アプリに必要な接続の資格情報でサインインするようにユーザーに求めます。 同じユーザーが再びアプリを開くとき、組織のセキュリティに関する方針によっては、資格情報の入力が再び求められることがあります。 
+2. **メタデータを取得**します。アプリが実行されている Power Apps プラットフォームのバージョンや、データを取得する必要があるソースなどのメタデータを取得します。 
 3. **アプリを初期化する** - **OnStart** プロパティに指定されているタスクを実行します。 
 4. **画面をレンダリングする** - アプリによってデータが入力されたコントロールで最初の画面をレンダリングします。 ユーザーが他の画面を開くと、アプリによって同じプロセスでその画面がレンダリングされます。  
 
@@ -35,7 +35,7 @@ Microsoft は PowerApps で実行されるあらゆるアプリのパフォー�
 アプリの実行中、[Microsoft Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide/network) または [Google Chrome](https://developers.google.com/web/tools/chrome-devtools/network-performance/) で開発者ツールをオンにすることで、アプリのパフォーマンスを簡単に測定できます。 OneDrive 上の Common Data Service、Azure SQL、SharePoint、Excel など、30を超えるデータソースのデータを頻繁に要求した場合、アプリのデータを返すのに15秒以上かかる可能性が高くなります。  
 
 ## <a name="limit-the-number-of-controls"></a>コントロールの数を制限する 
-**500 を超えるコントロールを同じアプリに追加しないでください**。 PowerApps によって、各コントロールをレンダリングするための HTML DOM が生成されます。 コントロールを追加すると、PowerApps に必要な生成時間が増えます。 
+**500 を超えるコントロールを同じアプリに追加しないでください**。 Power Apps では、各コントロールを表示するための HTML DOM が生成されます。 追加する制御が多いほど、電力アプリに必要な生成時間が増加します。 
 
 個別コントロールではなく、ギャラリーを使用することで、同じ結果を得たり、アプリを速く起動したりできることもあります。 また、同じ画面でコントロールの種類を減らす方法も有効な場合があります 一部のコントロール (PDF ビューユー、データ テーブル、コンボ ボックスなど) は大きな実行スクリプトを取り込み、レンダリングに時間がかかります。 
 
@@ -107,7 +107,7 @@ Set(CustomerPhone, CustomerOrder.Phone);
 委任できるデータ ソースと数式を使用してアプリのパフォーマンスを維持し、ユーザーが必要とするあらゆる情報にアクセスできるようにします。委任できないクエリのために、2000 というデータ行上限に到達しないようにします。 ユーザーがデータを検索、フィルター処理、並べ替えできるデータレコード列については、[SQL Server](https://docs.microsoft.com/sql/relational-databases/sql-server-index-design-guide?view=sql-server-2017) と [SharePoint](https://support.office.com/article/Add-an-index-to-a-SharePoint-column-f3f00554-b7dc-44d1-a2ed-d477eac463b0) に関するドキュメントで説明されているように、列のインデックスが効率的に設計されています。  
 
 ## <a name="republish-apps-regularly"></a>アプリを定期的に再発行する
-PowerApps プラットフォームからパフォーマンス改善と追加機能を得るには、アプリを再発行します ([こちらのブログ投稿](https://powerapps.microsoft.com/blog/republish-your-apps-to-get-performance-improvements-and-additional-features/)をご覧ください)。
+[アプリを再発行](https://powerapps.microsoft.com/blog/republish-your-apps-to-get-performance-improvements-and-additional-features/)し (ブログの投稿)、パフォーマンスの向上と追加機能を Power apps プラットフォームから取得します。
 
 ## <a name="avoid-repeating-the-same-formula-in-multiple-places"></a>複数の場所で同じ数式を繰り返さないようにする
 複数のプロパティが同じ数式を実行する場合 (特に複雑な場合) は、1回設定してから、それ以降のプロパティの最初のプロパティの出力を参照することを検討してください。 たとえば、コントロール A、B、C、D、E の**DisplayMode**プロパティを同じ複合式に設定しないでください。 代わりに、の**displaymode**プロパティを複雑な数式に設定し、B の**displaymode**プロパティをの**displaymode**プロパティの結果に設定します。 C、D、E の場合は同様です。

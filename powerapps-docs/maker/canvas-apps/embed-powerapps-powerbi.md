@@ -13,22 +13,22 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d82db4deaa123e460bce043bff10cc30ea409f15
-ms.sourcegitcommit: 4042388fa5e7ef50bc59f9e35df330613fea29ae
+ms.openlocfilehash: 94eb220bbe386b47e2fbb678f9487fcef8612415
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61560307"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679479"
 ---
 # <a name="embed-a-new-canvas-app-in-a-power-bi-report"></a>Power BI レポートに新しいキャンバス アプリを埋め込む
 
-Power BI を使用すると、*カスタム ビジュアル*をレポートに追加して機能を拡張できます。 このチュートリアルでは、PowerApps のカスタム ビジュアルを使用して、サンプル レポートに埋め込まれたキャンバス アプリを作成します。 このアプリは、そのレポート内の他の項目と対話します。
+Power BI を使用すると、*カスタム ビジュアル*をレポートに追加して機能を拡張できます。 このチュートリアルでは、Power Apps カスタムビジュアルを使用して、サンプルレポートに埋め込まれているキャンバスアプリを作成します。 このアプリは、そのレポート内の他の項目と対話します。
 
-PowerApps サブスクリプションをお持ちでない場合は、開始する前に[無料アカウントを作成](../signup-for-powerapps.md)してください。
+Power Apps サブスクリプションをお持ちでない場合は、開始する前に[無料アカウントを作成](../signup-for-powerapps.md)してください。
 
 このチュートリアルで学習する内容は次のとおりです。
 > [!div class="checklist"]
-> * PowerApp のカスタム ビジュアルを Power BI レポートにインポートする
+> * Power Apps カスタムビジュアルを Power BI レポートにインポートする
 > * レポートのデータを使用する新しいアプリを作成する
 > * レポートでアプリを確認する
 
@@ -38,46 +38,46 @@ PowerApps サブスクリプションをお持ちでない場合は、開始す�
 * [営業案件の分析のサンプル](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample)がインストールされた [Power BI サブスクリプション](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)
 * [PowerApps でアプリを作成する方法](data-platform-create-app-scratch.md)と [Power BI レポートを編集する方法](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)を理解している
 
-## <a name="import-the-powerapps-custom-visual"></a>PowerShell のカスタム ビジュアルをインポートする
+## <a name="import-the-power-apps-custom-visual"></a>Power Apps カスタムビジュアルをインポートする
 
-まず、PowerApp のカスタム ビジュアルをインポートして、サンプル レポートで使用できるようにします。
+最初の手順として、Power Apps カスタムビジュアルをインポートして、サンプルレポートで使用できるようにします。
 
-1. 営業案件の分析のサンプル レポートで、**[Upcoming Opportunities]\(今後の案件\)** タブをクリックまたはタップします。
+1. 営業案件の分析のサンプル レポートで、 **[Upcoming Opportunities]\(今後の案件\)** タブをクリックまたはタップします。
 
 2. レポートの上部にある **[レポートの編集]** をクリックまたはタップします。
 
-3. **[視覚化]** ウィンドウで、省略記号ボタン (**[...]**)、**[Marketplace からインポートする]** の順にクリックまたはタップします。 
+3. **[視覚化]** ウィンドウで、省略記号ボタン ( **[...]** )、 **[Marketplace からインポートする]** の順にクリックまたはタップします。 
 
     ![Marketplace からインポートする](media/embed-powerapps-powerbi/import-visual.png)
 
-4. **[Power BI ビジュアル]** 画面で「PowerApps」を検索し、**[追加]** をクリックまたはタップします。 Power BI の **[視覚化]** ウィンドウの下部にカスタム ビジュアル アイコンが追加されます。
+4. **[Power BI ビジュアル]** 画面で「PowerApps」を検索し、 **[追加]** をクリックまたはタップします。 Power BI の **[視覚化]** ウィンドウの下部にカスタム ビジュアル アイコンが追加されます。
 
-    ![PowerApps のビジュアル アイコン](media/embed-powerapps-powerbi/powerapps-icon.png)
+    ![Power Apps のビジュアルアイコン](media/embed-powerapps-powerbi/powerapps-icon.png)
 
 5. レポートを保存します。
 
 ## <a name="create-a-new-app"></a>新しいアプリの作成
-これでカスタム ビジュアルがレポートに追加され、レポートのデータに基づいて新しいアプリが作成されます。 このアプリを作成すると、PowerApps と Power BI 間のライブ データ接続を使用して PowerApps Studio が起動されます。
+これでカスタム ビジュアルがレポートに追加され、レポートのデータに基づいて新しいアプリが作成されます。 アプリを作成すると、電源アプリと Power BI の間のライブデータ接続を使用して、Power Apps Studio が起動します。
 
 1. アプリのスペースを確保するためにレポート タイルの一部を移動してサイズを変更します。
 
     ![レポート タイルの移動とサイズ変更](media/embed-powerapps-powerbi/move-resize.png)
 
-2. PowerApps のカスタム ビジュアル アイコンをクリックまたはタップし、作ったスペースに合わせてタイルのサイズを変更します。
+2. [Power Apps] カスタムビジュアルアイコンをクリックまたはタップし、作成した領域に合わせてタイルのサイズを変更します。
 
-3. **[フィールド]** ウィンドウで、**[名前]**、**[製品コード]**、**[営業段階]** を選択します。 
+3. **[フィールド]** ウィンドウで、 **[名前]** 、 **[製品コード]** 、 **[営業段階]** を選択します。 
 
     ![フィールドの選択](media/embed-powerapps-powerbi/select-fields.png)
 
-4. カスタム ビジュアル タイルで、アプリを作成する PowerApp 環境を選択し、**[新規作成]** をクリックまたはタップします。
+4. カスタムビジュアル タイルで、アプリを作成する Power Apps 環境を選択し、**新規作成** をクリックまたはタップします。
 
     ![新しいアプリの作成](media/embed-powerapps-powerbi/create-new-app.png)
 
-    PowerApps Studio には、作成された基本的なアプリが表示されます。また、*ギャラリー*には Power BI で選択したフィールドの 1 つが表示されます。
+    Power Apps Studio では、基本的なアプリが作成され、Power BI で選択したフィールドの1つが*ギャラリー*に表示されます。
 
 5.  画面の半分のみを占めるようにギャラリーのサイズを変更します。 
 
-6. 左側のウィンドウで、**[Screen1]** をクリックまたはタップし、画面の **[塗りつぶし]** プロパティを (レポートで目立つように) [ライトブルー] に設定します。
+6. 左側のウィンドウで、 **[Screen1]** をクリックまたはタップし、画面の **[塗りつぶし]** プロパティを (レポートで目立つように) [ライトブルー] に設定します。
 
     ![ギャラリーのサイズを変更したアプリ](media/embed-powerapps-powerbi/app-gallery.png)
 
@@ -105,11 +105,11 @@ Power BI レポートのスライサーで **[1 月]** を選択します。こ�
 ## <a name="next-steps"></a>次の手順
 このチュートリアルでは、次の内容を学習しました。
 > [!div class="checklist"]
-> * PowerApp のカスタム ビジュアルを Power BI レポートにインポートする
+> * Power Apps カスタムビジュアルを Power BI レポートにインポートする
 > * レポートのデータを使用する新しいアプリを作成する
 > * レポートでアプリを確認する
 
 さらに学習するには、次の記事に進んでください
 > [!div class="nextstepaction"]
-> [Power BI 用の PowerShell カスタム ビジュアル](powerapps-custom-visual.md)
+> [Power BI 用の Power Apps カスタムビジュアル](powerapps-custom-visual.md)
 

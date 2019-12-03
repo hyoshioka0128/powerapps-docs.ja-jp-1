@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2fdf5577f907e2beb7ead5eef3c4d7b06aeaa9c5
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: a3996603e9d5de0f3844be0a3d6b4fb8e1c62d7b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74177860"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74674940"
 ---
 # <a name="share-a-canvas-app-in-powerapps"></a>PowerApps でのキャンバス アプリの共有
 
@@ -31,13 +31,13 @@ ms.locfileid: "74177860"
 
 アプリを共有するには、そのアプリを (ローカルではなく) クラウドに保存して、アプリを発行する必要があります。
 
-- ユーザーがアプリで行う内容を理解し、リストで簡単に見つけられるように、アプリにわかりやすい名前と明確な説明を追加します。 PowerApps Studio の **[ファイル]** メニューで、 **[アプリの設定]** を選択し、説明を入力するか貼り付けます。
+- ユーザーがアプリで行う内容を理解し、リストで簡単に見つけられるように、アプリにわかりやすい名前と明確な説明を追加します。 Power Apps Studio の **[ファイル]** メニューで、 **[アプリの設定]** を選択し、名前を指定して、説明を入力するか貼り付けます。
 
 - 変更を加えるたびに、他のユーザーがそれらの変更を表示する必要がある場合は、再度アプリを保存および発行する必要があります。
 
 ## <a name="share-an-app"></a>アプリを共有する
 
-1. PowerApps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、左端近くにある **[アプリ]** を選びます。
+1. Power Apps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、左端近くにある **[アプリ]** を選択します。
 
     ![アプリの一覧を表示する](./media/share-app/file-apps.png)
 
@@ -52,7 +52,7 @@ ms.locfileid: "74177860"
 1. アプリを共有する Azure Active Directory のユーザーまたはセキュリティグループの名前またはエイリアスを指定します。
 
     - 組織全体でアプリを実行できるようにする (ただし、変更または共有することはできません) には、[共有] パネルで「 **Everyone** 」と入力します。
-    - 項目がセミコロンで区切られている場合は、エイリアス、フレンドリ名、またはそれらの組み合わせの一覧を使用して、アプリを共有できます (たとえば、 **Jane Doe &lt;jane.doe@contoso.com>** )。 複数の人が同じ名前でエイリアスが異なる場合は、最初に見つかった人がリストに追加されます。 名前またはエイリアスに既にアクセス許可がある場合、または解決できない場合は、ツールヒントが表示されます。 
+    - 項目がセミコロンで区切られている場合は、エイリアスの一覧、フレンドリ名、またはそれらの組み合わせ (たとえば、 **Jane Doe &lt;jane.doe@contoso.com** ) を使用して、アプリを共有できます。 複数の人が同じ名前でエイリアスが異なる場合は、最初に見つかった人がリストに追加されます。 名前またはエイリアスに既にアクセス許可がある場合、または解決できない場合は、ツールヒントが表示されます。 
 
     ![ユーザーと共同所有者を指定する](./media/share-app/share-everyone.png)
 
@@ -79,14 +79,14 @@ ms.locfileid: "74177860"
 
 1. 共有 パネルの下部にある **共有** を選択します。
 
-    アプリを共有したすべてのユーザーは、モバイルデバイスの PowerApps Mobile またはブラウザーで[Dynamics 365](https://home.dynamics.com)の appsource で実行できます。 共同所有者は、 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)でアプリを編集および共有できます。
+    アプリを共有したすべてのユーザーは、モバイルデバイスの Power Apps Mobile で、またはブラウザーで[Dynamics 365](https://home.dynamics.com)の appsource で実行できます。 共同所有者は、 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)でアプリを編集および共有できます。
 
     電子メールの招待状を送信した場合、アプリを共有した相手は全員、招待内のリンクを選択することで実行できます。
 
-    - ユーザーがモバイルデバイスでリンクを選択すると、PowerApps Mobile でアプリが開きます。
+    - ユーザーがモバイルデバイスでリンクを選択すると、アプリが Power Apps Mobile で開きます。
     - ユーザーがデスクトップコンピューターでリンクを選択すると、ブラウザーでアプリが開きます。
 
-    招待状を受け取った共同所有者は、PowerApps Studio で編集するためにアプリを開く別のリンクを取得します。
+    招待状を受け取った共同所有者は、Power Apps Studio で編集するためにアプリを開く別のリンクを取得します。
 
 ユーザーまたはセキュリティグループのアクセス許可を変更するには、その名前を選択して、次のいずれかの手順を実行します。
 
@@ -126,7 +126,7 @@ Common Data Service に基づいてアプリを作成する場合は、アプリ
 
 ## <a name="share-with-guests"></a>ゲストと共有する
  
-PowerApps キャンバスアプリは、Azure Active Directory テナントのゲストユーザーと共有できます。 これにより、外部のビジネスパートナー、請負業者、およびサードパーティが会社のキャンバスアプリを実行するための招待を行うことができます。 
+Power Apps キャンバスアプリは、Azure Active Directory テナントのゲストユーザーと共有できます。 これにより、外部のビジネスパートナー、請負業者、およびサードパーティが会社のキャンバスアプリを実行するための招待を行うことができます。 
 
 > [!NOTE]
 > ゲストに割り当てることができるのは**共同所有者**ロールではなく、**ユーザー**ロールだけです。
@@ -164,16 +164,16 @@ PowerApps キャンバスアプリは、Azure Active Directory テナントの�
 
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-#### <a name="whats-the-difference-between-canvas-app-guest-access-and-powerapps-portals"></a>キャンバスアプリのゲストアクセスと PowerApps ポータルの違いは何ですか。 
+#### <a name="whats-the-difference-between-canvas-app-guest-access-and-power-apps-portals"></a>キャンバスアプリのゲストアクセスと Power Apps ポータルの違いは何ですか。 
 キャンバスアプリを使用すると、などの従来のプログラミング言語でコードを記述しなくても、ビジネスプロセスC#をデジタル化することに合わせてアプリを構築できます。 キャンバスアプリのゲストアクセスを使用すると、共通のビジネスプロセスに参加しているさまざまな組織で構成されている個人チームが、さまざまな Microsoft やサードパーティのソースと統合されている同じアプリリソースにアクセスできます。 詳細につい[ては、「PowerApps のキャンバスアプリコネクタの概要」](/powerapps/maker/canvas-apps/connections-list)を参照してください。
 
-[PowerApps ポータル](/powerapps/maker/portals/overview) は、外部ユーザーが Common Data Service に格納されているデータを操作できるようにする、低レベルの応答性の高い web サイトを構築する機能を提供します。 組織は、匿名で、または LinkedIn、Microsoft アカウント、またはその他の商用ログインプロバイダーなど、選択したログインプロバイダーを使用して、組織の外部のユーザーと共有できる web サイトを作成できます。 
+[Power Apps ポータル](/powerapps/maker/portals/overview) は、外部ユーザーが Common Data Service に格納されているデータを操作できるようにする、低コードで応答性の高い web サイトを構築する機能を提供します。 組織は、匿名で、または LinkedIn、Microsoft アカウント、またはその他の商用ログインプロバイダーなど、選択したログインプロバイダーを使用して、組織の外部のユーザーと共有できる web サイトを作成できます。 
 
-次の表は、PowerApps ポータルとキャンバスアプリのいくつかの主要な機能の違いをまとめたものです。  
+次の表は、Power Apps ポータルとキャンバスアプリのいくつかの主要な機能の違いをまとめたものです。  
 
 | | インターフェイス | 認証 | アクセス可能なデータソース |
 |------|--------|----------|-------------------|
-| PowerApps ポータル | ブラウザーのみのエクスペリエンス | 匿名アクセスと認証されたアクセスを許可する | Common Data Service |
+| Power Apps ポータル | ブラウザーのみのエクスペリエンス | 匿名アクセスと認証されたアクセスを許可する | Common Data Service |
 | キャンバス アプリ | ブラウザーとモバイルアプリ | Azure AD による認証が必要 | ~ 150 の既定のコネクタと任意のカスタムコネクタ  |
 ||
 
@@ -181,12 +181,12 @@ PowerApps キャンバスアプリは、Azure Active Directory テナントの�
 はい。 カスタマイズされたフォームを使用して SharePoint リストにアクセスできるすべてのユーザーは、フォームを使用して、Power Apps ライセンスなしでリスト内の項目を作成および編集できます。
 
 #### <a name="can-guests-access-apps-embedded-in-sharepoint"></a>ゲストは SharePoint に埋め込まれたアプリにアクセスできますか。 
-はい。 ただし、キャンバススタンドアロンアプリにアクセスするには、埋め込みのアプリを含め、アプリの機能に適した Power Apps の使用権を持つライセンスが必要です。 Microsoft PowerApps 埋め込みコントロールを使用して SharePoint にキャンバスアプリを埋め込む場合は、アプリ id を入力します。これを行うには、 **[アプリの web リンクまたは id]** ボックスにアプリ ID を入力します。 
+はい。 ただし、キャンバススタンドアロンアプリにアクセスするには、埋め込みのアプリを含め、アプリの機能に適した Power Apps の使用権を持つライセンスが必要です。 Microsoft Power Apps の埋め込みコントロールを使用して SharePoint にキャンバスアプリを埋め込む場合は、アプリ id を入力します。これを行うには、 **[アプリの web リンクまたは id]** ボックスにアプリ ID を入力します。 
 
 > [!div class="mx-imgBorder"]  
 > ![ゲストの SharePoint にキャンバスアプリを埋め込む](media/share-app/guest_access_doc_5.PNG "ゲストの SharePoint にキャンバスアプリを埋め込む")
 
-IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋め込む場合は、完全な web URL を使用してアプリを参照します。 URL を検索するには、[https://make.powerapps.com] にアクセスしてアプリを選択し、 **[詳細]** タブを選択します。 **[Web リンク]** の下に url が表示されます。
+IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋め込む場合は、完全な web URL を使用してアプリを参照します。 URL を検索するには、[https://make.powerapps.com ] にアクセスしてアプリを選択し、 **[詳細]** タブを選択します。 **[Web リンク]** の下に url が表示されます。
 
 > [!div class="mx-imgBorder"]  
 > ![キャンバスアプリの詳細](media/share-app/guest_access_doc_6.PNG "キャンバスアプリの詳細")
@@ -195,7 +195,7 @@ IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋�
 ゲスト以外の場合と同様に、アプリによってアクセスされる基になるデータソースもゲストにアクセスできるようにする必要があります。
 
 #### <a name="what-license-must-be-assigned-to-my-guest-so-they-can-run-an-app-shared-with-them"></a>ゲストに割り当てられているアプリを実行できるようにするには、どのライセンスを割り当てる必要がありますか。
-ゲスト以外がアプリを実行するために必要なものと同じライセンス。 たとえば、アプリでプレミアム接続が使用されている場合、アプリプランごとの PowerApps またはユーザープランごとの PowerApps がゲストに割り当てられている必要があります。  
+ゲスト以外がアプリを実行するために必要なものと同じライセンス。 たとえば、アプリで premium 接続を使用している場合は、アプリプランごとのパワーアプリまたはユーザープランごとのパワーアプリをゲストに割り当てる必要があります。  
 
 |                                 | SharePoint カスタマイズフォーム | Premium 以外のコネクタを使用するスタンドアロンキャンバスアプリ | Premium コネクタを使用したスタンドアロンのキャンバスアプリ | モデル駆動型アプリ |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
@@ -205,8 +205,8 @@ IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋�
 | ユーザーあたりの電力アプリプラン         | x                          | x                                                  | x                                              | x                |
 
 
-#### <a name="in-powerapps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>PowerApps Mobile では、ゲストがホームテナントのアプリを表示するにはどうすればよいですか。
-自分のモバイルデバイス上にあるキャンバスアプリにアクセスしたユーザーは、そのホームテナントではない Azure AD テナントで公開されているすべてのユーザーが PowerApps からサインアウトし、PowerApps Mobile に再度サインインする必要があります。  
+#### <a name="in-power-apps-mobile-how-does-a-guest-see-apps-for-their-home-tenant"></a>Power Apps モバイルでは、ゲストがホームテナントのアプリを表示するにはどうすればよいですか。
+自分のモバイルデバイス上にあるキャンバスアプリにアクセスしたユーザーは、そのホームテナントではない Azure AD テナントに公開されているすべてのユーザーが、Power Apps からサインアウトして、Power Apps Mobile に再度サインインする必要があります。  
 
 #### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>ゲストとアプリを共有する前に、ゲストが Azure AD ゲストの招待を受け入れる必要がありますか。
 いいえ。 ゲスト招待を受け入れる前にゲストが共有アプリを起動すると、ゲストは、アプリの起動時にサインインエクスペリエンスの一部として招待に同意するように求められます。  
@@ -217,8 +217,8 @@ IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋�
 #### <a name="can-guests-use-microsoft-graph-via-microsoft-security-graph-connector-or-a-custom-connector-using-microsoft-graph-apis"></a>ゲストは、Microsoft Graph Api を使用して Microsoft セキュリティグラフコネクタまたはカスタムコネクタ経由で Microsoft Graph を使用できますか。
 いいえ、ゲストがゲストであるテナントの情報を取得するために Microsoft Graph クエリを実行することはできません Azure AD。
 
-#### <a name="what-intune-policies-apply-to-guests-using-my-powerapps"></a>PowerApps を使用しているゲストにはどのような InTune ポリシーが適用されますか。
-InTune では、ユーザーのホームテナントのポリシーのみが適用されます。 たとえば、Alice@Contoso.com が Vikram@Fabrikam.comとアプリを共有している場合、InTune は、実行している PowerApps に関係なく、Fabrikam.com ポリシーを仮想デバイスに適用し続けます。
+#### <a name="what-intune-policies-apply-to-guests-using-my-power-apps"></a>Power Apps を使用しているゲストにはどのような InTune ポリシーが適用されますか。
+InTune では、ユーザーのホームテナントのポリシーのみが適用されます。 たとえば、Alice@Contoso.com が Vikram@Fabrikam.comとアプリを共有している場合、InTune は、実行されているパワーアプリに関係なく、Fabrikam.com ポリシーを仮想デバイスに適用し続けます。
 
 #### <a name="what-connectors-support-guest-access"></a>ゲストアクセスをサポートするコネクタ
 任意の種類の Azure AD 認証を実行しないすべてのコネクタは、ゲストアクセスをサポートします。 次の表に、Azure AD 認証を実行するすべてのコネクタと、現在ゲストアクセスをサポートしているコネクタを列挙します。 これらの多くは、一般公開される前に更新される予定です。

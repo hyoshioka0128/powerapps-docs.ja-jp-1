@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9b84a8ce89863d94b9f3e4ac390c88e194a2894
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7adf3391ef418a2b42861df63bc8396adc22f93a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540190"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74679456"
 ---
 # <a name="choices-function-in-powerapps"></a>PowerApps の Choices 関数
 ルックアップ列で使用可能な値のテーブルを返します。
@@ -53,7 +53,7 @@ ms.locfileid: "73540190"
 
     **Accounts** などの多数のエンティティが作成されます。
 
-    **注**: エンティティ名は、PowerApps Studio の make.powerapps.com と複数形で単数形になっています。
+    **注**: エンティティ名は、Power Apps Studio の make.powerapps.com と複数形で単数形になっています。
 
     ![Common Data Service for Apps の Account エンティティのフィールドの一部を一覧表示します。 "主要連絡先" はルックアップフィールドです。](media/function-choices/entity-account.png)
 

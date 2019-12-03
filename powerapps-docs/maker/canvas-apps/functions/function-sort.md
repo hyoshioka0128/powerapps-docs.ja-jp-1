@@ -13,24 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: aa51c97eff57b9659e5fd246af8016898eeeb9df
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b641ce213381dec59a20449cd17cc7919eea0fd4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992236"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678273"
 ---
 # <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps の Sort および SortByColumns 関数
 [テーブル](../working-with-tables.md)を並べ替えます。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Sort** 関数は、数式に基づいてテーブルを並べ替えます。  
 
 数式は、それぞれのテーブルの[レコード](../working-with-tables.md#records)に対して評価され、結果はテーブルの並べ替えに使用されます。  数式の結果は、数値、文字列、またはブール値になる必要があります。結果がテーブルまたはレコードになることはできません。
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-まず 1 つの列で並べ替えてから、別の列で並べ替えるには、**Sort** 式を別の Sort 式に埋め込みます。 たとえば、次の数式を使用すると、最初に**LastName**列、次に**FirstName**列で**連絡先**テーブルを並べ替えることができます。**Sort (Sort (Contacts, LastName), FirstName)**
+まず 1 つの列で並べ替えてから、別の列で並べ替えるには、**Sort** 式を別の Sort 式に埋め込みます。 たとえば、次の数式を使用して最初に **Contacts** テーブルを **LastName** 列で並べ替えてから、**FirstName** 列で並べ替えることができます: **Sort( Sort( Contacts, LastName ), FirstName )**
 
 **SortByColumns** 関数は、1 つまたは複数の列に基づいてテーブルを並べ替える場合にも使用できます。
 
@@ -40,7 +40,7 @@ ms.locfileid: "71992236"
 
 **SortByColumns** では、昇順または降順で並べ替えるだけでなく、値を含んだ単一列テーブルに基づいて並べ替えることができます。  たとえば、 **["Monday","Tuesday"、"Wednesday"、"Thursday"、"Friday"、"Saturday"、"Sunday"]** を並べ替え順序として指定すると、曜日の名前に基づいてレコードを並べ替えることができます。  **Monday"** が含まれるレコードが先頭に表示され、続いて **Tuesday** の順序で表示されます。  並べ替えテーブルに表示されないレコードは、リストの末尾に表示されます。
 
-文字列または数値と同じように、[テーブル](../working-with-tables.md)は PowerApps 内の値です。  関数に渡して、関数から返すことができます。  **Sort** と **SortByColumn** はテーブルを変更しません。代わりに、テーブルを引数として受け取り、並べ替えた新しいテーブルを返します。  詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。
+[テーブル](../working-with-tables.md)は、文字列や数値と同じように、Power Apps の値です。  関数に渡して、関数から返すことができます。  **Sort** と **SortByColumn** はテーブルを変更しません。代わりに、テーブルを引数として受け取り、並べ替えた新しいテーブルを返します。  詳細については、[テーブルの使用](../working-with-tables.md)に関するページを参照してください。
 
 [!INCLUDE [delegation](../../../includes/delegation.md)]
 
@@ -74,7 +74,7 @@ ms.locfileid: "71992236"
 
 ![](media/function-sort/icecream.png)
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Sort( IceCream, Flavor )**<br><br>**SortByColumns( IceCream, "Flavor" )** |**IceCream** を **Flavor** 列で並べ替えます。 **Flavor** 列に文字列が含まれているため、テーブルはアルファベット順に並べ替えられます。 既定では、並べ替え順序は昇順です。 |<style> img { max-width: none; } </style> ![](media/function-sort/icecream-flavor.png) |
 | **Sort( IceCream, Quantity )**<br><br>**SortByColumns( IceCream, "Flavor" )** |**IceCream** を **Quantity** 列で並べ替えます。  **Quantity** 列に数値が含まれているため、テーブルは数値の順で並べ替えられます。  既定では、並べ替え順序は昇順です。 |![](media/function-sort/icecream-quantity-asc.png) |
@@ -86,7 +86,7 @@ ms.locfileid: "71992236"
 ### <a name="step-by-step"></a>ステップ バイ ステップ
 これらの例を実行するには、次のように **IceCream** データ ソースを[コレクション](../working-with-data-sources.md#collections)として作成します。
 
-1. ボタンを追加し、 **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>**ClearCollect (IceCream, {フレーバー:"チョコレート"、Quantity:100、OnOrder:150}、{フレーバー:"バニラ"、Quantity:200、OnOrder:20}、{フレーバー:"Strawberry"、Quantity:300、OnOrder:0}、{フレーバー:"Mint チョコレート", Quantity:60、OnOrder:100}、{フレーバー:"Pistachio"、Quantity:200、OnOrder:10})**
+1. ボタンを追加し、 **[OnSelect](../controls/properties-core.md)** プロパティを次の数式に設定します。<br>**ClearCollect( IceCream, { Flavor: "Chocolate", Quantity: 100, OnOrder: 150 }, { Flavor:  "Vanilla", Quantity: 200, OnOrder: 20 }, { Flavor: "Strawberry", Quantity: 300, OnOrder: 0 }, { Flavor: "Mint Chocolate", Quantity: 60, OnOrder: 100 }, { Flavor: "Pistachio", Quantity: 200, OnOrder: 10 } )**
 2. アプリをプレビューし、ボタンを選択してから、Esc キーを押して既定のワークスペースに戻ります。
 3. **[ファイル]** メニューの **[コレクション]** を選択して、作成したコレクションを表示し、Esc キーを押して既定のワークスペースに戻ります。
 

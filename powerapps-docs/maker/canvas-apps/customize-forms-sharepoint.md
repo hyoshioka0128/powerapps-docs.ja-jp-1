@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリでフォームをカスタマイズする | Microsoft Docs
-description: PowerApps で、キャンバス アプリのフォームに、どのデータを、どのような順番で、どのコントロールに表示するかを指定します。
+description: Power Apps で、キャンバスアプリ形式で表示するデータを指定し、表示する順序とコントロールを指定します。
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ccaa918bc0bd1e4ca666e62094fa137e31d3243f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6732dabea803cd7680ef618e4e8d1c4e88f7afe5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540254"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678628"
 ---
 # <a name="customize-a-canvas-app-form-in-powerapps"></a>PowerApps でキャンバス アプリのフォームをカスタマイズする
 
