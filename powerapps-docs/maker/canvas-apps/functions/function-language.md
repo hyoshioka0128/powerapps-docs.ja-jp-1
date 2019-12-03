@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 307950cf7e0aa67d7bf31daf29b3f8a3bb11d465
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 33dcc3ab5e1682783c997adf4dd1185d59b0db2b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984571"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678329"
 ---
 # <a name="language-function-in-powerapps"></a>PowerApps の Language 関数
 現在のユーザーの言語タグを返します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Language** 関数は、現在のユーザーの言語、スクリプト、地域を言語タグとして返します。
 
 言語情報を使用すると、ロケールに応じてアプリをカスタマイズできます。  たとえば、イタリアとフランスでの使用を予定しているアプリを作成している場合、**Language** を使用することで、これらの異なる場所のユーザーにイタリア語とフランス語の文字列が自動的に表示されるようにできます。 
@@ -31,13 +31,13 @@ ms.locfileid: "71984571"
 ### <a name="language-tags"></a>言語タグ
 "*言語タグ*" の形式は、次の 3 つのいずれかになります。
 
-| 戻り値 | 説明 |
+| 戻り値 | Description |
 | --- | --- |
 | **"*lg&#8209;RE*"** |*lg* は "language" (言語) の 2 文字の省略形であり、*RE* は "region" (地域) の 2 文字の省略形です。  この形式の戻り値が最も一般的です。  たとえば、英国では "en-GB" が返されます。 |
-| **"*lg*"** |*lg* は "language" (言語) の 2 文字の省略形です。  PowerApps では、言語の情報はあっても特定の地域の情報がない場合にこの形式が使用されます。 |
+| **"*lg*"** |*lg* は "language" (言語) の 2 文字の省略形です。  これは、Power Apps に言語に関する情報が含まれていても、特定の地域の情報がない場合に使用される形式です。 |
 | **"*lg&#8209;scrp&#8209;RE*"** |*lg* は "language" (言語) の 2 文字の省略形です。*scrp* は "script" (スクリプト) の 4 文字の省略形であり、*RE* は "region" (地域) の 2 文字の省略形です。 |
 
-PowerApps では [IETF BCP-47 言語タグ](https://tools.ietf.org/html/bcp47)形式が使用されます。  
+Power Apps では、 [IETF BCP-47 言語タグ](https://tools.ietf.org/html/bcp47)形式が使用されます。  
 
 サポートされている言語タグの一覧を確認するには、数式バーまたは詳細ビューに「**Value( "1", )** 」と入力し、2 番目の引数に対して提案されたロケールの一覧をスクロールします。  
 
@@ -50,7 +50,7 @@ PowerApps では [IETF BCP-47 言語タグ](https://tools.ietf.org/html/bcp47)�
 ### <a name="users-locale"></a>ユーザーのロケール
 ホスト オペレーティング システムやブラウザーで、場所に既定のロケールが使用されていると仮定しています。
 
-| 数式 | 場所 | 戻り値 |
+| 数式 | Location | 戻り値 |
 | --- | --- | --- |
 | **Language()** |リスボン、ポルトガル |"pt-PT" |
 | **Language()** |リオデジャネイロ、ブラジル |"pt-BR" |
@@ -72,7 +72,7 @@ PowerApps では [IETF BCP-47 言語タグ](https://tools.ietf.org/html/bcp47)�
     ローカライズが目的のため、注目する必要があるのはロケールの言語だけで、地域は必要ありません。  もし地域を考慮することが重要であれば、言語タグの完全な値を上記のテーブルに入力することもできました。 
 2. **[挿入]** リボンの **[テーブル]** コマンドを使用して、これを適切な Excel テーブルに変更します。  既定ではこのテーブルの名前は **Table1** になりますが、 **[テーブル ツール] リボンの [デザイン]** タブの左端にある **[テーブル名:]** ボックスで、好きな名前に変更できます。
 3. Excel ファイルをローカル ファイル システムに保存します。   
-4. PowerApps の右側のウィンドウで **[データ ソース]** タブをクリックまたはタップし、 **[データソースの追加]** をクリックまたはタップします。
+4. Power Apps の右側のウィンドウで、 **[データソース]** タブをクリックまたはタップし、 **[データソースの追加]** をクリックまたはタップします。
 5. **[静的データをアプリに追加します]** をクリックまたはタップし、保存した Excel ファイルをクリックまたはタップして、 **[開く]** をクリックまたはタップします。
 6. 作成したテーブルを選択して、 **[接続]** をクリックまたはタップします。
 
@@ -87,7 +87,7 @@ PowerApps では [IETF BCP-47 言語タグ](https://tools.ietf.org/html/bcp47)�
 ### <a name="translation-service"></a>翻訳サービス
 Microsoft Translator サービスなどの翻訳サービスを使用して、オンデマンドでテキストを翻訳することができます。  
 
-1. PowerApps の右側のウィンドウで **[データ ソース]** タブをクリックまたはタップし、 **[データソースの追加]** をクリックまたはタップします。
+1. Power Apps の右側のウィンドウで、 **[データソース]** タブをクリックまたはタップし、 **[データソースの追加]** をクリックまたはタップします。
 2. **[Microsoft Translator]** をクリックまたはタップします。
 
 アプリでこれまでテキスト **"Hello"** を使用していた場所に、次の数式を設定します。

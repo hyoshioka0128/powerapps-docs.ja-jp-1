@@ -1,6 +1,6 @@
 ---
 title: Teams にアプリを埋め込む |Microsoft Docs
-description: PowerApps で作成したアプリを Microsoft Teams に埋め込み、共有することができます。
+description: Microsoft Teams で Power Apps に作成したアプリを共有することができます。
 author: matthewbolanos
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e2cce61533bf86063d907882024a5a83c2e03fb7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0b8750733ac6c97d1669c1063700a3d075fbabbe
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73538992"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678490"
 ---
 # <a name="embed-an-app-in-teams"></a>Teams にアプリを埋め込む
 
-作成した PowerApps は、Microsoft Teams に直接埋め込むことによって共有できます。 完了すると、ユーザーは [ **+** ] を選択して、チーム内**のチームチャネル**または会話にアプリを追加できます。 アプリは、**チームのタブ**の下にタイルとして表示されます。
+Microsoft Teams に直接埋め込むことで、作成した Power Apps を共有できます。 完了すると、ユーザーは [ **+** ] を選択して、チーム内**のチームチャネル**または会話にアプリを追加できます。 アプリは、**チームのタブ**の下にタイルとして表示されます。
 
 管理者はアプリをアップロードして、テナント内の**すべて**のチームに対して [**すべてのタブ] セクション**に表示されるようにすることができます。 「 [Microsoft Teams でのアプリの共有」を](https://docs.microsoft.com/power-platform/admin/embed-app-teams)参照してください。
 
@@ -31,7 +31,7 @@ ms.locfileid: "73538992"
 
 ## <a name="prerequisites"></a>前提条件
 
-- 有効な[PowerApps ライセンス](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)が必要です。
+- 有効な[Power Apps ライセンス](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)が必要です。
 - アプリをチームに埋め込むには、 [PowerApps を使用して作成され](data-platform-create-app.md)た既存のアプリが必要です。
 
 ## <a name="download-the-app"></a>アプリをダウンロードする
@@ -44,7 +44,7 @@ ms.locfileid: "73538992"
 
     ![アプリの詳細](./media/embed-teams-app/add-to-teams.png "チームに追加")
 
-3. チームに追加 パネルで、**ダウンロード** を選択します。 PowerApps は、アプリに既に設定されているアプリの説明とロゴを使用して、Teams マニフェストファイルを生成します。
+3. チームに追加 パネルで、**ダウンロード** を選択します。 その後、アプリで既に設定したアプリの説明とロゴを使用して、Teams マニフェストファイルが生成されます。
 
     ![アプリの詳細](./media/embed-teams-app/download-app.png "アプリのダウンロード")
 

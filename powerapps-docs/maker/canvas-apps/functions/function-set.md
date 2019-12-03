@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4c84fcac442d55cd20112f49c48f544d3f5b92b3
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 72adafedfe09a125fda2a48d5617b2cd8c79242a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992201"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678191"
 ---
 # <a name="set-function-in-powerapps"></a>PowerApps の Set 関数
 グローバル変数の値を設定します。
@@ -28,12 +28,12 @@ ms.locfileid: "71992201"
 
 グローバル変数はお使いのアプリ全体で、どの画面でも利用できます。 グローバル変数は最も単純な種類の変数であり、たいていの状況でニーズを満たせます。 単一の画面でのみスコープをもつコンテキスト変数や行レベルでテーブルを変更できるコレクションもあります。 これらの他のオプションの詳細については、「[変数](../working-with-variables.md)について」を参照してください。
 
-PowerApps では基本的に、ユーザーがアプリを操作すると、数式が自動的に再計算されます。 変数に依存する数式は、変更されると自動的に更新されます。 ただし、 **Set**関数で使用される数式の値が変更された場合、変数は自動的に更新されません。 これには、アプリの作成者が手動で変数を更新する必要があります。変数は、他のユーザーにとってはエラーが発生しやすく、難しくなる可能性があります。 変数を使用する前に、「[変数につい](../working-with-variables.md)て」を参照してください。
+Power Apps は、ユーザーがアプリと対話するときに自動的に再計算される数式に基づいています。 変数に依存する数式は、変更されると自動的に更新されます。 ただし、 **Set**関数で使用される数式の値が変更された場合、変数は自動的に更新されません。 これには、アプリの作成者が手動で変数を更新する必要があります。変数は、他のユーザーにとってはエラーが発生しやすく、難しくなる可能性があります。 変数を使用する前に、「[変数につい](../working-with-variables.md)て」を参照してください。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 グローバル変数は **Set** 関数を使用して暗黙的に作成されます。 明示的な宣言は必要ありません。 グローバル変数のすべての**Set**関数を削除すると、そのグローバル変数は存在しなくなります。 変数をクリアするには、その値を[**空**の関数](function-isblank-isempty.md)の結果に設定します。
 
-変数の値、定義、およびの使用は、PowerApps Studio の **ファイル** メニューの 変数 ビューで確認できます。
+変数の値、定義、および使用は、Power Apps Studio の **ファイル** メニューの 変数 ビューで確認できます。
 
 具体例はこのトピックで後ほど紹介しますが、グローバル変数には以下をはじめとするさまざまな情報を格納できます。
 
@@ -57,7 +57,7 @@ PowerApps では基本的に、ユーザーがアプリを操作すると、数�
 
 ## <a name="examples"></a>例
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Set(&nbsp;Counter,&nbsp;1&nbsp;)** |グローバル変数 **Counter** を作成または変更し、その値を **1** に設定します。 |**Counter** に値 **1** が設定されます。 この変数は、数式に **Counter** という名前を使用することで、どの画面からでも参照できます。 |
 | **Set(&nbsp;Counter,&nbsp;2&nbsp;)** |前の例のグローバル変数 **Counter** の値を **2** に設定します。 |**Counter** に値 **2** が設定されます。 |

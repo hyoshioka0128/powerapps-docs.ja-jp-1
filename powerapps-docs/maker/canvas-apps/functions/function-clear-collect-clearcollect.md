@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 351fede5be1e0f3db74bde065dd9663672afd08a
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 02a69fd7844de8965607cd828c6b3e17437ce34f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71992910"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74678398"
 ---
 # <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>PowerApps の Collect、Clear、および ClearCollect 関数
 
@@ -38,7 +38,7 @@ ms.locfileid: "71992910"
 
 データ ソースがまだ存在しない場合は、コレクションが作成されます。
 
-コレクションは、グローバル変数を保持するためや、データ ソースの一時的なコピーを作成するために、使用されることがあります。 PowerApps では基本的に、ユーザーがアプリを操作すると、数式が自動的に再計算されます。 コレクションでは再計算されません。そのため、コレクションを使うと、アプリの作成が難しく、わかりにくくなる場合があります。 この方法でコレクションを使用する場合は、先に[変数の使用方法](../working-with-variables.md)を確認してください。
+コレクションは、グローバル変数を保持するためや、データ ソースの一時的なコピーを作成するために、使用されることがあります。 Power Apps は、ユーザーがアプリと対話するときに自動的に再計算される数式に基づいています。 コレクションでは再計算されません。そのため、コレクションを使うと、アプリの作成が難しく、わかりにくくなる場合があります。 この方法でコレクションを使用する場合は、先に[変数の使用方法](../working-with-variables.md)を確認してください。
 
 また、 **[Patch](function-patch.md)** 関数を使用して、データ ソースのレコードを作成することもできます。
 
@@ -98,7 +98,7 @@ ms.locfileid: "71992910"
 
 | 数式 | Description | 結果 |
 | --- | --- | --- |
-| **ClearCollect (IceCream、{&nbsp;Flavor: &nbsp; "チョコレート"、&nbsp;Quantity: &nbsp;100 &nbsp;}、{&nbsp;Flavor: &nbsp; "バニラ"、&nbsp;Quantity: &nbsp;200 0})** | すべてのデータをクリアし、チョコレートとバニラアイスクリームの数量を含む2つのレコードを**IceCream**コレクションに追加します。  追加するレコードは、関数に個別の引数として提供されます。| コレクション](media/function-clear-collect-clearcollect/icecream.png) に追加されたチョコレートおよびバニラレコード ![ <br><br>**IceCream**コレクションも変更されています。 |
-| **ClearCollect (IceCream、Table ({&nbsp;Flavor: &nbsp; "チョコレート"、&nbsp;Quantity: &nbsp;100 &nbsp;}、{&nbsp;Flavor: &nbsp; "バニラ"、&nbsp;Quantity: &nbsp;200 0}))** | 前の例と同じですが、レコードがテーブルに結合され、1つの引数を通じて渡される点が異なります。 テーブルの内容は、 **IceCream**コレクションに追加される前にレコードによって抽出されます。 | コレクション](media/function-clear-collect-clearcollect/icecream.png) に追加されたチョコレートおよびバニラレコード ![<br><br>**IceCream**コレクションも変更されています。 |
-| **ClearCollect (IceCream、<br> {&nbsp;MyFavorites: Table ({&nbsp;Flavor: &nbsp; "チョコレート"、&nbsp;Quantity: &nbsp;100 &nbsp;}、{&nbsp;Flavor: &nbsp; "バニラ"、0Quantity: 1200 2})})** | 前の例と同じですが、テーブルがレコードにラップされている点が異なります。  テーブルのレコードは抽出されず、テーブル全体がレコードのサブテーブルとして追加されます。 | コレクション](media/function-clear-collect-clearcollect/icecream-myfavorites.png) に追加されたチョコレートおよびバニラレコード ![<br><br>**IceCream**コレクションも変更されています。 |
+| **ClearCollect (IceCream、{&nbsp;フレーバー:&nbsp;"チョコレート"、&nbsp;Quantity:&nbsp;100&nbsp;}、{&nbsp;フレーバー:&nbsp;"バニラ"、&nbsp;Quantity:&nbsp;200&nbsp;})** | すべてのデータをクリアし、チョコレートとバニラアイスクリームの数量を含む2つのレコードを**IceCream**コレクションに追加します。  追加するレコードは、関数に個別の引数として提供されます。| コレクション](media/function-clear-collect-clearcollect/icecream.png) に追加されたチョコレートおよびバニラレコード ![ <br><br>**IceCream**コレクションも変更されています。 |
+| **ClearCollect (IceCream、Table ({&nbsp;フレーバー:&nbsp;"チョコレート"、&nbsp;Quantity:&nbsp;100&nbsp;}、{&nbsp;フレーバー:&nbsp;"バニラ"、&nbsp;Quantity:&nbsp;200&nbsp;}))** | 前の例と同じですが、レコードがテーブルに結合され、1つの引数を通じて渡される点が異なります。 テーブルの内容は、 **IceCream**コレクションに追加される前にレコードによって抽出されます。 | コレクション](media/function-clear-collect-clearcollect/icecream.png) に追加されたチョコレートおよびバニラレコード ![<br><br>**IceCream**コレクションも変更されています。 |
+| **ClearCollect (IceCream、<br>{&nbsp;MyFavorites: Table ({&nbsp;フレーバー:&nbsp;"チョコレート"、&nbsp;Quantity:&nbsp;100&nbsp;}、{&nbsp;フレーバー:&nbsp;"バニラ"、&nbsp;Quantity:&nbsp;200&nbsp;})})** | 前の例と同じですが、テーブルがレコードにラップされている点が異なります。  テーブルのレコードは抽出されず、テーブル全体がレコードのサブテーブルとして追加されます。 | コレクション](media/function-clear-collect-clearcollect/icecream-myfavorites.png) に追加されたチョコレートおよびバニラレコード ![<br><br>**IceCream**コレクションも変更されています。 |
 
