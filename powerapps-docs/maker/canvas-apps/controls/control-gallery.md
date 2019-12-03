@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 05/25/2017
+ms.date: 12/02/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a532af505e579e66d3dfa0dce22a1c3ac6a4a6cc
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 449948efb53fd5fdc3b0f65f5277d50b6a831dc7
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650520"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709376"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>キャンバスアプリのギャラリーコントロール
 
@@ -93,6 +93,11 @@ ms.locfileid: "73650520"
 ## <a name="related-functions"></a>関連する関数
 
 [**Filter**( *DataSource*, *Formula* )](../functions/function-filter-lookup.md)
+
+[ **Reset**(*コントロール*)](../functions/function-reset.md) -ギャラリーをリセットして、初期状態に戻します。 初期状態では、最初の項目へのスクロールと最初の項目の選択が含まれます (存在する場合)。 
+
+  > [!NOTE]
+  > **Reset**コントロールは、ギャラリーのすべての子を再帰的にリセットしません。
 
 ## <a name="examples"></a>例
 

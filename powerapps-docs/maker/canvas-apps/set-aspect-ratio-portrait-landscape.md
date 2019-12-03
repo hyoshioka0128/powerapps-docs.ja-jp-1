@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリの画面のサイズと向きを変更する | Microsoft Docs
-description: PowerApps でキャンバス アプリの画面のサイズと向きなどの設定を変更するための詳しい手順
+description: 画面のサイズや、Power Apps でのキャンバスアプリの向きなど、設定を変更するための詳細な手順
 author: evchaki
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1d3bd48f658e31f795ca3489fa1973c48da94a22
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b6ec2006266a15b7552d1a83b2d7d67c14560470
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995633"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732981"
 ---
-# <a name="change-screen-size-and-orientation-of-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリの画面のサイズと向きを変更する
+# <a name="change-screen-size-and-orientation-of-a-canvas-app-in-power-apps"></a>Power Apps でのキャンバスアプリの画面サイズと向きの変更
 キャンバス アプリは、その画面のサイズと向きを変更することでカスタマイズできます。
 
 ## <a name="prerequisites"></a>前提条件
@@ -47,7 +47,7 @@ ms.locfileid: "71995633"
 
     この設定をオフにすると、アプリは、実行されているデバイスの縦横比に合わせて調整され、使用可能なすべての領域を占有します。 アプリは拡張されず、結果として画面により多くの情報が表示される場合があります。
 
-    この設定をオフにすると、**ロックの縦横比**は自動的にオフになり、無効になります。 また、すべての画面の**Width**プロパティが `Max(App.Width, App.DesignWidth)` に設定され、 **Height**プロパティが `Max(App.Height, App.DesignHeight)` に設定されているので、アプリが実行されているウィンドウの大きさを追跡できます。 この変更により、さまざまなデバイスとウィンドウのサイズに応答するアプリを作成できます。 詳細情報:[応答性の高いレイアウトの作成](create-responsive-layout.md)
+    この設定をオフにすると、**ロックの縦横比**は自動的にオフになり、無効になります。 さらに、すべての画面の**Width**プロパティが `Max(App.Width, App.DesignWidth)`に設定され、その**Height**プロパティは `Max(App.Height, App.DesignHeight)` に設定されているため、アプリが実行されているウィンドウの大きさを追跡できます。 この変更により、さまざまなデバイスとウィンドウのサイズに応答するアプリを作成できます。 詳細情報:[応答性](create-responsive-layout.md)の高いレイアウトの作成
 
 1. **[Lock aspect ratio (縦横比を固定する)]** で、 **[On (オン)]** または **[Off (オフ)]** を指定します。
 

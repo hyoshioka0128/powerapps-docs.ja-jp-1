@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 42ca4a12f75c82bb685396a857e5ae825d8d7fa1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cbf5fdaf3ae6cbba2f89124316ac6d23455a712c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674787"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733052"
 ---
 # <a name="generate-a-canvas-app-to-handle-project-requests"></a>プロジェクト申請を処理するキャンバス アプリを生成する
 > [!NOTE]
@@ -166,7 +166,7 @@ SharePoint リストの用意ができたため、最初のアプリを作成し
 
 4. これで、**SortByColumns** 関数がギャラリーを並べ替えることができます。 ここでは **Title** フィールドを基に並べ替えられていますが、これを検索で使用するのとは別のフィールドにすることもできます。
 
-ここまでお読みいただき、この数式の仕組みや、関数と他の要素を組み合わせて、アプリに必要な動作を制御する方法について理解を深めていただけると幸いです。 詳細については、「[PowerApps の数式のリファレンス](formula-reference.md)」をご覧ください。
+ここまでお読みいただき、この数式の仕組みや、関数と他の要素を組み合わせて、アプリに必要な動作を制御する方法について理解を深めていただけると幸いです。 詳細については、「 [Power Apps の数式リファレンス](formula-reference.md)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 このチュートリアル シリーズの次の手順では、[プロジェクトの承認を管理するフローを作成](sharepoint-scenario-approval-flow.md)します。

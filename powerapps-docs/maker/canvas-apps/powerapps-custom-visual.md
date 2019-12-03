@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/20/2019
+ms.date: 12/02/2019
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ebce627faebf5df32ce27990086fe914d2a3823b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4db4e62bb3813b605b1ff4cdf5c2b83d969a1d3a
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675477"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709760"
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>Power BI 用の Power Apps カスタムビジュアル
 
@@ -28,9 +28,7 @@ Power BI を使用すると、データの洞察が向上し、より的確な�
 
 Power BI レポートで、Power Apps カスタムビジュアルを使用するために必要な手順を見てみましょう。
 
-1. [AppSource](https://appsource.microsoft.com/product/power-bi-visuals/WA104381378?tab=Overview) からカスタム ビジュアルを取得したり、Power BI サービスに直接インポートしたりします。
-
-    ![Marketplace のカスタム ビジュアル](./media/powerapps-custom-visual/powerapps-store.png) 
+1. Power Apps カスタムビジュアルは、Power BI サービスで既定で使用できます。 Power BI Desktop を使用していても表示されない場合は、最新バージョンの Power BI Desktop にアップグレードする必要があります。
 
 2. Power Apps ビジュアルをレポートに追加し、関連付けられているデータフィールドを設定します。
 
@@ -42,7 +40,7 @@ Power BI レポートで、Power Apps カスタムビジュアルを使用する
 
     ![新規または既存のアプリ](./media/powerapps-custom-visual/create-new-or-choose-app.png)
 
-    既存のアプリを使用することを選択した場合は、アプリを Power Apps で開くようにというメッセージが表示されます。 ビジュアルは、Power BI が PowerApps にデータを送信できるように、アプリで必要なコンポーネントが設定されます。
+    既存のアプリを使用することを選択した場合は、アプリを Power Apps で開くようにというメッセージが表示されます。 その後、ビジュアルはアプリに必要なコンポーネントを設定し、Power BI が Power Apps にデータを送信できるようにします。
 
     新しいアプリを作成する場合、Power Apps では、必要なコンポーネントが既に設定されている単純なアプリを作成します。
 
@@ -75,7 +73,7 @@ Power Apps カスタムビジュアルには、次の制限事項が適用され
 - ビジュアルに関連付けられているデータ フィールドを変更する場合、省略記号 (...) を選択し、 **[編集]** を選択して Power BI サービス内でアプリを編集する必要があります。 そうしないと、変更は Power Apps に反映されず、アプリは予期しない方法で動作します。
 - Power Apps カスタムビジュアルでは、Power BI Desktop 内から Power BI レポートの更新とデータソースの Power BI をトリガーすることはできません。 アプリケーションからレポートと同じデータソースにデータを書き戻す場合、変更内容はすぐに Power BI Desktop に反映されません。 変更は、次回のスケジュールされた更新で反映されます。
 - Power Apps カスタムビジュアルでは、データをフィルター処理したり、レポートにデータを送信したりすることはできません。
-- Power Apps アプリは、レポートとは別に共有する必要があります。 [PowerApps でのアプリの共有](share-app.md)の詳細を参照してください。
+- Power Apps アプリは、レポートとは別に共有する必要があります。 [Power apps でのアプリの共有](share-app.md)について説明します。
 - Power BI Report Server と Power BI 用のモバイルアプリは、Power Apps カスタムビジュアルをサポートしていません。
 - PowerBIIntegration. Refresh () 関数を使用する場合は、 [directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources)をサポートするソースを使用する必要があり、データ接続は directquery メソッドを使用して作成する必要があります。
 - Power BI Desktop の power Apps は、アプリを作成するときに Power Apps Studio にデータを提供しますが、編集中は提供しません。 Power BI Web を使用して、アプリの編集中にデータをプレビューします。

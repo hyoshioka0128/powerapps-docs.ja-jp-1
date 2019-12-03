@@ -1,6 +1,6 @@
 ---
 title: IsMatch、Match、および MatchAll 関数 |Microsoft Docs
-description: 構文を含む PowerApps の IsMatch、Match、および MatchAll 関数の参照情報
+description: IsMatch、Match、および MatchAll 関数のための構文を含む、Power Apps の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0cfc64397774abc33f27006e331238dc97e9895d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fb150fc9e640801588e8ab7a5bef4640438679f8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680330"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730775"
 ---
-# <a name="ismatch-match-and-matchall-functions-in-powerapps"></a>PowerApps の IsMatch、Match、および MatchAll 関数
+# <a name="ismatch-match-and-matchall-functions-in-power-apps"></a>Power Apps の IsMatch、Match、および MatchAll 関数
 パターンに基づいて、一致するかどうかをテストし、テキスト文字列の一部を抽出します。
 
 ## <a name="description"></a>Description

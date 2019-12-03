@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 140fa7c51c30199360a08adc86c6e118e4e5bc52
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4980d7989a65032cec28aab1bc70ae3e01d1747d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679939"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724155"
 ---
 # <a name="preview-create-a-canvas-app-from-azure-sql-database"></a>プレビュー: Azure SQL Database からキャンバスアプリを作成する
 
@@ -43,7 +43,7 @@ ms.locfileid: "74679939"
 
 1. [Azure Portal](https://portal.azure.com)にサインインします。
 2. SQL Database に移動します。
-3. [PowerApps] を選択します。
+3. [Power Apps] を選択します。
 
     
     ![SQL Database オプションの [Power Apps] オプション](./media/app-from-azure-sql-database/powerapps-link-azure-portal.png "SQL Database 内の電源アプリオプション")
@@ -109,10 +109,10 @@ Power Apps は、Azure portal を使用して**Azure サービスコントロー
 このクイックスタートでは、Azure portal を使用して、SQL Database のデータを使用してアプリを作成しました。 次の手順として、ビジネスニーズに合わせて、コントロール、イメージ、ロジックを使用してアプリをカスタマイズします。
 
 > [!div class="nextstepaction"]
-> [PowerApps でキャンバスアプリインターフェイスを設計する](add-configure-controls.md)
+> [Power Apps でキャンバスアプリインターフェイスを設計する](add-configure-controls.md)
 
 ## <a name="see-also"></a>関連項目
 
-- [PowerApps でキャンバスアプリを共有する](share-app.md) </br>
-- [PowerApps でキャンバスアプリにデータ接続を追加する](add-data-connection.md#add-data-source)</br>
-- [Microsoft Learn: PowerApps でキャンバスアプリをカスタマイズする](https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/)
+- [Power Apps でキャンバスアプリを共有する](share-app.md) </br>
+- [Power Apps でキャンバスアプリにデータ接続を追加する](add-data-connection.md#add-data-source)</br>
+- [Microsoft Learn: Power Apps でキャンバスアプリをカスタマイズする](https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/)

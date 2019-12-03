@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da6c30cc824f5bb6cf1f661d332831223c37d5b8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: aacb19180fc41cc52a9d292fd9d3282f19cc649f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993889"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723761"
 ---
-# <a name="connect-to-office-365-users-connection-from-powerapps"></a>PowerApps から Office 365 ユーザーの接続に接続する
+# <a name="connect-to-office-365-users-connection-from-power-apps"></a>Office 365 ユーザー接続から Power Apps に接続する
 ![Office 365 Users](./media/connection-office365-users/office365icon.png)
 
 Office 365 Users を使用すると、自分の Office 365 アカウントを使用して組織内のユーザー プロファイルにアクセスできます。 自分のプロファイル、別のユーザーのプロファイル、ユーザーの上司または直属の部下を確認するなど、さまざまな操作を行うことができます。
@@ -155,7 +155,7 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 ## <a name="view-the-available-functions"></a>使用可能な関数の確認
 この接続には、次の関数が含まれています。
 
-| 関数名 | 説明 |
+| 関数名 | Description |
 | --- | --- |
 | [DirectReports](connection-office365-users.md#directreports) |指定されたユーザーの直属の部下を返します。 |
 | [Manager](connection-office365-users.md#manager) |指定されたユーザーのマネージャーのユーザープロファイルを取得します。 |
@@ -164,14 +164,14 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | [UserProfile](connection-office365-users.md#userprofile) |特定のユーザープロファイルを取得します。 |
 
 ### <a name="myprofile"></a>MyProfile
-プロファイルの取得:現在のユーザーのプロファイルを取得します。
+自分のプロファイルの取得: 現在のユーザーのプロファイルを取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 なし。
 
 #### <a name="output-properties"></a>出力プロパティ
 
-| プロパティ名 | 種類 | 説明 |
+| プロパティ名 | 種類 | Description |
 | --- | --- | --- |
 | City | string |ユーザーの市区町村。 |
 | 仕入 | string |ユーザーの会社。 |
@@ -193,17 +193,17 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | BusinessPhones | string |ユーザーの会社の電話番号。|
 
 ### <a name="userprofile"></a>UserProfile
-ユーザープロファイルの取得:特定のユーザープロファイルを取得します。
+ユーザー プロファイルの取得: 特定のユーザー プロファイルを取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
-| 名前 | データ型 | 必須 | 説明 |
+| 名前 | データ型 | 必須 | Description |
 | --- | --- | --- | --- |
 | Id |string |はい |ユーザープリンシパル名または電子メール id。 |
 
 #### <a name="output-properties"></a>出力プロパティ
 
-| プロパティ名 | 種類 | 説明 |
+| プロパティ名 | 種類 | Description |
 | --- | --- | --- |
 | City | string |ユーザーの市区町村。 |
 | 仕入 | string |ユーザーの会社。 |
@@ -222,17 +222,17 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | BusinessPhones | string |ユーザーの会社の電話番号。|
 
 ### <a name="manager"></a>Manager
-上司の取得:指定されたユーザーのマネージャーのユーザープロファイルを取得します。
+Get manager: 指定したユーザーのマネージャーのユーザープロファイルを取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
-| 名前 | データ型 | 必須 | 説明 |
+| 名前 | データ型 | 必須 | Description |
 | --- | --- | --- | --- |
 | Id |string |はい |ユーザープリンシパル名または電子メール id。 |
 
 #### <a name="output-properties"></a>出力プロパティ
 
-| プロパティ名 | 種類 | 説明 |
+| プロパティ名 | 種類 | Description |
 | --- | --- | --- |
 | City | string |ユーザーの市区町村。 |
 | 仕入 | string |ユーザーの会社。 |
@@ -254,17 +254,17 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | BusinessPhones | string |ユーザーの会社の電話番号。|
 
 ### <a name="directreports"></a>DirectReports
-直属の部下を取得します。直属の部下を取得します。
+直属の部下の取得: 直属の部下を取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
-| 名前 | データ型 | 必須 | 説明 |
+| 名前 | データ型 | 必須 | Description |
 | --- | --- | --- | --- |
 | Id |string |はい |ユーザープリンシパル名または電子メール id。 |
 
 #### <a name="output-properties"></a>出力プロパティ
 
-| プロパティ名 | 種類 | 説明 |
+| プロパティ名 | 種類 | Description |
 | --- | --- | --- |
 | City | string |ユーザーの市区町村。 |
 | 仕入 | string |ユーザーの会社。 |
@@ -286,17 +286,17 @@ Office 365 Users 接続が作成され、アプリに追加されます。 こ�
 | BusinessPhones | string |ユーザーの会社の電話番号。|
 
 ### <a name="searchuser"></a>SearchUser
-ユーザーの検索:ユーザープロファイルの検索結果を取得します。
+ユーザーの検索: ユーザープロファイルの検索結果を取得します。
 
 #### <a name="input-properties"></a>入力プロパティ
 
-| 名前 | データ型 | 必須 | 説明 |
+| 名前 | データ型 | 必須 | Description |
 | --- | --- | --- | --- |
 | searchTerm |string |いいえ |文字列を検索します。 適用対象: 表示名、指定された名前、姓、メール、メールのニックネーム、およびユーザープリンシパル名。 |
 
 #### <a name="output-properties"></a>出力プロパティ
 
-| プロパティ名 | 種類 | 説明 |
+| プロパティ名 | 種類 | Description |
 | --- | --- | --- |
 | City | string |ユーザーの市区町村。 |
 | 仕入 | string |ユーザーの会社。 |

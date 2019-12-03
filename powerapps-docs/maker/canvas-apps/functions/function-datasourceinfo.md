@@ -1,6 +1,6 @@
 ---
 title: DataSourceInfo 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の DataSourceInfo 関数の参照情報
+description: 構文と例を含む Power Apps の DataSourceInfo 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 33a119e1e023ed8a28bdabe9ac5caba0723476df
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 559549a1221ed5e6d5c683a5a3cbaf0f2e9960ed
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985307"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731271"
 ---
-# <a name="datasourceinfo-function-in-powerapps"></a>PowerApps の DataSourceInfo 関数
+# <a name="datasourceinfo-function-in-power-apps"></a>Power Apps の DataSourceInfo 関数
 [データ ソース](../working-with-data-sources.md)に関する情報を返します。
 
 ## <a name="overview"></a>概要
@@ -32,14 +32,14 @@ ms.locfileid: "71985307"
 
 データ ソースが提供する情報の量は、データ ソースによって異なります。まったく情報を提供しないデータ ソースもあります。  [コレクション](../working-with-data-sources.md#collections)は情報を提供しません。 情報が提供されない場合は、既定値が使用されるか、"*空白*" が返されます。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 ### <a name="column-information"></a>列の情報
 **DataSourceInfo** を使用すると、データ ソースの特定の列に関する次の情報を取得できます。  
 
-| 情報の引数 | 結果の型 | 説明 |
+| 情報の引数 | 結果の型 | Description |
 | --- | --- | --- |
 | **DataSourceInfo.DisplayName** |String |列の表示名。 表示名が定義されていない場合は、列名を返します。 |
-| **DataSourceInfo.MaxLength** |Number |列が保持できる最大文字数。 文字列が含まれている列にのみ適用されます。 最大数が設定されていない場合は、"*空白*" を返します。 |
+| **DataSourceInfo.MaxLength** |Number |列が保持できる最大文字数。 文字列が含まれている列にのみ適用されます。 最大値が設定されていない場合は、"*空白*" を返します。 |
 | **DataSourceInfo.MaxValue** |Number |列が保持できる最大値。 数値が含まれている列にのみ適用されます。 最大値が設定されていない場合は、"*空白*" を返します。 |
 | **DataSourceInfo.MinValue** |Number |列が保持できる最小値。 数値が含まれている列にのみ適用されます。 最小値が設定されていない場合は、"*空白*" を返します。 |
 | **DataSourceInfo.Required** |Boolean |この列の値が必須かどうか。 データ ソースで設定されていない場合は、**false** を返します。 |
@@ -49,7 +49,7 @@ ms.locfileid: "71985307"
 ### <a name="data-source-information"></a>データ ソースの情報
 **DataSourceInfo** を使用すると、データ ソース全体に関する次の情報を取得することもできます。  
 
-| 情報の引数 | 結果の型 | 説明 |
+| 情報の引数 | 結果の型 | Description |
 | --- | --- | --- |
 | **DataSourceInfo.AllowedValues** |Boolean |このデータ ソースに対してユーザーに付与できるアクセス許可の種類。 データ ソースで設定されていない場合は、"*空白*" を返します。 |
 | **DataSourceInfo.CreatePermission** |Boolean |現在のユーザーに対象データ ソースのレコードを作成するためのアクセス許可があるかどうか。 データ ソースで設定されていない場合は、**true** を返します。 |
@@ -81,7 +81,7 @@ ms.locfileid: "71985307"
 * **Quantity** の最大値は 100 です。
 * 現在のユーザーは、**IceCream** データ ソースのレコードの読み取りと編集を行うことができますが、レコードを作成および削除することはできません。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.DisplayName,&nbsp;"Quantity"&nbsp;)** |**IceCream** データ ソースの **Quantity** 列の表示名を返します。 |"Quantity on Hand" |
 | **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MaxLength,&nbsp;"Flavor"&nbsp;)** |**IceCream** データ ソースの **Flavor** 列の文字列の最大長を返します。 |30 |

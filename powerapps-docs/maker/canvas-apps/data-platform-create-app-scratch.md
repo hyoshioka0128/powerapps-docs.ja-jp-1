@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 48cd98481cff354d4e54cb54dc38865f6dfa6a14
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 624dd66a2f0574a33f4bb796b88e3e4d5845c973
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679686"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709564"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Common Data Service を使用してキャンバス アプリを最初から作成する
 
@@ -34,7 +34,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
 ## <a name="open-a-blank-app"></a>空のアプリを開く
 
-1. [PowerApps にサインインします](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインします。
 
 1. **[自分のアプリを作成する]** で **[キャンバス アプリを一から作成]** を選択します。
 

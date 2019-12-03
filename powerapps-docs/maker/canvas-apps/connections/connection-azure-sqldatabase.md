@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eed7a0bd6b9ee269877b6dfe4fcfd5bc6c56e3af
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 08e54e48b371e71364edd2da09648af354a4d9ec
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678812"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723910"
 ---
-# <a name="connect-to-sql-server-from-powerapps"></a>PowerApps から SQL Server に接続する
+# <a name="connect-to-sql-server-from-power-apps"></a>Power Apps から SQL Server に接続する
 ![SQL Server アイコン](./media/connection-azure-sqldatabase/sqlicon.png)
 
-Azure またはオンプレミス データベースで SQL Server に接続し、PowerApps でそこから情報を表示できるようにします。
+Azure またはオンプレミスデータベースの SQL Server に接続して、Power Apps でその情報を表示できるようにします。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -68,7 +68,7 @@ Azure またはオンプレミス データベースで SQL Server に接続し�
 8. アプリのカスタマイズは、「[Create an app from Excel](../get-started-create-from-data.md)」 (Excel からアプリを作成する) にある説明と同様の手法で行います。最初にアプリのレイアウトを変更します。
 
 ## <a name="build-an-app-from-scratch"></a>アプリをゼロから作成
-1. PowerApps のサインアップに使用したものと同じアカウントで [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1. Power Apps へのサインアップに使用したものと同じアカウントで[powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインします。
 2. 左側のナビゲーション バーで、 **[接続]** をクリックまたはタップします。  
    
     ![接続を管理する](./media/connection-azure-sqldatabase/manage-connections.png)

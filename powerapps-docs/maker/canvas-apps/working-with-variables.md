@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0ac00411c48cc97cb54c30ccefc3d8a6e1af5e48
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4dcc00f20de3a16f1f3125e8840f2f6d74feff32
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74673240"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733149"
 ---
-# <a name="understand-canvas-app-variables-in-powerapps"></a>PowerApps のキャンバス アプリの変数について
+# <a name="understand-canvas-app-variables-in-power-apps"></a>Power Apps でのキャンバスアプリ変数について
 
 Visual Basic や JavaScript などの別のプログラミング ツールを使ってきた方は、**変数はどこにあるのか**という疑問を抱くことでしょう。 Power Apps は少し異なり、別のアプローチが必要です。 キャンバス アプリをビルドする際に、変数の説明に進む代わりに、**Excel で何をしようとしているか**を考えてください。
 
@@ -30,7 +30,7 @@ Visual Basic や JavaScript などの別のプログラミング ツールを使
 
 一般的には、変数の使用を避けてください。 ただし、変数を使わないと目的の動作が得られないこともあります。 変数は、値を設定する関数に表示されるときに、暗黙的に作成および型指定されます。 
 
-## <a name="translate-excel-into-powerapps"></a>Excel を PowerApps に変換する
+## <a name="translate-excel-into-power-apps"></a>Excel を Power Apps に変換する
 
 ### <a name="excel"></a>Excel
 
@@ -42,17 +42,17 @@ Visual Basic や JavaScript などの別のプログラミング ツールを使
 
 Excel に変数がありません。 数式が含まれるセルの値は入力内容に基づいて変化しますが、数式の結果を記憶してそれをセルや他の場所に格納する方法はありません。 セルの値を変更すると、スプレッドシート全体が変更される可能性があり、それ以前に計算された値はすべて失われます。 Excel のユーザーは、セルをコピーして貼り付けることができますが、それはユーザーが手動で制御するものであり、数式では不可能です。
 
-### <a name="powerapps"></a>PowerApps
+### <a name="power-apps"></a>PowerApps
 
 Power Apps で作成したアプリは、Excel とほぼ同じように動作します。 セルを更新する代わりに、画面上の任意の場所にコントロールを追加し、数式で使用するために名前を付けることができます。
 
 たとえば、 **TextInput1**と**TextInput2**という名前の **[ラベル](controls/control-text-box.md)** コントロールと、 **Label1**という名前の2つの **[テキスト入力](controls/control-text-input.md)** コントロールを追加することで、アプリで Excel の動作をレプリケートできます。 その後、 **Label1**の **[Text](controls/properties-core.md)** プロパティを**TextInput1 + TextInput2**に設定すると、 **TextInput1**と**TextInput2**に含まれるすべての数値の合計が自動的に表示されます。
 
-![PowerApps の2つの数値の合計の計算](media/working-with-variables/recalc1.png)
+![Power Apps での2つの数値の合計の計算](media/working-with-variables/recalc1.png)
 
 **Label1**コントロールが選択され、画面の上部にある数式バーにその **[テキスト](controls/properties-core.md)** 式が表示されていることに注意してください。 ここで、数式が **TextInput1 + TextInput2** となっていることがわかります。 Excel ブック内のセル間に依存関係が作成されるのと同様に、この数式によってこれらのコントロール間に依存関係が作成されます。  **TextInput1**の値を変更してみましょう。
 
-![PowerApps の2つの数値の合計を計算するアニメーション](media/working-with-variables/recalc2.gif)
+![Power Apps の2つの数値の合計を計算するアニメーション](media/working-with-variables/recalc2.gif)
 
 **Label1**の数式が自動的に再計算され、新しい値が表示されます。
 
@@ -325,4 +325,4 @@ Power Apps には、次の3種類の変数があります。
 12. F5 キーを押してもう一度プレビューを表示し、テキスト入力コントロールに数値を入力してボタンを選択します。 **[保存]** ボタンを選択します。 アプリを閉じて再読み込みし、 **[読み込み]** ボタンを選択してコレクションを再読み込みします。
 
 > [!NOTE]
-> **SaveData**および**LoadData**は power apps Mobile では機能しますが、power Apps Studio または PowerApps 用 web プレーヤーは使用できません。
+> **SaveData**と**LoadData**は power apps Mobile では機能しますが、power Apps Studio または power apps 用 web プレーヤーは使用できません。

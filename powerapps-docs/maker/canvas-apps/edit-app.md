@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリを編集する | Microsoft Docs
-description: PowerApps でキャンバス アプリの編集とセッションのロックを行うシナリオについて、ステップバイステップの手順を示します。
+description: Power Apps でキャンバスアプリとセッションロックのシナリオを編集する手順について説明します。
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 29cf712e6938d34136c3d47b2f73fbcbd3d53a00
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e68d34d6a8f6b6a115bdd272235e9c5c0f155a2c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679548"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731560"
 ---
-# <a name="edit-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリを編集する
+# <a name="edit-a-canvas-app-in-power-apps"></a>Power Apps でのキャンバスアプリの編集
 自分で作成したキャンバス アプリ、所有しているキャンバス アプリ、または "**編集可能**" アクセス許可を持っているキャンバス アプリを編集できます。 アプリは、Power Apps Studio で編集できます。 別の場所で編集するために開かれているアプリを編集しようとすると、自分または別のユーザーがそのアプリを既に開いているという通知メッセージが表示されます。
 
 ## <a name="verify-your-permissions"></a>アクセス許可の確認
-1. [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、 **[ファイル]** メニュー (左端) の **[アプリ]** をクリックまたはタップします。
+1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインし、 **[ファイル]** メニュー (左端) の **[アプリ]** をクリックまたはタップします。
    
     ![[ファイル] メニューの [アプリ] オプション](./media/edit-app/file-apps.png)
 

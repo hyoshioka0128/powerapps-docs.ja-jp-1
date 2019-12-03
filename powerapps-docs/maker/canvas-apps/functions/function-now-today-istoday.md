@@ -1,6 +1,6 @@
 ---
 title: Now、Today、および IsToday 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Now、Today、および IsToday 関数の参照情報
+description: 構文と例を含む Power Apps の Now、Today、および IsToday 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bc3f882a25c5a0588e2be1eac4668c53ebc91e64
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 43f6dfcff0c4174301eda5cb8dde2067081d91e2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992583"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730534"
 ---
-# <a name="now-today-and-istoday-functions-in-powerapps"></a>PowerApps の Now、Today、および IsToday 関数
+# <a name="now-today-and-istoday-functions-in-power-apps"></a>Power Apps の Now、Today、および IsToday 関数
 現在の日付と時刻を返し、日付/時刻値が今日のものかどうかをテストします。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Now** 関数は、現在の日付と時刻を日付/時刻値として返します。
 
 **Today** 関数は、現在の日付を日付/時刻値として返します。 時刻部分は、午前 0 時です。 **Today** は、1 日 (今日の午前 0 時から翌日の午前 0 時まで) を通して同じ値を保持します。
@@ -57,7 +57,7 @@ ms.locfileid: "71992583"
 ## <a name="examples"></a>例
 このセクションの例では、現在の時刻が **2015 年 2 月 12 日**の**午前 3 時 59 分**、言語が **en-us** です。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Text( Now(), "mm/dd/yyyy hh:mm:ss" )** |現在の日付と時刻を取得し、文字列として表示します。 |"02/12/2015 03:59:00" |
 | **Text( Today(), "mm/dd/yyyy hh:mm:ss" )** |現在の日付のみを取得し、時刻は午前 0 時としたまま、これを文字列として表示します。 |"02/12/2015 00:00:00" |

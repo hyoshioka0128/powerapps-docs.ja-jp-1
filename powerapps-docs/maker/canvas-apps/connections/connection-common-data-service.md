@@ -1,6 +1,6 @@
 ---
 title: Common Data Service | に接続します。Microsoft Docs
-description: Common Data Service に接続して、PowerApps でアプリを構築するために使用する方法について説明します。
+description: Common Data Service に接続し、それを使用してアプリを作成する方法について説明します。
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d9f6e973aa632fe0821db3bcc493174e250afa72
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2473f445839b774ecc28fe007912511095d9316d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679916"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723825"
 ---
 # <a name="connect-to-common-data-service"></a>Common Data Service への接続
 

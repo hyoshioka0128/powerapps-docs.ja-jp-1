@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 430452514cd37930e145e8061ee6ac64c697b6e9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02d5f59f16b68ce7f140857591b86a5cd8e54cd5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679801"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722960"
 ---
-# <a name="button-control-in-powerapps"></a>PowerApps のボタン コントロール
+# <a name="button-control-in-power-apps"></a>Power Apps のボタンコントロール
 クリックまたはタップするとアプリを操作できるコントロールです。
 
 ## <a name="description"></a>Description

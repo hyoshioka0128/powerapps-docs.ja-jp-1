@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f4f6ea46cadc99039fe9c43c3422640ee25bb58f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0fbbb330a8594ce953530ece623472826be14891
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674571"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733000"
 ---
-# <a name="show-text-dates-and-times-in-powerapps"></a>PowerApps でテキスト、日付、および時刻を表示する
+# <a name="show-text-dates-and-times-in-power-apps"></a>Power Apps でのテキスト、日付、時刻の表示
 Power Apps で、canvas アプリに日付と時刻を追加し、適切なレベルの詳細を表示するか、ロケールを反映するように書式設定します。 また、2 つの日付間の時間を計算したり、指定した日付から一定時間前または後の日付を計算したりすることも可能です。 さらに、日付を変換して年と月と日の要素に分解したり、逆に年と月と日の要素から日付に変換したりすることができます。時刻も同様です。時と分と秒の要素に分解したり、時と分と秒の要素から時刻に変換したりすることができます。
 
 たとえば、株式取引やクライアントミーティングに関するユーザーのデータ、外部ソースからのデータ、または Power Apps で作成された別のアプリのデータを追加します。 そのデータにミリ秒単位の時刻が含まれていれば、わかりやすくするために、最も近い分単位に丸めることができます。 重要なマイルストーンまでの残り日数を計算するとします。 クライアントとのミーティングを 5 日おきにスケジューリングする場合は、それらの日付を自動的に計算できます。 1985 年 5 月 10 日という日付について、年と月と日の要素がそれぞれ異なるフィールドに格納されていれば、それらを 1 つの値に統合することができます。 日付の構成要素を個別に扱うアプリであれば、逆に日付を個々の構成要素に分解することもできます。
@@ -28,8 +28,8 @@ Power Apps で、canvas アプリに日付と時刻を追加し、適切なレ�
 ## <a name="prerequisites"></a>前提条件
 
 * Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
-* PowerApps で、アプリを作成するか既存のアプリを開きます。
-* PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
+* アプリを作成するか、Power Apps で既存のアプリを開きます。
+* Power Apps で[コントロールを構成](add-configure-controls.md)する方法について説明します。
 
 ## <a name="show-text-in-a-label-control"></a>ラベル コントロールでのテキストの表示
 **[ラベル](controls/control-text-box.md)** コントロールにテキストを表示するには、その **[Text](controls/properties-core.md)** プロパティの値を設定します。 このプロパティを設定するには、コントロールに直接値を入力するか、数式バーに式を入力します。

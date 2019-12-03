@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b25a22e732c96bf35f8951602e706f71b1733a7
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8c65c20d91794c5c5d8601e117fa5755c274d02d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71986721"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722891"
 ---
-# <a name="edit-form-and-display-form-controls-in-powerapps"></a>PowerApps の [Edit form (フォームの編集)] コントロールと [Display form (フォームの表示)] コントロール
+# <a name="edit-form-and-display-form-controls-in-power-apps"></a>Power Apps でフォームコントロールと表示フォームコントロールを編集する
 データ ソースのレコードを表示、編集、および作成します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **[Display form (フォームの表示)]** コントロールを追加する場合、ユーザーはレコードのすべてのフィールド、または指定されたフィールドのみを表示できます。 **[Edit form (フォームの編集)]** コントロールを追加する場合、ユーザーはそれらのフィールドを編集したり、レコードを作成したり、変更をデータ ソースに保存したりできます。
 
 ![フォーム コントロールとフォーム ビュー コントロールの例](./media/control-form-detail/form-detail-intro.png)
@@ -41,7 +41,7 @@ ms.locfileid: "71986721"
 
 それぞれのフォーム コントロールには 1 つ以上の **[[Card (カード)]](control-card.md)** コントロールが含まれます。 カードの **[DataField](control-card.md)** プロパティを設定することにより、[カードに表示するフィールドとその他の詳細を指定](../add-form.md)します。
 
-### <a name="create-a-record"></a>レコードを作成する
+### <a name="create-a-record"></a>レコードの作成
 **[Edit form (フォームの編集)]** コントロールが **[Edit (編集)]** モードのとき、ユーザーは、フォームの **Item** プロパティで指定されたレコードを更新できます。 検査した場合、**Mode** プロパティは **Edit** を返します。
 
 ただし、 **[Edit form (フォームの編集)]** コントロールが **[New (新規)]** モードのとき、**Item** プロパティは無視されます。 フォームは既存のレコードを表示しません。代わりに、各フィールドの値は、フォームの構成時に使用したデータ ソースの既定値と一致します。 **[NewForm](../functions/function-form.md)** 関数を使用することで、フォームはこのモードに切り替わります。
@@ -84,7 +84,7 @@ ms.locfileid: "71986721"
 
 **Mode** プロパティ ベースから派生しているため、個別には設定できません。
 
-| モード | DisplayMode | 説明 |
+| モード | DisplayMode | Description |
 | --- | --- | --- |
 | **FormMode.Edit** |**DisplayMode.Edit** |データ カードとコントロールは編集可能で、レコードへの変更を受け入れる準備ができています。 |
 | **FormMode.New** |**DisplayMode.Edit** |データ カードとコントロールは編集可能で、新しいレコードを受け入れる準備ができています。 |
@@ -102,7 +102,7 @@ ms.locfileid: "71986721"
 * **[Edit form (フォームの編集)]** コントロールのみに適用されます。
 * このプロパティには、 **[Errors](../functions/function-errors.md)** 関数と同じ列挙があります。 **[Edit form (フォームの編集)]** コントロールは以下の値を返す可能性があります。
 
-| ErrorKind | 説明 |
+| ErrorKind | Description |
 | --- | --- |
 | **ErrorKind.Conflict** |別のユーザーが同じレコードを変更した結果、変更が競合しています。 **[Refresh](../functions/function-refresh.md)** 関数を実行してレコードを再読み込みし、変更をもう一度やり直してください。 |
 | **ErrorKind.None** |不明な種類のエラーです。 |
@@ -119,7 +119,7 @@ ms.locfileid: "71986721"
 
 **Mode** – コントロールは **[Edit (編集)]** または **[New (新規)]** モードです。
 
-| モード | 説明 |
+| モード | Description |
 | --- | --- |
 | **FormMode.Edit** |ユーザーはフォームを使用してレコードを編集できます。 フォームのカードの値は、ユーザーが変更する既存のレコードのものが事前設定されます。 **[SubmitForm](../functions/function-form.md)** 関数が正常に実行された場合、既存のレコードが変更されます。 |
 | **FormMode.New** |ユーザーはフォームを使用してレコードを作成できます。 フォームのコントロールの値には、データソースのレコードの既定値があらかじめ設定されています。 **[Submitform](../functions/function-form.md)** 関数が正常に実行されると、レコードが作成されます。 |
@@ -152,7 +152,7 @@ ms.locfileid: "71986721"
 
 * このプロパティは **[Edit form (フォームの編集)]** コントロールのみに適用されます。
 * このプロパティを使用して、コントロール内部のカードからフィールド値を抽出します。  その後、これらの値を使用し、 **[Patch](../functions/function-patch.md)** 関数呼び出し、または接続によって公開されている別のメソッドによってデータ ソースを手動で更新することができます。  **[SubmitForm](../functions/function-form.md)** 関数を使用している場合、このプロパティを使用する必要はありません。
-* このプロパティは、値のレコードを返します。  たとえば、フォームコントロールに**名前**フィールドと**数量**フィールドのカードコントロールが含まれており、それらのカードの **[更新](control-card.md)** プロパティの値によってそれぞれ "ウィジェット" と10が返される場合、フォームコントロールの**Updates**プロパティはになります。が返さ **{名前:"ウィジェット"、Quantity:10}** 。
+* このプロパティは、値のレコードを返します。  たとえば、 **[Name (名前)]** および **[Quantity (数量)]** フィールドに対するカード コントロールがフォーム コントロールに含まれており、それらのカードに対する **[Update](control-card.md)** プロパティの値がそれぞれ "Widget" および 10 を返す場合、フォーム コントロールに対する **Updates** プロパティは **{ Name: "Widget", Quantity: 10 }** を返します。
 
 **Valid** – **[[Card (カード)]](control-card.md)** または **[フォームの編集 (Edit form)]** コントロールに有効なエントリが含まれており、データ ソースへの送信準備ができているかどうか。
 
@@ -184,6 +184,6 @@ ms.locfileid: "71986721"
 ## <a name="more-information"></a>詳細
 フォームの動作の詳細については、「[データ フォームについて](../working-with-forms.md)」を参照してください。
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 * **[ラベル](control-text-box.md)** を使用して見出しをフォームに追加することを検討してください。

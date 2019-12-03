@@ -1,6 +1,6 @@
 ---
 title: Left 関数、Mid 関数、Right 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Left 関数、Mid 関数、Right 関数の参照情報
+description: 構文と例を含む、Power Apps の左、中、右の関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 81220ab8df16dcea74dbdc9db48e692e379e1b4d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 182731aaeb82b17e6040c4246f31f7fccc22f923
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992611"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730664"
 ---
-# <a name="left-mid-and-right-functions-in-powerapps"></a>PowerApps の Left 関数、Mid 関数、Right 関数
+# <a name="left-mid-and-right-functions-in-power-apps"></a>Power Apps の Left、Mid、Right の各関数
 テキストの文字列から左側部分、中間部分、または右側部分を抽出します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Left** 関数、**Mid** 関数、**Right** 関数は、文字列の一部を返します。
 
 * **Left** 関数は、文字列の先頭部分の文字を返します。
@@ -51,7 +51,7 @@ ms.locfileid: "71992611"
 ### <a name="single-string"></a>単一の文字列
 このセクションの例では、テキスト入力コントロールを[データ ソース](../working-with-data-sources.md)として使用します。 **Author** という名前のこのコントロールには、文字列 "E. E. Cummings" が含まれています。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Left( Author.Text, 5 )** |文字列の先頭の 5 文字を抽出します。 |"E. E." |
 | **Mid( Author.Text, 7, 4 )** |7 番目の文字を起点として、文字列から 4 つの文字を抽出します。 |"Cumm" |
@@ -63,7 +63,7 @@ ms.locfileid: "71992611"
 
 ![](media/function-left-mid-right/people-table.png)
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Left( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 8 )** |各文字列の先頭の 8 文字を抽出します。 |<style> img { max-width: none } </style> ![](media/function-left-mid-right/people-table-left.png) |
 | **Mid( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;), 5, 7 )** |5 番目の文字を起点として、各文字列中の 7 文字を抽出します。 |![](media/function-left-mid-right/people-table-mid.png) |

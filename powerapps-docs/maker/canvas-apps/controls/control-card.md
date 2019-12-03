@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a1e9068e272d1da8a4e6b23b66d999f0688cbc00
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 7f0d4268700b8c46a15fe74da4a4825395dcfe5b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993519"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74722928"
 ---
-# <a name="card-control-in-powerapps"></a>PowerApps のカード コントロール
+# <a name="card-control-in-power-apps"></a>Power Apps のカードコントロール
 **[フォームの表示](control-form-detail.md)** または **[フォームの編集](control-form-detail.md)** コントロールの 1 つのフィールドの表示や編集を体験できます。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **[フォームの表示](control-form-detail.md)** および **[フォームの編集](control-form-detail.md)** コントロールは、レコード全体を表示するためのコンテナーとして機能します。 各コンテナーは、個々のフィールドを表示したり、これらのフィールドを更新する方法を提供したりする一連の**カード** コントロールを保持できます。 各カードには、操作対象となるレコードのフィールドを指定する **DataField** プロパティがあります。  
 
 さまざまなデータ タイプやユーザー体験用に、いくつかのカードが事前に定義されています。  たとえば、キーボードで使用しやすい、 **[テキスト入力](control-text-input.md)** コントロールで数値フィールドを編集するカードが存在する場合があります。 別のカードは、代わりに **[スライダー](control-slider.md)** コントロールを使用した数値の編集をサポートしている可能性があります。 フォーム コントロールが選択されていると、右側のウィンドウで、フィールドに基づいて容易にカードを選択できます。
@@ -101,7 +101,7 @@ ms.locfileid: "71993519"
 例については、「[データ カードについて](../working-with-cards.md)」と「[データ フォームのレイアウトについて](../working-with-form-layout.md)」を参照してください。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
 以下の間には適切な色のコントラストが必要です。
 * **[Fill](properties-color-border.md)** とすべての子コントロール。 たとえば、カードに **[ラベル](control-text-box.md)** があり、ラベルの塗りつぶしが透明な場合、カードの **[Fill](properties-color-border.md)** は実質的にはラベルの背景色になります。 そのため、カードの **[Fill](properties-color-border.md)** とラベルの **[Color](properties-color-border.md)** の間には適切なコントラストが必要です。

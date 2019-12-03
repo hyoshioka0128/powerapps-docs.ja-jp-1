@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8c4316c8f4aac11903aaad8cb624ff881173b403
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 68fad4cb2c73bcaeb448212012133c171d682cb4
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650620"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723000"
 ---
-# <a name="combo-box-control-in-powerapps"></a>PowerApps のコンボ ボックス コントロール
+# <a name="combo-box-control-in-power-apps"></a>Power Apps のコンボボックスコントロール
 ユーザーが、提供された選択肢から選択できるようにするコントロール。  検索と複数選択をサポートしています。
 
 ## <a name="description"></a>Description

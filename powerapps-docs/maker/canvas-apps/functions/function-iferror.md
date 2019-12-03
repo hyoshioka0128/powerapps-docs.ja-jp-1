@@ -1,6 +1,6 @@
 ---
 title: IfError 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の IfError 関数の参照情報
+description: 構文と例を含む Power Apps の IfError 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8d9916c3fa62aab947315b7c31daa96f7e528acd
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fc114688b3a12e842d3107220c0a8967593e18c0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680284"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730832"
 ---
-# <a name="iferror-function-in-powerapps"></a>PowerApps の IfError 関数
+# <a name="iferror-function-in-power-apps"></a>Power Apps での IfError 関数
 
 エラーを検出し、代替値を提供するか、操作を実行します。
 

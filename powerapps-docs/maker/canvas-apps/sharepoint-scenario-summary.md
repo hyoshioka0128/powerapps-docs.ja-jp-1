@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cba5d7bd1214866cc24ba01c64909cf15e0ca96d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d6ee64ddb2ae2f2a9c114a70970843627b92efb1
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674672"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709706"
 ---
 # <a name="walk-end-to-end-through-the-completed-sharepoint-online-integration-scenario"></a>完成した SharePoint Online 統合シナリオ全体の説明
 > [!NOTE]
@@ -160,7 +160,7 @@ ms.locfileid: "74674672"
 
 今回の一通りの手順と、このチュートリアル シリーズはこれで終了です。 引き続き次のサイトもぜひご覧ください。
 
-* [PowerApps](https://www.powerapps.com/)
+* [Power Apps](https://www.powerapps.com/)
 * [電力の自動化](https://flow.microsoft.com)
 * [Power BI](https://www.powerbi.com)
 * [Power Users Community](https://powerusers.microsoft.com/)

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ed7493dcc9c2ef5f0b84052a11dbadb0947af38e
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 37b7117f599c29f886da3cafeb158db145ad1364
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71994266"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724912"
 ---
 # <a name="show-edit-or-add-a-record-in-a-canvas-app"></a>キャンバスアプリでレコードを表示、編集、または追加する
 
@@ -26,7 +26,7 @@ ms.locfileid: "71994266"
 
 ## <a name="prerequisites"></a>前提条件
 
-- PowerApps で[コントロールを追加して構成する](add-configure-controls.md)方法について確認します。
+- Power Apps で[コントロールを追加して構成](add-configure-controls.md)する方法について説明します。
 - [この Excel ファイル](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx)をダウンロードして、チュートリアルのサンプル データを取得します。
 - Excel ファイルを OneDrive for Business などの[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)にアップロードします。
 - スマートフォン用のアプリを作成または開き、Excel ファイルの**FlooringEstimates**テーブルに[接続を追加](add-data-connection.md)します。
@@ -41,7 +41,7 @@ ms.locfileid: "71994266"
     > [!NOTE]
    > コントロールの追加、コントロールの名前変更、およびプロパティの設定の方法がわからない場合は、「[Add and configure controls (コントロールの追加と構成)](add-configure-controls.md)」を参照してください。
 
-1. 右側のペインの **[プロパティ]** タブで、 **[項目]** を [`FlooringEstimates`] に設定し、 **[値]** を [`Name`] に設定します。
+1. 右側のペインの **プロパティ** タブで、**項目** を `FlooringEstimates` に設定し、**値** を `Name`に設定します。
 
     ![フォームの Items プロパティを設定する](./media/add-form/items-property.png)
 
