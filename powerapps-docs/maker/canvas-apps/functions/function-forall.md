@@ -1,6 +1,6 @@
 ---
 title: ForAll 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の ForAll 関数の参照情報
+description: 構文と例を含む Power Apps の ForEach 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3d53a721e5abba3ce7e844420d9e8415b908cdde
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9bca1ffe29adb7a7eac55a89040b4ffa486fdc1d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680215"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730930"
 ---
-# <a name="forall-function-in-powerapps"></a>PowerApps の ForAll 関数
+# <a name="forall-function-in-power-apps"></a>Power Apps での ForAll 関数
 値を計算し、[テーブル](../working-with-tables.md)のすべての[レコード](../working-with-tables.md#records)に対して操作を実行します。
 
 ## <a name="description"></a>Description

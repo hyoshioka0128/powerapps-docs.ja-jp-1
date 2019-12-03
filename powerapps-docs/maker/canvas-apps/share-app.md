@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a3996603e9d5de0f3844be0a3d6b4fb8e1c62d7b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b04c1d9ecc4c2955b68f1ffeae1a5a56e74ab710
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674940"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733110"
 ---
-# <a name="share-a-canvas-app-in-powerapps"></a>PowerApps でのキャンバス アプリの共有
+# <a name="share-a-canvas-app-in-power-apps"></a>Power Apps でキャンバスアプリを共有する
 
 ビジネス ニーズに対応するキャンバス アプリをビルドした後、アプリを実行できる組織内のユーザー、およびアプリを変更したり、再度共有したりすることもできるユーザーを指定します。 各ユーザーを名前で指定するか、Azure Active Directory のセキュリティ グループを指定します。 すべてのユーザーがアプリから恩恵を受ける場合、組織全体がアプリを実行できるように指定します。
 
@@ -79,7 +79,7 @@ ms.locfileid: "74674940"
 
 1. 共有 パネルの下部にある **共有** を選択します。
 
-    アプリを共有したすべてのユーザーは、モバイルデバイスの Power Apps Mobile で、またはブラウザーで[Dynamics 365](https://home.dynamics.com)の appsource で実行できます。 共同所有者は、 [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)でアプリを編集および共有できます。
+    アプリを共有したすべてのユーザーは、モバイルデバイスの Power Apps Mobile で、またはブラウザーで[Dynamics 365](https://home.dynamics.com)の appsource で実行できます。 共同所有者は、アプリを編集し、 [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)で共有できます。
 
     電子メールの招待状を送信した場合、アプリを共有した相手は全員、招待内のリンクを選択することで実行できます。
 
@@ -165,7 +165,7 @@ Power Apps キャンバスアプリは、Azure Active Directory テナントの�
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 #### <a name="whats-the-difference-between-canvas-app-guest-access-and-power-apps-portals"></a>キャンバスアプリのゲストアクセスと Power Apps ポータルの違いは何ですか。 
-キャンバスアプリを使用すると、などの従来のプログラミング言語でコードを記述しなくても、ビジネスプロセスC#をデジタル化することに合わせてアプリを構築できます。 キャンバスアプリのゲストアクセスを使用すると、共通のビジネスプロセスに参加しているさまざまな組織で構成されている個人チームが、さまざまな Microsoft やサードパーティのソースと統合されている同じアプリリソースにアクセスできます。 詳細につい[ては、「PowerApps のキャンバスアプリコネクタの概要」](/powerapps/maker/canvas-apps/connections-list)を参照してください。
+キャンバスアプリを使用すると、などの従来のプログラミング言語でコードを記述しなくても、ビジネスプロセスC#をデジタル化することに合わせてアプリを構築できます。 キャンバスアプリのゲストアクセスを使用すると、共通のビジネスプロセスに参加しているさまざまな組織で構成されている個人チームが、さまざまな Microsoft やサードパーティのソースと統合されている同じアプリリソースにアクセスできます。 詳細につい[ては、「Power Apps のキャンバスアプリコネクタの概要」](/powerapps/maker/canvas-apps/connections-list)を参照してください。
 
 [Power Apps ポータル](/powerapps/maker/portals/overview) は、外部ユーザーが Common Data Service に格納されているデータを操作できるようにする、低コードで応答性の高い web サイトを構築する機能を提供します。 組織は、匿名で、または LinkedIn、Microsoft アカウント、またはその他の商用ログインプロバイダーなど、選択したログインプロバイダーを使用して、組織の外部のユーザーと共有できる web サイトを作成できます。 
 

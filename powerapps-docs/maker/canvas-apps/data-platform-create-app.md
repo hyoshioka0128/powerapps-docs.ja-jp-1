@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f1737a70a8b9f6be30c73a91116c88df38609966
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b98fcb51e5b379e6507e73f680100c9702ec24a8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678559"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731681"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-in-powerapps"></a>PowerApps で Common Data Service からキャンバスアプリを生成する
+# <a name="generate-a-canvas-app-from-common-data-service-in-power-apps"></a>Power Apps で Common Data Service からキャンバスアプリを生成する
 
 Power Apps では、 [Common Data Service](../common-data-service/data-platform-intro.md)のサンプルアカウントの一覧に基づいて、キャンバスアプリが自動的に生成されます。 このアプリでは、すべてのアカウントの参照、1 つのアカウントの詳細の表示、アカウントの作成、更新および削除が可能です。
 
@@ -32,7 +32,7 @@ Power Apps にサインアップしていない場合は、開始する前に[�
 
 ## <a name="generate-an-app"></a>アプリを生成する
 
-1. [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、必要に応じて、このトピックで前に説明したように環境を切り替えます。
+1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインし、必要に応じて、このトピックで前述した手順に従って環境を切り替えます。
 
 1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、 **[このアプリの作成]** を選択します。
 

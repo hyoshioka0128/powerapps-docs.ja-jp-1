@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7a64c7e0eeff1a48385ea251597a9e8d91c075f1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c8610f726c0bd65cec5681cd817d5c93ec3d3c1d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675341"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732719"
 ---
-# <a name="save-and-publish-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリを保存して発行する
+# <a name="save-and-publish-a-canvas-app-in-power-apps"></a>Power Apps でキャンバスアプリを保存して発行する
 キャンバス アプリへの変更を保存するたびに、自分とアプリを編集するアクセス許可を持つ他のユーザーのみに、自動的にアプリが発行されます。 変更が完了したら、アプリを共有しているすべてのユーザーが利用できるように、明示的に発行する必要があります。
 
 アプリを共有する方法については、「[PowerApps でのアプリの共有](share-app.md)」を参照してください。

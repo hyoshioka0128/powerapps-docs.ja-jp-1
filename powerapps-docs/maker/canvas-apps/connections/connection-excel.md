@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 455ffff4813b457c2a439f2081c10418ace2e306
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ba582906c34b2831fffbfedcf645a00bd7cdb7d6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678720"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728288"
 ---
-# <a name="connect-to-excel-from-powerapps"></a>PowerApps から Excel に接続する
+# <a name="connect-to-excel-from-power-apps"></a>Power Apps から Excel に接続する
 ![Excel](./media/connection-excel/excelicon.png)
 
 Excel は接続*のようなもの*です。 アプリで Excel データを表示するには:
@@ -35,7 +35,7 @@ Excel は接続*のようなもの*です。 アプリで Excel データを表�
 
 「[クラウド ストレージ接続の概要](cloud-storage-blob-connections.md)」では、接続を追加し、データ ソースとして Excel テーブルを追加して、アプリで Excel のデータを使う方法が示されています。
 
-他の種類のデータに接続する方法については、[PowerApps の接続の一覧](../connections-list.md)をご覧ください。
+他の種類のデータに接続する方法については、「 [Power Apps の接続の一覧](../connections-list.md)」を参照してください。
 
 ### <a name="known-limitations"></a>既知の制限
 お客様の組織内の Excel データを共有する方法の詳細については、[これらの制限をご確認ください](cloud-storage-blob-connections.md#sharing-excel-tables)。

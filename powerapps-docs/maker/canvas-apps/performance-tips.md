@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0bf2502d22adb90993f5f7ebb8e05c72f51215a5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9b2e3298f09857e26df4c3707d8ae36737557b08
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675447"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732831"
 ---
-# <a name="optimize-canvas-app-performance-in-powerapps"></a>PowerApps でキャンバス アプリのパフォーマンスを最適化する
+# <a name="optimize-canvas-app-performance-in-power-apps"></a>Power Apps でキャンバスアプリのパフォーマンスを最適化する
 Microsoft は、Power Apps プラットフォームで実行されるすべてのアプリのパフォーマンスの向上に努めています。 このトピックのベスト プラクティスに従うことでも、作成するキャンバス アプリのパフォーマンスを改善できます。
 
 ユーザーがアプリを開くと、次の一連の段階を実行してからユーザー インターフェイスが表示されます。 
@@ -98,7 +98,7 @@ Set(CustomerPhone, CustomerOrder.Phone);
 
 ![委任を使用する](./media/performance-tips/perfdelegation1.png)
 
-たとえば、SharePoint リストの場合、[**Filter**](functions/function-filter-lookup.md) 関数からの委任はサポートされていますが、[**Search**](functions/function-filter-lookup.md) 関数からの委任はサポートされていません。 そのため、SharePoint リストに含まれる項目が 500 を超える場合、ギャラリーの項目を検索するには、**Search** の代わりに **Filter** を使用してください。 その他のヒントについては、「[Working with large SharePoint lists in PowerApps](https://powerapps.microsoft.com/blog/powerapps-now-supports-working-with-more-than-256-items-in-sharepoint-lists/)」 (PowerApps で大きな SharePoint リストを扱う) というブログ投稿を参照してください。 
+たとえば、SharePoint リストの場合、[**Filter**](functions/function-filter-lookup.md) 関数からの委任はサポートされていますが、[**Search**](functions/function-filter-lookup.md) 関数からの委任はサポートされていません。 そのため、SharePoint リストに含まれる項目が 500 を超える場合、ギャラリーの項目を検索するには、**Search** の代わりに **Filter** を使用してください。 詳細については、「 [Power Apps での大規模な SharePoint リストの操作](https://powerapps.microsoft.com/blog/powerapps-now-supports-working-with-more-than-256-items-in-sharepoint-lists/)(ブログの投稿)」を参照してください。 
 
 ## <a name="use-delayed-load"></a>遅延読み込みを使用する
 アプリに画面が 10 個以上あり、ルールがなく、(複数の画面にあり、データ ソースに直接バインドされた) たくさんのコントロールがある場合、[遅延読み込み](working-with-experimental.md)の実験機能をオンにしてください。 この種類のアプリを作成するとき、この機能を有効にしない場合、開いていない画面も含め、すべての画面のコントロールにデータを入力する必要があるため、アプリのパフォーマンスが低下することがあります。 また、ユーザーがレコードを追加したときなど、データ ソースが変わるときは必ずアプリのすべての画面を更新する必要があります。

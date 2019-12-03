@@ -1,6 +1,6 @@
 ---
 title: キャンバスアプリの電子メール画面テンプレートのリファレンス |Microsoft Docs
-description: PowerApps でキャンバスアプリの電子メール画面テンプレートがどのように機能するかについて詳しく説明します。
+description: Power Apps でキャンバスアプリの電子メール画面テンプレートがどのように機能するかについて詳しく説明します。
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7226433c5e95537346841f2e2f9474ea68e42dda
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f173b4898df8853ef31d1660af6efe9298f838b0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675084"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732620"
 ---
 # <a name="reference-information-about-the-email-screen-template-for-canvas-apps"></a>キャンバスアプリの電子メール画面テンプレートに関するリファレンス情報
 
@@ -34,7 +34,7 @@ Power Apps のキャンバスアプリの場合、電子メール画面テンプ
 
 ## <a name="prerequisite"></a>前提条件
 
-[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
+[Power Apps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
 
 ## <a name="text-search-box"></a>テキスト検索ボックス
 
@@ -203,5 +203,5 @@ Power Apps のキャンバスアプリの場合、電子メール画面テンプ
 ## <a name="next-steps"></a>次の手順
 
 * [この画面の詳細情報](./email-screen-overview.md)
-* [PowerApps での Office 365 Outlook コネクタについての詳細情報](../connections/connection-office365-outlook.md)
-* [PowerApps での Office 365 Users コネクタについての詳細情報](../connections/connection-office365-users.md)
+* [Office 365 Outlook コネクタの詳細については、「Power Apps」を参照してください。](../connections/connection-office365-outlook.md)
+* [Office 365 Users コネクタの詳細については、「Power Apps」を参照してください。](../connections/connection-office365-users.md)

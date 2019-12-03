@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6cda843ea95f79e907aa738a6546d63a6a3be270
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9449c9ab8e03159ffdc4e5657d7eb8ca92cbf0f0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678858"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724037"
 ---
-# <a name="overview-of-canvas-app-connectors-for-powerapps"></a>PowerApps 用のキャンバス アプリ コネクタの概要
-データは、Power Apps で構築したものも含め、ほとんどのアプリの中核になります。 *データ ソース*に格納されたデータは、*接続*を作成することでアプリに取り込まれます。 接続は特定の*コネクタ*を使用してデータ ソースと通信します。 Power Apps には、多くの人気のあるサービスやオンプレミスのデータソース (SharePoint、SQL Server、Office 365、Salesforce、Twitter など) 用のコネクタが用意されています。 キャンバス アプリへのデータの追加を開始するには、[PowerApps でのデータ接続の追加](add-data-connection.md)に関するページを参照してください。
+# <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Power Apps のキャンバスアプリコネクタの概要
+データは、Power Apps で構築したものも含め、ほとんどのアプリの中核になります。 *データ ソース*に格納されたデータは、*接続*を作成することでアプリに取り込まれます。 接続は特定の*コネクタ*を使用してデータ ソースと通信します。 Power Apps には、多くの人気のあるサービスやオンプレミスのデータソース (SharePoint、SQL Server、Office 365、Salesforce、Twitter など) 用のコネクタが用意されています。 キャンバスアプリへのデータの追加を開始するには、「 [Power Apps でのデータ接続の追加](add-data-connection.md)」を参照してください。
 
 コネクタから、データの**テーブル**または**アクション**が提供される場合があります。 コネクタの中には、テーブルのみを提供するもの、アクションのみを提供するもの、そして両方を提供するものがあります。 また、ご利用のコネクタは、標準コネクタのまたはカスタム コネクタのいずれかとなります。
 
@@ -37,13 +37,13 @@ ms.locfileid: "74678858"
 
 テーブルを使用して数式をカスタマイズする方法の詳細については、次のトピックを参照してください。
 
-  [PowerApps のデータ ソースについて](working-with-data-sources.md)<br> 
+  [Power Apps のデータソースについて](working-with-data-sources.md)<br> 
   [Excel データからアプリを生成する](get-started-create-from-data.md)<br> 
   [アプリを最初から作成する](get-started-create-from-blank.md)<br>
-  [PowerApps におけるテーブルとレコードについて](working-with-tables.md)
+  [Power Apps のテーブルとレコードについて](working-with-tables.md)
 
   > [!NOTE]
-  > Excel データ内のデータに接続するには、そのブックを OneDrive のようなクラウド ストレージ サービスでホストする必要があります。 詳細については、「[クラウド ストレージ接続](connections/cloud-storage-blob-connections.md)」を参照してください。
+  > Excel データ内のデータに接続するには、そのブックを OneDrive のようなクラウド ストレージ サービスでホストする必要があります。 詳細については、「 [Power Apps からのクラウドストレージへの接続](connections/cloud-storage-blob-connections.md)」を参照してください。
 
 ## <a name="actions"></a>措置
 

@@ -1,6 +1,6 @@
 ---
 title: ShowError 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の ShowError 関数の参照情報
+description: 構文と例を含む Power Apps の ShowError 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1a02a83e00b9f377f3882cb32c1e6b6606b5cc2a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02881fdf284a174f5118e7ee0ae185cca61578f8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678237"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730180"
 ---
-# <a name="notify-function-in-powerapps"></a>PowerApps の Notify 関数
+# <a name="notify-function-in-power-apps"></a>Power Apps での通知機能
 バナー メッセージをユーザーに表示します。
 
 ## <a name="description"></a>Description
@@ -41,7 +41,7 @@ ms.locfileid: "74678237"
 
 **Notify** は [**IfError**](function-iferror.md) 関数と組み合わせて、エラーを検出し、カスタム エラー メッセージを使って報告することができます。
 
-Power Apps は、**通知**とはまったく異なるメカニズムを使用してプッシュ通知を送信することもできます。  詳細については、「[PowerApps でプッシュ通知を送信する](../add-notifications.md)」を参照してください。
+Power Apps は、**通知**とはまったく異なるメカニズムを使用してプッシュ通知を送信することもできます。  詳細については[、「Power Apps で通知を送信する](../add-notifications.md)」を参照してください。
 
 **Notify** は、常に *true* を返します。
 

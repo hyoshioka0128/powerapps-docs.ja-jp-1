@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bf83473e8b53d13e58b653974495acbe2595513f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e9c4adb124971ba468ee25efbe012c124b3906e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674206"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732315"
 ---
 # <a name="power-apps-webinar-listing"></a>Power Apps ウェビナーの一覧 #
 これらのウェビナーは、Microsoft Power Apps の機能を活用するのに役立ちます。 ウェビナーは、ライブ配信が終了するとオンデマンドで視聴できます。 場合によっては、登録の詳細を再度入力する必要があります。その後、動画のリンクがメールで送られてきます。 
@@ -30,10 +30,10 @@ ms.locfileid: "74674206"
 **Get started with gallery controls (ギャラリー コントロールを使用する)**
 <br>講師: Audrie Gordon [登録して今すぐ見る](https://info.microsoft.com/US-EAD-WBNR-FY17-02Feb-28-GettingStartedwithPowerAppsGalleries300759_01Registration-ForminBody.html)
 
-**Get started with formulas in PowerApps (PowerApps で数式を使用する)**
+**Power Apps で数式を使ってみる**
 <br>講師: Audrie Gordon [登録して今すぐ見る](https://info.microsoft.com/US-EAD-WBNR-FY17-03Mar-14-GettingStartedwithPowerAppsFormulas300770_01Registration-ForminBody.html)
 
-**Get started with forms in PowerApps (PowerApps でフォームを使用する)**
+**Power Apps でフォームを使ってみる**
 <br>講師: Audrie Gordon [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-with-PowerApp-Forms/m-p/116842)
 
 **Power Apps コントロールの概要**
@@ -52,7 +52,7 @@ ms.locfileid: "74674206"
 <br>講師: Emma Cooper [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Getting-Started-New-Office-Graph-Templates-Part-2-by-Emma-Cooper/m-p/116840)
 
 ## <a name="intermediate-webinar-series"></a>中級者向けウェビナー シリーズ ##
-**Application Lifecycle with the new Save and publish options in PowerApps (PowerApps での保存および発行オプションを使用したアプリケーション ライフサイクル)**
+**Power Apps での新しい保存および発行オプションを使用したアプリケーションのライフサイクル**
 <br>講師: Karthik Bharathy [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Application-LIfecycle-with-the-new-Save-and-publish-options-in/m-p/116860)
 
 **Power Apps は、Lookup 関数の使用に重点を置いています**
@@ -64,7 +64,7 @@ ms.locfileid: "74674206"
 **IWMentor の Laura Rogers による運用アプリのベスト プラクティス**
 <br>講師: Laura Rodgers [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Laura-Rogers-from-IWMentor-Shares-Best-Practices-for-Production/m-p/116871)
 
-**コネクタ シリーズ | PowerApps での Microsoft StaffHub (シフト計画) アプリ**
+**コネクタシリーズ |Microsoft StaffHub (Shift Planning) アプリと Power Apps**
 <br>講師: Marc-André Lépine [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connector-Series-Shift-Scheduling-Apps-with-PowerApps-StaffHub/m-p/122036)
 
 **Power Apps の管理 |よく寄せられる質問**
@@ -96,16 +96,16 @@ ms.locfileid: "74674206"
 **チーム + パワーアプリのヒントと秘訣**
 <br>講師: Audrie Gordon [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Teams-PowerApps-Tips-and-Tricks/m-p/116846)
 
-**PowerApps から OneDrive for Business 上の Excel に接続するためのヒント**
+**Power Apps から OneDrive for Business 上の Excel に接続するためのヒント**
 <br>講師: Audrie Gordon [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Pro-tips-for-connecting-to-Excel-from-PowerApps-by-Audrie-Gordon/m-p/116881)
 
-**Connecting to on-premises data from PowerApps (PowerApps からオンプレミスのデータに接続する)**
+**Power Apps からオンプレミスのデータに接続する**
 <br>講師: Archana Nair および Dimah Zaidalkilani [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Connecting-to-On-Premises-Data-from-PowerApps/m-p/116885)
 
 **コネクタの操作: Planner コネクタを使用する**
 <br> 講師: Audrie Gordon [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Using-the-Planner-Connector/m-p/116886)
 
-**PowerApps での Office Graph の活用**
+**Power Apps を使用した Office Graph の機能**
 <br>講師: Audrie Gordon [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/The-Power-of-Office-Graph-with-PowerApps/m-p/116888)
 
 **コネクタの操作: Project Online (PWA)**
@@ -115,7 +115,7 @@ ms.locfileid: "74674206"
 **Power Apps Studio を使用してアプリケーションを迅速に作成する**
 <br>講師: Karthik Bharathy [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rapidly-build-applications-with-PowerApps-Studio/m-p/116849)
 
-**Rebuilding an InfoPath Designer form in PowerApps (PowerApps で InfoPath デザイナー フォームを再構築する)**
+**Power Apps での InfoPath Designer フォームの再構築**
 <br>講師: Daniel Christian [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Rebuilding-an-InfoPath-Designer-Form/m-p/116909)
 
 **Power Apps に移行する InfoPath デザイナーのヒント-パート1**
@@ -147,7 +147,7 @@ ms.locfileid: "74674206"
 **導入しやすく使いやいアプリの構築**
 <br>講師: Veronica Ward [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Apps-for-Adoption-and-Usability-with-Veronica-Ward/m-p/117625#M38)
 
-**PowerApps でのダイアログまたはポップアップ メッセージの作成**
+**Power Apps でのダイアログまたはポップアップメッセージの作成**
 <br>講師: Veronica Ward [今すぐ見る](https://powerusers.microsoft.com/t5/Live-Events-and-Webinars/Building-Dialogs-in-PowerApps-by-Veronica-Ward/m-p/117627#M39)
 
 **Curtain の背後にあるいずれかのパワーアプリの開発者を見てみましょう。テンプレート: Marie Hoeger**

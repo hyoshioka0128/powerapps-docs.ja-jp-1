@@ -1,6 +1,6 @@
 ---
 title: Canvas apps のカレンダー画面テンプレートのリファレンス |Microsoft Docs
-description: PowerApps でキャンバスアプリのカレンダー画面テンプレートがどのように機能するかについて詳しく説明します。
+description: Power Apps でキャンバスアプリのカレンダー画面テンプレートがどのように機能するかについて詳しく説明します。
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a586f705780ef370c63dc35e0d63658a437b549e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: adcdc2b14bdc393b69f467f123418c87bb5cca9e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675364"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732660"
 ---
 # <a name="reference-information-about-the-calendar-screen-template-for-canvas-apps"></a>キャンバスアプリのカレンダー画面テンプレートに関する参照情報
 
@@ -35,7 +35,7 @@ Power Apps のキャンバスアプリでは、カレンダー画面テンプレ
 
 ## <a name="prerequisite"></a>前提条件
 
-[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
+[Power Apps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
 
 ## <a name="calendar-drop-down"></a>予定表のドロップダウン
 
@@ -325,5 +325,5 @@ Power Apps のキャンバスアプリでは、カレンダー画面テンプレ
 ## <a name="next-steps"></a>次の手順
 
 - [この画面の詳細情報](./calendar-screen-overview.md)
-- [PowerApps での Office 365 Outlook コネクタについての詳細情報](../connections/connection-office365-outlook.md)
-- [PowerApps での Office 365 Users コネクタについての詳細情報](../connections/connection-office365-users.md)
+- [Office 365 Outlook コネクタの詳細については、「Power Apps」を参照してください。](../connections/connection-office365-outlook.md)
+- [Office 365 Users コネクタの詳細については、「Power Apps」を参照してください。](../connections/connection-office365-users.md)

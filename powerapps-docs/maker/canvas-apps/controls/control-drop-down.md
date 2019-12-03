@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 53e78383733af1b5fdb71f5649d342f07605340e
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: cc9b12f6cf899d0a57e56eda9fe0dd4bc5ba6c2e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650569"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723110"
 ---
-# <a name="drop-down-control-in-powerapps"></a>PowerApps のドロップ ダウン コントロール
+# <a name="drop-down-control-in-power-apps"></a>Power Apps のドロップダウンコントロール
 ユーザーがそれを開く場合を除き、最初の項目のみを表示するリストです。
 
 ## <a name="description"></a>Description

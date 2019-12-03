@@ -13,19 +13,19 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eec6400b4953f1183ffbb294093c13aebb53fe8d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e22800dc929c32f0a605137b6dc94820b984459c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678651"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727337"
 ---
 # <a name="container-control-in-power-apps-experimental"></a>Power Apps でのコンテナーコントロール (試験段階)
 階層を作成する機能を提供します。
 
 > [!IMPORTANT]
 > これは試験的な機能です。 試験的な機能は大幅に変更されたり、いつでもまったく表示されなくなったりする可能性があります。
-> 詳細については、「 [PowerApps の実験的およびプレビュー機能に](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview)ついて」を参照してください。
+> 詳細については、「 [Power Apps の試験段階とプレビュー機能に](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-experimental-preview)ついて」を参照してください。
 
 ## <a name="description"></a>Description
  コンテナーは、一連のコントロールを保持し、独自のプロパティを持つことができます。 

@@ -1,6 +1,6 @@
 ---
 title: First、FirstN、Last、および LastN 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の First、FirstN、Last、および LastN 関数の参照情報
+description: 構文と例を含む、Power Apps の First、FirstN、Last、および LastN 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 48e8311d5da00b02cbefbf6f47661c89adcc80a5
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 490bc00deb41cdc58919cf5f42302ef46dd405f7
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992724"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730964"
 ---
-# <a name="first-firstn-last-and-lastn-functions-in-powerapps"></a>PowerApps の First、FirstN、Last、および LastN 関数
+# <a name="first-firstn-last-and-lastn-functions-in-power-apps"></a>Power Apps の first、FirstN、Last、および LastN 関数
 テーブルの最初または最後の[レコード](../working-with-tables.md#records) セットを返します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **First** 関数は、[テーブル](../working-with-tables.md)の最初のレコードを返します。
 
 **FirstN** 関数は、テーブルの最初のレコード セットを返します。2 番目の引数で、返されるレコードの数を指定します。

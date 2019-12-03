@@ -1,6 +1,6 @@
 ---
 title: ご利用のキャンバス アプリを以前のバージョンに復元する | Microsoft Docs
-description: PowerApps でキャンバス アプリを復元する
+description: Power Apps でのキャンバスアプリの復元
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b7f9c98f174700a73e8d46d103bbe597ae15c1f4
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 15351f3fcfa166c281a1bc4d3213eace8f881d11
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675405"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732758"
 ---
-# <a name="restore-a-canvas-app-to-a-previous-version-in-powerapps"></a>キャンバス アプリを PowerApps で以前のバージョンに復元します
+# <a name="restore-a-canvas-app-to-a-previous-version-in-power-apps"></a>Power Apps での以前のバージョンへのキャンバスアプリの復元
 この記事では、Power Apps アカウントからクラウドに保存された以前のバージョンにキャンバスアプリを復元する方法について説明します。
 
 ## <a name="restore-an-app-from-your-account"></a>アカウントからのアプリの復元

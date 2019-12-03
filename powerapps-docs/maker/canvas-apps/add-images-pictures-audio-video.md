@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5612f97a3dde96fdb9ea017e34986b7e21c43bd7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 58b96ab5758fd30a05d9f325cb623bbc338b0d00
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679226"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724741"
 ---
-# <a name="using-multimedia-files-in-powerapps"></a>PowerApps でマルチ メディア ファイルを使用する
+# <a name="using-multimedia-files-in-power-apps"></a>Power Apps でのマルチメディアファイルの使用
 
 このトピックでは、キャンバス アプリにマルチメディア ファイルを埋め込み、データ ソースにペン画をアップロードして、キャンバス アプリでデータ ソースからのイメージを表示する方法を説明します。 このトピックで使用しているデータ ソースは、OneDrive for Business の Excel ファイルです。
 

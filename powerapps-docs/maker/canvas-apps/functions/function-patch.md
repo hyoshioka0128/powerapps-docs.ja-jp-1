@@ -1,6 +1,6 @@
 ---
 title: Patch 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Patch 関数の参照情報
+description: 構文と例を含む Power Apps の Patch 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 711a15a93d1e3ed9839f5d51c0bfa32e00563852
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1b23ac058632c4a4b2196c48ed5ffaf6d63fc2bd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984323"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730450"
 ---
-# <a name="patch-function-in-powerapps"></a>PowerApps の Patch 関数
+# <a name="patch-function-in-power-apps"></a>Power Apps の Patch 関数
 [データ ソース](../working-with-data-sources.md)内で 1 つ以上の[レコード](../working-with-tables.md#records)を変更または作成するか、データ ソースの外部でレコードをマージします。
 
 **Patch** 関数は、複雑な状況でレコードを変更するために使用します (ユーザーの操作を必要としない更新を実行する場合や、複数の画面にまたがったフォームを使用するなど)。
@@ -40,7 +40,7 @@ ms.locfileid: "71984323"
 
 `Patch( { Name: "Contoso", Phone: “1-212-555-1234” }, { Name: "Contoso", Location: “Midtown”  } )`
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 ### <a name="modify-or-create-a-record-in-a-data-source"></a>データ ソースのレコードを変更または作成する
 データ ソースに対してこの関数を使用するには、データ ソースを指定し、基本レコードを指定します。
 
@@ -93,7 +93,7 @@ ms.locfileid: "71984323"
 
 ![](media/function-patch/icecream.png)
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Patch(&nbsp;IceCream,<br>First( Filter( IceCream, Flavor = "Chocolate" ) ), {&nbsp;Quantity:&nbsp;400&nbsp;} )** |**IceCream** データ ソース内のレコードを変更します。<ul><li> 変更するレコードの **ID** 列には値 **1** が含まれます (**Chocolate** レコードの ID がこれです)。</li><li>**Quantity** 列の値が **400** に変更されます。 |{&nbsp;ID:&nbsp;1, Flavor:&nbsp;"Chocolate", Quantity:&nbsp;400 }<br><br>**IceCream** データ ソースの **Chocolate** エントリが変更されています。 |
 | **Patch( IceCream, Defaults(&nbsp;IceCream ), {&nbsp;Flavor:&nbsp;"Strawberry"&nbsp;}&nbsp;)** |**IceCream** データ ソース内のレコードを作成します。<ul><li>**ID** 列には値 **3** が含まれます。これはデータ ソースが自動的に生成するものです。</li><li>**Quantity** 列には **0** が含まれます。これは **[Defaults](function-defaults.md)** 関数で指定するとおり、**IceCream** データ ソースにおけるこの列の既定値です。<li>**Flavor** 列には **Strawberry** という値が含まれます。</li> |{ ID:&nbsp;3, Flavor:&nbsp;"Strawberry", Quantity:&nbsp;0&nbsp;}<br><br>**IceCream** データ ソースの **Strawberry** エントリが作成されています。 |
@@ -104,7 +104,7 @@ ms.locfileid: "71984323"
 
 #### <a name="merge-records-outside-of-a-data-source"></a>(データ ソースの外部で) レコードをマージする
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Patch(&nbsp;{&nbsp;Name:&nbsp;"James",&nbsp;Score:&nbsp;90&nbsp;}, {&nbsp;Name:&nbsp;"Jim",&nbsp;Passed:&nbsp;true&nbsp;} )** |データ ソースの外部で 2 つのレコードをマージします。<br><ul><li>各レコードの **Name** 列の値は一致しません。 結果には、引数リストの先頭に近いレコードの値 (**James**) ではなく、末尾に近いレコードの値 (**Jim**) が含まれます。</li><li>最初のレコードには、2 番目のレコードには存在しない列 (**Score**) が含まれます。 結果には、その列とその値 (**90**) が含まれます。</li><li>2 番目のレコードには、最初のレコードには存在しない列 (**Passed**) が含まれます。 結果には、その列とその値 (**true**) が含まれます。 |{&nbsp;Name:&nbsp;"Jim", Score:&nbsp;90, Passed:&nbsp;true&nbsp;} |
 

@@ -13,20 +13,20 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fd48455f24cd07a09ce3a7cdb44b2fa6da2a0166
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 09b8f728d175edb598ee832be11cf3329d166ae7
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679249"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724777"
 ---
-# <a name="show-a-list-of-items-in-powerapps"></a>PowerApps の項目の一覧の表示
+# <a name="show-a-list-of-items-in-power-apps"></a>Power Apps で項目の一覧を表示する
 
 キャンバス アプリに **[ギャラリー](controls/control-gallery.md)** コントロールを追加して、任意のデータ ソースからの項目の一覧を表示します。 このトピックでは、データ ソースとして Excel を使用します。 **[テキスト入力](controls/control-text-input.md)** コントロールのフィルター条件に一致する項目のみを表示するように**ギャラリー** コントロールを構成して、一覧をフィルター処理します。
 
 ## <a name="prerequisites"></a>前提条件
 
-- PowerApps で[コントロールを追加して構成する](add-configure-controls.md)方法について確認します。
+- Power Apps で[コントロールを追加して構成](add-configure-controls.md)する方法について説明します。
 
 - サンプル データを設定するには、次の処理を行います。
     1. [この Excel ファイル](https://az787822.vo.msecnd.net/documentation/get-started-from-data/FlooringEstimates.xlsx)をダウンロードして、チュートリアルのサンプル データを取得します。
@@ -34,7 +34,7 @@ ms.locfileid: "74679249"
     2. Excel ファイルを OneDrive for Business などの[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)にアップロードします。
 
 - 空のアプリを開きます。
-    1. [PowerApps にサインインします](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+    1. [Power Apps にサインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 
     1. **[自分のアプリを作成する]** で **[キャンバス アプリを一から作成]** を選択します。
 

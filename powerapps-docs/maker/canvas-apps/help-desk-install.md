@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fce460ffe808b7a604e1cdceac05a2696b8e10ed
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 01fdadfd5ecf19d56ac115e53cef08a2cff2a254
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676147"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729648"
 ---
-# <a name="install-and-configure-the-help-desk-sample-in-powerapps"></a>PowerApps で Help Desk サンプルをインストールして構成する
+# <a name="install-and-configure-the-help-desk-sample-in-power-apps"></a>Power Apps でのヘルプデスクのサンプルのインストールと構成
 
 Power Apps での、キャンバスアプリ用ヘルプデスクサンプルのインストールと構成に関する詳細な手順です。
 
@@ -40,7 +40,7 @@ Power Apps での、キャンバスアプリ用ヘルプデスクサンプルの
 
 ## <a name="prerequisites"></a>前提条件
 
-- PowerApps に[サインアップ](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+- Power Apps に[サインアップ](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 - 有効な SharePoint Online ライセンスと、リストを作成するアクセス許可を持っている必要があります。
 
 ## <a name="create-the-helpdesk-sharepoint-list"></a>HelpDesk (ヘルプデスク) SharePoint リストを作成する

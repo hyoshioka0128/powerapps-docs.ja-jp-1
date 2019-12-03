@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5ac2eaf3a0cfa4dc5c2a2150aa4a02ab127e5154
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b7d4471fde0bf22ec2900f303347d5d4783381ed
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676535"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729560"
 ---
-# <a name="manage-an-on-premises-data-gateway-in-powerapps"></a>PowerApps でのオンプレミス データ ゲートウェイの管理
+# <a name="manage-an-on-premises-data-gateway-in-power-apps"></a>Power Apps でのオンプレミスデータゲートウェイの管理
 
 オンプレミスのデータゲートウェイをインストールすると、パワーアプリに組み込まれているキャンバスアプリと、オンプレミスの SQL Server データベースやオンプレミスの SharePoint サイトなど、クラウドにないデータソースとの間でデータをすばやく安全に転送できます。 管理者権限があるすべてのゲートウェイを表示し、それらの権限と接続を管理することができます。
 
@@ -35,7 +35,7 @@ ms.locfileid: "74676535"
 
 ## <a name="prerequisites"></a>前提条件
 
-* PowerApps の[サインアップ](../signup-for-powerapps.md)に使用したユーザー名とパスワード。
+* Power Apps の[サインアップ](../signup-for-powerapps.md)に使用したユーザー名とパスワード。
 * ゲートウェイの管理者アクセス許可。 (ゲートウェイをインストールしたユーザーには、ゲートウェイごとにこれらのアクセス許可が既定で割り当てられます。また、他のゲートウェイの管理者から、そのゲートウェイの管理者アクセス許可を付与してもらうこともできます。)
 * オンプレミス ゲートウェイを使用したオンプレミス データへのアクセスをサポートするライセンス。 詳細については、[料金に関するページ](https://powerapps.microsoft.com/pricing/)の「Connectivity (接続)」セクションを参照してください。
 * ゲートウェイとオンプレミス接続は、ユーザーの[既定の環境](working-with-environments.md)でのみ作成し、使用できます。

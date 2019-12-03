@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f2b401fb4054d63e19b1dcab29cbabf27cc3c117
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5ee1d56e6144f0c7f4e1b3ca440063f87b7bdc5d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674622"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733085"
 ---
 # <a name="how-to-save-images-in-an-excel-file-and-then-add-these-images-to-your-app"></a>画像を Excel ファイルに保存してアプリに追加する方法
 
@@ -100,5 +100,5 @@ Excel テーブル内の画像のパスは、URL になっていてもかまい�
 ## <a name="learn-more"></a>詳細情報
 [画像、ビデオ、またはサウンドを追加する](add-images-pictures-audio-video.md)  
 [アプリでデータを折れ線グラフ、円グラフ、棒グラフで表示する](use-line-pie-bar-chart.md)  
-[PowerApps におけるテーブルとレコードについて](working-with-tables.md)
+[Power Apps のテーブルとレコードについて](working-with-tables.md)
 

@@ -1,6 +1,6 @@
 ---
 title: Day、Month、Year、Hour、Minute、Second、および Weekday 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Day、Month、Year、Hour、Minute、Second、および Weekday 関数の参照情報
+description: 構文と例を含む、Power Apps の Day、Month、Year、Hour、Minute、Second、および Weekday 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bc5d17903ea5cfe834fd4e0987b4fc4613a1ad65
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 571ec9d9b18be623a60bedfc3ac04e8ed8e46b33
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992821"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731134"
 ---
-# <a name="day-month-year-hour-minute-second-and-weekday-functions-in-powerapps"></a>PowerApps の Day、Month、Year、Hour、Minute、Second、および Weekday 関数
+# <a name="day-month-year-hour-minute-second-and-weekday-functions-in-power-apps"></a>Power Apps の Day、Month、Year、Hour、Minute、Second、および Weekday 関数
 Date/Time 値の個々の要素を返します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Day** 関数は、Date/Time 値の日付要素を 1 から 31 の範囲で返します。
 
 **Month** 関数は、Date/Time 値の月要素を 1 から 12 の範囲で返します。
@@ -38,7 +38,7 @@ Date/Time 値の個々の要素を返します。
 
 **Weekday** 関数は、Date/Time 値の曜日を返します。  既定では、結果の範囲は 1 (日曜日) から 7 (土曜日) です。  次のように、Microsoft Excel Weekday 関数コードまたは StartOfWeek 列挙値で、別の範囲を指定できます。
 
-| Excel コード | StartOfWeek 列挙型 | 説明 |
+| Excel コード | StartOfWeek 列挙型 | Description |
 | --- | --- | --- |
 | **1**、**17** |**StartOfWeek.Sunday** |1 (日曜日) から 7 (土曜日) までの数値。  既定値。 |
 | **2**、**11** |**StartOfWeek.Monday** |1 (月曜日) から 7 (日曜日) までの数値。 |
@@ -66,7 +66,7 @@ Date/Time 値の個々の要素を返します。
 ## <a name="examples"></a>例
 次の例では、現在の時刻は **2015 年 4 月 9 日木曜日**の**午後 3 時 59 分 37 秒**です。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Year(&nbsp;Now()&nbsp;)** |現在の時刻と日付の年要素を返します。 |2015 |
 | **Month(&nbsp;Now()&nbsp;)** |現在の時刻と日付の月要素を返します。 |4 |

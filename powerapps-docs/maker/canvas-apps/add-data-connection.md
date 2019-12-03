@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d81b1648fc3c45d0498efb9eba0cc14ffbc6142b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d1397f9fd2859611a3cd54023210a27cd5977834
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679272"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724945"
 ---
-# <a name="add-a-data-connection-to-a-canvas-app-in-powerapps"></a>PowerApps でキャンバス アプリにデータ接続を追加する
+# <a name="add-a-data-connection-to-a-canvas-app-in-power-apps"></a>Power Apps でキャンバスアプリにデータ接続を追加する
 
 Power Apps で、既存のキャンバスアプリ、または最初から構築しているアプリにデータ接続を追加します。 アプリは、SharePoint、Common Data Service、Salesforce、OneDrive など、[他の多くのデータソース](connections-list.md)に接続できます。
 

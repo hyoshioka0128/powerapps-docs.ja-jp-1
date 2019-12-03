@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 06c3a02d1ea3943f64661334ca419f6f205e8b7e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 25dacb85b49e931ebc8de90a819ed3cebe5aab9a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675820"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732271"
 ---
 # <a name="create-an-order-gallery-in-a-canvas-app"></a>キャンバスアプリでの注文書ギャラリーの作成
 
@@ -38,7 +38,7 @@ Northwind Traders データベースで架空のデータを管理するため�
 
 ## <a name="create-a-blank-app"></a>空のアプリを作成する
 
-1. [PowerApps にサインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、空のタブレットアプリを作成します。
+1. [Power Apps にサインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、空のタブレットアプリを作成します。
 
     > [!div class="mx-imgBorder"]
     > 空のタイルからキャンバスアプリを ![](media/northwind-orders-canvas-part1/start-01.png)

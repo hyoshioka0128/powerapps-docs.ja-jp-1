@@ -1,6 +1,6 @@
 ---
 title: Choices 関数 | Microsoft Docs
-description: 構文を含む PowerApps の Choices 関数の参照情報
+description: 構文を含む、Power Apps の Choice 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7adf3391ef418a2b42861df63bc8396adc22f93a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2ebe6b2019652b1f2e59419c718136aced81c62e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679456"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731405"
 ---
-# <a name="choices-function-in-powerapps"></a>PowerApps の Choices 関数
+# <a name="choices-function-in-power-apps"></a>Power Apps の choice 機能
 ルックアップ列で使用可能な値のテーブルを返します。
 
 ## <a name="description"></a>Description

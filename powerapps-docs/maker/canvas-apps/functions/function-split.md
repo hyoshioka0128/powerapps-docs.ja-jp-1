@@ -1,6 +1,6 @@
 ---
 title: Split 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Split 関数の参照情報
+description: 構文と例を含む Power Apps の Split 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 72f92477cc8c942ee0274267c5bcb13094681873
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d58c4b64f558ec2a9348a9a9433b9a55f69419db
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984142"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730108"
 ---
-# <a name="split-function-in-powerapps"></a>PowerApps の Split 関数
+# <a name="split-function-in-power-apps"></a>Power Apps での関数の分割
 テキスト文字列を部分文字列のテーブルに分割します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Split** 関数はテキスト文字列を部分文字列のテーブルに分割します。  コンマ区切りのリスト、間にスラッシュが使用されている日付、その他適切に定義された区切り記号が使用されている状況で分割を行う場合に **Split** を使用します。  
 
 区切り記号文字列はテキスト文字列を分割するために使用します。  区切り記号は 0、1、またはテキスト文字列全体で整合するその他の文字になります。  長さ 0 または*空の*文字列を使用すると、すべての文字が 1 つずつ分割されます。  一致する区切り文字は、結果に返されません。  区切り記号の一致が見つからない場合、テキスト文字列全体が 1 つの結果として返されます。
@@ -44,7 +44,7 @@ ms.locfileid: "71984142"
 
 ### <a name="basic-usage"></a>基本的な使用方法
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | `Split( "Apples, Oranges, Bananas", "," )` |コンマ区切り記号に基づき、それぞれの果物が分割されます。  分割はコンマに基づいて実行され、その後のスペースには基づきません。そのため、"&nbsp;Oranges" および "&nbsp;Bananas" のように前にスペースが入ります。 |<style> img { max-width: none; } </style> ![](media/function-split/fruit1.png) |
 | `TrimEnds( Split( "Apples, Oranges, Bananas", "," ) )` |前の例と同じですが、この場合は **Split** により生成される単一の列テーブルに対して動作している [**TrimEnds** 関数](function-trim.md)によってスペースが削除されています。 コンマの後のスペースを含む区切り記号 **",&nbsp;"** も使用できますが、スペースがない場合やスペースが 2 つある場合には正しく動作しません。 |<style> img { max-width: none; } </style> ![](media/function-split/fruit2.png) |
@@ -52,7 +52,7 @@ ms.locfileid: "71984142"
 
 ### <a name="different-delimiters"></a>区切り記号が異なる
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | `Split( "Hello, World", "," )` |区切り記号としてコンマを使用して、単語を分割します。  2 番目の結果には、前にスペースが含まれています。この結果がコンマの直後の文字であるためです。 |<style> img { max-width: none; } </style> ![](media/function-split/comma.png) |
 | `Split( "Hello, World", "o" )` |文字 "o" を区切り記号として使用して、文字列を分割します。 |<style> img { max-width: none; } </style> ![](media/function-split/o.png) |
@@ -63,7 +63,7 @@ ms.locfileid: "71984142"
 
 ### <a name="substring-extraction"></a>部分文字列の抽出
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | `First( Split( Last( Split( "Bob Jones <bob.jones@contoso.com>", "<" ) ).Result, ">" ) ).Result` | 開始区切り記号 (<) に基づいて文字列を分割し、**最後**の区切り記号の右側に文字列を抽出します。  次に、式は、終了区切り記号 (>) に基づいて結果を分割し、区切り記号の左側にある文字列を**右**に抽出します。 | "bob.jones@contoso.com" |
 | `Match( "Bob Jones <bob.jones@contoso.com>", "<(?<email>.+)>" ).email` | は、最後の例と同じ区切り記号に基づく抽出を実行しますが、代わりに**Match**関数と正規表現を使用します。 | "bob.jones@contoso.com" |

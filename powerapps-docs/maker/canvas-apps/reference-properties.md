@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 53b4adc44addb08432ad6abbe11bf2b217be1534
-ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
+ms.openlocfilehash: 6a4f85b5eb4d47bb4973de6902b0a69bb98df585
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74598471"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732775"
 ---
-# <a name="controls-and-properties-in-powerapps"></a>PowerApps のコントロールとプロパティ
+# <a name="controls-and-properties-in-power-apps"></a>Power Apps のコントロールとプロパティ
 
 プロパティのいずれかを設定して、コントロールの見た目と動作を構成します。 コントロールの種類ごとに、さまざまなプロパティのセットがあります。 一部のプロパティ (**Height** や **Width** など) はほぼすべての種類のコントロールで共通ですが、他のプロパティ (**CheckboxSize** など) は、コントロールの 1 つの種類に固有のものです。
 
@@ -62,7 +62,7 @@ ms.locfileid: "74598471"
 
 **[エンティティ フォーム](entity-form-control.md)** - 試験的機能: ユーザーが Common Data Service からリレーショナル データを表示、移動、編集できる動的フォームを追加します。
 
-**[エクスポート](controls/control-export-import.md)** – PowerApps の他の場所で使用するためにデータをエクスポートします。
+**[エクスポート](controls/control-export-import.md)** – Power Apps の他の場所で使用するためにデータをエクスポートします。
 
 **[ギャラリー](controls/control-gallery.md)**  – 複数の種類のデータを含めることができるレコードの一覧を表示します。
 
@@ -72,7 +72,7 @@ ms.locfileid: "74598471"
 
 **[イメージ](controls/control-image.md)** – ローカル ファイルやデータ ソースなどの画像を表示します。
 
-**[インポート](controls/control-export-import.md)** – PowerApps の別の場所からデータをインポートします。
+**[インポート](controls/control-export-import.md)** – Power Apps 内の他の場所からデータをインポートします。
 
 **[縦棒グラフ](controls/control-column-line-chart.md)** – 2 つの軸に対して相対的にデータ ポイントの値を表示します。
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 945a4fd3c017363a8c43171c8e891e0c32c84a0f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e4c466a2a090836ff880301f0960302413a3e25e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675219"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732634"
 ---
 # <a name="overview-of-the-calendar-screen-template-for-canvas-apps"></a>キャンバスアプリのカレンダー画面テンプレートの概要
 
@@ -36,7 +36,7 @@ Canvas アプリで、Office 365 Outlook アカウントからの今後のイベ
 
 ## <a name="prerequisite"></a>前提条件
 
-[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
+[Power Apps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
 
 ## <a name="default-functionality"></a>既定の機能
 

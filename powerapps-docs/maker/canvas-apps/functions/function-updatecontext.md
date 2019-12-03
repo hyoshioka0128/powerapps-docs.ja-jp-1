@@ -1,6 +1,6 @@
 ---
 title: UpdateContext 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の UpdateContext 関数の参照情報
+description: 構文と例を含む Power Apps の UpdateContext 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 646a5de203c713d59965f7787dabe087c0a33f51
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7112d48b447140533ca432ec6d5e78b9ed367203
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678168"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729913"
 ---
-# <a name="updatecontext-function-in-powerapps"></a>PowerApps の UpdateContext 関数
+# <a name="updatecontext-function-in-power-apps"></a>Power Apps の UpdateContext 関数
 現在の画面の[コンテキスト変数](../working-with-variables.md#use-a-context-variable)を作成または更新します。
 
 ## <a name="overview"></a>概要

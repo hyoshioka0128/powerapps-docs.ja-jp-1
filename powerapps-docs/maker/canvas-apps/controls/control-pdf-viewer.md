@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f7e1b4ff10a12d454380c394b2f6ae64389bc23e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: df568e6a61ca43f6c98ee80c33ed9efe4148de9e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679732"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729073"
 ---
-# <a name="pdf-viewer-control-experimental-in-powerapps"></a>PowerApps の PDF ビューアー コントロール (試験段階)
+# <a name="pdf-viewer-control-experimental-in-power-apps"></a>Power Apps での PDF ビューアーコントロール (試験段階)
 PDF ファイルの内容を表示する試験段階のコントロールです。
 
 ## <a name="description"></a>Description

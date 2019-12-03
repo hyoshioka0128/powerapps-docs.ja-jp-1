@@ -1,6 +1,6 @@
 ---
 title: 関数 |Microsoft Docs
-description: 構文を含む PowerApps の With 関数の参照情報
+description: 構文を含む、Power Apps の With 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,35 +13,35 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8d793fcfd2992a781f92d529002e22a34a9df5a
-ms.sourcegitcommit: 742a5a21e73a811e9cea353d8275f09c22366afc
+ms.openlocfilehash: 886482e9093fa44c34fb1f72b93d51181d4fbc10
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70130344"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729857"
 ---
-# <a name="with-function-in-powerapps"></a>PowerApps の With 関数
+# <a name="with-function-in-power-apps"></a>Power Apps の関数を使用する
 値を計算し、名前付きの値のインラインレコードを含む1つの[レコード](../working-with-tables.md#records)に対してアクションを実行します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 
 **With**関数は、1つのレコードに対して数式を評価します。  数式は、値を計算したり、操作 (データの変更や接続の操作など) を実行したりできます。  レコードのテーブル内のすべてのレコードの数式を評価するには、 [ **ForAll**関数](function-forall.md)を使用します。
 
 [!INCLUDE [record-scope](../../../includes/record-scope.md)]
 
-**と共**に使用すると、複雑な数式をより小さな名前のサブ式に分割することにより、読みやすさを向上させることができます。  これらの名前付きの値は、のスコープに限定され**た**単純なローカル変数のように動作します。  [ **Updatecontext**関数](function-updatecontext.md)で使用されるのと同じインラインレコード構文は、と共に使用できます。  を**と共に**使用することをお勧めします。コンテキスト変数またはグローバル変数は、自己完結し、わかりやすく、任意の宣言型の数式コンテキストで使用できます。  
+**と共**に使用すると、複雑な数式をより小さな名前のサブ式に分割することにより、読みやすさを向上させることができます。  これらの名前付きの値は、のスコープに限定され**た**単純なローカル変数のように動作します。  [ **Updatecontext**関数](function-updatecontext.md)で使用される**のと同じ**インラインレコード構文は、と共に使用できます。  を**と共に**使用することをお勧めします。コンテキスト変数またはグローバル変数は、自己完結し、わかりやすく、任意の宣言型の数式コンテキストで使用できます。  
 
 [**Patch**](function-patch.md)や[**Match**](function-ismatch.md)などの関数によって返されるレコードのフィールドにアクセスするには、**と共**にを使用します。  **で**は、これらの関数からの値を保持し、さらに多くの計算やアクションで使用できるようにします。  
 
-**の** *レコード*引数がエラーの場合、関数によってそのエラーが返され、*式*は評価されません。
+**の***レコード*引数がエラーの場合、関数によってそのエラーが返され、*式*は評価されません。
 
 ## <a name="syntax"></a>構文
-**で**(*レコード*、*式*)
+**With**( *Record*, *Formula* )
 
-* *Record* –必須。 操作するレコード。  名前の値には、インライン構文を使用します。`{ name1: value1, name2: value2, ... }`
-* *Formula* –必須。  *レコード*に対して評価する数式。  この数式では、レコードのフィールドをレコードスコープとして直接参照できます。
+* *Record* –必須。 操作するレコード。  名前の値には、インライン構文を使用 `{ name1: value1, name2: value2, ... }`
+* *Formula* –必須。  *レコード*に対して評価する数式。  この数式では、レコードのフィールドをレコードスコープとし*て直接参照*できます。
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
 
 ### <a name="simple-named-values"></a>単純な名前付きの値
 
@@ -72,9 +72,9 @@ With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments
 )  
 ```
 
-この例では、関数**を使用して**、[月額ローン返済](https://en.wikipedia.org/wiki/Mortgage_calculator#Monthly_payment_formula)の2層計算を作成しています。  競合がない限り、外側のすべての名前付きの値は、の内部で使用できます。
+この例では、関数**を使用して**、[月額ローン返済](https://en.wikipedia.org/wiki/Mortgage_calculator#Monthly_payment_formula)の2層計算を作成しています。  競合がない限り **、外側のすべての名前**付きの値は、の内部で使用でき**ます。**
 
-スライダーコントロールは1ずつずつ移動できるので、スライダーを分割または乗算して、カスタムインクリメントを効果的に作成します。  利率がの場合、 **RateSlider**の Max プロパティは**48**に設定されています。この**値**は、1/8 のパーセンテージで割った値を8で割って100で割った値から、0.125% から 6% の範囲である10進数に変換します。  ローンの金額の場合、 **AmountSlider**の**Max**プロパティは**60**に設定され、1万が乗算されます。これは1万から60万までの範囲です。
+スライダーコントロールは1ずつずつ移動できるので、スライダーを分割または乗算して、カスタムインクリメントを効果的に作成します。  利率がの場合、 **RateSlider**の Max プロパティは**48**に設定されています。この**値**は、1/8 のパーセンテージで割った値を8で割って100で割った値から、0.125% から6% の範囲である10進数に変換します。  ローンの金額の場合、 **AmountSlider**の**Max**プロパティは**60**に設定され、1万が乗算されます。これは1万から60万までの範囲です。
 
 スライダーが移動し、新しいローンの支払いが表示されると、 **With**が自動的に再計算されます。  変数は使用されず、スライダーコントロールの**OnChange**プロパティを使用する必要はありません。
 

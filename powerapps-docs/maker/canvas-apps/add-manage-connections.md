@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5eb7bac0197856988f344ae2779bf2b43d1f797f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 503ab33c2c31854bb39baa8d523dda41f085ae2a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679985"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724393"
 ---
-# <a name="manage-canvas-app-connections-in-powerapps"></a>PowerApps でキャンバス アプリの接続を管理する
+# <a name="manage-canvas-app-connections-in-power-apps"></a>Power Apps でのキャンバスアプリ接続の管理
 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、1 つまたは複数のデータ ソースへの接続を作成したり、接続を削除したり、接続の資格情報を更新したりします。
 
 ご利用のキャンバス アプリのデータ接続では、SharePoint、SQL Server、Office 365、OneDrive for Business、Salesforce、Excel などの多くの[データ ソース](connections-list.md)に接続できます。
@@ -35,7 +35,7 @@ ms.locfileid: "74679985"
 * Twilio に接続し、アプリから SMS メッセージを送信する。
 
 ## <a name="prerequisites"></a>前提条件
-1. PowerApps に[サインアップ](../signup-for-powerapps.md)。
+1. Power Apps に[サインアップ](../signup-for-powerapps.md)します。
 2. サインアップに使用した資格情報で [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 ## <a name="background-on-data-connections"></a>データ接続の背景

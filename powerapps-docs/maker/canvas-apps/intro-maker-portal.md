@@ -13,16 +13,16 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0f745516ab0c282ab6519f0bac8ac8cfd5f46598
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 284d63d7ebc0eb57e11dae055a9178b3b92646cd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675762"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729509"
 ---
 # <a name="sign-in-to-power-apps-for-the-first-time"></a>初めて Power Apps にサインインする
 
-[PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインすると、独自のアプリを作成したり、ご自分または他のユーザーが作成したアプリを開いたり、関連するタスクを実行したりするためのさまざまなオプションをそのサイトで利用できるようになります。 これらのタスクは、アクセス権が得られる 1 つまたは複数のライセンスの識別などの最もシンプルなものから、特定のデータ ソースへのカスタム接続の作成などのより高度なものまで多岐にわたります。
+[Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインすると、独自のアプリを作成したり、自分や他のユーザーが作成したアプリを開いたり、関連するタスクを実行したりするためのさまざまなオプションが提供されます。 これらのタスクは、アクセス権が得られる 1 つまたは複数のライセンスの識別などの最もシンプルなものから、特定のデータ ソースへのカスタム接続の作成などのより高度なものまで多岐にわたります。
 
 次の 3 つの一般的な領域で、オプションを選択できます。
 
@@ -112,7 +112,7 @@ Common Data Service データベースを持つ環境を選択した場合は、
   - [キャンバス アプリ コネクタの概要](connections-list.md)
   - [キャンバス アプリ用のカスタム コネクタのビルドと認定](register-custom-api.md)
   - [オンプレミス データ ゲートウェイの管理](gateway-management.md)
-  - [PowerApp の管理](../../administrator/index.md)
+  - [Power Apps の管理](../../administrator/index.md)
   - [ライセンスの概要](../../administrator/pricing-billing-skus.md)
   - [モデル駆動型アプリのビルドの概要](../model-driven-apps/model-driven-app-overview.md)
 

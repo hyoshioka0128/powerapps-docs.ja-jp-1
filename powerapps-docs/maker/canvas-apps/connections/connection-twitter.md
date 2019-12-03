@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 21effecae904675e39c914145ee10df9c81ec752
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 50b783bce993d40ae88c438c115b2b859a08b7f8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679847"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723276"
 ---
-# <a name="connect-to-twitter-from-powerapps"></a>PowerApps から Twitter に接続する
+# <a name="connect-to-twitter-from-power-apps"></a>Power Apps から Twitter に接続する
 ![Twitter](./media/connection-twitter/twittericon.png)
 
 Twitter では、Twitter アカウントからツイートの投稿、ツイート、タイムライン、フレンド、フォロワーの取得を行うことができます。

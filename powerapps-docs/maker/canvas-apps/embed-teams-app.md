@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b8750733ac6c97d1669c1063700a3d075fbabbe
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a12cd7c17a6aca93f254cc2e2cb89cb848245392
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678490"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731524"
 ---
 # <a name="embed-an-app-in-teams"></a>Teams にアプリを埋め込む
 
@@ -32,7 +32,7 @@ Microsoft Teams に直接埋め込むことで、作成した Power Apps を共�
 ## <a name="prerequisites"></a>前提条件
 
 - 有効な[Power Apps ライセンス](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)が必要です。
-- アプリをチームに埋め込むには、 [PowerApps を使用して作成され](data-platform-create-app.md)た既存のアプリが必要です。
+- アプリをチームに埋め込むには、 [Power Apps を使用して作成され](data-platform-create-app.md)た既存のアプリが必要です。
 
 ## <a name="download-the-app"></a>アプリをダウンロードする
 

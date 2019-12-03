@@ -1,6 +1,6 @@
 ---
 title: Language 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Language 関数の参照情報
+description: 構文と例を含む Power Apps の Language 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 33dcc3ab5e1682783c997adf4dd1185d59b0db2b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a7e41f9becc6cf974bffdeca127e549191ee9379
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678329"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730683"
 ---
-# <a name="language-function-in-powerapps"></a>PowerApps の Language 関数
+# <a name="language-function-in-power-apps"></a>Power Apps の言語機能
 現在のユーザーの言語タグを返します。
 
 ## <a name="description"></a>Description

@@ -1,6 +1,6 @@
 ---
 title: Oracle データベースへの接続 | Microsoft Docs
-description: PowerApps で Oracle データベースに接続し、このデータベースを利用してアプリを作成する方法について説明します。
+description: Oracle Database に接続し、それを使用してアプリを作成する方法について説明します。
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 31bf18342de1191dbd816093186fe33e31755232
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b742193e2d127993779e2bba94f35c0c24ecfd7b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678743"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728407"
 ---
-# <a name="connect-to-an-oracle-database-from-powerapps"></a>PowerApps から Oracle データベースへの接続
+# <a name="connect-to-an-oracle-database-from-power-apps"></a>Power Apps から Oracle データベースに接続する
 接続を作成し、Power Apps でアプリを構築した後、Oracle データベースでテーブルを一覧表示したり、テーブル行を作成、読み取り、更新、削除したりします。 Oracle データベースへの接続では、フィルター処理や並び替えなど、トリガーとストアド プロシージャを除く機能の完全委任がサポートされています。
 
 ## <a name="prerequisites"></a>前提条件

@@ -1,6 +1,6 @@
 ---
 title: SetFocus 関数 |Microsoft Docs
-description: 構文を含む PowerApps の SetFocus 関数の参照情報
+description: 構文を含む、Power Apps の SetFocus 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cdf34c3c4909697b70a105e5145620ab5bd31ea9
-ms.sourcegitcommit: 5899d37e38ed7111d5a9d9f3561449782702a5e9
+ms.openlocfilehash: 6347a76765fef433880754038d4e098fcb0fd6ee
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71038150"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730228"
 ---
-# <a name="setfocus-function-in-powerapps"></a>PowerApps の SetFocus 関数
+# <a name="setfocus-function-in-power-apps"></a>Power Apps での SetFocus 関数
 入力フォーカスを特定のコントロールに移動します。 
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **SetFocus**関数は、コントロールに入力フォーカスを与えます。  ユーザーのキーストロークがそのコントロールによって受信され、テキスト入力コントロールに入力するか、 *enter*キーを使用してボタンを選択できるようになります。  ユーザーは、 *Tab*キー、タッチ、マウス、またはその他のジェスチャを使用して入力フォーカスを移動することもできます。 *Tab*キーの動作は、 [ **TabIndex**プロパティ](../controls/properties-accessibility.md)によって管理されます。
 
 にフォーカスを設定するには、 **SetFocus**関数を使用します (それぞれの例を以下に示します)。
@@ -33,7 +33,7 @@ ms.locfileid: "71038150"
 
 フォーカスが設定されたコントロールは、 [**FocusedBorderColor**](../controls/properties-color-border.md)プロパティと[**FocusedBorderThickness**](../controls/properties-color-border.md)プロパティに基づいて視覚的に異なる場合があります。
 
-## <a name="limitations"></a>制限事項
+## <a name="limitations"></a>事項
 
 **SetFocus**は、次の場合にのみ使用できます。
 - [**ボタン**](../controls/control-button.md)コントロール
@@ -57,7 +57,7 @@ Apple iOS では、直接ユーザー操作によって**SetFocus**が開始さ�
 
 * *Control* – 必須。  入力フォーカスを与えるコントロール。
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
 
 ### <a name="focus-on-a-newly-exposed-or-enabled-input-control"></a>新しく公開された、または有効になっている入力コントロールにフォーカスを設定する
 
@@ -79,16 +79,16 @@ SetFocus( BillingName )
 1. [**テキスト入力**コントロール](../controls/control-text-input.md)を追加し、その名前を**ShippingName**に変更します。
 1. [**テキスト入力**コントロール](../controls/control-text-input.md)を追加し、その名前を**ShippingAddress**に変更します。
 1. [**チェックボックス**コントロール](../controls/control-check-box.md)を追加し、 **syncaddresses**の名前を変更します。
-1. このコントロールの**Text**プロパティを数式`"Use Shipping address as Billing address"`に設定します。
+1. このコントロールの**Text**プロパティを `"Use Shipping address as Billing address"`数式に設定します。
 1. [**テキスト入力**コントロール](../controls/control-text-input.md)を追加し、**名前**を変更します。
-1. このコントロールの**既定**のプロパティを数式`ShippingName`に設定します。
-1. このコントロールの**DisplayMode**プロパティを数式`If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`に設定します。  これにより、チェックボックスコントロールの状態に基づいて、このコントロールが自動的に有効または無効になります。
+1. このコントロールの**既定**のプロパティを `ShippingName`数式に設定します。
+1. このコントロールの**DisplayMode**プロパティを `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`数式に設定します。  これにより、チェックボックスコントロールの状態に基づいて、このコントロールが自動的に有効または無効になります。
 1. [**テキスト入力**コントロール](../controls/control-text-input.md)を追加し、その名前を「**住所**」に変更します。
-1. このコントロールの**既定**のプロパティを数式`ShippingAddress`に設定します。
-1. このコントロールの**DisplayMode**プロパティを数式`If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`に設定します。  これにより、チェックボックスコントロールの状態に基づいて、このコントロールが自動的に有効または無効になります。
-1. チェックボックスの **[既定]** プロパティを数式`true`に設定します。  これにより、出荷先住所と同じ値を使用する請求先住所が既定で使用されます。
-1. チェックボックスの**oncheck**プロパティを数式`Reset( BillingName ); Reset( BillingAddress )`に設定します。  ユーザーが配送先住所と請求先住所の同期を選択した場合、請求先住所フィールドのすべてのユーザー入力がクリアされ、それぞれの**既定**のプロパティで対応する出荷先住所フィールドから値を取得できるようになります。
-1. チェックボックスの**Onuncheck**プロパティを数式`SetFocus( BillingName )`に設定します。  ユーザーが別の請求先住所を選択した場合は、請求先住所の最初のコントロールにフォーカスが移動されます。  これらのコントロールは、 **DisplayMode**プロパティによって既に有効になっています。
+1. このコントロールの**既定**のプロパティを `ShippingAddress`数式に設定します。
+1. このコントロールの**DisplayMode**プロパティを `If( SyncAddresses.Value, DisplayMode.View, DisplayMode.Edit )`数式に設定します。  これにより、チェックボックスコントロールの状態に基づいて、このコントロールが自動的に有効または無効になります。
+1. チェックボックスの **[既定]** プロパティを [`true`式] に設定します。  これにより、出荷先住所と同じ値を使用する請求先住所が既定で使用されます。
+1. チェックボックスの**oncheck**プロパティを `Reset( BillingName ); Reset( BillingAddress )`数式に設定します。  ユーザーが配送先住所と請求先住所の同期を選択した場合、請求先住所フィールドのすべてのユーザー入力がクリアされ、それぞれの**既定**のプロパティで対応する出荷先住所フィールドから値を取得できるようになります。
+1. チェックボックスの**Onuncheck** property を `SetFocus( BillingName )`数式に設定します。  ユーザーが別の請求先住所を選択した場合は、請求先住所の最初のコントロールにフォーカスが移動されます。  これらのコントロールは、 **DisplayMode**プロパティによって既に有効になっています。
 
 ### <a name="focus-on-validation-issues"></a>検証の問題に焦点を当てる
 
@@ -127,7 +127,7 @@ If( IsBlank( Name ),
 1. **[挿入]** メニューの **[新しい画面]** をクリックし、 **[スクロール]** 可能 を選択します。
 1. 画面の中央のセクションで、**テキスト入力**コントロールを追加**し、名前、** **Street1**、 **Street2**、**市区町村**、**郡**、**州**、**郵便**番号、**電話番号**を入力します。 各フィールドの上に**ラベル**コントロールを追加します。  すべてのコントロールを収めるのに十分な長さでない場合は、セクションのサイズを変更することが必要になる場合があります。
 1. スクロール可能なセクションの上にあるチェックマーク[**アイコン**コントロール](../controls/control-shapes-icons.md)を画面の上部に追加します。  
-1. Icon コントロールの**onselect**プロパティを、上記の数式`If( IsBlank( ...`に設定します。
+1. アイコンコントロールの**Onselect**プロパティを、上で指定した `If( IsBlank( ...` 数式に設定します。
 
 ### <a name="focus-when-displaying-a-screen"></a>画面を表示するときにフォーカスを移動する
 
@@ -150,8 +150,8 @@ SetFocus( Name )
 
 この例を作成するには、次のようにします。
 1. 上記の「検証の問題に焦点を当てる」アプリを作成します。
-1. この画面で、 **Onvisible**プロパティを数式`SetFocus( Name )`に設定します。
+1. この画面で、 **Onvisible**プロパティを `SetFocus( Name )`数式に設定します。
 1. 2番目の画面を追加します。
 1. [**ボタン**コントロール](../controls/control-button.md)を追加します。
-1. このコントロールの**Onselect**プロパティを数式`Navigate( Screen1 )`に設定します。
+1. このコントロールの**Onselect**プロパティを `Navigate( Screen1 )`数式に設定します。
 1. この画面からアプリをプレビューします。  ボタンを押します。  **Onvisible**式が評価され、 **[名前]** フィールドが自動的にフォーカスされます。

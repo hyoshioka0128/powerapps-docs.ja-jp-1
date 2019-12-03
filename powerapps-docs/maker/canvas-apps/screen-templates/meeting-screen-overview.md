@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5b8df0acad3f5ad90eb114bd5fdd5d3377b3f6fb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: ac6b75d60f41cd68ee1723c913766ea701bc6ca8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675042"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732523"
 ---
 # <a name="overview-of-the-meeting-screen-template-for-canvas-apps"></a>キャンバスアプリのミーティング画面テンプレートの概要
 
@@ -32,7 +32,7 @@ ms.locfileid: "74675042"
 
 ## <a name="prerequisite"></a>前提条件
 
-[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
+[Power Apps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
 
 ## <a name="default-functionality"></a>既定の機能
 

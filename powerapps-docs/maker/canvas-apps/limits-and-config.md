@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリのシステム要件、制限、構成値 | Microsoft Docs
-description: PowerApps に組み込まれているキャンバス アプリのシステム要件、制限、構成値
+description: Power Apps で構築されたキャンバスアプリのシステム要件、制限、および構成値
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,15 +13,15 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0b67dda758140608b67fa8df44eca711270b663c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e408eed2ac0ed769b747b647ea7b1a8c3c9df8f6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675631"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729606"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>キャンバス アプリのシステム要件、制限、構成値
-このトピックには、PowerApps についての、デバイス プラットフォーム、Web ブラウザーの要件、制限と構成値が含まれています。
+このトピックには、デバイスプラットフォームと web ブラウザーの要件に加えて、Power Apps の制限と構成値が含まれています。
 
 ## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-app"></a>Power Apps アプリを使用してキャンバスアプリを実行するためにサポートされるプラットフォーム
 

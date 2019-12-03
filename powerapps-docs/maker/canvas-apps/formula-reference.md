@@ -1,6 +1,6 @@
 ---
 title: 関数、シグナル、列挙型 | Microsoft Docs
-description: PowerApps の関数、シグナル、および列挙体に関する参照情報。
+description: Power Apps の関数、シグナル、および列挙体に関するリファレンス情報。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eb698f5e2775f1acfed6a7af70475a6079753abb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7712af247376d6db54aa6777eb2a3051f0e31f93
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678467"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731413"
 ---
-# <a name="formula-reference-for-powerapps"></a>PowerApps の数式のリファレンス
+# <a name="formula-reference-for-power-apps"></a>Power Apps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
 
 * **関数**: パラメーターを受け取り、演算を実行し、値を返します。 たとえば、**Sqrt(25)** は **5** を返します。 関数は、Microsoft Excel 関数をモデルにしています。  関数の中には、副作用を生じるものがあります。たとえば、**SubmitForm** 関数は、**Button.OnSelect** のような[動作の数式](working-with-formulas-in-depth.md)でのみ正しく機能します。

@@ -1,6 +1,6 @@
 ---
 title: 関連付けと非関連付け関数 |Microsoft Docs
-description: 構文と例を含む PowerApps の関連付け関数と関連付け解除関数の参照情報
+description: 構文と例を含む Power Apps の関連付け関数と関連付け解除関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 94400c88740ea93b3966db8a62a461b5616eaeef
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e2b1d0e8ab264b9576c18aa7d5803be30c4a45e1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678352"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730544"
 ---
-# <a name="relate-and-unrelate-functions-in-powerapps"></a>PowerApps の関連付け関数と関連付け解除関数
+# <a name="relate-and-unrelate-functions-in-power-apps"></a>Power Apps での関数の関連付けと関連付け解除
 
 一対多または多対多のリレーションシップを通じて、2つのエンティティのレコードを関連付けると、関連付けを解除します。
 

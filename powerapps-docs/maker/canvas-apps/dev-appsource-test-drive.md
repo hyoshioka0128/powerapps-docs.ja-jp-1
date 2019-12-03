@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3970c5181939f8ab6e8bd1ad4f396595d7083ff3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 324c7880643a6e06bc147d1bbafb1b9638b8f2ec
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679571"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731602"
 ---
 # <a name="let-customers-test-drive-your-canvas-app-on-appsource"></a>AppSource でのお客様によるキャンバス アプリ体験版の使用
 
@@ -113,7 +113,7 @@ RemoveIf( SiteInspectorCollect, ID = record.ID )
 要約すると、埋め込みデータを使用するアプリのアプリのバージョンを作成できます。これを使用して、外部データに接続するアプリのエクスペリエンスをシミュレーションします。 データを埋め込んだら、そのアプリを体験版ソリューションとして AppSource.com に公開する準備が整いました。
 
 ## <a name="how-do-i-list-my-test-drive-solution-on-appsourcecom"></a>体験版ソリューションを AppSource.com に登録する方法
-アプリの準備ができたので、AppSource.com に公開します。 このプロセスを開始するには、PowerApps.com の[申し込みフォーム](https://powerapps.microsoft.com/partners/get-listed/)に必要事項を入力してください。
+アプリの準備ができたので、AppSource.com に公開します。 このプロセスを開始するには、Power Apps.com で[アプリケーションフォーム](https://powerapps.microsoft.com/partners/get-listed/)を完成させてください。
 
 申し込みが完了すると、AppSource.com でアプリを公開するために送信する手順が記載された電子メールが届きます。 また、エンドツーエンドのプロセスを詳しく説明している利用開始のドキュメントを[こちらから](https://go.microsoft.com/fwlink/?linkid=851031)ダウンロードできます。
 

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: be21e2b0c24d7b4aaf9da12b0793899fd95acd06
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 17bceb06af2c460eb122f1bab0dc382b00838ee5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649805"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731932"
 ---
-# <a name="toggle-control-in-powerapps"></a>PowerApps のトグル コントロール
+# <a name="toggle-control-in-power-apps"></a>Power Apps でのコントロールの切り替え
 ユーザーがハンドルを動かすことでオンまたはオフにできるコントロールです。
 
 ## <a name="description"></a>Description

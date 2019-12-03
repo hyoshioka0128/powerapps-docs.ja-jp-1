@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6732dabea803cd7680ef618e4e8d1c4e88f7afe5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f522f520c0f0f042e73932630980dee93bc5c89c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678628"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731764"
 ---
-# <a name="customize-a-canvas-app-form-in-powerapps"></a>PowerApps でキャンバス アプリのフォームをカスタマイズする
+# <a name="customize-a-canvas-app-form-in-power-apps"></a>Power Apps での canvas アプリフォームのカスタマイズ
 
 キャンバス アプリでは、最も重要なデータを、ユーザーが簡単に理解して更新できるよう、最も見やすい直感的な順序で表示されるように、**表示フォーム** コントロールと**編集フォーム** コントロールをカスタマイズできます。
 
@@ -34,7 +34,7 @@ Common Data Service から[アプリを生成](data-platform-create-app.md)し�
 
 ## <a name="show-and-hide-cards"></a>カードの表示と非表示
 
-1. [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインし、生成してカスタマイズしたアプリを開きます。
+1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインし、生成してカスタマイズしたアプリを開きます。
 
 1. 左側のナビゲーションバーで、検索バーに「 **D** 」と入力するか貼り付けて、要素の一覧をフィルター処理し、 **[DetailForm1]** を選択します。
 

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c41407397cc0f9a7ca12ec2c9cc3bbb7fa8c95f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4eaa58bc7bb27746a574c52fcd49253858a471ca
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679824"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723187"
 ---
-# <a name="data-table-control-in-powerapps"></a>PowerApps のデータ テーブル コントロール
+# <a name="data-table-control-in-power-apps"></a>Power Apps のデータテーブルコントロール
 データのセットを表形式で表示します。
 
 ## <a name="description"></a>Description

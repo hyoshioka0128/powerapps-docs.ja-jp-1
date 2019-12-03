@@ -1,6 +1,6 @@
 ---
 title: Office 365 Outlook の接続の概要 | Microsoft Docs
-description: PowerApps への Office 365 Outlook の接続に関する参照情報 (例を含む)
+description: Office 365 Outlook と Power Apps の接続の例を含む参照情報
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ba568cb34c12f8b63e8c59f5cb73aa1ed6cb9f02
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1886514d036fe2b64ae82712128b14e19189fc73
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993944"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728357"
 ---
-# <a name="connect-to-office-365-outlook-from-powerapps"></a>PowerApps から Office 365 Outlook に接続する
+# <a name="connect-to-office-365-outlook-from-power-apps"></a>Power Apps から Office 365 Outlook に接続する
 ![Office 365 Outlook](./media/connection-office365-outlook/office365icon.png)
 
 Office 365 Outlook に接続すると、メール メッセージの表示、送信、削除、返信、その他のタスクを実行できます。
@@ -43,19 +43,16 @@ Office 365 Outlook に接続すると、メール メッセージの表示、送
 Office 365 Outlook の接続が作成され、アプリに追加されました。 これで、この接続を使用できるようになりました。
 
 ## <a name="show-messages"></a>メッセージを表示する
-
-1. **[挿入]** メニューの **[ギャラリー]** を選び、**[縦]** コントロールを選びます。
-2. その **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。 設定変更後、**レイアウト** を **タイトル、サブタイトル、本文** に変更します。  
-
+1. **[挿入]** メニューの **[ギャラリー]** を選び、 **[テキスト ギャラリー]** コントロールを選びます。
+2. その **[Items](../controls/properties-core.md)** プロパティを次の式に設定します。  
    
     `Office365.GetEmails({fetchOnlyUnread:false})`
    
     設定を変更したら、 **[レイアウト]** を [**タイトル]、[サブタイトル]、[本文]** に変更します。
     
     ギャラリー コントロールに、メールの一部が自動的に設定されます。
-
-3. ギャラリーで、[Title2]の **Text** プロパティを `ThisItem.From` に設定します。 [Subtitle2]を `ThisItem.Subject` に設定します。 [Body1]を `ThisItem.BodyPreview` に設定します。 ラベルのサイズを変更することもできます。
-
+    
+3. ギャラリーで、最初のラベルの **Text** プロパティを `ThisItem.From` に設定します。 2 つ目のラベルを `ThisItem.Subject` に設定します。 3 つ目のラベルを `ThisItem.BodyPreview` に設定します。 ラベルのサイズを変更することもできます。
    
     ギャラリー コントロールが、新しいプロパティで自動的に設定されます。
 4. この関数には、省略可能なパラメーターがいくつかあります。 ギャラリーの **Items** プロパティを、次のいずれかの式に設定します。

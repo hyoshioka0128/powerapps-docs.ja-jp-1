@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3181c00a4ef0836c043ee0402a29d3b7dadbef21
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cda7635798b26b1936a44d7947ab1dc7c36a25c8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678881"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724207"
 ---
 # <a name="generate-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>SharePoint リストから Power Apps でキャンバスアプリを生成する
 
@@ -40,9 +40,9 @@ ms.locfileid: "74678881"
 > [!IMPORTANT]
 > Power Apps は、すべての種類の SharePoint データをサポートしているわけではありません。 詳細については、「[Known issues (既知の問題)](connections/connection-sharepoint-online.md#known-issues)」を参照してください。
 
-## <a name="generate-an-app-from-within-powerapps"></a>PowerApps 内からアプリを作成する
+## <a name="generate-an-app-from-within-power-apps"></a>Power Apps 内からアプリを生成する
 
-1. [PowerApps にサインインします](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインします。
 
 1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、 **[このアプリの作成]** を選択します。
 

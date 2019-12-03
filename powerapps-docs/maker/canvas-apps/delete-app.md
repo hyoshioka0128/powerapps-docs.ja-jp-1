@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリを削除する | Microsoft Docs
-description: PowerApps から既存のキャンバス アプリを削除する方法
+description: Power Apps で既存のキャンバスアプリを削除する方法
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ddfa8def32e56ac49c2a3dc98757bb6d0bbe825a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c58ff613afb98efdce86135941b66b42c7dbff04
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678536"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731640"
 ---
-# <a name="delete-a-canvas-app-from-powerapps"></a>PowerApps からキャンバス アプリを削除する
+# <a name="delete-a-canvas-app-from-power-apps"></a>Power Apps からキャンバスアプリを削除する
 この記事では、Power Apps アカウントからキャンバスアプリを削除する方法と、アプリが共有された相手のアカウントからキャンバスアプリを削除する方法について説明します。
 
 ## <a name="delete-an-app-from-your-account"></a>アカウントからアプリを削除する

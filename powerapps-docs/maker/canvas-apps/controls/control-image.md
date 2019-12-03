@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02c9e680582b6d51a613fd8089709401f1e80b32
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d35150434d8fec7694f493f2d62c67997e2c839c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679755"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727168"
 ---
-# <a name="image-control-in-powerapps"></a>PowerApps のイメージ コントロール
+# <a name="image-control-in-power-apps"></a>Power Apps のイメージコントロール
 ローカル ファイルやデータ ソースの画像を表示するコントロールです。
 
 ## <a name="description"></a>Description

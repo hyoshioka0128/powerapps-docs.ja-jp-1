@@ -1,6 +1,6 @@
 ---
 title: Blank、Coalesce、IsBlank、および IsEmpty 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Blank、Coalesce、IsBlank、および IsEmpty 関数の参考情報
+description: 構文と例を含む Power Apps の Blank、合体、IsBlank、および IsEmpty 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -14,14 +14,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a026d801a6bda6ae82884f5fab94f09b4fdde571
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 59314375b68a73e4c46bd3274a3fefc994465b4d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680376"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730762"
 ---
-# <a name="blank-coalesce-isblank-and-isempty-functions-in-powerapps"></a>PowerApps の Blank、Coalesce、IsBlank、および IsEmpty 関数
+# <a name="blank-coalesce-isblank-and-isempty-functions-in-power-apps"></a>Power Apps の Blank、合体、IsBlank、および IsEmpty 関数
 値が空白であるかどうか、または、[テーブル](../working-with-tables.md)に[レコード](../working-with-tables.md#records)が含まれていないかどうかをテストし、*空白*の値を作成する方法を提供します。
 
 ## <a name="overview"></a>概要

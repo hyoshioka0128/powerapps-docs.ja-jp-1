@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1b9f819ab7e047b68e60b9c78e6f7f000502abb8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: b0e189bc2bfd922839373f009fcc54a34217daba
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71993324"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732075"
 ---
-# <a name="screen-control-in-powerapps"></a>PowerApps の画面コントロール
+# <a name="screen-control-in-power-apps"></a>Power Apps での画面コントロール
 
 アプリ内で 1 つまたは複数の他のコントロールを含む UI 要素。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 
 ほとんどのアプリには、 **[ラベル](control-text-box.md)** コントロールや **[ボタン](control-button.md)** コントロールのほか、データを表示したりナビゲーションをサポートしたりするその他のコントロールを含む複数の**画面**コントロールがあります。 画面を追加する方法、画面の順序を変更する方法、およびナビゲーションを構成する方法の詳細については、「[画面の追加](../add-screen-context-variables.md)」を参照してください。
 
@@ -92,7 +92,7 @@ ms.locfileid: "71993324"
 
     **ターゲット**は、ユーザーがアプリを開いたときに最初に表示されます。
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 
 ### <a name="color-contrast"></a>色のコントラスト
 

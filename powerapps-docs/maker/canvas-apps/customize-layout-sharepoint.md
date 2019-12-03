@@ -1,6 +1,6 @@
 ---
 title: チュートリアル - 生成されたアプリのギャラリーをカスタマイズする | Microsoft Docs
-description: このチュートリアルでは、PowerApps で自動的に生成されたアプリのギャラリーと他の要素に表示されるデータをカスタマイズします。
+description: このチュートリアルでは、Power Apps で自動的に生成されたアプリのギャラリーおよびその他の要素に表示されるデータをカスタマイズします。
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a3afda5686c6b791243126c70b9c6d33762beae0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02d6e3b7a3dc18ab4c7d4d3d5f510b6c3bbd227a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679663"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731722"
 ---
-# <a name="tutorial-customize-a-gallery-in-powerapps"></a>チュートリアル: PowerApps でのギャラリーのカスタマイズ
+# <a name="tutorial-customize-a-gallery-in-power-apps"></a>チュートリアル: Power Apps でギャラリーをカスタマイズする
 
 このチュートリアルでは、ギャラリーと呼ばれるレコードの一覧をカスタマイズし、Microsoft Power Apps で自動的に生成されたアプリにその他の変更を加えます。 これらの変更を行わなくてもユーザーはアプリ内のデータを管理できますが、組織のニーズに合わせてカスタマイズすれば、アプリが使いやすくなります。
 
@@ -51,7 +51,7 @@ Common Data Service の**Accounts**エンティティから[アプリを生成](
 
 ## <a name="open-the-generated-app"></a>生成されたアプリを開く
 
-1. [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左端近くにある **[アプリ]** を選びます。
+1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインし、左端近くにある **[アプリ]** を選択します。
 
 1. 生成したアプリを探し、その省略記号アイコン **[...]** を選んで、 **[編集]** を選びます。
 

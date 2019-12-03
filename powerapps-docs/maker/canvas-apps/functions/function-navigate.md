@@ -1,6 +1,6 @@
 ---
 title: Back および Navigate 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Navigate および Back 関数の参照情報
+description: 構文と例を含む Power Apps の Navigate および Back 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8f63321b128214d14cd2f4e521d7cc1b85c7b98f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: db8d2bf349fe61cac154c7456a60231215e6566c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984500"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730563"
 ---
-# <a name="back-and-navigate-functions-in-powerapps"></a>PowerApps の Back および Navigate 関数
+# <a name="back-and-navigate-functions-in-power-apps"></a>Power Apps の Back および Navigate 関数
 
 表示する画面を変更します。
 
@@ -40,7 +40,7 @@ ms.locfileid: "71984500"
 
  2 番目の引数で、前の画面がどのように新しい画面に変化するかを指定します。
 
-| 切り替えの引数 | 説明 | デモ |
+| 切り替えの引数 | Description | デモ |
 | --- | --- | --- |
 | **ScreenTransition.Cover** |新しい画面は、現在の画面を覆うように、右から左に向かってスライドします。 | ![画面の切り替え効果のアニメーション](media/function-navigate/cover.gif) |
 | **ScreenTransition。右に移動** |新しい画面が表示され、左から右へ移動して、現在の画面が表示されます。 | ![画面の切り替え効果の右アニメーション](media/function-navigate/coverright.gif) |
@@ -79,7 +79,7 @@ ms.locfileid: "71984500"
 
 ## <a name="examples"></a>例
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **移動 (詳細)** |切り替えもコンテキスト変数の値の変更もせずに、**Details** 画面を表示します。 |**Details** 画面がすばやく表示されます。 |
 | **Navigate( Details, ScreenTransition.Fade )** |**Details** 画面を **Fade** 切り替えで表示します。  コンテキスト変数の値は変更されません。 |現在の画面がフェードアウトし、**Details** 画面が表示されます。 |
@@ -94,9 +94,9 @@ ms.locfileid: "71984500"
 
 1. 2番目の画面を追加します。
 
-    アプリには、次の2つの空白の画面があります。**Screen1**と**Screen2**。
+    アプリには、 **Screen1**と**Screen2**という2つの空の画面が含まれています。
 
-1. **Screen2**の**Fill**プロパティを `Gray` の値に設定します。
+1. **Screen2**の**Fill**プロパティを `Gray`値に設定します。
 
 1. **Screen2**で、ボタンを追加し、 **[onselect](../controls/properties-core.md)** プロパティを次の数式に設定します。
 

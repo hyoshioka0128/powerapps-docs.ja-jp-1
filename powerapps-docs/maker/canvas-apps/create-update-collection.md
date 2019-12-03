@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 47233d4ead10ab01fe57c1f0573a4123894f9e58
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b124a27119a7b91572bdfef563e0f99e9d5da08d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678674"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731782"
 ---
 # <a name="create-and-update-a-collection-in-a-canvas-app"></a>キャンバスアプリでのコレクションの作成と更新
 
@@ -27,8 +27,8 @@ ms.locfileid: "74678674"
 ## <a name="prerequisites"></a>前提条件
 
 - Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
-- PowerApps で、アプリを作成するか既存のアプリを開きます。
-- PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
+- アプリを作成するか、Power Apps で既存のアプリを開きます。
+- Power Apps で[コントロールを構成](add-configure-controls.md)する方法について説明します。
 
 ## <a name="create-a-multicolumn-collection"></a>複数列のコレクションを作成する
 

@@ -1,6 +1,6 @@
 ---
 title: Concat および Concatenate 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Concat および Concatenate 関数の参照情報
+description: 構文と例を含む Power Apps の Concat 関数と連結関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0a56230539990ce51cc9270f71d8c2b7c9a1db73
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: 01bf9b2ea165fd24a06725f4f09427bd05c3fe14
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71992894"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731305"
 ---
-# <a name="concat-and-concatenate-functions-in-powerapps"></a>PowerApps の Concat および Concatenate 関数
+# <a name="concat-and-concatenate-functions-in-power-apps"></a>Power Apps での関数の連結と連結
 
 テキストの個々の文字列および[テーブル](../working-with-tables.md)内の文字列を連結します。
 
@@ -51,7 +51,7 @@ ms.locfileid: "71992894"
 
 - **FirstName** = "Jane"
 - **LastName** = "Doe"
-- **Products** = 2 つの列と4つの行を含む![テーブル](media/function-concatenate/products.png)
+- **Products** = 2 つの列と4つの行を含む ![テーブル](media/function-concatenate/products.png)
 
 アプリでこれらのグローバル変数を作成するには、[**ボタン**](../controls/control-button.md)コントロールを挿入し、その**onselect**プロパティを次の数式に設定します。
 
@@ -74,10 +74,10 @@ Set( Products,
 
 | 数式 | Description | 結果 |
 |---------|-------------|--------|
-| **連結 (&nbsp;LastName、&nbsp; "、&nbsp;"、&nbsp;FirstName &nbsp;)** | **LastName**の値、文字列 **","** (コンマの後にスペースが続く)、および**FirstName**の値を連結します。 | "Doe, &nbsp;Jane" |
-| **LastName &nbsp; & &nbsp; ", &nbsp;" &nbsp; & &nbsp;FirstName** | 関数の代わりに **&** 演算子を使用する点を除いて、前の例と同じです。 | "Doe, &nbsp;Jane" |
-| **連結 (&nbsp;FirstName、&nbsp; "&nbsp;"、&nbsp;LastName &nbsp;)** | **FirstName**の値、文字列 **""** (1 つのスペース)、および**LastName**の値を連結します。 | "Jane &nbsp;Doe" |
-| **FirstName &nbsp; & &nbsp; "&nbsp;" &nbsp; & &nbsp;LastName** | 前の例と同じですが、関数の代わりに **&** 演算子を使用します。 | "Jane &nbsp;Doe" |
+| **連結 (&nbsp;LastName、&nbsp;"、&nbsp;"、&nbsp;FirstName&nbsp;)** | **LastName**の値、文字列 **","** (コンマの後にスペースが続く)、および**FirstName**の値を連結します。 | "Doe,&nbsp;Jane" |
+| **LastName&nbsp;&&nbsp;",&nbsp;"&nbsp;&FirstName** | 関数の代わりに **&** 演算子を使用する点を除いて、前の例と同じです。 | "Doe,&nbsp;Jane" |
+| **連結 (&nbsp;FirstName、&nbsp;"&nbsp;"、&nbsp;LastName&nbsp;)** | **FirstName**の値、文字列 **""** (1 つのスペース)、および**LastName**の値を連結します。 | "Jane&nbsp;Doe" |
+| **FirstName&nbsp;&&nbsp;"&nbsp;"&nbsp;&&nbsp;LastName** | 前の例と同じですが、関数の代わりに **&** 演算子を使用します。 | "Jane&nbsp;Doe" |
 
 ### <a name="concatenate-with-a-single-column-table"></a>単一列テーブルと連結する
 
@@ -85,7 +85,7 @@ Set( Products,
 
 | 数式 | Description | 結果 |
 |---------|-------------|--------|
-| **連結 ("Name: &nbsp;", &nbsp;Products. Name, ", &nbsp;Type: &nbsp;", &nbsp;Products)** | **Products**テーブル内の各レコードについて、は文字列 **"name:"** 、製品名、文字列 **"、型:"** 、および製品の種類を連結します。  | ![製品の表](media/function-concatenate/single-column.png) |
+| **連結 ("Name:&nbsp;"、&nbsp;Products.Name、"、&nbsp;Type:&nbsp;"、&nbsp;Products. Type)** | **Products**テーブル内の各レコードについて、は文字列 **"name:"** 、製品名、文字列 **"、型:"** 、および製品の種類を連結します。  | ![製品の表](media/function-concatenate/single-column.png) |
 
 ### <a name="concat-function"></a>Concat 関数
 
@@ -93,8 +93,8 @@ Set( Products,
 
 | 数式 | Description | 結果 |
 |---------|-------------|--------|
-| **Concat (Products、Name & ",")** | **製品**のレコードごとに式**名 & ","** を評価し、結果を連結して1つのテキスト文字列にします。  | "Violin, &nbsp;Cello, &nbsp;Trumpet, &nbsp;" |
-| **Concat (Filter (&nbsp;Products、&nbsp;Type &nbsp; = &nbsp; "String" &nbsp;)、Name & ",")** | 式の**名前 & "," を**評価し、フィルターの**種類が "String"** である**製品**のレコードごとに、結果を1つのテキスト文字列に連結します。   | "Violin, &nbsp;Cello, &nbsp;" |
+| **Concat (Products、Name & ",")** | **製品**のレコードごとに式**名 & ","** を評価し、結果を連結して1つのテキスト文字列にします。  | "Violin、&nbsp;Cello、&nbsp;トランペット、&nbsp;" |
+| **Concat (Filter (&nbsp;Products、&nbsp;Type&nbsp;=&nbsp;"String"&nbsp;)、Name & ",")** | 式の**名前 & "," を**評価し、フィルターの**種類が "String"** である**製品**のレコードごとに、結果を1つのテキスト文字列に連結します。   | "Violin,&nbsp;Cello,&nbsp;" |
 
 ### <a name="trimming-the-end"></a>終了のトリミング
 
@@ -106,8 +106,8 @@ Set( Products,
 
 | 数式 | Description | 結果 |
 |---------|-------------|--------|
-| **Left (Concat (&nbsp;Products、&nbsp;Name&nbsp;&&nbsp;"、&nbsp;"&nbsp;)、Len (&nbsp;Concat (&nbsp;Products、&nbsp;Name&nbsp;&&nbsp;"、&nbsp;"&nbsp;)&nbsp;)&nbsp;-&nbsp;2)** | **Concat**の結果を返しますが、余分な区切り記号を形成する最後の2文字を削除します。 | "Violin, &nbsp;Cello, &nbsp;Trumpet" |
-| **Match (&nbsp;製品、&nbsp;名&nbsp;&&nbsp;"、&nbsp;"&nbsp;)、"^ (?&lt;trim&gt;. *)、&nbsp;$ ")。 trim** | 文字列の先頭から末尾 ($) までの**Concat**の文字を返しますが、末尾には不要なコンマとスペースは含まれません。 | "Violin, &nbsp;Cello, &nbsp;Trumpet" |
+| **Left (Concat (&nbsp;Products、&nbsp;Name&nbsp;&&nbsp;"、&nbsp;"&nbsp;)、Len (&nbsp;Concat (&nbsp;Products、&nbsp;Name&nbsp;&&nbsp;"、&nbsp;"&nbsp;)&nbsp;)&nbsp;-&nbsp;2)** | **Concat**の結果を返しますが、余分な区切り記号を形成する最後の2文字を削除します。 | "Violin,&nbsp;Cello,&nbsp;トランペット" |
+| **Match (&nbsp;製品、&nbsp;名&nbsp;&&nbsp;"、&nbsp;"&nbsp;)、"^ (?&lt;trim&gt;. *)、&nbsp;$ ")。 trim** | 文字列の先頭から末尾 ($) までの**Concat**の文字を返しますが、末尾には不要なコンマとスペースは含まれません。 | "Violin,&nbsp;Cello,&nbsp;トランペット" |
 
 ### <a name="split-and-matchall"></a>Split と MatchAll
 
@@ -117,5 +117,5 @@ Separator**を区切り記号と共に**使用した場合は、 **Split**関数
 
 | 数式 | Description | 結果 |
 |---------|-------------|--------|
-| **Split (Concat (&nbsp;Products、&nbsp;Name &nbsp; & &nbsp; "、&nbsp;" &nbsp;)、"、")** | テキスト文字列を区切り記号 **","** で分割します。 文字列はコンマとスペースで終わります。そのため、結果の最後の行は空の文字列になります。  | ![Table](media/function-concatenate/split.png) |
+| **Split (Concat (&nbsp;Products、&nbsp;Name&nbsp;&&nbsp;"、&nbsp;"&nbsp;)、"、")** | テキスト文字列を区切り記号 **","** で分割します。 文字列はコンマとスペースで終わります。そのため、結果の最後の行は空の文字列になります。  | ![Table](media/function-concatenate/split.png) |
 | **MatchAll (Concat (&nbsp;Products、&nbsp;Name&nbsp;&&nbsp;"、&nbsp;"&nbsp;)、"[^ \s,] +")。FullMatch** | スペースやコンマ以外の文字に基づいてテキスト文字列を分割します。 この数式は、文字列の末尾にある余分なコンマとスペースを削除します。 | ![Table](media/function-concatenate/matchall.png)

@@ -1,6 +1,6 @@
 ---
 title: Power Apps の一般的な問題と解決方法 |Microsoft Docs
-description: PowerApps でよくある問題と解決方法について説明します。
+description: Power Apps 内の一般的な問題と解決策の一覧。
 author: KumarVivek
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c8f05c74141301d0c41238daa20625874eec98aa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b578d34217647658bb872ed22cd7ee8b3cc4a1cd
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678789"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723856"
 ---
-# <a name="common-issues-and-resolutions-for-powerapps"></a>PowerApps でお問い合わせの多い問題と解決方法
+# <a name="common-issues-and-resolutions-for-power-apps"></a>Power Apps の一般的な問題と解決策
 
 この記事では、Power Apps の使用中に発生する可能性がある一般的な問題をいくつか紹介します。 回避策がある場合は示します。
 
@@ -85,7 +85,7 @@ ms.locfileid: "74678789"
 
 1. **Android デバイスでのリリース 2.0.700**
 
-    Android デバイスに release 2.0.700 をインストールし、アプリを開くことができない (またはアプリが応答しなくなった) 場合は、電源アプリをアンインストールし、デバイスを再起動してから、PowerApps を再インストールします。
+    Android デバイスに release 2.0.700 をインストールし、アプリを開くことができない (またはアプリが応答しなくなった) 場合は、電源アプリをアンインストールし、デバイスを再起動してから、電源アプリを再インストールします。
 
 1. **アプリを開くと "空白の" ギャラリー**
 

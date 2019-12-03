@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f66ae4ba95d19e871e101979496760931b6821e3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 43d2632612a473f226a9c8c964ecb42837074cc6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679525"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731476"
 ---
-# <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-powerapps"></a>PowerApps でキャンバス アプリ用の Expense Report サンプルをインストールして構成する
+# <a name="install-and-configure-the-expense-report-sample-for-canvas-apps-in-power-apps"></a>Power Apps での canvas アプリの経費明細書サンプルのインストールと構成
 
 Expense Report サンプルをインストールして構成する詳細な手順を示します。 また、[こちら](https://aka.ms/previewmyexpenses)からサンプル アプリをプレビューすることもできます。
 
@@ -38,7 +38,7 @@ Expense Report サンプルをインストールして構成する詳細な手�
 
 ## <a name="prerequisites"></a>前提条件
 
-- PowerApps に[サインアップ](../signup-for-powerapps.md)。
+- Power Apps に[サインアップ](../signup-for-powerapps.md)します。
 
 ## <a name="create-the-expenses-list"></a>Expenses (経費) リストを作成する
 

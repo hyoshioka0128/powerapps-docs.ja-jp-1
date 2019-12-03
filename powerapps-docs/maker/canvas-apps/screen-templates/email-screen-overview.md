@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ff3e2db1c0d02fda91215ae0e5cc6dd4ae712dd9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 861d343e653a78af685a1e0cb82deb5b2ad59591
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675118"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732569"
 ---
 # <a name="overview-of-the-email-screen-template-for-canvas-apps"></a>キャンバスアプリの電子メール画面テンプレートの概要
 
@@ -36,7 +36,7 @@ Canvas アプリで、ユーザーが Office 365 Outlook アカウントから�
 
 ## <a name="prerequisite"></a>前提条件
 
-[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
+[Power Apps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
 
 ## <a name="default-functionality"></a>既定の機能
 
@@ -163,5 +163,5 @@ Canvas アプリで、ユーザーが Office 365 Outlook アカウントから�
 ## <a name="next-steps"></a>次の手順
 
 * [この画面のリファレンスドキュメントを表示](./email-screen-reference.md)します。
-* [Office 365 ユーザーコネクタの詳細については、PowerApps を参照して](../connections/connection-office365-users.md)ください。
-* [PowerApps で使用可能なすべての接続を表示](../connections-list.md)します。
+* [Office 365 Users コネクタの詳細については、「Power Apps」を参照して](../connections/connection-office365-users.md)ください。
+* [Power Apps で使用可能なすべての接続を表示](../connections-list.md)します。

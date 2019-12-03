@@ -1,6 +1,6 @@
 ---
 title: サンプル アプリを使用する | Microsoft Docs
-description: PowerApps でサンプルに基づくキャンバス アプリを作成する手順について説明します。
+description: Power Apps のサンプルに基づいてキャンバスアプリを作成するための詳細な手順
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e6ebc516c6b07f149e2b965b967966c3832476c9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 853edb00d0325e287ff69149e1d807ff2529b915
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675503"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732803"
 ---
-# <a name="create-a-canvas-app-from-a-sample-in-powerapps"></a>PowerApps のサンプルからキャンバスアプリを作成する
+# <a name="create-a-canvas-app-from-a-sample-in-power-apps"></a>Power Apps のサンプルからキャンバスアプリを作成する
 このクイックスタートでは、設計の可能性を調査したり、独自のキャンバス アプリを開発するときに適用できる概念を検出したりできるように、サンプルからキャンバス アプリを作成します。
 
 各サンプル アプリでは、実際のシナリオを紹介しますが、架空のデータを使用します。 このデータを格納するには、Dropbox、Google Drive、または OneDrive などのクラウド ストレージ アカウントが必要です。
@@ -28,7 +28,7 @@ ms.locfileid: "74675503"
 Power Apps のライセンスをお持ちでない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
 
 ## <a name="open-a-sample-app"></a>サンプル アプリを開く
-1. [PowerApps にサインインします](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインします。
 
 1. サンプル アプリの一覧で、サンプル アプリ (**Cost Estimator** など) の上にマウスを移動します。
 
@@ -52,7 +52,7 @@ Power Apps のライセンスをお持ちでない場合は、[無料でサイ�
     - 住所や面積などの詳細を入力し、割引と税率に基づいて料金を算出します。
     - 予定の一覧をフィルター処理し、見積もりが作成された予定、見積もりが作成されていない予定、またはすべての予定を表示します。
     
-1. アプリの確認が済んだら、Esc キーを押して (または、PowerApps のタイトル バーの下の右上隅にある閉じるアイコンをクリックまたはタップして)、プレビュー モードを終了します。
+1. アプリの調査が終了したら、Esc キーを押して (または、Power Apps のタイトルバーの下にある右上隅の閉じるアイコンをクリックまたはタップして) プレビューモードを終了します。
 
 ## <a name="save-the-app"></a>アプリの保存
 1. 左上隅にある **[ファイル]** タブをタップします。

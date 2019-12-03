@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dd23092f7fbe178dfe127f671e7364f5d97aaf38
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 37818e3c7cca175218826c1707ab83cd5c193ae7
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678835"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723919"
 ---
-# <a name="connect-to-dynamics-365-from-powerapps"></a>PowerApps から Dynamics 365 に接続する
+# <a name="connect-to-dynamics-365-from-power-apps"></a>Power Apps から Dynamics 365 に接続する
 Power Apps を使用すると、コードをほとんどまたはまったく使用せずに、モバイルアプリを簡単に生成、カスタマイズ、共有、および実行できます。 Dynamics 365 コネクタを使うことにより、組織と共有する便利なモバイル アプリをほんの数分で作成できます。
 
 このトピックでは、ユーザーが Dynamics 365 の連絡先を参照、追加、削除、更新できるアプリを作成する手順について説明します。 ユーザーは、[ブラウザー](../../../user/run-app-browser.md)または携帯電話などの[モバイル デバイス](../../../user/run-app-client.md)で、アプリを実行できます。
@@ -29,7 +29,7 @@ Power Apps を使用すると、コードをほとんどまたはまったく使
 このチュートリアルに従って作業するには、Dynamics 365 サブスクリプションを含む Microsoft Office 365 アカウントが必要です。
 
 ## <a name="create-a-connection"></a>接続を作成する
-1. [PowerApps にサインインします](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. [Power Apps にサインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 2. 左のナビゲーション ウィンドウで、 **[接続]** をクリックします。
    
     ![[ファイル] メニューの [接続] オプション](./media/connection-dynamics-crmonline/file-connections.png)
@@ -47,7 +47,7 @@ Power Apps を使用すると、コードをほとんどまたはまったく使
     接続が作成されます。
 
 ## <a name="generate-an-app-automatically"></a>アプリを自動的に生成する
-1. [PowerApps にサインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、左下隅の **[新しいアプリ]** をクリックします。
+1. [Power Apps にサインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、左下隅近くにある **[新しいアプリ]** をクリックします。
    
     ![新しいアプリ](./media/connection-dynamics-crmonline/new-app.png)
 2. **[データを使用して開始]** で、 **[Dynamics 365]** タイルの **[携帯電話レイアウト]** をクリックします。

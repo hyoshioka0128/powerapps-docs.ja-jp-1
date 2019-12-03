@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 56e5ec7f303706ded114655e5c6d473408e9ddd7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9f80332a490289cc5b59de7131d1c2b2483633e1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680031"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725296"
 ---
-# <a name="create-accessible-canvas-apps-in-powerapps"></a>PowerApps でアクセシビリティ対応キャンバス アプリを作成する
+# <a name="create-accessible-canvas-apps-in-power-apps"></a>Power Apps でアクセス可能なキャンバスアプリを作成する
 アクセシビリティ対応のキャンバス アプリでは、視覚や聴覚などに障碍のあるユーザーが、アプリを正しく使えるように配慮されています。  これは、多くの政府機関や組織にとっての要件というだけではありません。以下のガイドラインに従うことで、能力に関係なくあらゆるユーザーの使いやすさが向上します。
 
 **[アクセシビリティ チェック](accessibility-checker.md)** を使用して、アプリの潜在的なアクセシビリティの問題を確認します。 
@@ -70,4 +70,4 @@ PenInput コントロールを使った署名フィールドがある場合は�
 関連項目:
 - [アクセシビリティのプロパティ](controls/properties-accessibility.md)
 - [アクセシビリティ チェックを使用](accessibility-checker.md)
-- [PowerApps でのアクセシビリティ対応の色](accessible-apps-color.md)
+- [Power Apps でのアクセス可能な色](accessible-apps-color.md)

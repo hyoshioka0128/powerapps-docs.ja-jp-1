@@ -1,6 +1,6 @@
 ---
 title: Lower 関数、Upper 関数、Proper 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Lower 関数、Upper 関数、Proper 関数の参照情報
+description: 構文と例を含む、Power Apps の Lower、Upper、および適切な関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 413f07bcca9d238ab1a6f6b020f1d1436f2ca737
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 115b5e51f816778d763481999f8f487a1d64037a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984552"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730582"
 ---
-# <a name="lower-upper-and-proper-functions-in-powerapps"></a>PowerApps の Lower 関数、Upper 関数、Proper 関数
+# <a name="lower-upper-and-proper-functions-in-power-apps"></a>Power Apps の Lower、Upper、および適切な機能
 テキストの文字列中の文字をすべて大文字か小文字に変換します。または、テキストの文字列中の文字を適切なケースに変換します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Lower** 関数、**Upper** 関数、**Proper** 関数は、文字列中の文字の大文字小文字を変換します。
 
 * **Lower** は、すべての大文字を小文字にします。
@@ -47,7 +47,7 @@ ms.locfileid: "71984552"
 ### <a name="single-string"></a>単一の文字列
 このセクションの例では、**Author** という名前のテキスト入力コントロールを[データ ソース](../working-with-data-sources.md)として使用します。 このコントロールには、文字列 "E. E. CummINGS" が含まれています。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Lower(&nbsp;Author.Text&nbsp;)** |文字列中のすべての大文字を小文字にします。 |"e. e. cummings" |
 | **Upper(&nbsp;Author.Text&nbsp;)** |文字列中のすべての小文字を大文字にします。 |"E. E. CUMMINGS" |
@@ -60,7 +60,7 @@ ms.locfileid: "71984552"
 
 それぞれの数式は、変換済みの文字列が含まれた単一列テーブルを返します。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Lower( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |小文字の文字をすべて大文字に変換します。 |<style> img { max-width:none; } </style> ![](media/function-lower-upper-proper/people-table-lower.png) |
 | **Upper( ShowColumns(&nbsp;People,&nbsp;"Address"&nbsp;) )** |小文字の文字をすべて大文字に変換します。 |![](media/function-lower-upper-proper/people-table-upper.png) |

@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2037de5ab55839b5908fb4789ca3fcda6836f4d9
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 4b7125da14cc315595a305d97d710766fcc8ff3e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650342"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74728647"
 ---
-# <a name="pie-chart-control-in-powerapps"></a>PowerApps の円グラフ コントロール
+# <a name="pie-chart-control-in-power-apps"></a>Power Apps の円グラフコントロール
 互いに比較した相対値を表示するコントロールです。
 
 ## <a name="description"></a>Description

@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: cba6b072721efa04ce28606cd027939823c2f7c9
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 09e8e12a2a6bc94fcc7e3fb2482ff89b058c369f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649771"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732125"
 ---
-# <a name="radio-control-in-powerapps"></a>PowerApps のラジオ コントロール
+# <a name="radio-control-in-power-apps"></a>Power Apps のラジオコントロール
 
 複数のオプションが表示され、ユーザーは一度に 1 つだけ選択できる入力コントロール。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 
 HTML の標準的な入力コントロールである**ラジオ** コントロールは、少数の相互に排他的なオプションに使用するのに最適です。
 
@@ -116,7 +116,7 @@ HTML の標準的な入力コントロールである**ラジオ** コントロ�
 
 **[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
-**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
 
@@ -140,11 +140,11 @@ HTML の標準的な入力コントロールである**ラジオ** コントロ�
 
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 
-2. **[ラベル](control-text-box.md)** コントロールを追加して**ラジオ** コントロールの下に移動させ、 **[ラベル](properties-core.md)** コントロールの **[Text](control-text-box.md)** プロパティを次の式に設定します。
+2. **[ラベル](control-text-box.md)** コントロールを追加して**ラジオ** コントロールの下に移動させ、 **[ラベル](control-text-box.md)** コントロールの **[Text](properties-core.md)** プロパティを次の式に設定します。
 
     **If("プレミアム" in Pricing.Selected.Value, "$200/日", "$150/日")**
 
-    **[If](../functions/function-if.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
+    **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 
 3. Alt キーを押したまま、**ラジオ** コントロールのいずれかのオプションを選択します。
 
@@ -152,7 +152,7 @@ HTML の標準的な入力コントロールである**ラジオ** コントロ�
 
 4. (省略可能) Alt キーを押しながら他のオプションを選択して、適切なテキストが表示されることを確認します。
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 
 ### <a name="color-contrast"></a>色のコントラスト
 
@@ -164,7 +164,7 @@ HTML の標準的な入力コントロールである**ラジオ** コントロ�
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
 
 * すべてのオプションに確実に **[Value](properties-core.md)** を設定します。
-* **ラジオ[ コントロールの直前に](control-text-box.md)** ラベルを追加して、見出しとして表示することを検討してください。
+* **ラジオ** コントロールの直前に **[ラベル](control-text-box.md)** を追加して、見出しとして表示することを検討してください。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
 

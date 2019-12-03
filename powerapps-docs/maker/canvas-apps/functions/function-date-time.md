@@ -1,6 +1,6 @@
 ---
 title: Date および Time 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Date および Time 関数の参照情報
+description: 構文と例を含む、Power Apps の日付と時刻の関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: efd6e2cdea45f511a545ccfe2f38309bdf622110
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 01fdccf295dbf21e61790d537f74af562dce69f0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985214"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731211"
 ---
-# <a name="date-and-time-functions-in-powerapps"></a>PowerApps の Date および Time 関数
+# <a name="date-and-time-functions-in-power-apps"></a>Power Apps の日付と時刻の関数
 日付と時刻のコンポーネントを日付/時刻値に変換します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Date** 関数は、個々の Year、Month、および Day 値を Date/Time 値に変換します。  時刻部分は、午前 0 時です。
 
 * Year が 0 以上で 1899 以下の場合は、年を計算するために、その値が 1900 に加算されます。  **70** は **1970** になります。

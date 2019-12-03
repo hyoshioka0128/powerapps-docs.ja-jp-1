@@ -1,6 +1,6 @@
 ---
 title: Round、RoundDown、および RoundUp 関数 | Microsoft Docs
-description: 構文を含む PowerApps の Round、RoundDown、および RoundUp 関数の参照情報
+description: 構文を含む、Power Apps の Round、RoundDown、および RoundUp 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8480d66949994ba59f5ab84aef7999ab36a20b51
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 3b319f831291b1d0d21f3ed4699a144beb023611
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983980"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730283"
 ---
-# <a name="round-rounddown-and-roundup-functions-in-powerapps"></a>PowerApps の Round、RoundDown、および RoundUp 関数
+# <a name="round-rounddown-and-roundup-functions-in-power-apps"></a>Power Apps の Round、RoundDown、および RoundUp 関数
 数値を丸めます。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Round**、**RoundDown**、**RoundUp** 関数は、指定した小数点以下桁数まで数値を丸めます。
 
 * **Round** は、次の桁の数値が 5 以上の場合に切り上げます。 それ以外の場合、この関数では切り捨てます。

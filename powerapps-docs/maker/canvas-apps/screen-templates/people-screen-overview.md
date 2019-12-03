@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4f54a2f6d3bfa7c843b7b095f999050602e063b0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b530fe0623c72f9df1adda1067638a3d1a1099f1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675010"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732541"
 ---
 # <a name="overview-of-the-people-screen-template-for-canvas-apps"></a>キャンバスアプリの people 画面テンプレートの概要
 
@@ -36,7 +36,7 @@ ms.locfileid: "74675010"
 
 ## <a name="prerequisite"></a>前提条件
 
-[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
+[Power Apps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
 
 ## <a name="default-functionality"></a>既定の機能
 

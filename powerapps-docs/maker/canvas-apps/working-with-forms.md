@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 462830806165b4eb52eebb17436e11798dbdb267
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6ab9a39a63e14cfd220edc79db37a78bc5bcd924
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674454"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732441"
 ---
-# <a name="understand-canvas-app-forms-in-microsoft-powerapps"></a>Microsoft PowerApps のキャンバス アプリ フォームについて
+# <a name="understand-canvas-app-forms-in-microsoft-power-apps"></a>Microsoft Power Apps でのキャンバスアプリのフォームについて
 
 ユーザーがレコードの閲覧、そのレコードの詳細の表示、レコードの編集または作成を実行できるように 3 種類のコントロールをキャンバス アプリに追加します。
 
@@ -39,7 +39,7 @@ ms.locfileid: "74674454"
 ## <a name="prerequisites"></a>前提条件
 
 * Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
-* PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
+* Power Apps で[コントロールを構成](add-configure-controls.md)する方法について説明します。
 
 ## <a name="explore-a-generated-app"></a>生成されたアプリの詳細
 Power Apps では、指定したデータソースに基づいてアプリを自動的に生成できます。 各アプリには、先ほど説明したコントロールとそれらを接続する数式を使用した 3 つの画面があります。 これらのアプリは、"そのまま" 実行することも、具体的な目標に合わせてカスタマイズすることもできます。また、アプリのしくみを調べて、自分のアプリに当てはまる有用な概念を習得することもできます。 以降のセクションでは、生成されたアプリを動作させる画面、コントロール、数式について確認します。  

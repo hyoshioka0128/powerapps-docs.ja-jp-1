@@ -1,6 +1,6 @@
 ---
 title: Validate 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Validate 関数の参照情報
+description: 構文と例を含む Power Apps の Validate 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1004b5e7a921500065cca468d9b85e538110116c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1524b6f28d0ce5b1ed02fbd02d3c2df52e2b300f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71991731"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729829"
 ---
-# <a name="validate-function-in-powerapps"></a>PowerApps の Validate 関数
+# <a name="validate-function-in-power-apps"></a>Power Apps での関数の検証
 **Validate** 関数は、特定の[データ ソース](../working-with-data-sources.md)について、単一の[列](../working-with-tables.md#columns)または[レコード](../working-with-tables.md#records)全体の値が有効であるかどうかを確認するものです。  
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 ユーザーがデータの変更を送信する前に、送信内容の有効性についてその場でフィードバックを返し、ユーザー エクスペリエンスを向上させることができます。
 
 データ ソースでは、レコード内で値が有効になるための要素に関する情報を指定できます。 この情報として指定できる制約には、次に挙げたものをはじめ、さまざまなものがあります。
@@ -57,14 +57,14 @@ ms.locfileid: "71991731"
 
 ### <a name="validate-with-a-single-column"></a>単一の列の検証
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Validate( Scores, Percentage, 10 )** |**10** がデータ ソース **Scores** の **Percentage** 列の値として有効であるかどうかを確認します。 |"*空白*" |
 | **Validate( Scores, Percentage, 120 )** |**120** がデータ ソース **Scores** の **Percentage** 列の値として有効であるかどうかを確認します。 |"Values must be between 0 and 100." |
 
 ### <a name="validate-with-a-complete-record"></a>レコード全体の検証
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Validate( Scores, EditRecord, Gallery.Updates )** |**Score** データ ソースのすべての列の値が有効かどうかを確認します。 この例では、**Percentage** 列の値は **10** です。 |"*空白*" |
 | **Validate( Scores, EditRecord, Gallery.Updates )** | **Score** データ ソースのすべての列の値が有効かどうかを確認します。 この例では、**Percentage** 列の値は **120** です。 |"Values must be between 0 and 100." |

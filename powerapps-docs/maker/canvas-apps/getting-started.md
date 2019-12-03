@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 600e474117290c5f52793c1d9c3ec72aefc35783
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 543084f04e2c5456182a17f4f193c5cf722cbe27
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676652"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729524"
 ---
 # <a name="what-are-canvas-apps-in-power-apps"></a>Power Apps のキャンバスアプリとは
 などC#の従来のプログラミング言語でコードを記述することなく、Microsoft Power Apps のキャンバスからビジネスアプリを設計して構築します。 PowerPoint のスライドを設計する場合と同じように、要素をキャンバスにドラッグ アンド ドロップして、アプリを設計します。 ロジックを指定し、データを処理するための Excel のような式を作成します。 [Microsoft とサード パーティのさまざまなソース](connections-list.md)からビジネス データを統合するアプリを構築します。 アプリを共有して、ユーザーがブラウザーやモバイル デバイスで実行できるようにします。また、アプリを埋め込んで、ユーザーが SharePoint、Power BI、Teams で実行できるようにします。
@@ -48,7 +48,7 @@ Power Apps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm
 
 ## <a name="learn-more"></a>詳細情報
 * 左側のナビゲーション ウィンドウで詳細手順、概念、リファレンスのトピックを探す。
-* PowerApps の特徴や機能を活用するのに役立つ、オンデマンドでアクセスできる[ウェビナー](webinars-listing.md)がないかを確認する。
+* オンデマンドでアクセスできる[ウェビナー](webinars-listing.md)を確認して、Power Apps の機能を活用してください。
 * アプリのパフォーマンスを最大化し、アプリの保守を容易にするための[コーディング標準](https://aka.ms/powerappscanvasguidelines)を確認します。
 
 ## <a name="share-your-experience"></a>感想をお聞かせください
@@ -58,5 +58,5 @@ Power Apps に[サインイン](https://make.powerapps.com?utm_source=padocs&utm
 
 ## <a name="next-steps"></a>次の手順
 - [無料ライセンスにサインアップします。](../signup-for-powerapps.md)
-- [PowerApps にサインインします。](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
+- [Power Apps にサインインします。](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)
 - [サンプル アプリを開きます。](open-and-run-a-sample-app.md)

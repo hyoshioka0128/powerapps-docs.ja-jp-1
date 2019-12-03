@@ -1,6 +1,6 @@
 ---
 title: AddColumns、DropColumns、RenameColumns、および ShowColumns 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の AddColumns、DropColumns、RenameColumns、および ShowColumns 関数の参照情報
+description: 構文と例を含む Power Apps の AddColumns、DropColumns、RenameColumns、および ShowColumns 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 55e38d2be5f43e1b13fc1894f88aac26a26bd57e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c60017202c398d7a7e73ea9ff3ccee2bd8835b42
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678214"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730041"
 ---
-# <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-powerapps"></a>PowerApps の AddColumns、DropColumns、RenameColumns、および ShowColumns 関数
+# <a name="addcolumns-dropcolumns-renamecolumns-and-showcolumns-functions-in-power-apps"></a>Power Apps の AddColumns、DropColumns、RenameColumns、および ShowColumns 関数
 [列](../working-with-tables.md#columns)の追加、削除、名前の変更、選択により、[テーブル](../working-with-tables.md)の表示を調整します。
 
 ## <a name="overview"></a>概要

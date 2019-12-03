@@ -1,6 +1,6 @@
 ---
 title: DateAdd、DateDiff、および TimeZoneOffset 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の DateAdd、DateDiff、および TimeZoneOffset 関数の参照情報
+description: 構文と例を含む Power Apps の DateAdd、DateDiff、および TimeZoneOffset 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8108dbc1c78ba57e989f7bebeb8bd0f42f696360
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 4ebabe4240dff3f7f7c3c56cb97258885e2e7a3b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985143"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731162"
 ---
-# <a name="dateadd-datediff-and-timezoneoffset-functions-in-powerapps"></a>PowerApps の DateAdd、DateDiff、および TimeZoneOffset 関数
+# <a name="dateadd-datediff-and-timezoneoffset-functions-in-power-apps"></a>Power Apps の DateAdd、DateDiff、および TimeZoneOffset 関数
 日付/時刻値に加算または日付/時刻値の差を検出し、ローカル時刻と UTC の間で変換します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **DateAdd** 関数は、日付/時刻値にいくつかの単位の値を追加します。 結果は新しい日付/時間値です。 また、負の値を指定して、日付/時刻値からいくつかの単位の値を減算することもできます。
 
 **DateDiff** 関数は、2 つの日付/時間値の差を返します。 結果は、いくつかの単位の値です。
@@ -58,7 +58,7 @@ ms.locfileid: "71985143"
 
 ### <a name="simple-dateadd"></a>単純な DateAdd
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Text( DateAdd( Now(), 3 ),<br>"dd-mm-yyyy hh:mm" )** |現在の日付と時刻に 3 日 (既定の単位) を加算します。 |"18-07-2013 13:02" |
 | **Text( DateAdd( Now(), 4, Hours ),<br>"dd-mm-yyyy hh:mm" )** |現在の日付と時刻に 4 時間を加算します。 |"15-07-2013 17:02" |
@@ -67,7 +67,7 @@ ms.locfileid: "71985143"
 
 ### <a name="simple-datediff"></a>単純な DateDiff
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **DateDiff( Now(), DateValue("1/1/2014") )** |既定の **Days** を単位として 2 つの単位の差を返します。 |170 |
 | **DateDiff( Now(), DateValue("1/1/2014"), Months )** |**Months** を単位として 2 つの値の差を返します。 |6 |

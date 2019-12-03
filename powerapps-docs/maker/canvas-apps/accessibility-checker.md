@@ -10,14 +10,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1c6278a9ddbea085523117c6b790af2b2b1306a0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6479111dbae5e3f4d12e9cad0d78834800ff4c35
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680077"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725587"
 ---
-# <a name="review-a-canvas-app-for-accessibility-in-powerapps"></a>PowerApps でキャンバス アプリのアクセシビリティを確認する
+# <a name="review-a-canvas-app-for-accessibility-in-power-apps"></a>Power Apps のアクセシビリティについてキャンバスアプリを確認する
 
 アプリの外観や動作を設計するときにアクセシビリティが考慮されている場合、視覚、聴覚などに障碍があるユーザーは、キャンバス アプリをより簡単に正しく使用できます。 アプリをより使いやすくする方法がわからない場合は、Power Apps Studio でアクセシビリティチェッカーを実行できます。 このツールは可能性があるアクセシビリティの問題を見つけるだけでなく、それぞれが特定の障碍があるユーザーに対して問題になる可能性がある理由を説明し、各問題を解決する方法も提案します。
 アクセシビリティ チェックでは、ユーザーのスクリーン リーダーとキーボードの問題を検出し、[アクセシビリティ対応の色](accessible-apps-color.md)を使用することで、色コントラストの問題を修正する方法に関する情報を確認することができます。

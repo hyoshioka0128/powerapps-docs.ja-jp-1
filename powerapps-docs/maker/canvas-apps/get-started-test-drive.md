@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: eac22ce84d5864e79c2964d42ffa5fe37853bc97
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 682657a62db520c431bd0f594a87ae50c5e3ac0c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676251"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732170"
 ---
-# <a name="create-a-canvas-app-from-a-template-in-powerapps"></a>PowerApps でテンプレートからキャンバス アプリを作成する
+# <a name="create-a-canvas-app-from-a-template-in-power-apps"></a>Power Apps でテンプレートからキャンバスアプリを作成する
 
 予算を追跡、休暇のスケジュール設定など、特定のシナリオ用のテンプレートに基づいて自動的にキャンバス アプリを作成し、そのアプリを実行して既定の動作を理解します。
 
@@ -30,7 +30,7 @@ Power Apps のライセンスをお持ちでない場合は、[無料でサイ�
 
 ## <a name="create-an-app"></a>アプリを作成する
 
-1. [PowerApps にサインインします](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)。
+1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインします。
 
 1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、 **[このアプリの作成]** をクリックまたはタップします。
 

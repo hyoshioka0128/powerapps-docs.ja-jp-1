@@ -1,6 +1,6 @@
 ---
 title: アプリオブジェクト |Microsoft Docs
-description: 構文と例を含む PowerApps の App オブジェクトの参照情報
+description: 構文と例を含む Power Apps のアプリオブジェクトの参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c2e34a9f466fcb64bcf14ef6a504d5b18b0a596d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f5f09bab44f3f229b47d9a801703b3aa10cba06d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676739"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729774"
 ---
-# <a name="app-object-in-powerapps"></a>PowerApps のアプリオブジェクト
+# <a name="app-object-in-power-apps"></a>Power Apps のアプリオブジェクト
 
 現在実行中のアプリに関する情報を提供し、アプリの動作を制御します。
 
@@ -83,7 +83,7 @@ ms.locfileid: "74676739"
   - Power Apps Mobile で別のアプリに切り替えるためのスワイプ。
   - Android デバイスで [戻る] ボタンを選択します。
 
-確認ダイアログボックスの正確な外観は、デバイスと PowerApps のバージョンによって異なります。
+確認ダイアログボックスの正確な外観は、デバイスとバージョンの電源アプリによって異なる場合があります。
 
 [確認] ダイアログボックスは、Power Apps Studio には表示されません。
 

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 94eb220bbe386b47e2fbb678f9487fcef8612415
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 60577eb3b6c272093222f1c14685d5ffe1d433f9
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679479"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731526"
 ---
 # <a name="embed-a-new-canvas-app-in-a-power-bi-report"></a>Power BI レポートに新しいキャンバス アプリを埋め込む
 
@@ -36,7 +36,7 @@ Power Apps サブスクリプションをお持ちでない場合は、開始す
 
 * [Google Chrome](https://www.google.com/chrome/browser/) または [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) ブラウザー
 * [営業案件の分析のサンプル](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample)がインストールされた [Power BI サブスクリプション](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)
-* [PowerApps でアプリを作成する方法](data-platform-create-app-scratch.md)と [Power BI レポートを編集する方法](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)を理解している
+* [アプリを Power apps で作成](data-platform-create-app-scratch.md)する方法と[Power BI レポートを編集](https://docs.microsoft.com/power-bi/service-the-report-editor-take-a-tour)する方法について理解する
 
 ## <a name="import-the-power-apps-custom-visual"></a>Power Apps カスタムビジュアルをインポートする
 

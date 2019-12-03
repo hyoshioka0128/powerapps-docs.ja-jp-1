@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 942b4b1f5f10cf17d2a33e9f9604661256d99ea6
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: 1fe22d1503193c7c26f0ac8532085bb9b7db2eac
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650542"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727297"
 ---
-# <a name="export-control-and-import-control-in-powerapps"></a>PowerApps のエクスポート コントロールおよびエクスポート コントロール
-ローカル ファイルにデータをエクスポートするコントロールと、そのデータを PowerApps 内の別のアプリにインポートするコントロール。
+# <a name="export-control-and-import-control-in-power-apps"></a>Power Apps でのコントロールのエクスポートとコントロールのインポート
+データをローカルファイルにエクスポートし、そのデータを Power Apps の別のアプリにインポートするためのコントロールです。
 
 ## <a name="description"></a>Description
-同じデータを使用する複数のアプリを作成し、これら以外のアプリとはそのデータを共有しない場合には、**エクスポート** コントロールと**インポート** コントロールを使用してデータをエクスポートおよびインポートできます。 データをエクスポートすると、別のコンピューターにコピー可能な圧縮ファイルが作成されます。このファイルは、PowerApps 以外のプログラムでは読み取ることはできません。
+同じデータを使用する複数のアプリを作成し、これら以外のアプリとはそのデータを共有しない場合には、**エクスポート** コントロールと**インポート** コントロールを使用してデータをエクスポートおよびインポートできます。 データをエクスポートするときに、別のコンピューターにコピーできる圧縮ファイルを作成しますが、Power Apps 以外のプログラムでは読み取ることができません。
 
 ## <a name="warning"></a>警告
 アプリでこの機能を有効にすると、セキュリティが弱まりデータが漏洩する可能性があります。  インポートするファイルは認定済みの信頼できるファイルのみとし、エクスポートするデータは機密情報または取扱いに注意が必要なもの以外のみとするようにユーザーに指示することが推奨されます。

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 233fd99eeba86151f616a22955cf28c2114de43e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 500154ecde380a1cf339f934728807216d29c804
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679617"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731625"
 ---
 # <a name="create-dependent-drop-down-lists-in-a-canvas-app"></a>キャンバスアプリに依存するドロップダウンリストを作成する
 
@@ -49,7 +49,7 @@ ms.locfileid: "74679617"
 | Pembroke       | ビール          |
 | Pembroke       | フローラル           |
 
-インシデント**の一覧に**は、各インシデントに関する連絡先情報と情報が表示されます。 日付列を**日付**列として作成しますが、他の列を**1 行のテキスト**列として作成して、構成を簡素化し、Microsoft PowerApps で[委任](./delegation-overview.md)の警告を回避します。
+インシデント**の一覧に**は、各インシデントに関する連絡先情報と情報が表示されます。 日付列を**日付**列として作成しますが、他の列を**単一行のテキスト**列として作成し、構成を簡素化し、Microsoft Power Apps での[委任](./delegation-overview.md)に関する警告を回避します。
 
 | 名 | 姓 | 電話番号     | Location | Department | Description       | Date      |
 |------------|-----------|------------------|----------------|------------|-------------------------|-----------|

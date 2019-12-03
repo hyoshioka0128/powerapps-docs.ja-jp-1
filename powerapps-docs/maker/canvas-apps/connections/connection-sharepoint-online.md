@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 5c099f68c7dd8833b2ee494ff83cbbdb2c88b923
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0c0f4744e7b323e3262a63278e7c12348142a99b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678766"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74727721"
 ---
 # <a name="connect-to-sharepoint-from-a-canvas-app"></a>キャンバスアプリから SharePoint に接続する
 
@@ -40,7 +40,7 @@ SharePoint サイトに接続してカスタムリストからアプリを自動
 
 ## <a name="create-a-connection"></a>接続を作成する
 
-1. [PowerApps にサインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、左側のナビゲーションバーで [**データ** > **接続**] を選択し、左上隅にある **[新しい接続]** を選択します。
+1. [Power Apps にサインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)し、左側のナビゲーションバーで [**データ** > **接続**] を選択し、左上隅にある **[新しい接続]** を選択します。
 
     > [!div class="mx-imgBorder"]
     > 左側のナビゲーションバーで [データ > 接続] を選択し、左上隅にある [新しい接続] を選択 ![ます。](./media/connection-sharepoint-online/new-connection.png)

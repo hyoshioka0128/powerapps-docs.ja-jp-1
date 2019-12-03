@@ -1,6 +1,6 @@
 ---
 title: Revert 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Revert 関数の参照情報
+description: 構文と例を含む Power Apps の Revert 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dbf1c623b18bc244e62fd962625f1d7cde35f1e4
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: efaffeac79c104d517d8e7da5b2e324fcac3eecb
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992448"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730342"
 ---
-# <a name="revert-function-in-powerapps"></a>PowerApps の Revert 関数
+# <a name="revert-function-in-power-apps"></a>Power Apps の Revert 関数
 [データ ソース](../working-with-data-sources.md)の[レコード](../working-with-tables.md#records)を更新し、エラーをクリアします。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Revert** 関数は、データ ソース全体またはそのデータ ソース内の 1 つのレコードを更新します。 他のユーザーが加えた変更が表示されます。
 
 元に戻されたレコードについては、**Revert** は **[Errors](function-errors.md)** 関数から返されたすべてのエラーを[テーブル](../working-with-tables.md)からクリアします。
@@ -46,13 +46,13 @@ ms.locfileid: "71992448"
 別のデバイスのユーザーが、**Strawberry** レコードの **Quantity** プロパティを **400** に変更します。  この変更を知らないまま、自分がほぼ同時に同じレコードの同じプロパティを **500** に変更したとします。
 
 **[Patch](function-patch.md)** 関数を使用して、レコードを更新します。<br>
-**Patch (IceCream、First (Filter (IceCream, フレーバー = "Strawberry"))、{Quantity:500})**
+**Patch( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ), { Quantity: 500 } )**
 
 **[Errors](function-errors.md)** テーブルを確認すると、エラーが表示されています。
 
 | レコード | [列](../working-with-tables.md#columns) | メッセージ | エラー |
 | --- | --- | --- | --- |
-| **{ID:1、フレーバー:"Strawberry"、Quantity:300}** |"*空白*" |**"変更しようとしているレコードは別のユーザーにより変更されています。レコードを元に戻してからやり直してください。"** |**ErrorKind.Conflict** |
+| **{ ID: 1, Flavor: "Strawberry", Quantity: 300 }** |"*空白*" |**"変更しようとしているレコードは別のユーザーによって変更されています。 レコードを元に戻して、もう一度やり直してください。 "** |**ErrorKind.Conflict** |
 
 **Error** 列に基づいて、**Reload** ボタンの **[OnSelect](../controls/properties-core.md)** プロパティは、次の数式に設定されます。<br>
 **Revert( IceCream, First( Filter( IceCream, Flavor = "Strawberry" ) ) )**

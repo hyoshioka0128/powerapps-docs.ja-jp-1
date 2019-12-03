@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7dd961568fe9cf2a9eb58ad761403b20c99824be
-ms.sourcegitcommit: 8f32eed48adf4b24b9ca607bbf6db3d19749c46f
+ms.openlocfilehash: 1322fd34f4e3a59a62a414fc0e2e7ccca48fc99f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74415516"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731971"
 ---
-# <a name="text-input-control-in-powerapps"></a>PowerApps のテキスト入力コントロール
+# <a name="text-input-control-in-power-apps"></a>Power Apps でのテキスト入力コントロール
 ユーザーがテキスト、数値、およびその他のデータを入力できるボックス。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 ユーザーは、テキスト入力コントロールに入力してデータを指定できます。 アプリの構成方法に応じて、そのデータをデータ ソースに追加したり、一時的な値を計算するために使用したり、他の方法で組み込んだりすることができます。
 
 ## <a name="key-properties"></a>主要なプロパティ
@@ -122,7 +122,7 @@ ms.locfileid: "74415516"
 
 **[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
-**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
 
@@ -148,7 +148,7 @@ ms.locfileid: "74415516"
    **Collect(Names, {FirstName:inputFirst.Text, LastName:inputLast.Text})**
    
     **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-3. 縦/垂直方向にテキスト ギャラリーを追加し、その **[Items](properties-core.md)** プロパティを **Names** に設定し、**Subtitle1[ の ](properties-core.md)** Text プロパティを **ThisItem.FirstName** に設定します。
+3. 縦/垂直方向にテキスト ギャラリーを追加し、その **[Items](properties-core.md)** プロパティを **Names** に設定し、**Subtitle1** の **[Text](properties-core.md)** プロパティを **ThisItem.FirstName** に設定します。
 4. (省略可能) テンプレート ギャラリーで、下部の **Body1** というラベルを削除し、ギャラリーの **[TemplateSize](control-gallery.md)** プロパティを **80** に設定します。
 5. F5 キーを押して、**inputFirst** と **inputLast** に文字列を入力して、 **[追加]** ボタンをクリックまたはタップします。
 6. (省略可能) 他の名前をコレクションに追加し、Esc キーを押して、既定のワークスペースに戻ります。
@@ -160,20 +160,20 @@ ms.locfileid: "74415516"
 1. ラベルを追加し、その **[Text](properties-core.md)** プロパティを次の数式に設定します。<br>
    **If(inputPassword.Text = "P@ssw0rd", "Access granted", "Access denied")**
 
-    **[If](../functions/function-if.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
+    **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 
-1. F5 キーを押し、**inputPasswordP@ssw0rd に**  と入力します。
+1. F5 キーを押し、**inputPassword** に **P@ssw0rd** と入力します。
 
     パスワードの入力が完了すると、ラベルの **Access denied** の表示が停止し、**Access granted** の表示が開始されます。
 
-1. 既定のワークスペースに戻るために、Esc キーを押します。
+1. 既定のワークスペースに戻るには、Esc キーを押します。
 
 1. (省略可能) 矢印などのコントロールを追加し、それを別の画面に移動するように構成し、ユーザーがパスワードを入力した後にのみ表示します。
 
 1. (省略可能) ボタンを追加し、その **[Text](properties-core.md)** プロパティに **Sign in** と表示されるように設定し、タイマーを追加して、ユーザーが間違ったパスワードを入力して、 **[Sign in]** ボタンをクリックまたはタップした場合に、一定の時間テキスト入力コントロールを無効にします。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
 * [標準の色のコントラスト要件](../accessible-apps-color.md)が適用されます。
 

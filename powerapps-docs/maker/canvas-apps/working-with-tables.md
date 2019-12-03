@@ -1,6 +1,6 @@
 ---
 title: キャンバス アプリのテーブルについて | Microsoft Docs
-description: PowerApps におけるキャンバス アプリのテーブル、列、およびレコードの操作に関する参照情報
+description: Power Apps でのキャンバスアプリのテーブル、列、およびレコードの操作に関するリファレンス情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8477ecce3ebd1953807cd348ca4080118c03991d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 777dd5452af8662569e2e51452142a1bbce3f619
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74673154"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732847"
 ---
-# <a name="understand-canvas-app-tables-and-records-in-powerapps"></a>PowerApps におけるキャンバス アプリのテーブルとレコードについて
+# <a name="understand-canvas-app-tables-and-records-in-power-apps"></a>Power Apps のキャンバスアプリのテーブルとレコードについて
 
 Power Apps では、Microsoft Excel、SharePoint、SQL Server の情報にアクセスする canvas アプリを作成できます。また、レコードやテーブルにデータを格納するその他のいくつかのソースを作成することもできます。 このタイプのデータを効率的に操作できるように、その構造の基になる概念を確認しておきましょう。
 

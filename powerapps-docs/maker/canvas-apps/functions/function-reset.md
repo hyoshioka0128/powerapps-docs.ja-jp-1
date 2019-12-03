@@ -1,6 +1,6 @@
 ---
 title: Reset 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Reset 関数の参照情報
+description: 構文と例を含む Power Apps の Reset 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4ab24458c1ce98c6b499bf2ba05d682568938079
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 20109be5e9c77af75409973a32fe46c353d57282
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984063"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730310"
 ---
-# <a name="reset-function-in-powerapps"></a>PowerApps の Reset 関数
+# <a name="reset-function-in-power-apps"></a>Power Apps の Reset 関数
 ユーザーによる変更を破棄して、コントロールを既定値にリセットします。  
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Reset** 関数は、コントロールを **Default** プロパティの値にリセットします。  ユーザーによる変更は破棄されます。
 
 [**ギャラリー**](../controls/control-gallery.md)または[**編集フォーム**](../controls/control-form-detail.md) コントロール内のコントロールは、そのコントロールの外部からはリセットできません。  同じギャラリーまたはフォーム内なら、コントロールの数式でコントロールをリセットできます。  [**ResetForm**](function-form.md) 関数を使用して、フォーム内のすべてのコントロールをリセットすることもできます。 

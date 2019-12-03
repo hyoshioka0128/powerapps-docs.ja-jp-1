@@ -1,6 +1,6 @@
 ---
 title: Acos、Acot、Asin、Atan、Atan2、Cos、Cot、Degrees、Pi、Radians、Sin、Tan 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Abs 関数および Sqrt 関数の参照情報
+description: 構文と例を含む、Power Apps の Abs および Sqrt 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b29bce3f1237c6e98376989981f68e207439dc89
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8ff8b68dce51ce985c391de569e4be7a5a8fabb4
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984101"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729998"
 ---
-# <a name="acos-acot-asin-atan-atan2-cos-cot-degrees-pi-radians-sin-and-tan-functions-in-powerapps"></a>PowerApps の Acos、Acot、Asin、Atan、Atan2、Cos、Cot、Degrees、Pi、Radians、Sin、Tan 関数
+# <a name="acos-acot-asin-atan-atan2-cos-cot-degrees-pi-radians-sin-and-tan-functions-in-power-apps"></a>Power Apps での Acos、Acot、アークサイン、Atan、Atan2、Cos、Cot、Degrees、Pi、ラジアン、Sin、および Tan 関数
 三角比の値を計算します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 ### <a name="primary-functions"></a>基本の関数
 **Cos** 関数は、引数のコサイン (余弦) の値を返します。引数は、ラジアン単位の角度を指定します。
 
@@ -94,7 +94,7 @@ ms.locfileid: "71984101"
 ## <a name="examples"></a>例
 ### <a name="single-number"></a>1 つの数値
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Cos(&nbsp;1.047197&nbsp;)** |ラジアン値 1.047197 (60 度) のコサインを返します。 |0.5 |
 | **Cot(&nbsp;Pi()/4&nbsp;)** |ラジアン値 0.785398... (45 度) のコタンジェントを返します。 |1 |
@@ -115,7 +115,7 @@ ms.locfileid: "71984101"
 
 ![](media/function-trig/values.png)
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Cos(&nbsp;ValueTable&nbsp;)** |テーブルの各数値のコサインを返します。 |<style> img { max-width: none } </style> ![](media/function-trig/values-cos.png) |
 | **Cot(&nbsp;ValueTable&nbsp;)** |テーブルの各数値のコタンジェントを返します。 |<style> img { max-width: none } </style> ![](media/function-trig/values-cot.png) |

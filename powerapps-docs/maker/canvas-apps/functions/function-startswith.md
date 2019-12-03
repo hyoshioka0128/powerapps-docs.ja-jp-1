@@ -1,6 +1,6 @@
 ---
 title: EndsWith 関数と StartsWith 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の EndsWith 関数と StartsWith 関数の参考情報
+description: Power Apps の EndsWith 関数と StartsWith 関数の構文と例を含む参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 510e52e5f1711362116809d0870daafb32c9f266
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 018c6fc80c1fa1c6dfbb66ae70696b6f426fdfb5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992174"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730079"
 ---
-# <a name="endswith-and-startswith-functions-in-powerapps"></a>PowerApps の EndsWith 関数と StartsWith 関数
+# <a name="endswith-and-startswith-functions-in-power-apps"></a>Power Apps の EndsWith 関数と StartsWith 関数
 あるテキスト文字列が、別のテキスト文字列で始まっているか、または終わっているかをテストします。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **EndsWith** 関数は、あるテキスト文字列が別のテキスト文字列で終わるかどうかをテストします。
 
 **StartsWith** 関数は、あるテキスト文字列が別のテキスト文字列で始まるかどうかをテストします。    
@@ -45,14 +45,14 @@ ms.locfileid: "71992174"
 
 ## <a name="examples"></a>例
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **EndsWith("Hello World", "world")** |**"Hello World"** が **"world"** で終わるかどうかを調べます。  このテストでは、大文字と小文字が区別されません。 |**true** |
 | **EndsWith("Good bye", "good")** |**"Good bye"** が **"good"** で終わるかどうかを調べます。  *EndText* の引数 ( **"good"** ) は、テキストの中に表れますが、末尾にはありません。 |**false** |
 | **EndsWith("Always say hello", "hello")** |**"Always say hello"** が **"hello"** で終わるかどうかをテストします。 |**true** |
 | **EndsWith ("Bye", "")** |**"Bye bye"** が、空のテキスト文字列 (**Len** は 0 を返します) で終わるかどうかをテストします。  **フィルター**式を使用して条件を緩和している場合、**EndsWith** は、ここでは **true** を返すように定義されます。 |**true** |
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **StartsWith( "Hello World", "hello" )** |**"Hello World"** が **"hello"** で始まるかどうかをテストします。  このテストでは、大文字と小文字が区別されません。 |**true** |
 | **StartsWith( "Good bye", "hello" )** |**"Good bye"** が **"hello"** で始まるかどうかをテストします。 |**false** |
@@ -68,7 +68,7 @@ ms.locfileid: "71992174"
 
 このデータ ソースをコレクションとして作成するには、 **[ボタン](../controls/control-button.md)** コントロールを作成し、その **OnSelect** プロパティを次の数式に設定します。
 
-**ClearCollect (Customers, Table ({Name:"Fred さん"、Company:"Northwind Traders"}、{Name:"Cole 明美"、会社:"Contoso"}、{Name:"Glenda ジョンソン"、会社:"Contoso"}、{Name:"Mike Collins"、会社:"Adventure Works"}, {Name:"Colleen Jones"、会社:"Adventure Works"}))**
+**ClearCollect( Customers, Table( { Name: "Fred Garcia", Company: "Northwind Traders" }, { Name: "Cole Miller", Company: "Contoso" }, { Name: "Glenda Johnson", Company: "Contoso" }, { Name: "Mike Collins", Company: "Adventure Works" }, { Name: "Colleen Jones", Company: "Adventure Works" } ) )**
 
 この例に示すように、画面下部にある[**ギャラリー コントロール**](../controls/control-gallery.md)にレコードの一覧を表示できます。 画面の上部には、ユーザーが関心のあるレコードを指定できるように、**SearchInput** という名前の[**テキスト入力**](../controls/control-text-input.md)コントロールを追加できます。
 
@@ -80,7 +80,7 @@ ms.locfileid: "71992174"
 
 **Name** 列に基づいてフィルター処理するには、ギャラリー コントロールの **Items** プロパティを次の数式のいずれかに設定します。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Filter( Customers, StartsWith( Name, SearchInput.Text ) )** |**Customers** データ ソースで、検索文字列が **Name** 列の先頭に出現するレコードをフィルター処理します。 このテストでは、大文字と小文字が区別されません。 ユーザーが検索ボックスに「**co**」と入力した場合、ギャラリーには、**Colleen Jones** と **Cole Miller** が表示されます。 ギャラリーに **Mike Collins** が表示されないのは、そのレコードの **Name** 列の先頭に検索文字列がないためです。 |<style> img { max-width: none } </style> ![](media/function-startswith/customers-name-co-startswith.png) |
 | **Filter( Customers, SearchInput.Text in Name )** |**Customers** データ ソースで、検索文字列が **Name** 列のどこかに出現するレコードをフィルター処理します。 このテストでは、大文字と小文字が区別されません。 ユーザーが検索ボックスに「**co**」と入力した場合、ギャラリーには、**Colleen Jones**、**Cole Miller**、および **Mike Collins** が表示されます。これは、検索文字列が、これらすべてのレコードの **Name** 列のどこかに出現しているためです。 |<style> img { max-width: none } </style> ![](media/function-startswith/customers-name-co-contains.png) |
@@ -88,7 +88,7 @@ ms.locfileid: "71992174"
 
 **Name** 列だけでなく **Company** 列を含めるように検索範囲を広げることができます。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Filter( Customers, StartsWith( Name, SearchInput.Text ) &#124;&#124; StartsWith( Company, SearchInput.Text ) )** |**Customers** データ ソースで、**Name** 列または **Company** 列の先頭に検索文字列 (たとえば、**co**) があるレコードをフィルター処理します。  どちらか一方の **StartsWith** 関数が *true* の場合、[ **&#124;&#124;** 演算子](operators.md)は *true* になります。 |<style> img { max-width: none } </style> ![](media/function-startswith/customers-all-co-startswith.png) |
 | **Filter( Customers, SearchInput.Text in Name &#124;&#124; SearchInput.Text in Company )** |**Customers** データ ソースで、**Name** 列または **Company** 列の中に検索文字列 (たとえば、**co**) が含まれているレコードをフィルター処理します。 |<style> img { max-width: none } </style> ![](media/function-startswith/customers-all-co-contains.png) |

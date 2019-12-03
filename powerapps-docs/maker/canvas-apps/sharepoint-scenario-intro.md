@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0e768b017dc4f21b803cdbd6cf7fab220fb0f23c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bf61592dfdb5c7226846d814b75fd8c7584a50ff
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674686"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732964"
 ---
 # <a name="integrate-power-apps-power-automate-and-power-bi-with-sharepoint-online"></a>Power Apps、Power オートメーション、および Power BI を SharePoint Online と統合する
 SharePoint Online をご利用で、ビジネス プロセスの自動化と効率化をお望みですか? Power Apps、Power オートメーション、または Power BI を使用しましたが、SharePoint Online でそれらを使用する方法がわからない場合は、 お探しのものはここにあります。 この一連のチュートリアルでは、SharePoint リストに基づいてプロジェクト管理用の基本的なキャンバスアプリを構築する方法と、SharePoint Online と統合される3つの主要テクノロジである Power Apps、Power Apps、Power BI について説明します。 これらのテクノロジの連携により、お客様のビジネスの *測定* 、結果に基づく *行動* 、ワークフローの *自動化* が容易に可能です。 このシリーズを終了すると、次のようなすばらしいシナリオが完成します。
@@ -31,7 +31,7 @@ SharePoint Online をご利用で、ビジネス プロセスの自動化と効�
 ## <a name="getting-started-quickly"></a>すぐに始める
 このチュートリアル シリーズで紹介するシナリオは、本格的なプロジェクト管理や分析アプリと比べると単純ですが、それでもすべてのタスクを完了するには時間がかかります。 Power Apps の使用について簡単に説明し、Power の自動化と、SharePoint での Power BI については、次の記事をご覧ください。
 
-* **PowerApps**: 「[PowerApps を使用して、SharePoint 内からアプリを生成する](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)」と「[SharePoint リストのデータを管理するアプリの生成](app-from-sharepoint.md)」
+* **PowerApps**: [Power Apps を使用して sharepoint 内からアプリを生成](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)し、 [sharepoint リストのデータを管理するアプリを生成する](app-from-sharepoint.md)
 * **電力自動化**: [power の自動化による承認の待機](https://docs.microsoft.com/flow/wait-for-approvals)
 * **Power BI**: 「[SharePoint Online にレポート Web パーツを埋め込む](https://docs.microsoft.com/power-bi/service-embed-report-spo)」
 

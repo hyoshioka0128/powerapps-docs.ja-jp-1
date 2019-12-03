@@ -1,6 +1,6 @@
 ---
 title: Replace および Substitute 関数 | Microsoft Docs
-description: 構文を含む PowerApps の Replace および Substitute 関数の参照情報
+description: 構文を含む、Power Apps の置換関数と置換関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ff0e016f6ab1ad4f66651ccd3cfa2711f1d85a38
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: d58d215e4c075ce6948aa442e7fd74e250ea8d1e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992385"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730372"
 ---
-# <a name="replace-and-substitute-functions-in-powerapps"></a>PowerApps の Replace および Substitute 関数
+# <a name="replace-and-substitute-functions-in-power-apps"></a>Power Apps の Replace 関数と Replace 関数
 テキストの文字列の一部を別の文字列に置換します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Replace** 関数は、開始位置と長さによって、置換するテキストを識別します。  
 
 **Substitute** 関数は、文字列を照合することで、置換するテキストを識別します。 複数の一致が見つかった場合は、それらのすべてを置換するか、置き換えることができます。
@@ -61,7 +61,7 @@ ms.locfileid: "71992385"
 
 ## <a name="examples"></a>例
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 |---------|-------------|--------|
 | **Replace ("abcdefghijk"、&nbsp;6、&nbsp;5、&nbsp;"*")** | "Abcdefghijk" 内の5文字を、6番目の文字 ("f") で始まる1つの "*" 文字に置き換えます。 | "abcde...z * k" |
 | **Replace (&nbsp;"2019"、&nbsp;3、&nbsp;2、&nbsp;"20"&nbsp;)** | "2019" の最後の2文字を "20" で置き換えます。 | "2020" |

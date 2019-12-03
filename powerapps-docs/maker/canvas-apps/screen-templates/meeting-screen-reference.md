@@ -1,6 +1,6 @@
 ---
 title: キャンバスアプリのミーティング画面テンプレートのリファレンス |Microsoft Docs
-description: PowerApps でのキャンバスアプリのミーティング画面テンプレートの動作の詳細について説明します。
+description: Power Apps でのキャンバスアプリのミーティング画面テンプレートの動作の詳細について説明します。
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 104225e61e986c4e91563945c4b09f2d83ef1a35
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 66cf9ae4cc16ba8004775ba86db3f5497fb99937
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675058"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733134"
 ---
 # <a name="reference-information-about-the-meeting-screen-template-for-canvas-apps"></a>キャンバスアプリのミーティング画面テンプレートに関するリファレンス情報
 
@@ -41,7 +41,7 @@ Power Apps のキャンバスアプリの場合は、ミーティング画面テ
 
 ## <a name="prerequisite"></a>前提条件
 
-[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
+[Power Apps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
 
 ## <a name="invite-tab"></a>[招待] タブ
 
@@ -654,5 +654,5 @@ Power Apps のキャンバスアプリの場合は、ミーティング画面テ
 ## <a name="next-steps"></a>次の手順
 
 * [この画面の詳細情報](./meeting-screen-overview.md)
-* [PowerApps での Office 365 Outlook コネクタについての詳細情報](../connections/connection-office365-outlook.md)
-* [PowerApps での Office 365 Users コネクタについての詳細情報](../connections/connection-office365-users.md)
+* [Office 365 Outlook コネクタの詳細については、「Power Apps」を参照してください。](../connections/connection-office365-outlook.md)
+* [Office 365 Users コネクタの詳細については、「Power Apps」を参照してください。](../connections/connection-office365-users.md)

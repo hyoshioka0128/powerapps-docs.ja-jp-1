@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2afd849a716034e4a4dbd50fd4ad58af059be18b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c1860320715798d1e3acc72af7f158f91b8f3cd0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680008"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724369"
 ---
-# <a name="use-cognitive-services-in-powerapps"></a>PowerApps の Cognitive Services を使用する
+# <a name="use-cognitive-services-in-power-apps"></a>Power Apps での Cognitive Services の使用
 この記事では、 [Azure Cognitive Services Text Analytics API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview)を使用してテキストを分析する基本的なキャンバスアプリを作成する方法について説明します。 Text Analytics API の設定方法と、[Text Analytics コネクタ](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)を使って、Text Analytics API に接続する方法を説明します。 次に、API を呼び出すキャンバス アプリを作成する方法を説明します。
 
 > [!NOTE]
@@ -69,7 +69,7 @@ API は無料のプレビュー版として利用でき、Azure サブスクリ�
 Text Analytics API を起動して実行したので、電源アプリから接続し、API を呼び出すアプリを作成します。 これは、Text Analytics API ページのデモと同様の機能を備えた 1 画面構成のアプリです。 このビルドを始めましょう。
 
 ### <a name="create-the-app-and-add-a-connection"></a>アプリの作成と接続の追加
-まず、空の携帯電話アプリを作成し、**Text Analytics** コネクタを使って接続を追加します。 これらのタスクの詳細については、「[アプリを最初から作成する](get-started-create-from-blank.md)」と「[PowerApps で接続を管理する](add-manage-connections.md)」をご覧ください。
+まず、空の携帯電話アプリを作成し、**Text Analytics** コネクタを使って接続を追加します。 これらのタスクの詳細については、「[アプリを最初から作成](get-started-create-from-blank.md)する」と「 [Power Apps で接続を管理](add-manage-connections.md)する」を参照してください。
 
 1. [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、 **[空白から開始]**  > ![電話アプリのアイコン ](./media/cognitive-services-api/icon-phone-app.png) (電話) > **[Make this app]\(このアプリの作成\)** の順に選択します。
 

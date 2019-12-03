@@ -1,6 +1,6 @@
 ---
 title: JSON 関数 |Microsoft Docs
-description: 構文を含む PowerApps の JSON 関数の参照情報
+description: 構文を含む、Power Apps の JSON 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,24 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 13219dad84e693582ee649a11013d78b6fc69544
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0780280298041aede5b24a9a819aa2743584f8c8
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73538921"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730734"
 ---
-# <a name="json-function-in-powerapps"></a>PowerApps の JSON 関数
+# <a name="json-function-in-power-apps"></a>Power Apps の JSON 関数
 
 テーブル、レコード、または値の JSON テキスト文字列を生成します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 
 **Json**関数は、データ構造の JAVASCRIPT OBJECT NOTATION (json) 表現をテキストとして返します。これにより、ネットワーク上での格納や転送に適しています。 [ECMA-404](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)および[IETF RFC 8259](https://tools.ietf.org/html/rfc8259)では、JavaScript やその他のプログラミング言語で広く使用されている形式について説明しています。
 
 キャンバスアプリは、次の表に示す[データ型](data-types.md)をサポートしており、テキスト表現の詳細が示されています。
 
-| データ型 | 説明 | 結果の例 |
+| データ型 | Description | 結果の例 |
 |-----------|-------------|---------|
 | **演算** | *true*または*false*。 | `true` |
 | **色** | 色の8桁の16進数表現を含む文字列。 この表現は #*rrggbbaa*の形式になります。ここで、 *rr*は赤のコンポーネント、 *gg*は緑、 *bb*は青、 *aa*はアルファチャネルです。 アルファチャネルの場合、 **00**は完全に透明で、 **ff**は完全に不透明です。 この文字列を[**Colorvalue**](function-colors.md)関数に渡すことができます。  | `"#102030ff"` |
@@ -49,7 +49,7 @@ ms.locfileid: "73538921"
 
 オプションの*Format*引数を指定して、結果の読み取り方法とサポートされていないデータ型およびバイナリデータ型の処理方法を制御します。 既定では、出力はできるだけコンパクトになります。不要なスペースや改行は不要で、サポートされていないデータ型とバイナリデータは使用できません。 **&** 演算子を指定する場合は、複数の形式を組み合わせることができます。
 
-| JSONFormat 列挙型 | 説明 |
+| JSONFormat 列挙型 | Description |
 |-----------------|-------------|
 | **Cd-r** | 既定値。  出力は、スペースや改行を追加しなくても、できるだけコンパクトになります。 |
 | **IndentFour** | 読みやすさを向上させるために、出力には各列および入れ子レベルの改行が含まれており、インデントレベルごとに4つのスペースが使用されます。 |

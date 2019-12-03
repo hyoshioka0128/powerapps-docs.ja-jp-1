@@ -1,6 +1,6 @@
 ---
 title: Concurrent 関数 | Microsoft Docs
-description: 構文を含む PowerApps の Concurrent 関数の参照情報
+description: 構文を含む、Power Apps の同時関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0f2f51596e8973bf41e26e4ed56df9f1c6e34844
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e6e2aa2e46625d14a197dc43206bcaac4f31efe1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680307"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731285"
 ---
-# <a name="concurrent-function-in-powerapps"></a>PowerApps の Concurrent 関数
+# <a name="concurrent-function-in-power-apps"></a>Power Apps の同時実行関数
 複数の数式をそれぞれ同時に評価します。
 
 ## <a name="description"></a>Description

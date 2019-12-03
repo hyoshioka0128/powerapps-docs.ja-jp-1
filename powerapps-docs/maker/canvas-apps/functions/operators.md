@@ -1,6 +1,6 @@
 ---
 title: 演算子 | Microsoft Docs
-description: PowerApps の演算子に関する構文と例を含む参照情報
+description: 構文と例を含む Power Apps の演算子の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8c44db7094425366822d7924b771070d9e9a5ec5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8b1c1e5a4a65e4e6fcc90ca809a271f0fb94286a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676631"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732223"
 ---
-# <a name="operators-in-powerapps"></a>PowerApps の演算子
+# <a name="operators-in-power-apps"></a>Power Apps でのオペレーター
 
 これらの演算子の一部は、作成者の言語に依存します。  詳細については、[グローバル アプリ](../global-apps.md)に関する記事を参照してください。
 

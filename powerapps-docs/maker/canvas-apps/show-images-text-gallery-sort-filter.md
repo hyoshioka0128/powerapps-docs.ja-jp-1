@@ -1,6 +1,6 @@
 ---
 title: ギャラリーでのデータの表示、並べ替え、およびフィルター | Microsoft Docs
-description: ギャラリーを使って画像やテキストを表示します。 PowerApps で画像の並べ替えとフィルター処理を行います。
+description: ギャラリーを使って画像やテキストを表示します。 Power Apps でイメージの並べ替えとフィルター処理を行います。
 author: adrianorth
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6b65a2a6fcc4899ac92238ec76d45cb4fd2d62c8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 14925b5e50f1731efc935bc8a3379342283ec2a0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674642"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732455"
 ---
 # <a name="show-sort-and-filter-data-in-a-power-apps-gallery"></a>Power Apps ギャラリーでのデータの表示、並べ替え、およびフィルター処理
 さまざまな製品についての画像やテキストを表示して、その情報を並べ替えたりフィルター処理したりするためのギャラリーを作成します。

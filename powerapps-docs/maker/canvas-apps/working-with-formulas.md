@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 42f5f188f107e8a5768ed9a74f463d1fc9bbc286
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e2200dece82eea17557de28a64e2bc4d228f4394
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74673205"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732890"
 ---
-# <a name="get-started-with-canvas-app-formulas-in-powerapps"></a>PowerApps でキャンバス アプリの数式を使用する
+# <a name="get-started-with-canvas-app-formulas-in-power-apps"></a>Power Apps でキャンバスアプリの数式を使ってみる
 
 (Excel で行われるように) 値を計算してその他のタスクを実行するだけでなく、(アプリが必要とするように) ユーザー入力に応答する数式を利用して、キャンバス アプリを構成します。
 
@@ -36,7 +36,7 @@ ms.locfileid: "74673205"
 ## <a name="prerequisites"></a>前提条件
 
 * Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したのと同じ資格情報を入力して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
-* PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
+* Power Apps で[コントロールを構成](add-configure-controls.md)する方法について説明します。
 
 ## <a name="show-a-simple-value"></a>単純な値の表示
 
@@ -154,6 +154,6 @@ Excel では、条件付き書式の数式を使用して、たとえば赤で�
 
 ## <a name="formula-syntax"></a>数式の構文
 
-数式バーに数式を入力すると、異なる構文要素がそれぞれ別の色で表示され、読みやすさが向上し、長い数式をより簡単に理解できるようになりました。 PowerApps のカラー コードの一覧を示します。
+数式バーに数式を入力すると、異なる構文要素がそれぞれ別の色で表示され、読みやすさが向上し、長い数式をより簡単に理解できるようになりました。 次に、Power Apps のカラーコードリストを示します。
 
 ![構文の強調表示](./media/working-with-formulas/syntax-highlighting.png)

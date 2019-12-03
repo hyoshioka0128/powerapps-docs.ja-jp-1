@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7cbc7d0a51a4bab24214f31321264d3347fbb152
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: f46199d0265cf042ebae5dd27ae308fad7eca8e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649737"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732040"
 ---
-# <a name="shape-controls-and-icon-controls-in-powerapps"></a>PowerApps のシェイプ コントロールとアイコン コントロール
+# <a name="shape-controls-and-icon-controls-in-power-apps"></a>Power Apps のシェイプコントロールとアイコンコントロール
 見た目と動作のプロパティが構成できるグラフィックスです。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 これらのコントロールには、矢印、幾何学的図形、アクション アイコン、記号などがあり、塗りつぶし、サイズ、位置などのプロパティを構成できます。 ユーザーがコントロールを選択した場合にアプリが応答するように、 **[Onselect](properties-core.md)** プロパティを構成することもできます。
 
 ## <a name="key-properties-icons-and-shapes"></a>キーのプロパティ (アイコンと図形)
@@ -72,7 +72,7 @@ ms.locfileid: "73649737"
 
 ## <a name="example"></a>例
 
-1. 既定の **[スクリーン](control-screen.md)** コントロールに **Target** という名前を付け、 **[ラベル](control-text-box.md)** コントロールを追加して **Target[ を表示するように ](properties-core.md)** Text プロパティを設定します。
+1. 既定の **[スクリーン](control-screen.md)** コントロールに **Target** という名前を付け、 **[ラベル](control-text-box.md)** コントロールを追加して **Target** を表示するように **[Text](properties-core.md)** プロパティを設定します。
 
     [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
 
@@ -86,18 +86,18 @@ ms.locfileid: "73649737"
 
     **[Target]\(ターゲット)** 画面が表示されます。
 
-1. (省略可能) Esc キーを押して既定のワークスペースに戻り、**Target** に**シェイプ** コントロールを追加して、**シェイプ[ コントロールの ](properties-core.md)** OnSelect プロパティに次の式を設定します。
+1. (省略可能) Esc キーを押して既定のワークスペースに戻り、**Target** に**シェイプ** コントロールを追加して、**シェイプ** コントロールの **[OnSelect](properties-core.md)** プロパティに次の式を設定します。
 
   `Navigate(Source, ScreenTransition.Fade)`
 
-## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
 
 ### <a name="color-contrast"></a>色のコントラスト
 
 以下は、ボタンとして使用されるグラフィックまたは単なる装飾用ではないグラフィックにのみ適用されます。
 
 アイコンの場合:
-- **[Color](properties-color-border.md)** と **[Fill](properties-color-border.md)**
+- **[色](properties-color-border.md)** と **[塗りつぶし](properties-color-border.md)**
 - その他の[標準の色のコントラスト要件](../accessible-apps-color.md)が適用されます (ボタンとして使用される場合)
 
 境界線のある図形の場合:

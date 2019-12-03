@@ -1,6 +1,6 @@
 ---
 title: And 関数、Or 関数、Not 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の And 関数、Or 関数、Not 関数の参照情報
+description: 構文と例を含む、Power Apps の And、Or、および Not 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a2b04e6a752ade561ec1b95658bcacda759b1a1c
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 1dae72a288c93b624d232402e32fe0e82cbaaead
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992563"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730619"
 ---
-# <a name="and-or-and-not-functions-in-powerapps"></a>PowerApps の And 関数、Or 関数、Not 関数
+# <a name="and-or-and-not-functions-in-power-apps"></a>Power Apps の and、Or、および Not 関数
 
 比較とテストの結果を操作するためによく使用される、ブール値の論理関数について説明します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 
 **And** 関数は、すべての引数が **true** の場合に **true** を返します。
 
@@ -68,7 +68,7 @@ Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello Wor
 
 (Alt キーを押しながらクリックして) ボタンを選択し、[**ラベル**](../controls/control-text-box.md)コントロールの**Text**プロパティを次の表の最初の列の数式に設定します。
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 |---------|-------------|--------|
 | **And (a, b)** | **A**と**b**の値をテストします。  引数の1つが*false*であるため、関数は*false*を返します。 | *false* |
 | **a および b** | 前の例と同じ Visual Basic 表記法を使用します。 | *false* |
@@ -79,6 +79,6 @@ Set( a, false ); Set( b, true ); Set( x, 10 ); Set( y, 100 ); Set( s, "Hello Wor
 | **Not (a)** | の**値をテストします。** 引数が*false*の場合、関数は逆の結果を返します。 | *true* |
 | **ではありません。** | 前の例と同じ Visual Basic 表記法を使用します。 | *true* |
 | **!ある** | 前の例と同じです。 JavaScript 表記を使用します。 | *true* |
-| **Len (&nbsp;s&nbsp;)&nbsp;<&nbsp;20 および&nbsp;Not Blank (&nbsp;s&nbsp;)** &nbsp; | の長さが20未満であるかどうか、および**空白** **の値**でないかどうかをテストします。 長さが20未満で、値が空白ではありません。 したがって、結果は*true*になります。 | *true* |
+| **Len (&nbsp;s&nbsp;)&nbsp;<&nbsp;20 および&nbsp;Not Blank (&nbsp;s&nbsp;)** | の長さが20未満であるかどうか、および**空白** **の値**でないかどうかをテストします。 長さが20未満で、値が空白ではありません。 したがって、結果は*true*になります。 | *true* |
 | **または (&nbsp;Len (&nbsp;s&nbsp;)&nbsp;<&nbsp;10、x&nbsp;<&nbsp;100、y&nbsp;<&nbsp;100&nbsp;)** | **S**の長さが10未満であるかどうか、 **x**が100未満であるかどうか、 **y**が100未満かどうかをテストします。 1番目と3番目の引数は false ですが、2番目の引数は true です。 したがって、この関数は*true*を返します。 | *true* |
 | **Not IsBlank (&nbsp;s&nbsp;)** | **S**が*空白*であるかどうかをテストします。 *false*を返します。 **Not**は、この結果の逆を返します。これは*true*です。 | *true* |

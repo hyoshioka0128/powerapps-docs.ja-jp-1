@@ -1,6 +1,6 @@
 ---
 title: Errors 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Errors 関数の参照情報
+description: 構文と例を含む Power Apps の Errors 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0a0871374bad90156f9b3626b58a68eb77bfb499
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 245bdbfbcf8e95b5bca6ca736ff67d5623f772f5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680238"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731051"
 ---
-# <a name="errors-function-in-powerapps"></a>PowerApps の Errors 関数
+# <a name="errors-function-in-power-apps"></a>Power Apps の Errors 関数
 [データ ソース](../working-with-data-sources.md)に対する以前の変更のエラー情報を提供します。
 
 ## <a name="overview"></a>概要

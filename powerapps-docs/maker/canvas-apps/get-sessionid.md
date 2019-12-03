@@ -1,6 +1,6 @@
 ---
 title: セッション ID またはキャンバス アプリ ID を取得する | Microsoft Docs
-description: PowerApps でのトラブルシューティングのためにセッション ID またはキャンバス アプリ ID を取得する方法
+description: Power Apps でのトラブルシューティングのためにセッション ID またはキャンバスアプリ ID を取得する方法
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 81c1db4ab44f3ca8517c6154f0516ca9dad5f825
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bad3f118da62d0c4eb6c0873aa6aed03516a9085
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74676513"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729638"
 ---
 # <a name="get-a-session-id-or-a-canvas-app-id"></a>セッション ID またはキャンバス アプリ ID を取得する
 Power Apps で作成された canvas アプリで問題が発生した場合は、その問題について、セッション ID、アプリ ID、またはその両方を使用して、問題のトラブルシューティングを行うことができます。
@@ -59,7 +59,7 @@ Power Apps で作成された canvas アプリで問題が発生した場合は�
     ![埋め込みのアプリケーションからセッション ID を取得する](media/get-sessionid/embedded.png)
 
 ## <a name="get-an-app-id"></a>アプリケーション ID を取得する
-1. [PowerApps にサインインします](https://powerapps.microsoft.com)。
+1. [Power Apps にサインイン](https://powerapps.microsoft.com)します。
 
 1. 左の端にある **[アプリ]** を選択します。
 

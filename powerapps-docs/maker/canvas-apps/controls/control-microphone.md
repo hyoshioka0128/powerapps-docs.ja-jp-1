@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ae158e17873ed7433b301cc5c88d195515a9a5c
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: b2da6fd3ac8c4d69eb702ac7537dfefa2e5e94f6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650427"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729108"
 ---
-# <a name="microphone-control-in-powerapps"></a>PowerApps のマイク コントロール
+# <a name="microphone-control-in-power-apps"></a>Power Apps のマイクコントロール
 アプリのユーザーが自分のデバイスのサウンドを録音できるようにするコントロール。
 
 ## <a name="description"></a>Description

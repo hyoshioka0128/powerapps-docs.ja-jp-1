@@ -1,6 +1,6 @@
 ---
 title: Count、CountA、CountIf、および CountRows 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Count、CountA、CountIf、および CountRows 関数の参照情報
+description: 構文と例を含む Power Apps の Count、CountA、CountIf、および CountRows 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 70950a52050226a25270be7531f4589671f0d46f
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: a0c9d7d96b4ca6ce75993586de5a39fd33906f3b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983894"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730053"
 ---
-# <a name="count-counta-countif-and-countrows-functions-in-powerapps"></a>PowerApps の Count、CountA、CountIf、および CountRows 関数
+# <a name="count-counta-countif-and-countrows-functions-in-power-apps"></a>Power Apps の Count、CountA、CountIf、および CountRows 関数
 [テーブル](../working-with-tables.md)のすべての[レコード](../working-with-tables.md#records)をカウントするか、条件を満たすすべてのレコードをカウントします。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Count** 関数は、単一列テーブルのレコードのうち、数値が含まれるレコードの数をカウントします。
 
 **CountA** 関数は、単一列テーブルのレコードのうち、"*空白*" でないレコードの数をカウントします。 この関数では、[空](function-isblank-isempty.md)のテキスト ("") もカウントされます。

@@ -1,6 +1,6 @@
 ---
 title: Text 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Text 関数の参照情報
+description: 構文と例を含む Power Apps の Text 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 98836d9dad8d46e88c9587c139ec58fed91fa323
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9ebc28c72d1d25c4a6e85e25a14c8addaf457318
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678154"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729970"
 ---
-# <a name="text-function-in-powerapps"></a>PowerApps の Text 関数
+# <a name="text-function-in-power-apps"></a>Power Apps の Text 関数
 任意の値を変換し、数値または日付/時刻値をテキスト文字列に書式設定します。
 
 ## <a name="description"></a>Description

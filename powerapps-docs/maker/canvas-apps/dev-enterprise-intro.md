@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d2ec1d3fc39749f29a57fd8ca8e518e325c2a11a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 02b95408a0e4d3d519c1a1105002c69372670f55
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679498"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731585"
 ---
 # <a name="canvas-apps-for-enterprise-developers-partners-and-isvs"></a>企業の開発者、パートナー、ISV のためのキャンバス アプリ
 
@@ -26,7 +26,7 @@ ms.locfileid: "74679498"
 
 ## <a name="canvas-apps-for-enterprise-developers"></a>企業開発者向けキャンバスアプリ
 
-企業開発者は、企業向けに調整した堅牢なソリューションを PowerApps で開発することで、組織の力を高めることができます。
+企業の開発者は、お客様の組織がパワーアプリに堅牢で調整されたソリューションを構築することを支援します。
 
 - **カスタムコネクタの作成**: 組織のデータと web サービスに接続するカスタムコネクタを作成します。 [詳細情報](https://docs.microsoft.com/connectors/custom-connectors/)
 

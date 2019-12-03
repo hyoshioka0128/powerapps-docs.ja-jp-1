@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 100b69583593bd506cb6860890ee3dfcfc82ebdf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 40741bbaaba75f6cb1312057d5bba8c02ea15835
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73540436"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74723621"
 ---
-# <a name="connect-to-power-bi-from-powerapps"></a>PowerApps から Power BI に接続する
+# <a name="connect-to-power-bi-from-power-apps"></a>Power Apps から Power BI に接続する
 ![Power BI](./media/connection-powerbi/powerbiicon.png)
 
 Power BI は、データを分析し、洞察を共有するビジネス分析用ツール群です。 すべてのデバイスで使用できる豊富なダッシュ ボードで、お客様のビジネスを監視し、すばやく回答を取得します。 アプリでは、Power BI サービスで設定しているデータ アラートの状態を確認できます。 Power BI でのデータ アラートの詳細については、[ドキュメント ページ](https://docs.microsoft.com/power-bi/service-set-data-alerts)を参照してください。

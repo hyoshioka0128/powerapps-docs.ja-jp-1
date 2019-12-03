@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 65076c38a1beeb41c9f6f308b6c0c7e82d30fc80
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8b5a5366f3de487b7d34d60d989274223340f4e6
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674414"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732413"
 ---
-# <a name="show-data-in-a-line-pie-or-bar-chart-in-powerapps"></a>PowerApps でデータを折れ線グラフ、円グラフ、棒グラフで表示する
+# <a name="show-data-in-a-line-pie-or-bar-chart-in-power-apps"></a>Power Apps の折れ線グラフ、円グラフ、または横棒グラフにデータを表示する
 
 折れ線グラフ、円グラフ、棒グラフを使ってデータをキャンバス アプリで表示することができます。 グラフを扱うとき、インポートするデータは次の条件に基づいて構造化されている必要があります。
 
@@ -37,7 +37,7 @@ ms.locfileid: "74674414"
 
 * Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインアップに使用したものと同じ資格情報を使用して[サインイン](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)します。
 * [テンプレート](get-started-test-drive.md)、[データ](get-started-create-from-data.md)、または[ゼロ](get-started-create-from-blank.md)からアプリを作成していること。
-* PowerApps で[コントロールを構成する](add-configure-controls.md)方法について確認します。
+* Power Apps で[コントロールを構成](add-configure-controls.md)する方法について説明します。
 * [ChartData.zip](https://pwrappssamples.blob.core.windows.net/samples/ChartData.zip) をダウンロードします。このファイルには、サンプル データが XML ファイルとして格納されています。 このトピックの手順に従って直接アプリにインポートしてください。 または .zip ファイルを展開し、XML ファイルを Excel で開いて、[クラウド ストレージ アカウント](connections/cloud-storage-blob-connections.md)に保存します。
 
 ## <a name="import-the-sample-data"></a>サンプル データをインポートする

@@ -1,6 +1,6 @@
 ---
 title: DateValue、TimeValue、および DateTimeValue 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の DateValue、TimeValue、および DateTimeValue 関数の参照情報
+description: 構文と例を含む Power Apps の DateValue、TimeValue、DateTimeValue 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3914c55bf3be5d172bc80832e437c3e3775a1859
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: aab6d3d00f960d2e0b4ca5cc5b309eee4fb9a7b7
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985081"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731182"
 ---
-# <a name="datevalue-timevalue-and-datetimevalue-functions-in-powerapps"></a>PowerApps の DateValue、TimeValue、および DateTimeValue 関数
+# <a name="datevalue-timevalue-and-datetimevalue-functions-in-power-apps"></a>Power Apps の DateValue、TimeValue、および DateTimeValue 関数
 文字列内の日付、時刻、またはその両方を日付/時刻値に変換します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **DateValue** 関数は、日付文字列 (たとえば、"10/01/2014") を日付/時刻値に変換します。
 
 **TimeValue** 関数は、時間文字列 (たとえば、"12:15 PM") を日付/時刻値に変換します。

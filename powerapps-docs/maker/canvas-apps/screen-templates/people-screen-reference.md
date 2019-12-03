@@ -1,6 +1,6 @@
 ---
 title: People screen のテンプレートリファレンス |Microsoft Docs
-description: PowerApps でキャンバスアプリの people screen テンプレートがどのように機能するかについて詳しく説明します。
+description: Power Apps でキャンバスアプリの people screen テンプレートを使用する方法の詳細について説明します。
 author: emcoope-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ab4b7683d4ea550ebe5704cb7e5580ccbae48deb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e4e67b4905003f8134d8f6868671e74fdece3d6b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674973"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732591"
 ---
 # <a name="reference-information-about-the-people-screen-template-for-canvas-apps"></a>Canvas apps の people screen テンプレートに関するリファレンス情報
 
@@ -32,7 +32,7 @@ Power Apps のキャンバスアプリの場合は、people 画面テンプレ�
 
 ## <a name="prerequisite"></a>前提条件
 
-[PowerApps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
+[Power Apps でアプリを作成](../data-platform-create-app-scratch.md)するときに、画面やその他のコントロールを追加および構成する方法について理解します。
 
 ## <a name="text-search-box"></a>テキスト検索ボックス
 

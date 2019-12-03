@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fbfe1b62091ff7a4fb84b899518fc941f99d7abb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9befcf4cb0e7267820c62ab78a14ee28ba985490
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674854"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732398"
 ---
 # <a name="understand-sharepoint-forms-integration"></a>SharePoint フォームの統合について
 Power Apps で[SharePoint リストフォーム](customize-list-form.md)を簡単にカスタマイズできるようになりました。 この記事では、これらのフォームの動作と、フォームをさらにカスタマイズする方法を詳しく見てみましょう。
@@ -43,7 +43,7 @@ SharePoint リストのフォームをカスタマイズしたことがある方
 
         **ResetForm(SharePointForm1); RequestHide()**
 
-* **SharePointIntegration** - このコントロールは、SharePoint と PowerApps の間でユーザー アクションを伝達します。
+* **Sharepointintegration** -SharePoint と Power Apps の間でユーザー操作をやり取りするためのコントロール。
 
     * **Data Source** - フォームがカスタマイズされているリストです。
 
@@ -72,7 +72,7 @@ SharePoint リストのフォームをカスタマイズしたことがある方
 これらの既定値を使用すると、SharePoint 内で実行されるときにフォームが動作するようになります。ユーザーが sharepoint で Power Apps フォームモードを操作すると、その変更が SharePoint に送信されるようになります。
 
 ## <a name="understand-the-sharepointintegration-control"></a>SharePointIntegration コントロールについて
-**SharePointIntegration** コントロールは、SharePoint と PowerApps の間でユーザー アクションを伝達します。
+**Sharepointintegration**コントロールは、SharePoint と Power Apps の間でユーザーの操作をやり取りします。
 
 ![](./media/sharepoint-form-integration/sharepointintegration-object.png)
 

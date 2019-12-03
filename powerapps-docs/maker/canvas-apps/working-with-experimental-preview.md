@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b1d8dbc97082cc2a7eeee2c5eae093a665d74d70
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 55788e22d41f2684651ddec8bcf0eb1c61e70e6e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74674256"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732880"
 ---
-# <a name="understand-experimental-preview-and-deprecated-features-in-powerapps"></a>PowerApps の試験段階、プレビュー版、非推奨の機能について
+# <a name="understand-experimental-preview-and-deprecated-features-in-power-apps"></a>Power Apps の試験段階、プレビュー版、非推奨の機能について
 
 各リリースでは、変更を加え、機能を追加して、お客様のニーズに合った最適なツールをパワーアプリに設定します。 製品を上位に進めます。  
 

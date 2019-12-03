@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9e96b0733e139657c3105ec020470d55fe5008dd
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: af4412e2f098d6e7e5996b2de436b674cfa60a40
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679196"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74724628"
 ---
-# <a name="add-images-to-excel-from-powerapps"></a>PowerApps から Excel へのイメージの追加
+# <a name="add-images-to-excel-from-power-apps"></a>Power Apps から Excel に画像を追加する
 ユーザーがファイルのイメージを表示、追加、または削除したり、**ペン** コントロールを使用して描画したりできるアプリを自動的に作成します。 アプリは、作成してクラウド ストレージ アカウントにアップロードする Excel ファイルに基づきます。
 
 ## <a name="prerequisites"></a>前提条件

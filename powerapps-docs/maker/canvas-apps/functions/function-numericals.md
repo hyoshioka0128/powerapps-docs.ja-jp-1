@@ -1,6 +1,6 @@
 ---
 title: Abs、Exp、Ln、Power および Sqrt 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Abs、Sqrt およびその他の関数の参照情報
+description: 構文と例を含む、Power Apps の Abs、Sqrt、およびその他の関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6e559f482c8ad151eb04057f3178b141150acc7d
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 925297a8e1a3f4c454cb8bbb09f75a87419cf5cb
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984419"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730477"
 ---
-# <a name="abs-exp-ln-power-and-sqrt-functions-in-powerapps"></a>PowerApps の Abs、Exp、Ln、Power および Sqrt 関数
+# <a name="abs-exp-ln-power-and-sqrt-functions-in-power-apps"></a>Power Apps の Abs、Exp、Ln、Power、および Sqrt 関数
 絶対値、自然対数、平方根、および *e* または任意の数の指定した累乗の結果を計算します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Abs** 関数は引数の負以外の値を返します。 数値が負の場合は、**Abs** は対応する正の値を返します。
 
 **Exp** 関数は *e* の引数の累乗を返します。  超越数 *e* は 2.7182818... です。
@@ -55,7 +55,7 @@ ms.locfileid: "71984419"
 ## <a name="examples"></a>例
 ### <a name="single-number"></a>1 つの数値
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Abs( -55 )** |負の符号のない数値を返します。 |55 |
 | **Exp( 2 )** |*e* の 2 乗、つまり *e* \* *e* を返します。 |7.389056... |
@@ -68,7 +68,7 @@ ms.locfileid: "71984419"
 
 ![](media/function-numericals/values.png)
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Abs(&nbsp;ValueTable&nbsp;)** |テーブル内の各数値の絶対値を返します。 |<style> img { max-width: none } </style> ![](media/function-numericals/values-abs.png) |
 | **Exp(&nbsp;ValueTable&nbsp;)** |*e* をテーブル内の各数値で累乗した値を返します。 |<style> img { max-width: none } </style> ![](media/function-numericals/values-exp.png) |

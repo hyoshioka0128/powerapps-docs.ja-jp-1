@@ -1,6 +1,6 @@
 ---
 title: EditForm 関数、NewForm 関数、SubmitForm 関数、ResetForm 関数、ViewForm 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の EditForm 関数、NewForm 関数、SubmitForm 関数、ResetForm 関数、ViewForm 関数の参照情報
+description: 構文と例を含む Power Apps の EditForm、NewForm、SubmitForm、ResetForm、ViewForm 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,26 +13,26 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 20515a65a66dc3fea1236924d9c29574f63e16a8
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8cb2acc15d7d82e2c0935133ffdaf5e4f5284f0c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992692"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730892"
 ---
-# <a name="editform-newform-submitform-resetform-and-viewform-functions-in-powerapps"></a>PowerApps の EditForm 関数、NewForm 関数、SubmitForm 関数、ResetForm 関数、ViewForm 関数
+# <a name="editform-newform-submitform-resetform-and-viewform-functions-in-power-apps"></a>Power Apps での EditForm、NewForm、SubmitForm、ResetForm、ViewForm 関数
 **[編集フォーム](../controls/control-form-detail.md)** コントロールで、項目の表示、編集、または作成、内容の保存、コントロールのリセットを行います。
 
 ## <a name="overview"></a>概要
 これらの関数は**編集フォーム** コントロールの状態を変更します。  フォーム コントロールは、次のモードのいずれかにあります。
 
-| モード | 説明 |
+| モード | Description |
 | --- | --- |
 | **FormMode.Edit** |フォームは既存のレコードに設定され、ユーザーはフィールドの値を変更できます。  完了すると、ユーザーはレコードに変更を保存できます。 |
 | **FormMode.New** |フォームは既定の値で設定され、ユーザーはフィールドの値を変更できます。  完了すると、ユーザーはレコードをデータ ソースに追加できます。 |
 | **FormMode.View** |フォームは既存のレコードに設定されますが、ユーザーはフィールドの値を変更できません。 |
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 これらの関数は多くの場合、ユーザーが編集内容の保存、編集内容の破棄、またはレコードの作成を行えるようにするために、 **[ボタン](../controls/control-button.md)** コントロールまたは **[イメージ](../controls/control-image.md)** コントロールの **[OnSelect](../controls/properties-core.md)** 数式から呼び出されます。 [コントロールとこれらの関数を組み合わせて](../working-with-forms.md)、理想的なソリューションを作成することができます。
 
 これらの関数は値を返しません。
@@ -64,7 +64,7 @@ ms.locfileid: "71992692"
 ### <a name="displaymode-property"></a>DisplayMode プロパティ
 **Mode** プロパティを介して、現在のモードを読み取ることができます。  また、このモードは **DisplayMode** プロパティの値を決定し、この値をフォーム コントロール内のデータ カードとコントロールで使用できます。  多くの場合、データカードの**displaymode**プロパティは、コントロールの**displaymode**プロパティ (データカードを参照) として、親 (フォームを参照) に設定され**ます。** 
 
-| モード | DisplayMode | 説明 |
+| モード | DisplayMode | Description |
 | --- | --- | --- |
 | **FormMode.Edit** |**DisplayMode.Edit** |データ カードとコントロールは編集可能で、レコードへの変更を受け入れる準備ができています。 |
 | **FormMode.New** |**DisplayMode.Edit** |データ カードとコントロールは編集可能で、新しいレコードを受け入れる準備ができています。 |

@@ -1,6 +1,6 @@
 ---
 title: Refresh 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Refresh 関数の参照情報
+description: 構文と例を含む Power Apps の Refresh 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 72fafd2b55237dc4804c50c26530fddb763d9623
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 8376d21117c286a540ca8b873c7e91b07d53d607
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984278"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730378"
 ---
-# <a name="refresh-function-in-powerapps"></a>PowerApps の Refresh 関数
+# <a name="refresh-function-in-power-apps"></a>Power Apps の関数の更新
 [データ ソース](../working-with-data-sources.md)の[レコード](../working-with-tables.md#records)を更新します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Refresh** 関数は、データ ソースの新しいコピーを取得します。  他のユーザーが加えた変更が表示されます。
 
 **Refresh** には戻り値が存在せず、[動作の数式](../working-with-formulas-in-depth.md)内でのみ使用できます。

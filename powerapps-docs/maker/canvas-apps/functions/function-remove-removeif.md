@@ -1,6 +1,6 @@
 ---
 title: Remove および RemoveIf 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Remove および RemoveIf 関数の参照情報
+description: 構文と例を含む、Power Apps の Remove および RemoveIf 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 57432024254598ff8216d6fefafa5354844bb7a4
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 614474c70a8962345b13ddb256cd22d573938b47
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71984299"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730420"
 ---
-# <a name="remove-and-removeif-functions-in-powerapps"></a>PowerApps の Remove および RemoveIf 関数
+# <a name="remove-and-removeif-functions-in-power-apps"></a>Power Apps の remove および RemoveIf 関数
 [データ ソース](../working-with-tables.md#records)から[レコード](../working-with-data-sources.md)を削除します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 ### <a name="remove-function"></a>Remove 関数
 **Remove** 関数を使用して、1 つまたは複数の特定のレコードをデータ ソースから削除します。  
 
@@ -62,7 +62,7 @@ ms.locfileid: "71984299"
 
 ![](media/function-remove-removeif/icecream.png)
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Remove(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) )** |データ ソースの **Chocolate** レコードを削除します。 |<style> img { max-width: none } </style> ![](media/function-remove-removeif/icecream-no-chocolate.png)<br><br>**IceCream** データ ソースの内容が変更されました。 |
 | **Remove(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;) First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Strawberry"&nbsp;)&nbsp;) )** |データ ソースから 2 つのレコードを削除します。 |![](media/function-remove-removeif/icecream-only-vanilla.png)<br><br>**IceCream** データ ソースの内容が変更されました。 |

@@ -1,6 +1,6 @@
 ---
 title: Collect、Clear、および ClearCollect 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Collect、Clear、および ClearCollect 関数の参照情報
+description: 構文と例を含む、Power Apps の Collect、Clear、および ClearCollect 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 02a69fd7844de8965607cd828c6b3e17437ce34f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6c4d9362819790d60faaf68173c119f67b895fb9
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678398"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731342"
 ---
-# <a name="collect-clear-and-clearcollect-functions-in-powerapps"></a>PowerApps の Collect、Clear、および ClearCollect 関数
+# <a name="collect-clear-and-clearcollect-functions-in-power-apps"></a>Power Apps の collect、Clear、および ClearCollect 関数
 
 [コレクション](../working-with-data-sources.md#collections)の作成とクリアおよび任意の[データ ソース](../working-with-data-sources.md)への[レコード](../working-with-tables.md#records)の追加を行います。
 

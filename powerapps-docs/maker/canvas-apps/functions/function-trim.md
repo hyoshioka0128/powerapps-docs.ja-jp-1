@@ -1,6 +1,6 @@
 ---
 title: Trim および TrimEnds 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Trim および TrimEnds 関数の参照情報
+description: 構文と例を含む Power Apps の Trim および TrimEnds 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 79f035271b2a98faf6ddb7bba716c7107e311183
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: cf87c96e2e49f9bc01f6d6c749844bd473099cad
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71991909"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74729951"
 ---
-# <a name="trim-and-trimends-functions-in-powerapps"></a>PowerApps の Trim および TrimEnds 関数
+# <a name="trim-and-trimends-functions-in-power-apps"></a>Power Apps の Trim および TrimEnds 関数
 テキストの文字列から余分なスペースを削除します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **Trim** 関数は、単語間の 1 つのスペースを除く、すべてのスペースをテキストの文字列から削除します。  
 
 **TrimEnds** 関数は、テキストの文字列の先頭と末尾からすべてのスペースを削除しますが、単語間のスペースはそのまま残します。
@@ -43,7 +43,7 @@ ms.locfileid: "71991909"
 
 ## <a name="example"></a>例
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Trim(&nbsp;"&nbsp;&nbsp;&nbsp;Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World&nbsp;&nbsp;&nbsp;"&nbsp;)** |文字列の先頭と末尾にあるすべてのスペースと文字列内の余分なスペースを削除します。 |"Hello World" |
 | **TrimEnds(&nbsp;"&nbsp;&nbsp;&nbsp;Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World&nbsp;&nbsp;&nbsp;"&nbsp;)** |文字列の先頭と末尾からすべてのスペースを削除します。 |"Hello&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;World" |
@@ -55,7 +55,7 @@ ms.locfileid: "71991909"
 このコレクションを作成するには、 **[ボタン](../controls/control-button.md)** コントロールの **OnSelect** プロパティを次の数式に設定し、プレビュー モードを開始して、ボタンをクリックまたはタップします。
 <br>**ClearCollect( Spaces, [ "&nbsp;&nbsp;&nbsp;Jane&nbsp;&nbsp;&nbsp;Doe&nbsp;&nbsp;&nbsp;", "&nbsp;&nbsp;&nbsp;&nbsp;Jack&nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp;Jill", "Already&nbsp;trimmed", "&nbsp;&nbsp;&nbsp;Venus,&nbsp;&nbsp;&nbsp;Earth,&nbsp;&nbsp;&nbsp;Mars&nbsp;&nbsp;", "Oil&nbsp;and&nbsp;Water&nbsp;&nbsp;&nbsp;" ] )**
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Trim(&nbsp;Spaces&nbsp;)** |**Spaces** コレクションの各文字列の先頭と末尾にあるすべてのスペースと各文字列内の余分なスペースを削除します。 |<style> img { max-width: none } </style> ![](media/function-trim/output-trim.png) |
 | **TrimEnds(&nbsp;Spaces&nbsp;)** |**Spaces** コレクションの各文字列の先頭と末尾からすべてのスペースを削除します。 |<style> img { max-width: none } </style> ![](media/function-trim/output-trimends.png) |

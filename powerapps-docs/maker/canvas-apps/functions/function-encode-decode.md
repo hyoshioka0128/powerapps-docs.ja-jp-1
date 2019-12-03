@@ -1,6 +1,6 @@
 ---
 title: EncodeUrl および PlainText 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の EncodeUrl および PlainText 関数の参照情報
+description: 構文と例を含む Power Apps の EncodeUrl 関数と PlainText 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c21cae9e39e3a9a1461ac3fafe576f40b70c0818
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: fe02683e0b420a97fe674543a2f0d16bb076f266
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71985008"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731019"
 ---
-# <a name="encodeurl-and-plaintext-functions-in-powerapps"></a>PowerApps の EncodeUrl および PlainText 関数
+# <a name="encodeurl-and-plaintext-functions-in-power-apps"></a>Power Apps の EncodeUrl および PlainText 関数
 文字列をエンコードおよびデコードします。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **EncodeUrl**関数は、URL 文字列をエンコードして、特定の英数字以外の文字を% および16進数に置き換えます。  
 
 **PlainText**関数は、HTML および XML タグを削除して、次のような特定のタグを適切な記号に変換します。

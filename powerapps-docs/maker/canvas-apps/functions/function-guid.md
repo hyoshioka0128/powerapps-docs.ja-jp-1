@@ -1,6 +1,6 @@
 ---
 title: GUID 関数 | Microsoft Docs
-description: 構文を含む PowerApps の GUID 関数の参照情報
+description: 構文を含む、Power Apps の GUID 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ea2668ca295d807bbc19f71c9aa9f477c3b96041
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 88028d2dc4016d294e051ecff66b590996b57966
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71992686"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730861"
 ---
-# <a name="guid-function-in-powerapps"></a>PowerApps の GUID 関数
+# <a name="guid-function-in-power-apps"></a>Power Apps の GUID 関数
 GUID ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)/グローバル一意識別子) 文字列を GUID 値に変換するか、新しい GUID 値を作成します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 **GUID** 関数を使用し、GUID の 16 進数表現が含まれる文字列をデータベースに渡せる GUID 値に変換します。 GUID 値は、Common Data Service や SQL Server などのデータベースシステムによってキーとして使用されます。
 
 渡される文字列には大文字または小文字を含めることができますが、32 桁の 16 進数にする必要があります。形式は次のいずれかにします。
@@ -69,7 +69,7 @@ GUID ([Globally Unique Identifier](https://en.wikipedia.org/wiki/Universally_uni
 
 コンテキストで使用され、新しいデータベース レコードの **Status** フィールドを確立された値に設定します。
 
-* **Patch (製品、既定 (製品)、{Status:GUID ("F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4")})**
+* **Patch( Products, Default( Products ), { Status: GUID( "F9168C5E-CEB2-4faa-B6BF-329BF39FA1E4" ) } )**
 
 ユーザーに GIUD を見せることは好ましくないが、GUID がアプリのデバッグに役立つことがあります。 前の例で作成したレコードで **Status** フィールドの値を表示するには、**Label** コントロールの **Text** プロパティを次の数式に設定します。
 

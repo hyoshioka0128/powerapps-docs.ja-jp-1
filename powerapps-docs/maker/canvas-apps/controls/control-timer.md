@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 349365c84e9d59ea2edf3c61077e468ba16ab27e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2462f82420713e93c3ac0598a73e2dc43bc7c0b1
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679640"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74731959"
 ---
-# <a name="timer-control-in-powerapps"></a>PowerApps のタイマー コントロール
+# <a name="timer-control-in-power-apps"></a>Power Apps でのタイマー制御
 一定の時間が経過した後のアプリの反応を決定できるコントロールです。
 
 ## <a name="description"></a>Description

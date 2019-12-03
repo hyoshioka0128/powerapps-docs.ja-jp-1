@@ -1,6 +1,6 @@
 ---
 title: Sort および SortByColumns 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Sort および SortByColumns 関数の参照情報
+description: 構文と例を含む Power Apps の Sort 関数と SortByColumns 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,14 +13,14 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b641ce213381dec59a20449cd17cc7919eea0fd4
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 019221618dc936166333758ba31da06e22650178
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74678273"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730142"
 ---
-# <a name="sort-and-sortbycolumns-functions-in-powerapps"></a>PowerApps の Sort および SortByColumns 関数
+# <a name="sort-and-sortbycolumns-functions-in-power-apps"></a>Power Apps での関数の並べ替えと SortByColumns
 [テーブル](../working-with-tables.md)を並べ替えます。
 
 ## <a name="description"></a>Description

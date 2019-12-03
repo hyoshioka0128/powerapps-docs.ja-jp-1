@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: da70ef7fe2447653c97bb17dbcd40a126ceb6888
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7b620205ed3fdeaa61768b62ef2db27a850be374
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675699"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74732168"
 ---
 # <a name="format-a-table-in-excel-and-naming-tips"></a>Excel でのテーブルの書式設定と名前付けのヒント
 Power Apps では、Excel データをテーブルとして書式設定している場合にのみ、そのデータに基づいてキャンバスアプリを作成できます。 このコンテンツに従うことで、Excel でテーブルを書式設定する方法と、Excel で列の名前を付けるときのヒントがわかります。
@@ -42,5 +42,5 @@ Excel の **[ホーム]** タブの **[テーブルとして書式設定]** を�
 ![Excel のテーブルとイメージの接続](./media/how-to-excel-tips/connect-gallery.png)
 
 ## <a name="next-steps"></a>次の手順
-* 指定したテーブルに基づいて、[PowerApps で Excel からアプリケーションを生成](get-started-create-from-data.md)します。 生成されたアプリには、レコードの閲覧用、単一レコードに関する詳細の表示用、レコードの作成/更新用の 3 つの画面が既定で存在します。
+* 指定したテーブルに基づいて、 [Power Apps の Excel からアプリを生成](get-started-create-from-data.md)します。 生成されたアプリには、レコードの閲覧用、単一レコードに関する詳細の表示用、レコードの作成/更新用の 3 つの画面が既定で存在します。
 * Excel で書式を設定したテーブルを使用して、[アプリを最初から作成](get-started-create-from-blank.md)します。 アプリを手動で作成およびカスタマイズして、表のデータを表示、参照、編集することができます。

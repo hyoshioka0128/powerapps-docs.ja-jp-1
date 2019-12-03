@@ -1,6 +1,6 @@
 ---
 title: Update および UpdateIf 関数 | Microsoft Docs
-description: 構文と例を含む PowerApps の Update および UpdateIf 関数の参照情報
+description: 構文と例を含む Power Apps の Update および UpdateIf 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 8dd673c343b484e6c24e218818cdfbba654dcbb7
-ms.sourcegitcommit: 7dae19a44247ef6aad4c718fdc7c68d298b0a1f3
+ms.openlocfilehash: 0f3a843c75b86170a44dce8da0a61e672d9dab49
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71983680"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74730007"
 ---
-# <a name="update-and-updateif-functions-in-powerapps"></a>PowerApps の Update および UpdateIf 関数
+# <a name="update-and-updateif-functions-in-power-apps"></a>Power Apps の Update および UpdateIf 関数
 [データ ソース](../working-with-data-sources.md)内の[レコード](../working-with-tables.md#records)を更新します。
 
-## <a name="description"></a>説明
+## <a name="description"></a>Description
 ### <a name="update-function"></a>Update 関数
 データ ソースのレコード全体を置換するときには、**Update** 関数を使用します。 これに対して、**UpdateIf** 関数と **[Patch](function-patch.md)** 関数は、レコード内の一定の値だけを変更し、残りの値をそのまま維持するものです。
 
@@ -62,7 +62,7 @@ ms.locfileid: "71983680"
 
 ![](media/function-update-updateif/icecream.png)
 
-| 数式 | 説明 | 結果 |
+| 数式 | Description | 結果 |
 | --- | --- | --- |
 | **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;), {&nbsp;ID:&nbsp;1,&nbsp;Flavor:&nbsp;"Mint&nbsp;Chocolate",&nbsp;Quantity:150&nbsp;} )** |データ ソースのレコードを 1 つ置換します。 |<style> img { max-width: none } </style> ![](media/function-update-updateif/icecream-mint.png)<br><br>**IceCream** データ ソースの内容が変更されました。 |
 | **UpdateIf(&nbsp;IceCream, Quantity > 175, {&nbsp;Quantity:&nbsp;Quantity&nbsp;+&nbsp;10&nbsp;} )** |**Quantity** の値が **150** よりも大きなレコードを対象として変更を実施します。  **Quantity** フィールドの値を 10 増やします。他のフィールドは変更しません。 |![](media/function-update-updateif/icecream-mint-plus10.png)<br><br>**IceCream** データ ソースの内容が変更されました。 |
