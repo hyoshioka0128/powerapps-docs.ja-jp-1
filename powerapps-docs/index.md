@@ -1,7 +1,7 @@
 ---
 layout: HubPage
-title: Microsoft PowerApps のドキュメント | Microsoft Docs
-description: Microsoft PowerApps のドキュメント
+title: Microsoft Power Apps のドキュメント | Microsoft Docs
+description: Microsoft Power Apps のドキュメント
 searchScope:
 - PowerApps
 featureFlags:
@@ -9,17 +9,17 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - powerapps-hub
-ms.openlocfilehash: 470d8e2a144e708162b886f6127bd6f9a498d093
-ms.sourcegitcommit: 6bec6932071db2411bb4ad1e01c059f57d8c9bca
+ms.openlocfilehash: ff7ac06904426ad990a99098b97814701e24ee22
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566965"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680192"
 ---
 <div id="main"
    class="v2">
    <div class="container">
-      <h1>PowerApps の概要</h1>
+      <h1>Power Apps のドキュメント</h1>
       <ul class="pivots">
          <li>
             <a href="#home"></a>
@@ -42,8 +42,8 @@ ms.locfileid: "73566965"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>PowerApps とは</h3>
-                                             <p>PowerApps に関する概要を含むドキュメントを開始します。</p>
+                                             <h3>Power Apps とは</h3>
+                                             <p>Power Apps に関する概要を含むドキュメントから開始します。</p>
                                           </div>
                                        </div>
                                     </div>
@@ -80,8 +80,8 @@ ms.locfileid: "73566965"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>PowerApps について</h3>
-                                             <p>PowerApps を学習するために、ステップバイステップのガイダンスを提供する Microsoft Learn のラーニング パスについて説明します。 無料です。</p>
+                                             <h3>Power Apps について学習する</h3>
+                                             <p>Power Apps を学習するための詳細なガイダンスが用意されている、Microsoft Learn のラーニング パスを調べます。 無料です。</p>
                                           </div>
                                        </div>
                                     </div>
@@ -100,7 +100,7 @@ ms.locfileid: "73566965"
                                           </div>
                                           <div class="cardText">
                                              <h3>ブログ</h3>
-                                             <p>公式 PowerApps ブログを参照して、最新の PowerApps の機能とお知らせを把握します。</p>
+                                             <p>公式の Power Apps ブログを参照して、PowerApps に関する最新の機能とお知らせを把握します。</p>
                                           </div>
                                        </div>
                                     </div>
@@ -119,7 +119,7 @@ ms.locfileid: "73566965"
                                           </div>
                                           <div class="cardText">
                                              <h3>コミュニティ</h3>
-                                             <p>PowerApps コミュニティ フォーラムで同業者とつながり、アイデアを共有し、専門家から学習します。</p>
+                                             <p>Power Apps コミュニティ フォーラムで仲間とつながり、アイデアを共有し、エキスパートから学びます。</p>
                                           </div>
                                        </div>
                                     </div>
@@ -138,7 +138,7 @@ ms.locfileid: "73566965"
                                           </div>
                                           <div class="cardText">
                                              <h3>ライセンス</h3>
-                                             <p>PowerApps に対するさまざまなライセンス オプションについて理解します。</p>
+                                             <p>Power Apps に対するさまざまなライセンス オプションについて理解します。</p>
                                           </div>
                                        </div>
                                     </div>
@@ -215,7 +215,7 @@ ms.locfileid: "73566965"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>アプリ作成者は、コードを記述せずにカスタム ビジネス アプリをすばやく作成することによって、組織のミッション クリティカルなデータを管理できます。 PowerApps では次の 3 種類のアプリを作成できます。<strong>キャンバス アプリ</strong>、<strong>モデル駆動型アプリ</strong>、そして<strong>ポータル</strong>です。 <strong>Common Data Service</strong> は、ビジネス アプリで使用されるデータを安全に格納し、管理することができるデータ プラットフォームです。 詳細情報:<a href="/powerapps/maker">アプリの作成</a>。</p>
+                           <p>アプリ作成者は、コードを記述せずにカスタム ビジネス アプリをすばやく作成することによって、組織のミッション クリティカルなデータを管理できます。 Power Apps では次の 3 種類のアプリを作成できます。<strong>キャンバス アプリ</strong>、<strong>モデル駆動型アプリ</strong>、そして<strong>ポータル</strong>です。 <strong>Common Data Service</strong> は、ビジネス アプリで使用されるデータを安全に格納し、管理することができるデータ プラットフォームです。 詳細情報:<a href="/powerapps/maker">アプリの作成</a>。</p>
                            <hr/>
                            <br/>
                         </div>
@@ -290,11 +290,11 @@ ms.locfileid: "73566965"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Portals</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">PowerApps ポータルとは</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Power Apps ポータルとは</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">ポータルを作成する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/manage-existing-portals">既存のポータルを管理する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/admin/admin-overview">ポータルの管理</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">PowerApps ポータルに関する FAQ</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/faq">Power Apps ポータルに関する FAQ</a></p>
                                  </div>
                               </div>
                            </div>
@@ -334,7 +334,7 @@ ms.locfileid: "73566965"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>管理者は PowerApps と Power プラットフォーム管理センターを使用して、データをセキュリティで保護し、環境の管理および使用状況の監視を行うことができます。</p>
+                           <p>管理者は Power Platform 管理センターを使用して、データの保護、環境の管理、使用状況の監視を行うことができます。</p>
                            <hr/>
                            <br/>
                         </div>
@@ -393,7 +393,7 @@ ms.locfileid: "73566965"
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/pricing-billing-skus">ライセンスの概要</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-entity-licenses">エンティティのライセンス要件</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-us-government">PowerApps US Government</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/powerapps-us-government">Power Apps US Government</a></p>
                                  </div>
                               </div>
                            </div>
@@ -491,7 +491,7 @@ ms.locfileid: "73566965"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-visualizations-dashboards">ビジュアル化とダッシュボードのカスタマイズ</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/client-scripting">クライアント スクリプトを使用してビジネス ロジックを適用する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/customize-commands-ribbon">コマンドとリボンのカスタマイズ</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/component-framework/overview">カスタム コンポーネントを構築する (PowerApps コンポーネント フレームワーク)</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/component-framework/overview">カスタム コンポーネントを構築する (Power Apps コンポーネント フレームワーク)</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/create-manage-model-driven-apps-using-code">アプリを作成、管理、公開する</a></p>
                                  </div>
                               </div>
@@ -602,10 +602,10 @@ ms.locfileid: "73566965"
                                     <h3 style="font-size: 1.15rem">アプリ/拡張機能のパッケージ化と配布</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/introduction-solutions">ソリューションの使用</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">Azure DevOps 用 PowerApps ビルド ツール</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/build-tools-overview">Azure DevOps 用 Power Apps ビルド ツール</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/compress-extract-solution-file-solutionpackager">SolutionPackager ツール</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer ツール</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">PowerApps チェッカーを使用する</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Power Apps チェッカーを使用する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">ISV アプリの管理と監視</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">AppSource 上にアプリを公開する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">ホワイトペーパー:ソリューションを使用した ALM</a></p>

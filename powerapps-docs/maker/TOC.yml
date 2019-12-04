@@ -1,6 +1,6 @@
 - name: はじめる
   items:
-    - name: PowerApps とは
+    - name: Power Apps とは
       href: ../powerapps-overview.md
     - name: 30 日間の無料試用版にサインアップする
       href: signup-for-powerapps.md
@@ -118,7 +118,7 @@
   items:
     - name: 概要
       href: index.md
-    - name: PowerApps へのサインイン
+    - name: Power Apps にサインインする
       href: ./canvas-apps/intro-maker-portal.md
 - name: キャンバス アプリ
   items:
@@ -824,7 +824,7 @@
               href: ./canvas-apps/sharepoint-scenario-summary.md
         - name: Cognitive Services
           href: ./canvas-apps/cognitive-services-api.md
-        - name: InfoPath フォームを PowerApps に作り替える
+        - name: InfoPath フォームを Power Apps に変換する
           href: ./canvas-apps/transform-infopath.md
     - name: 開発者向け
       items:
@@ -1096,7 +1096,7 @@
           href: ./model-driven-apps/checklist-transition-unified-interface.md
         - name: 'よく寄せられる質問: 統一インターフェイスの切り替え'
           href: ./model-driven-apps/faqs-transition-unified-interface.md
-    - name: PowerApps アプリ デザイナーのアクセシビリティ
+    - name: Power Apps アプリ デザイナーのアクセシビリティ
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: Outlook 用 Dynamics 365 アプリをカスタマイズする
       href: ./model-driven-apps/app-for-outlook-customize.md
@@ -1104,7 +1104,7 @@
       href: ../developer/model-driven-apps/overview.md
 - name: Portals
   items:
-    - name: PowerApps ポータルとは
+    - name: Power Apps ポータルとは
       href: ./portals/overview.md
     - name: ポータルを設計して構築する
       items:
@@ -1116,7 +1116,7 @@
           href: ./portals/create-dynamics-portal.md
         - name: 以前のポータルのアドオンを使ったポータルのプロビジョニング
           href: ./portals/provision-portal-add-on.md
-        - name: PowerApps ポータル Studio の構造
+        - name: Power Apps ポータル Studio の構造
           href: ./portals/portal-designer-anatomy.md
         - name: ポータル デザイナーでサポートされている Web ブラウザー
           href: ./portals/supported-browser.md
@@ -1162,7 +1162,7 @@
           href: ./portals/admin/manage-auth-key.md
         - name: IP アドレス制限を設定する
           href: ./portals/admin/ip-address-restrict.md
-        - name: PowerApps ポータル ドメインに更新する
+        - name: Power Apps ポータル ドメインに更新する
           href: ./portals/admin/update-portal-domain.md
         - name: サーバー側キャッシュのクリア
           href: ./portals/admin/clear-server-side-cache.md
@@ -1288,7 +1288,7 @@
                   href: ./portals/liquid/variable-tags.md
                 - name: テンプレート タグ
                   href: ./portals/liquid/template-tags.md
-                - name: PowerApps Common Data Service エンティティ タグ
+                - name: Common Data Service エンティティ タグ
                   href: ./portals/liquid/portals-entity-tags.md
             - name: 使用可能な液体フィルター
               href: ./portals/liquid/liquid-filters.md
@@ -1336,7 +1336,7 @@
           href: ./portals/manage-sharepoint-documents.md
     - name: 既知の問題
       href: ./portals/known-issues.md
-    - name: PowerApps ポータルに関する FAQ
+    - name: Power Apps ポータルに関する FAQ
       href: ./portals/faq.md
 - name: Common Data Service
   items:
@@ -1362,13 +1362,13 @@
           href: ./common-data-service/create-edit-virtual-entities.md
         - name: 仮想エンティティ OData v4 データ プロバイダー
           href: ./common-data-service/virtual-entity-odata-provider-requirements.md
-        - name: PowerApps ポータルを使用して代替キーを定義する
+        - name: Power Apps ポータルを使用して代替キーを定義する
           href: ./common-data-service/define-alternate-keys-portal.md
         - name: ソリューション エクスプローラーを使用して代替キーを定義する
           href: ./common-data-service/define-alternate-keys-solution-explorer.md
         - name: 'ハウツー ガイド:組織'
           items:
-            - name: PowerApps ポータルを使用してエンティティを作成する方法
+            - name: Power Apps ポータルを使用してエンティティを作成する方法
               href: ./common-data-service/create-edit-entities-portal.md
             - name: ソリューション エクスプローラーを使用してエンティティを作成する方法
               href: ./common-data-service/create-edit-entities-solution-explorer.md
@@ -1407,7 +1407,7 @@
           href: ./common-data-service/create-edit-1n-relationships-portal.md
         - name: ソリューション エクスプローラーを使用して一対多のエンティティ リレーションシップを作成する
           href: ./common-data-service/create-edit-1n-relationships-solution-explorer.md
-        - name: PowerApps ポータルを使用して多対多のエンティティ リレーションシップを作成する
+        - name: Power Apps ポータルを使用して多対多のエンティティ リレーションシップを作成する
           href: ./common-data-service/create-edit-nn-relationships-portal.md
         - name: エンティティ リレーションシップに対する管理プロパティを設定する
           href: ./common-data-service/set-managed-properties-relationships.md
@@ -1419,9 +1419,9 @@
           href: ./common-data-service/configure-connection-roles.md
         - name: 'ハウツー ガイド:リレーションシップ'
           items:
-            - name: PowerApps ポータルを使用して多対多のリレーションシップを作成する方法
+            - name: Power Apps ポータルを使用して多対多のリレーションシップを作成する方法
               href: ./common-data-service/create-edit-nn-relationships-portal.md
-            - name: PowerApps ソリューション エクスプローラーを使用して多対多のリレーションシップを作成する方法
+            - name: Power Apps ソリューション エクスプローラーを使用して多対多のリレーションシップを作成する方法
               href: ./common-data-service/create-edit-nn-relationships-solution-explorer.md
             - name: リレーションシップに対する管理プロパティを設定する方法
               href: ./common-data-service/set-managed-properties-relationships.md
@@ -1450,11 +1450,11 @@
               href: ./common-data-service/create-edit-fields.md
             - name: フィールドを管理する方法
               href: ./common-data-service/data-platform-manage-fields.md
-            - name: PowerApps ポータルを使用してフィールドを作成する方法
+            - name: Power Apps ポータルを使用してフィールドを作成する方法
               href: ./common-data-service/create-edit-field-portal.md
-            - name: PowerApps ソリューション エクスプローラーを使用してフィールドを作成する方法
+            - name: Power Apps ソリューション エクスプローラーを使用してフィールドを作成する方法
               href: ./common-data-service/create-edit-field-solution-explorer.md
-            - name: PowerApps ポータルを使用してオプション セットを作成する方法
+            - name: Power Apps ポータルを使用してオプション セットを作成する方法
               href: ./common-data-service/custom-picklists.md
             - name: ソリューション エクスプローラーを使用してグローバル オプション セットを作成する方法
               href: ./common-data-service/create-edit-global-option-sets-solution-explorer.md
@@ -1538,7 +1538,7 @@
       href: ../developer/common-data-service/overview.md
 - name: AI ビルダー
   items:
-    - name: PowerApps で AI Builder を使う
+    - name: Power Apps で AI Builder を使う
       href: ../use-ai-builder.md
 - name: その他の学習方法
   items:
@@ -1556,7 +1556,7 @@
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: セッションまたはアプリ ID を取得する
       href: ./canvas-apps/get-sessionid.md
-    - name: PowerApps のスタートアップに関する問題のトラブルシューティング
+    - name: Power Apps のスタートアップに関する問題のトラブルシューティング
       href: troubleshooting-startup-issues.md
     - name: Power Query のトラブルシューティング
       href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md

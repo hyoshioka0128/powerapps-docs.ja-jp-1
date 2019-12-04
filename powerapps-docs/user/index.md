@@ -1,6 +1,6 @@
 ---
-title: PowerApps でのアプリの検索と実行の方法 | Microsoft Docs
-description: PowerApps アプリの検索と実行の方法の概要です。
+title: Power Apps でのアプリの検索と実行の方法 | Microsoft Docs
+description: Power Apps アプリの検索と実行の方法の概要です。
 author: mduelae
 ms.service: powerapps
 ms.component: pa-user
@@ -16,20 +16,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ab91653f26bc9ca177cc5841e7dbc158b13d7696
-ms.sourcegitcommit: 60fd1792430b9f3da08ec161cb2277506d795e3a
+ms.openlocfilehash: 246b147ff55a7959f7ee2f2cdfa1a1e01fbd7ef1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705303"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680445"
 ---
 # <a name="how-do-i-find-and-run-apps"></a>アプリの検索と実行の方法
 
-仕事を終わらせるためにタスクを手動で処理する必要はありません。 PowerApps では、キャンバス アプリやモデル駆動型アプリを作成して使用することで、仕事をすばやく終わらせることができます。 アプリを作成したら、そのアプリを組織で共有することができます。 
+仕事を終わらせるためにタスクを手動で処理する必要はありません。 Power Apps を使用すると、キャンバス アプリやモデル駆動型アプリを作成および使用して、仕事をすばやく終わらせることができます。 アプリを作成したら、そのアプリを組織で共有することができます。 
 
 [キャンバス アプリ](/powerapps/maker/canvas-apps/getting-started)では、アプリのユーザー エクスペリエンスの大部分を制御できます。 アプリ作成元はテンプレートを使用してキャンバス アプリを作成することも、好きなようにアプリを構成することもできます。 キャンバス アプリはその名前のとおり、空のキャンバスであるため、アプリを組織のユーザーのニーズに合わせて作成することができます。
 
-基本的にキャンバス アプリからどのようなアプリでも作成できるため、作成したアプリの使い方に関して役に立つドキュメントがありません。 キャンバス アプリの使い方のヘルプが必要な場合は、アプリ作成元や PowerApps 管理者に問い合わせてください。
+基本的にキャンバス アプリからどのようなアプリでも作成できるため、作成したアプリの使い方に関して役に立つドキュメントがありません。 キャンバス アプリの使い方のヘルプが必要な場合は、アプリ作成元か Power Apps 管理者に問い合わせてください。
 
 [モデル駆動型アプリ](/powerapps/maker/model-driven-apps/model-driven-app-overview)は応答性がよく、アクセシビリティに優れたデザインを提供する[統一インターフェイス](unified-interface.md)を使用します。 アプリは Web ブラウザーでも、一般的なモバイル デバイスでも実行できます。 アプリにはダッシュボード、フォーム、ビュー、グラフ、ビジネス プロセスなどの複数のコンポーネントが含まれています。これらがまとまることでアプリが使いやすくなります。
 
@@ -38,7 +38,7 @@ ms.locfileid: "71705303"
 
 ## <a name="whats-required-to-run-apps"></a>アプリを実行するために必要なもの
 - [サポートされているデバイス プラットフォームとブラウザー](../maker/canvas-apps/limits-and-config.md)を使用していることを確認します。
-- キャンバス アプリを実行するには、[App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) または [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) から PowerApp をダウンロードしてインストールします。
+- キャンバス アプリを実行するには、[App Store](https://itunes.apple.com/app/powerapps/id1047318566?mt=8) または [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.msapps) から Power Apps をダウンロードしてインストールします。
 - モデル駆動型アプリを実行するには:
     - スマートフォンの場合、[App Store](https://itunes.apple.com/app/dynamics-crm-for-phones/id1003997947?ls=1&mt=8) または [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone) からスマートフォン用の Dynamics 365 をダウンロードしてインストールします。 
     - タブレットの場合、[App Store](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8)、[Google Play](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmtablet)、または [Microsoft ストア](https://www.microsoft.com/store/p/microsoft-dynamics-365/9nblggh4rfqp)からタブレット用の Dynamics 365 をダウンロードします。

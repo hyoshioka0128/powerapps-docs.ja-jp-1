@@ -3,9 +3,9 @@
   items:
     - name: 概要
       items:
-        - name: PowerApps 管理者のロールとは何ですか。
+        - name: Power Apps 管理者のロールとは
           href: overview-role-powerapps-admin.md
-        - name: PowerApps のエンタープライズ展開に関するホワイトペーパー
+        - name: Power Apps のエンタープライズ展開に関するホワイトペーパー
           href: admin-powerapps-enterprise-deployment.md
     - name: ライセンス
       items:
@@ -23,7 +23,7 @@
           href: admin-manage-apps.md
         - name: テナントまたは環境間でアプリを移動
           href: environment-and-tenant-migration.md
-        - name: PowerApps 向け PowerShell のサポート (プレビュー)
+        - name: Power Apps 向け PowerShell のサポート (プレビュー)
           href: powerapps-powershell.md
         - name: PowerApps の動作状況のログ
           href: 'https://docs.microsoft.com/power-platform/admin/logging-powerapps'
@@ -39,7 +39,7 @@
               href: powerapps-gdpr-dsr-guide-systemlogs.md
             - name: Common Data Service へのデータの統合
               href: data-integration-gdpr-dsr-guide.md
-            - name: PowerApps 顧客データ
+            - name: Power Apps の顧客データ
               href: powerapps-gdpr-dsr-guide.md
               items:
                 - name: データのエクスポート
