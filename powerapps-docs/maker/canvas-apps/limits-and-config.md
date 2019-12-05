@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e408eed2ac0ed769b747b647ea7b1a8c3c9df8f6
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 569792d634916ce32a54404580fb58d43bf4f24d
+ms.sourcegitcommit: d4462233c8973def0bcc4e75019390d92eccf684
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729606"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831337"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>キャンバス アプリのシステム要件、制限、構成値
 このトピックには、デバイスプラットフォームと web ブラウザーの要件に加えて、Power Apps の制限と構成値が含まれています。
@@ -83,7 +83,7 @@ ms.locfileid: "74729606"
 | インド  | 104.211.81.192 - 104.211.81.207, 52.172.211.12, 40.78.194.240 - 40.78.194.255, 13.71.125.22, 104.211.146.224 - 104.211.146.239, 104.211.189.218 |
 | 日本 | 13.78.108.0 - 13.78.108.15, 13.71.153.19, 40.74.100.224 - 40.74.100.239, 104.215.61.248 |
 | 南米 | 191.233.203.192 - 191.233.203.207、104.214.19.48 - 104.214.19.63、13.65.86.57、104.41.59.51 |
-| 英国 | 51.140.148.0 - 51.140.148.15、51.140.80.51、51.140.211.0 - 51.140.211.15、51.141.47.105 |
+| United Kingdom | 51.140.148.0 - 51.140.148.15、51.140.80.51、51.140.211.0 - 51.140.211.15、51.141.47.105 |
 | 米国 | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49 |
 | 米国 (早期アクセス)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
 
@@ -100,11 +100,11 @@ ms.locfileid: "74729606"
 | \*。 azure-apim.net |https |API のハブ - ロケールごとに異なるサブドメイン |
 | \*。 powerapps.com |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および make.powerapps.com |
 | \*。 azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および make.powerapps.com |
-| \*。 blob.core.windows.net |https | Blob Storage |
+| \*.blob.core.windows.net |https | Blob Storage |
 | \*。 flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および make.powerapps.com |
 | *. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |製品利用統計情報 |
-| localhost | https | Power Apps モバイル
+| localhost | https | Power Apps Mobile
 
 > [!NOTE]
 > VPN を使用している場合は、Power Apps Mobile のトンネリングから localhost を除外するように構成する必要があります。
@@ -115,27 +115,4 @@ ms.locfileid: "74729606"
 
 ## <a name="power-apps-per-app-plan"></a>アプリごとの電源アプリの計画
 
-アプリごとの power Apps プランでは、個々のユーザーは、Power Apps のすべての機能に基づいて、特定のビジネスシナリオに対して1つのポータルで2つのアプリケーションを実行できます。 このプランでは、大規模なスケーリングを導入する前に、ユーザーが簡単にプラットフォームを使い始めることができます。
-
-管理者がアプリプランごとにアプリプランを割り当てると、その環境内のアプリがその環境と共有されるときに、ライセンスのないユーザーに割り当てられます。 管理者がアプリプランごとに割り当てる方法については、[こちら](https://docs.microsoft.com/power-platform/admin/capacity-add-on)を参照してください。
-
-次の手順に従って、アプリを共有するときにユーザーに割り当てられるアプリごとのプランをオフにします。
-
-- **アプリ**を選択します。
-- **[設定]** を選択します。
-- **パス割り当て**の下にある **[アプリごとの自動割り当て]** の切り替えを変更します。
-
-**[アプリごとの自動割り当て]** 切り替えは、すべてのアプリ設定で表示されます。
-
-> [!NOTE]
-> 現在、アプリごとのプランの無効化は、キャンバスアプリでのみ使用できます。  モデル駆動型アプリとポータルは、今後この機能を利用できるようになります。
->
-> アプリのアプリプラン割り当てごとに制御する機能は、 [Power Platform 管理センター](https://admin.powerplatform.microsoft.com)に割り当てられたアプリプランごとに、環境内にあるアプリでのみ使用できます。  
-
-### <a name="app-settings"></a>アプリの設定
-
-![キャンバスアプリの設定](./media/limits-and-config/app_settings.png "キャンバスアプリの設定")
-
-### <a name="pass-assignment"></a>パスの割り当て
-
-![キャンバスアプリの設定パスの割り当て](./media/limits-and-config/app_settings_pass_assignment.png "キャンバスアプリの設定パスの割り当て")
+この情報は、「Power Platform 管理者ガイド」の「[アプリ別プランあたりの電源プラン](/power-platform/admin/signup-for-powerapps-admin#power-apps-per-app-plan)」セクションで利用できるようになりました。
