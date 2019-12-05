@@ -1106,6 +1106,8 @@
   items:
     - name: Power Apps ポータルとは
       href: ./portals/overview.md
+    - name: 更新プログラムのリリース
+      href: ./portals/release-updates.md
     - name: ポータルを設計して構築する
       items:
         - name: ポータルのテンプレート
@@ -1260,6 +1262,12 @@
               href: ./portals/configure/add-geolocation.md
         - name: ポータルでの GDPR の実装
           href: ./portals/configure/implement-gdpr.md
+        - name: 提供情報の作成と実行
+          href: ./portals/configure/create-run-advertisement.md
+        - name: アンケートを使用してフィードバックを収集する
+          href: ./portals/configure/gather-feedback-poll.md
+        - name: 発行状態の作成と管理
+          href: ./portals/configure/publishing-states.md
     - name: 高度なポータルのカスタマイズ
       items:
         - name: 液体テンプレートを操作する
@@ -1338,6 +1346,8 @@
       href: ./portals/known-issues.md
     - name: Power Apps ポータルに関する FAQ
       href: ./portals/faq.md
+    - name: Legacy Adxstudio Portals v7 FAQ
+      href: ./portals/legacy-portal-faq.md
 - name: Common Data Service
   items:
     - name: Common Data Service とは
