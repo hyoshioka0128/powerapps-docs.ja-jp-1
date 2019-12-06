@@ -1,6 +1,6 @@
 ---
 title: レポートウィザードを使用してレポートを作成する |Microsoft Docs
-description: PowerApps のレポートウィザードを使用してレポートを作成する
+description: Power Apps でレポートウィザードを使用してレポートを作成する
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0f953c44d81742baca39058cd68180ca63833eb6
-ms.sourcegitcommit: e9671e018c1ee4b640528915350a367758991b6a
+ms.openlocfilehash: 8c7bde8d3aa5406a7ddcc5ecb2df4c2c7db7051e
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67420285"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733270"
 ---
 # <a name="create-a-report-using-the-report-wizard"></a>レポート ウィザードを使用してレポートを作成する
 
@@ -76,12 +76,12 @@ ms.locfileid: "67420285"
 9. **[列の追加]** 画面で、列に対して表示するデータを選択し、[ **OK]** を選択します。 
 
     > [!div class="mx-imgBorder"]
-    > ![列の追加 画面](media/report_wizard_7.png "列の追加 画面")
+    > ![[列の追加] 画面](media/report_wizard_7.png "[列の追加] 画面")
   
 10. 追加する追加の列に対して、前の手順を繰り返します。 完了したら、[フィールドの**レイアウト**] 画面で、**次**のようになります。
  
     > [!div class="mx-imgBorder"]
-    > ![列の追加 画面](media/report_wizard_8.png "列の追加 画面")
+    > ![[列の追加] 画面](media/report_wizard_8.png "[列の追加] 画面")
   
 11. **[レポートの形式]** 画面で、レポートの書式を設定する方法 を選択し、 **[次へ]** を選択します。
  
@@ -93,7 +93,7 @@ ms.locfileid: "67420285"
     > [!div class="mx-imgBorder"]
     > ![レポートを表示する](media/report_wizard_10.png "レポートを表示する")
 
-### <a name="see-also"></a>関連項目
+### <a name="see-also"></a>参照
 [レポートの操作](work-with-reports.md) 
 
 [既存のレポートを追加する](add-existing-report.md)

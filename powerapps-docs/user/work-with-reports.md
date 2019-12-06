@@ -1,6 +1,6 @@
 ---
 title: レポートの操作 |Microsoft Docs
-description: PowerApps でのレポートの操作
+description: Power Apps でのレポートの操作
 author: mduelae
 manager: kvivek
 ms.service: powerapps
@@ -16,18 +16,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f4647c565b2ecaf469c3b74873ba157ea27a1fd4
-ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.openlocfilehash: c16a589ddcd1e7beb0be1ce28bc9f6df6a8c8b83
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67457044"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733299"
 ---
 # <a name="work-with-reports"></a>レポートを操作する
 
 レポートは、ビジネス目標に対する進行状況を監視するのに役立ちます。 また、傾向を追跡することもできます。これにより、競合他社の恩恵を得ることができます。  
 
-レポートの整理と作成の詳細については、以下を参照してください。[レポートをカスタマイズおよび整理](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app)する。
+レポートの整理および作成の詳細については、「[レポートのカスタマイズと整理](https://docs.microsoft.com/powerapps/maker/model-driven-apps/add-reporting-to-app)」を参照してください。
   
 ## <a name="run-a-report"></a>レポートを実行する  
   
@@ -54,14 +54,14 @@ ms.locfileid: "67457044"
 5. **[レコードの参照]** ダイアログボックスで、レポートを共有するユーザーまたはチームレコードを探し、レコードの横にあるチェックボックスをオンにします。
 
    > [!div class="mx-imgBorder"]
-   > ![レポートを共有するユーザーの選択](media/report-share1.png "レポートを共有するユーザーを選択し")ます
+   > ![レポートを共有するユーザーの選択](media/report-share1.png "レポートを共有するユーザーを選択します")
 
 6. **[選択]** をクリックして、選択し **[たレコード]** ボックスにユーザーまたはチームのレコードを追加し、 **[追加]** を選択します。
 
    > [!div class="mx-imgBorder"]
    > ![レポートを共有するためのユーザーの追加](media/report-share2.png "ユーザーを追加してレポートを共有する")
   
-7. **[レポートの共有]** ダイアログボックスで、必要な共有アクセスの種類を選択します。 使用できるアクセス許可は次のとおりです。読み取り、書き込み、削除、追加、割り当て、または共有。 これにより、ユーザーまたはチームのレコードが **[選択したレコード]** ボックスに追加されます。
+7. **[レポートの共有]** ダイアログボックスで、必要な共有アクセスの種類を選択します。 使用可能なアクセス許可は、読み取り、書き込み、削除、追加、割り当て、または共有です。 これにより、ユーザーまたはチームのレコードが **[選択したレコード]** ボックスに追加されます。
 
    > [!div class="mx-imgBorder"]
    > ![共有アクセスの選択](media/report-share3.png "共有アクセスの選択")
@@ -76,9 +76,9 @@ ms.locfileid: "67457044"
 4. **[アクション]** メニューの **[レポートを組織で使用できるようにする]** を選択します。  
   
    > [!div class="mx-imgBorder"]
-   > ![組織でレポートを共有](media/report-share4.png "組織でレポートを共有") する
+   > ![組織でレポートを共有する](media/report-share4.png "組織でレポートを共有する")
 
-## <a name="download-a-report"></a>レポートをダウンロードする
+## <a name="download-a-report"></a>レポートのダウンロード
 
 1. 左側のナビゲーションウィンドウで、[レポート] 領域を選択します。 
 2. レポートの一覧で、共有するレポートを選択します。  
@@ -91,7 +91,7 @@ RDL ファイルには、レポートの基になっている fetchXML が含ま
 
 
 
-### <a name="see-also"></a>関連項目
+### <a name="see-also"></a>参照
 
 [レポートウィザードを使用してレポートを作成する](create-report-with-wizard.md)
 

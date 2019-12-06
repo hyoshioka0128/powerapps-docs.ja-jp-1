@@ -1,5 +1,5 @@
 ---
-title: PowerApps のモバイル デバイスでモデル駆動型アプリを実行する | Microsoft Docs
+title: Power Apps を使用してモバイルデバイスでモデル駆動型アプリを実行する |Microsoft Docs
 description: モバイル デバイスでモデル駆動型アプリを実行する方法について説明します。
 author: Mattp123
 manager: kvivek
@@ -16,22 +16,22 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61731c59549c40e689f056372fe58f4b60968e1c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d8d05ad715a2400f43464810a275848ab779e39d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543464"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680422"
 ---
 # <a name="run-a-model-driven-app-on-a-mobile-device"></a>モバイル デバイスでモデル駆動型アプリを実行する
 
 アプリが作成され、共有された後は、Windows、iOS、Android などの一般的なモバイル デバイスや Web ブラウザーでそのアプリを実行することができます。 このトピックでは、モバイル デバイス上でモデル駆動型アプリを実行する方法について説明します。 
 
-PowerApps にサインアップしていない場合は、この手順に従う前に[無料でサインアップ](https://make.powerapps.com/signup?redirect=marketing&email=)してください。 自分で作成したアプリ、もしくは他のユーザーが作成して共有されたアプリにアクセスできることも確認してください。
+この手順を実行するには、Power Apps にサインアップしていない場合は、開始する前に[無料でサインアップ](https://make.powerapps.com/signup?redirect=marketing&email=)してください。 自分で作成したアプリ、もしくは他のユーザーが作成して共有されたアプリにアクセスできることも確認してください。
 
 ## <a name="run-the-model-driven-app"></a>モデル駆動型アプリの実行
 
-モデル駆動型アプリは、PowerApps のモバイル アプリでは実行されません。 代わりに、モバイル デバイスで Dynamics 365 モバイル アプリまたはスマートフォンの Web ブラウザーのどちらかを使用してモデル駆動型アプリを実行します。 
+モデル駆動型アプリは、Power Apps モバイルアプリでは実行されません。 代わりに、モバイル デバイスで Dynamics 365 モバイル アプリまたはスマートフォンの Web ブラウザーのどちらかを使用してモデル駆動型アプリを実行します。 
 
 ### <a name="use-the-mobile-app"></a>モバイル アプリの使用
 デバイスのアプリ ストアからスマートフォン用の Dynamics 365 またはタブレット用の Dynamics 365 のアプリをインストールします。 詳細: [電話用およびタブレット PC 用の Dynamics 365 のインストール](https://docs.microsoft.com/dynamics365/customer-engagement/mobile-app/install-dynamics-365-for-phones-and-tablets)

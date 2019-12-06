@@ -16,28 +16,28 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 62a7166f228545f2a200570186ee23c868650b79
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 97be49797df13b82901425ae9389e85538068f5d
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543484"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74726217"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>Microsoft Teams にアプリを追加する
 
-Microsoft Teams は、Office 365 テクノロジを基に構築されているチャット ベースのコラボレーション プラットフォームです。 Teams のチャネルに PowerApps キャンバス アプリを追加して、Teams のエクスペリエンスをカスタマイズできます。 このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加し、そのチャネルからアプリを開く方法を説明します。 
+Microsoft Teams は、Office 365 テクノロジを基に構築されているチャット ベースのコラボレーション プラットフォームです。 チーム内のチャネルに Power Apps キャンバスアプリを追加することで、チームのエクスペリエンスをカスタマイズできます。 このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加し、そのチャネルからアプリを開く方法を説明します。 
 
 ![Microsoft Teams に埋め込まれたアプリ](./media/open-app-embedded-in-teams/embedded-app.png)
 
-PowerApps にサインアップしていない場合は、[無料でサインアップ](https://make.powerapps.com/signup?redirect=marketing&email=)してください。
+Power Apps にサインアップしていない場合は、開始する前に[無料でサインアップ](https://make.powerapps.com/signup?redirect=marketing&email=)してください。
 
 ## <a name="prerequisites"></a>前提条件
 
 この手順を行うには、[Office 365 サブスクリプション](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)と [Teams のチャネル](https://www.youtube.com/watch?v=he2f1quaR7M)が必要です。
 
-## <a name="sign-in-to-powerapps"></a>PowerApps へのサインイン
+## <a name="sign-in-to-power-apps"></a>Power Apps にサインインする
 
-[https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で PowerApps にサインインします。
+[https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)で Power Apps にサインインします。
 
 ## <a name="add-an-app"></a>アプリを追加する
 
@@ -92,7 +92,7 @@ Microsoft Teams のデスクトップ アプリでは:
 
 ## <a name="next-steps"></a>次の手順
 
-このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加して、そのチャネルからアプリを開きました。 PowerApps についてさらに詳しく学習するには、PowerApps のチュートリアルを続けてください。
+このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加して、そのチャネルからアプリを開きました。 Power Apps の詳細については、「Power Apps のチュートリアル」を参照してください。
 
 > [!div class="nextstepaction"]
-> [PowerApps チュートリアル](../maker/canvas-apps/get-started-create-from-blank.md)
+> [Power Apps のチュートリアル](../maker/canvas-apps/get-started-create-from-blank.md)

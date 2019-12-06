@@ -16,12 +16,12 @@ search.app:
 - PowerApps
 - D365CE
 - D365CE
-ms.openlocfilehash: e9d046c49a2a91aaf5c65094d446ae09f41572f9
-ms.sourcegitcommit: 4c35aedde46380d5438687ae6f61a3b0cc7e7e2f
+ms.openlocfilehash: 70c6f97c2617c9d6084c3aa8a0861793a0c059d5
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71969083"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74726170"
 ---
 # <a name="track-your-progress-with-dashboards-and-charts"></a>ダッシュボードとグラフを使って進行状況を追跡する
 
@@ -34,25 +34,25 @@ ms.locfileid: "71969083"
 -  既定のダッシュボードを選択するには、目的のダッシュボードを表示し、画面の上部にある **[既定値として設定]** を選択します。
 
    > [!div class="mx-imgBorder"]
-   > ダッシュボードの追加また![は変更](media/add_dashboard.png "ダッシュボードの追加または変更") 
+   > ![ダッシュボードを追加または変更する](media/add_dashboard.png "ダッシュボードを追加または変更する") 
 
 ## <a name="create-a-new-dashboard"></a>新しいダッシュボードを作成する
 
 1. 新しいダッシュボードを作成するには、 **[Dynamics 365 ダッシュボードの作成]** を選択します。 
 
    > [!div class="mx-imgBorder"]
-   > 新しい![ダッシュボードを追加]する(media/new_dashboard.png "新しいダッシュボード")を追加する
+   > ![新しいダッシュボードの追加](media/new_dashboard.png "新しいダッシュボードの追加")
    
 2. ダッシュボードのレイアウトを選択し、 **[作成]** を選択します。  
 
    > [!div class="mx-imgBorder"]
-   > ダッシュボードを![作成]する(media/create_dashboard.png "ダッシュボードを")作成する
+   > ![ダッシュボードを作成する](media/create_dashboard.png "ダッシュボードを作成する")
  
 3. ダッシュボードの名前を入力します。 
 4. ダッシュボードの各領域に必要なものを追加します。 たとえば、グラフを追加してみましょう。 
 
    > [!div class="mx-imgBorder"]
-   > ![グラフの]追加グラフ(media/add_chart.png "の")追加
+   > ![グラフを追加する](media/add_chart.png "表を追加")
  
  5. グラフの**レコードの種類**を選択します。
  6. グラフ内のデータが表示される**ビュー**を選択します。
@@ -67,11 +67,11 @@ ms.locfileid: "71969083"
 
 -   グラフの上にマウスポインターを置くと、グラフのその領域についての簡単な情報を示すツールヒントが表示されます。
 -   グラフの領域をクリックすると、グラフ内のデータに関する詳細を含むグリッドビューが表示されます。
--   グラフを展開するに**は、[** ![グラフの]展開]、[グラフビューの(media/expandviewbutton.png "展開")] の順に展開します。
--   グラフのレコードを表示したり、グラフを更新したりするには、[![その他のコマンド]] を選択し、レコードの **[更新]** または **[レコードの表示]** を(media/MoreButton.png "選択します")。
+-   グラフを展開するには、[**グラフ**の展開] をクリックしてグラフ![ビュー](media/expandviewbutton.png "グラフビューの展開")を展開します。
+-   グラフのレコードを表示したり、グラフを更新したりするには、[![その他のコマンド](media/MoreButton.png "その他のコマンド")] を選択し、レコードの **[更新]** または **[レコードの表示]** を選択します。
      
      > [!div class="mx-imgBorder"]
-     > Powerapps(media/ViewOfCharts.png "でのグラフの powerapps ビュー") ![でのグラフの表示]  
+     > ![Power Apps のグラフの表示](media/ViewOfCharts.png "Power Apps のグラフの表示")  
        
 
 **グラフビューを変更する**
@@ -81,7 +81,7 @@ ms.locfileid: "71969083"
 たとえば、[すべての営業案件] を選択し、別のビューを選択すると、グラフとグリッドの両方が更新されます。
 
 > [!div class="mx-imgBorder"]
-> ![Powerapps でのグラフビューの変更](media/ChangeChartView.png "powerapps でのグラフビューの変更")
+> ![Power Apps でグラフビューを変更する](media/ChangeChartView.png "Power Apps でグラフビューを変更する")
 
 ## <a name="known-issues"></a>既知の問題  
 グラフデザイナーでは、特定の計算フィールドに order by を追加することはサポートされていないため、エラーが発生します。  この原因となった計算フィールドは、別の計算フィールド、関連エンティティフィールド、またはエンティティのローカルフィールドを使用します。

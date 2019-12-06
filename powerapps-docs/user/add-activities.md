@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dee8b918efc60fed57cc6d8ca407e6cafe2b8060
-ms.sourcegitcommit: bee698ca0d11524377b67813a65e1a022d08c05e
+ms.openlocfilehash: e6a64a5849b351b625468894696251895375d0c2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73609899"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74726075"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>モデル駆動型アプリのタイムラインに予定、電子メール、電話、メモ、またはタスクのアクティビティを追加する 
 
@@ -34,7 +34,7 @@ ms.locfileid: "73609899"
 - 画像が添付された電子メールは、電子メールの本文と共にインラインで表示されます。
 
   > [!div class="mx-imgBorder"]
-  > ![PowerApps のアクティビティのタイムラインビュー](media/TimelineViewOfActivity.png "PowerApps のアクティビティのタイムラインビュー")  
+  > ![Power Apps でのアクティビティのタイムラインビュー](media/TimelineViewOfActivity.png "Power Apps でのアクティビティのタイムラインビュー")  
  
 ## <a name="add-an-activity-from-the-nav-bar"></a>ナビゲーション バーからアクティビティを追加する
  
@@ -43,7 +43,7 @@ ms.locfileid: "73609899"
 1. ナビゲーションバーで、**プラス記号**[![レコードの作成] ボタン](media/create-record-button.png "[レコードの作成] ボタン")を選択し、 **[活動]** を選択します。 
 
    > [!div class="mx-imgBorder"]
-   > ![PowerApps でアクティビティを追加するためのショートカット](media/QuickCreate.png "PowerApps でアクティビティを追加するためのショートカット")  
+   > ![Power Apps でアクティビティを追加するためのショートカット](media/QuickCreate.png "Power Apps でアクティビティを追加するためのショートカット")  
  
 2. 追加するアクティビティの種類を選択します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "73609899"
 
 
    > [!div class="mx-imgBorder"]
-   > ![PowerApps で phone アクティビティを追加する](media/addphonecall.png "PowerApps で phone アクティビティを追加する")
+   > ![Power Apps に電話活動を追加する](media/addphonecall.png "Power Apps に電話活動を追加する")
   
 3. 電話の **[件名]** を入力します
 

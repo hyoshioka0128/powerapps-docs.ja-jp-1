@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a0b4e125749d5b0179489677e9a1103cb14a0697
-ms.sourcegitcommit: 481a89e50c282f1e533a8526035dd3c38e3818a2
+ms.openlocfilehash: 2a0474b17f62e30ec41cf04001f774a42ee2e849
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72023297"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74725803"
 ---
 # <a name="deactivate-or-activate-an-account-or-contact"></a>アカウントまたは連絡先を非アクティブ化またはアクティブ化する
 
@@ -37,7 +37,7 @@ ms.locfileid: "72023297"
 2.  非アクティブ化するアクティブなアカウントまたは連絡先を選択し、コマンドバーの **[非アクティブ化]** を選択して、非アクティブ化を確定します。
 
     > [!div class="mx-imgBorder"]
-    > Powerapps で![アカウントを非アクティブ化](media/DeactiveAccounts.png "する powerapps でアカウントを非アクティブ化する")
+    > ![Power Apps でアカウントを非アクティブ化する](media/DeactiveAccounts.png "Power Apps でアカウントを非アクティブ化する")
 
 
 ## <a name="activate-an-account-or-contact"></a>アカウントまたは連絡先のアクティブ化  
@@ -53,7 +53,7 @@ ms.locfileid: "72023297"
 5.  **[アクティブ化]** を選択し、アクティブ化を確定します。  
 
     > [!div class="mx-imgBorder"]
-    > Powerapps で![アカウントをアクティブ化]する(media/ActiveAccounts.png "powerapps でアカウントをアクティブ化する")  
+    > ![Power Apps でアカウントをアクティブ化する](media/ActiveAccounts.png "Power Apps でアカウントをアクティブ化する")  
 
 
 

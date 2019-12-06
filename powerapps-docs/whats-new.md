@@ -1,13 +1,13 @@
 ---
-title: PowerApps の新機能 | Microsoft Docs
-description: PowerApps の週間リリースとリリース ノートに関する情報を提供します。
+title: Power Apps の新機能 |Microsoft Docs
+description: Power Apps の週ごとのリリースとリリースノートに関する情報を提供します。
 author: KumarVivek
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.reviewer: ''
-ms.date: 06/17/2019
+ms.date: 11/26/2019
 ms.author: kvivek
 search.audienceType:
 - maker
@@ -19,20 +19,20 @@ search.app:
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: dc170445349e2c3b2bcca02b855914f7644bd685
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f3eaab5226946c3a5cfbb99c7b4029d587fca247
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73543346"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680353"
 ---
-# <a name="whats-new-in-powerapps"></a>PowerApps の新機能
+# <a name="whats-new-in-power-apps"></a>Power Apps の新機能
 
 このトピックでは、最近リリースされた新機能、これからの数か月でリリースされる新機能、既知の制限に関する情報を提供するリソースを紹介します。
 
 ## <a name="weekly-releases"></a>週間リリース
 
-この数週間でリリースされた新機能、修正プログラム、機能改善については、「[Released versions for Microsoft PowerApps](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/powerapps)」 (Microsoft PowerApps のリリース バージョン) を参照してください。
+過去数週間にリリースされた新機能、修正プログラム、および改善点の詳細については、「 [Microsoft Power Apps のリリース版](https://docs.microsoft.com/business-applications-release-notes/powerplatform/released-versions/powerapps)」を参照してください。
 
 週間リリース ノートの情報を閲覧する方法については、こちらの[ブログ投稿](https://powerapps.microsoft.com/blog/stay-tuned-with-the-latest-features-and-fixes-through-powerapps-weekly-release-notes/)をお読みください。
 
@@ -41,9 +41,7 @@ ms.locfileid: "73543346"
 
 ## <a name="release-plan"></a>リリース計画
 
-今後の数か月でリリースされる新機能については、次をご覧ください (計画のために使用できます)。
-- [2019 年 4 月のリリース ノート](https://docs.microsoft.com/business-applications-release-notes/April19/microsoft-powerapps/planned-features)
-- [2019リリース wave 2 プラン](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features)
+今後数か月の間にリリースされる新機能の詳細については、「 [2019 release wave 2 plan](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features) 」を参照してください。
 
 ## <a name="known-limitations"></a>既知の制限
 

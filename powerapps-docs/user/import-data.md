@@ -16,18 +16,18 @@ search.app:
 - PowerApps
 - D365CE
 - D365CE
-ms.openlocfilehash: 37e9602d48bbfbb802afefa0f6d47fad241dc6f5
-ms.sourcegitcommit: 483c777a1537ccab6a2a2da6a5d1fe4470dd0e7e
+ms.openlocfilehash: 8f1105fc88fe87aabceaa10160b96e2d7299cbe0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "63321639"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74733213"
 ---
 # <a name="import-data"></a>データをインポートする
 
 データがスプレッドシートや携帯電話、または電子メール プログラム内のいずれに格納されていても、次の方法でアプリにデータをインポートすることができます。 たとえば、すべての顧客情報を 1 か所で追跡できるように、顧客の連絡先リストを Excel スプレッドシートからアプリにインポートしたい場合があります。
   
-## <a name="step-1-get-your-import-file-ready"></a>手順 1:インポート ファイルを準備する  
+## <a name="step-1-get-your-import-file-ready"></a>手順 1: インポートファイルを準備する  
 最初に、データを Excel ファイルにエクスポートします。 次のファイル形式がサポートされています。
  - Excel ブック (.xlsx)
  - コンマ区切り値 (.csv)
@@ -76,12 +76,12 @@ USB ケーブルやアプリを使って、連絡先などのデータを携帯�
   
 アプリを探すには、ご自身の携帯電話のオンライン ストアを検索します。  
   
-## <a name="step-2-import-the-file"></a>手順 2:ファイルをインポートする 
+## <a name="step-2-import-the-file"></a>手順 2: ファイルをインポートする 
   
 1. コマンド バーで、 **[Excel からのインポート]** または **[CSV からのインポート]** を選択します。
 
    > [!div class="mx-imgBorder"]
-   > ![PowerApps のメイン メニュー](media/import.png "PowerApps のメイン メニュー")
+   > ![Power Apps のメインメニュー](media/import.png "Power Apps のメインメニュー")
   
 2. 連絡先のエクスポートを含むファイルを保存したフォルダーに移動します。 ファイルを選択し、 **[開く]** を選択してから、 **[次へ]** を選択します。  
   
@@ -90,7 +90,7 @@ USB ケーブルやアプリを使って、連絡先などのデータを携帯�
    
 3. **[マッピングの確認]** オプションを使って、ファイル名を確認し、フィールドとデータの区切り記号が正しいことを確認します。 すべて適切に見える場合は、 **[インポート完了]** を選択します。  
  
-## <a name="step-3-check-that-the-import-is-successful"></a>手順 3:インポートが成功したことを確認する
+## <a name="step-3-check-that-the-import-is-successful"></a>手順 3: インポートが成功したことを確認する
 
 ウィザードが完了したら、データ (たとえば、連絡先の一覧) を確認して、それらが正常にインポートされていることを確認します。  
   

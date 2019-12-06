@@ -16,29 +16,29 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 00b7d5dc7960429f7cc13215cd118e26e206d7d4
-ms.sourcegitcommit: d6b7f98b4ae011a753c1e72d7708f0f8dfbfb1fb
+ms.openlocfilehash: 76d2d4cdccc14e5c9c60cd5679bd7b88a2649380
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69896202"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74680675"
 ---
 # <a name="run-an-app-in-a-web-browser"></a>アプリを Web ブラウザーで実行する
-自分でアプリを作成したり、他のユーザーがあなたとアプリを共有したりしたときは、Windows、iOS、Android、または Web ブラウザーでそのアプリを実行できます。 このトピックでは、キャンバス アプリまたはモデル駆動型アプリを、[Dynamics 365 ホーム ページ](https://home.dynamics.com)から Web ブラウザーで実行する方法を説明します。
+自分でアプリを作成したり、他のユーザーからアプリの共有を受けたりしたときは、Windows、iOS、Android、または Web ブラウザーでアプリを実行できます。 このトピックでは、キャンバス アプリまたはモデル駆動型アプリを、[Dynamics 365 ホーム ページ](https://home.dynamics.com)から Web ブラウザーで実行する方法を説明します。
 
 このクイック スタートを実行するには、以下が必要です。
-- PowerApps のライセンス。 これは、PowerApps プラン ([PowerApps プラン 2 の試用版](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)など)、または [Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1) または PowerApps を含む [Dynamics 365](https://dynamics.microsoft.com/pricing/) プランのいずれかで入手できます。 
+- Power Apps ライセンス。 これは、power apps プラン[2 の試用版](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)、power apps を含む[Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)または[Dynamics 365](https://dynamics.microsoft.com/pricing/)プランなどの power apps プランで利用できます。 
 - 自分で作成したアプリ、または他のユーザーが作成して共有されたアプリへのアクセス。
 - サポートされている Web ブラウザーとオペレーティング システムへのアクセス。
-   - キャンバスアプリについては、以下を参照してください。[システム要件、制限、および構成値](../maker/canvas-apps/limits-and-config.md)
-   - モデル駆動型アプリの場合は、以下を参照してください。[サポートされている web ブラウザーとモバイルデバイス](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)
+   - キャンバス アプリについては、「[システム要件、制限、構成値](../maker/canvas-apps/limits-and-config.md)」を参照してください
+   - モデル駆動型アプリについては、「[サポートされる Web ブラウザーとモバイル デバイス](https://docs.microsoft.com/dynamics365/customer-engagement/admin/supported-web-browsers-and-mobile-devices)」を参照してください
 
 
 ## <a name="sign-in-to-dynamics-365"></a>Dynamics 365 にサインインする
 [https://home.dynamics.com](https://home.dynamics.com) で Dynamics 365 にサインインします。
 
 ## <a name="find-an-app-on-the-home-page"></a>ホーム ページでアプリを探す
-ホーム ページには、複数の種類のビジネス アプリが表示される場合がありますが、検索ボックスにアプリ名の一部を入力すると特定のアプリを見つけることができます。 また、一覧をフィルター処理して、特定のソース (PowerApps など) によって作成されたアプリのみを表示することもできます。 これを行うには、 **[フィルター]** を選択し、ソースを選択します。
+ホーム ページには、複数の種類のビジネス アプリが表示される場合がありますが、検索ボックスにアプリ名の一部を入力すると特定のアプリを見つけることができます。 また、一覧をフィルター処理して、Power Apps など、特定のソースによって作成されたアプリのみを表示することもできます。 これを行うには、 **[フィルター]** を選択し、ソースを選択します。
 
 最近インストールしたアプリは、アプリの一覧にすぐに表示されない場合があります。 すべてのアプリを表示するには、 **[同期]** を選択します。 この処理には最大で 1 分ほどかかることがあります
 
@@ -51,7 +51,7 @@ ms.locfileid: "69896202"
 ![](./media/run-app-browser/web-login.png)
 
 ## <a name="connect-to-data"></a>データに接続する
-アプリでデータ ソースへの接続またはデバイスの機能 (カメラや位置情報サービスなど) を使うためのアクセス許可が必要な場合は、アプリを使う前に同意する必要があります。 通常、これが求められるのは初回のみです。
+アプリでデータ ソースへの接続またはデバイスの機能 (カメラや位置情報サービスなど) を使うためのアクセス許可が必要な場合は、アプリを使う前に同意する必要があります。 通常、このことが求められるのは初回のみです。
 
 ![Connection](./media/run-app-browser/app-connection.png)
 
