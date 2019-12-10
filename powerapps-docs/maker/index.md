@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.date: 07/18/2018
+ms.date: 12/05/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: d41af83d0a6de68ac94327798e076b19039dadef
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 79a1a5351bc3fe72a7558697e7cf8e8dfa079ce8
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729808"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959405"
 ---
 # <a name="overview-of-creating-apps-in-power-apps"></a>Power Apps でのアプリ作成の概要
 
@@ -33,7 +33,7 @@ Power Apps は、ビジネス アプリ向けの生産性の高い開発プラ�
 
 次のように、データが保存されている Microsoft ツールからアプリを構築することができます。
 
-- [SharePoint リストから](canvas-apps/app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)
+- [SharePoint リストから](canvas-apps/app-from-sharepoint.md#create-an-app-from-within-sharepoint-online)
 - [Power BI ダッシュボードから](canvas-apps/embed-powerapps-powerbi.md)
 
 キャンバス アプリの作成は簡単です。Power Apps では、次のようないくつかの方法でアプリを検索したり、作成したりできます。
