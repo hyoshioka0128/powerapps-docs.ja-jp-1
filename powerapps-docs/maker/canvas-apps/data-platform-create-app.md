@@ -1,28 +1,28 @@
 ---
-title: Common Data Service | からキャンバスアプリを生成します。Microsoft Docs
-description: Power Apps で、データを管理するためのキャンバスアプリを自動的に生成し Common Data Service
+title: Common Data Service | からキャンバスアプリを作成します。Microsoft Docs
+description: Power Apps で、データを管理するためのキャンバスアプリを自動的に作成 Common Data Service
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: quickstart
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 05/06/2018
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b98fcb51e5b379e6507e73f680100c9702ec24a8
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: c62a690073e591c693d914000511b586dfc97b69
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731681"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959382"
 ---
-# <a name="generate-a-canvas-app-from-common-data-service-in-power-apps"></a>Power Apps で Common Data Service からキャンバスアプリを生成する
+# <a name="create-a-canvas-app-from-common-data-service-in-power-apps"></a>Power Apps で Common Data Service からキャンバスアプリを作成する
 
-Power Apps では、 [Common Data Service](../common-data-service/data-platform-intro.md)のサンプルアカウントの一覧に基づいて、キャンバスアプリが自動的に生成されます。 このアプリでは、すべてのアカウントの参照、1 つのアカウントの詳細の表示、アカウントの作成、更新および削除が可能です。
+Power Apps で、 [Common Data Service](../common-data-service/data-platform-intro.md)のサンプルアカウントの一覧に基づいて、キャンバスアプリを作成します。 このアプリでは、すべてのアカウントの参照、1 つのアカウントの詳細の表示、アカウントの作成、更新および削除が可能です。
 
 Power Apps にサインアップしていない場合は、開始する前に[無料でサインアップ](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)してください。
 
@@ -30,7 +30,7 @@ Power Apps にサインアップしていない場合は、開始する前に[�
 
 このクイックスタートを実行するには、[環境](https://docs.microsoft.com/power-platform/admin/database-security#predefined-security-roles)作成者のセキュリティロールに割り当てられている必要があります。また、Common Data Service 内のデータベースが作成され、データが含まれ、更新が許可されている[環境に切り替える](working-with-environments.md)必要があります。 そのような環境がなく、管理者権限を保持している場合、この要件に合う[環境を作成](https://docs.microsoft.com/power-platform/admin/environments-administration#create-an-environment)します。
 
-## <a name="generate-an-app"></a>アプリを生成する
+## <a name="create-an-app"></a>アプリを作成する
 
 1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインし、必要に応じて、このトピックで前述した手順に従って環境を切り替えます。
 

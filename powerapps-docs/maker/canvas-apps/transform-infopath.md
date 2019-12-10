@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: article
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/05/2018
+ms.date: 12/05/2019
 ms.author: emcoope
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 811f58243413c4de58e4cdb8868d838349248991
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9c4796a652c6e42609010162794dcc60a6466864
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732366"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959497"
 ---
 # <a name="transform-your-infopath-form-to-power-apps"></a>InfoPath フォームを Power Apps に変換する
 
@@ -62,7 +62,7 @@ Power Apps では、リストフォームをネイティブ機能としてカス
 
 ![SharePoint の統合](./media/transform-infopath/sharepoint-integration.png)
 
-Power Apps のもう1つの重要な機能は、同じフォームから別の SharePoint サイトコレクションまたは別の環境に簡単に接続できることです。 たとえば、SharePoint Online のデータと SharePoint オンプレミス環境のデータを同時に表示して更新する 1 つのフォームを作成したいことはありませんか。 大丈夫。 [オンプレミスデータゲートウェイ](gateway-management.md)をインストールすると、数分で稼働状態になり、電源アプリ、Power BI、電源自動化、Azure Logic Apps オンプレミスデータに接続できます。 ファイアウォール規則を変更する必要はありません。 このアプリを Power の自動化に接続することで、さらに一歩進めていくことができます。
+Power Apps のもう1つの重要な機能は、同じフォームから別の SharePoint サイトコレクションまたは別の環境に簡単に接続できることです。 たとえば、SharePoint Online のデータと SharePoint オンプレミス環境のデータを同時に表示して更新する 1 つのフォームを作成したいことはありませんか。 問題はありません。 [オンプレミスデータゲートウェイ](gateway-management.md)をインストールすると、数分で稼働状態になり、電源アプリ、Power BI、電源自動化、Azure Logic Apps オンプレミスデータに接続できます。 ファイアウォール規則を変更する必要はありません。 このアプリを Power の自動化に接続することで、さらに一歩進めていくことができます。
 
 ## <a name="a-standalone-sharepoint-app"></a>スタンドアロン SharePoint アプリ
 
@@ -76,7 +76,7 @@ Power Apps のもう1つの重要な機能は、同じフォームから別の S
 
 Power Apps は、カスタマイズできるアプリを構築します。
 
-最初のアプリ用に、異なる型のフィールドを 2 つだけ含むシンプルなカスタム リストを使って開始します。 これにより、苦労することなく強固な基盤を築くことができます。 心配しないでください。すぐに習熟して複雑なアプリを作成できるようになります。 この最初のアプリを作成する手順については、こちらの[ドキュメント](app-from-sharepoint.md#generate-an-app-from-within-sharepoint-online)またはコミュニティのこちらの[ビデオ](https://youtu.be/BnYe_7fpZRM)をご覧ください。 次の例では、一般的な InfoPath タスクと、それらを Power Apps で実行する方法について説明します。 これらの各タスクではシンプルな SharePoint リスト アプリを作成します。
+最初のアプリ用に、異なる型のフィールドを 2 つだけ含むシンプルなカスタム リストを使って開始します。 これにより、苦労することなく強固な基盤を築くことができます。 心配しないでください。すぐに習熟して複雑なアプリを作成できるようになります。 この最初のアプリを作成する手順については、こちらの[ドキュメント](app-from-sharepoint.md#create-an-app-from-within-sharepoint-online)またはコミュニティのこちらの[ビデオ](https://youtu.be/BnYe_7fpZRM)をご覧ください。 次の例では、一般的な InfoPath タスクと、それらを Power Apps で実行する方法について説明します。 これらの各タスクではシンプルな SharePoint リスト アプリを作成します。
 
 ## <a name="how-do-you-do-that-with-power-apps"></a>Power Apps ではどのようにしますか。
 

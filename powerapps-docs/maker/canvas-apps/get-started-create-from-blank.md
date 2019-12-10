@@ -7,22 +7,22 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/26/2019
+ms.date: 12/05/2019
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e5b961fb665ad0706d5b3c2c272a95dd4530c1d2
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 01bb3037e6223d41fd7da044b49a51abc57762de
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74709473"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959520"
 ---
 # <a name="create-a-canvas-app-from-scratch-based-on-excel-data"></a>Excel データを基にして最初からキャンバス アプリを作成する
 
-Excel データを基にしてテーブルとして書式設定された独自のキャンバス アプリを最初から作成した後、必要に応じて、他のソースからデータを追加します。 このチュートリアルの手順では、2 つの画面を持ったアプリを作成します。 1 つは、一連のレコードをユーザーが閲覧するための画面です。 もう 1 つは、ユーザーがレコードを作成したり、レコードのフィールドを更新したり、レコード全体を削除したりするための画面です。 この方法は、[アプリを自動的に生成する](get-started-create-from-data.md)よりも時間がかかりますが、経験豊富なアプリ作成者は自分のニーズに合わせて最適なアプリを構築できます。
+Excel データを基にしてテーブルとして書式設定された独自のキャンバス アプリを最初から作成した後、必要に応じて、他のソースからデータを追加します。 このチュートリアルの手順では、2 つの画面を持ったアプリを作成します。 1 つは、一連のレコードをユーザーが閲覧するための画面です。 もう 1 つは、ユーザーがレコードを作成したり、レコードのフィールドを更新したり、レコード全体を削除したりするための画面です。 この方法では、 [Excel から基本的なアプリを作成](get-started-create-from-data.md)するよりも時間がかかりますが、経験が多いアプリの開発者は、そのアプリを使用して、ニーズに最適なアプリを構築できます。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -30,7 +30,7 @@ Excel データを基にしてテーブルとして書式設定された独自�
 
 1. このデータをコピーし、Excel ファイルに貼り付けます。
 
-    | StartDay | StartTime | Volunteer | Backup |
+    | StartDay | StartTime | Volunteer | バックアップ |
     | --- | --- | --- | --- |
     | Saturday |10am-noon |Vasquez |Kumashiro |
     | Saturday |noon-2pm |Ice |Singhal |
