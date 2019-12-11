@@ -1,1 +1,1 @@
-適用対象: PowerApps および Dynamics 365 (online)、バージョン 9.x
+適用対象: Power Apps および Dynamics 365 (online)、バージョン 9.x
