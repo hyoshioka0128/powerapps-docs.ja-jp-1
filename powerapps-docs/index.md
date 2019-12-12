@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: 2f88e6f6330ec1e39bb4090718e886b1ceb9bbb3
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 707f714ca658faa6255ee2e79c08184cb6f2a2fb
+ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74725881"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74959566"
 ---
 <div id="main"
    class="v2">
@@ -234,14 +234,13 @@ ms.locfileid: "74725881"
                                     <hr/>
                                     <ul>
                                        <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/getting-started">キャンバス アプリとは</a></p>
-                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/data-platform-create-app">アプリを自動的に生成する</a></p>
-                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/data-platform-create-app-scratch">アプリを自分で作成する</a></p>
-                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/open-and-run-a-sample-app">サンプル アプリをカスタマイズする</a></p>
-                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/customize-list-form">SharePoint フォームをカスタマイズする</a></p>
+                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/open-and-run-a-sample-app">サンプル アプリケーションの作成</a></p>
+                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/data-platform-create-app-scratch">アプリを最初から作成する</a></p>
                                        <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/connections-list">コネクタ</a></p>
                                        <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-create-business-rule">ビジネス ロジックを適用する</a></p>
-                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/reference-properties">コントロールのリファレンス</a></p>
-                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/formula-reference">数式のリファレンス</a></p>
+                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/add-configure-controls">インターフェイスを設計する</a></p>
+                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/working-with-formulas">アプリ機能を構成する</a></p>
+                                       <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/edit-app">アプリを管理する</a></p>
                                        <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/canvas-apps/share-app">アプリを共有する</a></p>
                                     </ul>
                                  </div>

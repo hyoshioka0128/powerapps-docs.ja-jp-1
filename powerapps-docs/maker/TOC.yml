@@ -140,7 +140,9 @@
           href: ./canvas-apps/sample-meeting-capture.md
     - name: 最初のアプリを作成する
       items:
-        - name: 1 - データからアプリを作成する
+        - name: 1 - アプリをテンプレートから作成する
+          href: ./canvas-apps/get-started-test-drive.md
+        - name: 2 - データを使用してアプリを作成する
           items:
             - name: Common Data Service から
               href: ./canvas-apps/data-platform-create-app.md
@@ -158,14 +160,12 @@
               href: ./canvas-apps/customize-forms-sharepoint.md
             - name: 3 - カード
               href: ./canvas-apps/customize-card.md
-        - name: 3 - アプリを自分で作成する
-          items:
-            - name: Common Data Service から
-              href: ./canvas-apps/data-platform-create-app-scratch.md
-            - name: Excel から
-              href: ./canvas-apps/get-started-create-from-blank.md
-        - name: アプリをテンプレートから作成する
-          href: ./canvas-apps/get-started-test-drive.md
+    - name: アプリを最初から作成する
+      items:
+        - name: Common Data Service から
+          href: ./canvas-apps/data-platform-create-app-scratch.md
+        - name: Excel から
+          href: ./canvas-apps/get-started-create-from-blank.md
     - name: アプリを設計して構築する
       items:
         - name: データに接続する
