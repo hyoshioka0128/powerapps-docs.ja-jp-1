@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: dca5d5189129e7c9dfe32d27fb4c1190b830c039
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d100ac7902aa1d50abfc148ab4bbaed9e442a4ae
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73541336"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74709856"
 ---
 # <a name="install-northwind-traders-database-and-apps"></a>Northwind Traders データベースとアプリをインストールする
 
@@ -26,9 +26,9 @@ ms.locfileid: "73541336"
 
 Northwind Traders は、注文、製品、顧客、サプライヤー、および小規模企業のその他のさまざまな側面を管理する架空の組織です。 このサンプルは、Microsoft Access の最初のバージョンで表示されており、引き続きアクセステンプレートとして利用できます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
-- Common Data Service をサポートする PowerApps ライセンス。 30日間[無料試用版ライセンスをご利用](../signup-for-powerapps.md)いただけます。
+- Common Data Service をサポートするパワーアプリライセンス。 30日間[無料試用版ライセンスをご利用](../signup-for-powerapps.md)いただけます。
 - Common Data Service データベースを持つ環境。 適切なアクセス許可がある場合は[、このような環境を作成](https://docs.microsoft.com/power-platform/admin/create-environment)できます。
 
 ## <a name="download-the-solution"></a>ソリューションをダウンロードする
@@ -40,7 +40,7 @@ Northwind Traders は、注文、製品、顧客、サプライヤー、およ�
 
 ## <a name="install-the-solution"></a>ソリューションをインストールする
 
-1. [PowerApps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインし、Common Data Service データベースを含む環境で作業していることを確認します。
+1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインし、Common Data Service データベースを含む環境で作業していることを確認します。
 
 1. 左側のナビゲーションウィンドウで、 **[ソリューション]** を選択し、画面の上部近くにあるツールバーの **[インポート]** を選択します。
 
@@ -95,7 +95,7 @@ Northwind Traders は、注文、製品、顧客、サプライヤー、およ�
 1. アプリが Common Data Service と対話するためのアクセス許可を求められたら、 **[許可]** を選択します。
 
     > [!div class="mx-imgBorder"]
-    > Common Data Service](media/northwind-install/sample-data-permission.png) の ![の同意] ダイアログボックス
+    > Common Data Service](media/northwind-install/sample-data-permission.png) の ![の同意 ダイアログボックス
 
 1. アプリが読み込まれ、サンプルエンティティにレコードが含まれていないことが示されたら、 **[データの読み込み]** を選択してエンティティを設定します。
 
@@ -127,7 +127,7 @@ Northwind ソリューションには、このデータと対話するための�
 
 ### <a name="canvas"></a>キャンバス
 
-このシングルスクリーンアプリには、 **Orders**エンティティの単純なマスター詳細ビューが用意されています。このビューでは、注文の注文と各品目の概要を表示および編集できます。 注文の一覧が左端近くに表示され、その一覧の矢印を選択して、その注文の概要と詳細を表示できます。 詳細につい[ては、Northwind Traders 用キャンバスアプリの概要に関するトピック](northwind-orders-canvas-overview.md)を参照してください。
+このシングルスクリーンアプリには、 **Orders**エンティティの単純なマスター詳細ビューが用意されています。このビューでは、注文の注文と各品目の概要を表示および編集できます。 注文の一覧が左端近くに表示され、その一覧の矢印を選択して、その注文の概要と詳細を表示できます。 詳細情報:[Northwind Traders 用キャンバスアプリの概要](northwind-orders-canvas-overview.md)。
 
 > [!div class="mx-imgBorder"]
 > Northwind キャンバスアプリ](media/northwind-install/orders-canvas.png) での注文と詳細の ![一覧
