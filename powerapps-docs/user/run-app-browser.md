@@ -1,12 +1,12 @@
 ---
 title: Web ブラウザーでアプリを実行する | Microsoft Docs
 description: このトピックでは、Web ブラウザーでアプリを実行する方法を説明します
-author: Mattp123
+author: mduelae
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 8/21/2019
-ms.author: matp
+ms.date: 12/05/2019
+ms.author: mkaur
 manager: kvivek
 ms.custom: ''
 ms.reviewer: ''
@@ -16,15 +16,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 76d2d4cdccc14e5c9c60cd5679bd7b88a2649380
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8ce6cfe213817cd603857bb5ea2735b188f8cb6c
+ms.sourcegitcommit: 15c6b26ff085928459ad9b3f52fb607fae4a997d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680675"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74956786"
 ---
 # <a name="run-an-app-in-a-web-browser"></a>アプリを Web ブラウザーで実行する
-自分でアプリを作成したり、他のユーザーからアプリの共有を受けたりしたときは、Windows、iOS、Android、または Web ブラウザーでアプリを実行できます。 このトピックでは、キャンバス アプリまたはモデル駆動型アプリを、[Dynamics 365 ホーム ページ](https://home.dynamics.com)から Web ブラウザーで実行する方法を説明します。
+アプリを作成する場合、または他のユーザーがアプリを共有する場合は、Dynamics 365 モバイルアプリまたはタブレットの web ブラウザーでそのアプリを実行できます。 このトピックでは、 [Dynamics 365 ホームページ](https://home.dynamics.com)からタブレットの web ブラウザーで、キャンバスまたはモデル駆動型アプリを実行する方法について説明します。
+
+すべての機能と最適化されたエクスペリエンスを実現するには、携帯電話およびタブレットモバイルアプリ用の Dynamics 365 を使用することを強くお勧めします。 携帯電話用の Dynamics 365 およびタブレットアプリがインストールされていない場合でも、デバイスの画面解像度が十分に高い限り、タブレットで web ブラウザーを使用できます。 詳細については、「[サポートされているもの](https://docs.microsoft.com/dynamics365/mobile-app/support-phones-tablets#supported-devices-for-the-mobile-app)」を参照してください。
+
+> [!NOTE]
+> 電話で web ブラウザーを使用してモデル駆動型アプリを実行することはサポートされていません。携帯電話用の Dynamics 365 アプリを使用する必要があります。
 
 このクイック スタートを実行するには、以下が必要です。
 - Power Apps ライセンス。 これは、power apps プラン[2 の試用版](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)、power apps を含む[Microsoft Office 365](https://signup.microsoft.com/Signup?OfferId=467eab54-127b-42d3-b046-3844b860bebf&dl=O365_BUSINESS_PREMIUM&ali=1)または[Dynamics 365](https://dynamics.microsoft.com/pricing/)プランなどの power apps プランで利用できます。 
@@ -46,7 +51,7 @@ ms.locfileid: "74680675"
 
 
 ## <a name="run-an-app-from-a-url"></a>URL からアプリを実行する
-ブラウザーのブックマークとしてアプリの URL を保存し、ブックマークを選んでアプリを実行したり、メールでリンクとして URL を送信したりすることができます。 他のユーザーがアプリを作成し、それを電子メールで共有している場合は、電子メールのリンクを選択してアプリを実行できます。 URL を使ってアプリを実行するときは、Azure Active Directory の資格情報をってサインインするように求められることがあります。
+アプリの URL をタブレットのブラウザーにブックマークとして保存し、ブックマークを選択して実行するか、または電子メールでリンクとして URL を送信することができます。 他のユーザーがアプリを作成し、それを電子メールで共有している場合は、電子メールのリンクを選択してアプリを実行できます。 URL を使ってアプリを実行するときは、Azure Active Directory の資格情報をってサインインするように求められることがあります。
 
 ![](./media/run-app-browser/web-login.png)
 
