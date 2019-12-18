@@ -1,6 +1,6 @@
 - name: はじめる
   items:
-    - name: Power Apps とは
+    - name: PowerApps とは
       href: ../powerapps-overview.md
     - name: 30 日間の無料試用版にサインアップする
       href: signup-for-powerapps.md
@@ -68,8 +68,6 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
             - name: Power BI ダッシュボードにピン留めする
               href: ../user/add-powerbi-dashboards.md
-            - name: SharePoint を使用した共同作業
-              href: ../user/collaborate-using-sharepoint.md
         - name: レコードを調べる
           items:
             - name: 検索オプションと検索オプションの比較
@@ -118,7 +116,7 @@
   items:
     - name: 概要
       href: index.md
-    - name: Power Apps にサインインする
+    - name: PowerApps へのサインイン
       href: ./canvas-apps/intro-maker-portal.md
 - name: キャンバス アプリ
   items:
@@ -140,9 +138,7 @@
           href: ./canvas-apps/sample-meeting-capture.md
     - name: 最初のアプリを作成する
       items:
-        - name: 1 - アプリをテンプレートから作成する
-          href: ./canvas-apps/get-started-test-drive.md
-        - name: 2 - データを使用してアプリを作成する
+        - name: 1 - データからアプリを作成する
           items:
             - name: Common Data Service から
               href: ./canvas-apps/data-platform-create-app.md
@@ -160,12 +156,14 @@
               href: ./canvas-apps/customize-forms-sharepoint.md
             - name: 3 - カード
               href: ./canvas-apps/customize-card.md
-    - name: アプリを最初から作成する
-      items:
-        - name: Common Data Service から
-          href: ./canvas-apps/data-platform-create-app-scratch.md
-        - name: Excel から
-          href: ./canvas-apps/get-started-create-from-blank.md
+        - name: 3 - アプリを自分で作成する
+          items:
+            - name: Common Data Service から
+              href: ./canvas-apps/data-platform-create-app-scratch.md
+            - name: Excel から
+              href: ./canvas-apps/get-started-create-from-blank.md
+        - name: アプリをテンプレートから作成する
+          href: ./canvas-apps/get-started-test-drive.md
     - name: アプリを設計して構築する
       items:
         - name: データに接続する
@@ -190,7 +188,7 @@
                   href: canvas-apps/connections/connection-office365-outlook.md
                 - name: Office 365 Users
                   href: canvas-apps/connections/connection-office365-users.md
-                - name: Oracle Database
+                - name: Oracle データベース
                   href: canvas-apps/connections/connection-oracledb.md
                 - name: Power BI
                   href: canvas-apps/connections/connection-powerbi.md
@@ -824,7 +822,7 @@
               href: ./canvas-apps/sharepoint-scenario-summary.md
         - name: Cognitive Services
           href: ./canvas-apps/cognitive-services-api.md
-        - name: InfoPath フォームを Power Apps に変換する
+        - name: InfoPath フォームを PowerApps に作り替える
           href: ./canvas-apps/transform-infopath.md
     - name: 開発者向け
       items:
@@ -1096,7 +1094,7 @@
           href: ./model-driven-apps/checklist-transition-unified-interface.md
         - name: 'よく寄せられる質問: 統一インターフェイスの切り替え'
           href: ./model-driven-apps/faqs-transition-unified-interface.md
-    - name: Power Apps アプリ デザイナーのアクセシビリティ
+    - name: PowerApps アプリ デザイナーのアクセシビリティ
       href: ./model-driven-apps/Accessibility-app-designer-site-map-designer-my-apps-page.md
     - name: Outlook 用 Dynamics 365 アプリをカスタマイズする
       href: ./model-driven-apps/app-for-outlook-customize.md
@@ -1104,10 +1102,8 @@
       href: ../developer/model-driven-apps/overview.md
 - name: Portals
   items:
-    - name: Power Apps ポータルとは
+    - name: PowerApps ポータルとは
       href: ./portals/overview.md
-    - name: 更新プログラムのリリース
-      href: ./portals/release-updates.md
     - name: ポータルを設計して構築する
       items:
         - name: ポータルのテンプレート
@@ -1118,7 +1114,7 @@
           href: ./portals/create-dynamics-portal.md
         - name: 以前のポータルのアドオンを使ったポータルのプロビジョニング
           href: ./portals/provision-portal-add-on.md
-        - name: Power Apps ポータル Studio の構造
+        - name: PowerApps ポータル Studio の構造
           href: ./portals/portal-designer-anatomy.md
         - name: ポータル デザイナーでサポートされている Web ブラウザー
           href: ./portals/supported-browser.md
@@ -1164,7 +1160,7 @@
           href: ./portals/admin/manage-auth-key.md
         - name: IP アドレス制限を設定する
           href: ./portals/admin/ip-address-restrict.md
-        - name: Power Apps ポータル ドメインに更新する
+        - name: PowerApps ポータル ドメインに更新する
           href: ./portals/admin/update-portal-domain.md
         - name: サーバー側キャッシュのクリア
           href: ./portals/admin/clear-server-side-cache.md
@@ -1262,12 +1258,6 @@
               href: ./portals/configure/add-geolocation.md
         - name: ポータルでの GDPR の実装
           href: ./portals/configure/implement-gdpr.md
-        - name: 提供情報の作成と実行
-          href: ./portals/configure/create-run-advertisement.md
-        - name: アンケートを使用してフィードバックを収集する
-          href: ./portals/configure/gather-feedback-poll.md
-        - name: 発行状態の作成と管理
-          href: ./portals/configure/publishing-states.md
     - name: 高度なポータルのカスタマイズ
       items:
         - name: 液体テンプレートを操作する
@@ -1296,7 +1286,7 @@
                   href: ./portals/liquid/variable-tags.md
                 - name: テンプレート タグ
                   href: ./portals/liquid/template-tags.md
-                - name: Common Data Service エンティティ タグ
+                - name: PowerApps Common Data Service エンティティ タグ
                   href: ./portals/liquid/portals-entity-tags.md
             - name: 使用可能な液体フィルター
               href: ./portals/liquid/liquid-filters.md
@@ -1344,10 +1334,8 @@
           href: ./portals/manage-sharepoint-documents.md
     - name: 既知の問題
       href: ./portals/known-issues.md
-    - name: Power Apps ポータルに関する FAQ
+    - name: PowerApps ポータルに関する FAQ
       href: ./portals/faq.md
-    - name: Legacy Adxstudio Portals v7 FAQ
-      href: ./portals/legacy-portal-faq.md
 - name: Common Data Service
   items:
     - name: Common Data Service とは
@@ -1372,13 +1360,13 @@
           href: ./common-data-service/create-edit-virtual-entities.md
         - name: 仮想エンティティ OData v4 データ プロバイダー
           href: ./common-data-service/virtual-entity-odata-provider-requirements.md
-        - name: Power Apps ポータルを使用して代替キーを定義する
+        - name: PowerApps ポータルを使用して代替キーを定義する
           href: ./common-data-service/define-alternate-keys-portal.md
         - name: ソリューション エクスプローラーを使用して代替キーを定義する
           href: ./common-data-service/define-alternate-keys-solution-explorer.md
         - name: 'ハウツー ガイド:組織'
           items:
-            - name: Power Apps ポータルを使用してエンティティを作成する方法
+            - name: PowerApps ポータルを使用してエンティティを作成する方法
               href: ./common-data-service/create-edit-entities-portal.md
             - name: ソリューション エクスプローラーを使用してエンティティを作成する方法
               href: ./common-data-service/create-edit-entities-solution-explorer.md
@@ -1417,7 +1405,7 @@
           href: ./common-data-service/create-edit-1n-relationships-portal.md
         - name: ソリューション エクスプローラーを使用して一対多のエンティティ リレーションシップを作成する
           href: ./common-data-service/create-edit-1n-relationships-solution-explorer.md
-        - name: Power Apps ポータルを使用して多対多のエンティティ リレーションシップを作成する
+        - name: PowerApps ポータルを使用して多対多のエンティティ リレーションシップを作成する
           href: ./common-data-service/create-edit-nn-relationships-portal.md
         - name: エンティティ リレーションシップに対する管理プロパティを設定する
           href: ./common-data-service/set-managed-properties-relationships.md
@@ -1429,9 +1417,9 @@
           href: ./common-data-service/configure-connection-roles.md
         - name: 'ハウツー ガイド:リレーションシップ'
           items:
-            - name: Power Apps ポータルを使用して多対多のリレーションシップを作成する方法
+            - name: PowerApps ポータルを使用して多対多のリレーションシップを作成する方法
               href: ./common-data-service/create-edit-nn-relationships-portal.md
-            - name: Power Apps ソリューション エクスプローラーを使用して多対多のリレーションシップを作成する方法
+            - name: PowerApps ソリューション エクスプローラーを使用して多対多のリレーションシップを作成する方法
               href: ./common-data-service/create-edit-nn-relationships-solution-explorer.md
             - name: リレーションシップに対する管理プロパティを設定する方法
               href: ./common-data-service/set-managed-properties-relationships.md
@@ -1460,11 +1448,11 @@
               href: ./common-data-service/create-edit-fields.md
             - name: フィールドを管理する方法
               href: ./common-data-service/data-platform-manage-fields.md
-            - name: Power Apps ポータルを使用してフィールドを作成する方法
+            - name: PowerApps ポータルを使用してフィールドを作成する方法
               href: ./common-data-service/create-edit-field-portal.md
-            - name: Power Apps ソリューション エクスプローラーを使用してフィールドを作成する方法
+            - name: PowerApps ソリューション エクスプローラーを使用してフィールドを作成する方法
               href: ./common-data-service/create-edit-field-solution-explorer.md
-            - name: Power Apps ポータルを使用してオプション セットを作成する方法
+            - name: PowerApps ポータルを使用してオプション セットを作成する方法
               href: ./common-data-service/custom-picklists.md
             - name: ソリューション エクスプローラーを使用してグローバル オプション セットを作成する方法
               href: ./common-data-service/create-edit-global-option-sets-solution-explorer.md
@@ -1542,13 +1530,11 @@
       href: ./common-data-service/import-translated-entity-field-text.md
     - name: Common Data Service のセキュリティ
       href: /power-platform/admin/wp-security
-    - name: API の制限の概要
-      href: ./common-data-service/api-limits-overview.md
     - name: 開発者向け
       href: ../developer/common-data-service/overview.md
 - name: AI ビルダー
   items:
-    - name: Power Apps で AI Builder を使う
+    - name: PowerApps で AI Builder を使う
       href: ../use-ai-builder.md
 - name: その他の学習方法
   items:
@@ -1566,7 +1552,7 @@
       href: ./canvas-apps/common-issues-and-resolutions.md
     - name: セッションまたはアプリ ID を取得する
       href: ./canvas-apps/get-sessionid.md
-    - name: Power Apps のスタートアップに関する問題のトラブルシューティング
+    - name: PowerApps のスタートアップに関する問題のトラブルシューティング
       href: troubleshooting-startup-issues.md
     - name: Power Query のトラブルシューティング
       href: ./common-data-service/data-platform-cds-newentity-troubleshooting-mashup.md
