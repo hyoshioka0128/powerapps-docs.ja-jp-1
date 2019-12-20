@@ -13,21 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: abbe0165041aa3fa496bae480fa1235d9c0b159c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: f5288e6a8ee655cf24479a7de3a5904b7f1a4e07
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727659"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204044"
 ---
 # <a name="attachments-control-in-power-apps"></a>Power Apps での添付ファイルの制御
 ユーザーがデバイスにファイルをダウンロードしたり、SharePoint リストまたは Common Data Service エンティティからファイルをアップロードしたり削除したりできるようにするコントロール。
 
-## <a name="limitations"></a>事項
+## <a name="limitations"></a>制限事項
 添付ファイル コントロールには、次の制限があります。
 1. 添付ファイルは、SharePoint リストおよび Common Data Service エンティティでサポートされています。
 
-1. アップロードおよび削除機能は、フォーム内でのみ動作します。 添付コントロールは、編集モードのときは無効になり、フォーム内では表示されません。 ファイルの追加と削除を保存するには、アプリユーザーがフォームを保存する必要があります。 この制限のため、添付ファイルコントロールは **[挿入]** タブからは使用できませんが、SharePoint または Common Data Service フォームで添付ファイルフォームフィールドが有効になっている場合はフォームに表示されます。
+1. アップロードおよび削除機能は、フォーム内でのみ動作します。 添付コントロールは、編集モードのときは無効になり、フォーム内では表示されません。 ファイルの追加と削除を保存するには、アプリユーザーがフォームを保存する必要があります。 この制限のため、添付ファイルコントロールは [**挿入**] タブからは使用できませんが、SharePoint または Common Data Service フォームで添付ファイルフォームフィールドが有効になっている場合はフォームに表示されます。
 
 1. ファイルをアップロードできるのは、10 MB 以下の場合だけです。  
 
@@ -88,11 +88,11 @@ ms.locfileid: "74727659"
 
 3. 右側の [オプション] パネルの [プロパティ] タブで **[データ]** をクリックします。
 
-4. **[フィールド]** の下で、 **[添付ファイル]** フィールドを有効にします。
+4. **[フィールド]** の下で、**[添付ファイル]** フィールドを有効にします。
 
     SharePoint リストに関連付けられている添付ファイル フィールドが、フォームに表示されます。
 
-[コントロールを追加して構成する方法について学習してください].(../add-configure-controls.md)。
+[コントロールを追加して構成する方法について説明します。](../add-configure-controls.md)
 
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン

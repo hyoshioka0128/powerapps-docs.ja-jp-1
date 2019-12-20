@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 569792d634916ce32a54404580fb58d43bf4f24d
-ms.sourcegitcommit: d4462233c8973def0bcc4e75019390d92eccf684
+ms.openlocfilehash: ed59b379b55a38a1e5a3454d26d07ae93d106e4f
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74831337"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204113"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>キャンバス アプリのシステム要件、制限、構成値
-このトピックには、デバイスプラットフォームと web ブラウザーの要件に加えて、Power Apps の制限と構成値が含まれています。
+このトピックには、デバイスプラットフォームと web ブラウザーの要件に加えて、キャンバスアプリの制限と構成値が含まれています。
 
-## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-app"></a>Power Apps アプリを使用してキャンバスアプリを実行するためにサポートされるプラットフォーム
+## <a name="supported-platforms-for-running-canvas-apps-using-the-power-apps-mobile-app"></a>Power Apps モバイルアプリを使用してキャンバスアプリを実行するためにサポートされるプラットフォーム
 
 | **最小構成** | **推奨** |
 | --- | --- |
@@ -32,7 +32,7 @@ ms.locfileid: "74831337"
 | Windows 8.1 以降 (PC のみ) |Windows 10 Fall Creators Update と少なくとも 8 GB の RAM)|
 
 > [!NOTE]
-> 現在、Windows platform for Power Apps アプリの新機能はサポートされていません。 強化された Common Data Service オプションやゲストアクセスなどの機能は、このプラットフォームでは使用できません。 すべての機能を利用するには、Windows で web プレーヤーを使用することをお勧めします。 Windows プラットフォーム用の Power Apps アプリの更新プログラムは、今後発表される予定です。
+> 現在、Windows platform for [Power Apps モバイルアプリ](/powerapps/user/run-app-client)の新機能はサポートされていません。 強化された Common Data Service オプションやゲストアクセスなどの機能は、このプラットフォームでは使用できません。 すべての機能を利用するには、Windows で web プレーヤーを使用することをお勧めします。 Windows プラットフォーム用の Power Apps モバイルアプリの更新プログラムは、今後発表される予定です。
 
 ## <a name="supported-browsers-for-running-canvas-apps"></a>キャンバス アプリを実行するためにサポートされているブラウザー
 
@@ -83,7 +83,7 @@ ms.locfileid: "74831337"
 | インド  | 104.211.81.192 - 104.211.81.207, 52.172.211.12, 40.78.194.240 - 40.78.194.255, 13.71.125.22, 104.211.146.224 - 104.211.146.239, 104.211.189.218 |
 | 日本 | 13.78.108.0 - 13.78.108.15, 13.71.153.19, 40.74.100.224 - 40.74.100.239, 104.215.61.248 |
 | 南米 | 191.233.203.192 - 191.233.203.207、104.214.19.48 - 104.214.19.63、13.65.86.57、104.41.59.51 |
-| United Kingdom | 51.140.148.0 - 51.140.148.15、51.140.80.51、51.140.211.0 - 51.140.211.15、51.141.47.105 |
+| 英国 | 51.140.148.0 - 51.140.148.15、51.140.80.51、51.140.211.0 - 51.140.211.15、51.141.47.105 |
 | 米国 | 13.89.171.80 - 13.89.171.95, 52.173.245.164, 40.71.11.80 - 40.71.11.95, 40.71.249.205, 40.70.146.208 - 40.70.146.223, 52.232.188.154, 52.162.107.160 - 52.162.107.175, 52.162.242.161, 40.112.243.160 - 40.112.243.175, 104.42.122.49 |
 | 米国 (早期アクセス)  | 13.71.195.32 - 13.71.195.47, 52.161.102.22, 13.66.140.128 - 13.66.140.143, 52.183.78.157 |
 
@@ -100,11 +100,11 @@ ms.locfileid: "74831337"
 | \*。 azure-apim.net |https |API のハブ - ロケールごとに異なるサブドメイン |
 | \*。 powerapps.com |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および make.powerapps.com |
 | \*。 azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および make.powerapps.com |
-| \*.blob.core.windows.net |https | Blob Storage |
+| \*。 blob.core.windows.net |https | Blob Storage |
 | \*。 flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および make.powerapps.com |
 | *. dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |製品利用統計情報 |
-| localhost | https | Power Apps Mobile
+| localhost | https | Power Apps モバイル
 
 > [!NOTE]
 > VPN を使用している場合は、Power Apps Mobile のトンネリングから localhost を除外するように構成する必要があります。

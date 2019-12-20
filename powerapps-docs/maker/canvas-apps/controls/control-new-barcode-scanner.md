@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c7c3079ebbdeea0097f50acc2ce7f5d4e4089947
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.openlocfilehash: c83e713a5f29198779b0b9b8968bb38b98bc2a5a
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650414"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75203998"
 ---
 # <a name="barcode-scanner-control-for-canvas-apps"></a>バーコード-キャンバスアプリのスキャナーコントロール
 
@@ -27,17 +27,6 @@ Android または iOS デバイスのバーコード、QR コード、および�
 ## <a name="description"></a>Description
 
 コントロールは、Android または iOS デバイスでネイティブスキャナーを開きます。 スキャナーは、表示されているときに、バーコード、QR コード、またはデータマトリックスコードを自動的に検出します。 コントロールは、web ブラウザーでのスキャンをサポートしていません。
-
-このコントロールは、QR コード、データマトリックスコード、および次の種類のバーコードをサポートしています。
-
-- UPC A
-- UPC E
-- EAN 8
-- EAN 13
-- コード39
-- コード128
-- ITF
-- PDF 417
 
 ## <a name="key-properties"></a>主要なプロパティ
 
@@ -48,6 +37,8 @@ Android または iOS デバイスのバーコード、QR コード、および�
 **Onscan** –バーコードが正常にスキャンされた場合にアプリがどのように応答するかを示します。
 
 ## <a name="additional-properties"></a>その他のプロパティ
+
+**Barcodetype** -スキャンするバーコードの種類。 複数のバーコードの種類を連結してターゲットを付けることができます。 例: Code128 & BarcodeType. Code39**既定値: Auto**
 
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
@@ -79,6 +70,29 @@ Android または iOS デバイスのバーコード、QR コード、および�
 **[ボタン](control-button.md)** コントロールの同じガイドラインが**バーコードスキャナー**コントロールにも適用されます。これは、スキャンを起動するボタンであるためです。
 
 ### <a name="visual-alternatives"></a>ビジュアルの代替
-* バーコードスキャナーは、スキャン結果を表示しないボタンです。 **[ラベル](control-text-box.md)** コントロールを使用してスキャン結果を表示することを検討してください。 ラベルの **[Text](properties-core.md)** プロパティをバーコードスキャナーの**値**プロパティに設定します。 スクリーンリーダーのユーザーに変更が通知されるように、ラベルの **[Live](properties-accessibility.md)** プロパティを "**丁寧**" に設定します。 この変更により、スキャンした値は、視覚機能に関係なくすべてのユーザーがアクセスできるようになります。
+* バーコードスキャナーは、スキャン結果を表示しないボタンです。 **[ラベル](control-text-box.md)** コントロールを使用してスキャン結果を表示することを検討してください。 ラベルの**[Text](properties-core.md)** プロパティをバーコードスキャナーの**値**プロパティに設定します。 スクリーンリーダーのユーザーに変更が通知されるように、ラベルの**[Live](properties-accessibility.md)** プロパティを "**丁寧**" に設定します。 この変更により、スキャンした値は、視覚機能に関係なくすべてのユーザーがアクセスできるようになります。
 
-* 視覚障碍のあるユーザーは、バーコードでカメラをポイントしたくない場合があります。 ユーザーがバーコードを入力するには、 **[テキスト入力](control-text-input.md)** コントロールなど、別の形式の入力を追加することを検討してください。
+* 視覚障碍のあるユーザーは、バーコードでカメラをポイントしたくない場合があります。 ユーザーがバーコードを入力するには、**[テキスト入力](control-text-input.md)** コントロールなど、別の形式の入力を追加することを検討してください。
+
+## <a name="barcode-availability-by-device"></a>デバイス別のバーコードの可用性
+
+| バーコードの種類 | Android | iOS |
+|--------------|:-------:|:---:|
+|QR_CODE|✔|✔|
+|DATA_MATRIX|✔|✔|
+|UPC_A|✔|✔|
+|UPC_E|✔|✔|
+|EAN_8|✔|✔|
+|EAN_13|✔|✔|
+|CODE_39|✔|✔|
+|CODE_93|✔|✔|
+|CODE_128|✔|✔|
+|CODABAR|✔|✖|
+|ITF|✔|✔|
+|RSS14|✔|✖|
+|PDF_417|✔|✔|
+|RSS_EXPANDED|✔|✖|
+|MSI|✖|✖|
+|アズ|✔|✔|
+
+**注:** PDF_417 およびアステカは Auto モードではサポートされていません

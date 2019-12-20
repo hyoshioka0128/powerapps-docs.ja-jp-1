@@ -13,18 +13,21 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c9d3594ecf338c6cfa93786f56a09606b2de6296
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 00c13a3b57cce0f7c8831b0932f7e17bbb32efe7
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732012"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75203952"
 ---
 # <a name="microsoft-stream-video-control-in-power-apps"></a>Power Apps でのビデオコントロールの Microsoft Stream
 Microsoft Stream ビデオとチャンネルのビデオプレーヤー。
 
 ## <a name="description"></a>Description
 コントロールを使用すると、アプリユーザーはビデオを再生し、Microsoft Stream サービスからチャネルを参照できます。
+
+## <a name="limitations"></a>制限事項
+コントロールは、現在、Power Apps 用のネイティブ Windows プレーヤーではサポートされていません。  Web ブラウザーと Android および iOS の Power Apps プレーヤーでも正常に動作します。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **Streamurl** –コントロールに表示される Microsoft Stream ビデオまたはチャネルの url です。
@@ -70,12 +73,12 @@ Microsoft Stream ビデオとチャンネルのビデオプレーヤー。
 
 ### <a name="play-an-audio-or-video-file-from-microsoft-stream"></a>Microsoft Stream からオーディオまたはビデオファイルを再生する
 
-1. **[ファイル]** メニューの **[挿入]** をポイントし、 **[メディア]** を開く ドロップダウンメニューをクリックします。 
+1. [**ファイル**] メニューの [**挿入**] をポイントし、[**メディア**を開く] ドロップダウンメニューをクリックします。 
 2. メディアコントロールの一覧から**Microsoft Stream**を選択します。
 
     ![Microsoft Stream](./media/control-stream-video/stream-icon.png "Microsoft Stream")
 
-3. 左側の **[ストリーム URL]** プロパティ内にビデオリンクを貼り付けます。
+3. 左側の [**ストリーム URL** ] プロパティ内にビデオリンクを貼り付けます。
 
     ![StreamUrl プロパティのカスタマイズ](./media/control-stream-video/stream-url.png "StreamUrl プロパティのカスタマイズ")
 
@@ -101,7 +104,7 @@ Safari ブラウザーでアプリの Microsoft Stream ビデオを表示する�
  * 次のいずれかの方法を使用して、オーディオまたはビデオのトランスクリプトを提供することを検討してください。
   1. **[ラベル](control-text-box.md)** にテキストを挿入し、マルチメディア プレーヤーの隣に配置します。 必要に応じて、テキストの表示を切り替える **[ボタン](control-button.md)** を作成します。
   2. 別の画面にテキストを配置します。 その画面に移動する **[ボタン](control-button.md)** を作成し、マルチメディア プレーヤーの隣にボタンを配置します。
-  3. 説明が短い場合は、 **[AccessibleLabel](properties-accessibility.md)** に格納できます。
+  3. 説明が短い場合は、**[AccessibleLabel](properties-accessibility.md)** に格納できます。
 
 ### <a name="color-contrast"></a>色のコントラスト
 以下の間には適切な色のコントラストが必要です。

@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/19/2019
+ms.date: 12/10/2019
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9449c9ab8e03159ffdc4e5657d7eb8ca92cbf0f0
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d78ce9b571ed925e68747f2307d59f5f143e13eb
+ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724037"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302898"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Power Apps のキャンバスアプリコネクタの概要
 データは、Power Apps で構築したものも含め、ほとんどのアプリの中核になります。 *データ ソース*に格納されたデータは、*接続*を作成することでアプリに取り込まれます。 接続は特定の*コネクタ*を使用してデータ ソースと通信します。 Power Apps には、多くの人気のあるサービスやオンプレミスのデータソース (SharePoint、SQL Server、Office 365、Salesforce、Twitter など) 用のコネクタが用意されています。 キャンバスアプリへのデータの追加を開始するには、「 [Power Apps でのデータ接続の追加](add-data-connection.md)」を参照してください。
@@ -45,7 +45,7 @@ ms.locfileid: "74724037"
   > [!NOTE]
   > Excel データ内のデータに接続するには、そのブックを OneDrive のようなクラウド ストレージ サービスでホストする必要があります。 詳細については、「 [Power Apps からのクラウドストレージへの接続](connections/cloud-storage-blob-connections.md)」を参照してください。
 
-## <a name="actions"></a>措置
+## <a name="actions"></a>アクション
 
 ご利用のコネクタによってアクションが提供される場合も、前に行ったように使用するデータ ソースを選択する必要があります。 ただし、次の手順としては、テーブルを選択するのでなく、コントロールをアクションに手動で接続します。そのためには、ご利用のデータを表示するコントロールの **Items** プロパティを編集します。 **Items** プロパティを設定した数式では、データを取得するアクションが指定されています。 たとえば、Yammer に接続してから、**Items** プロパティをデータ ソースの名前に設定した場合、アプリによってデータは取得されません。 コントロールにデータを設定するには、**GetMessagesInGroup(5033622).messages** のようなアクションを指定します。
 
@@ -74,12 +74,32 @@ ms.locfileid: "74724037"
 | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
-\* * Azure Blob、Box、Dropbox、Google Drive、OneDrive、OneDrive for Business に適用されます。
+* * Azure Blob、Box、Dropbox、Google Drive、OneDrive、OneDrive for Business に適用されます。
 
 ## <a name="standard-and-custom-connectors"></a>標準コネクタとカスタム コネクタ
 Power Apps には、上記のような一般的に使用される多くのデータソース用の*標準*コネクタが用意されています。 使用するデータソースの種類に対して、Power Apps に標準コネクタがある場合は、そのコネクタを使用する必要があります。 自分で構築したサービスなど、別の種類のデータ ソースに接続する必要がある場合は、「[Microsoft Flow でカスタム コネクタを登録して使用する](../canvas-apps/register-custom-api.md)」を参照してください。
 
 ## <a name="all-standard-connectors"></a>すべての標準コネクタ
-すべての標準コネクタの一覧については、[Microsoft Connector リファレンス](https://docs.microsoft.com/connectors/)に関するページを参照してください。 Premium コネクタには、Power Apps プラン1またはプラン2が必要です。 詳細については、「 [Power Apps のプラン](https://powerapps.microsoft.com/pricing/)」を参照してください。
+すべての標準コネクタの一覧については、[Microsoft Connector リファレンス](https://docs.microsoft.com/connectors/)に関するページを参照してください。 Premium コネクタでは、アプリプランごとの電源アプリ、ユーザープランごとの電源アプリが必要です。 詳細については、「 [Power Apps のプラン](https://powerapps.microsoft.com/pricing/)」を参照してください。
 
 [Power apps フォーラム](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)で特定のコネクタに関する質問をすることができます。また、追加するコネクタや、 [Power apps のアイデア](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)を作成するためのその他の機能強化を提案することもできます。
+
+## <a name="security-and-types-of-authentication"></a>セキュリティと認証の種類
+
+アプリを作成し、データソースへの接続を作成すると、選択したコネクタによって、さまざまな認証方法を使用できることがわかります。 たとえば、SQL Server コネクタでは、Azure AD 統合認証、SQL Server 認証、および Windows 認証を使用できます。 それぞれの種類の認証には、さまざまなレベルのセキュリティが関連付けられています。  アプリケーションを使用するユーザーと共有する情報や権利を理解することが重要です。 この記事の主な例は SQL Server ですが、原則はすべての種類の接続に適用されます。
+
+### <a name="azure-ad-integrated"></a>Azure AD 統合
+
+これは、セキュリティで保護された接続の種類です。  たとえば、SharePoint ではこの種類の認証を使用します。  SQL Server この種類の認証も許可します。  接続すると、Azure AD サービスによって、ユーザーに代わって SharePoint に対して個別に識別されます。  ユーザー名またはパスワードを入力する必要はありません。  作成者は、資格情報を使用してデータソースを作成し、操作することができます。  アプリケーションを発行し、アプリケーションユーザーがログインすると、資格情報を使用してアプリケーションを実行します。 データがバックエンドで適切にセキュリティで保護されている場合、ユーザーは自分の資格情報に基づいて、そのデータが許可されているかどうかのみを確認できます。   この種類のセキュリティでは、アプリケーションの発行後に、バックエンドデータソースの特定のアプリケーションユーザーに対する権限を変更できます。  たとえば、バックエンドデータソースでは、アクセスを許可したり、アクセスを拒否したり、ユーザーのユーザーまたはユーザーのセットがすべて表示できる内容を調整したりできます。
+
+### <a name="open-standard-authorization-oauth"></a>オープン-標準承認 (OAuth)
+
+この種類の接続もセキュリティで保護されています。  たとえば、Twitter ではこの種類の認証を使用します。  接続するときは、ユーザー名とパスワードを入力する必要があります。  作成者は、資格情報を使用してデータソースを作成し、操作することができます。  アプリケーションを発行するときに、アプリケーションユーザーがログインするときには、資格情報も指定する必要があります。  したがって、この種類の接続は、ユーザーがデータソースサービスにアクセスするために独自の資格情報を使用する必要があるため、セキュリティで保護されています。 
+
+### <a name="sql-user-name-and-password-authentication"></a>SQL ユーザー名とパスワードの認証
+
+この種類の接続は、エンドユーザー認証に依存しないため、非常に安全ではありません。  SQL Server この種類の認証も許可します。  SQL Server この種類の認証は**SQL Server 認証**と呼ばれます。  他の多くのデータベースデータソースは同様の機能を提供します。  アプリケーションを発行するときに、ユーザーは一意のユーザー名とパスワードを入力する必要はありません。  アプリケーションの作成時に指定したユーザー名とパスワードを使用します。  データソースへの接続認証は、**暗黙的**にユーザーと共有されます。  アプリケーションが発行されると、接続も公開され、ユーザーが使用できるようになります。  エンドユーザーは、共有されている SQL Server 認証を使用して、任意の接続を使用してアプリケーションを作成することもできます。  ユーザーはパスワードのユーザー名を表示できませんが、接続を使用できるようになります。  この種類の接続には確かに有効なシナリオがあります。  たとえば、会社内のすべてのユーザーが使用できる読み取り専用のデータベースがある場合、この種類の接続が有効である可能性があります。 
+
+### <a name="windows-authentication"></a>Windows 認証
+
+この種類の接続は、エンドユーザーの認証に依存しないため、非常に安全ではありません。  **オンプレミス**のデータソースに接続する必要がある場合は、Windows 認証を使用します。  この種類の接続の例として、SQL Server を持つオンプレミスのサーバーが挙げられます。  接続はゲートウェイを経由する必要があります。  コネクタはゲートウェイを通過するため、そのデータソースのすべてのデータにアクセスできます。 このため、指定した Windows 資格情報を使用してアクセスできる情報は、コネクタで利用できます。 アプリケーションが発行されると、接続も公開され、ユーザーが使用できるようになります。   これは、エンドユーザーが同じ接続を使用してアプリケーションを作成し、そのコンピューター上のデータにアクセスすることも可能であることを意味します。  データソースへの接続も、アプリが共有されているユーザーと**暗黙的に共有**されます。  この種類の接続は、データソースがオンプレミスのサーバーにのみ存在し、そのソースのデータを自由に共有できる場合に有効です。

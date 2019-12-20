@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d34e5d128f6a38c430432f8acfcc40edaa80c034
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: ae11f42fef927509461d8219b8df4134a633ae5d
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727268"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204021"
 ---
 # <a name="date-picker-control-in-power-apps"></a>Power Apps の日付の選択コントロール
 クリックまたはタップして日付を指定できるコントロールです。
@@ -91,6 +91,8 @@ ms.locfileid: "74727268"
 
 **[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
 
+**StartOfWeek** –日付の選択コントロールの最初の日の列に表示する曜日。
+
 **StartYear** – 日付の選択コントロールでユーザーが設定可能な最初の年です。
 
 **[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
@@ -104,7 +106,7 @@ ms.locfileid: "74727268"
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
 ## <a name="related-functions"></a>関連する関数
-**[Year](../functions/function-datetime-parts.md)** ( *DateTimeValue* )
+**[Year](../functions/function-datetime-parts.md)**( *DateTimeValue* )
 
 ## <a name="example"></a>例
 1. **日付の選択**コントロールを追加して、**Deadline** という名前を付けます。
@@ -114,7 +116,7 @@ ms.locfileid: "74727268"
    <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     **[DateDiff](../functions/function-dateadd-datediff.md)** 関数や[その他の関数](../formula-reference.md)の詳細については各関連記事をご覧ください。
-3. F5 キーを押して **Deadline** の日付を選択し、 **[OK]** をクリックまたはタップします。
+3. F5 キーを押して **Deadline** の日付を選択し、**[OK]** をクリックまたはタップします。
 
     **[ラベル](control-text-box.md)** コントロールに、当日から選択した日付までの日数が表示されます。
 4. 既定のワークスペースに戻るには、Esc キーを押します。
