@@ -1,6 +1,6 @@
 ---
-title: PowerApps ポータルのライフサイクルについて | MicrosoftDocs
-description: PowerApps ポータルのライフサイクルおよびそれを試用版から運用に変換することに関する情報。
+title: Power Apps ポータルのライフサイクルについて | MicrosoftDocs
+description: Power Apps ポータルのライフサイクルおよびそれを試用版から運用に変換することに関する情報。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 5476bb0306b5d9e0767f451fba36a567a70c4c54
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 60300176f0a39258bbb7030c9e30d9b2e7711990
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756789"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874655"
 ---
 # <a name="about-portal-lifecycle"></a>ポータルのライフサイクルについて
 
@@ -28,13 +28,13 @@ ms.locfileid: "2756789"
 
 ### <a name="trial-portal"></a>試用版ポータル
 
-ポータルは、試用版ポータルとして常に作成されます。 必要なライセンスを持っている場合は、PowerApps ポータルの管理センターから運用版に変換できます。 試用版ポータルを運用に変換することに関する詳細については、[試用版ポータルを運用に変換する](#convert-a-trial-portal-to-production)を参照してください。
+ポータルは、試用版ポータルとして常に作成されます。 必要なライセンスを持っている場合は、Power Apps ポータルの管理センターから運用版に変換できます。 試用版ポータルを運用に変換することに関する詳細については、[試用版ポータルを運用に変換する](#convert-a-trial-portal-to-production)を参照してください。
 
-試用版ポータルを運用に変換するには、環境には、外部ユーザーでは追加項目または内部ユーザーではライセンスが必要です。 ライセンスの詳細については、[PowerApps および Microsoft Flow のライセンスに関するよくあるご質問](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) および [PowerApps ポータルのライセンス](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-powerapps-portals-licensing) をご覧ください。
+試用版ポータルを運用に変換するには、環境には、外部ユーザーでは追加項目または内部ユーザーではライセンスが必要です。 ライセンスの詳細については、[Power Apps および Power Automate のライセンスに関するよくあるご質問](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq) および [Power Apps ポータルのライセンス](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing) をご覧ください。
 
 ### <a name="suspended-portal"></a>中断状態のポータル
 
-試用版ポータルの有効期限については、PowerApps ポータル管理センターで継続して通知が表示されます。 試用版ポータルは 30 日で有効期限が切れます。 試用期間内にポータルを運用に変換しないと、ポータルはシャットダウンされ、中断状態になります。 有効期限が切れた後は、ポータルにアクセスできません。
+試用版ポータルの有効期限については、Power Apps ポータル管理センターで継続して通知が表示されます。 試用版ポータルは 30 日で有効期限が切れます。 試用期間内にポータルを運用に変換しないと、ポータルはシャットダウンされ、中断状態になります。 有効期限が切れた後は、ポータルにアクセスできません。
 
 ただし、中断されたポータルは、中断開始から 7 日以内であれば運用に変換できます。 
 
@@ -44,14 +44,14 @@ ms.locfileid: "2756789"
 
 ## <a name="convert-a-trial-portal-to-production"></a>試用版ポータルを運用に変換する
 
-試用版ポータルは、PowerApps ポータル管理センターに表示されている通知から運用へと変換できます。
+試用版ポータルは、Power Apps ポータル管理センターに表示されている通知から運用へと変換できます。
 
 > [!NOTE]
 > 試用版ポータルを運用に変換するには、次ロールの一つを割り当てる必要があります:
 > - グローバル管理者
 > - システム管理者
 
-[PowerApps ポータル管理センター](admin-overview.md) を開き、[ポータルの詳細](portal-details.md) タブへと移動すると、**種類** フィールドの下に試用版の有効期限について通知が表示されます。
+[Power Apps ポータル管理センター](admin-overview.md) を開き、[ポータルの詳細](portal-details.md) タブへと移動すると、**種類** フィールドの下に試用版の有効期限について通知が表示されます。
 
 > [!div class=mx-imgBorder]
 > ![ポータル詳細タブの試用版に関する通知](../media/admin-center-convert-notif.png "ポータル詳細タブの試用版に関する通知")

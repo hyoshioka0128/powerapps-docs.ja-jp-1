@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0bedeae7952f5ec11394b680064af9016ae2b82e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a6affbb0d13af137ddd044a7ae4b6d2cddbf813c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756613"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862449"
 ---
 # <a name="compose-a-page"></a>ページの作成
 
@@ -33,11 +33,11 @@ ms.locfileid: "2756613"
     - 階層リンク
 
 > [!NOTE]
-> PowerApps ポータル スタジオを使用してポータルをカスタマイズすると、Web サイトのユーザーはパフォーマンスに影響を与えることに気付くはずです。 ライブ ポータルのピーク以外の時間帯に変更を行うことをお勧めします。 
+> Power Apps ポータル スタジオを使用してポータルをカスタマイズすると、Web サイトのユーザーはパフォーマンスに影響を与えることに気付くはずです。 ライブ ポータルのピーク以外の時間帯に変更を行うことをお勧めします。 
 
 ## <a name="use-the-wysiwyg-editor"></a>WYSIWYG エディターの使用
 
-1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを PowerApps ポータル Studioで開きます。  
+1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを Power Apps ポータル Studioで開きます。  
 
 2.  どのページに対してコンポーネントを追加するかを選択します。
 
@@ -64,7 +64,7 @@ ms.locfileid: "2756613"
 
 セクションを使用すると、ページの構造を定義し、それに応じてポータル コンポーネントを配置できます。 ページにセクションを追加したら、要件に応じてセクション内にポータル コンポーネントを追加できます。
 
-1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを PowerApps ポータル Studioで開きます。
+1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを Power Apps ポータル Studioで開きます。
 
 2.  セクションを追加するページを選択します。
 
@@ -115,7 +115,7 @@ Web ページで次のコンポーネントを追加できます。
 
 ### <a name="add-text-box"></a>テキスト ボックスの追加
 
-1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを PowerApps ポータル Studioで開きます。  
+1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを Power Apps ポータル Studioで開きます。  
 
 2.  どのページに対してコンポーネントを追加するかを選択します。
 
@@ -144,7 +144,7 @@ Web ページで次のコンポーネントを追加できます。
 
 ### <a name="add-image"></a>画像の追加
 
-1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを PowerApps ポータル Studioで開きます。  
+1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを Power Apps ポータル Studioで開きます。  
 
 2.  どのページに対してコンポーネントを追加するかを選択します。
 
@@ -181,7 +181,7 @@ Web ページで次のコンポーネントを追加できます。
 
 ### <a name="add-iframe"></a>IFrame の追加
 
-1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを PowerApps ポータル Studioで開きます。  
+1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを Power Apps ポータル Studioで開きます。  
 
 2.  どのページに対してコンポーネントを追加するかを選択します。
 
@@ -209,7 +209,7 @@ Web ページで次のコンポーネントを追加できます。
 
 フォームとは、開発者がポータルでフォームを作ることなく、ユーザーがフォームを追加してポータル内でデータ収集ができるようにするために使う、データ駆動の構成です。 [フォームは Common Data Service で作成](https://docs.microsoft.com/powerapps/maker/model-driven-apps/form-designer-overview)され、 これらをポータルの Web ページに使用するか、リストと組み合わせて使用して、完全な Web アプリケーションを構築できます。  
 
-1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを PowerApps ポータル Studioで開きます。  
+1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを Power Apps ポータル Studioで開きます。  
 
 2.  どのページに対してコンポーネントを追加するかを選択します。
 
@@ -264,7 +264,7 @@ Web ページで次のコンポーネントを追加できます。
 
 リストは、開発者がポータル内のグリッドを表示する必要なく、レコードのリストを表示する Web ページを追加するために使用するデータ駆動の構成です。 リストは、[Common Data Service ビュー](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-and-edit-views)を使用して、ポータルのレコードを表示します。  
 
-1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを PowerApps ポータル Studioで開きます。  
+1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを Power Apps ポータル Studioで開きます。  
 
 2.  どのページに対してコンポーネントを追加するかを選択します。
 
@@ -308,7 +308,7 @@ Web ページで次のコンポーネントを追加できます。
 
 ### <a name="add-breadcrumb"></a>階層リンクの追加
 
-1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを PowerApps ポータル Studioで開きます。  
+1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを Power Apps ポータル Studioで開きます。  
 
 2.  どのページに対してコンポーネントを追加するかを選択します。
 
@@ -324,7 +324,7 @@ Web ページで次のコンポーネントを追加できます。
 
 Web リンク セットの作成後は、次を行います。
 
-1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを PowerApps ポータル Studioで開きます。
+1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを Power Apps ポータル Studioで開きます。
 
 2.  ヘッダー コンポーネントを選択します。 
 

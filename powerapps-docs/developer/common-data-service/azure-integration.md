@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5d5bce76dd9e123d6d6c5db1e8d1dc59293471f2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 46f7c5506f8c26a70188e8b3cec59b26bf13cb1e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753059"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861860"
 ---
 # <a name="azure-integration"></a>Azure 統合
 
@@ -70,7 +70,7 @@ Azure対応のOOBプラグインは Common Data Service に付属しており、
   
 ### <a name="asynchronous-service"></a>非同期サービス
 
-サービス エンドポイント通知サービスにより通知されると、非同期サービスは、イベント実行パイプラインが現在処理している要求メッセージのデータ コンテキストの、Azure Service Bus に対する投稿を処理します。 各ポストは非同期サービスのシステム ジョブによって実行されます。 ユーザーは、 PowerApps Web アプリケーションの**システム ジョブ**ビューを使用して、各システム ジョブのステータスを表示することができます。  
+サービス エンドポイント通知サービスにより通知されると、非同期サービスは、イベント実行パイプラインが現在処理している要求メッセージのデータ コンテキストの、Azure Service Bus に対する投稿を処理します。 各ポストは非同期サービスのシステム ジョブによって実行されます。 ユーザーは、 Power Apps Web アプリケーションの**システム ジョブ**ビューを使用して、各システム ジョブのステータスを表示することができます。  
   
 非同期サービスの詳細については、「[非同期サービス](asynchronous-service.md)」を参照してください。  
   

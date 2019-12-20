@@ -1,6 +1,6 @@
 ---
 title: ユーザー定義エンティティの作成 | Microsoft Docs
-description: PowerApps でユーザー定義のエンティティを作成する方法について説明します。
+description: Power Apps でユーザー定義のエンティティを作成する方法について説明します。
 author: Mattp123
 ms.service: powerapps
 ms.component: cds
@@ -12,23 +12,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b1331d272b30bb3455ae06a8dd726eb3a9dc630f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e24249573f6c7e56ff16de6808e2423acbf3c0cf
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754964"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884193"
 ---
 # <a name="create-a-custom-entity"></a>ユーザー定義エンティティの作成
-PowerApps では、 *エンティティ* は、通常は会社名、所在地、製品、電子メール、電話などのプロパティを含むレコード形式で追跡する情報を定義します。 次に、エンティティを参照するアプリを開発して、そのデータを表示できます。 PowerApps は、組織内の一般的なシナリオ(アポイントメントの追跡など)をカバーする標準の「すぐに使える」エンティティが用意されていますが、組織固有のデータを格納するためにカスタムエンティティを作成する必要が生じる場合があります。
+Power Apps では、 *エンティティ* は、通常は会社名、所在地、製品、電子メール、電話などのプロパティを含むレコード形式で追跡する情報を定義します。 次に、エンティティを参照するアプリを開発して、そのデータを表示できます。 Power Apps は、組織内の一般的なシナリオ(アポイントメントの追跡など)をカバーする標準の「すぐに使える」エンティティが用意されていますが、組織固有のデータを格納するためにカスタムエンティティを作成する必要が生じる場合があります。
 
 このトピックでは、会社が販売する製品の評価やコメントを表示するアプリの作成に使用できる、製品レビューと呼ばれるユーザー定義エンティティを作成する方法について説明します。
 
 ## <a name="prerequisites"></a>前提条件
 この手順を実行するには、 Common Data Service内にシステム管理者またはシステムカスタマイズ者のいずれかのセキュリティ役割が必要です。
 
-## <a name="sign-in-to-powerapps"></a>PowerApps へのサインイン
-[https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で PowerApps にサインインする
+## <a name="sign-in-to-power-apps"></a>Power Apps へのサインイン
+[https://make.powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で Power Apps にサインインする
 
 ## <a name="create-an-entity"></a>エンティティの作成
 1. ナビゲーション ウィンドウで、**データ**をクリックまたはタップして展開し、**エンティティ**をクリックまたはタップします。
@@ -45,7 +45,7 @@ PowerApps では、 *エンティティ* は、通常は会社名、所在地、
 
     表示名称を入力すると、以下ののボックスに自動的に入力がされます。
 
-    * **表示名の複数形** 表示名称に値を入力すると、このボックスに自動的に値が入力されます。必要に応じて変更することも可能です。 複数の表示名は、 Common Data Service WebAPI内のエンティティーの名前であり、 PowerApps または Flow からこのエンティティーと対話するときに使用されます。
+    * **表示名の複数形** 表示名称に値を入力すると、このボックスに自動的に値が入力されます。必要に応じて変更することも可能です。 複数の表示名は、 Common Data Service WebAPI内のエンティティーの名前であり、 Power Apps または Flow からこのエンティティーと対話するときに使用されます。
     * **名称** 表示名称に値を入力すると、このボックスに自動的に値が入力されます。 接頭辞は、環境が作成されたときにセットアップされました。作成したエンティティが、他のエンティティ名と競合せずに他の環境にエクスポートおよびインポートできることが確証されます。 Common Data Service 既定のソリューションのパブリッシャにて接頭辞を更新することで、この接頭辞を更新することができます。 既存のアプリの破損を防止するため、エンティティを保存した後で名前は変更できません。
 
        > [!NOTE]
@@ -73,7 +73,7 @@ PowerApps では、 *エンティティ* は、通常は会社名、所在地、
  
     a. コマンド バーで、**フィールド プロパティ**ウィンドウを開くために**フィールドの追加**をクリックまたはタップします。
 
-    b. **表示名**ボックスで、**[Review Date] レビュー日**を入力します。
+    b. **表示名**ボックスで、**Review Date レビュー日**を入力します。
 
     c. **データの種類**ドロップダウン リストから **日付のみ**を選択します。
 
@@ -111,4 +111,4 @@ PowerApps では、 *エンティティ* は、通常は会社名、所在地、
 > [関連付けの作成](data-platform-entity-lookup.md)
 
 ## <a name="privacy-notice"></a>プライバシーに関する声明
-Microsoft PowerApps の Common Data モデルを使用することで、Microsoft はカスタム エンティティとフィールド名称を収集し、診断システムに保管します。 この情報を使って、お客様の共通データ モデルを改善します。 アプリケーション作成者が作成するエンティティ名称とフィールド名称は、 Microsoft PowerApps コミュニティに通底するシナリオの理解に役立ち、組織に関連するスキーマなど、サービスの標準的なエンティティ カバレッジのギャップを確認する際に役立てられます。 これらのエンティティに関連付けられたデータベース テーブル内のデータは、Microsoft によりアクセスまたは使用されず、データベースがプロビジョニングされた地域の外部にレプリケーションされません。 しかし、カスタム エンティティおよびフィールド名は、地域間でレプリケーションされ、データ保持ポリシーに基づいて削除される可能性がある点に注意してください。 マイクロソフトは、[セキュリティ センター](https://www.microsoft.com/trustcenter/Privacy/default.aspx) で詳しく説明されているとおりにプライバシー保護に努めています。
+Microsoft Power Apps の Common Data モデルを使用することで、Microsoft はカスタム エンティティとフィールド名称を収集し、診断システムに保管します。 この情報を使って、お客様の共通データ モデルを改善します。 アプリケーション作成者が作成するエンティティ名称とフィールド名称は、 Microsoft Power Apps コミュニティに通底するシナリオの理解に役立ち、組織に関連するスキーマなど、サービスの標準的なエンティティ カバレッジのギャップを確認する際に役立てられます。 これらのエンティティに関連付けられたデータベース テーブル内のデータは、Microsoft によりアクセスまたは使用されず、データベースがプロビジョニングされた地域の外部にレプリケーションされません。 しかし、カスタム エンティティおよびフィールド名は、地域間でレプリケーションされ、データ保持ポリシーに基づいて削除される可能性がある点に注意してください。 マイクロソフトは、[セキュリティ センター](https://www.microsoft.com/trustcenter/Privacy/default.aspx) で詳しく説明されているとおりにプライバシー保護に努めています。

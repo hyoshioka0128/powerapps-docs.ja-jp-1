@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e3ef73edca48bf9a72f8078a6985ee299baee702
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0e143eba56729944bf04d11736a949cfca538449
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748908"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872674"
 ---
 # <a name="tutorial-create-workflow-extension"></a>チュートリアル: ワークフロー拡張の作成
 
@@ -254,7 +254,7 @@ ms.locfileid: "2748908"
 
 新しいワークフロー活動を使用するプロセスを作成することでその新しいワークフロー活動をテストできます。 上の[目標](#goal)セクションで説明されているワークフローを作成するためにこれらの手順を使用します。
 
-1. [[PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開く]
+1. [[Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開く]
 1. **ソリューション**を選択します。
 1. **CDS 既定の発行者** ソリューションを開きます。
 1. メニューで **...** を展開し、 **クラシックに切り替える**を選択します。
@@ -332,7 +332,7 @@ ms.locfileid: "2748908"
 
 ソリューションのユーザー定義のワークフロー活動を配布するには、それを含む登録されているアセンブリをアンマネージド ソリューションに追加する必要があります。
 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)を使用して、アセンブリを追加する アンマネージド ソリューションを開きます。
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)を使用して、アセンブリを追加する アンマネージド ソリューションを開きます。
 1. **既存を追加する** > **その他** > **プラグイン アセンブリ**を選択します
 
     ![既存のプラグイン アセンブリを追加する](media/add-existing-plugin-assembly.png)

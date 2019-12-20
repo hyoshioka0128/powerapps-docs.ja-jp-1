@@ -1,6 +1,6 @@
 ---
-title: PowerApps でのモデル駆動型アプリの対話型エクスペリエンス ダッシュボードの構成 | Microsoft Docs
-description: PowerApps での対話型エクスペリエンス ダッシュボードの構成に関するノウハウ
+title: Power Apps でのモデル駆動型アプリの対話型エクスペリエンス ダッシュボードの構成 | Microsoft Docs
+description: Power Apps での対話型エクスペリエンス ダッシュボードの構成に関するノウハウ
 keywords: 対話型ダッシュボード; カスタマー サービス; Microsoft Dynamics 365; 対話型サービス ハブ
 author: Mattp123
 ms.author: matp
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4e73097b6b02f98b6ac5dc83a7f1d833e07a8696
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fefeebb0106907e59ea1fd5a13d620cdeb315774
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752579"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885006"
 ---
 # <a name="configure-model-driven-app-interactive-experience-dashboards"></a>モデル駆動型アプリの対話型エクスペリエンス ダッシュボードの構成
 
@@ -149,7 +149,7 @@ ms.locfileid: "2752579"
   
 ### <a name="configure-a-multi-stream-interactive-dashboard-using-the-4-column-layout"></a>4 列レイアウトを使用するマルチストリーム対話型ダッシュボードを構成する  
  
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
   
 2.  **データ** > **エンティティ** > 必要なエンティティの順に選択します。 
 
@@ -203,7 +203,7 @@ ms.locfileid: "2752579"
   
 #### <a name="edit-or-delete-individual-streams-of-an-existing-dashboard"></a>既存のダッシュボード個々のストリームを編集または削除する  
   
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。   
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。   
   
 2. **データ** > **エンティティ** > 必要なエンティティの順に選択します。 **ダッシュボード** タブを選択します。  
   
@@ -226,7 +226,7 @@ ms.locfileid: "2752579"
 
 たとえば、エンティティを選択する代わりに、エンティティ固有のダッシュボードの一部のフィールドは、ダッシュボードを作成しているエンティティに事前設定されています。  
   
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 2.  **データ** > **エンティティ** > 必要なエンティティの順に選択します。 
 

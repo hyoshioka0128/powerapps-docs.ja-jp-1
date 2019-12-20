@@ -13,29 +13,29 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cd722c29bfc850cb1b55c296b4e377e14678b3ad
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5672922d04ae8ea4342139ef9179c7a871fd5ea6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703516"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861208"
 ---
 # <a name="restricted-entities-requiring-dynamics-365-licenses"></a>Dynamics 365 のライセンスを必要とする制限付きエンティティ
 
 > [!IMPORTANT]
-> このトピックは最新ではなく、2019 年 10 月 1 日から適用される最新のライセンス変更を反映するため、間もなく更新されます。 エンティティに対するライセンス要件の最新情報については、 [PowerApps ライセンス ガイド](https://go.microsoft.com/fwlink/?linkid=2085130) を参照してください。
+> このトピックは最新ではなく、2019 年 10 月 1 日から適用される最新のライセンス変更を反映するため、間もなく更新されます。 エンティティに対するライセンス要件の最新情報については、 [Power Apps ライセンス ガイド](https://go.microsoft.com/fwlink/?linkid=2085130) を参照してください。
 
-アプリ作成者は Common Data Service で使用可能なほとんどのエンティティを使用し、 PowerApps Plan 1 ライセンス のみを持つユーザー向けにアプリおよびフローを作成することができます。 ただし、一部のエンティティには、アプリ ユーザーが PowerApps Plan 2 または Microsoft Flow Plan 2 ライセンスを持つことを必要とする複雑なビジネス ロジックが含まれます (詳細については、 [エンティティ ライセンスの要件](data-platform-entity-licenses.md) を参照してください)。 Dynamics 365 製品に関連付けられているさらに小さいエンティティ セットについて、エンティティ内でレコードの作成、更新、または削除を行う必要がある場合、キャンバスおよびモデル駆動型アプリのユーザーは対応する Dynamics 365 製品のライセンスを持っていることが必要です。 これらを*制限付き*エンティティと呼びます。
+アプリ作成者は Common Data Service で使用可能なほとんどのエンティティを使用し、 Power Apps Plan 1 ライセンス のみを持つユーザー向けにアプリおよびフローを作成することができます。 ただし、一部のエンティティには、アプリ ユーザーが Power Apps Plan 2 または Power Automate Plan 2 ライセンスを持つことを必要とする複雑なビジネス ロジックが含まれます (詳細については、 [エンティティ ライセンスの要件](data-platform-entity-licenses.md) を参照してください)。 Dynamics 365 製品に関連付けられているさらに小さいエンティティ セットについて、エンティティ内でレコードの作成、更新、または削除を行う必要がある場合、キャンバスおよびモデル駆動型アプリのユーザーは対応する Dynamics 365 製品のライセンスを持っていることが必要です。 これらを*制限付き*エンティティと呼びます。
 
 エンティティは、以下の理由により、Dynamics 365 ライセンスに制限される場合があります。
 
 * エンティティは、通常、アプリケーション外で使用されない製品固有の構成データの保存と管理に使用されます。
 * エンティティには、Dynamics 365 製品内で使用される特定の方法のデータの作成および管理を行う高度なロジックが付いています。
 
-アプリまたはフローがエンティティから情報を読み取るだけの場合、Dynamics 365 ライセンスは必要ではなく、該当する PowerApps または Microsoft Flow ライセンスを持っていれば十分です。 
+アプリまたはフローがエンティティから情報を読み取るだけの場合、Dynamics 365 ライセンスは必要ではなく、該当する Power Apps または Power Automate ライセンスを持っていれば十分です。 
 
 ## <a name="restricted-entities-for-create-update-and-delete-operations"></a>作成、更新、および削除操作のための制限付きエンティティ
-エンティティ内に保存されているデータの作成、更新、または削除を行う PowerApps および Microsoft Flow アプリ ユーザーに対する制限付きエンティティおよび関連付けられている Dynamics 365 ライセンスの要件を次の表に示します。 
+エンティティ内に保存されているデータの作成、更新、または削除を行う Power Apps および Power Automate アプリ ユーザーに対する制限付きエンティティおよび関連付けられている Dynamics 365 ライセンスの要件を次の表に示します。 
 
 |エンティティ  |論理名  |必要なライセンス  |
 |---------|---------|---------|
@@ -82,5 +82,5 @@ SLA| sla | Dynamics 365 for Customer Service Enterprise Edition <br>**または*
 作業指示書の詳細の生成キュー (廃止)|msdyn_workorderdetailsgenerationqueue |Dynamics 365 for Field Service<br>**または** Dynamics 365 Customer Engagement 計画 <br> **または** Dynamics 365 プラン
 
 ## <a name="licensing"></a>ライセンス
-PowerApps と Dynamics 365 ライセンスの詳細については、 [ライセンスの概要](../../administrator/pricing-billing-skus.md) ページを参照してください。
+Power Apps と Dynamics 365 ライセンスの詳細については、 [ライセンスの概要](../../administrator/pricing-billing-skus.md) ページを参照してください。
 

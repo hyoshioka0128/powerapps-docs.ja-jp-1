@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a9ec701c921c9ad488d9d9b8b3a1f6615c5a9cd7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a839c261618e51bc06a426f3b1ab9dc69d0d5af3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703648"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868604"
 ---
 # <a name="design-model-driven-apps-by-using-the-app-designer"></a>アプリ デザイナーを使用してモデル駆動型アプリを設計する
 
-PowerApps では、モデル駆動型アプリは、エンティティ、ダッシュボード、フォーム、ビュー、グラフ、およびビジネスプロセスなどのコンポーネントで構成されます。  
+Power Apps では、モデル駆動型アプリは、エンティティ、ダッシュボード、フォーム、ビュー、グラフ、およびビジネスプロセスなどのコンポーネントで構成されます。  
   
  アプリ デザイナーは、すぐに、これらのコンポーネントすべてを統合するのに役立ちます。 そのタイル ベースの情報構造と簡略化したインターフェイスは、アプリを作成するプロセスをさらに簡単にし、およびコードを記述することなく、ビジネス ロールと機能の特有なアプリをすばやく作成できます。  
   

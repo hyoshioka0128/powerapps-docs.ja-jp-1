@@ -2,7 +2,7 @@
 title: Azure Data Lake Storage Gen2 をデータフロー ストレージに接続する | MicrosoftDocs
 description: Azure Data Lake Storage Gen2 をデータフロー ストレージに接続する方法
 ms.custom: ''
-ms.date: 09/05/2019
+ms.date: 12/05/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,18 +23,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d7957f048613045a64af0caf5696e540dbb8f883
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 313e33760a2bc3daf0ac645a8b99d3be22455675
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754788"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895157"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Azure Data Lake Storage Gen2 をデータフロー ストレージに接続する
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-
 データフローの構成をすることでそのデータをAzure Data Lake Storage Gen2 のアカウントに保存することが出来ます。 この記事では、そのために必要となる一般的な手順を説明し、その手順に沿ったガイダンスとベスト・プラクティスを記載しています。 
+
+> [!IMPORTANT]
+> 分析エンティティを含むデータフロー機能は、Data Lake へのエクスポートサービスを利用しています。これにより、さまざまな レベル の コンプライアンス、プライバシー、セキュリティ、データ ロケーションの合意が提供されます。 **Data Lake へのエクスポート** サービスの詳細については、こちらの [ブログ記事](https://go.microsoft.com/fwlink/?linkid=2109088) を参照してください。
 
 定義およびデータ ファイルを data lake に格納するようにデータ フローを構成すると、以下のような利点があります。
 - Azure Data Lake Storage Gen2は、きわめて拡張性の高いデータのストレージ機能を提供します。
@@ -43,7 +44,7 @@ ms.locfileid: "2754788"
 
 ## <a name="requirements"></a>要件
 データフローに Azure Data Lake Storage Gen2 を使用するには、以下が必要となります:
-- PowerApps の新しい環境 PowerApps では、 Azure Data Lake Storage Gen2 を処理の対象先として使用してデータフローを作成することができます。 この作業を行うに当たっては環境内での認証が必要になります。 
+- Power Apps の新しい環境 Power Apps では、 Azure Data Lake Storage Gen2 を処理の対象先として使用してデータフローを作成することができます。 この作業を行うにあたっては環境内での認証が必要になります。 
 - Azure のサブスクリプション ID。 Azure Data Lake Storage Gen2 を使用するには、Azure のサブスクリプションが必要となります。
 - リソース グループ。 既存のリソースグループを使用するか、新規で作成することが出来ます。
 - Azure Storage アカウント。 ストレージのアカウントは Data Lake Storage Gen2 の機能を有効にしておく必要があります。
@@ -53,8 +54,8 @@ ms.locfileid: "2754788"
 
 ## <a name="prepare-your-azure-data-lake-storage-gen2-for-power-platform-dataflows"></a>Power Platform データフロー の Azure Data Lake Storage Gen2 を準備します。
 お使いの環境を Azure Data Lake Storage Gen2 のアカウントと構成する前に、ストレージ アカウントの作成および設定が必要となります。 Power Platform のデータフロー要件は以下のとおりです。
-1.  ストレージのアカウントは、 PowerApps のテナントと同じ Azure Active Directory テナントに作成する必要があります。
-2.  ストレージアカウントは、使用する PowerApps 環境と同じ領域で作成することを推奨します。 PowerApps 環境の場所を確認するには、管理者に問い合わせてください。
+1.  ストレージのアカウントは、 Power Apps のテナントと同じ Azure Active Directory テナントに作成する必要があります。
+2.  ストレージアカウントは、使用する Power Apps 環境と同じ領域で作成することを推奨します。 Power Apps 環境の場所を確認するには、管理者に問い合わせてください。
 3.  ストレージのアカウントは 階層型名前空間の機能を有効にしておく必要があります。
 4.  ストレージのアカウントの所有者権限が付与されている必要があります。
 
@@ -66,14 +67,14 @@ ms.locfileid: "2754788"
 2.  階層型名前空間を有効にしている必要があります。 
 3.  レプリケーション設定に地理冗長ストレージへの読み取りアクセス権を指定しておくことを推奨します。
 
-## <a name="connect-your-azure-data-lake-storage-gen2-to-powerapps"></a>Azure Data Lake Storage Gen2 を PowerApps に接続する
-Azure ポータルで Azure Data Lake Storage Gen2 のアカウントを設定が完了したら、特定のデータフローまたは PowerApps 環境に接続することができます。 レイクを環境に接続することで、環境内の他の作業者や管理者がデータフローを作成することができ、レイク内のデータを保存することができます。 
+## <a name="connect-your-azure-data-lake-storage-gen2-to-power-apps"></a>Azure Data Lake Storage Gen2 を Power Apps に接続する
+Azure ポータルで Azure Data Lake Storage Gen2 のアカウントを設定が完了したら、特定のデータフローまたは Power Apps 環境に接続することができます。 レイクを環境に接続することで、環境内の他の作業者や管理者がデータフローを作成することができ、レイク内のデータを保存することができます。 
 
 Azure Data Lake Storage Gen2 のアカウントとデータフローを接続するには、以下の手順に従ってください:
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインし、どの環境に接続したのかを確認します。 環境切り替え機能はヘッダーの右側に配置されています。 
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインし、どの環境に接続したのかを確認します。 環境切り替え機能はヘッダーの右側に配置されています。 
 2. 左側のナビゲーション ウィンドウで、 **データ**の横にある矢印を選択します。
 
-   ![PowerApps  メーカー ポータルデータ タブ](media/powerapps-portal-data.png)
+   ![Power Apps  メーカー ポータルデータ タブ](media/powerapps-portal-data.png)
 
 3. 表示されたリストにて、 **データフロー** を選択し、コマンド バー上の **新規データフロー**を選択します。
 
@@ -84,7 +85,7 @@ Azure Data Lake Storage Gen2 のアカウントとデータフローを接続す
    ![分析エンティティの選択](media/select-analytical-entities.png)
 
 ## <a name="select-the-storage-account-to-use-for-dataflow-storage"></a>データフロー ストレージを使用するストレージアカウントを選択する
-ストレージアカウントが環境と関連付けられていない場合は、 **data lake に関連付ける** のダイアログ ボックスが表示されます。 サインインを行い、前述の手順で作成した data lake を確認する必要があります。 この例では、data lake は環境に関連付けらていないため、環境追加を促すメッセージが表示されます。 
+ストレージアカウントが環境と関連付けられていない場合は、 **data lake に関連付ける** のダイアログ ボックスが表示されます。 サインインを行い、前述の手順で作成した Data Lake を確認する必要があります。 この例では、data lake は環境に関連付けらていないため、環境追加を促すメッセージが表示されます。 
 
 
 1. ストレージ アカウントを選択します。
@@ -110,6 +111,11 @@ Azure Data Lake Storage Gen2 のアカウントとデータフローを接続す
 > [!IMPORTANT]
 > 組織のレイクのデータフローによって作成されたファイルを変更したり、データフローの **CDM フォルダ**にファイルを追加したりしないでください。 ファイルを変更するとデータフローに損害を与えるか動作を変更する恐れがあり、サポートされていません。 Power Platform Dataflows は、レイクで作成したファイルへの読み取りアクセスのみを許可します。 Power Platform Dataflows が使用するファイル システムに対して他のユーザーまたはサービスを承認する場合、そのファイル システム内のファイルまたはフォルダーへの読み取りアクセスのみを許可します。
 
+## <a name="privacy-notice"></a>プライバシーに関する声明
+**Data Lake へのエクスポート** サービスを介して組織内の分析エンティティ を使用して データフローの作成を可能とすることで、ストレージアカウントの名前などの Azure Data Lake Storage のアカウント詳細が Data Lake サービス へと送信され、保存されます。 このサービスは、現在 PowerApps コンプライアンス境界の外部にあるため、通常の PowerApps とは異なるプライバシーとセキュリティ対策を採用している場合があります。 この機能の使用を停止するにあたっては、いつでも Data Lake の関連付けを削除することができます。Azure Data Lake Storage アカウントの詳細は、 **Data Lake へのエクスポート** サービスから削除されます。
+Data Lake へのエクスポートに関する詳細情報は、 [この記事](https://go.microsoft.com/fwlink/?linkid=2109088) を参照してください。
+
+
 ## <a name="frequently-asked-questions"></a>よくあるご質問
 *以前に組織の Azure Data Lake Storage Gen2 でデータフローを作成していて、そのストレージの場所を変更したい場合はどうなりますか?*
 
@@ -124,7 +130,7 @@ Azure Data Lake Storage Gen2 のアカウントとデータフローを接続す
 
 データフロー、Common Data Model、Azure Data Lake Storage Gen2 に関する詳細については、次の記事を参照してください。
 - [データフローでセルフサービス データを準備する](https://go.microsoft.com/fwlink/?linkid=2099972)
-- [PowerApps でのデータフローの作成と使用](https://go.microsoft.com/fwlink/?linkid=2100076)
+- [Power Apps でのデータフローの作成と使用](https://go.microsoft.com/fwlink/?linkid=2100076)
 - [Azure Data Lake Storage Gen2 をデータフロー ストレージに接続する](https://go.microsoft.com/fwlink/?linkid=2099973)
 - [Common Data Service のエンティティにデータを追加する](https://go.microsoft.com/fwlink/?linkid=2100075)
 
@@ -136,4 +142,4 @@ Common Data Model に関する詳細については、次の記事を参照し�
 - [Common Data Mode フォルダ](https://go.microsoft.com/fwlink/?linkid=2045304)
 - [CDM モデル ファイル定義](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-[PowerApps コミュニティ](https://go.microsoft.com/fwlink/?linkid=2099971)で質問できます。
+[Power Apps コミュニティ](https://go.microsoft.com/fwlink/?linkid=2099971)で質問できます。

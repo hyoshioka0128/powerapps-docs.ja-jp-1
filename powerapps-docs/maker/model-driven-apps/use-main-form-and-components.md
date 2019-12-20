@@ -1,5 +1,5 @@
 ---
-title: PowerApps でモデル駆動型アプリのメイン フォームとそのコンポーネントを使用する | Microsoft Docs
+title: Power Apps でモデル駆動型アプリのメイン フォームとそのコンポーネントを使用する | Microsoft Docs
 description: メイン フォームおよびそのコンポーネントを統一インターフェイス ベースのアプリで使用する方法を学習します。
 keywords: メイン フォーム; Customer Service; Customer Service ハブ; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 610a4baf51a2affea142b496d016d732fa626d20
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3232099a5ad1526ad351aea37e8952afc6e474bf
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755909"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884277"
 ---
 # <a name="use-the-model-driven-app-main-form-and-its-components"></a>モデル駆動型アプリのメイン フォームとそのコンポーネントの使用
 
@@ -41,9 +41,9 @@ ms.locfileid: "2755909"
 > フォームを編集するプロセスで新しいソリューション コンポーネントを作成する場合、コンポーネントの名前は既定のソリューションのソリューション発行者のカスタマイズ接頭辞を使用し、これらのコンポーネントは既定のソリューションだけに追加されます。 新しいソリューション コンポーネントを特定のアンマネージド ソリューションに含ませる場合、そのアンマネージド ソリューションを使用して、フォーム エディターを開きます。
 
 
-### <a name="access-the-form-editor-through-app-designer-in-powerapps"></a>PowerApps でアプリ デザイナーを介してフォーム エディターにアクセスする
+### <a name="access-the-form-editor-through-app-designer-in-power-apps"></a>Power Apps でアプリ デザイナーを介してフォーム エディターにアクセスする
 
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 2.  左側のナビゲーション ウィンドウで、**アプリ** を選択して目的のアプリを選択し、ツール バーの **編集** を選択します。  
 
@@ -64,7 +64,7 @@ ms.locfileid: "2755909"
 
 ### <a name="access-the-form-editor-through-the-default-solution"></a>フォーム エディターに既定のソリューションを使ってアクセスする
 
-1.  [PowerApps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [Power Apps](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**フォーム** タブを選択します。  
 

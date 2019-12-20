@@ -17,12 +17,12 @@ search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: 4ce6e11f599eedd6b44c4fbf7271760ecb3cd9c2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: da8d3ac44d9993aee813347b327442789e7fb8a7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749177"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859924"
 ---
 # <a name="set-up-a-postman-environment"></a>Postman 環境の設定
 
@@ -32,7 +32,7 @@ Postman を使用すると、Common Data Service インスタンスに接続し�
 
 ## <a name="prerequisites"></a>前提条件
 
-* 接続できる PowerApps Common Data Service 環境が必要です。 
+* 接続できる Power Apps Common Data Service 環境が必要です。 
 * [Postman デスクトップ アプリケーション](https://www.getpostman.com/apps) をダウンロードおよびインストールします。
 
 <a name="bkmk_connectcds"></a> 

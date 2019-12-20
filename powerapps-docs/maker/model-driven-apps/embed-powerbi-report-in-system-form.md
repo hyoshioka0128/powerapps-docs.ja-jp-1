@@ -23,15 +23,15 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3d1ea2b05abb592ec6d2925e813cd213b5b7492a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5ea6ed1011ce9d21c78adf6beed9a2943c9f4cd0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706156"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860460"
 ---
 # <a name="embed-a-power-bi-report-in-a-model-driven-system-form"></a>Power BI レポートをモデル駆動型システム フォームに埋め込む
-PowerApps モデル駆動型アプリで Power BI レポートを使用して、システム フォームに豊富なレポート作成と分析を導入して、ユーザーがより多くを達成するよう強化します。 これでシステム間でデータを集約できるようになり、単一レコードのコンテキストに合わせて調整します。
+Power Apps モデル駆動型アプリで Power BI レポートを使用して、システム フォームに豊富なレポート作成と分析を導入して、ユーザーがより多くを達成するよう強化します。 これでシステム間でデータを集約できるようになり、単一レコードのコンテキストに合わせて調整します。
  
 ## <a name="prerequisites"></a>前提条件
 Power BI コンテンツの埋め込みはオプション機能で、すべての環境において既定で無効になっています。 Power BI コンテンツを埋め込む前に、それを有効にする必要があります。 詳細: [組織で Power BI ビジュアル化を有効にする](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi?#enable--visualizations-in-the-organization)。
@@ -127,14 +127,14 @@ Power BI コンテンツの埋め込みはオプション機能で、すべて�
     }
 ```
 
-前の式の対象部分はフィルタを適用するテーブルと列を識別します。 オペレーターはロジックを識別し、値は PowerApps モデル駆動型アプリから渡されたデータを識別します。 汎用な方法でパラメータ化するために、値はエイリアスによって作成されます。 前の式では、取引先企業の **名** と **姓** が渡され、どちらも Power BI レポートの **取引先企業名** 列で検索されます。 **名** と **姓** はここで渡される取引先企業エンティティの属性の一意の名前であることに注意してください。 
+前の式の対象部分はフィルタを適用するテーブルと列を識別します。 オペレーターはロジックを識別し、値は Power Apps モデル駆動型アプリから渡されたデータを識別します。 汎用な方法でパラメータ化するために、値はエイリアスによって作成されます。 前の式では、取引先企業の **名** と **姓** が渡され、どちらも Power BI レポートの **取引先企業名** 列で検索されます。 **名** と **姓** はここで渡される取引先企業エンティティの属性の一意の名前であることに注意してください。 
 
 [フィルターの作成](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#contructingfilters) の例を見て $schema と filterType に適切な値を指定することにより、もっと複雑なフィルター式を作成できます。 JSON が正しく生成されるように、フィルター部分で *\"* を使用して各リテラルを確実にエスケープしてください。
 
 ## <a name="known-issues-and-limitations"></a>既知の問題と制限
 1. この統合はサポートされている Web ブラウザおよびモバイル デバイス上の、統一インターフェイスのクライアントでのみ利用可能です。
-2.  PowerApps フォーム デザイナーでこのフォームを開いても、コントロールが意味のある方法では表示されません。 これはコントロールがフォーム デザイナーの外部でカスタマイズされているためです。
-3. ユーザーは PowerApps のユーザー名とパスワードで自動的に Power BI に認証されます。 資格情報が一致する Power BI アカウントが存在しない場合は、ここに示すようなサインイン プロンプトが表示されます。 
+2.  Power Apps フォーム デザイナーでこのフォームを開いても、コントロールが意味のある方法では表示されません。 これはコントロールがフォーム デザイナーの外部でカスタマイズされているためです。
+3. ユーザーは Power Apps のユーザー名とパスワードで自動的に Power BI に認証されます。 資格情報が一致する Power BI アカウントが存在しない場合は、ここに示すようなサインイン プロンプトが表示されます。 
 
    > [!div class="mx-imgBorder"] 
    > ![](media/embed-powerbi/embed-powerbi-report-in-system-form-auth-1.png "Embed-powerbi-report-in-system-form-auth-1")
@@ -147,13 +147,13 @@ Power BI コンテンツの埋め込みはオプション機能で、すべて�
    > [!div class="mx-imgBorder"] 
    > ![](media/embed-powerbi/embed-powerbi-report-in-system-form-auth-3.png "Embed-powerbi-report-in-system-form-auth-3")
 
-5. PowerApps 内部で示されるレポート データのビューは Power BI のものと同じであり、PowerAppsのセキュリティ ロールと権限は表示されるデータに影響しません。 したがって、データは Power BI データセットの作成者が見るものと基本的に同じです。 PowerApps のセキュリティ ロールとチームと同様のデータ アクセス制限を適用するには、[Power BI を使った行レベルセキュリティ (RLS)](https://docs.microsoft.com/power-bi/service-admin-rls) を使用します。
+5. Power Apps 内部で示されるレポート データのビューは Power BI のものと同じであり、Power Appsのセキュリティ ロールと権限は表示されるデータに影響しません。 したがって、データは Power BI データセットの作成者が見るものと基本的に同じです。 Power Apps のセキュリティ ロールとチームと同様のデータ アクセス制限を適用するには、[Power BI を使った行レベルセキュリティ (RLS)](https://docs.microsoft.com/power-bi/service-admin-rls) を使用します。
 6. ソリューションをインポートしてカスタマイズを公開した後でフォームに Power BI レポートが表示されない場合、モデル駆動型フォーム エディターで開いて保存するとフォーム JSON が再生成されます。
 
 
 ### <a name="see-also"></a>関連項目
 
-[PowerApps モデル駆動型個人用ダッシュボードに Power BI ダッシュボードを埋め込む](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
+[Power Apps モデル駆動型個人用ダッシュボードに Power BI ダッシュボードを埋め込む](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)
 
 [Dynamics 365 アプリで Power BI を使用する](https://docs.microsoft.com/dynamics365/customer-engagement/admin/use-power-bi)
 

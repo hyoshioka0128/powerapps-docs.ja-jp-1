@@ -1,6 +1,6 @@
 ---
-title: PowerApps における、エンティティ マッピングと属性マッピングのカスタマイズ (Common Data Service) | Microsoft Docs
-description: PowerApps にエンティティの関連付けを持つエンティティ間の属性のマッピングについて学習します。 これにより、他のレコードのコンテキストで作成したレコードの既定値を設定できます。
+title: Power Apps における、エンティティ マッピングと属性マッピングのカスタマイズ (Common Data Service) | Microsoft Docs
+description: Power Apps にエンティティの関連付けを持つエンティティ間の属性のマッピングについて学習します。 これにより、他のレコードのコンテキストで作成したレコードの既定値を設定できます。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 78a1eb011591afc09ded37be89031947d0f2b9ea
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 123cc7c11659c04d805a5d34abd49b2aa60aca6e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749140"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861792"
 ---
 # <a name="customize-entity-and-attribute-mappings"></a>エンティティ マッピングおよび属性マッピングのカスタマイズ
 

@@ -1,5 +1,5 @@
 ---
-title: PowerApps のモデル駆動型アプリのフォーム用タブ プロパティ | MicrosoftDocs
+title: Power Apps のモデル駆動型アプリのフォーム用タブ プロパティ | MicrosoftDocs
 description: メイン フォームのタブ プロパティについて
 Keywords: タブのプロパティ; Dynamics 365; メイン フォーム
 author: matp
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bd97c61829aaba7279f56019f0eec7fa9829a6ea
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d0653ad2089be03ff06bfd5495c8995d92ec704e
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756261"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874611"
 ---
 # <a name="tab-properties-for-model-driven-app-forms-overview"></a>モデル駆動型アプリのフォーム用タブのプロパティの概要
 
@@ -31,8 +31,8 @@ ms.locfileid: "2756261"
   
  タブには 3 個まで列を含めることができ、各列の幅は全体の幅の割合で設定できます。 新しいタブを作成すると、各列はセクションで事前入力されています。  
 
-PowerApps サイトから **タブ プロパティ** にアクセスできます。 
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
+Power Apps サイトから **タブ プロパティ** にアクセスできます。 
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
 
      ![モデル駆動型の設計モード](media/model-driven-switch.png)
 

@@ -1,5 +1,5 @@
 ---
-title: PowerApps でモデル駆動型アプリのフォーム エディターを開く | MicrosoftDocs
+title: Power Apps でモデル駆動型アプリのフォーム エディターを開く | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -21,21 +21,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f922908611d56afc99c5ebc844ff75c94d48657c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5824f2acfdcf1a6dc6e3491abfdd8896528597a1
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759517"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872698"
 ---
 # <a name="open-the-model-driven-app-form-editor"></a>モデル駆動型アプリのフォーム エディターを開く 
 フォーム エディターでは、フォーム エディターのキャンバスにセクション、タブ、フィールド、コントロールなどのコンポーネントをドロップすることでフォームを設計します。 このトピックでは、フォーム エディターにアクセスする複数の方法を紹介します。
  
 フォーム (たとえば、Web リソース) を編集するプロセスで新しいソリューション コンポーネントを作成する場合、コンポーネントの名前は既定のソリューションのソリューション発行者のカスタマイズ接頭辞を使用し、これらのコンポーネントは既定のソリューションだけに追加されます。 新しいソリューション コンポーネントを特定のアンマネージド ソリューションに含ませる場合、そのアンマネージド ソリューションを使用して、フォーム エディターを開く必要があります。  
 
-## <a name="access-the-form-editor-from-the-powerapps-site"></a>PowerApps サイトからフォーム エディターにアクセスする
+## <a name="access-the-form-editor-from-the-power-apps-site"></a>Power Apps サイトからフォーム エディターにアクセスする
 
-1. [PowerApps](https://make.powerapps.com/) にサインインします。 
+1. [Power Apps](https://make.powerapps.com/) にサインインします。 
 
 2. **データ** > **エンティティ** > を選択し、取引先企業エンティティなど、目的のエンティティを選択します。 
 

@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ba8fe12a9ecffa0ffb1116546d2bfe9ab2c62ac8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c13092daaa86abbcba5ef65dc809f29d9a6a6f12
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758065"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883709"
 ---
 # <a name="create-and-edit-entities-in-common-data-service"></a>Common Data Serviceでエンティティを作成、編集する
 
@@ -36,7 +36,7 @@ ms.locfileid: "2758065"
 
 |デザイナー| 説明|
 |--|--|
-|[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細: <br />[チュートリアル: PowerApps でのコンポーネントがあるユーザー定義エンティティの作成](/powerapps/maker/common-data-service/create-custom-entity)<br />[PowerApps ポータルを使用してエンティティを作成、編集する](create-edit-entities-portal.md)|
+|[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細: <br />[チュートリアル: Power Apps でのコンポーネントがあるユーザー定義エンティティの作成](/powerapps/maker/common-data-service/create-custom-entity)<br />[Power Apps ポータルを使用してエンティティを作成、編集する](create-edit-entities-portal.md)|
 |ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。 <br />詳細 [ソリューション エクスプローラーを使用してエンティティを作成および編集する](create-edit-entities-solution-explorer.md)|
 
 > [!NOTE]
@@ -46,9 +46,9 @@ ms.locfileid: "2758065"
 > - 開発者は[メタデータ サービス](/powerapps/developer/common-data-service/use-web-services#metadata-services)を使用してプログラムを作成できます。
 
 
-## <a name="entity-options-not-available-in-the-powerapps-portal"></a>PowerApps ポータルで使用できないエンティティ オプション
+## <a name="entity-options-not-available-in-the-power-apps-portal"></a>Power Apps ポータルで使用できないエンティティ オプション
 
-このトピックの情報は、使用できるデザイナーの選択に役立ちます。 次のいずれかの要件に対処する必要がない限り、  PowerApps ポータルを使用してエンティティを作成することができます。
+このトピックの情報は、使用できるデザイナーの選択に役立ちます。 次のいずれかの要件に対処する必要がない限り、  Power Apps ポータルを使用してエンティティを作成することができます。
 
 - カスタマイズの接頭辞を制御する
 
@@ -56,7 +56,7 @@ ms.locfileid: "2758065"
 
 - 組織所有エンティティを作成する
 
-  既定では、 PowerApps ポータルは、 **ユーザーまたはチーム** が所有するエンティティを作成します。 **組織**の所有権を設定するには、ソリューション エクスプローラーを使用します。 詳細情報: [エンティティの所有権](types-of-entities.md#entity-ownership)
+  既定では、 Power Apps ポータルは、 **ユーザーまたはチーム** が所有するエンティティを作成します。 **組織**の所有権を設定するには、ソリューション エクスプローラーを使用します。 詳細情報: [エンティティの所有権](types-of-entities.md#entity-ownership)
 
 - アクティビティ エンティティの作成
 
@@ -85,7 +85,7 @@ ms.locfileid: "2758065"
   |**モバイルの有効化**|このエンティティを、Dynamics 365 for phones と Dynamics 365 for tablets のアプリで使用できるようにします。 また、このエンティティを**モバイルでは読み取り専用**にすることも選択できます。<br /><br /> エンティティのフォームで、Dynamics 365 for phones と Dynamics 365 for tablets のアプリでサポートされていない拡張機能が必要な場合は、この設定を使用して、これらのエンティティのデータをモバイル アプリ ユーザーが編集できないようにします。|
   |**Phone Express の有効化**|このエンティティを、Dynamics 365 for phones アプリで使用できるようにします。|
   |**差し込み印刷**|差し込み印刷でこのエンティティを使用できます。|
-  |**Dynamics 365 for Outlookのオフライン機能**|Dynamics 365 for Outlook アプリケーションがネットワークに接続されていないときに、このエンティティー内のデータ使用の可否。|
+  |**Dynamics 365 for Outlook のオフライン機能**|Dynamics 365 for Outlook アプリケーションがネットワークに接続されていないときに、このエンティティー内のデータ使用の可否。|
   |**Dynamics 365 for Outlookの閲覧ウィンドウ**|Dynamics 365 for Outlook アプリケーションの閲覧ウィンドウにおけるエンティティの表示の有無。|
   |**カスタム ヘルプを使用する**|有効にした場合、ヘルプ URL を設定して、ユーザーがアプリケーションのヘルプ ボタンをクリックしたときに表示されるページをコントロールします。 これを使用して、エンティティの企業プロセスに特有のガイダンスを提供します。|
 
@@ -93,6 +93,6 @@ ms.locfileid: "2758065"
 ### <a name="see-also"></a>関連項目
 
 [ソリューション エクスプローラーを使用してエンティティを作成および編集する](create-edit-entities-solution-explorer.md)<br />
-[チュートリアル: PowerApps でのコンポーネントがあるユーザー定義エンティティの作成](/powerapps/maker/common-data-service/create-custom-entity)<br />
+[チュートリアル: Power Apps でのコンポーネントがあるユーザー定義エンティティの作成](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [エンティティの編集](edit-entities.md)<br />
 [開発者ドキュメント: ユーザー定義エンティティを作成する](/dynamics365/customer-engagement/developer/org-service/create-custom-entity)

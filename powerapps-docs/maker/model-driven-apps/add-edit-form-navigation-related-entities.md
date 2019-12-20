@@ -1,5 +1,5 @@
 ---
-title: PowerApps で関連エンティティのモデル駆動型アプリ フォーム ナビゲーションの追加 | MicrosoftDocs
+title: Power Apps で関連エンティティのモデル駆動型アプリ フォーム ナビゲーションの追加 | MicrosoftDocs
 description: 関連エンティティにフォーム ナビゲーションを追加する方法を説明します
 ms.custom: ''
 ms.date: 06/18/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 34b1680d7596719cd050c71af8cc6c355f6353e3
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9751a917dc553355c89aa2a42865ad69bfee5c10
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2751914"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874916"
 ---
 # <a name="add-model-driven-app-form-navigation-for-related-entities"></a>関連エンティティのモデル駆動型アプリ フォーム ナビゲーションの追加
 
 このトピックでは、フォーム ナビゲーション ウィンドウを使用して、関連エンティティにリンクを追加します。 アプリ ユーザーがレコード内のこのようなリンクの 1 つをクリックすると、エンティティの関連ビューが表示されます。   
   
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
   
     > [!IMPORTANT]

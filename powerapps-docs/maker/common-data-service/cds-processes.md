@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24e1ed3f2c2836bef1d861a2ef6b4b1f61dc09b9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9ee7770528f104d383bbf2f1b6c810d261334800
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702636"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "2780307"
 ---
 # <a name="apply-business-logic-in-common-data-service"></a>Common Data Service でビジネス ロジックを適用する
 
@@ -36,7 +36,7 @@ ms.locfileid: "2702636"
 > [!NOTE]
 > モデル駆動型アプリのフォームに適用される業務ルールを定義するには、[モデル駆動型アプリ フォームに対する業務ルールを作成する](../model-driven-apps/create-business-rules-recommendations-apply-logic-form.md) を参照してください。
 
-ワークフローと操作である従来の Common Data Service プロセスも使用できます。 詳細: [Microsoft Flow: ワークフロー プロセスの使用](/flow/workflow-processes) と [Microsoft Flow: 操作の概要](/flow/actions)。
+ワークフローと操作である従来の Common Data Service プロセスも使用できます。 詳細: [Power Automate: ワークフロー プロセスの使用](/flow/workflow-processes) と [Power Automate: 操作の概要](/flow/actions)。
 
 ## <a name="see-also"></a>関連項目
 

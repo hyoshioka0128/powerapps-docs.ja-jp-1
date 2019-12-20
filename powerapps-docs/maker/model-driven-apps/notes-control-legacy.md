@@ -1,5 +1,5 @@
 ---
-title: PowerApps で投稿に関する情報にアクセスするためにモデル駆動型アプリのメモ コントロールを設定する | MicrosoftDocs
+title: Power Apps で投稿に関する情報にアクセスするためにモデル駆動型アプリのメモ コントロールを設定する | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/06/2018
 ms.reviewer: ''
@@ -21,16 +21,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bb60588e34e66fc1a0222d18e90d50af672bcc69
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 52edc0881484d092332cc2ab5a3892d0f7983e30
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711700"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862977"
 ---
 # <a name="set-up-the-model-driven-app-notes-control-to-access-information-about-posts"></a>投稿に関する情報にアクセスするためにモデル駆動型アプリのメモ コントロールを設定する
 
- [更新されたフォーム](main-form-presentations.md#updated-forms) を使用する特定のシステム エンティティの PowerApps フォームでは、メモ コントロールによって、**投稿**、**アクティビティ**、および**メモ**に関する情報にアクセスする機能が提供されます。 メモと活動を有効にするユーザー定義エンティティでは、**メモ**と**活動**のみが表示されます。 **投稿**を含めるには、ユーザー定義エンティティに対して有効にする必要があります。  
+ [更新されたフォーム](main-form-presentations.md#updated-forms) を使用する特定のシステム エンティティの Power Apps フォームでは、メモ コントロールによって、**投稿**、**アクティビティ**、および**メモ**に関する情報にアクセスする機能が提供されます。 メモと活動を有効にするユーザー定義エンティティでは、**メモ**と**活動**のみが表示されます。 **投稿**を含めるには、ユーザー定義エンティティに対して有効にする必要があります。  
   
 ## <a name="enable-posts-for-a-custom-entity"></a>ユーザー定義エンティティに対して投稿を有効にする  
   

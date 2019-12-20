@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: f94dee983d5d2d9cedf417f2843a2c10c46b82c1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a4ba89a1497a6ed81d2e71f7d7a43813d47b6583
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757004"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873314"
 ---
 # <a name="manage-sharepoint-documents"></a>SharePoint ドキュメントの管理
 
-Common Data Service は、[!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] との統合をサポートしています。これによりユーザーは Common Data Service 内の [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] のドキュメント管理機能を使用できます。 PowerApps ポータルでは、ポータルのエンティティ フォームまたは Web フォームに [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] からのドキュメントを直接アップロードおよび表示することができるようになりました。 これにより、ユーザーは、ポータルからのドキュメントを表示、ダウンロード、追加、削除することができます。 ポータル ユーザーは各自のドキュメントの編成にサブフォルダーを作成することもできます。
+Common Data Service は、[!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] との統合をサポートしています。これによりユーザーは Common Data Service 内の [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] のドキュメント管理機能を使用できます。 Power Apps ポータルでは、ポータルのエンティティ フォームまたは Web フォームに [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] からのドキュメントを直接アップロードおよび表示することができるようになりました。 これにより、ユーザーは、ポータルからのドキュメントを表示、ダウンロード、追加、削除することができます。 ポータル ユーザーは各自のドキュメントの編成にサブフォルダーを作成することもできます。
 
 > [!NOTE]
 > - ドキュメント管理は、[!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] に対してのみ動作します。
@@ -28,11 +28,11 @@ Common Data Service は、[!INCLUDE[pn-microsoft-sharepoint-online](../../includ
 
 1.  [Dynamics 365 でドキュメント管理機能を有効にする](#step-1-enable-document-management-functionality-in-model-driven-apps-in-dynamics-365)
 
-2.  [SharePoint 統合を PowerApps ポータル管理センターから設定する](#step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center)
+2.  [SharePoint 統合を Power Apps ポータル管理センターから設定する](#step-2-set-up-sharepoint-integration-from-power-apps-portals-admin-center)
 
 3.  [エンティティのドキュメント管理を有効にする](#step-3-enable-document-management-for-entities)
 
-4.  [PowerApps ドキュメントから適切な形式を設定する](#step-4-configure-the-appropriate-form-to-display-documents)
+4.  [Power Apps ドキュメントから適切な形式を設定する](#step-4-configure-the-appropriate-form-to-display-documents)
 
 5.  [適切なエンティティのアクセス許可を作成し、必要な Web ロールに割り当てる](#step-5-create-appropriate-entity-permission-and-assign-it-to-the-appropriate-web-role)
 
@@ -40,14 +40,14 @@ Common Data Service は、[!INCLUDE[pn-microsoft-sharepoint-online](../../includ
 
 サーバーベースの [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 統合を使用することで、Dynamics 365 のモデル駆動型アプリのドキュメント管理機能を有効にする必要があります。 サーバーベースの [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 統合により、Dynamics 365 のモデル駆動型アプリと [!INCLUDE[pn-microsoft-sharepoint-online](../../includes/pn-microsoft-sharepoint-online.md)] をサーバー間接続をおこなうようにすることができます。 既定の [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] サイト レコードは、ポータルによって使用されます。 Dynamics 365 のモデル駆動型アプリのドキュメント管理機能を有効にする方法については、[SharePoint オンラインを使用して Dynamics 365 のモデル駆動型アプリを設定する](https://docs.microsoft.com/power-platform/admin/set-up-dynamics-365-online-to-use-sharepoint-online) をご覧ください。
 
-## <a name="step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center"></a>ステップ 2: PowerApps ポータル管理センターから SharePoint  統合を設定する
+## <a name="step-2-set-up-sharepoint-integration-from-power-apps-portals-admin-center"></a>ステップ 2: Power Apps ポータル管理センターから SharePoint  統合を設定する
 
-[!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] のドキュメント管理機能を使用するには、[!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 統合を PowerApps ポータル管理センターから有効にする必要があります。
+[!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] のドキュメント管理機能を使用するには、[!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 統合を Power Apps ポータル管理センターから有効にする必要があります。
 
 > [!NOTE]
 > このアクションを実行するには、グロバール管理者である必要があります。
 
-1. [PowerApps ポータル管理センター](admin/admin-overview.md) を開きます。
+1. [Power Apps ポータル管理センター](admin/admin-overview.md) を開きます。
 
 2.  **[!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 統合の設定** > **[!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 統合を有効にする**の順に移動します。
 
@@ -80,7 +80,7 @@ Common Data Service は、[!INCLUDE[pn-microsoft-sharepoint-online](../../includ
 
 ## <a name="step-4-configure-the-appropriate-form-to-display-documents"></a>ステップ 4: 適切なフォームを設定し、ドキュメントを表示する
 
-### <a name="powerapps-customization"></a>PowerApps カスタマイズ
+### <a name="power-apps-customization"></a>Power Apps カスタマイズ
 
 ドキュメント管理機能を使用するフォームを特定します。  フォーム エディターからモデル駆動型アプリを使用してフォームを編集するか、サブグリッドを追加する必要があります。 サブグリッドは、ポータルのドキュメントをに使用するフォームにセクションを追加します。 この機能を起動するには、サブグリッドにある次のプロパティを設定する必要があります:
 
@@ -93,7 +93,7 @@ Common Data Service は、[!INCLUDE[pn-microsoft-sharepoint-online](../../includ
 > [!NOTE]
 > フォームを編集するエンティティに対して、ドキュメント管理を有効にする必要があります。 詳細: [エンティティのドキュメント管理を有効にする](#step-3-enable-document-management-for-entities)
 
-### <a name="powerapps-portals-configuration"></a>PowerApps ポータル構成
+### <a name="power-apps-portals-configuration"></a>Power Apps ポータル構成
 
 エンティティ フォームまたは Web フォームに必要な標準構成とは別に、ドキュメント管理を有効にするには、次のプロパティを設定する必要があります:
 
@@ -135,7 +135,7 @@ Common Data Service は、[!INCLUDE[pn-microsoft-sharepoint-online](../../includ
 
 1.  [ステッププ 1](#step-1-enable-document-management-functionality-in-model-driven-apps-in-dynamics-365) の指示に従い、サーバーベースの構成が Dynamics 365 のモデル駆動型アプリと [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] 統合に対して完了していることを確認します。
 
-2.  [ステップ 2](#step-2-set-up-sharepoint-integration-from-powerapps-portals-admin-center) の指示書に従い、ポータルに [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] を統合するアクセス許可があるかを確認します。 
+2.  [ステップ 2](#step-2-set-up-sharepoint-integration-from-power-apps-portals-admin-center) の指示書に従い、ポータルに [!INCLUDE[pn-sharepoint-short](../../includes/pn-sharepoint-short.md)] を統合するアクセス許可があるかを確認します。 
 
 3.  [ステップ 3](#step-3-enable-document-management-for-entities) の指示に従い、サポート案件エンティティに対してドキュメント管理が有効になっていることを確認します。
 
@@ -172,7 +172,7 @@ Common Data Service は、[!INCLUDE[pn-microsoft-sharepoint-online](../../includ
 
         f. フォーム エディターで**保存**を選択し、**公開**を選択します。
 
-    - PowerApps ポータル構成
+    - Power Apps ポータル構成
 
         a. **ポータル** > **エンティティ フォーム**の順に移動します。
     

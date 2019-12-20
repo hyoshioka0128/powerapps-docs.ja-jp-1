@@ -1,5 +1,5 @@
 ---
-title: PowerApps のモデル駆動型アプリ ビューでレコードを並び替える | MicrosoftDocs
+title: Power Apps のモデル駆動型アプリ ビューでレコードを並び替える | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -21,18 +21,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7cd1e7b160550b877dd0ddd7a79b6babfbf56669
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5a80764f3f00df60b54c4c7c23d2e167de2e006b
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752528"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874787"
 ---
 # <a name="sort-records-in-a-model-driven-app-view"></a>モデル駆動型アプリ ビューでレコードを並び替える
 
  ビューを作成または編集するとき、昇順または降順の並べ替え順を構成できます。   
   
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 
 2.  **データ**を展開して**エンティティ**を選択し、**取引先企業**などの目的のエンティティを選択します。   

@@ -1,6 +1,6 @@
 ---
 title: '開発者向け: Common Data Service を使う | Microsoft Docs'
-description: PowerApps で Common Data Service を使って開発者が値を追加する方法を説明します。
+description: Power Apps で Common Data Service を使って開発者が値を追加する方法を説明します。
 suite: powerapps
 author: JimDaly
 manager: ryjones
@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cfb5472981aab82f9f4909d71b45135e02ca9c33
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d896f91cc08e5a025fdbb87366543768508a6fb4
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748861"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883521"
 ---
 # <a name="developers-get-started-with-common-data-service"></a>開発者向け: Common Data Service を使う
 

@@ -1,6 +1,6 @@
 ---
-title: PowerApps および Common Data Service の開発者リソースの表示またはダウンロード | MicrosoftDocs
-description: PowerApps および Common Data Service の開発者リソースおよびサービス エンドポイント URL を検索する
+title: Power Apps および Common Data Service の開発者リソースの表示またはダウンロード | MicrosoftDocs
+description: Power Apps および Common Data Service の開発者リソースおよびサービス エンドポイント URL を検索する
 keywords: ''
 ms.date: 09/25/2019
 ms.service: powerapps
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ae293843c38e7077580effd1c7670762cec91e1e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4cb1670334f676af1a6ddcb1e90ba47240ed46a4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700436"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869572"
 ---
 # <a name="view-or-download-developer-resources"></a>開発者リソースの表示またはダウンロード
 
@@ -31,7 +31,7 @@ ms.locfileid: "2700436"
 
 ## <a name="view-the-developer-resources-page-for-your-environment"></a>環境の開発者リソース ページを表示する
 
-1. PowerApps ポータルで、![設定ボタン](../../administrator/media/settings-button-nav-bar.png) [設定] ボタンを選択し、**高度なカスタマイズ** を選択します。
+1. Power Apps ポータルで、![設定ボタン](../../administrator/media/settings-button-nav-bar.png) [設定] ボタンを選択し、**高度なカスタマイズ** を選択します。
 
     ![高度なカスタマイズ](media/advanced-customizations-menu.png)
 
@@ -44,11 +44,11 @@ ms.locfileid: "2700436"
 
 |リンク |説明|
 |---------|---------|
-|[デベロッパー センター](https://go.microsoft.com/fwlink/?LinkId=551006)|PowerApps と Common Data Service の開発者ドキュメントはここから参照できます。|
-|[PowerApps コミュニティ/フォーラム](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)|PowerApps コミュニティで質問して回答します。|
+|[デベロッパー センター](https://go.microsoft.com/fwlink/?LinkId=551006)|Power Apps と Common Data Service の開発者ドキュメントはここから参照できます。|
+|[Power Apps コミュニティ/フォーラム](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)|Power Apps コミュニティで質問して回答します。|
 |[NuGetパッケージ](https://www.nuget.org/profiles/crmsdk)|SDK アセンブリをプロジェクトに追加するには NuGet パッケージを検出します。|
 |[ツールのダウンロード](/powerapps/developer/common-data-service/download-tools-nuget)|必要なツールは NuGet からダウンロードできます。 最新バージョンを取得する際にこのページの PowerShell スクリプトを使用します。|
-|[サンプル コード](https://go.microsoft.com/fwlink/?LinkId=553007)|PowerApps サンプルの GitHub リポジトリ。|
+|[サンプル コード](https://go.microsoft.com/fwlink/?LinkId=553007)|Power Apps サンプルの GitHub リポジトリ。|
 |[開発者向けの概要](https://go.microsoft.com/fwlink/?LinkId=550995)|開発者の概要について説明するトピックにリンクします。|
 
 ## <a name="connect-your-apps-to-this-instance-of-common-data-service"></a>Common Data Service のこのインスタンスにアプリを接続する

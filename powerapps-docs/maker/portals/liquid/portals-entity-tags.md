@@ -1,28 +1,28 @@
 ---
-title: ポータルの PowerApps Common Data Service エンティティ タグを使用する | MicrosoftDocs
-description: ポータルで使用可能な PowerApps Common Data Service エンティティ タグについて説明します。
+title: ポータルの Power Apps Common Data Service エンティティ タグを使用する | MicrosoftDocs
+description: ポータルで使用可能な Power Apps Common Data Service エンティティ タグについて説明します。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/28/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: b6efc3e176602d366315b9b54b66593005051e55
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f252b0c9ef0ea90f6206863fe45a36702e4ce481
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757141"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884654"
 ---
-# <a name="powerapps-common-data-service-entity-tags"></a>PowerApps Common Data Service エンティティ タグ
+# <a name="power-apps-common-data-service-entity-tags"></a>Power Apps Common Data Service エンティティ タグ
 
-PowerApps エンティティ タグを PowerApps データの読み込みおよび表示に使用するか、または他の PowerApps ポータル フレームワーク サービスを使用します。 これらのタグは、流動言語に対する PowerApps 固有の拡張機能です。
+Power Apps エンティティ タグを Power Apps データの読み込みおよび表示に使用するか、または他の Power Apps ポータル フレームワーク サービスを使用します。 これらのタグは、流動言語に対する Power Apps 固有の拡張機能です。
 
 ## <a name="chart"></a>グラフ
 
-Web ページに PowerApps グラフを追加します。 グラフ タグは、Web ページの [コピー] フィールドまたは Web テンプレートの [ソース] フィールドに追加できます。 PowerApps グラフを Web ページに追加する手順については、[ポータルでグラフを Web ページに追加する](../configure/add-chart.md) を参照してください。
+Web ページに Power Apps グラフを追加します。 グラフ タグは、Web ページの [コピー] フィールドまたは Web テンプレートの [ソース] フィールドに追加できます。 Power Apps グラフを Web ページに追加する手順については、[ポータルでグラフを Web ページに追加する](../configure/add-chart.md) を参照してください。
 
 ```
 {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001006" %}
@@ -45,7 +45,7 @@ Web ページに PowerApps グラフを追加します。 グラフ タグは、
 Power BI ダッシュボードおよびページ内レポートを追加する タグは、Web ページの**コピー**フィールドまたは Web テンプレートの**ソース**フィールドに追加できます。 ポータル内のwebページに Power BI レポートまたはダッシュボードを追加する手順については、 [ポータル内のwebページに Power BI レポートまたはダッシュボードを追加](../admin/add-powerbi-report.md)を参照してください。
 
 > [!NOTE]
-> タグを機能させるには、PowerApps ポータルの管理センターから [Power BI 統合を有効にする](../admin/set-up-power-bi-integration.md) 必要があります。 Power BI の統合が有効化されていない場合は、ダッシュボードまたはレポートは表示されません。
+> タグを機能させるには、Power Apps ポータルの管理センターから [Power BI 統合を有効にする](../admin/set-up-power-bi-integration.md) 必要があります。 Power BI の統合が有効化されていない場合は、ダッシュボードまたはレポートは表示されません。
 
 ### <a name="parameters"></a>パラメーター
 
@@ -56,14 +56,14 @@ PowerBI タグは、次のパラメーターを受け取ります:
 Power BI レポートまたはダッシュボードのパス。 Power BI レポートまたは、ダッシュボードが安全な場合、認証タイプを指定する必要があります。
 
 ```
-{% powerbi path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
+{% powerbi authentication_type:"powerbiembedded" path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
 ```
 
 **認証の種類**
 
 Power BI レポートまたはダッシュボードに必要な認証のタイプ。 このパラメーターで有効な値は下記です:
 
-- **アノニマス**: Web Power BI レポートに公開処理を埋め込むことができます。 既定の認証の種類は匿名です。
+- **アノニマス**: Web Power BI レポートに公開処理を埋め込むことができます。 既定の認証の種類は匿名です。 認証の種類を匿名として使用する場合、以下で説明されている Power BI レポートの URL を取得する必要があります : [Publish to web from Power BI から Web に公開する](https://docs.microsoft.com/power-bi/service-publish-to-web)
 
 - **AAD**: 安全な Power BI レポートまたはダッシュボードを Power BI Azure Active Directory  認証済みユーザーと共有することができます。
 
@@ -139,7 +139,7 @@ Power BI レポートに役割を割り当てていても、Liquidタグで  **r
 
 ## <a name="editable"></a>編集可能
 
-特定の PowerApps ポータル CMS オブジェクトを編集可能なポータルとして、そのオブジェクトに対して編集権限を持つユーザーに対して表示します。 編集可能なオブジェクトとして [ページ](liquid-objects.md#page)、[スニペット](liquid-objects.md#snippets)、および [Web リンク](liquid-objects.md#weblinks) があります。  
+特定の Power Apps ポータル CMS オブジェクトを編集可能なポータルとして、そのオブジェクトに対して編集権限を持つユーザーに対して表示します。 編集可能なオブジェクトとして [ページ](liquid-objects.md#page)、[スニペット](liquid-objects.md#snippets)、および [Web リンク](liquid-objects.md#weblinks) があります。  
 
 ```
 {% editable page 'adx_copy' type: 'html', title: 'Page Copy', escape: false, liquid: true %}
@@ -284,7 +284,7 @@ Loaded entity list {{ entitylist.adx_name }}.
 
 **language\_code**
 
-読み込まれるためにラベルがローカライズされたエンティティ リストを選択するための PowerApps 整数言語コード。 language\_code が指定されていない場合は、ポータル アプリケーション PowerApps 接続の既定の言語が使用されます。
+読み込まれるためにラベルがローカライズされたエンティティ リストを選択するための Power Apps 整数言語コード。 language\_code が指定されていない場合は、ポータル アプリケーション Power Apps 接続の既定の言語が使用されます。
 
 ```
 {% entitylist name:"My Entity List", language_code:1033 %}
@@ -296,7 +296,7 @@ Loaded entity list {{ entitylist.adx_name }}.
 
 ## <a name="entityview"></a>エンティティビュー
 
-特定の PowerApps ビューを名前または ID により読み込みます。 ビュー列メタデータのプロパティ、ページ付けされた結果レコードなどは、タグ ブロック内で使用可能な [entityview オブジェクト](liquid-objects.md#entityview)を使用してアクセスすることができます。  
+特定の Power Apps ビューを名前または ID により読み込みます。 ビュー列メタデータのプロパティ、ページ付けされた結果レコードなどは、タグ ブロック内で使用可能な [entityview オブジェクト](liquid-objects.md#entityview)を使用してアクセスすることができます。  
 
 ビューが正常に読み込まれると、ブロック内のコンテンツが表示されます。 ビューが見つからないと、ブロック コンテンツは表示されません。
 
@@ -334,7 +334,7 @@ Loaded default view of the entity list associated with the current page, with {{
 
 ### <a name="parameters"></a>パラメーター
 
-ID **または** logical\_name の**いずれか**に名前を提供し、読み込む PowerApps ビューを選択します。 いずれも入力しない場合、または entityview タグが entitylist タグ内でネストされている場合は、囲まれた entitylist の既定のビューが読み込まれます。
+ID **または** logical\_name の**いずれか**に名前を提供し、読み込む Power Apps ビューを選択します。 いずれも入力しない場合、または entityview タグが entitylist タグ内でネストされている場合は、囲まれた entitylist の既定のビューが読み込まれます。
 
 **ID**
 
@@ -360,7 +360,7 @@ Loaded entity view {{ entityview.name }} using view query string request paramet
 
 **logical\_name**
 
-読み込むためのビューの PowerApps エンティティの論理名。 名前と連携して使用する必要があります。
+読み込むためのビューの Power Apps エンティティの論理名。 名前と連携して使用する必要があります。
 
 ```
 {% entityview logical_name:'contact', name:"Active Contacts" %}
@@ -372,7 +372,7 @@ Loaded entity view with {{ entityview.total_records }} total records.
 
 **名前**
 
-読み込むためのビューの PowerApps 名。 logical\_name と連携して使用する必要があります。
+読み込むためのビューの Power Apps 名。 logical\_name と連携して使用する必要があります。
 
 ```
 {% entityview logical_name:'contact', name:"Active Contacts" %}
@@ -527,7 +527,7 @@ Loaded entity view with {{ entityview.total_records }} total records to which th
 
 **language\_code**
 
-読み込むためのエンティティ ビューのローカライズされたラベル (列見出しラベルなど) を選択するための PowerApps 整数言語コード。 language\_code が指定されていない場合は、ポータル アプリケーション PowerApps 接続の既定の言語が使用されます。
+読み込むためのエンティティ ビューのローカライズされたラベル (列見出しラベルなど) を選択するための Power Apps 整数言語コード。 language\_code が指定されていない場合は、ポータル アプリケーション Power Apps 接続の既定の言語が使用されます。
 
 エンティティビューがエンティティリスト ブロック内で使用されている場合、このパラメーターの値は、エンティティリストの構成から継承されます。
 
@@ -636,7 +636,7 @@ Loaded entity view {{ entityview.name }}.
 
 **logical\_names**
 
-結果と一致する PowerApps エンティティの論理名は、コンマ区切り文字列として制限されます。 指定しない場合は、すべての一致するエンティティが返されます。
+結果と一致する Power Apps エンティティの論理名は、コンマ区切り文字列として制限されます。 指定しない場合は、すべての一致するエンティティが返されます。
 
 ```
 {% searchindex query: request.params.query, logical_names: 'kbarticle,incident' %}
@@ -681,7 +681,7 @@ Loaded entity view {{ entityview.name }}.
 
 ## <a name="entityform"></a>entityform
 
-名前または ID により、PowerApps の構成済みエンティティ フォームを完全に表示します。  
+名前または ID により、Power Apps の構成済みエンティティ フォームを完全に表示します。  
 
 > [!Note]
 > エンティティフォーム タグは、ページ テンプレートに基づく <em>[Web テンプレート](store-content-web-templates.md)–</em> 内に表示されたコンテンツでのみ使用できます。 リライト ベース ページ テンプレート内のタグを使用しているときは、何も表示されません。 1 ページに表示できるのは、1 つのエンティティフォームまたは Web フォーム タグだけです。 2 番目のエンティティフォームまたは Web フォームは表示されません。       
@@ -696,9 +696,9 @@ Loaded entity view {{ entityview.name }}.
 
 `{% entityform name:My Entity Form %}`
 
-### <a name="webform"></a>**Web フォーム**
+## <a name="webform"></a>Web フォーム
 
-名前または ID により、Web フォームの PowerApps 構成をすべて表示します。 Web フォーム タグは、ページ テンプレートに基づく [Web テンプレート](store-content-web-templates.md)内に表示されたコンテンツでのみ使用することができます。 リライト ベース ページ テンプレート内のタグを使用しているときは、何も表示されません。 1 ページに表示できるのは、1 つのエンティティフォームまたは Web フォーム タグだけです。 2 番目のエンティティフォームまたは Web フォームは表示されません。                
+名前または ID により、Web フォームの Power Apps 構成をすべて表示します。 Web フォーム タグは、ページ テンプレートに基づく [Web テンプレート](store-content-web-templates.md)内に表示されたコンテンツでのみ使用することができます。 リライト ベース ページ テンプレート内のタグを使用しているときは、何も表示されません。 1 ページに表示できるのは、1 つのエンティティフォームまたは Web フォーム タグだけです。 2 番目のエンティティフォームまたは Web フォームは表示されません。                
 `{% webform name: 'My Web Form' %}`
 
 ### <a name="parameters"></a>パラメーター
@@ -708,6 +708,7 @@ Loaded entity view {{ entityview.name }}.
 読み込む Web フォームの名前。
 
 `{% webform name:My Web Form %}`
+
 
 ### <a name="see-also"></a>関連項目
 

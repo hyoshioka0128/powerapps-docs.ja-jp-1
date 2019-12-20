@@ -1,5 +1,5 @@
 ---
-title: PowerApps を使用してモデル駆動型アプリで Bing マップを構成する | MicrosoftDocs
+title: Power Apps を使用してモデル駆動型アプリで Bing マップを構成する | MicrosoftDocs
 ms.custom: ''
 ms.date: 10/18/2019
 ms.reviewer: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ff7f5c01e913da60409bb60c637b37ebd4bfa096
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 132f5c2cfb5763714176a86c1ea846085588f862
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756481"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875227"
 ---
 # <a name="configure-a-map-on-a-form"></a>フォームのマップを構成する
 既定では、Bing マップ コントロールは取引先企業エンティティと取引先担当者エンティティの両方のメイン フォームで構成され、エンティティ レコードにマップを表示する機能を提供します。 規定では構成されていませんが、Bing マップ コントロールをシステム ユーザー エンティティに追加できます。 Bing マップ コントロールは、Dynamics 365 Sales や Dynamics 365 Customer Service など、Dynamics 365 のモデル駆動型アプリに含まれる一部のエンティティでも使用できます。 例えば、潜在顧客、見積もり、受注、請求書、競合企業などのエンティティです。 Bing マップ コントロールは、ユーザー定義エンティティでは使用できません。  
@@ -49,7 +49,7 @@ ms.locfileid: "2756481"
     ![フォームのマップを有効にする](media/enable-maps.png)
 
 ## <a name="configure-a-map"></a>マップを構成する 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
 2. **データ** > **エンティティ**へと移動し、メイン フォームでマップを構成するエンティティを選択します。 
 3. **フォーム** タブを選択した後、メイン フォームを選択し、コマンド バーで**クラシックに切り替え**を選択します。 
 4. クラシック フォーム デザイナーで**マップ ビュー**をダブルクリックし、プロパティを表示および編集します。 詳細:  [マップ プロパティの表示および編集](#view-and-edit-map-properties)

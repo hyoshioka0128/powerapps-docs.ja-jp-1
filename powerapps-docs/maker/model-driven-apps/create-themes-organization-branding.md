@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b1aae7d51b22939f84478ad0537ef9285daf7631
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 1919084b26cb7605b2c32e8569df8ab31fb857a3
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753826"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875095"
 ---
 # <a name="create-a-theme"></a>テーマの作成
 
@@ -74,7 +74,7 @@ ms.locfileid: "2753826"
 ## <a name="copy-and-alter-the-existing-theme"></a>既存のテーマのコピーと変更  
  新しいをテーマ作成する最も簡単で最も早い方法は、既存のテーマを複製し、それを変更した後、それを保存、プレビュー、公開することです。 
  
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 2.  **モデル駆動型** (左下) を選択します。 
 

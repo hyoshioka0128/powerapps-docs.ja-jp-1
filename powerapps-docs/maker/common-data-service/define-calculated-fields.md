@@ -1,5 +1,5 @@
 ---
-title: PowerApps で計算フィールドを定義する | MicrosoftDocs
+title: Power Apps で計算フィールドを定義する | MicrosoftDocs
 description: 計算フィールドを定義する方法を説明します
 ms.custom: ''
 ms.date: 05/25/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d4f66e3f047da19fd040cccdd3f9af2da913df09
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 82bf8cad9b64f9866cb1cc856eff94eacf1f23a2
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758769"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873907"
 ---
 # <a name="define-calculated-fields-to-automate-manual-calculations"></a>計算フィールドを定義して手動計算を自動化する
 
 計算フィールドを使用して、ビジネス プロセスで使用する手動計算を自動化します。 
 
-たとえば、営業担当者は営業案件の売上高の期待値を知ることが必要な場合があります。この期待値は、営業案件からの売上見込みに確率を乗じて得られた値に基づきます。 または、受注が $500 より大きい場合、値引きを自動的に適用することを望みます。 計算フィールドには、単純な数学演算や greater than または if-else などの条件付き演算から得られた値を含めることができます。 これらのすべてを、コードを記述することなく、PowerApps を使用して実行できます。  
+たとえば、営業担当者は営業案件の売上高の期待値を知ることが必要な場合があります。この期待値は、営業案件からの売上見込みに確率を乗じて得られた値に基づきます。 または、受注が $500 より大きい場合、値引きを自動的に適用することを望みます。 計算フィールドには、単純な数学演算や greater than または if-else などの条件付き演算から得られた値を含めることができます。 これらのすべてを、コードを記述することなく、Power Apps を使用して実行できます。  
   
 ## <a name="capabilities"></a>機能
   
@@ -60,9 +60,9 @@ ms.locfileid: "2758769"
 
 ## <a name="create-a-calculated-field"></a>計算フィールドの作成
 
-フィールド エディターを使用して計算フィールドを指定します。 この例では、[PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を使用しますが、手順はソリューション エクスプローラーを使用するのと共通しています。 詳細: [フィールドの作成と編集](create-edit-fields.md)
+フィールド エディターを使用して計算フィールドを指定します。 この例では、[Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を使用しますが、手順はソリューション エクスプローラーを使用するのと共通しています。 詳細: [フィールドの作成と編集](create-edit-fields.md)
   
-1. [[PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開く]
+1. [[Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開く]
 1. **データ** > **エンティティ**を展開します。  
 1. 必要なエンティティを選択し、**フィールド**を選択します。 **フィールドの追加**を選択します。  
 1. **表示名**,**名前**および**データの種類**など、フィールドに必要な情報を提供します。 

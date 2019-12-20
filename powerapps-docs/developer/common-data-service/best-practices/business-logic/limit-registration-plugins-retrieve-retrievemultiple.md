@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d17772aab805ae6d7969db19b888b3565926ca6c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4bd25cf31e21278d94450eadb0a38e32a4ae1292
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748821"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861852"
 ---
 # <a name="limit-the-registration-of-plug-ins-for-retrieve-and-retrievemultiple-messages"></a>retrieve および RetrieveMultiple メッセージ用のプラグインの登録を制限する
 
@@ -59,7 +59,7 @@ Retrieve メッセージおよび RetrieveMultiple メッセージに登録さ�
 
 ### <a name="virtual-entities"></a>仮想エンティティ
 
-外部ソースからデータを取得するための最も一般的な Retrieve および RetrieveMultiple はプラグイン内で呼び出されます。 外部ソースからのデータは、PowerApps 内で表示されるか、既存のデータを処理 / 操作するために使用されます。 Dynamics 365 (online)、バージョン 9.0 の Dynamics 365 (online) には、[仮想エンティティ](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) と呼ばれる機能が導入されました。この機能により、外部システムに常駐しているデータをシームレスに統合し、そのデータを PowerApps 内のエンティティとして表示することができ、データのレプリケーションやカスタム コーディングは不要です。 機能、制限、構成の詳細については、[仮想エンティティ](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) のドキュメントを参照してください。
+外部ソースからデータを取得するための最も一般的な Retrieve および RetrieveMultiple はプラグイン内で呼び出されます。 外部ソースからのデータは、Power Apps 内で表示されるか、既存のデータを処理 / 操作するために使用されます。 Dynamics 365 (online)、バージョン 9.0 の Dynamics 365 (online) には、[仮想エンティティ](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) と呼ばれる機能が導入されました。この機能により、外部システムに常駐しているデータをシームレスに統合し、そのデータを Power Apps 内のエンティティとして表示することができ、データのレプリケーションやカスタム コーディングは不要です。 機能、制限、構成の詳細については、[仮想エンティティ](/dynamics365/customer-engagement/developer/virtual-entities/get-started-ve) のドキュメントを参照してください。
 
 ### <a name="retrieve-caution"></a>取得に関する注意
 

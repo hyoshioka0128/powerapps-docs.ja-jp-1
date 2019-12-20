@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0aa057594b500c7019a4d645c70cafcfff183608
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 80f9cc89b0da2eec5d134f282507e68658e42a96
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755997"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2816388"
 ---
 # <a name="migrate-portal-configuration"></a>ポータル構成の移行
 
@@ -29,11 +29,16 @@ Portal インスタンスの開発または構成が完了した後、最新の�
 > - 構成移行のスキーマ ファイルでサポートされているポータルの最小バージョンのソリューションは、8.4.0.275 です。 ただし、最新バージョンのソリューションを使用することをお勧めします。
 
 スキーマ ファイルは次のポータルの種類に対して使用することができます。
-- [コミュニティ ポータル](https://go.microsoft.com/fwlink/p/?linkid=2019704)
-- [顧客セルフサービス ポータル](https://go.microsoft.com/fwlink/p/?linkid=2019705)
-- [パートナー ポータル](https://go.microsoft.com/fwlink/p/?linkid=2019803)
-- [従業員セルフサービス ポータル](https://go.microsoft.com/fwlink/p/?linkid=2019802)
-- [カスタム ポータル](https://go.microsoft.com/fwlink/p/?linkid=2019804)
+
+- **Common Data Service を備えた環境で作成されたポータル**
+    - [カスタム ポータル (空白のポータル)](https://go.microsoft.com/fwlink/p/?linkid=2110477)
+
+- **Dynamics 365 のモデル駆動型アプリを含む環境で作成されたポータル**
+    - [カスタム ポータル (空白のポータル)](https://go.microsoft.com/fwlink/p/?linkid=2019804)
+    - [コミュニティ ポータル](https://go.microsoft.com/fwlink/p/?linkid=2019704)
+    - [顧客セルフサービス ポータル](https://go.microsoft.com/fwlink/p/?linkid=2019705)
+    - [パートナー ポータル](https://go.microsoft.com/fwlink/p/?linkid=2019803)
+    - [従業員セルフサービス ポータル](https://go.microsoft.com/fwlink/p/?linkid=2019802)
 
 既定のスキーマ ファイルには、すべてのポータル エンティティ、関連付け、および各エンティティの一意性の定義に関する情報が含まれています。 詳細については、[ポータル構成データのエクスポート](#export-portal-configuration-data)を参照してください。
 

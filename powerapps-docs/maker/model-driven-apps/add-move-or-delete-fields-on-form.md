@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eaa02abdc4c85d4d6abd5e5ca3afe176144c4027
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d711a46676003786363f3496515dbd387024dadb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701536"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860673"
 ---
 # <a name="add-configure-move-or-delete-fields-on-a-form"></a>フォーム上のフィールドを追加、構成、移動、削除する  
 フォーム デザイナーを使用して、フィールドを追加、構成、移動、削除します。
@@ -123,7 +123,7 @@ ms.locfileid: "2701536"
 5. **新しいフィールド** ダイアログで **データの種類** を選択し、フィールドの他の必要なプロパティを設定します。
 
      > [!NOTE]
-     >   -  フォーム デザイナー内からフィールドを作成する場合、フィールドの種類は一部が使用できません。 必要なフィールドの種類が利用できない場合は、[PowerApps ポータルを使用して Common Data Service のフィールドを作成および編集する](../common-data-service/create-edit-field-portal.md) で説明されている手順を実行します
+     >   -  フォーム デザイナー内からフィールドを作成する場合、フィールドの種類は一部が使用できません。 必要なフィールドの種類が利用できない場合は、[Power Apps ポータルを使用して Common Data Service のフィールドを作成および編集する](../common-data-service/create-edit-field-portal.md) で説明されている手順を実行します
 
 6. **完了** を選択して、エンティティに新しいフィールドを作成します。 フィールドが **フィールド** ウィンドウに表示されます。
 7. 新しく作成したフィールドをフォームに追加する場合は、[**フォームにフィールドを追加する**](add-move-or-delete-fields-on-form.md#add-fields-to-a-form) セクションで説明されている手順に従います。

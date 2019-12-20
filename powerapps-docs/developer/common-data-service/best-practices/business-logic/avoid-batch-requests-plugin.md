@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/15/2019
+ms.date: 12/06/2019
 ms.author: jowells
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e0732dfee3d4824f33042936af7e8f6157bcec83
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6e1f27c68b020e7b22728d1c8e80c65f82e94d90
+ms.sourcegitcommit: adfad395aab302fb71b56d8b7a7490265bbdaaae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748825"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "2899504"
 ---
 # <a name="avoid-usage-of-batch-request-types-in-plug-ins-and-workflow-activities"></a>プラグインおよびワークフロー活動でバッチ要求の種類の使用を回避する
 
@@ -37,14 +37,8 @@ ms.locfileid: "2748825"
 
 ## <a name="symptoms"></a>現象
 
-プラグインまたはワークフロー活動のコンテキストで <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> または <xref:Microsoft.Xrm.Sdk.Messages.ExecuteTransactionRequest> メッセージ要求クラスを使用した場合に考えられる影響を次に示します。
+これは長時間実行される特性を持っているため、プラグイン あるいは ワークフロー アクティビティーのコンテキスト内で <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> または <xref:Microsoft.Xrm.Sdk.Messages.ExecuteTransactionRequest> メッセージ要求クラスを使用すると、サンドボックス で分離された プラグイン の タイプが 2分 (12000ミリ秒) の チャネル タイムアウト例外 にさらされ、同期登録の ユーザー エクスペリエンス が低下する可能性があります。
 
-- バッチ要求メッセージは長時間の性質のためサンドボックス隔離プラグインの種類を 2 分（2000 ミリ秒）のチャネル タイムアウト例外にさらし、同期登録のユーザー エクスペリエンスを低下させる可能性があります。
-
-- バッチ要求は同時実行調整を前提としており、プラグインが複数のスレッドで実行された場合は、不要なサーバー ビジー例外を引き起こす可能性があります。 オンライン インスタンスあたり 2 つの同時実行 `ExecuteMultiple` 操作の制限があります。
-
-    > [!NOTE]
-    > 設置型の展開には [ExecuteAsyncPerOrMaxConnectionsPerServer](/dotnet/api/microsoft.xrm.sdk.deployment.throttlesettings.executeasyncmaxconnectionsperserver) 設定で同様の調整が有効になります。  既定では、設置型に対して定義されていません。
 
 <a name='guidance'></a>
 

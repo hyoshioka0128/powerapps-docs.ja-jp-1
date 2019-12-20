@@ -26,7 +26,7 @@
       href: use-editable-grids.md
     - name: 組織のテーマのクエリと編集
       href: query-and-edit-an-organization-theme.md
-    - name: PowerApps Component Framework を使用してカスタム コンポーネントを構築する
+    - name: Power Apps Component Framework を使用してカスタム コンポーネントを構築する
       href: /powerapps/developer/component-framework/overview
 - name: コードを使用してデータのビジュアル化を適用する
   href: customize-visualizations-dashboards.md

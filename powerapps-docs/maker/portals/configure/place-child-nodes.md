@@ -9,19 +9,19 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: e004b0f4f37a57e37d8f847ad7221e6a50d549ed
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2a9bd271c8aaa2f1dbc0278078868606fb4c64de
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760653"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864967"
 ---
 # <a name="place-child-nodes-by-using-shortcuts-for-portals"></a>ポータルのショートカットを使用して子ノードを配置する
 ショートカットを使用して、ポータルのサイトマップ全体に子ノードを配置できます。それにより、サイトマップに存在する他のノードやポータル外の URL を簡単にポイントすることができます。 言い換えれば、Web ページ、Web ファイル、イベント、フォーラムはすべて、ポータルのサイトマップの「固体」ノードとみなすことができます。サイトマップに追加され、それらに移動すると、それらのノードの実際のコンテンツが直接表示されます。 一方、ショートカットは、「無体物」ノードと考えることができます。これらもサイトマップに追加できます (Web リンクとは異なります) が、これらに移動すると、ショートカットがポイントしていたターゲットである「固定」ノードの内容の表示が、そのノードのページ テンプレートに表示された内容で終了します。
 
 ## <a name="manage-shortcuts"></a>ショートカットの管理
 
-ショートカットの作成、編集、削除は、PowerApps ポータル内で実行できます。
+ショートカットの作成、編集、削除は、Power Apps ポータル内で実行できます。
 
 1. [ポータル管理アプリ](configure-portal.md)を開きます。
 

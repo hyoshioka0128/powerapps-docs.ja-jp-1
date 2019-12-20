@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fd5d17f33490aab049a166fa53ce541bdea2235a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 004e6e00d433473b6d7a700288dc2d0e920ab884
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757933"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861388"
 ---
 # <a name="how-to-create-and-edit-fields"></a>フィールドの作成と編集方法
 
@@ -38,8 +38,8 @@ Common Data Service フィールドでは、エンティティにデータを格
 
 |デザイナー| 説明|
 |--|--|
-|[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細については、 [PowerApps ポータルを使用して Common Data Service にフィールドを作成、編集する](create-edit-field-portal.md)を参照してください。|
-|ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。<br />詳細については、 [PowerApps ソリューションエクスプローラーを使用して Common Data Service にフィールドを作成、編集する](create-edit-field-solution-explorer.md)を参照してください。 |
+|[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細については、 [Power Apps ポータルを使用して Common Data Service にフィールドを作成、編集する](create-edit-field-portal.md)を参照してください。|
+|ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。<br />詳細については、 [Power Apps ソリューションエクスプローラーを使用して Common Data Service にフィールドを作成、編集する](create-edit-field-solution-explorer.md)を参照してください。 |
 
 > [!NOTE]
 > 以下を使用して、環境にフィールドを作成することもできます。
@@ -50,7 +50,7 @@ Common Data Service フィールドでは、エンティティにデータを格
 
 このトピックの情報は、使用できるデザイナーの選択に役立ちます。 
 
-Common Data Service にフィールドを作成、編集するには PowerApps ポータルを使用する必要があります。ただし、以下のいずれかの要件に対処する必要がある場合を除きます。
+Common Data Service にフィールドを作成、編集するには Power Apps ポータルを使用する必要があります。ただし、以下のいずれかの要件に対処する必要がある場合を除きます。
 
 - 顧客検索フィールドを作成します。 
    - 詳細: [さまざまな種類の検索](types-of-fields.md#different-types-of-lookups)
@@ -73,7 +73,7 @@ Common Data Service にフィールドを作成、編集するには PowerApps �
    - 詳細: [フィールドの管理プロパティの設定](set-managed-properties-for-field.md)
 
 > [!NOTE]
-> 1 対多の関連付けをエンティティ上に作成することで、 PowerApps ポータルまたはソリューション エクスプローラーに検索フィールドを作成できます。 しかし、フィールドの作成時に、ソリューション エクスプローラーだけがこの関連付けを作成するオプションを提供します。
+> 1 対多の関連付けをエンティティ上に作成することで、 Power Apps ポータルまたはソリューション エクスプローラーに検索フィールドを作成できます。 しかし、フィールドの作成時に、ソリューション エクスプローラーだけがこの関連付けを作成するオプションを提供します。
 
 ## <a name="community-tools"></a>コミュニティ ツール
 
@@ -83,8 +83,8 @@ Common Data Service にフィールドを作成、編集するには PowerApps �
 > コミュニティ ツールは Microsoft の製品ではなく、コミュニティ ツールに対するサポートは提供されません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。
 
 ### <a name="see-also"></a>関連項目  
-[PowerApps ポータルを使用して Common Data Service のフィールドの作成、編集を行います](create-edit-field-portal.md)<br />
-[PowerApps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する](create-edit-field-solution-explorer.md)<br />
+[Power Apps ポータルを使用して Common Data Service のフィールドの作成、編集を行います](create-edit-field-portal.md)<br />
+[Power Apps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する](create-edit-field-solution-explorer.md)<br />
 [フィールドの種類とフィールド データの種類](types-of-fields.md)<br />
 [開発者ドキュメント: 属性メタデータに関する作業](/dynamics365/customer-engagement/developer/org-service/work-attribute-metadata)
  

@@ -1,6 +1,6 @@
 ---
-title: PowerApps を使ったコンポーネントを持つユーザー定義エンティティの作成 | Microsoft Docs
-description: PowerApps アプリで使用するエンティティを作成および構成するための詳細な手順を説明します。
+title: Power Apps を使ったコンポーネントを持つユーザー定義エンティティの作成 | Microsoft Docs
+description: Power Apps アプリで使用するエンティティを作成および構成するための詳細な手順を説明します。
 author: Mattp123
 manager: kvivek
 ms.service: powerapps
@@ -13,16 +13,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 436e4f03a38efc3d61a0d4fb9f027ae6eff1c931
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 864bc9c8cfad92bac661db0b12b47d880cc86edf
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754832"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883797"
 ---
-# <a name="create-a-custom-entity-that-has-components-in-powerapps"></a>PowerAppsにコンポーネントが存在するユーザー定義エンティティの作成
+# <a name="create-a-custom-entity-that-has-components-in-power-apps"></a>Power Appsにコンポーネントが存在するユーザー定義エンティティの作成
 
-PowerApps  では、アプリを調整して、組織の業務、用語、および固有のビジネス プロセスに適合させることができます。 PowerApps アプリ開発には、標準の "簡単に使える" エンティティを追加したり、ユーザー定義エンティティの作成が含まれています。 エンティティは、レコードの形式で追跡する情報を定義します。通常は会社名、場所、製品、電子メール、電話などのプロパティが含まれます。 
+Power Apps  では、アプリを調整して、組織の業務、用語、および固有のビジネス プロセスに適合させることができます。 Power Apps アプリ開発には、標準の "簡単に使える" エンティティを追加したり、ユーザー定義エンティティの作成が含まれています。 エンティティは、レコードの形式で追跡する情報を定義します。通常は会社名、場所、製品、電子メール、電話などのプロパティが含まれます。 
 
 このトピックでは、エンティティを作成し、フィールド、関係、ビュー、フォームなどの主要コンポーネントを追加またはカスタマイズします。 以下の方法を説明します。
 
@@ -36,7 +36,7 @@ PowerApps  では、アプリを調整して、組織の業務、用語、およ
 
 ## <a name="prerequisites"></a>前提条件
 
-[PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 まだ PowerApps アカウントを持っていない場合、 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の **無料で使用開始する** リンクを選択します。
+[Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 まだ Power Apps アカウントを持っていない場合、 [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の **無料で使用開始する** リンクを選択します。
 
 ## <a name="create-a-custom-entity"></a>ユーザー定義エンティティの作成
 
@@ -126,7 +126,7 @@ PowerApps  では、アプリを調整して、組織の業務、用語、およ
 2. **フォーム** タブを選択し、**メイン** フォームの隣の**情報**を選択して、フォーム エディターを開きます。
     > [!div class="mx-imgBorder"] 
     > ![メイン フォームの編集](media/create-custom-entity/main-form-edit.png)
-3. フォーム エディターで、フィールド エクスプローラー ウィンドウにある**Species 種類**、**Breed ブリーティング**、**[Appointment date] 予定の日付**、**Account 取引先企業**フィールドを、フォームが次のようになるまでフォーム キャンバスの全般セクションにドラッグ アンド ドロップします。
+3. フォーム エディターで、フィールド エクスプローラー ウィンドウにある**Species 種類**、**Breed ブリーティング**、**Appointment date 予定の日付**、**Account 取引先企業**フィールドを、フォームが次のようになるまでフォーム キャンバスの全般セクションにドラッグ アンド ドロップします。
     > [!div class="mx-imgBorder"] 
     > ![メイン フォームにフィールドを選択](media/create-custom-entity/main-form-edit2.png) 
 4. **保存**を選びます。

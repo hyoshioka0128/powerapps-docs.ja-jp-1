@@ -1,5 +1,5 @@
 ---
-title: PowerApps でステータスの原因の移行を定義する | MicrosoftDocs
+title: Power Apps でステータスの原因の移行を定義する | MicrosoftDocs
 description: ステータスの移行を定義する方法を説明します
 ms.custom: ''
 ms.date: 05/25/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9fb1fc93b5559c47cebeef4fb73ebd095a48f0a5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5dd257a07a21b2d0b0d2a449feb9df855d51d604
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705584"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861120"
 ---
 # <a name="define-status-reason-transitions-for-the-case-or-custom-entities"></a>サポート案件またはユーザー定義エンティティのステータス遷移の定義
 
@@ -65,7 +65,7 @@ ms.locfileid: "2705584"
 サポート案件エンティティとユーザー定義エンティティのステータス フィールド オプションを変更して、ユーザーが選択できる他のステータス オプションを定義できます。 唯一の制限は、アクティブ状態の各ステータス オプションが、非アクティブな状態への少なくとも 1 つのパスを許可する必要があるということです。 そうしないと、サポート案件を解決またはキャンセルすることができない条件を作成することになります。  
 
 > [!NOTE]
-> ステータスの遷移を編集するには、ソリューション エクスプローラーを使用する必要があります。 [PowerApps ソリューション エクスプローラーを使用して Common Data Service のフィールド作成、編集する](create-edit-field-solution-explorer.md) を参照してください。
+> ステータスの遷移を編集するには、ソリューション エクスプローラーを使用する必要があります。 [Power Apps ソリューション エクスプローラーを使用して Common Data Service のフィールド作成、編集する](create-edit-field-solution-explorer.md) を参照してください。
   
  ステータスのフィールドを編集する際、**ステータスの遷移の編集**ボタンはメニューにあります。 
 
@@ -86,7 +86,7 @@ ms.locfileid: "2705584"
   
 ### <a name="see-also"></a>関連項目  
 
-[PowerApps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する](create-edit-field-solution-explorer.md)<br />
+[Power Apps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する](create-edit-field-solution-explorer.md)<br />
 [エンティティ メタデータ > エンティティ状態](/powerapps/developer/common-data-service/entity-metadata#entity-states)<br />
 [カスタムの状態モデルの遷移の定義](/dynamics365/customer-engagement/developer/define-custom-state-model-transitions)
 

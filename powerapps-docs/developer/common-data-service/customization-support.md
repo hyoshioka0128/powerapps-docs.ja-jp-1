@@ -21,17 +21,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e2dd81bca0ab5805d88f5db0aff9a1f83c8d87ac
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 81df04eba4a8f843cc254978590807c83ef704cb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748996"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861788"
 ---
 # <a name="common-data-service-supported-and-unsupported-app-building-practices"></a>Common Data Service のサポートしているアプリとサポートしていないアプリの作成の実践
 
 <!--
-The way your organization works is unique. Some organizations have well-defined business processes that they apply using PowerApps apps. Others aren’t happy with their current business processes and use PowerApps to apply new data and processes to their business. Whatever situation you find yourself in, you’ll find a lot of customization capabilities in PowerApps so that it can work for your organization.  
+The way your organization works is unique. Some organizations have well-defined business processes that they apply using Power Apps apps. Others aren’t happy with their current business processes and use Power Apps to apply new data and processes to their business. Whatever situation you find yourself in, you’ll find a lot of customization capabilities in Power Apps so that it can work for your organization.  
   
  Of course you’re eager to get started, but please take a few minutes to read the content in this section. This will introduce you to important terms, give you some background about why things are done a certain way, and help you avoid potential problems in the future.  
 
@@ -42,19 +42,19 @@ The way your organization works is unique. Some organizations have well-defined 
 
 エンティティ、ビュー、フィールド、グラフおよびダッシュボードなどの Common Data Service コンポーネントを変更して、思い通りに動作するアプリを構築することを、 *カスタマイズ* と呼びます。  
  
-PowerApps のツールを使用してアプリを構築しカスタマイズすると、メタデータに依存する機能で使用されるメタデータやデータが追加または更新されます。 アプリの作成に使用するデータの種類は既知なので、このデータを考慮に入れてアプリを中断することなく新機能を Common Data Service 環境 に追加できます。 <!-- This way you should always be able to apply an update rollup or upgrade to the latest version and enjoy the best new features.  -->
+Power Apps のツールを使用してアプリを構築しカスタマイズすると、メタデータに依存する機能で使用されるメタデータやデータが追加または更新されます。 アプリの作成に使用するデータの種類は既知なので、このデータを考慮に入れてアプリを中断することなく新機能を Common Data Service 環境 に追加できます。 <!-- This way you should always be able to apply an update rollup or upgrade to the latest version and enjoy the best new features.  -->
 
 <!--  
 > **Customize or Configure?**   
-> Most people say they want to customize the application, so we use the word “customize” to describe changing the system to make it work the way you want. Some people prefer to use the word “configure” because it suggests that no code was required to make changes. Call it whatever you like, we just want to make it clear that you don’t need to be a developer to customize or create PowerApps apps.  -->
+> Most people say they want to customize the application, so we use the word “customize” to describe changing the system to make it work the way you want. Some people prefer to use the word “configure” because it suggests that no code was required to make changes. Call it whatever you like, we just want to make it clear that you don’t need to be a developer to customize or create Power Apps apps.  -->
   
-PowerApps アプリを構築してカスタマイズするために、開発者である必要はありません。 しかし、 PowerApps は、開発者がコードを記述できるように一連の Web サービスと API を提供します。 コードがサポートされているメソッドを使用して記述されると、 Common Data Service 環境をアップグレードすると、そのコードは引き続き機能します。  
+Power Apps アプリを構築してカスタマイズするために、開発者である必要はありません。 しかし、 Power Apps は、開発者がコードを記述できるように一連の Web サービスと API を提供します。 コードがサポートされているメソッドを使用して記述されると、 Common Data Service 環境をアップグレードすると、そのコードは引き続き機能します。  
   
 <a name="BKMK_SupportedCust"></a>   
 ## <a name="what-kinds-of-customizations-are-supported"></a>どのようなカスタマイズがサポートされますか。  
- 使用可能な PowerApps ツールを使用して、ほとんどのアプリの構築とカスタマイズを行うことができます。 カスタマイズ ツールがニーズに合わない場合、サード パーティが提供するソリューションをインストールするか、開発者を雇ってアプリをコーディングすることができます。 コードを必要とするソリューションに投資する必要がある場合は、そのコードはサポートされている API のみを使用して記述されていることを確認してください。 これは、アプリと取得したソリューションの両方に対する投資を保護する助けになります。  
+ 使用可能な Power Apps ツールを使用して、ほとんどのアプリの構築とカスタマイズを行うことができます。 カスタマイズ ツールがニーズに合わない場合、サード パーティが提供するソリューションをインストールするか、開発者を雇ってアプリをコーディングすることができます。 コードを必要とするソリューションに投資する必要がある場合は、そのコードはサポートされている API のみを使用して記述されていることを確認してください。 これは、アプリと取得したソリューションの両方に対する投資を保護する助けになります。  
   
- PowerApps アプリを拡張する開発者は、 [こちら](/powerapps/developer/common-data-service/best-practices/) に記載されているルールとベスト プラクティスに従う責任があります。 Microsoft は、SDK に文書化されている API とプラクティスのみをサポートします。 問題の解決方法がインターネットで見つかったとしても、SDK で文書化されている API を活用していない場合、その方法は Microsoft によってサポートされません。 開発者に変更を適用してもらう前に、サポートされているメソッドを使用していることを確認してください。  
+ Power Apps アプリを拡張する開発者は、 [こちら](/powerapps/developer/common-data-service/best-practices/) に記載されているルールとベスト プラクティスに従う責任があります。 Microsoft は、SDK に文書化されている API とプラクティスのみをサポートします。 問題の解決方法がインターネットで見つかったとしても、SDK で文書化されている API を活用していない場合、その方法は Microsoft によってサポートされません。 開発者に変更を適用してもらう前に、サポートされているメソッドを使用していることを確認してください。  
   
  開発者が SDK に記載されている API とベスト プラクティスを使用する場合、Microsoft は Common Data Service への変更点が既存のカスタマイズを壊す可能性があるかどうかをテストいたします。 目的は、 Common Data Service の新しいバージョンまたは更新がリリースされても、サポートされているメソッドを使用して記述したコード カスタマイズが引き続き機能することです。 開発者が毎回コードを変更しなくても、改良された機能を持つ新しいバージョンにアップグレードできるため、大変便利です。  
   
@@ -71,9 +71,9 @@ PowerApps アプリを構築してカスタマイズするために、開発者�
  サポートされないカスタマイズの一般的なプラクティスの一覧を次に示します。 これは完全な一覧ではありません。 詳細: [Dynamics 365 でサポートされている拡張機能。サポートされていないカスタマイズ](https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions#Unsupported)。 
  
 **JavaScript を使用して Web アプリケーションのドキュメント オブジェクト モデル (DOM) の要素と対話する**  
- アプリケーションの任意の場所で使用される JavaScript ライブラリは、文書化されている API とのみ対話します。 JavaScript の開発者がアプリケーションで作業する際、特定名を使用し DOM 要素に頻繁にアクセスします。 PowerApps アプリは Web アプリケーションであるため、これらのテクノロジは機能しますが、参照する要素名がいつでも変更されてしまうため、アップグレード中に破壊する可能性があります。 Microsoft には、アプリケーションで必要な変更を加える権利があります。つまり、ページの構成方法が変わることを意味します。 ページの現在の構造に基づく変更を追加する場合、アプリケーションのアップグレードのたびにこれらのスクリプトのユーザー定義コードをテストおよび時には変更することに投資する必要があります。  
+ アプリケーションの任意の場所で使用される JavaScript ライブラリは、文書化されている API とのみ対話します。 JavaScript の開発者がアプリケーションで作業する際、特定名を使用し DOM 要素に頻繁にアクセスします。 Power Apps アプリは Web アプリケーションであるため、これらのテクノロジは機能しますが、参照する要素名がいつでも変更されてしまうため、アップグレード中に破壊する可能性があります。 Microsoft には、アプリケーションで必要な変更を加える権利があります。つまり、ページの構成方法が変わることを意味します。 ページの現在の構造に基づく変更を追加する場合、アプリケーションのアップグレードのたびにこれらのスクリプトのユーザー定義コードをテストおよび時には変更することに投資する必要があります。  
   
- jQuery は JavaScript の開発者によって使用される非常に一般的なライブラリです。 jQuery を使用する利点の多くは、開発者が DOM 要素を作成してアクセスするための能力を簡素化することです。これは Common Data Service アプリケーション ページではサポートしていません。 開発者が HTML Web リソースを使用するカスタム ユーザー インターフェイスを作成するときは jQuery が推奨されますが、PowerApps アプリケーション ページ内では、サポートされる API は jQuery の使用を必要としません。  
+ jQuery は JavaScript の開発者によって使用される非常に一般的なライブラリです。 jQuery を使用する利点の多くは、開発者が DOM 要素を作成してアクセスするための能力を簡素化することです。これは Common Data Service アプリケーション ページではサポートしていません。 開発者が HTML Web リソースを使用するカスタム ユーザー インターフェイスを作成するときは jQuery が推奨されますが、Power Apps アプリケーション ページ内では、サポートされる API は jQuery の使用を必要としません。  
   
  **JavaScript を使用する文書化されていない内部オブジェクトまたはメソッドを使用する**  
 Common Data Service は、ページ内で多数の JavaScript オブジェクトを使用します。 JavaScript の開発者はページをデバッグしてそれらのオブジェクトを検出し、これらのオブジェクトにアクセスし再利用できます。 Microsoft は、削除またはメソッド名の変更など、これらのオブジェクトに対する必要な変更を加える権利を有します。 スクリプトがそれらのオブジェクトを参照している場合は、オブジェクトが見つからない場合、スクリプトは停止します。  <a name="BKMK_Metadata"></a>   
@@ -84,7 +84,7 @@ Common Data Service は、ページ内で多数の JavaScript オブジェクト
   
 <a name="BKMK_ChooseTheRightCustomization"></a>   
 ### <a name="choose-the-right-customization-capability-for-the-job"></a>ジョブに適切なカスタマイズ機能の選択  
- PowerApps で使用可能なすべてのカスタマイズ機能では、これらの機能の 1 つを理解すること、またすべての問題を解決するためにそれらの機能を使用することが容易です。 解決を望んでいる業務上の問題を評価するとき、達成する最終結果について検討してから、それにどのような方法で到達するかを逆算します。  
+ Power Apps で使用可能なすべてのカスタマイズ機能では、これらの機能の 1 つを理解すること、またすべての問題を解決するためにそれらの機能を使用することが容易です。 解決を望んでいる業務上の問題を評価するとき、達成する最終結果について検討してから、それにどのような方法で到達するかを逆算します。  
  
 <a name="BKMK_changesinperformance"></a>   
 ## <a name="changes-that-affect-common-data-service-environment-performance"></a>Common Data Service 環境パフォーマンスに影響する変更  
@@ -99,5 +99,5 @@ Common Data Service は、ページ内で多数の JavaScript オブジェクト
   
   
 ## <a name="next-steps"></a>次の手順  
-[PowerApps におけるモデル駆動型アプリとは?](../../maker/model-driven-apps/model-driven-app-overview.md)
+[Power Apps におけるモデル駆動型アプリとは?](../../maker/model-driven-apps/model-driven-app-overview.md)
 

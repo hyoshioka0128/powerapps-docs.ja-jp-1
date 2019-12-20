@@ -1,6 +1,6 @@
 ---
 title: コード コンポーネントとは? | MicrosoftDocs
-description: PowerApps component framework を使用してコード コンポーネントを作成し、フォーム、ビュー、ダッシュボードでデータを表示して作業する高度なユーザー エクスペリエンスを提供します。
+description: Power Apps component framework を使用してコード コンポーネントを作成し、フォーム、ビュー、ダッシュボードでデータを表示して作業する高度なユーザー エクスペリエンスを提供します。
 manager: kvivek
 ms.date: 09/05/2019
 ms.service: powerapps
@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 135481cd-4583-4e49-8f58-02f32a9b054a
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 08a2043dfb92634837c367e664306d9c100632d6
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: afc3f967d8fe93cbd0c5c8d21f67773f970d9ca2
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749060"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895025"
 ---
 # <a name="what-are-code-components"></a>コード コンポーネントとは
 
@@ -23,9 +23,9 @@ ms.locfileid: "2749060"
 
 コードコンポーネントは、3つの要素で構成されています:
 
-1. [マニフェスト](#manifest)
-2. [コンポーネント実装ライブラリ](#component-implementation-library)
-3. [リソース](#resources)
+- [マニフェスト](#manifest)
+- [コンポーネント実装ライブラリ](#component-implementation-library)
+- [リソース](#resources)
 
 ## <a name="manifest"></a>マニフェスト
 
@@ -41,7 +41,7 @@ ms.locfileid: "2749060"
 
 ## <a name="component-implementation-library"></a>コンポーネント実装ライブラリ
 
-PowerApps component framework を使用してコード コンポーネントを開発する際に、コンポーネント ライブラリの実装は重要な手順のひとつとなります。 開発者は TypeScript を使用してコンポーネント ライブラリを実装することができます。 各コード コンポーネントは、コード コンポーネント インタフェースに記述されたメソッドを実装したオブジェクトを返すことができる、関数の定義を含むライブラリが必要となります。 
+Power Apps component framework を使用してコード コンポーネントを開発する際に、コンポーネント ライブラリの実装は重要な手順のひとつとなります。 開発者は TypeScript を使用してコンポーネント ライブラリを実装することができます。 各コード コンポーネントは、コード コンポーネント インタフェースに記述されたメソッドを実装したオブジェクトを返すことができる、関数の定義を含むライブラリが必要となります。 
 
 オブジェクトは次のメソッドを実装します:
 
@@ -74,7 +74,7 @@ controlObj.init(context,notifyOutputChanged,state,container);
 
 |パラメーター|説明|
 |---|---|
-|コンテキスト| コンポーネントの構成方法に関するすべての情報と、 [PowerApps Component Framework API](reference/index.md) とともにコンポーネント内で使用できるすべてのパラメータを含みます。 たとえば、`context.parameters.<"property name from manifest">` を入力プロパティへのアクセスに使用できます。|
+|コンテキスト| コンポーネントの構成方法に関するすべての情報と、 [Power Apps Component Framework API](reference/index.md) とともにコンポーネント内で使用できるすべてのパラメータを含みます。 たとえば、`context.parameters.<"property name from manifest">` を入力プロパティへのアクセスに使用できます。|
 |notifyOutputChanged |コード コンポーネントに非同期に取得可能な新しい出力があるとフレームワークに警告します。|
 |状態|コンポーネントがすでに [setControlState](reference/mode/setcontrolstate.md) メソッドを使用して、以前に明示的に保存した場合は、現在のセッションで以前読み込まれたページのコンポーネント データが含まれます。|
 |コンテナ|開発者とアプリ メーカーが、コンポーネントを定義する UI の HTML 要素を追加することができるHTML div 要素。|

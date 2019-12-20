@@ -1,5 +1,5 @@
 ---
-title: PowerApps を使用したシステム エンティティ メッセージの編集 | MicrosoftDocs
+title: Power Apps を使用したシステム エンティティ メッセージの編集 | MicrosoftDocs
 description: システム エンティティ メッセージの編集方法を説明する
 ms.custom: ''
 ms.date: 05/15/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f90f2fc6f3a4eb0707eda9d9ce73acfc422ed5d9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8272196bae92d9724cc41816eced2d1cfc2d2eac
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705408"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860988"
 ---
 # <a name="edit-system-entity-messages"></a>システム エンティティ メッセージの編集
 
 一部のシステム エンティティの既定の表示名は、Common Data Service のユーザー インターフェイスのテキストおよびエラー メッセージで使用されます。 表示名を変更した場合は、既定の表示名を使用するメッセージも更新する必要があります。 たとえば、表示名を *取引先企業* から *会社* に変更した場合は、古い名前を使用するエラー メッセージがまだ表示されます。  
 
-PowerApps ポータルを使用してシステム メッセージを編集することはできません。ソリューション エクスプローラーを使用する必要があります。
+Power Apps ポータルを使用してシステム メッセージを編集することはできません。ソリューション エクスプローラーを使用する必要があります。
 
 [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
 

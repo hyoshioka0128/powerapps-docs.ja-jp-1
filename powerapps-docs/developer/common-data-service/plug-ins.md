@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 110a530c25c7f7e502c26da18bf2f473d53b6673
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1631ab73d2714a3c0981849ce37fa091bfa3f5a4
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749240"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "2779946"
 ---
 # <a name="use-plug-ins-to-extend-business-processes"></a>ビジネス プロセスを拡張するためのプラグインの使用
 
@@ -49,7 +49,7 @@ ms.locfileid: "2749240"
 
 - Azure Service Bus 統合および Web hook を使用して、多くのさまざまなリソースを使用してロジックを適用できる外部システムにデータを格納できます。
 
-- Microsoft Flow は、以前はプラグインを使用して実行されていた多くの機能を提供します。
+- Power Automate は、以前はプラグインを使用して実行されていた多くの機能を提供します。
 
 利用できる多くの選択肢があります。 各選択肢を評価し、要件に適合する最適な方法を理解する必要があります。
 

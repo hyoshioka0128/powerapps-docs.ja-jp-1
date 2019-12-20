@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 346bbf75e614fc7b7b3d3f2958825de538a757e1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0fc18f342257eaaa878107ae5b729c672c2f0433
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753051"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861840"
 ---
 # <a name="build-web-applications-using-server-to-server-s2s-authentication"></a>サーバー間 (S2S) の認証を使用して Web アプリケーションを作成する
 
 サーバー間 (S2S) の認証を使用して、 Common Data Service と Web アプリケーションおよびサービスと安全かつシームレスに通信します。 S2S 認証は Microsoft AppSource に登録されたアプリがサブスクライバーの Common Data Service のデータにアクセスする一般的な方法です。  
 
-S2S 認証は、Common Data Service 環境に接続する時に、有料の PowerApps ユーザー ライセンスを使用する必要がないことを意味します。 S2S 認証と共に使用する特殊 *アプリケーション ユーザー* アカウントのライセンス料金はありません。 ただし、[アプリケーション ユーザーの要求数の制限](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-users) のアカウントを呼び出すことができます。 S2S 認証でライセンスを付与されていない特殊アプリケーション ユーザー アカウントが作成され、そこには Azure Active Directory (Azure AD) に登録されているアプリケーションの情報が含まれます。 ユーザーの資格情報ではなく、アプリケーション ユーザー レコードに保存されている Azure AD オブジェクト ID 値によって識別されるサービス プリンシパルに基づいてアプリケーションは認証されます。 アプリケーション ユーザーは、アプリケーションが実行できるデータおよび操作の種類を制御するカスタム セキュリティ ロールに関連付けられます。  
+S2S 認証は、Common Data Service 環境に接続する時に、有料の Power Apps ユーザー ライセンスを使用する必要がないことを意味します。 S2S 認証と共に使用する特殊 *アプリケーション ユーザー* アカウントのライセンス料金はありません。 ただし、[アプリケーション ユーザーの要求数の制限](https://docs.microsoft.com/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-users) のアカウントを呼び出すことができます。 S2S 認証でライセンスを付与されていない特殊アプリケーション ユーザー アカウントが作成され、そこには Azure Active Directory (Azure AD) に登録されているアプリケーションの情報が含まれます。 ユーザーの資格情報ではなく、アプリケーション ユーザー レコードに保存されている Azure AD オブジェクト ID 値によって識別されるサービス プリンシパルに基づいてアプリケーションは認証されます。 アプリケーション ユーザーは、アプリケーションが実行できるデータおよび操作の種類を制御するカスタム セキュリティ ロールに関連付けられます。  
 
  S2S を使用してアプリケーションまたはサービスによって実行するすべての操作は、ユーザーのアプリケーションにアクセスしているユーザーとしてではなく、ユーザーが提供するアプリケーションのユーザーとして実行されます。 ユーザーのアプリケーションと対話しているユーザーなど、特定のユーザーに代わってデータ操作をアプリケーションが実行することを希望する場合、アプリケーション サービス プリンシパルに適用するユーザー定義のセキュリティ ロールが必要な特権を持っている場合に、偽装を適用できます。 詳細情報: [もう一方のユーザーの偽装](impersonate-another-user.md)  
 

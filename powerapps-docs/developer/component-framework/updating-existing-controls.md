@@ -1,7 +1,7 @@
 ---
-title: PowerApps component framework ツールを使用して既存のコード コンポーネントを更新する | Microsoft Docs
-description: PowerApps component framework ツールを使用してコンポーネントを更新する
-keywords: PowerApps component framework、コード コンポーネント、コンポーネント フレームワーク
+title: Power Apps component framework ツールを使用して既存のコード コンポーネントを更新する | Microsoft Docs
+description: Power Apps component framework ツールを使用してコンポーネントを更新する
+keywords: Power Apps component framework、コード コンポーネント、コンポーネント フレームワーク
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,25 +11,25 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 05e32fb7e098dad3aabf36f2efdaf311c1bea327
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ddbacd01b76a99e385875a0b8af18d28ce24bed8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749353"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861913"
 ---
 # <a name="update-existing-code-components"></a>既存のコード コンポーネントの更新 
 
-モデル駆動型アプリの PowerApps component framework のプライベート プレビュー参加者で、既にコード コンポーネントを作成している場合は、新しい ALM 中心のプロジェクト構造と互換性を保つために、いくつかマイナー アップデートを行う必要があります。 
+モデル駆動型アプリの Power Apps component framework のプライベート プレビュー参加者で、既にコード コンポーネントを作成している場合は、新しい ALM 中心のプロジェクト構造と互換性を保つために、いくつかマイナー アップデートを行う必要があります。 
 
-既存の PowerApps component framework コード コンポーネントと共に新しい PowerApps CLI ツールを使用するには、いくつかの変更が必要です。
+既存の Power Apps component framework コード コンポーネントと共に新しい Power Apps CLI ツールを使用するには、いくつかの変更が必要です。
 
 > [!NOTE]
-> PowerApps CLIツールはモデル駆動型アプリのプライベート プレビューの時点では利用できないため、このトピックはモデル駆動型アプリのコード コンポーネントの更新にのみ適用されます。  
+> Power Apps CLIツールはモデル駆動型アプリのプライベート プレビューの時点では利用できないため、このトピックはモデル駆動型アプリのコード コンポーネントの更新にのみ適用されます。  
 
 ## <a name="creating-an-empty-project"></a>空のプロジェクトを作成する
 
-コード コンポーネントに新しい空のプロジェクトを作成するには、PowerApps CLI を使用します。 詳細: [ツールを使用してコンポーネントを作成する](create-custom-controls-using-pcf.md).
+コード コンポーネントに新しい空のプロジェクトを作成するには、Power Apps CLI を使用します。 詳細: [ツールを使用してコンポーネントを作成する](create-custom-controls-using-pcf.md).
 
 プロジェクトが作成されたら、カスタム コンポーネントのソースを新しいプロジェクトに移行します:
 
@@ -67,7 +67,7 @@ ms.locfileid: "2749353"
 
 1. 既存のプロジェクトを更新して、最新のモジュールを使用します。
  
-   - PowerApps component framework プロジェクト フォルダにある `pcfproj` の バージョン タグを更新します:
+   - Power Apps component framework プロジェクト フォルダにある `pcfproj` の バージョン タグを更新します:
 
       ```XML
       <Packagereference Include="Microsoft.PowerApps.MSBuild.Pcf" Version="1.*"/>
@@ -82,7 +82,7 @@ ms.locfileid: "2749353"
       > 上記の変更を行った後、正しいバージョン `msbuild /t:restore` でプロジェクトを作成するコマンドを実行します。
 
 
-   - PowerApps component framework プロジェクト フォルダにある `package.json` ファイル の バージョン タグを更新します。
+   - Power Apps component framework プロジェクト フォルダにある `package.json` ファイル の バージョン タグを更新します。
 
       ```JSON
       "devDependencies":{
@@ -128,7 +128,7 @@ ms.locfileid: "2749353"
 
 ## <a name="using-generated-manifest-typing-file"></a>生成されたマニフェスト タイピング ファイルの使用
 
-従来のプロジェクトでは、通常は `private_typing` サブフォルダにある `inputsOutputs.d.ts` タイピング ファイルを手動で作成および編集する必要があります。 PowerApps CLI ツールはビルド時に自動的にこのファイルを生成します。 
+従来のプロジェクトでは、通常は `private_typing` サブフォルダにある `inputsOutputs.d.ts` タイピング ファイルを手動で作成および編集する必要があります。 Power Apps CLI ツールはビルド時に自動的にこのファイルを生成します。 
 
 Code-gen は、コンポーネントのソースコードで使われる `type` の定義が、コンポーネント マニフェスト ファイルで定義された `types` と同期していることを保証します。
 
@@ -173,6 +173,6 @@ Code-gen は、コンポーネントのソースコードで使われる `type` 
 
 ### <a name="see-also"></a>関連項目
 
-[PowerApps Component Framework の制限](limitations.md)<br/>
-[PowerApps Component Framework API の参照](reference/index.md)<br/>
-[PowerApps Component Framework の概要](overview.md)
+[Power Apps Component Framework の制限](limitations.md)<br/>
+[Power Apps Component Framework API の参照](reference/index.md)<br/>
+[Power Apps Component Framework の概要](overview.md)

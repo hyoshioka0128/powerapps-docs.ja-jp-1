@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 5d0ead5104765ab71848ffcf8c4aaff801a58a20
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d8e2421545247f72b5b164e08b4ac210466048c1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760655"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866844"
 ---
 # <a name="manage-web-links"></a>Web のリンクを管理する
 
 Web リンクは、任意の URL または同じ Web サイト内の Web ページにリンクできます。 Web リンクが Web ページへのリンクである場合、Web ページのセキュリティと公開状態は Web リンクにも適用されます。 Web リンクは、常に Web リンクのセットの一部です。 Web リンクのセットは、主ナビゲーションやフッター リンクのグループなどの、リンクのグループです。 Web リンクのセットでは、サイト マップ内の位置にかかわらず、内部および外部リンクをまとめてグループ化し、並べ替えをすることができます。
 
-## <a name="manage-web-links-in-powerapps-portals"></a>PowerApps  ポータルでの Web リンクの管理
+## <a name="manage-web-links-in-power-apps-portals"></a>Power Apps  ポータルでの Web リンクの管理
 
 カスタマイズ ポータルが Common Data Service 環境にインポートされたら、Web リンク セットで Web リンクを管理できます。
 

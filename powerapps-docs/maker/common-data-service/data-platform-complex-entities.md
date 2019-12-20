@@ -1,6 +1,6 @@
 ---
-title: PowerApps Plan 2 ライセンスが必要な複雑なエンティティ | Microsoft Docs
-description: PowerApps Plan 2 ライセンスが必要な Common Data Service の複合エンティティの一覧です。
+title: Power Apps Plan 2 ライセンスが必要な複雑なエンティティ | Microsoft Docs
+description: Power Apps Plan 2 ライセンスが必要な Common Data Service の複合エンティティの一覧です。
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,25 +13,25 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f5ec7419ea7369a57308e046ae820557303f0d15
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a87b41fd2688992b85fb4dde36a2e7119f4e7a9f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706640"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861252"
 ---
 # <a name="complex-entities-and-licensing"></a>複雑なエンティティとライセンス付与
 
 > [!IMPORTANT]
-> このトピックは最新ではなく、2019 年 10 月 1 日から適用される最新のライセンス変更を反映するため、間もなく更新されます。 エンティティに対するライセンス要件の最新情報については、 [PowerApps ライセンス ガイド](https://go.microsoft.com/fwlink/?linkid=2085130) を参照してください。
+> このトピックは最新ではなく、2019 年 10 月 1 日から適用される最新のライセンス変更を反映するため、間もなく更新されます。 エンティティに対するライセンス要件の最新情報については、 [Power Apps ライセンス ガイド](https://go.microsoft.com/fwlink/?linkid=2085130) を参照してください。
 
-次の複数のサーバー側ロジックを含むエンティティは、これらのエンティティを使用するアプリまたはフローのユーザーに、PowerApps Plan 2 または Microsoft Flow Plan 2 ライセンスを要求します。
+次の複数のサーバー側ロジックを含むエンティティは、これらのエンティティを使用するアプリまたはフローのユーザーに、Power Apps Plan 2 または Power Automate Plan 2 ライセンスを要求します。
 
 * コード プラグイン。詳細情報: [プラグイン開発](/powerapps/developer/common-data-service/plug-ins)
 * リアルタイム ワークフロー。 詳細情報: [ワークフロー プロセス](/flow/workflow-processes)
 
     > [!IMPORTANT]
-    >  リアルタイムのワークフローに変換されるワークフローのみ、リアルタイムおよび同期と見なされます。 バックグラウンドで実行されるワークフローは、適切な PowerApps プランでも使用でき、追加ライセンスは必要ありません。
+    >  リアルタイムのワークフローに変換されるワークフローのみ、リアルタイムおよび同期と見なされます。 バックグラウンドで実行されるワークフローは、適切な Power Apps プランでも使用でき、追加ライセンスは必要ありません。
 
 エンティティに複雑なビジネス ロジックを追加するかどうかを調べるには、環境で設定されたプラグイン アセンブリおよびワークフローの一覧を確認します。
 
@@ -178,5 +178,5 @@ ms.locfileid: "2706640"
 
 
 ## <a name="licensing"></a>ライセンス
-PowerApps と Dynamics 365 ライセンスの詳細については、 [ライセンスの概要](../../administrator/pricing-billing-skus.md) ページをご覧ください。
+Power Apps と Dynamics 365 ライセンスの詳細については、 [ライセンスの概要](../../administrator/pricing-billing-skus.md) ページをご覧ください。
 

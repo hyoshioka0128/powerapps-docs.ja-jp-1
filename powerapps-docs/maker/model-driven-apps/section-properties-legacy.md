@@ -1,5 +1,5 @@
 ---
-title: PowerApps のモデル駆動型アプリのメイン フォーム用セクションのプロパティ | MicrosoftDocs
+title: Power Apps のモデル駆動型アプリのメイン フォーム用セクションのプロパティ | MicrosoftDocs
 description: メイン フォームのセクション プロパティについて
 Keywords: メイン フォーム; セクションのプロパティ; Dynamics 365
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 45764a992215c697361f77da656182bdbb0e7783
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5e7b22ed1680a3f2377d8318eb46e1de791f21b2
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755008"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873643"
 ---
 # <a name="model-driven-app-form-section-properties"></a>モデル駆動型アプリ フォームのセクション プロパティ
 
@@ -33,8 +33,8 @@ ms.locfileid: "2755008"
   
  ヘッダーとフッターはセクションと似てますが、削除することはできません。 何も含まれていない場合、表示されません。 
 
-PowerApps サイトから **セクション プロパティ** にアクセスできます。 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+Power Apps サイトから **セクション プロパティ** にアクセスできます。 
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**フォーム** タブを選択します。 
 

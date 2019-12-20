@@ -1,6 +1,6 @@
 ---
-title: PowerApps ポータルを使用して 1 対多または多対 1 のエンティティ関連付けを作成、編集する | MicrosoftDocs
-description: PowerApps ポータルを使用して 1 対多または多 対 1 のエンティティ関連付けを作成する方法について説明します
+title: Power Apps ポータルを使用して 1 対多または多対 1 のエンティティ関連付けを作成、編集する | MicrosoftDocs
+description: Power Apps ポータルを使用して 1 対多または多 対 1 のエンティティ関連付けを作成する方法について説明します
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 70f48af48b2a9221029735de484b555bc03a66c4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 27f90d74025718eafca642040e40835530177c91
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756525"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861564"
 ---
-# <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-powerapps-portal"></a>PowerApps ポータルを使用して 1 対多または多対 1 のエンティティ関連付けを作成、編集する
+# <a name="create-and-edit-one-to-many-or-many-to-one-entity-relationships-using-power-apps-portal"></a>Power Apps ポータルを使用して 1 対多または多対 1 のエンティティ関連付けを作成、編集する
 
-[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、  Common Data Serviceの 1:N (1 対多) または N:1 (多対 1) の関連付けを簡単に作成、編集することができます。
+[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、  Common Data Serviceの 1:N (1 対多) または N:1 (多対 1) の関連付けを簡単に作成、編集することができます。
 
 ポータルでは一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 詳細: 
 - [1:N (一対多) または N:1 (多対一) の関連付けを作成および編集する](create-edit-1n-relationships.md)
@@ -37,7 +37,7 @@ ms.locfileid: "2756525"
 
 ## <a name="view-entity-relationships"></a>エンティティの関連付けを表示する
 
-1. [PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、 **モデル駆動型** または **キャンバス** 設計モードを選択します。
+1. [Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、 **モデル駆動型** または **キャンバス** 設計モードを選択します。
 2. **データ** > **エンティティ** を選択し、表示する関連付けを持つエンティティを選択します。
 3. **関連付け** タブでは、次のビューを選択できます。 
 

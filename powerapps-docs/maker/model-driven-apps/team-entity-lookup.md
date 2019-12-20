@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3db46288b0f1fc384cae8c683648d1dd0a945d44
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 81b20a326be239445422cce51a54b2e0b991d5c4
+ms.sourcegitcommit: a7f2313a048d3b8a03516a2e4c349f3fb08f4a22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710864"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "2805698"
 ---
-# <a name="add-the-team-entity-as-a-lookup-option-in-your-app"></a>チーム エンティティをアプリの検索オプションとして追加します
+# <a name="add-an-entity-as-a-lookup-option-in-your-app"></a>エンティティをアプリの検索オプションとして追加する
 
-統合インターフェイス アプリを使用する場合、チーム エンティティを検索で使用できるようにするには、チーム エンティティをアプリに追加する必要があります。 たとえば、取引先担当者レコードはユーザーまたはチームに割り当てることができます。  
+統一インターフェイス アプリを使用する場合、エンティティを検索で使用できるようにするには、エンティティをアプリに追加する必要があります。 たとえば、取引先担当者レコードはユーザーまたはチームに割り当てることができます。  
 
 > [!div class="mx-imgBorder"] 
 > ![](media/entity-lookup-teams.png "Entity lookup with both users and teams available")

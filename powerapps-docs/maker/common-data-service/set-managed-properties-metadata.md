@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c58e70e596bc2382907da5baebfe8d901cb9f420
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 287df9ac6daa38022a269177247a5b446bdfa1fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702328"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869989"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>Common Data Service メタデータの管理プロパティの設定 
 
@@ -64,7 +64,7 @@ ms.locfileid: "2702328"
 
 ## <a name="field-managed-properties"></a>フィールド管理プロパティ
 
-[PowerApps ソリューション エクスプローラーを使用して Common Data Service のフィールド作成、編集する](create-edit-field-solution-explorer.md) を参照してください。
+[Power Apps ソリューション エクスプローラーを使用して Common Data Service のフィールド作成、編集する](create-edit-field-solution-explorer.md) を参照してください。
 
 [フィールドを表示](create-edit-field-solution-explorer.md#view-fields)しながら、カスタム フィールドをアンマネージド ソリューションから選択し、メニュー バーで **その他の操作** >  **管理プロパティ** を選択します。
 
@@ -100,6 +100,6 @@ ms.locfileid: "2702328"
 
 [マネージド プロパティ](solutions-overview.md#managed-properties)<br />
 [ソリューション エクスプローラーを使用してエンティティを作成および編集する](create-edit-entities-solution-explorer.md)<br />
-[PowerApps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する](create-edit-field-solution-explorer.md)<br />
+[Power Apps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する](create-edit-field-solution-explorer.md)<br />
 [ソリューション エクスプローラーを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成および編集する](create-edit-1n-relationships-solution-explorer.md)<br />
 [ソリューション エクスプローラーを使用して Common Data Service で N:N (多対多) のエンティティ関係を作成する](create-edit-nn-relationships-solution-explorer.md)

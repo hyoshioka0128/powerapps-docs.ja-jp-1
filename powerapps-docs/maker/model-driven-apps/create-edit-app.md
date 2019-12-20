@@ -1,5 +1,5 @@
 ---
-title: PowerApps でアプリ デザイナーを使用してモデル駆動型アプリを作成、編集する | MicrosoftDocs
+title: Power Apps でアプリ デザイナーを使用してモデル駆動型アプリを作成、編集する | MicrosoftDocs
 description: アプリ デザイナーを使用してアプリを作成または編集する方法を学習する
 keywords: ''
 ms.date: 02/05/2019
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fb852ce8b6137d16eb8544da4eb6c9b92c12e29e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ef8fa8e20afd7d0e4ad1593ae169a132246d3992
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759297"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875427"
 ---
 # <a name="create-a-model-driven-app-by-using-the-app-designer"></a>アプリ デザイナーを使用してモデル駆動型アプリを作成する
 
@@ -37,13 +37,13 @@ ms.locfileid: "2759297"
 
 ## <a name="prerequisites"></a>前提条件
 アプリを作成する前に、以下の前提条件を確認してください。
-- PowerApps の新しい環境 詳細情報: [環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)
+- Power Apps の新しい環境 詳細情報: [環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)
 - システム管理者またはシステム カスタマイザー セキュリティ ロール。 詳細情報: [定義済みのセキュリティ ロールについて](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app#about-predefined-security-roles)
  
 <a name="createApp"></a>   
 ## <a name="create-an-app"></a>アプリの作成  
 
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **ホーム** ページで、 **空白からモデル駆動型アプリケーション** オプションを選択します。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **ホーム** ページで、 **空白からモデル駆動型アプリケーション** オプションを選択します。  
 
     > [!IMPORTANT]
     > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。 
@@ -82,7 +82,7 @@ ms.locfileid: "2759297"
 <a name="editApp"></a>   
 ## <a name="edit-an-app"></a>アプリの編集  
   
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 > [!IMPORTANT]
 > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。 

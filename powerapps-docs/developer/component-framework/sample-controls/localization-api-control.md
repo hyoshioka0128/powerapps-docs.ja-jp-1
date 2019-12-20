@@ -8,18 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 4917728c08323c0c0e96f452621cd14298116a12
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 43be87e84ea321db6f5df6919914bbccb48e0130
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754096"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861945"
 ---
 # <a name="implementing-localization-api-component"></a>ローカライズ API コンポーネントの実装
 
 このサンプルはカスタム コントロールのローカライズ方法を紹介します。 このサンプルでは [増分コンポーネント](increment-control.md) を使用して、ユーザーが選択した言語に基づいた増分ボタンに表示されるテキストをローカライズします。 
 
-PowerApps component framework は、ローカライズされた文字列の管理に使用される文字列 (resx) Web リソースを実装する概念を使用し、任意のユーザー インターフェイスに表示されます。 詳細: [文字列 (Resx) Web リソース](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources) 
+Power Apps component framework は、ローカライズされた文字列の管理に使用される文字列 (resx) Web リソースを実装する概念を使用し、任意のユーザー インターフェイスに表示されます。 詳細: [文字列 (Resx) Web リソース](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources) 
 
 > [!div class="mx-imgBorder"]
 > ![ローカライズ API のコンポーネント](../media/localization-api-control.png "ローカライズ API のコンポーネント")
@@ -60,7 +60,7 @@ export class TSLocalizationAPI
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Value of the field is stored and used inside the control
   private _value: number;
-  // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
+  // Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
   // label element created as part of this control
   private label: HTMLInputElement;
@@ -437,7 +437,7 @@ export class TSLocalizationAPI
 
 既存のプロジェクトをローカライズするためにやるべきことは、Web リソースの文字列に記載されているようにそれぞれ特定の言語にひとつずつ追加のリソース (resx) ファイルを作成し、[リソース](../reference/resources.md) ノードの下にあるコントロールのマニフェスト ファイルの一部としてそれらを含めます。  
 
-PowerApps component framework はユーザーの言語を識別し、`context.resources.getString` メソッドを使用して文字列にアクセスするとその言語固有のリソース ファイルから文字列を返します。
+Power Apps component framework はユーザーの言語を識別し、`context.resources.getString` メソッドを使用して文字列にアクセスするとその言語固有のリソース ファイルから文字列を返します。
 
 このサンプルでは、言語コード 3082 と 1035 を持つふたつの言語 `Spanish` と `Finnish` がそれぞれ定義されます。 `Increment component` サンプルのコピーを作成し、その名前を `Localization API` に変更しました。 サブフォルダ内のファイルを含むすべての対応するファイルは、それに応じて名前が変更されます。
 
@@ -445,7 +445,7 @@ PowerApps component framework はユーザーの言語を識別し、`context.re
 
 これらすべてのリソースファイルの文字列に使用されるキーが、すべての言語で同じ名前を共有していることを確認してください。 さて、コンポーネントが UI に表示されるとき、コードでは `context.resources.getString("PCF_LocalizationSample_ButtonLabel")` を使用してボタンに表示する値を取得します。
 
-このコード行が実行されると PowerApps component frameworkが自動的にユーザーの言語を識別して、定義した対応する言語ファイルで提供されるキーを使用してボタン ラベルの値を取得します。 以下は、このサンプル コンポーネントでサポートされる 3 つの言語で表示されるテキストです。
+このコード行が実行されると Power Apps component frameworkが自動的にユーザーの言語を識別して、定義した対応する言語ファイルで提供されるキーを使用してボタン ラベルの値を取得します。 以下は、このサンプル コンポーネントでサポートされる 3 つの言語で表示されるテキストです。
   
 |LanguageCode |表示される値 |
 |---|---|
@@ -456,5 +456,6 @@ PowerApps component framework はユーザーの言語を識別し、`context.re
 ### <a name="related-topics"></a>関連トピック
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)
+[サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
+[Power Apps Component Framework API の参照](../reference/index.md)<br/>
+[Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 59ed66842874414737b7bdc04f0f4dfa51d212c8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9e46f1273d9c599078cbcd814ebe54f6a55701f3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756569"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862405"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>ポータルのエンティティ フォームと Web フォームに注記をコンフィギュレーション
 
@@ -62,7 +62,7 @@ ms.locfileid: "2756569"
 | エラー メッセージ         | メモの一覧の読み込み中にエラーが発生した場合に表示されるメッセージを指定します。                                                                     |
 | アクセス拒否のメッセージ | ユーザーにメモの一覧を表示するためのアクセス許可がない場合に表示されるメッセージを指定します。                                                    |
 | 空の場合のメッセージ         | 現在のエンティティに表示できるメモがない場合に表示されるメッセージを指定します。                                                              |
-| リストの表示順序           | メモが表示される順序を設定できます。 リストの順序設定では、以下の内容を設定することができます。 <ul><li>属性: 並べ替えの基準にする列の論理名</li><li>エイリアス: クエリのエイリアス属性</li><li>向き: 昇順 (最小から最大、または最初から最後)、または降順 (最大から最小、または最後から最初)。</li></ul> ![リスト順の属性設定](media/set-attributes-list-orders.png "Sリスト順の属性設定) 並べ替えルールを追加するには、列 (4) を選択して詳細を入力します。 一覧の順序は、最も優先度の高いほうがリストの最上部になるように並べ替え処理されます。|
+| リストの表示順序           | メモが表示される順序を設定できます。 リストの順序設定では、以下の内容を設定することができます。 <ul><li>属性: 並べ替えの基準にする列の論理名</li><li>エイリアス: クエリのエイリアス属性</li><li>向き: 昇順 (最小から最大、または最初から最後)、または降順 (最大から最小、または最後から最初)。</li></ul>  ![リスト順の属性設定](media/set-attributes-list-orders.png "Seリスト注文の属性） 並べ替えのルールを追加するには、列 (4) を選択して詳細を入力します。 一覧の順序は、最も優先度の高いほうがリストの最上部になるように並べ替え処理されます。|
 ||
 
 

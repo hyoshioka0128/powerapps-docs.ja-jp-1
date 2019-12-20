@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: cfc2fd0ca753aebfe7bc77b73c7e7ec1ca011387
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a0ccf3fe2178b711a5eb61bc64814d343c648d25
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709984"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867328"
 ---
 # <a name="change-the-base-url-of-a-portal"></a>ポータルの基本 URL を変更する
 
@@ -23,7 +23,7 @@ ms.locfileid: "2709984"
 > [!NOTE]
 > ポータルの基本 URL を変更すると、古い URL にアクセスすることはできなくなり、それらのポータルを使用する他の顧客に対して使用可能になります。
 
-1.  [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1.  [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 2.  **ポータル アクション** > **基本 URL の変更**の順に移動します。 
 

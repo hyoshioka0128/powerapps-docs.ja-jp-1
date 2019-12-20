@@ -1,5 +1,5 @@
 ---
-title: PowerApps でモデル駆動型アプリ ビューを作成、編集する | MicrosoftDocs
+title: Power Apps でモデル駆動型アプリ ビューを作成、編集する | MicrosoftDocs
 description: ビューを作成または編集する方法を学習する
 ms.custom: ''
 ms.date: 06/11/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7a83134fb655e67dba8b0aa211ba6f25ec383832
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 68d295e6c5426296cf4fb77e794b7c6edbf37021
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759341"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875579"
 ---
 # <a name="create-or-edit-a-model-driven-app-view"></a>モデル駆動型アプリ ビューを作成または編集する
 
@@ -37,7 +37,7 @@ ms.locfileid: "2759341"
   
 ### <a name="create-a-new-view"></a>ビューの新規作成  
   
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
     
 
@@ -65,11 +65,11 @@ ms.locfileid: "2759341"
 
 7.  **OK** を選択して **フィルター条件の編集** ダイアログ ボックスを閉じ、ビュー エディターの **保存して閉じる** を選択します。  
   
-8.  ビューが PowerApps サイトの **ビュー** タブから使用できるようになり、アプリに追加できるようになっていることに注意してください。
+8.  ビューが Power Apps サイトの **ビュー** タブから使用できるようになり、アプリに追加できるようになっていることに注意してください。
   
 ### <a name="edit-a-view"></a>ビューの編集  
   
-1.  PowerApps サイトの **ビュー** タブから、 **従業員数** ビューを選択します。
+1.  Power Apps サイトの **ビュー** タブから、 **従業員数** ビューを選択します。
   
 2.  ビューの **名前** を **アリゾナ州の 25 人以上の従業員を持つ従業員数** に変更して、**OK** を選択します。  
 

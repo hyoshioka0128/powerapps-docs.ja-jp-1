@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 50459f3fcd9ebe8894196f934c1b1d2275c490c4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 896f6cfe9fabf08606e69b68b9957835a0147aee
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756393"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873402"
 ---
 # <a name="create-a-portal-in-an-environment-containing-model-driven-apps-in-dynamics-365"></a>Dynamics 365のモデル駆動型アプリケーションを含む環境でポータルを作成する
 
 Dynamics 365 (Dynamics 365 Sales や Dynamics 365 Customer Service など) にモデル駆動型アプリを含む環境を選択した場合、 [ポータルテンプレート](portal-templates.md)に記載されているポータルを作成できます。
 
-1.  [PowerApps](https://make.powerapps.com) にサインインします。
+1.  [Power Apps](https://make.powerapps.com) にサインインします。
 
 2.  左側のウィンドウの **作成する** を選択し、 **テンプレートを検索する** フィールドに **ポータル** と入力し、すべての Dynamics 365 ポータルのテンプレートを表示します。
 
@@ -37,4 +37,5 @@ Dynamics 365 (Dynamics 365 Sales や Dynamics 365 Customer Service など) に�
 > - [make.powerapps.com](https://make.powerapps.com) からのポータルをプロビジョニングすると、古いポータル アドオンを使用しません。 また、これらのポータルは、 **Dynamics 365管理センター** ページの **アプリケーション** タブ配下には表示されません。
 > - Common Data Service スターター ポータルは、 **Dynamics 365管理センター** ページから作成することはできません
 > - テナントにおけるポータルの作成を無効にするには、 [テナントでのポータルの作成を無効にする](create-portal.md#disable-portal-creation-in-a-tenant) を参照してください。
+> - ポータルを作成すると、いくつかの ソリューション が インストール され、サンプルデータ が インポート されます。
 

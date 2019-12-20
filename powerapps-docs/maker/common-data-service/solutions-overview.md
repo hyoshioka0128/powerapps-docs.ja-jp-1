@@ -1,5 +1,5 @@
 ---
-title: PowerApps でのソリューションに関する作業 | MicrosoftDocs
+title: Power Apps でのソリューションに関する作業 | MicrosoftDocs
 description: ソリューションの配布方法を説明します
 ms.custom: ''
 ms.date: 09/30/2019
@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 391220159917462833afac204183cdc68a94f898
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 286d955bfa0e6b28061d6a73962da25156820c9a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759033"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2870121"
 ---
 # <a name="solutions-overview"></a>ソリューションの概要  
 
-  PowerApps では、別の環境にアプリケーションおよびコンポーネントを移動したり、既存のアプリケーションに一連のカスタマイズを適用するために、ソリューションが利用されます。 ソリューションには、1 つ以上のアプリに加えて、サイト マップ、エンティティ、プロセス、Web リソース、オプション セットなど、それ以外のコンポーネントを含めることができます。  ソリューションは [AppSource](https://appsource.microsoft.com/) または独立系ソフトウェア ベンダー (ISV) から取得することができます。
+  Power Apps では、別の環境にアプリケーションおよびコンポーネントを移動したり、既存のアプリケーションに一連のカスタマイズを適用するために、ソリューションが利用されます。 ソリューションには、1 つ以上のアプリに加えて、サイト マップ、エンティティ、プロセス、Web リソース、オプション セットなど、それ以外のコンポーネントを含めることができます。  ソリューションは [AppSource](https://appsource.microsoft.com/) または独立系ソフトウェア ベンダー (ISV) から取得することができます。
   
 詳細: [ホワイトペーパー: ラソリューションのライフサイクルの管理](https://www.microsoft.com/download/details.aspx?id=57777)  
   

@@ -11,16 +11,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b875f06-0fd9-49fa-bc34-939d00e17185
-ms.openlocfilehash: f81c0bdf98e6db4ec3326a151e53961e4936f244
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9b19028b8daa24d9a76692baf59121e6089b46f0
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749356"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861965"
 ---
 # <a name="implementing-formatting-api-component"></a>書式設定 API コンポーネントの実装
 
-このサンプル コンポーネントは、PowerApps Component Framework の書式設定 API の一部として利用できるなさまざまなメソッドを説明します。 このサンプルでは、表示された値と一致する書式設定 API のそれぞれのメソッドを呼び出す一連の入力要素を作成します。
+このサンプル コンポーネントは、Power Apps Component Framework の書式設定 API の一部として利用できるなさまざまなメソッドを説明します。 このサンプルでは、表示された値と一致する書式設定 API のそれぞれのメソッドを呼び出す一連の入力要素を作成します。
 
 > [!div class="mx-imgBorder"]
 > ![API コンポーネントの書式設定](../media/formatting-api.png "API コンポーネントの書式設定")
@@ -50,7 +50,7 @@ ms.locfileid: "2749356"
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 export class FormattingAPI
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-  // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
+  // Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
   // reference to the div element that holds together all the HTML elements that we are creating as part of this control
   private divElement: HTMLDivElement;
@@ -288,7 +288,8 @@ export class FormattingAPI
 ### <a name="related-topics"></a>関連トピック
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)
+[サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
+[Power Apps Component Framework API の参照](../reference/index.md)<br/>
+[Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)
 
 

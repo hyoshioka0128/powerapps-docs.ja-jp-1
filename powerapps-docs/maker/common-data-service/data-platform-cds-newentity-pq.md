@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 22920502b75d16dedba7a70ced60b9b3f373ff10
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: cc5ce204047810704f01562a9a00668e51784769
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757581"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872913"
 ---
 # <a name="add-data-to-an-entity-in-common-data-service-by-using-power-query"></a>パワークエリを使用して Common Data Service エンティティにデータを追加する
 この処理では、 [Common Data Service](data-platform-intro.md) にエンティティを作成し、パワークエリを使用してエンティティにODataフィードから取得したデータを入力します。 同じ技術を使用してこれらのオンライン ソースおよび設置型ソースなどからデータを統合できます。
@@ -35,16 +35,16 @@ ms.locfileid: "2757581"
 
 新規または既存のエンティティへ読み込む前に、データをフィルター処理、変換、さらに結合できます。
 
-PowerApps のライセンスがない場合は、 [無料で新規登録](../signup-for-powerapps.md) することができます。
+Power Apps のライセンスがない場合は、 [無料で新規登録](../signup-for-powerapps.md) することができます。
 
 ## <a name="prerequisites"></a>前提条件
 このトピックに従って、エンティティを作成できるよう [環境](../canvas-apps/working-with-environments.md) を切替える必要があります。
 
 ## <a name="specify-the-source-data"></a>ソース データの指定
 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左端にある **データ** の下矢印をクリックまたはタップします。
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左端にある **データ** の下矢印をクリックまたはタップします。
 
-    ![PowerApps ホーム ページ](./media/data-platform-cds-newentity-pq/sign-in.png)
+    ![Power Apps ホーム ページ](./media/data-platform-cds-newentity-pq/sign-in.png)
 
 1. 表示される一覧で、**データ統合**をクリックまたはタップしてから、はウィンドウの右上隅の近くにある**新しいプロジェクト**をクリックまたはタップします。
 

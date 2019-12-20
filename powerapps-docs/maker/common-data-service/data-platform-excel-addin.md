@@ -13,24 +13,24 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fa1602b59ed0fdfeec09a8bc7e5f1126249f071f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 24164d6eb03de550a1f3f4a8f3e8402154d03046
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757493"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865612"
 ---
 # <a name="open-entity-data-in-excel"></a>エンティティ データを Excel で開く
-Microsoft Excel でエンティティ データを開くことで、 Microsoft PowerApps Excel アドインを使用してすばやく簡単にデータを表示、編集することができます。 PowerApps Excel アドインには Microsoft Excel 2016 が必要になります。
+Microsoft Excel でエンティティ データを開くことで、 Microsoft Power Apps Excel アドインを使用してすばやく簡単にデータを表示、編集することができます。 Power Apps Excel アドインには Microsoft Excel 2016 が必要になります。
 
-![Excel アドイン](./media/data-platform-cds-excel-addin/ExcelAddin.png "PowerApps Excel アドイン")
+![Excel アドイン](./media/data-platform-cds-excel-addin/ExcelAddin.png "Power Apps Excel アドイン")
 
 ## <a name="open-entity-data-in-excel"></a>エンティティ データを Excel で開く
 1. [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。 すべてのエンティティが表示されます。
 2. 関心のあるエンティティの右側にある省略記号 (...) をクリックします。
-3. **Excel で開く**をクリックし、生成されるワークブックを開きます。 このワークブックには、エンティティのバインド情報、環境へのポインタおよび PowerApps Excel アドイン へのポインタが含まれています。  
-4. Excel で、 **編集を有効にする** をクリックして PowerApps Excel アドインの実行を有効にします。 Excel ウィンドウの右側にあるウィンドウで Excel アドインを実行します。
-5. PowerApps Excel アドインを初めて実行する場合は、 **このアドインを信頼する** をクリックしてExcelアドインを実行できるようにします。
+3. **Excel で開く**をクリックし、生成されるワークブックを開きます。 このワークブックには、エンティティのバインド情報、環境へのポインタおよび Power Apps Excel アドイン へのポインタが含まれています。  
+4. Excel で、 **編集を有効にする** をクリックして Power Apps Excel アドインの実行を有効にします。 Excel ウィンドウの右側にあるウィンドウで Excel アドインを実行します。
+5. Power Apps Excel アドインを初めて実行する場合は、 **このアドインを信頼する** をクリックしてExcelアドインを実行できるようにします。
 6. サインインするように要求された場合、**サインイン**をクリックし、[powerapps.com](https:///?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で使用した同じ資格情報を使用してサインインします。 Excel アドインでは、前のサインインのコンテキストを使用し、できる場合は自動的にサインインします。 したがって、Excel アドインの右上部にあるユーザー名を検証します。
 
 Excel アドインは選択したエンティティのデータを自動的に読み取ります。 Excel アドインが読み取るまで、ワークブックにはデータがないことに注意してください。

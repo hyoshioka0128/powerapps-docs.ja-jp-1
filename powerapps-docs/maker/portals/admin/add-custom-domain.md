@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: cd015b656c90ec2707f3654e02b4e1a5ef65e7d2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c36a077233a83b6246634cfc456d51deec14cf40
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756833"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867377"
 ---
 # <a name="add-a-custom-domain-name"></a>カスタム ドメイン名の追加
 
 カスタム ドメインにより顧客はサポート リソースをより簡単に見つけることが可能になり、これはブランドの向上に役立ちます。 1 つのカスタム ドメイン名のみをポータルに追加できます。 ポータルをプロビジョニングしてドメイン名を取得したら、カスタム ホスト名を設定するための SSL 証明書が必要になります。 ドメインで SSL 証明書を購入した場合、ウィザードを使用してポータルをカスタム ドメインにリンクできます。
 
-1. [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1. [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 2. **ポータル アクション** > **カスタム ドメイン名の追加**の順に移動します。 ウィザードが開き、SSL 証明書を選択します。
 

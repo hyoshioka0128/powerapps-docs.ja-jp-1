@@ -1,5 +1,5 @@
 ---
-title: " PowerApps におけるモデル駆動型コンポーネントについて | MicrosoftDocs"
+title: " Power Apps におけるモデル駆動型コンポーネントについて | MicrosoftDocs"
 description: データ、UI、ロジック、ビジュアル化など、モデル駆動型アプリのさまざまなコンポーネントについて説明します。
 Keywords: フィールド、属性、モデル駆動型アプリ
 author: Mattp123
@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b84fa7a8bc0b77bddaa4e0a22d68cd983ac735ef
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4f1c05ca41e6873a0072e8ea6720343e468e38bb
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711788"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863065"
 ---
 # <a name="understand-model-driven-app-components"></a>モデル駆動型アプリのコンポーネントについて
 適切に設計されたモデル駆動型アプリは、完成したアプリの外観と機能を構築するためにデザイナーを使用して選択したいくつかのコンポーネントで構成されます。 デザイナーがアプリの構成に使用するコンポーネントとコンポーネント プロパティがメタデータになります。 
@@ -64,7 +64,7 @@ ms.locfileid: "2711788"
 |ワークフロー     |  ワークフローは、ユーザー インターフェイスを使用しないビジネス プロセスを自動化します。 デザイナーは、やり取りが不要な自動化を開始するワークフローを使用します。       | ワークフロー デザイナー        |
 |操作    |  操作は、ワークフローから直接ユーザー定義アクションなどの操作を手動で直接呼び出すことができるプロセスの種類です。       |  プロセス デザイナー       |
 |業務ルール     | 要件の設定、フィールドの非表示、データの検証など、ルールまたはレコメンデーション ロジックをフォームに適用するために使用されます。 アプリ デザイナーは、変化が急速で、よく使用される業務ルールを実装および保守するための、単純なインターフェイスを使用します。         |  業務ルール デザイナー       |
-|フロー     | フローは、通知の取得、アプリの同期、データの収集などを行うために、アプリとサービス間の自動化されたワークフローを作成できるクラウド ベースのサービスです。        | Microsoft Flow        |
+|フロー     | フローは、通知の取得、アプリの同期、データの収集などを行うために、アプリとサービス間の自動化されたワークフローを作成できるクラウド ベースのサービスです。        | Power Automate        |
 
 ![ワークフロー、操作、業務プロセス フローのデザイナー](media/model-driven-app-overview/designer-mash.png)
 

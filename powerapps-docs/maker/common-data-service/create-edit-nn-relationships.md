@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 90658adac8f04ea131968816a6004b4789ff42e4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 907a1147630cc779e6c1af7be2486548f1907c5a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757769"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865757"
 ---
 # <a name="create-many-to-many-entity-relationships-overview"></a>多対多のエンティティの関連付けの作成の概要
 
@@ -43,7 +43,7 @@ ms.locfileid: "2757769"
 
 |デザイナー| 説明|
 |--|--|
-|[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細については: [Common Data Service で PowerApps ポータルを使用して 多対多のエンティティー 関連付けを作成する](create-edit-nn-relationships-portal.md)|
+|[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細については: [Common Data Service で Power Apps ポータルを使用して 多対多のエンティティー 関連付けを作成する](create-edit-nn-relationships-portal.md)|
 |ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。<br />詳細については: [Common Data Service でソリューション エクスプローラーを使用してN:N (多対多) のエンティティ 関連付けを作成する](create-edit-nn-relationships-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ ms.locfileid: "2757769"
 
 このトピックの情報は、使用できるデザイナーの選択に役立ちます。 
 
-次の要件のいずれかに対処する必要がない場合は、 PowerApps ポータルを使用して多対多(N:N)エンティティの関連付けを作成、編集する必要があります:
+次の要件のいずれかに対処する必要がない場合は、 Power Apps ポータルを使用して多対多(N:N)エンティティの関連付けを作成、編集する必要があります:
 
 - モデル駆動型アプリのナビゲーション ウィンドウのオプションを構成します。
 - モデル駆動型アプリの高度な検索から関連付けを非表示にします。
@@ -61,7 +61,7 @@ ms.locfileid: "2757769"
 ## <a name="see-also"></a>関連項目
 
 [エンティティ間の関連付けの作成および編集](create-edit-entity-relationships.md)<br />
-[ PowerApps ポータルを使用して Common Data Service で多対多の関係を作成する](create-edit-nn-relationships-portal.md)<br />
+[ Power Apps ポータルを使用して Common Data Service で多対多の関係を作成する](create-edit-nn-relationships-portal.md)<br />
 [ソリューション エクスプローラーを使用して Common Data Service で N:N (多対多) のエンティティ関係を作成する](create-edit-nn-relationships-solution-explorer.md)<br />
 [開発者ドキュメント: エンティティの関連付けメタデータをカスタマイズする](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [開発者ドキュメント: エンティティの関連付けの有効性](https://docs.microsoft.com/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

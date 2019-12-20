@@ -1,27 +1,24 @@
 ---
-title: PowerApps で使用可能なポータル テンプレート | Microsoft Docs
-description: PowerApps で使用可能なさまざまなポータル テンプレートについて説明します。
+title: Power Apps で使用可能なポータル テンプレート | Microsoft Docs
+description: Power Apps で使用可能なさまざまなポータル テンプレートについて説明します。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 01995c7d1d23d4986441e8ccdcbba59029004cdf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f37769e63d6231869aedfd83e834ffcdd86062ea
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755689"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884522"
 ---
 # <a name="portal-templates"></a>ポータル テンプレート
 
-PowerApps での指定環境に基づいて、Common Data Service スターター ポータルまたは Dynamics 365 のモデル駆動型のアプリ含む環境のポータルを作成できます。
-
-> [!NOTE]
-> 既存のポータルと既存のポータル テンプレート (コミュニティ、パートナー、従業員セルフサービス、顧客セルフサービス) は、PowerApps ポータル Studioではサポートされていないため、一部のコンポーネントは表示されない可能性があります。 ただし、通常通り、残りのコンポーネントの編集を継続できます。
+Power Apps での指定環境に基づいて、Common Data Service スターター ポータルまたは Dynamics 365 のモデル駆動型のアプリ含む環境のポータルを作成できます。
 
 ## <a name="environment-with-common-data-service"></a>Common Data Service を使用する環境
 

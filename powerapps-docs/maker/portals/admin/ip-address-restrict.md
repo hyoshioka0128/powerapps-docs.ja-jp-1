@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: da8e6ac6d4e86a12ba196393073706c3705e4a92
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: efc0ea8449e387d292063f16ee6e38f69863267c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756129"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867240"
 ---
 # <a name="restrict-portal-access-by-ip-address"></a>IP アドレスによるポータル アクセスの制限
 
@@ -39,7 +39,7 @@ IP アドレスからポータルにアクセスまたは一連のIPアドレス
 > [!NOTE]
 > ポータルからアクセスできるパブリック IP アドレスを指定する必要があります。 プライベート IP アドレスは、ポータルからはアクセスできません。
 
-1.  [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1.  [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 2.  **IP アドレス制限の設定**に移動します。 IP アドレスおよびその種類の一覧が表示されます。
 
@@ -63,7 +63,7 @@ IP アドレスからポータルにアクセスまたは一連のIPアドレス
 
 以前に許可した IP アドレスからポータルへのアクセス権を削除するには、リストの IP アドレスを削除します。 どの IP アドレスも削除しない場合、ポータルはすべての IP アドレスからアクセスできます。
 
-1.  [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1.  [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 2.  **IP アドレス制限の設定**に移動します。 IP アドレスおよびその種類の一覧が表示されます。
 

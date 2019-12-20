@@ -1,6 +1,6 @@
 ---
 title: ソリューション エクスプローラーを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成および編集する | MicrosoftDocs
-description: PowerApps ソリューション エクスプローラーを使用して 1 対多または多 対 1 のエンティティ関連付けを作成する方法について説明します
+description: Power Apps ソリューション エクスプローラーを使用して 1 対多または多 対 1 のエンティティ関連付けを作成する方法について説明します
 ms.custom: ''
 ms.date: 10/28/2018
 ms.reviewer: ''
@@ -20,20 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3488b8228841f7b5323daee972472884e7c873d8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2c40ea1fc52849290135e04274fed5c5e0c9232f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758153"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866228"
 ---
 # <a name="create-and-edit-1n-one-to-many-or-n1-many-to-one-entity-relationships-using-solution-explorer"></a>ソリューション エクスプローラーを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成および編集する 
 
 ソリューション エクスプローラーでは Common Data Service において、 1:N (1 対多) または N:1 (多対 1) のエンティティの関係性を作成または編集することができます。
 
-[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ではほとんどの一般的なオプションを構成することができますが、ソリューション エクスプローラーを使用して設定する必要があるオプションもあります。 詳細: 
+[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ではほとんどの一般的なオプションを構成することができますが、ソリューション エクスプローラーを使用して設定する必要があるオプションもあります。 詳細: 
 - [1:N (一対多) または N:1 (多対一) の関連付けを作成する](create-edit-1n-relationships.md)
-- [PowerApps ポータルを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成、編集する](create-edit-1n-relationships-portal.md)
+- [Power Apps ポータルを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成、編集する](create-edit-1n-relationships-portal.md)
   
 ## <a name="open-solution-explorer"></a>ソリューション エクスプローラーを開きます
 
@@ -235,6 +235,6 @@ ms.locfileid: "2758153"
 
 [エンティティ間の関連付けの作成および編集](create-edit-entity-relationships.md)<br />
 [1:N (一対多) または N:1 (多対一) の関連付けを作成および編集する](create-edit-1n-relationships.md)<br />
-[PowerApps ポータルを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成、編集する](create-edit-1n-relationships-portal.md)<br />
+[Power Apps ポータルを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成、編集する](create-edit-1n-relationships-portal.md)<br />
 [N:N (多対多) の関連付けを作成する](create-edit-nn-relationships.md)
 

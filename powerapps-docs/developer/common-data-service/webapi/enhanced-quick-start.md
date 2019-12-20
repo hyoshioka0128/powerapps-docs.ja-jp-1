@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fa12284b6ca3eeca25ba01d52e4132319586eea4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c6625d36c889825a7cd4d68a17996e5ef8118284
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748933"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859940"
 ---
 # <a name="enhanced-quick-start"></a>拡張クイック スタート
 
@@ -425,7 +425,7 @@ Visual Studio プロジェクトで、次のステップを実行します:
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-これらのサンプルを実行するときに問題がある場合、 [https://github.com/Microsoft/PowerApps-Samples](https://github.com/Microsoft/PowerApps-Samples) の GitHub のリポジトリから、すべての PowerApps のサンプルをダウンロードできます 。
+これらのサンプルを実行するときに問題がある場合、 [https://github.com/Microsoft/PowerApps-Samples](https://github.com/Microsoft/PowerApps-Samples) の GitHub のリポジトリから、すべての Power Apps のサンプルをダウンロードできます 。
 
 このサンプルは、`PowerApps-Samples-master\PowerApps-Samples-master\cds\webapi\C#\SimpleWebApi` フォルダーにある [SimpleWebApi](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/webapi/C%23/SimpleWebApi) に基づいています。
 

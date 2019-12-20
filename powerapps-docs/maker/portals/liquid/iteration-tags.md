@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 600ddb0ac6e016acf057e592ac638b4e07ddf8ba
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 582bd72897a91fac08ac86a79aa6c71cab49aaad
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2708400"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866541"
 ---
 # <a name="iteration-tags"></a>反復タグ
 
@@ -401,4 +401,4 @@ Child Page 4
 [制御フロー タグ](control-flow-tags.md)
 [変数タグ](variable-tags.md)
 [テンプレート タグ](template-tags.md)
-[PowerApps Common Data Serviceエンティティ タグ](portals-entity-tags.md)
+[Power Apps Common Data Serviceエンティティ タグ](portals-entity-tags.md)

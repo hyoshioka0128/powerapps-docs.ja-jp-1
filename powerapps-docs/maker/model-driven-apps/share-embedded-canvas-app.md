@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 23435229c30298a6e2ff6a3e8417b0c09dad1312
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8c4b56d78b4c7337a9baf442231636e3d35ee27c
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711128"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884061"
 ---
 # <a name="share-an-embedded-canvas-app"></a>埋め込みキャンバス アプリの共有
 このトピックでは、既に作成済みの埋め込みキャンバス アプリを共有する方法を説明します。
@@ -34,7 +34,7 @@ ms.locfileid: "2711128"
 埋め込みキャンバス アプリを作成し、モデル駆動型フォームに追加した後、モデル駆動型フォームにアクセスするすべてのユーザーもキャンバス アプリおよび使用するデータに確実にアクセスできるようにする手順を実行する必要があります。 次のガイドラインを参照してください:
 -   組織またはセキュリティ グループまたは特定のユーザーと埋め込みキャンバス アプリを共有します。 詳細: [アプリの共有](../canvas-apps/share-app.md#share-an-app)
 -   ユーザーが埋め込みキャンバス アプリを使用しているすべての Common Data Service エンティティに適切なアクセス許可があることを確認します。 詳細: [エンティティのアクセス許可の管理](../canvas-apps/share-app.md#manage-entity-permissions)
--   SharePoint や OneDrive など、ユーザーが埋め込みキャンバス アプリを使用しているすべてのクラウド サービスのデータに適切なアクセス許可があることを確認します。 共有する手順は、各クラウド サービス固有で、PowerApps の範囲を超えています。
+-   SharePoint や OneDrive など、ユーザーが埋め込みキャンバス アプリを使用しているすべてのクラウド サービスのデータに適切なアクセス許可があることを確認します。 共有する手順は、各クラウド サービス固有で、Power Apps の範囲を超えています。
 
 > [!NOTE]
 > 現在、セキュリティ ロール内の**キャンバス アプリ**特権を使用して、埋め込みキャンバス アプリまたはスタンドアロン キャンバス アプリのいずれかに対するアクセス権をアプリ ユーザーに付与することはできません。

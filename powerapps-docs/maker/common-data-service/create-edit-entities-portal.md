@@ -1,6 +1,6 @@
 ---
-title: PowerApps ポータルを使用してエンティティを作成、編集する | MicrosoftDocs
-description: PowerApps ポータルを使用してエンティティを作成および編集する方法について
+title: Power Apps ポータルを使用してエンティティを作成、編集する | MicrosoftDocs
+description: Power Apps ポータルを使用してエンティティを作成および編集する方法について
 ms.custom: ''
 ms.date: 05/30/2018
 ms.reviewer: ''
@@ -21,16 +21,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6b1fb1e479237face89e0a19ee145f7fa428cb62
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2aa8cb6f5bb0cd3e58eda61c2b9c7b9d03637ec7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758109"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866096"
 ---
-# <a name="create-and-edit-entities-using-powerapps-portal"></a>PowerApps ポータルを使用してエンティティを作成、編集する
+# <a name="create-and-edit-entities-using-power-apps-portal"></a>Power Apps ポータルを使用してエンティティを作成、編集する
 
-[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、  Common Data Service のエンティティを簡単に作成、編集することができます。
+[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、  Common Data Service のエンティティを簡単に作成、編集することができます。
 
 ポータルでは一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 詳細: 
 - [Common Data Serviceでエンティティを作成、編集する](create-edit-entities.md)
@@ -38,7 +38,7 @@ ms.locfileid: "2758109"
 
 ## <a name="view-entities"></a>エンティティの表示
 
-1. [PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、 **モデル駆動型** または **キャンバス** 設計モードを選択します。
+1. [Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、 **モデル駆動型** または **キャンバス** 設計モードを選択します。
 2. **データ** > **エンティティ** を選択します。
 
 ![エンティティの表示](media/view-entities-portal.png)
@@ -143,7 +143,7 @@ ms.locfileid: "2758109"
 
 [エンティティを表示](#view-entities)しながら、エンティティを選択し、メニューまたはコンテキスト メニューから **エンティティの削除** を選択します。
 
-![PowerApps ポータルを使用してエンティティを削除する](media/delete-entity-powerapps-portal.png)
+![Power Apps ポータルを使用してエンティティを削除する](media/delete-entity-powerapps-portal.png)
 
 削除を防止する依存関係がエンティティにする場合は、エラー メッセージが表示されます。 依存関係を特定および削除するには、ソリューション エクスプローラーを使用する必要があります。 詳細については、「[エンティティの依存関係の特定](create-edit-entities-solution-explorer.md#identify-entity-dependencies)」を参照してください
 

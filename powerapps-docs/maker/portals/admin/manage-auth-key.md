@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 31632f4de1834855c696baa1b4b651ed777c8abd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 82245371095e523ba9221fc43ce21564e0445103
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709720"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862668"
 ---
 # <a name="connect-to-a-common-data-service-environment-using-a-portal"></a>ポータルを使用して Common Data Service 環境に接続する
 
@@ -24,7 +24,7 @@ ms.locfileid: "2709720"
 
 各ポータルは、同じ Common Data Service 環境に接続してもしなくても、関連つけられた別々の Azure Active Directory アプリケーションを持ちます。 ポータルのために作成されたデフォルトの Azure Active Directory 認証プロバイダーは、ポータルを認証するために同じ Azure Active Directory アプリケーションを使用します。 承認はポータルにアクセスするユーザーに割り当てられた Web ロールで実施されます。
 
-関連付けられたポータル アプリケーションを Azure Active Directory で表示できます。 このアプリケーションの名前は Microsoft CRM Portals で、ポータル ID は Azure Active Directory アプリケーション**の App ID URI** フィールドにあります。 ポータルをプロビジョニングするユーザーがこのアプリケーションを所有します。 このアプリケーションは削除または変更しないでください。ポータル機能が壊れる場合があります。 PowerApps ポータル管理センターからポータルを管理するには、アプリケーション所有者である必要があります。
+関連付けられたポータル アプリケーションを Azure Active Directory で表示できます。 このアプリケーションの名前は Microsoft CRM Portals で、ポータル ID は Azure Active Directory アプリケーション**の App ID URI** フィールドにあります。 ポータルをプロビジョニングするユーザーがこのアプリケーションを所有します。 このアプリケーションは削除または変更しないでください。ポータル機能が壊れる場合があります。 Power Apps ポータル管理センターからポータルを管理するには、アプリケーション所有者である必要があります。
 
 ## <a name="authentication-key"></a>認証キー
 
@@ -35,16 +35,16 @@ Azure Active Directory アプリケーションを使用して Common Data Servi
 
 ### <a name="authentication-key-details"></a>認証キーの詳細
 
-認証キーの詳細は、PowerApps ポータル管理センターおよびポータルに表示されます。
+認証キーの詳細は、Power Apps ポータル管理センターおよびポータルに表示されます。
 
-**PowerApps ポータル管理センター**
+**Power Apps ポータル管理センター**
 
-1. [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1. [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 2. **ポータル認証キーの管理**を選択します。 認証キーは有効期限およびサムプリントとともに表示されます。
 
    > [!div class=mx-imgBorder]
-   > ![PowerApps ポータルの管理センターの認証キーの詳細](../media/manage-auth-key.png "PowerApps  ポータル管理センターの認証キーの詳細")
+   > ![Power Apps ポータルの管理センターの認証キーの詳細](../media/manage-auth-key.png "Power Apps  ポータル管理センターの認証キーの詳細")
 
 **ポータル**
 
@@ -60,7 +60,7 @@ Azure Active Directory アプリケーションを使用して Common Data Servi
 
 ### <a name="authentication-key-expiration-notification"></a>認証キーの有効期限切れの通知
 
-認証キーの有効期限が切れる前、電子メール、PowerApps ポータル管理センター、およびポータルで通知されます。
+認証キーの有効期限が切れる前、電子メール、Power Apps ポータル管理センター、およびポータルで通知されます。
 
 **電子メール**
 
@@ -88,12 +88,12 @@ Azure Active Directory アプリケーションを使用して Common Data Servi
 > - 間隔はキー有効期限から UTC で計算されます。
 > - 電子メールは厳密に上記のような間隔になるとは保証されません。 電子メール通知は遅延または失われる場合があります。 オンラインでもキー有効期限を確認してください。
 
-**PowerApps ポータル管理センター**
+**Power Apps ポータル管理センター**
 
 キーの有効期限に関するメッセージはページのトップに表示されます。
 
 > [!div class=mx-imgBorder]
-> ![PowerApps ポータルの管理センターの認証キーの通知](../media/portal-admin-center-auth-notif.png "PowerApps  ポータルの管理センターでの認証キーの通知")
+> ![Power Apps ポータルの管理センターの認証キーの通知](../media/portal-admin-center-auth-notif.png "Power Apps  ポータルの管理センターでの認証キーの通知")
 
 **ポータル**
 
@@ -112,7 +112,7 @@ URL <portal_path>/_services/about に移動すると、キーの有効期限に�
 > [!NOTE]
 > キーを更新するには、ポータル管理へのアクセス許可が必要です。
 
-1. [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1. [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 2. **ポータル認証キーの管理**を選択します。 認証キーは有効期限およびサムプリントとともに表示されます。
 

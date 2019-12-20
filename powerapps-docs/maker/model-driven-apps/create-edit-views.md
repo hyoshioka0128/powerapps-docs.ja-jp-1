@@ -1,5 +1,5 @@
 ---
-title: PowerApps でモデル駆動型アプリ ビューを作成、編集する | MicrosoftDocs
+title: Power Apps でモデル駆動型アプリ ビューを作成、編集する | MicrosoftDocs
 description: ビューを作成または編集する方法を学習する
 ms.custom: ''
 ms.date: 06/11/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 78de24571448c0e3c8584ef3b31583acd9d6a4f4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0835e35f5815e7704cfe3d0de24ad4429600512b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704176"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868780"
 ---
 # <a name="understand-model-driven-app-views"></a>モデル駆動型アプリのビューについて
 
 <a name="BKMK_CreatingAndEditingViews"></a>   
 
-PowerApps アプリでは、特定のエンティティのレコードの一覧をアプリケーションで表示する方法を定義するためにビューを使用します。 ビューは以下の内容を定義します。
+Power Apps アプリでは、特定のエンティティのレコードの一覧をアプリケーションで表示する方法を定義するためにビューを使用します。 ビューは以下の内容を定義します。
 
 - 表示する列
 - 各列の幅
@@ -89,7 +89,7 @@ PowerApps アプリでは、特定のエンティティのレコードの一覧�
 
 ## <a name="places-where-you-can-access-the-view-editor-to-create-or-edit-views"></a>ビューを作成または編集するためにビュー エディターにアクセスできる場所
 
-- PowerApps サイト: ビュー デザイナーには、 **モデル駆動型** 領域 > **データ** > **エンティティ** > **ビュー** タブにてアクセスすることができます。既存のビューを開くか、または新しいビューを作成します。 詳細: [ビューの作成または編集](create-and-edit-views.md)
+- Power Apps サイト: ビュー デザイナーには、 **モデル駆動型** 領域 > **データ** > **エンティティ** > **ビュー** タブにてアクセスすることができます。既存のビューを開くか、または新しいビューを作成します。 詳細: [ビューの作成または編集](create-and-edit-views.md)
 - アプリ デザイナー: アプリで作業している場合、アプリ デザイナーを使用する場合があります。これには、作成されたビューのドラッグアンドドロップ機能を持つ単純で直観的な UI が用意されています。 詳細情報: [チュートリアル: アプリ デザイナーを使用して共有またはシステム ビューを作成および編集](create-edit-views-app-designer.md)
 - ソリューション エクスプローラー: Dynamics 365 を経験している場合は、ソリューション エクスプローラーを使用する場合があります。 詳細情報: [高度なモデル駆動型アプリの作成とカスタマイズ領域にナビゲートする](advanced-navigation.md#solution-explorer)
  

@@ -1,6 +1,6 @@
 ---
 title: ルールの一覧の取得 | Microsoft Docs
-description: 使用できるルールの一覧を取得するために PowerApps チェッカー Web API を使用して GET 要求の形成方法を説明します。
+description: 使用できるルールの一覧を取得するために Power Apps チェッカー Web API を使用して GET 要求の形成方法を説明します。
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf01185c83e3bfd4f325e4cdfd5b6625e58f7058
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 54db18819f22b01195fa1462395fc2be17f5ec74
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753039"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861824"
 ---
 # <a name="retrieve-the-list-of-rules"></a>ルールの一覧の取得
 
@@ -251,7 +251,7 @@ Content-Type: application/json; charset=utf-8
 
 ### <a name="see-also"></a>関連項目
 
-[PowerApps チェッカーの Web API を使用する](overview.md)<br />
+[Power Apps チェッカーの Web API を使用する](overview.md)<br />
 [ルールセットの一覧の取得](retrieve-rulesets.md)<br />
 [ファイルのアップロード](upload-file.md)<br />
 [分析の呼び出し](analyze.md)<br />

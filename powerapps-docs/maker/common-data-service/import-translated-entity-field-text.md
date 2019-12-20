@@ -1,5 +1,5 @@
 ---
-title: PowerApps を使って翻訳済みエンティティおよびフィールド テキストをインポートする | MicrosoftDocs
+title: Power Apps を使って翻訳済みエンティティおよびフィールド テキストをインポートする | MicrosoftDocs
 description: 翻訳済みエンティティおよびフィールド テキストのインポート方法について説明する
 ms.custom: ''
 ms.date: 06/19/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3836eaebd6f3064ad2e5f4209d86f1bc34898144
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9887132a8cba9a68faf0d9f16b2e7dbc64221f1b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706200"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863772"
 ---
 # <a name="import-translated-entity-and-field-text-back-into-an-app"></a>翻訳済みエンティティおよびフィールド テキストをアプリにインポートし直す
 
@@ -51,7 +51,7 @@ ms.locfileid: "2706200"
 
 ## <a name="community-tools"></a>コミュニティ ツール
 
-[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) は PowerApps 向けに XrmToolbox コミュニティが開発したツールです。 Easy Translator を使用して、翻訳をコンテキスト情報と共にエクスポートおよびインポートします。 
+[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) は Power Apps 向けに XrmToolbox コミュニティが開発したツールです。 Easy Translator を使用して、翻訳をコンテキスト情報と共にエクスポートおよびインポートします。 
 
 > [!NOTE]
 > このコミュニティ ツールは Microsoft ではサポートされていません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。

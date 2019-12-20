@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cb265233e0d72e7350603b496f91e6d62e32002d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3c93c6696efc39e4f2354418ad1743fca3ebea95
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758505"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873050"
 ---
 # <a name="edit-a-canvas-app-embedded-on-a-model-driven-form"></a>モデル駆動型フォーム上でキャンバス アプリを編集
 このトピックでは、モデル駆動型フォームに埋め込まれたキャンバス アプリを編集する方法を説明します。
@@ -39,16 +39,16 @@ ms.locfileid: "2758505"
 
 取引先企業エンティティの取引先企業メイン フォームという名前のファームに埋め込まれたキャンバス アプリを編集するとします。 これを行うには、次の手順を実行します。 
 
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 2.  取引先企業エンティティの取引先企業メイン フォームいう名前の [フォームを編集します](create-and-edit-forms.md) 。 
 3.  コマンドバーの **クラシックに切り替える** を選択して、クラシック フォームデザイナでフォームを開きます。
 4.  標準フォーム デザイナーで、埋め込みキャンバス アプリを表示するようにカスタマイズするフィールドを選択します。
 5.  選択したフィールドで、**ホーム** タブの **編集**グループで、**プロパティの変更**を選択します。
 6.  **フィールド プロパティ** ダイアログ ボックスで、**コントロール** タブを選択します。
 7.  **フィールド プロパティ** ダイアログ ボックスの、コントロールの一覧で **キャンバス アプリ** を選択します。
-8.  コントロール一覧の下のセクションでは、キャンバス アプリを編集するために、 **カスタマイズ** を選択します。 これにより、新しいタブで PowerApps Studio で編集するためのキャンバス アプリを開きます。
+8.  コントロール一覧の下のセクションでは、キャンバス アプリを編集するために、 **カスタマイズ** を選択します。 これにより、新しいタブで Power Apps Studio で編集するためのキャンバス アプリを開きます。
        > [!NOTE]
-       > PowerApps Studio を開くことが Web ブラウザーのポップアップ ブロッカーによりブロックされた場合は、make.powerapps.com  サイトを有効にするか、一時的にポップアップ ブロッカーを無効にしてから、再び **カスタマイズ** を選択する必要があります。
+       > Power Apps Studio を開くことが Web ブラウザーのポップアップ ブロッカーによりブロックされた場合は、make.powerapps.com  サイトを有効にするか、一時的にポップアップ ブロッカーを無効にしてから、再び **カスタマイズ** を選択する必要があります。
 9. 変更が完了したら、 **ファイル** タブを選択し、 **保存**を選択します。
 10. 変更した内容をエンドユーザーが利用できるようにするには、 **公開** を選択し、 **このバージョンを公開する**を選択します。
 

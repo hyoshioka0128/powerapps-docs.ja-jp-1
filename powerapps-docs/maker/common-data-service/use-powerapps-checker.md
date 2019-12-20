@@ -1,5 +1,5 @@
 ---
-title: ソリューション チェッカーを使用した PowerApps でのアプリの検証 | Microsoft Docs
+title: ソリューション チェッカーを使用した Power Apps でのアプリの検証 | Microsoft Docs
 description: ソリューションを検証するには、ソリューションのチェッカーを使用します。
 author: Mattp123
 manager: kvivek
@@ -13,14 +13,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c42dfe260fd77f40cd3046f754177838b17eefc2
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e9a3fb0c291678c5c571895c900bfde10a7f42ed
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758868"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885379"
 ---
-# <a name="use-solution-checker-to-validate-your-model-driven-apps-in-powerapps"></a>ソリューション チェッカーを使用した PowerApps でのモバイル駆動型アプリの検証
+# <a name="use-solution-checker-to-validate-your-model-driven-apps-in-power-apps"></a>ソリューション チェッカーを使用した Power Apps でのモバイル駆動型アプリの検証
 
 複雑なビジネス要件を満たすため、モデル駆動型アプリの作成者はCommon Data Service プラットフォームをカスタマイズして拡張できるという非常に高度なソリューションを作成することになりがちです。 高度な実装により、パフォーマンス、安定性、信頼性の問題が生じるリスクが増加し、ユーザーの作業に悪影響を与える可能性があります。 これらの問題を解決する方法を特定して理解することは、複雑で時間がかかることがあります。 ソリューション チェッカー機能を使用すると、一連のベスト プラクティス ルールに対してソリューションで機能豊富なスタティック分析チェックを実行し、これらの問題となるパターンを識別できます。 チェックが完了すると、特定された問題、影響を受けるコンポーネントとコード、各問題を解決する方法が説明されたするドキュメントへのリンクが一覧になった詳細なレポートを受け取ります。
 
@@ -33,13 +33,13 @@ ms.locfileid: "2758868"
 ソリューション チェッカーは、環境からエクスポートできるアンマネージド ソリューションを使用します。 
 
 > [!NOTE]
-> - このトピックでは、PowerApps メーカー ポータルのソリューション チェッカーを実行する方法を説明します。 サービスと直接やりとりしても使用できる PowerShell モジュールもご用意しています。 Microsoft.PowerApps.Checker.PowerShell モジュールは、オンプレミスおよびオンライン環境のサポート バージョンに関するマネージド ソリューションおよびアンマネージド ソリューションの分析用途でのみ使用でき、自動化またはサービスをお使いのビルドに統合してパイプラインを解放することができます。 詳細: [Microsoft.PowerApps.Checker.PowerShell の概要]( /powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module) 
+> - このトピックでは、Power Apps メーカー ポータルのソリューション チェッカーを実行する方法を説明します。 サービスと直接やりとりしても使用できる PowerShell モジュールもご用意しています。 Microsoft.PowerApps.Checker.PowerShell モジュールは、オンプレミスおよびオンライン環境のサポート バージョンに関するマネージド ソリューションおよびアンマネージド ソリューションの分析用途でのみ使用でき、自動化またはサービスをお使いのビルドに統合してパイプラインを解放することができます。 詳細: [Microsoft.PowerApps.Checker.PowerShell の概要]( /powershell/powerapps/overview?view=pa-ps-latest#get-started-using-the-microsoftpowerappscheckerpowershell-module) 
 > - ソリューション チェッカーでは、ECMAScript 6 (2015) 以降のバージョンを使用した JavaScript を含むソリューションを使用しません。 これらのバージョンのいずれかを使用した JavaScript が検出されると、Web リソースの JS001 構文は問題報告されます。
 
 ## <a name="enable-the-solution-checker"></a>ソリューション チェッカーを有効にする
-すべての Common Data Service 環境では、既定でソリューションチェッカーが有効となっています。 **ソリューション チェッカー**のメニュー項目は、PowerApps の **ソリューション** 領域で非管理ソリューションを選択した場合に使用することができます。 **ソリューション チェッカー** メニューで、**実行** オプションが使用できない場合は、PowerApps のチェッカーソリューションをインストールすることで有効にすることができます。 これをインストールするには、次の手順を実行します。   
+すべての Common Data Service 環境では、既定でソリューションチェッカーが有効となっています。 **ソリューション チェッカー**のメニュー項目は、Power Apps の **ソリューション** 領域で非管理ソリューションを選択した場合に使用することができます。 **ソリューション チェッカー** メニューで、**実行** オプションが使用できない場合は、Power Apps のチェッカーソリューションをインストールすることで有効にすることができます。 これをインストールするには、次の手順を実行します。   
 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、ソリューション チェッカーを有効にする Common Data Service 環境を選択します。 
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、ソリューション チェッカーを有効にする Common Data Service 環境を選択します。 
 2. 左のナビゲーション ウィンドウで、**ソリューション** を選択します。
 3. ツール バーで、**ソリューション チェッカー** を選択し、**インストール** を選択します。これにより、Microsoft AppSource ページが開きます。 ブラウザーでページがブロックされた場合、ポップアップ ウィンドウを許可する必要があります。 
 
@@ -48,25 +48,25 @@ ms.locfileid: "2758868"
 
 4. AppSource ページで **無料試用版** を選択します。 
 
-5. 同意した場合、契約条件に同意し、PowerApps チェッカー ソリューションをインストールする環境を選択します。 
-6. インストールが完了したら、PowerApps サイトの **ソリューション** リストを更新して、リューション チェッカーが使用可能であることを確認してください。  
+5. 同意した場合、契約条件に同意し、Power Apps チェッカー ソリューションをインストールする環境を選択します。 
+6. インストールが完了したら、Power Apps サイトの **ソリューション** リストを更新して、リューション チェッカーが使用可能であることを確認してください。  
 7. ソリューションを確認するには、[ソリューション チェッカーを実行します](#run-the-solution-checker)。
 
 
-<!-- ### Components created with the PowerApps checker
-When you install the PowerApps checker these solution specific components are created. 
+<!-- ### Components created with the Power Apps checker
+When you install the Power Apps checker these solution specific components are created. 
 - Entities: The entities that are created are required to store the results of solution analysis and the status of analysis jobs in your environment.
    - Analysis Component
    - Analysis Job
    - Analysis Result
 - System job: A system job is created so admins can remove solution analysis data from the environment. The job contains a configuration value, currently set to remove the solution analysis data after 60 days, which an administrator can override. 
 - Security Roles: Two security roles, **Export Customizations**, and **Solution Checker** are created. These roles are required to export the solution for analysis, and storing the analysis results to the entities in your environment.
-- User principle: The **PowerApps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The PowerApps Advisor is an application user and does not consume a license.  -->
+- User principle: The **Power Apps Advisor** user is created that allows the checker to authenticate with your Common Data Service environment and assign the two security roles, Export Customizations and Solution Checker. The Power Apps Advisor is an application user and does not consume a license.  -->
 
 ## <a name="run-the-solution-checker"></a>ソリューション チェッカーを実行する
-環境に PowerApps チェッカーをインストールしたら、PowerApps の **ソリューション** 領域でアンマネージド ソリューションを選択すると **ソリューション チェッカー** メニュー項目が利用可能になります。 
+環境に Power Apps チェッカーをインストールしたら、Power Apps の **ソリューション** 領域でアンマネージド ソリューションを選択すると **ソリューション チェッカー** メニュー項目が利用可能になります。 
 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
 2. 左側のウィンドウで、**ソリューション**を選択します。 
 3. 分析するアンマネージド ソリューションの横で、**...** を選択し、**ソリューション チェッカー**をポイントして**実行**を選択します。 
 
@@ -83,7 +83,7 @@ When you install the PowerApps checker these solution specific components are cr
     
     - この間、**実行…**  状態と、**ソリューション** リストの **ソリューション チェック** 列に表示されます。 
     
-    - チェックが完了したら、電子メール通知を受け取り、PowerApps サイトの **通知** 領域に通知が表示されます。  
+    - チェックが完了したら、電子メール通知を受け取り、Power Apps サイトの **通知** 領域に通知が表示されます。  
 
 5.  チェックが完了したら、[レポートを表示します](#review-the-solution-checker-report)。
 

@@ -1,6 +1,6 @@
 ---
 title: 分析の呼び出し | Microsoft Docs
-description: PowerApps チェッカーの Web API を使用して POST 要求を構成し、分析要求ジョブを開始する方法を説明します。
+description: Power Apps チェッカーの Web API を使用して POST 要求を構成し、分析要求ジョブを開始する方法を説明します。
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dad4a5ad069287ad84ff0cbf237dbdb243b82076
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9c4ddd64f5c32b9ea12782f34d0194082786f474
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748807"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861828"
 ---
 # <a name="invoke-analysis"></a>分析の呼び出し
 
@@ -113,7 +113,7 @@ Location: [Geographical URI]/api/status/9E378E56-6F35-41E9-BF8B-C0CC88E2B832&api
 
 ### <a name="see-also"></a>関連項目
 
-[PowerApps チェッカーの Web API を使用する](overview.md)<br />
+[Power Apps チェッカーの Web API を使用する](overview.md)<br />
 [ルールセットの一覧の取得](retrieve-rulesets.md)<br />
 [ルールの一覧の取得](retrieve-rules.md)<br />
 [ファイルのアップロード](upload-file.md)<br />

@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e1b89a4f87938ac0147a6724e27441517728baef
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 746f3b1677df7eb89ce35ef1161a291bfdb7d2be
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757845"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865876"
 ---
 # <a name="create-and-edit-global-option-sets-overview"></a>グローバル オプション セットの概要を作成および編集 
 
@@ -43,7 +43,7 @@ ms.locfileid: "2757845"
 
 |デザイナー| 説明|
 |--|--|
-|[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細: [オプション セットの作成](custom-picklists.md) |
+|[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細: [オプション セットの作成](custom-picklists.md) |
 |ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。 <br />詳細: [ソリューション エクスプローラーを使用して、 Common Data Service のグローバル オプション セットを作成、編集する](create-edit-global-option-sets-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ ms.locfileid: "2757845"
 
 このトピックの情報は、使用できるデザイナーの選択に役立ちます。 
 
-グローバル オプション セットで作業をするには、 [PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を使用する必要があります。ただし、以下のいずれかの要件に対処する必要がある場合を除きます。
+グローバル オプション セットで作業をするには、 [Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を使用する必要があります。ただし、以下のいずれかの要件に対処する必要がある場合を除きます。
 
 - オプションの色の割り当て
 - オプションの順序を変更

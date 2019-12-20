@@ -1,5 +1,5 @@
 ---
-title: PowerApps のモデル駆動型アプリのメイン フォーム用サブグリッドのプロパティ | MicrosoftDocs
+title: Power Apps のモデル駆動型アプリのメイン フォーム用サブグリッドのプロパティ | MicrosoftDocs
 description: メイン フォームのサブグリッド プロパティについて
 Keywords: メイン フォーム; サブグリッドのプロパティ; Dynamics 365
 author: Mattp123
@@ -18,19 +18,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a6bb86fde69554808f8cbf75f0366dc49ea485f4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ff9b79565525cee42eedfcd48c59669c4fe277d8
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759693"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872830"
 ---
 # <a name="sub-grid-properties-for-model-driven-app-main-forms-overview"></a>モデル駆動型アプリのメイン フォーム用サブグリッドのプロパティの概要
 
 レコードまたはグラフの一覧を表示するフォーム上のサブグリッドを構成することができます。 一覧ではなくグラフを表示するには、**ディスプレイ**タブの**グラフのみを示します**を選択します。  
 
-PowerApps サイトから **サブグリッド プロパティ** にアクセスできます。 
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
+Power Apps サイトから **サブグリッド プロパティ** にアクセスできます。 
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
 
      ![モデル駆動型の設計モード](media/model-driven-switch.png)
 

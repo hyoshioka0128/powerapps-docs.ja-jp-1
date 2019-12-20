@@ -1,6 +1,6 @@
 ---
 title: 検索フィールドを使用してエンティティ間の関連付けの作成 | Microsoft Docs
-description: 検索フィールドを使用して PowerApps でエンティティ間の関連付けを作成する方法の手順。
+description: 検索フィールドを使用して Power Apps でエンティティ間の関連付けを作成する方法の手順。
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ac4b57853e6dfc4c0969a4207538e15db0b58bc8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 468f31eeb48a3e79f79db9188be78a7fa6d28c18
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757537"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883577"
 ---
 # <a name="create-a-relationship-between-entities"></a>エンティティ間の関連付けを作成
 1 つのエンティティのデータは、多くの場合、別のエンティティのデータに関連しています。 たとえば、**教師**エンティティと**クラス**エンティティがある場合、**クラス**エンティティには**教師**エンティティへの検索関係があり、どの教師がクラスを教えるかを示します。 **教師**エンティティからのデータを表示するための検索フィールドを使用できます。 これは一般的に検索フィールドと呼ばれます。
@@ -136,7 +136,7 @@ ms.locfileid: "2757537"
 検索フィールドを含むエンティティから [アプリを自動的に作成](../canvas-apps/data-platform-create-app.md) する場合、エンティティの**プライマリ名**フィールドからのデータを含む**ドロップダウン**コントロールとして表示されます。
 
 ## <a name="add-1n-and-nn-relationships-for-canvas-apps"></a>キャンバス アプリの 1:N および N:N の関連付けを追加
-**関連付け** 機能を使用して、 Common Data Service の 1 対多、または多対多の関係を通じて 2 つのレコードをリンクします。 詳細については次を参照してください: [PowerAppsの関連付け と 関連付け解除の関数](../canvas-apps/functions/function-relate-unrelate.md)
+**関連付け** 機能を使用して、 Common Data Service の 1 対多、または多対多の関係を通じて 2 つのレコードをリンクします。 詳細については次を参照してください: [Power Appsの関連付け と 関連付け解除の関数](../canvas-apps/functions/function-relate-unrelate.md)
 
 ## <a name="next-steps"></a>次のステップ
 * [Common Data Service データベースを使用してアプリケーションを作成する](../canvas-apps/data-platform-create-app.md)

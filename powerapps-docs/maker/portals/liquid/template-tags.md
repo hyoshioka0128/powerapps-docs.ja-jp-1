@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 4475e9e2ccc474a6eeb3e7a2e959b360b3250aa8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 951b4055aa47a6fba31df5473bd517ed67c8f17d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757053"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873226"
 ---
 # <a name="template-tags"></a>テンプレート タグ
 
@@ -22,7 +22,7 @@ ms.locfileid: "2757053"
 
 ## <a name="include"></a>include
 
-名前により、1 つのテンプレートの内容を別のテンプレートに含めます。 PowerApps ポータルでは、これ以外のテンプレートのソースは、通常 [Web テンプレート](store-content-web-templates.md)です。 これにより、複数の場所で共通のテンプレートのフラグメントを再利用できます。  
+名前により、1 つのテンプレートの内容を別のテンプレートに含めます。 Power Apps ポータルでは、これ以外のテンプレートのソースは、通常 [Web テンプレート](store-content-web-templates.md)です。 これにより、複数の場所で共通のテンプレートのフラグメントを再利用できます。  
 
 テンプレートが別のテンプレートに含まれている場合、含まれたテンプレートは親のテンプレートで定義された変数にアクセスできます。
 
@@ -40,7 +40,7 @@ include タグに、名前の付けられた任意の数のパラメーターを
 
 テンプレートを継承するために、ブロック タグと組み合わせて使用されます。 これにより、親のレイアウトのオーバーライド指定領域でも、複数のテンプレートで共有レイアウトを使用できす。
 
-PowerApps ポータルでは、タグに提供された親のテンプレート名は、通常 [Web テンプレート](store-content-web-templates.md)の名前を参照します。  
+Power Apps ポータルでは、タグに提供された親のテンプレート名は、通常 [Web テンプレート](store-content-web-templates.md)の名前を参照します。  
 
 拡張を使用する場合は、テンプレートの最初の内容である必要があり、1 つ以上のブロック タグのみ続けることができます。
 
@@ -66,9 +66,13 @@ PowerApps ポータルでは、タグに提供された親のテンプレート�
 
 `Hello, {{ user.fullname }}. My name is Charles.`
 
+## <a name="substitution"></a>代替
+
+ユーザーがヘッダーとフッターのキャッシュを有効にし、特定のセクション出力のキャッシュを避けたい場合、このタグを使用できます。 このタグは、ラップされたコンテンツ ブロックの出力がキャッシュされないヘッダーまたはフッターにコンテンツブロックを提供します。 これは、リクエスト、ページ、言語、日付など、頻繁に更新される可能性のあるオブジェクトをユーザーが使用しているシナリオで役立ちます。 たとえば、[ヘッダーとフッターのキャッシュが有効になっている](../configure/enable-header-footer-output-caching.md)場合にヘッダーとフッターの Web テンプレート ソース コード更新シナリオを参照してください。
+
 ### <a name="see-also"></a>関連項目
 
 [制御フロー タグ](control-flow-tags.md)<br>
 [反復タグ](iteration-tags.md)<br>
 [変数タグ](variable-tags.md)<br>
-[PowerApps common data service エンティティ タグ](portals-entity-tags.md)
+[Power Apps common data service エンティティ タグ](portals-entity-tags.md)

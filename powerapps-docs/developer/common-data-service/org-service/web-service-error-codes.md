@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ef32c596a2740d5a459975061058d1bb682505fe
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3ba89c9798286e8aaf8a2a068c99347452b0effa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753071"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861276"
 ---
 # <a name="web-service-error-codes"></a>Web サービス エラー コード
 
@@ -669,9 +669,9 @@ ms.locfileid: "2753071"
 > |**名前**:<br />CanvasAppsExpectedFileMissing<br />**16 進数**:<br />80072356<br />**数値**:<br />-2147015850|ソリューションは想定される資産ファイルを指定しましたが、そのファイルは見つからないか無効でした。|
 > |**名前**:<br />CanvasAppsInvalidSolutionFileContent<br />**16 進数**:<br />80072354<br />**数値**:<br />-2147015852|キャンバス アプリをインポートする要求は、少なくとも 1 つの資産ファイルを含む必要があります。|
 > |**名前**:<br />CanvasAppsNotEnabled<br />**16 進数**:<br />80072351<br />**数値**:<br />-2147015855|キャンバス アプリの作成および編集が有効になっていません。|
-> |**名前**:<br />CanvasAppsServiceRequestClientFailure<br />**16 進数**:<br />80072352<br />**数値**:<br />-2147015854|PowerApps サービスへの要求がクライアント障害で失敗しました。|
-> |**名前**:<br />CanvasAppsServiceRequestServerFailure<br />**16 進数**:<br />80072353<br />**数値**:<br />-2147015853|PowerApps サービスへの要求がサーバー障害で失敗しました。|
-> |**名前**:<br />CanvasAppsUnexpectedCanvasAppId<br />**16 進数**:<br />80072355<br />**数値**:<br />-2147015851|以前存在した値が予期されたときに、PowerApps サービスへの要求で新しい canvasappid が生成されました。|
+> |**名前**:<br />CanvasAppsServiceRequestClientFailure<br />**16 進数**:<br />80072352<br />**数値**:<br />-2147015854|Power Apps サービスへの要求がクライアント障害で失敗しました。|
+> |**名前**:<br />CanvasAppsServiceRequestServerFailure<br />**16 進数**:<br />80072353<br />**数値**:<br />-2147015853|Power Apps サービスへの要求がサーバー障害で失敗しました。|
+> |**名前**:<br />CanvasAppsUnexpectedCanvasAppId<br />**16 進数**:<br />80072355<br />**数値**:<br />-2147015851|以前存在した値が予期されたときに、Power Apps サービスへの要求で新しい canvasappid が生成されました。|
 > |**名前**:<br />CanvasAppVersionDoesNotMatchLatestPublishedVersion<br />**16 進数**:<br />80072358<br />**数値**:<br />-2147015848|キャンバス アプリの最新の公開バージョンが、Dynamics サービスから認識されるバージョンと一致しません。|
 > |**名前**:<br />CanvasAppVersionMissingOrInvalid<br />**16 進数**:<br />80072357<br />**数値**:<br />-2147015849|キャンバス アプリのアプリ バージョンが設定されていないか、無効な値でした。|
 > |**名前**:<br />CAPolicyValidationFailedLateBind<br />**16 進数**:<br />80072561<br />**数値**:<br />-2147015327|ユーザーは管理者限定の場所にいます。|

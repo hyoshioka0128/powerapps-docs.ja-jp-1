@@ -1,5 +1,5 @@
 ---
-title: PowerApps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する | MicrosoftDocs
+title: Power Apps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する | MicrosoftDocs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.reviewer: ''
@@ -19,20 +19,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8bbae644cddd24bebfa03ab5e2a15a86c6ecd44e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8eee62b8190c2422e2e910fd28306a0d56da85ec
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758021"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865964"
 ---
-# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-solution-explorer"></a>PowerApps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する
+# <a name="create-and-edit-fields-for-common-data-service-using-power-apps-solution-explorer"></a>Power Apps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する
 
 ソリューション エクスプローラーは Common Data Serviceの フィールドを作成、編集することができます。
 
-[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ではほとんどの一般的なオプションを構成することができますが、ソリューション エクスプローラーを使用して設定する必要があるオプションもあります。 <br />詳細: 
+[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ではほとんどの一般的なオプションを構成することができますが、ソリューション エクスプローラーを使用して設定する必要があるオプションもあります。 <br />詳細: 
 - [Common Data Serviceのフィールドの作成と編集](create-edit-fields.md)
-- [PowerApps ポータルを使用して Common Data Service のフィールドの作成、編集を行います](create-edit-field-portal.md)
+- [Power Apps ポータルを使用して Common Data Service のフィールドの作成、編集を行います](create-edit-field-portal.md)
   
 ## <a name="open-solution-explorer"></a>ソリューション エクスプローラーを開きます
 
@@ -268,7 +268,7 @@ ms.locfileid: "2758021"
 
 ### <a name="see-also"></a>関連項目  
 [Common Data Serviceのフィールドの作成と編集](create-edit-fields.md)<br />
-[PowerApps ポータルを使用して Common Data Service のフィールドの作成、編集を行います](create-edit-field-portal.md)<br />
+[Power Apps ポータルを使用して Common Data Service のフィールドの作成、編集を行います](create-edit-field-portal.md)<br />
 [フィールドの種類とフィールド データの種類](types-of-fields.md)<br />
 [計算フィールドを定義して手動計算を自動化する](define-calculated-fields.md)<br />
 [値を集約するロールアップ フィールドを定義](define-rollup-fields.md)<br />

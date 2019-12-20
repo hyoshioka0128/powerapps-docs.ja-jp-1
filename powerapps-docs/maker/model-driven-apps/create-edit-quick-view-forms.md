@@ -1,5 +1,5 @@
 ---
-title: PowerApps でモデル駆動型アプリの簡易作成ビューを作成、編集する | MicrosoftDocs
+title: Power Apps でモデル駆動型アプリの簡易作成ビューを作成、編集する | MicrosoftDocs
 description: 簡易表示フォームの作成または編集の方法を学習する
 ms.custom: ''
 ms.date: 05/23/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0384b233ddd9df0f88019df6064f5a99ef8af0bd
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e6a4540927ad4329bab936fac631e2693d618104
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759121"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875271"
 ---
 # <a name="create-a-model-driven-app-quick-view-form-to-view-information-about-a-related-entity"></a>モデル駆動型アプリの簡易表示フォームを作成して関連エンティティに関する情報を表示する
 
@@ -43,7 +43,7 @@ ms.locfileid: "2759121"
 ## <a name="create-a-quick-view-form"></a>簡易表示フォームの作成  
  簡易表示フォームは、他のフォームの作成と同様な方法で、フォーム エディターを使用して作成されます。 簡易表示フォームは読み取り専用です。 これを使用して、読み取り専用のフォームを作成します。  
   
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 
     > [!IMPORTANT]
@@ -79,7 +79,7 @@ ms.locfileid: "2759121"
 ## <a name="add-a-quick-view-control-to-a-main-form"></a>メイン フォームへの簡易表示コントロールの追加  
  簡易表示フォームは、簡易表示フォームのエンティティを対象とした検索フィールドが存在するメイン フォームにのみ追加できます。  
   
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
     > [!IMPORTANT]
     > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。     

@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 49628d24d6d87f4cc541ba11e498b255c9b71a2f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 38ab2ea7116093e41d7816e17eed9cc183b34d14
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748849"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861764"
 ---
 # <a name="introduction-to-isv-studio-for-the-power-platform"></a>Power Platform ISV Studio の概要
 
@@ -40,7 +40,7 @@ ISV Studioは、独立系ソフトウェアベンダー(ISV)がアプリケー�
 
 ISV Studioは、 [AppSource](https://appsource.microsoft.com/)で公開、導入された Common Data Service 上に構築されたアプリケーションに対応しています。 AppSourceを介して展開されていないサイドロードされたソリューションでは、テレメトリは提供されません。
 
-このアプリケーションは現在、PowerApps などの Common Data Service、ならびに Dynamics 365 for Sales、Marketing、Service、および Talent で利用可能です。
+このアプリケーションは現在、Power Apps などの Common Data Service、ならびに Dynamics 365 for Sales、Marketing、Service、および Talent で利用可能です。
 
 エンド ユーザーが AppSource からアプリケーションをインストールすると、連絡先、使用率、トランザクション情報がアプリケーションプロバイダーと共有される可能性があることに対する確認を求める、同意ダイアログが表示されます。 この情報は、プロバイダが課金やその他のトランザクション処理をサポートし、ISVがISV Studioから遠隔的にデータを計測して学習する目的で使用されます。
 
@@ -50,7 +50,7 @@ ISV Studio の共有プレビューにアクセスするには、ブラウザで
 
 ## <a name="pre-requisites"></a>前提条件
 
-1. ISVは、[AppSource](https://appsource.microsoft.com/) で公開された 1 つまたは複数のサポート対象アプリを持つ、Microsoft 登録パートナー組織 [ISV] と関連付けられている必要があります。 サポートされているアプリには、PowerApps と Dynamics 365 Sales や Dynamics 365 Customer Service などの Dynamics 365 のモデル駆動型アプリがあります。
+1. ISVは、[AppSource](https://appsource.microsoft.com/) で公開された 1 つまたは複数のサポート対象アプリを持つ、Microsoft 登録パートナー組織 [ISV] と関連付けられている必要があります。 サポートされているアプリには、Power Apps と Dynamics 365 Sales や Dynamics 365 Customer Service などの Dynamics 365 のモデル駆動型アプリがあります。
 
 2. ISVは [Azure Active Directory](https://azure.microsoft.com/services/active-directory/) (AAD) アカウントを持っている必要があり、そのアカウントは ISV の クラウド パートナー ポータル(CPP) で、アプリのコントリビューターまたはオーナーとして設定されている必要があります。
 

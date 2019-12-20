@@ -1,7 +1,7 @@
 ---
 title: AppSource 上のコード コンポーネントを公開する | Microsoft Docs
 description: 自分のコード コンポーネントをテストした後、それを他の人が使うように配布する場合は、Microsoft AppSource 上で公開する必要があります。
-keywords: component framework、コード コンポーネント、PowerApps 制御
+keywords: component framework、コード コンポーネント、Power Apps 制御
 author: nkrb
 manager: kvivek
 ms.date: 06/09/2019
@@ -12,12 +12,12 @@ ms.custom:
 ms.topic: article
 ms.assetid: 7923e36d-3640-49f7-9f2f-c97358a632db
 ms.author: nabuthuk
-ms.openlocfilehash: e954539845d4ee56e79a6f0753249122d3947b48
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9d9466c8da4bcad54269f1820138a3a12a0debf1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749360"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861897"
 ---
 # <a name="publish-code-components-on-appsource"></a>AppSource でのコード コンポーネントのを開
 

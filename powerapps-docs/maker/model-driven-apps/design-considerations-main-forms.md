@@ -1,5 +1,5 @@
 ---
-title: PowerApps でのモデル駆動型アプリのメイン フォームに関する設計上の考慮事項 | MicrosoftDocs
+title: Power Apps でのモデル駆動型アプリのメイン フォームに関する設計上の考慮事項 | MicrosoftDocs
 description: メイン フォームの設計方法を説明します
 ms.custom: ''
 ms.date: 06/27/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0af7158c1734c0a73fc6658ee15f865e3d516676
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fcf37cd2de916e2f418c8cc5417fb5e4c9c2073b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2703692"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860416"
 ---
 # <a name="design-considerations-for-model-driven-app-main-forms"></a>モデル駆動型アプリのメイン フォームの設計に関する考慮事項
 

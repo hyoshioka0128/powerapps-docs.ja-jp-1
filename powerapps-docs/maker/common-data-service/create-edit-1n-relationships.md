@@ -1,5 +1,5 @@
 ---
-title: PowerApps の概要で 1:N (1 対多) または N:1 (多対 1) のエンティティの関連付けを作成する | MicrosoftDocs
+title: Power Apps の概要で 1:N (1 対多) または N:1 (多対 1) のエンティティの関連付けを作成する | MicrosoftDocs
 description: 1 対多または多対 1 のエンティティの関連付けを作成する方法を学習する
 ms.custom: ''
 ms.date: 05/27/2018
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 724a887df3a5347f1d403ac30201297abf5201aa
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 07e173dff08a10de5354c08d3530605f530e512d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758197"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866140"
 ---
 # <a name="create-one-to-many-or-many-to-one-entity-relationships-overview"></a>1 対多または多対 1 のエンティティの関連付けの概要を作成する
 
@@ -40,7 +40,7 @@ Common Data Service における 1:N (1 対多) または N:1 (多対 1) の関�
 
 |デザイナー| 説明|
 |--|--|
-|[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細: [PowerApps ポータルにおける 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成、編集する](create-edit-1n-relationships-portal.md)|
+|[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。<br />詳細: [Power Apps ポータルにおける 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成、編集する](create-edit-1n-relationships-portal.md)|
 |ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。 <br />詳細: [ソリューション エクスプローラーを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成および編集する](create-edit-1n-relationships-solution-explorer.md) |
 
 > [!NOTE]
@@ -53,7 +53,7 @@ Common Data Service における 1:N (1 対多) または N:1 (多対 1) の関�
 
 このトピックの情報は、使用できるデザイナーの選択に役立ちます。 
 
-次のいずれかの要件に対処する必要がない限り、1:N (1 対多) または N:1 (多対 1) のエンティティの関連付けの作成および編集に PowerApps ポータルを使用する必要があります:
+次のいずれかの要件に対処する必要がない限り、1:N (1 対多) または N:1 (多対 1) のエンティティの関連付けの作成および編集に Power Apps ポータルを使用する必要があります:
 
 - フィールド マッピングを構成する
 - モデル駆動型アプリのナビゲーション ウィンドウのオプションを構成する
@@ -72,7 +72,7 @@ Common Data Service における 1:N (1 対多) または N:1 (多対 1) の関�
 ### <a name="see-also"></a>関連項目
 
 [エンティティ間の関連付けの作成および編集](create-edit-entity-relationships.md)<br />
-[PowerApps ポータルを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成、編集する](create-edit-1n-relationships-portal.md)<br />
+[Power Apps ポータルを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成、編集する](create-edit-1n-relationships-portal.md)<br />
 [ソリューション エクスプローラーを使用して 1:N (1 対多) または N:1 (多対 1) のエンティティ関連付けを作成および編集する](create-edit-1n-relationships-solution-explorer.md)<br />
 [開発者ドキュメント: エンティティの関連付けメタデータをカスタマイズする](/dynamics365/customer-engagement/developer/customize-entity-relationship-metadata)<br />
 [開発者ドキュメント: エンティティの関連付けの有効性](/dynamics365/customer-engagement/developer/entity-relationship-eligibility)

@@ -57,6 +57,8 @@
       href: optimistic-concurrency.md
     - name: もう一方のユーザーの偽装
       href: impersonate-another-user.md
+    - name: サービス保護の API 制限
+      href: api-limits.md
     - name: ベスト プラクティス
       href: best-practices/work-with-data/index.md
     - name: サンプル データの追加と削除
@@ -343,7 +345,7 @@
       href: package-deployer/create-packages-package-deployer.md
     - name: ソリューションとパッケージの品質を検証する
       items:
-        - name: PowerApps チェッカー Web API を使用する
+        - name: Power Apps チェッカー Web API を使用する
           href: checker/webapi/overview.md
         - name: 分析の呼び出し
           href: checker/webapi/analyze.md

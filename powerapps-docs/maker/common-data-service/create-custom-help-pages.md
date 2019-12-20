@@ -22,18 +22,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e5c0d84da984fbdb5d7bdb4a2f05a567f76cee09
-ms.sourcegitcommit: 7411b4cf9e30e71052fe932dfd3276e969854af4
+ms.openlocfilehash: 25ad6206fb76c1c26f182c4ff4b67c8815e7e8ba
+ms.sourcegitcommit: 94aa6fd38aab1e145e0b9a0189154fb69b0ee223
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2768432"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "2778950"
 ---
 # <a name="create-guided-help-for-your-unified-interface-app"></a>統一インターフェイスアプリのガイド付きヘルプを作成する
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-カスタム ヘルプ ウィンドウとガイド付きタスクを使用して、統一インターフェイス アプリケーションに、自社組織に合わせたカスタムの製品内ヘルプ機能を提供します。 ユーザー定義のヘルプ ウィンドウを使用して、リッチテキスト、コンテンツリンク、イメージ、およびビデオリンクを含むエンティティ、フォーム、および言語固有のヘルプとガイダンスを提供します。 ユーザー定義のヘルプ ウィンドウには、従来のWebクライアントアプリケーションで使用されていた学習パスガイド付き学習機能を置き換えます。
+カスタム ヘルプ ウィンドウとガイド付きタスクを使用して、統一インターフェイス アプリケーションに、自社組織に合わせたカスタムの製品内ヘルプ機能を提供します。 ユーザー定義のヘルプ ウィンドウを使用して、リッチテキスト、コンテンツリンク、イメージ、およびビデオリンクを含むエンティティ、フォーム、および言語固有のヘルプとガイダンスを提供します。 
+
+> [!IMPORTANT]
+> ユーザー定義のヘルプ ウィンドウには、従来のWebクライアントアプリケーションで使用されていた学習パスガイド付き学習機能を置き換えます。
 
 ## <a name="custom-help-panes-and-learning-path"></a>ユーザー定義のヘルプ ウィンドウと学習パス
 ユーザー定義のヘルプウィンドウの新しいガイド付きヘルプの実装は、以前の学習パスガイド付きヘルプ機能とは異なります。 どちらの機能でも、アプリケーションのユーザー定義ヘルプを作成できます。 ただし、カスタム ヘルプ ウィンドウは、最も一般的なガイド付きヘルプ シナリオに最適化されています。   

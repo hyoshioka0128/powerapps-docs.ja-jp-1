@@ -14,12 +14,12 @@ search.audienceType:
 - customizer
 search.app:
 - PowerApps
-ms.openlocfilehash: b9c0f192f96d9ce967d1b8e56266aadeb64646c9
-ms.sourcegitcommit: 7411b4cf9e30e71052fe932dfd3276e969854af4
+ms.openlocfilehash: bd40b60a82735d2bddb3629c8b34647df9e34857
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2768292"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875423"
 ---
 # <a name="create-guided-help-learning-path-for-your-app"></a>ご利用のアプリケーションに ガイド付きヘルプを作成(学習パス)作成する
 
@@ -44,7 +44,7 @@ ms.locfileid: "2768292"
 
  ラーニング パスの内容を作成するために行う事。  
 
-- PowerApps または [!INCLUDE[pn_crm_online_shortest](../../includes/pn-crm-online-shortest.md)]を使用している  
+- Power Apps または [!INCLUDE[pn_crm_online_shortest](../../includes/pn-crm-online-shortest.md)]を使用している  
 
 - ラーニング パスにオプトインしました。 この設定は既定ではオンですが、オフの可能性があります。  
 
@@ -64,7 +64,7 @@ ms.locfileid: "2768292"
 ## <a name="turn-on-learning-path-for-your-organization"></a>組織のラーニング パスを有効にする  
  ラーニング パスは、組織で有効または無効を切り替えることができるオプション機能です。 [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] に含まれているラーニング パスのコンテンツを表示したり、ユーザー用の独自のラーニング パスのコンテンツを作成したり、またはその両方を行うことができます。  
 
-1. 管理者アカウントを使用して [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) または [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] にサインインします。  
+1. 管理者アカウントを使用して [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) または [!INCLUDE[pn_crm_shortest](../../includes/pn-crm-shortest.md)] にサインインします。  
 
 2. **設定**に移動し、 **システム**配下の **管理** を選択します。 詳細については次を参照してください: [設定](/powerapps/maker/model-driven-apps/advanced-navigation#settings)
 
@@ -133,7 +133,7 @@ ms.locfileid: "2768292"
 <a name="ConfigureRoles"></a>   
 #### <a name="configure-security-roles"></a>セキュリティ ロールの構成  
 
-1. ラーニング パスの作成権限があるアカウントを使用して、PowerApps へサイン インします。  
+1. ラーニング パスの作成権限があるアカウントを使用して、Power Apps へサイン インします。  
 
 2. **コンテンツ ライブラリ**を開きます。  
 

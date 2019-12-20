@@ -19,16 +19,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2ec1fb0471ad1f47f4afad083ad89e87633ce9ed
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7774090950b179e349c6c576439ebd4ad47da67b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2707300"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883753"
 ---
 # <a name="create-and-edit-entities-using-solution-explorer"></a>ソリューション エクスプローラーを使用してエンティティを作成および編集する
 
-一般的な状況では、 PowerApps ポータルを使用してエンティティーを簡単に作成することができますが、ポータルにすべての機能が実装されているわけではありません。 [Common Data Serviceでのエンティティの作成と編集](create-edit-entities.md) で説明されている要件を満たす必要がある場合は、ソリューションエクスプローラーを使用してエンティティを作成、編集することで、要件を満たすことができます。
+一般的な状況では、 Power Apps ポータルを使用してエンティティーを簡単に作成することができますが、ポータルにすべての機能が実装されているわけではありません。 [Common Data Serviceでのエンティティの作成と編集](create-edit-entities.md) で説明されている要件を満たす必要がある場合は、ソリューションエクスプローラーを使用してエンティティを作成、編集することで、要件を満たすことができます。
 
 ## <a name="open-solution-explorer"></a>ソリューション エクスプローラーを開きます
 
@@ -203,5 +203,5 @@ Both should point to this include
 
 ### <a name="see-also"></a>関連項目
 [Common Data Serviceでエンティティを作成、編集する](create-edit-entities.md)<br />
-[チュートリアル: PowerApps でのコンポーネントがあるユーザー定義エンティティの作成](/powerapps/maker/common-data-service/create-custom-entity)<br />
+[チュートリアル: Power Apps でのコンポーネントがあるユーザー定義エンティティの作成](/powerapps/maker/common-data-service/create-custom-entity)<br />
 [ソリューションの作成](create-solution.md)

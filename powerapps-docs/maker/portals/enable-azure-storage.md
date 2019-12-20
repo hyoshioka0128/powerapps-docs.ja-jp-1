@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/11/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 3da40cfdcb88726384218c4b1df370c301f8ac16
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0d9b49857528cf0e55fa2ad3dfcaae2aa88b77c0
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759913"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815994"
 ---
 # <a name="enable-azure-storage"></a>Azure Storage の有効化
 
@@ -55,7 +55,7 @@ FileStorage/CloudStorageAccount の値を検索するには、[!include[Azure po
 
 以下のように、クロス オリジンのリソース共有 (CORS) ルールをあなたの Azure Storage アカウントに追加する必要があります。それ以外の場合は、クラウド アイコンではなく通常の添付アイコンが表示されます:
 
-- **許可されているオリジン**: ドメインの指定。 例えば、contoso.crm.dynamics.com。
+- **許可されているオリジン**: ドメインの指定。 たとえば、`http://contoso.crm.dynamics.com` などとします。
 - **許可されている動詞**: GET, PUT, DELETE, HEAD, POST
 - **許可されているヘッダー**: オリジン ドメインが CORS 要求で指定できる要求ヘッダーを指定。 例えば、x-ms-meta-data\*、x-ms-meta-target\*。 
 - **公開されたヘッダー**: CORS 要求への応答で送信され、ブラウザが要求発行者に公開する応答ヘッダーを指定。 例えば、x-ms-meta-\*。

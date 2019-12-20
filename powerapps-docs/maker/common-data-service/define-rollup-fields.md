@@ -1,5 +1,5 @@
 ---
-title: PowerApps でロールアップ フィールドを定義する | MicrosoftDocs
+title: Power Apps でロールアップ フィールドを定義する | MicrosoftDocs
 description: ロールアップ フィールドを定義する方法を説明します
 ms.custom: ''
 ms.date: 05/23/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9691912bab995fac0b3489580aaa1fef82f9dcc8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e0c254635d6d51ee037ef7865f4b67b72710f319
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758637"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863997"
 ---
 # <a name="define-rollup-fields-that-aggregate-values"></a>値を集約するロールアップ フィールドを定義
 
 ロールアップ フィールドは、主要業務指標を監視することによって、ユーザーがデータを把握するのに役立ちます。 ロールアップ フィールドには、指定したレコードに関連するレコードに対して計算された集計値が含まれています。 これには、電子メールや予定など定期的なエンティティと活動エンティティが含まれます。
 
-より複雑なシナリオでは、レコードの階層にわたるデータを集計できます。 管理者またはカスタマイザーの場合は、 PowerApps のカスタマイズ ツールを使用してコードを記述することなく、ロールアップ フィールドを定義することができます。  
+より複雑なシナリオでは、レコードの階層にわたるデータを集計できます。 管理者またはカスタマイザーの場合は、 Power Apps のカスタマイズ ツールを使用してコードを記述することなく、ロールアップ フィールドを定義することができます。  
   
 <a name="BKMK_benefitsandcapabilities"></a> 
  

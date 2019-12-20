@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ecb0731d3cbba030f3b819e2b2744cb6a7b29c20
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 07a6d262aeaba818d5a965409ce28a90934536c3
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706904"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861300"
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>外部データ ソースからのデータを格納する仮想エンティティの作成および編集
 
@@ -48,7 +48,7 @@ Common Data Service には、外部データにアクセスする OData v4 Web �
 ## <a name="virtual-entity-benefits"></a>仮想エンティティの機能  
   
 - 開発者は、プラグインを実装し、 Common Data Service とプラグイン登録ツールを使って外部データを読み取ることができます。  
-- システム カスタマイザーは、 PowerApps ソリューション エクスプローラーを使用してデータ ソース レコードを構成し、コードを記述することなく、外部データへのアクセスに使用される仮想エンティティを作成します。  
+- システム カスタマイザーは、 Power Apps ソリューション エクスプローラーを使用してデータ ソース レコードを構成し、コードを記述することなく、外部データへのアクセスに使用される仮想エンティティを作成します。  
 - エンド ユーザーは、仮想エンティティによって作成されたレコードを使って、フィールド、グリッド、検索結果、Fetch XML ベースのレポートやダッシュボードのデータを表示できます。  
   
 <a name="AddDataSource"></a> 

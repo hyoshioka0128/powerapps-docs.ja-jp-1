@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 71c3418de53792b71987f1c0f4fd205a88760dab
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f93574f9a994d7363129f99fec9b33d4c9ee66ad
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754092"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861949"
 ---
 # <a name="implementing-increment-component"></a>増分コンポーネントの実装
 
-このサンプル コンポーネントは、 PowerApps Component Framework とエラー処理を使用してデータをバインドする方法を示します。 このコンポーネントは実行時に `Increment` ボタンを持つテキストボックスとして表示します。 テキストボックスは現在の値を示し `Increment` ボタンはクリック可能です。 ボタンをクリックするたびに、テキストボックスの値は 1 ずつ増えます。 増加する値は任意の数に変更できます。
+このサンプル コンポーネントは、 Power Apps Component Framework とエラー処理を使用してデータをバインドする方法を示します。 このコンポーネントは実行時に `Increment` ボタンを持つテキストボックスとして表示します。 テキストボックスは現在の値を示し `Increment` ボタンはクリック可能です。 ボタンをクリックするたびに、テキストボックスの値は 1 ずつ増えます。 増加する値は任意の数に変更できます。
 
 このコンポーネントを実装するには、まず最初に [マニフェスト](../manifest-schema-reference/manifest.md) ファイルを定義し、TypeScript でカスタム ロジックを実装します
 
@@ -58,7 +58,7 @@ export class TSIncrementControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Value of the field is stored and used inside the control
   private _value: number;
-  // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
+  // Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
   // label element created as part of this control
   private label: HTMLInputElement;
@@ -247,15 +247,16 @@ export class TSIncrementControl
 </root>
 ```
 
-ボタンをクリックすると、テキストボックスの値は 1 ずつ増えます。 更新された値は `notifyOutputChanged` メソッドを通して、PowerApps Component Framework にフローします。
+ボタンをクリックすると、テキストボックスの値は 1 ずつ増えます。 更新された値は `notifyOutputChanged` メソッドを通して、Power Apps Component Framework にフローします。
 
 > [!NOTE]
 > コンポーネントをフォーム上のフィールドに構成するときに、増加する値を変更できます。
 
-テキストボックスの値を編集し、それが有効な整数であれば、値を PowerApps Component Framework に更新します。 継続的に `Increment` ボタンをクリックして更新できます。 無効な整数の場合はエラー メッセージが表示されます。
+テキストボックスの値を編集し、それが有効な整数であれば、値を Power Apps Component Framework に更新します。 継続的に `Increment` ボタンをクリックして更新できます。 無効な整数の場合はエラー メッセージが表示されます。
 
 ### <a name="related-topics"></a>関連トピック
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)
+[サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
+[Power Apps Component Framework API の参照](../reference/index.md)<br/>
+[Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

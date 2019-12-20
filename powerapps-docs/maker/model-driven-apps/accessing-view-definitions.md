@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3b29f863399c8a49ca0c0d60ebe2196d6de6414c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 43a35f82f93260b4f4a8f6b5084e6827e46eff8f
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752023"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885138"
 ---
-# <a name="access-a-model-driven-app-view-definition-in-powerapps"></a>PowerApps でモデル駆動型アプリのビュー定義にアクセスする
+# <a name="access-a-model-driven-app-view-definition-in-power-apps"></a>Power Apps でモデル駆動型アプリのビュー定義にアクセスする
 
- このトピックでは、プロパティを表示するためにビュー定義を開き、ビューを構成するためにオプションを開きます。 PowerApps でビュー定義にアクセスするには、次のようないくつかの方法があります。 
+ このトピックでは、プロパティを表示するためにビュー定義を開き、ビューを構成するためにオプションを開きます。 Power Apps でビュー定義にアクセスするには、次のようないくつかの方法があります。 
   
   
 ## <a name="open-a-view-for-editing-in-the-latest-view-designer"></a>最新のビュー デザイナーで編集するためにビューを開く
@@ -39,7 +39,7 @@ ms.locfileid: "2752023"
 > [!IMPORTANT]
 > 最新バージョンのビュー デザイナーは現在プレビュー中です。 高度なフィルター処理、カスタム コントロール、および列のプロパティなどの一部の機能はまだサポートされていません。 これらのタスクを完了するには [ソリューション エクスプローラーで編集するためにビューを開きます](#open-a-view-for-editing-in-solution-explorer)。
 
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 
     > [!IMPORTANT]

@@ -15,19 +15,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 79773316bd5ff4e6d2652e7dfae53add0a782dc3
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b2cf649ad1bcba55e32192a8f72f3a7c7aabf10f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749194"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859932"
 ---
 # <a name="walkthrough-register-an-app-with-azure-active-directory"></a>チュートリアル: アプリを Azure Active Directory に登録します
 
-このチュートリアルでは、Azure Active Directory にアプリケーションを登録する方法について説明します。これにより、PowerApps ユーザーアカウントを持つユーザーは、OAuth 認証を使用して外部クライアントアプリケーションから Common Data Service 環境に接続できます。
+このチュートリアルでは、Azure Active Directory にアプリケーションを登録する方法について説明します。これにより、Power Apps ユーザーアカウントを持つユーザーは、OAuth 認証を使用して外部クライアントアプリケーションから Common Data Service 環境に接続できます。
 
 > [!IMPORTANT]
-> また、PowerApps には、外部アプリケーションから、および特別なアプリケーション ユーザー アカウントを使用するサービスからアプリ用 Common Data Service 環境のインスタンスに接続するためのサーバー間 (S2S) 認証オプションも用意されています。 S2S 認証は、Microsoft AppSource に登録されたアプリがサブスクライバーのデータにアクセスする際に使用する一般的な方法です。 詳細情報: [サーバー間 (S2S) 認証を使用して Web アプリケーションを作成する](build-web-applications-server-server-s2s-authentication.md)。
+> また、Power Apps には、外部アプリケーションから、および特別なアプリケーション ユーザー アカウントを使用するサービスからアプリ用 Common Data Service 環境のインスタンスに接続するためのサーバー間 (S2S) 認証オプションも用意されています。 S2S 認証は、Microsoft AppSource に登録されたアプリがサブスクライバーのデータにアクセスする際に使用する一般的な方法です。 詳細情報: [サーバー間 (S2S) 認証を使用して Web アプリケーションを作成する](build-web-applications-server-server-s2s-authentication.md)。
 
 Azure Active Directory へのアプリの登録は一般的に、外部クライアント アプリケーションの開発を希望する ISV が Common Data Service でのデータの読み取りおよび書き込みを実行する際に行われます。 Azure Active Directory でのアプリケーションの登録では、ISV がクライアント アプリケーションの認証コードで使用できる**アプリケーション ID** および**リダイレクト URI** の値が提供されます。 エンド ユーザーが ISV のアプリケーションを使用して、自分たちの Common Data Service 資格情報で Common Data Service 環境に*初めて*接続するとき、同意フォームがエンド ユーザーに表示されます。 ISV のアプリケーションで Common Data Service アカウントの使用に同意した後、エンドユーザーは外部アプリケーションからCommon Data Service 環境に接続できます。 同意フォームは、ISV のアプリケーションの使用に既に同意している最初のユーザー以外のユーザーには再度表示されません。 Azure Active Directory に登録されているアプリケーションはマルチテナント型です。それはつまり、他のテナントの他の Common Data Service ユーザーが ISV アプリを使用してその環境に接続できることを意味しています。 
 

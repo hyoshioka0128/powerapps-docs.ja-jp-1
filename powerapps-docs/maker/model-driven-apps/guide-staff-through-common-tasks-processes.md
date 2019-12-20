@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5ef65c12c20772a5eb8375b23290dd462b209173
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 60060865ec73dda1abed585c03232a367efb82f5
+ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701976"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "2779922"
 ---
 # <a name="apply-custom-business-logic-with-business-rules-and-flows-in-model-driven-apps"></a>モデル駆動型アプリの業務ルールおよびフローによるカスタム ビジネス ロジックの適用
 
@@ -51,7 +51,7 @@ ms.locfileid: "2701976"
 
 ## <a name="flows"></a>フロー  
   
-Microsoft Flow にはいくつかの種類のプロセスがあり、それぞれ異なる目的のためにデザインされています。  
+Power Automate にはいくつかの種類のプロセスがあり、それぞれ異なる目的のためにデザインされています。  
 
 -   自動化されたフロー。 イベントによってトリガーされたら 1 つまたは複数のタスクを自動的に実行するフローを作成します。 詳細: [フローの作成](/flow/get-started-logic-flow)。
     

@@ -9,22 +9,26 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 4bb581e06102ac351b3202d30fa8d418951fa291
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 86a9aa247956d86c184d49a58601a6a58e827f6d
+ms.sourcegitcommit: 5e4e51c5c0e16714c5e22e140785d84cc9383f31
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749056"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895277"
 ---
 # <a name="package-a-code-component"></a>コード コンポーネントをパッケージ化する
 
-このトピックでは、コード コンポーネントを Common Data Service にインポートする方法について説明します。 PowerApps CLIを使用してコード コンポーネントを実装した後、次の手順としては、すべてのコード コンポーネント要素をソリューション ファイルにバンドルし、ソリューション ファイルを  Common Data Service にインポートします。これによりランタイムでコード コンポーネントを表示できるようになります。
+このトピックでは、コード コンポーネントを Common Data Service にインポートする方法について説明します。 Power Apps CLIを使用してコード コンポーネントを実装した後、次の手順としては、すべてのコード コンポーネント要素をソリューション ファイルにバンドルし、ソリューション ファイルを  Common Data Service にインポートします。これによりランタイムでコード コンポーネントを表示できるようになります。
 
 ソリューション ファイルを作成およびインポートするには:
 
-1. サンプル コンポーネントのフォルダー内に新規フォルダーを作成するには、コマンド `mkdir Solutions` を使用して **ソリューション** (または任意の名前) と名前を付けます。 コマンド `cd Solutions` を使用して、ディレクトリに移動します。
+1.  `cdsproj` ファイルを持つフォルダー内に、`mkdir Solutions`と言うコマンドを使用して新しいフォルダーを作成して **ソリューション** (または任意の名前) として名前を付けます。 コマンド `cd Solutions` を使用して、ディレクトリに移動します。
 
-2. コマンド `pac solution init --publisher-name <enter your publisher name> --publisher-prefix <enter your publisher prefix>` を使用して新しいソリューション プロジェクトを作成します。 ソリューション プロジェクトは、Common Data Service へインポートするために使用されるソリューション zip ファイルにコード コンポーネントをビルドするために使用されます。
+2. 次のコマンドを使用して新しいソリューション プロジェクトを作成します。 ソリューション プロジェクトは、Common Data Service へインポートするために使用されるソリューション zip ファイルにコード コンポーネントをビルドするために使用されます。
+   
+   ```CLI
+   pac solution init --publisher-name <enter your publisher name> --publisher-prefix <enter your publisher prefix>
+   ```
 
    > [!NOTE]
    > `publisher-name` と `publisher-prefix` の値は環境に固有である必要があります。
@@ -32,32 +36,35 @@ ms.locfileid: "2749056"
 3. 新しいソリューション プロジェクトを作成したら、**ソリューション** フォルダーを作成したサンプル コンポーネントがある場所に参照します。 以下に示すコマンドを使用して参照を追加することができます。 この参照は、コード コンポーネントがビルド中に追加すべきソリューションのプロジェクトを通知します。 参照を 1 つのソリューションのプロジェクトの複数コンポーネントへ追加できます。
 
    ```CLI   
-    pac solution add-reference --path <path to your PowerApps component framework project>
+    pac solution add-reference --path <path to your Power Apps component framework project>
    ```
 
-3. ソリューションプロジェクトから zip ファイルを生成するには、ソリューション プロジェクトのディレクトリに移動して、コマンド `msbuild /t:build /restore` を使用してプロジェクトをビルドします。 このコマンドは *MSBuild* を使用して、復元の一部として *NuGet* の依存関係をプルダウンすることで、ソリューション プロジェクトを構築します。 初めてソリューションプロジェクトを構築する際には `/restore` のみを使用します。 その後の各ビルドに対しては、コマンド `msbuild` を実行できます。
+3. ソリューション プロジェクトから zip ファイルを生成するには、ソリューション プロジェクトのディレクトリに移動して、以下のコマンドを使用してプロジェクトを構築する必要があります。 このコマンドは *MSBuild* を使用して、復元の一部として *NuGet* の依存関係をプルダウンすることで、ソリューション プロジェクトを構築します。 初めてソリューションプロジェクトを構築する際には `/restore` のみを使用します。 その後の各ビルドに対しては、コマンド `msbuild` を実行できます。
 
+   ```CLI
+   msbuild /t:build /restore
+   ```
 
-    > [!NOTE]
+    > [!TIP]
     > - msbuild 15.9.*がパスに存在しない場合は、VS2017の開発者コマンドプロンプトを開いて `msbuild` コマンドを実行します。
     > - *デバッグ* 構成でソリューションをビルドして、アンマネージド ソリューション パッケージを生成します。 管理ソリューション パッケージは、*リリース* 構成でソリューションを構築することにより生成されます。 これらの設定は、`cdsproj` ファイルの `SolutionPackageType` プロパティを指定することでオーバーライドできます。
     > - 運用ビルドを発行するために`Release` にmsbuild構成を設定できます。 例: `msbuild /p:configuration=Release`
     > - ソリューションで `msbuild` コマンドを実行する際に *Ambiguous project name* と言うエラーが発生した場合は、ソリューション名とプロジェクト名が同じでないことを確認してください。
 
 4. 生成されたソリューション ファイルは、ビルド正常に行なわれたら `\bin\debug\` フォルダー内に配置されます。
-5. 手動で Web ポータルを使って[ソリューションを Common Data Service にインポートする](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) か、[あなたの組織に対する認証](#authenticating-to-your-organization) および [展開](#deploying-code-components) セクションを PowerApps CLI コマンドを使用してインポートします。
+5. Web ポータルを使用して手動で [ソリューションを Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) にインポートするか、[Power Apps Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools) を使用して自動的にインポートします。
 
-## <a name="authenticating-to-your-organization"></a>組織への認証
+## <a name="connecting-to-your-environment"></a>環境に接続しています
 
-Common Data Service 組織への認証をして、その後更新したコンプ―ネントをプッシュすることで、 PowerApps CLI から直接コード コンポーネントを展開することができます。 認証プロファイルを作成して、Common Data Service に接続し、更新コンポーネントをプッシュするには次の手順を使用します。 
+Common Data Service 環境に接続することで Power Apps CLI から直接コード コンポーネントを展開し、更新されたコンポーネントをプッシュできます。 認証プロファイルを作成して、Common Data Service に接続し、更新コンポーネントをプッシュするには次の手順を使用します。 
  
-1. 次のコマンドを使用して認証プロファイルを作成します: 
+1. 次のコマンドを使用して、認証プロファイルを作成します。 
  
     ```CLI
-    pac auth create --url <your Common Data Service org’s url> 
+    pac auth create --url <https://xyz.crm.dynamics.com> 
     ```
  
-2. 以前認証プロファイルを作成した場合は、次のコマンドを使用してすべての既存プロファイルを表示できます: 
+2. 前に認証プロファイルを作成した場合は、次のコマンドを使用してすべての既存プロファイルを表示できます。 
 
    ```CLI
     pac auth list 
@@ -69,7 +76,7 @@ Common Data Service 組織への認証をして、その後更新したコンプ
     Pac auth select --index <index of the active profile>
     ``` 
 
-4. 組織に関する基本的な情報を取得するには、次のコマンドを使用します。 接続は既定の認証のプロファイルを使用しておこないます。 
+4. 環境に関する基本情報を取得するには、次のコマンドを使用します。 接続は既定の認証のプロファイルを使用しておこないます。 
 
     ```CLI
     pac org who 
@@ -84,16 +91,65 @@ Common Data Service 組織への認証をして、その後更新したコンプ
 
 1. 有効な認証のプロファイルを作成したことを確認します。
 2. コード コンポーネントのプロジェクトが作成されたルート ディレクトリに移動します。
-3. `pac pcf push --publisher-prefix <your publisher prefix>` コマンドを実行します。
+3. コマンドを実行します。
+
+   ```CLI
+   pac pcf push --publisher-prefix <your publisher prefix>
+   ```
 
    > [!NOTE]
    > `push` コマンドで使用する公開元は、コンポーネントを含むソリューションの公開元の接頭辞と一致させる必要があります。
 
-## <a name="how-to-remove-components-from-a-solution"></a>ソリューションからコンポーネントを削除する方法
+## <a name="create-a-solution-project-based-on-an-existing-solution-in-common-data-service"></a>Common Data Service の既存のソリューションに基づくソリューション プロジェクトの作成
+
+Common Data Service で既存のソリューションに基づくソリューションを作成するには、コマンド `pac solution clone` を実行します。 それには、次を実行します。
+
+1. 有効な認証のプロファイルを作成したことを確認します。
+2.  コマンドを実行します。 
+
+   ```CLI
+   pac solution clone –name(-n) <name of the solution to be exported> --version(-v) <version of your solution> --include(-i) <settings that should be included>
+   ```
+
+詳細 : [オプションの設定](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.exportsolutionrequest?view=dynamics-general-ce-9)
+
+## <a name="create-a-plug-in-project-and-add-a-reference-to-it-in-your-solution"></a>プラグイン プロジェクトを作成し、ソリューションへの参照を追加する 
+
+> [!IMPORTANT]
+> - プラグイン コマンドはまだ公開プレビュー中です。 
+> - プレビュー機能は運用環境での使用を想定しておらず、機能が制限されている可能性があります。 これらの機能を公式リリースの前に使用できるようにすることで、顧客が一足先にアクセスし、そこからフィードバックを得ることができます。
+
+Power Apps CLI は、プラグイン プロジェクトへの参照を追加することにより、プラグイン プロジェクトの作成とソリューションへのパッケージ化をサポートするようになりました。 `pac plugin init` コマンドは、ディレクトリにテンプレートファイル (csproj、＃Plugin.cs＆ServiceHelper.cs) を作成します。 それには、次を実行します。 
+
+1.  有効な認証のプロファイルを作成したことを確認します。
+2.  プロジェクトを作成するルート ディレクトリに移動します。
+3.   コマンドを実行します。 
+
+     ```CLI
+     pac auth create –url <https://xyz.crm.dynamics.com>
+     ```
+4.  コマンドを実行してプラグイン プロジェクトを作成します
+
+    ```CLI
+    pac plugin init
+    ```
+
+5.  ソリューションのビルド時にプラグイン プロジェクトがビルドされるように、次のコマンドを使用してソリューション プロジェクトへの参照を追加します。
+
+    ```CLI
+    pac solution add-reference –path <path to your plugin project>
+    ```
+
+6.  コマンドを実行して、ソリューションと参照プラグインをビルドします。
+    ```CLI
+    msbuild
+    ```
+
+## <a name="remove-components-from-a-solution"></a>ソリューションからのコンポーネントの削除
 
 ソリューション ファイルからコード コンポーネントを削除したい場合:
 
-1.  ソリューション プロジェクト ディレクトリの `cdsproj` ファイルを編集し、コンポーネントへの参照を削除します。 以下は、コンポーネント 参照の例です:
+1. ソリューション プロジェクト ディレクトリの `cdsproj` ファイルを編集し、コンポーネントへの参照を削除します。 以下は、コンポーネント 参照の例です:
 
    ```XML
    <ItemGroup>
@@ -118,5 +174,5 @@ Common Data Service 組織への認証をして、その後更新したコンプ
 
 [モデル駆動型アプリでフィールドやエンティティにコード コンポーネントを追加する](add-custom-controls-to-a-field-or-entity.md)<br/>
 [キャンバス アプリにコンポーネントを追加する](component-framework-for-canvas-apps.md#add-components-to-a-canvas-app)<br/>
-[PowerApps Component Framework API の参照](reference/index.md)<br/>
-[PowerApps Component Framework の概要](overview.md)
+[Power Apps Component Framework API の参照](reference/index.md)<br/>
+[Power Apps Component Framework の概要](overview.md)

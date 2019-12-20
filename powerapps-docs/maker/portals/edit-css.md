@@ -9,20 +9,23 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: b4b0be6e3a5e08fc2c6b4679cf84669280c9271c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7fde904421d7c1d5b7e3b66d8644b0f984dd504b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759957"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864703"
 ---
 # <a name="edit-css"></a>編集]CSS
 
 カスケード スタイル シート (CSS) を使用して、Webサイトの書式を管理することができます。 既定では、bootstrap.min.css と theme.css ファイルを使用できます。 既存の CSS ファイルを編集して、新しい CSS ファイルをアップロードできます。 新しい CSS ファイルをアップロードすると、ポータル管理アプリで Web ファイルとして使用できます。
 
+> [!NOTE]
+> Power Apps ポータルは、[イベント ポータル](https://docs.microsoft.com/dynamics365/marketing/developer/event-management-web-application) 以外の Bootstrap 3.3.x に基づいています。 ポータル開発者は、Bootstrap 3 をその他の CSS ライブラリと置き換えるべきではありません、なぜなら Power Apps ポータルの一部のシナリオは Bootstrap 3.3.x に依存しているからです。
+
 コード エディターで CSS を開くには
 
-1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを PowerApps ポータル Studioで開きます。  
+1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを Power Apps ポータル Studioで開きます。  
 
 2.  画面左側のツールベルトから **テーマ** ![テーマ アイコン](media/theme-icon.png "テーマ アイコン") を選択してください。 次に使用可能なテーマ が表示されます。  
 
@@ -35,7 +38,7 @@ ms.locfileid: "2759957"
 
 新しい CSS ファイルをアップロードするには:
 
-1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを PowerApps ポータル Studioで開きます。  
+1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを Power Apps ポータル Studioで開きます。  
 
 2.  画面左側のツールベルトから **テーマ** ![テーマ アイコン](media/theme-icon.png "テーマ アイコン") を選択してください。 次に使用可能なテーマ が表示されます。  
 

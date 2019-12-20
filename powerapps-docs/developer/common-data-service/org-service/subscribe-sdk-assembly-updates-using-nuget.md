@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dd5d967cae6988c7949c1c6eca0b862cf42281b0
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 15790d37a187eafa73a5dc837aa090833f3d95ee
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752951"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859992"
 ---
 # <a name="subscribe-to-sdk-assembly-updates-using-nuget"></a>NuGet を使用した SDK のアセンブリ更新の購読
 
@@ -38,7 +38,7 @@ NuGet SDK は、[crmsdk](https://www.nuget.org/profiles/crmsdk) プロファイ�
 |[Microsoft.CrmSdk.CoreTools](https://www.nuget.org/packages/Microsoft.CrmSdk.CoreTools/)|Microsoft Dynamics 365 チーム作成の SDK ツールが含まれています。|
 |[Microsoft.CrmSdk.Deployment](https://www.nuget.org/packages/Microsoft.CrmSdk.Deployment/)|Microsoft.Xrm.Sdk.Deployment.dll アセンブリが含まれています。|
 |[Microsoft.CrmSdk.Outlook](https://www.nuget.org/packages/Microsoft.CrmSdk.Outlook/)|Microsoft.Crm.Outlook.dll アセンブリが含まれています。|
-|[Microsoft.CrmSdk.WebApi.Samples.HelperCode](https://www.nuget.org/packages/Microsoft.CrmSdk.WebApi.Samples.HelperCode/)|PowerApps ドキュメント チームが作成した C# ヘルパーコード。 このコードは Web API で使用します。 これらのクラスは、設置型とオンライン展開、エラー処理、および接続文字列の設定の両方にWebサービス認証を提供します。 これらのクラスは、Web API のサンプルで使用されます|
+|[Microsoft.CrmSdk.WebApi.Samples.HelperCode](https://www.nuget.org/packages/Microsoft.CrmSdk.WebApi.Samples.HelperCode/)|Power Apps ドキュメント チームが作成した C# ヘルパーコード。 このコードは Web API で使用します。 これらのクラスは、設置型とオンライン展開、エラー処理、および接続文字列の設定の両方にWebサービス認証を提供します。 これらのクラスは、Web API のサンプルで使用されます|
 |[Microsoft.CrmSdk.Workflow](https://www.nuget.org/packages/Microsoft.CrmSdk.Workflow/)|Microsoft.Xrm.Sdk.Workflow.dll アセンブリが含まれています|
 |[Microsoft.CrmSdk.XrmTooling.CoreAssembly](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.CoreAssembly/)|Microsoft.Xrm.Tooling.Connector アセンブリが含まれています。 |
 |[Microsoft.CrmSdk.XrmTooling.CrmConnector.PowerShell](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.CrmConnector.PowerShell/)|Xrm.Tooling.Connector Powershell のアセンブリが含まれています |

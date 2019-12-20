@@ -12,12 +12,12 @@ search.audienceType:
 - developer
 search.app:
 - PowerApps
-ms.openlocfilehash: 8b900ff8a1d4eae9664289cdcb96e53a453579ad
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 520079abf73c0367628de3bca01b316554b3af8c
+ms.sourcegitcommit: 8f32eed48adf4b24b9ca607bbf6db3d19749c46f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749129"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "2830526"
 ---
 # <a name="quick-start-sample-retrieve-common-data-service-environements-using-online-management-api"></a>クイックスタート サンプル: オンライン管理 API を使用して Common Data Service 環境を取得する 
 
@@ -45,7 +45,7 @@ C＃ サンプルは、Online Management API への認証方法と、Office 365 
 - .NET Framework 4.6.2
 
 サンプルを実行するには:
-1. サンプルを[ダウンロードし](https://code.msdn.microsoft.com/Sample-Retrieve-Customer-94e4076d)、展開します。
+1. サンプルを[ダウンロードし](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/online-management-api)、展開します。
 2. 展開された場所にある C＃ フォルダーの Visual Studio ソリューション ファイル (.sln) をダブルクリックし、Visual Studio でソリューションを開きます。
 3. **Programs.cs** ファイルでは、対象地域が北米以外である場合は、異なるサービス URL を指定します。 世界各国の地域におけるサービス URL 値の一覧については、「[サービス URL](get-started-online-management-api.md#service-url)」を参照してください。
     ```csharp

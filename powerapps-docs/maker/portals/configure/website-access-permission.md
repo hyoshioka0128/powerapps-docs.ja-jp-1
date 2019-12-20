@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 ポータルで Web サイトのアクセス許可を作成する | MicrosoftDocs
+title: Power Apps ポータルで Web サイトのアクセス許可を作成する | MicrosoftDocs
 description: Web サイトのアクセス許可を作成してポータル内の要素に関連付ける方法を説明します。
 author: sbmjais
 manager: shujoshi
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 0ac02992498204efc42a52e736284ea134ed42f5
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ab85eb4feca871089366c8675305b4f6c741f0af
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760651"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873467"
 ---
 # <a name="create-website-access-permissions"></a>Web サイトのアクセス許可の作成
 
@@ -38,8 +38,10 @@ Web サイトのアクセス許可を作成して Web ロールに追加する�
 
 4. **全般**で、名前、Web サイトを入力し、必要なアクセス許可を選択します。
 
-5. **Web ロール**で、アクセス許可を関連付ける Web ロールを選択して追加します。
+    ![Web サイトのアクセス許可の作成](../media/website-access-permission.png "Web サイトのアクセス許可の作成")
+
+5. **Web ロール**で、**既存の Web リソースの追加**を選択して、アクセス許可を関連付ける Web ロールを選択して追加します。
 
 6. 変更を保存します。
 
-    ![Web サイトのアクセス許可の作成](../media/website-access-permission.png "Web サイトのアクセス許可の作成")  
+    

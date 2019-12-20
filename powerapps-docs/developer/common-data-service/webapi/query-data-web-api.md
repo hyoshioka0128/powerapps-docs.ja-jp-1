@@ -2,7 +2,7 @@
 title: Web API を使用してデータのクエリを実行する (Common Data Service)| Microsoft Docs
 description: Common Data Service Web APIを使用して Common Data Service データをクエリするさまざまな方法と、これらのクエリに適用できるさまざまなシステム クエリ オプションについて説明します。
 ms.custom: ''
-ms.date: 09/10/2019
+ms.date: 12/04/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61b958e6f08757154dba415ec59ca6f12e80fb5f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3db4a538b45b754b1c0a3ca823638c4850aae43b
+ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753691"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890710"
 ---
 # <a name="query-data-using-the-web-api"></a>Web API を使用したクエリ データ
 
@@ -516,9 +516,13 @@ GET [Organization URI]/api/data/v9.1/accounts?$select=name,revenue
 ## <a name="retrieve-a-count-of-entities"></a>エンティティ数の取得
 
  `$count` システム クエリ オプションを `true` の値と共に使用して、フィルター条件と一致するエンティティ数を最大 5000 含めます。  
+
+ 
   
 > [!NOTE]
->  カウント値はシステム内のエンティティの総数を表すものではありません。 これは、返されるエンティティ数の最大数により制限されています。 詳細は: [返されるエンティティ数の制限](#bkmk_limits)  
+>  カウント値はシステム内のエンティティの総数を表すものではありません。 これは、返されるエンティティ数の最大数により制限されています。 詳細は: [返されるエンティティ数の制限](#bkmk_limits)
+>
+> 総数が 5000 を超えるエンティティのレコードを取得する場合は、<xref href="Microsoft.Dynamics.CRM.RetrieveTotalRecordCount?text=RetrieveTotalRecordCount  Function" /> を使用します。
   
  応答の `@odata.count` プロパティには、`odata.maxpagesize` 基本設定の制限に関係なく、フィルター条件と一致するエンティティ数が含まれます。  
   

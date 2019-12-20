@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a40b0b9e5fc64856be931a2407a451c8d27ef8ec
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c77eeb17dfce8d98b7c573993e3096124c8a9bb6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702372"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863862"
 ---
 # <a name="add-configure-move-or-delete-components-on-a-form"></a>フォーム上のコンポーネントを追加、構成、移動、削除する  
 フォーム デザイナーを使用すると、メーカーは [サブグリッド](form-designer-add-configure-subgrid.md)、[簡易表示](form-designer-add-configure-quickview.md)、アーク ノブ、リニア スライダーなどの一般的なコンポーネントを簡単に追加および構成できます。

@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c357649ba68e6bce1b9df51d9601507c337afd31
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3d35a73f02a1df1e3d5fd51f422b2b24263f53b5
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752467"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875623"
 ---
 # <a name="create-edit-or-configure-forms-using-the-form-designer"></a>フォーム デザイナーを使用してフォームを作成、編集、構成する 
 新しいフォームデザイナーを使用して、モデル駆動型アプリケーションのフォームを作成、編集、構成をします。 
@@ -35,7 +35,7 @@ ms.locfileid: "2752467"
 > 新しいモデル駆動型フォーム デザイナは、現在のところ名刺フォームの編集に対応していません。 詳細: [フォームの種類](types-forms.md)
 
 ## <a name="create-a-form"></a>フォームの作成 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
 2. 左のナビゲーション ウィンドウで、**データ**を展開してから、**エンティティ**を選択します。 
 3. 取引先企業エンティティなどのエンティティを選択してから、**フォーム**タブを選択します。 
 4. **フォームの追加** をクリックし、以下のいずれかを選択します。
@@ -46,7 +46,7 @@ ms.locfileid: "2752467"
 5. フォームへの変更が完了したら、 **保存** を選択してフォームを保存し、 **公開** を選択して、アプリケーションのユーザーに変更内容を公開します。  
 
 ## <a name="edit-a-form"></a>フォームの編集 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
 2. 左のナビゲーション ウィンドウで、**データ**を展開してから、**エンティティ**を選択します。 
 3. 取引先企業エンティティなどのエンティティを選択してから、**フォーム**タブを選択します。
 4. 編集を行うフォームの名称を選択します。  

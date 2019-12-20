@@ -1,6 +1,6 @@
 ---
 title: '開発者向け: Common Data Service のプラグインとワークフローの開発に関する最良の導入手法とガイド | Microsoft Docs'
-description: PowerApps で Common Data Service の開発者のための、プラグインとワークフロー開発に関するベスト プラクティスとガイド。
+description: Power Apps で Common Data Service の開発者のための、プラグインとワークフロー開発に関するベスト プラクティスとガイド。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a3915f554ef650df33f53921c4fba8135ea1baf5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ca0c34bfb12ba417c14426cbb14dc2382d8ffc55
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748822"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883549"
 ---
 # <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service"></a>Common Data Serviceのプラグインとワークフローの開発に関する最良の導入手法とガイド
 

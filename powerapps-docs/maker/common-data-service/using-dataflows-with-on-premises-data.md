@@ -23,15 +23,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4a47f082520b4680c9045209f85c26beb3586875
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0b534e3c4a7aae36d38901b75b34cc87fd7f511e
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752243"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895245"
 ---
 # <a name="using-an-on-premises-data-gateway-in-power-platform-dataflows"></a>Power Platform データフローでオンプレミス データ ゲートウェイを使う
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Power Platform データフローと、オンプレミス SQL Server データベースやオンプレミス SharePoint サイトなどクラウドではないデータ ソースの間でデータを簡単かつセキュリティ移行するため、オンプレミス データ ゲートウェイをインストールします。
 管理者権限を持つすべてのゲートウェイを表示し、それらのゲートウェイのアクセス許可および接続を管理できます。
@@ -52,13 +51,13 @@ Power Platform データフローと、オンプレミス SQL Server データ�
 
 ## <a name="prerequisites"></a>前提条件
 
--   PowerApps アカウント。 持っていない場合は、 [30 日間無料でサインアップできます](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)。
+-   Power Apps アカウント。 持っていない場合は、 [30 日間無料でサインアップできます](https://docs.microsoft.com/powerapps/maker/signup-for-powerapps)。
 
 -   ゲートウェイの管理者権限。 これらのアクセス許可は、インストールするゲートウェイにより既定で提供されます。 管理者が、他のユーザーにゲートウェイのアクセス許可を与えることができます。 
 
--   オンプレミス ゲートウェイを使用してオンプレミス データへのアクセスをサポートするライセンス。 詳細については、[適切な PowerApps プランの検索ページ](https://powerapps.microsoft.com/pricing/)の「データとシステムに接続」を参照してください。
+-   オンプレミス ゲートウェイを使用してオンプレミス データへのアクセスをサポートするライセンス。 詳細については、[適切な Power Apps プランの検索ページ](https://powerapps.microsoft.com/pricing/)の「データとシステムに接続」を参照してください。
 
--   ゲートウェイおよびオンプレミス接続は、ユーザーの既定の環境で作成および使用できます。 詳細: [環境および Microsoft PowerApps に関する作業](../canvas-apps/working-with-environments.md)
+-   ゲートウェイおよびオンプレミス接続は、ユーザーの既定の環境で作成および使用できます。 詳細: [環境および Microsoft Power Apps に関する作業](../canvas-apps/working-with-environments.md)
 
 ## <a name="install-a-gateway"></a>ゲートウェイをインストールする
 1.  [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) の左側のナビゲーション ウィンドウで、**ゲートウェイ**を選択します。
@@ -107,9 +106,9 @@ Power Platform データフローと、オンプレミス SQL Server データ�
     - 接続を共有するには、**共有** を選択し、ユーザーの追加または削除を行います。
 
       > [!NOTE]
-      > SQL Server 接続などの一部の接続の種類のみを共有できます。 詳細については、[PowerApps でキャンバス アプリケーションのリソースを共有する](../canvas-apps/share-app-resources.md)を参照してください。 <br />
+      > SQL Server 接続などの一部の接続の種類のみを共有できます。 詳細については、[Power Apps でキャンバス アプリケーションのリソースを共有する](../canvas-apps/share-app-resources.md)を参照してください。 <br />
       >
-      > 接続の管理方法についての詳細は、[PowerApps でキャンバス アプリケーション接続を管理する](../canvas-apps/add-manage-connections.md)を参照してください。
+      > 接続の管理方法についての詳細は、[Power Apps でキャンバス アプリケーション接続を管理する](../canvas-apps/add-manage-connections.md)を参照してください。
 
 
 ## <a name="limitations"></a>制限
@@ -127,7 +126,7 @@ Power Platform データフローと、オンプレミス SQL Server データ�
 
 ## <a name="next-steps"></a>次のステップ
 
-- [PowerApps でのデータフローの作成と使用について](create-and-use-dataflows.md)
+- [Power Apps でのデータフローの作成と使用について](create-and-use-dataflows.md)
 
 - [パワークエリを使用して Common Data Service エンティティにデータを追加する](data-platform-cds-newentity-pq.md)
 

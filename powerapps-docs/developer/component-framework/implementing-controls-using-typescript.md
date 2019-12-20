@@ -1,5 +1,5 @@
 ---
-title: TypeScript を使用したコード コンポーネントの実装 | MicrosoftDocs
+title: Power Apps Component Framework を使用して最初のコンポーネントを作成する | MicrosoftDocs
 description: TypeScript を使用してコード コンポーネントを実装する方法
 manager: kvivek
 ms.date: 10/01/2019
@@ -8,16 +8,16 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 669bf03d7869d6fd625288a65a305a3a458cfde4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: dc71362d9b4076e74b836e9f7aa1603c8c84df47
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749057"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895073"
 ---
-# <a name="implement-components-using-typescript"></a>TypeScript を使ってコンポーネントを実装する
+# <a name="create-your-first-component-using-power-apps-component-framework"></a>Power Apps Component Framework を使用して最初のコンポーネントを作成する
 
-このトピックでは PowerApps CLI を使用して Typescript で新しいコード コンポーネントを作成する手順を説明します。 このチュートリアルでは、フィールドに値を入力する代わりに、ユーザーが視覚化スライダーを使用して、数値を変更できる、連続的なコード コンポーネントを構成していきます。 
+このトピックでは Power Apps CLI を使用して Typescript で新しいコード コンポーネントを作成する手順を説明します。 このチュートリアルでは、フィールドに値を入力する代わりに、ユーザーが視覚化スライダーを使用して、数値を変更できる、連続的なコード コンポーネントを構成していきます。 
 
 コード コンポーネントを作成するために必要な成果は次のとおりです:
 
@@ -131,7 +131,7 @@ export class TSLinearInputComponent
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Value of the field is stored and used inside the component
   private _value: number;
-  // PowerApps component framework delegate which will be assigned to this object which would be called whenever any update happens.
+  // Power Apps component framework delegate which will be assigned to this object which would be called whenever any update happens.
   private _notifyOutputChanged: () => void;
   // label element created as part of this component
   private labelElement: HTMLLabelElement;
@@ -140,7 +140,7 @@ export class TSLinearInputComponent
   // reference to the component container HTMLDivElement
   // This element contains all elements of our code component example
   private _container: HTMLDivElement;
-  // reference to PowerApps component framework Context object
+  // reference to Power Apps component framework Context object
   private _context: ComponentFramework.Context<IInputs>;
   // Event Handler 'refreshData' reference
   private _refreshData: EventListenerOrEventListenerObject;
@@ -174,12 +174,11 @@ export class TSLinearInputComponent
     this._value = context.parameters.sliderValue.raw
       ? context.parameters.sliderValue.raw
       : 0;
-    this.inputElement.setAttribute(
-      "value",
+    this.inputElement.value =
       context.parameters.sliderValue.formatted
         ? context.parameters.sliderValue.formatted
-        : "0"
-    );
+        : "0";
+    
     this.labelElement.innerHTML = context.parameters.sliderValue.formatted
       ? context.parameters.sliderValue.formatted
       : "0";
@@ -206,12 +205,12 @@ export class TSLinearInputComponent
       ? context.parameters.sliderValue.raw
       : 0;
     this._context = context;
-    this.inputElement.setAttribute(
-      "value",
+    this.inputElement.value =
+     
       context.parameters.sliderValue.formatted
         ? context.parameters.sliderValue.formatted
-        : ""
-    );
+        : "";
+    
     this.labelElement.innerHTML = context.parameters.sliderValue.formatted
       ? context.parameters.sliderValue.formatted
       : "";
@@ -376,7 +375,7 @@ npm start
     > - **コード ツール** の **NuGetターゲットとビルド タスク** にチェックマークを付けます。
 
 6. 生成されたソリューションの zip ファイルは、`Solution\bin\debug` フォルダーにあります。
-7. Zip ファイルの準備ができたら、手動で Web ポータルを使って[ソリューションを Common Data Service にインポートする](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) か、[あなたの組織に対する認証](import-custom-controls.md#authenticating-to-your-organization) および [展開](import-custom-controls.md#deploying-code-components) セクションを PowerApps CLI コマンドを使用してインポートします。
+7. zip ファイルの準備ができたら Web ポータルを使用して手動で [ソリューションを Common Data Service にインポートする](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) または、[環境のインポート](import-custom-controls.md#connecting-to-your-environment) および [展開](import-custom-controls.md#deploying-code-components) セクションを表示して Power Apps CLI コマンドを使用して新ポートします。
 
 ## <a name="adding-code-components-in-model-driven-apps"></a>モデル駆動型のアプリのコード コンポーネントの追加
 
@@ -389,6 +388,6 @@ npm start
 ### <a name="see-also"></a>関連項目
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[既存の PowerApps component framework のコンポーネントを更新する](updating-existing-controls.md)<br/>
-[PowerApps Component Framework API の参照](reference/index.md)<br/>
-[PowerApps Component Framework の概要](overview.md)
+[既存の Power Apps component framework のコンポーネントを更新する](updating-existing-controls.md)<br/>
+[Power Apps Component Framework API の参照](reference/index.md)<br/>
+[Power Apps Component Framework の概要](overview.md)

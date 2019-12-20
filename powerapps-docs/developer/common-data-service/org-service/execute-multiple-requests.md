@@ -2,7 +2,7 @@
 title: 組織サービスを使用して複数の要求を実行する (Common Data Service) | Microsoft Docs
 description: ExecuteMultipleRequest メッセージは Common Data Service でよりスループットが高い一括メッセージ渡しシナリオをサポートします。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 11/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 86f19593028f2b618923e4e0b120b10d75ab5f63
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3de841f5ed56e067e23862448c8e7db40381efda
+ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749118"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "2854758"
 ---
 # <a name="execute-multiple-requests-using-the-organization-service"></a>組織サービスを使用して複数の要求を実行する
 
@@ -118,8 +118,9 @@ foreach (var responseItem in responseWithResults.Responses)
 -   **再帰は許可されません** <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> は <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest>を起動できません。 要求コレクションで見つかる <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> は、その要求アイテムに関するエラーを生成します。  
   
 -   **最大バッチ サイズ** 要求コレクションに追加できる要求の数には制限があります。 この制限を超えると、最初の要求が実行される前にフォールトがスローされます。 Common Data Service展開に最大数を設定できますが、1000 個の制限が一般的です。
-  
--   **同時呼び出しの調整** Common Data Service の場合、組織ごとに 2 つの同時 <xref:Microsoft.Xrm.Sdk.Messages.ExecuteMultipleRequest> 実行の制限があります。 この制限を超えると、最初の要求が実行される前に*サーバー ビジー* フォールトがスローされます。 
+
+> [!NOTE]
+> 以前は、同時実行 ExecuteMultiple 要求の数に制限がありました。 その制限は 2 でした。 サービス保護の制限により不要になったため、これは削除されました。 詳細情報: [サービス保護 API の制限](../api-limits.md) を参照してください。
 
   
 <a name="fault"></a>

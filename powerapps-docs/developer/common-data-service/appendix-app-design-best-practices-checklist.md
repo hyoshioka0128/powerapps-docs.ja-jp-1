@@ -1,6 +1,6 @@
 ---
 title: '付録: アプリ設計のベスト プラクティスのチェックリスト (PowerApps) | Microsoft Docs'
-description: PowerApps でアプリ設計チェックリストを使用してアプリの設計を評価します。
+description: Power Apps でアプリ設計チェックリストを使用してアプリの設計を評価します。
 ms.custom: ''
 ms.date: 03/20/2019
 ms.reviewer: kvivek
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24c5599a6fe416447d444e46e373d1f443de963f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 20c2356e61b3ec8c11128d29450bcb39a2099add
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748833"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883553"
 ---
 # <a name="appendix-app-design-best-practices-checklist"></a>付録: アプリ設計のベスト プラクティス チェックリスト
 

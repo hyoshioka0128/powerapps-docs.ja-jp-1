@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 90d74124e21fe74a96ca31830508f3bbb99e17b9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7826fa33f8ced492a8748ffa073a18521cc496f5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748891"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861977"
 ---
 # <a name="implementing-flip-component"></a>フリップ コンポーネントの実装
 
-このサンプルでは、PowerApps Component Framework でサードパーティ製ライブラリを使用してコンポーネントを作成する方法を説明します。  フリップのサンプル コンポーネントは、angular.js、angular-ui、angle-animate、angle-sanitize、bootstrap に基づいて実装されます。 このコードは、言及したサードパーティ製ライブラリのベスト プラクティスを明らかにしない場合があります。
+このサンプルでは、Power Apps Component Framework でサードパーティ製ライブラリを使用してコンポーネントを作成する方法を説明します。  フリップのサンプル コンポーネントは、angular.js、angular-ui、angle-animate、angle-sanitize、bootstrap に基づいて実装されます。 このコードは、言及したサードパーティ製ライブラリのベスト プラクティスを明らかにしない場合があります。
 
 > [!div class="mx-imgBorder"]
 > ![Angular フリップ](../media/angular-flip.png "Angular フリップ")
@@ -43,13 +43,13 @@ ms.locfileid: "2748891"
 
 ## <a name="overview"></a>概要
 
-このサンプルは、サードパーティ製ライブラリに依存関係を追加する方法の例を示し、PowerApps Component Framework、コンポーネント モデル、そしてサードパーティの内部データモデル間で双方向のデータ バインドを実行する方法を紹介します。
+このサンプルは、サードパーティ製ライブラリに依存関係を追加する方法の例を示し、Power Apps Component Framework、コンポーネント モデル、そしてサードパーティの内部データモデル間で双方向のデータ バインドを実行する方法を紹介します。
 
 フリップ コンポーネントのサンプルは、ラベルとボタンで構成されます。 ボタンをクリックすると、ラベルのテキストが切り替わります。
 
 - コンポーネントがロードされると、ラベルはバインド属性値に基づいてテキストを表示します。 `context.parameters.[property_name].attributes` は関連するメタデータを含みます。
 - TwoOptions フィールドに対して、`context.parameters.[property_name].Options` は true と false の両方の値のオプションを含みます。 
-- フリップ ボタンをクリックすると、ラベルは **notifyOutputEvents** メソッドを使用して値を更新し、[getOutputs](../reference/control/getoutputs.md) メソッドは非同期に呼び出されて PowerApps Component Framework にフローします。 
+- フリップ ボタンをクリックすると、ラベルは **notifyOutputEvents** メソッドを使用して値を更新し、[getOutputs](../reference/control/getoutputs.md) メソッドは非同期に呼び出されて Power Apps Component Framework にフローします。 
 - Client API はバインド属性値を更新し、更新された値はコンポーネント ラベルにフローします。 `ClientAPI` を使用して属性値を更新し、コントロールの [updateView](../reference/control/updateview.md) メソッドをトリガーすることもできます。 その後、コンポーネントがサードパーティ モデルを更新して、ラベルが更新されます。
 
 
@@ -217,7 +217,7 @@ export class JSAngularJSFlipControl
     }
   }
   /**
-   * Update value in PowerApps component framework
+   * Update value in Power Apps component framework
    * @param newValue new value
    */
   private updateOutputIfNeeded(newValue: boolean): void {
@@ -355,11 +355,11 @@ fieldset[disabled].btn-primary:hover {
   border: 1px solid transparent;
   border-radius: 4px;
 }
-
 ```
 
 ### <a name="related-topics"></a>関連トピック
 
-[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)<br />
-[PowerApps Component Framework API の参照](../reference/index.md)<br />
-[PowerApps Component Framework の概要](../overview.md)
+[サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
+[Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)<br />
+[Power Apps Component Framework API の参照](../reference/index.md)<br />
+[Power Apps Component Framework の概要](../overview.md)

@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24972d4c159db30c4abb142adf258a5930c8ace9
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ebecba9aedb8c475e3f8ce8628b7b24d104669e0
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758949"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873775"
 ---
 # <a name="create-a-power-bi-report"></a>Power BI レポートを作成する
 Common Data Service を使用すると、 Power BI Desktop を使用してデータに直接接続し、レポートを作成してPower BIに発行することができます。 Power BI からは、ダッシュボードでレポートを使用したり、他のユーザーと共有したり、 Power BI モバイルアプリでクロスプラットフォームにアクセスしたりできます。
@@ -34,7 +34,7 @@ Common Data Service で Power BI を使うには、以下が必要です:
 
 ## <a name="finding-your-common-data-service-environment-url"></a>Common Data Service 環境のURL を選択します。
 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開いて接続する環境を選択し、右上隅にある **設定の歯車** をクリックしてから、 **高度なカスタマイズ**をクリックします。
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を開いて接続する環境を選択し、右上隅にある **設定の歯車** をクリックしてから、 **高度なカスタマイズ**をクリックします。
 
     ![Common Data Service 環境 URL](./media/data-platform-cds-powerbi-connector/CDSEnv1.png "Common Data Service環境")
 
@@ -57,7 +57,7 @@ Common Data Service で Power BI を使うには、以下が必要です:
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport2.png "Power BI Desktop")
 
-3. **サーバー URL** フィールドに **Common Data Service環境の URLL** を貼り付け **OK** をクリックします。 これが初めての場合、 PowerApps および Common Data Service に接続するために使用するのと同じ資格情報を使用してログインするよう求められます。
+3. **サーバー URL** フィールドに **Common Data Service環境の URLL** を貼り付け **OK** をクリックします。 これが初めての場合、 Power Apps および Common Data Service に接続するために使用するのと同じ資格情報を使用してログインするよう求められます。
 
     ![Power BI Desktop](./media/data-platform-cds-powerbi-connector/CreateReport3.png "Power BI Desktop")
 

@@ -1,5 +1,5 @@
 ---
-title: PowerApps におけるモデル駆動型アプリ フォームへのフィールドの追加 | MicrosoftDocs
+title: Power Apps におけるモデル駆動型アプリ フォームへのフィールドの追加 | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -21,20 +21,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1eb7d5c88031f7269472906b5bfcad7c91214417
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 38ada6c4c63807c16dd577339c287808f389681a
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2751870"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874963"
 ---
 # <a name="add-a-field-to-a-model-driven-app-form"></a>フィールドをモデル駆動型アプリ フォームに追加する 
 
-標準エンティティの PowerApps フォームが組織のビジネス要件を満たさない場合、既存のフィールドを変更、または新しいフィールドを追加して、フォームをカスタマイズできます。 これはフォームの既存のフィールドの編集と似ていますが、特定のビジネス シナリオを解決するためには、フィールドを追加するほうが良い場合があります。
+標準エンティティの Power Apps フォームが組織のビジネス要件を満たさない場合、既存のフィールドを変更、または新しいフィールドを追加して、フォームをカスタマイズできます。 これはフォームの既存のフィールドの編集と似ていますが、特定のビジネス シナリオを解決するためには、フィールドを追加するほうが良い場合があります。
 
 このトピックでは、フィールドをフォームに追加します。   
   
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 
     > [!IMPORTANT]

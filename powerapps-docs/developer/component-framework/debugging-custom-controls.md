@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 088792a32f401ddaf7d3a3cd4fd4d5aa9fa472ff
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1ffc32fdb1479552d77cd68d858c0d3b43d9b86e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748893"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862001"
 ---
 # <a name="debug-code-components"></a>コード コンポーネントのデバッグ
 
@@ -59,7 +59,7 @@ ms.locfileid: "2748893"
 
 ## <a name="watch-mode-in-test-harness"></a>テスト ハーネスの視聴モード
 
-テスト ハーネスは、 PowerApps component framework は、 プロジェクトで使用できる `watch` モードに対応しています。 `watch` モードを有効にするには、コマンド `npm start watch` を使用してテスト ハーネスを起動します。 `watch` モード では、以下のコンポーネントアセットに加えた変更は、再起動をしなくても自動的にテストハーネスに反映されます:
+テスト ハーネスは、 Power Apps component framework は、 プロジェクトで使用できる `watch` モードに対応しています。 `watch` モードを有効にするには、コマンド `npm start watch` を使用してテスト ハーネスを起動します。 `watch` モード では、以下のコンポーネントアセットに加えた変更は、再起動をしなくても自動的にテストハーネスに反映されます:
 
 1.  `index.ts` ファイル。
 2.  `ControlManifest.Input.xml` ファイル。
@@ -93,5 +93,5 @@ Fiddler AutoResponder を使用することで、迅速にコード コンポー
 
 ### <a name="related-topics"></a>関連トピック
 
-[PowerApps Component Framework API の参照](reference/index.md)<br/>
-[PowerApps Component Framework の概要](overview.md)
+[Power Apps Component Framework API の参照](reference/index.md)<br/>
+[Power Apps Component Framework の概要](overview.md)

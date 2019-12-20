@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 03b3db348ff88b7fd2c5e89e2b94a7d16a1fee17
-ms.sourcegitcommit: bcaffcb3135251ea3c2e828f8b59926d19520bec
+ms.openlocfilehash: 20a64e12abc70e8c1b636ab5412e2a951b5ad612
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2761821"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869220"
 ---
 # <a name="checklist-unified-interface-transition"></a>チェックリスト: 統一インターフェイスへの移行
 
@@ -35,9 +35,9 @@ ms.locfileid: "2761821"
 
 - Dynamics 365 Project Service Automation
 
-## <a name="run-the-powerapps-solution-checker-on-your-solutions"></a>ソリューションで PowerApps ソリューション チェッカーを実行する
+## <a name="run-the-power-apps-solution-checker-on-your-solutions"></a>ソリューションで Power Apps ソリューション チェッカーを実行する
 
-[PowerApps ソリューション チェッカー](https://docs.microsoft.com/powerapps/maker/common-data-service/use-powerapps-checker) は、一連のベスト プラクティス ルールに対してソリューションの豊富な静的分析チェックを実行し、問題のあるパターンを迅速に特定します。 チェックが完了すると、特定された問題、影響を受けるコンポーネントとコード、各問題を解決する方法が説明されたするドキュメントへのリンクが一覧になった詳細なレポートを受け取ります。
+[Power Apps ソリューション チェッカー](https://docs.microsoft.com/powerapps/maker/common-data-service/use-powerapps-checker) は、一連のベスト プラクティス ルールに対してソリューションの豊富な静的分析チェックを実行し、問題のあるパターンを迅速に特定します。 チェックが完了すると、特定された問題、影響を受けるコンポーネントとコード、各問題を解決する方法が説明されたするドキュメントへのリンクが一覧になった詳細なレポートを受け取ります。
 
 ソリューション チェッカーは、これらのソリューション コンポーネントを分析します:
 
@@ -73,7 +73,7 @@ ms.locfileid: "2761821"
 
 ## <a name="identify-replacements-for-deprecated-client-api-code-and-features"></a>非推奨のクライアント API コードと機能の代替を特定する
 
-非推奨のクライアント API と機能に関する **PowerApps ソリューション チェッカー** の出力と [で予定されている重要な変更 (廃止)](https://docs.microsoft.com/power-platform/important-changes-coming) に含まれる情報に基づいて、統一インターフェイス プロジェクトで修正や置換が必要なカスタマイズと機能について十分な理解が必要です。
+非推奨のクライアント API と機能に関する **Power Apps ソリューション チェッカー** の出力と [で予定されている重要な変更 (廃止)](https://docs.microsoft.com/power-platform/important-changes-coming) に含まれる情報に基づいて、統一インターフェイス プロジェクトで修正や置換が必要なカスタマイズと機能について十分な理解が必要です。
 
 注意が必要な最も一般的な領域の一部を次に示します。
 
@@ -129,7 +129,7 @@ ms.locfileid: "2761821"
 
 ### <a name="what-are-model-driven-apps"></a>モデル駆動型アプリとは。
 
-**モデル駆動型アプリ** は、PowerApps を使用して作成できるアプリの種類で、組織内の役割に応じてユーザーに合わせたエクスペリエンスを提供するのに役立ちます。 たとえば営業担当者が同じ環境のデータを使用している場合でも、顧客サービス担当者と異なるモデル駆動型アプリにとってまったく異なるエクスペリエンスを使用できます。 Common Data Service 環境で複数のモデル駆動型アプリを作成できます。 詳細: [モデル駆動型アプリとは](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
+**モデル駆動型アプリ** は、Power Apps を使用して作成できるアプリの種類で、組織内の役割に応じてユーザーに合わせたエクスペリエンスを提供するのに役立ちます。 たとえば営業担当者が同じ環境のデータを使用している場合でも、顧客サービス担当者と異なるモデル駆動型アプリにとってまったく異なるエクスペリエンスを使用できます。 Common Data Service 環境で複数のモデル駆動型アプリを作成できます。 詳細: [モデル駆動型アプリとは](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
 
 先にリストした Dynamics 365 のファーストパーティ アプリは、モデル駆動型アプリの例です。
 
@@ -203,7 +203,7 @@ ms.locfileid: "2761821"
 
 -   フォームの **参照パネル** を活用して、複数のビュー、簡易表示、サポート情報検索機能を 1 か所にまとめます。
 
--   [PowerApps Component Framework](https://docs.microsoft.com/powerapps/developer/component-framework/overview) を活用してカスタム コントロールをさらに追加します。 コミュニティ、パートナー、ISV から入手できます。
+-   [Power Apps Component Framework](https://docs.microsoft.com/powerapps/developer/component-framework/overview) を活用してカスタム コントロールをさらに追加します。 コミュニティ、パートナー、ISV から入手できます。
 
 -   フォームに [キャンバス アプリ](https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started) を埋め込み、アプリケーションを簡単に拡張します。 コード不要または低コードでアプリを拡張します。カスタムの HTML/JS Web リソースを開発する必要はありません。
 

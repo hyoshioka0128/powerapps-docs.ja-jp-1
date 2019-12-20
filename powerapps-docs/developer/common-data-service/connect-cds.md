@@ -14,19 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 82616711b47a2f14d32e7ee327b21e27df919a9b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 29f6cca10ca81eacc9f70c589b8dc12f0e0cd466
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749004"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883533"
 ---
 # <a name="create-client-applications"></a>クライアント アプリケーション作成
 
 キャンバスおよびモデル駆動型アプリを使用して、コードの記述なしでクライアント アプリケーションを作成できます。
-詳細: [ PowerApps におけるアプリの作成の概要](../../maker/index.md)
+詳細: [ Power Apps におけるアプリの作成の概要](../../maker/index.md)
 
-PowerApps オプションが要件を満たさない場合、コードを使用してクライアント アプリケーションを作成できます。
+Power Apps オプションが要件を満たさない場合、コードを使用してクライアント アプリケーションを作成できます。
 
 ## <a name="connecting-to-common-data-service"></a>Common Data Service に接続中
 

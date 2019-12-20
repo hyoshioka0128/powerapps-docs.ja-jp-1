@@ -1,5 +1,5 @@
 ---
-title: PowerApps のモデル駆動型アプリのメイン フォーム用簡易表示コントロールのプロパティ | MicrosoftDocs
+title: Power Apps のモデル駆動型アプリのメイン フォーム用簡易表示コントロールのプロパティ | MicrosoftDocs
 description: メイン フォーム用簡易表示コントロールのプロパティについて
 Keywords: 簡易表示コントロールのプロパティ; Dynamics 365; メイン フォーム
 author: Mattp123
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b2d4a8f55bf9b6f3e54f948ad16be36fdecb6d20
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 549728e2fb100f927de6660dd5fc5d5aa0da4f68
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755096"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873687"
 ---
 # <a name="model-driven-app-quick-view-control-properties"></a>モデル駆動型アプリの簡易表示コントロールのプロパティ
 
@@ -32,8 +32,8 @@ ms.locfileid: "2755096"
 > [!div class="mx-imgBorder"] 
 > ![取引先企業フォームの取引先担当者簡易表示フォーム](media/quick-view-form-contact.png "取引先企業フォームの取引先担当者簡易表示フォーム")  
 
-PowerApps サイトから **簡易表示コントロールのプロパティ** にアクセスできます。 
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+Power Apps サイトから **簡易表示コントロールのプロパティ** にアクセスできます。 
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**フォーム** タブを選択します。 

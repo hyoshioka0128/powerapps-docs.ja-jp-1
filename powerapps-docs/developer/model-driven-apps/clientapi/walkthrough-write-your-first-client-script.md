@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 15ba73e097a03b1fd1b200f3653f169ec5afaf7f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9b9936cccd243213f785cf65b7dc2d94cfaa1763
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754588"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895133"
 ---
 # <a name="walkthrough-write-your-first-client-script"></a>チュートリアル: 最初のクライアント スクリプトを記述する
 

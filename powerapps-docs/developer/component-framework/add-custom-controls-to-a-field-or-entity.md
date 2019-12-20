@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 63ecdde21328219b70af04b9b65edbb3073f3025
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 89dacd67f5a7876f7fd0950d0bba4cd60218f296
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749062"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862025"
 ---
 # <a name="add-code-components-to-a-field-or-entity-in-model-driven-apps"></a>モデル駆動型アプリでフィールドやエンティティにコード コンポーネントを追加する
 
@@ -27,13 +27,13 @@ ms.locfileid: "2749062"
 
 ## <a name="add-a-code-component-to-a-field"></a>コード コンポーネントをフィールドに追加する
 
-この手順のステップに従うと、**予算金額** フィールドの既定のラベルとテキスト ボックス フィールドが、営業案件エンティティ上のスライダー コード コンポーネントに変更されます。 同様のステップを使用して、既存のフィールドをコード コンポーネントに置き換え、またはカスタム フィールドのコード コンポーネントを構成することができます。
+次の手順に従うと、**予算金額**フィールドの既定のラベルとテキスト ボックス フィールドが、営業案件エンティティ上のスライダー コード コンポーネントに変更されます。 同様のステップを使用して、既存のフィールドをコード コンポーネントに置き換え、またはカスタム フィールドのコード コンポーネントを構成することができます。
 
 1. ソリューション エクスプローラーを開きます。
 
 2. **エンティティ**を展開して、**営業案件**エンティティなどの目的のエンティティを展開し、**フォーム**を選択してから、**メイン**フォームなどのフォームをオープンします。
 
-3. フォーム エディターで、営業案件のメイン フォーム上の **予算金額** フィールドなどの、コード コンポーネントを追加するフィールドをダブルクリックします。 または、カスタム フィールドを作成することができます。
+3. フォーム エディターで、営業案件のメイン フォーム上の **予算金額** フィールドなどの、コード コンポーネントを追加するフィールドをダブルクリックします。 カスタム フィールドを作成することもできます。
 
 4. **フィールドのプロパティ**ページで、**コントロール**タブを選択してから、**コントロールの追加**を選択します。
 
@@ -68,7 +68,7 @@ ms.locfileid: "2749062"
   
    - **ステップ**。 これは、現在の値に対して追加または差し引くときにの増加または減少する単位を表します。 たとえば、予算金額の場合、100 ドルの increments\decrements を選択することができます。  
   
-   - **既定のコントロールを表示しない**。 このオプションを選択するとコンポーネントを非表示にするため、コード コンポーネントをサポートしないすべてのクライアントでコンポーネントもデータも表示されません。   
+   - **既定のコントロールを表示しない**。 コンポーネントを非表示にするため、コード コンポーネントをサポートしないすべてのクライアントでコンポーネントもデータも表示されません。   
   
 8. **OK** を選択して、フィールドのプロパティ ページを閉じます。  
   
@@ -97,5 +97,5 @@ ms.locfileid: "2749062"
 ### <a name="see-also"></a>関連項目
 
 [TypeScript でコンポーネントを実装する](implementing-controls-using-typescript.md)<br/>
-[PowerApps Component Framework API の参照](reference/index.md)<br/>
-[PowerApps Component Framework の概要](overview.md)
+[Power Apps Component Framework API の参照](reference/index.md)<br/>
+[Power Apps Component Framework の概要](overview.md)

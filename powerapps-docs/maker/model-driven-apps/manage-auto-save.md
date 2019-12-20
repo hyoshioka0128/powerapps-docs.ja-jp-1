@@ -1,5 +1,5 @@
 ---
-title: PowerApps でモデル駆動型アプリの自動保存を無効にする | MicrosoftDocs
+title: Power Apps でモデル駆動型アプリの自動保存を無効にする | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/18/2018
 ms.reviewer: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fda8a194a47101eb26d000ea60ede5b38b0f235d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2f09cd488165643a3336c526050abc0b9223b49f
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759473"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875667"
 ---
 # <a name="disable-auto-save-in-a-model-driven-app"></a>モデル駆動型でオートセーブを無効にする
 
@@ -63,7 +63,7 @@ ms.locfileid: "2759473"
 > [!NOTE]
 >  フォームの自動保存は無効になりますが、右下隅の ![自動保存ボタン](media/auto-save-icon.png "A自動保存ボタン) ボタンを選択してデータを保存することは可能です。 フォームから移動するかまたはデータが変更されたフォームを閉じる場合、フォームから移動またはフォームを閉じる前に変更の保存を促すプロンプトが表示されます。  
   
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**フォーム** タブを選択します。  
   

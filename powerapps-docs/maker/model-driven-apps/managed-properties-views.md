@@ -1,5 +1,5 @@
 ---
-title: " PowerApps を使用したビューのモデル駆動型アプリの管理プロパティ | MicrosoftDocs"
+title: " Power Apps を使用したビューのモデル駆動型アプリの管理プロパティ | MicrosoftDocs"
 description: ビューの管理プロパティの設定方法について学習
 ms.custom: ''
 ms.date: 06/12/2018
@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b99fe00731066a4ee0f029bdba09c7eab9d8d67b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 335084ee98cdfe82382eac775d068a62c9a429d9
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702988"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860020"
 ---
 # <a name="model-driven-app-managed-properties-for-views"></a>ビューのモデル駆動型管理プロパティ
 
 <a name="BKMK_ManagedProperties"></a>   
  
- 配布する管理ソリューションに含めるユーザー定義の共有ビューを PowerApps で作成する場合、ビューのカスタマイズからソリューションをインストールするユーザーの機能を制限することができます。  
+ 配布する管理ソリューションに含めるユーザー定義の共有ビューを Power Apps で作成する場合、ビューのカスタマイズからソリューションをインストールするユーザーの機能を制限することができます。  
   
  既定では、ほとんどのビューでは、ユーザーがカスタマイズできるように、**カスタマイズ可能**な管理プロパティが true に設定されています。 これを変更するもっともな理由がない場合は、ユーザーのアプリでビューをカスタマイズできるようにすることをお勧めします。  
   

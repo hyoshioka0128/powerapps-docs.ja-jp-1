@@ -1,6 +1,6 @@
 ---
 title: '開発者: モデル駆動型アプリのクライアント側スクリプトのベスト プラクティスとガイダンス | Microsoft Docs'
-description: PowerApps でのモデル駆動型アプリの開発者のためのクライアント側スクリプトのベスト プラクティスとガイダンス。
+description: Power Apps でのモデル駆動型アプリの開発者のためのクライアント側スクリプトのベスト プラクティスとガイダンス。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 516dde533ee012a0e4cb64e988a574de6ea8948c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b1c2c27e7edbf338a735574ad004a980d841930b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748879"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883509"
 ---
 # <a name="best-practices-and-guidance-of-client-side-scripting-for-model-driven-apps"></a>モデル駆動型アプリのクライアント側スクリプトのベスト プラクティスとガイダンス
 

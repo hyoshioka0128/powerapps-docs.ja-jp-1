@@ -6,24 +6,24 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/22/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 3735a0ef1a26fdd19b7bfb7f6db717cf9bd07861
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 722789d726d02b306eb794aa51665c13ce7f495d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710072"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874699"
 ---
 # <a name="add-a-power-bi-report-or-dashboard-to-a-web-page-in-portal"></a>Power BI レポートまたはダッシュボードをポータルの Web ページに追加
 
-[powerbi](../liquid/portals-entity-tags.md#powerbi) Liquid タグを使用して、Power BI レポートまたはダッシュボードをポータルの Web ページへ追加できます。 Web ページの**コピー**フィールドまたは Web テンプレートの**ソース**フィールドにタグを追加できます。 Power BI の新しいワークスペースに、作成した Power BI レポートやダッシュボードを追加する場合、認証の種類を powerbi Liquid タグの powerbiembedded として指定する必要があります。
+[powerbi](../liquid/portals-entity-tags.md#powerbi) Liquid タグを使用して、Power BI レポートまたはダッシュボードをポータルの Web ページへ追加できます。 Web ページの**コピー**フィールドまたは Web テンプレートの**ソース**フィールドにタグを追加できます。 Power BI の新しいワークスペースに、作成した Power BI レポートやダッシュボードを追加する場合、認証の種類を powerbi Liquid タグの **powerbiembedded** として指定する必要があります。
 
 たとえば、次のようなものです。 
 
 ```
-{% powerbi path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
+{% powerbi authentication_type:"powerbiembedded" path:"https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000000/reports/00000000-0000-0000-0000-000000000001/ReportSection01" %}
 ```
 
 > [!NOTE]

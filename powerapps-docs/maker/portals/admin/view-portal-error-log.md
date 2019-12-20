@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 7989c15b0c5c4cf50d4b55f518244758afc067e1
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: ced53e6b3eb30668d81aca0f385f4ebd841f02fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756657"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862493"
 ---
 # <a name="view-portal-error-logs"></a>ポータル エラー ログの表示
 
-ポータル管理者または開発者は、PowerApps ポータルを使用して顧客の Web サイトを作成できます。 開発者の一般的なタスクは、ポータルの作成時に問題をデバッグすることです。 デバッグを助けるために、ポータルのすべての問題に関する詳細なエラー ログにアクセスできます。 ポータルのエラー ログは複数の方法で取得できます。
+ポータル管理者または開発者は、Power Apps ポータルを使用して顧客の Web サイトを作成できます。 開発者の一般的なタスクは、ポータルの作成時に問題をデバッグすることです。 デバッグを助けるために、ポータルのすべての問題に関する詳細なエラー ログにアクセスできます。 ポータルのエラー ログは複数の方法で取得できます。
 
 ## <a name="custom-error"></a>カスタム エラー
 
@@ -27,7 +27,7 @@ ms.locfileid: "2756657"
 ただし、デバッグの目的の場合は、死のイエロー スクリーン (YSOD) とも呼ばれる、ASP.NET の詳細エラー ページを参照することをお勧めします。 この詳細エラー ページにより、フルスタックのサーバー エラーを取得することが容易になります。
 
 > [!div class=mx-imgBorder]
-> ![死のイエロー スクリーン (Yellow Screen of Death) ](../media/ysod.png "死のイエロー スクリーン (Yellow Screen of Death) ")
+> ![死のイエロー スクリーン (Yellow Screen of Death) ](../media/ysod.png "死のイエロー スクリーン")
 
 YSOD を有効にするには、ポータルでの [カスタム エラーを無効にする](#disable-custom-error)必要があります。
 
@@ -40,7 +40,7 @@ YSOD を有効にするには、ポータルでの [カスタム エラーを無
 
 サーバー側で例外が発生した場合に詳細な例外メッセージを表示するように、ポータルでのカスタム エラーを無効にできます。
 
-1. [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1. [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 2. **ポータル アクション** > **カスタム エラーを無効にする**に順に移動します。
 
@@ -53,7 +53,7 @@ YSOD を有効にするには、ポータルでの [カスタム エラーを無
 
 ポータルでのカスタム エラーを有効にして、YSOD ではなく、プロフェッショナルなデザインのページを表示することができます。 このページは、アプリケーションで例外が発生した場合に、有益な情報を提供します。
 
-1. [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1. [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 2. **ポータル アクション** > **カスタム エラーを有効にする**に順に移動します。
 
@@ -94,14 +94,14 @@ YSOD を有効にするには、ポータルでの [カスタム エラーを無
 
 ## <a name="access-portal-error-logs"></a>ポータル エラー ログへのアクセス
 
-ポータルを開発して公開した後、顧客から報告された問題をデバッグするために、さらにポータル ログにアクセス可能にする必要があります。 ログにアクセスするには、所有する Azure Blob Storage アカウントにすべてのアプリケーション エラーを送信するように、ポータルを構成することができます。 ポータル エラー ログにアクセスすると、問題の詳細を把握できるので、顧客のクエリに効率的に対応できます。 ポータル エラー ログを Azure Blob Storage に入力するためには、PowerApps ポータル管理センターからの診断ログを有効にする必要があります。
+ポータルを開発して公開した後、顧客から報告された問題をデバッグするために、さらにポータル ログにアクセス可能にする必要があります。 ログにアクセスするには、所有する Azure Blob Storage アカウントにすべてのアプリケーション エラーを送信するように、ポータルを構成することができます。 ポータル エラー ログにアクセスすると、問題の詳細を把握できるので、顧客のクエリに効率的に対応できます。 ポータル エラー ログを Azure Blob Storage に入力するためには、Power Apps ポータル管理センターからの診断ログを有効にする必要があります。
 
 > [!NOTE]
 > ポータルが接続されている Common Data Service インスタンスを変更した場合、診断ログが無効になります。 診断ログを再度有効にする必要があります。
 
 ### <a name="enable-diagnostic-logging"></a>診断ログを有効にする
 
-1. [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1. [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 2. **ポータル アクション** > **診断ログを有効にする**に順に移動します。
 
@@ -138,7 +138,7 @@ YSOD を有効にするには、ポータルでの [カスタム エラーを無
  
 ### <a name="update-diagnostic-logging"></a>診断ログの更新
 
-1. [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1. [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 2. **ポータル アクション** > **診断ログの構成の更新**の順に進みます。
 
@@ -166,7 +166,7 @@ YSOD を有効にするには、ポータルでの [カスタム エラーを無
 
 ### <a name="disable-diagnostic-logging"></a>診断ログを無効にする
 
-1. [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1. [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 2. **ポータル アクション** > **診断ログを無効にする**に順に移動します。
 

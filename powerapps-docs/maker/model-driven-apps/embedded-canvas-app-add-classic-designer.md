@@ -15,25 +15,25 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d6881aaa3a55f16324e5d995e70be1e186a816bf
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d229edaec03642c594eb8057927fcf44beadf7c5
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759385"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2872786"
 ---
 # <a name="add-an-embedded-canvas-app-on-a-model-driven-form"></a>埋め込み型キャンバス アプリケーションをモデル駆動フォームに追加する
 ことトピックでは、埋め込み型キャンバス アプリケーションをモデル駆動フォームに追加する方法を説明します。
 
 たとえば、新しいキャンバス アプリケーションを作成し、アカウントのエンティティ上のメインフォームに埋め込むとします。 これを行うには、次の手順を実行します。 
 
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 2.  この例では、会計エンティティの[メイン フォームの作成または編集](create-and-edit-forms.md) を行います。 
 3.  コマンドバーの **クラシックに切り替える** を選択して、クラシック フォームデザイナでフォームを開きます。
 4.  クラシックフォームデザイナで、埋め込み型キャンバス アプリケーションを表示させるフォーム上のセクションを選択します。
@@ -50,10 +50,10 @@ ms.locfileid: "2759385"
          - このプロパティが変更可能として表示される場合であっても、それに対する変更が埋め込みキャンバス アプリ上に影響を与えないことに注意してください。 それは参照することのみを目的としています。
      - **アプリ ID** プロパティは埋め込みキャンバス アプリの ID を指定します。 これはキャンバス アプリが作成されるときに自動的に生成および入力されます。
          - **アプリ ID** の値を変更すると、モデル駆動型フォームから埋め込みキャンバス アプリへのリンクが切断されることに注意してください。
-12. キャンバス アプリを作成または編集するには**カスタマイズ**を選択します。 これは新規タブの、 PowerApps Studio で開きます。
+12. キャンバス アプリを作成または編集するには**カスタマイズ**を選択します。 これは新規タブの、 Power Apps Studio で開きます。
        > [!NOTE]
-       > PowerApps Studio を開くことが Web ブラウザーのポップアップ ブロッカーによりブロックされた場合は、make.powerapps.com  サイトを有効にするか、一時的にポップアップ ブロッカーを無効にしてから、再び **カスタマイズ** を選択する必要があります。
-13. PowerApps Studio の通知には、 ウィンドウの左側に特別な **ModelDrivenFormIntegration** コントロールが表示されます。 このコントロールは、ホストのモデル駆動型フォームから埋め込みキャンバス アプリにコンテキスト データを取り込みます。
+       > Power Apps Studio を開くことが Web ブラウザーのポップアップ ブロッカーによりブロックされた場合は、make.powerapps.com  サイトを有効にするか、一時的にポップアップ ブロッカーを無効にしてから、再び **カスタマイズ** を選択する必要があります。
+13. Power Apps Studio の通知には、 ウィンドウの左側に特別な **ModelDrivenFormIntegration** コントロールが表示されます。 このコントロールは、ホストのモデル駆動型フォームから埋め込みキャンバス アプリにコンテキスト データを取り込みます。
 14. 埋め込み型キャンバス アプリケーションに[キャンバスアプリケーション フォーム コントロール](../canvas-apps/controls/control-form-detail.md) が自動的に追加され、ModelDrivenFormIntegrationコントロールを介してホストのモデル駆動フォームから渡されたデータが表示されていることを確認します。 
 15. **ビュー** タブを選択し、 **データ ソース**を選択します。 ご利用のホストモデル駆動型フォーム (この例ではアカウント) の親エンティティであるデータソースが、埋め込み型キャンバス アプリケーションに自動的に追加されていることに留意してください。
 16. **フォーム1** コントロールを選択し、 **DataSource** プロパティが **Accounts** と設定されていることを確認してください。
@@ -69,7 +69,7 @@ ms.locfileid: "2759385"
 22. メニューにて **戻る**を選択します。
 23. クラシック フォームデザイナーが開いているブラウザのタブを選択します。 キャンバス アプリ コントロールの**アプリ ID** プロパティの値が自動的に入力されたことを確認します。
     > [!NOTE]
-    > - フォーム デザイナには、上記の手順で別のブラウザタブで開かれた PowerApps Studio への直接リンクが含まれています。
+    > - フォーム デザイナには、上記の手順で別のブラウザタブで開かれた Power Apps Studio への直接リンクが含まれています。
     > - フォーム デザイナーは、アプリケーションIDの送信を待機します。 
     > - アプリケーションIDは、アプリケーションが保存された際にフォームデザイナーへと送信されます。
 24. **フィールド プロパティ** ダイアログ ボックスで、**表示**タブを選択します。

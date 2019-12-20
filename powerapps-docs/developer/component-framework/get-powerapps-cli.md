@@ -1,7 +1,7 @@
 ---
-title: PowerApps Component Framework のツールの入手 | Microsoft Docs
-description: Microsoft PowerApps CLI を取得して、 PowerApps Component Framework を使用してコード コンポーネントを作成、デバッグおよび展開します。
-keywords: PowerApps component framework、コード コンポーネント、コンポーネント フレームワーク
+title: Power Apps Component Framework のツールの入手 | Microsoft Docs
+description: Microsoft Power Apps CLI を取得して、 Power Apps Component Framework を使用してコード コンポーネントを作成、デバッグおよび展開します。
+keywords: Power Apps component framework、コード コンポーネント、コンポーネント フレームワーク
 ms.author: nabuthuk
 author: Nkrb
 manager: kvivek
@@ -11,26 +11,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f393f227-7a88-4f25-9036-780b3bf14070
-ms.openlocfilehash: 496b7d443775da075dd8da52ac4b0a754121bf28
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4bc237027dab1459c3a9f83c6ff18310f35ff614
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749058"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895013"
 ---
-# <a name="get-tooling-for-powerapps-component-framework"></a>PowerApps Component Framework のツールを入手します。
+# <a name="get-tooling-for-power-apps-component-framework"></a>Power Apps Component Framework のツールを入手します。
 
-PowerApps Component Framework を使用して、コード コンポーネントを作成、デバッグ、および展開するには、**Microsoft PowerApps CLI** (コマンドライン インターフェイス) を使用します。 PowerApps CLI を使用すると、開発者はコードコンポーネントを簡単に作成することができます。 将来的に、追加の開発やアプリケーション ライフサイクル管理 (ALM) のエクスペリエンスのサポートを含むように拡張されます。 
+Power Apps Component Framework を使用して、コード コンポーネントを作成、デバッグ、および展開するには、**Microsoft Power Apps CLI** (コマンドライン インターフェイス) を使用します。 Power Apps CLI を使用すると、開発者はコードコンポーネントを簡単に作成することができます。 将来的に、追加の開発やアプリケーション ライフサイクル管理 (ALM) のエクスペリエンスのサポートを含むように拡張されます。 
 
-## <a name="what-is-microsoft-powerapps-cli"></a>Microsoft PowerApps CLI とは 
+## <a name="what-is-microsoft-power-apps-cli"></a>Microsoft Power Apps CLI とは 
 
-Microsoft PowerApps CLIは、開発者やアプリ作成者がコード コンポーネントを作成できるようにするシンプルでワンストップな開発者向けコマンド ライン インターフェイスです。 PowerApps CLI ツールは、エンタープライズ開発者と ISV が拡張機能とカスタマイズを、すばやく効率的に作成、構築、デバッグ、および公開できる、包括的な ALM ストーリーの最初のステップです。  
+Microsoft Power Apps CLIは、開発者やアプリ作成者がコード コンポーネントを作成できるようにするシンプルでワンストップな開発者向けコマンド ライン インターフェイスです。 Power Apps CLI ツールは、エンタープライズ開発者と ISV が拡張機能とカスタマイズを、すばやく効率的に作成、構築、デバッグ、および公開できる、包括的な ALM ストーリーの最初のステップです。  
 
-## <a name="install-microsoft-powerapps-cli"></a>Microsoft PowerApps CLI のインストール
+## <a name="install-microsoft-power-apps-cli"></a>Microsoft Power Apps CLI のインストール
 
-Microsoft PowerApps CLI を取得するには、次の手順を実行します。
+Microsoft Power Apps CLI を取得するには、次の手順を実行します。
 
-1. [Npm](https://www.npmjs.com/get-npm) (Node.js に含まれる) または [Node.js](https://nodejs.org/en/) (npm に含まれる) をインストールします。 最も安定している LTS (長期サポート) バージョン 10.15.3 LTS をお勧めします。
+1. [Npm](https://www.npmjs.com/get-npm) (Node.js に含まれる) または [Node.js](https://nodejs.org/en/) (npm に含まれる) をインストールします。 LTS (長期サポート）) バージョン10.15.3 以降をお勧めします。
 
 1. [.NET Framework4.6.2開発者パック](https://dotnet.microsoft.com/download/dotnet-framework/net462) をインストールします 。 
 
@@ -38,32 +38,37 @@ Microsoft PowerApps CLI を取得するには、次の手順を実行します�
    - オプション1: [Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio?view=vs-2017)以降をインストールします。
    - オプション 2: [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.2) をインストールしてから、 [Visual Studioコード](https://code.visualstudio.com/Download) をインストールします。
 
-1. [Microsoft PowerApps CLI](https://aka.ms/PowerAppsCLI) のインストール
-1. すべての最新機能を利用するには、このコマンドを使用して PowerApps CLI ツールを最新バージョンに更新します:
+1. [Microsoft Power Apps CLI](https://aka.ms/PowerAppsCLI) のインストール
+1. すべての最新機能を利用するには、このコマンドを使用して Power Apps CLI ツールを最新バージョンに更新します:
 
     ```CLI
     pac install latest
     ```
 
 > [!NOTE]
-> - PowerApps CLI を使用してコード コンポーネントを展開するには、システム管理者またはシステム カスタマイザー特権を持つ Common Data Service 環境が必要です。
-> - 現在、PowerApps CLI は Windows 10 でのみサポートされています。
+> - Power Apps CLI を使用してコード コンポーネントを展開するには、システム管理者またはシステム カスタマイザー特権を持つ Common Data Service 環境が必要です。
+> - 現在、Power Apps CLI は Windows 10 でのみサポートされています。
 
-## <a name="microsoft-powerapps-cli-telemetry"></a>Microsoft PowerApps CLI テレメトリ
+## <a name="common-commands"></a>一般的なコマンド 
 
-PowerApps CLI ツールで開発者によってどの機能や能力が最も頻繁に使用されるかを理解するために、この機能のチームは匿名化したテレメトリを集約しています。 集計データは不可欠なことに焦点を合わせて、顧客に最高のエクスペリエンスを提供することを可能にします。
+この表に、CLI で使用されるいくつかの一般的なコマンドを示します
 
-> [!NOTE]
-> テレメトリ収集を無効にするには、次のコマンド `pac telemetry disable` を実行します。 テレメトリを元に戻すには、次のコマンド `pac telemetry enable` を使用します。
+|Command|説明|例|
+|------|-----------|--------|
+|**pcf**|Power Apps  Component Framework を使った作業に使用するコマンド これには次のパラメータが使用されています : <br/> - **init**：: コード コンポーネント プロジェクトを初期化します。 <br/> - **名前空間**: コード コンポーネントの名前空間。 <br/> - **名前**: コード コンポーネントの名前です。 <br/> - **テンプレート** : フィールドまたはデータセット <br/> - **プッシュ** : コードコンポーネントを最新のすべての変更を含む Common Data Service インスタンスにプッシュします。| `pac pcf init --namespace <specify your namespace here> --name <Name of the code component> --template <component type>` <br/> <br/> `pac pcf push --publisher-prefix <your publisher prefix>`|
+|**ソリューション**|Common Data Service プロジェクトを使った業務に使用するコマンド これには次のパラメータが使用されています : <br/> - **init** : ソリューション プロジェクトを初期化します。<br/> - **公開元名** : 組織の公開元の名前。 <br/> - **公開元の名** : 組織の公開元のプレフックス。 <br/> - **参照の追加** : `path` パラメータを渡すことで、参照パスをコンポーネント プロジェクト フォルダーに設定します。<br/> - **クローン** : 次の`name`、`version`、および `include` パラメーターを渡すことにより、既存のソリューション プロジェクトに基づいてソリューション プロジェクトを作成します。|`pac solution init --publisher-name <enter your publisher name> --publisher-prefix <enter your publisher prefix>` <br/><br/> `pac solution add-reference --path <path to your Power Apps component framework project>`<br/><br/> `pac solution clone –name<name of the solution to be exported> --version <version of your solution> --include <settings that should be included>`|
+|**auth**|Common Data Serviceへの認証をおこなうためのコマンド。 これには次のパラメータが使用されています : <br/> - **作成** : `url` パラメータを渡すことにより、組織の認証プロファイルを作成します。 `url` パラメータの組織の URL を提供する必要があります。 <br/> - **リスト** : 認証プロファイルのリストを提供します。 <br/> - **選択** : `index`パラメータを渡すことにより、以前に作成された認証プロファイルを切り替える方法を提供します。|`pac auth create --url <your Common Data Service org’s url>` <br/> <br/> `pac auth list` <br/><br/> `Pac auth select --index <index of the active profile>`|
+|**テレメトリ**|テレメトリ設定を管理します。 次のパラメーターがあります : 有効および無効。|`pac telemetry enable` <br/><br/> `pac telemetry disable`|
+|**org**|Common Data Service と作業するためのコマンド。|`pac org who`|
+|**プラグイン**|プラグイン プロジェクトの作成を管理する|`pac plugin init`|
 
+## <a name="uninstall-microsoft-power-apps-cli"></a>Microsoft Power Apps CLI をアンインストールします。
 
-## <a name="uninstall-microsoft-powerapps-cli"></a>Microsoft PowerApps CLI をアンインストールします。
-
-PowerApps CLI ツールをアンインストールするには、[こちら](https://aka.ms/PowerAppsCLI)から MSI を実行してください。 
+Power Apps CLI ツールをアンインストールするには、[こちら](https://aka.ms/PowerAppsCLI)から MSI を実行してください。 
 
 プライベート プレビューの参加者の方で、CLI の古いバージョンをお持ちの場合は、次の手順を実行します:
 
-1. PowerApps CLI がインストールされた場所を見つけるには、コマンド プロンプトを開いて `where pac` と入力します。
+1. Power Apps CLI がインストールされた場所を調べるには、コマンド プロンプトを開いて `where pac` と入力します。
 1. PowerAppsCLI フォルダを削除します。
 1. コマンド プロンプトでコマンド `rundll32 sysdm.cpl,EditEnvironmentVariables` を実行し、環境変数ツールを開きます。
 1. `User variable for...` セクションの `Path` をダブルクリックします。
@@ -72,4 +77,4 @@ PowerApps CLI ツールをアンインストールするには、[こちら](htt
 
 ### <a name="see-also"></a>関連項目
 
-[TypeScript を使ってコンポーネントを実装する](implementing-controls-using-typescript.md)<br/>
+[初めてコード コンポーネントを作成する](implementing-controls-using-typescript.md)<br/>

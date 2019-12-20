@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: d25283531665a0e1c534bd0e797cbaa722c44bba
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a37efda1dd6593f30e90ade7e11f7e762d67b932
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748885"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861929"
 ---
 # <a name="implementing-table-component"></a>テーブル コンポーネントの実装
 
@@ -25,6 +25,9 @@ ms.locfileid: "2748885"
 ## <a name="available-for"></a>以下に使用できます 
 
 モデル駆動型アプリ
+
+> ![!NOTE]
+> コマンド`npm start`を使用してテーブルコンポーネントをデバッグする場合、コンポーネントはテストハーネスにレンダリングされません。 これは、コンポーネントがPower Apps  CLI ツールによってサポートされていない`context.utils.getEntityMetadata`メソッドを使用するためです。
 
 ## <a name="manifest"></a>マニフェスト
 
@@ -444,5 +447,6 @@ export class TSTableControl
 ### <a name="related-topics"></a>関連トピック
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)
+[サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
+[Power Apps Component Framework API の参照](../reference/index.md)<br/>
+[Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

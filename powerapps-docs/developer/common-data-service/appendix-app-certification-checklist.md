@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e008a8d4751e9ae418393e9daf7eded3495d9450
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5dc66ce68c27ddf0ccea275c862e5c780a8d039c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748834"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861856"
 ---
 # <a name="appendix-app-certification-checklist"></a>付録: アプリの認証チェックリスト
 
@@ -46,7 +46,7 @@ ms.locfileid: "2748834"
 <td>コード検証</td>
 <td>
 <ul>
-<li>キャンバス アプリのコード検証は PowerApps の <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/accessibility-checker">アクセシビリティ チェッカー ツール</a> を介して行われ、以下を確認します。
+<li>キャンバス アプリのコード検証は Power Apps の <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/accessibility-checker">アクセシビリティ チェッカー ツール</a> を介して行われ、以下を確認します。
 <ul>
 <li>静的数式エラーと警告: 何か問題があった場合は、検証チームが問題解決のためにフィードバックを共有し、AppSourceへと再提出します。</li>
 <li>実行時エラー: アプリを実行モードで開いて表示する時に発生する可能性があります。 問題が見つかったらすべて電子メールで報告されます。</li>
@@ -62,7 +62,7 @@ ms.locfileid: "2748834"
 <td>展開の検証</td>
 <td>
 <ul>
-<li>ソリューションは <a href="https://docs.microsoft.com/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer</a> を使用して PowerApps Studio にインストールされます。 インストールされたキャンバス アプリは、ソリューションおよびアプリ セクションにインストール後に手動で配置されます。そしてアプリが編集モードおよび実行モードで開かれていることを確認します。 キャンバス アプリは PowerApps Studio から手動で削除され、アンインストールが成功したことを検証します</li>
+<li>ソリューションは <a href="https://docs.microsoft.com/powerapps/developer/common-data-service/package-deployer/create-packages-package-deployer">Package Deployer</a> を使用して Power Apps Studio にインストールされます。 インストールされたキャンバス アプリは、ソリューションおよびアプリ セクションにインストール後に手動で配置されます。そしてアプリが編集モードおよび実行モードで開かれていることを確認します。 キャンバス アプリは Power Apps Studio から手動で削除され、アンインストールが成功したことを検証します</li>
 <li>キャンバス アプリが発行者から提供されたコネクタを介して正しく接続していることを確認します。 たとえば、 Common Data Service またはほかのコネクションです。</li>
 <li>すべての Common Data Service コンポーネント (エンティティ、webリソース、プラグイン、その他のコンポーネント) がソリューションにて利用可能となっていることを確認します。</li>
 <li>ソリューションを手動でアンインストールし、管理ソリューションに関連付けられたすべてのコンポーネントが削除されたかを確認します。</li>
@@ -83,7 +83,7 @@ ms.locfileid: "2748834"
 <td>
 <ul>
 <li>外部データ ソースまたはアクセスを必要とする接続にキャンバス アプリが接続しているかどうか、また適切な接続の詳細を E2E ドキュメントで共有する必要があるかどうかを確認します。</li>
-<li>キャンバス アプリが PowerApps コネクタの外部接続に接続されていることを確認します。</li>
+<li>キャンバス アプリが Power Apps コネクタの外部接続に接続されていることを確認します。</li>
 <li>Package Deployer にて提供されているカスタム コードを確認します。 アプリケーションを AppSourceに承認する前にコードを検証します。</li>
 <li>カスタム コードが対象の環境から顧客データを取得しているかを確認するにはコードを手動で検証します。</li>
 </ul>
@@ -109,7 +109,7 @@ ms.locfileid: "2748834"
 <td>展開の検証</td>
 <td>
 <ul>
-<li>キャンバス アプリはアプリ インポート機能を使用して PowerApps Studio に手動でインストールされます。 インストールされたキャンバス アプリは、アプリ セクションにインストール後に手動で配置されます。そしてアプリが編集モードおよび実行モードで開かれていることを確認します。 キャンバス アプリは PowerApps Studio から手動で削除され、アンインストールが成功したことを検証します。</li>
+<li>キャンバス アプリはアプリ インポート機能を使用して Power Apps Studio に手動でインストールされます。 インストールされたキャンバス アプリは、アプリ セクションにインストール後に手動で配置されます。そしてアプリが編集モードおよび実行モードで開かれていることを確認します。 キャンバス アプリは Power Apps Studio から手動で削除され、アンインストールが成功したことを検証します。</li>
 <li>キャンバス アプリが発行者から提供されたコネクタに正しく接続していることを確認します。</li>
 </ul>
 </td>

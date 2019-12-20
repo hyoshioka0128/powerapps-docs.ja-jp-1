@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9f7279a2491d576f505252bcd8ebdbb7df0e8ae7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6e4991ce913cf5812b1405321619df84759b1cb0
+ms.sourcegitcommit: 8f4b2c070ff57bf6ceac8d694b264bff163c6eab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748902"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "2804385"
 ---
 # <a name="sample-quick-start-for-xrm-tooling-api"></a>サンプル: XRM ツール API のクイック スタート
 
@@ -35,9 +35,9 @@ ms.locfileid: "2748902"
 
 ## <a name="how-to-run-the-sample"></a>サンプルを実行する方法
 
-1. [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/Xrm%20Tooling/Quick%20start%20for%20XRM%20Tooling) からサンプルをダウンロードして展開します。  
-1. `Quick start for XRM Tooling\C#\QuickStartXRMToolingWPFClient.sln`  ファイルを Visual Studio で開きます。  
-1. **F5** キーを押して、プログラムをコンパイルして実行します。  
+1. サンプルをダウンロードまたは抽出し、ローカル コピーを持てるようにします。  
+2. `Quick start for XRM Tooling\C#\QuickStartXRMToolingWPFClient.sln`  ファイルを Visual Studio で開きます。  
+3. **F5** キーを押して、プログラムをコンパイルして実行します。  
 
 
 ## <a name="demonstrates"></a>説明

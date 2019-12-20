@@ -1,6 +1,6 @@
 ---
 title: モデル駆動型アプリを削除する | MicrosoftDocs
-description: PowerApps 環境からモデル駆動型アプリを削除する方法について説明します。
+description: Power Apps 環境からモデル駆動型アプリを削除する方法について説明します。
 keywords: ''
 ms.date: 10/08/2019
 ms.service: powerapps
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 026420ad6a5f3ab3e74c9c0d11f87f8a52ffa417
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e8f7d58f7c5cf40f6b582bc5be7970211334d271
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756217"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874833"
 ---
 # <a name="delete-a-model-driven-app"></a>モデル駆動型アプリを削除する
 環境内で使われなくなったアプリを削除します。
@@ -37,7 +37,7 @@ ms.locfileid: "2756217"
 > [!IMPORTANT]
 > モデル駆動型アプリが管理ソリューションの一部として既定のソリューションにインストールされていた場合は、 [管理ソリューションの一部としてインストールされたモデル駆動型アプリを削除する](#delete-a-model-driven-app-that-was-installed-as-part-of-a-managed-solution) を参照してください。
 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 2. 左のナビゲーションで、 **アプリ** を選択します。 
 3. 削除するアプリを選択し、コマンド バーで、**削除**を選択します。
 4. 表示される確認メッセージで、**削除**を選びます。
@@ -54,7 +54,7 @@ ms.locfileid: "2756217"
 
 ### <a name="delete-a-managed-solution"></a>管理ソリューションの削除 
 管理ソリューションのすべてのコンポーネントは、ソリューションを削除によって削除されます。
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
 2.  左のナビゲーションで、 **ソリューション** を選択します。
 3.  **ソリューション** 一覧で、削除する管理ソリューションを選択し、ツール バーで **削除** を選択します。 
 

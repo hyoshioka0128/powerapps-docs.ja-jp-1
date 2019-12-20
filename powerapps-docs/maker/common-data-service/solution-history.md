@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 67239062f30efb80fb8ee416614c1088e20c4075
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 813a31b3b9d56dfb6742dc138ec947829613cf89
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702196"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869945"
 ---
 # <a name="view-the-history-of-a-solution"></a>ソリューションの履歴の表示
 モデル駆動型アプリケーション **ソリューション** 領域からソリューションの操作の詳細を表示できます。 操作は、ソリューションのインポート、エクスポート、または削除のいずれかです。 ソリューションの履歴はソリューション バージョン、ソリューション発行者、操作などの一部の情報を、操作の開始時刻と終了時刻、および操作の状態の表示されます。
@@ -40,7 +40,7 @@ ms.locfileid: "2702196"
      > ![](media/solution-history-sitemap.png "Solution History area")
 
      > [!NOTE]
-     > PowerApps 統一インターフェイスのモデル駆動型アプリから、**設定** 領域を取得するには、アプリのツールバーにある **設定** ![設定](../model-driven-apps/media/powerapps-gear.png) を選択してから、**詳細設定** を選択します。 
+     > Power Apps 統一インターフェイスのモデル駆動型アプリから、**設定** 領域を取得するには、アプリのツールバーにある **設定** ![設定](../model-driven-apps/media/powerapps-gear.png) を選択してから、**詳細設定** を選択します。 
 
 2. 既定では、**カスタム ソリューションの履歴** ビューが表示されます。 次のビューは、 **ソリューション履歴** 領域で利用できます。 
 - **すべてのソリューション履歴**。 内部システムとカスタムソリューション両方のソリューション履歴の表示。 

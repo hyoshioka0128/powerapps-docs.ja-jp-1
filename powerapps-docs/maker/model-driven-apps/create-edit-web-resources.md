@@ -1,5 +1,5 @@
 ---
-title: PowerApps でモデル駆動型アプリ Web リソースを作成、編集する | MicrosoftDocs
+title: Power Apps でモデル駆動型アプリ Web リソースを作成、編集する | MicrosoftDocs
 description: Web リソースの作成または編集の方法を学習する
 ms.custom: ''
 ms.date: 06/02/2018
@@ -22,19 +22,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6711d78a217bc5bcee34f0bd209f7bdfe56249c5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4aa4e0399395861cf94740c92f35b738998b8209
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702460"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860513"
 ---
 # <a name="create-or-edit-model-driven-app-web-resources-to-extend-an-app"></a>モデル駆動型アプリ Web リソースを作成または編集してアプリを拡張
 
 Web リソースは、通常、Web 開発で使用されるファイルを使用してアプリを拡張するために、開発者によって使用されます。 アプリ ユーザーとして、開発者またはデザイナーによって提供される Web リソースを管理する必要がある場合があります。  
 
 > [!TIP]
-> Web リソースの包括的な説明については、 [開発者ドキュメント: モデル駆動型アプリ の Web リソース](/powerapps/developer/model-driven-apps/web-resources) を参照してください。<br /> PowerAppsで追加された Web リソースの依存関係の詳細については、 [開発者ドキュメント: Web リソースの依存関係](/dynamics365/customer-engagement/developer/web-resources)を参照してください。
+> Web リソースの包括的な説明については、 [開発者ドキュメント: モデル駆動型アプリ の Web リソース](/powerapps/developer/model-driven-apps/web-resources) を参照してください。<br /> Power Appsで追加された Web リソースの依存関係の詳細については、 [開発者ドキュメント: Web リソースの依存関係](/dynamics365/customer-engagement/developer/web-resources)を参照してください。
    
 <a name="BKMK_WhatAreWebResources"></a>
 

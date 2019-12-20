@@ -1,5 +1,5 @@
 ---
-title: PowerApps アプリ デザイナーでのモデル駆動型アプリ プロパティの管理 | MicrosoftDocs
+title: Power Apps アプリ デザイナーでのモデル駆動型アプリ プロパティの管理 | MicrosoftDocs
 description: アプリのプロパティの管理方法を説明します。
 keywords: ''
 ms.date: 02/05/2019
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a4f28dd878ca2e862a99982564066eefacfb7892
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a2f0dc0130e8a698a4407d90f3f1ce51c9873c31
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701888"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860064"
 ---
 # <a name="manage-model-driven-app-properties-in-the-app-designer"></a>アプリ デザイナーでのモデル駆動型アプリ プロパティの管理
 

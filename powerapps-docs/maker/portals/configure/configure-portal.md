@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 2de821da110808432cc6769995e94c9d2a1e8523
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 36c6657e8f565b38495dded1f408c21cc0414356
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709060"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866976"
 ---
 # <a name="portal-management-app"></a>ポータル管理アプリ
 
 ポータル管理アプリを使用すると、ポータルで詳細な構成アクションを実行できます。 アプリは、Common Data Service のデータベースが正常に作成された後に使用できます。
 
-ポータル管理アプリを開くには、PowerApps ホーム ページの**お使いのアプリ**セクションへ移動し、ポータル管理アプリを探して選択します。
+ポータル管理アプリを開くには、Power Apps ホーム ページの**お使いのアプリ**セクションへ移動し、ポータル管理アプリを探して選択します。
 
 > [!div class=mx-imgBorder]
 > ![ポータル管理アプリ](../media/portal-mgmt.png "ポータル管理アプリ")

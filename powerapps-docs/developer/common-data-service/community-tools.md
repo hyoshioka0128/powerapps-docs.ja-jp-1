@@ -1,6 +1,6 @@
 ---
 title: Common Data Service のコミュニティ ツール (Common Data Service) | Microsoft Docs
-description: PowerApps Common Data Service で、さまざまなタスクを実行するのに役立つコミュニティ作成ツールについてご覧ください。
+description: Power Apps Common Data Service で、さまざまなタスクを実行するのに役立つコミュニティ作成ツールについてご覧ください。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f87e8e6d6e56ccc82ae589b371edca3257370a42
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 495772c8e530823897412ea1db03854d52ff1548
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749152"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861808"
 ---
 # <a name="community-tools-for-common-data-service"></a>Common Data Service のコミュニティ ツール
 

@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cf8a30ae29712804cea2da42b0e448acc6286553
-ms.sourcegitcommit: e4b3b6b610f91a0c704a4fa87c6ec238aa81d25f
+ms.openlocfilehash: 2b54cad59b1f5a6cc4199675308f5cd48d05240d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "2767244"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873995"
 ---
 # <a name="types-of-fields"></a>フィールドの種類
 
-種類に使用される名前は、使用するデザイナーによって異なります。 [PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では、データの形式が決定される方法が含まれる規則が使用されています。 ソリューション エクスプローラーの種類では、形式修飾子を持つデータベース データ型に沿った名前が使用されます。 次の表には、対応する `AttributeTypeDisplayName` API の種類が含まれています。
+種類に使用される名前は、使用するデザイナーによって異なります。 [Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)では、データの形式が決定される方法が含まれる規則が使用されています。 ソリューション エクスプローラーの種類では、形式修飾子を持つデータベース データ型に沿った名前が使用されます。 次の表には、対応する `AttributeTypeDisplayName` API の種類が含まれています。
 
 |ポータルのデータの種類 |ソリューション エクスプローラーの種類| API の種類|
 |--|--|--|
@@ -65,8 +65,8 @@ ms.locfileid: "2767244"
 |**整数**|**整数**<br />*なし*形式|`IntegerType`|
 
 追加または編集可能な各種類の詳細については、対応するデザイナーのトピックをを参照してください。
- - [PowerApps ポータルを使用して Common Data Service のフィールドの作成および編集をする: フィールドのデータ型](create-edit-field-portal.md#field-data-types)
- - [PowerApps ソリューションエクスプローラーを使用して Common Data Service のフィールドの作成および編集をする: フィールドのデータ型](create-edit-field-solution-explorer.md#field-data-types)
+ - [Power Apps ポータルを使用して Common Data Service のフィールドの作成および編集をする: フィールドのデータ型](create-edit-field-portal.md#field-data-types)
+ - [Power Apps ソリューションエクスプローラーを使用して Common Data Service のフィールドの作成および編集をする: フィールドのデータ型](create-edit-field-solution-explorer.md#field-data-types)
 
 フィールドのデータの種類が API で定義される方法の詳細については、「[属性のメタデータ](/powerapps/developer/common-data-service/entity-attribute-metadata)」を参照してください
 
@@ -188,11 +188,11 @@ ms.locfileid: "2767244"
 By default, when an app user adds an image to display to a form or canvas app, the image displayed is the thumbnail image. To display a full image for a canvas app, see [Display a full-sized image on a canvas app form](../canvas-apps/display-full-image-on-form.md).
 
 
-### Add an image field to an entity using the PowerApps site
+### Add an image field to an entity using the Power Apps site
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-1. Sign in to [PowerApps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
+1. Sign in to [Power Apps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).  
 2.  Select **Data** > **Entities** and then select the entity where you want to add an image field. 
 3. Select **Add field** on the command bar, enter the following properties, and then select **Done**: 
    - **Display name**. Enter a friendly name for the field. 

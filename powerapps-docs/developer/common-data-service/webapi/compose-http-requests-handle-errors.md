@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a51bc5b959938d37e222c695bd949bdd08207b29
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 405e27d3461f78a2452de1c8b19d99d4d827d879
+ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748939"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "2854677"
 ---
 # <a name="compose-http-requests-and-handle-errors"></a>HTTP 要求の作成とエラーの処理
 
@@ -138,7 +138,7 @@ Content-Type: application/json
 |404 見つかりません|リソースが存在しない場合に発生します。|クライアント エラー|  
 |405 許可されていないメソッド|このエラーは、メソッドとリソースの組み合わせが正しくない場合に発生します。 たとえば、DELETE または PATCH をエンティティのコレクションに対して使用することはできません。<br /><br /> 次のような種類のエラーの場合に発生します。<br /><br /> -   CannotDeleteDueToAssociation<br />-   InvalidOperation<br />-   NotSupported|クライアント エラー|  
 |412 前提条件失敗|次のような種類のエラーの場合に発生します。<br /><br /> -   ConcurrencyVersionMismatch<br />-   DuplicateRecord|クライアント エラー|
-|429 リクエストが多すぎます|API 制限を超えた場合に発生します。 詳細: [API の制限](../api-limits.md)|クライアント エラー|  
+|429 リクエストが多すぎます|API 制限を超えた場合に発生します。 詳しくは：[サービス保護APIの制限](../api-limits.md)を参照してください。|クライアント エラー|  
 |501 実装されていません|要求した何らかの操作が実装されていない場合に発生します。|サーバー エラー|  
 |503 サービスは利用できません|Web API サービスを使用できない場合に発生します。|サーバー エラー|  
   

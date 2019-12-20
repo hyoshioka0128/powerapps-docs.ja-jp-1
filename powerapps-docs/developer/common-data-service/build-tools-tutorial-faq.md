@@ -1,6 +1,6 @@
 ---
 title: 構築ツールのチュートリアルと、よく寄せられる質問| Microsoft Docs
-description: 'PowerApps build tools は、一連の PowerApps 固有の Azure DevOps 構築タスクです。これを使用することで PowerApps の開発を管理するためにスクリプトを手動でダウンロードする必要がなくなります。 このトピックでは、これらのツールの詳細情報を提供するチュートリアルとFAQについて説明します。 '
+description: 'Power Apps build tools は、一連の Power Apps 固有の Azure DevOps 構築タスクです。これを使用することで Power Apps の開発を管理するためにスクリプトを手動でダウンロードする必要がなくなります。 このトピックでは、これらのツールの詳細情報を提供するチュートリアルとFAQについて説明します。 '
 ms.custom: ''
 ms.date: 07/21/2019
 ms.reviewer: Dean-Haas
@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 69736094b6c15d8731ec61f614da3085bed14924
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ac7b2aeabe6121ee45b8593abb3234cfb6fb566b
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749012"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861832"
 ---
 # <a name="tutorial-and-faq"></a>チュートリアルとよく寄せられる質問
 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-チュートリアルと FAQ を使用して Azure DevOps の PowerApps Build Tools の詳細を参照してください。 
+チュートリアルと FAQ を使用して Azure DevOps の Power Apps Build Tools の詳細を参照してください。 
 
 ## <a name="hands-on-lab"></a>ハンズオン ラボ
 
@@ -47,17 +47,17 @@ ms.locfileid: "2749012"
 
 ## <a name="frequently-asked-question-faq"></a>よくあるご質問 (FAQ)
 
-**PowerApps Build Tools は PowerApps のみで動作しますか。**  
+**Power Apps Build Tools は Power Apps のみで動作しますか。**  
 
-*PowerApps Build Tools は、PowerApps と、Dynamics 365 Sales や Dynamics 365 Customer Service など Dynamics 365 のモデル駆動型アプリの両方で動作します。Microsoft Dynamics for Finance and Operations には個別の構築タスクを使用できます。*
+*Power Apps Build Tools は、Power Apps と、Dynamics 365 Sales や Dynamics 365 Customer Service など Dynamics 365 のモデル駆動型アプリの両方で動作します。Microsoft Dynamics for Finance and Operations には個別の構築タスクを使用できます。*
 
 **FlowとCanvasアプリを含めることはできますか?**
 
 *はい、Flows と Canvas アプリはソリューションに対応しているため、ソリューションに追加をすることでアプリのライフサイクルに登録することができます。ただし、一部の手順では手動設定が必要となります。これについては、今年の後半に環境変数とコネクタの導入をする際に同時に対応する予定です。*
 
-**PowerApps Build Tools の価格を教えてください。**
+**Power Apps Build Tools の価格を教えてください。**
 
-*PowerApps Build Tools は無料で使用することができます。ただし、Build Tools を使用するためは Azure DevOps の有効なサブスクリプションが必要となります。詳細については [こちら](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) を参照してください。*
+*Power Apps Build Tools は無料で使用することができます。ただし、Build Tools を使用するためは Azure DevOps の有効なサブスクリプションが必要となります。詳細については [こちら](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) を参照してください。*
 
 **拡張機能が表示されますが、それをインストールするオプションがないのはなぜですか?**
 

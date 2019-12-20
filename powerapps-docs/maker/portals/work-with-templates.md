@@ -1,6 +1,6 @@
 ---
-title: テンプレートを操作する |Microsoft Docs
-description: ポータルでテンプレートを操作する方法について説明します。
+title: テンプレートに関する作業 | Microsoft Docs
+description: ポータルでテンプレートを使用する手順。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,38 +9,38 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 207a1abdfc8145c38b8d6222f71281ce714e8947
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 76e0f5cceedb2e2b1ba1bf7c5d0d7f338af920fd
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73542385"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862053"
 ---
-# <a name="work-with-templates"></a>テンプレートを操作する
+# <a name="work-with-templates"></a>テンプレートに関する作業
 
-組み込みテンプレートは、プロビジョニングしたポータルに応じて利用できます。 テンプレートを編集するには、コードエディターを使用します。 たとえば、Common Data Service starter ポータルをプロビジョニングするときに使用できる組み込みテンプレートは次のとおりです。
+組み込みのテンプレートは、一つはプロビジョニング用のポータルに使用できます。 コード エディターを使用して、組み込みテンプレートを編集できます。 たとえば、Common Data Service スターター ポータルをプロビジョニングする場合、次の組み込みテンプレートを使用できます。
 
-- 既定の studio テンプレート
-- タイトル付きページ
-- 子リンクがあるページ
+- 既定のスタジオ テンプレート
+- タイトルを含むページ
+- 子リンクのあるページ
 
 
 > [!NOTE]
-> **既定の studio テンプレート**、**プロファイル**、および**検索**テンプレートを編集しないことをお勧めします。
+> **デフォルトのスタジオテンプレート**、**プロファイル**、および**検索**テンプレートは編集しないことをお勧めします。
 
-コードエディターでテンプレートを開くには、次のようにします。
+コード エディターでテンプレートを開くには
 
-1.  [ポータルを編集](manage-existing-portals.md#edit)して PowerApps ポータル Studio で開きます。  
+1.  [ポータルを編集](manage-existing-portals.md#edit) して、ポータルを Power Apps ポータル Studioで開きます。  
 
-2.  画面の左側にある toolbelt から **テンプレート**![テンプレート アイコン](media/templates-icon.png "テンプレートアイコン")を選択します。 使用可能なテンプレートが表示されます。  
+2.  画面の左側のツールベルトから**テンプレート**![テンプレート アイコン](media/templates-icon.png "テンプレート アイコン")を選択します。 使用可能なテンプレートが表示されます。  
 
     > [!div class=mx-imgBorder]
-    > ![テンプレートペイン](media/templates-pane.png "テンプレートペイン")  
+    > ![テンプレート ウィンドウ](media/templates-pane.png "テンプレート ウィンドウ")  
 
-3.  コードエディターで開くには、必要なテンプレートを選択します。
+3.  目的のテンプレートを選択してコード エディターで開きます。
 
-4.  コードを編集し、変更を保存します。
+4.  コードを編集して変更を保存します。
 
 > [!NOTE]
-> - また、詳細な構成のために、ソースコードエディターで液体タグを追加することもできます。 詳細情報:[水冷テンプレートの使用](liquid/liquid-overview.md)
-> - [ポータル管理アプリ](configure/configure-portal.md)を使用して作成したページテンプレートは、 **[テンプレート]** ウィンドウにも表示されます。
+> - また、ソース コード エディターに Liquid タグを追加して、高度な構成を行うこともできます。 詳細: [Liquid テンプレートに関する作業](liquid/liquid-overview.md)
+> -  [ポータル管理アプリ](configure/configure-portal.md)を使用して作成されるページ テンプレートは、**テンプレート** ウィンドウにも表示されます。

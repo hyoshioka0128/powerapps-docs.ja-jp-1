@@ -1,5 +1,5 @@
 ---
-title: PowerApps におけるモデル駆動型アプリ フォームの最適化 | MicrosoftDocs
+title: Power Apps におけるモデル駆動型アプリ フォームの最適化 | MicrosoftDocs
 description: フォームの読み込みが遅くなる原因となるフォーム設計を避ける方法を学習します
 ms.custom: ''
 ms.date: 06/27/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b777dc346897f87d710edc309b9e9a7eda1b711b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5df20edea9440d407c75b114d24dcb3c0f39306a
+ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711612"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890658"
 ---
 # <a name="optimize-model-driven-app-form-performance"></a>モデル駆動型アプリ フォーム パフォーマンスを最適化する
 
@@ -38,8 +38,11 @@ ms.locfileid: "2711612"
  ユーザーとフォームとの間のやり取りと、フォームに表示する必要のあるデータの量を検討してください。  
   
  **フィールド数を最低限に維持**  
- フォームにより多くのフィールドを組み込むと、各レコードを表示するために、インターネットまたはイントラネットによってより多くのデータを転送する必要があります。  
-  
+ フォームにより多くのフィールドを組み込むと、各レコードを表示するために、インターネットまたはイントラネットによってより多くのデータを転送する必要があります。
+ 
+ **パフォーマンスのための設計**  
+ フォームとページを設計するときは、最も重要なものを一番上に配置して、ユーザーが簡単にアクセスできるようにします。 使用頻度の低いコンポーネントをフォーム上の他のタブに移動し、コンポーネントの表示と非表示の代わりにロールベースのフォームを使用し、異なるワークフローに専用のダッシュボードとビューがあることを確認します。 セクションを使用してコントロールを整理してください。これによりフォームが遅くなることはありません。
+ 
 <a name="BKMK_FormScripts"></a>   
 ## <a name="form-scripts"></a>フォーム スクリプト  
  フォーム スクリプトを使用したカスタマイズが存在するとき、パフォーマンスを向上するためのこれらのストラテジーを開発者が理解していることを確認してください。  

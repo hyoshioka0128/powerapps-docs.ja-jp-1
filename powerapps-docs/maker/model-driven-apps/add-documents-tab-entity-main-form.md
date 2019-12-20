@@ -17,12 +17,12 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: d8a81b531f43f3e252f2df348b8ae95551e068d4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f245d4c2a9272d10f7aefa2b2847adba5ce0f6e5
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702812"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2860812"
 ---
 # <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>エンティティのメイン フォームに SharePoint ドキュメント タブを追加する
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "2702812"
 > この機能を使用するには、ドキュメント管理を有効にする必要があります。 詳細: [SharePoint を使用してドキュメントを管理する](/dynamics365/customer-engagement/admin/manage-documents-using-sharepoint)
 
 ## <a name="add-the-documents-tab-in-the-formxml"></a>FormXML にドキュメント タブを追加する 
-1.  新しいソリューションの作成 PowerApps にサインインして **ソリューション** に移動し、**新しいソリューション** に移動して必須の情報とオプション情報を入力します。 詳細: [ソリューションの作成](../common-data-service/create-solution.md)
+1.  新しいソリューションの作成 Power Apps にサインインして **ソリューション** に移動し、**新しいソリューション** に移動して必須の情報とオプション情報を入力します。 詳細: [ソリューションの作成](../common-data-service/create-solution.md)
 2. メイン フォームのドキュメント タブを追加するソリューションに、エンティティを追加します。 すべての標準エンティティとカスタム エンティティをサポートしています。 詳細: [既存のコンポーネントをソリューションに追加する](/powerapps/maker/common-data-service/use-solution-explorer#add-an-existing-component-to-a-solution)
 3. 取引先企業エンティティのメイン フォームなど、エンティティのフォームをソリューションに含めます。 エンティティの隣の **...** を選択して **編集** を選択します。 **フォーム** タブを選択します。必要なフォームが見つからない場合は、追加します。   
 
@@ -45,7 +45,7 @@ ms.locfileid: "2702812"
 5. フォーム デザイナーで、フォーム デザイナー キャンバスの **新しいタブ** を選択し、**フィールドを追加** を選択して、左側のウィンドウから *住所 1: 市区町村* などのフィールドを追加します。 タブには任意のテキストや数値のフィールドを使用できます。![タブにフィールドを追加します](media/add-field-to-tab.png)
 6. タブ ラベルの名前を変更します。 これを行うには **新しいタブ** を選択し、右側のプロパティ ウィンドウで **新しいタブ** を *ファイル* のようにわかりやすいものに置き換えます。
 7. **保存** を選択し、**公開** を選択してフォーム デザイナーを閉じます。 
-8. PowerApps 作成者のホームページから **ソリューション** を選択し、ソリューションを選択して **エクスポート** を選択し、ソリューションをアンマネージド ソリューションとしてエクスポートします。 詳細: [ソリューションのエクスポート](../common-data-service/import-update-export-solutions.md#export-solutions) 
+8. Power Apps 作成者のホームページから **ソリューション** を選択し、ソリューションを選択して **エクスポート** を選択し、ソリューションをアンマネージド ソリューションとしてエクスポートします。 詳細: [ソリューションのエクスポート](../common-data-service/import-update-export-solutions.md#export-solutions) 
 9. ソリューションを抽出し、XML やテキスト エディターで customization.xml ファイルを開きます。 
 10. customization.xml で **label description="Files"** (または前のステップでタブ ラベルに付けた名前) を検索します。
 11. **control id="address1_city"** などのコントロール id="*フィールド名*" 要素までスクロールし、このトピックの要素全体を [XML サンプル](#xml-sample-for-adding-the-documents-tab-to-a-form) に置き換えます。 

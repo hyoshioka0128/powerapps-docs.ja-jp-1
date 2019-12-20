@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 47730a2ba169b89534fa93221290c5598a95a8e8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c92b664c2c40c6bb6354e2666d583d5c7ed7aead
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760645"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874435"
 ---
 # <a name="add-record-based-security-by-using-entity-permissions-for-portals"></a>ポータルのエンティティ アクセス許可を使用してレコード ベースのセキュリティを追加する
 
@@ -30,9 +30,11 @@ ms.locfileid: "2760645"
 
 2. **ポータル** &gt; **Web ロール** に移動してアクセス許可を追加する Web ロールを開きます。 
 
-3. **追加**選択して、Web ロールに既存のエンティティのアクセス許可を追加します。 
+3. **関連**で、**エンティティのアクセス許可**を選択します。
 
-4. **新規**を選択して、新しいエンティティのアクセス許可レコードを作成します。
+4. **既存のエンティティのアクセス許可**を選択して、Web ロールに既存のエンティティのアクセス許可を追加します。 
+
+4. エンティティのアクセス許可を参照するか、**新しいエンティティのアクセス許可**を選択して、新しいエンティティのアクセス許可レコードを作成します。
 
     ![エンティティのアクセス許可を Web ロールへ追加する](../media/add-entity-permission-web-role.png "エンティティのアクセス許可を Web ロールへ追加する")  
 
@@ -51,7 +53,7 @@ ms.locfileid: "2760645"
 
 エンティティの一覧では、現在のユーザーに直接リンクされるレコードのみを取得するリストによって表示されるどのモデル駆動型アプリ ビューにも、フィルターが追加されていることを意味します。 (シナリオによっては、この関連付けを所有権または管理権限と考えることができます)。
 
-エンティティ フォームは、読み込み、作成、書き込みなどの適切なアクセス許可のみを、レコードがロードされたときにこの関連付けが存在する場合にのみ許可します。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [ポータルでのエンティティ フォームおよびユーザー定義ロジックの定義](entity-forms.md)。  
+エンティティ フォームは、読み込み、作成、書き込みなどの適切なアクセス許可のみを、レコードがロードされたときにこの関連付けが存在する場合にのみ許可します。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [エンティティ フォームの定義](entity-forms.md).  
 
 ### <a name="account-scope"></a>取引先企業のスコープ
 

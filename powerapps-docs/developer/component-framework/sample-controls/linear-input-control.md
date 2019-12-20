@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: f7dcc3fef22c354b1fed684a09fb091f2d2c6cb7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 131ca8fecf58477d9e51d2a31b53ad894c851f7f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749358"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861953"
 ---
 # <a name="implementing-linear-input-component"></a>線形入力コンポーネントの実装
 
@@ -57,7 +57,7 @@ export class TSLinearInputControl
   implements ComponentFramework.StandardControl<IInputs, IOutputs> {
   // Value of the field is stored and used inside the control
   private _value: number;
-  // PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
+  // Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens.
   private _notifyOutputChanged: () => void;
   // label element created as part of this control
   private labelElement: HTMLLabelElement;
@@ -246,7 +246,7 @@ export class TSLinearInputControl
 `refreshData` 関数のロジックを実装します。 サンプルで明らかなように、`inputElement` から値を取得して、コンポーネントの値と `labelElement` の `innerHTML` プロパティを設定し、そして変更がフレームワーク層の上に伝播されるように `notifyOutputChanged` を呼び出します。
 
 ```TypeScript
-public refreshData(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>) 
+public refreshData(context: ComponentFramework.IPropBag<InputsOutputs.IInputBag>) 
 { 
    this._value = (this.inputElement.value as any)as number; 
    this.labelElement.innerHTML = this.inputElement.value; 
@@ -258,7 +258,7 @@ public refreshData(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>)
 
 ```TypeScript
 
-public updateView(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>): void 
+public updateView(context: ComponentFramework.IPropBag<InputsOutputs.IInputBag>): void 
  { 
     this._value = context.parameters.controlValue.raw; 
     this._context = context; 
@@ -270,5 +270,6 @@ public updateView(context: ControlFramework.IPropBag<InputsOutputs.IInputBag>): 
 ### <a name="related-topics"></a>関連トピック
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)
+[サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
+[Power Apps Component Framework API の参照](../reference/index.md)<br/>
+[Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

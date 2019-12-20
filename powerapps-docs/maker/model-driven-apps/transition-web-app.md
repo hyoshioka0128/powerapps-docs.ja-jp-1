@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eed1efac81b882d076e0e809c93ddec63f6a75f7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bf9b21936a0b1a9d843d248cf4941854dcdbbd7d
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759737"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874567"
 ---
 # <a name="quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface"></a>クイックスタート: 従来の Web クライアント アプリケーションの統合インターフェイスへの移行
 
@@ -43,7 +43,7 @@ ms.locfileid: "2759737"
 ## <a name="prepare-the-environment"></a>環境の準備
 まず、非本番環境を選択し、 **統合インターフェイスのみを使用する** モードを有効にします。このモードでは、環境内のすべてのモデル駆動型アプリに統合インターフェイスが使用されます。 これには、元々旧式の Web クライアント用に構成された Dynamics 365 アプリケーションモジュールも含まれています。
 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、**環境** を選択し、サンドボックス環境を選択します。 
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、**環境** を選択し、サンドボックス環境を選択します。 
 
 2. **設定** > **動作** を選択し、 **統合インターフェイスのみを使用する** を有効にします。
 
@@ -62,7 +62,7 @@ ms.locfileid: "2759737"
 ## <a name="run-and-validate-your-application-in-the-unified-interface"></a>統合インターフェイスでのアプリケーションの実行と検証
 元々Webクライアントアプリケーションであったアプリケーションを実行します。 **統合インターフェイスのみを使用する**を有効にすると、本来Webクライアント用に設定されていたアプリケーションを含む、環境内で使用可能となっているすべてのアプリケーションが統合インターフェイスを使用することに留意してください。
 
-アプリケーションを実行するには、[PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、**アプリ** を選択して実行するアプリケーションを選択します。 または、*https://contoso.crm.dynamics.com/apps/* など、**マイ アプリ** ページに直接アクセスすることもできます。
+アプリケーションを実行するには、[Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、**アプリ** を選択して実行するアプリケーションを選択します。 または、*https://contoso.crm.dynamics.com/apps/* など、**マイ アプリ** ページに直接アクセスすることもできます。
 
 ### <a name="validate-your-app-processes-and-customizations"></a>アプリケーション、プロセス、およびカスタマイズの検証 
 すべての使用例を考慮したテストを行うことを推奨します。 最も重要なテストケースから開始することも、論理的な設計パターンにまとめてテストをすることも可能です。 統合インターフェイスは応答性の高い設計がなされているため、画面解像度が異なる複数のデバイスでテストをすることを推奨します。 アプリケーションのテストを進めていく中で、行ったカスタマイズが統合インターフェイスと互換性があること、および再設計が必要な機能や不足している機能について認識することができます。 これらの要素を確認するにあたっての計画設定をし、Microsoft のコミュニティフォーラムに質問やフィードバックを投稿してください。 
@@ -118,10 +118,10 @@ Dynamics 365 Field Service または Dynamics 365 Project Service Automation ア
 [統合インターフェイスの活用プレイブック](unified-interface-playbook.md) <br />
 [ユーザエクスペリエンスと統合インターフェイスへの移行](approaching-unified-interface.md) <br />
 [Unified Interface について](/dynamics365/customer-engagement/admin/about-unified-interface) <br />
-[PowerApps におけるモデル駆動型アプリとは?](model-driven-app-overview.md) <br />
+[Power Apps におけるモデル駆動型アプリとは?](model-driven-app-overview.md) <br />
 [アプリを統一インターフェイスに更新する](/dynamics365/customer-engagement/admin/update-apps-to-unified-interface) <br />
 [モデル駆動型アプリの対話型エクスペリエンス ダッシュボードの構成](configure-interactive-experience-dashboards.md) <br />
 [モデル駆動型アプリのデータのビジュアル化のためのカスタム コントロールの使用](use-custom-controls-data-visualizations.md) <br />
-[PowerApps Component Framework の概要](/powerapps/developer/component-framework/overview) <br />
+[Power Apps Component Framework の概要](/powerapps/developer/component-framework/overview) <br />
 [全ユーザー向けの統合インターフェイス](/power-platform-release-plan/2019wave2/microsoft-powerapps/unified-interface-app-everybody)
 

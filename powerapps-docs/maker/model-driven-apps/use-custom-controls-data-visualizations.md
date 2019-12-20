@@ -1,5 +1,5 @@
 ---
-title: PowerApps におけるモデル駆動型アプリのデータのビジュアル化のためのカスタム コントロールの使用 | MicrosoftDocs
+title: Power Apps におけるモデル駆動型アプリのデータのビジュアル化のためのカスタム コントロールの使用 | MicrosoftDocs
 description: フィールド用カスタム コントロールの使用方法について学習します
 ms.custom: ''
 ms.date: 06/07/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b34354a1bc0bdfb3556acc6ca999a1e0e8dcec74
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8fd79185c4db541700e3079e9151a1193ebd6247
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756041"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874491"
 ---
 # <a name="use-custom-controls-for-model-driven-app-data-visualizations"></a>モデル駆動型アプリのデータのビジュアル化のためのカスタム コントロールの使用
 
@@ -48,7 +48,7 @@ ms.locfileid: "2756041"
 ## <a name="use-a-custom-control-to-add-visualizations-to-a-field"></a>カスタム コントロールを使用してビジュアル化をフィールドに追加する  
  この手順のステップに従うと、**予算金額**フィールドの既定のラベルとテキスト ボックス フィールドが、営業案件エンティティ上のスライダー カスタム コントロールに変更されます。 同様のステップを使用して、既存のフィールドをカスタム コントロールに置き換え、またはカスタム フィールド用カスタム コントロールを構成することができます。  
   
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
      
 

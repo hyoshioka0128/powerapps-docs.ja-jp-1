@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 028be1172621c9bdb510f5e57d16eb226b10f92b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 434dea11e5238167e824561e247bc23ddbb7839b
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758241"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874171"
 ---
 # <a name="configure-connection-roles"></a>つながりロールの構成
 
@@ -38,7 +38,7 @@ Common Data Service を使用することで、エンティティの関係性を
 > エンティティを新規または既存のつながりロールのレコードの種類として使用可能にするには、エンティティに対して**つながりの有効化** プロパティを有効にする必要があります。 
 
 ## <a name="enable-connection-roles-for-an-entity"></a>エンティティのつながりロールを有効にする
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。 
 2. **データ**を展開し、**エンティティ**を選択します。 
 3. つながりロールに対して有効にするエンティティを選択し、コマンド バーで**設定**を選択します。 
 4. **設定**ウィンドウで、**コラボレーション** エリアを展開し、**つながりを有効にする**を選択します。

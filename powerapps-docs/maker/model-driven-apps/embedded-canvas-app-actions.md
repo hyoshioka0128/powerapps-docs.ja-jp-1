@@ -16,18 +16,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0f6ec9122582f338ac23143149c6f59ea63e456f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a7298400d87c4b1230e8d893e72e0116641509af
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706112"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868516"
 ---
 # <a name="perform-predefined-actions-on-the-host-model-driven-form-from-within-an-embedded-canvas-app"></a>埋め込み型キャンバス アプリケーション内からホストモデル駆動型フォームで定義された処理を実行する
 埋め込み型キャンバス アプリケーションはホストモデル駆動型フォームに定義済みの処理を実行することができます。 これらのアクションにより、作成者はホストモデル駆動型フォームをナビゲート、更新、保存することができます。 これらのアクションを使用すると、梅込み型キャンバス アプリケーションは、モデル駆動型フォームとモデル駆動型アプリケーションのより不可欠な要素として動作します  

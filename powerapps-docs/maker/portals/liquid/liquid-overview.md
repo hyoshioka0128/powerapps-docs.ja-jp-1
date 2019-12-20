@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: d660b570963cb57ac97426f35eb826a1bc9678c4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 4667a328775a41b254f80250caebaf88a8110a9f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757229"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866492"
 ---
 # <a name="work-with-liquid-templates"></a>Liquid テンプレートに関する作業
 
@@ -22,9 +22,9 @@ Liquid は、ポータルに統合されているオープン ソースのテン
 
 - 動的コンテンツを Web ページの **コピー** フィールドまたは [コンテンツ スニペット](../configure/customize-content-snippets.md) のコンテンツに直接追加します。  
 
-- PowerApps ポータルのコンテンツ管理システム全体で使用するための、PowerApps 内の構成のみによる、[Web テンプレートを使用したソース コンテンツの保存](store-content-web-templates.md) をします。  
+- Power Apps ポータルのコンテンツ管理システム全体で使用するための、Power Apps 内の構成のみによる、[Web テンプレートを使用したソース コンテンツの保存](store-content-web-templates.md) をします。  
 
-- PowerApps 内の構成のみによる、[Web サイト ヘッダーとプライマリ ナビゲーション バーの表示](render-site-header-primary-navigation.md) をします。  
+- Power Apps 内の構成のみによる、[Web サイト ヘッダーとプライマリ ナビゲーション バーの表示](render-site-header-primary-navigation.md) をします。  
 
 
 ### <a name="see-also"></a>関連項目

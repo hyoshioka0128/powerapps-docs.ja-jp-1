@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 85dd665f7a3dc92b5198cfd8429b59af0896d5cc
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8a6db9ca3f6eb34cee3c9d45d1d9917f4b33115d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748886"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861937"
 ---
 # <a name="implementing-navigation-api-component"></a>ナビゲーション API コンポーネントの実装
 
-このサンプル コンポーネントは、PowerApps component framework ナビゲーション API の一部として利用できるなさまざまなメソッドを説明します。 このサンプルでは、表示される値と一致するナビゲーション API の各メソッドを呼び出す、一連のボタン型の入力要素を作成します。  
+このサンプル コンポーネントは、Power Apps component framework ナビゲーション API の一部として利用できるなさまざまなメソッドを説明します。 このサンプルでは、表示される値と一致するナビゲーション API の各メソッドを呼び出す、一連のボタン型の入力要素を作成します。  
 
 > [!div class="mx-imgBorder"]
 > ![API コンポーネントのナビゲーション](../media/navigation-api-control.png "API コンポーネントのナビゲーション")
@@ -52,7 +52,7 @@ ms.locfileid: "2748886"
 ```TypeScript
 import {IInputs, IOutputs} from "./generated/ManifestTypes";
 export class TSNavigationAPI implements ComponentFramework.StandardControl<IInputs, IOutputs> {
-// PowerApps component framework framework delegate which will be assigned to this object which would be called whenever an update happens. 
+// Power Apps component framework framework delegate which will be assigned to this object which would be called whenever an update happens. 
 private _notifyOutputChanged: () => void;
 // Reference to the div element that hold together all the HTML elements that we are creating as part of this control
 private divElement: HTMLDivElement;
@@ -245,6 +245,7 @@ public destroy()
 ### <a name="related-topics"></a>関連トピック
 
 [サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
-[PowerApps Component Framework API の参照](../reference/index.md)<br/>
-[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)
+[サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
+[Power Apps Component Framework API の参照](../reference/index.md)<br/>
+[Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)
 

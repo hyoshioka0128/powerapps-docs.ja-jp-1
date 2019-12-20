@@ -31,7 +31,7 @@
     - name: コードを使用したデータに関する作業
       href: work-with-data/index.md
       items:
-        - name: API の制限
+        - name: サービス保護の API 制限
           href: ../api-limits.md
     - name: コードを使用してメタデータを扱う
       href: work-with-metadata/index.md

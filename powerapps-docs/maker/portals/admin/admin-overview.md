@@ -1,6 +1,6 @@
 ---
-title: PowerApps ポータル管理センターの概要 | MicrosoftDocs
-description: PowerApps ポータル管理センターに関する情報。
+title: Power Apps ポータル管理センターの概要 | MicrosoftDocs
+description: Power Apps ポータル管理センターに関する情報。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,20 +9,20 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 6f8434a6a395931fc4edfe02913f47536b4a709d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0996704ccbc10f81b95c41d86234ca626a33a345
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756173"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867410"
 ---
-# <a name="powerapps-portals-admin-center"></a>PowerApps ポータル管理センター
+# <a name="power-apps-portals-admin-center"></a>Power Apps ポータル管理センター
 
-PowerApps ポータル管理センターでポータルの高度な管理操作を実行できます。 管理センターはポータルが正常にプロビジョニングされると利用可能になります。
+Power Apps ポータル管理センターでポータルの高度な管理操作を実行できます。 管理センターはポータルが正常にプロビジョニングされると利用可能になります。
 
-## <a name="open-powerapps-portals-admin-center"></a>PowerApps ポータル管理センターを開く
+## <a name="open-power-apps-portals-admin-center"></a>Power Apps ポータル管理センターを開く
 
-1. PowerApps ホーム ページの **最近のアプリ** セクションに移動してポータルを見つけます。
+1. Power Apps ホーム ページの **最近のアプリ** セクションに移動してポータルを見つけます。
 
     > [!div class=mx-imgBorder]
     > ![最近のアプリ](../media/recent-apps.png "最近のアプリ")  
@@ -41,7 +41,7 @@ PowerApps ポータル管理センターでポータルの高度な管理操作�
 
 グローバル管理者でなく、すでにプロビジョニングされたポータルを管理しようとした場合、またはプロビジョニングに失敗した場合にプロビジョニングを再実行する場合は、ポータルに接続された Azure Active Directory (Azure AD) アプリケーションの所有者である必要があります。
 
-1. PowerApps ポータル管理センターに移動し、**ポータルの詳細**タブを開きます。
+1. Power Apps ポータル管理センターに移動し、**ポータルの詳細**タブを開きます。
 
 2. **アプリケーション ID** フィールドから値をコピーします。
 
@@ -57,4 +57,4 @@ PowerApps ポータル管理センターでポータルの高度な管理操作�
     > [!Note]
     > このタスクは、組織のグローバル管理者またはこのアプリケーションの既存の所有者のいずれかによって実行できます。
 
-6. 所有者として自分を追加すると、PowerApps ポータル管理センターのページが再オープンされます。
+6. 所有者として自分を追加すると、Power Apps ポータル管理センターのページが再オープンされます。

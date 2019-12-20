@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 77fcc7db0adf68cd6decbcc95e11d8e803761535
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8f5b3701aedc0e0e98d203d5048577647c276120
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2708576"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864769"
 ---
 # <a name="control-flow-tags"></a>制御フロー タグ
 
@@ -91,4 +91,4 @@ Hello, stranger.
 [反復タグ](iteration-tags.md)<br>
 [変数タグ](variable-tags.md)<br>
 [テンプレート タグ](template-tags.md)<br>
-[PowerApps common data service エンティティ タグ](portals-entity-tags.md)
+[Power Apps common data service エンティティ タグ](portals-entity-tags.md)

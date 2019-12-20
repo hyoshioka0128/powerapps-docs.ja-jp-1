@@ -1,5 +1,5 @@
 ---
-title: PowerApps でモデル駆動型アプリの簡易作成フォームを作成、編集する | MicrosoftDocs
+title: Power Apps でモデル駆動型アプリの簡易作成フォームを作成、編集する | MicrosoftDocs
 description: 簡易作成フォームの作成または編集の方法を学習する
 ms.custom: ''
 ms.date: 05/14/2019
@@ -22,20 +22,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b1496fcb600524e7934fe55ca17a7a7bafb54c75
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 171d64581fd0a9feb51d5a6111c79e63de1ba845
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759165"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2875359"
 ---
 # <a name="create-or-edit-model-driven-app-quick-create-forms-for-a-streamlined-data-entry-experience"></a>効率的なデータ入力のエクスペリエンスを実現するためのモデル駆動型アプリの簡易作成フォームの作成または編集
 
 このトピックでは、簡易作成フォームを作成および編集します。
 
- 簡易作成フォームでは、フォーム スクリプトと業務ルールによって定義されたロジックの完全なサポートによって、簡素化されたデータ入力のエクスペリエンスを楽しむことができます。 PowerApps のモデル駆動型アプリでは、新しいレコードを作成するには、ナビゲーション バーの **作成ボタン** を選択するか、あるいは検索やサブグリッドから新しいレコードを作成する際に **+ 新規** を選択すると、簡易作成フォームが表示されます。
+ 簡易作成フォームでは、フォーム スクリプトと業務ルールによって定義されたロジックの完全なサポートによって、簡素化されたデータ入力のエクスペリエンスを楽しむことができます。 Power Apps のモデル駆動型アプリでは、新しいレコードを作成するには、ナビゲーション バーの **作成ボタン** を選択するか、あるいは検索やサブグリッドから新しいレコードを作成する際に **+ 新規** を選択すると、簡易作成フォームが表示されます。
   
- Dynamics 365 モバイル アプリでは新しいレコードを作成するには、簡易作成フォームが使用されます。 エンティティでモバイルアプリに対する簡易作成フォームがすでに設定されている場合は、モバイル アプリはそのフォームを使用します。 エンティティに簡易作成フォームが設定されていない場合、PowerApps によって、簡易作成フォームが生成され、メイン フォームの定義を基準にモバイル アプリでのレコードが作成されます。  
+ Dynamics 365 モバイル アプリでは新しいレコードを作成するには、簡易作成フォームが使用されます。 エンティティでモバイルアプリに対する簡易作成フォームがすでに設定されている場合は、モバイル アプリはそのフォームを使用します。 エンティティに簡易作成フォームが設定されていない場合、Power Apps によって、簡易作成フォームが生成され、メイン フォームの定義を基準にモバイル アプリでのレコードが作成されます。  
   
 <a name="BKMK_QuickCreateFormEntities"></a>   
 ## <a name="entities-with-quick-create-forms"></a>簡易作成フォームを持つエンティティ  
@@ -56,12 +56,12 @@ ms.locfileid: "2759165"
   
 > [!NOTE]
 >  - エンティティは、**簡易作成を許可**オプションを有効にして、簡易作成フォームが表示されるようにする必要があります。 
->  - また、エンティティーと簡易作成フォームもアプリケーションに追加する必要があります。
+>  - また、エンティティーと簡易作成フォームもアプリに追加する必要があります。
 >  - CREATEDON フィールドなど、一部のフィールドは簡易作成フォームに追加できません。  
   
 ### <a name="how-to-create-a-quick-create-form"></a>簡易作成フォームを作成する方法  
   
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 
 > [!IMPORTANT]
@@ -99,7 +99,7 @@ ms.locfileid: "2759165"
   
 ### <a name="to-edit-a-quick-create-form"></a>簡易作成フォームを編集するには  
   
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 > [!IMPORTANT]
 > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。    

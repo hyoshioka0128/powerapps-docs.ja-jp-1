@@ -1,6 +1,6 @@
 ---
 title: 分析用のファイルをアップロードします| Microsoft Docs
-description: 分析するファイルを回復してアップロードするために PowerApps チェッカー Web API を使用して POST 要求の形成方法を読みます。
+description: 分析するファイルを回復してアップロードするために Power Apps チェッカー Web API を使用して POST 要求の形成方法を読みます。
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8945db30eaad8f8b47c2c933330b63dd12ed1662
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f2e83835e80c2393b9b97077c51338c55dd1c3e4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749153"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861804"
 ---
 # <a name="upload-a-file-for-analysis"></a>分析用のファイルをアップロードします。
 
@@ -86,7 +86,7 @@ Content-Type: application/json; charset=utf-8
 
 ### <a name="see-also"></a>関連項目
 
-[PowerApps チェッカーの Web API を使用する](overview.md)<br />
+[Power Apps チェッカーの Web API を使用する](overview.md)<br />
 [ルールセットの一覧の取得](retrieve-rulesets.md)<br />
 [ルールの一覧の取得](retrieve-rules.md)<br />
 [分析の呼び出し](analyze.md)<br />

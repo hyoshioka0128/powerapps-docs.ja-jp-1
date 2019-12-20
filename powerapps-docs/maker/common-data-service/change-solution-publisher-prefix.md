@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0dd20288c36354903ab81ee3947336479f2e4c47
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f78aefd09433c956d278db7d1c7ae209b5239450
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705980"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861696"
 ---
 # <a name="change-the-solution-publisher-prefix"></a>ソリューション発行者の接頭辞の変更
 
-加えるカスタマイズはすべて、ソリューションの一部です。 すべてのソリューションには発行者がいます。 既定では、PowerApps で使用するソリューションは **Common Data Service の既定の発行者** に関連付けられている **Common Data Service の既定のソリューション** になります。
+加えるカスタマイズはすべて、ソリューションの一部です。 すべてのソリューションには発行者がいます。 既定では、Power Apps で使用するソリューションは **Common Data Service の既定の発行者** に関連付けられている **Common Data Service の既定のソリューション** になります。
 
 既定のカスタマイズ接頭辞はこの発行者に対してランダムに割り当てられます。例えば `cr8a3` などです。 つまり、組織のために作成された新しいメタデータの項目名は、項目を一意に識別するために使用される名前の前にこれを追加します。 **動物** という名前の新しいエンティティを作成する場合、Common Data Service で使用される一意の名前は `cr8a3_animal` になります。 これは、新しいフィールド (属性)、関連付け、オプション セットのオプションについても同様です。
 
@@ -43,7 +43,7 @@ ms.locfileid: "2705980"
 
 ## <a name="change-the-solution-publisher-prefix-for-the-common-data-service-default-publisher"></a>Common Data Service の既定の発行者に対するソリューション発行者の接頭辞を変更する  
 
- 1. PowerApps ポータルで、左下隅の **モデル駆動型** を選択します。
+ 1. Power Apps ポータルで、左下隅の **モデル駆動型** を選択します。
  2. 左側のナビゲーションで **詳細設定** をクリックして **Common Data Service の既定のソリューション** を開く
  3. ソリューション エクスプローラーで、左側のナビゲーションの**情報**を選択します。
  4. **発行者** のリンクをクリックし、**Common Data Service の既定の発行者** フォームを開きます。
@@ -54,7 +54,7 @@ ms.locfileid: "2705980"
 
 ソリューションを配布する人は通常、**Common Data Service の既定のソリューション** ではなく、自身が作成するソリューション内で作業します。 カスタマイズ接頭辞は、通常ユーザーがソリューションを作成するときに設定されます。 次の手順に従って、作業している別のアンマネージド ソリューションのカスタマイズ接頭辞を変更できます: 
 
- 1. PowerApps ポータルで、左下隅の **モデル駆動型** を選択します。
+ 1. Power Apps ポータルで、左下隅の **モデル駆動型** を選択します。
  2. 左側のナビゲーションで **詳細設定** をクリックして **Common Data Service の既定のソリューション** を開く
  3. ページを編集して `dynamics.com` の後のすべてを削除し、ページを再度読み込んでください。
  4. **設定** > **カスタマイズ** > **カスタマイズ**に移動します。 

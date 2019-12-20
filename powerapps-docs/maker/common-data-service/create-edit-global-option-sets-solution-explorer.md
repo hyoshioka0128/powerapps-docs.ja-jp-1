@@ -19,18 +19,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5fce8b9f693d56cd5f0955779152dbd7d8100378
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 060d749fe3f8c7f3d2e0870b99a836571c29bd86
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757889"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865920"
 ---
 # <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>ソリューション エクスプローラーを使用して、 Common Data Service にグローバル オプション セットを作成、編集する
 
 ソリューション エクスプローラーは Common Data Service のグローバル オプション セットの作成および編集を行う方法を提供します。
 
-[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ではほとんどの一般的なオプションを構成することができますが、ソリューション エクスプローラーを使用して設定する必要があるオプションもあります。 <br />詳細: 
+[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ではほとんどの一般的なオプションを構成することができますが、ソリューション エクスプローラーを使用して設定する必要があるオプションもあります。 <br />詳細: 
 - [Common Data Service のグローバル オプション セットの作成および編集](create-edit-global-option-sets.md)
 - [オプション セットの作成](custom-picklists.md)
 

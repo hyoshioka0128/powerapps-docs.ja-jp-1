@@ -1,6 +1,6 @@
 ---
-title: PowerApps を使用したモデル駆動型アプリの構築の概要 | Microsoft Docs
-description: PowerApps アプリで使用するエンティティを作成および構成するための詳細な手順です。
+title: Power Apps を使用したモデル駆動型アプリの構築の概要 | Microsoft Docs
+description: Power Apps アプリで使用するエンティティを作成および構成するための詳細な手順です。
 documentationcenter: na
 author: Mattp123
 manager: kvivek
@@ -17,14 +17,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 38ea420dc973e5e6c0a4df2ff361344c4704137a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 11febe03a69fe774f2c0394ee5d3a016c901498d
+ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711744"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890671"
 ---
-# <a name="what-are-model-driven-apps-in-powerapps"></a>PowerApps におけるモデル駆動型アプリとは?
+# <a name="what-are-model-driven-apps-in-power-apps"></a>Power Apps におけるモデル駆動型アプリとは?
 
 モデル駆動型アプリの設計は、アプリ開発へのコンポーネントを重視した手法です。 モデル駆動型アプリの設計は、コードを必要とせず、作成するアプリはシンプルにもきわめて複雑にもすることができます。  デザイナーがアプリ レイアウトを完全に制御するキャンバス アプリ開発とは違い、モデル駆動型アプリではレイアウトの多くが自動的に決まり、アプリに追加するコンポーネントによって大部分が指定されます。 
 
@@ -44,7 +44,7 @@ ms.locfileid: "2711744"
 - アプリの作成
 
 ### <a name="modeling-business-data"></a>ビジネス データのモデル化
-ビジネス データをモデル化するには、アプリが必要とするデータとそのデータが他のデータにどのように関連するかを決定します。 モデル駆動型設計では、メタデータ駆動のアーキテクチャを使用します。それにより、デザイナーはコードを記述せずアプリケーションをカスタマイズできます。 メタデータは "データについてのデータ" を意味しており、システムに格納されているデータの構造を定義します。 [チュートリアル: PowerApps でのコンポーネントがあるユーザー定義エンティティの作成](../common-data-service/create-custom-entity.md)
+ビジネス データをモデル化するには、アプリが必要とするデータとそのデータが他のデータにどのように関連するかを決定します。 モデル駆動型設計では、メタデータ駆動のアーキテクチャを使用します。それにより、デザイナーはコードを記述せずアプリケーションをカスタマイズできます。 メタデータは "データについてのデータ" を意味しており、システムに格納されているデータの構造を定義します。 [チュートリアル: Power Apps でのコンポーネントがあるユーザー定義エンティティの作成](../common-data-service/create-custom-entity.md)
 
 ### <a name="defining-business-processes"></a>ビジネス プロセスの定義
 一貫したビジネス プロセスを定義して適用することは、モデル駆動型アプリ設計の主要な側面です。 一貫性のあるプロセスにより、アプリ ユーザーが、一連の手動の手順を忘れずに実行することに集中するのではなく、自分たちの仕事に確実に集中することができます。 プロセスは単純または複雑な場合があり、徐々に変化することがよくあります。 プロセスを作成するには、PowerApps.com のモデル駆動型領域から ![設定](media/powerapps-gear.png) > **高度なカスタマイズ** > **ソリューション エクスプローラーを開く** を選択します。 次に、ソリューション エクスプローラーの左側のナビゲーション ウィンドウで、**プロセス**を選び、**新規** を選択します。 詳細情報: [業務プロセス フローの概要](/flow/business-process-flows-overview)および [Common Data Service を使用したビジネス ロジックの適用](../common-data-service/cds-processes.md)。 

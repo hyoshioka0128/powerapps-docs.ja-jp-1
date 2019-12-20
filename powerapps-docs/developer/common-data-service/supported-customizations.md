@@ -1,6 +1,6 @@
 ---
 title: Common Data Service のサポートされているカスタマイズ (Common Data Service) | Microsoft Docs
-description: PowerApps ポータルにあるツールまたはドキュメントで説明されているツールを使用して、Common Data Service をカスタマイズする方法を説明します。
+description: Power Apps ポータルにあるツールまたはドキュメントで説明されているツールを使用して、Common Data Service をカスタマイズする方法を説明します。
 ms.custom: ''
 ms.date: 01/25/2019
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5e595ca13e4aac62861c6b00b5af0967ff1e9ad2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 38cf4a367c197649dde3e9f8737584f03c9b4a1a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749213"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883513"
 ---
 <!-- This is the portion of the old topic that applies to Common Data Service
 https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-extensions
@@ -28,22 +28,22 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/supported-e
 
 # <a name="supported-customizations-for-common-data-service"></a>Common Data Service のサポートされているカスタマイズ
 
-PowerApps ポータルで入手できるツール、または公式ドキュメントに説明されているツールを使用して、Common Data Service をカスタマイズすることができます。 これらのカスタマイズはサポートされており、アップグレードが可能です。
+Power Apps ポータルで入手できるツール、または公式ドキュメントに説明されているツールを使用して、Common Data Service をカスタマイズすることができます。 これらのカスタマイズはサポートされており、アップグレードが可能です。
 
 ここに記述されている以外の方法を使用して行われたカスタマイズについてはサポートされず、更新時や Common Data Service へのアップグレード時に問題が生じる場合があります。 詳細については、「[サポートされていないカスタマイズ](#unsupported-customizations)」を参照してください。
 
 docs.microsoft.com、msdn.microsoft.com、または technet.microsoft.com のような Microsoft サイトで公開されている技術資料に記載のトピックはサポートされていますが、アップグレードできない可能性があります。
 
 
-## <a name="customizations-using-powerapps-portal"></a>PowerApps ポータルを使用したカスタマイズ
+## <a name="customizations-using-power-apps-portal"></a>Power Apps ポータルを使用したカスタマイズ
 
-Common Data Service には、カスタマイズに使用できるさまざまなツールが用意されています。 PowerApps ポータルおよび Web アプリケーションを使用したカスタマイズは完全にサポートされており、すべてアップグレード可能です。
+Common Data Service には、カスタマイズに使用できるさまざまなツールが用意されています。 Power Apps ポータルおよび Web アプリケーションを使用したカスタマイズは完全にサポートされており、すべてアップグレード可能です。
 
 次のカスタマイズ方法を使用すると、完全にサポートされるカスタマイズを実行できます。
 
-- PowerApps ポータルまたはソリューション エクスプローラーのカスタマイズ。 詳細については、[Common Data Service とは](../../maker/common-data-service/data-platform-intro.md)を参照してください。
+- Power Apps ポータルまたはソリューション エクスプローラーのカスタマイズ。 詳細については、[Common Data Service とは](../../maker/common-data-service/data-platform-intro.md)を参照してください。
 
-- Web アプリケーションの設定。 詳細については、[PowerApps の管理](../../administrator/admin-guide.md)を参照してください。
+- Web アプリケーションの設定。 詳細については、[Power Apps の管理](../../administrator/admin-guide.md)を参照してください。
 
 - Reporting Services。 詳細については、[モデル駆動型アプリにレポートを追加](/powerapps/maker/model-driven-apps/add-reporting-to-app)を参照してください。
 

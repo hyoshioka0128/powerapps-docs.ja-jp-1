@@ -1,6 +1,6 @@
 ---
-title: PowerApps でモデル駆動型アプリのコンポーネントを追加または編集するチュートリアル | MicrosoftDocs
-description: PowerApps アプリ デザイナーを使用してコンポーネントを追加または編集する
+title: Power Apps でモデル駆動型アプリのコンポーネントを追加または編集するチュートリアル | MicrosoftDocs
+description: Power Apps アプリ デザイナーを使用してコンポーネントを追加または編集する
 keywords: ''
 ms.date: 10/15/2018
 ms.service: powerapps
@@ -23,14 +23,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c9cbb77b0b312b4376aed8b5f9d106e2c2826ea4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f78b990432988de5ba1d6c2b254bef8577770d16
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752199"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873555"
 ---
-# <a name="tutorial-add-or-edit-model-driven-app-components-in-the-powerapps-app-designer"></a>チュートリアル: PowerApps アプリ デザイナーでモデル駆動型アプリのコンポーネントを追加または編集する
+# <a name="tutorial-add-or-edit-model-driven-app-components-in-the-power-apps-app-designer"></a>チュートリアル: Power Apps アプリ デザイナーでモデル駆動型アプリのコンポーネントを追加または編集する
 
 このチュートリアルでは、モデル駆動型アプリにコンポーネントを追加またはコンポーネントを削除する方法を説明します。 
 
@@ -56,7 +56,7 @@ ms.locfileid: "2752199"
  > ![キャンバス検索オプション](media/app-designer-search-tab.png "キャンバス検索")
 
 ## <a name="open-an-app"></a>アプリを開く
-1. [PowerApps](https://make.powerapps.com/) にサインインします。 
+1. [Power Apps](https://make.powerapps.com/) にサインインします。 
 
 2. モデル駆動型アプリを選択するか、**空白から始める**を選択します。 アプリケーションの作成方法に関する説明については、「[アプリ デザイナーを使用してモデル駆動型アプリを作成または編集](create-edit-app.md#create-an-app)」を参照してください。
 
@@ -85,7 +85,7 @@ ms.locfileid: "2752199"
 
      これらのダッシュボードはアプリ デザイナー キャンバス上の**ダッシュボード**タイルに追加されます。 また、**ダッシュボード**タイルにはアプリに追加したダッシュボード数も表示されます。 ダッシュボードを選択しない場合、ダッシュボード数の代わりに**すべて**が表示され、すべてのダッシュボードはユーザーがアプリを使用するときに利用可能となります。  
   
-     ダッシュボードで使用しているすべてのエンティティは、**エンティティ ビュー**領域にも追加されます。 たとえば、Customer Service 管理ダッシュボードを追加する場合は、サポート案件、権利、キュー アイテム エンティティがエンティティの表示領域に追加されます。 各エンティティに対して、そのアセットのタイルも追加されます。 これらのタイルを使用してフォーム、ビュー、およびグラフを追加することができます。 詳細: [PowerApps アプリ デザイナーでアプリ コンポーネントを追加または編集する](add-edit-app-components.md#bkmk_AddEntityAssets)   
+     ダッシュボードで使用しているすべてのエンティティは、**エンティティ ビュー**領域にも追加されます。 たとえば、Customer Service 管理ダッシュボードを追加する場合は、サポート案件、権利、キュー アイテム エンティティがエンティティの表示領域に追加されます。 各エンティティに対して、そのアセットのタイルも追加されます。 これらのタイルを使用してフォーム、ビュー、およびグラフを追加することができます。 詳細: [Power Apps アプリ デザイナーでアプリ コンポーネントを追加または編集する](add-edit-app-components.md#bkmk_AddEntityAssets)   
   
     ![アプリ デザイナーのキャンバスにエンティティを追加する](../model-driven-apps/media/add-entity-app-designer-canvas.png "アプリデザイナーのキャンバスにエンティティを追加する")  
   

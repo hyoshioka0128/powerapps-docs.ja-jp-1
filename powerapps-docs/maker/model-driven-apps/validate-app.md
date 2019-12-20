@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2e6ae7ac84710e6558adde2949025868e6da6930
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8195103992e14094816b0bbedfd17d6a799072a0
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710292"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884331"
 ---
 # <a name="validate-and-publish-a-model-driven-app-using-the-app-designer"></a>アプリ デザイナーを使用してモデル駆動型のアプリを検証および公開する
 
@@ -80,6 +80,6 @@ ms.locfileid: "2710292"
 > - アプリを保存するまで、アプリを公開できません。  
 
 ## <a name="next-steps"></a>次のステップ  
-[PowerApps を使用してモデル駆動型アプリを共有する](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app) <br/>
+[Power Apps を使用してモデル駆動型アプリを共有する](https://docs.microsoft.com/powerapps/maker/model-driven-apps/share-model-driven-app) <br/>
  [モバイル デバイス上でモデル駆動型アプリを実行](https://docs.microsoft.com/powerapps/user/run-app-client-model-driven)   
  

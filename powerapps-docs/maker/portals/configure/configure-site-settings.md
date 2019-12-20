@@ -9,18 +9,18 @@ ms.custom: ''
 ms.date: 10/18/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 19dca44c26565bc55dcfaace48987b69dd0a195f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 6f37959db1296995abe08e85995750796a93da9c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759561"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2866932"
 ---
 # <a name="configure-site-settings-for-portals"></a>ポータルのサイト設定の構成
 
 サイト設定は、設定可能な名前付きの値で、ポータルの動作や外観を変更するためにウェブサイト コードで使用されます。 通常、開発者がウェブサイト コードを作成すると、さまざまなコンポーネントのサイト設定が参照され、コードを変更したり、サイト再コンパイルしたり、再配置したりすることなく、エンドユーザーが設定値を変更してウェブサイトを変更できるようになります。
 
-PowerApps ポータルのインストールで提供されるサンプル ポータルには、背景スタイル、テキストの色、レイアウトの幅など、サイト内の多くのビジュアル要素を変更するために使用されるさまざまなスタイルの設定可能なサイト設定がいくつか含まれています。
+Power Apps ポータルのインストールで提供されるサンプル ポータルには、背景スタイル、テキストの色、レイアウトの幅など、サイト内の多くのビジュアル要素を変更するために使用されるさまざまなスタイルの設定可能なサイト設定がいくつか含まれています。
 次に示すサイトの設定の種類を管理することができます。
 
 - **グローバル ポータルの設定**: これらの設定は、追加される Common Data Service 環境に関連付けられているすべてのポータルに適用されます。

@@ -1,26 +1,48 @@
 ---
 title: よくあるご質問 | Microsoft Docs
-description: PowerApps ポータルに関してよくあるご質問。
+description: Power Apps ポータルに関してよくあるご質問。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 12/03/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 810829b58d666b66bd2cac7235d013a4bfdcd806
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 28df2292d18f38a78e913a9805ac39a33f6aaf54
+ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759869"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "2890734"
 ---
-# <a name="powerapps-portals-faq"></a>PowerApps ポータルに関するよくあるご質問
+# <a name="power-apps-portals-faq"></a>Power Apps ポータルに関するよくあるご質問
 
 必要な情報がすぐに手に入るように、よく寄せられる質問とその簡潔な回答を一覧にまとめました。
 
-## <a name="im-getting-an-error-that-only-one-portal-can-be-created"></a>作成できるポータルは一つのみです、というエラーが表示されます。
+## <a name="general"></a>全般
+
+### <a name="how-do-i-redirect-a-user-to-a-default-page-after-signing-in"></a>サインイン後にユーザーを既定のページにリダイレクトする方法を教えてください。
+
+サインインすると、ユーザーを既定のページにリダイレクトするポータルを構成できます。 この機能を実現するには、ホーム Web テンプレートに JavaScript コードを含めることができます。
+
+たとえば、サインインした後にすべてのユーザーをフォーラム ページにリダイレクトする場合は、次のようにホーム Web テンプレートに JavaScript コードを含めることができます。
+
+```xml
+{% if user %}
+//if any user logs in
+<script>
+  window.location.href='./forums/'
+</script>
+{% else %}
+//Home web page code, if you don't want to display the page when the user is being redirected
+{% endif %}
+//Home web page code, if you want to display the page when the user is being redirected
+```
+
+流動テンプレートの使用に関する詳細については、[流動テンプレートの使用](liquid/liquid-overview.md) を参照してください。
+
+### <a name="im-getting-an-error-that-only-one-portal-can-be-created"></a>作成できるポータルは一つのみです、というエラーが表示されます。
 
 現在、一言語あたり、一環境につき各種類で一つのポータルのみ作成できます。 1 つ以上のポータルを作成した場合は、次のエラー メッセージが表示されます:
 
@@ -29,7 +51,7 @@ ms.locfileid: "2759869"
 
 より多くのポータルを作成するには、エラー メッセージ内の**新しい環境を作成する**リンクを使用して新しい環境を作成する必要があります。 ポータルの作成に関する詳細情報は、[ポータルの作成](create-portal.md)を参照してください。
 
-## <a name="im-getting-an-error-that-i-cant-delete-my-portal"></a>ポータルを削除できないというエラーメッセージが表示されます。
+### <a name="im-getting-an-error-that-i-cant-delete-my-portal"></a>ポータルを削除できないというエラーメッセージが表示されます。
 
 ポータルを削除するために十分な特権がない場合、次のエラーが表示されます:
 
@@ -38,7 +60,7 @@ ms.locfileid: "2759869"
 
 ポータルの削除と必要な特権の詳細については、[ポータルの削除](manage-existing-portals.md#delete)を参照してください。
 
-## <a name="im-getting-an-error-that-i-cant-create-a-portal"></a>ポータルを作成できないというエラーメッセージが表示されます。
+### <a name="im-getting-an-error-that-i-cant-create-a-portal"></a>ポータルを作成できないというエラーメッセージが表示されます。
 
 その環境でポータルを作成するための適切な特権を持っていない場合は、次のエラーが表示されます:
 
@@ -47,16 +69,16 @@ ms.locfileid: "2759869"
 
 ポータルの削除と必要な特権の詳細については、[ポータルの削除](create-portal.md)を参照してください。
 
-## <a name="im-getting-the-message-your-data-isnt-quite-ready"></a>「あなたのデーターの準備ができていません」というメッセージが表示されます。
+### <a name="im-getting-the-message-your-data-isnt-quite-ready"></a>「あなたのデーターの準備ができていません」というメッセージが表示されます。
 
 時々、データベース作成に時間がかかることがあり、適切な状態がホーム ページに反映されていない場合もあります。 この場合、次のメッセージが表示されます。
 
 > [!div class=mx-imgBorder]
 > ![データが準備できていません](media/data-not-ready.png "データが準備できていません")
 
-データベースの作成プロンプトやデータの準備ができていませんプロンプトが何度も表示される場合は、 **空のポータル** タイルを選択する前に、 PowerApps ホームページを更新してみてください。
+データベースの作成プロンプトやデータの準備ができていませんプロンプトが何度も表示される場合は、 **空のポータル** タイルを選択する前に、 Power Apps ホームページを更新してみてください。
 
-## <a name="im-getting-an-error-that-i-dont-have-required-permissions-to-create-azure-active-directory-applications"></a>Azure Active Directory アプリケーションの作成に必要なアクセス許可がありません、というメッセージが表示されます。
+### <a name="im-getting-an-error-that-i-dont-have-required-permissions-to-create-azure-active-directory-applications"></a>Azure Active Directory アプリケーションの作成に必要なアクセス許可がありません、というメッセージが表示されます。
 
 ポータルを作成する際、新しいアプリケーションとしてのポータルは、そのテナントに関連付けられた Azure Active Directory に登録されています。 自分の Azure Active Directory テナントでアプリケーションに登録するために適切なアクセス許可を持っていない場合は、次のエラーメッセージが表示されます。
 
@@ -65,7 +87,7 @@ ms.locfileid: "2759869"
 
 Azure Active Directory でアプリケーションの作成および登録するには、**アプリ登録**設定をあなたのテナント用に有効化してもらうように自分のテナント管理者に問い合わせてください。 詳細については、[必要なアクセス許可](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions)をご覧ください。
 
-## <a name="im-getting-an-error-that-portal-creation-is-blocked-in-this-tenant-by-global-administrator"></a>グローバル管理者によって、このテナントでのポータル作成がブロックされている、というエラーが表示されています。
+### <a name="im-getting-an-error-that-portal-creation-is-blocked-in-this-tenant-by-global-administrator"></a>グローバル管理者によって、このテナントでのポータル作成がブロックされている、というエラーが表示されています。
 
 グローバル管理者によってテナントでポータル作成がブロックされている場合は、次のエラーが表示されます。
 
@@ -82,10 +104,479 @@ Set-TenantSettings -RequestBody @{ "disablePortalsCreationByNonAdminUsers" = $fa
 
 詳細: [テナントでポータル作成を無効化する](create-portal.md#disable-portal-creation-in-a-tenant)
 
-## <a name="im-getting-an-error-that-i-dont-have-appropriate-license-to-access-this-website"></a>この Web サイトにアクセスするための適切なライセンスがありませんというエラーが表示されます。
+### <a name="im-getting-an-error-that-i-dont-have-appropriate-license-to-access-this-website"></a>この Web サイトにアクセスするための適切なライセンスがありませんというエラーが表示されます。
 
 ポータルを使用して認証済みページにアクセスする組織内ユーザーは、ポータルが接続されている環境にライセンスを割り当てる必要があります。 内部ユーザーのポータルのユーザー権限について詳しくは、 [こちら](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-clarify-the-use-rights-to-portals-for-internal-users) をご覧ください。 環境にライセンスが割り当てられていない場合、内部ユーザーに次のようなエラーが表示されます:
 
 > [!div class=mx-imgBorder]
 > ![ポータル ログイン エラー](media/portal-login-error.png "ポータル ログイン エラー")
 
+## <a name="licensing-and-provisioning"></a>ライセンスとプロビジョニング
+
+### <a name="how-do-i-get-a-portal-subscription"></a>どのようにポータル サブスクリプションを取得しますか。
+
+次のいずれかの方法でポータルのサブスクリプションを購入することができます。
+
+- 1 つのポータル アドオンは、ユーザー ライセンスの特定の種類と数量を購入すると提供されます。 詳細については、Dynamics 365 の価格設定およびライセンスガイドを参照してください。 有効なライセンスの複数の種類または数量を購入している場合であっても、ユーザー ライセンスを持つポータル アドオンを 1 つのみ取得することに注意することは重要です。
+
+- 追加のポータル サブスクリプションは、ポータル アドオン サブスクリプション購入を通じて購入することができます。 このサブスクリプションはアドオン サブスクリプションで、適切な Dynamics 365 ライセンスを所有する場合に購入することができます。
+
+### <a name="how-do-i-change-the-audience-and-type-of-a-portal-after-it-is-provisioned"></a>プロビジョニング後、どのようにポータルの対象者と種類を変更しますか。
+
+ポータルをプロビジョニングしたら、ポータル対象者を変更するオプションは無効化されます。
+
+ただし、[ポータルの Dynamics 365 インスタンス、対象者、または種類の変更](admin/change-dynamics-instance.md) の手順に従うことによって、プロビジョニング後に、ポータルの対象者と種類を変更できます。
+
+> [!NOTE]
+> - 対象ユーザー、ポータルのタイプ、組織などを変更するには、ポータルをリセットして再度プロビジョニングすることをお勧めします。 詳細: [ポータルのリセット](admin/reset-portal.md)
+> - Dynamics 365 インスタンスの変更は、古いポータルアドオンを使用してプロビジョニングされたポータルにのみ適用されます。
+
+### <a name="how-do-i-change-the-base-url-of-a-portal-after-it-is-provisioned"></a>プロビジョニングの後、どのようにポータルの基本 URL を変更しますか。
+
+[ポータルの基本 URL の変更](admin/change-base-url.md)のステップに従うことによって、プロビジョニング後にポータルの基本 URL を変更できます。
+
+### <a name="how-do-i-delete-a-portal-completely-after-it-is-provisioned"></a>プロビジョニング後、どのようにポータルを完全に削除しますか。
+
+ポータルは、次のコンポーネントで構成されています。
+
+- **ポータル Web サイトのホスト**: ポータル Web サイトのホストは実際の Web サイトを形成するポータル コードです。
+
+- **ポータル ソリューション**:  Common Data Service 環境にインストールされ、任意のポータルのメタデータ エンティティを含むソリューションです。
+
+ポータルを完全に削除するには、ポータル Web サイトを削除し、ポータル ソリューションを Common Data Service 環境からアンインストールする必要があります。
+
+ポータル ホストをリセットするには、「[ポータルのリセット](admin/reset-portal.md)」の手順に従います。 ポータル ホストをリセットしても Common Data Service 環境で実行した構成に影響を与えないことに注意することは重要です。
+
+ポータル ソリューションを削除するには、Dynamics 365 のソリューション エクスプローラー UI からソリューションを削除する必要があります。 アンインストールするポータル ソリューションの順序は「[ポータル ソリューションのアンインストール](https://community.dynamics.com/365/b/dynamics365portalssupport/archive/2017/02/27/portal-troubleshooting-part-three-uninstalling-portal-solutions)」に記載されています。
+
+## <a name="common-data-service-environment-lifecycle"></a>Common Data Service 環境のライフサイクル
+
+### <a name="we-recently-moved-our-common-data-service-environment-from-one-geolocation-or-tenant-to-another-how-do-we-handle-portals-connected-to-our-organization"></a>最近、ある物理的場所またはテナントから別の物理的場所またはテナントに Common Data Service 環境を移動しました。 どのように組織に接続されたポータルを扱いますか。
+
+ある物理的場所またはテナントから別の物理的場所またはテナントに Common Data Service 環境を移動するとき、その組織に関連付けられたポータルは、自動的に移動するわけではありません。 組織を移動した場合、その組織に関連付けられたポータルは動作しなくなり、起動時にエラーがスローされます。
+
+関連した組織にポータルを再度関連付けるには:
+
+1. 「[ポータルのリセット](admin/reset-portal.md)」の手順に従って、既存の物理的場所またはテナントから既存のポータル ホストをリセットします。 これにより、関連付けられたポータルのリソースは削除され、操作が完了した後はポータル URL にアクセスできなくなります。
+
+2. 既存のポータルがリセットされた後、新しいテナント (または既存のテナントの新しい物理的場所) に移動し、そこで使用可能なポータルをプロビジョニングします。
+
+### <a name="after-restoring-a-common-data-service-environment-from-an-old-backup-the-portal-connected-to-the-organization-is-not-working-how-do-we-fix-it"></a>古いバックアップから Common Data Service 環境を復元した後は、組織に接続されたポータルは機能しません。 どのように修正しますか。
+
+Common Data Service 環境がバックアップから復元されるとき、ポータルの組織とのつながりを壊す可能性のあるさまざまな変更が組織に加えられます。 この問題を解決するには、以下を行います。
+
+- 組織 ID が復元操作後と同じでポータル ソリューションも使用できる場合:
+
+1. [Power Apps ポータル管理センター](admin/admin-overview.md) を開きます。
+2. **ポータルの詳細** タブに移動します。
+3. **ポータルの状態**ドロップダウン リストで、**オフ**を選択します。
+4. **更新**を選択します。 
+5. 更新操作が完了したら、**ポータルの状態**ドロップダウン リストを**オン**に設定し、**更新**を選択します。
+
+  ポータルは再起動し、つながりが組織に再度作成されます。
+
+- 組織 ID が復元操作後と異なる、または組織からポータル ソリューションが削除された場合:
+
+  - この場合は「[ポータルのリセット](admin/reset-portal.md)」の手順に従ってポータルをリセットし、その後で再プロビジョニングすることをお勧めします。
+
+### <a name="we-recently-changed-the-url-of-our-common-data-service-environment-and-our-portal-stopped-working-how-do-we-fix-it"></a>最近、Common Data Service 環境の URL を変更したところ、ポータルは機能しなくなりました。 どのように修正しますか。
+
+Common Data Service 環境のの URL を変更すると、ポータルは Common Data Service 環境の URL を特定できなくなるため、機能を停止します。 この問題を解決するには、以下を行います。
+
+1. [Power Apps ポータル管理センター](admin/admin-overview.md) を開きます。
+2. **ポータル アクション** > **Dynamics 365 の URL を更新**に移動します。
+3. ウィザードの指示に従います。
+
+ポータルは再起動され、再び稼働を開始します。
+
+## <a name="debugging-and-fixing-problems"></a>デバッグおよび問題の修正
+
+### <a name="when-accessing-my-portal-i-see-a-generic-error-page-how-can-i-see-the-actual-error"></a>ポータルにアクセスすると、汎用エラー ページが表示されます。 どのように実際のエラーを表示しますか。
+
+ポータルを表示しようとするとサーバー エラーが発生し、そのたびにエンド ユーザーにはエラーのタイムスタンプと活動 ID とともに汎用エラー ページが表示されます。 ポータル管理者はポータルを構成して、デバッグおよび問題の修正に役に立つ実際エラーの詳細を取得できます。 実際のエラーを表示するには:
+
+- **ポータルのユーザー定義のエラー ページの無効化**: これにより、ユーザー定義のエラー ページを無効にし、そのページに移動した時にエラーの完全なスタック トレースを表示できるようにします。 「[ユーザー定義のエラーを無効にする](admin/view-portal-error-log.md#disable-custom-error)」の手順に従って、ユーザー定義のエラーを無効にできます。
+
+ポータルを開発しているときにのみ、これを使用することをお勧めします。 ポータルがユーザーに対して使用可能になった後、ユーザー定義のエラーを再び有効にする必要があります。 詳細: [ポータル エラー ログの表示](admin/view-portal-error-log.md)
+
+- **診断ログを有効にする**: これにより、Azure Blob Storageの取引先企業のすべてポータル エラーを取得できます。 「[ポータル エラー ログへのアクセス](admin/view-portal-error-log.md#access-portal-error-logs)」の手順に従って、診断ログを有効にできます。
+
+診断ログを有効にすると、汎用エラー ページに表示されている活動 ID を使用して、ユーザーが報告する特定のエラーを検索できます。 活動 ID はエラーの詳細とともにログに記録され、実際の問題の発見に役立ちます。
+
+## <a name="portal-administration-and-management"></a>ポータル管理および操作
+
+### <a name="how-do-i-use-a-custom-login-provider-on-my-portal"></a>ポータルでどのようにカスタム ログイン プロバイダーを使用しますか。
+
+ポータルは標準認証プロトコルのサポートを提供する任意のカスタム ログイン プロバイダーをサポートします。 任意のカスタム IDP では OpenIdConnect、SAML2、および WS-Federation プロトコルがサポートされます。 Oauth 2 は一定の既知の IDP でのみサポートされます。 IDP 構成のセットアップ方法の詳細については、[ポータル認証の構成](configure/configure-portal-authentication.md) を参照してください。
+
+### <a name="how-do-i-get-new-portal-releases-in-my-sandbox-portal-first-before-it-gets-applied-to-production"></a>運用環境に適用する前に、まず自分のサンドボックス ポータルで新しいポータル リリースを取得する方法を教えてください。
+
+すべてのポータル リリースは、初期アップグレードおよび一般提供 (GA) の2 つの段階で実行されます。 初期アップグレード段階では、初期アップグレードにマークされたポータルのみをアップグレードします。 自分のサンドボックス (開発環境またはテスト) 環境で新しいポータル リリースを取得するため、自分のポータルを初期アップグレードに対して有効化することができます。 初期アップグレードに対してポータルを有効化する方法については、「[ポータルのアップグレード](https://docs.microsoft.com/dynamics365/customer-engagement/portals/upgrade-portal)」を参照してください。
+
+### <a name="how-do-i-use-a-custom-domain-name-for-my-portal"></a>自分のポータルでカスタム ドメイン名を使用する方法を教えてください。
+
+標準の `microsoftcrmportals.com` ドメイン名の代わりにカスタム ドメイン名を使用するようにポータルを有効化することができます。 詳細: [ポータルをカスタム ドメインにリンクする](admin/add-custom-domain.md)
+
+## <a name="portal-checker"></a>ポータル チェッカー
+
+### <a name="portal-does-not-load-and-displays-a-generic-error-page-server-error-in--application"></a>ポータルは、一般的なエラー ページ (「/」アプリケーションでのサーバー エラー) を読み込まず、表示します。 
+
+この問題は、ポータルが基礎となる Common Data Service 環境に接続できない場合、Common Data Service 環境が存在しないか URL が変更された、Common Data Service 環境への要求がタイムアウトした場合など、多様な原因によって発生します。 ポータル チェッカー ツールを実行すると、厳密の原因を判断しようとし、正しいを軽減策を提示します。 
+
+最も一般的な原因と対応する軽減策手順の一覧を以下に示します:
+
+#### <a name="url-of-the-connected-common-data-service-environment-has-changed"></a>接続された Common Data Service 環境の URL が変更されました。 
+
+これは、ポータルから組織に対してプロビジョニングされた後、Common Data Service 環境の URL がユーザーによって変更されたときに発生します。 この問題を修正するには、Dynamics 365 の URL を更新します。
+
+1. [Power Apps ポータル管理センター](admin/admin-overview.md) を開きます。
+2. **ポータル アクション** > **Dynamics 365 の URL を更新**に移動します。 この操作が正常に実行されると、Common Data Service 環境 URL が更新され、ポータルが動作を開始します。
+
+#### <a name="common-data-service-environment-connected-to-your-portal-is-in-administration-mode"></a>ポータルに接続された Common Data Service 環境が管理者モードになっている
+
+この問題は、組織を運用モードからサンドボックス モードに変更したり、組織管理者により手動で変更した場合に、Common Data Service 環境が管理モードになると発生します。
+
+これが発生した場合は、[ここ](https://docs.microsoft.com/dynamics365/admin/manage-sandbox-instances#administration-mode)にリストされた操作の実行によって管理モードを無効にできます。 管理モードを無効にすると、ポータルは問題なく機能します。
+
+#### <a name="authentication-connection-between-common-data-service-environment-and-portal-is-broken"></a>Common Data Service 環境とポータルとの間の、認証のための接続が切断されています
+
+これは、Common Data Service 環境がバックアップから復元されたか、バックアップから削除または再作成されたため、Dynamics 365 組織とポータル間の認証接続が切断されると発生する問題です。 この問題を解決するには、以下を行います。
+
+1. [Power Apps ポータル管理センター](admin/admin-overview.md) を開きます。
+2. **ポータルの詳細** タブで、**ポータルの状態** リストから **オフ** を選択します。
+3. **更新**を選択します。
+4. **ポータルの状態** の一覧から **オン** を選択します。
+5. **更新**を選択します。 ポータルが再起動され、認証接続を行うことができるようになります。
+
+ただし、特に組織 ID が回復操作後に変更された (または組織にプロビジョニングされた) 特殊な状況では、これらの軽減策は機能しません。 このような状況では、同じにインスタンスに対してポータルをリセットおよび再プロビジョニングできます。 ポータルをリセットする方法については、[ポータルのリセット](admin/reset-portal.md)を参照してください。
+
+#### <a name="request-to-common-data-service-environment-has-timed-out"></a>Common Data Service 環境に対する要求がタイムアウトしました
+
+この問題は、Common Data Service 環境に対する API 要求がタイムアウトした場合に発生する一時的な問題です。この問題は、API 要求が動作を開始すると自動的に軽減されます。 この問題を軽減するには、ポータルの再起動を再度試行することができます。
+
+1. [Power Apps ポータル管理センター](admin/admin-overview.md) を開きます。
+2. **ポータル アクション** > **再起動** の順に移動します。
+
+ポータルの再開がうまくいかず、この問題が長時間発生する場合は、ヘルプのために Microsoft サポートまでお問い合わせください。
+
+#### <a name="website-binding-not-found"></a>Web サイトのバインドが見つからない
+
+この問題は、ポータルの Web サイト バインド レコードが基盤となる Common Data Service 環境から削除され、ポータルがバインドを自動的に作成できない場合に発生します。 この問題を解決するには、以下を行います。
+
+1. [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2. **ポータル** > **Web サイト バインド**の順に移動します。
+3. ポータルを指しているすべての Web サイト バインド レコードを削除します。 **サイト名** フィールドでは、ポータルの Web サイト バインド レコードを特定できます。
+4. すべての Web サイト バインド レコードを削除すると、ポータルを再開します。
+
+上記の手順を完了すると、ポータルが再開され、Web ポータル バインド レコードが自動的に再作成されます。
+
+ただし、インスタンスで使用する Web サイト レコードの GUID がポータルの既定のインストール時に作成されたものと異なるときに、Web サイト バインド レコードを自動的に作り直せない場合があります。 この状況では、次の手順を実行します。
+
+1. ポータルに関連するすべての Web サイト バインド レコードを削除します。
+2. 次の値で Web サイト バインド レコードを手動で作成します。
+  - **名前**: 任意の文字列にできます
+  - **Web サイト**: ポータルでレンダリングする Web サイト レコードを選択します
+  - **サイト名**: ポータルのホスト名を入力します。たとえば、 先頭に https:// がないポータル URL。 ポータルがカスタム ドメイン名を使用している場合、ここでドメイン名を使用します。
+  - 他のフィールドすべては空白のままにします。
+3. Web サイト バインド レコードが作り直されたら、Power Apps ポータル管理センターからポータルを再起動します。
+
+#### <a name="an-unexpected-error-has-occurred-while-trying-to-connect-to-your-common-data-service-environment"></a>Common Data Service 環境に接続しようとしているときに、予期しないエラーが発生しました
+
+この状況は、予期しない問題のために起こる場合があります。 この状況を緩和するには、ポータルをリセットするか、または再プロビジョニングできます。 ポータルをリセットする方法については、[ポータルのリセット](admin/reset-portal.md)を参照してください。
+
+ポータルのリセットと再プロビジョニングでもこの問題が解決しない場合、ヘルプのために Microsoft サポートに連絡してください。
+
+### <a name="portal-is-not-displaying-updated-data-from-common-data-service-environment"></a>ポータルには、Common Data Service 環境からの更新されたデータは表示されません
+
+ポータルに表示されるデータはすべて、ポータル キャッシュからレンダリングされます。 このキャッシュは、Common Data Service 環境のデータが更新されると必ず更新されます。 ただし、このプロセスは非同期であるため、最大 15 分かかる場合があります。 ポータルのメタデータ エンティティで変更が加えられた場合 (たとえば、Web ページ、Web ファイル、コンテンツ スニペット、サイトの設定など)、キャッシュを手動でクリアするか、Power Apps ポータル管理センターからポータルを再起動することをお勧めします。 キャッシュのクリア方法の説明については、[ポータルのサーバー側キャッシュのクリア](admin/clear-server-side-cache.md)を参照してください。 
+
+ただし、非ポータル メタデータ エンティティに古いデータが長い間表示されている場合、次に示すさまざまな問題が原因の可能性があります。
+
+#### <a name="entities-not-enabled-for-cache-invalidation"></a>エンティティでキャッシュの無効化が有効になっていません
+
+すべてのデータではなく、特定のエンティティの古いデータのみが表示されている場合、その特定のエンティティで変更追跡メタデータが有効化されていないことが原因の可能性があります。
+
+ポータル チェッカー (セルフサービス診断) ツールを実行した場合、エンティティ リストまたはエンティティ フォームおよび Web フォームのポータルで参照されているすべてのエンティティのオブジェクトの種類コードがリストされ、変更追跡が有効になりません。 [組織のメタデータの参照](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/browse-your-metadata)で説明している手順を使用してメタデータを参照してください
+
+これらのエンティティのいずれかで古いデータの問題が発生している場合、Power Apps ポータルの管理センターを使用して変更の追跡を有効にできます。 UI または Dynamics 365 API。 詳細: [エンティティの変更追跡の有効化](https://docs.microsoft.com/dynamics365/customerengagement/on-premises/developer/use-change-tracking-synchronize-data-external-systems#enable-change-tracking-for-an-entity)
+
+#### <a name="organization-not-enabled-for-change-tracking"></a>組織で変更追跡が有効になっていない
+
+変更追跡が有効になっている各エンティティとは別に、組織全体でも変更追跡が有効になっている必要があります。 ポータル プロビジョニング要求が送信されると、組織で変更追跡が有効になります。 ただし、これは、組織が古いデータベースから復元されるかリセットされると無効になることがあります。 この問題を解決するには、以下を行います。
+
+1. [Power Apps ポータル管理センター](admin/admin-overview.md) を開きます。
+2. **ポータルの詳細** タブで、**ポータルの状態** リストから **オフ** を選択します。
+3. **更新**を選択します。
+4. **ポータルの状態** の一覧から **オン** を選択します。
+5. **更新**を選択します。 ポータルが再起動され、認証接続を行うことができるようになります。
+
+### <a name="performance-best-practices"></a>パフォーマンスのベスト プラクティス
+
+ポータルのパフォーマンスの問題は、さまざまな構成の問題によって発生する可能性があります。 すぐに使えるすべてのポータル テンプレートは、ポータル パフォーマンスに影響を与える可能性があるさまざまな読み込み条件や構成でテストされており、ポータルのパフォーマンス上の問題につながる場合がある一般的なポータル組織を以下に示します。
+
+ポータル チェッカー (セルフサービス診断) ツールでも、ポータル構成を見るとこれらの問題がわかります。
+
+#### <a name="web-page-tracking-enabled"></a>Web ページの追跡が有効
+
+ページ追跡用ポータル Web ページを有効にすると、ポータルでパフォーマンスの問題が生じる場合があります。 この機能は、Dynamics 365 ポータルの 2018 年 1 月リリース以降非推奨です。 詳細: [Dynamics 365 ポータル: 非推奨機能](https://blogs.msdn.microsoft.com/crm/2018/03/20/portal-capabilities-for-dynamics-365-deprecated-features/)
+
+ポータル チェッカー ツールには、ページ追跡が有効になっているすべての Web ページが示されます (ルートとコンテンツ ページの両方)。 これらのページは、次の手順に従って、無効にする必要があります。
+
+1. [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2. 高度な検索に移動します。
+3. **追跡の有効化 (非推奨)** フィールドが有効になっているすべての Web ページを検索します (値を [はい] に設定)。
+4. すべてのページを一括編集し、このフィールドを **いいえ** に設定します。
+
+あるいは、ポータル チェッカーの結果に表示される各ページに移動し、**追跡の有効化 (非推奨)** の値を **いいえ** に設定できます。 Dynamics 365 ポータル ソリューション バージョン 9.x を使用している場合、このフィールドはフォームに表示されず、まずフォームに追加する必要があるかもしれないことを理解することは重要です。 
+
+#### <a name="web-file-tracking-enabled"></a>Web ファイルの追跡が有効
+
+ページ追跡用ポータル Web ファイルを有効にすると、ポータルでパフォーマンスの問題が生じる場合があります。 この機能は、Dynamics 365 ポータルの 2018 年 1 月リリース以降非推奨です。 詳細: [Dynamics 365 ポータル: 非推奨機能](https://blogs.msdn.microsoft.com/crm/2018/03/20/portal-capabilities-for-dynamics-365-deprecated-features/)
+
+ポータル チェッカー ツールには、ページ追跡が有効になっているすべての Web ファイルが示されます。 これらのファイルは、次の手順に従って、無効にする必要があります。
+
+1. [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2. 高度な検索に移動します。
+3. **追跡の有効化 (非推奨)** フィールドが有効になっているすべての Web ファイルを検索します (値を [はい] に設定)。
+4. すべてのレコードを一括編集し、このフィールドを **いいえ** に設定します。
+
+あるいは、ポータル チェッカーの結果に表示される各ファイルに移動し、**追跡の有効化 (非推奨)** の値を **いいえ** に設定できます。 ポータル ソリューション バージョン 9.x を使用している場合、このフィールドはフォームに表示されず、まずフォームに追加する必要があるかもしれないことを理解することは重要です。 
+
+#### <a name="login-tracking-enabled"></a>ログインの追跡が有効
+
+ポータル ログイン追跡を有効にすると、ポータルでパフォーマンスの問題が生じる場合があります。 この機能は、Dynamics 365 ポータルの 2018 年 1 月リリース以降非推奨です。 詳細: [Dynamics 365 ポータル: 非推奨機能](https://blogs.msdn.microsoft.com/crm/2018/03/20/portal-capabilities-for-dynamics-365-deprecated-features/)
+
+ポータル チェッカー ツールは、ログイン追跡がポータルで有効になっているかどうかをチェックし、有効な場合は失敗したチェックが表示されます。 ログイン追跡は、次の手順に従って、無効にする必要があります。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  **ポータル** > **サイトの設定** の順に移動します。
+3.  `Authentication/LoginTrackingEnabled` という名前のサイト設定を検索します。
+4.  このサイト設定の値を **False** に変更するか、またはサイトの設定を削除します。
+5.  ポータルを再起動します。 
+
+#### <a name="header-output-cache-is-disabled"></a>ヘッダー出力キャッシュが無効
+
+ポータルでヘッダー出力キャッシュを無効にすると、高負荷時にポータルでパフォーマンスの問題が発生する場合があります。 この機能の詳細は、[ポータルでのヘッダーおよびフッター出力キャッシュの有効化](configure/enable-header-footer-output-caching.md)を参照してください
+
+ポータル チェッカー ツールは、ヘッダー出力キャッシュがポータルで無効になっているかどうかをチェックし、無効な場合は失敗したチェックが表示されます。 これを有効にするには、次の手順を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  **ポータル** > **サイトの設定** の順に移動します。
+3.  `Header/OutputCache/Enabled` という名前のサイト設定を検索します。
+4.  このサイト設定が使用可能な場合、サイト設定の値を **True** に変更します。 サイト設定を使用できない場合、新しいサイト設定をこの名前で作成し、値を **True** に設定します。
+5.  ポータルを再起動します。 
+
+#### <a name="footer-output-cache-is-disabled"></a>フッター出力キャッシュが無効
+
+ポータルでフッター出力キャッシュを無効にすると、高負荷時にポータルでパフォーマンスの問題が発生する場合があります。 この機能の詳細は、[ポータルでのヘッダーおよびフッター出力キャッシュの有効化](configure/enable-header-footer-output-caching.md)を参照してください
+
+ポータル チェッカー ツールは、フッター出力キャッシュがポータルで無効になっているかどうかをチェックし、無効な場合は失敗したチェックが表示されます。 これを有効にするには、次の手順を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  **ポータル** > **サイトの設定** の順に移動します。
+3.  `Footer/OutputCache/Enabled` という名前のサイト設定を検索します。
+4.  このサイト設定が使用可能な場合、サイト設定の値を **True** に変更します。 サイト設定を使用できない場合、新しいサイト設定をこの名前で作成し、値を **True** に設定します。
+5.  ポータルを再起動します。 
+
+#### <a name="large-number-of-web-file-records"></a>多数の Web ファイル レコード
+
+Web ファイル エンティティは、ポータルで使用する静的ファイルを保存するためにポータルによって使用されます。 このエンティティの主な用途は、CSS、JavaScript、イメージ ファイルなどの Web サイトの静的コンテンツを保存することです。 ただし、このような多くのファイルがあると、ポータルの起動が遅くなる可能性があります。
+
+ポータル チェッカー ツールはこのシナリオをチェックし、ポータルに 500 件以上のアクティブ Web ファイルがあるかどうかを示します。 これらのファイルすべてが、CSS、JavaScript、イメージ ファイルなどの静的コンテンツなどを表している場合は、この問題を軽減するための次のアクションを実行できます。
+
+- これらのファイルを保存するために Azure Blob Storage や CDN などの外部ファイル サーバーを使用し、ページ内または基になるテンプレートの適切なページでこれらのファイルを参照します。
+
+- ファイルを外に移動できない場合、すべてのファイルがホーム ページとともにロードされるわけではありません。 そのファイルの親ページがホームに設定されている場合、Web ファイルはホーム ページとともに読み込まれます。 このシナリオを回避するには、次の手順を実行できます。
+
+  1. コンテンツと空のテンプレートなしでダミー Web ページを作成します。 このページは、Web ページへの直接パスを作成するために使用できます。 
+  2. ホーム ページで必要ではないすべての Web ファイルで、このダミー Web ページに親ページを変更します。 完了すると、Web ファイルへの完全パスは `Portal URL/{dummy_webpage}/{web file}` になります
+  3. これを使用するページ テンプレートまたは Web テンプレートの HTML で直接 Web ファイルを参照してください。 これにより、そのページでファイルがオンデマンドで読み込まれます。 
+
+#### <a name="loading-static-resources-cssjs-asynchronously"></a>静的リソース (css/js) の非同期読み込み
+
+ポータル実装を行う場合、ページの HTML を完全に管理することを理解することは重要です。これは、Web ページのクライアント側のパフォーマンスに影響を与えないようにするため、標準 Web 開発方針に従う必要があることを意味します。 
+
+Web ページのパフォーマンス上の問題の最も一般的な原因の 1 つは、ページの読み込み時に多くの静的リソース (css/js) が同期的に読み込まれることです。 大量の css/js ファイルが同期的に読み込まれると、Web ページのクライアント側の処理時間が長くなる場合があります。 
+
+ポータルの場合、ホーム ページに Web ファイルを直接関連付けるときは必ず、生成された HTML で依存関係が作成されます。つまり、Web ファイルは常にホーム ページとともに読み込まれます。 この Web ファイルがファイル css/js の場合、同期的にロードされ、クライアント側の処理時間が長くなる可能性があります。 
+
+これを回避するには、次の手順を実行できます。 
+
+1. Web ファイルがホーム ページで必要ない場合、その親ページがホーム ページとして設定されていないことを確認し、上で説明したメカニズムを再利用してオンデマンドで読み込みます。
+2. JavaScript ファイルを任意のページでオンデマンドで読み込んでいる間、`<async>` または `<defer>` HTML 属性を使用し、ファイルを非同期に読み込みます。
+3. CSS ファイルをオンデマンドで読み込んでいる間、まだすべてのブラウザーでプリロードがサポートされているわけではないため、 HTML 属性  (https://www.w3.org/TR/preload/) または JavaScript ベースのアプローチの`<preload>` を使用できます。
+
+#### <a name="entity-form-lookup-configuration"></a>エンティティ フォームの検索構成 
+
+エンティティ フォームまたは Web フォームでドロップダウンモードとして表示するルックアップを有効にすると、ドロップダウンに表示されるレコードの量が 200 を超え、頻繁に変更される場合は、パフォーマンスが集中する可能性があります　+。 このオプションは、レコードの数が限られている国リストや州リストなどの静的ルックアップにのみ使用してください。
+
+多数のレコードを持つことができるルックアップに対してこのオプションを有効にすると、エンティティフォームが利用可能な Web ページの読み込み時間が遅くなります。 このページが多くのユーザーによって使用され、何度もロードされると、Web サイト全体が遅くなり、Web ページのリソースがこのページのレンダリングに使用されます。 これらの状況では、完全なルックアップ エクスペリエンスを使用するか、AJAX エンドポイント（Web テンプレートを使用して作成）を呼び出すカスタム HTML コントロールを作成して、目的のルックアンドフィールを作成する必要があります。
+
+#### <a name="number-of-web-roles"></a>Web ロールの数
+
+Web ロールはポータルで使用され、ロールベースのアクセス制御を可能にします。 通常、許可のさまざまな組み合わせの数も制限されるため、ポータル内の Web ロールの数は制限されます。 ポータルで Web ロールの数が 100 を超えると、パフォーマンスの問題が発生し、ポータルのすべてのページに影響する可能性があります。
+
+### <a name="an-active-home-site-marker-is-not-available-for-this-portal"></a>アクティブな ホーム サイト マーカーは、このポータルで使用できません。
+
+この問題は、**ホーム** サイトマーカーがポータル構成では使用できない場合に発生します。 この問題を解決するには、以下を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  左側のウィンドウで、**サイト マーカー** を選択します。
+3.  次の値で新しいサイトマーカーを作成します: 
+  - **名**: ホーム
+  - **ウェブサイト** : ポータル ホストの Web サイトを選択します。
+  - **ページ** : ポータルのホームページとして設定されている Web ページ レコードを選択します。
+
+### <a name="the-home-site-marker-is-not-pointing-to-any-webpage"></a>ホーム サイト マーカーが、どの Web ページもポイントしていません。
+
+この問題は、**ホーム** サイト マーカーは使用可能ですが、どの Web ページもポイントしていません。 この問題を解決するには、以下を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  左側のウィンドウで、**サイト マーカー** を選択します。
+3.  **ホーム**サイト マーカー レコードを検索します。
+4.  **ページ** フィールドを更新して、ポータルのアクティブなホームページをポイントします。
+
+### <a name="the-home-site-marker-is-pointing-to-a-deactivated-web-page"></a>ホーム サイト マーカーが非アクティブ化された Web ページをポイントしています。
+
+この問題は、**ホーム** サイト マーカーは使用可能ですが、非アクティブ化された Web ページをポイントしています。 この問題を解決するには、以下を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  左側のウィンドウで、**サイト マーカー** を選択します。
+3.  **ホーム**サイト マーカー レコードを検索します。
+4.  **ページ** フィールドを更新して、ポータルのアクティブなホームページをポイントします。
+
+### <a name="the-home-site-marker-is-not-pointing-to-home-page-of-the-portal"></a>ホーム サイト マーカーがポータルのホーム ページをポイントしていません。
+
+この問題は、**ホーム** サイト マーカーは使用可能ですが、ポータルのホーム ページではない Web ページをポイントしています。 この問題を解決するには、以下を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  左側のウィンドウで、**サイト マーカー** を選択します。
+3.  **ホーム**サイト マーカー レコードを検索します。
+4.  **ページ** フィールドを更新して、ポータルのアクティブなホームページをポイントします。
+
+### <a name="an-active-profile-site-marker-is-not-available-for-this-portal"></a>アクティブなプロファイル サイト マーカーは、このポータルで使用できません。
+
+この問題は、**プロファイル** サイトマーカーがポータル構成では使用できない場合に発生します。 この問題を解決するには、以下を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  左側のウィンドウで、**サイト マーカー** を選択します。
+3.  次の値で新しいサイトマーカーを作成します: 
+  - **名**: プロファイル
+  - **ウェブサイト** : ポータル ホストの Web サイトを選択します。
+  - **ページ** : ポータルのプロファイル ページとして設定されている Web ページ レコードを選択します。
+
+### <a name="the-profile-site-marker-is-not-pointing-to-any-webpage"></a>プロファイル サイト マーカーが、どの Web ページもポイントしていません。
+
+この問題は、**プロファイル** サイト マーカーは使用可能だが、どの Web ページもポイントしていない場合に発生します。 この問題を解決するには、以下を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  左側のウィンドウで、**サイト マーカー** を選択します。
+3.  **プロファイル**サイト マーカー レコードを検索します。
+4.  **ページ** フィールドを更新して、ポータルのアクティブなプロファイルをポイントします。
+
+### <a name="the-profile-site-marker-is-pointing-to-a-deactivated-web-page"></a>プロファイル サイト マーカーが非アクティブな Web ページをポイントしています。
+
+この問題は、**プロファイル** サイト マーカーが使用可能ですが、非アクティブ化された Web ページをポイントしている場合に発生します。 この問題を解決するには、以下を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  左側のウィンドウで、**サイト マーカー** を選択します。
+3.  **プロファイル**サイト マーカー レコードを検索します。
+4.  **ページ** フィールドを更新して、ポータルのアクティブなプロファイルをポイントします。
+
+### <a name="an-active-page-not-found-site-marker-is-not-available-for-this-portal"></a>アクティブな [ページが見つかりません] サイト マーカーは、このポータルで使用できません。
+
+この問題は、**ページが見つかりません** サイトマーカーがポータル構成では使用できない場合に発生します。 この問題を解決するには、以下を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  左側のウィンドウで、**サイト マーカー** を選択します。
+3.  次の値で新しいサイトマーカーを作成します: 
+  - **名前**: ページが見つかりません
+  - **ウェブサイト** : ポータル ホストの Web サイトを選択します。
+  - **ページ** : ポータルの [ページが見つかりません] として設定されている Web ページ レコードを選択します。
+
+### <a name="the-page-not-found-site-marker-is-not-pointing-to-any-webpage"></a>[ページが見つかりません] サイト マーカーが、どの Web ページもポイントしていません。
+
+この問題は、**ページが見つかりません** サイト マーカーは使用可能ですが、どの Web ページもポイントしていない場合に発生します。 この問題を解決するには、以下を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  左側のウィンドウで、**サイト マーカー** を選択します。
+3.  **ページが見つかりません**サイトマーカーレコードを検索します。
+4.  **ページ** フィールドを更新して、ポータルの [ページが見つかりません] をポイントします。
+
+### <a name="the-page-not-found-site-marker-is-pointing-to-a-deactivated-web-page"></a>[ページが見つかりません] サイト マーカーが非アクティブかされた Web ページをポイントしています。
+
+この問題は、**ページが見つかりません** サイト マーカーは使用可能ですが、どの非アクティブ化された Web ページもポイントしていない場合に発生します。 この問題を解決するには、以下を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  左側のウィンドウで、**サイト マーカー** を選択します。
+3.  **ページが見つかりません**サイトマーカーレコードを検索します。
+4.  **ページ** フィールドを更新して、ポータルの [ページが見つかりません] をポイントします。
+
+### <a name="an-active-access-denied-site-marker-is-not-available-for-this-portal"></a>アクティブな [アクセスが拒否されました] サイト マーカーは、このポータルで使用できません。
+
+この問題は、**アクセスが拒否されました** サイトマーカーがポータル構成では使用できない場合に発生します。 この問題を解決するには、以下を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  左側のウィンドウで、**サイト マーカー** を選択します。
+3.  次の値で新しいサイトマーカーを作成します: 
+  - **名前**: アクセスが拒否されました
+  - **ウェブサイト** : ポータル ホストの Web サイトを選択します。
+  - **ページ** : ポータルの [アクセスが拒否されました] ページとして設定されている Web ページ レコードを選択します。
+
+### <a name="the-access-denied-site-marker-is-not-pointing-to-any-webpage"></a>[アクセスが拒否されました] サイト マーカーが、どの Web ページもポイントしていません。
+
+この問題は、**アクセスが拒否されました** サイト マーカーは使用可能だが、どの Web ページもポイントしていない場合に発生します。 この問題を解決するには、以下を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  左側のウィンドウで、**サイト マーカー** を選択します。
+3.  **アクセスが拒否されました**サイト マーカー レコードを検索します。
+4.  **ページ** フィールドを更新して、ポータルのアクティブなアクセスが拒否されたページをポイントします。
+
+### <a name="the-access-denied-site-marker-is-pointing-to-a-deactivated-web-page"></a>アクセスが拒否されたサイト マーカーが非アクティブ化された Web ページをポイントしています。
+
+この問題は、**アクセスが拒否された**サイトマーカーは使用できますが、非アクティブ化された Web ページをポイントします (ルートまたはコンテンツページは非アクティブ化できます)。 この問題を解決するには、以下を行います。
+
+1.  [ポータル管理アプリ](configure/configure-portal.md)を開きます。
+2.  左側のウィンドウで、**サイト マーカー** を選択します。
+3.  **アクセスが拒否されました**サイト マーカー レコードを検索します。
+4.  **ページ** フィールドを更新して、ポータルのアクティブなアクセスが拒否されたページをポイントします。
+
+### <a name="profile-web-form-is-not-available-for-contact-entity"></a>取引先担当者エンティティに対するプロファイルの Web フォームを使用できません。
+
+プロファイル ページは、すべてのプロファイル関連の問題に対してポータルで使用される一般的なページの 1 つです。 このページには、ユーザーがプロファイルを更新するために使用できるフォームが表示されます。 このページで使用されるフォームは、取引先担当者エンティティで使用可能な**プロフィール Web ページ** メインフォームから来ています。 ポータルがプロビジョニングされると、このフォームは Common Data Service 環境で作成されます。 このエラーは、**プロフィール** Webフォームが削除されるか、ポータルで無効になった場合に表示されます。 このフォームは必須で、このフォームの削除または無効にすると、ポータルでランタイムエラーが表示される Web サイト全体が破損する可能性があります。 これは取り返しのつかない状態であり、環境にポータルを再インストールする必要があります。
+
+### <a name="published-state-is-not-available-for-this-website"></a>公開済み状態は、この Web サイトでは使用できません。
+
+この問題を修正するには、公開状況エンティティの  **公開済み** が使用可能で、アクティブであることを確認します。
+
+### <a name="published-state-is-not-visible"></a>公開済み状態は表示されていません
+
+この問題を修正するには、公開状況エンティティ **公開済み** の **isVisible** チェックボックスがオンに設定されていることを確認してください
+
+### <a name="list-of-entities-with-search-result-having-invalid-url"></a>検索結果に無効な URL  があるエンティティの一覧
+
+この問題を修正するには、エンティティに適切なセキュリティ アクセス許可が付与されていることを確認してください。
+
+### <a name="list-of-entities-with-cms-security-check-failed"></a>CMS セキュリティ チェックで  が失敗したエンティティの一覧
+
+この問題を修正するには、エンティティに適切な検索ページが設定されていることを確認してください。
+
+### <a name="web-file-is-not-active"></a>Web ファイルがアクティブではありません
+
+この問題を修正するには、Web ファイルがアクティブ状態にあることを確認してください。
+
+### <a name="the-partial-url-of-web-file-is-misconfigured"></a>Web ファイルの一部の URL が正しく構成されていません
+
+この問題を修正するには、部分 URL が、ホームをルート ページとして使用したファイル名になっていることを確認してください。
+
+### <a name="web-file-doesnt-have-a-file-attachment"></a>Web ファイルに添付ファイルがありません
+
+この問題を修正するには、対応する CSS ファイルを Web ファイルのメモ セクションに追加します。
+
+### <a name="file-attachment-doesnt-have-content"></a>添付ファイルが空です
+
+この問題を修正するには、内容の全体を含む CSS ファイルを Web ファイルのメモ セクションに追加します。
+
+### <a name="mime-type-of-file-is-not-textcss"></a>ファイルの MIME タイプが text/css ではありません
+
+この問題を修正するには、CSS ファイルの MIME の種類を上書きするプラグインまたはフローがないことを確認してください。

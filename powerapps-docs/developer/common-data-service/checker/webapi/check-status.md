@@ -1,6 +1,6 @@
 ---
 title: 解析ステータスを確認する | Microsoft Docs
-description: PowerApps チェッカーの Web API を使用して GETリクエストを作成し、解析リクエスト ジョブのステータスを確認する方法を説明します。
+description: Power Apps チェッカーの Web API を使用して GETリクエストを作成し、解析リクエスト ジョブのステータスを確認する方法を説明します。
 ms.custom: ''
 ms.date: 06/04/2019
 ms.service: powerapps
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 97b244b59bccbde9c8e20a86723133af07d4eb2b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0e221ad292a1a973a79c308a8ec5bef7a4dadeaa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749009"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861820"
 ---
 # <a name="check-for-analysis-status"></a>解析ステータスを確認する
 
@@ -121,7 +121,7 @@ Content-Type: application/json; charset=utf-8
 
 ### <a name="see-also"></a>関連項目
 
-[PowerApps チェッカーの Web API を使用する](overview.md)<br />
+[Power Apps チェッカーの Web API を使用する](overview.md)<br />
 [ルールセットの一覧の取得](retrieve-rulesets.md)<br />
 [ルールの一覧の取得](retrieve-rules.md)<br />
 [ファイルのアップロード](upload-file.md)<br />

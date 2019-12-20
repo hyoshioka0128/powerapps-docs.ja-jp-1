@@ -1,5 +1,5 @@
 ---
-title: PowerApps でモデル駆動型アプリ ビューの列を選択および構成する | MicrosoftDocs
+title: Power Apps でモデル駆動型アプリ ビューの列を選択および構成する | MicrosoftDocs
 description: アプリのビューを選択および構成する方法を学習する
 keywords: ''
 ms.date: 11/27/2018
@@ -24,18 +24,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d9f34be645a8e3dee1283f064e5aeda6a9d59e9a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b259ea097ed5caf1683d2ba7b2450551d32e3a61
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754612"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2874885"
 ---
 # <a name="choose-and-configure-columns-in-model-driven-app-views"></a>モデル駆動型アプリ ビューの列を選択および構成する
 
 <a name="BKMK_ChooseAndConfigureColumns"></a>   
 
- フィルター条件とともに、PowerApps ビューに表示される列はビューに表示される値にとって非常に重要です。 このトピックでは、次のタスクを実行して、ビューを作成または編集します。  
+ フィルター条件とともに、Power Apps ビューに表示される列はビューに表示される値にとって非常に重要です。 このトピックでは、次のタスクを実行して、ビューを作成または編集します。  
 
 -   [ビュー エディターを開く](choose-and-configure-columns.md#open-the-view-editor)  
    
@@ -57,7 +57,7 @@ ms.locfileid: "2754612"
 
 ### <a name="open-the-view-editor"></a>ビュー エディターを開く
 
-1.  [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**ビュー** タブを選択します。 
 

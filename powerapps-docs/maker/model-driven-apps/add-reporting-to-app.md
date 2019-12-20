@@ -14,21 +14,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: aba6196680d674b8ee42096e340a105b19ac8d07
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 847d132ba3d7ac3e928014fa61b04e0cb8a0ec7b
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752379"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885182"
 ---
 # <a name="add-reporting-features-to-your-model-driven-app"></a>レポート機能をモデル駆動型アプリに追加
 
-PowerApps アプリに有益な事業情報をユーザーに提供するレポートを含めることができます。 このレポートは SQL Server Reporting Services に基づいており、典型的な SQL Server Reporting Services レポートで使用できる機能と同じ一連の機能を備えています。
+Power Apps アプリに有益な事業情報をユーザーに提供するレポートを含めることができます。 このレポートは SQL Server Reporting Services に基づいており、典型的な SQL Server Reporting Services レポートで使用できる機能と同じ一連の機能を備えています。
 
 > [!div class="mx-imgBorder"] 
 > ![](media/progress-against-goals-report.png "Progress against goals standard report")
 
-システム レポートは、すべてのユーザーが使用できます。 ユーザーが作成または所有するレポートは、特定の同僚またはチームと共有することや、すべてのユーザーがレポートを使用できるように、組織に対してそのレポートを使用可能にすることができます。 これらのレポートは Common Data Service に独自の FetchXML クエリを使用して、データを取得してレポートを作成します。 PowerApps アプリで作成したレポートは、フェッチ ベースのレポートです。
+システム レポートは、すべてのユーザーが使用できます。 ユーザーが作成または所有するレポートは、特定の同僚またはチームと共有することや、すべてのユーザーがレポートを使用できるように、組織に対してそのレポートを使用可能にすることができます。 これらのレポートは Common Data Service に独自の FetchXML クエリを使用して、データを取得してレポートを作成します。 Power Apps アプリで作成したレポートは、フェッチ ベースのレポートです。
 
 > [!NOTE]
 > レポート機能は、タブレットや電話などのモバイル デバイス上で実行されているキャンバス アプリやモデル駆動型アプリでは機能しません。 
@@ -42,7 +42,7 @@ PowerApps アプリに有益な事業情報をユーザーに提供するレポ�
 ## <a name="add-reporting-to-a-unified-interface-app"></a>レポートを統一インターフェイス アプリに追加
 フェッチ ベースのレポート機能をアプリに追加できます。それにより、ユーザーがレポートを実行、共有、作成、および編集できます。 これを行うためには、アプリのサイト マップにレポート エンティティを追加します。 
 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインして、編集用の既存アプリを開きます。 
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインして、編集用の既存アプリを開きます。 
 2. アプリ デザイナーで、**サイト マップ**の隣りの![サイト マップ編集のための鉛筆アイコン](media/ccf-pencil-icon.png)を選択します。 
 3. サイトマップ デザイナーで**追加**を選択し、その後**領域**を選択します。 
 4. **タイトル** ボックスに、*レポート*などの領域のタイトル名を入力します。 
@@ -74,7 +74,7 @@ PowerApps アプリに有益な事業情報をユーザーに提供するレポ�
 取引先企業エンティティの取引先企業概要レポートなど、標準エンティティ レポートはすべてのアプリ ユーザーが利用できます。 レポートを所有するユーザーはレポートを特定の同僚やチームと共有できます。 システム管理者とシステム カスタマイザーは組織全体の可視性を備えたレポートを使用可能にし、すべてのユーザーがレポートを使用できるようにします。 レポートを共有する方法については [他のユーザーやチームとレポートを共有する](../../user/work-with-reports.md#share-a-report-with-other-users-or-teams) を参照してください。 
 
 ## <a name="reports-in-solutions"></a>ソリューションでのレポート
-レポートはソリューションに対応しています。 コンポーネントとしてソリューションに追加されたレポートは、PowerApps の機能およびユーザー インターフェイスを拡張するソフトウェアの 1 つの単位になります。 ソリューションに追加できるレポートは組織に表示できるものに限られます。
+レポートはソリューションに対応しています。 コンポーネントとしてソリューションに追加されたレポートは、Power Apps の機能およびユーザー インターフェイスを拡張するソフトウェアの 1 つの単位になります。 ソリューションに追加できるレポートは組織に表示できるものに限られます。
 
 レポートが組織で表示可能かどうか確認する方法: レポートの一覧からモデル駆動型アプリを開き、レポートを選択して **編集** を選択します。 **管理**タブで**公開対象**が**組織**に設定されているかどうかを確認します。 
 
@@ -86,6 +86,6 @@ PowerApps アプリに有益な事業情報をユーザーに提供するレポ�
 ## <a name="related-topics"></a>関連トピック
 [レポートに関する作業](/powerapps/user/work-with-reports)<br/>
 [レポート ウィザードを使用したレポートの作成](/powerapps/user/create-report-with-wizard)<br/>
-[PowerApps の外部からレポートを追加する](/powerapps/user/add-existing-report)<br/>
+[Power Apps の外部からレポートを追加する](/powerapps/user/add-existing-report)<br/>
 [レポートの既定のフィルターの編集](/powerapps/user/edit-report-filter)<br/>
 [レポートのトラブルシューティング](/powerapps/user/troubleshoot-reports)

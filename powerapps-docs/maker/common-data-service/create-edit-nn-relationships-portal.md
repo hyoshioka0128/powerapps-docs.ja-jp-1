@@ -1,5 +1,5 @@
 ---
-title: PowerApps ポータルを使用して Common Data Service に多対多のエンティティー の関連付けを作成する | MicrosoftDocs
+title: Power Apps ポータルを使用して Common Data Service に多対多のエンティティー の関連付けを作成する | MicrosoftDocs
 description: N:N (多対多) の関連付けを作成する方法を学習する
 ms.custom: ''
 ms.date: 06/11/2018
@@ -20,16 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9a0a8ec96760c6816ea2b6caaf4bcc760b9852de
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: dd85ee8b5b44ad6db9ac70a38984eb5c04cd12d8
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757713"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865818"
 ---
-# <a name="create-many-to-many-entity-relationships-in-common-data-service-using-powerapps-portal"></a>PowerApps ポータルを使用して Common Data Service に多対多のエンティティの関連付けを作成する
+# <a name="create-many-to-many-entity-relationships-in-common-data-service-using-power-apps-portal"></a>Power Apps ポータルを使用して Common Data Service に多対多のエンティティの関連付けを作成する
 
-[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、 Common Data Serviceの 多:多 (多対多)の関連付けを簡単に作成、編集することができます。
+[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、 Common Data Serviceの 多:多 (多対多)の関連付けを簡単に作成、編集することができます。
 
 ポータルでは一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 詳細: 
 - [N:N (多対多) のエンティティの関連付けを作成する](create-edit-nn-relationships.md)
@@ -37,7 +37,7 @@ ms.locfileid: "2757713"
 
 ## <a name="view-many-to-many-entity-relationships"></a>多対多のエンティティの関連付けを表示する
 
-1. [PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、 **モデル駆動型** または **キャンバス** 設計モードを選択します。
+1. [Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、 **モデル駆動型** または **キャンバス** 設計モードを選択します。
 2. **データ** > **エンティティ** を選択し、表示する関連付けを持つエンティティを選択します。
 3. **関連付け** タブでは、次のビューを選択できます。 
 
@@ -76,7 +76,7 @@ ms.locfileid: "2757713"
 
 **多対多**パネルを閉じるには、**OK** を選択します。 関連付けは、エンティティへの変更を保存すると作成されます。 
 
-一度保存すると、 [PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)を使用して変更することはできません。 モデル駆動型アプリの関連付けのプロパティを編集するには、[ソリューション エクスプローラー](create-edit-nn-relationships-solution-explorer.md)を使用します。
+一度保存すると、 [Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)を使用して変更することはできません。 モデル駆動型アプリの関連付けのプロパティを編集するには、[ソリューション エクスプローラー](create-edit-nn-relationships-solution-explorer.md)を使用します。
 
 ## <a name="delete-relationships"></a>関連付けの削除
 

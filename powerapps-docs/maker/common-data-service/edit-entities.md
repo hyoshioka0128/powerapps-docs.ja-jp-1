@@ -1,5 +1,5 @@
 ---
-title: PowerApps でエンティティの編集 | MicrosoftDocs
+title: Power Apps でエンティティの編集 | MicrosoftDocs
 description: エンティティが編集可能なさまざまな方法を説明する
 ms.custom: ''
 ms.date: 05/15/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ec64583e2146703711b88456ff7bc91ece3e921
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: cff90011a80bd051882da08be1f479cb997a7a72
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757449"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863953"
 ---
 # <a name="edit-an-entity"></a>エンティティの編集
 
@@ -40,10 +40,10 @@ ms.locfileid: "2757449"
 
 |デザイナー|説明|
 |--|--|
-|[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。|
+|[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)|簡単な優れたエクスペリエンスを提供しますが、一部の特殊な設定は使用できません。|
 |ソリューション エクスプローラー|簡単ではありませんが、一般的な要件が少ない割に柔軟性が高くなっています。|
 
-PowerApps ポータルとソリューション エクスプローラーの両方で、以下を実行できます。
+Power Apps ポータルとソリューション エクスプローラーの両方で、以下を実行できます。
 
 - **エンティティ フィールドを編集する**。 詳細: [Common Data Service のフィールドの作成と編集](create-edit-fields.md)
   
@@ -63,9 +63,9 @@ PowerApps ポータルとソリューション エクスプローラーの両方
 
 - **グラフ**。 [システム グラフの作成または編集](../model-driven-apps/create-edit-system-chart.md)
 
-## <a name="edit-using-powerapps-portal-designer"></a>PowerApps ポータル デザイナーを使用した編集
+## <a name="edit-using-power-apps-portal-designer"></a>Power Apps ポータル デザイナーを使用した編集
 
-PowerApps ポータル デザイナー内には、編集できるプロパティが 3 つしかありません。
+Power Apps ポータル デザイナー内には、編集できるプロパティが 3 つしかありません。
  - 表示名
  - 複数形の表示名
  - 説明

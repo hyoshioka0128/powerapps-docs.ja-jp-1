@@ -1,6 +1,6 @@
 ---
 title: コードを使用してモデル駆動型アプリケーションのカスタマイズを開始する | Microsoft Docs
-description: 'PowerApps ポータルにあるツールまたは公式ドキュメントで説明されているツールを使用して、モデル駆動型アプリをカスタマイズできます。 '
+description: 'Power Apps ポータルにあるツールまたは公式ドキュメントで説明されているツールを使用して、モデル駆動型アプリをカスタマイズできます。 '
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 53971f95f73824773477cf00660a7593e7d501b1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0ac5d6ec9527334b8e9ef82fcff9e37744967c16
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748947"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865584"
 ---
 # <a name="get-started-with-model-driven-apps-customization-using-code"></a>コードを使用してモデル駆動型アプリケーションのカスタマイズを開始する
 
@@ -27,20 +27,20 @@ ms.locfileid: "2748947"
 Split to just include MDA issues
  -->
 
-PowerApps ポータルにあるツールまたは公式ドキュメントで説明されているツールを使用して、モデル駆動型アプリをカスタマイズできます。 これらのカスタマイズはサポートされており、アップグレードが可能です。
+Power Apps ポータルにあるツールまたは公式ドキュメントで説明されているツールを使用して、モデル駆動型アプリをカスタマイズできます。 これらのカスタマイズはサポートされており、アップグレードが可能です。
 
 ここに記述されている以外の方法を使用して行われたカスタマイズについてはサポートされず、更新時やモデル駆動型アプリへのアップグレード時に問題が生じる場合があります。 詳細については、このトピックの後方にある[サポートされていないカスタマイズ](#unsupported-customizations)を参照してください。
 
 このサイトなどの Microsoft サイトに公開されている技術資料に記載のトピックは、サポートされていますがアップグレードされない可能性があります。
 
 
-## <a name="customizations-using-powerapps-portal"></a>PowerApps ポータルを使用したカスタマイズ
+## <a name="customizations-using-power-apps-portal"></a>Power Apps ポータルを使用したカスタマイズ
 
 モデル駆動型アプリには、カスタマイズに使用できるさまざまなツールが用意されています。 モデル駆動型アプリのツールおよび Web アプリケーションを使用したカスタマイズは完全にサポートされており、すべてアップグレード可能です。
 
 次のカスタマイズ方法を使用すると、完全にサポートされるカスタマイズを実行できます。
 
-- PowerApps ポータルまたはソリューション エクスプローラーのカスタマイズ。 詳細については、[モデル駆動型アプリの作成の概要](../../maker/model-driven-apps/model-driven-app-overview.md)を参照してください
+- Power Apps ポータルまたはソリューション エクスプローラーのカスタマイズ。 詳細については、[モデル駆動型アプリの作成の概要](../../maker/model-driven-apps/model-driven-app-overview.md)を参照してください
 
 - Web アプリケーションの設定。 詳細については、[モデル駆動型アプリの管理](/dynamics365/customer-engagement/admin/admin-guide)を参照してください。
 
@@ -75,7 +75,7 @@ PowerApps ポータルにあるツールまたは公式ドキュメントで説�
 
 ## <a name="unsupported-customizations"></a>サポートされていないカスタマイズ
 
-このドキュメントで説明されたメソッドまたは PowerApps ポータルのいずれのツールも使用しないで実行されたモデル駆動型アプリの変更はサポートされず、モデル駆動型アプリの更新時またはアップグレード時に保存されません。 このドキュメントおよびサポート ドキュメントに文書化されていないものはすべてサポートされません。 また、サポートされていない変更を加えると、修正プログラムや Service Pack によって更新する際、またはモデル駆動型アプリをアップグレードする際に問題が生じる可能性があります。
+このドキュメントで説明されたメソッドまたは Power Apps ポータルのいずれのツールも使用しないで実行されたモデル駆動型アプリの変更はサポートされず、モデル駆動型アプリの更新時またはアップグレード時に保存されません。 このドキュメントおよびサポート ドキュメントに文書化されていないものはすべてサポートされません。 また、サポートされていない変更を加えると、修正プログラムや Service Pack によって更新する際、またはモデル駆動型アプリをアップグレードする際に問題が生じる可能性があります。
 
 次は、よく質問されるサポートされていない操作の種類の一覧です: 
 

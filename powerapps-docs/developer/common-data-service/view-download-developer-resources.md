@@ -1,6 +1,6 @@
 ---
-title: PowerApps および Common Data Service の開発者リソースの表示またはダウンロード | MicrosoftDocs
-description: PowerApps および Common Data Service の開発者リソースおよびサービス エンドポイント URL を検索する
+title: Power Apps および Common Data Service の開発者リソースの表示またはダウンロード | MicrosoftDocs
+description: Power Apps および Common Data Service の開発者リソースおよびサービス エンドポイント URL を検索する
 keywords: ''
 ms.date: 06/06/2018
 ms.service: powerapps
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3c51d7c80844f53d95c73c0bfce061aaa96e50a7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d0d3a36795506c7127be61657fee8d46baaae28e
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749196"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862029"
 ---
 # <a name="view-or-download-developer-resources"></a>開発者リソースの表示またはダウンロード
 
@@ -35,7 +35,7 @@ ms.locfileid: "2749196"
 
 ## <a name="view-the-developer-resources-page-for-your-environment"></a>環境の開発者リソース ページを表示する
 
-1. PowerApps ポータルで、![設定ボタン](../../administrator/media/settings-button-nav-bar.png) [設定] ボタンを選択し、**高度なカスタマイズ** を選択します。
+1. Power Apps ポータルで、![設定ボタン](../../administrator/media/settings-button-nav-bar.png) [設定] ボタンを選択し、**高度なカスタマイズ** を選択します。
 
     ![高度なカスタマイズ](media/advanced-customizations-menu.png)
 

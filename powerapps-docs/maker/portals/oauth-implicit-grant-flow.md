@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 38a1ac18a5c978c7b39d6dee85afcb9adf334534
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 9c4ea4e34dacf70a9bb51c28c5761700904a3053
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755821"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862193"
 ---
 # <a name="use-oauth-20-implicit-grant-flow-within-your-portal"></a>ポータル内で OAuth 2.0 の暗黙的な許可フローを使用する 
 
@@ -127,11 +127,11 @@ ID トークンを取得するだけではユーザーの認証に十分では�
 
 ## <a name="sample-code"></a>サンプル コード
 
-以下のサンプルコードを使用することで、PowerApps ポータル API で OAuth 2.0 の暗黙的な許可を利用することができます。
+以下のサンプルコードを使用することで、Power Apps ポータル API で OAuth 2.0 の暗黙的な許可を利用することができます。
 
 ### <a name="use-portal-oauth-token-with-an-external-web-api"></a>外部Web API でポータル OAuth トークンを使用する
 
-このサンプルは、ASP.NET  ベースのプロジェクトで、PowerApps ポータルが発行する ID トークンの検証に使用されます。 この完全なサンプルは、 [外部Web API でポータル OAuth トークンを使用する](https://github.com/microsoft/PowerApps-Samples/tree/master/portals/ExternalWebApiConsumingPortalOAuthTokenSample) で確認することができます。
+このサンプルは、ASP.NET  ベースのプロジェクトで、Power Apps ポータルが発行する ID トークンの検証に使用されます。 この完全なサンプルは、 [外部Web API でポータル OAuth トークンを使用する](https://github.com/microsoft/PowerApps-Samples/tree/master/portals/ExternalWebApiConsumingPortalOAuthTokenSample) で確認することができます。
 
 ### <a name="authorize-endpoint-sample"></a>Authorize Endpoint のサンプル
 
@@ -139,4 +139,4 @@ ID トークンを取得するだけではユーザーの認証に十分では�
 
 ### <a name="token-endpoint-sample"></a>トークン エンドポイントのサンプル
 
-このサンプルは、getAuthenticationToken トークン関数と PowerApps ポータルのトークン エンドポイントを使用した ID トークンをフェッチする方法を示しています。 このサンプルは、 [トークン エンドポイントのサンプル](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/TokenEndpoint.js) で確認することができます。
+このサンプルは、getAuthenticationToken トークン関数と Power Apps ポータルのトークン エンドポイントを使用した ID トークンをフェッチする方法を示しています。 このサンプルは、 [トークン エンドポイントのサンプル](https://github.com/microsoft/PowerApps-Samples/blob/master/portals/TokenEndpoint.js) で確認することができます。

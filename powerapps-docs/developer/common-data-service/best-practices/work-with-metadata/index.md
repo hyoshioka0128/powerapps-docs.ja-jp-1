@@ -1,6 +1,6 @@
 ---
 title: '開発者: Common Data Service のメタデータで作業する際のベスト プラクティスおよびガイダンス | Microsoft Docs'
-description: PowerApps で Common Data Service の開発者がメタデータで作業している間のベスト プラクティスおよびガイダンス。
+description: Power Apps で Common Data Service の開発者がメタデータで作業している間のベスト プラクティスおよびガイダンス。
 services: ''
 suite: powerapps
 documentationcenter: na
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8810bb2483f7fe8cc27a031604b78ac93fa521ff
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9dfc455ce9903c95b78e24b2aba25a5fbe6d8734
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748817"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883545"
 ---
 # <a name="best-practices-and-guidance-while-working-with-metadata-for-the-common-data-service"></a>Common Data Service  のメタデータで作業している間のベスト プラクティスおよびガイダンス
 

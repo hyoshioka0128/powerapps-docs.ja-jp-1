@@ -6,15 +6,15 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 11/11/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: e53380c39257645e9056a271226b6f7ef8c8c721
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: cc2c7aae9b2329bfa7b24d45049d7cbbab399e28
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709940"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862713"
 ---
 # <a name="maintenance-mode-for-a-portal"></a>ポータルのメンテナンス モード
 
@@ -29,7 +29,7 @@ ms.locfileid: "2709940"
 
 ウェブサイトの予定されたメンテナンス中の予測不可能なふるまいに対処する代わりに、ポータルでメンテナンス モードを有効にして一貫したメッセージを提供できます。 これはポータル ユーザーにより良いエクスペリエンスを提供します。
 
-1. [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1. [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 3. **ポータル アクション** > **メンテナンス モードを有効にする** に移動します。
 
@@ -45,6 +45,9 @@ ms.locfileid: "2709940"
 
     - **カスタム ページの URL**: このフィールドはカスタム HTML ページを表示するオプションを選択した場合にのみ有効になります。 提供するページの URL が一般にアクセス可能である必要があります。 指定した HTML ページにアクセスできない場合は、既定のページが管理者へのメモとともに表示されます。
 
+        > [!NOTE]
+        > カスタム メンテナンス ページは、IFrame を使用してページを表示します。 したがって、ページには `x-frame-options:SAMEORIGIN` 応答ヘッダーを含めないでください。そうでなければ、ページは読み込まれません。
+
 5. **有効化** を選択します。 メンテナンス モードが有効化される間、ポータルは再起動して数分間使用できなくなります。 
 
     > [!div class=mx-imgBorder]
@@ -56,7 +59,7 @@ ms.locfileid: "2709940"
 
 ウェブサイトの予定されたメンテナンスが完了したら、ポータルでメンテナンス モードを無効にすることもできます これでポータル ユーザーは通常どおりすべての Web ページを参照してアクセスできます。
 
-1. [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1. [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 2. **ポータル アクション** > **メンテナンス モードを構成または無効にする** に移動します。
 

@@ -1,5 +1,5 @@
 ---
-title: 既定のソリューションを使用して PowerApps でカスタマイズ | MicrosoftDocs
+title: 既定のソリューションを使用して Power Apps でカスタマイズ | MicrosoftDocs
 description: 既定のソリューションをカスタマイズする方法を学習
 ms.custom: ''
 ms.date: 10/29/2018
@@ -22,16 +22,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0676d24ef79f2fe92da2971028a6e22fbdc76c62
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: da116f81addf057a5f3fd4c44264bc6305e7b884
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755184"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2869681"
 ---
 # <a name="use-the-common-data-services-default-solution"></a>Common Data Service の既定のソリューションを使用する  
   
- すべての PowerApps 環境に、次のソリューションがあります。
+ すべての Power Apps 環境に、次のソリューションがあります。
 -   **Common Data Service の既定のソリューション** - これはメーカーが環境内のカスタマイズのために既定で使用できる基本ソリューションです。
 -   **既定のソリューション**- これは環境内のすべてのソリューションからのすべてのカスタマイズを含む特別なソリューションです。 
 <!-- **Base Custom Controls Core** - This solution includes a core set of controls. Controls are used in user interface elements, such as fields, lists, and views. -->

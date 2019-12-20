@@ -16,18 +16,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1d763fd341c3537f908720ea9616b1646bda1745
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4a2f17995d92d09ad025d643589f5993041a2f96
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704836"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884828"
 ---
 # <a name="embed-a-canvas-app-on-a-model-driven-form"></a>モデル駆動型フォーム上にキャンバス アプリを埋め込む
 
@@ -45,9 +45,9 @@ ms.locfileid: "2704836"
 埋め込みキャンバス アプリの作業のガイドラインおよび発生する可能性がある問題のトラブルシューティングに役立つヒントについては、[埋め込みキャンバス アプリの作業のガイドライン](embedded-canvas-app-guidelines.md)を参照してください。
 
 ## <a name="see-also"></a>関連項目
-[PowerApps のキャンバス アプリとは?](../canvas-apps/getting-started.md) <br />
-[PowerApps のキャンバス アプリ コントロールの追加および構成](../canvas-apps/add-configure-controls.md) <br />
-[PowerApps のキャンバス アプリ コネクタの概要](../canvas-apps/connections-list.md) <br />
+[Power Apps のキャンバス アプリとは?](../canvas-apps/getting-started.md) <br />
+[Power Apps のキャンバス アプリ コントロールの追加および構成](../canvas-apps/add-configure-controls.md) <br />
+[Power Apps のキャンバス アプリ コネクタの概要](../canvas-apps/connections-list.md) <br />
 [埋め込み型キャンバス アプリケーションをモデル駆動フォームに追加する](embedded-canvas-app-add-classic-designer.md) <br />
 [モデル駆動型フォームの埋め込み型キャンバス アプリケーションを編集する](embedded-canvas-app-edit-classic-designer.md) <br />
 [モデル駆動フォームに埋め込まれたキャンバス アプリケーションの画面サイズと表示方向をカスタマイズする](embedded-canvas-app-customize-screen.md) <br />

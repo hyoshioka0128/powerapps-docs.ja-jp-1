@@ -9,16 +9,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: grhurl
 ms.reviewer: nkrb
-ms.openlocfilehash: 62a46acf98c8cdd93524f17b8a3a28ac999e325b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7fdade7a1476c05214483eaa9b766c9c709fc9cf
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749354"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861933"
 ---
 # <a name="implementing-the-facepile-component"></a>フェイスパイル コンポーネントの実装
 
-このサンプルは、PowerApps component framework を利用してコンポーネントを作成するリアクトの使用方法を示します。  フェイスパイル サンプルコンポーネントは、リアクトと Office UI Fabric リアクト コンポーネントに基づいて実装されます。 このコードは、言及したサードパーティ製ライブラリのベスト プラクティスを明らかにしない場合があります。
+このサンプルは、Power Apps component framework を利用してコンポーネントを作成するリアクトの使用方法を示します。  フェイスパイル サンプルコンポーネントは、リアクトと Office UI Fabric リアクト コンポーネントに基づいて実装されます。 このコードは、言及したサードパーティ製ライブラリのベスト プラクティスを明らかにしない場合があります。
 
 > [!div class="mx-imgBorder"]
 > ![応答 Facepile](../media/react-facepile.png "応答 Facepile")
@@ -29,7 +29,7 @@ ms.locfileid: "2749354"
 
 
 > [!IMPORTANT]
-> PowerApps ホスト アプリケーションは、リアクト上で機能しますが、バンドルするリアクトのバージョンはホストバージョンとは通信せず、そのバージョンにも依存しません。 リアクトの新規コピー (または自分のコンポーネントでバンドルしたサードパーティ ライブラリ) は、そのコントロールのすべてのインスタンスのホストページに読み込まれます。そのため、コンポーネントを追加する際に、どの程度の大きさのページを作成するかに注意してください。 この問題に対するソリューションは将来のリリースに含まれます。
+> Power Apps ホスト アプリケーションは、リアクト上で機能しますが、バンドルするリアクトのバージョンはホストバージョンとは通信せず、そのバージョンにも依存しません。 リアクトの新規コピー (または自分のコンポーネントでバンドルしたサードパーティ ライブラリ) は、そのコントロールのすべてのインスタンスのホストページに読み込まれます。そのため、コンポーネントを追加する際に、どの程度の大きさのページを作成するかに注意してください。 この問題に対するソリューションは将来のリリースに含まれます。
 
 ## <a name="manifest"></a>マニフェスト
 
@@ -49,13 +49,13 @@ ms.locfileid: "2749354"
 
 ## <a name="overview"></a>概要
 
-このサンプルは、サードパーティ製ライブラリに依存関係を追加する方法の例を示し、リアクトのために Office UI Fabric コンポーネントを活用する方法と PowerApps component framework とリアクト状態モデル間で双方向のデータ バインディングを実行する方法を紹介します。
+このサンプルは、サードパーティ製ライブラリに依存関係を追加する方法の例を示し、リアクトのために Office UI Fabric コンポーネントを活用する方法と Power Apps component framework とリアクト状態モデル間で双方向のデータ バインディングを実行する方法を紹介します。
 
 コンポーネントサンプルは 3 つの Office UI Fabric コンポーネントから構成されます: フェイスパイル、スライダー、チェックボックスとドロップダウンメニューです。 スライダーを移動すると、フェイスパイルのフェイスの数が変わります。 チェックボックス コンポーネントは、フェイスのフェードインやアウト、あるいは単に表示や非表示をコントロールし、ドロップダウンリストのオプションはフェイスのサイズをコントロールします。 値が設定されていない場合、フェイス番号は 3 に既定で設定されます。
 
 - コンポーネントが読み込まれると、スライダーはバインド属性値に設定されます。 `context.parameters.[property_name].attributes` プロパティは関連するメタデータを含みます。
-- イベント ハンドラーは、リアクト コンポーネントのプロップ内を通過されます。これにより、リアクト コンポーネントは値が変更されたホスト PowerApps component framework コントロールを通知できます。 イベント ハンドラーは、 **notifyOutputEvents** メソッドへの呼び出しが必要かどうかを判断します。
-- スライダーをスライドさせると、リアクトはバインド値を更新し、イベントハンドラーに応答しますバインド値を更新して、渡されたイベントハンドラーを呼び出します。 このハンドラー内では、呼び出しが **notifyOutputEvents** メソッドに実行されると、コントロールの [getOutputs](../reference/control/getoutputs.md) メソッドが非同期的に呼び出され、 PowerApps component framework に流れます。 
+- イベント ハンドラーは、リアクト コンポーネントのプロップ内を通過されます。これにより、リアクト コンポーネントは値が変更されたホスト Power Apps component framework コントロールを通知できます。 イベント ハンドラーは、 **notifyOutputEvents** メソッドへの呼び出しが必要かどうかを判断します。
+- スライダーをスライドさせると、リアクトはバインド値を更新し、イベントハンドラーに応答しますバインド値を更新して、渡されたイベントハンドラーを呼び出します。 このハンドラー内では、呼び出しが **notifyOutputEvents** メソッドに実行されると、コントロールの [getOutputs](../reference/control/getoutputs.md) メソッドが非同期的に呼び出され、 Power Apps component framework に流れます。 
 - フレームワーク ホストはバインド属性値を更新し、更新された値は [updateView](../reference/control/updateview.md) メソッドをトリガーするコンポーネントへと流れます。 その後コントロールは新しい値を持つリアクト コンポーネントを再表示します。
 
 
@@ -420,6 +420,7 @@ export const TestImages = {
 
 ### <a name="related-topics"></a>関連トピック
 
-[PowerApps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)<br />
-[PowerApps Component Framework API の参照](../reference/index.md)<br />
-[PowerApps Component Framework の概要](../overview.md)
+[サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
+[Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)<br />
+[Power Apps Component Framework API の参照](../reference/index.md)<br />
+[Power Apps Component Framework の概要](../overview.md)

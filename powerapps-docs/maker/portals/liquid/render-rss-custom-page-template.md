@@ -9,25 +9,25 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 240af2f54e153490794358dc1598b72a16fe1c38
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 998a233f5051c1445d56dbeeba1f2d7faff5811d
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757185"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862317"
 ---
 # <a name="create-a-custom-page-template-to-render-an-rss-feed"></a>RSS フィードを表示するカスタム ページ テンプレートを作成する
 この例では、ニュース記事の [RSS フィード](https://en.wikipedia.org/wiki/RSS) を表示するカスタム ページ テンプレートを Liquid および Web テンプレート ページ テンプレートを使用して作成します。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Web テンプレートを使用したソース コンテンツの保存](store-content-web-templates.md)  
 
-## <a name="step-1-create-a-new-powerapps-view"></a>ステップ 1: PowerApps ビューの新規作成
+## <a name="step-1-create-a-new-power-apps-view"></a>ステップ 1: Power Apps ビューの新規作成
 
-最初に、フィードのデータを読み込むのに使用する新しい PowerApps ビューを作成します。 この例では、Web ページのビューとし、このエンティティを使用して記事を保存します。 このビューを使用して、結果の並べ替えやフィルタリングの構成、Liquid テンプレートとして使用するエンティティ属性を列として含めることができます。
+最初に、フィードのデータを読み込むのに使用する新しい Power Apps ビューを作成します。 この例では、Web ページのビューとし、このエンティティを使用して記事を保存します。 このビューを使用して、結果の並べ替えやフィルタリングの構成、Liquid テンプレートとして使用するエンティティ属性を列として含めることができます。
 
 ![ページ テンプレートの編集](../media/edit-page-template.png "ページ テンプレートの編集")  
 
 ## <a name="step-2-create-a-web-template-for-rss-feed"></a>ステップ 2: RSS フィードの Web テンプレートを作成する
 
-このステップでは、RSS フィードに対して Web テンプレートを作成します。 このテンプレートは、Web サイトの特定の Web ページに適用されるため、そのページのタイトルおよび概要をフィードのタイトルおよび説明に使用します。 次に entityview タグを使用して、新しく作成されたニュース記事ビューを読み込みます。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [PowerApps Common Data Service エンティティ タグ](portals-entity-tags.md)。 Web テンプレートの **MIME の種類**フィールドも application/rss+xml に設定することに注意してください。 これは、テンプレートが描画された時の応答のコンテンツ タイプを示します。  
+このステップでは、RSS フィードに対して Web テンプレートを作成します。 このテンプレートは、Web サイトの特定の Web ページに適用されるため、そのページのタイトルおよび概要をフィードのタイトルおよび説明に使用します。 次に entityview タグを使用して、新しく作成されたニュース記事ビューを読み込みます。 [!INCLUDE[proc-more-information](../../../includes/proc-more-information.md)] [Power Apps Common Data Service エンティティ タグ](portals-entity-tags.md)。 Web テンプレートの **MIME の種類**フィールドも application/rss+xml に設定することに注意してください。 これは、テンプレートが描画された時の応答のコンテンツ タイプを示します。  
 
 ![RSS フィードの Web テンプレートの構成](../media/web-template-rss-feed.png "RSS フィードの Web テンプレートの構成")  
 
@@ -67,7 +67,7 @@ ms.locfileid: "2757185"
 
 ![RSS フィードの例](../media/rss-feed-example.png "RSS フィードの例")  
 
-この例では、カスタム RSS フィードを作成するために Lipuid、Web テンプレート、PowerApps ビュー、およびポータルのコンテンツ管理機能組み合わせる方法を紹介しました。 これらの機能の組み合わせは、任意のポータル アプリケーションに強力なカスタマイズ機能を追加します。
+この例では、カスタム RSS フィードを作成するために Lipuid、Web テンプレート、Power Apps ビュー、およびポータルのコンテンツ管理機能組み合わせる方法を紹介しました。 これらの機能の組み合わせは、任意のポータル アプリケーションに強力なカスタマイズ機能を追加します。
 
 ### <a name="see-also"></a>関連項目
 

@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: b361efd6a1f44485e9b7337e3e5b3a29c1a826d4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f2ef5f1f8f5cfd7eb7c81d1b8fba3c1c19736a10
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709632"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862537"
 ---
 # <a name="portal-checker"></a>ポータル チェッカー
 
@@ -45,7 +45,7 @@ ms.locfileid: "2709632"
 
 ポータル チェッカーを実行する方法を説明します。
 
-1.  [PowerApps ポータル管理センター](admin-overview.md) を開きます。
+1.  [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
 2.  **ポータルチェッカーの実行**へと移動します。
 

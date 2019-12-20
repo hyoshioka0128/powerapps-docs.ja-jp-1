@@ -13,16 +13,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 41eb896c56809d1ceb289e86ee427f7a1b9f18db
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9ff18386dcad8f0a3dec918cd0d3ea1f35326e72
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749243"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895069"
 ---
 # <a name="common-data-service-developer-guide"></a>Common Data Service 開発者ガイド
 
-PowerApps では、ユーザー、企業、独立系ソフトウェア ベンダー (ISV)、およびシステム インテグレーター (SI) に、基幹業務アプリを構築するための強力なプラットフォームを提供します。 サーバー側のロジック (プラグインとワークフロー)、業務プロセス フロー、高度なセキュリティ モデル、そして開発者がアプリを構築する拡張可能なプラットフォームなど、**Common Data Service** は、PowerApps の基盤となるデータ プラットフォームです。 
+Power Apps では、ユーザー、企業、独立系ソフトウェア ベンダー (ISV)、およびシステム インテグレーター (SI) に、基幹業務アプリを構築するための強力なプラットフォームを提供します。 サーバー側のロジック (プラグインとワークフロー)、業務プロセス フロー、高度なセキュリティ モデル、そして開発者がアプリを構築する拡張可能なプラットフォームなど、**Common Data Service** は、Power Apps の基盤となるデータ プラットフォームです。 
 
 Common Data Service を使用したアプリを作成するのに開発者がどのように貢献できるか多数の側面があります。 データ ソースとして Common Data Service を使用するコードでアプリケーションが構築できる一方、多くのプロジェクトでは、[モデル駆動型アプリ](/powerapps/maker/model-driven-apps/model-driven-app-overview) または [キャンバス アプリ](/powerapps/maker/canvas-apps/getting-started) を使用してユーザーのエクスペリエンスを生成します。 
 
@@ -44,12 +44,12 @@ Common Data Service は、ユーザーがコードを記述することなく、
 
 ## <a name="content-for-on-premises-deployments"></a>設置型展開の内容
 
-Common Data Service リリースは、オンプレミス展開では使用できません。 このガイドの内容は、設置型またはインターネット経由の展開 (IFD) のオプションに関する情報は含まれていません。 これらのオプションの関連情報については、[Dynamics 365 Customer Engagement (on-premises) 開発者ガイド](/dynamics365/customer-engagement/on-premises/developer/overview) を参照してください。
+Common Data Service リリースは、オンプレミス展開では使用できません。 このガイドの内容は、設置型またはインターネット経由の展開 (IFD) のオプションに関する情報は含まれていません。 これらのオプションに関する情報については、[Dynamics 365 Customer Engagement (on-premises) の開発者ガイド](/dynamics365/customerengagement/on-premises/developer/overview).を参照してください。
 
 > [!div class="nextstepaction"]
 > [はじめに](get-started-cds-developers.md)
 
 ### <a name="see-also"></a>関連項目
 
-[PowerApps for Developers](/powerapps/#pivot=home&panel=developer)<br/>
+[開発者向け Power Apps](/powerapps/#pivot=home&panel=developer)<br/>
 [モデル駆動型アプリの開発者ガイド](../model-driven-apps/overview.md)

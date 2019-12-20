@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4305fca9d8a343421bc1128a4d4dcc8103d373be
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b637d0a26acddad25dcfe56b5ad8067f34735398
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749220"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2859916"
 ---
 # <a name="security-model"></a>セキュリティ モデル
 
@@ -34,7 +34,7 @@ Common Data Service には、データの整合性とプライバシーを保護
 **レコードベースのセキュリティ**では、特定のレコードに対するアクセス権に重点を置いています。
 
 **フィールドレベルのセキュリティ**では、エンティティ内のビジネスに大きな影響を与える特定のフィールドへのアクセスを、指定されたユーザーまたはチームのみに制限します。
-ロールベースのセキュリティ、レコードベースのセキュリティ、およびフィールドレベルのセキュリティを組み合わせて、カスタム PowerApps アプリのユーザーの全体的なセキュリティ権限を定義します。
+ロールベースのセキュリティ、レコードベースのセキュリティ、およびフィールドレベルのセキュリティを組み合わせて、カスタム Power Apps アプリのユーザーの全体的なセキュリティ権限を定義します。
 
 開発者は、ユーザーのコンテキストでクエリが実行され、ユーザーが読み取る権限のあるレコードのみ返されることを知っておく必要があります。
 さらに、コードでは、セキュリティ ロールまたはチーム メンバーシップを通じてユーザー アカウントに割り当てられている特権に基づいてのみ操作を実行できます。

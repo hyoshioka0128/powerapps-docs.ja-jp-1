@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b0c576b8eab2b547c66a90f0693becf516b01207
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fd0499f48cfb5c02d8dab45b89bd38b753850ea1
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758593"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865516"
 ---
 # <a name="manage-custom-fields-in-an-entity"></a>エンティティのカスタム フィールドの管理
 すべてのエンティティの 1 つ以上のカスタム フィールドの作成および更新を行うことができます。 カスタム フィールドを作成する場合、フィールド名、表示名、および含まれるデータの種類などのプロパティ セットを指定します。 詳細については、[エンティティ属性のメタデータ](../../developer/common-data-service/entity-attribute-metadata.md) を参照してください。
@@ -106,5 +106,5 @@ ms.locfileid: "2758593"
 * [Common Data Service データベースを使用してアプリケーションを最初から作成する](../canvas-apps/data-platform-create-app-scratch.md)
 
 ## <a name="privacy-notice"></a>プライバシーに関する声明
-Microsoft PowerApps 共通データ モデルでは、ユーザー定義エンティティおよびフィールド名を収集し、診断システムに保存します。  この情報を使って、お客様の共通データ モデルを改善します。 作成者が作成するエンティティ名称とフィールド名称は、 Microsoft PowerApps コミュニティに通底するシナリオの理解に役立ち、組織に関連するスキーマなど、サービスの標準的なエンティティ カバレッジのギャップを確認する際に役立てられます。 これらのエンティティに関連付けられたデータベース テーブル内のデータは、Microsoft によりアクセスまたは使用されず、データベースがプロビジョニングされた地域の外部にレプリケーションされません。 注、しかし、カスタム エンティティおよびフィールド名は、地域間でレプリケーションされ、データ保持ポリシーに基づいて削除される可能性がある点に注意してください。 マイクロソフトは、[セキュリティ センター](https://www.microsoft.com/trustcenter/Privacy/default.aspx) で詳しく説明されているとおりにプライバシー保護に努めています。
+Microsoft Power Apps 共通データ モデルでは、ユーザー定義エンティティおよびフィールド名を収集し、診断システムに保存します。  この情報を使って、お客様の共通データ モデルを改善します。 作成者が作成するエンティティ名称とフィールド名称は、 Microsoft Power Apps コミュニティに通底するシナリオの理解に役立ち、組織に関連するスキーマなど、サービスの標準的なエンティティ カバレッジのギャップを確認する際に役立てられます。 これらのエンティティに関連付けられたデータベース テーブル内のデータは、Microsoft によりアクセスまたは使用されず、データベースがプロビジョニングされた地域の外部にレプリケーションされません。 注、しかし、カスタム エンティティおよびフィールド名は、地域間でレプリケーションされ、データ保持ポリシーに基づいて削除される可能性がある点に注意してください。 マイクロソフトは、[セキュリティ センター](https://www.microsoft.com/trustcenter/Privacy/default.aspx) で詳しく説明されているとおりにプライバシー保護に努めています。
 

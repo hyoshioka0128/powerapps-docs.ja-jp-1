@@ -20,20 +20,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8b1b38c94cbd4615ff0ab449944e65089865a823
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: c13838bdd957d78552d71636b4a165902154e82c
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2758725"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865728"
 ---
 # <a name="define-alternate-keys-using-solution-explorer"></a>ソリューション エクスプローラーを使用した代替キーの定義
 
 ソリューション エクスプローラーでは、Common Data Service の代替キーを表示および作成する方法を提供します。
 
-[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ではほとんどの一般的なオプションを構成することができますが、ソリューション エクスプローラーを使用して設定する必要があるオプションもあります。 <br />詳細: 
+[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ではほとんどの一般的なオプションを構成することができますが、ソリューション エクスプローラーを使用して設定する必要があるオプションもあります。 <br />詳細: 
 - [レコードを参照する代替キーの定義](define-alternate-keys-reference-records.md)<br />
-- [PowerApps ポータルを使用して代替キーを定義する](define-alternate-keys-portal.md)
+- [Power Apps ポータルを使用して代替キーを定義する](define-alternate-keys-portal.md)
 
 ## <a name="open-solution-explorer"></a>ソリューション エクスプローラーを開きます
 
@@ -72,5 +72,5 @@ ms.locfileid: "2758725"
 ### <a name="see-also"></a>関連項目
 
 [レコードを参照する代替キーの定義](define-alternate-keys-reference-records.md)<br />
-[PowerApps ポータルを使用して代替キーを定義する](define-alternate-keys-portal.md)<br />
+[Power Apps ポータルを使用して代替キーを定義する](define-alternate-keys-portal.md)<br />
 [開発者向けドキュメント: エンティティの代替キーを定義](/dynamics365/customer-engagement/developer/define-alternate-keys-entity)

@@ -1,8 +1,8 @@
 ---
-title: PowerApps でのデータフローの作成と使用について | MicrosoftDocs
-description: PowerApps でのデータフローの作成と使用について説明します
+title: Power Apps でのデータフローの作成と使用について | MicrosoftDocs
+description: Power Apps でのデータフローの作成と使用について説明します
 ms.custom: ''
-ms.date: 08/05/2019
+ms.date: 12/05/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,25 +23,24 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5ad261f668c36e623b35e619e4d573401f3b547a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c1f58228cb86ae7415739f5e6ffe4b3175b87b0d
+ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705804"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "2895041"
 ---
-# <a name="create-and-use-dataflows-in-powerapps"></a>PowerApps でのデータフローの作成と使用について
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# <a name="create-and-use-dataflows-in-power-apps"></a>Power Apps でのデータフローの作成と使用について
 
-PowerApps にて利用可能となった高度なデータ プレパレーションでは、データフローと呼ばれるデータの集合を作成することができます。ここでは、様々なソースのビジネスデータとの接続、データの保全、データの変換、変換したデータの Common Data Service あるいは Azure Data Lake Gen2 ストレージのアカウントへの読み込み、を行うことができます。
+Power Apps にて利用可能となった高度なデータ プレパレーションでは、データフローと呼ばれるデータの集合を作成することができます。ここでは、様々なソースのビジネスデータとの接続、データの保全、データの変換、変換したデータの Common Data Service あるいは Azure Data Lake Gen2 ストレージのアカウントへの読み込み、を行うことができます。
 
-データフローは、 PowerApps サービス内の環境で作成、管理されるエンティティ (テーブルと類似しています) の集合です。 データフローが作成された環境から直接、データフローにエンティティを追加、編集することができ、データの更新スケジュールの管理もすることができます。
+データフローは、 Power Apps サービス内の環境で作成、管理されるエンティティ (テーブルと類似しています) の集合です。 データフローが作成された環境から直接、データフローにエンティティを追加、編集することができ、データの更新スケジュールの管理もすることができます。
 
-PowerApps ポータルでのデータフローの作成が完了したら、 Common Data Service コネクタまたは Power BI Desktop データフローコネクタを使用してデータを取得することが出来ます。このどちらを使用するかはデータフローの作成先によって変わります。
+Power Apps ポータルでのデータフローの作成が完了したら、 Common Data Service コネクタまたは Power BI Desktop データフローコネクタを使用してデータを取得することが出来ます。このどちらを使用するかはデータフローの作成先によって変わります。
 
 データフローの使用にあたっては3つの主要な手順があります:
 
-1.  PowerApps にてデータフローを作成します。 出力されたデータを読み込む場所 (データの取得元) と、Power Query の手順を選択し、専用のMicrosoft ツールを使用してデータの変換を行います。
+1.  Power Apps にてデータフローを作成します。 出力されたデータを読み込む場所 (データの取得元) と、Power Query の手順を選択し、専用のMicrosoft ツールを使用してデータの変換を行います。
 
 2.  スケジュールのデータフローが実行されます。 これはデータフローが読み込み、変換するデータを Power Platform データフローが更新する頻度です。
 
@@ -52,10 +51,8 @@ PowerApps ポータルでのデータフローの作成が完了したら、 Com
 ## <a name="create-a-dataflow"></a>データフローの作成
 データフローはひとつの環境内に作成されます。 したがって、それらの表示や管理は同環境からのみ行うことができます。 また、ワークフローでデータのデータを抽出するユーザーは、レコードを作成した環境へのアクセスができる必要があります。
 
-> [!NOTE]
-> 既定の環境で Azure Data Lake Storage Gen2 にデータを読み込むデータフローの作成には、現在対応していません。
 
-1.  PowerAppsにサインインし、自分がどの環境に割り当てられているかを確認し、コマンド バーの右側に環境スイッチャーがあることを確認してください。
+1.  Power Appsにサインインし、自分がどの環境に割り当てられているかを確認し、コマンド バーの右側に環境スイッチャーがあることを確認してください。
 
     ![環境スイッチャー](media/environment-switcher.png)
 

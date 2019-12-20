@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 72f5ad809983738526a03f306c3479f53745d991
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2d9c6692f26e16b03872696b094ccd14a649299f
+ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755404"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2873182"
 ---
 # <a name="distribute-a-model-driven-app-using-a-solution"></a>ソリューションを使用してモデル駆動型アプリを配布する
 
@@ -38,7 +38,7 @@ ms.locfileid: "2755404"
 ## <a name="add-an-app-to-a-solution"></a>ソリューションへのアプリの追加
 アプリを配布するために、ソリューションを作成してアプリをエクスポート用にパッケージできるようにします。
 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 2. **ソリューション** を選択し、**新しいソリューション** を選択します。
 3. **新しいソリューション** ページのフィールドに入力し、**保存** を選択します。 詳細: [ソリューションの作成](../common-data-service/create-solution.md)
@@ -66,7 +66,7 @@ ms.locfileid: "2755404"
 ## <a name="import-a-solution"></a>ソリューションのインポート  
 インポートするアプリを含むソリューション ZIP ファイルを受け取ったとき、ソリューションのコンポーネント ページを開いて、ソリューションをインポートします。 ソリューションが正常にインポートされると、環境でアプリを使用できるようになります。
 
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 2. **ソリューション** を選択し、ツール バーで **インポート** を選択します。
 3. インポートするファイルを参照し、**次へ** を選択します。

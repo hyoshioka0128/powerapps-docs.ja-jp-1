@@ -1,8 +1,8 @@
 ---
-title: PowerApps でリスト ビューに値とともにユーザー定義アイコンを表示 | MicrosoftDocs
+title: Power Apps でリスト ビューに値とともにユーザー定義アイコンを表示 | MicrosoftDocs
 description: ビューにユーザー定義アイコンを表示する方法を説明する
 ms.custom: ''
-ms.date: 02/14/2019
+ms.date: 11/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,32 +22,33 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e1facad3d5d6cb95e0441800f4d743d429f50787
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5a8eec0d7079b748b5b70c623c794b403b399ea2
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705496"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861076"
 ---
 # <a name="display-custom-icons-alongside-values-in-list-views"></a>リスト ビューに値とともにユーザー定義アイコンを表示
 
 <a name="GridIcons"></a>   
 
- PowerApps 環境の管理者とカスタマイザーは、ビューにグラフィックスを追加して、JavaScriptを使用した列の値に基づいてグラフィックを選択するために使用するロジックを設定できます。 この機能により、テキストまたは数値とともにアイコンを表示するリスト ビューをカスタマイズできます。 
+ Power Apps 環境の管理者とカスタマイザーは、ビューにグラフィックスを追加して、JavaScriptを使用した列の値に基づいてグラフィックを選択するために使用するロジックを設定できます。 この機能により、テキストまたは数値とともにアイコンを表示するリスト ビューをカスタマイズできます。 
+
+この例では、Dynamics 365 Sales などの特定のアプリで使用できる営業案件エンティティのビューにユーザー定義アイコンを表示します。 ユーザー定義エンティティだけでなく、取引先企業エンティティや顧客エンティティなど、他の標準エンティティとともにビューにユーザー定義アイコンを表示できます。 
 
 > [!div class="mx-imgBorder"] 
 > ![](media/icon-in-opportunity-view.png "All Opportunities view with Rating column displaying icons and text value")
   
-> [!NOTE]
->  グリッド アイコンは、Web インターフェイスにのみ表示されます。 [!INCLUDE[pn_Outlook_short](../../includes/pn-outlook-short.md)] やモバイル アプリでは表示されません。  
+リスト ビューのユーザー定義アイコンは、統一インターフェイス、レガシ Web クライアント、モバイル アプリ、および Outlook 用アプリで表示できます。 
   
-### <a name="add-custom-graphics-and-javascript-as-web-resources"></a>Webリソースのようなユーザー定義のグラフィックおよびJavaScriptの追加  
+## <a name="add-custom-graphics-and-javascript-as-web-resources"></a>Webリソースのようなユーザー定義のグラフィックおよびJavaScriptの追加  
   
 1.  カスタマイズに必要な新しいグラフィック ファイルを作成します。 16 x 16 ピクセル アイコンのサイズをお勧めします (より大きな画像は縮小されます)。  
   
-2.  どの値にどのアイコンを表示するかを確定する 1 つ以上の JavaScript 関数を書き込みます (通常、カスタマイズする列ごとに 1 つの関数が必要になります)。 各関数は、イメージ名およびツールヒントのテキストを含む配列を入力して返すように、行データ オブジェクトおよび言語 (LCID) コードを受け入れる必要があります。 関数の例については、このトピックの後半にある「[サンプル JavaScript 関数](#SampleJavascript)」を参照してください。  
+2.  どの値にどのアイコンを表示するかを確定する 1 つ以上の JavaScript 関数を書き込みます (通常、カスタマイズする列ごとに 1 つの関数が必要になります)。 各関数は、イメージ名およびツールヒントのテキストを含む配列を入力して返すように、行データ オブジェクトおよび言語 (LCID) コードを受け入れる必要があります。 関数の例については、この記事の後半にある [サンプル JavaScript 関数](#SampleJavascript) を参照してください。  
   
-3.  管理者としてお使いの環境にサインインして、ソリューション エクスプローラーを開きます。  
+3.  管理者としてお使いの環境にサインインして、[ソリューション エクスプローラー](../model-driven-apps/advanced-navigation.md#solution-explorer)を開きます。  
   
 4.  **既定のソリューション**のポップアップ ウィンドウが開きます。 ここで、**コンポーネント** > **Web リソース**に順に移動します。  
   
@@ -95,7 +96,7 @@ ms.locfileid: "2705496"
   
 14. 必要に応じて、各エンティティ、ビュー、および列に対してこれらの手順を繰り返します。  
   
-15. 準備ができたら、**すべてのカスタマイズの公開**を選択して変更を公開します。 その後、**既定のソリューション**ウィンドウを閉じます。  
+15. 準備ができたら、 **すべてのカスタマイズの公開** を選択して、変更を公開します。 その後、**既定のソリューション**ウィンドウを閉じます。  
   
 <a name="SampleJavascript"></a>   
 
@@ -162,7 +163,27 @@ function displayIconTooltip(rowData, userLCID) {
   
  <!-- This results in displaying icons with tooltips in the **Rating** column that depend on the value in each row. The result could look like this:  
   
- ![Custom column graphics example](../customize/media/custom-column-graphics-example.png "Custom column graphics example")  -->
+ ![Custom column graphics example](../customize/media/custom-column-graphics-example.png "Custom column graphics example")  --> 
+
+## <a name="custom-icon-view-display-behavior"></a>ユーザー定義アイコン ビューの表示動作
+### <a name="primary-fields"></a>プライマリ フィールド 
+グリッド リスト ビューでは、エンティティのプライマリ フィールドに適用されたユーザー定義アイコンが、既定のシステム生成アイコンに置き換わります。 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/mobile-primary-field-custom-icon-display.png "Primary field replaces default icon in the custom icon view")
+
+### <a name="other-fields"></a>その他のフィールド 
+グリッド リスト ビューでは、エンティティのプライマリ フィールドではないフィールドに適用されたユーザー定義アイコンは、既定のシステム生成アイコンに加えて、セカンダリ アイコンとして表示されます。 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/card-form-not-primary-field.png "Not an entity primary field custom icon view")
+
+### <a name="card-forms"></a>カード フォーム
+ビューがカード フォームを使用するように設定されている場合、既定のシステム生成アイコンはユーザー定義アイコンに置き換わります。 
+
+> [!div class="mx-imgBorder"] 
+> ![](media/card-view-icon-display.png "Card view custom icon view")
+
  
  ### <a name="see-also"></a>関連項目
 [モデル駆動型アプリのビューについて](../model-driven-apps/create-edit-views.md)

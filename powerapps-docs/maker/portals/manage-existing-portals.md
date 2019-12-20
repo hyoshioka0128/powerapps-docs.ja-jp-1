@@ -1,6 +1,6 @@
 ---
-title: PowerApps の既存ポータルの管理 | Microsoft Docs
-description: PowerApps のポータルを管理するための手順。
+title: Power Apps の既存ポータルの管理 | Microsoft Docs
+description: Power Apps のポータルを管理するための手順。
 author: sbmjais
 manager: shujoshi
 ms.service: powerapps
@@ -9,16 +9,16 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: 82fbc5d8cafa6af13af63eaff106ea028830bd01
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0921e39c93b5f63a3f9a0ea038fd97389ea2b968
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756971"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883900"
 ---
-# <a name="manage-existing-portals-in-powerapps"></a>PowerApps で既存のポータルを管理する
+# <a name="manage-existing-portals-in-power-apps"></a>Power Apps で既存のポータルを管理する
 
-ポータルを作成すると、PowerApps のホームページの **最近のアプリ** セクションに表示されます。
+ポータルを作成すると、Power Apps のホームページの **最近のアプリ** セクションに表示されます。
 
 > [!div class=mx-imgBorder]
 > ![最近のアプリ](media/recent-apps.png "最近のアプリ")  
@@ -30,7 +30,7 @@ ms.locfileid: "2756971"
 
 ## <a name="edit"></a>編集
 
-[PowerApps ポータル Studio](portal-designer-anatomy.md) を開き、コンテンツおよびポータルのコンポーネントを編集します。  
+[Power Apps ポータル Studio](portal-designer-anatomy.md) を開き、コンテンツおよびポータルのコンポーネントを編集します。  
 
 > [!div class=mx-imgBorder]
 > ![ポータル作成元](media/portal-maker.png "ポータル作成元")  
@@ -42,7 +42,7 @@ ms.locfileid: "2756971"
 > [!div class=mx-imgBorder]
 > ![ポータル Web サイト](media/portal-website.png "ポータル Web サイト")  
 
-または、Web サイトでの変更を表示するには、[PowerApps ポータル Studio](portal-designer-anatomy.md) での  **ｗeb サイトのブラウザー** を選択することで、Web サイトを閲覧するためにポータルを開くこともできます。 Web サイトは、Web サイトの URL を含む新しいタブで開きます。
+または、Web サイトでの変更を表示するには、[Power Apps ポータル Studio](portal-designer-anatomy.md) での  **ｗeb サイトのブラウザー** を選択することで、Web サイトを閲覧するためにポータルを開くこともできます。 Web サイトは、Web サイトの URL を含む新しいタブで開きます。
 
 ## <a name="share"></a>共有
 
@@ -91,7 +91,7 @@ ms.locfileid: "2756971"
 
 ## <a name="settings"></a>設定
 
-ポータル設定を表示して、ポータルの名前を変更できるようにします。 また、PowerApps ポータルの管理センターを通したポータル管理や、サイト設定を使用した作業など、高度な操作も実行できます。 構成では、PowerApps ポータル管理センターとサイトの設定へのリンクが提供されます。 詳細: [高度なポータル管理](admin/admin-overview.md) および [サイト設定の構成](configure/configure-site-settings.md)。  
+ポータル設定を表示して、ポータルの名前を変更できるようにします。 また、Power Apps ポータルの管理センターを通したポータル管理や、サイト設定を使用した作業など、高度な操作も実行できます。 構成では、Power Apps ポータル管理センターとサイトの設定へのリンクが提供されます。 詳細: [高度なポータル管理](admin/admin-overview.md) および [サイト設定の構成](configure/configure-site-settings.md)。  
 
 > [!div class=mx-imgBorder]
 > ![ポータル設定](media/portal-settings.png "ポータル設定")  

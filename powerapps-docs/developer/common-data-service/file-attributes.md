@@ -14,19 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d4ede198c1f81d4181ad3bb40a0717b9da7e44b7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 30123b2e89b6c4c4432a7042e7cac26fcd8191cf
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752979"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861775"
 ---
 # <a name="file-attributes"></a>ファイル属性
 
 ファイル属性は、指定した最大サイズまでファイル データを格納するために使用されます。 カスタム、またはカスタマイズ可能なエンティティは、ゼロ以上のファイル属性に加えて、各メモに 0 から 1 の添付ファイル付きのメモ (注釈) コレクションを持つことができます。 ファイル属性の <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName> は `EntityFile` です。
 
 > [!NOTE]
-> 現在、新しいファイル属性と拡張イメージ属性の機能は、Microsoft データ センターに、徐々にロールアップされています。 組織が更新をまだ受け取っていない場合もあります。 カスタマイズ可能なエンティティまたはユーザー定義エンティティに新しいフィールドを一時的に追加し、"ファイル" がサポートされているフィールド データの種類リストで使用可能かどうかを確認することにより、ファイル属性サポートについて定期的に組織を確認できます。 **データ** > **エンティティ** の PowerApps または **設定** > **カスタマイズ** の クラシック Web アプリケーションでこれを行います。
+> 現在、新しいファイル属性と拡張イメージ属性の機能は、Microsoft データ センターに、徐々にロールアップされています。 組織が更新をまだ受け取っていない場合もあります。 カスタマイズ可能なエンティティまたはユーザー定義エンティティに新しいフィールドを一時的に追加し、"ファイル" がサポートされているフィールド データの種類リストで使用可能かどうかを確認することにより、ファイル属性サポートについて定期的に組織を確認できます。 **データ** > **エンティティ** の Power Apps または **設定** > **カスタマイズ** の クラシック Web アプリケーションでこれを行います。
 
 Web API (REST) | .NET API (SOAP)
 ------- | -------

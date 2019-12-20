@@ -1,5 +1,5 @@
 ---
-title: PowerApps で翻訳用にカスタマイズされたエンティティとフィールド テキストをエクスポートする | MicrosoftDocs
+title: Power Apps で翻訳用にカスタマイズされたエンティティとフィールド テキストをエクスポートする | MicrosoftDocs
 description: エンティティとフィールド テキストの変換のエクスポート方法を説明する
 ms.custom: ''
 ms.date: 06/19/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f14cf61f6f09df50a4245116b23f82bd2e147ef1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9061b953aff67a4fa98c342f89dbc3bf20c4ff93
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2705276"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863734"
 ---
 # <a name="translate-customized-entity-and-field-text-into-other-languages"></a>カスタマイズされたエンティティおよびフィールド テキストを他の言語に翻訳する
 
@@ -42,7 +42,7 @@ ms.locfileid: "2705276"
 
 ## <a name="community-tools"></a>コミュニティ ツール
 
-[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) は PowerApps 向けに XrmToolbox コミュニティが開発したツールです。 Easy Translator を使用して、翻訳をコンテキスト情報と共にエクスポートおよびインポートします。 
+[Easy Translator](https://www.xrmtoolbox.com/plugins/MsCrmTools.Translator/) は Power Apps 向けに XrmToolbox コミュニティが開発したツールです。 Easy Translator を使用して、翻訳をコンテキスト情報と共にエクスポートおよびインポートします。 
 
 > [!NOTE]
 > このコミュニティ ツールは Microsoft ではサポートされていません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。

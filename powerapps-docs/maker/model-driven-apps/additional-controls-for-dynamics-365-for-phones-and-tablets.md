@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dc5f2c366d77ca49e5103c89d7114f1defd44b52
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d2883f0912f9708acf8c24b5ec32996cb96ad3c6
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752357"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863601"
 ---
 # <a name="additional-controls-for-dynamics-365-for-phones-and-tablets"></a>電話およびタブレット PC 用 Dynamics 365 の追加のコントロール 
 
@@ -155,7 +155,7 @@ ms.locfileid: "2752357"
  URL フィールドをマップし、Web サイトのプレビューを表示するには、Web サイト プレビュー コントロールを使用します。  
   
 > [!IMPORTANT]
->  このコントロールを有効にすることで、ユーザーがデバイスを特定できる特定の情報を外部システムと共有することに同意するものとします。 外部システムから PowerApps アプリ、Dynamics 365 Sales、Dynamics 365 Customer Service などの Dynamics 365アプリにインポートされたデータは、[Microsoft のプライバシーと Cookie](https://go.microsoft.com/fwlink/p/?LinkId=521839) のプライバシーに関する声明の対象となります。  
+>  このコントロールを有効にすることで、ユーザーがデバイスを特定できる特定の情報を外部システムと共有することに同意するものとします。 外部システムから Power Apps アプリ、Dynamics 365 Sales、Dynamics 365 Customer Service などの Dynamics 365アプリにインポートされたデータは、[Microsoft のプライバシーと Cookie](https://go.microsoft.com/fwlink/p/?LinkId=521839) のプライバシーに関する声明の対象となります。  
 >   
 >  [プライバシーに関する声明](use-the-form-editor-legacy.md#BKMK_PrivacyNotices)  
   

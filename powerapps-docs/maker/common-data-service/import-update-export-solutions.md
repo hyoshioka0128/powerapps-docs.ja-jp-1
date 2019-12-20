@@ -1,6 +1,6 @@
 ---
 title: ソリューションのインポート、更新およびエクスポート| MicrosoftDocs
-description: PowerApps でソリューションのインポート、更新およびエクスポートする方法について
+description: Power Apps でソリューションのインポート、更新およびエクスポートする方法について
 ms.custom: ''
 ms.date: 09/30/2019
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: de2c4a4ecefe303f607a9d7f19d892eae2c4bffb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d726860afa8aa2f3cdbb60ede7c549df4da424d2
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701580"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884709"
 ---
 # <a name="import-update-and-export-solutions"></a>ソリューションのインポート、更新およびエクスポート 
 
@@ -93,12 +93,12 @@ ms.locfileid: "2701580"
 <a name="BKMK_ExportSolutions"></a>   
 
 ## <a name="export-solutions"></a>エクスポート ソリューション  
- カスタマイズを使用またはエクスポートするには、アンマネージド ソリューションを作成することをお勧めします。 その後、カスタマイズを定期的にエクスポートすることで、万一のためのバックアップを持つことができます。 管理ソリューションはエクスポートできません。 PowerApps からソリューションをエクスポートするか、またはクラシック エクスペリエンスを使用してエクスポートすることができます。 
+ カスタマイズを使用またはエクスポートするには、アンマネージド ソリューションを作成することをお勧めします。 その後、カスタマイズを定期的にエクスポートすることで、万一のためのバックアップを持つことができます。 管理ソリューションはエクスポートできません。 Power Apps からソリューションをエクスポートするか、またはクラシック エクスペリエンスを使用してエクスポートすることができます。 
  
 > [!IMPORTANT]
 > 既定のソリューションのエクスポートはサポートされていません。 
 
-### <a name="export-from-powerapps"></a>PowerApps からのエクスポート
+### <a name="export-from-power-apps"></a>Power Apps からのエクスポート
   
 1.  左のナビゲーション ウィンドウから、**ソリューション**を選択します。   
   
@@ -134,7 +134,7 @@ ms.locfileid: "2701580"
 <a name="BKMK_SettingsOptionsOnSolutionExport"></a>  
  
 ## <a name="settings-options-for-solution-export"></a>ソリューション エクスポートのオプションの設定  
- PowerApps からソリューションをエクスポートする場合は、このセクションを無視してください。 次の表には、クラシック エクスペリエンスからソリューションをエクスポートするときに使用できるオプションが示されます。  
+ Power Apps からソリューションをエクスポートする場合は、このセクションを無視してください。 次の表には、クラシック エクスペリエンスからソリューションをエクスポートするときに使用できるオプションが示されます。  
   
 |グループ|設定|説明|  
 |-----------|-------------|-----------------|  

@@ -1,5 +1,5 @@
 ---
-title: PowerApps を使用してモデル駆動型アプリを共有する | Microsoft Docs
+title: Power Apps を使用してモデル駆動型アプリを共有する | Microsoft Docs
 description: モデル駆動型アプリを共有する方法を説明します
 documentationcenter: ''
 author: Mattp123
@@ -10,39 +10,55 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 03/19/2019
+ms.date: 11/18/2019
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1c44bd0ce65bd995d79f291bd6af36193c4165a5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f11eebcb220ff877b0cd750f2d94338cadc5ceea
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711084"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884017"
 ---
-# <a name="share-a-model-driven-app-with-powerapps"></a>PowerApps を使用してモデル駆動型アプリを共有する
+# <a name="share-a-model-driven-app-with-power-apps"></a>Power Apps を使用してモデル駆動型アプリを共有する
 
 [!INCLUDE [powerapps](../../includes/powerapps.md)] アプリは、共有にロールベースのセキュリティを使用します。 ロールベースのセキュリティの基本概念は、セキュリティ ロールにはアプリ内で実行できる一連の操作を定義する特権が含まれるということです。 すべてのアプリ ユーザーは、これらの中で 1 つ以上の定義済みロールまたはユーザー定義ロールに割り当てられる必要があります。 または、チームにもロールを割り当てることができます。 これらのロールのいずれかにユーザーまたはチームを割り当てると、そのロールに関連付けられた一連の特権がユーザーまたはチーム メンバーに付与されます。 
-
-このトピックでは、他のユーザーが使用できるように、モデル駆動型アプリを共有するためのタスクを実行します。 以下の方法を説明します。
-- カスタム セキュリティ ロールの作成
-- ユーザー定義のセキュリティ ロールへのユーザーの割り当て
-- アプリに対するセキュリティ ロールの割り当て
 
 ## <a name="prerequisites"></a>前提条件
 アプリを共有するには、[!INCLUDE [powerapps](../../includes/powerapps.md)] 環境管理者またはシステム管理者ロールが必要です。 
 
-## <a name="sign-in-to-powerapps"></a>PowerApps へのサインイン
-[PowerApps](https://powerapps.microsoft.com/) にサインインします。 まだ [!INCLUDE [powerapps](../../includes/powerapps.md)] アカウントを持っていない場合、**無料で使用開始**リンクを選択します。
+## <a name="share-your-app-for-basic-use"></a>基本使用のためにアプリを共有する
+アプリ ユーザーが環境内でアプリを実行し、所有するレコードに対して一般的なタスクを実行できるように特権を追加するには、**Common Data Service のユーザー** セキュリティ ロールを使用します。
+1.  [Power Apps](https://web.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) サイトで **アプリ** を選択し、共有したいモデル駆動型アプリの横の **…** を選択し、その後 **共有** を選択します。 
+    > [!IMPORTANT]
+    > モデル駆動型アプリを共有する手順は、キャンバス アプリとは異なります。 キャンバス アプリを共有する手順については、[Power Apps でキャンバスアプリを共有する](../canvas-apps/share-app.md) を参照してください。 
 
-## <a name="share-an-app"></a>アプリの共有 
-トピックは、犬と猫のサービスを提供するペット グルーミング ビジネスを持つ Contoso に従います。 ペット グルーミング ビジネスを追跡するためのユーザー定義エンティティを含むアプリが既に作成して公開されています。 ここでは、ペット グルーミング担当者が使用できるようにアプリを共有する必要があります。 アプリを共有するには、管理者またはアプリ作成者がユーザーとアプリに 1 つ以上のセキュリティ ロールを割り当てます。 
+2.  **ユーザーをセキュリティ ロールに割り当てる** で、**セキュリティ ユーザー** を選択します。
+3.  有効化されたユーザーのリストから、アプリへのアクセスを許可するユーザーを選択し、コマンドバーで **ロールの管理** を選択します。 
+4.  **ユーザー ロールの管理** ダイアログ ボックスで、**Common Data Service ユーザー** セキュリティ ロールを選び、**OK**.を選びます。 
 
-## <a name="create-or-configure-a-security-role"></a>セキュリティ ロールの作成または構成
+    > [!div class="mx-imgBorder"] 
+    > ![](media/share-model-driven-app/select-common-data-service-user.png "Select Common Data Service User")
+
+5. [アプリのセキュリティ ロールの追加](#add-security-roles-to-the-app)
+6. [アプリへのリンクの共有](#share-the-link-to-your-app)
+
+Common Data Service ユーザーセキュリティ ロールを持つユーザーがアプリにアクセスできるようになりました。 
+
+## <a name="share-a-model-driven-app-for-specific-use"></a>特定用途のためにモデル駆動型アプリを共有する
+このセクションでは、それぞれがユーザーのニーズに固有の2つのセキュリティロールを使用して、モデル駆動型アプリを共有するためのタスクを実行します。 以下の方法を説明します。
+- カスタム セキュリティ ロールの作成
+- ユーザー定義のセキュリティ ロールへのユーザーの割り当て
+- アプリに対するセキュリティ ロールの割り当て
+
+### <a name="tutorial-overview"></a>チュートリアルの概要 
+このセクションでは、犬と猫のサービスを提供するペット グルーミング ビジネスをおこなう会社、藤原 について説明します。 ペット グルーミング ビジネスを追跡するためのユーザー定義エンティティを含むアプリが既に作成して公開されています。 ここでは、ペット グルーミング担当者が使用できるようにアプリを共有する必要があります。 アプリを共有するには、管理者またはアプリ作成者がユーザーとアプリに 1 つ以上のセキュリティ ロールを割り当てます。 
+
+### <a name="create-or-configure-a-security-role"></a>セキュリティ ロールの作成または構成
 [!INCLUDE [powerapps](../../includes/powerapps.md)] 環境には、[定義済みのセキュリティ ロール](#about-predefined-security-roles)が用意されています。これらのセキュリティ ロールは、一般的なユーザー タスクを反映し、アプリの使用に必要な最小限の業務データへのアクセスを許可する、というセキュリティのベスト プラクティスの目的に沿うようにアクセス レベルが定義されています。 Contoso ペット グルーミング アプリはユーザー定義エンティティに基づいている点を思い出してください。 エンティティはユーザー定義であるため、ユーザーが作業するには特権が明示的に指定されている必要があります。 これを行うには、次のいずれかの操作を行うように選択します。
 - ユーザー定義エンティティに基づいてレコードに特権が含まれるようにするには、あらかじめ定義されたセキュリティ ロールを展開します。 
 - アプリのユーザーに対して特権を作成する目的でユーザー定義のセキュリティ ロールを作成します。 
@@ -53,12 +69,12 @@ ms.locfileid: "2711084"
 
 アクセス権とスコープ特権の詳細については、「[セキュリティ ロール](https://docs.microsoft.com/dynamics365/customer-engagement/admin/security-roles-privileges#security-roles)」を参照してください。
 
-## <a name="create-a-custom-security-role"></a>カスタム セキュリティ ロールの作成
-1. [!INCLUDE [powerapps](../../includes/powerapps.md)] サイトで、**アプリ** > **…**> **共有リンク** を選択します。
+### <a name="create-a-custom-security-role"></a>カスタム セキュリティ ロールの作成
+1.  [!INCLUDE [powerapps](../../includes/powerapps.md)] サイトで **アプリ**を選択し、共有したいモデル駆動型アプリの横の **…** を選択し、その後 **共有** を選択します。
 
 2. **このアプリの共有** ダイアログの **セキュリティ ロールの作成** で、**セキュリティ設定** を選択します。
 
-3. **設定** ページで **新規** を選びます。  
+3. **すべてのロール** ページで、**新規** を選択します。  
 
 4. セキュリティ ロール デザイナーでは、アクション (読み取り、書き込み、削除など) と、そのアクションを実行するためのスコープを選択します。 スコープにより、ユーザーが特定の処理を実行できる環境階層の高さが決まります。 **ロール名** ボックスで*ペット グルーミング技術者*と入力します。
 
@@ -86,20 +102,19 @@ ms.locfileid: "2711084"
 
 14. **保存して閉じる**を選択します。
 
-## <a name="assign-security-roles-to-users"></a>ユーザーへのセキュリティ ロールの割り当て
+### <a name="assign-security-roles-to-users"></a>ユーザーへのセキュリティ ロールの割り当て
 セキュリティ ロールは、一連のアクセス レベルとアクセス許可により、ユーザーのアクセスをコントロールします。 特定のセキュリティ ロールに含まれるアクセス許可とアクセス レベルの組み合わせにより、ユーザーが表示できるデータおよびユーザーのデータ使用方法を制限します。
 
-### <a name="assign-a-security-role-to-pet-grooming-technicians"></a>ペット グルーミング技術者へのセキュリティ ロールの割り当て
+#### <a name="assign-a-security-role-to-pet-grooming-technicians"></a>ペット グルーミング技術者へのセキュリティ ロールの割り当て
 1. **このアプリの共有** ダイアログの **セキュリティ ロールへのユーザーの割り当て** で、**セキュリティ ユーザー** を選択します。
-2. 表示される一覧で、ペット グルーマーを選択します。
-3. **ロールの管理**を選択します。
+2. 表示されたリストで、ペットグルーマーであるユーザーを選択し、コマンドバーで **役割の管理** を選択します。
 
     > [!div class="mx-imgBorder"] 
     > ![ロールを管理する](media/share-model-driven-app/select-users-for-security-roles.png)
 
-4. **ユーザー ロールの管理**ダイアログ ボックスで、前に作成した **ペット グルーミング技術者** セキュリティ ロールを選び、**OK** を選びます。
+3. **ユーザー ロールの管理**ダイアログ ボックスで、前に作成した **ペット グルーミング技術者** セキュリティ ロールを選び、**OK** を選びます。
 
-### <a name="assign-a-security-role-to-pet-grooming-schedulers"></a>ペット グルーミング スケジューラへのセキュリティ ロールの割り当て
+#### <a name="assign-a-security-role-to-pet-grooming-schedulers"></a>ペット グルーミング スケジューラへのセキュリティ ロールの割り当て
 1. **このアプリの共有** ダイアログの **セキュリティ ロールへのユーザーの割り当て** で、**セキュリティ ユーザー** を選択します。
 2. 表示される一覧で、ペット グルーミング スケジューラを選択します。
 3. **ロールの管理**を選択します。
@@ -107,27 +122,31 @@ ms.locfileid: "2711084"
 
 
 ## <a name="add-security-roles-to-the-app"></a>アプリのセキュリティ ロールの追加
-次に、1 つ以上のセキュリティ ロールをアプリに割り当てる必要があります。 ユーザーに割り当てられるセキュリティ ロールに基づいて、アプリにアクセスできます。
+1 つ以上のセキュリティ ロールをアプリに割り当てる必要があります。 ユーザーに割り当てられるセキュリティ ロールに基づいて、アプリにアクセスできます。
 1. **このアプリの共有** ダイアログ ボックスの **アプリへのセキュリティ ロールの追加** で、**マイ アプリ** を選択します。
-2. Contoso ペット グルーミング アプリのアプリ タイルの右下で、**その他のオプション (...)** を選択してから、**ロールの管理** を選択します。
+2. アプリのアプリ タイルの右下隅で、**その他のオプション (...)** を選択してから、**ロールの管理** を選択します。
 
     ![アプリのロールの管理](media/share-model-driven-app/manage-roles.png)
 
-4. **ロール** セクションで、すべてのセキュリティ ロールまたは特定のロールへのアプリケーションのアクセス権を付与するかどうかを選択できます。 先に作成した **ペット グルーミング スケジューラ** と **ペット グルーミング技術者** のロールを選択します。
+4. **ロール** セクションで、すべてのセキュリティ ロールまたは特定のロールへのアプリケーションのアクセス権を付与するかどうかを選択できます。 基本的なアプリのアクセスについては、**Common Data Service ユーザー** セキュリティ ロールを選択します。 より具体的にアクセスするには、別の基準、またはカスタムやカスタマイズされたセキュリティ ロールを選択してください。 たとえば、本セクションで前に作成した **ペット グルーミング スケジューラ** そして **ペット グルーミング技術者** ロールを選択します。 
 
     > [!div class="mx-imgBorder"] 
     > ![アプリのセキュリティ ロールの選択](media/share-model-driven-app/app-security-roles.png)
 
-5. **保存**を選びます。
+5. **保存**を選択します。 
  
+
+    > [!IMPORTANT]
+    >  **モデル駆動型アプリ** 特権に対して **作成** または **書き込み** を付与されたユーザーは、たとえ彼らがアプリへアクセスできるロールの一部となっていなくても。その環境ですべてのアプリへアクセスできます。
+    > ![モデル駆動型アプリの特権での作成および書き込み](media/app-access-cds.png)
+
 ## <a name="share-the-link-to-your-app"></a>アプリへのリンクの共有
 1. **このアプリの共有** ダイアログ ボックスの **ユーザーとアプリへのリンクを直接共有する** の下で、表示された URL をコピーします。
- 
+   > [!div class="mx-imgBorder"] 
+   > ![リンクの共有](media/share-model-driven-app/share-model-driven-url.png)
+
 2. **クローズ**を選択します。
 3. SharePoint サイトに投稿したり、メールで送信するなど、ユーザーがアクセスできる位置にアプリ URL を貼り付けます。
-
-> [!div class="mx-imgBorder"] 
-> ![リンクの共有](media/share-model-driven-app/share-model-driven-URL.PNG)
 
 アプリ デザイナーの **プロパティ** タブでもアプリ URL を参照できます。 
 
@@ -140,7 +159,7 @@ ms.locfileid: "2711084"
 
 |セキュリティ ロール  |*特権  |説明 |
 |---------|---------|---------|
-|環境作成者     |  なし       | Microsoft Flow を使用して、アプリ、つながり、カスタム API、ゲートウェイ、フローなど、環境に関連付けられた新しいリソースを作成できます。 ただし、環境内のデータにアクセスする特権はありません。 詳細: [環境の概要](https://powerapps.microsoft.com/blog/powerapps-environments/)        |
+|環境作成者     |  なし       | Power Automate を使用して、アプリ、つながり、カスタム API、ゲートウェイ、フローなど、環境に関連付けられた新しいリソースを作成できます。 ただし、環境内のデータにアクセスする特権はありません。 詳細: [環境の概要](https://powerapps.microsoft.com/blog/powerapps-environments/)        |
 |システム管理者     |  作成、読み取り、書き込み、削除、カスタマイズ、セキュリティ ロール       | セキュリティ ロールの作成、変更、割り当てなど、環境をカスタマイズまたは管理する完全なアクセス許可があります。 環境のすべてのデータを表示できます。 詳細情報: [カスタマイズに必要な特権](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |システム カスタマイザ     | 作成 (自己)、読み取り (自己)、書き込み (自己)、削除 (自己)、カスタマイズ         | 環境をカスタマイズするための完全なアクセス許可があります。 ただし、作成した環境エンティティのレコードの表示のみ行うことができます。 詳細情報: [カスタマイズに必要な特権](https://docs.microsoft.com/dynamics365/customer-engagement/customize/privileges-required-customization)        |
 |Common Data Service ユーザー     |  読み取り、作成 (自己)、書き込み (自己)、削除 (自己)       | 環境内のアプリを実行し、自分が所有しているレコードの一般的なタスクを実行できます。        |

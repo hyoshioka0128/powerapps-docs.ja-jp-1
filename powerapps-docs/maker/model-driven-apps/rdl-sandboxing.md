@@ -20,16 +20,16 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: f936dc4c6b78096b74b650bf8426ba1d78c41d19
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 557959f9bb561fcb138f15011bd8320dfa5c94ff
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2711392"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2862889"
 ---
 # <a name="rdl-sandboxing"></a>RDL サンドボックス 
 
-Common Data Service では、レポートがサンドボックス モードで実行されます。 このためには、SQL Server Reporting Services のレポート定義言語 (RDL) サンドボックスを有効にします。 RDL サンドボックスを使用することで、特定の種類のリソースの使用状況を検出したり、制限したりできます。 結果として、PowerApps モデル駆動型アプリの特定の機能が使用できなくなる場合があります。 詳細については、「[MSDN: RDL サンドボックスの有効化および無効化](https://msdn.microsoft.com/library/ee210591.aspx)」を参照してください。  
+Common Data Service では、レポートがサンドボックス モードで実行されます。 このためには、SQL Server Reporting Services のレポート定義言語 (RDL) サンドボックスを有効にします。 RDL サンドボックスを使用することで、特定の種類のリソースの使用状況を検出したり、制限したりできます。 結果として、Power Apps モデル駆動型アプリの特定の機能が使用できなくなる場合があります。 詳細については、「[MSDN: RDL サンドボックスの有効化および無効化](https://msdn.microsoft.com/library/ee210591.aspx)」を参照してください。  
   
  Common Data Service での現在の RDL サンドボックス構成の設定について、このトピックのセクションで説明します。  
     

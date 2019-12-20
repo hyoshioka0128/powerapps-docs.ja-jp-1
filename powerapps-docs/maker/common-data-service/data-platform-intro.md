@@ -14,15 +14,15 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8c912ca78a15f080801d841e4dbbb03ad5d193df
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2b5a84179a4d9c6598331a6e728326a2318f9a9a
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755536"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883621"
 ---
 # <a name="what-is-common-data-service"></a>Common Data Service とは何か？
-Common Data Service を使用することで、ビジネス アプリケーションで使用されるデータを安全に保存、管理することできます。 Common Data Service 内のデータは、一連のエンティティ内に格納されています。 *エンティティ*はデータベース内にデータを格納する方法と同様に、データの格納に使用される一連のレコードです。 Common Data Service には一般的なシナリオをカバーする標準エンティティの基本セットが含まれていますが、組織固有のカスタム エンティティを作成し、Power Queryを使用したデータ取り込みを行うことも可能です。 アプリ作成者は PowerApps を使用して、このデータを使用する機能豊富なアプリケーションを作成することができます。
+Common Data Service を使用することで、ビジネス アプリケーションで使用されるデータを安全に保存、管理することできます。 Common Data Service 内のデータは、一連のエンティティ内に格納されています。 *エンティティ*はデータベース内にデータを格納する方法と同様に、データの格納に使用される一連のレコードです。 Common Data Service には一般的なシナリオをカバーする標準エンティティの基本セットが含まれていますが、組織固有のカスタム エンティティを作成し、Power Queryを使用したデータ取り込みを行うことも可能です。 アプリ作成者は Power Apps を使用して、このデータを使用する機能豊富なアプリケーションを作成することができます。
 
 ![ビジネス アプリケーションプラットフォームの概要を表示するスクリーンショット](./media/data-platform-cds-intro/platform.png "プラットフォームの概要")
 
@@ -33,27 +33,27 @@ Common Data Service 内の標準エンティティおよびカスタム エン�
 
 * **簡単に管理できます** &ndash; メタデータとデータの両方がクラウドに格納されます。 それらがどのように格納されているかの詳細について気にする必要はありません。
 * **セキュリティ保護を簡単にできます** &ndash; データが安全に保存されるため、ユーザーはアクセスを許可した場合にのみデータを見ることができます。 ロール ベースのセキュリティでは、組織内のさまざまなユーザーのエンティティへのアクセスを制御できます。
-* **Dynamics 365 データにアクセスする** Dynamics 365 アプリケーションからの &ndash; データも Common Data Service 内に保存されるので、 Dynamics 365 データを活用するアプリを素早く構築し、 PowerApps を使ってアプリを拡張することができます。
-* **リッチ メタデータ** &ndash; データ型とリレーションシップは PowerApps内で直接活用します。
+* **Dynamics 365 データにアクセスする** Dynamics 365 アプリケーションからの &ndash; データも Common Data Service 内に保存されるので、 Dynamics 365 データを活用するアプリを素早く構築し、 Power Apps を使ってアプリを拡張することができます。
+* **リッチ メタデータ** &ndash; データ型とリレーションシップは Power Apps内で直接活用します。
 * **ロジックおよび検証** &ndash; 計算フィールド、業務ルール、ワークフロー、およびビジネス プロセス フローを定義して、データ品質を保証し、業務プロセスを推進します。
 * **プロダクティビティ ツール** &ndash; エンティティは Microsoft Excel のアドイン内で使用可能となり、生産性を向上させ、データへのアクセス性を確保します。
 
 ## <a name="dynamics-365-and-common-data-service"></a>Dynamics 365 アプリ と Common Data Service
 
-Dynamics 365 Sales、Dynamics 365 Customer Service、 Dynamics 365 Talent などの Dynamics 365 アプリケーション も Common Data Service を使用して、アプリケーションが使用するデータの格納と保護をします。 これにより PowerApps と Common Data Service を使用して、既に Dynamics 365 で使用されているコア ビジネスデータに直接アプリケーションを構築することができます。
+Dynamics 365 Sales、Dynamics 365 Customer Service、 Dynamics 365 Talent などの Dynamics 365 アプリケーション も Common Data Service を使用して、アプリケーションが使用するデータの格納と保護をします。 これにより Power Apps と Common Data Service を使用して、既に Dynamics 365 で使用されているコア ビジネスデータに直接アプリケーションを構築することができます。
 
-* **Dynamics 365 データに対するアプリケーションの構築** &ndash; PowerApps 内のビジネス データに対して、または Pro Developer SDK を使用して、アプリケーションを迅速に構築します。
-* **再利用可能なビジネス ロジックとルールの管理** &ndash; ご利用の PowerApps にはDynamics 365 エンティティですでに定義されているビジネス ルールとロジックが適用されます。これによってユーザーがどのようにデータにアクセスしているか、どのアプリを使っているかを問わずデータの一貫性が保証されます。
-* **Dynamics 365 と PowerApps全体で再利用可能なスキル** &ndash; これまで PowerApps や Dynamics 365 のスキルを持っているユーザーは、Common Data Service プラットフォームでそのスキルを活用することができます。 エンティティ、フォーム、チャートなどの作成は、アプリケーション全体で共通になりました。
+* **Dynamics 365 データに対するアプリケーションの構築** &ndash; Power Apps 内のビジネス データに対して、または Pro Developer SDK を使用して、アプリケーションを迅速に構築します。
+* **再利用可能なビジネス ロジックとルールの管理** &ndash; ご利用の Power Apps にはDynamics 365 エンティティですでに定義されているビジネス ルールとロジックが適用されます。これによってユーザーがどのようにデータにアクセスしているか、どのアプリを使っているかを問わずデータの一貫性が保証されます。
+* **Dynamics 365 と Power Apps全体で再利用可能なスキル** &ndash; これまで Power Apps や Dynamics 365 のスキルを持っているユーザーは、Common Data Service プラットフォームでそのスキルを活用することができます。 エンティティ、フォーム、チャートなどの作成は、アプリケーション全体で共通になりました。
 
     > [!NOTE]
     > Finance and Operations アプリは現在、Finance and Operations アプリのビジネスデータを Common Data Service で利用可能にするにあたって [Data Integrator](/power-platform/admin/data-integrator) の設定が必要となります。
 
 ## <a name="integrating-data-into-the-common-data-service"></a>データを Common Data Serviceに統合する
 
-アプリケーションの構築には、通常、複数のソースからのデータが含まれますが、これはアプリケーション レベルで行われることもあります。このデータを共通のストアに統合することで、アプリケーション構築の経験が簡単になり、データを維持して操作するための単一のロジック セットが可能になる場合もあります。 Common Data Service を使用すると、複数のソースから単一のストアにデータを統合し、 PowerApps、Flow、 Power BI で、Dynamics 365 アプリケーションからすでに使用可能となっているデータとともに使用できます。
+アプリケーションの構築には、通常、複数のソースからのデータが含まれますが、これはアプリケーション レベルで行われることもあります。このデータを共通のストアに統合することで、アプリケーション構築の経験が簡単になり、データを維持して操作するための単一のロジック セットが可能になる場合もあります。 Common Data Service を使用すると、複数のソースから単一のストアにデータを統合し、 Power Apps、Flow、 Power BI で、Dynamics 365 アプリケーションからすでに使用可能となっているデータとともに使用できます。
 
-* **他のシステムとの統合をスケジュールする** &ndash; 別のアプリケーション内に保持されているデータを Common Data Service と定期的に同期させることで、 PowerApps内の他のアプリケーションデータを活用できます。
+* **他のシステムとの統合をスケジュールする** &ndash; 別のアプリケーション内に保持されているデータを Common Data Service と定期的に同期させることで、 Power Apps内の他のアプリケーションデータを活用できます。
 * **PowerQueryを使用したデータの変換とインポート** &ndash; Common Data Serviceへのインポートする際のデータ変換は、Excel と Power BIにて共通のツールである多くのオンライン データソースから、PowerQueryを使って行うことができます。
 * **データの一括インポート** &ndash; ExcelおよびCSVファイルの簡単なインポート/エクスポートは、データの Common Data Serviceへの1回限りのインポート、または不定期のインポートに使用できます。
 
@@ -80,7 +80,7 @@ Common Data Service 内のエンティティは、豊富なサーバーサイド
 Common Data Service は、効率的なデータ アクセスと協業を活性化しつつも、データの整合性とプライバシーを保護するための豊富なセキュリティ モデルを備えています。 ビジネス ユニット、役割にもとづくセキュリティ、レコード にもとづくセキュリティ、フィールドにもとづくセキュリティを組み合せて、 Common Data Service 環境にてユーザーが保有する情報への包括的なアクセスを定義することができます。 詳細情報については次を参照してください: [ Common Data Serviceのセキュリティ](/power-platform/admin/wp-security) 
 
 ## <a name="developer-capabilities"></a>開発者機能
-[PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ポータルで利用可能な機能に加えて、 Common Data Service は開発者がメタデータとデータにアクセスしてエンティティとビジネスロジックをプログラムし、データとやり取りするために使用できる機能を実装しています。 詳細については、 [Common Data Service 開発者向けの概要](../../developer/common-data-service/overview.md)をご覧ください。
+[Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) ポータルで利用可能な機能に加えて、 Common Data Service は開発者がメタデータとデータにアクセスしてエンティティとビジネスロジックをプログラムし、データとやり取りするために使用できる機能を実装しています。 詳細については、 [Common Data Service 開発者向けの概要](../../developer/common-data-service/overview.md)をご覧ください。
 
 ## <a name="next-steps"></a>次のステップ
 Common Data Serviceを使用して作業を開始するには:
@@ -90,4 +90,4 @@ Common Data Serviceを使用して作業を開始するには:
 - [Power Queryを使用](./data-platform-cds-newentity-pq.md) してオンラインまたはオンプレミスのデータソースに接続し、データを直接 Common Data Serviceにインポートする。
 
 ## <a name="privacy-notice"></a>プライバシーに関する声明
-Microsoft PowerApps の Common Data モデルを使用することで、Microsoft はカスタム エンティティとフィールド名称を収集し、診断システムに保管します。 この情報を使って、お客様の共通データ モデルを改善します。 アプリケーション作成者が作成するエンティティ名称とフィールド名称は、 Microsoft PowerApps コミュニティに通底するシナリオの理解に役立ち、組織に関連するスキーマなど、サービスの標準的なエンティティ カバレッジのギャップを確認する際に役立てられます。 これらのエンティティに関連付けられたデータベース テーブル内のデータは、Microsoft によりアクセスまたは使用されず、データベースがプロビジョニングされた地域の外部にレプリケーションされません。 しかし、カスタム エンティティおよびフィールド名は、地域間でレプリケーションされ、データ保持ポリシーに基づいて削除される可能性がある点に注意してください。 マイクロソフトは、[セキュリティ センター](https://www.microsoft.com/trustcenter/Privacy/default.aspx) で詳しく説明されているとおりにプライバシー保護に努めています。
+Microsoft Power Apps の Common Data モデルを使用することで、Microsoft はカスタム エンティティとフィールド名称を収集し、診断システムに保管します。 この情報を使って、お客様の共通データ モデルを改善します。 アプリケーション作成者が作成するエンティティ名称とフィールド名称は、 Microsoft Power Apps コミュニティに通底するシナリオの理解に役立ち、組織に関連するスキーマなど、サービスの標準的なエンティティ カバレッジのギャップを確認する際に役立てられます。 これらのエンティティに関連付けられたデータベース テーブル内のデータは、Microsoft によりアクセスまたは使用されず、データベースがプロビジョニングされた地域の外部にレプリケーションされません。 しかし、カスタム エンティティおよびフィールド名は、地域間でレプリケーションされ、データ保持ポリシーに基づいて削除される可能性がある点に注意してください。 マイクロソフトは、[セキュリティ センター](https://www.microsoft.com/trustcenter/Privacy/default.aspx) で詳しく説明されているとおりにプライバシー保護に努めています。

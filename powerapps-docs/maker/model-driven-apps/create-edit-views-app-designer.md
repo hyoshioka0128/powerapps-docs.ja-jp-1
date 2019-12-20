@@ -1,5 +1,5 @@
 ---
-title: PowerApps を使用して共有またはシステム モデル駆動型アプリ ビューを作成、編集する | MicrosoftDocs
+title: Power Apps を使用して共有またはシステム モデル駆動型アプリ ビューを作成、編集する | MicrosoftDocs
 description: アプリ デザイナーを使用してビューを作成または編集する方法を学習する
 keywords: ''
 ms.date: 11/27/2018
@@ -24,18 +24,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3c3e7133076eb46718ed3f60d1df4f36a012c520
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 03bfaec424624be1094314dbae763114892d2a59
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753895"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884874"
 ---
 # <a name="create-and-edit-public-or-system-model-driven-app-views"></a>共有またはシステム モデル駆動型アプリ ビューを作成および編集
 
 このトピックでは、共有ビューの作成、既存のビューをアプリに追加する、ビューの列、フィルター、並べ替え順序の変更など、ビューを使用するために必要ないくつかのタスクを実行します。
 
-PowerApps において、ビューは特定のエンティティのレコードの表示方法を定義します。 ビューは以下のことを定義します。
+Power Apps において、ビューは特定のエンティティのレコードの表示方法を定義します。 ビューは以下のことを定義します。
 -  表示する列 (属性)
 -  列の幅
 -  既定によるレコードの並べ替え方法
@@ -48,9 +48,9 @@ PowerApps において、ビューは特定のエンティティのレコード�
 
 詳細: [ビューについて](create-edit-views.md)
 
-## <a name="create-a-public-view-in-powerapps"></a>PowerAppsで共有ビューを作成する
-アプリの作成者は、PowerApps を使用して、共有ビューを作成および編集することができます。
-1. [PowerApps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+## <a name="create-a-public-view-in-power-apps"></a>Power Appsで共有ビューを作成する
+アプリの作成者は、Power Apps を使用して、共有ビューを作成および編集することができます。
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
 
     > [!IMPORTANT]
@@ -84,7 +84,7 @@ PowerApps において、ビューは特定のエンティティのレコード�
 ### <a name="open-and-add-a-view-in-the-app-designer"></a>アプリケーション デザイナーでビューを開いて追加します。
 
 次の手順では、アプリケーションでのデザイナー ビューを開き追加する方法を説明します。
-1. PowerApps で、左のナビゲーション ウィンドウから **アプリ** を選択して、目的のアプリの隣にある **...** を選択し、 **編集**を選択します。 
+1. Power Apps で、左のナビゲーション ウィンドウから **アプリ** を選択して、目的のアプリの隣にある **...** を選択し、 **編集**を選択します。 
 
 2. アプリ デザイナーの**エンティティ ビュー** セクションで、**ビュー**を選択します。
 
@@ -181,7 +181,7 @@ PowerApps において、ビューは特定のエンティティのレコード�
 
 
 ## <a name="community-tools"></a>コミュニティ ツール
-**ビュー レイアウト レプリケーター** および **ビュー デザイナー** は、PowerApps用に開発された XrmToolbox コミュニティが提供するツールです。
+**ビュー レイアウト レプリケーター** および **ビュー デザイナー** は、Power Apps用に開発された XrmToolbox コミュニティが提供するツールです。
 
 詳細: [開発者ツール](/powerapps/developer/common-data-service/developer-tools)。
 

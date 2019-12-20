@@ -1,5 +1,5 @@
 ---
-title: PowerApps で編集可能グリッド ユーザー定義コントロールを使用することで、モデル駆動型アプリのグリッド (リスト) を編集可能にする | MicrosoftDocs
+title: Power Apps で編集可能グリッド ユーザー定義コントロールを使用することで、モデル駆動型アプリのグリッド (リスト) を編集可能にする | MicrosoftDocs
 description: 編集可能グリッドのカスタム コントロールの使用方法について学習します
 ms.custom: ''
 ms.date: 06/27/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8ec97723dcc5c1e17b3907c7b683ba24977b69de
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 866c058ad873fa278ee0bb8bf026983ed0201df7
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2700612"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867988"
 ---
 # <a name="make-model-driven-app-grids-lists-editable-using-the-editable-grid-custom-control"></a>編集可能グリッド カスタム コントロールを使用してモデル駆動型アプリ グリッド (リスト) を編集可能にする
 

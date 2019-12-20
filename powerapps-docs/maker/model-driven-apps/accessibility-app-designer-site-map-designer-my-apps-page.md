@@ -1,6 +1,6 @@
 ---
-title: PowerApps のアプリ デザイナー、サイト マップ デザイナー、マイ アプリ ページのアクセシビリティについて理解する | Microsoft Docs
-description: PowerApps のアプリ デザイナー、サイト マップ デザイナー、マイ アプリ ページを使用して、モデル駆動型アプリのアクセシビリティについて理解する
+title: Power Apps のアプリ デザイナー、サイト マップ デザイナー、マイ アプリ ページのアクセシビリティについて理解する | Microsoft Docs
+description: Power Apps のアプリ デザイナー、サイト マップ デザイナー、マイ アプリ ページを使用して、モデル駆動型アプリのアクセシビリティについて理解する
 keywords: アプリ デザイナー; サイト マップ デザイナー; マイ アプリ; Dynamics 365
 author: Mattp123
 ms.author: matp
@@ -17,21 +17,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c0f845b1b1b390bb6033efa282792b0b5116e6fc
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 5a2226e87193079c1b68858f30759f509562cbda
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752067"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2885226"
 ---
-# <a name="accessibility-in-powerapps-app-designer-site-map-designer-and-my-apps-page"></a>PowerApps アプリ デザイナー、サイト マップ デザイナー、およびマイ アプリ ページのユーザー補助
+# <a name="accessibility-in-power-apps-app-designer-site-map-designer-and-my-apps-page"></a>Power Apps アプリ デザイナー、サイト マップ デザイナー、およびマイ アプリ ページのユーザー補助
 
 Microsoft は、すべての人に使いやすい製品とサービスの提供に取り組んでいます。 詳細: [Microsoft のユーザー補助](https://www.microsoft.com/enable/default.aspx)  
  
 このトピックでは、モデル駆動型アプリで使用できるユーザー補助の機能について説明します。  
   
 ## <a name="keyboard-shortcuts"></a>キーボード ショートカット  
-PowerApps には、手先の器用さや動作に障碍のある方が抱える問題に対処するためのキーボード ショートカットが用意されています。  
+Power Apps には、手先の器用さや動作に障碍のある方が抱える問題に対処するためのキーボード ショートカットが用意されています。  
   
 |マイ アプリ ページ|||  
 |------------------|-|-|  
@@ -111,4 +111,4 @@ PowerApps には、手先の器用さや動作に障碍のある方が抱える�
 
 ## <a name="see-also"></a>関連項目
 
-[PowerApps でショートカット キーを使用する](/powerapps/user/keyboard-shortcuts)
+[Power Apps でショートカット キーを使用する](/powerapps/user/keyboard-shortcuts)

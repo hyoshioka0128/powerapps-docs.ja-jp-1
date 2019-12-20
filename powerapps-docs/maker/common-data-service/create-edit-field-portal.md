@@ -1,5 +1,5 @@
 ---
-title: PowerApps ポータルを使用して Common Data Service のフィールドを作成、編集する | MicrosoftDocs
+title: Power Apps ポータルを使用して Common Data Service のフィールドを作成、編集する | MicrosoftDocs
 ms.custom: ''
 ms.date: 08/13/2019
 ms.reviewer: ''
@@ -19,24 +19,24 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 231970fb08886b993b55dcc6506ef387c9a20018
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 21e0d713608b2c0bddcf9dc7d292973f0f58259f
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757977"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861432"
 ---
-# <a name="create-and-edit-fields-for-common-data-service-using-powerapps-portal"></a>PowerApps ポータルを使用して Common Data Service のフィールドを作成、編集する
+# <a name="create-and-edit-fields-for-common-data-service-using-power-apps-portal"></a>Power Apps ポータルを使用して Common Data Service のフィールドを作成、編集する
 
-[PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、 Common Data Serviceを使用してエンティティ フィールドを簡単に作成、編集することができます。
+[Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、 Common Data Serviceを使用してエンティティ フィールドを簡単に作成、編集することができます。
 
 ポータルでは一般的なオプションのほどんとを構成できますが、特定のオプションはソリューション エクスプローラーを使用してのみ設定できます。 <br />詳細: 
 - [Common Data Serviceのフィールドの作成と編集](create-edit-fields.md)
-- [PowerApps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する](create-edit-field-solution-explorer.md)
+- [Power Apps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する](create-edit-field-solution-explorer.md)
 
 ## <a name="view-fields"></a>ビュー フィールド
 
-1. [PowerApps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、 **モデル駆動型** または **キャンバス** 設計モードを選択します。
+1. [Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、 **モデル駆動型** または **キャンバス** 設計モードを選択します。
 2. **データ** > **エンティティ** を選択し、表示するフィールドを持つエンティティを選択します。
 3. **フィールド** タブでは、次のビューを選択できます。 
 
@@ -233,7 +233,7 @@ ms.locfileid: "2757977"
 
 ### <a name="see-also"></a>関連項目  
 [Common Data Serviceのフィールドの作成と編集](create-edit-fields.md)<br />
-[PowerApps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する](create-edit-field-solution-explorer.md)<br />
+[Power Apps ソリューション エクスプローラーを使用して、 Common Data Service のフィールドを作成、編集する](create-edit-field-solution-explorer.md)<br />
 [フィールドの種類とフィールド データの種類](types-of-fields.md)<br />
 [計算フィールドを定義して手動計算を自動化する](define-calculated-fields.md)<br />
 [値を集約するロールアップ フィールドを定義](define-rollup-fields.md)<br />

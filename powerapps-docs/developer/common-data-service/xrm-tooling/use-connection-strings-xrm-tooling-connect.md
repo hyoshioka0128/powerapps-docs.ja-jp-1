@@ -2,17 +2,11 @@
 title: XRM ツールの接続文字列を使用して Common Data Service に接続する (Common Data Service) | Microsoft Docs
 description: XRM ツールによって、接続文字列を使用した Common Data Service 環境への接続が可能になります
 ms.custom: ''
-ms.date: 03/27/2019
+ms.date: 11/13/2019
 ms.reviewer: ''
 ms.service: powerapps
-ms.suite: ''
-ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to:
-- Dynamics 365 (online)
-ms.assetid: a98b2fce-df49-4b60-91f4-a4446aa61cd3
-caps.latest.revision: 21
-author: MattB-msft
+author: nkrb
 ms.author: nabuthuk
 manager: kvivek
 search.audienceType:
@@ -20,18 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 326904046c33ed426d879794c3076d7a509741dd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 648aba609cb8b7b8cafeefa9515fabf0751595c7
+ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749069"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "2815947"
 ---
 # <a name="use-connection-strings-in-xrm-tooling-to-connect-to-common-data-service"></a>XRM ツールの接続文字列を使用して Common Data Service に接続する
 
 Common Data Service では、 XRM ツールによって、接続文字列を使用した Common Data Service 環境への接続が可能になります これは **SQL Server** で使用される接続文字列の概念と似ています。 接続文字列は、最大限のセキュリティを得るために構成セクションを暗号化する機能を含むネイティブ サポートを、構成ファイルに備えています。 これにより、Common Data Service 環境に接続する際に、使用しているアプリケーションにハード コーディングしない Common Data Service 接続を展開時に構成することができます。  
-
-
 
 
 <a name="Create"></a> 
@@ -42,7 +34,7 @@ Common Data Service では、 XRM ツールによって、接続文字列を使�
   
 ```xml  
 <connectionStrings>  
-    <add name="MyCDSServer" connectionString="AuthType=OAuth;Username=jsmith@contoso.onmicrosoft.com;Password=passcode;Url=https://contosotest.crm.dynamics.com;AppId=51f81489-12ee-4a9e-aaae-a2591f45987d;RedirectUri=app://58145B91-0C36-4500-8554-080854F2AC97;TokenCacheStorePath=c:\MyTokenCache;LoginPrompt=Auto"
+    <add name="MyCDSServer" connectionString="AuthType=OAuth;Username=jsmith@contoso.onmicrosoft.com;Password=passcode;Url=https://contosotest.crm.dynamics.com;AppId=51f81489-12ee-4a9e-aaae-a2591f45987d;RedirectUri=app://58145B91-0C36-4500-8554-080854F2AC97;TokenCacheStorePath=c:\MyTokenCache;LoginPrompt=Auto"/>
 </connectionStrings>  
 ```  
   
@@ -96,7 +88,7 @@ CrmServiceClient svc = new CrmServiceClient(ConnectionString);
 
 ## <a name="connection-string-examples"></a>接続文字列の例
  
-次の例は、on-ine の展開および認証シナリオに接続するための接続文字列の使用方法を示しています。 設置型および IFD 展開インスタンスの接続文字列の例は、次に示す Dynamics 365 Customer Engagement (on-premises) ドキュメントで入手可能になりました: [XRM ツールで接続文字列を使用して Customer Engagement に接続する](/dynamics365/customer-engagement/on-premises/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect) 
+次の例は、online の展開および認証シナリオに接続するための接続文字列の使用方法を示しています。 設置型および IFD 展開インスタンスの接続文字列の例は、次に示す Dynamics 365 Customer Engagement (on-premises) ドキュメントで入手可能になりました: [XRM ツールで接続文字列を使用して Customer Engagement に接続する](/dynamics365/customerengagement/on-premises/developer/xrm-tooling/use-connection-strings-xrm-tooling-connect) 
 
 ### <a name="named-account-using-office-365"></a>Office 365 を使用している取引先企業  
   
@@ -110,6 +102,7 @@ CrmServiceClient svc = new CrmServiceClient(ConnectionString);
 ```  
   
 ### <a name="oauth-using-named-account-in-office-365-with-ux-to-prompt-for-authentication"></a>認証のプロンプトに Office 365 で UX と一緒に取引先企業を使用している OAuth  
+
 OAuth 経由で UserId またはパスワードを使用する Common Data Service に新規に接続します。
 
 > [!NOTE]
@@ -163,6 +156,7 @@ OAuth 経由で現在ログインしているユーザーを使用して、 Comm
 ```
 
 ### <a name="clientid-or-client-secret-based-authentication"></a>ClientId またはクライアント シークレット ベースの認証
+
 アプリケーションまたはクライアント ID とクライアント シークレットを使用して、Common Data Service への新しい接続を作成します。
 ```xml
 <add name="MyCDSServer" 

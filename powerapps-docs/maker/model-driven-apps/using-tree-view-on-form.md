@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8e032cc95f64e842552308ccf9d179fc153b49fd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 37f935bc8767f4738e2cfd317b7447653f848f65
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2710424"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2867548"
 ---
 # <a name="using-the-tree-view-in-the-form-designer"></a>フォーム デザイナーのツリー ビューを使用
 **ツリー ビュー** ウィンドウには、フォーム上のコンポーネントのビジュアル階層が表示されます。 ツリー ビュー内のアイコンは、フィールドまたはコンポーネントの種類を素早く識別するために役立ちます。 

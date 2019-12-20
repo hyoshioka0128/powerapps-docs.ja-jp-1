@@ -1,5 +1,5 @@
 ---
-title: PowerApps のフィールドに対する管理プロパティの設定 | MicrosoftDocs
+title: Power Apps のフィールドに対する管理プロパティの設定 | MicrosoftDocs
 description: フィールドに対する管理プロパティの設定方法について学習
 ms.custom: ''
 ms.date: 06/19/2018
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 44f56e4c3430d52c8b921ece893c893c8258c858
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0b14b5ab55fe6bbaeeb11fb2de548621eb66501a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2702020"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865340"
 ---
 # <a name="set-managed-properties-for-fields"></a>フィールドに管理プロパティを設定する
 

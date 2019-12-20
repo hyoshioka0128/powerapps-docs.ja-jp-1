@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ae7b61fde2de24d68e9debab4ae61ad9c18718b4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 926cc3f7ebb61d0d9c59df707f6d4d824d59599a
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748820"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861844"
 ---
 # <a name="optimize-assembly-development"></a>アセンブリ開発を最適化する
 
@@ -63,7 +63,7 @@ Common Data Service ソリューション用に開発されたプラグインお
 
 ### <a name="move-plug-inscustom-workflow-activities-into-multiple-assemblies"></a>プラグイン / ユーザー定義ワークフロー活動を複数のアセンブリに移動する
 
-PowerApps および Dynamics 365 (online) には 16 MB のアセンブリ サイズ制限があり、これは変更できません。 アセンブリ サイズが 16 MB に近づいたら、プラグイン/ユーザー定義ワークフロー活動を複数のアセンブリに移動することを検討します。
+Power Apps および Dynamics 365 (online) には 16 MB のアセンブリ サイズ制限があり、これは変更できません。 アセンブリ サイズが 16 MB に近づいたら、プラグイン/ユーザー定義ワークフロー活動を複数のアセンブリに移動することを検討します。
 
 <a name='problem'></a>
 

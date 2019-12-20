@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8c22ec2532371093afbe224a5ea12c44652a30cc
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9dce1d13b5cb74173ff8af678480bda7b8e00140
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749041"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2865588"
 ---
 # <a name="define-ribbon-enable-rules"></a>リボンの有効化ルールの定義
 
@@ -141,7 +141,7 @@ function EnableRule()
  `<OrRule>` 要素を使用します。 `OrRule` を使用すると、複数の有効化ルールの種類に対する既定の AND による比較を無効にすることができます。 確認のために使用可能な複数の有効な結合を定義するには、`OrRule` 要素を使用します。
 
 ### <a name="outlook-item-tracking-rule"></a>Outlook アイテム追跡ルール
- `<OutlookItemTrackingRule>` 要素を使用します。 レコードが PowerApps で追跡されているかどうかを判断するには、この要素に対して `TrackedInCrm` 属性を使用します。  
+ `<OutlookItemTrackingRule>` 要素を使用します。 レコードが Power Apps で追跡されているかどうかを判断するには、この要素に対して `TrackedInCrm` 属性を使用します。  
 
 ### <a name="outlook-version-rule"></a>Outlook バージョン ルール
  `<OutlookVersionRule>` 要素を使用します。 このルールは、次に示す特定のバージョンの [!INCLUDE[pn_MS_Outlook_Full](../../includes/pn-ms-outlook-full.md)] のリボン要素を有効にする場合に使用します。  

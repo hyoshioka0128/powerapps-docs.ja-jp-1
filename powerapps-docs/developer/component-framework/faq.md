@@ -8,12 +8,12 @@ ms.topic: index-page
 ms.assetid: 9f940264-d7d5-4930-8052-1bd582445d37
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: dd5b6701c28e91ba2f0a2b99041446d0e2c45204
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 89ca91795b0644b0b7275697864211a4d3263c80
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749059"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2861997"
 ---
 # <a name="faq"></a>よくあるご質問
 
@@ -33,9 +33,9 @@ ms.locfileid: "2749059"
 
 ## <a name="font-resource"></a>フォント リソース
 
-現在、フォント リソース (.tff) は PowerApps Component Framework ではサポートされていません。
+現在、フォント リソース (.tff) は Power Apps Component Framework ではサポートされていません。
 
 ## <a name="related-topics"></a>関連トピック
 
-[PowerApps Component Framework API の参照](reference/index.md)<br/>
-[PowerApps Component Framework の概要](overview.md)
+[Power Apps Component Framework API の参照](reference/index.md)<br/>
+[Power Apps Component Framework の概要](overview.md)

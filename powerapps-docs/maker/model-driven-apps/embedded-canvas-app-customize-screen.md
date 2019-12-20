@@ -15,18 +15,18 @@ author: Aneesmsft
 ms.author: matp
 manager: kvivek
 tags:
-- PowerApps maker portal impact
+- Power Apps maker portal impact
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6be2a23a64108ec616fd95a0178d2008290bc289
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7d766a40dca689f6d0537be56edc9865437f62fa
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2706024"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868364"
 ---
 # <a name="customize-the-screen-size-and-orientation-of-a-canvas-app-embedded-on-a-model-driven-form"></a>モデル駆動フォームに埋め込まれたキャンバス アプリケーションの画面サイズと表示方向をカスタマイズする
 本トピックではモデル駆動フォームに埋め込まれたキャンバス アプリケーションの画面サイズと表示方向をカスタマイズ方法を説明します。
@@ -34,7 +34,7 @@ ms.locfileid: "2706024"
 1.  以下の手順に従って、モデル駆動フォームに埋め込まれたキャンバス アプリケーションを追加または編集します。
     - [埋め込み型キャンバス アプリケーションをモデル駆動フォームに追加する](embedded-canvas-app-add-classic-designer.md)
     - [モデル駆動型フォームの埋め込み型キャンバス アプリケーションを編集する](embedded-canvas-app-edit-classic-designer.md)
-2. キャンバス アプリケーションを PowerApps Studioで開き、**ファイル** タブを選択して **アプリの設定** を選択します。
+2. キャンバス アプリケーションを Power Apps Studioで開き、**ファイル** タブを選択して **アプリの設定** を選択します。
 3. **画面サイズ+向き** タブを選択します。既定では、 **サイズ** が **カスタム** に設定されています。
 4. 使用可能な **サイズ** および **方向** オプションのリストから選択するか、 **カスタム** を選択して **幅** および **高さ** に設定する値を指定します。
     > [!NOTE]

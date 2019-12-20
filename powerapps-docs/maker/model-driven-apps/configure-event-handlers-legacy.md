@@ -1,5 +1,5 @@
 ---
-title: PowerApps にてモデル駆動型アプリのメイン フォームのイベント ハンドラーを構成する | MicrosoftDocs
+title: Power Apps にてモデル駆動型アプリのメイン フォームのイベント ハンドラーを構成する | MicrosoftDocs
 description: イベント ハンドラーを構成する方法
 author: Mattp123
 ms.author: matp
@@ -13,16 +13,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4a824183a3d208131754289984aeaa8377d4a352
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 385255d46ad358a8b33385e9e1495bd310cb1cb4
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2701140"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2863645"
 ---
 # <a name="configure-model-driven-app-form-event-handlers"></a>モデル駆動型アプリのフォーム イベント ハンドラーの構成
 
- PowerApps のフォームのフォーム イベント ハンドラーを、フォームの次の領域に対して構成できます。  
+ Power Apps のフォームのフォーム イベント ハンドラーを、フォームの次の領域に対して構成できます。  
   
 |Element|イベント|説明|  
 |-------------|-----------|-----------------|  

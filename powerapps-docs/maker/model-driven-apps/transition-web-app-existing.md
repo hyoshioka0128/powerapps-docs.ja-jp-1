@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e39cb11b9883e93d341232bcdcbb43dc17fa491a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 75175b34b158be75165c6bcdae5826060fb47f38
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759781"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2884368"
 ---
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>クイックスタート: 既存の環境を使用して、統合インターフェイスで旧式のWebクライアント アプリケーションを検証する
 このクイックスタート トピックでは、既存の環境を使用して現在の構成あるいは既定のソリューションに基づいた、統合インターフェイス アプリケーションを作成する方法について説明します。 これにより、既存の旧式のWebクライアントアプリケーションを並行稼働しながら、統合インターフェイスを調査、テストすることができます。 これにより、ユーザーは環境を切り替えて並列のビューを表示することができます。 
@@ -65,7 +65,7 @@ ms.locfileid: "2759781"
 直近で [クイックスタート: Dynamics 365 レガシー Web クライアントアプリケーションから統合インターフェイスへの移行](transition-web-app.md) に示されている手順で、開発環境の **統合インターフェイスのみを使用する** モードを **オン** に切り替えている場合は、この設定を **オフ** に切り替えることで、既存の旧式Webクライアントアプリケーションを実行することができます。
 
 ### <a name="create-a-new-solution-thats-based-on-the-default-solution"></a>既定のソリューションに基づいた新しいソリューションを作成する。
-1. [PowerApps メーカー ポータル](https://make.powerapps.com)にサインインします。   
+1. [Power Apps メーカー ポータル](https://make.powerapps.com)にサインインします。   
 2. 環境のリストから、目的の環境を選択します。  
 3. 左のナビゲーション ウィンドウで、**ソリューション** を選択します。 
 4. メニューバーで **新規ソリューション**を選択します。 
@@ -98,7 +98,7 @@ ms.locfileid: "2759781"
 > [!div class="mx-imgBorder"] 
 > ![新しい統一インターフェイス アプリ](media/new-unified-interface-app.png "新しい統一インターフェイス アプリ")
 
-PowerApps メーカーポータル **ソリューション** エリアのブラウザ タブに戻ると、新しいモデル駆動型アプリケーションと、共通する名前の サイトマップ クライアント 拡張機能は、両方とも作成したソリューションの一部であることに注意してください。  
+Power Apps メーカーポータル **ソリューション** エリアのブラウザ タブに戻ると、新しいモデル駆動型アプリケーションと、共通する名前の サイトマップ クライアント 拡張機能は、両方とも作成したソリューションの一部であることに注意してください。  
 
 > [!div class="mx-imgBorder"] 
 > ![ソリューションの資産](media/solution-assets.png "ソリューションの資産")
@@ -158,7 +158,7 @@ PowerApps メーカーポータル **ソリューション** エリアのブラ�
 > Common Data Service および Dynamics 365 のモデル駆動型アプリの現在のバージョンには、いくつかの非推奨な機能が含まれています。 使用しているアプリケーションで非推奨の機能を確認し、必要に応じて新しい機能に置き換える必要があります。 詳細: [重要な変更 (非推奨) の予定](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming)
 
 > [!TIP]
-> PowerApps のチェッカー ツールは、ソリューションのコンポーネントの品質チェックをサポートします。  詳細: [ソリューション チェッカーをを使用して、PowerApps のモデル駆動型アプリを検証する](../common-data-service/use-powerapps-checker.md)
+> Power Apps のチェッカー ツールは、ソリューションのコンポーネントの品質チェックをサポートします。  詳細: [ソリューション チェッカーをを使用して、Power Apps のモデル駆動型アプリを検証する](../common-data-service/use-powerapps-checker.md)
 
 ## <a name="next-steps"></a>次のステップ
 実装担当チームまたはパートナーは、調査結果に基づいてアプリケーションを統合インターフェイスに移行にあたって必要な作業量を見積もり、潜在的なユーザビリティの向上を発見することができます。 統合インターフェイスでは複数の新機能を利用できるため、アプリケーションを利用するユーザーの価値を高めることができます。 
@@ -171,9 +171,9 @@ PowerApps メーカーポータル **ソリューション** エリアのブラ�
 [統合インターフェイスの活用プレイブック](unified-interface-playbook.md) <br />
 [ユーザエクスペリエンスと統合インターフェイスへの移行](approaching-unified-interface.md) <br />
 [Unified Interface について](/dynamics365/customer-engagement/admin/about-unified-interface) <br />
-[PowerApps におけるモデル駆動型アプリとは?](model-driven-app-overview.md) <br />
+[Power Apps におけるモデル駆動型アプリとは?](model-driven-app-overview.md) <br />
 [アプリを統一インターフェイスに更新する](/dynamics365/customer-engagement/admin/update-apps-to-unified-interface) <br />
 [モデル駆動型アプリの対話型エクスペリエンス ダッシュボードの構成](configure-interactive-experience-dashboards.md) <br />
 [モデル駆動型アプリのデータのビジュアル化のためのカスタム コントロールの使用](use-custom-controls-data-visualizations.md) <br />
-[PowerApps Component Framework の概要](/powerapps/developer/component-framework/overview) <br />
+[Power Apps Component Framework の概要](/powerapps/developer/component-framework/overview) <br />
 [全ユーザー向けの統合インターフェイス](/power-platform-release-plan/2019wave2/microsoft-powerapps/unified-interface-app-everybody)

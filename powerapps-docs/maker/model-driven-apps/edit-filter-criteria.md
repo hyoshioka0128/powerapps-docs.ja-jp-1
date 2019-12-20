@@ -1,5 +1,5 @@
 ---
-title: PowerApps を使用してモデル駆動型アプリ ビューでフィルター条件を編集し、並べ替え順を変更する | MicrosoftDocs
+title: Power Apps を使用してモデル駆動型アプリ ビューでフィルター条件を編集し、並べ替え順を変更する | MicrosoftDocs
 description: ビューでフィルター条件を編集し、並べ替え順を変更する方法を説明する
 ms.custom: ''
 ms.date: 06/13/2018
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 84ffba9df7eb09d6bc895fa10187eb000746b835
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8a2a5eabcae5c6e9829104927a0013aa60799558
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2704088"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2868560"
 ---
 # <a name="edit-filter-criteria-and-change-sort-order-in-model-driven-app-views"></a>モデル駆動型アプリ ビューでフィルター条件を編集し、並べ替え順を変更する
 

@@ -1,6 +1,6 @@
 ---
 title: 開発者ツール (モデル駆動型アプリ) | MicrosoftDocs
-description: PowerApps 内のモデル駆動型アプリで使用できるコミュニティ開発ツールについての情報を提供します。
+description: Power Apps 内のモデル駆動型アプリで使用できるコミュニティ開発ツールについての情報を提供します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1288b04acee069345f15efbc3925229315fd83f7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 62bb1bd34fe5f6c20f385e22d2c41155762c2720
+ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749330"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "2883449"
 ---
 # <a name="developer-tools"></a>開発者ツール
 

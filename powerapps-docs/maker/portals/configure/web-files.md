@@ -1,5 +1,5 @@
 ---
-title: PowerApps ポータルで Web ファイルを作成および管理する | MicrosoftDocs
+title: Power Apps ポータルで Web ファイルを作成および管理する | MicrosoftDocs
 description: ポータルで Web ファイルを作成し管理する方法について説明します。
 author: sbmjais
 manager: shujoshi
@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: shjais
 ms.reviewer: ''
-ms.openlocfilehash: dc67db92ac502611b0c10b5d387b100e8aa43da7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0e8487e211cf685c77aef545ebc39a43968f8e40
+ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760668"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "2864923"
 ---
 # <a name="create-and-manage-web-files"></a>Web ファイルの作成および管理
 
@@ -24,7 +24,7 @@ Web ファイルは、画像、ドキュメントや他のファイルの種類�
 
 ## <a name="manage-web-files"></a>Web ファイルの管理
 
-Web ファイルは、PowerApps ポータル内で作成、編集、および削除できます。
+Web ファイルは、Power Apps ポータル内で作成、編集、および削除できます。
 
 1. [ポータル管理アプリ](configure-portal.md)を開きます。
 
