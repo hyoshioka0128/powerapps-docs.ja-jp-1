@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ae11f42fef927509461d8219b8df4134a633ae5d
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 3275c93aea5492384727701d1074982a345fae67
+ms.sourcegitcommit: fa88889cd109651d403ab03287b7f0521bb90e02
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204021"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324944"
 ---
 # <a name="date-picker-control-in-power-apps"></a>Power Apps の日付の選択コントロール
 クリックまたはタップして日付を指定できるコントロールです。
@@ -49,6 +49,8 @@ ms.locfileid: "75204021"
 
 **[Color](properties-color-border.md)** – コントロールのテキストの色です。
 
+**DateTimeZone** – **UTC**またはユーザーの**現地**時刻の日付を表示するかどうかを指定します。
+
 **[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (Edit)、データの表示のみを許可するか (View)、許可しないか (Disabled) を設定します。
 
 **[DisabledBorderColor](properties-color-border.md)** – コントロールの **[DisplayMode](properties-core.md)** プロパティが **Disabled** に設定されている場合のコントロールの境界線の色です。
@@ -76,6 +78,8 @@ ms.locfileid: "75204021"
 **IconBackground** – 日付の選択コントロール アイコンの背景色。
 
 **Inputtextplaceholder** –日付が入力されていない場合に表示される指示テキストです。
+
+**IsEditable** – datepicker テキストを編集できるかどうかを指定します。 False の場合、日付はカレンダーを使用してのみ変更できます。
 
 **[Italic](properties-text.md)** – コントロール内のテキストを斜体にするかどうかを指定します。
 
@@ -106,7 +110,7 @@ ms.locfileid: "75204021"
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
 ## <a name="related-functions"></a>関連する関数
-**[Year](../functions/function-datetime-parts.md)**( *DateTimeValue* )
+**[Year](../functions/function-datetime-parts.md)** ( *DateTimeValue* )
 
 ## <a name="example"></a>例
 1. **日付の選択**コントロールを追加して、**Deadline** という名前を付けます。
@@ -116,7 +120,7 @@ ms.locfileid: "75204021"
    <br>**DateDiff(Today(), Deadline.SelectedDate) & " days to go!"**
 
     **[DateDiff](../functions/function-dateadd-datediff.md)** 関数や[その他の関数](../formula-reference.md)の詳細については各関連記事をご覧ください。
-3. F5 キーを押して **Deadline** の日付を選択し、**[OK]** をクリックまたはタップします。
+3. F5 キーを押して **Deadline** の日付を選択し、 **[OK]** をクリックまたはタップします。
 
     **[ラベル](control-text-box.md)** コントロールに、当日から選択した日付までの日数が表示されます。
 4. 既定のワークスペースに戻るには、Esc キーを押します。
