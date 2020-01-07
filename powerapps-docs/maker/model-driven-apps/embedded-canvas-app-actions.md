@@ -97,6 +97,6 @@ RefreshForm メソッドを呼び出すと、次のエラー メッセージが�
 [モデル駆動型フォームの埋め込み型キャンバス アプリケーションを編集する](embedded-canvas-app-edit-classic-designer.md) <br />
 [モデル駆動フォームに埋め込まれたキャンバス アプリケーションの画面サイズと表示方向をカスタマイズする](embedded-canvas-app-customize-screen.md) <br />
 [ModelDrivenFormIntegrationコントロールのプロパティとアクション](embedded-canvas-app-properties-actions.md) <br />
-[埋め込みキャンバス アプリの共有](share-embedded-canvas-app.md)。 <br />
+[埋め込みキャンバス アプリの共有](share-embedded-canvas-app.md) <br />
 [埋め込みキャンバス アプリの作業のガイドライン](embedded-canvas-app-guidelines.md) <br />
 [パブリック プレビュー リリースを使用して作成された、モデル駆動型フォームの埋込み型キャンバスアプリケーションを最新版へと移行する](embedded-canvas-app-migrate-from-preview.md) <br />

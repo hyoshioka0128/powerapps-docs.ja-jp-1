@@ -48,6 +48,6 @@ ms.locfileid: "2868364"
 [モデル駆動型フォームの埋め込み型キャンバス アプリケーションを編集する](embedded-canvas-app-edit-classic-designer.md) <br />
 [組み込みキャンバス アプリ内からホスト フォームで事前定義済みの操作を実行する](embedded-canvas-app-actions.md) <br />
 [ModelDrivenFormIntegrationコントロールのプロパティとアクション](embedded-canvas-app-properties-actions.md) <br />
-[埋め込みキャンバス アプリの共有](share-embedded-canvas-app.md)。 <br />
+[埋め込みキャンバス アプリの共有](share-embedded-canvas-app.md) <br />
 [埋め込みキャンバス アプリの作業のガイドライン](embedded-canvas-app-guidelines.md) <br />
 [パブリック プレビュー リリースを使用して作成された、モデル駆動型フォームの埋込み型キャンバスアプリケーションを最新版へと移行する](embedded-canvas-app-migrate-from-preview.md) <br />
