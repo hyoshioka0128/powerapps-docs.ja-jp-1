@@ -1,4 +1,4 @@
-- name: はじめる
+- name: 作業の開始
   items:
     - name: Power Apps とは
       href: ../powerapps-overview.md
@@ -94,7 +94,7 @@
               href: ../user/export-excel-pivottable.md
             - name: 重複レコードをマージする
               href: ../user/merge-duplicate-records.md
-        - name: 'レポート:'
+        - name: レポート
           items:
             - name: レポートを操作する
               href: ../user/work-with-reports.md
@@ -322,7 +322,7 @@
                   href: ./canvas-apps/controls/control-html-text.md
                 - name: アイコン
                   href: ./canvas-apps/controls/control-shapes-icons.md
-                - name: イメージ
+                - name: 画像
                   href: ./canvas-apps/controls/control-image.md
                 - name: インポート
                   href: ./canvas-apps/controls/control-export-import.md
@@ -372,11 +372,11 @@
                   href: ./canvas-apps/controls/properties-color-border.md
                 - name: コア
                   href: ./canvas-apps/controls/properties-core.md
-                - name: イメージ
+                - name: 画像
                   href: ./canvas-apps/controls/properties-visual.md
                 - name: サイズと場所
                   href: ./canvas-apps/controls/properties-size-location.md
-                - name: Text
+                - name: テキスト
                   href: ./canvas-apps/controls/properties-text.md
         - name: アプリ機能を構成する
           items:
@@ -428,9 +428,9 @@
                   href: ./canvas-apps/functions/function-aggregates.md
                 - name: Back
                   href: ./canvas-apps/functions/function-navigate.md
-                - name: Blank
+                - name: 空白
                   href: ./canvas-apps/functions/function-isblank-isempty.md
-                - name: Calendar
+                - name: カレンダー
                   href: ./canvas-apps/functions/function-clock-calendar.md
                 - name: Char
                   href: ./canvas-apps/functions/function-char.md
@@ -460,7 +460,7 @@
                   href: ./canvas-apps/functions/function-concatenate.md
                 - name: Concurrent
                   href: ./canvas-apps/functions/function-concurrent.md
-                - name: Connection
+                - name: 接続
                   href: ./canvas-apps/functions/signals.md
                 - name: Count
                   href: ./canvas-apps/functions/function-table-counts.md
@@ -552,7 +552,7 @@
                   href: ./canvas-apps/functions/function-astype-istype.md
                 - name: JSON
                   href: ./canvas-apps/functions/function-json.md
-                - name: Language
+                - name: 言語
                   href: ./canvas-apps/functions/function-language.md
                 - name: Last
                   href: ./canvas-apps/functions/function-first-last.md
@@ -568,7 +568,7 @@
                   href: ./canvas-apps/functions/function-numericals.md
                 - name: LoadData
                   href: ./canvas-apps/functions/function-savedata-loaddata.md
-                - name: Location
+                - name: 場所
                   href: ./canvas-apps/functions/signals.md
                 - name: LookUp
                   href: ./canvas-apps/functions/function-filter-lookup.md
@@ -602,7 +602,7 @@
                   href: ./canvas-apps/functions/function-now-today-istoday.md
                 - name: Operators
                   href: ./canvas-apps/functions/operators.md
-                - name: Or
+                - name: OR
                   href: ./canvas-apps/functions/function-logicals.md
                 - name: Param
                   href: ./canvas-apps/functions/function-param.md
@@ -620,11 +620,11 @@
                   href: ./canvas-apps/functions/function-trig.md
                 - name: Rand
                   href: ./canvas-apps/functions/function-rand.md
-                - name: Refresh
+                - name: 更新
                   href: ./canvas-apps/functions/function-refresh.md
                 - name: Relate
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Remove
+                - name: 削除
                   href: ./canvas-apps/functions/function-remove-removeif.md
                 - name: RemoveIf
                   href: ./canvas-apps/functions/function-remove-removeif.md
@@ -666,7 +666,7 @@
                   href: ./canvas-apps/functions/function-shuffle.md
                 - name: Sin
                   href: ./canvas-apps/functions/function-trig.md
-                - name: Sort
+                - name: 並べ替え
                   href: ./canvas-apps/functions/function-sort.md
                 - name: SortByColumns
                   href: ./canvas-apps/functions/function-sort.md
@@ -682,7 +682,7 @@
                   href: ./canvas-apps/functions/function-replace-substitute.md
                 - name: SubmitForm
                   href: ./canvas-apps/functions/function-form.md
-                - name: Sum
+                - name: 合計
                   href: ./canvas-apps/functions/function-aggregates.md
                 - name: Switch
                   href: ./canvas-apps/functions/function-if.md
@@ -692,7 +692,7 @@
                   href: ./canvas-apps/functions/function-trig.md
                 - name: Text
                   href: ./canvas-apps/functions/function-text.md
-                - name: Time
+                - name: 時刻
                   href: ./canvas-apps/functions/function-date-time.md
                 - name: TimeValue
                   href: ./canvas-apps/functions/function-datevalue-timevalue.md
@@ -704,11 +704,11 @@
                   href: ./canvas-apps/functions/function-trim.md
                 - name: TrimEnds
                   href: ./canvas-apps/functions/function-trim.md
-                - name: Ungroup
+                - name: グループ解除
                   href: ./canvas-apps/functions/function-groupby.md
                 - name: Unrelate
                   href: ./canvas-apps/functions/function-relate-unrelate.md
-                - name: Update
+                - name: 更新
                   href: ./canvas-apps/functions/function-update-updateif.md
                 - name: UpdateContext
                   href: ./canvas-apps/functions/function-updatecontext.md
@@ -728,9 +728,9 @@
                   href: ./canvas-apps/functions/function-form.md
                 - name: Weekday
                   href: ./canvas-apps/functions/function-datetime-parts.md
-                - name: あり
+                - name: 修正後の文字列
                   href: ./canvas-apps/functions/function-with.md
-                - name: Year
+                - name: 年
                   href: ./canvas-apps/functions/function-datetime-parts.md
         - name: ソリューション内でアプリを作成する
           href: ./canvas-apps/add-app-solution.md
@@ -1028,6 +1028,10 @@
               items:
                 - name: メモ コントロールを設定する
                   href: ./model-driven-apps/notes-control-legacy.md
+                - name: タイムライン コントロールの設定
+                  href: ./model-driven-apps/set-up-timeline-control.md
+                - name: タイムライン コントロールに関する FAQ
+                  href: ./model-driven-apps/faqs-timeline-control.md
                 - name: 簡易表示コントロールのプロパティ
                   href: ./model-driven-apps/quick-view-control-properties-legacy.md
                 - name: 電話用とタブレット PC 用 Dynamics 365 のその他のコントロール
@@ -1102,7 +1106,7 @@
       href: ./model-driven-apps/app-for-outlook-customize.md
     - name: 開発者向け
       href: ../developer/model-driven-apps/overview.md
-- name: Portals
+- name: ポータル
   items:
     - name: Power Apps ポータルとは
       href: ./portals/overview.md
@@ -1198,7 +1202,7 @@
               href: ./portals/configure/configure-saml2-settings.md
             - name: ID プロバイダーを Azure AD B2C に移行する
               href: ./portals/configure/migrate-identity-providers.md
-        - name: Search
+        - name: 検索
           items:
             - name: 検索について
               href: ./portals/configure/search.md
@@ -1376,7 +1380,7 @@
           href: ./common-data-service/define-alternate-keys-portal.md
         - name: ソリューション エクスプローラーを使用して代替キーを定義する
           href: ./common-data-service/define-alternate-keys-solution-explorer.md
-        - name: 'ハウツー ガイド:組織'
+        - name: 'ハウツー ガイド:エンティティ'
           items:
             - name: Power Apps ポータルを使用してエンティティを作成する方法
               href: ./common-data-service/create-edit-entities-portal.md
@@ -1554,7 +1558,7 @@
   items:
     - name: Power Apps で AI Builder を使う
       href: ../use-ai-builder.md
-- name: その他の学習方法
+- name: 他のユーザーの声
   items:
     - name: ウェビナー
       href: ./canvas-apps/webinars-listing.md
