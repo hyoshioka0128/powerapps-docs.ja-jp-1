@@ -15,18 +15,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 08859f70e047d1c53379e8a79f56997d6beedc58
-ms.sourcegitcommit: 982cab99d84663656a8f73d48c6fae03e7517321
+ms.openlocfilehash: 78b4e997a398bfb806a4e89a70c0ed3e466be381
+ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67456987"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75333612"
 ---
 # <a name="frequently-asked-questions-about-activities-and-the-timeline-wall"></a>活動とタイムライン ウォールに関してよく寄せられる質問  
 
 ## <a name="is-a-title-required-when-adding-a-new-note"></a>新しいメモを追加するときにタイトルは必要ですか?
 
-No. 活動にメモを追加するときにタイトル フィールドが必須フィールドとしてマークされますが、必要ありません。 これは従来の Web クライアントにおける既知の問題です。
+できません。 活動にメモを追加するときにタイトル フィールドが必須フィールドとしてマークされますが、必要ありません。 これは従来の Web クライアントにおける既知の問題です。
 
 ## <a name="for-an-appointment-when-i-choose-the-option-to-save-as-draft-it-doesnt-show-that-the-appointment-has-been-saved-as-a-draft"></a>予定に対して "*下書きとして保存*" オプションを選択しても、予定が下書きとして保存されたことが表示されません。
 
@@ -38,7 +38,7 @@ No. 活動にメモを追加するときにタイトル フィールドが必須
 
 ## <a name="are-html-tags-supported-in-notes"></a>**[メモ]** 内で HTML タグはサポートされていますか?
 
-No. レコードやエンティティに対してメモのアクティビティを作成する場合、HTML タグはサポートされません。 たとえば、メモフィールドにを`<TAG> </TAG>`追加すると、として`<TAG_XXX="XX"> </TAG>`表示されます。
+できません。 レコードやエンティティに対してメモのアクティビティを作成する場合、HTML タグはサポートされません。 たとえば、メモフィールドに `<TAG> </TAG>` を追加すると、`<TAG_XXX="XX"> </TAG>`として表示されます。
 
 ## <a name="how-can-i-improve-performance-on-timeline-wall"></a>タイムライン ウォール上のパフォーマンスを向上させる方法を教えてください
 
@@ -51,7 +51,12 @@ No. レコードやエンティティに対してメモのアクティビティ�
 
 Dynamics 365 で **[印刷プレビュー]** オプションを選択した場合、利用可能なリスト内に **[Timeline Wall]\(タイムライン ウォール\)** は表示されません。 **[メモ]** は表示されますが、タスクやメールは表示されません。
 
+## <a name="see-also"></a>関連項目
 
+[タイムラインコントロールの設定](../maker/model-driven-apps/set-up-timeline-control.md)
 
+[タイムラインコントロールに関する Faq](../maker/model-driven-apps/faqs-timeline-control.md)
 
+[予定、電子メール、通話、メモ、またはタスクアクティビティをタイムラインに追加する](add-activities.md)
 
+[Customer Service Hub アプリのタイムラインセクション](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e6a64a5849b351b625468894696251895375d0c2
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 7f437b649111c4ff51d21f35e73dabb442c57112
+ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74726075"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75333635"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>モデル駆動型アプリのタイムラインに予定、電子メール、電話、メモ、またはタスクのアクティビティを追加する 
 
@@ -189,5 +189,12 @@ ms.locfileid: "74726075"
 > [!div class="mx-imgBorder"]
 > ![活動の管理 .png](media/ManageActivities.png "ManageActivities .png")
 
+## <a name="see-also"></a>関連項目
 
+[タイムラインコントロールの設定](../maker/model-driven-apps/set-up-timeline-control.md)
 
+[タイムラインコントロールに関する Faq](../maker/model-driven-apps/faqs-timeline-control.md)
+
+[アクティビティとタイムラインの壁面に関する Faq](faq-for-timeline-and-activity.md)
+
+[Customer Service Hub アプリのタイムラインセクション](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)

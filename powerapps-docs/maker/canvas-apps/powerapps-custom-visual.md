@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 9a1ff224557bd36074f7c981a5e76a9721943afb
-ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
+ms.openlocfilehash: c5814eedfd05ea5bba19a469dad1b3e28c311974
+ms.sourcegitcommit: 6f94650ea540db69d2723c3c5dff9de8c59056cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302886"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75859128"
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>Power BI 用の Power Apps カスタムビジュアル
 
@@ -45,7 +45,7 @@ Power BI レポートで、Power Apps カスタムビジュアルを使用する
     新しいアプリを作成する場合、Power Apps では、必要なコンポーネントが既に設定されている単純なアプリを作成します。
 
     > [!NOTE]
-    > アプリで `PowerBIIntegration.Refresh()` 機能を使用できるようにするには、Power BI レポートの [Power Apps カスタムビジュアルから新しいアプリを作成する必要があります。
+    > アプリで `PowerBIIntegration.Refresh()` 機能を使用できるようにするには、Power BI レポートの Power Apps カスタムビジュアルから新しいアプリを作成する必要があります。
 
     ![新しいアプリ](./media/powerapps-custom-visual/new-app.png)
 
@@ -65,7 +65,7 @@ Power BI レポートで、Power Apps カスタムビジュアルを使用する
 
     ![レポートの操作](./media/powerapps-custom-visual/working-report.gif)
 
-    アプリに変更を加える必要がある場合は、レポートを編集モードで開き、[Power Apps] ビジュアルの [**その他のオプション**(**...**)] をクリックまたはタップして、[**編集**] を選択します。
+    アプリに変更を加える必要がある場合は、レポートを編集モードで開き、[Power Apps] ビジュアルの [**その他のオプション**( **...** )] をクリックまたはタップして、 **[編集]** を選択します。
 
     ![アプリの編集](./media/powerapps-custom-visual/edit-app.png)
 
@@ -73,13 +73,13 @@ Power BI レポートで、Power Apps カスタムビジュアルを使用する
 
 Power Apps カスタムビジュアルには、次の制限事項が適用されます。
 
-- ビジュアルに関連付けられているデータ フィールドを変更する場合、省略記号 (...) を選択し、**[編集]** を選択して Power BI サービス内でアプリを編集する必要があります。 そうしないと、変更は Power Apps に反映されず、アプリは予期しない方法で動作します。
+- ビジュアルに関連付けられているデータ フィールドを変更する場合、省略記号 (...) を選択し、 **[編集]** を選択して Power BI サービス内でアプリを編集する必要があります。 そうしないと、変更は Power Apps に反映されず、アプリは予期しない方法で動作します。
 - Power Apps カスタムビジュアルでは、Power BI Desktop 内から Power BI レポートの更新とデータソースの Power BI をトリガーすることはできません。 アプリケーションからレポートと同じデータソースにデータを書き戻す場合、変更内容はすぐに Power BI Desktop に反映されません。 変更は、次回のスケジュールされた更新で反映されます。
 - Power Apps カスタムビジュアルでは、データをフィルター処理したり、レポートにデータを送信したりすることはできません。
 - Power Apps アプリは、レポートとは別に共有する必要があります。 [Power apps でのアプリの共有](share-app.md)について説明します。
-- Power BI Report Server と Power BI 用のモバイルアプリは、Power Apps カスタムビジュアルをサポートしていません。
+- Power BI Report Server は、Power Apps カスタムビジュアルをサポートしていません。
 - `PowerBIIntegration.Refresh()` 関数を使用する場合は、次の制限事項が適用されます。
-    - この機能をアプリで使用できるようにするには、Power BI レポートの [Power Apps カスタムビジュアルから新しいアプリを作成する必要があります。
+    - この機能をアプリで使用できるようにするには、Power BI レポートの Power Apps カスタムビジュアルから新しいアプリを作成する必要があります。
     - [Directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources)をサポートするソースを使用する必要があり、データ接続は directquery メソッドを使用して作成する必要があります。
 - Power BI Desktop の power Apps は、アプリを作成するときに Power Apps Studio にデータを提供しますが、編集中は提供しません。 Power BI Web を使用して、アプリの編集中にデータをプレビューします。
 
@@ -90,16 +90,16 @@ Power Apps カスタムビジュアルには、次の制限事項が適用され
 
 次の表に、Power Apps カスタムビジュアルの表示、作成、および変更アクションのブラウザーのサポートを示します。 サポートされているブラウザーとアクションは、チェックマーク (&check;) によって識別されます。
 
-|ブラウザー|表示|生成|更新
+|ブラウザー|ビュー|作成|変更
 |-|-|-|-
-|Microsoft Edge|&check;|&check;|&check;
+|Microsoft エッジ|&check;|&check;|&check;
 |Internet Explorer 11|&check;
 |Google Chrome|&check;|&check;|&check;
 |Safari \*|&check;
 |Mozilla Firefox
 |その他すべてのブラウザー
 
-Safari で \*、サイト間の追跡を有効にする必要があります ([**ユーザー設定**] > [**プライバシー**] をオンにし、[**クロスサイトトラッキングを防止**する] をオフにする)。
+Safari で \*、サイト間の追跡を有効にする必要があります ( **[ユーザー設定]**  >  **[プライバシー]** をオンにし、 **[クロスサイトトラッキングを防止]** する をオフにする)。
 
 ## <a name="accessibility-support"></a>ユーザー補助機能のサポート
 
