@@ -6,24 +6,27 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 07/12/2017
+ms.date: 11/27/2019
 ms.author: matp
-ms.reviewer: ''
+ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 37818e3c7cca175218826c1707ab83cd5c193ae7
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4285a80d3751285929378336aa9806b3639f3457
+ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723919"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75928980"
 ---
 # <a name="connect-to-dynamics-365-from-power-apps"></a>Power Apps から Dynamics 365 に接続する
 Power Apps を使用すると、コードをほとんどまたはまったく使用せずに、モバイルアプリを簡単に生成、カスタマイズ、共有、および実行できます。 Dynamics 365 コネクタを使うことにより、組織と共有する便利なモバイル アプリをほんの数分で作成できます。
 
-このトピックでは、ユーザーが Dynamics 365 の連絡先を参照、追加、削除、更新できるアプリを作成する手順について説明します。 ユーザーは、[ブラウザー](../../../user/run-app-browser.md)または携帯電話などの[モバイル デバイス](../../../user/run-app-client.md)で、アプリを実行できます。
+このトピックの手順に従って、Dynamics 365 のモデル駆動型アプリでユーザーが参照、追加、削除、および更新を行うことができるアプリを作成します (Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Field Service、Dynamics 365 Marketing)。、および Dynamics 365 Project Service Automation)。 ユーザーは、[ブラウザー](../../../user/run-app-browser.md)または携帯電話などの[モバイル デバイス](../../../user/run-app-client.md)で、アプリを実行できます。
+
+> [!NOTE]
+> Dynamics 365 でモデル駆動型アプリに接続する場合は、より堅牢な[Common Data Service コネクタ](connection-common-data-service.md)を使用することをお勧めします。
 
 ## <a name="prerequisite"></a>前提条件
 このチュートリアルに従って作業するには、Dynamics 365 サブスクリプションを含む Microsoft Office 365 アカウントが必要です。
