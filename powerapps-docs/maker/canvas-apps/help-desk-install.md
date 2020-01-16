@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/29/2019
+ms.date: 01/15/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 01fdadfd5ecf19d56ac115e53cef08a2cff2a254
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4eafe6aaafb2fe461a98212a64d3858ebf5f5f0f
+ms.sourcegitcommit: 1c4ab1859febccf79a835bd2f168e7e12a953a18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729648"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111109"
 ---
 # <a name="install-and-configure-the-help-desk-sample-in-power-apps"></a>Power Apps でのヘルプデスクのサンプルのインストールと構成
 
@@ -31,7 +31,7 @@ Power Apps での、キャンバスアプリ用ヘルプデスクサンプルの
 
 ## <a name="overview-of-the-sample"></a>サンプルの概要
 
-ヘルプデスクは、エンドユーザーをサポート担当者に接続するためのユーザーフレンドリなエクスペリエンスを提供します。 最も重要な質問に対する回答をすばやく検索し、開いているチケットの進行状況を追跡し、以前の要求の詳細を確認します。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
+Help Desk は、手軽な操作でエンド ユーザーをサポート担当者に繋ぐことのできるアプリです。 極めて重要な質問に対する回答をすぐに入手したり、未解決のチケットの進捗状況を追跡したりできるほか、以前のリクエストの詳細を確認することも可能です。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
 
 ![Help Desk PowerApp の開始画面](./media/help-desk-install/Login-screen.png)
 
@@ -100,7 +100,7 @@ Power Apps での、キャンバスアプリ用ヘルプデスクサンプルの
 3. **[type of information in this column is]\(この列の情報の種類\)** ラジオ ボタン リストで、 **[選択肢]** を選択します。
 4. **[Type each choice on a separate line]\(それぞれの行に選択肢を入力してください\)** ボックスに、次の値をそれぞれ別の行に入力します。 
     - 高
-    - 程度
+    - 中
     - 低
 5. **[固有の値を適用する]** ラジオ ボタン リストで、 **[いいえ]** を選択します。
 6. **[選択肢の表示形式]** ラジオ ボタン リストで、 **[ドロップダウン メニュー]** を選択します。
@@ -138,7 +138,7 @@ Power Apps での、キャンバスアプリ用ヘルプデスクサンプルの
 2. **[Require that this column contains information]\(この列への情報の入力を必須にする\)** ラジオ ボタン リストで、 **[いいえ]** を選択します。
 3. **[OK]** をクリックします。
 
-## <a name="download-the-app"></a>アプリをダウンロードする
+## <a name="download-the-app"></a>アプリのダウンロード
 
 1.  Power Apps パッケージを[ダウンロード](https://pappsfeprodwestuscontent.blob.core.windows.net/sampleapps/helpdesk/docs/HelpDesk(SP_List).zip)し、コンピューターに保存します。
 
@@ -233,7 +233,7 @@ Power Apps での、キャンバスアプリ用ヘルプデスクサンプルの
 
 ### <a name="update-admin-list"></a>管理者一覧を更新する
 
-1. **LoginScreen** を選びます。
+1. **アプリ**を選択します。
 2. ドロップダウンで **OnStart** を選びます。
 3. 式ウィンドウを展開し、**AdminList** コレクションを探します。
 4. <strong>user@microsoft.com</strong> を実際のヘルプデスク管理者に置き換えます。
