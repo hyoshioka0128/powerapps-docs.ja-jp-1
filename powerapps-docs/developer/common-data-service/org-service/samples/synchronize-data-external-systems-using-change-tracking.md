@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 53424095a8b07cb1b0544f592adc0abf139d6bb8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c6b855102f595460fd2324e94fff56a9ccd949d7
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749284"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934147"
 ---
 # <a name="sample-synchronize-data-with-external-systems-using-change-tracking"></a>サンプル: 変更の追跡を使用してデータを外部システムに同期
 
@@ -58,6 +58,4 @@ ms.locfileid: "2749284"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup)でインポートされる管理ソリューションを削除するオプションを表示します。これにより、`sample_book` エンティティとサンプルで作成されたすべてのデータが削除されます。
-
-    サンプルで作成されたエンティティおよびデータを検証する場合、削除は任意です。 手動で `ChangeTrackingSample` を削除しても同じ結果を得られます。
+[セットアップ](#setup)でインポートされる管理ソリューションを削除するオプションを表示します。これにより、`sample_book` エンティティとサンプルで作成されたすべてのデータが削除されます。 サンプルで作成されたエンティティおよびデータを検証する場合、削除は任意です。 手動で `ChangeTrackingSample` を削除しても同じ結果を得られます。

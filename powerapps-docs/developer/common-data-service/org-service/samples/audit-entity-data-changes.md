@@ -14,18 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 93c441910b7bed967e709ddf4e3566c05f03d1d1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f6d70ce43942b9012f512fcbce931a616964abb8
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749104"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934423"
 ---
 # <a name="sample-audit-entity-data-changes"></a>サンプル: エンティティのデータ変更を監査する
 
 このサンプルでは、エンティティとその属性に対する監査を有効または無効にする方法、監査対象エンティティのデータ変更履歴を取得する方法、および監査レコードを削除する方法を説明します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/AuditEntityData) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
+
 [!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
 
 ## <a name="what-this-sample-does"></a>このサンプルの概要
@@ -50,6 +51,4 @@ ms.locfileid: "2749104"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたサンプル データを削除するためのオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたサンプル データを削除するためのオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e3e83344f0573ca2196fbdb30d5027e06cd37414
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6f9617f1320de9f9e1ad3d0dc807e76797d98623
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749321"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934295"
 ---
 # <a name="sample-execute-multiple-requests"></a>サンプル: 複数の要求を実行する
 
@@ -54,6 +54,4 @@ ms.locfileid: "2749321"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

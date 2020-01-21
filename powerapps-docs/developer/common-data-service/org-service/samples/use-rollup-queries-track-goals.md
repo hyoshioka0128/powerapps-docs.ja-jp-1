@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9d7b1f6f3f7d9af82e1b047da2ae760246c8ebdc
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 00461f0edf24e9d35d9e0b97233da34bb6faefd8
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749275"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934083"
 ---
 # <a name="sample-use-rollup-queries-to-track-goals"></a>サンプル: ロールアップ クエリを使用して目標を追跡する
 
@@ -79,6 +79,4 @@ ms.locfileid: "2749275"
 
 ### <a name="clean-up"></a>クリーンアップ
 
-1. [セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

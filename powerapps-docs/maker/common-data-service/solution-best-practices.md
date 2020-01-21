@@ -22,19 +22,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 810fd536da5236f5ac7490505e82e78179ab61da
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 40c59ccdebe8ee5192510b5d8ac7e825c6b68c58
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865296"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909421"
 ---
 # <a name="best-practices-when-working-with-solutions"></a>ソリューションを使用する場合のベスト プラクティス 
 このトピックでは、ソリューションを使用するときのベスト プラクティスについて説明します。 
 
 
 ## <a name="use-a-single-managed-solution-to-manage-a-model-driven-app"></a>モデル駆動型のアプリを管理する、単一のアンマネージド ソリューションを使用します。 
-マネージド ソリューションに含まれるアプリを更新するには、更新または修正プログラム内のソリューションを使用します。 同じモデル駆動型のアプリケーションがインストールされている環境にさまざまなマネージド ソリューションをインストールしないでください。 詳細: [ソリューションの更新](import-update-export-solutions.md#update-solutions) および [セグメント化されたソリューションおよびパッチを使用して選択したエンティティ資産をエクスポート](use-segmented-solutions-patches-simplify-updates.md) 
+マネージド ソリューションに含まれるアプリを更新するには、更新または修正プログラム内のソリューションを使用します。 同じモデル駆動型のアプリケーションがインストールされている環境にさまざまなマネージド ソリューションをインストールしないでください。 詳細: [ソリューションの更新](update-solutions.md) および [セグメント化されたソリューションおよびパッチを使用して選択したエンティティ資産をエクスポート](use-segmented-solutions-patches-simplify-updates.md) 
 
 
 ## <a name="use-security-roles-to-manage-app-access"></a>セキュリティ ロールを使用してアプリのアクセスを管理する

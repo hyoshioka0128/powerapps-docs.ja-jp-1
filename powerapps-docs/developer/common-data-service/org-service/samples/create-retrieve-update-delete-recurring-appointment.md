@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d5c5ca8034f515e5e150c71b376c391660f3e920
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7dd9cfec4eff14c8d5575be6c5c2279958242ecb
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748951"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934353"
 ---
 # <a name="sample-create-retrieve-update-and-delete-a-recurring-appointment"></a>サンプル: 定期的な予定を作成、取得、更新、および削除する
 
@@ -46,7 +46,7 @@ ms.locfileid: "2748951"
 
 ### <a name="setup"></a>セットアップ
 
-1. 組織の現在のバージョンをチェックします。
+組織の現在のバージョンをチェックします。
 
 ### <a name="demonstrate"></a>使用方法
 
@@ -58,8 +58,6 @@ ms.locfileid: "2748951"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
 
 

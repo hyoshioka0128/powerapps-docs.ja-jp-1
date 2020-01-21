@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5ec26b4883220c8527f68c0300f88272a9cd2804
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: bee68c021f1fa6c34f41c71b1a62299dfda423e6
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749165"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934387"
 ---
 # <a name="sample-create-a-connection"></a>サンプル: つながりの作成
 
@@ -51,6 +51,4 @@ ms.locfileid: "2749165"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

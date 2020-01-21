@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 17074439d81c60b4d51a6f5e91dc5465f8ee5327
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9ef1bf83b0423943eb88a71a2e06dbb9629b8c36
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748954"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934379"
 ---
 # <a name="sample-create-an-email-using-a-template"></a>サンプル: テンプレートを使用した電子メールの作成
 
@@ -52,5 +52,4 @@ ms.locfileid: "2748954"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

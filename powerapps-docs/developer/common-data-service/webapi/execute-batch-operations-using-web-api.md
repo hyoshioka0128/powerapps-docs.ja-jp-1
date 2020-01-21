@@ -2,7 +2,7 @@
 title: Web APIを使用したバッチ処理の実行 (Common Data Service)| Microsoft Docs
 description: バッチ操作を使用すると、単一の HTTP 要求で複数のオペレーションをグループ化することができます。 Web API を使用してバッチ操作を実行する方法を読みます
 ms.custom: ''
-ms.date: 07/13/2019
+ms.date: 12/10/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4029b07d07505d15f216279edbfc774026463a4f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 373902e69a6299144954f55067236abcfa5764f0
+ms.sourcegitcommit: 4fb0e2cd9c4bb7d0b83bd7fe6c7c88accfc70390
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753699"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "2907039"
 ---
 # <a name="execute-batch-operations-using-the-web-api"></a>Web API を使用してバッチ操作を実行する
 
@@ -219,7 +219,9 @@ Prefer: odata.include-annotations="*"
 
 ## <a name="reference-uris-in-an-operation"></a>運用における参照URI
 
-`$1`、 `$2`などの `$parameter` を使用すると、バッチ要求に先行するチェンジセットで使用されていたURIを参照できます。 このセクションでは、 `$parameter` をバッチ操作の要求本体で使用してURIを参照する方法について、さまざまな例を示します。
+`$1`、 `$2` などの `$parameter` を使用すると、バッチ要求内の同じ変更セット内で以前に作成された新規エンティティー用に戻されたURIを参照します。 詳細については、OData v4.0 の仕様を参照してください: [11.7.3.1変更セット内のリクエストの参照](http://docs.oasis-open.org/odata/odata/v4.0/os/part1-protocol/odata-v4.0-os-part1-protocol.html#_Toc372793752)。
+
+このセクションでは、 `$parameter` をバッチ操作の要求本体で使用してURIを参照する方法について、さまざまな例を示します。
 
 ### <a name="reference-uris-in-request-body"></a>要求本体のURI参照
 

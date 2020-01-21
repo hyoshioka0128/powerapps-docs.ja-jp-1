@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61b34d32835cd3553f880791250efad48d783ffd
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bbb8853a1193cffbf11840f847394466db61bd17
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861889"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922402"
 ---
 # <a name="publish-your-app-on-appsource"></a>AppSource でアプリを公開する
 
@@ -29,21 +29,17 @@ ms.locfileid: "2861889"
 
 以下の手順に従って、 Microsoft AppSource にアプリが表示されるよう、アプリを提出する準備を行います:
 
-> [手順1: AppSource のアプリ提出フォームに必要事項を入力する](fill-app-submission-form-appsource.md)
+> [ステップ 1: Microsoft パートナー センター アカウントを作成する](register-microsoft-partner-network.md)
 > 
-> [手順 2: Microsoft Partner Network アカウントを登録する](register-microsoft-partner-network.md)
+> [手順 2: アプリの管理ソリューションを作成する](create-solution-app-appsource.md)
 > 
-> [手順3: アプリの管理ソリューションを作成する](create-solution-app-appsource.md)
+> [手順 3: アプリの AppSource パッケージを作成する](create-package-app-appsource.md)
 > 
-> [手順4: アプリの AppSource パッケージを作成する](create-package-app-appsource.md)
-> 
-> [手順5: Azure Storage にパッケージを保存する](store-appsource-package-azure-storage.md)
+> [手順 4: Azure Storage にパッケージを保存する](store-appsource-package-azure-storage.md)
 
 ## <a name="submit-your-app-on-partner-center"></a>パートナーセンターにアプリケーションを提出する
 
-アプリを送信する準備ができたら、 [パートナー センター](https://partner.microsoft.com/dashboard/account/v3/enrollment/introduction/azureisv) を使用してアプリを提出することで、 Microsoft AppSource 上に表示されます。 パートナーセンター および関連するドキュメントには、Microsoft Partner Network のメンバーのみがアクセスできます。
-
-詳細については次を参照してください: [次の手順: クパートナーセンター にアプリを提出する](next-steps-submit-app-cloud-partner-portal.md)
+アプリを送信する準備ができたら、 [パートナー センター](https://partner.microsoft.com/dashboard/commercial-marketplace/overview) を使用してアプリを提出することで、 Microsoft AppSource 上に表示されます。 パートナーセンター および関連するドキュメントには、Microsoft Partner Network のメンバーのみがアクセスできます。
   
 ## <a name="checklists"></a>チェックリスト
 

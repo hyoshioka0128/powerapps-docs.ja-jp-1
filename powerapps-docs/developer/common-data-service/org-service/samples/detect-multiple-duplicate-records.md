@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b0d9d5ae89e3e54224bc72fb32e951661c439133
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 2efe8b44f2ea8cbe943466441df75dcb876a3bb3
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748950"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934343"
 ---
 # <a name="sample-detect-multiple-duplicate-records"></a>サンプル: 複数の重複レコードを検出する
 
@@ -48,11 +48,9 @@ ms.locfileid: "2748950"
 
 ### <a name="demonstrate"></a>使用方法
 
-1. `BulkDetectDuplicatesRequest` メソッドは BulkDetectDuplicatesRequest オブジェクトを作成する
+`BulkDetectDuplicatesRequest` メソッドは BulkDetectDuplicatesRequest オブジェクトを作成する
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
 

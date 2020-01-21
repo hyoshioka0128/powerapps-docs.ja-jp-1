@@ -10,19 +10,19 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 11/18/2019
+ms.date: 12/17/2019
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f11eebcb220ff877b0cd750f2d94338cadc5ceea
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: bcdc8241692cd1713f4c0f4cd2f4c0d8959dffe4
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884017"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909377"
 ---
 # <a name="share-a-model-driven-app-with-power-apps"></a>Power Apps を使用してモデル駆動型アプリを共有する
 
@@ -167,7 +167,11 @@ Common Data Service ユーザーセキュリティ ロールを持つユーザ�
 
 *特権は、特に指定されていない限り、グローバル スコープです。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="use-azure-active-directory-groups-to-manage-access"></a>Azure Active Directory グループを使用してアクセスを管理する
+管理者は、組織の Azure Active Directory (Azure AD) グループを使って、ライセンスを持った Common Data Service ユーザーのアクセス権を管理できます。 Officeとセキュリティ、両方の Azure AD グループを使用して、ユーザーのアプリへのアクセス権を保護することができます。 詳細 : [グループ チームについて](/power-platform/admin/manage-teams.md#about-group-teams) 
+
+
+### <a name="see-also"></a>関連項目
 [モバイル デバイス上でモデル駆動型アプリを実行](../../user/run-app-client-model-driven.md)
 
 

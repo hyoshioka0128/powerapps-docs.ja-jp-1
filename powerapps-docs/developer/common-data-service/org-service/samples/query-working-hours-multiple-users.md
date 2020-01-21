@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c9c6b691312f9ed46a236e65d6b18b0bfc4f6894
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3694c3180d3183f2fbae44c8e59acbebb6a548b0
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749307"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934251"
 ---
 # <a name="sample-query-the-working-hours-of-multiple-users"></a>サンプル: 複数ユーザーの作業時間のクエリ
 
@@ -53,10 +53,8 @@ ms.locfileid: "2749307"
 
 ### <a name="demonstrate"></a>使用方法
 
-1. `QueryMultipleScheduleRequest` メッセージは、現在のユーザーおよび手動で作成されたユーザーの作業時間を取得します。
+`QueryMultipleScheduleRequest` メッセージは、現在のユーザーおよび手動で作成されたユーザーの作業時間を取得します。
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e342e7192f85112d682727e145aaf12f73a65ff8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 85bf3eb290b1079d660a99acacecce6a4fa6c098
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749106"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934443"
 ---
 # <a name="sample-add-a-record-to-a-queue"></a>サンプル: キューへのレコードの追加
 
@@ -59,6 +59,4 @@ ms.locfileid: "2749106"
 
 ### <a name="clean-up"></a>クリーンアップ
 
-1. [セットアップ](#setup) で作成されたサンプル データを削除するためのオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたサンプル データを削除するためのオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

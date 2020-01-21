@@ -2,7 +2,7 @@
 title: Power Apps  のチェッカー Web API を使用する | Microsoft Docs
 description: Power Apps チェッカー Web API は、さまざまなプログラミング言語、プラットフォーム、およびデバイスで使用できる開発体験を提供します。
 ms.custom: ''
-ms.date: 06/3/2019
+ms.date: 12/12/2019
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,23 +20,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eed1556726cb947d7eba6b8f94ceed538f669ea3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 01ef77aba8b6380b39c1514d317567132894c4af
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861812"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909581"
 ---
 # <a name="use-the-power-apps-checker-web-api"></a>Power Apps チェッカー Web API を使用する
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../../../includes/cc-beta-prerelease-disclaimer.md)]
-
 Power Apps チェッカーの Web API は、カスタマイズに対して実行されたスタティック分析のチェックや Common Data Service プラットフォームへと拡張するメカニズムを提供します。 作成者や開発者は一連のベスト プラクティス ルールに対してソリューションで機能豊富なスタティック分析チェックを実行し、これらの問題となるパターンを識別できます。 このサービスは、[Power Apps](https://make.powerapps.com) の [ソリューション チェッカー機能](../../../../maker/common-data-service/use-powerapps-checker.md)のためのロジックを提供し、[AppSource に提出されるアプリケーション](../../publish-app-appsource.md)のための自動化の一部として含まれています。 この方式でサービスと直接やり取りすることで、設置型 (すべてのサポートされているバージョン) とOnline環境の一部として含まれているソリューションの分析をおこなうことができます。
-
- > [!IMPORTANT]
- >
- > - Power Apps チェッカーの Web API はプレビュー機能です。
- > - [!INCLUDE[cc_preview_features_definition](../../../../includes/cc-preview-features-definition.md)]
 
 <a name="bkmk_altApproaches"></a>
 

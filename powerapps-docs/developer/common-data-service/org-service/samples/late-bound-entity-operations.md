@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 126d73385a9b3e2aca78f74f7132b87865801d52
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9e97dfc4ab319c30decbc07fa866ab5f6c861e28
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749318"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934275"
 ---
 # <a name="sample-late-bound-entity-operations"></a>サンプル: 遅延バインド エンティティの操作
 
@@ -44,7 +44,7 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service
 
 ### <a name="setup"></a>セットアップ
 
-1. 組織の現在のバージョンをチェックします。
+組織の現在のバージョンをチェックします。
 
 
 ### <a name="demonstrate"></a>使用方法
@@ -59,4 +59,4 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service
 
 ### <a name="clean-up"></a>クリーンアップ
 
-1. 使用方法のセクションで作成されたすべてのサンプル レコードを削除したなら、クリーンアップは必要ではありません。
+使用方法のセクションで作成されたすべてのサンプル レコードを削除したなら、クリーンアップは必要ではありません。

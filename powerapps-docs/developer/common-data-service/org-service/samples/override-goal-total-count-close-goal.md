@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 62d02e77e0008778e0526f7620bc5bda168c6f26
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a57a0daa4d956cf07728e836cf0663c27157322d
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749313"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934271"
 ---
 # <a name="sample-override-goal-total-count-and-close-the-goal"></a>サンプル: 目標の合計件数を上書きして目標をクローズする
 
@@ -67,6 +67,4 @@ ms.locfileid: "2749313"
 
 ### <a name="clean-up"></a>クリーンアップ
 
-1. [セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

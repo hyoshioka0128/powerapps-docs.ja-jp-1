@@ -1,27 +1,27 @@
 ---
-title: '手順3: アプリの管理ソリューションを作成する (Common Data Service) | Microsoft Docs'
+title: '手順 2: アプリの管理ソリューションを作成する (Common Data Service) | Microsoft Docs'
 description: すべてのコンポーネントを含めるアプリの管理ソリューションを作成する方法を学習します。 これは Appsource にアプリを公開するために必要です。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 12/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: shmcarth
-ms.author: jdaly
-manager: ryjones
+author: KumarVivek
+ms.author: kvivek
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8115e17ef999834e2134ef41c2a8472bf539438b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 25b80be0190fa2b520706d72166879e687a30f30
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748999"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922326"
 ---
-# <a name="step-3-create-a-managed-solution-for-your-app"></a>手順3: アプリの管理ソリューションを作成する
+# <a name="step-2-create-a-managed-solution-for-your-app"></a>手順 2: アプリの管理ソリューションを作成する
 
 アプリのためにすべてのコンポーネントを含める管理ソリューションを作成します。 アプリ コンポーネントをパッケージする管理ソリューションを計画して作成するときに、これらのトピックが役立つことに気付くことでしょう。
 - [ソリューションの概要](introduction-solutions.md)
@@ -54,5 +54,5 @@ Configuration Migration ツールを使用してスキーマを作成してデ�
 
 
 > [!div class="nextstepaction"]
-> [手順4: アプリの AppSource パッケージを作成する](create-package-app-appsource.md) 
+> [手順 3: アプリの AppSource パッケージを作成する](create-package-app-appsource.md) 
   

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ff883ffd2c90da491341a9ea03284c19bc564fab
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c41dfe21ad8a706b5502b637e0a9a3c68317c6a0
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748964"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934439"
 ---
 # <a name="sample-add-a-security-principal-user-or-team-to-a-queue"></a>サンプル: キューへのセキュリティ プリンシパル (ユーザーまたはチーム) の追加 
 
@@ -48,9 +48,8 @@ ms.locfileid: "2748964"
 
 ### <a name="demonstrate"></a>使用方法
 
-1. `AddPrincipalToQueueRequest` メソッドでは、キューにチームが追加されます。
+`AddPrincipalToQueueRequest` メソッドでは、キューにチームが追加されます。
+
 ### <a name="clean-up"></a>クリーンアップ
 
-1. [セットアップ](#setup) でサンプル データを削除するためのオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) でサンプル データを削除するためのオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

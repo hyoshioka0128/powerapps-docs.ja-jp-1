@@ -2,7 +2,7 @@
 title: API 制限の概要 (Common Data Service) | Microsoft Docs
 description: Common Data Service の API 要求に対する制限について理解します。
 ms.custom: ''
-ms.date: 11/23/2019
+ms.date: 12/08/2019
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 786994fa531698919d1506dc90217f435e43fb8a
-ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
+ms.openlocfilehash: aee2a6b256c991c178506c68a38f4821c341b1b5
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "2854782"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909509"
 ---
 # <a name="common-data-service-api-limits-overview"></a>Common Data Service の API 制限の概要
 
@@ -35,7 +35,7 @@ Common Data Service に適用される制限には、*権利*および*サービ
 
 ユーザーが要求の権利を超えた場合、管理者は通知を受け、Power Apps および Power Automate の要求のキャパシティをそのユーザーに割り当てることができます。 この時点で、ユーザーが不定期であまりひどく超過していないアプリの使用をブロックされることはありません。
 
-Common Data Service の場合、API 要求には、レコードが作成、取得、更新、または削除 (CRUD) されるエンティティ レコードとやり取りするすべてのデータ操作が含まれます。 *共有*や*割り当て*などの特別な操作は、更新と見なされるため、これに含まれています。 これらの要求は、任意のクライアントまたはアプリケーションからのもので、すべてのエンドポイントを使用できます。 これらには、プラグイン、非同期ワークフロー、カスタム コントロールによって実行される操作が含まれますが、これらに限定されません。 ログイン、ログアウト、システム メタデータの操作など、除外されるシステム内部操作がいくつかあります。
+Common Data Service の場合、API 要求には、レコードが作成、取得、更新、または削除 (CRUD) されるエンティティ レコードとやり取りするすべてのデータ操作が含まれます。 *共有*や*割り当て*などの特別な操作は、更新と見なされるため、これに含まれています。 これらの要求は、任意のクライアントまたはアプリケーションからのもので、すべてのエンドポイントを使用できます。 これらには、プラグイン、非同期ワークフロー、カスタム コントロール、および $batch (ExecuteMultiple) 操作によって実行される操作が含まれますが、これらに限定されません。 ログイン、ログアウト、システム メタデータの操作など、除外されるシステム内部操作がいくつかあります。
 
 > [!IMPORTANT]
 > Power Platformの API 要求の割り当てには、Power Automate、AI Builder、および Connector API などの使用が含まれます。 Common Data Service 要求に繋がるコネクタを介したすべての要求は、1 つの Power Platform 要求とみなされます。

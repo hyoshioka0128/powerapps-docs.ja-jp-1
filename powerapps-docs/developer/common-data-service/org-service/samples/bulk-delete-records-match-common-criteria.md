@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 45e3413a37887a5a2ee826f7ff6150edec73186a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6d1bc234c4587a5fe1074245e17f44c962f7f710
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748960"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934407"
 ---
 # <a name="sample-bulk-delete-records-that-match-common-criteria"></a>サンプル: 共通の条件に合致するレコードを一括して削除する
 
@@ -55,6 +55,4 @@ ms.locfileid: "2748960"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたサンプル データを削除するためのオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたサンプル データを削除するためのオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

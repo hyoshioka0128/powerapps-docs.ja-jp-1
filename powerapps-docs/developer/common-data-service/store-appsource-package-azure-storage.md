@@ -1,8 +1,8 @@
 ---
-title: '手順 5: AppSource パッケージを Azure ストレージ に保存し、SAS キーで URL を生成する (Common Data Service) | Microsoft Docs'
+title: '手順 4: AppSource パッケージを Azure ストレージ に保存し、SAS キーで URL を生成する (Common Data Service) | Microsoft Docs'
 description: ファイルのセキュリティを維持するために、すべてのアプリ開発者は AppSource パッケージファイルを Microsoft Azure Blobストレージ アカウントに保存し、Shared Access Signature (SAS) キーを使用してパッケージファイルを共有する必要があります。 パッケージファイルは Azure ストレージ から取得され、その後認証と AppSource のトライアルが行われます。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 12/20/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b2924e93ed341293b79dada0023c36854df83583
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8eb263efed13149ea8abcce217116783fdb4b598
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753775"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922338"
 ---
-# <a name="step-5-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>手順 5: AppSource パッケージをAzureストレージに保存し、SASキーでURLを生成する
+# <a name="step-4-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>手順 4: AppSource パッケージをAzureストレージに保存し、SASキーでURLを生成する
 
 Microsoft Azure ストレージは Microsoft が管理するクラウドサービスで、可用性、安全性、耐久性、拡張性、および冗長性に優れたストレージを提供します。 詳細については次を参照してください: [Microsoft Azure ストレージの概要](https://docs.microsoft.com/azure/storage/common/storage-introduction)
 

@@ -16,8 +16,22 @@
       href: send-email.md
     - name: 電子メール広告を送信して結果を監視する
       href: send-bulk-email-monitor-results.md
+    - name: 添付ファイルのアップロード、取得、およびダウンロード
+      href: upload-retrieve-download-attachment.md
     - name: 活動関係者レコードの操作方法
       href: work-activity-party-records.md
+- name: 管理とセキュリティ
+  items:
+    - name: チームへのセキュリティ ロールの関連付け
+      href: associate-security-role-team.md
+    - name: ユーザー に ロール があるかどうかを確認する
+      href: determine-whether-user-has-role.md
+    - name: ユーザーのロールを削除する
+      href: remove-role-for-user.md
+    - name: ライセンス情報の取得
+      href: retrieve-license-information.md
+    - name: 組織のためのロールを取得する
+      href: retrieve-roles-for-organization.md
 - name: 予定
   items:
     - name: 予定の予約
@@ -68,6 +82,18 @@
   items:
     - name: 変更の追跡を使用してデータを外部システムに同期
       href: synchronize-data-external-systems-using-change-tracking.md
+- name: グラフとダッシュボード
+  items:
+    - name: その他のユーザーへのグラフの割り当て
+      href: assign-chart-to-another-user.md
+    - name: ユーザー所有のダッシュボードを別のユーザーへ割り当てる
+      href: assign-dashboard-to-another-user.md
+    - name: ダッシュボードの作成、取得、更新、および削除
+      href: create-retrieve-update-delete-dashboards.md
+    - name: グラフの作成、取得、更新、および削除
+      href: create-retrieve-update-delete-charts.md
+    - name: エンティティに添付されているすべてのグラフの取得
+      href: retrieve-charts-attached-to-entity.md
 - name: つながり
   items:
     - name: つながりの作成
@@ -90,8 +116,16 @@
   items:
     - name: カスタム活動の作成
       href: create-custom-activity.md
+    - name: 属性メタデータのファイルへのダンプ
+      href: dump-attribute-metadata.md
     - name: エンティティ メタデータのファイルへのダンプ
       href: dump-entity-metadata-file.md
+    - name: エンティティ特権情報のファイルへのダンプ
+      href: dump-entity-priviliges.md
+    - name: エンティティ関連情報のファイルへのダンプ
+      href: dump-entity-relationships.md
+    - name: ピックリスト情報のファイルへのダンプ
+      href: dump-picklist-information.md
     - name: 有効な状態の遷移を取得する
       href: retrieve-valid-status-transitions.md
 - name: 重複データ検出
@@ -104,20 +138,34 @@
       href: use-duplicate-detection-when-creating-and-updating-records.md
 - name: エンティティ レコード
   items:
+    - name: チームへのレコードの割り当て
+      href: assign-records-to-team.md
+    - name: 関連するレコードを使ったレコードの作成と更新
+      href: create-update-records-with-related-records.md
     - name: 事前バインド エンティティのオペレーション
       href: early-bound-entity-operations.md
     - name: 遅延バインド エンティティの操作
       href: late-bound-entity-operations.md
-    - name: オペレーションの更新プログラムおよび削除でオプティミスティック同時実行を使用する
-      href: use-optimistic-concurrency-update-delete-operations.md
+    - name: 既存レコードからレコードを初期化
+      href: initialize-record-from-existing-record.md
+    - name: Upsert を使用してレコードを挿入または更新
+      href: insert-update-record-upsert.md
+    - name: 2 つのレコードの統合
+      href: merge-two-records.md
+    - name: エンティティのシリアル化および逆シリアル化
+      href: serialize-deserialize-entity.md
+    - name: エンティティ イメージの設定および取得
+      href: set-retrieve-entity-images.md
     - name: アクセス チームを使用してレコードを共有
       href: share-record-using-access-team.md
     - name: GrantAccess、ModifyAccess、および RevokeAccess メッセージを使用したレコードの共有
       href: share-records-using-grantaccess-modifyaccess-revokeaccess-messages.md
+    - name: エンティティの状態の検証および設定
+      href: validate-record-state.md
     - name: 添付ファイルのアップロード、取得、およびダウンロード
       href: upload-retrieve-download-attachment.md
-    - name: Upsert を使用してレコードを挿入または更新
-      href: insert-update-record-upsert.md
+    - name: オペレーションの更新プログラムおよび削除でオプティミスティック同時実行を使用する
+      href: use-optimistic-concurrency-update-delete-operations.md
 - name: フィールド レベル セキュリティ
   items:
     - name: フィールドのアクセス許可の取得
@@ -156,8 +204,12 @@
       href: add-record-queue-early-bound.md
     - name: キューへのセキュリティ プリンシパル (ユーザーまたはチーム) の追加
       href: add-security-principal-user-team-queue-early-bound.md
+    - name: キューの作成
+      href: create-queues.md
     - name: キューの履歴のクリーンアップ
       href: clean-up-history-queue-early-bound.md
+    - name: キューの削除
+      href: delete-queues.md
     - name: キュー アイテムのキューへの解放
       href: release-queue-item-queue-early-bound.md
     - name: 作業するキュー アイテムの指定
@@ -198,5 +250,9 @@
       href: use-aggregation-fetchxml.md
     - name: ページング Cookie を使用した FetchXML の使用
       href: use-fetchxml-paging-cookie.md
+- name: Webresources
+  items:
+    - name: Web リソースとしてのファイルのインポート
+      href: import-files-as-web-resources.md
 - name: 検出サービスへのアクセス
   href: access-discovery-service.md

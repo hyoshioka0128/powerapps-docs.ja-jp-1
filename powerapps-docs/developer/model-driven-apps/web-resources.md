@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2053cb6fac411db7528d841cf76ea090ced136c9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 851908a437aac1078986a9d3fd599bac56bef25b
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749031"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909577"
 ---
 # <a name="web-resources-in-model-driven-apps"></a>モデル駆動型アプリの Web リソース
 
@@ -135,9 +135,12 @@ https://MyOrganization.crm.dynamics.com/WebResources/new_/test/test.htm
   
 > [!NOTE]
 >  Web リソース名に '/' 文字とファイル名拡張子を含めることは、任意のベスト プラクティスです。  
-  
-  
  Common Data Service に対して機能する必要がある Web リソースを参照するコードを記述する場合は、[getClientUrl](clientapi/reference/Xrm-Utility/getGlobalContext/getClientUrl.md) 関数を使用する必要があります。
+
+<a name="BKMK_rendering_differences"></a>
+## <a name="layout-differences-between-the-legacy-web-client-and-unified-interface"></a>従来の Web クライアントと統一インターフェイスのレイアウトの違い
+
+特定の行数を使用するように構成された Web リソース コントロールは、Web クライアント アプリケーションと比較して、Unified Client アプリケーションで異なる高さを持ちます。 これは、統一インターフェイスと Web クライアントの行の高さに違いがあるためです。 Web クライアントと統一インターフェイスの両方でフォームが必要な場合、統一インターフェイス アプリと Web クライアント アプリで異なるフォームを使用し、各フォームで適切な行数を使用するようにコントロールを構成できます。
 
 ## <a name="community-tools"></a>コミュニティ ツール
 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4125ffa1bf8d5c21646265fc2020484916af291f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e1753cbbc46be5fad8aeb7ab5285057098bd9c35
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748959"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934399"
 ---
 # <a name="sample-convert-an-appointment-to-a-recurring-appointment"></a>サンプル: 予定から定期的な予定へ変換する
 
@@ -54,6 +54,4 @@ ms.locfileid: "2748959"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。 
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動で同じデータを削除しても同じ結果を得られます。
+[セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動で同じデータを削除しても同じ結果を得られます。

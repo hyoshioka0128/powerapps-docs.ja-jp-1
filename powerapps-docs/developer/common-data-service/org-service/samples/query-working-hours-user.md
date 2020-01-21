@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 89a4d771d198cdffad6f9cde78a48273ae141cd4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5d2426d63e7c8444c22ea0103979ed8a2812724e
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749306"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934247"
 ---
 # <a name="sample-query-the-working-hours-of-a-user"></a>サンプル: ユーザーの作業時間のクエリ
 
@@ -42,7 +42,7 @@ ms.locfileid: "2749306"
 
 ### <a name="setup"></a>セットアップ
 
-1. 組織の現在のバージョンをチェックします。
+組織の現在のバージョンをチェックします。
 
 ### <a name="demonstrate"></a>使用方法
 
@@ -51,5 +51,4 @@ ms.locfileid: "2749306"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

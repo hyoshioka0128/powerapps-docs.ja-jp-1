@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ce8aa1363ea0e9abdc48043ce7730880ff720c52
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c87fb5601d01eaffb832c2b9b9452a3925ac2097
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749320"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934291"
 ---
 # <a name="sample-export-and-import-a-data-map"></a>サンプル: データ マップのエクスポートおよびインポート
 
@@ -46,9 +46,7 @@ ms.locfileid: "2749320"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたサンプル データを削除するためのオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたサンプル データを削除するためのオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
 
 
 ### <a name="see-also"></a>関連項目

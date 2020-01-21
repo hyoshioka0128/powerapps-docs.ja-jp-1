@@ -8,16 +8,16 @@ ms.topic: article
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 1ffc32fdb1479552d77cd68d858c0d3b43d9b86e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8d1da235f93f98a8104c69511bb8c50f86ddcbda
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862001"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909285"
 ---
 # <a name="debug-code-components"></a>コード コンポーネントのデバッグ
 
-カスタム コンポーネント ロジックの実装が完了したら、 `npm start` コマンドを使用してカスタム コンポーネントのテストとデバッグを開始することができます。 これにより、コード コンポーネントが構築され、ローカル テスト ハーネスで開きます。
+コード コンポーネント ロジック の実装完了後、 `npm start` コマンド を使用して コードコンポーネン トの テスト と デバッグ を開始することができます。 このコマンドにより、コード コンポーネントが構築され、ローカル テスト ハーネス で起動します。
 
 > [!div class="mx-imgBorder"]
 > ![テストハーネス 1](media/test-harness-1.png "テストハーネス 1")
@@ -68,7 +68,9 @@ ms.locfileid: "2862001"
 
 ## <a name="debug-code-components-using-native-browsers"></a>ネイティブ ブラウザーを使用してコード コンポーネントをデバッグする
 
-ブラウザのデバッグ機能を使用して、コンポーネントの動作を観察することができます。 各ブラウザには、ブラウザでコードをネイティブにデバッグするための、デバッグ ツールが用意されています。 通常は **F12** キーを押すことでブラウザのデバッグを有効にでき、デバッグに使用されるネイティブ開発者ツールを表示します。
+ブラウザのデバッグ機能を使用して、コンポーネントの動作を観察することができます。 各ブラウザには、ブラウザでコードをネイティブにデバッグするための、デバッグ ツールが用意されています。 
+
+通常は **F12** キーを押すことでブラウザのデバッグを有効にでき、デバッグに使用されるネイティブ開発者ツールを表示します。
 
 たとえば、**Microsoft Edge** です:
 

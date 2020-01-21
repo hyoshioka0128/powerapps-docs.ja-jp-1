@@ -12,16 +12,16 @@ ms.custom:
 ms.topic: article
 ms.assetid: 7923e36d-3640-49f7-9f2f-c97358a632db
 ms.author: nabuthuk
-ms.openlocfilehash: c86182fe14617f971b8ca2183bdb4627b8e8c5b9
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 6401bead52f3a36fdd51595cb1fdf38510438459
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895077"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909204"
 ---
 # <a name="power-apps-component-framework-overview"></a>Power Apps component frameworkの概要
 
-Power Apps component framework は、ユーザーがフォーム、ビュー、およびダッシュボードを使ってデータを表示して使用できる強化されたユーザー エクスペリエンスを提供する、モデル駆動型アプリとキャンバス アプリのためのコード コンポーネントを作成する能力をプロの開発者やアプリ作成者に提供します。 たとえば、次のようなものです。
+Power Apps Component Framework により、プロの開発者とアプリ メーカーが、モデル駆動型アプリとキャンバス アプリ (実験プレビュー) のコード コンポーネントを作成し、ユーザーがフォーム、ビュー、ダッシュボードのデータを操作するためのユーザー エクスペリエンスを強化できます。 たとえば、次のようなものです。
 
 - 数値テキスト値を表示するフィールドを `dial` や `slider` コード コンポーネントで置き換えます。
 - リストを `Calendar` や `Map` のようにデータセットに結び付けられた全く異なる視覚的エクスペリエンスに変換します。
@@ -32,9 +32,13 @@ Power Apps component framework は、ユーザーがフォーム、ビュー、�
 > - [!INCLUDE[cc_preview_features_definition](../../includes/cc-preview-features-definition.md)]
 > - キャンバス アプリでは、コード コンポーネントの *フィールド*の種類のみがサポートされ、*データセット* の種類はサポートされていません。
 
-## <a name="how-its-different-from-webresources"></a>ウェブリソースとの違い
+## <a name="how-is-it-different-from-web-resources"></a>Web リソースとの違いは何ですか
 
- HTML Web リソースとは異なり、コード コンポーネントは同じコンテキストの一部として表示されると同時に、他のコンポーネントとして読み込むことができ、シームレスなエクスペリエンスを提供しています。 開発者はすべての HTML、CSS、TypeScript または JavaScript ファイルを 1 つの[ソリューション](https://docs.microsoft.com/dynamics365/customer-engagement/customize/solutions-overview) パッケージ ファイルにバンドルでき、環境間で移動し、[AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365) 経由で出荷できます。 コード コンポーネントは、異なるエンティティとフォームにわたって何回でも再利用できます。 Power Apps component framework を使用して、Power Apps 機能全域に渡り使用できるコード コンポーネントを作成します。
+HTML Web リソースとは異なり、コード コンポーネントは同じコンテキストの一部として表示されると同時に、他のコンポーネントとして読み込むことができ、シームレスなエクスペリエンスを提供しています。 
+
+開発者はすべての HTML、 CSS、および TypeScript ファイルを 1 つの [ソリューション](https://docs.microsoft.com/dynamics365/customer-engagement/customize/solutions-overview) パッケージ ファイルにバンドルし、環境間を移動し、 [AppSource](https://appsource.microsoft.com/marketplace/apps?page=1&product=dynamics-365) 経由での出荷も可能です。 
+
+コード コンポーネントは、異なるエンティティとフォームにわたって何回でも再利用できます。 Power Apps component framework を使用して、Power Apps 機能全域に渡り使用できるコード コンポーネントを作成します。
 
 ## <a name="advantages"></a>利点 
 

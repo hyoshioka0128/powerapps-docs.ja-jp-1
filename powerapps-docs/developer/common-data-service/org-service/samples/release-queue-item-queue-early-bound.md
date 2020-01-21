@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8830d879ff6f8de08cb0fdacbbb5436226ebb377
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9b773c8493b1305cea9b40f26499cc8f152f51d1
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749305"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934243"
 ---
 # <a name="sample-release-a-queue-item-to-the-queue"></a>サンプル: キュー アイテムのキューへの解放
 
@@ -49,10 +49,8 @@ Couldn't each of the operations in this series of samples be added to just one s
 
 ### <a name="demonstrate"></a>使用方法
 
-1. `ReleaseToQueueRequest` メッセージは、キュー アイテムからワーカーを削除し、ワーカーのキューからキューに入れられたオブジェクトを解放します。
+`ReleaseToQueueRequest` メッセージは、キュー アイテムからワーカーを削除し、ワーカーのキューからキューに入れられたオブジェクトを解放します。
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

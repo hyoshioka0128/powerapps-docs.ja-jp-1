@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cd786a4b42e6cbd6cd6d0085ad4369ab08a42a45
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 2d59aa35a81ed776f712b55e7f7179087dfaf061
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749304"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934239"
 ---
 # <a name="sample-reschedule-and-cancel-a-recurring-appointment"></a>サンプル: 定期的な予定の再スケジュールおよび取り消し
 
@@ -54,5 +54,4 @@ ms.locfileid: "2749304"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

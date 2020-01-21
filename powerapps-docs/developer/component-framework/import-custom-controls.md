@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 86a9aa247956d86c184d49a58601a6a58e827f6d
-ms.sourcegitcommit: 5e4e51c5c0e16714c5e22e140785d84cc9383f31
+ms.openlocfilehash: b53995a6ce9d7c0e6d19f0f1305a41a0c45a998d
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895277"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909277"
 ---
 # <a name="package-a-code-component"></a>コード コンポーネントをパッケージ化する
 
@@ -33,7 +33,7 @@ ms.locfileid: "2895277"
    > [!NOTE]
    > `publisher-name` と `publisher-prefix` の値は環境に固有である必要があります。
  
-3. 新しいソリューション プロジェクトを作成したら、**ソリューション** フォルダーを作成したサンプル コンポーネントがある場所に参照します。 以下に示すコマンドを使用して参照を追加することができます。 この参照は、コード コンポーネントがビルド中に追加すべきソリューションのプロジェクトを通知します。 参照を 1 つのソリューションのプロジェクトの複数コンポーネントへ追加できます。
+3. 新しいソリューション プロジェクトが作成されたら、作成したサンプル コンポーネントがある場所の **ソリューション** フォルダーを参照します。 以下に示すコマンドを使用して参照を追加することができます。 この参照は、コード コンポーネントがビルド中に追加すべきソリューションのプロジェクトを通知します。 参照を 1 つのソリューションのプロジェクトの複数コンポーネントへ追加できます。
 
    ```CLI   
     pac solution add-reference --path <path to your Power Apps component framework project>
@@ -115,11 +115,8 @@ Common Data Service で既存のソリューションに基づくソリューシ
 
 ## <a name="create-a-plug-in-project-and-add-a-reference-to-it-in-your-solution"></a>プラグイン プロジェクトを作成し、ソリューションへの参照を追加する 
 
-> [!IMPORTANT]
-> - プラグイン コマンドはまだ公開プレビュー中です。 
-> - プレビュー機能は運用環境での使用を想定しておらず、機能が制限されている可能性があります。 これらの機能を公式リリースの前に使用できるようにすることで、顧客が一足先にアクセスし、そこからフィードバックを得ることができます。
-
-Power Apps CLI は、プラグイン プロジェクトへの参照を追加することにより、プラグイン プロジェクトの作成とソリューションへのパッケージ化をサポートするようになりました。 `pac plugin init` コマンドは、ディレクトリにテンプレートファイル (csproj、＃Plugin.cs＆ServiceHelper.cs) を作成します。 それには、次を実行します。 
+> [!NOTE]
+> プラグイン コマンドはパブリック プレビューにあり、 Power Apps CLI は、プラグイン プロジェクトへの参照を追加することで、プラグインプロジェクトの作成とソリューションへのパッケージ化をサポートするようになりました。 `pac plugin init` コマンドは、ディレクトリにテンプレートファイル (csproj、＃Plugin.cs＆ServiceHelper.cs) を作成します。 それには、次を実行します。 
 
 1.  有効な認証のプロファイルを作成したことを確認します。
 2.  プロジェクトを作成するルート ディレクトリに移動します。

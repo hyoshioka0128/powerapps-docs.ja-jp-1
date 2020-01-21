@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4b545431853a3f6ca66ce5906f6d6ff69edde1db
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0a6b20686f4e02afff576eb54133d061e4b82f18
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749294"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934211"
 ---
 # <a name="sample-retrieve-multiple-with-the-querybyattribute-class"></a>サンプル: QueryByAttribute クラスを使用した複数取得
 
@@ -47,10 +47,8 @@ ms.locfileid: "2749294"
 
 ### <a name="demonstrate"></a>使用方法
 
-1. `QueryByAttribute` メソッドは、QueryByAttribute を使用してクエリを作成します。
+`QueryByAttribute` メソッドは、QueryByAttribute を使用してクエリを作成します。
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. サンプルで作成されたすべてのデータを削除するためのオプションを表示します。
-
-サンプルで作成されるデータを検証する場合、削除は任意です。 手動でデータを削除することで同じ結果を得られます。
+サンプルで作成されたすべてのデータを削除するためのオプションを表示します。 サンプルで作成されるデータを検証する場合、削除は任意です。 手動でデータを削除することで同じ結果を得られます。

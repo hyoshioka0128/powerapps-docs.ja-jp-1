@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d12bd93c3aa25fb2f2b1b426e680ef69e9f0006e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e1157acd76f9f6cb83286e3b5066be52b7545256
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749317"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934279"
 ---
 # <a name="sample-insert-or-update-a-record-using-upsert"></a>サンプル: Upsert を使用してレコードを挿入または更新
 
@@ -52,6 +52,4 @@ ms.locfileid: "2749317"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたマネージド ソリューションを削除するためのオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたマネージド ソリューションを削除するためのオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

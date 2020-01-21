@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 07d001c5ed8ad20b915ad65caa94fdffb04b35cd
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 88066bb262c92a08a85d55f357505f9f526f6e6c
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749277"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934067"
 ---
 # <a name="sample-use-queryexpression-with-a-paging-cookie"></a>サンプル: ページング Cookie を使用した QueryExpression の使用
 
@@ -50,6 +50,4 @@ ms.locfileid: "2749277"
 
 ### <a name="clean-up"></a>クリーンアップ
 
-1. サンプルで作成されたすべてのデータを削除するためのオプションを表示します。
-
-サンプルで作成されるデータを検証する場合、削除は任意です。 手動でデータを削除することで同じ結果を得られます。
+サンプルで作成されたすべてのデータを削除するためのオプションを表示します。 サンプルで作成されるデータを検証する場合、削除は任意です。 手動でデータを削除することで同じ結果を得られます。

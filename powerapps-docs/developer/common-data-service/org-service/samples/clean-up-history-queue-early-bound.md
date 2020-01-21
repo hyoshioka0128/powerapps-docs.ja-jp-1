@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3a79f28db09a9b8c00d174b8ee1d01253f4a753f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 44455de71df45c02bd22620c9252421a4a68ca89
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749101"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934403"
 ---
 # <a name="sample-clean-up-history-for-a-queue"></a>サンプル: キューの履歴のクリーンアップ
 
@@ -48,10 +48,8 @@ ms.locfileid: "2749101"
 
 ### <a name="demonstrate"></a>使用方法
 
-1. [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) メッセージを使用して、キューからの非アクティブな電話でのキュー アイテムを取得します。
+[RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) メッセージを使用して、キューからの非アクティブな電話でのキュー アイテムを取得します。
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

@@ -2,7 +2,7 @@
 title: Power Apps でのソリューションに関する作業 | MicrosoftDocs
 description: ソリューションの配布方法を説明します
 ms.custom: ''
-ms.date: 09/30/2019
+ms.date: 12/04/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 286d955bfa0e6b28061d6a73962da25156820c9a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 71ddf991d25f144ce24b078cf73ffc6b971de36f
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2870121"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909180"
 ---
 # <a name="solutions-overview"></a>ソリューションの概要  
 
@@ -41,73 +41,80 @@ ms.locfileid: "2870121"
 
 <a name="BKMK_SolutionComponents"></a>   
 ### <a name="components"></a>[コンポーネント]  
- コンポーネントは、カスタマイズできる可能性のあるものを示します。 ソリューションに含めることのできるものは、コンポーネントです。 次に、ソリューション内で表示できるコンポーネントの一覧を示します。  
-  
--   AI モデル
+ コンポーネントは、カスタマイズできる可能性のあるものを示します。 ソリューションに含めることのできるものは、コンポーネントです。 ソリューションに含まれるコンポーネントを表示するには、ソリューションエクスプローラーで **設定** > **ソリューション** 移動して、必要なソリューションを開きます。 コンポーネントは、**コンポーネント** リストに一覧表示されています。 
 
--   アプリケーション リボン  
-  
--   記事テンプレート  
-  
--   業務ルール  
+> [!div class="mx-imgBorder"] 
+> ![ソリューションのコンポーネント](media/components-in-solution.png "ソリューションのコンポーネント") 
 
--   キャンバス アプリ 
-  
--   [グラフ]  
-  
--   つながりロール  
-  
--   契約テンプレート  
+ソリューションに追加できるコンポーネントの種類のリストを表示するには、[ComponentType オプション](../../developer/common-data-service/reference/entities/solutioncomponent.md#componenttype-options) をご参照してください。
 
--   カスタム コネクタ
+<!-- The following is a list of components that you can view in a solution:  
+  
+-   AI Model
+
+-   Application Ribbon  
+  
+-   Article Template  
+  
+-   Business Rule  
+
+-   Canvas App 
+  
+-   Chart  
+  
+-   Connection Role  
+  
+-   Contract Template  
+
+-   Custom Connector
  
--   カスタム コントロール
+-   Custom Control
   
--   ダッシュボード  
+-   Dashboard  
   
--   電子メール テンプレート  
+-   Email Template  
   
--   エンティティ  
+-   Entity  
   
--   エンティティ関係  
+-   Entity Relationship  
 
--   環境変数
+-   Environment variable
   
--   フィールド  
+-   Field  
   
--   フィールド セキュリティ プロファイル  
+-   Field Security Profile  
 
--   フロー
+-   Flow
   
--   [フォーム]  
+-   Form  
   
--   差し込み印刷テンプレート  
+-   Mail Merge Template  
   
--   メッセージ  
+-   Message  
 
--   モデル駆動アプリ
+-   Model-driven app
   
--   [オプション セット]  
+-   Option Set  
   
--   プラグイン アセンブリ  
+-   Plug-in Assembly  
   
--   プロセス  
+-   Process  
 
--   レポート  
+-   Report  
 
--   SDK メッセージ処理手順  
+-   Sdk Message Processing Step  
   
--   セキュリティ ロール  
+-   Security Role  
   
--   サービス エンドポイント  
+-   Service Endpoint  
   
--   サイト マップ  
+-   Site Map  
 
--   仮想エンティティ データ プロバイダー
+-   Virtual Entity Data Provider
 
--   仮想エンティティ データ ソース
+-   Virtual Entity Data Source
   
--   Web リソース  
+-   Web Resource  -->
   
  コンポーネントによっては、他のコンポーネントにネストしています。 たとえば、エンティティには、フォーム、ビュー、グラフ、フィールド、エンティティ関係、メッセージや業務ルールが含まれています。 各コンポーネントには、エンティティの存在が必要です。 フィールドはエンティティの外部に存在することはできません。 フィールドは、エンティティに依存していると言えます。 実際には、上記の一覧に示したコンポーネントの 2 倍の種類のソリューション コンポーネントがありますが、そのほとんどが他のコンポーネント内にテストされておらず、アプリケーションに表示されません。  
   

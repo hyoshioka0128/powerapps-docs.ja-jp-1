@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ce1824020e8ca09380d34d871b4222f132837e87
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d1e817d4b51a56cab023aa7e77a063037ec962cc
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749271"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934063"
 ---
 # <a name="sample-work-with-activity-party-records"></a>サンプル: 活動関係者レコードの操作方法
 
@@ -53,6 +53,4 @@ ms.locfileid: "2749271"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) 中に作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) 中に作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

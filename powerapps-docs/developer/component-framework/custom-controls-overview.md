@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 135481cd-4583-4e49-8f58-02f32a9b054a
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: afc3f967d8fe93cbd0c5c8d21f67773f970d9ca2
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 93d60cb1e6c00951e51acd4f92d8c62dce84fc28
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895025"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909080"
 ---
 # <a name="what-are-code-components"></a>コード コンポーネントとは
 
@@ -24,7 +24,7 @@ ms.locfileid: "2895025"
 コードコンポーネントは、3つの要素で構成されています:
 
 - [マニフェスト](#manifest)
-- [コンポーネント実装ライブラリ](#component-implementation-library)
+- [コンポーネントの実装](#component-implementation)
 - [リソース](#resources)
 
 ## <a name="manifest"></a>マニフェスト
@@ -39,9 +39,9 @@ ms.locfileid: "2895025"
 
 ユーザーがコード コンポーネントを設定したときに、マニフェスト ファイルのデータは利用可能なコンポーネントを除外して、コンテキストに有効なコンポーネントのみ構成に使用できるようにします。 コンポーネントのマニフェストで定義されたプロパティは、ユーザーがコンポーネントの設定時に値を指定できるよう構成フィールドとして表示されます。 これらのプロパティ値は、実行時にコンポーネントで利用可能になります。 詳細については次を参照してください: [マニフェスト スキーマの参照](manifest-schema-reference/index.md)
 
-## <a name="component-implementation-library"></a>コンポーネント実装ライブラリ
+## <a name="component-implementation"></a>コンポーネントの実装
 
-Power Apps component framework を使用してコード コンポーネントを開発する際に、コンポーネント ライブラリの実装は重要な手順のひとつとなります。 開発者は TypeScript を使用してコンポーネント ライブラリを実装することができます。 各コード コンポーネントは、コード コンポーネント インタフェースに記述されたメソッドを実装したオブジェクトを返すことができる、関数の定義を含むライブラリが必要となります。 
+Power Apps component framework を使用して カスタム コンポーネントを開発するにあたり、コンポーネント ライブラリの実装は重要なステップのひとつとなります。 開発者は TypeScript を使用してコンポーネント を実装することができます。 それぞれの カスタム コンポーネント には、コード コンポーネント インタフェースに記述されたメソッドを実装したオブジェクトを返す関数の定義を含む、 `index.ts` ファイルが必要となります。 このファイルは、メイン スタブ メソッド を備えたCLIツールを介して自動生成されます。
 
 オブジェクトは次のメソッドを実装します:
 

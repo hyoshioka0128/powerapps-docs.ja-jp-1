@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 260bc503b4395e140339dd15596107f5b7ed7f23
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fe9e2d9ec06a6248bbe8f2d432fcee3decaf9e4c
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749310"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934263"
 ---
 # <a name="sample-query-connection-roles-by-entity-type-code"></a>サンプル: エンティティの種類コードによるつながりロールの照会
 
@@ -39,7 +39,7 @@ ms.locfileid: "2749310"
 
 ### <a name="setup"></a>セットアップ
 
-1. 組織の現在のバージョンをチェックします。
+組織の現在のバージョンをチェックします。
 
 ### <a name="demonstrate"></a>使用方法
 
@@ -50,5 +50,4 @@ ms.locfileid: "2749310"
 
 ### <a name="clean-up"></a>クリーンアップ
 
-1. [セットアップ](#setup) でレコードを削除するためのオプションを表示します。
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) でレコードを削除するためのオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

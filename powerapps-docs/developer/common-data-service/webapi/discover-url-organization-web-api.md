@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0d4f785d266604d51d099a5b56885b6ad32b6249
-ms.sourcegitcommit: d03915b4e2583327526b448ec10474cedfd7efe0
+ms.openlocfilehash: 7b69f19979b154a08aca23dacab58e4882066495
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "2854124"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909293"
 ---
 # <a name="discover-the-url-for-your-organization-using-the-web-api"></a>Web API を使用して組織の URL を検出します
 
@@ -49,7 +49,7 @@ Web API の検出サービスで、標準 `$filter` および `$select` パラ�
  組織情報は、探索サービスの `Instance` エンティティに保存されます。  そのエンティティに含まれている情報を表示するには、まずインスタンスの 1 つのサービスに HTTP GET 要求を送信します。  
   
 ```http  
-GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  
+GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(UniqueName='myorg')  
 ```  
   
 上の例では、Common Data Service のグローバル探索サービスを使用して、「myorg」という一意の名前のインスタンスの組織情報を取得します。 この要求に関する詳細については、このトピックの後半で詳しく説明します。  
@@ -93,20 +93,20 @@ GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName
 -   特定のインスタンスの詳細を取得します。 GUID を省くと、認証されたユーザーがアクセスできるすべてのインスタンスが返されます。  
   
     ```http      
-    GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(<guid>)
+    GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(<guid>)
     GET https://disco.crm.dynamics.com/api/discovery/v9.0/Instances(<guid>)  
     ```  
   
 -   代替キーとして UniqueName 属性を使用できます。  
   
     ```http  
-    GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(UniqueName='myorg')  
+    GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(UniqueName='myorg')  
     ```  
   
 -   運用の種類によってフィルター処理された、利用可能なインスタンスのリストを取得します。  
   
     ```http  
-    GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances?$select=DisplayName,Description&$filter=Type+eq+0   
+    GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances?$select=DisplayName,Description&$filter=Type+eq+0   
     ```  
   
 -   特定のインスタンスの ID プロパティの値を取得します。  

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9c7ffaa212de51d019794282b12e43bfb0f7388a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f8a073fe96df341bbfba2c48f9c5c3bc14bdf38d
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749299"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934223"
 ---
 # <a name="sample-retrieve-email-attachments-for-an-email-template"></a>サンプル: 電子メール テンプレート用の電子メールの添付ファイルの取得
 
@@ -47,10 +47,8 @@ ms.locfileid: "2749299"
 
 ### <a name="demonstrate"></a>使用方法
 
-1. `QueryExpression` は、すべての添付ファイルを取得します。
+`QueryExpression` は、すべての添付ファイルを取得します。
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたサンプル データを削除するためのオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたサンプル データを削除するためのオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

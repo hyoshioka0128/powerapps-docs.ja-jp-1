@@ -14,23 +14,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a00d4e751452be55c824727af238900e964a649f
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bb782e362692b63e9412493af0fb561846cdd6f1
+ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752995"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2944299"
 ---
 # <a name="data-export-service"></a>データ エクスポート サービス
 
-データ エクスポートは Common Data Service ソリューションとして提供されるアドオンサービスで、お客様が所有する Microsoft Azure サブスクリプションのMicrosoft Azure SQLデータベースストアに Common Data Service データを複製する機能を追加します。 対応している対象は、 Microsoft Azure SQL Database および Microsoft Azure 仮想マシン上の Microsoft Azure SQL Serverです。 データ エクスポートでは、Dynamics 365スキーマ全体とデータをインテリジェントに同期します。最初の同期とその後の同期は、 Dynamics 365 (online) システムで変更(デルタ変化)が発生するたびに継続的に行われます。  
+データ エクスポートは Common Data Service ソリューションとして提供されるアドオンサービスで、お客様が所有する Microsoft Azure サブスクリプションのMicrosoft Azure SQLデータベースストアに Common Data Service データを複製する機能を追加します。 対応している対象は、 Microsoft Azure SQL Database および Microsoft Azure 仮想マシン上の Microsoft Azure SQL Serverです。 データ エクスポートは Common Data Service スキーマ と データ全体を インテリジェントに同期処理し、以後 Common Data Service で変更 (差分変更) が発生すると、継続的に同期処理を行います。  
   
- データ エクスポート サービスでは、構成管理と Common Data Service内からのサービスの継続的な管理のインターフェイスを提供します。  詳細については、[データのエクスポート](https://technet.microsoft.com/library/a70feedc-12b9-4a2d-baf0-f489cdcc177d) を参照してください。 このトピックでは、対応しているプログラム インターフェイスとこのサービスの問題を説明します。  
+データ エクスポート サービスでは、構成管理と Common Data Service内からのサービスの継続的な管理のインターフェイスを提供します。  詳細については、 [Azure SQL Database にデータを複製する](https://docs.microsoft.com/power-platform/admin/replicate-data-microsoft-azure-sql-database) を参照してください。 このトピックでは、対応しているプログラム インターフェイスとこのサービスの問題を説明します。  
   
 ## <a name="prerequisites-for-using-the-data-export-service"></a>データ エクスポート サービスを使用するための前提条件  
- このサービスは Common Data Serviceから Microsoft Azure SQL データベースへの外部接続が必要となり、このサービスに正常にアクセスするには、いくつかの前提条件を満たす必要があります。 次の前提条件は、[データ エクスポート サービスを使用するための前提条件](https://technet.microsoft.com/library/mt744592.aspx) のセクションで管理者の観点からより完全に説明されます。  
+ このサービスでは Common Data Service から Microsoft Azure SQL データベースへの外部接続が必要となります。このサービスに正常にアクセスするには、いくつかの必要条件を満たす必要があります。 次の前提条件は、[データ エクスポート サービスを使用するための前提条件](/power-platform/admin/replicate-data-microsoft-azure-sql-database#prerequisites-for-using-) のセクションで管理者の観点からより完全に説明されます。  
   
- Common Data Service サービスは、次のように構成する必要があります:  
+ Common Data Service 環境は、次のように構成する必要があります:  
   
 - エクスポートされるエンティティは、変更の追跡で有効になります。 詳細については、[変更の追跡を使用してデータを外部システムに同期](use-change-tracking-synchronize-data-external-systems.md) を参照してください。  
   

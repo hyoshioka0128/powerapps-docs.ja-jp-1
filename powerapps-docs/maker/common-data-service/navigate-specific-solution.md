@@ -2,7 +2,7 @@
 title: Power Apps を使って特定のソリューションへ移動する | MicrosoftDocs
 description: ユーザーの環境で特定のソリューション探してオープンする方法を解説します
 ms.custom: ''
-ms.date: 10/29/2018
+ms.date: 12/11/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,22 +22,24 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b8dc0df3e32b6b5174166078b03228b730c909f9
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 8fb3dec61f90d0d9e1b6a0bb19f1dfa294787c6f
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2870187"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909136"
 ---
 # <a name="navigate-to-a-specific-solution"></a>特定のソリューションに移動する
 
-組織内に使用する特定のソリューションがすでにある場合は、そのソリューションを検索する方法が問題となります。 新しいソリューションを作製するには、[独自のソリューションを作成する](create-solution.md) を参照してください。  
+組織内に使用する特定のソリューションがすでにある場合は、そのソリューションを検索する方法が問題となります。   
   
 ## <a name="open-a-solution"></a>ソリューションを開きます  
   
-1. 左側のナビゲーションから **ソリューション**を選択し、環境のソリューションの一覧を表示します。
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左側のナビゲーションから **ソリューション** を選択して、環境のソリューション一覧を表示します。
   
-2. ソリューション内に含まれているすべてのコンポーネントを作業または表示するソリューションを選択します。 詳細情報: [コンポーネントの追加](solutions-overview.md)  
+2. ソリューション内に含まれているすべてのコンポーネントを作業または表示するソリューションを選択します。 
+ 
 
- ## <a name="next-steps"></a>次のステップ
-[ワークフロー プロセスの監視と管理](/flow/monitor-manage-processes)
+ ## <a name="see-also"></a>関連項目
+[ソリューションの作成](create-solution.md) <br />
+[Common Data Service の既定のソリューションを使用する](use-solutions-for-your-customizations.md)

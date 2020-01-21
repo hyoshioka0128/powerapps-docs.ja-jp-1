@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 66ff3f8821fa641431ae4ae2100594424735ec71
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f9d0761eee54dc7e6416beefaf5a28f482ef6d97
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749276"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934059"
 ---
 # <a name="sample-use-optimistic-concurrency-with-update-and-delete-operations"></a>サンプル: オペレーションの更新プログラムおよび削除でオプティミスティック同時実行を使用する
 
@@ -53,6 +53,4 @@ ms.locfileid: "2749276"
 
 ### <a name="clean-up"></a>クリーンアップ
 
-1. サンプルで作成されたすべてのデータを削除するためのオプションを表示します。
-
-サンプルで作成されるデータを検証する場合、削除は任意です。 手動でデータを削除することで同じ結果を得られます。
+サンプルで作成されたすべてのデータを削除するためのオプションを表示します。 サンプルで作成されるデータを検証する場合、削除は任意です。 手動でデータを削除することで同じ結果を得られます。

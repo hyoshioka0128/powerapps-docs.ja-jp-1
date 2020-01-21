@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: ddbacd01b76a99e385875a0b8af18d28ce24bed8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0f779dbddedbf76b3c2e7f55d314a9f0fda30332
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861913"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909088"
 ---
 # <a name="update-existing-code-components"></a>既存のコード コンポーネントの更新 
 
@@ -143,33 +143,6 @@ Code-gen は、コンポーネントのソースコードで使われる `type` 
 3. **InputsOutputs.IOutputBag** の参照をすべて **IOutputs** に名前を変更します。
 4. コマンド `npm run build` を使って、プロジェクトをビルドして新しい **ManifestTypes.d.ts** ファイルを生成します。
 
-## <a name="troubleshooting-and-workarounds"></a>トラブルシューティングと回避策
-
-1. pcf-scripts の使用方法を尋ねる 1ES 通知を取得した場合、これらのスクリプトはコード コンポーネントの作成のみに使用され、結果のコンポーネントによってバンドルまたは使用されないことに注意してください。  
-2. 以前にツールバージョン 0.1.817.1 以前を使用してコードコンポーネントを作成し、最新のビルドおよびデバッグモジュールが使用されていることを確認する場合は、次のように package.json を更新します。
-   
-    ```JSON
-     "dependencies": { "@types/node": "^10.12.18", "@types/powerapps-component-framework": "1.1.0"}, "devDependencies": { "pcf-scripts": "~0", "pcf-start": "~0" } 
-    ```
-3. 承認の問題のためにビルドが失敗した場合、ユーザーは`Failed to retrieve information about Microsoft.PowerApps.MSBuild.Pcf from remote source <Feed Url>`というエラーを受け取ります。 この問題を回避する方法はありません。
-
-   - NuGet.Config ファイルを **%APPDATA%\NuGet** から開きます。 ユーザーがエラーを得たフィードはこのファイルにある必要があります。 
-   - NuGet.Config ファイルからフィードを削除するか、PAT トークンを生成して Nuget.Config ファイルに追加します。 たとえば、次のようなものです。
-
-     ```XML
-     <?xml version="1.0" encoding="utf-8"?>  
-     <configuration>  
-     <packageSources>  
-         <add key="CRMSharedFeed" value="https://dynamicscrm.pkgs.visualstudio.com/_packaging/CRMSharedFeed/nuget/v3/index.json" />  
-      </packageSources>  
-     <packageSourceCredentials>  
-      <CRMSharedFeed>  
-      <add key="Username" value="anything" />  
-      <add key="Password" value="User PAT" />  
-    </CRMSharedFeed>  
-     </packageSourceCredentials>  
-   </configuration>
-     ```
 
 ### <a name="see-also"></a>関連項目
 

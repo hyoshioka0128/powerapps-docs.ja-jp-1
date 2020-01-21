@@ -360,15 +360,13 @@
     - name: AppSource でアプリを公開する
       href: publish-app-appsource.md
       items:
-        - name: '手順1: AppSource のアプリ提出フォームに入力する'
-          href: fill-app-submission-form-appsource.md
-        - name: '手順 2: Microsoft Partner Network アカウントを登録する'
+        - name: 'ステップ 1 :  Microsoft パートナー センター アカウントを作成する'
           href: register-microsoft-partner-network.md
-        - name: '手順3: アプリの管理ソリューションを作成する'
+        - name: '手順 2: アプリの管理ソリューションを作成する'
           href: create-solution-app-appsource.md
-        - name: '手順4: アプリの AppSource パッケージを作成する'
+        - name: '手順3: アプリの AppSource パッケージを作成する'
           href: create-package-app-appsource.md
-        - name: '手順 5: AppSource パッケージをAzureストレージに保存し、SASキーでURLを生成する'
+        - name: '手順 4: AppSource パッケージをAzureストレージに保存し、SASキーでURLを生成する'
           href: store-appsource-package-azure-storage.md
         - name: '次の手順: パートナーセンターにアプリケーションを送信する'
           href: next-steps-submit-app-cloud-partner-portal.md

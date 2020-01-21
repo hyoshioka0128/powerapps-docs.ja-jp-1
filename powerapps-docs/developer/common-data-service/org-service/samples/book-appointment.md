@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 651e10d5a57d644f7330e26ba3889d7fde1992bb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d4778ef7fe9056024d9bb7b5f2d08b98bfadafa3
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748961"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934415"
 ---
 # <a name="sample-book-an-appointment"></a>サンプル: 予定の予約
 
@@ -46,10 +46,8 @@ ms.locfileid: "2748961"
 
 ### <a name="demonstrate"></a>使用方法
 
-1. [BookRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9) メッセージを使用して予定インスタンスを作成し、予定がスケジュールされたかどうかを検証します。
+[BookRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.bookrequest?view=dynamics-general-ce-9) メッセージを使用して予定インスタンスを作成し、予定がスケジュールされたかどうかを検証します。
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

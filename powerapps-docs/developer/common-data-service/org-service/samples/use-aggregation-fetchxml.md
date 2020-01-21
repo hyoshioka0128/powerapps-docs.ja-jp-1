@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fe241719b55278d77e2e564bfc55e83b45809aeb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9ac38c8b53b6950c7bbf69583da1a83a24c1fe63
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749280"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934135"
 ---
 # <a name="sample-use-aggregation-in-fetchxml"></a>サンプル: FetchXML での集計の使用
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/sample-use-aggregation-fetchxml -->
 
-このサンプルは FetchXML を使用して集計レコード データを取得する方法を説明します。
+このサンプルは FetchXML を使用して集計レコード データを取得する方法を説明します。 サンプルは [ここ](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/UseAggregationInFetchXML) からダウンロードできます。
 
 ## <a name="what-this-sample-does"></a>このサンプルの概要
 
@@ -60,6 +60,4 @@ ms.locfileid: "2749280"
 
 ### <a name="clean-up"></a>クリーンアップ
 
-1. サンプルで作成されたすべてのデータを削除するためのオプションを表示します。
-
-サンプルで作成されるデータを検証する場合、削除は任意です。 手動でデータを削除することで同じ結果を得られます。
+サンプルで作成されたすべてのデータを削除するためのオプションを表示します。 サンプルで作成されるデータを検証する場合、削除は任意です。 手動でデータを削除することで同じ結果を得られます。

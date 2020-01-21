@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 80f286e9c0eabd732d61f9d537c07861707a26ab
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 955353953f5c015c4e332773d550d0c478d5f02e
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749325"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934311"
 ---
 # <a name="sample-early-bound-entity-operations"></a>サンプル: 事前バインド エンティティのオペレーション
 
@@ -74,7 +74,5 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5bcced80e393616801ea4b40a7783daff36a985d
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d49ad9ed6440076d20e771b099227b35dbf7ae36
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749274"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934159"
 ---
 # <a name="sample-validate-an-appointment"></a>サンプル: 予定の検証
 
@@ -52,5 +52,4 @@ ms.locfileid: "2749274"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) でレコードを削除するためのオプションを表示します。
-    サンプルで作成されたエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) でレコードを削除するためのオプションを表示します。 サンプルで作成されたエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

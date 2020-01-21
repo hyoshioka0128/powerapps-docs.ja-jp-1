@@ -2,19 +2,19 @@
 title: フォームに Azure Storage Web リソースを追加 | MicrosoftDocs
 description: Azure Storage に添付ファイルをアップロードできるようフォームに Azure Storage Web リソースを追加する手順。
 author: sbmjais
-manager: shujoshi
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/11/2019
+ms.date: 01/07/2020
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 873f2054856e21b7fbf56247a4234ae2fb2a72c9
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.reviewer: tapanm
+ms.openlocfilehash: b98bce4b3b9d2fae1015250c509df30ec69c7797
+ms.sourcegitcommit: df15c909ba27c9ed83197305a4ee1f01e46a826b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "2816476"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2936200"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>フォームに Azure Storage Web リソースを追加する
 
@@ -67,7 +67,7 @@ Azure に保存されているファイルを表示したり操作したりす�
 
 > [!Note]
 > 以下のように、クロス オリジンのリソース共有 (CORS) ルールをあなたの Azure Storage アカウントに追加する必要があります。それ以外の場合は、クラウド アイコンではなく通常の添付アイコンが表示されます。
-> - **許可されているオリジン**: ドメインの指定。 たとえば、`http://contoso.crm.dynamics.com` などとします。
+> - **許可されているオリジン**: ドメインの指定。 たとえば、`https://contoso.crm.dynamics.com` などとします。
 > - **許可されている動詞**: GET, PUT, DELETE, HEAD, POST
 > - **許可されているヘッダー**: オリジン ドメインが CORS 要求で指定できる要求ヘッダーを指定。 例えば、x-ms-meta-data\*、x-ms-meta-target\*。 このシナリオでは、* を指定する必要があります。それ以外の場合は、Web リソースは適切に表示されません。
 > - **公開されたヘッダー**: CORS 要求への応答で送信され、ブラウザが要求発行者に公開する応答ヘッダーを指定。 例えば、x-ms-meta-\*。

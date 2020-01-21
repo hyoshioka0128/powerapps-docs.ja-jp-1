@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c1f58228cb86ae7415739f5e6ffe4b3175b87b0d
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 03cdea2884f5ae4ac889218c4d9b87a48f1f8d81
+ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895041"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2944348"
 ---
 # <a name="create-and-use-dataflows-in-power-apps"></a>Power Apps でのデータフローの作成と使用について
 
@@ -51,6 +51,8 @@ Power Apps ポータルでのデータフローの作成が完了したら、 Co
 ## <a name="create-a-dataflow"></a>データフローの作成
 データフローはひとつの環境内に作成されます。 したがって、それらの表示や管理は同環境からのみ行うことができます。 また、ワークフローでデータのデータを抽出するユーザーは、レコードを作成した環境へのアクセスができる必要があります。
 
+> [!NOTE]
+> 現在、 Power Apps の コミュニティ プラン ライセンス では データフローの作成は使用できません。
 
 1.  Power Appsにサインインし、自分がどの環境に割り当てられているかを確認し、コマンド バーの右側に環境スイッチャーがあることを確認してください。
 

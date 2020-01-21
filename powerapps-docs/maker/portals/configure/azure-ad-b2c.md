@@ -2,19 +2,19 @@
 title: ポータルの Azure AD B2C プロバイダー設定 | MicrosoftDocs
 description: ポータルの Azure AD B2C プロバイダー設定を有効にするための手順。
 author: sbmjais
-manager: shujoshi
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/18/2019
+ms.date: 01/03/2020
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 5f902dd900e074c2e6b3f08f8848475dcd907ee4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.reviewer: tapanm
+ms.openlocfilehash: e8275fa256b00736501990c3abf127777097d938
+ms.sourcegitcommit: 82eec5da9c97fcb6ed50ae8e582f326af9278aa7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755492"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "2935209"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>ポータルの Azure AD B2C プロバイダー設定
 
@@ -518,8 +518,12 @@ Common Data Service と ID プロバイダーのデータは直接リンクさ�
 
 ### <a name="allow-auto-association-to-a-contact-record-based-on-email"></a>電子メールに基づいて取引先担当者レコードへの自動関連付けを許可する 
 
-電子メールが関連付けられて取引先担当者レコードを取得した顧客は、外部ユーザーが電子メール検証メカニズムを使用して [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C でサインインする Web サイトを立ち上げます。 新しいサインインは、重複レコードを作成するのではなく、既存の取引先担当者レコードと関連付ける必要があります。 この機能は、アクティブな ID を持たない取引先担当者のみを正常にマップするので、電子メール アドレスは一意である (複数の取引先担当者レコードに関連しない) 必要があります。 次のサイト設定が必要です。
+電子メールが関連付けられて取引先担当者レコードを取得した顧客は、外部ユーザーが電子メール検証メカニズムを使用して [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C でサインインする Web サイトを立ち上げます。 新しいサインインは、重複レコードを作成するのではなく、既存の取引先担当者レコードと関連付ける必要があります。 この機能は、アクティブな ID を持たない取引先担当者のみを正常にマップするので、電子メール アドレスは一意である (複数の取引先担当者レコードに関連しない) 必要があります。 次のサイト設定が必要となります:
 
 **名前**: Authentication/[プロトコル]/[プロバイダー]/AllowContactMappingWithEmail
 
-**説明**: 取引先担当者が対応する電子メールにマップされるかどうかを指定します。 この設定を true に設定すると、一意の取引先担当者レコードが一致する電子メールアドレスに関連付けられ、ユーザーが正常にサインインした後に自動的に外部 ID プロバイダーがその取引先担当者に割り当てられます。 既定では false に設定されています。
+**説明**: 取引先担当者が対応する電子メールにマップされるかどうかを指定します。 この設定を true に設定すると、一意の取引先担当者レコードが一致する電子メールアドレスに関連付けられ、ユーザーが正常にサインインした後に自動的に外部 ID プロバイダーがその取引先担当者に割り当てられます。 ここは既定では、 *False* に設定されています。
+
+**名称**: Authentication/UserManager/UserValidator/RequireUniqueEmail
+
+**説明**: ユーザーの検証に一意の電子メールアドレスが必要かどうかを指定します。 既存の連絡先電子メールアドレスを使用してサインインする場合は、設定を false に設定する必要があります。 既定では *true* に設定されており、電子メールアドレスがすでに存在する取引先担当者レコードの場合は、サインインに失敗する場合があります。

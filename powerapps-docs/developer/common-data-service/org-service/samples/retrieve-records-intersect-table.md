@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 49243b6d9dadc9fd9cc8dc35eba29c00f867004e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8ca8e3ec207627eb1b54024f1b05ee4730b70aef
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749296"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934199"
 ---
 # <a name="sample-retrieve-records-from-an-intersect-table"></a>サンプル: 交差テーブルからレコードを取得する
 
@@ -51,8 +51,7 @@ ms.locfileid: "2749296"
 
 1. `QueryExpression` は、交差テーブルからレコードを取得します。
 1. `RetrieveMultipleRequest` は、フェッチ要求をビルドして、結果を取得します。
+
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

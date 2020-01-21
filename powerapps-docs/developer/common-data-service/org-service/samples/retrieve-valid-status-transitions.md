@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ee1611f564f75d780e488bb4c8d23da264197c36
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: dd99019e867b4bc95540c5bb4c08af768891086b
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749293"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934187"
 ---
 # <a name="sample-retrieve-valid-status-transitions"></a>サンプル: 有効な状態の遷移を取得する
 
@@ -49,4 +49,4 @@ ms.locfileid: "2749293"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. このサンプルでは、レコードは作成されません。 クリーンアップの必要はありません。
+このサンプルでは、レコードは作成されません。 クリーンアップの必要はありません。

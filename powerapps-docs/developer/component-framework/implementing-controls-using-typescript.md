@@ -8,24 +8,26 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: dc71362d9b4076e74b836e9f7aa1603c8c84df47
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: b84af344a9057eed6084ca7ac2ef989146230089
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895073"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909084"
 ---
-# <a name="create-your-first-component-using-power-apps-component-framework"></a>Power Apps Component Framework を使用して最初のコンポーネントを作成する
+# <a name="create-your-first-component"></a>最初のコンポーネントを作成する 
 
-このトピックでは Power Apps CLI を使用して Typescript で新しいコード コンポーネントを作成する手順を説明します。 このチュートリアルでは、フィールドに値を入力する代わりに、ユーザーが視覚化スライダーを使用して、数値を変更できる、連続的なコード コンポーネントを構成していきます。 
+ このチュートリアルでは、ユーザーがフィールドに値を入力する代わりに、視覚的なスライダーを使用して数値を変更できる線形スライダー コード コンポーネントを構築する方法を説明をします。 
 
-コード コンポーネントを作成するために必要な成果は次のとおりです:
+線形スライダー コード コンポーネントを構築するには、次の手順が必要です。
 
-1. [新しいコンポーネント プロジェクトを作成する](#creating-a-new-component-project)
-2. [マニフェストの実装](#implementing-manifest)
-3. [TypeScript を使ってコンポーネント ロジックを実装する](#implementing-component-logic)
-4. [コード コンポーネントにスタイルを追加する](#adding-style-to-the-code-component)
-5. [コード コンポーネントのパッケージ化](#packaging-your-code-components)
+- [新しいコンポーネント プロジェクトを作成する](#creating-a-new-component-project)
+- [マニフェストの実装](#implementing-manifest)
+- [TypeScript を使ってコンポーネント ロジックを実装する](#implementing-component-logic)
+- [コード コンポーネントにスタイルを追加する](#adding-style-to-the-code-component)
+- [コード コンポーネントのパッケージ化](#packaging-your-code-components)
+- [コンポーネントをモデル駆動型アプリに追加する](#adding-code-components-in-model-driven-apps)
+- [コンポーネントをキャンバス アプリに追加する](#adding-code-components-to-a-canvas-app)
 
 ## <a name="creating-a-new-component-project"></a>新しいコンポーネント プロジェクトを作成する
 
@@ -61,7 +63,7 @@ ms.locfileid: "2895073"
    - **バージョン**: コンポーネントのバージョン。 コンポーネントを更新すると、実行時に変更を表示するの最新バージョンに更新する必要があります。
    - **表示名前キー**: UIに表示するコード コンポーネントの名前。
    - **表示名キー**: UIに表示するコード コンポーネントの説明。
-   - **control-type**: コード コンポーネントの種類。 コード コンポーネントの *標準*タイプのみサポートされています。
+   - **control-type**: コード コンポーネントの種類。 コード コンポーネントの *標準* タイプのみがサポートされています。
 
      ```XML
       <?xml version="1.0" encoding="utf-8" ?>
@@ -81,6 +83,7 @@ ms.locfileid: "2895073"
      ```XML
       <property name="sliderValue" display-name-key="sliderValue_Display_Key" description-key="sliderValue_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
       ```
+
 3. [リソース](manifest-schema-reference/resources.md)ノードは、コード コンポーネントのビジュアル化を定義します。 これはコード コンポーネントのビジュアル化とスタイル化を構築するすべてのリソースが含まれています。 [コード](manifest-schema-reference/code.md) は、リソース要素下で子要素として指定されます。 以下に示されるように、[リソース](manifest-schema-reference/resources.md) を定義します:
 
    - **コード**: すべてのリソース ファイルが設置されるファイル パスを参照します。
@@ -330,7 +333,7 @@ export class TSLinearInputComponent
 
 ## <a name="debugging-your-code-component"></a>コード コンポーネントのデバッグ
 
-コード コンポーネント ロジックの実装が完了したら、次のコマンドを実行してデバッグ処理を開始します。 詳細: [コード コンポーネントのデバッグ](debugging-custom-controls.md)
+コード コンポーネント ロジックの実装が完了したら、以下のコマンドを実行してデバッグ処理を開始します。 詳細: [コード コンポーネントのデバッグ](debugging-custom-controls.md)
 
 ```CLI
 npm start
@@ -375,7 +378,7 @@ npm start
     > - **コード ツール** の **NuGetターゲットとビルド タスク** にチェックマークを付けます。
 
 6. 生成されたソリューションの zip ファイルは、`Solution\bin\debug` フォルダーにあります。
-7. zip ファイルの準備ができたら Web ポータルを使用して手動で [ソリューションを Common Data Service にインポートする](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) または、[環境のインポート](import-custom-controls.md#connecting-to-your-environment) および [展開](import-custom-controls.md#deploying-code-components) セクションを表示して Power Apps CLI コマンドを使用して新ポートします。
+7. zipファイルが準備ができたらWeb ポータルを使用して、手動で [ソリューションを Common Data Service にインポートする](https://docs.microsoft.com/powerapps/maker/common-data-service/import-update-export-solutions) か、 [Power Apps Build Tools](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerApps-BuildTools) を使用して自動的にインポートします。
 
 ## <a name="adding-code-components-in-model-driven-apps"></a>モデル駆動型のアプリのコード コンポーネントの追加
 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ab98ceb55faaefdc015fb969daab844428b7b53a
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: dd0bacbd2743100380c67a8e0a0da14bd643465f
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753767"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922346"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>マルチ テナント型でのサーバー間認証の使用
 
@@ -171,7 +171,7 @@ ms.locfileid: "2753767"
   
     このユーザーを作成すると、これらフィールドの値には当該ユーザーを保存した際の **アプリケーションID** 値に基づいて Azure AD から取得されます。  
   
-5. アプリケーション ユーザーを「[アプリケーション ユーザーによるセキュリティ ロールを作成する](#bkmk_CreateSecurityRole)」で作成されたカスタム セキュリティ ロールに関連付けます。 詳細情報: [Dynamics 365 (online) でのユーザーの作成およびセキュリティ ロールの割り当て](/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles)  
+5. アプリケーション ユーザーを「[アプリケーション ユーザーによるセキュリティ ロールを作成する](#bkmk_CreateSecurityRole)」で作成されたカスタム セキュリティ ロールに関連付けます。 詳細情報: [ユーザーを作成し、セキュリティ ロールを割り当てる](/dynamics365/customer-engagement/admin/create-users-assign-online-security-roles)  
   
 <a name="bkmk_TestUsingYourTenant"></a>  
  

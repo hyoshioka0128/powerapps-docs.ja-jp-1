@@ -17,12 +17,12 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: f245d4c2a9272d10f7aefa2b2847adba5ce0f6e5
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fae464925ea755a1f9fd0cd77426bfdbaad6141c
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860812"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909333"
 ---
 # <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>エンティティのメイン フォームに SharePoint ドキュメント タブを追加する
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "2860812"
 5. フォーム デザイナーで、フォーム デザイナー キャンバスの **新しいタブ** を選択し、**フィールドを追加** を選択して、左側のウィンドウから *住所 1: 市区町村* などのフィールドを追加します。 タブには任意のテキストや数値のフィールドを使用できます。![タブにフィールドを追加します](media/add-field-to-tab.png)
 6. タブ ラベルの名前を変更します。 これを行うには **新しいタブ** を選択し、右側のプロパティ ウィンドウで **新しいタブ** を *ファイル* のようにわかりやすいものに置き換えます。
 7. **保存** を選択し、**公開** を選択してフォーム デザイナーを閉じます。 
-8. Power Apps 作成者のホームページから **ソリューション** を選択し、ソリューションを選択して **エクスポート** を選択し、ソリューションをアンマネージド ソリューションとしてエクスポートします。 詳細: [ソリューションのエクスポート](../common-data-service/import-update-export-solutions.md#export-solutions) 
+8. Power Apps 作成者のホームページから **ソリューション** を選択し、ソリューションを選択して **エクスポート** を選択し、ソリューションをアンマネージド ソリューションとしてエクスポートします。 詳細: [ソリューションのエクスポート](../common-data-service/export-solutions.md) 
 9. ソリューションを抽出し、XML やテキスト エディターで customization.xml ファイルを開きます。 
 10. customization.xml で **label description="Files"** (または前のステップでタブ ラベルに付けた名前) を検索します。
 11. **control id="address1_city"** などのコントロール id="*フィールド名*" 要素までスクロールし、このトピックの要素全体を [XML サンプル](#xml-sample-for-adding-the-documents-tab-to-a-form) に置き換えます。 

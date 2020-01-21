@@ -1,27 +1,27 @@
 ---
-title: '手順4: アプリの AppSource パッケージを作成する (Common Data Service) | Microsoft Docs'
+title: '手順 3: アプリの AppSource パッケージを作成する (Common Data Service) | Microsoft Docs'
 description: ソリューションおよびデモ データ ファイルをその他必須ファイルと共に含めるにあたって、 AppSource パッケージ (.zip ファイル) を作成する方法を学習します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
-author: shmcarth
-ms.author: jdaly
-manager: ryjones
+author: KumarVivek
+ms.author: kvivek
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9696ad4bafbd9556203243cb7ba785e3d0d8444c
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 43accbf1e1acf8c32e76c5e0c0dab4975cd847a0
+ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753023"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "2922350"
 ---
-# <a name="step-4-create-an-appsource-package-for-your-app"></a>手順4: アプリの AppSource パッケージを作成する
+# <a name="step-3-create-an-appsource-package-for-your-app"></a>手順3: アプリの AppSource パッケージを作成する
 
 ソリューションおよびデモ データ ファイルを他の必須ファイルと共に含めるにあたって、 AppSource パッケージ (.zip ファイル) を作成する必要があります。 AppSource のパッケージは以下のファイルから構成されます:
 
@@ -142,4 +142,4 @@ Dynamics 365 管理センター ポータルに目的のソリューション名
  
 
 > [!div class="nextstepaction"]
-> [手順5:  AppSource パッケージをAzureストレージに保存する](store-appsource-package-azure-storage.md) 
+> [手順 4:  AppSource パッケージ を Azure ストレージに保存する](store-appsource-package-azure-storage.md) 

@@ -6,21 +6,25 @@ manager: shujoshi
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/03/2019
+ms.date: 12/27/2019
 ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: 28df2292d18f38a78e913a9805ac39a33f6aaf54
-ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
+ms.reviewer: tapanm
+ms.openlocfilehash: 35f68ef861ac8908e1eb9227df6768b7a2c2c9f3
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "2890734"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934111"
 ---
 # <a name="power-apps-portals-faq"></a>Power Apps ポータルに関するよくあるご質問
 
 必要な情報がすぐに手に入るように、よく寄せられる質問とその簡潔な回答を一覧にまとめました。
 
 ## <a name="general"></a>全般
+
+### <a name="when-is-an-add-on-portal-in-suspended-state"></a>アドオン ポータルが停止状態になるのはどのような場合ですか？
+
+ポータル [ポータル アドオン プランを 使用した プロビジョニング](provision-portal-add-on.md) 以前に購入したものは、有効期限が切れると停止します。 この有効期限は、試用版 ポータル の場合は 30日間ですが、この期限は購入した ライセンス が 運用環境の アドオンポータル のによって異なる場合があります。 停止中の試用版ポータルは7日後に削除されますが、この停止期間は運用ポータルによって異なります。 詳細については、アドオン ポータルの [ポータル の ライフサイクル](./admin/portal-lifecycle.md#considerations-for-add-on-portals) をご確認ください。
 
 ### <a name="how-do-i-redirect-a-user-to-a-default-page-after-signing-in"></a>サインイン後にユーザーを既定のページにリダイレクトする方法を教えてください。
 
@@ -115,11 +119,7 @@ Set-TenantSettings -RequestBody @{ "disablePortalsCreationByNonAdminUsers" = $fa
 
 ### <a name="how-do-i-get-a-portal-subscription"></a>どのようにポータル サブスクリプションを取得しますか。
 
-次のいずれかの方法でポータルのサブスクリプションを購入することができます。
-
-- 1 つのポータル アドオンは、ユーザー ライセンスの特定の種類と数量を購入すると提供されます。 詳細については、Dynamics 365 の価格設定およびライセンスガイドを参照してください。 有効なライセンスの複数の種類または数量を購入している場合であっても、ユーザー ライセンスを持つポータル アドオンを 1 つのみ取得することに注意することは重要です。
-
-- 追加のポータル サブスクリプションは、ポータル アドオン サブスクリプション購入を通じて購入することができます。 このサブスクリプションはアドオン サブスクリプションで、適切な Dynamics 365 ライセンスを所有する場合に購入することができます。
+[Power Appsポータル](overview.md) は、 Power Apps 内で完全に スタンドアロン で利用可能となりました。 ポータル の プロビジョニング にあたって ライセンス を取得する必要はなくなりました。 ポータル に ユーザーが アクセス するには、ペルソナ の タイプ に応じたライセンスが必要です。 詳細は、 [Power Appsポータル ライセンスに関するよくある質問](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing)を参照してください。
 
 ### <a name="how-do-i-change-the-audience-and-type-of-a-portal-after-it-is-provisioned"></a>プロビジョニング後、どのようにポータルの対象者と種類を変更しますか。
 

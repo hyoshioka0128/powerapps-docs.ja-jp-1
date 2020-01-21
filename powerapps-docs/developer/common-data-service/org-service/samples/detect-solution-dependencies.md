@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4f718c8414e76119c53bbb55648ee8b0a1941e1c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 296c325e84b2ac1d74321825ab19f38b88e82ab4
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749327"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934335"
 ---
 # <a name="sample-detect-solution-dependencies"></a>サンプル: ソリューションの依存関係の検出
 
@@ -53,6 +53,4 @@ ms.locfileid: "2749327"
 1. `RetrieveDependentComponentsRequest` はコンポーネントのすべての依存関係を取得します。 依存関係がない場合は、このコンポーネントを無視できます。 このソリューション コンポーネントに依存関係があり、ソリューション自体がマネージドの場合は、ソリューションを削除できなくなります。
 ### <a name="clean-up"></a>クリーンアップ
 
-1. [セットアップ](#setup)で作成されたソリューションを削除するためのオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup)で作成されたソリューションを削除するためのオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

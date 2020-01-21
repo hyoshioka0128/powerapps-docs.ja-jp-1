@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bc9881d4650c6e711aa968dc2546e21db5984a4f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7e3b2b207b1618e8373e0d008ec9f853ecf46910
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749311"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934267"
 ---
 # <a name="sample-promote-an-email-message"></a>サンプル: 電子メール メッセージの登録
 
@@ -41,7 +41,7 @@ ms.locfileid: "2749311"
 
 ### <a name="setup"></a>セットアップ
 
-1. 組織の現在のバージョンをチェックします。
+組織の現在のバージョンをチェックします。
 
 ### <a name="demonstrate"></a>使用方法
 
@@ -53,6 +53,4 @@ ms.locfileid: "2749311"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

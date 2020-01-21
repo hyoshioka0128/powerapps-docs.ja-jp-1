@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ad3fd39f00d68af3a115c3bed2cc6d984eeeeb0
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d8aebdc81d225369fbe8b964713c145242c6312e
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749164"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934383"
 ---
 # <a name="sample-create-a-connection-role"></a>サンプル: つながりロールの作成
 
@@ -40,7 +40,8 @@ ms.locfileid: "2749164"
 [このサンプルの概要](#what-this-sample-does) で説明されているシナリオをシミュレートするために、サンプルは次のことを行います。
 
 ### <a name="setup"></a>セットアップ
-1. 組織の現在のバージョンをチェックします。
+
+組織の現在のバージョンをチェックします。
 
 ### <a name="demonstrate"></a>使用方法
 1. いくつかの匿名型を定義し、可能なつながりプロパティ値の範囲を定義します。
@@ -49,5 +50,4 @@ ms.locfileid: "2749164"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) でレコードを削除するためのオプションを表示します。
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) でレコードを削除するためのオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

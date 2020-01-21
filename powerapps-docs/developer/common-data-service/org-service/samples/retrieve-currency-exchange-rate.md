@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 07d0901064e36d433e09a5c7732b4a653f4f0a1a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 62a85f5a13bd05cf4b730e747a71a1b88467055b
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749301"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934227"
 ---
 # <a name="sample-retrieve-currency-exchange-rate"></a>サンプル: 通貨為替レートを取得する
 
@@ -46,9 +46,8 @@ ms.locfileid: "2749301"
 
 ### <a name="demonstrate"></a>使用方法
 
-1. `RetrieveExchangeRateRequest` メッセージは、組織の基本通貨に対する為替レートを取得します。
+`RetrieveExchangeRateRequest` メッセージは、組織の基本通貨に対する為替レートを取得します。
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup)で作成されたサンプル データを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 717fc8ea120c235dafe99d9385a8e8885dd841ec
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c43c9a25b4b662a00f2886c23cb05be1bb105f7d
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749324"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934307"
 ---
 # <a name="sample-enable-duplicate-detection-and-retrieve-duplicates"></a>サンプル: 重複データ検出を有効にし、重複を取得する
 
@@ -52,6 +52,4 @@ ms.locfileid: "2749324"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fc884a2e4ee1118cef35bdfa4838f4343f061d84
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 142600c4e8cc9cc5d959b42670678234245e6f1d
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749316"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934283"
 ---
 # <a name="sample-link-custom-attributes-between-series-and-instances"></a>サンプル: 系列とインスタンスとの間のユーザー定義属性のリンク
 
@@ -35,7 +35,7 @@ ms.locfileid: "2749316"
 
 ### <a name="setup"></a>セットアップ
 
-1. 組織の現在のバージョンをチェックします。
+組織の現在のバージョンをチェックします。
 
 ### <a name="demonstrate"></a>使用方法
 
@@ -44,6 +44,4 @@ ms.locfileid: "2749316"
 
 ### <a name="clean-up"></a>クリーンアップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

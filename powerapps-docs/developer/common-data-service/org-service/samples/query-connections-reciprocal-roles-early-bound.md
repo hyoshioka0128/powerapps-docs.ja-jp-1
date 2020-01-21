@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 35237064a89309f2345e92122479ad059369a495
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4025a4da12cb909f0b481a9a821f9a9f77eaf70f
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749309"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934259"
 ---
 # <a name="sample-query-connections-by-reciprocal-roles"></a>サンプル: 相互ロールによるつながりの照会
 
@@ -48,9 +48,8 @@ ms.locfileid: "2749309"
 
 ### <a name="demonstrate"></a>使用方法
 
-1. `QueryExpression` は、このロールを相互ロールとして登録しているすべてのつながりロールを取得します。
+`QueryExpression` は、このロールを相互ロールとして登録しているすべてのつながりロールを取得します。
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) でレコードを削除するためのオプションを表示します。
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) でレコードを削除するためのオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

@@ -2,7 +2,7 @@
 title: Web API (Common Data Service) を使って条件付き操作を実行する| Microsoft Docs
 description: Web API を使用して特定の操作を実行するかどうかおよびその方法を決定する、条件の作成方法について説明します。
 ms.custom: ''
-ms.date: 08/31/2019
+ms.date: 01/08/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f9bc022aadc020ecd46f6665efbd50a5322ac45a
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 079aa0d3e55ea72a725023cd155f7269f345a8e2
+ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749190"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "2944303"
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Web API を使用する条件付き演算を実行する
 
@@ -54,16 +54,9 @@ Common Data Service により、各エンティティ インスタンスに対�
 
 ## <a name="conditional-retrievals"></a>条件付き検索
 
-Etags により、同じレコードに複数回アクセスするときは、いつでもレコードの検索を最大限に活用することができます。 以前にレコードを取得している場合、最後に取得されてから変更している場合にのみ、取得されたデータを要求するために、`If-None-Match` ヘッダーを含む ETag 値を渡すことができます。 データが変更されている場合、要求は、要求の本体の最新データを含む 200 (OK) HTTP ステータスを返します。 データが変更されていない場合、エンティティが変更されていないことを示す HTTP ステータス コード 304 (Not Modified) が返されます。 次のサンプルのメッセージ ペアは、データが最後に取得されて以来変更されていない場合、`00000000-0000-0000-0000-000000000001` に等しい `accountid` を含む取引先企業エンティティのデータを返します。  
+Etags により、同じレコードに複数回アクセスするときは、いつでもレコードの検索を最大限に活用することができます。 以前にレコードを取得している場合、最後に取得されてから変更している場合にのみ、取得されたデータを要求するために、`If-None-Match` ヘッダーを含む ETag 値を渡すことができます。 データが変更された場合、要求は、要求の本体の最新データを含む `200 (OK)` HTTP ステータスを返します。 データが変更されていない場合、エンティティが変更されていないことを示す HTTP ステータス コード `304 (Not Modified)` が返されます。 
 
-> [!NOTE]
-> 条件付き検索は、オプティミスティック同時実行が有効になっているエンティティに対してのみ機能します。 次に示す Web API 要求を使用して、エンティティでオプティミスティック同時実行が有効になっているかどうかを確認します。 オプティミスティック同時実行が有効になっているエンティティでは、<xref href="Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsOptimisticConcurrencyEnabled?text=EntityMetadata.IsOptimisticConcurrencyEnabled" /> プロパティが `true` に設定されます。
-
-> ```HTTP
-> GET [Organization URI]/api/data/v9.0/EntityDefinitions(LogicalName='<Entity Logical Name>')?$select=IsOptimisticConcurrencyEnabled
-> ```
-<!-- TODO:
-> For more information about optimistic concurrency, see [Reduce potential data loss using optimistic concurrency](../org-service/reduce-potential-data-loss-using-optimistic-concurrency.md).   -->
+次のサンプル メッセージ ペアでは、Etag 値が `W/"468026"` のときに、データが最後に取得されてから変更されていない場合、 `accountid` が `00000000-0000-0000-0000-000000000001` に等しい取引先企業エンティティのデータを返します
 
  **要求**  
 ```http  
@@ -80,6 +73,20 @@ HTTP/1.1 304 Not Modified
 Content-Type: application/json; odata.metadata=minimal  
 OData-Version: 4.0  
 ```  
+
+以下のセクションでは、条件付き取得の使用に関する制限について説明します。
+
+### <a name="entity-must-have-optimistic-concurrency-enabled"></a>エンティティでは、オプティミスティック同時実行を有効にする必要があります
+
+次に示す Web API 要求を使用して、エンティティでオプティミスティック同時実行が有効になっているかどうかを確認します。 オプティミスティック同時実行が有効になっているエンティティでは、<xref href="Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsOptimisticConcurrencyEnabled?text=EntityMetadata.IsOptimisticConcurrencyEnabled" /> プロパティが `true` に設定されます。
+
+```http
+GET [Organization URI]/api/data/v9.0/EntityDefinitions(LogicalName='<Entity Logical Name>')?$select=IsOptimisticConcurrencyEnabled
+```
+
+### <a name="query-must-not-include-expand"></a>クエリに $expand を含めることはできません
+
+Etag は、取得される単一レコードが変更されたかどうかのみを検出できます。 クエリで `$expand` を使用すると、追加のレコードが返され、それらのレコードが変更されたかどうかを検出できなくなります。 クエリに `$expand` が含まれる場合、 `304 Not Modified` は返されません。
   
 <a name="bkmk_limitUpsertOperations"></a>
   

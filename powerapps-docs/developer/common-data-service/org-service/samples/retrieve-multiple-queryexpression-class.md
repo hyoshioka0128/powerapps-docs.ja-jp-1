@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7f85fe38e5f300d0f5a7a1a2d4e796837054bf9f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 2939a005c5fac49706f6a582a71f0d11a520faac
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749297"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934203"
 ---
 # <a name="sample-retrieve-multiple-with-the-queryexpression-class"></a>サンプル: QueryExpression クラスを使用した複数取得
 
@@ -43,11 +43,13 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service
 
 ### <a name="setup"></a>セットアップ
 
-1. 組織の現在のバージョンをチェックします。
+組織の現在のバージョンをチェックします。
 
 ### <a name="demonstrate"></a>使用方法
+
 1. 取引先責任者を含む複数の取引先企業を作成します。
 1. `QueryExpression` クラスは、リンク エンティティ エイリアスと返すリンク エンティティの列を指定するクエリ式を作成します。
+
 ### <a name="clean-up"></a>クリーン アップ
 
-1. クリーンアップの必要はありません。
+クリーンアップの必要はありません。

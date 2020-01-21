@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0484580dd9e385866feb18cb25999436b726f4de
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f61632eb0bae61848b24bc68684a477ca8d0a130
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749288"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934167"
 ---
 # <a name="sample-send-an-email"></a>サンプル: 電子メールの送信
 
@@ -49,10 +49,8 @@ ms.locfileid: "2749288"
 
 ### <a name="demonstrate"></a>使用方法
 
-1. `SendEmailRequest` メソッドは、[セットアップ](#setup)で作成した電子メール メッセージを送信します。
+`SendEmailRequest` メソッドは、[セットアップ](#setup)で作成した電子メール メッセージを送信します。
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。

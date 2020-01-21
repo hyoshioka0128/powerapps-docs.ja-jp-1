@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7b6531dee95230f028c13728dd27761b8783738c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0b5c0105ac67603826ffa1b6402d10cda2cc845f
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748952"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934354"
 ---
 # <a name="sample-create-retrieve-update-and-delete-an-email-attachment"></a>サンプル: 電子メールの添付ファイルの作成、取得、更新、および削除
 
@@ -58,8 +58,6 @@ ms.locfileid: "2748952"
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
 
 

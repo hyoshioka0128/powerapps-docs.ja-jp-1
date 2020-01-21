@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 8235c8ed0400223a36324a301fdf172a0610efec
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 70532cfb3cc5cfad0f274f123857eedc5d54cae2
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2894997"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909281"
 ---
 # <a name="create-and-build-a-code-component"></a>コードコンポーネントを作成、構築する
 
@@ -48,40 +48,7 @@ ms.locfileid: "2894997"
 > [!TIP]
 > 構築中、または構築完了後にコンポーネントのデバッグを行うには、 [コード コンポーネントのデバッグ](debugging-custom-controls.md) を参照してください。
 
-TypeScript へのコンポーネントロジックの実装が完了したら、Common Data Service にソリューションをインポートできるように、すべてのコード コンポーネント要素をソリューション ファイルにバンドルする必要があります。 詳細: [コード コンポーネントをパッケージする](import-custom-controls.md)
-
-## <a name="known-configuration-issues-and-workarounds"></a>構成に関する既知の問題と回避策
-
-**Msbuild エラー MSB4036:**
-
-1. プロジェクト ファイルのタスク名はタスク クラスの名前と同じです。
-2. タスク クラスはパブリックで Microsoft.Build.Framework.ITask インターフェイスを実装しています。
-3. タスクは、プロジェクト ファイルの *\<UsingTask>* または、 パス ディレクトリに格納されている、 *.tasks ファイルにて正しく宣言されています。
-
-**解決方法:**
-
-1. Visual Studio インストーラーを開きます。 
-1. Visual Studio 2017 で、 **修正 を選択します**。 
-1. **個別のコンポーネント** を選択します。
-1. コード ツール配下の **NuGet ターゲットと構築タスク** を確認します。
-
-**発行元の接頭辞**
-
-コンポーネントが Power Apps CLIツールキットのバージョン 0.4.3 よりも0.4.3低くバージョンで作成されている場合は、Common Data Service にソリューションファイルをインポートする際にエラーが表示されます。 このエラーが表示されるのは、新しくインポートされたコンポーネントの名称に、その一意性と競合を回避する目的で発行元の接頭辞が付加されてるためです。
-
-**回避策**:
-
-- Common Data Serviceからソリューションに関連するコンポーネントを削除します。 フォーム、またはグリッドにコンポーネントが既に構成されている場合は、コンポーネントソリューションは構成に依存するため、当該コンポーネントを削除する必要があります。  
-- 最新の CLI バージョンで構築されたコンポーネントに対する更新を使用して、新しいソリューションをインポートします。
-- 新たに読み込まれたコンポーネントは、フォームまたはグリッド上で設定できるようになっています。  
-
-
-<!--2. When the components are created with the publisher prefix in mixed or upper case using the new CLI tooling version, it throws an error while importing the solution. This happens because the updated tooling version (0.4.3 and newer) now enforces the platform standard for lower case publisher prefix.
-
-   **Workaround**:
-
-    Update the solution and customizations to ensure that the associated prefix is modified to lower case and import the new solution into Common Data Service.-->
-
+TypeScript でコンポーネントロジックの実装が完了したら、すべてのコードコンポーネント要素を ソリューション ファイル に バンドル して、ソリューションを Common Data Service に インポートできるようにする必要があります。 詳細: [コード コンポーネントをパッケージする](import-custom-controls.md)
 
 ### <a name="see-also"></a>関連項目
 

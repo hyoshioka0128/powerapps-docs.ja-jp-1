@@ -1,5 +1,5 @@
 ---
-title: キャンバス アプリの Power Apps Component Framework | Microsoft Docs
+title: キャンバス アプリ の コード コンポーネント| Microsoft Docs
 description: キャンバス アプリのコード コンポーネントを作成する
 keywords: ''
 ms.author: nabuthuk
@@ -11,14 +11,14 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: 2008b9d57899697b60e47d24d3acb74a72c9700e
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: 300da15802a7132115b91773544792a921f0a827
+ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895065"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "2909289"
 ---
-# <a name="power-apps-component-framework-for-canvas-apps"></a>キャンバス アプリの Power Apps Component Framework
+# <a name="code-components-for-canvas-apps"></a>キャンバス アプリのコード コンポーネント
 
 > [!IMPORTANT]
 > この機能はまだ実験的であり既定で無効になっています。 詳細については [実験的機能とプレビュー機能](../../maker/canvas-apps/working-with-experimental.md) を参照してください。
@@ -63,7 +63,9 @@ Power Apps Component Framework を使用すると、アプリ作成者はアプ�
 
 ## <a name="implementing-code-components"></a>コード コンポーネントの実装
 
-環境で Power Apps Component Framework 機能を有効にしたら、コード コンポーネントのロジックの実装を開始できます。 [最初のコード コンポーネントを作成する](implementing-controls-using-typescript.md) のトピックは、カスタム ロジックとマニフェスト ファイルを実装するコード コンポーネントを作成します。さらに、デバッグ プロセスを実行し、ソリューションzipファイルを作成し、ソリューションを Common Data Service へとインポートします。
+環境で Power Apps Component Framework 機能を有効にしたら、コード コンポーネントのロジックの実装を開始できます。
+
+ [はじめてのコード コンポーネント作成](implementing-controls-using-typescript.md) トピックでは、コード コンポーネントを作成するにあたっての段階的なプロセスを示しています。
 
 > [!NOTE]
 > コード コンポーネントの実装は、モデル駆動型アプリでもキャンバス アプリ (試験的プレビュー) でも同じです。 唯一の違いはコード コンポーネントの追加です。 
@@ -95,11 +97,11 @@ Power Apps Component Framework を使用すると、アプリ作成者はアプ�
 
 ## <a name="delete-a-code-component"></a>コード コンポーネントの削除 
 
-キャンバス アプリからコード コンポーネントを削除するには、削除するコード コンポーネントを選択してから、メニューの**削除**ボタンを選択します。 コード コンポーネントがアプリケーションから削除されると、すべてのコード コンポーネント要素がアプリおよびアプリ パッケージから削除されます。 
+キャンバス アプリからコード コンポーネントを削除するには、削除するコード コンポーネントを選択してから、メニューの**削除**ボタンを選択します。 コード コンポーネント が アプリ から削除されると、すべてのコード コンポーネント の要素が アプリ と アプリのパッケージから削除されます。 
 
 ## <a name="update-existing-code-components"></a>既存のコード コンポーネントの更新
 
-コード コンポーネントを更新すると、マニフェスト ファイルの*バージョン*属性が指定されるため、最新の変更がランタイムで反映されます。 キャンバス アプリの場合、既存のコード コンポーネントを更新するときに *バージョン* 属性を更新する必要はありません。 設計上、キャンバス アプリは最新のコード コンポーネントを取得して実行時に表示します。 同じコンポーネントは単一バージョンのみがキャンバス アプリに存在できます。
+コード コンポーネントを更新し、実行時の変更を確認したい場合は、マニフェスト ファイルの `version` 属性を変更する必要があります。 変更を加える際は、常に コンポーネント の バージョン を更新することを推奨します。
 
 > [!NOTE]
 > 既存のコード コンポーネントは、Power Apps Studio でアプリが閉じられたか再度開かれたときにのみ更新されます。 アプリを再度開くと、コード コンポーネントを更新するように求められます。 コード コンポーネントを削除したり、コード コンポーネントをアプリに追加し直すだけでは、コンポーネントは更新されません。

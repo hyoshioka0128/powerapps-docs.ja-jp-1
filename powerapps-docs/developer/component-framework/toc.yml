@@ -30,6 +30,8 @@
           href: publish-components-app-source.md
     - name: トラブルシューティング
       items:
+        - name: 共通の問題と回避策
+          href: issues-and-workarounds.md
         - name: 制限
           href: limitations.md
     - name: サンプル コンポーネント
@@ -335,6 +337,6 @@
             - name: uses-feature
               href: manifest-schema-reference/uses-feature.md
     - name: コミュニティ リソース
-      href: 'https://powerusers.microsoft.com/t5/PowerApps-Component-Framework/Community-content-sample-components-blogs-etc-Link-to-this-page/m-p/280710#M100'
+      href: community-resources.md
     - name: フィードバックの共有
       href: share-your-feedback-for-pcf.md

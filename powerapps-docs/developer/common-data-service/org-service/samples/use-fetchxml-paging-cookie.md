@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e910a6ee5737d7dbcc622b4d854f7799a73c3405
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7325fc94f4a73616dbd679ba0800879dc7c6ea2f
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749278"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934079"
 ---
 # <a name="sample-use-fetchxml-with-a-paging-cookie"></a>サンプル: ページング Cookie を使用した FetchXML の使用
 
@@ -47,11 +47,9 @@ https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service
 
 ### <a name="demonstrate"></a>使用方法
 
-1. `fetchXml` は親取引先企業にすべての子取引先企業を取得する FetchXML 文字列を作成します。 このFetch クエリは 1 つのプレースホルダーを使用して親取引先企業IDを指定し、必須の取引先企業を除外します。
+`fetchXml` は親取引先企業にすべての子取引先企業を取得する FetchXML 文字列を作成します。 このFetch クエリは 1 つのプレースホルダーを使用して親取引先企業IDを指定し、必須の取引先企業を除外します。
 
 ### <a name="clean-up"></a>クリーンアップ
 
-1. サンプルで作成されたすべてのデータを削除するためのオプションを表示します。
-
-サンプルで作成されるデータを検証する場合、削除は任意です。 手動でデータを削除することで同じ結果を得られます。
+サンプルで作成されたすべてのデータを削除するためのオプションを表示します。 サンプルで作成されるデータを検証する場合、削除は任意です。 手動でデータを削除することで同じ結果を得られます。
 

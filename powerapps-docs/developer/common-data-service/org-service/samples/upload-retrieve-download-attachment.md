@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 51496631551d87b269030a07ed482584b3c93ece
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 7e1f871cdf456322737df9da5990ae671f769034
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749281"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934139"
 ---
 # <a name="sample-upload-retrieve-and-download-an-attachment"></a>サンプル: 添付ファイルのアップロード、取得、およびダウンロード
 
@@ -42,14 +42,13 @@ ms.locfileid: "2749281"
 
 ### <a name="setup"></a>セットアップ
 
-1. 組織の現在のバージョンをチェックします。
+組織の現在のバージョンをチェックします。
 
 ### <a name="demonstrate"></a>実際にやってみます
+
 1. `Annotation` メソッドは annotation オブジェクトのインスタンスを作成します。
 1. `IOrganizationService` メソッドは annotation オブジェクトを作成し、アップロードします
 
 ### <a name="clean-up"></a>クリーンアップ
 
-1. サンプルで作成されたすべてのデータを削除するためのオプションを表示します。
-
-サンプルで作成されるデータを検証する場合、削除は任意です。 手動でデータを削除することで同じ結果を得られます。
+サンプルで作成されたすべてのデータを削除するためのオプションを表示します。 サンプルで作成されるデータを検証する場合、削除は任意です。 手動でデータを削除することで同じ結果を得られます。

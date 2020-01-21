@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fa73f1dc5cb711291e5e6f441a69386913419800
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 43929bf09ee211596c6a2043be48a796c387e5e9
+ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749302"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "2934235"
 ---
 # <a name="sample-retrieve-absolute-url-and-site-collection-url-of-a-location-record"></a>サンプル: 場所レコードの絶対 URL およびサイト コレクション URL の取得
 
@@ -46,10 +46,8 @@ ms.locfileid: "2749302"
 
 ### <a name="demonstrate"></a>使用方法
 
-1. `RetrieveAbsoluteAndSiteCollectionUrlRequest` は、SharePoint のレコードの絶対 URL とサイト コレクション URL を取得するために使用されます。
+`RetrieveAbsoluteAndSiteCollectionUrlRequest` は、SharePoint のレコードの絶対 URL とサイト コレクション URL を取得するために使用されます。
 
 ### <a name="clean-up"></a>クリーン アップ
 
-1. [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。
-
-    サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
+[セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
