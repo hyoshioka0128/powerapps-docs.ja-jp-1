@@ -1,24 +1,24 @@
 ---
 title: 関数、シグナル、列挙型 | Microsoft Docs
-description: Power Apps の関数、シグナル、および列挙体に関するリファレンス情報。
+description: Power Apps の関数、シグナル、および列挙体に関する参照情報。
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/15/2019
+ms.date: 12/19/2019
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7712af247376d6db54aa6777eb2a3051f0e31f93
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 30046f0b9f2a47e7231b00aafe1633a7242e43c6
+ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731413"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76315402"
 ---
 # <a name="formula-reference-for-power-apps"></a>Power Apps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -47,11 +47,13 @@ ms.locfileid: "74731413"
 
 **[And](functions/function-logicals.md)** – ブール論理の AND です。  すべての引数が **true** の場合に **true** を返します。  [ **&&** 演算子](functions/operators.md)を使用することもできます。
 
-**[アプリ](functions/object-app.md)** –現在実行中のアプリに関する情報を提供し、アプリの動作を制御します。
+**[App](functions/object-app.md)** – 現在実行中のアプリとアプリの動作に対する制御に関する情報を提供します。
 
 **[Asin](functions/function-trig.md)** – 数値のアークサインをラジアン単位で返します。
 
-**[Astype](functions/function-astype-istype.md)** –レコード参照を特定のエンティティ型として扱います。
+**[Assert](functions/function-assert.md)** – テストで true または false に評価されます。
+
+**[AsType](functions/function-astype-istype.md)** – レコード参照を特定のエンティティ型として扱います。
 
 **[Atan](functions/function-trig.md)** – 数値のアークタンジェントをラジアン単位で返します。
 
@@ -187,10 +189,10 @@ ms.locfileid: "74731413"
 
 **[IsToday](functions/function-now-today-istoday.md)** – 日付/時刻値が今日に当たるかどうかを調べます。
 
-**[Istype](functions/function-astype-istype.md)** –レコード参照が特定のエンティティ型を参照しているかどうかを確認します。
+**[IsType](functions/function-astype-istype.md)** – レコード参照が特定のエンティティ型を表しているかどうかを確認します。
 
-## <a name="j"></a>祭
-**[Json](functions/function-json.md)** -テーブル、レコード、または値の json テキスト文字列を生成します。
+## <a name="j"></a>J
+**[JSON](functions/function-json.md)** - テーブル、レコード、または値の JSON テキスト文字列を生成します。
 
 ## <a name="l"></a>L
 **[Language](functions/function-language.md)** – 現在のユーザーの言語タグを返します。
@@ -207,7 +209,7 @@ ms.locfileid: "74731413"
 
 **[Ln](functions/function-numericals.md)** – 自然対数を返します。
 
-**[LoadData](functions/function-savedata-loaddata.md)** – Power Apps プライベートストレージからコレクションを読み込みます。
+**[LoadData](functions/function-savedata-loaddata.md)** – Power Apps プライベート ストレージからコレクションを読み込みます。
 
 **[Location](functions/signals.md)** – GPS (Global Positioning System) などの情報を使用して現在地を地図座標として返します。
 
@@ -216,9 +218,9 @@ ms.locfileid: "74731413"
 **[Lower](functions/function-lower-upper-proper.md)** – テキストの文字列内の文字をすべて小文字に変換します。
 
 ## <a name="m"></a>M
-**[Match](functions/function-ismatch.md)** –パターンに基づいて部分文字列を抽出します。  正規表現を使用できます。
+**[Match](functions/function-ismatch.md)** – パターンに基づいて部分文字列を抽出します。  正規表現を使用できます。
 
-**[Matchall](functions/function-ismatch.md)** –パターンに基づいて複数の部分文字列を抽出します。  正規表現を使用できます。
+**[MatchAll](functions/function-ismatch.md)** – パターンに基づいて複数の部分文字列を抽出します。  正規表現を使用できます。
 
 **[Max](functions/function-aggregates.md)** – テーブル式または引数セットの最大値を返します。
 
@@ -268,7 +270,7 @@ ms.locfileid: "74731413"
 
 **[Refresh](functions/function-refresh.md)** – データ ソースのレコードを更新します。
 
-**[関連付け](functions/function-relate-unrelate.md)** –一対多または多対多のリレーションシップを通じて、2つのエンティティのレコードを関連付けます。
+**[Relate](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップを通じて 2 つのエンティティのレコードを関連付けます。
 
 **[Remove](functions/function-remove-removeif.md)** – データ ソースから特定のレコードを削除します。
 
@@ -295,7 +297,7 @@ ms.locfileid: "74731413"
 **[RoundUp](functions/function-round.md)** – 元の数値以上の最小値になるように切り上げます。
 
 ## <a name="s"></a>S
-**[SaveData](functions/function-savedata-loaddata.md)** –アプリのプライベートストレージにコレクションを保存します。
+**[SaveData](functions/function-savedata-loaddata.md)** – Power Apps プライベート ストレージにコレクションを保存します。
 
 **[Search](functions/function-filter-lookup.md)** – テーブル内で、いずれかの列に文字列が含まれているレコードを検索します。  
 
@@ -305,7 +307,9 @@ ms.locfileid: "74731413"
 
 **[Set](functions/function-set.md)** – グローバル変数の値を設定します。
 
-**[SetFocus](functions/function-setfocus.md)** –入力フォーカスを特定のコントロールに移動します。
+**[SetFocus](functions/function-setfocus.md)** – 入力フォーカスを特定のコントロールに移動します。
+
+**[SetPropertry](functions/function-setproperty.md)** – 入力コントロールとの対話をシミュレートします。
 
 **[ShowColumns](functions/function-table-shaping.md)** – 選択した列のみが含まれたテーブルを返します。
 
@@ -338,7 +342,7 @@ ms.locfileid: "74731413"
 
 **[Tan](functions/function-trig.md)** - ラジアン単位で指定された角度のタンジェントを返します。
 
-**[Text](functions/function-text.md)** –任意の値を変換し、数値または日付/時刻の値をテキスト文字列に書式設定します。
+**[Text](functions/function-text.md)** – 任意の値を変換し、数値または日付や時刻の値をテキスト文字列に書式設定します。
 
 **[ThisItem](functions/operators.md#thisitem-operator)** – ギャラリーまたはフォーム内で、コンテナーから現在の項目のデータを返します。
 
@@ -350,6 +354,8 @@ ms.locfileid: "74731413"
 
 **[Today](functions/function-now-today-istoday.md)** – 現在の日付/時刻値を取得します。
 
+**[Trace](functions/function-trace.md)** - テスト結果に追加情報を提供します。
+
 **[Trim](functions/function-trim.md)** – テキストの文字列の末尾や内部から余分なスペースを削除します。
 
 **[TrimEnds](functions/function-trim.md)** – テキストの文字列の末尾のみから余分なスペースを削除します。
@@ -357,7 +363,7 @@ ms.locfileid: "74731413"
 ## <a name="u"></a>U
 **[Ungroup](functions/function-groupby.md)** – グループを削除します。
 
-[ **[関連付け](functions/function-relate-unrelate.md)** 解除] –一対多または多対多のリレーションシップから、2つのエンティティのレコードを関連付け解除します。
+**[Unrelate](functions/function-relate-unrelate.md)** – 一対多または多対多のリレーションシップから 2 つのエンティティのレコードの関連付けを解除します。
 
 **[Update](functions/function-update-updateif.md)** – データ ソースのレコードを置き換えます。
 
@@ -381,7 +387,7 @@ ms.locfileid: "74731413"
 ## <a name="w"></a>W
 **[Weekday](functions/function-datetime-parts.md)** – 日付/時刻値の曜日の部分を取得します。
 
-**[With](functions/function-with.md)** –値を計算し、名前付きの値のインラインレコードを含む1つのレコードに対してアクションを実行します。
+**[With](functions/function-with.md)** – 値を計算し、名前付きの値のインライン レコードを含む 1 つのレコードに対してアクションを実行します。
 
 ## <a name="y"></a>Y
 **[Year](functions/function-datetime-parts.md)** – 日付/時刻値の年の部分を取得します。  

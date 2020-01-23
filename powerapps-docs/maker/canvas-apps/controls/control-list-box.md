@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0e949cb54a4835b887ae971f110f4c02e12dc7fa
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: c52b6779e5875e1304a80b2c63d0cf7b70e2c8b2
+ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727107"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76315356"
 ---
-# <a name="list-box-control-in-power-apps"></a>Power Apps のリストボックスコントロール
+# <a name="list-box-control-in-power-apps"></a>Power Apps のリスト ボックス コントロール
 ユーザーが 1 つまたは複数の項目を選択できるリストです。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 **リスト ボックス** コントロールは、使用可能なすべての選択肢が常に表示されており ( **[ドロップ ダウン](control-drop-down.md)** コントロールと異なる点)、ユーザーは一度に複数の項目を選択できます ( **[ラジオ](control-radio.md)** コントロールと異なる点)。
 
 ## <a name="key-properties"></a>主要なプロパティ
@@ -31,7 +31,7 @@ ms.locfileid: "74727107"
 
 **[Items](properties-core.md)** – ギャラリー、リスト、グラフなどのコントロールに表示されるデータのソースです。
 
-**Selected** –選択された項目を表すデータレコード。
+**Selected** – 選択された項目を表すデータ レコードです。  既定で選択できる項目は 1 つのみです。  複数の項目を選択する必要がある場合は、[コンボ ボックス](control-combo-box.md) コントロールを使用します。
 
 ギャラリー、リスト、またはグラフを追加すると、既定ではプロパティの一覧に**項目**が表示されます。新しいコントロールに表示されるデータを簡単に指定できます。 たとえば、ギャラリーの **Items** プロパティは、Salesforce の **Account** テーブルや、Excel で作成してクラウドにアップロードした **在庫管理** という名前の表や、**カンファレンスの講師**と名前をつけた SharePoint リストなどに設定できます。
 
@@ -98,7 +98,7 @@ ms.locfileid: "74727107"
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
 
-**Selectedtext (非推奨)** –選択された項目を表す文字列値。
+**SelectedText (非推奨)** – 選択した項目を表す文字列値です。
 
 **[SelectionColor](properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色です。
 
@@ -144,9 +144,9 @@ ms.locfileid: "74727107"
      ![ドロップダウン リストの床の名前](./media/control-list-box/flooring-names.png)
 4. 各 **[ドロップ ダウン](control-drop-down.md)** コントロールの **[Visible](properties-core.md)** プロパティに、次の値の 1 つを設定します。
    
-   * CarpetList: **If("Carpet" in CategoryList.SelectedItems.Value, true)**
-   * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value, true)**
-   * TileList: **If("Tile" in CategoryList.SelectedItems.Value, true)**
+   * CarpetList:**If("Carpet" in CategoryList.SelectedItems.Value, true)**
+   * HardwoodList:**If("Hardwood" in CategoryList.SelectedItems.Value, true)**
+   * TileList:**If("Tile" in CategoryList.SelectedItems.Value, true)**
      
      **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 5. F5 キーを押し、**CategoryList** で 1 つまたは複数の項目を選択します。
@@ -157,7 +157,7 @@ ms.locfileid: "74727107"
 6. (省略可能) Esc キーを押して既定のワークスペースに戻ります。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
 以下の間には適切な色のコントラストが必要です。
 * **SelectionColor** と **SelectionFill**

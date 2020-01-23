@@ -1,33 +1,33 @@
 ---
-title: Power Apps で Cognitive Services を使用する |Microsoft Docs
-description: Azure Cognitive Services Text Analytics API を使用してテキストを分析する基本的なキャンバスアプリを作成します。
+title: Power Apps の Cognitive Services を使用する | Microsoft Docs
+description: Azure Cognitive Services の Text Analytics API を使用した基本的なキャンバス アプリをビルドして、テキストを分析します。
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 12/08/2017
+ms.reviewer: tapanm
+ms.date: 01/17/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c1860320715798d1e3acc72af7f158f91b8f3cd0
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 4f8f4694b1ffdf6f415ae5f8a9275976b7dd20d7
+ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724369"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76315379"
 ---
-# <a name="use-cognitive-services-in-power-apps"></a>Power Apps での Cognitive Services の使用
-この記事では、 [Azure Cognitive Services Text Analytics API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview)を使用してテキストを分析する基本的なキャンバスアプリを作成する方法について説明します。 Text Analytics API の設定方法と、[Text Analytics コネクタ](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)を使って、Text Analytics API に接続する方法を説明します。 次に、API を呼び出すキャンバス アプリを作成する方法を説明します。
+# <a name="use-cognitive-services-in-power-apps"></a>Power Apps の Cognitive Services を使用する
+この記事では、[Azure Cognitive Services の Text Analytics API](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview) を使用する基本的なキャンバス アプリをビルドして、テキストを分析する方法を説明します。 Text Analytics API の設定方法と、[Text Analytics コネクタ](https://docs.microsoft.com/connectors/cognitiveservicestextanalytics/)を使って、Text Analytics API に接続する方法を説明します。 次に、API を呼び出すキャンバス アプリを作成する方法を説明します。
 
 > [!NOTE]
-> アプリを Power Apps でビルドするのが初めての場合は、この記事に進む前に、「[アプリを最初から作成](get-started-create-from-blank.md)する」を読むことをお勧めします。
+> Power Apps でアプリを構築するのに慣れていない場合は、この記事を読み進める前に、[アプリを最初からの作成](get-started-create-from-blank.md)に関する記事を読まれることをお勧めします。
 
 ## <a name="introduction-to-azure-cognitive-services"></a>Azure Cognitive Services の概要
-Azure Cognitive Services は、アプリケーションをよりインテリジェント、魅力的、検出可能にするために使用できる Api、Sdk、およびサービスのセットです。 これらのサービスを利用すると、感情や動画の検出、顔や音声および画像の認識、音声や言語の理解などのインテリジェントな機能を簡単にアプリケーションに追加できます。
+Azure Cognitive Services は、お客様のアプリケーションを、インテリジェントで魅力があり、検索されやすいものにするための API、SDK、およびサービスのセットです。 これらのサービスを利用すると、感情や動画の検出、顔や音声および画像の認識、音声や言語の理解などのインテリジェントな機能を簡単にアプリケーションに追加できます。
 
 この記事では "言葉の理解" に注目して、Text Analytics API を使用します。 この API を使用すると、テキストからセンチメント、キー フレーズ、トピックおよび言語を検出できます。 まず API のデモを試したあと、プレビュー版にサインアップしてみましょう。
 
@@ -40,14 +40,14 @@ API のオンライン デモが用意されています。このデモでは、
    
     ![Text Analytics API デモ](./media/cognitive-services-api/text-analytics-demo.png)
 
-3. ページには、[分析された**テキスト**] タブに書式設定された結果と、 **json の json**応答が表示されます[。 json は](https://json.org/)、データ (この場合は、Text Analytics API によって返されるデータ) を表す方法です。
+3. ページの **[分析されたテキスト]** タブには一定の形式に変換された結果が表示され、 **[JSON]** タブには JSON の応答が表示されます。[JSON](https://json.org/) はデータ (ここでは、Text Analytics API によって返されるデータ) の表現方法です。
 
 ## <a name="sign-up-for-the-text-analytics-api"></a>Text Analytics API へのサインアップ
 API は無料のプレビュー版として利用でき、Azure サブスクリプションに関連付けられます。 API は Azure Portal から管理します。
 
 1. Azure サブスクリプションをまだお持ちでない場合は、[無料のサブスクリプションにサインアップします](https://azure.microsoft.com/free/)。
 
-2. この[ページ](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics)では、このイメージに示されているように、Text Analytics API の情報を入力します。 **[F0]** (無料) 価格レベルを選択します。
+2. [このページ](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextAnalytics)で、この画像に示されているように、Text Analytics API に関する情報を入力します。 **[F0]** (無料) 価格レベルを選択します。
    
     ![Text Analytics API の作成](./media/cognitive-services-api/azure-create.png)
 
@@ -66,16 +66,16 @@ API は無料のプレビュー版として利用でき、Azure サブスクリ�
     ![API キー](./media/cognitive-services-api/azure-keys.png)
 
 ## <a name="build-the-app"></a>アプリのビルド
-Text Analytics API を起動して実行したので、電源アプリから接続し、API を呼び出すアプリを作成します。 これは、Text Analytics API ページのデモと同様の機能を備えた 1 画面構成のアプリです。 このビルドを始めましょう。
+Text Analytics API が起動し、実行中になったため、Power Apps から接続したり、API を呼び出すアプリケーションをビルドしたりできます。 これは、Text Analytics API ページのデモと同様の機能を備えた 1 画面構成のアプリです。 このビルドを始めましょう。
 
 ### <a name="create-the-app-and-add-a-connection"></a>アプリの作成と接続の追加
-まず、空の携帯電話アプリを作成し、**Text Analytics** コネクタを使って接続を追加します。 これらのタスクの詳細については、「[アプリを最初から作成](get-started-create-from-blank.md)する」と「 [Power Apps で接続を管理](add-manage-connections.md)する」を参照してください。
+まず、空の携帯電話アプリを作成し、**Text Analytics** コネクタを使って接続を追加します。 これらのタスクの詳細については、[アプリの最初からの作成](get-started-create-from-blank.md)に関する記事と、[Power Apps での接続の管理](add-manage-connections.md)に関する記事をご覧ください。
 
 1. [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、 **[空白から開始]**  > ![電話アプリのアイコン ](./media/cognitive-services-api/icon-phone-app.png) (電話) > **[Make this app]\(このアプリの作成\)** の順に選択します。
 
     ![空白から開始](./media/cognitive-services-api/start-from-blank.png)
 
-2. Power Apps Studio の中央のウィンドウで、 **[データに接続]** を選択します。
+2. Power Apps Studio の中央のウィンドウで **[データに接続]** を選択します。
 
 3. **[データ]** パネルで、 **[新しい接続]**  >  **[テキスト分析]** をクリックまたはタップします。
 
@@ -130,9 +130,8 @@ Text Analytics API を呼び出すことに焦点を当てるため、アプリ�
 ```powerapps-dot
 If( chkLanguage.Value = true,
     ClearCollect( languageCollect, 
-        TextAnalytics.DetectLanguage(
+        TextAnalytics.DetectLanguageV2(
             {
-                numberOfLanguagesToDetect: 1, 
                 text: tiTextToAnalyze.Text
             }
         ).detectedLanguages.name
@@ -141,7 +140,7 @@ If( chkLanguage.Value = true,
 
 If( chkPhrases.Value = true,
     ClearCollect( phrasesCollect, 
-        TextAnalytics.KeyPhrases(
+        TextAnalytics.KeyPhrasesV2(
             {
                 language: "en", 
                 text: tiTextToAnalyze.Text
@@ -152,7 +151,7 @@ If( chkPhrases.Value = true,
 
 If( chkSentiment.Value = true,
     ClearCollect( sentimentCollect, 
-        TextAnalytics.DetectSentiment(
+        TextAnalytics.DetectSentimentV2(
             {
                 language: "en", 
                 text: tiTextToAnalyze.Text
@@ -172,7 +171,7 @@ If( chkSentiment.Value = true,
 
   * **DetectLanguage()** で、**numberOfLanguagesToDetect** を 1 にハードコーディングしますが、アプリ内のロジックに基づいて、このパラメーターを渡すこともできます。
 
-  * で**は、"(** )" と " **()** " を使用すると、**言語**は "en" としてハードコーディングされますが、アプリのロジックに基づいてこのパラメーターを渡すことができます。 たとえば、まず言語を検出し、次に **DetectLanguage()** が返すものに基づいて、このパラメーターを設定できます。
+  * **KeyPhrases()** と **DetectSentiment()** で、**言語**を "en" にハードコーディングしますが、アプリ内のロジックに基づいて、このパラメーターを渡すこともできます。 たとえば、まず言語を検出し、次に **DetectLanguage()** が返すものに基づいて、このパラメーターを設定できます。
 
 * 呼び出しが行われるごとに、結果を適切なコレクションに追加します。
 
@@ -189,7 +188,7 @@ API 呼び出しの結果を表示するには、各コントロールで適切�
    
     **First()** 関数は、**languageCollect** の最初 (かつ、この場合では唯一) のレコードを返し、そのレコードに関連付けられた**名** (唯一のフィールド) を表示します。
 
-2. センチメント ラベルの **Text** プロパティを `"The sentiment score is " & Round(First(sentimentCollect.Value).Value, 3)\*100 & "% positive."` に設定します。
+2. センチメント ラベルの **Text** プロパティを `"The sentiment score is " & Round(First(sentimentCollect.Value).Value, 3)*100 & "% positive."` に設定します。
    
     この数式では **First()** 関数も使用して、最初であり唯一のレコードから **値** (0 から 1) を取得し、その値をパーセント形式にします。
 

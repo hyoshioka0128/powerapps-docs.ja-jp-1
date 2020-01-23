@@ -1,6 +1,6 @@
 ---
-title: Power Apps の一般的な問題と解決方法 |Microsoft Docs
-description: Power Apps 内の一般的な問題と解決策の一覧。
+title: Power Apps でお問い合わせの多い問題と解決方法 | Microsoft Docs
+description: Power Apps でよくある問題と解決方法について説明します。
 author: KumarVivek
 manager: kvivek
 ms.service: powerapps
@@ -13,47 +13,59 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b578d34217647658bb872ed22cd7ee8b3cc4a1cd
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 254034d608e5824f2e6358bfa84bb7f7fe9f178c
+ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723856"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76315314"
 ---
-# <a name="common-issues-and-resolutions-for-power-apps"></a>Power Apps の一般的な問題と解決策
+# <a name="common-issues-and-resolutions-for-power-apps"></a>Power Apps でお問い合わせの多い問題と解決方法
 
-この記事では、Power Apps の使用中に発生する可能性がある一般的な問題をいくつか紹介します。 回避策がある場合は示します。
+この記事では、Power Apps の使用中に発生することがある一般的な問題の一覧を示します。 回避策がある場合は示します。
 
-1. 認証システム (2019 年8月21日)**を使用する場合の特定の Android モバイルデバイスでのサインインの問題**
+1. **Edge 経由でインポートされたカメラ画像が反転される** (2020 年 1 月 20 日)
 
-    特定のデバイスとシナリオでは、認証子を使用するときにサインインエラーが発生する可能性があります。 これは、OEM がこの機能を制限しているためです。 エラーとその対処方法の詳細については、[こちら](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING)を参照してください。    
+    カメラと Edge ブラウザーを使用すると、画像が反転される場合があります。  これは Edge の欠陥によるものです。  この問題に対処するには、新しい Edge Chromium または別のブラウザーを使用してください。
+    
+1. **カメラ画像にメタデータ情報が含まれていない** (2020 年 1 月 20 日)
 
-1. **Android モバイルデバイスでのカメラの問題**(2019 年1月1日)
+    カメラ コントロールを使用すると、画像にメタデータ情報が含まれません。 これは、カメラで画像を撮影する方法に関する制限が原因です。 これを回避するには、代わりに[写真の追加コントロール](controls/control-add-picture.md)を使用します。
 
-    カメラコントロールが Android デバイスで動作を停止した場合は、アプリを再発行し、デバイスで再び開きます。 Android オペレーティングシステムの変更に応じてカメラコントロールが更新され、再発行すると、アプリは更新プログラムの恩恵を受けられます。
+1. **iOS から追加された画像にメタデータ情報が含まれていない** (2020 年 1 月 20 日)
 
-1. **柔軟な高さのギャラリーでのスクロール**(2018 年11月27日)
+    iOS の写真の追加コントロールを使用すると、カメラまたはギャラリーを使用してインポートした画像にメタデータが含まれません。  
 
-    指でスクロールするときに制限が発生した場合は、それをリフトし、もう一度スクロールを開始します。
+1. **Authenticator を使用する場合の特定の Android モバイル デバイスでのサインインの問題** (2019 年 8 月 21 日)
 
-1. Windows 用 Power Apps (Sep. 24, 2018)**では、マウスまたはタッチ入力による描画がスムーズではない**
+    特定のデバイスとシナリオでは、Authenticator を使用するとサインイン エラーが発生する可能性があります。 これは、OEM によりこの機能が制限されているためです。 エラーおよび考えられる対応策の詳細については、[こちら](https://github.com/AzureAD/azure-activedirectory-library-for-android/wiki/ADALError:-BROKER_AUTHENTICATOR_NOT_RESPONDING)をご覧ください。    
 
-    ペンコントロールには、Windows アプリでマウスまたはタッチ入力を使用した描画の部分的なサポートのみがあります。 ストロークが断続的になる可能性があります。 スムーズ描画の場合は、ペンを使用するか、ブラウザーでアプリを実行します。
+1. **Android モバイル デバイスでのカメラの問題** (2019 年 1 月 1 日)
 
-1. **Power Apps モバイルの複数のメディアコントロール**(2018 年8月2、)
+    カメラ コントロールが Android デバイス上で動作を停止した場合、アプリを再発行し、デバイス上で再び開きます。 Android オペレーティング システムの変更に応じて、カメラ コントロールが更新されました。再発行すると、アプリに更新が反映されます。
 
-    Power Apps Mobile はさまざまな種類のデバイスで実行され、その中にはそのプラットフォーム固有の制限があります。
+1. **高さが伸縮可能なギャラリーでのスクロール** (2018 年 11 月 27 日)
+
+    指でのスクロールが端まできた場合は、指を持ち上げて、もう一度スクロールを開始します。
+
+1. **Power Apps for Windows でマウスまたはタッチ入力でスムーズに描画できない** (2018 年 9 月 24 日)
+
+    Windows アプリでのマウスまたはタッチ入力を使用した描画に対するペン コントロールのサポートは、部分的なもののみとなります。 ストロークが断続的になる可能性があります。 スムーズに描画するためには、ペンを使用するか、ブラウザーでアプリを実行します。
+
+1. **Power Apps Mobile での複数のメディア コントロール**(2018 年 8 月 2 日)
+
+    Power Apps Mobile はさまざまな種類のデバイスで実行されます。その一部には、そのプラットフォームに固有の制限があります。
 
     - iPhone デバイスを除くすべてのプラットフォームで、同時に複数の**ビデオ** コントロールでビデオを再生できます。
     - Web プレーヤーを除くすべてのプラットフォームで、同時に複数の**マイク** コントロールを使って音声を録音できます。
 
 1. **アプリの再発行**(2018 年 8 月 2 日)
 
-    数か月後にアプリを更新していない場合は、最新バージョンの Power Apps と同期するように再発行します。これには、パフォーマンスの向上やその他の修正が含まれます。
+    アプリを数か月間更新していない場合は、パフォーマンスの向上およびその他の修正が含まれている Power Apps の最新バージョンと同期するため、アプリを再発行します。
 
 1. <a name="out-of-memory"></a>**ブラウザーでのメモリ不足** (2018 年 7 月 23 日)
 
-    Power Apps の使用中にメモリが不足している場合は、Chrome、Microsoft Edge、または Internet Explorer の64ビットバージョンをダウンロードすることを検討してください。
+    Power Apps を使用しているときにメモリが不足したら、64 ビット バージョンの Chrome、Microsoft Edge、または Internet Explorer のダウンロードを検討してください。
 
 1. **埋め込みアプリから Web サイトを起動する** (2018 年 5 月 10 日)
 
@@ -65,7 +77,7 @@ ms.locfileid: "74723856"
 
 1. **カスタム イメージをアプリ アイコンとして使用する** (2018 年 4 月 11 日)
 
-    Power Apps Studio for Windows バージョン3.18043 では、アプリアイコンとして使用するカスタムイメージをアップロードすることはできません。 この問題を回避するには、 [Power Apps Studio for web](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)を使用してカスタムイメージをアップロードします。 または、Power Apps Studio for Windows に含まれているアイコンのいずれかを使用して、背景色をカスタマイズすることもできます。
+    Power Apps Studio for Windows バージョン 3.18043 では、カスタム イメージをアップロードしてアプリ アイコンとして使用することはできません。 この問題を回避するには、[Web 用の Power Apps Studio](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) を使用してカスタム イメージをアップロードします。 または、Windows 用の Power Apps Studio に付属しているアイコンのいずれかを使用して、背景色をカスタマイズすることもできます。
 
 1. **スクリーンをコピーして複数のアプリに貼り付ける** (2018 年 4 月 4 日)
 
@@ -79,33 +91,33 @@ ms.locfileid: "74723856"
 
     **[項目]** プロパティに**フィルター**関数を含む数式が設定された **[データ テーブル]** コントロールをコピーして貼り付ける場合、新しい **[データ テーブル]** コントロールの **[項目]** プロパティの数式には、サフィックス **_1** を含むフィールド名が適用されます。 これによってフィールド名が無効になり、データ テーブルにデータが表示されなくなります。 この問題を回避するには、コントロールをコピーする前に、 **[データ テーブル]** コントロール内の列と同じ名前を持つデータ ソースのフィールドを、**フィルター**関数が参照していないことを確認します。 参照している場合は、 **[データ テーブル]** コントロールの列の名前を変更します。 または、無効なフィールド名からサフィックス **_1** を削除して、エンティティ内の名前と一致させます。
 
-1. **Windows 用の Power Apps Studio のカメラコントロール**
+1. **Windows 用の Power Apps Studio のカメラ コントロール**
 
-    カメラコントロールを追加した場合、またはカメラコントロールを使用するアプリを開いた場合、Windows 用の Power Apps Studio がクラッシュすることがあります。 この問題を回避するには、カメラコントロールを追加または使用するときに、 [Power Apps Studio for web](create-app-browser.md)を使用します。
+    カメラ コントロールを追加する、またはカメラ コントロールを使用するアプリを開くと、Windows 用の Power Apps Studio がクラッシュする場合があります。 この問題を回避するには、カメラ コントロールを追加または使用するときに、[Web 用の Power Apps Studio](create-app-browser.md) を使用します。
 
 1. **Android デバイスでのリリース 2.0.700**
 
-    Android デバイスに release 2.0.700 をインストールし、アプリを開くことができない (またはアプリが応答しなくなった) 場合は、電源アプリをアンインストールし、デバイスを再起動してから、電源アプリを再インストールします。
+    Android デバイスにリリース 2.0.700 をインストールし、アプリを開けない (またはアプリが応答しなくなった) 場合は、Power Apps をアンインストールして、デバイスを再起動し、Power Apps を再インストールします。
 
 1. **アプリを開くと "空白の" ギャラリー**
 
     アプリをデータから自動的に生成し、アプリを保存してから開きなおすと、閲覧ギャラリーにすぐにはデータが表示されない場合があります。 この問題を解決するには、[検索] ボックスに、少なくとも 1 つの文字を入力し、入力したテキストを削除します。 ギャラリーは、その後期待どおりにデータを表示します。
 
-1. **Windows 8.1 での電源アプリのアップグレード**
+1. **Windows 8.1 での Power Apps のアップグレード**
 
-    Windows 8 または Windows 8.1 を実行しているコンピューターに電源アプリをインストールする場合は、Windows ストアアプリを開いたままアクティブにし、[設定] チャームを使用して更新プログラムを確認してから、インストールします。
+    Windows 8 または Windows 8.1 を実行しているコンピューターに Power Apps をインストールする場合、Windows ストア アプリを開き、アクティブなまま設定チャームを使用して、更新プログラムを確認してインストールします。
 
 1. **カスタム コネクタと Common Data Service**
 
-    Power Apps の build 2.0.540 を使用して作成されたアプリが Common Data Service のデータベースと、別の環境の少なくとも1つのカスタムコネクタに依存している場合は、コネクタをデータベースと同じ環境に配置し、次のように使用するようにアプリケーションを更新する必要があります。新しいコネクタ。 そうしないと、API が見つからなかったことを知らせるダイアログ ボックスがユーザーに表示されます。 詳細については、[環境の概要](../../administrator/environments-overview.md)を参照してください。
+    Power Apps ビルド 2.0.540 以前を使用して作成したアプリが Common Data Service のデータベースおよび異なる環境の少なくとも 1 つのカスタム コネクタに依存している場合、そのコネクタを同じ環境にデータベースとしてデプロイし、その新しいコネクタを使用するようにアプリを更新する必要があります。 そうしないと、API が見つからなかったことを知らせるダイアログ ボックスがユーザーに表示されます。 詳細については、[環境の概要](../../administrator/environments-overview.md)を参照してください。
 
 1. **Windows 8.1 でアプリケーションを実行する**
 
-    [Windows 8.1 用にこの更新プログラム](https://technet.microsoft.com/library/security/ms16-118)をインストールした場合、そのオペレーティングシステムの Power apps Studio で開いているアプリを実行することはできません。 ただし、 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)または Power apps Mobile を使用して開いたアプリを引き続き実行できます。
+    [Windows 8.1 用のこの更新プログラム](https://technet.microsoft.com/library/security/ms16-118)をインストールすると、そのオペレーティング システム上では、Power Apps Studio で開いたアプリを実行することはできません。 ただし、[powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で開いた場合、または Power Apps Mobile を使用した場合は、アプリを実行することができます。
 
 1. **スペースを含む列の名前**
 
-    列名にスペースが含まれている SharePoint リストまたは Excel テーブルを使用している場合は、Power Apps によって **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint または Excel の **"列名"** は、データレイアウトに表示されている場合や数式で使用されている場合に、Power Apps の **"Column_x0020_Name"** として表示されます。
+    列の名前にスペースを含む、SharePoint リストまたは Excel テーブルを使用している場合、Power Apps ではスペースを **"\_x0020\_"** に置き換えます。 たとえば、SharePoint または Excel の **"Column Name"** は、Power Apps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
 
 1. **共有アプリのフローを変更する**
 
@@ -131,7 +143,7 @@ ms.locfileid: "74723856"
 
 1. **ブラウザーでのアプリの作成と編集**
 
-    Power apps studio for Windows の場合と同じように、Power Apps Studio for web では多くの操作を実行できますが、すべてではありません。 詳細については、[ブラウザーでのアプリの作成](create-app-browser.md)に関するページを参照してください。
+    Power Apps Studio for Web では、Power Apps Studio for Windows と同じように多くのこと (すべてではありません) を行えます。 詳細については、[ブラウザーでのアプリの作成](create-app-browser.md)に関するページを参照してください。
 
 1. **エンティティのタイトル フィールドを変更する**
 
@@ -139,15 +151,15 @@ ms.locfileid: "74723856"
 
 1. **オンプレミスの SharePoint に接続するアプリ**
 
-    共有するアプリに、自動的には共有されない接続 (オンプレミスの SharePoint サイトなど) が使われているとき、ユーザーがブラウザーでアプリを開いた場合、 **[Sign in (サインイン)]** をクリックまたはタップしたときに、テキストのないダイアログ ボックスが表示されます。 ダイアログ ボックスを閉じるには、右上隅の閉じる (X) アイコンをクリックまたはタップします。 [Power Apps Studio] または [Power Apps Mobile] でアプリを開いた場合、このダイアログボックスは表示されません。 接続の共有について詳しくは、「[Share app resources (アプリ リソースの共有)](share-app-resources.md)」をご覧ください。
+    共有するアプリに、自動的には共有されない接続 (オンプレミスの SharePoint サイトなど) が使われているとき、ユーザーがブラウザーでアプリを開いた場合、 **[Sign in (サインイン)]** をクリックまたはタップしたときに、テキストのないダイアログ ボックスが表示されます。 ダイアログ ボックスを閉じるには、右上隅の閉じる (X) アイコンをクリックまたはタップします。 Power Apps Studio や Power Apps Mobile でアプリを開いた場合は、ダイアログ ボックスは表示されません。 接続の共有について詳しくは、「[Share app resources (アプリ リソースの共有)](share-app-resources.md)」をご覧ください。
 
-1. **Power Apps がデータからアプリを生成する場合、並べ替えと検索に使用するフィールドは自動的には構成されません**。
+1. **Power Apps でデータからアプリを生成するときに、並べ替えや検索に使用されるフィールドが自動的に構成されない**
 
    このフィールドを構成するには、ギャラリーの **[Items](controls/properties-core.md)** の式を編集します。詳しくは、[ギャラリーの追加](add-gallery.md)に関するページのフィルタリングと並べ替えに関するセクションをご覧ください。
 
 1. **データから作成したアプリで、データ ソースの先頭 500 件のレコードにしかアクセスできない**
 
-     一般に、Power Apps は、データソースに操作を委任することで、任意のサイズのデータソースで動作します。 委任できない操作の場合、Power Apps は作成時に警告を表示し、データソースの最初の500レコードのみを操作します。  委任について詳しくは、[Filter 関数](functions/function-filter-lookup.md)に関する記事をご覧ください。
+     一般に Power Apps は、データ ソースに操作を委任することであらゆるサイズのデータ ソースを扱うことができます。 委任できない操作については、作成時に Power Apps から警告が表示され、データ ソースの先頭 500 件のレコードに操作が制限されます。  委任について詳しくは、[Filter 関数](functions/function-filter-lookup.md)に関する記事をご覧ください。
 
 1. **Excel データはテーブルとして書式設定されている必要がある**
 
@@ -157,7 +169,7 @@ ms.locfileid: "74723856"
 
      詳しくは、[SharePoint Online](connections/connection-sharepoint-online.md#known-issues) をご覧ください。
 
-1. **共同編集はサポートされていません。一度に1人の著者**です。
+1. **共同編集はサポートされません。同時に編集できるのは 1 人のみです**。
 
      複数の編集者が同時に同じアプリを編集すると、アプリのエラーを招いたり、他の編集者の変更を上書きしてしまう可能性があります。 同じアプリの編集を他の人が行うときは、事前にアプリを終了してください。
 

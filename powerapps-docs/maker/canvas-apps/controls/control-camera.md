@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c58f5695e47c27be261c6c85c273fe22952dd98a
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: f70e6d8015a75f26d0716a144c7f524181f34664
+ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727495"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76315264"
 ---
-# <a name="camera-control-in-power-apps"></a>Power Apps のカメラコントロール
+# <a name="camera-control-in-power-apps"></a>Power Apps のカメラ コントロール
 ユーザーがデバイスのカメラを使って写真を撮影するために使用できるコントロールです。
 
-## <a name="description"></a>Description
-このコントロールを追加した場合、ユーザーは、アプリを実行している任意の場所から 1 枚以上の写真でデータ ソースを更新できます。
+## <a name="description"></a>説明
+このコントロールを追加した場合、ユーザーは、アプリを実行している任意の場所から 1 枚以上の写真でデータ ソースを更新できます。 カメラ コントロールによって生成される画像は、カメラの最大解像度ではありません。  最大解像度の画像が必要な場合は、 **[写真の追加](control-add-picture.md)** コントロールを検討してください。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **Camera** – 複数のカメラを備えたデバイスでの、アプリが使用するカメラの数値 ID です。
@@ -96,7 +96,7 @@ ms.locfileid: "74727495"
 **[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して写真をローカルに保存するか、 **[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースを更新します。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 カメラのフィードを表示するだけでなく、カメラ コントロール全体も写真を撮るボタンとして機能します。 そのため、ボタンと同様のアクセシビリティの考慮事項があります。
 
 ### <a name="video-alternatives"></a>ビデオの代替手段
