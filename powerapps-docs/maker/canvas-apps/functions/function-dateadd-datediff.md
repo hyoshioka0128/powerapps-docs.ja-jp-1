@@ -1,6 +1,6 @@
 ---
 title: DateAdd、DateDiff、および TimeZoneOffset 関数 | Microsoft Docs
-description: 構文と例を含む Power Apps の DateAdd、DateDiff、および TimeZoneOffset 関数の参照情報
+description: 構文と例を含む Power Apps の DateAdd、DateDiff、TimeZoneOffset 関数の参照情報
 author: gregli-msft
 manager: kvivek
 ms.service: powerapps
@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4ebabe4240dff3f7f7c3c56cb97258885e2e7a3b
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: e5c321617f08b6747824757344e3cc61b1abf27b
+ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731162"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76708780"
 ---
-# <a name="dateadd-datediff-and-timezoneoffset-functions-in-power-apps"></a>Power Apps の DateAdd、DateDiff、および TimeZoneOffset 関数
+# <a name="dateadd-datediff-and-timezoneoffset-functions-in-power-apps"></a>Power Apps の DateAdd、DateDiff、TimeZoneOffset 関数
 日付/時刻値に加算または日付/時刻値の差を検出し、ローカル時刻と UTC の間で変換します。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 **DateAdd** 関数は、日付/時刻値にいくつかの単位の値を追加します。 結果は新しい日付/時間値です。 また、負の値を指定して、日付/時刻値からいくつかの単位の値を減算することもできます。
 
 **DateDiff** 関数は、2 つの日付/時間値の差を返します。 結果は、いくつかの単位の値です。
@@ -34,20 +34,20 @@ ms.locfileid: "74731162"
 
 **DateAdd** と **TimeZoneOffset** を使用して、ユーザーのローカル時刻と UTC (協定世界時) 間で変換できます。  **TimeZoneOffset** はローカル時刻を UTC に変換します。それを減算 (負の数を加算) することで、UTC からローカル時刻に変換します。
 
-詳細については[、「Date、Time、および DateTime データ型](/data-types#date-time-and-datetime)」および「日付[と時刻の操作](../show-text-dates-times.md)」も参照してください。
+詳細については、「[Date、Time、DateTime データ型](../functions/data-types.md#date-time-and-datetime)」および「[日付と時刻の操作](../show-text-dates-times.md)」も参照してください。
 
 ## <a name="syntax"></a>構文
 **DateAdd**( *DateTime*, *Addition* [, *Units* ] )
 
 * *DateTime* - 必須。 操作する日付/時刻値。
 * *Addition* - 必須。 *DateTime* に追加する数値 (単位は *Units*)。
-* *Units* - 省略可能。 追加する *Units* の種類: **Milliseconds**、**Seconds**、**Minutes**、**Hours**、**Days**、**Months**、**Quarters**、**Years** のいずれかです。  指定しない場合は、**Days** が使用されます。
+* *Units* - 省略可能。 追加する*単位*の種類:**Milliseconds**、**Seconds**、**Minutes**、**Hours**、**Days**、**Months**、**Quarters**、**Years** のいずれかです。  指定しない場合は、**Days** が使用されます。
 
 **DateDiff**( *StartDateTime*, *EndDateTime* [, *Units* ] )
 
 * *StartDateTime* - 必須。 開始の日付/時刻値。
 * *EndDateTime* - 必須。 終了の日付/時刻値。
-* *Units* - 省略可能。 追加する *Units* の種類: **Milliseconds**、**Seconds**、**Minutes**、**Hours**、**Days**、**Months**、**Quarters**、**Years** のいずれかです。  指定しない場合は、**Days** が使用されます。
+* *Units* - 省略可能。 追加する*単位*の種類:**Milliseconds**、**Seconds**、**Minutes**、**Hours**、**Days**、**Months**、**Quarters**、**Years** のいずれかです。  指定しない場合は、**Days** が使用されます。
 
 **TimeZoneOffset**( [ *DateTime* ] )
 
@@ -58,7 +58,7 @@ ms.locfileid: "74731162"
 
 ### <a name="simple-dateadd"></a>単純な DateAdd
 
-| 数式 | Description | 結果 |
+| Formula | 説明 | 結果 |
 | --- | --- | --- |
 | **Text( DateAdd( Now(), 3 ),<br>"dd-mm-yyyy hh:mm" )** |現在の日付と時刻に 3 日 (既定の単位) を加算します。 |"18-07-2013 13:02" |
 | **Text( DateAdd( Now(), 4, Hours ),<br>"dd-mm-yyyy hh:mm" )** |現在の日付と時刻に 4 時間を加算します。 |"15-07-2013 17:02" |
@@ -67,7 +67,7 @@ ms.locfileid: "74731162"
 
 ### <a name="simple-datediff"></a>単純な DateDiff
 
-| 数式 | Description | 結果 |
+| Formula | 説明 | 結果 |
 | --- | --- | --- |
 | **DateDiff( Now(), DateValue("1/1/2014") )** |既定の **Days** を単位として 2 つの単位の差を返します。 |170 |
 | **DateDiff( Now(), DateValue("1/1/2014"), Months )** |**Months** を単位として 2 つの値の差を返します。 |6 |
@@ -89,7 +89,7 @@ UTC から変換するには、**TimeZoneOffset** を (負の値を加算する�
 
 たとえば、UTC で表した **July 15, 2013, 8:02 PM** という日付と時刻が、**StartTime** という名前の変数に格納されているとします。 ユーザーのタイム ゾーンに合わせて時刻を調整するには、以下を使用します。
 
-* **DateAdd (StartTime、&minus;TimeZoneOffset (StartTime)、Minutes)**
+* **DateAdd( StartTime, &minus;TimeZoneOffset( StartTime ), Minutes )**
 
 **TimeZoneOffset** の前に負の符号が付いています。これは、オフセットを加算するのではなく減算するためです。
 
