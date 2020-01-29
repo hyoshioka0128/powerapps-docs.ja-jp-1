@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: 707f714ca658faa6255ee2e79c08184cb6f2a2fb
-ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
+ms.openlocfilehash: 8374df8f8e440fb7ae3e2c481d201f3d1cfeaf23
+ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74959566"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76708796"
 ---
 <div id="main"
    class="v2">
@@ -61,7 +61,7 @@ ms.locfileid: "74959566"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>新機能</h3>
+                                             <h3>新着情報</h3>
                                              <p>過去数週間、および今後数か月でリリースされる新機能について学習します。</p>
                                           </div>
                                        </div>
@@ -81,7 +81,7 @@ ms.locfileid: "74959566"
                                           </div>
                                           <div class="cardText">
                                              <h3>Power Apps について学習する</h3>
-                                             <p>Power Apps を学習するための詳細なガイダンスが用意されている、Microsoft Learn のラーニング パスを調べます。 無料です。</p>
+                                             <p>Power Apps を学習するための詳細なガイダンスが用意されている、Microsoft Learn のラーニング パスを調べます。 無料!</p>
                                           </div>
                                        </div>
                                     </div>
@@ -215,7 +215,7 @@ ms.locfileid: "74959566"
                      class="cardsF">
                      <li>
                         <div class="container">
-                           <p>アプリ作成者は、コードを記述せずにカスタム ビジネス アプリをすばやく作成することによって、組織のミッション クリティカルなデータを管理できます。 Power Apps では次の 3 種類のアプリを作成できます。<strong>キャンバス アプリ</strong>、<strong>モデル駆動型アプリ</strong>、そして<strong>ポータル</strong>です。 <strong>Common Data Service</strong> は、ビジネス アプリで使用されるデータを安全に格納し、管理することができるデータ プラットフォームです。 詳細情報:<a href="/powerapps/maker">アプリの作成</a>。</p>
+                           <p>アプリ作成者は、コードを記述せずにカスタム ビジネス アプリをすばやく作成することによって、組織のミッション クリティカルなデータを管理できます。 Power Apps では次の 3 種類のアプリを作成できます。<strong>キャンバス アプリ</strong>、<strong>モデル駆動型アプリ</strong>、そして<strong>ポータル</strong>です。 <strong>Common Data Service</strong> は、ビジネス アプリで使用されるデータを安全に格納し、管理することができるデータ プラットフォームです。 詳細情報: <a href="/powerapps/maker">アプリの作成</a>。</p>
                            <hr/>
                            <br/>
                         </div>
@@ -287,7 +287,7 @@ ms.locfileid: "74959566"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">Portals</h3>
+                                    <h3 style="font-size: 1.15rem">ポータル</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/overview">Power Apps ポータルとは</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/portals/create-portal">ポータルを作成する</a></p>
@@ -318,7 +318,7 @@ ms.locfileid: "74959566"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/cds-processes">ビジネス ロジックを適用する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/solutions-overview">ソリューション</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">Common Data Service のセキュリティ</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">ホワイトペーパー:ソリューションを使用した ALM</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">ホワイト ペーパー: ソリューションを使用した ALM</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/maker/common-data-service/data-platform-powerbi-connector">Common Data Service のデータから Power BI レポートを作成する</a></p>
                                  </div>
                               </div>
@@ -354,6 +354,7 @@ ms.locfileid: "74959566"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">ヘルプとサポートの表示</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">2019 リリースの wave 2 をオプトインする</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">設定の管理</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">ホワイト ペーパー: わずかなコードしか使用しない開発プラットフォームの管理</a></p>
                                  </div>
                               </div>
                            </div>
@@ -441,7 +442,7 @@ ms.locfileid: "74959566"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">はじめる</h3>
+                                    <h3 style="font-size: 1.15rem">作業の開始</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/overview">Common Data Service:開発者向け概要</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/model-driven-apps/overview">モデル駆動型アプリ:開発者向け概要</a></p>
@@ -607,7 +608,7 @@ ms.locfileid: "74959566"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/checker/webapi/overview">Power Apps チェッカーを使用する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">ISV アプリの管理と監視</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">AppSource 上にアプリを公開する</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">ホワイトペーパー:ソリューションを使用した ALM</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">ホワイト ペーパー: ソリューションを使用した ALM</a></p>
                                  </div>
                               </div>
                            </div>
@@ -663,7 +664,7 @@ ms.locfileid: "74959566"
                                     </div>
                                  </div>
                                  <div class="cardText">
-                                    <h3 style="font-size: 1.15rem">参考資料</h3>
+                                    <h3 style="font-size: 1.15rem">リファレンス</h3>
                                     <hr/>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/reference/about-entity-reference">エンティティ参照</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://docs.microsoft.com/dynamics365/customer-engagement/web-api/about?view=dynamics-ce-odata-9">Web API リファレンス</a></p>

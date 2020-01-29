@@ -352,6 +352,8 @@
                   href: ./canvas-apps/controls/control-shapes-icons.md
                 - name: スライダー
                   href: ./canvas-apps/controls/control-slider.md
+                - name: ビデオのストリーミング
+                  href: ./canvas-apps/controls/control-stream-video.md
                 - name: ラベル
                   href: ./canvas-apps/controls/control-text-box.md
                 - name: テキスト入力

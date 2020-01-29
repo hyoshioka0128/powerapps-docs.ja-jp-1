@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm-msft
-ms.date: 11/26/2019
+ms.date: 01/24/2020
 ms.author: fikaradz
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6a4f85b5eb4d47bb4973de6902b0a69bb98df585
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: 119c3c22d93c7b8985b9c9c5bf08129372c78409
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732775"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "76750773"
 ---
 # <a name="controls-and-properties-in-power-apps"></a>Power Apps のコントロールとプロパティ
 
@@ -32,7 +32,7 @@ ms.locfileid: "74732775"
 
 **[オーディオ](controls/control-audio-video.md)** – オーディオ クリップまたはビデオ クリップのオーディオ部分を再生します。
 
-**[バーコードスキャナー](controls/control-new-barcode-scanner.md)** –コードバー、QR コード、および Android または iOS デバイス上のデータマトリックスコードをスキャンします。
+**[バーコード スキャナー](controls/control-new-barcode-scanner.md)** – Android または iOS デバイスでバーコード、QR コード、およびデータ マトリックス コードをスキャンします。
 
 **[ボタン](controls/control-button.md)** – クリックまたはタップしてアプリを操作します。
 
@@ -48,7 +48,7 @@ ms.locfileid: "74732775"
 
 **[コンボ ボックス](controls/control-combo-box.md)** - 提示された選択肢からユーザーが選択できるようにします。 検索と複数選択をサポートしています。
 
-**[コンテナー (試験段階)](controls/control-container.md)** -アクセシビリティと応答性のための入れ子になった階層を作成します。 
+**[コンテナー (試験段階)](controls/control-container.md)** - 入れ子になった階層を作成して、アクセシビリティと応答性を向上させることができます。 
 
 **[データ テーブル](controls/control-data-table.md)** – 表形式でデータを表示します。
 
@@ -60,11 +60,11 @@ ms.locfileid: "74732775"
 
 **[フォームの編集](controls/control-form-detail.md)** – フォームを使用してデータ ソースのレコードを編集および作成します。
 
-**[エンティティ フォーム](entity-form-control.md)** - 試験的機能: ユーザーが Common Data Service からリレーショナル データを表示、移動、編集できる動的フォームを追加します。
+**[エンティティ フォーム](entity-form-control.md)** - 試験段階の機能: ユーザーが Common Data Service のリレーショナル データを表示、移動、編集できる動的なフォームを追加します。
 
-**[エクスポート](controls/control-export-import.md)** – Power Apps の他の場所で使用するためにデータをエクスポートします。
+**[エクスポート](controls/control-export-import.md)** – Power Apps の別の場所で使用するためにデータをエクスポートします。
 
-**[ギャラリー](controls/control-gallery.md)**  – 複数の種類のデータを含めることができるレコードの一覧を表示します。
+**[ギャラリー](controls/control-gallery.md)** – 複数の種類のデータを含めることができるレコードの一覧を表示します。
 
 **[HTML テキスト](controls/control-html-text.md)** – HTML タグを自動的に変換します。
 
@@ -72,7 +72,7 @@ ms.locfileid: "74732775"
 
 **[イメージ](controls/control-image.md)** – ローカル ファイルやデータ ソースなどの画像を表示します。
 
-**[インポート](controls/control-export-import.md)** – Power Apps 内の他の場所からデータをインポートします。
+**[インポート](controls/control-export-import.md)** – Power Apps の別の場所からデータをインポートします。
 
 **[縦棒グラフ](controls/control-column-line-chart.md)** – 2 つの軸に対して相対的にデータ ポイントの値を表示します。
 
@@ -92,13 +92,15 @@ ms.locfileid: "74732775"
 
 **[評価](controls/control-rating.md)** – 1 ～指定された数の値を示します。
 
-**[リッチテキストエディター](controls/control-richtexteditor.md)** –アプリユーザーによるリッチテキストの書式設定を可能にします。
+**[リッチ テキスト エディター](controls/control-richtexteditor.md)** – アプリのユーザーがリッチ テキストを書式設定できるようにします。
 
 **[画面](controls/control-screen.md)** – 特定のタスクに関するデータを表示および更新します。
 
 **[図形](controls/control-shapes-icons.md)** – 矢印や幾何学的図形 (四角形など) を表示します。
 
 **[スライダー](controls/control-slider.md)** – ハンドルをドラッグして値を指定します。
+
+**[ビデオのストリーミング](controls/control-stream-video.md)** – ビデオを再生し、Microsoft Stream サービスからチャネルを参照します。
 
 **[ラベル](controls/control-text-box.md)** – テキスト、数値、日付、通貨などのデータを表示します。
 
@@ -110,7 +112,7 @@ ms.locfileid: "74732775"
 
 **[ビデオ](controls/control-audio-video.md)** – ローカル ファイル、データ ソース、YouTube のビデオ クリップを再生します。
 
-**[Web バーコードスキャナー (試験段階)](controls/control-barcodescanner.md)** –従来のバーコードスキャナー。 web ブラウザーでコードをスキャンする場合に便利です。
+**[Web バーコード スキャナー (試験段階)](controls/control-barcodescanner.md)** – 従来のバーコード スキャナーであり古いものですが、Web ブラウザーでコードをスキャンする場合に便利です。
 
 ## <a name="common-properties-by-category"></a>カテゴリ別の共通プロパティ
 
@@ -440,9 +442,9 @@ ms.locfileid: "74732775"
 
 **[SelectedDate](controls/control-date-picker.md)** – 日付コントロールで現在選択されている日付です。  **[日付の選択](controls/control-date-picker.md)** コントロールに適用されます。
 
-**[SelectionColor](controls/properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色です。  **[ドロップ ダウン](controls/control-drop-down.md)** 、 **[リスト ボックス](controls/control-list-box.md)** 、および **[ペン入力](controls/control-pen-input.md)** の各コントロールに適用されます。
+**[SelectionColor](controls/properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色です。  **[ドロップダウン](controls/control-drop-down.md)** 、 **[リスト ボックス](controls/control-list-box.md)** 、および **[ペン入力](controls/control-pen-input.md)** の各コントロールに適用されます。
 
-**[SelectionFill](controls/properties-color-border.md)** – リストで選択された項目またはペン コントロールの選択領域の背景色です。  **[ドロップ ダウン](controls/control-drop-down.md)** コントロールと **[リスト ボックス](controls/control-list-box.md)** コントロールに適用されます。
+**[SelectionFill](controls/properties-color-border.md)** – リストで選択された項目またはペン コントロールの選択領域の背景色です。  **[ドロップダウン](controls/control-drop-down.md)** コントロールと **[リスト ボックス](controls/control-list-box.md)** コントロールに適用されます。
 
 **[SelectionThickness](controls/control-pen-input.md)** – ペン入力コントロールの選択ツールの太さです。  **[ペン入力](controls/control-pen-input.md)** コントロールに適用されます。
 
@@ -514,7 +516,7 @@ ms.locfileid: "74732775"
 
 **ValueFill** – 値が **true** の場合の、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
 
-**ValueHoverFill** – 値が **true** の場合に、トグル コントロールまたはスライダーをポイントしたときの、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
+**ValueHoverFill** – 値が **true** の場合に、トグル コントロールまたはスライダーにポインターを合わせたときの、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
 
 **[VerticalAlign](controls/properties-text.md)** – コントロールの垂直方向の中心に対するコントロール上でのテキストの位置です。  多くのコントロールに適用されます。
 
