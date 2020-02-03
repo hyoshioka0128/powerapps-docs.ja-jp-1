@@ -31,7 +31,7 @@
           href: ../user/unified-interface.md
         - name: ナビゲーションと基本
           items:
-            - name: 概要
+            - name: 基本操作
               href: ../user/navigation.md
             - name: 自分のプロファイルを表示する
               href: ../user/view-your-user-profile.md
@@ -72,12 +72,14 @@
               href: ../user/collaborate-using-sharepoint.md
         - name: レコードを調べる
           items:
-            - name: 検索オプションと検索オプションの比較
-              href: ../user/search-and-find.md
-            - name: レコードを検索する
-              href: ../user/search-records.md
-            - name: 高度な検索を使う
-              href: ../user/create-edit-or-save-advanced-find-search.md
+            - name: 検索オプションの比較
+              href: ../user/search.md
+            - name: 関連性の検索
+              href: ../user/relevance-search.md
+            - name: 簡易検索
+              href: ../user/quick-find.md
+            - name: 高度な検索
+              href: ../user/advanced-find.md
         - name: データのインポートとエクスポート
           items:
             - name: データをインポートする

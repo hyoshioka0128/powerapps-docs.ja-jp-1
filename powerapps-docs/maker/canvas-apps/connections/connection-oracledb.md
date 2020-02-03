@@ -1,27 +1,27 @@
 ---
 title: Oracle データベースへの接続 | Microsoft Docs
-description: Oracle Database に接続し、それを使用してアプリを作成する方法について説明します。
+description: Power Apps で Oracle Database に接続し、これを使ってアプリを構築する方法について説明します。
 author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 04/14/2017
+ms.date: 01/29/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b742193e2d127993779e2bba94f35c0c24ecfd7b
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: b60ab00d4f4fecca7ead1cac629e0e34f26f302b
+ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74728407"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886286"
 ---
 # <a name="connect-to-an-oracle-database-from-power-apps"></a>Power Apps から Oracle データベースに接続する
-接続を作成し、Power Apps でアプリを構築した後、Oracle データベースでテーブルを一覧表示したり、テーブル行を作成、読み取り、更新、削除したりします。 Oracle データベースへの接続では、フィルター処理や並び替えなど、トリガーとストアド プロシージャを除く機能の完全委任がサポートされています。
+Power Apps で Oracle データベースへの接続を作成すると、そのテーブルの一覧表示や、テーブル行の作成、読み取り、更新、削除を行い、アプリを構築することができます。 Oracle データベースへの接続では、フィルター処理や並び替えなど、トリガーとストアド プロシージャを除く機能の完全委任がサポートされています。
 
 ## <a name="prerequisites"></a>前提条件
 * Oracle 9 以降
@@ -32,13 +32,13 @@ ms.locfileid: "74728407"
 ### <a name="install-an-on-premises-data-gateway"></a>オンプレミス データ ゲートウェイをインストールする
 ゲートウェイをインストールするには、[こちらのチュートリアル](../gateway-management.md)の手順に従います。
 
-オンプレミスデータゲートウェイはブリッジとして機能し、オンプレミスのデータ (クラウドにないデータ) と、Power BI、電力の自動化、Logic Apps、および Power Apps のサービスの間で、迅速かつ安全なデータ転送を提供します。 複数のサービスやデータ ソースで、同一のゲートウェイを使用できます。 詳細については、[ゲートウェイの概要](../gateway-reference.md)に関する記事を参照してください。
+オンプレミス データ ゲートウェイはブリッジとして機能し、オンプレミスのデータ (クラウド内に存在しないデータ) と Power BI、Power Automate、Logic Apps、Power Apps の各サービス間での高速で安全なデータ転送を実現できます。 複数のサービスやデータ ソースで、同一のゲートウェイを使用できます。 詳細については、[ゲートウェイの概要](../gateway-reference.md)に関する記事を参照してください。
 
 ### <a name="install-oracle-client"></a>Oracle クライアントをインストールする
 オンプレミス データ ゲートウェイと同じコンピューターに、[64-bit ODAC 12c Release 4 (12.1.0.2.4) for Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html) をインストールします。 このインストールを行わないと、既知の問題の一覧で説明しているように、接続の作成時または使用時にエラーが発生します。
 
 ## <a name="create-an-app-from-a-table-in-an-oracle-database"></a>Oracle データベースのテーブルからアプリを作成する
-1. Power Apps Studio で、 **[ファイル]** メニュー (左端近く) の **[新規]** をクリックまたはタップします。
+1. Power Apps Studio の **[ファイル]** メニュー (左端近く) にある **[新規]** をクリックまたはタップします。
    
    ![[新規] オプション](./media/connection-oracledb/new-app.png)
 2. **[データを使用して開始]** の下にある矢印をクリックまたはタップします。
@@ -74,7 +74,7 @@ ms.locfileid: "74728407"
     
     ![新規](./media/connection-oracledb/connect-button.png)
 
-Power Apps は、3つの画面を含むアプリを作成し、選択したテーブルのデータを表示します。
+Power Apps によって 3 つの画面を持つアプリが作成され、選択したテーブルのデータが表示されます。
 
 * **BrowseScreen1** には、テーブルに含まれるすべてのエントリが一覧表示されます。
 * **DetailScreen1** には、1 つのエントリに関する詳細が表示されます。
@@ -99,5 +99,5 @@ Power Apps は、3つの画面を含むアプリを作成し、選択したテ�
 3. テーブル '[Tablename]' には、キー列が定義されていません。
    
     このエラーは、Oracle データベースへの接続に必要な主キーが設定されていないテーブルへ接続しようとすると表示されます。
-4. 執筆時点では、ストアド プロシージャ、複合キーの設定されたテーブル、テーブル内で入れ子になったオブジェクト型はサポートされていません。
+4. この記事の執筆時点では、ストアド プロシージャ、複合キーの設定されたテーブル、テーブル内で入れ子になったオブジェクト型は Power Apps で直接サポートされていません。 ただし、Power Automate を使用したストアド プロシージャはサポートされています。
 
