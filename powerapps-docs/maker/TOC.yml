@@ -1562,8 +1562,10 @@
       href: ./common-data-service/data-platform-powerbi-connector.md
     - name: カスタマイズされたエンティティとフィールドのテキストを翻訳する
       href: ./common-data-service/export-customized-entity-field-text-translation.md
-    - name: 翻訳されたエンティティとフィールドのテキストをアプリにインポートする
+    - name: 翻訳されたエンティティとフィールドのテキストをインポートする
       href: ./common-data-service/import-translated-entity-field-text.md
+    - name: データ レイクへのエクスポート
+      href: ./common-data-service/export-to-data-lake.md
     - name: Common Data Service のセキュリティ
       href: /power-platform/admin/wp-security
     - name: API の制限の概要

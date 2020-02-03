@@ -1,50 +1,57 @@
 ---
 title: テンプレートからキャンバス アプリを作成する | Microsoft Docs
-description: Power Apps テンプレートに基づいて、キャンバスアプリを自動的に作成するための詳細な手順です。
+description: Power Apps テンプレートを基にして自動的にキャンバス アプリを作成する手順について説明します。
 author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/19/2018
+ms.date: 01/29/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 682657a62db520c431bd0f594a87ae50c5e3ac0c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.openlocfilehash: d64b1ef3f6d885093fc9f89ecf31b785c07ea6bd
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732170"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76918725"
 ---
-# <a name="create-a-canvas-app-from-a-template-in-power-apps"></a>Power Apps でテンプレートからキャンバスアプリを作成する
+# <a name="create-a-canvas-app-from-a-template-in-power-apps"></a>Power Apps でテンプレートからキャンバス アプリを作成する
 
 予算を追跡、休暇のスケジュール設定など、特定のシナリオ用のテンプレートに基づいて自動的にキャンバス アプリを作成し、そのアプリを実行して既定の動作を理解します。
 
 テンプレートからアプリを作成するには、テンプレートのサンプル データを格納するクラウド ストレージ アカウント (DropBox、OneDrive、Google Drive など) が必要です。
 
-Power Apps のライセンスをお持ちでない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
+Power Apps のライセンスを持っていない場合は、[無料でサインアップ](../signup-for-powerapps.md)できます。
 
 ## <a name="create-an-app"></a>アプリを作成する
 
-1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインします。
+1. [Power Apps](https://make.powerapps.com) にサインインします。
 
-1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、 **[このアプリの作成]** をクリックまたはタップします。
+1. 左側のナビゲーションで **[アプリ]** を選択します。 **[新しいアプリ]** のドロップダウン メニューを選択し、 **[キャンバス]** を選択します。
 
-    ![このアプリのタイルの作成](./media/get-started-test-drive/make-this-app.png)
+    ![新しいキャンバス アプリ](./media/get-started-test-drive/new-canvas-app.png)
 
-1. **アプリ テンプレート** タイルで、 **[携帯電話レイアウト]** または **[タブレット レイアウト]** をクリックまたはタップします。
+    これにより、新しいタブに [[Power Apps Studio]](https://docs.microsoft.com/powerapps/powerapps-overview#power-apps-for-app-makerscreators) が表示されます。
+
+1. **アプリ テンプレート** タイルで、 **[携帯電話レイアウト]** または **[タブレット レイアウト]** を選択します。
 
     ![テンプレート タイルからアプリを作成する](./media/get-started-test-drive/template-tile.png)
 
-4. テンプレートの一覧で、いずれかのテンプレートをクリックまたはタップし、右下隅にある **[Use (使用)]** をクリックまたはタップします。
+1. テンプレートの一覧で、いずれかのテンプレートを選択し、右下隅にある **[Use (使用)]** を選択します。
 
     ![Power Apps テンプレートを開く](./media/get-started-test-drive/open-template.png)
 
-    サンプル データがクラウド ストレージ アカウントにコピーされ、アプリが作成されて、そのホーム ページが表示されます。
+    新しいタブで Power Apps Studio が開き、アプリが作成されます。
+
+    > [!NOTE]
+    > **[使用]** ボタンが無効になっている場合は、アプリのデータ ソースが選択されていることを確認します。 下部にある **[選択]** を選択すると、データソースを選択できます。
+    >
+    > ![データ ソースの選択](./media/get-started-test-drive/choose-data-source.png)
 
 ## <a name="run-the-app"></a>アプリの実行
 テンプレートから作成されたアプリが既定のワークスペースに表示されます。カスタマイズに伴うほとんどの作業は、このワークスペースで行うことになります。 アプリに変更を加える前に、**プレビュー** モードでアプリの動作を詳しく見てみましょう。
