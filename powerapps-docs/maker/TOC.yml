@@ -33,6 +33,8 @@
           items:
             - name: 基本操作
               href: ../user/navigation.md
+            - name: グリッド フィルターを使用する
+              href: ../user/grid-filters.md
             - name: 自分のプロファイルを表示する
               href: ../user/view-your-user-profile.md
             - name: 管理者またはサポート担当者を見つける
@@ -43,15 +45,20 @@
               href: ../user/screen-reader.md
             - name: キーボード ショートカット
               href: ../user/keyboard-shortcuts.md
-        - name: レコードを操作する
+        - name: レコードとアクティビティの操作
           items:
             - name: レコードを作成する
               href: ../user/create-a-record.md
             - name: タイムラインにアクティビティを追加する
               href: ../user/add-activities.md
-              items:
-                - name: アクティビティに関する FAQ
-                  href: ../user/faq-for-timeline-and-activity.md
+            - name: アクティビティに関する FAQ
+              href: ../user/faq-for-timeline-and-activity.md
+            - name: アクティビティ グリッドを使用して電子メールを表示し、作成する
+              href: ../user/view-create-email.md
+            - name: 強化された電子メール エクスペリエンスを使用した電子メールの送信
+              href: ../user/enhanced-email.md
+            - name: 電子メール テンプレートを挿入する
+              href: ../user/insert-email-template.md
             - name: レコードのルックアップ フィールドを使用する
               href: ../user/lookup-field.md
             - name: プロファイル カードを表示する
