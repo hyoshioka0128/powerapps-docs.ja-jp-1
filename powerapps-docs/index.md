@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: 8374df8f8e440fb7ae3e2c481d201f3d1cfeaf23
-ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
+ms.openlocfilehash: ed27dfe0846924d14de7d7837977d73c9f02e1c4
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76708796"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76974874"
 ---
 <div id="main"
    class="v2">
@@ -609,6 +609,7 @@ ms.locfileid: "76708796"
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/isv-app-management">ISV アプリの管理と監視</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/publish-app-appsource">AppSource 上にアプリを公開する</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="https://www.microsoft.com/download/details.aspx?id=57777">ホワイト ペーパー: ソリューションを使用した ALM</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/powerapps/developer/common-data-service/powerapps-cli"> Power Apps CLI の取得</a></p>
                                  </div>
                               </div>
                            </div>
