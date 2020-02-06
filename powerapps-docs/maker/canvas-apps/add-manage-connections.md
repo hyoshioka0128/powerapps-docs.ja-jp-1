@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/09/2017
+ms.date: 02/05/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 503ab33c2c31854bb39baa8d523dda41f085ae2a
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9b25eef7460098139c32fba5606b682baae2ada9
+ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724393"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77037456"
 ---
 # <a name="manage-canvas-app-connections-in-power-apps"></a>Power Apps でのキャンバスアプリ接続の管理
 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、1 つまたは複数のデータ ソースへの接続を作成したり、接続を削除したり、接続の資格情報を更新したりします。
@@ -28,7 +28,7 @@ ms.locfileid: "74724393"
 この記事の後の次のステップは、以下の例のように、データ ソースのデータをアプリで表示し、管理することです。
 
 * OneDrive for Business に接続し、アプリで Excel ブックのデータを管理する。
-* SharePoint サイトにあるリストを更新する。
+* SharePoint サイト上のリストを更新する。
 * SQL Server に接続し、アプリからテーブルを更新する。
 * Office 365 で電子メールを送信する。
 * ツイートを送信する。
@@ -36,7 +36,7 @@ ms.locfileid: "74724393"
 
 ## <a name="prerequisites"></a>前提条件
 1. Power Apps に[サインアップ](../signup-for-powerapps.md)します。
-2. サインアップに使用した資格情報で [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
+2. サインアップに使用したのと同じ資格情報を使用して[make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインします。
 
 ## <a name="background-on-data-connections"></a>データ接続の背景
 ほとんどの Power Apps アプリは、クラウドサービスに格納されている**データソース**と呼ばれる外部情報を使用します。 一般的な例は、OneDrive for Business に格納されている Excel ファイル内のテーブルです。 これらのデータ ソースには、アプリから**接続**を使用してアクセスできます。
@@ -57,17 +57,17 @@ ms.locfileid: "74724393"
 > 代わりに Power Apps Studio を使用する場合は、 **[ファイル]** メニューを開き、 **[接続]** をクリックまたはタップすると、 [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)が開き、そこで接続を作成して管理できるようになります。
 
 ## <a name="create-a-new-connection"></a>新しい接続を作成する
-1. [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にまだログインしていない場合は、ログインします。
-2. 左側のナビゲーション バーで、 **[接続]** をクリックまたはタップします。
+1. まだ行っていない場合は、 [make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にログインします。
+2. 左側のナビゲーションで、 **[データ]** を展開し、 **[接続]** を選択します。
    
     ![接続の管理](./media/add-manage-connections/open-connections.png)
-3. 右上隅にある **[新しい接続]** をクリックまたはタップします。
+3. **[新しい接続]** を選択します。
    
     ![接続追加](./media/add-manage-connections/add-connection.png)
-4. 表示された一覧からコネクタをクリックまたはタップして、画面の指示に従います。
+4. 表示される一覧でコネクタを選択し、画面の指示に従います。
    
    ![接続追加](./media/add-manage-connections/choose-connection.png)
-5. **[作成]** ボタンをクリックまたはタップします。
+5. **[作成]** ボタンを選択します。
    
    ![接続追加](./media/add-manage-connections/create-connection.png)
 6. 画面の指示に従います。 コネクタによっては、資格情報の入力や特定のデータ セットの指定などの手順の実行が要求されることがあります。 **Microsoft Translator** などでは要求されません。
@@ -80,11 +80,11 @@ ms.locfileid: "74724393"
 新しいコネクタが **[Connections (接続)]** に表示され、[アプリに追加](add-data-connection.md)できるようになります。
 
 ## <a name="update-or-delete-a-connection"></a>接続の更新または削除
-接続の一覧で、更新または削除する接続を見つけて、接続の右側にある省略記号 (3 ドット記号) をクリックまたはタップします。
+接続の一覧で、更新または削除する接続を見つけて、接続の右側にある省略記号 ([...]) を選択します。
 
 ![接続の更新](./media/add-manage-connections/auth-or-delete.png)
 
-* 接続の資格情報を更新するには、キー アイコンをクリックまたはタップし、その接続の資格情報を入力します。
-* 接続を削除するには、ごみ箱アイコンをクリックまたはタップします。
-* 情報アイコンをクリックまたはタップすると、接続の詳細が表示されます。
+* 接続の資格情報を更新するには、キーアイコンを選択し、その接続の資格情報を入力します。
+* 接続を削除するには、[削除] を選択します。
+* 情報アイコンを選択すると、接続の詳細が表示されます。
 

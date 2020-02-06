@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 11/18/2019
+ms.date: 02/05/2020
 ms.author: aheaney
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afd2427a0c24461fa79e363787a7ec6c28bb4038
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
-ms.translationtype: HT
+ms.openlocfilehash: 79ae7206c729a9628ee183e0c64c395f6a235b7c
+ms.sourcegitcommit: 86c81c9efb105d11f4def49eef823af6c69059a4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541614"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77034398"
 ---
 # <a name="working-with-test-studio-experimental"></a>テスト スタジオの操作 (試験段階)
 
@@ -45,6 +45,9 @@ ms.locfileid: "76541614"
 5. **[テストを開きます]** を選択して、このアプリケーション用にテスト スタジオを開きます。 新しいブラウザー タブでテスト スタジオが開かれます。
 
     ![テスト スタジオを開く](./media/working-with-test-studio/open-tests.png)
+
+> [!NOTE]
+> テストは発行され、アプリパッケージに格納されます。 別の環境にキャンバスアプリパッケージをエクスポートしてインポートすると、作成したテストスイートやテストケースなどのすべてのテスト定義も含まれます。 
 
 ## <a name="create-a-test-suite"></a>テスト スイートの作成
 
@@ -123,7 +126,7 @@ Kudos アプリにテスト ステップとテスト アサーションを追加
 
 6. 上部のメニューから **[上にステップを挿入]** を選択するか、アクティブな行からこのオプションを選択します。 これで空のステップが作成されます。
 
-7. アクションの入力に、*kudosBeforeTest* 値を[トレース](./functions/function-trace.md)してテスト結果レコードに書き込む式または数式を入力します。
+7. アクションの入力に、[kudosBeforeTest](./functions/function-trace.md) 値を*トレース*してテスト結果レコードに書き込む式または数式を入力します。
 
     ```Trace("kudosBeforeTest : " & kudosBeforeTest);```
 
@@ -218,7 +221,7 @@ Kudos アプリにテスト ステップとテスト アサーションを追加
 
 これらのプロパティに入力した式は、各ケースまたはスイートが完了するとトリガーされます。 これらのプロパティをカスタマイズしてテストの結果を処理し、次のようなさまざまなデータ ソースまたはサービスに送信することができます。
 
-- SQL Server :
+- バックアップする必要があります。
 - Common Data Service
 - Power Automate
 - Office 365 を使用した電子メール
@@ -331,5 +334,5 @@ Power Apps で使用可能な[関数](formula-reference.md)に加えて、テス
 
 - [選択](./functions/function-select.md)
 - [SetProperty](./functions/function-setproperty.md)
-- [Filter](./functions/function-assert.md)
+- [アサート](./functions/function-assert.md)
 - [トレース](./functions/function-trace.md)
