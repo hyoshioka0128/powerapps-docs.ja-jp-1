@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 02/03/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7f437b649111c4ff51d21f35e73dabb442c57112
-ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
+ms.openlocfilehash: 1a721f5dfa0a07d270e6b1d9d310236bebb21023
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "75333635"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76973390"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>モデル駆動型アプリのタイムラインに予定、電子メール、電話、メモ、またはタスクのアクティビティを追加する 
 
@@ -34,7 +34,16 @@ ms.locfileid: "75333635"
 - 画像が添付された電子メールは、電子メールの本文と共にインラインで表示されます。
 
   > [!div class="mx-imgBorder"]
-  > ![Power Apps でのアクティビティのタイムラインビュー](media/TimelineViewOfActivity.png "Power Apps でのアクティビティのタイムラインビュー")  
+  > ![Power Apps でのアクティビティのタイムラインビュー](media/TimelineViewOfActivity.png "Power Apps でのアクティビティのタイムラインビュー")
+
+  1. レコードの検索
+  2. メモを取る
+  3. 情報とアクティビティの追加
+  4. フィルター
+  5. その他のコマンド
+  6. [アクティビティの状態]
+  7. アクティビティアイコン
+  8. 日付と時刻
  
 ## <a name="add-an-activity-from-the-nav-bar"></a>ナビゲーション バーからアクティビティを追加する
  
@@ -68,7 +77,7 @@ ms.locfileid: "75333635"
   
      **[通話先]** フィールドには、電話アクティビティを追加したレコードが自動的に設定されます。 必要に応じて別のレコードを選択できます。  
   
-4. 既定では、方向は **[発信]** に設定されています。 **[着信]** に変更するには、 **[発信]** を選択します。 
+4. 既定では、方向は **[発信]** に設定されています。 **[着信]** に変更するには、 **[発信]** を選択します。
   
 5. フォームへの入力を完了したら、 **[保存]** を選択してアクティビティを保存します。  
   
@@ -94,19 +103,21 @@ ms.locfileid: "75333635"
   
 4. 電子メールに添付ファイルを追加するには、電子メールを保存します。 次に、 **[添付ファイル]** セクションで **+** を選択して添付ファイルを追加します。  
   
-5. 電子メール本文のテンプレートを使用するには、コマンド バーで **[テンプレートの挿入]** をクリックしてからテンプレートを選択します。   
+5. 電子メールの本文にテンプレートを使用するには、コマンドバーで **[テンプレートの挿入]** を選択し、テンプレートを選択します。 電子メールテンプレートの挿入の詳細については、「[電子メールテンプレートを挿入する](insert-email-template.md)」を参照してください。 
   
 6. フォームへの入力を完了したら、 **[送信]** を選択します。 
 
 
-    > [!NOTE]
-    > メッセージ交換ビューで電子メールの一覧を表示するには、 **[設定]**  >  **[個人用]** 設定 >  **[電子メール]** タブの順に選択し、 **[タイムラインのメッセージ交換として電子メールを表示]** する を選択 個人設定の詳細については、「[個人用オプションを設定](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options)する」を参照してください。 有効にすると、タイムラインを持つ任意のフォームを開くことができます。メールは、上部の最新の電子メールを使用して、メッセージ交換スレッドにグループ化されます。
+
+### <a name="list-emails-in-a-conversation-view"></a>メッセージ交換ビューでの電子メールの一覧表示
+
+メッセージ交換ビューで電子メールの一覧を表示するには、 **[設定]**  >  **[個人用]** 設定 >  **[電子メール]** タブの順に選択し、 **[タイムラインのメッセージ交換として電子メールを表示]** する を選択 個人設定の詳細については、「[個人用オプションを設定](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options)する」を参照してください。 有効にすると、タイムラインを持つ任意のフォームを開くことができます。メールは、上部の最新の電子メールを使用して、メッセージ交換スレッドにグループ化されます。
 
    > [!div class="mx-imgBorder"]
    > ![個人用オプションの設定](media/emailsettings1.png "個人用オプションを設定する")
    
-    > [!div class="mx-imgBorder"]
-    > ![個人用オプションの電子メールの設定](media/emailsettings2.png "電子メールの個人用オプションを設定する")
+   > [!div class="mx-imgBorder"]
+   > ![個人用オプションの電子メールの設定](media/emailsettings2.png "電子メールの個人用オプションを設定する")
 
   
 ## <a name="add-an-appointment"></a>予定を追加する  
@@ -141,7 +152,7 @@ ms.locfileid: "75333635"
    > [!div class="mx-imgBorder"]
    > ![メモを追加する](media/addnote.png "メモを追加する")
 
-メモが追加されたら、そのメモを削除または編集できます。
+メモが追加されたら、そのメモを削除または編集できます。 メモを選択するか、ノートにカーソルを合わせると、編集および削除のアイコンが表示されます。
 
 
 > [!div class="mx-imgBorder"]
@@ -178,18 +189,16 @@ ms.locfileid: "75333635"
 
 - **タイムライン**の壁面で、 **[フィルターウィンドウを開く]** じょうごアイコンを選択します。
 
-> [!div class="mx-imgBorder"]
-> ![タイムラインのフィルターウィンドウ](media/filterpane.png "タイムラインのフィルターウィンドウ")
+
+タイムラインの![タイムライン](media/timeline-filter2.png "タイムラインのフィルターウィンドウ")![フィルターウィンドウ](media/timeline-filter5.png "タイムラインのフィルターウィンドウ")のフィルターウィンドウ
 
 
 ## <a name="manage-activities"></a>アクティビティを管理する
 アクティビティは、[タイムライン] ウォールから直接管理できます。たとえば、他のユーザーにアクティビティを割り当てる、アクティビティを削除する、アクティビティを閉じる、キューにアクティビティを追加する、関連レコードを開く、メモや投稿を編集するなどです。
 
+  ![タイムラインコマンドバーオプション](media/timeline-options1.png "タイムラインのコマンドバーオプション")![タイムラインのコマンドバーオプション](media/timeline-options2.png "タイムラインのコマンドバーオプション")![タイムラインのコマンドバーオプション](media/timeline-options3.png "タイムラインのコマンドバーオプション")![タイムラインのコマンドバーオプション](media/timeline-options4.png "タイムラインのコマンドバーオプション")
 
-> [!div class="mx-imgBorder"]
-> ![活動の管理 .png](media/ManageActivities.png "ManageActivities .png")
-
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 [タイムラインコントロールの設定](../maker/model-driven-apps/set-up-timeline-control.md)
 

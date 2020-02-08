@@ -12,12 +12,12 @@ ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: 70086d5ec6e30a917f817a2d3f4012745949c99e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 91f785582c2595043fe9de78c4a35a4b9e02dc9d
+ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680652"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051869"
 ---
 # <a name="what-is-power-apps"></a>Power Apps とは
 
@@ -25,7 +25,7 @@ Power Apps は、アプリ、サービス、コネクタ、データプラット
 
 Power Apps を使用して構築されたアプリは、手動のビジネスプロセスをデジタルで自動化されたプロセスに変換するための、豊富なビジネスロジックとワークフロー機能を提供します。 さらに、Power Apps を使用して構築されたアプリは応答性の高い設計になっており、ブラウザーやモバイルデバイス (携帯電話やタブレット) でシームレスに実行できます。 Power Apps は、ユーザーがコードを記述しなくても機能豊富なカスタムビジネスアプリケーションを構築できるようにすることで、カスタムビジネスアプリの構築エクスペリエンスを "も広げる" します。
 
-また、Power Apps で提供される拡張可能なプラットフォームにより、プロの開発者は、データやメタデータをプログラムでやり取りし、ビジネス ロジックを適用し、カスタム コネクタを作成し、外部データと統合することができます。
+また、Power Apps は拡張可能なプラットフォームを提供し、pro 開発者がプログラムを使用してデータやメタデータを操作したり、ビジネスロジックを適用したり、カスタムコネクタを作成したり、外部データと統合したりできるようにします。
 
 詳細については、YouTube の[Power Apps チャネル](https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg)に関する説明を参照してください。
 
@@ -68,3 +68,7 @@ Dynamics 365 Sales、Dynamics 365 Customer Service、Dynamics 365 Marketing な�
 ## <a name="purchase-power-apps"></a>電力アプリを購入する
 
 Power Apps の購入を決定した場合は、こちらを参照してください。詳細については、「 [Power apps の購入](/power-platform/admin/signup-for-powerapps-admin)」をご覧ください。
+
+## <a name="power-apps-us-government-plans"></a>Power Apps US Government プラン
+
+Power Apps US Government は、米国政府機関向けのいくつかのプランで構成されており、米国公的機関の独自の進化し続ける要件に対応しています。 Power Apps の GCC 環境では、FedRAMP High、DoD DISA IL2、刑事司法システム (CJI データ型) の要件など、クラウドサービスの連邦要件に準拠しています。 詳細情報: [Power APPS 米国政府](/power-platform/admin/powerapps-us-government)

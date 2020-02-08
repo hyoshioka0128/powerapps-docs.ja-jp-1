@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 02/03/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,18 +15,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 78b4e997a398bfb806a4e89a70c0ed3e466be381
-ms.sourcegitcommit: e3d3a608ef74e1d90ca74ed38de3e5aebc624713
+ms.openlocfilehash: ff83a238715ef6f78650eeb03b087088cb5f0c1e
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/24/2019
-ms.locfileid: "75333612"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76973180"
 ---
 # <a name="frequently-asked-questions-about-activities-and-the-timeline-wall"></a>活動とタイムライン ウォールに関してよく寄せられる質問  
 
 ## <a name="is-a-title-required-when-adding-a-new-note"></a>新しいメモを追加するときにタイトルは必要ですか?
 
-できません。 活動にメモを追加するときにタイトル フィールドが必須フィールドとしてマークされますが、必要ありません。 これは従来の Web クライアントにおける既知の問題です。
+No: 活動にメモを追加するときにタイトル フィールドが必須フィールドとしてマークされますが、必要ありません。 これは従来の Web クライアントにおける既知の問題です。
 
 ## <a name="for-an-appointment-when-i-choose-the-option-to-save-as-draft-it-doesnt-show-that-the-appointment-has-been-saved-as-a-draft"></a>予定に対して "*下書きとして保存*" オプションを選択しても、予定が下書きとして保存されたことが表示されません。
 
@@ -38,7 +38,7 @@ ms.locfileid: "75333612"
 
 ## <a name="are-html-tags-supported-in-notes"></a>**[メモ]** 内で HTML タグはサポートされていますか?
 
-できません。 レコードやエンティティに対してメモのアクティビティを作成する場合、HTML タグはサポートされません。 たとえば、メモフィールドに `<TAG> </TAG>` を追加すると、`<TAG_XXX="XX"> </TAG>`として表示されます。
+No: レコードやエンティティに対してメモのアクティビティを作成する場合、HTML タグはサポートされません。 たとえば、メモフィールドに `<TAG> </TAG>` を追加すると、`<TAG_XXX="XX"> </TAG>`として表示されます。
 
 ## <a name="how-can-i-improve-performance-on-timeline-wall"></a>タイムライン ウォール上のパフォーマンスを向上させる方法を教えてください
 
@@ -51,7 +51,11 @@ ms.locfileid: "75333612"
 
 Dynamics 365 で **[印刷プレビュー]** オプションを選択した場合、利用可能なリスト内に **[Timeline Wall]\(タイムライン ウォール\)** は表示されません。 **[メモ]** は表示されますが、タスクやメールは表示されません。
 
-## <a name="see-also"></a>関連項目
+## <a name="why-i-cant-see-other-users-activities-and-records-in-the-my-activities-stream-in-the-dashboard"></a>ダッシュボードの [マイアクティビティ] ストリームに他のユーザーアクティビティとレコードが表示されないのはなぜですか。
+
+ダッシュボードの **[マイアクティビティ**] ストリームには、自分が所有しているレコードとアクティビティ (ユーザー) が表示されます。 たとえば、ユーザー **a** **には、によって**所有されているレコードとアクティビティが表示されます。ユーザー **b**には、 **b**によって所有されているレコードとアクティビティが表示されます。
+
+## <a name="see-also"></a>参照
 
 [タイムラインコントロールの設定](../maker/model-driven-apps/set-up-timeline-control.md)
 

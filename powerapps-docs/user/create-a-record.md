@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 10/03/2019
+ms.date: 02/03/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a4d81b9adff165267fe3e3d4d08384133aeae032
-ms.sourcegitcommit: 7c1e70e94d75140955518349e6f9130ce3fd094e
+ms.openlocfilehash: bf8ee15b37e9fcae5027bb91e89ceb225325dcc5
+ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "71924431"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77054871"
 ---
 # <a name="create-a-new-record"></a>新しいレコードの作成
 
@@ -57,8 +57,26 @@ ms.locfileid: "71924431"
   
 3. 新しい連絡先の適切な詳細情報を入力し、 **[保存して閉じる]** を選択します。
 
+    > [!NOTE]
+    > 未保存の変更があり、別のレコードまたはフォームにアクセスしようとすると、 **[未保存の変更]** ダイアログボックスがポップアップ表示されます。 **[保存して続行]** を選択すると、情報の保存が試行され、アクセスするページが開きます。 保存して続行すると、フィールドにエラーがある場合は、ダイアログが閉じられます。エラーを修正するために、このダイアログボックスのページを閉じたままにしてください。
+
     > [!div class="mx-imgBorder"] 
     > ![[新規作成] ボタン](media/newrecord3.png "[新規作成] ボタン")
 
-    > [!NOTE]
-    > 未保存の変更があり、別のレコードまたはフォームにアクセスしようとすると、 **[未保存の変更]** ダイアログボックスがポップアップ表示されます。 **[保存して続行]** を選択すると、情報の保存が試行され、アクセスするページが開きます。 保存して続行すると、フィールドにエラーがある場合は、ダイアログが閉じられます。エラーを修正するために、このダイアログボックスのページを閉じたままにしてください。
+ 
+ ## <a name="preview-use-the-save-or-save--close-option-when-editing-a-record"></a>プレビュー: レコードを編集するときに、保存または保存 & 閉じるオプションを使用します。 
+ 
+既存のレコードを編集する場合は、コマンドバーの **[保存]** または **[& 閉じる]** ボタンを使用します。 このリリースより前のバージョンでは、 **[保存]** オプションは右下隅でのみ使用できました。
+
+> [!NOTE]
+> これは早期アクセス機能です。 環境内でこの機能を有効にすることを早期に選択できます。これにより、これらの機能をテストして環境全体に導入することができます。 これらの機能を有効にする方法の詳細については、「 [2020 リリース wave 1 更新プログラムのオプトイン](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates)」を参照してください。
+
+
+1. 左側のナビゲーションウィンドウで、編集するレコードの種類を選択します。 たとえば、 **[アカウント]** を選択します。
+2. 編集するアカウントレコードを開き、レコードに変更を加えます。
+3. 変更を保存するには、コマンドバーで **保存** または 保存 をクリックして **& 閉じ**ます。 **[保存]** オプションは、右下隅でも使用できます。
+
+    > [!div class="mx-imgBorder"] 
+    > ![レコードの保存オプション](media/saveoptionalwaysvisible.png "レコードの保存オプション")
+
+

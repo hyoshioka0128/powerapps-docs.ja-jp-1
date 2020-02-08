@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6b1e53d95145cc947681971264c0b160d0510e92
-ms.sourcegitcommit: d0f02fdaa125feaea884932e1ef31b8fea1bd10c
+ms.openlocfilehash: 7dd0d9a3dc9b78b693565d66f1894484b686b946
+ms.sourcegitcommit: dc379bede57da58b5787eda5437eb94b662e21ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886407"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77037369"
 ---
 # <a name="work-with-business-processes"></a>ビジネス プロセスを操作する
 
@@ -47,4 +47,4 @@ ms.locfileid: "76886407"
 システムには一般的なタスク用の業務プロセスが付属しています。 しかし、ほとんどの組織は自分たちのやり方に合わせてそれらのプロセスをカスタマイズします。 または、会社用にまたは会社のビジネス目標に合わせてカスタマイズされているシステムにプロセスを追加している可能性もあります。 つまり、ここで示すものは、ご利用のシステム上に表示されるプロセス バーと完全には一致しない場合があるということです。 しかし、それとは関係なく、プロセス バーの動作はすべてのユーザーにおいて同じです。 フィールドにデータを入力して、顧客を次のステージに移行させます。
 
 
-ビジネスプロセスフローを作成および管理する方法の詳細については、「[エンティティのビジネスルールを作成](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-create-business-rule)する」を参照してください。
+ビジネスルールおよびフローにカスタムビジネスロジックを適用する方法の詳細については、「[モデル駆動型アプリのビジネスルールとフローにカスタムビジネスロジックを適用](https://docs.microsoft.com/powerapps/maker/model-driven-apps/guide-staff-through-common-tasks-processes)する」を参照してください。
