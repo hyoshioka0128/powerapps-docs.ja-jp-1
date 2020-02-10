@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 2ebe6b2019652b1f2e59419c718136aced81c62e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: ab805ec283ca43c96982eb04357ded9aed934a03
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731405"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089882"
 ---
 # <a name="choices-function-in-power-apps"></a>Power Apps の choice 機能
 ルックアップ列で使用可能な値のテーブルを返します。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 **Choices** 関数は、ルックアップ列で使用可能な値のテーブルを返します。  
 
 **Choices** 関数を使用して、ユーザーが選択する選択肢の一覧を提供します。 この関数は、編集フォームで[**コンボ ボックス**](../controls/control-combo-box.md) コントロールと共によく使用されます。
@@ -32,9 +32,9 @@ ms.locfileid: "74731405"
 
 **Choices** はテーブルを返すので、[**Filter**](function-filter-lookup.md)、[**Sort**](function-sort.md)、[**AddColumns**](function-table-shaping.md)、その他すべてのテーブル操作関数を使って、テーブルをフィルター、並べ替え、整形できます。 
 
-現時点で、**Choices** を[委任](../delegation-overview.md)することはできません。 この制限によりアプリで問題がある場合は、データ ソースとして外部エンティティを追加し、それを直接使用してください。 
+現時点では、**選択肢**を[委任](../delegation-overview.md)することはできません。 この制限によりアプリで問題がある場合は、データ ソースとして外部エンティティを追加し、それを直接使用してください。 
 
-[**ShowColumns**](function-table-shaping.md)、[**Search**](function-filter-lookup.md)、その他のテーブル関数とは異なり、**Choices** では列名を文字列にして二重引用符で囲む必要はありません。 列を直接参照するのと同じように、式を指定します。
+ShowColumns[ **、** ](function-table-shaping.md)Search[ **、その他のテーブル関数とは異なり、** Choices](function-filter-lookup.md) では列名を文字列にして二重引用符で囲む必要はありません。 列を直接参照するのと同じように、式を指定します。
 
 列参照は、データ ソースに対して直接行う必要があります。 たとえば、データ ソースが **Accounts** でルックアップが **SLA** の場合、列参照は **Accounts.SLA** になります。 参照は、関数、変数、またはコントロールを経由することはできません。 この例を拡張し、**Accounts** が **Gallery** コントロールにフィードされる場合は、式 **Gallery.Selected.SLA** を使って選択されたアカウントの SLA を参照します。 ただし、この参照はコントロールを経由したので、**Columns** 関数に渡されることはできません。やはり **Accounts.SLA** を使う必要があります。
 
@@ -45,7 +45,7 @@ ms.locfileid: "74731405"
 
 * *column-reference* – 必須。  データ ソースのルックアップ列です。 列名を二重引用符で囲まないでください。 参照は、データ ソースの列に対して直接行う必要があり、関数またはコントロールを経由してはなりません。
 
-## <a name="examples"></a>例
+## <a name="examples"></a>使用例
 
 #### <a name="choices-for-a-lookup"></a>ルックアップの選択肢
 
@@ -63,7 +63,7 @@ ms.locfileid: "74731405"
 
     各アカウントについて、連絡先が主連絡先として指定されているか、または主連絡先が "*ブランク*" になっています。
 
-1. **Accounts** エンティティから[アプリを生成](../data-platform-create-app.md)します。
+1. [Accounts](../data-platform-create-app.md) エンティティから**アプリを生成**します。
 
 1. 左端近くにある画面とコントロールの一覧で、**EditScreen1** が表示されるまで下にスクロールし、そのすぐ下にある **EditForm1** を選択します。
 
@@ -92,7 +92,7 @@ ms.locfileid: "74731405"
 
      ![フォーム コントロールを含むキャンバス画面。 主要連絡先カード内のコンボボックスコントロールが選択されていて、数式の選択 (Accounts. 主要連絡先) を含む Items プロパティが表示されます。](media/function-choices/accounts-primary-contact.png)
 
-1. **[ホーム]** タブの **[新しい画面]** を選択し、 **[空白]** を選択します。
+1. 説明のために、**データテーブル**コントロールの**choice**関数によって返される完全なテーブルを表示できます。  **[ホーム]** タブの **[新しい画面]** を選択し、 **[空白]** を選択します。
 
 1. **[挿入]** タブの **[データ テーブル]** を選択します。
 

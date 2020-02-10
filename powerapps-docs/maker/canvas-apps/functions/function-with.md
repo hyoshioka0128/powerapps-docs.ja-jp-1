@@ -7,23 +7,23 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 08/15/2019
+ms.date: 02/07/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 886482e9093fa44c34fb1f72b93d51181d4fbc10
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 0d1105577459cc447fbd2a14a946ce5651d4d236
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729857"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089721"
 ---
 # <a name="with-function-in-power-apps"></a>Power Apps の関数を使用する
 値を計算し、名前付きの値のインラインレコードを含む1つの[レコード](../working-with-tables.md#records)に対してアクションを実行します。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 
 **With**関数は、1つのレコードに対して数式を評価します。  数式は、値を計算したり、操作 (データの変更や接続の操作など) を実行したりできます。  レコードのテーブル内のすべてのレコードの数式を評価するには、 [ **ForAll**関数](function-forall.md)を使用します。
 
@@ -41,7 +41,7 @@ ms.locfileid: "74729857"
 * *Record* –必須。 操作するレコード。  名前の値には、インライン構文を使用 `{ name1: value1, name2: value2, ... }`
 * *Formula* –必須。  *レコード*に対して評価する数式。  この数式では、レコードのフィールドをレコードスコープとし*て直接参照*できます。
 
-## <a name="examples"></a>例
+## <a name="examples"></a>使用例
 
 ### <a name="simple-named-values"></a>単純な名前付きの値
 
@@ -112,7 +112,7 @@ With( Patch( Orders, Defaults( Orders ), { OrderStatus: "New" } ),
 
 ```powerapps-dot
 With( 
-    Match( "PT2H1M39S", "PT(?:<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
+    Match( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
     Time( Value( hours ), Value( minutes ), Value( seconds ) )
 )
 // Result: 2:01 AM (as shown in a label control, use the Text function to see the seconds)

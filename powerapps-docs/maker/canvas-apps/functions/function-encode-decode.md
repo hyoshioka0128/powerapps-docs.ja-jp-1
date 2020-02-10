@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fe02683e0b420a97fe674543a2f0d16bb076f266
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 259ab99ca38a472fda5c8cd8cdf99533a5f5dfc2
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731019"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089744"
 ---
 # <a name="encodeurl-and-plaintext-functions-in-power-apps"></a>Power Apps の EncodeUrl および PlainText 関数
 文字列をエンコードおよびデコードします。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 **EncodeUrl**関数は、URL 文字列をエンコードして、特定の英数字以外の文字を% および16進数に置き換えます。  
 
 **PlainText**関数は、HTML および XML タグを削除して、次のような特定のタグを適切な記号に変換します。
@@ -42,11 +42,11 @@ ms.locfileid: "74731019"
 
 * *String* - 必須。 HTML および XML タグが削除される文字列。
 
-## <a name="examples"></a>例
+## <a name="examples"></a>使用例
 テキスト ギャラリーに RSS フィードを表示し、そのギャラリーのラベルの **[Text](../controls/properties-core.md)** プロパティを **ThisItem.description** に設定した場合、ラベルには次の例のように未加工の HTML または XML コードが表示される可能性があります。
 
 ```html
-    <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.<p>
+    <p>We have done an unusually&nbsp;&quot;deep&quot; globalization and localization.</p>
 ```
 
 ラベルの **[Text](../controls/properties-core.md)** プロパティを **PlainText(ThisItem.description)** に設定すると、次の例のようなテキストが表示されます。

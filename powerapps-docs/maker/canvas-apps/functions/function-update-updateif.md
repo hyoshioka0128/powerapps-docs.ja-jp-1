@@ -13,17 +13,17 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 0f3a843c75b86170a44dce8da0a61e672d9dab49
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 89b761469f792eb342e0d3d99ff291561ea29ff6
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74730007"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089905"
 ---
 # <a name="update-and-updateif-functions-in-power-apps"></a>Power Apps の Update および UpdateIf 関数
-[データ ソース](../working-with-data-sources.md)内の[レコード](../working-with-tables.md#records)を更新します。
+[データ ソース](../working-with-tables.md#records)内の[レコード](../working-with-data-sources.md)を更新します。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 ### <a name="update-function"></a>Update 関数
 データ ソースのレコード全体を置換するときには、**Update** 関数を使用します。 これに対して、**UpdateIf** 関数と **[Patch](function-patch.md)** 関数は、レコード内の一定の値だけを変更し、残りの値をそのまま維持するものです。
 
@@ -57,19 +57,19 @@ ms.locfileid: "74730007"
 * *Condition(s)* – 必須。 変更の対象となるレコードについて評価結果が **true** となる数式。  数式では、*DataSource* の列名を使用できます。  
 * *ChangeRecord(s)* - 必須。  条件別にプロパティの新しい値を指定した変更レコード。この変更レコードで指定された値が、条件を満たした *DataSource* のレコードに適用されます。 中かっこを使ってレコードをインラインで指定した場合には、そのプロパティの数式で既存のレコードのプロパティの値を使用できます。
 
-## <a name="examples"></a>例
+## <a name="examples"></a>使用例
 ここで紹介する例では、**IceCream** という名前のデータ ソースのレコードを置換したり、変更したりしていきます。このデータ ソースには以下のテーブルが存在し、初期データが次のようになっています。
 
 ![](media/function-update-updateif/icecream.png)
 
-| 数式 | Description | 結果 |
+| [数式] | 説明 | 結果 |
 | --- | --- | --- |
-| **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;), {&nbsp;ID:&nbsp;1,&nbsp;Flavor:&nbsp;"Mint&nbsp;Chocolate",&nbsp;Quantity:150&nbsp;} )** |データ ソースのレコードを 1 つ置換します。 |<style> img { max-width: none } </style> ![](media/function-update-updateif/icecream-mint.png)<br><br>**IceCream** データ ソースの内容が変更されました。 |
-| **UpdateIf(&nbsp;IceCream, Quantity > 175, {&nbsp;Quantity:&nbsp;Quantity&nbsp;+&nbsp;10&nbsp;} )** |**Quantity** の値が **150** よりも大きなレコードを対象として変更を実施します。  **Quantity** フィールドの値を 10 増やします。他のフィールドは変更しません。 |![](media/function-update-updateif/icecream-mint-plus10.png)<br><br>**IceCream** データ ソースの内容が変更されました。 |
+| **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream,&nbsp;Flavor="Chocolate"&nbsp;)&nbsp;), {&nbsp;ID:&nbsp;1,&nbsp;Flavor:&nbsp;"Mint&nbsp;Chocolate",&nbsp;Quantity:150&nbsp;} )** |データ ソースのレコードを 1 つ置換します。 |<style>img {max width: none}</style> ![](media/function-update-updateif/icecream-mint.png)<br><br>**IceCream** データ ソースの内容が変更されました。 |
+| **UpdateIf(&nbsp;IceCream, Quantity > 175, {&nbsp;Quantity:&nbsp;Quantity&nbsp;+&nbsp;10&nbsp;} )** |**数量**が**175**を超えるレコードを変更します。  **Quantity** フィールドの値を 10 増やします。他のフィールドは変更しません。 |![](media/function-update-updateif/icecream-mint-plus10.png)<br><br>**IceCream** データ ソースの内容が変更されました。 |
 | **Update(&nbsp;IceCream,<br>First(&nbsp;Filter(&nbsp;IceCream, Flavor="Strawberry"&nbsp;)&nbsp;),<br>{&nbsp;ID:&nbsp;3, Flavor:&nbsp;"Strawberry Swirl"} )** |データ ソースのレコードを 1 つ置換します。 置換レコードで **Quantity** プロパティが指定されていないため、結果ではこのプロパティが "*空白*" になります。 |![](media/function-update-updateif/icecream-mint-swirl.png)<br><br>**IceCream** データ ソースの内容が変更されました。 |
 | **UpdateIf(&nbsp;IceCream, true, {&nbsp;Quantity:&nbsp;0&nbsp;} )** |データ ソース内の全レコードについて、**Quantity** プロパティの値を 0 に設定します。 |![ ](./media/function-update-updateif/icecream-mint-zero.png)<br> <br>**IceCream** データ ソースの内容が変更されました。 |
 
-### <a name="step-by-step"></a>ステップ バイ ステップ
+### <a name="step-by-step"></a>操作手順
 1. **Inventory** という名前のコレクションをインポートまたは作成し、[ギャラリーにデータを表示する](../show-images-text-gallery-sort-filter.md)方法に関するページの手順に従って、コレクションをギャラリーに表示します。
 2. ギャラリーの名前として **ProductGallery** を指定します。
 3. **UnitsSold** という名前のスライダーを追加し、**Max** プロパティを次の数式に設定します。<br>**ProductGallery.Selected.UnitsInStock**

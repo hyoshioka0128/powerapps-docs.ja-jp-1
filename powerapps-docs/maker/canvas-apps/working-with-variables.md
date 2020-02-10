@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 02/28/2019
+ms.date: 02/07/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4dcc00f20de3a16f1f3125e8840f2f6d74feff32
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: d7fb0e386309f207809204d4f9f582aa3aedfe7e
+ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733149"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77089928"
 ---
 # <a name="understand-canvas-app-variables-in-power-apps"></a>Power Apps でのキャンバスアプリ変数について
 
@@ -82,7 +82,7 @@ Power Apps では、式を使用して、コントロールのプライマリ値
 
 単純な加算器に変更を加えて、累計機能を備えた昔ながらの計算機のように動作するようにしましょう。 **[Add]** ボタンを選択すると、数値が累計に加算されます。 **[Clear]** ボタンを選択すると、累計が 0 にリセットされます。
 
-| '95'5c | Description |
+| 表示 | 説明 |
 |----|----|
 | <style>img {max width: none}</style> ![アプリには、テキスト入力コントロール、ラベル、2つのボタンがあり](media/working-with-variables/button-changes-state-1.png) | アプリが開始されると、実行中の合計は0になります。<br><br>赤い点は、ユーザーが**77**を入力したテキスト入力ボックスにユーザーの指を表します。 |
 | ![テキスト入力コントロールに77が含まれており、[追加] ボタンが押されています。](media/working-with-variables/button-changes-state-2.png) | ユーザーは **[追加]** ボタンを選択します。 |
@@ -112,7 +112,7 @@ Power Apps では、式を使用して、コントロールのプライマリ値
 
 1. **TextInput1** という名前のテキスト入力コントロールと、**Button1** および **Button2** という名前の 2 つのボタンを追加します。
 
-2. **Button1** の **[Text](controls/properties-core.md)** プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
+2. **Button1[ の ](controls/properties-core.md)** Text プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
 
 3. ユーザーが **[Add]** ボタンを選択するたびに累計を更新するために、 **[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
 
@@ -152,7 +152,7 @@ Power Apps では、式を使用して、コントロールのプライマリ値
 
 Power Apps には、次の3種類の変数があります。
 
-| 変数の種類 | 適用範囲 | Description | を確立する関数 |
+| 変数の種類 | スコープ | 説明 | を確立する関数 |
 | --- | --- | --- | --- |
 | グローバル変数 |App |使い方が最も単純です。 数値、テキスト文字列、ブール値、レコード、テーブルなどを保持し、アプリ内のどこからでも参照できます。 |[**Set**](functions/function-set.md) |
 | コンテキスト変数 |画面 |他の言語のプロシージャにパラメーターを渡す場合など、画面に値を渡すのに最適です。 は、1つの画面からのみ参照できます。 |[**UpdateContext**](functions/function-updatecontext.md)<br>[**Navigate**](functions/function-navigate.md) |
@@ -186,7 +186,7 @@ Power Apps には、次の3種類の変数があります。
 
 `Pi() * Power( Radius, 2 )`
 
-コンテキスト変数にグローバル変数またはコレクションと同じ名前を指定すると、コンテキスト変数が優先されます。 ただし、あいまいさを解消する[演算子](functions/operators.md#disambiguation-operator) **@ [Radius]** を使用する場合は、グローバル変数またはコレクションを参照できます。
+コンテキスト変数にグローバル変数またはコレクションと同じ名前を指定すると、コンテキスト変数が優先されます。 ただし、あいまいさを解消する[演算子](functions/operators.md#disambiguation-operator) **[@Radius]** を使用すると、グローバル変数またはコレクションを参照できます。
 
 ## <a name="use-a-context-variable"></a>コンテキスト変数を使用する
 
@@ -204,7 +204,7 @@ Power Apps には、次の3種類の変数があります。
 
 1. **TextInput1** という名前のテキスト入力コントロールと、**Button1** および **Button2** という名前の 2 つのボタンを追加します。
 
-2. **Button1** の **[Text](controls/properties-core.md)** プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
+2. **Button1[ の ](controls/properties-core.md)** Text プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
 
 3. ユーザーが **[Add]** ボタンを選択するたびに累計を更新するために、 **[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
 
@@ -260,13 +260,13 @@ Power Apps には、次の3種類の変数があります。
 
 * コレクションを作成および設定するには、 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** 関数を使用します。  代わりに **[Collect](functions/function-clear-collect-clearcollect.md)** 関数を使用できますが、実質的には、古い変数を置き換えるのではなく別の変数が必要になります。  
 * コレクションは一種のデータ ソース、すなわちテーブルです。 コレクションの単一の値にアクセスするには、 **[First](functions/function-first-last.md)** 関数を使用し、結果のレコードから 1 つのフィールドを抽出します。 **[ClearCollect](functions/function-clear-collect-clearcollect.md)** で単一の値を使用した場合、これは次の例のように **Value** フィールドになります。<br>
-**First(** *VariableName* **).Value**
+**最初の (** *VariableName* **)。値**
 
 それでは、コレクションを使用して計算機を作り直してみましょう。
 
-1. **TextInput1** という名前の **[テキスト入力](controls/control-text-input.md)** コントロールと、**Button1** および **Button2** という名前の 2 つのボタンを追加します。
+1. **TextInput1[ という名前の](controls/control-text-input.md)** テキスト入力コントロールと、**Button1** および **Button2** という名前の 2 つのボタンを追加します。
 
-2. **Button1** の **[Text](controls/properties-core.md)** プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
+2. **Button1[ の ](controls/properties-core.md)** Text プロパティを **"Add"** に設定し、**Button2** の **Text** プロパティを **"Clear"** に設定します。
 
 3. ユーザーが **[Add]** ボタンを選択するたびに累計を更新するために、 **[OnSelect](controls/properties-core.md)** プロパティを次の数式に設定します。
 
