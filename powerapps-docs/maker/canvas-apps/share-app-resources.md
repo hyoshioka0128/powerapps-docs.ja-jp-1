@@ -1,24 +1,24 @@
 ---
 title: キャンバス アプリで使用されているリソースを共有する | Microsoft Docs
 description: Power Apps でキャンバスアプリが使用するリソースを共有する方法を理解する
-author: archnair
+author: lancedMicrosoft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 06/28/2016
-ms.author: archanan
+ms.date: 02/03/2020
+ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a0dec0f593dee36cbdcff62667177c194abfc6e0
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: a1385e45fbbd932e0575c5c5b69b051dc292c824
+ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732468"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77282337"
 ---
 # <a name="share-canvas-app-resources-in-power-apps"></a>キャンバスの共有-アプリのリソースを Power Apps で共有する
 
@@ -40,11 +40,21 @@ ms.locfileid: "74732468"
 
 ## <a name="connections"></a>接続
 
-SQL Server などの接続の種類によっては、自動的に共有されるものもありますが、ユーザーがデータ ソースまたはアプリ内のソースへの接続を独自に作成する必要があるものもあります。
+他のユーザーとアプリを共有すると、一部の接続 (SQL 認証や Windows 認証の SQL Server など) がアプリと[暗黙的に共有](share-app-resources.md#implicit-sharing)されます。 他の接続では、ユーザーが独自の接続を作成する必要があります (OneDrive for Business や SQL Server Azure AD 認証を使用したなど)。
 
-[powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) では、接続を自動的に共有するかどうかを指定でき、共有アクセス許可を更新できます。 左側のナビゲーション バーで、 **[管理]** をクリックまたはタップし、 **[接続]** をクリックまたはタップして、[接続]をクリックまたはタップします。 **[共有]** タブが表示されたら、接続は自動的に共有されます。
+アプリを他のユーザーと共有するときに、アプリの一部として接続を自動的に共有するかどうかを決定できます。共有のアクセス許可を更新できます。 これを行うには、make.powerapps.com に移動し、左側のナビゲーションから [**データ** -> **接続**] を選択します。 次に、必要な接続を選択します。 上部のナビゲーションに **[共有]** ボタンが表示される場合、または [*その他のコマンド*(...)] を選択したときに **[共有]** オプションが表示された場合は、選択した接続を他のユーザーと共有できます。
 
-  ![[接続の詳細] ページの [共有] タブ](./media/share-app-resources/shared-connections.png)
+  ![OneDrive for Business の共有がありません](./media/share-app-resources/shared-connections-odb.png)
+
+  ![SQL 認証接続を SQL Server に共有する](./media/share-app-resources/shared-connections-sqlauth.png)
+
+### <a name="implicit-sharing"></a>暗黙の共有
+
+共有可能な接続を使用するアプリを共有すると、アプリ接続はアプリと共に**暗黙的に共有**されます。 たとえば、make.powerapps.com にアクセスして **[アプリ]** を選択し、その接続を使用するアプリを選択して、[*その他のコマンド*(...)] を選択し、 **[共有]** を選択すると、次のメッセージが表示されます。
+
+  ![暗黙のアクセス許可の警告](./media/share-app-resources/share-app-implicit-permission.png)
+
+[選択したアプリを他のユーザーと共有する]**を選択し**た場合、アプリ接続はアプリと共にユーザーと暗黙的に共有されます。
 
 ## <a name="on-premises-data-gateways"></a>オンプレミス データ ゲートウェイ
 オンプレミス ソースからのデータを含むアプリを作成して共有する場合は、[オンプレミス データ ゲートウェイ](gateway-management.md) 自体およびそのゲートウェイへの接続のうち一定の種類が自動的に共有されます。 自動的に共有されていない接続はすべて、(前のセクションに表示されているとおり) 手動で共有でき、またユーザーが独自の接続を作成するようアプリに求めさせることができます。 接続またはゲートウェイが構成されている接続を表示する方法は次の通りです。
