@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: ed27dfe0846924d14de7d7837977d73c9f02e1c4
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: c32a87a38029f4a01750f04ecc2f9c0d0314ac66
+ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76974874"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77282385"
 ---
 <div id="main"
    class="v2">
@@ -350,11 +350,11 @@ ms.locfileid: "76974874"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">Power プラットフォーム管理センター</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-guide">管理者 Power プラットフォーム</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-documentation">管理者 Power プラットフォーム</a></p>
                                     <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/get-help-support">ヘルプとサポートの表示</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/preview-april-2019-updates">2019 リリースの wave 2 をオプトインする</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">設定の管理</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">ホワイト ペーパー: わずかなコードしか使用しない開発プラットフォームの管理</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/opt-in-early-access-updates">早期アクセス更新にオプトインする</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/wp-security">セキュリティの概念</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-settings">設定の管理</a></p>                                    
                                  </div>
                               </div>
                            </div>
@@ -411,9 +411,28 @@ ms.locfileid: "76974874"
                                  <div class="cardText">
                                     <h3 style="font-size: 1.15rem">環境とセキュリティ</h3>
                                     <hr/>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-administration">環境を管理する</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/database-security">環境セキュリティの構成</a></p>
-                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/admin-view-apps">環境内のアプリの表示</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/environments-overview">環境の概要</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/trial-environments">試用版環境</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="/power-platform/admin/database-security">環境のセキュリティ</a></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="cardSize">
+                           <div class="cardPadding">
+                              <div class="card">
+                                 <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                       <img alt="" src="media/index/i_guidelines.svg">
+                                    </div>
+                                 </div>
+                                 <div class="cardText">
+                                    <h3 style="font-size: 1.15rem">リソース</h3>
+                                    <hr/>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://aka.ms/powerappsadminwhitepaper">ホワイト ペーパー: Power Apps と Power Automate Enterprise Deployment を管理する</a></p>
+                                    <p><a class="barLink" style="font-size: 0.95rem" href="https://powerapps.microsoft.com/blog/introducing-the-powerapps-center-of-excellence-starter-kit/">Power Apps Center of Excellence (CoE) スタート キット</a></p>
                                  </div>
                               </div>
                            </div>

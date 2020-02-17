@@ -1018,6 +1018,8 @@
                   href: ./model-driven-apps/create-edit-views-app-designer.md
                 - name: ビュー内の列を選択して構成する
                   href: ./model-driven-apps/choose-and-configure-columns.md
+                - name: アプリ ビューでフィルターを作成または編集する
+                  href: ./model-driven-apps/create-edit-view-filters.md
                 - name: 'ハウツー ガイド:ビュー'
                   items:
                     - name: グリッドを編集可能にする方法
