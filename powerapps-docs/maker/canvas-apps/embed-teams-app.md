@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/29/2019
+ms.date: 02/18/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a12cd7c17a6aca93f254cc2e2cb89cb848245392
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 7f98025fbc3a2f392b45cce22af41d075a3bfaac
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731524"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77530871"
 ---
 # <a name="embed-an-app-in-teams"></a>Teams にアプリを埋め込む
 
@@ -34,7 +34,7 @@ Microsoft Teams に直接埋め込むことで、作成した Power Apps を共�
 - 有効な[Power Apps ライセンス](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)が必要です。
 - アプリをチームに埋め込むには、 [Power Apps を使用して作成され](data-platform-create-app.md)た既存のアプリが必要です。
 
-## <a name="download-the-app"></a>アプリをダウンロードする
+## <a name="download-the-app"></a>アプリのダウンロード
 
 1. [Make.powerapps.com](https://make.powerapps.com)にサインインし、メニューの **[アプリ]** を選択します。
 
@@ -63,6 +63,21 @@ Microsoft Teams に直接埋め込むことで、作成した Power Apps を共�
 
 管理者の場合は、Microsoft Teams カタログに[アプリを発行](https://docs.microsoft.com/microsoftteams/tenant-apps-catalog-teams)することもできます。
 
-### <a name="see-also"></a>関連項目
+## <a name="improve-the-performance-of-your-app"></a>アプリのパフォーマンスを向上させる
+
+必要に応じて、アプリをチーム内に事前に読み込んで、パフォーマンスを向上させることができます。
+
+1. [Make.powerapps.com](https://make.powerapps.com)にサインインし、メニューの **[アプリ]** を選択します。
+
+2. チームで共有するアプリの **[その他のアクション]** (...) を選択し、 **[設定]** を選択します。
+
+3. [設定] パネルで、[**パフォーマンスの向上のためにアプリのプリロード** **] を [はい]** に切り替えます。 その後、アプリがチームに埋め込まれるたびに、アプリが事前に読み込まれます。
+
+    ![アプリの詳細](./media/embed-teams-app/preload-app.png "パフォーマンスを向上させるためにアプリをプリロードする")
+
+4. 変更を有効にするには、アプリをチームに再インポートします。
+
+
+### <a name="see-also"></a>参照
 
 [Microsoft Teams へようこそ](https://docs.microsoft.com/MicrosoftTeams/teams-overview)

@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 86d28400e0eaea89b59286df173d0e67655bb7a5
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
-ms.translationtype: HT
+ms.openlocfilehash: 23bfbb3b97764a427d5422e4ad207d4af7cc1589
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541246"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77530790"
 ---
 # <a name="trace-function"></a>Trace 関数 
 
 Trace は、テスト スタジオで使用する場合、**OnTestCaseComplete** イベントからのテスト結果で追加情報を提供するために使用できる省略可能な式です。 トレース イベント メッセージおよび合格と不合格両方のアサーションに対するメッセージが、TestCaseResult レコードの Traces テーブルに含まれます。 Traces テーブルには、Message と Timestamp の 2 つのプロパティがあります。 
 
-アプリで Azure Application Insights にテレメトリ データを送信できるようにした場合、Trace 関数を使用して、Application Insights リソースにイベントまたは診断のカスタム情報を送信することもできます。 Application Insights でこのデータを調べて、問題を診断したり、アプリと機能の使用状況を把握したりすることができます。 Tests で使用されるトレース情報も、Application Insights に記録されます。 すべてのトレース メッセージは Power Apps Monitor ツールでも表示でき、アプリのリアルタイム診断セッションでの問題のデバッグまたは特定に役立ちます。   
+アプリでトレースメッセージを定義することもできます。 これらは、アプリのリアルタイム診断情報に関する問題をデバッグまたは特定するのに役立つ、他のアプリアクティビティと共に、Power Apps Monitor ツールで表示できます。 アプリで Azure Application Insights にテレメトリ データを送信できるようにした場合、Trace 関数を使用して、Application Insights リソースにイベントまたは診断のカスタム情報を送信することもできます。 Application Insights でこのデータを調べて、問題を診断したり、アプリと機能の使用状況を把握したりすることができます。 Tests で使用されるトレース情報も、Application Insights に記録されます。 テストトレース情報は、[モニター] ツールでは使用できません。これは、モニターが Canvas studio から再生されるときにアプリに接続されるためです。 
 
 ## <a name="syntax"></a>構文
 
@@ -35,7 +35,7 @@ Trace は、テスト スタジオで使用する場合、**OnTestCaseComplete**
 - *custom_record* - 省略可能。 Application Insights に記録されるカスタム データを含むレコード。 
   
 
-### <a name="see-also"></a>参照
+### <a name="see-also"></a>関連項目
 
 [テスト スタジオの概要](../test-studio.md) <br>
 [テスト スタジオの操作](../working-with-test-studio.md)
