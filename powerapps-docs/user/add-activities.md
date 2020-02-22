@@ -17,7 +17,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: 1a721f5dfa0a07d270e6b1d9d310236bebb21023
 ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2020
 ms.locfileid: "76973390"
@@ -34,22 +34,22 @@ ms.locfileid: "76973390"
 - 画像が添付された電子メールは、電子メールの本文と共にインラインで表示されます。
 
   > [!div class="mx-imgBorder"]
-  > ![Power Apps でのアクティビティのタイムラインビュー](media/TimelineViewOfActivity.png "Power Apps でのアクティビティのタイムラインビュー")
+  > ![Power Apps でのアクティビティのタイムライン ビュー](media/TimelineViewOfActivity.png "Power Apps でのアクティビティのタイムライン ビュー")
 
   1. レコードの検索
   2. メモを取る
   3. 情報とアクティビティの追加
   4. フィルター
   5. その他のコマンド
-  6. [アクティビティの状態]
-  7. アクティビティアイコン
+  6. アクティビティの状態
+  7. アクティビティ アイコン
   8. 日付と時刻
  
 ## <a name="add-an-activity-from-the-nav-bar"></a>ナビゲーション バーからアクティビティを追加する
  
 アクティビティを追加する最も簡単な方法は、ナビゲーション バーのショートカットを使用し、それをレコードにリンクすることです。 たとえば、電話アクティビティを作成し、 **[関連]** フィールドを使用してそれをシステム内の連絡先にリンクすることができます。
 
-1. ナビゲーションバーで、**プラス記号**[![レコードの作成] ボタン](media/create-record-button.png "[レコードの作成] ボタン")を選択し、 **[活動]** を選択します。 
+1. ナビゲーション バーで、**プラス記号**、![[レコードの作成] ボタン](media/create-record-button.png "[レコードの作成] ボタン")を選択してから、 **[アクティビティ]** を選択します。 
 
    > [!div class="mx-imgBorder"]
    > ![Power Apps でアクティビティを追加するためのショートカット](media/QuickCreate.png "Power Apps でアクティビティを追加するためのショートカット")  
@@ -69,7 +69,7 @@ ms.locfileid: "76973390"
 
 
    > [!div class="mx-imgBorder"]
-   > ![Power Apps に電話活動を追加する](media/addphonecall.png "Power Apps に電話活動を追加する")
+   > ![Power Apps で電話アクティビティを追加する](media/addphonecall.png "Power Apps で電話アクティビティを追加する")
   
 3. 電話の **[件名]** を入力します
 
@@ -103,21 +103,21 @@ ms.locfileid: "76973390"
   
 4. 電子メールに添付ファイルを追加するには、電子メールを保存します。 次に、 **[添付ファイル]** セクションで **+** を選択して添付ファイルを追加します。  
   
-5. 電子メールの本文にテンプレートを使用するには、コマンドバーで **[テンプレートの挿入]** を選択し、テンプレートを選択します。 電子メールテンプレートの挿入の詳細については、「[電子メールテンプレートを挿入する](insert-email-template.md)」を参照してください。 
+5. 電子メール本文のテンプレートを使用するには、コマンド バーで **[テンプレートの挿入]** を選択してからテンプレートを選択します。 電子メール テンプレートの挿入の詳細については、[電子メール テンプレートの挿入](insert-email-template.md)に関するページを参照してください。 
   
 6. フォームへの入力を完了したら、 **[送信]** を選択します。 
 
 
 
-### <a name="list-emails-in-a-conversation-view"></a>メッセージ交換ビューでの電子メールの一覧表示
+### <a name="list-emails-in-a-conversation-view"></a>会話ビューで電子メールを一覧表示する
 
-メッセージ交換ビューで電子メールの一覧を表示するには、 **[設定]**  >  **[個人用]** 設定 >  **[電子メール]** タブの順に選択し、 **[タイムラインのメッセージ交換として電子メールを表示]** する を選択 個人設定の詳細については、「[個人用オプションを設定](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options)する」を参照してください。 有効にすると、タイムラインを持つ任意のフォームを開くことができます。メールは、上部の最新の電子メールを使用して、メッセージ交換スレッドにグループ化されます。
+会話ビューで電子メールを一覧表示するには、 **[設定]**  >  **[個人設定]**  >  **[電子メール]** タブに移動して、 **[Show email as a conversation on Timeline]\(電子メールをタイムライン上に会話として表示\)** を選択します。 個人用の設定の詳細については、「[個人用オプションを設定する](https://docs.microsoft.com/powerapps/user/set-personal-options#email-tab-options)」を参照してください。 有効にすると、タイムラインを含む任意のフォームを開くことができます。電子メールは上部で最新の電子メールと共に、会話スレッドにグループ化されます。
 
    > [!div class="mx-imgBorder"]
-   > ![個人用オプションの設定](media/emailsettings1.png "個人用オプションを設定する")
+   > ![個人用オプションを設定する](media/emailsettings1.png "個人用オプションを設定する")
    
    > [!div class="mx-imgBorder"]
-   > ![個人用オプションの電子メールの設定](media/emailsettings2.png "電子メールの個人用オプションを設定する")
+   > ![電子メールに個人用オプションを設定する](media/emailsettings2.png "電子メールに個人用オプションを設定する")
 
   
 ## <a name="add-an-appointment"></a>予定を追加する  
@@ -125,7 +125,7 @@ ms.locfileid: "76973390"
 予定アクティビティをレコードに追加するには、まずアクティビティを追加するレコードを保存する必要があります。  
 
 > [!NOTE]
-> Outlook 用 Dynamics 365 アプリ、Dynamics 365 for phone アプリ、携帯電話 web ブラウザーでモデル駆動型アプリ web クライアントを実行する場合、定期的な予定はサポートされていません。
+> Dynamics 365 App for Outlook、Dynamics 365 for phones app 上、または携帯電話の Web ブラウザーでモデル駆動型アプリの Web クライアントを実行するときは、定期的な予定はサポートされません。
   
 1. アクティビティを追加するレコードを開きます。 たとえば、連絡先レコードです。
   
@@ -150,13 +150,13 @@ ms.locfileid: "76973390"
 > **[タイムライン]** ウォールの上部セクションにある**プラス記号**を使用してメモを追加することもできます。
 
    > [!div class="mx-imgBorder"]
-   > ![メモを追加する](media/addnote.png "メモを追加する")
+   > ![メモの追加](media/addnote.png "メモの追加")
 
-メモが追加されたら、そのメモを削除または編集できます。 メモを選択するか、ノートにカーソルを合わせると、編集および削除のアイコンが表示されます。
+メモが追加されたら、そのメモを削除または編集できます。 メモを選択するか、メモにカーソルを合わせると、編集および削除のアイコンが表示されます。
 
 
 > [!div class="mx-imgBorder"]
-> ![メモを更新する](media/addnote2.png "メモを更新する")
+> ![メモの更新](media/addnote2.png "メモの更新")
 
 ## <a name="add-a-post"></a>投稿を追加する 
 
@@ -169,7 +169,7 @@ ms.locfileid: "76973390"
 4. フォームへの入力を完了したら、 **[追加]** を選択して投稿を保存します。
 
 > [!div class="mx-imgBorder"]
-> ![投稿を更新する](media/post.png "投稿を追加する")
+> ![投稿の更新](media/post.png "投稿を追加する")
   
   投稿を保存すると、[タイムライン] ウォールの上部に表示されます。
   
@@ -177,7 +177,7 @@ ms.locfileid: "76973390"
 
 [タイムライン] ウォールを更新して、最新の情報を確認することができます。
 
-**タイムライン**の壁面で [ ![More] ボタン](media/MoreButton.png "その他のボタン")を選択し、 **[タイムラインの更新]** を選択します。
+**[タイムライン]** ウォールで、![[その他] ボタン](media/MoreButton.png "[その他] ボタン")を選択してから、 **[タイムラインの更新]** を選択します。
 
 > [!div class="mx-imgBorder"]
 > ![タイムラインを更新する](media/refresh.png "タイムラインを更新する")
@@ -185,25 +185,25 @@ ms.locfileid: "76973390"
 
 ## <a name="use-the-filter-pane"></a>フィルター ウィンドウを使用する
 
-[タイムライン] ウォールでアクティビティ、メモ、または投稿をすばやくフィルター処理するには、フィルター ウィンドウでレコードの種類またはアクティビティの種類と日付を使います。 複数のフィルターおよびフィルターオプションを同時に選択できます。 アクティビティの期限、変更日、またはアクティビティの状態をフィルター処理して表示することができます。
+[タイムライン] ウォールでアクティビティ、メモ、または投稿をすばやくフィルター処理するには、フィルター ウィンドウでレコードの種類またはアクティビティの種類と日付を使います。 複数のフィルターおよびフィルター オプションを同時に選択できます。 アクティビティの期限、変更日、またはアクティビティの状態をフィルター処理して表示することができます。
 
-- **タイムライン**の壁面で、 **[フィルターウィンドウを開く]** じょうごアイコンを選択します。
+- **[タイムライン]** ウォールで、 **[フィルター ウィンドウを開く]** のじょうごアイコンを選択します。
 
 
-タイムラインの![タイムライン](media/timeline-filter2.png "タイムラインのフィルターウィンドウ")![フィルターウィンドウ](media/timeline-filter5.png "タイムラインのフィルターウィンドウ")のフィルターウィンドウ
+![タイムラインのフィルター ウィンドウ](media/timeline-filter2.png "タイムラインのフィルター ウィンドウ") ![タイムラインのフィルター ウィンドウ](media/timeline-filter5.png "タイムラインのフィルター ウィンドウ")
 
 
 ## <a name="manage-activities"></a>アクティビティを管理する
 アクティビティは、[タイムライン] ウォールから直接管理できます。たとえば、他のユーザーにアクティビティを割り当てる、アクティビティを削除する、アクティビティを閉じる、キューにアクティビティを追加する、関連レコードを開く、メモや投稿を編集するなどです。
 
-  ![タイムラインコマンドバーオプション](media/timeline-options1.png "タイムラインのコマンドバーオプション")![タイムラインのコマンドバーオプション](media/timeline-options2.png "タイムラインのコマンドバーオプション")![タイムラインのコマンドバーオプション](media/timeline-options3.png "タイムラインのコマンドバーオプション")![タイムラインのコマンドバーオプション](media/timeline-options4.png "タイムラインのコマンドバーオプション")
+  ![タイムラインのコマンド バー オプション](media/timeline-options1.png "タイムラインのコマンド バー オプション") ![タイムラインのコマンド バー オプション](media/timeline-options2.png "タイムラインのコマンド バー オプション") ![タイムラインのコマンド バー オプション](media/timeline-options3.png "タイムラインのコマンド バー オプション") ![タイムラインのコマンド バー オプション](media/timeline-options4.png "タイムラインのコマンド バー オプション")
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
-[タイムラインコントロールの設定](../maker/model-driven-apps/set-up-timeline-control.md)
+[タイムライン コントロールの設定](../maker/model-driven-apps/set-up-timeline-control.md)
 
-[タイムラインコントロールに関する Faq](../maker/model-driven-apps/faqs-timeline-control.md)
+[タイムライン コントロールに関する FAQ](../maker/model-driven-apps/faqs-timeline-control.md)
 
-[アクティビティとタイムラインの壁面に関する Faq](faq-for-timeline-and-activity.md)
+[アクティビティとタイムライン ウォールに関する FAQ](faq-for-timeline-and-activity.md)
 
-[Customer Service Hub アプリのタイムラインセクション](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)
+[顧客サービス ハブ アプリのタイムライン セクション](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)

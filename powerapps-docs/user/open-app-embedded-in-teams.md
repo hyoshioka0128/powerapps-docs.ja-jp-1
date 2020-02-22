@@ -18,14 +18,14 @@ search.app:
 - D365CE
 ms.openlocfilehash: 97be49797df13b82901425ae9389e85538068f5d
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74726217"
 ---
 # <a name="add-an-app-to-microsoft-teams"></a>Microsoft Teams にアプリを追加する
 
-Microsoft Teams は、Office 365 テクノロジを基に構築されているチャット ベースのコラボレーション プラットフォームです。 チーム内のチャネルに Power Apps キャンバスアプリを追加することで、チームのエクスペリエンスをカスタマイズできます。 このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加し、そのチャネルからアプリを開く方法を説明します。 
+Microsoft Teams は、Office 365 テクノロジを基に構築されているチャット ベースのコラボレーション プラットフォームです。 Teams のチャネルに Power Apps キャンバス アプリを追加して、Teams のエクスペリエンスをカスタマイズできます。 このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加し、そのチャネルからアプリを開く方法を説明します。 
 
 ![Microsoft Teams に埋め込まれたアプリ](./media/open-app-embedded-in-teams/embedded-app.png)
 
@@ -37,9 +37,9 @@ Power Apps にサインアップしていない場合は、開始する前に[�
 
 ## <a name="sign-in-to-power-apps"></a>Power Apps にサインインする
 
-[https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)で Power Apps にサインインします。
+[https://make.powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で Power Apps にサインインします。
 
-## <a name="add-an-app"></a>アプリを追加する
+## <a name="add-an-app"></a>アプリの追加
 
 1. Microsoft Teams で、チームとそのチームが所有するチャネルを選びます。 この例では、**Business Development** チームの **General** チャネルです。
 
@@ -86,13 +86,13 @@ Microsoft Teams のデスクトップ アプリでは:
 * すべてのセンサー (**Acceleration**、**Compass**、**Location** など) がサポートされているとは限りません。
 * サポートされているオーディオ形式は、AAC、H264、OGG Vorbis、および WAV のみです。
 
-## <a name="clean-up-resources"></a>リソースのクリーンアップ
+## <a name="clean-up-resources"></a>リソースをクリーンアップする
 
 チャネルからアプリを削除するには、 **[Product Showcase]** タブ、 **[削除]** の順に選びます。
 
 ## <a name="next-steps"></a>次の手順
 
-このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加して、そのチャネルからアプリを開きました。 Power Apps の詳細については、「Power Apps のチュートリアル」を参照してください。
+このトピックでは、Product Showcase サンプル アプリを Teams のチャネルに追加して、そのチャネルからアプリを開きました。 Power Apps の詳細については、Power Apps のチュートリアルを続けてください。
 
 > [!div class="nextstepaction"]
-> [Power Apps のチュートリアル](../maker/canvas-apps/get-started-create-from-blank.md)
+> [Power Apps チュートリアル](../maker/canvas-apps/get-started-create-from-blank.md)
