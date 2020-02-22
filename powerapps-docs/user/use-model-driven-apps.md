@@ -1,5 +1,5 @@
 ---
-title: Power Apps でモデル駆動型アプリを使用する |Microsoft Docs
+title: Power Apps でモデル駆動型アプリを使用する | Microsoft Docs
 description: Power Apps でモデル駆動型アプリを使用する方法について説明します。
 author: mduelae
 ms.service: powerapps
@@ -17,26 +17,26 @@ search.app:
 - D365CE
 ms.openlocfilehash: d9b2b9ce12d5899729050b3405b4eefc5e788f9f
 ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/03/2019
 ms.locfileid: "74725922"
 ---
-# <a name="use-model-driven-apps-in-power-apps"></a>Power Apps でモデル駆動型アプリを使用する
+# <a name="use-model-driven-apps-in-power-apps"></a>PowerApps でモデル駆動型アプリを使用する
 
-モデル駆動型アプリには、ダッシュボード、フォーム、ビュー、グラフ、ビジネスプロセスを含む複数のコンポーネントがあり、これを使用すると、アプリを使いやすくすることができます。 このセクションでは、モデル駆動型アプリ内を移動する方法、レコードを操作する方法、データをインポート/エクスポートする方法、および電力自動化を使用してプロセスを自動化する方法について説明します。 
+モデル駆動型アプリには、ダッシュボード、フォーム、ビュー、グラフ、ビジネス プロセスなど、複数のコンポーネントが含まれており、連動することでアプリが使いやすくなります。 このセクションでは、モデル駆動型アプリ内を移動する方法、レコードを操作する方法、データをインポート/エクスポートする方法、Power Automate を利用してプロセスを自動化する方法について説明します。 
 
 > [!IMPORTANT]
-> キャンバスアプリでは、ユーザーエクスペリエンスの制御が多く、基本的に何でも可能なので、*キャンバスアプリの使用*方法に関するヘルプドキュメントはあまりありません。 キャンバスアプリの使用に関するヘルプが必要な場合は、アプリメーカーまたは Power Apps 管理者に問い合わせてください。
+> キャンバス アプリでは、さまざまな方法で操作性を変更できます。つまるところ、何にでもなれるため、*キャンバス アプリの使用*方法に関してはそれほど役に立つドキュメントはありません。 キャンバス アプリの使い方のヘルプが必要な場合は、アプリ作成元か Power Apps 管理者に問い合わせてください。
 
 ### <a name="related-topics"></a>関連トピック
 
-[統合インターフェイスを使用したユーザーエクスペリエンスの向上](unified-interface.md)<br/>
-[モデル駆動型アプリでの基本操作](navigation.md)
+[統一インターフェイスでユーザー エクスペリエンスを向上させる](unified-interface.md)<br/>
+[モデル駆動型アプリでのナビゲーションの基本](navigation.md)
 
 ### <a name="see-also"></a>関連項目
 
 [アプリの検索と実行](index.md)<br/>
-[モデル駆動型アプリとは](/powerapps/maker/model-driven-apps/model-driven-app-overview)<br/>
-[キャンバスアプリとは](/powerapps/maker/canvas-apps/getting-started)
+[モデル駆動型アプリとは何か](/powerapps/maker/model-driven-apps/model-driven-app-overview)<br/>
+[キャンバス アプリとは何か](/powerapps/maker/canvas-apps/getting-started)
 

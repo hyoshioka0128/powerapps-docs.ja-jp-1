@@ -17,7 +17,7 @@ search.app:
 - D365CE
 ms.openlocfilehash: ff83a238715ef6f78650eeb03b087088cb5f0c1e
 ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 02/03/2020
 ms.locfileid: "76973180"
@@ -26,7 +26,7 @@ ms.locfileid: "76973180"
 
 ## <a name="is-a-title-required-when-adding-a-new-note"></a>新しいメモを追加するときにタイトルは必要ですか?
 
-No: 活動にメモを追加するときにタイトル フィールドが必須フィールドとしてマークされますが、必要ありません。 これは従来の Web クライアントにおける既知の問題です。
+いいえ。 活動にメモを追加するときにタイトル フィールドが必須フィールドとしてマークされますが、必要ありません。 これは従来の Web クライアントにおける既知の問題です。
 
 ## <a name="for-an-appointment-when-i-choose-the-option-to-save-as-draft-it-doesnt-show-that-the-appointment-has-been-saved-as-a-draft"></a>予定に対して "*下書きとして保存*" オプションを選択しても、予定が下書きとして保存されたことが表示されません。
 
@@ -38,7 +38,7 @@ No: 活動にメモを追加するときにタイトル フィールドが必須
 
 ## <a name="are-html-tags-supported-in-notes"></a>**[メモ]** 内で HTML タグはサポートされていますか?
 
-No: レコードやエンティティに対してメモのアクティビティを作成する場合、HTML タグはサポートされません。 たとえば、メモフィールドに `<TAG> </TAG>` を追加すると、`<TAG_XXX="XX"> </TAG>`として表示されます。
+いいえ。 レコードやエンティティに対してメモのアクティビティを作成する場合、HTML タグはサポートされません。 たとえば、メモ フィールドに `<TAG> </TAG>` を追加すると、`<TAG_XXX="XX"> </TAG>` と表示されます。
 
 ## <a name="how-can-i-improve-performance-on-timeline-wall"></a>タイムライン ウォール上のパフォーマンスを向上させる方法を教えてください
 
@@ -51,16 +51,16 @@ No: レコードやエンティティに対してメモのアクティビティ�
 
 Dynamics 365 で **[印刷プレビュー]** オプションを選択した場合、利用可能なリスト内に **[Timeline Wall]\(タイムライン ウォール\)** は表示されません。 **[メモ]** は表示されますが、タスクやメールは表示されません。
 
-## <a name="why-i-cant-see-other-users-activities-and-records-in-the-my-activities-stream-in-the-dashboard"></a>ダッシュボードの [マイアクティビティ] ストリームに他のユーザーアクティビティとレコードが表示されないのはなぜですか。
+## <a name="why-i-cant-see-other-users-activities-and-records-in-the-my-activities-stream-in-the-dashboard"></a>ダッシュボードの [個人の活動] ストリームに他のユーザーの活動とレコードが表示されないのはなぜですか。
 
-ダッシュボードの **[マイアクティビティ**] ストリームには、自分が所有しているレコードとアクティビティ (ユーザー) が表示されます。 たとえば、ユーザー **a** **には、によって**所有されているレコードとアクティビティが表示されます。ユーザー **b**には、 **b**によって所有されているレコードとアクティビティが表示されます。
+ダッシュボードの **[個人の活動]** ストリームには、自分 (ユーザー) が所有しているレコードとアクティビティが表示されます。 たとえば、ユーザー **A** には、**A** が所有しているレコードと活動が表示され、ユーザー **B** には **B** が所有しているレコードと活動が表示されます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
-[タイムラインコントロールの設定](../maker/model-driven-apps/set-up-timeline-control.md)
+[タイムライン コントロールの設定](../maker/model-driven-apps/set-up-timeline-control.md)
 
-[タイムラインコントロールに関する Faq](../maker/model-driven-apps/faqs-timeline-control.md)
+[タイムライン コントロールに関する FAQ](../maker/model-driven-apps/faqs-timeline-control.md)
 
-[予定、電子メール、通話、メモ、またはタスクアクティビティをタイムラインに追加する](add-activities.md)
+[モデル駆動型アプリのタイムラインに予定、電子メール、電話、メモ、またはタスクのアクティビティを追加する](add-activities.md)
 
-[Customer Service Hub アプリのタイムラインセクション](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)
+[Customer Service Hub アプリのタイムライン セクション](https://docs.microsoft.com/dynamics365/customer-service/customer-service-hub-user-guide-basics#timeline)

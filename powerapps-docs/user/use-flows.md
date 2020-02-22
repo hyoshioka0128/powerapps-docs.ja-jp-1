@@ -1,5 +1,5 @@
 ---
-title: 電力自動化を使用してモデル駆動型アプリのプロセスを自動化する |MicrosoftDocs
+title: Power Automate を使用してモデル駆動型アプリのプロセスを自動化する | MicrosoftDocs
 ms.custom: ''
 author: mduelae
 manager: kvivek
@@ -17,37 +17,37 @@ search.app:
 - D365CE
 ms.openlocfilehash: 784a12d7ab9c525ee8bb9f68ed8fc2188433d103
 ms.sourcegitcommit: 0f0b26122be28d674af0833247b491e9367c4932
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/09/2019
 ms.locfileid: "73900373"
 ---
-# <a name="use-power-automate-to-automate-processes"></a>電力自動化を使用してプロセスを自動化する
+# <a name="use-power-automate-to-automate-processes"></a>Power Automate を使用してプロセスを自動化する
 
-Power 自動では、お気に入りのアプリとサービスの間に自動化されたプロセスを作成できます。 アプリ内から、1 つ以上のレコードに対してフローを実行できます。 
+Power Automate を使用すると、好みのアプリとサービスの間に自動化されたワークフローを作成できます。 アプリ内から、1 つ以上のレコードに対してフローを実行できます。 
 
-また、アプリから Power の自動化を開いて、新しいフローを表示、編集、または作成することもできます。  詳細情報: [Power の自動化の概要](https://docs.microsoft.com/flow/getting-started)
+また、アプリから Power Automate を開いて、新しいフローを表示、編集、または作成することもできます。  詳細情報: [Power Automate の概要](https://docs.microsoft.com/flow/getting-started)
 
 ## <a name="manage-your-flows"></a>フローを管理する 
-アプリから Power 自動で接続して、フローを管理します。
+アプリから Power Automate に接続してフローを管理します。
   
 > [!NOTE]
-> アプリから電力自動化を管理して実行するには、組織のシステム設定で Power の自動化を有効にする必要があります。 詳細情報:[組織内のフロー](https://docs.microsoft.com/flow/organization-q-and-a) 
+> アプリから Power Automate を管理および実行するには、組織の [システム設定] で Power Automate を有効にする必要があります。 詳細情報: [組織における Flow](https://docs.microsoft.com/flow/organization-q-and-a) 
   
-1. コマンドバーで、 **[Flow]** を選択します。  
+1. コマンド バーで **[フロー]** を選択します。  
   
    > [!div class="mx-imgBorder"]
-   > ![[電源自動化] メニュー](media/flow.png "[電源自動化] メニュー") 
+   > ![Power Automate のメニュー](media/flow.png "Power Automate のメニュー") 
   
 2. 次のオプションが表示されます。  
   
-   -   **[フローの作成]** を選択して、新しいブラウザータブを開き、Power オートメーションサイトに誘導します。 Power の自動化 ページで、**続行** を選択して既存のテンプレートまたは**X**を使用して閉じたり、選択したり、別のテンプレートを作成したりします。  
+   -   **[フローの作成]** を選択して新しいブラウザー タブを開き、Power Automate サイトにアクセスします。 Power Automate のページで **[続行]** を選択し、既存のテンプレートを使用するか **[X]** を選択して閉じるか、別のテンプレートを選択または作成します。  
   
-   -   [**フローを表示**する] を選択して新しいブラウザータブを開き、フロー環境内のフローが表示されている [Power 自動] サイトに移動します。  
+   -   **[フローの表示]** を選択して新しいブラウザー タブを開き、Flow 環境内のフローが表示される Power Automate のサイトにアクセスします。  
   
-   -   **[フローにログインする]** を選択して、電源自動化を使用して接続し、実行可能なフローを表示します。 これは、現在 Power の自動化にサインインしていない場合にのみ表示されます。   
+   -   **[Login to flow]\(フローにログイン\)** を選択して Power Automate に接続し、実行できるフローを表示します。 これは Power Automate に現在サインインしていない場合にのみ表示されます。   
 
-    フローの作成の詳細については、「 [Power の自動化の概要](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow)」を参照してください。  
+    フローの作成については、[Power Automate の使用開始](https://docs.microsoft.com/powerapps/maker/canvas-apps/using-logic-flows#create-a-flow)に関する記事をご覧ください  
     
  
     
