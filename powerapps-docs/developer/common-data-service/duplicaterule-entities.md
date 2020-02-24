@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7434dd58137919d81486539d1ab843ad0c4aaf1f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 428b801f1868a4b25870f4da4cf7ee52d8adc7b2
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748797"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005080"
 ---
 # <a name="duplicate-rule-entities"></a>重複ルール エンティティ
 
@@ -125,7 +125,7 @@ ms.locfileid: "2748797"
 
 ## <a name="duplicaterulecondition-special-messages"></a>DuplicateRuleCondition 特殊メッセージ
 
-[DuplicateRuleCondition](/reference/entities/duplicaterulecondition.md) は `DuplicateRule` の子エンティティです。 これらのエンティティを取得または修正するためのアクセスは、関連付けられている `DuplicateRule` に対するアクセスに依存します。 詳細については、[DuplicateRuleCondition メッセージ](/reference/entities/duplicaterulecondition.md#messages) を参照してください。
+[DuplicateRuleCondition](/reference/entities/duplicaterulecondition.md) は `DuplicateRule` の子エンティティです。 これらのエンティティを取得、修正するアクセスは、`DuplicateRule` が関連付けられているアクセスに依存します。 詳細については、[DuplicateRuleCondition メッセージ](/reference/entities/duplicaterulecondition.md#messages) を参照してください。
 
 次の特殊メッセージも使用することができます。
 

@@ -1,26 +1,49 @@
 ---
 title: よくあるご質問 | Microsoft Docs
 description: Power Apps ポータルに関してよくあるご質問。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 12/27/2019
-ms.author: shjais
-ms.reviewer: tapanm
-ms.openlocfilehash: 35f68ef861ac8908e1eb9227df6768b7a2c2c9f3
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.date: 01/17/2020
+ms.author: tapanm
+ms.reviewer: ''
+ms.openlocfilehash: bf76d2a8a3e91d9e20de9d70543af0bda4a57040
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934111"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2988084"
 ---
 # <a name="power-apps-portals-faq"></a>Power Apps ポータルに関するよくあるご質問
 
 必要な情報がすぐに手に入るように、よく寄せられる質問とその簡潔な回答を一覧にまとめました。
 
 ## <a name="general"></a>全般
+
+### <a name="what-is-the-difference-between-power-apps-portals-dynamics-365-portals-and-add-on-portals"></a>Power Apps ポータル、Dynamics 365 ポータル、アドオン ポータルとの違いは?
+
+2019 年 10 月 1 日の Power Apps ポータル発売に伴い、Dynamics 365 ポータルは Power Apps ポータルと呼ばれます。 つまり、すべてのポータルは **Power Apps ポータル** と呼ばれます。
+
+2019 年 10 月 1 日以降にポータルに導入された主要な変更の1つは、ライセンス モデルです。 以前は、ポータルは Dynamics 365 アプリのアドオンとしてライセンスされていましたが、特定の Dynamics 365 ライセンスには既定のポータルアド オンが含まれていました。 2019 年 10 月 1 日以降、ポータルは [使用方法に基づいてライセンス](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#can-you-share-more-details-regarding-the-new-power-apps-portals-licensing) されます。 既存のポータルはすべて、現在の顧客契約に基づいた移行期間の一部となり、その後、新しいライセンス モデルに移行する必要があります。
+
+[Power Apps ポータル管理センター](./admin/admin-overview.md) からポータルの種類を確認できます:
+
+![Power Apps ポータルの種類](./media/power-apps-portals-type.png)
+
+アドオン ポータルの場合、ポータルの種類に 'アドオン' という接尾辞が追加されます。 たとえば、運用アドオン ポータルの種類は '運用 (アドオン)' としてリストされます。
+
+Power Apps 容量ベースのライセンスとアドオン ベースのライセンスを持つポータルに機能的な違いはありません。 ただし、容量ベースのライセンスとアドオンベースのライセンスを持つポータルのプロビジョニング方法は異なります。
+
+次の記事で説明されている手順を使用して、容量ベースのライセンスで Power Apps ポータル作成できます:
+
+- [Common Data Service スターター ポータルの作成](create-portal.md)
+- [Dynamics 365 環境でポータルを作成](create-dynamics-portal.md)
+
+アドオン ベースのライセンスで Power Apps ポータルを作成するには、[ポータル アドオンを使用してポータルをプロビジョニング](provision-portal-add-on.md) を参照してください。
+
+アドオン ベースのライセンスと容量ベースのライセンスのライセンスの違いについては、[Power Apps ポータル ライセンスに関する FAQ](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#what-is-the-difference-between-power-apps-portals-and-dynamics-365-portals-in-terms-of-licensing) を参照してください。
 
 ### <a name="when-is-an-add-on-portal-in-suspended-state"></a>アドオン ポータルが停止状態になるのはどのような場合ですか？
 
@@ -204,6 +227,15 @@ Common Data Service 環境のの URL を変更すると、ポータルは Common
 診断ログを有効にすると、汎用エラー ページに表示されている活動 ID を使用して、ユーザーが報告する特定のエラーを検索できます。 活動 ID はエラーの詳細とともにログに記録され、実際の問題の発見に役立ちます。
 
 ## <a name="portal-administration-and-management"></a>ポータル管理および操作
+
+### <a name="do-portals-use-any-static-content-from-cdns-content-delivery-network-that-i-need-to-whitelist"></a>ポータルは、ホワイトリストに登録する必要がある CDN (コンテンツ配信ネットワーク) の静的コンテンツを使用しますか?
+
+はい。 Power Apps ポータルは、既定の JavaScript と以前ポータルアプリの一部として表示されたプレゼンテーション用の CSS ファイルを含む Azure CDN からの、すぐに使えるポータルの静的資産を使用します。 ポータルを正常に表示するには、次の CDN URLをホワイトリストに登録する必要があります。
+
+    https://content.powerapps.com/resource/powerappsportal
+
+> [!NOTE]
+> Microsoft 政府向けクラウドでホストされる Power Apps ポータルは CDN を使用しません。
 
 ### <a name="how-do-i-use-a-custom-login-provider-on-my-portal"></a>ポータルでどのようにカスタム ログイン プロバイダーを使用しますか。
 

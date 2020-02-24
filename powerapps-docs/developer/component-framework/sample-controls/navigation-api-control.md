@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 8a6db9ca3f6eb34cee3c9d45d1d9917f4b33115d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e17ad5f8e792b6759e917017a8c2b2b056727d46
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861937"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017409"
 ---
 # <a name="implementing-navigation-api-component"></a>ナビゲーション API コンポーネントの実装
 
-このサンプル コンポーネントは、Power Apps component framework ナビゲーション API の一部として利用できるなさまざまなメソッドを説明します。 このサンプルでは、表示される値と一致するナビゲーション API の各メソッドを呼び出す、一連のボタン型の入力要素を作成します。  
+このサンプル コンポーネントは、Power Apps component framework ナビゲーション API の一部として利用できるなさまざまなメソッドを説明します。 このサンプルでは、表示される値と一致するナビゲーション API の各メソッドを呼び出す、一連のボタン型の入力要素を作成します。 サンプル コンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_NavigationAPI) からダウンロードできます。
 
 > [!div class="mx-imgBorder"]
 > ![API コンポーネントのナビゲーション](../media/navigation-api-control.png "API コンポーネントのナビゲーション")

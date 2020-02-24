@@ -1,20 +1,20 @@
 ---
 title: Web ページの作成 | Microsoft Docs
 description: ポータルの Web ページを構成するための手順
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
-ms.reviewer: ''
-ms.openlocfilehash: a6affbb0d13af137ddd044a7ae4b6d2cddbf813c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.date: 01/10/2020
+ms.author: tapanm
+ms.reviewer: tapanm
+ms.openlocfilehash: ec982dded0d67719effc0c2b0b4faecc19e656b8
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862449"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979782"
 ---
 # <a name="compose-a-page"></a>ページの作成
 
@@ -197,13 +197,16 @@ Web ページで次のコンポーネントを追加できます。
 
     - **高さ**: IFrame の高さを入力します。
 
-    - **リンク**: IFrame で表示する Web サイトの URL を入力します。 セキュリティで保護されたリンクのみを入力できます。従って、必ず https:// で始まります。 既定では、<https://www.bing.com> が値として利用可能です。
+        > [!NOTE]
+        > キャンバスの IFrame を選択し、ハンドルをドラッグしてサイズを変更できます。
 
+    - **リンク**: IFrame で表示する Web サイトの URL を入力します。 セキュリティで保護されたリンクのみを入力できます。従って、必ず https:// で始まります。 既定では、<https://www.bing.com> が値として利用可能です。
+    
         > [!div class=mx-imgBorder]
         > ![iframe のプロパティ](media/iframe-props.png "IFrame のプロパティ")  
 
-    > [!NOTE]
-    > キャンバスの IFrame を選択し、ハンドルをドラッグしてサイズを変更できます。
+> [!NOTE]
+> また、 [ウェブサイトのボットを追加する](https://docs.microsoft.com/power-virtual-agents/publication-connect-bot-to-web-channels#custom-website) に記載されている手順と同様の方法で [Power Virtual Agent](https://docs.microsoft.com/power-virtual-agents/fundamentals-what-is-power-virtual-agents) ボットを IFrame に追加することもできます。
 
 ### <a name="add-form"></a>フォームの追加
 

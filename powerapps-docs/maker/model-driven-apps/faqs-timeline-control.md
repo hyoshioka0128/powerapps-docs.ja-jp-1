@@ -1,7 +1,7 @@
 ---
 title: Power Apps でタイムラインの制御 (セクション) を設定する | MicrosoftDocs
 description: Power Apps で タイムラインの制御 (セクション) を設定する
-ms.date: 12/23/2019
+ms.date: 02/03/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4851f4e5dc173f8861db0ba0b761e01f2537b0e8
-ms.sourcegitcommit: 8ba5f6b88dbd71eb3663dfeec5f0b4427c1543c0
+ms.openlocfilehash: 6556ee415f2ee3340f6e36f417a25299871c1860
+ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/27/2019
-ms.locfileid: "2924409"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3013062"
 ---
 # <a name="faqs-for-timeline-control"></a>タイム ライン 制御に関するよくある質問
 
@@ -93,6 +93,11 @@ ms.locfileid: "2924409"
 **このアクションを実行する権限がありません。システム管理者に問い合わせてください。**
 
 この問題を回避するには、コマンドバー 定義のボタンを 再表示してください。
+
+
+## <a name="why-my-users-see-different-activities-and-records-in-their-my-activities-stream-in-the-dashboard"></a>ユーザーがダッシュボードの自分の活動ストリームに、さまざまなアクティビティとレコードを表示するのはなぜですか?
+
+ダッシュボードの **自分の活動** ストリームには、特定のユーザーが所有するレコードとアクティビティが表示されます。 たとえば、ユーザー **A** は **A** が所有するレコードとアクティビティを参照し、ユーザー **B** は **B** が所有するレコードとアクティビティを参照します。
 
 ## <a name="see-also"></a>関連項目
 

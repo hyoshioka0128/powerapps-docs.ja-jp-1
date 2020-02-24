@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf9d88fbd87a00ec8770a8779b668e6802945454
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 44eaa3c701b5af17a45652459b5755fbd56e1406
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934347"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956210"
 ---
 # <a name="create-an-email-entity"></a>電子メール エンティティの作成
 
@@ -41,7 +41,7 @@ ms.locfileid: "2934347"
 
 ### <a name="setup"></a>セットアップ
 
-1. 組織の現在のバージョンをチェックします。
+組織の現在のバージョンをチェックします。
 
 ### <a name="demonstrate"></a>実際にやってみます
 

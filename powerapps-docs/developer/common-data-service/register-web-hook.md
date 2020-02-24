@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9ffdcf4e38aa735a5c7377ad9f239f4c9ab3c250
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 27bf02f8b050e9638b281f74018c9e914364fa94
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749232"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005100"
 ---
 # <a name="register-a-webhook"></a>webhook の登録
 
@@ -147,7 +147,7 @@ webhook の登録の選択は、不具合が生じた場合のデバッグのエ
 [!INCLUDE [synchronous-webhook-error](includes/synchronous-webhook-error.md)]
 
 > [!NOTE]
-> 同期モードは、webhook によってトリガーされる操作をすぐに実行することが重要である場合、または webhook のペイロードをサービスが受け取らないとトランザクション全体が失敗するようにする場合に使用します。 簡単な webhook ステップの登録では、失敗を管理するための限定的なオプションが提供されていますが、詳細な制御が必要な場合はプラグイン ワークフロー活動を使用してwebhook を呼び出すこともできます。 詳細: [プラグインまたはワークフロー活動から webhook を呼び出す](use-webhooks.md#invoke-a-webhook-from-a-plugin-or-workflow-activity)。
+> 同期モードは、Webhook によってトリガーされる操作をすぐに実行することが重要である場合、または Webhook のペイロードをサービスが受け取らないとトランザクション全体が失敗するようにする場合に使用します。 簡単な webhook ステップの登録では、失敗を管理するための限定的なオプションが提供されていますが、詳細な制御が必要な場合はプラグイン ワークフロー活動を使用してwebhook を呼び出すこともできます。 詳細: [プラグインまたはワークフロー活動から webhook を呼び出す](use-webhooks.md#invoke-a-webhook-from-a-plugin-or-workflow-activity)。
 
 ## <a name="query-steps-registered-for-a-webhook"></a>webhook に登録されたステップをクエリする
 

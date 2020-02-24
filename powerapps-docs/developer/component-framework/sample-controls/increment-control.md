@@ -8,18 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: f93574f9a994d7363129f99fec9b33d4c9ee66ad
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f5c3fe93939ae2eb37457490c45689fc967df590
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861949"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017445"
 ---
 # <a name="implementing-increment-component"></a>増分コンポーネントの実装
 
 このサンプル コンポーネントは、 Power Apps Component Framework とエラー処理を使用してデータをバインドする方法を示します。 このコンポーネントは実行時に `Increment` ボタンを持つテキストボックスとして表示します。 テキストボックスは現在の値を示し `Increment` ボタンはクリック可能です。 ボタンをクリックするたびに、テキストボックスの値は 1 ずつ増えます。 増加する値は任意の数に変更できます。
 
-このコンポーネントを実装するには、まず最初に [マニフェスト](../manifest-schema-reference/manifest.md) ファイルを定義し、TypeScript でカスタム ロジックを実装します
+このコンポーネントを実装するには、まず最初に [マニフェスト](../manifest-schema-reference/manifest.md) ファイルを定義し、TypeScript でカスタム ロジックを実装します サンプル コンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_IncrementControl) からダウンロードできます。
 
 > [!div class="mx-imgBorder"]
 > ![増分コンポーネント](../media/increment-control.png "増分コンポーネント")

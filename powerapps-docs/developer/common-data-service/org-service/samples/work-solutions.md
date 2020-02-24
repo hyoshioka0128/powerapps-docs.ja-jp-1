@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cd2ebd7516adcbf036529880b20457d064f8eeb3
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 807cd14c385fecddb03f783b9fa7acab6c535ac7
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934075"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956162"
 ---
 # <a name="sample-work-with-solutions"></a>サンプル: ソリューションに関する作業
 
@@ -60,11 +60,11 @@ ms.locfileid: "2934075"
 1. `ExportSolutionRequest` メソッドは、[セットアップ](#setup) で作成されたソリューションをエクスポートします。
 1. `DeleteSolutionRequest` メソッドは、ソリューションとコンポーネントを削除します。
 
-
 ### <a name="demonstrate"></a>使用方法
+
 1. `querySDKSamplePublisher` メソッドは、発行元がシステムに既に存在するかどうかを調べます。
 1. `querySampleSolutionResults` メソッドは、ソリューションがシステムに既に存在するかどうかを調べます。
-1. `ExportSolutionRequest` メソッドは、ソリューションをエクスポートします。 
+1. `ExportSolutionRequest` メソッドは、ソリューションをエクスポートします。
 1. `ImportSolutionRequest` メソッドは、ソリューションをインポートします。
 
 ### <a name="clean-up"></a>クリーン アップ

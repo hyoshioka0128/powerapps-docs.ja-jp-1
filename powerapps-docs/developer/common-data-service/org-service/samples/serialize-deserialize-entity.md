@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6bc85049df107821dd8cdaba0a33b1ec0f15a979
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 5e37ef6f9fb64cd8e9ed29f4a4b2a6d0adf3fa03
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934566"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956138"
 ---
 # <a name="serialize-and-deserialize-an-entity-instance"></a>エンティティ インスタンスのシリアル化および逆シリアル化 
 
@@ -29,7 +29,7 @@ ms.locfileid: "2934566"
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 
-このサンプルの実行方法については、[サンプルの実行方法](https://github.com/microsoft/PowerApps-Samples/blob/master/cds/README.md) をご覧ください。
+[!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
 
 ## <a name="what-this-sample-does"></a>このサンプルの概要
 
@@ -52,4 +52,3 @@ ms.locfileid: "2934566"
 ### <a name="clean-up"></a>クリーンアップ
 
 [セットアップ](#setup) で作成されたレコードを削除するオプションを表示します。 サンプルで作成されるエンティティおよびデータを検証する場合、削除は任意です。 手動でレコードを削除することで同じ結果を得られます。
-

@@ -1,5 +1,5 @@
 ---
-title: 'サンプル: 件数の拡大対象に対する会計期間の目標の合計のロールアップ (Common Data Service) | Microsoft Docs'
+title: 'サンプル: 件数の拡大対象に対する会計期間の目標データのロールアップ (Common Data Service) | Microsoft Docs'
 description: このサンプルでは、件数の拡大対象に対する会計期間の目標データのロールアップ方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a363f45d2e71b993557e8f940f6888143add8e2c
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: a99f10644768cf5d9f7cba07460b673c3e198786
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934179"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956150"
 ---
 # <a name="sample-rollup-goal-data-for-a-fiscal-period-against-the-stretch-target-count"></a>サンプル: 件数の拡大対象に対する会計期間の目標データのロールアップ
 

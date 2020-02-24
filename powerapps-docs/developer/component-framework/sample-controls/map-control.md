@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 9901f69f1d3ecbcfc1c53d3bd2a6d25fbdaf7569
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a304ace5ed62bf831aafb2ae41d4e615213c84a6
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861941"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017414"
 ---
 # <a name="implementing-map-component"></a>マップ コンポーネントの実装
 
-このサンプル コンポーネントは、フォームの住所フィールドを操作する際のユーザー エクスペリエンスを変更します。 住所のテキスト値とともに、このコンポーネントは別のタブや画面に移動せずに地図上で特定の住所を視覚的に識別する機能を提供します。 
+このサンプル コンポーネントは、フォームの住所フィールドを操作する際のユーザー エクスペリエンスを変更します。 住所のテキスト値とともに、このコンポーネントは別のタブや画面に移動せずに地図上で特定の住所を視覚的に識別する機能を提供します。 サンプル コンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_MapControl) からダウンロードできます。
 
 > [!div class="mx-imgBorder"]
 > ![コンポーネントのマップ](../media/map-control.png "コンポーネントのマップ")

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cbd3da97fcf4e2f8d21f5475221eb39455c09050
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fed9bc722c09b157dfd1f62b6ea27d2603bcc969
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749082"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005090"
 ---
 # <a name="api-considerations-of-virtual-entities"></a>仮想エンティティの API に関する考慮事項
 
@@ -72,7 +72,7 @@ Common Data Service は、仮想エンティティ データ プロバイダー�
 |<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.ExternalName>|外部データ ソースの種類の名前|
 |<xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.IsDataSourceSecret>|このフィールドに機密情報を含んでいるかどうかを示します|
 
-`ExternalName` プロパティも、<xref:Microsoft.Xrm.Sdk.Metadata.OptionMetadata> および <xref:Microsoft.Xrm.Sdk.Metadata.OptionSetMetadata> クラスに追加されました。 これらの外部の名前は、外部データソース内の関連する種類の名前を指定することによって、外部データソースのマッピングを支援します。 これらのプロパティは仮想エンティティでのみ使用されます。組み込みまたは標準のユーザー定義にエンティティの種類の場合、これらの外部名は `null` でなければなりません。
+`ExternalName` プロパティも、<xref:Microsoft.Xrm.Sdk.Metadata.OptionMetadata> および <xref:Microsoft.Xrm.Sdk.Metadata.OptionSetMetadata> クラスに追加されました。 これらの外部名称は、外部データソース内の関連する種類の名前を指定することで、外部データソースのマッピングを補助します。 これらのプロパティは仮想エンティティでのみ使用されます。組み込みまたは標準のユーザー定義にエンティティの種類の場合、これらの外部名は `null` でなければなりません。
 
 
 ### <a name="virtual-entity-creation"></a>仮想エンティティの作成

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a2e1bea56c0fa13a3a0d1d5c1bf7c2e55caf791f
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 578cb901780699dd7141567bdeeda72221da86e5
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934573"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956242"
 ---
 # <a name="assign-a-record-to-a-team"></a>チームへのレコードの割り当て
 
@@ -30,6 +30,7 @@ ms.locfileid: "2934573"
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 
 [!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
+
 ## <a name="what-this-sample-does"></a>このサンプルの概要
 
 [AssignRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.assignrequest?view=dynamics-general-ce-9) メッセージは、レコードの OwnerId 属性を変更して、指定されたレコードを新たな所有者（ユーザーまたはチーム）に割り当てる際に必要となるデータを含むシナリオで使用することを目的としています。

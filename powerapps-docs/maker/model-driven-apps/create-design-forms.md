@@ -1,7 +1,7 @@
 ---
 title: モデル駆動型アプリ フォームを作成および設計する | MicrosoftDocs
 ms.custom: ''
-ms.date: 12/06/2018
+ms.date: 01/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d052e981d80578a2db844f3e8ff3f70ff0c07c2c
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 2e64771257519bded104aa49bde84ac993e1b361
+ms.sourcegitcommit: 60a721432b3fa2abd14ccb3bd16a6b34e13ada85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884918"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3026430"
 ---
 # <a name="create-and-design-model-driven-app-forms"></a>モデル駆動型アプリ フォームを作成および設計する 
 
@@ -42,6 +42,8 @@ Power Apps では、フォームは、ユーザーが各自の作業を遂行す
 ## <a name="type-of-forms"></a>フォームの種類
 様々なフォームの種類があり、種類ごとに固有の機能または使用法があります。 詳細情報: [Power Appsにおけるフォームの種類](types-forms.md)  
 
+## <a name="main-form-dialogs-preview"></a>メイン フォーム ダイアログ (プレビュー)
+クライアントAPIを使用すると、メイン フォーム ダイアログを使用して、フォームから移動せずに親フォームまたはベース フォーム上の関連レコード エンティティを開くことができます。 詳しくは：[ダイアログでクライアント API を使用してメイン フォームを開く](../../developer/model-driven-apps/customize-entity-forms.md#open-main-form-in-a-dialog-using-client-api) を参照してください 
   
 <a name="BKMK_FormDifferencesByEntity"></a>   
 ## <a name="updated-versus-classic-entities"></a>標準エンティティに対して更新済み  
@@ -57,6 +59,7 @@ Power Apps には、フォームを設計するためのオプションが数多
 |価格表 |キュー アイテム |見積もり製品|ロールアップ フィールド|ロールアップ クエリ|  
 |保存されているビュー|サービス|サービス活動|SharePoint サイト|サービス拠点|  
 |担当地域|出荷単位|出荷単位一覧|||  
+
   
 ## <a name="form-display-faq"></a>フォーム表示のFAQ
 

@@ -9,16 +9,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: grhurl
 ms.reviewer: nkrb
-ms.openlocfilehash: 7fdade7a1476c05214483eaa9b766c9c709fc9cf
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6c9b0cffa65d4a43adb7dc2db81ac6f13e12c151
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861933"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017399"
 ---
 # <a name="implementing-the-facepile-component"></a>フェイスパイル コンポーネントの実装
 
-このサンプルは、Power Apps component framework を利用してコンポーネントを作成するリアクトの使用方法を示します。  フェイスパイル サンプルコンポーネントは、リアクトと Office UI Fabric リアクト コンポーネントに基づいて実装されます。 このコードは、言及したサードパーティ製ライブラリのベスト プラクティスを明らかにしない場合があります。
+このサンプルは、Power Apps component framework を利用してコンポーネントを作成するリアクトの使用方法を示します。  フェイスパイル サンプルコンポーネントは、リアクトと Office UI Fabric リアクト コンポーネントに基づいて実装されます。 このコードは、言及したサードパーティ製ライブラリのベスト プラクティスを明らかにしない場合があります。 サンプル コンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_ReactStandardControl) からダウンロードできます。
 
 > [!div class="mx-imgBorder"]
 > ![応答 Facepile](../media/react-facepile.png "応答 Facepile")

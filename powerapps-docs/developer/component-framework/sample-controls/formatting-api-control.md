@@ -11,16 +11,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3b875f06-0fd9-49fa-bc34-939d00e17185
-ms.openlocfilehash: 9b19028b8daa24d9a76692baf59121e6089b46f0
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bc22e8dd153396d4cbcac8715c0b04c49b246ac5
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861965"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017440"
 ---
 # <a name="implementing-formatting-api-component"></a>書式設定 API コンポーネントの実装
 
-このサンプル コンポーネントは、Power Apps Component Framework の書式設定 API の一部として利用できるなさまざまなメソッドを説明します。 このサンプルでは、表示された値と一致する書式設定 API のそれぞれのメソッドを呼び出す一連の入力要素を作成します。
+このサンプル コンポーネントは、Power Apps Component Framework の書式設定 API の一部として利用できるなさまざまなメソッドを説明します。 このサンプルでは、表示された値と一致する書式設定 API のそれぞれのメソッドを呼び出す一連の入力要素を作成します。 サンプル コンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_FormattingAPI) からダウンロードできます。
 
 > [!div class="mx-imgBorder"]
 > ![API コンポーネントの書式設定](../media/formatting-api.png "API コンポーネントの書式設定")

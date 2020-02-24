@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c917314137580ffee9d70f702c87bfb265a55810
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 25ea1db66e61d3e0b03090a0a91f35bd90d7b649
+ms.sourcegitcommit: b746aad895b152259680f5179dcee0281c951d0a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872962"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "2948837"
 ---
 # <a name="create-a-solution"></a>ソリューションの作成
 
@@ -43,7 +43,7 @@ ms.locfileid: "2872962"
     |-----------|-----------------|  
     |**表示名**|ソリューションの一覧に表示される名前。 これは後で変更できます。|  
     |**名前**|ソリューションの一意の名前。 これは、表示名フィールドに入力した値を使用して作成されます。 ソリューションを保存する前に編集できますが、保存後は変更できません。|  
-    |**発行元**|既定の発行者を選択するか、または新しい発行元を作成できます。 ソリューションの配布を計画していない場合、組織の既定の発行者を使用する必要があります。|  
+    |**発行元**|既定の発行者を選択するか、または新しい発行元を作成できます。 ソリューションをご利用の環境全体で安定して使用をするあたって、組織のパブリッシャーを作成することを推奨します。 詳細については次を参照してください: [ソリューション発行者の接頭辞を変更する](change-solution-publisher-prefix.md#change-the-solution-publisher-prefix-for-any-publisher) |  
     |**バージョン**|ソリューションのバージョン番号を入力します。 これは、ソリューションをエクスポートする場合にのみ重要です。 バージョン番号は、ソリューションをエクスポートしたときにファイル名に含まれます。|  
   
 3.  **保存**を選びます。  

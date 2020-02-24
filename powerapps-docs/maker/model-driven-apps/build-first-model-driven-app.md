@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2a1e27dea75ba2e15ee7b96be2b7597430f89cba
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 04c083624b8f9d971698c97d133cdd209a8a6e5c
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885050"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004935"
 ---
 # <a name="build-your-first-model-driven-app-from-scratch"></a>モデル駆動型アプリを最初から作成する
 モデル駆動型アプリの設計は、アプリ開発へのコンポーネントを重視した手法です。 このトピックでは、Power Apps 環境で使える標準エンティティの 1 つを使用してモデル駆動型アプリを作成する方法を簡略化します。
@@ -45,7 +45,7 @@ ms.locfileid: "2885050"
 
 3.  **新しいアプリの作成** ページで、以下の情報を入力し、**完了** を選択します。 
   - **名前**: *最初のアプリ* などアプリの名前を入力します。 
-  - **一意の名前**: 既定では発行者の接頭辞とアンダースコア (_) に続けて **名前** ボックスで指定した名前にスペースを入れない一意の名前を使用します。 例えば *crecf_Myfirstapp*。 詳細: [ソリューション発行者の接頭辞を変更する](../common-data-service/change-solution-publisher-prefix.md)
+  - **一意の名前**: 既定では、一意の名前は、 **名前** ボックスで指定した名前をスペースなしで使用し、その前に公開元の接頭辞とアンダースコア(_)を付けます。 例えば *crecf_Myfirstapp*。 詳細: [ソリューション発行者の接頭辞を変更する](../common-data-service/change-solution-publisher-prefix.md)
   - **説明**: *これは最初のアプリです* など、アプリに関する簡単な説明を入力します。
 追加のアプリのプロパティについては、「[アプリの作成](create-edit-app.md#create-an-app)」を参照してください。
 

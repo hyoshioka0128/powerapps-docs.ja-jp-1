@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2d59aa35a81ed776f712b55e7f7179087dfaf061
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: fe900da6db667d4ffb5ceffc61430b7acab9befe
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934239"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956174"
 ---
 # <a name="sample-reschedule-and-cancel-a-recurring-appointment"></a>サンプル: 定期的な予定の再スケジュールおよび取り消し
 
@@ -49,8 +49,8 @@ ms.locfileid: "2934239"
 ### <a name="demonstrate"></a>使用方法
 
 1. `QueryExpression` メッセージは、今日から 10 日後以降の個々の予定インスタンスを照会します。 基本的には、これは定期的な予定シリーズの 2 番目のインスタンスです。
-3. `RescheduleRequest` メッセージは、予定のスケジュールの開始日と終了日を更新します。
-4. `SetStateRequest` メッセージは、予定の最後のインスタンスを取り消します。 この予定インスタンスの状態は `canceled` に設定されます。 `All Activities` ビューでこの予定インスタンスを表示できます。
+2. `RescheduleRequest` メッセージは、予定のスケジュールの開始日と終了日を更新します。
+3. `SetStateRequest` メッセージは、予定の最後のインスタンスを取り消します。 この予定インスタンスの状態は `canceled` に設定されます。 `All Activities` ビューでこの予定インスタンスを表示できます。
 
 ### <a name="clean-up"></a>クリーン アップ
 

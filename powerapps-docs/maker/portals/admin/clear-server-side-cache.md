@@ -1,20 +1,20 @@
 ---
 title: ポータルのサーバー側キャッシュをクリアする | MicrosoftDocs
 description: ポータルで強制的にキャッシュを更新させる指示。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 8351ca8d3befec80a9e97da03ca62980383b01b1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ab1e3a278127105b338893bbbc989774756d3fca
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2709896"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978286"
 ---
 # <a name="clear-the-server-side-cache-for-a-portal"></a>ポータルのサーバー側キャッシュをクリアにします
 

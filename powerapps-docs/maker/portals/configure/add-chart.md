@@ -1,20 +1,20 @@
 ---
 title: ポータルのウェブページへのチャートを追加 | MicrosoftDocs
 description: モデル駆動型のアプリで作成したチャートをポータルのウェブページに追加するための手順。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
-ms.author: shjais
+ms.date: 01/29/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 3cc2e390b988689e9a21317d80aa7d94d2ea9e6d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 3d9a2ec3ef4e2589c51717629213dfe73d3418eb
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760641"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012580"
 ---
 # <a name="add-a-chart-created-in-a-model-driven-app-to-a-webpage-in-portal"></a>モデル駆動型のアプリで作成したチャートをポータルの Web ページに追加する
 
@@ -52,21 +52,20 @@ ms.locfileid: "2760641"
 
 ビュー ID を流動チャート タグで使用するには、ビュー エディターを開ける必要があります。
  
-1.  ターゲット エンティティへ移動します。例えば、**セールス** > **潜在**。
-2.  ドロップ ダウン ヘッダーのビューから、あなたが望むビューを選択します。
-3.  ツールバーから、**ビュー**を選択します。 ビュー ウィンドウが開きます。
+1. make.powerapps.com に移動し、適切な環境を選択します。
+1. 左側のナビゲーション バーで、[データ > エンティティ] を選択します。
+1. 適切なエンティティを選択し、[表示] タブに移動します。
+1. ビューのリストを確認することができます。 オプション（...）に移動し、[ビューの編集] を選択します。
+1. ビュー ウィンドウの アドレス バー から、id 値をコピーします。
 
-    ![ビュー エディタで潜在顧客を表示する](../media/dynamics365-chart-view.png "ビュー エディタで潜在顧客を表示する")
+    ![フォームの ID を確認する](../media/dynamics365-chart-viewid.png)
 
-4. ビュー ウィンドウの URL から、**id** 値をコピーします。
+1. パラメーターに対して流動チャート タグ申告に、この ID を貼り付けます。次に例を表示します。
 
-    ![ビュー エディタからビュー ID を取得](../media/dynamics365-chart-viewid.png "ビュー エディタからビュー ID を取得する")
-
-5. パラメーターに対して流動チャート タグ申告に、この ID を貼り付けます。次に例を表示します。
-
+    ```
     <!—Leads by Source – Open Leads -->
-
-    {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001006" %}
+    {% chart id:"EE3C733D-5693-DE11-97D4-00155DA3B01E" viewid:"00000000-0000-0000-00AA-000010001004" %}
+    ```
 
 ## <a name="entity-permission-requirement"></a>エンティティ アクセス許可の要件
 

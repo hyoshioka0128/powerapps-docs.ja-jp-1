@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6d1bc234c4587a5fe1074245e17f44c962f7f710
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 7d4e3f2de06a2ba946d3548d67072149ab5b7d6a
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934407"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956238"
 ---
 # <a name="sample-bulk-delete-records-that-match-common-criteria"></a>サンプル: 共通の条件に合致するレコードを一括して削除する
 
@@ -44,9 +44,9 @@ ms.locfileid: "2934407"
 1. 組織の現在のバージョンをチェックします。
 2. サンプルの取引先企業レコードを作成します。
 3. 一括削除の操作が完了した後に、システム ユーザーの電子メールの送信先のクエリ。
-3. `BulkDeleteRequest` では一括削除プロセスを作成し、要求プロパティを設定します。
-4. `InspectBulkDeleteOperation`メソッドでは、作成された `BulkDeleteOperation` に関する情報を確認および表示します。
-5. `RetrieveBulkDeleteOperation` メソッドは、`BulkDeleteOperation` を取得します。
+4. `BulkDeleteRequest` では一括削除プロセスを作成し、要求プロパティを設定します。
+5. `InspectBulkDeleteOperation`メソッドでは、作成された `BulkDeleteOperation` に関する情報を確認および表示します。
+6. `RetrieveBulkDeleteOperation` メソッドは、`BulkDeleteOperation` を取得します。
 
 ### <a name="demonstrate"></a>使用方法
 

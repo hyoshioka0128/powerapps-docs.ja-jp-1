@@ -2,7 +2,7 @@
 title: ユーザー アクセスの監査 (Common Data Service) | Microsoft Docs
 description: ユーザー ID、アクセス時間、およびクライアントの種類を含むユーザー アクセスの監査機能のサポート。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 01/27/2019
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c0cf65855d669934db614b83c525055a337d90de
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3f13813b0f6e6c5cde945e5a2b8fcdf1590a62db
+ms.sourcegitcommit: 5bfd0448f1d5ca3d938e3bd928d1dd3d4042afff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748830"
+ms.lasthandoff: 01/28/2020
+ms.locfileid: "2992804"
 ---
 # <a name="audit-user-access"></a>ユーザー アクセスの監査
 
@@ -43,10 +43,10 @@ Common Data Service は、ユーザー アクセスの監査機能をサポー�
   
 -   `AuditAction.UserAccessAuditStopped`  
   
- `UserAccessviaWeb` は、Common Data Service Web アプリケーションまたは Dynamics 365 for Outlook からのアクセスを示します。 `UserAccessviaWebServices` は SDK からの Web サービス要求を示します。 `AuditAction` 列挙体は、アプリケーションのプロジェクトに `OptionSets.cs` または `OptionSets.vb` を含めた場合に、コードで使用可能です。  
+ `UserAccessviaWeb` は、Common Data Service Web アプリケーションまたは Dynamics 365 for Outlook からのアクセスを示します。 `UserAccessviaWebServices` は SDK からの Web サービス要求を示します。 `AuditAction` の列挙は、アプリケーションのプロジェクトに `OptionSets.cs` 含めることで、コードで使用できるようになります。  
   
 ### <a name="see-also"></a>関連項目  
- [Dynamics 365 においてエンティティ データの変更を監査する](/dynamics365/customer-engagement/developer/audit-entity-data-changes)   
- [監査のエンティティおよび属性の構成](/dynamics365/customer-engagement/developer/configure-entities-attributes-auditing)     
- [サンプル: エンティティのデータ変更を監査する](/dynamics365/customer-engagement/developer/sample-audit-entity-data-changes)   
- [サンプル: ユーザー アクセスの監査](/dynamics365/customer-engagement/developer/sample-audit-user-access)
+ [データ変更を監査する](/powerapps/developer/common-data-service/auditing-overview)   
+ [監査のエンティティおよび属性の構成](/powerapps/developer/common-data-service/configure-entities-attributes-auditing)     
+ [サンプル: エンティティのデータ変更を監査する](/powerapps/developer/common-data-service/org-service/samples/audit-entity-data-changes)   
+ [サンプル: ユーザー アクセスの監査](/powerapps/developer/common-data-service/org-service/samples/audit-user-access)

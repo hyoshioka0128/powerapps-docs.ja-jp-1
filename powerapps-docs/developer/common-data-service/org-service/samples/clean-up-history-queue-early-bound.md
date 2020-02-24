@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 44455de71df45c02bd22620c9252421a4a68ca89
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 07e6849d7888550338206fd76fec174a0d25fade
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934403"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956222"
 ---
 # <a name="sample-clean-up-history-for-a-queue"></a>サンプル: キューの履歴のクリーンアップ
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-clean-up-history-queue-early-bound -->
 
- このサンプルは、非アクティブなアイテムに対して [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) を使用することで、キューの履歴をクリーンアップする方法を示します。 このコードは、キュー内の完了した通話を検索し、関連するキュー アイテムを削除します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CleanHistoryQueue) からダウンロードできます。
+このサンプルは、非アクティブなアイテムに対して [RemoveFromQueueRequest](https://docs.microsoft.com/dotnet/api/microsoft.crm.sdk.messages.removefromqueuerequest?view=dynamics-general-ce-9) を使用することで、キューの履歴をクリーンアップする方法を示します。 このコードは、キュー内の完了した通話を検索し、関連するキュー アイテムを削除します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CleanHistoryQueue) からダウンロードできます。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 

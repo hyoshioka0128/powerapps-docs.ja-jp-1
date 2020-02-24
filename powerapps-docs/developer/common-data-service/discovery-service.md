@@ -1,37 +1,39 @@
 ---
 title: 検出サービス (Common Data Service) | Microsoft Docs
-description: Common Data Service 検出サービスは Web API または組織サービスによってアクセスできます。
+description: ビジネス組織インスタンスの詳細を検出する、検出サービスへのアクセスについて説明します。
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 1/16/2019
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
 ms.author: jdaly
-manager: ryjones
+manager: kvivek
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 04a51ec1ed0299707e646e3425059ea18adf8727
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 13101c6ccb3b726de1707b4595ab1962ad357189
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748800"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975738"
 ---
-# <a name="discovery-services"></a>探出サービス
+# <a name="discovery-service"></a>探索サービス
 
 [!INCLUDE [cc-discovery-service-description](includes/cc-discovery-service-description.md)]
 
+検出サービスへは、2つの異なるAPIを介してアクセスします。
 
-Discovery サービスは Web API または組織サービスによってアクセスできます。
+- OData V4 RESTful API については：[組織のURLを検出する](webapi/discover-url-organization-web-api.md)を参照してください
+- 2011 (SOAP) エンドポイントで利用可能なディスカバリ API については：[Microsoft.Xrm.Sdk.Discovery 名前空間で検出サービスを使用する](org-service/discovery-service.md)を参照してください
 
-- Web API について: [Web API を使用して組織の URL を検出](webapi/discover-url-organization-web-api.md)
-- 組織サービスについて: [Microsoft.Xrm.Sdk.Discovery NameSpace で検出サービスを使用](org-service/discovery-service.md)
+> [!NOTE]
+> *地域* の検出サービスは廃止されました。 詳細については、 [重要な変更 (非推奨) ](/power-platform/important-changes-coming.md)を参照してください。
 
 ### <a name="see-also"></a>関連項目
 
 [ Common Data Service Web API を使用する](webapi/overview.md)<br />
-[Common Data Service 組織サービスの使用](org-service/overview.md)
+[コードを変更してグローバル検出サービスを使用する](webapi/discovery-orgsdk-to-webapi.md)

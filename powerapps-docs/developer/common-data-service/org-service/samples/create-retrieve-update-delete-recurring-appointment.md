@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7dd9cfec4eff14c8d5575be6c5c2279958242ecb
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 08789d9be9b093428733ab13424a75e307504bdd
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934353"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005058"
 ---
 # <a name="sample-create-retrieve-update-and-delete-a-recurring-appointment"></a>サンプル: 定期的な予定を作成、取得、更新、および削除する
 
@@ -53,7 +53,7 @@ ms.locfileid: "2934353"
 1. 可能な定期的パターン値、可能な曜日の値および定期的ルール パターンの終了型の値を定義する匿名型を定義します。 
 1. `RecurringAppointmentMaster` メソッドでは、定期的な予定を作成します。
 1. `QueryExpression` メソッドでは、新しく作成された定期的な予定を取得します。
-1. `Update` メソッドでは、取得された定期的な予定に対する件名、 発生回数を 5 に、予定の間隔を 2 に更新します。
+1. `Update` メソッドでは、取得された定期的な予定に対する件名の更新、発生回数を 5 に予定の間隔を 2 に更新します。
 
 
 ### <a name="clean-up"></a>クリーン アップ

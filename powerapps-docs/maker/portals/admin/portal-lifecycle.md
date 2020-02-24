@@ -1,20 +1,20 @@
 ---
 title: Power Apps ポータルのライフサイクルについて | MicrosoftDocs
 description: Power Apps ポータルのライフサイクルおよびそれを試用版から運用に変換することに関する情報。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/26/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 26e02d2b8c8a8d47ed41727e13150875bfa307a4
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: c7c330b8f7bda2b7c08c2c0ec94202e20670ed17
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934519"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978770"
 ---
 # <a name="about-portal-lifecycle"></a>ポータルのライフサイクルについて
 

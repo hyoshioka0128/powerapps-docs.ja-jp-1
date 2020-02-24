@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 51f75af11ca276d96611fcaef29cc65db72e4c7c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0223157f7b37218f36c7eab969d6ec70cf98add5
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861784"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005043"
 ---
 <!-- This topic was not migrated it was written for Power Apps 
 Was Mike Carter
@@ -232,7 +232,7 @@ Common Data Service では、システムによって作成された属性に対
 
 #### <a name="use-the-web-api-to-retrieve-options"></a>Web API を使用してオプションを取得する
 
-Web API は、オプション値を照会するための RESTful スタイルを提供します。 エンティティ内の属性を取得することによって、ローカル オプションまたはグローバル オプションを取得できます。 次の例では、[Account](reference/entities/account.md).[AccountCategoryCode property](reference/entities/account.md#BKMK_AccountCategoryCode)に含まれるオプションの [OptionSetMetadata](/dynamics365/customer-engagement/web-api/optionsetmetadata) を返します。
+Web API は、オプション値を照会するための RESTful スタイルを提供します。 エンティティ内の属性を取得することによって、ローカル オプションまたはグローバル オプションを取得することができます。 次の例では、[Account](reference/entities/account.md).[AccountCategoryCode property](reference/entities/account.md#BKMK_AccountCategoryCode)に含まれるオプションの [OptionSetMetadata](/dynamics365/customer-engagement/web-api/optionsetmetadata) を返します。
 
 `GET <organization url>/api/data/v9.0/EntityDefinitions(LogicalName='account')/Attributes(LogicalName='accountcategorycode')/Microsoft.Dynamics.CRM.PicklistAttributeMetadata?$select=LogicalName&$expand=OptionSet`
 

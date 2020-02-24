@@ -1,26 +1,34 @@
 ---
 title: ポータル内で OAuth 2.0 暗黙的許可フローを使用する | MicrosoftDocs
 description: クライアント側で外部 API を呼び出す方法と、あなたのポータルで OAuth の暗黙的な許可フローを使用することでそれらを保護する方法を説明します。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
+ms.date: 01/24/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 9c4ea4e34dacf70a9bb51c28c5761700904a3053
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: a69d77122a6beb657a322da156e3cf895b5bec36
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862193"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2988039"
 ---
 # <a name="use-oauth-20-implicit-grant-flow-within-your-portal"></a>ポータル内で OAuth 2.0 の暗黙的な許可フローを使用する 
 
 この機能により、顧客はクライアント側で外部 API を呼び出して、OAuth の暗黙的な許可フローを使用してそれらを保護できます。 これは、OAuth 2.0 の暗黙的な許可フローに従った承認で外部 API によって使用される、ユーザー ID 情報を含む安全なアクセス トークンを取得するためのエンドポイントを提供します。 サインインしたユーザーの ID 情報は、安全な方法で外部 AJAX 呼び出しに渡されます。 これは開発者が認証コンテキストを渡すのに役立つだけでなく、このメカニズムを使うことでユーザーが API を安全にするのを助けます。
 
 OAuth 2.0 の暗黙的な許可フローは、クライアントが ID トークンを取得するために呼び出せるエンドポイントをサポートします。 この目的で使用されるふたつのエンドポイント: [承認](#authorize-endpoint-details) と [トークン](#token-endpoint-details)。
+
+> [!NOTE]
+> Power Appsポータルは、次の OpenIdConnect フローと応答の種類をサポートしています:
+>
+> - 応答の種類 *id_token* または *id_token トークン* を持つ **暗黙的フロー**。
+> - 応答の種類 *コード id_token* を持つ **ハイブリッド フロー**。
+>
+> 応答の種類 *コード* を持つ **認証コード フロー** は **サポートされていません**。 詳細については、認証の [OpenID 接続](https://openid.net/specs/openid-connect-core-1_0.html#Authentication) ドキュメントを参照してください。
 
 ## <a name="authorize-endpoint-details"></a>エンドポイントの詳細を承認する 
 

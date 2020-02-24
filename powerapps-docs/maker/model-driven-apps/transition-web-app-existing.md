@@ -1,6 +1,6 @@
 ---
 title: 'クイックスタート: 既存の環境を使用して、統合インターフェイスで旧式のWebクライアント アプリケーションを検証する | MicrosoftDocs'
-description: 旧式のWebクライアントから統合インターフェイスへの移行を計画し、実行する方法を説明します。
+description: 旧式の Web クライアントから統合インターフェイスへの移行を計画し、実行する方法を説明します。
 ms.custom: ''
 ms.date: 09/11/2019
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 75175b34b158be75165c6bcdae5826060fb47f38
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4c0b7f3e477990accf3b92e9e3964fc2751deb19
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884368"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005176"
 ---
 # <a name="quick-start-for-using-an-existing-environment-to-validate-your-legacy-web-client-app-with-the-unified-interface"></a>クイックスタート: 既存の環境を使用して、統合インターフェイスで旧式のWebクライアント アプリケーションを検証する
 このクイックスタート トピックでは、既存の環境を使用して現在の構成あるいは既定のソリューションに基づいた、統合インターフェイス アプリケーションを作成する方法について説明します。 これにより、既存の旧式のWebクライアントアプリケーションを並行稼働しながら、統合インターフェイスを調査、テストすることができます。 これにより、ユーザーは環境を切り替えて並列のビューを表示することができます。 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 67639deb67353d58ec3230599a765bc2162fa545
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 327b098e87a8cf3c16f61215b977a6058c63e16b
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934215"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005105"
 ---
 # <a name="sample-retrieve-field-sharing-records"></a>サンプル: フィールド共有レコードの取得
 

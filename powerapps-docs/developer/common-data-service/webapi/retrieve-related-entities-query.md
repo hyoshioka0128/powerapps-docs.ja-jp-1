@@ -2,7 +2,7 @@
 title: クエリで関連エンティティ レコードを取得する (Common Data Service)| Microsoft Docs
 description: ナビゲーション プロパティの拡張によって関連エンティティを取得できる方法についてお読みください。
 ms.custom: ''
-ms.date: 07/15/2019
+ms.date: 01/08/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1119734dd8d61aacdbb3dc553b65c12b4d6c20a9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9c91d3c0b4bf3eed9757f75c763519eab73b08c3
+ms.sourcegitcommit: 5e23beed96cc14efae9ff264405956d59fae1e7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749189"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2944992"
 ---
 # <a name="retrieve-related-entity-records-with-a-query"></a>クエリで関連エンティティを取得する
 
@@ -37,7 +37,9 @@ ms.locfileid: "2749189"
 ナビゲーション プロパティ名のみを含める場合、関連レコードのすべてのプロパティが表示されます。 ナビゲーション プロパティ名の後にかっこで示される、`$select` システム クエリ オプションを使用して、関連レコードに対して返されるプロパティを制限できます。 これは、単一値とコレクション値のナビゲーション プロパティの両方で使用します。  
 
 > [!NOTE]
->  エンティティ インスタンスの関連エンティティを取得するには、「[ナビゲーション プロパティの拡張による関連エンティティの取得](retrieve-entity-using-web-api.md#bkmk_expandRelated)」を参照してください。  
+>  - エンティティ インスタンスの関連エンティティを取得するには、「[ナビゲーション プロパティの拡張による関連エンティティの取得](retrieve-entity-using-web-api.md#bkmk_expandRelated)」を参照してください。 
+> - コレクション値ナビゲーション プロパティを展開するクエリは、最新の変更を反映しないそれらのプロパティのキャッシュされたデータを返す場合があります。 ブラウザのキャッシュを上書きするには、`If-None-Match` ヘッダーと値 `null` を使用することをお勧めします。 詳細については、「[HTTP ヘッダー](compose-http-requests-handle-errors.md#bkmk_headers)」を参照してください。
+> 
 
 <a bkmk="bkmk_retrieverelatedentityexpandsinglenavprop"></a>
 

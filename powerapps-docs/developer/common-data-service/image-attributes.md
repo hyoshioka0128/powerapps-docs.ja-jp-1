@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6f18141c5937d5ca46013e8865c9fb50bc2a6f5b
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f05345c50f5f1e907f17147a9006ca9eed29c09d
+ms.sourcegitcommit: 1c4ab1859febccf79a835bd2f168e7e12a953a18
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752971"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "2957601"
 ---
 # <a name="image-attributes"></a>イメージ属性
 
@@ -262,8 +262,7 @@ byte[]
 上記要求では、データの次のブロックがアップロードがされます。 すべてのイメージ データが、Web サービスによって受け取られた後、サムネイル イメージが Web サービスによって自動的に作成されます。
 
 ### <a name="see-also"></a>関連項目  
-[サンプル: エンティティ イメージを設定および取得する](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
 [ファイル属性](file-attributes.md)  
 [Dynamics 365 のエンティティの概要](/dynamics365/customer-engagement/developer/introduction-entities)   
- [Dynamics 365 のエンティティ属性の概要](/dynamics365/customer-engagement/developer/introduction-entity-attributes)   
- [サンプル: エンティティ イメージを設定および取得する](/dynamics365/customer-engagement/developer/sample-set-retrieve-entity-images)
+[Dynamics 365 のエンティティ属性の概要](/dynamics365/customer-engagement/developer/introduction-entity-attributes)   
+[サンプル: エンティティ イメージを設定および取得する](/dynamics365/customerengagement/on-premises/developer/sample-set-retrieve-entity-images)

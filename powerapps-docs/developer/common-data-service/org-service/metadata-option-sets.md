@@ -14,19 +14,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 91d619ad798c8911c50c5397eab093ae23f297b4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1b7bec1539b2b3e45df4465cc28fa9a9ba7eb357
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748970"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017384"
 ---
 # <a name="customize-option-sets"></a>オプション セットのカスタマイズ
 
 通常、*グローバル* オプション セットでフィールドを設定するのは、さまざまなフィールドを同じオプション セットで共有して、それらを 1 つの場所でメンテナンスできるようにするためです。 特定の属性に対してのみ定義される*ローカル* オプション セットとは異なり、グローバル オプション セットは再利用できます。 要求パラメーターの中で列挙体のときと同じように使われる例もあります。  
   
 <xref:Microsoft.Xrm.Sdk.Messages.CreateOptionSetRequest> でグローバル オプション セットを設定するときは、値の設定をシステムに任せることをお勧めします。 具体的には新規の `OptionMetadata` インスタンスを作成するとき、引数として **null** 値を渡します。 オプションを変更すると、そのオプション セットが作成されたソリューションに設定されている発行者のコンテキストに固有の接頭辞がオプション値に含められます。 この接頭辞は、マネージド ソリューションや、マネージド ソリューションのインストール先の組織で定義されている任意のオプション セットの中で、オプション セットの重複が生じる可能性を減らす効果があります。 詳細については、[オプション セット オプションのマージ](../understand-managed-solutions-merged.md#merge-option-set-options) を参照してください。  
- 
+
+サンプルは [ここ](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/WorkWithOptionSets) からダウンロードできます。
+
 ## <a name="messages-request-classes"></a>メッセージ要求クラス  
 
 次のメッセージ要求クラスを使って、グローバル オプション セットを操作します。

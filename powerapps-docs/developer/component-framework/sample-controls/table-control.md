@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: a37efda1dd6593f30e90ade7e11f7e762d67b932
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f20285b882e3505a1464f7801b8808eef5a08f7c
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861929"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017404"
 ---
 # <a name="implementing-table-component"></a>テーブル コンポーネントの実装
 
-このサンプル コンポーネントは 2 列のテーブルを表示します。 左側の列は API メソッドやプロパティの名前を示し、右側の列は API によって返される値を示します。 値がテーブル内で正しく調整されていることを確認するには、さまざまな種類のデバイスでこのコンポーネントを開くか、言語やユーザー設定を変更します。
+このサンプル コンポーネントは 2 列のテーブルを表示します。 左側の列は API メソッドやプロパティの名前を示し、右側の列は API によって返される値を示します。 値がテーブル内で正しく調整されていることを確認するには、さまざまな種類のデバイスでこのコンポーネントを開くか、言語やユーザー設定を変更します。 サンプル コンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_TableControl) からダウンロードできます。
 
 > [!div class="mx-imgBorder"]
 > ![テーブル コンポーネント](../media/table-control.png "テーブル コンポーネント")
@@ -26,7 +26,7 @@ ms.locfileid: "2861929"
 
 モデル駆動型アプリ
 
-> ![!NOTE]
+> [!NOTE]
 > コマンド`npm start`を使用してテーブルコンポーネントをデバッグする場合、コンポーネントはテストハーネスにレンダリングされません。 これは、コンポーネントがPower Apps  CLI ツールによってサポートされていない`context.utils.getEntityMetadata`メソッドを使用するためです。
 
 ## <a name="manifest"></a>マニフェスト
@@ -434,15 +434,15 @@ export class TSTableControl
 }
 ```
 
-このサンプルは `IClient, IUserSettings, IUtility, IFormatting interfaces` からメソッドを使用する方法の例を提供します。
+このサンプルは `Client`、`UserSettings`、`Utility`、`Formatting` インターフェイスからメソッドを使用する方法の例を提供します。
 
 また、このコンポーネントはふたつのユーティリティ関数を紹介します、`setFullScreen` と `lookupObjects`。 これらの関数はコード コンポーネントの一部として表示されるボタンをクリックすると呼び出されます。 `setFullScreen` ボタンはコンポーネントの全画面モードをオンとオフに切り替えます。 `lookupObjects` ボタンは検索ダイアログを開き、選択したレコードをテキストとして div に挿入します。
 
-このサンプルは HTML ボタンを表示して、そのボタンに JavaScript `onClick` イベント ハンドラである `onLookupObjectsButtonClick` を追加します。 このボタンをクリックすると `context.utils.lookupObjects()` メソッドが呼び出され、パラメータとしてエンティティ名の配列が渡されます。 
+このサンプルは HTML ボタンを表示して、そのボタンに `onClick` イベント ハンドラである `onLookupObjectsButtonClick` を追加します。 このボタンをクリックすると `context.utils.lookupObjects()` メソッドが呼び出され、パラメータとしてエンティティ名の配列が渡されます。 
 
-このメソッドは、検索ダイアログの呼び出しの完了または失敗を表す JavaScript の Promise オブジェクトを返します。 Promise が正常に解決されると、ユーザーが選択した検索オブジェクトがパラメータとしてコールバック メソッドに渡され、data.id、data.name、data.entityType として参照できます。
+このメソッドは、検索ダイアログの呼び出しの完了または失敗を表す `Promise` オブジェクトを返します。 `Promise` が正常に解決されると、ユーザーが選択した検索オブジェクトがパラメータとしてコールバック メソッドに渡され、`data.id`、`data.name`、`data.entityType` として参照できます。
 
-コールバック メソッドはこの情報を HTML としてコード コンポーネントに表示された div に挿入して、選択した結果をユーザーに提示します。 Promise が拒否された場合は、コンポーネントがエラー シナリオを適切に処理できるところでエラー コールバック メソッドが呼び出されます。
+コールバック メソッドはこの情報を HTML としてコード コンポーネントに表示された div に挿入して、選択した結果をユーザーに提示します。 `Promise` が拒否された場合は、コンポーネントがエラー シナリオを適切に処理できるところでエラー コールバック メソッドが呼び出されます。
 
 ### <a name="related-topics"></a>関連トピック
 

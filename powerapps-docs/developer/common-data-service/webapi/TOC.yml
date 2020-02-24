@@ -80,6 +80,8 @@
   items:
     - name: はじめに
       href: discover-url-organization-web-api.md
+    - name: コードを変更してグローバル検出サービスを使用する
+      href: discovery-orgsdk-to-webapi.md
     - name: 'グローバル検索サービスのサンプル (C#)'
       href: samples/global-discovery-service-csharp.md
 - name: Web API バージョンと制限

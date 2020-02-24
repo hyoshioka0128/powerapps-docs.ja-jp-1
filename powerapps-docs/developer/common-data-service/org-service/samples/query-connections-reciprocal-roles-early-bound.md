@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4025a4da12cb909f0b481a9a821f9a9f77eaf70f
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 86cd5b567d6db0ede136530a51511beb8febb07e
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934259"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956186"
 ---
-# <a name="sample-query-connections-by-reciprocal-roles"></a>サンプル: 相互ロールによるつながりの照会
+# <a name="sample-query-connections-by-reciprocal-roles-early-bound"></a>サンプル: 相互ロールによる接続のクエリ (事前バインド)
 
 <!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/sample-query-connections-reciprocal-roles-early-bound -->
 
@@ -40,6 +40,7 @@ ms.locfileid: "2934259"
 [このサンプルの概要](#what-this-sample-does) で説明されているシナリオをシミュレートするために、サンプルは次のことを行います。
 
 ### <a name="setup"></a>セットアップ
+
 1. 組織の現在のバージョンをチェックします。
 2. いくつかの匿名型を定義し、可能なつながりプロパティ値の範囲を定義します。
 3. `ConnectionRole` は、主要なロール インスタンスを作成します。

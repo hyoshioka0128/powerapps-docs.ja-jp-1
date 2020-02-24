@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 7998810edc8332d390b17b353964e5cdd874a9ae
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: af13a83b675ad097e532b0c04eda9766e6c1818e
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861961"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017435"
 ---
 # <a name="implementing-a-iframe-component"></a>IFRAME コンポーネントの実装
 
-このサンプルでは、コード コンポーネントをフォーム上の異なるフィールドにバインドし、それらのフィールドの値をコンポーネントの入力プロパティとして使用する方法を説明します。  
+このサンプルでは、コード コンポーネントをフォーム上の異なるフィールドにバインドし、それらのフィールドの値をコンポーネントの入力プロパティとして使用する方法を説明します。 サンプル コンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_IFrameControl) からダウンロードできます。
 
 > [!div class="mx-imgBorder"]
 > ![IFRAME コンポーネント](../media/iframe-control.png "IFRAME コンポーネント")

@@ -8,18 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 131ca8fecf58477d9e51d2a31b53ad894c851f7f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 3be35f54e4f4371208bb521fcf9927c53b993b2c
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861953"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017419"
 ---
 # <a name="implementing-linear-input-component"></a>線形入力コンポーネントの実装
 
 このサンプル コンポーネントは、フォームの数値型を操作する際のユーザー エクスペリエンスを変更します。 数値をタイプ入力する代わりに、線形入力コンポーネントは線形スライダーを提供し、その属性の値を使用してフォームに設定できます。  
 
-このコンポーネントを実装するには、まず[マニフェスト](../manifest-schema-reference/manifest.md)ファイルを定義し、TypeScript でカスタム ロジックを実装します
+このコンポーネントを実装するには、まず [マニフェスト](../manifest-schema-reference/manifest.md) ファイルを定義し、TypeScript でカスタム ロジックを実装します。 サンプル コンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_LinearInputControl) からダウンロードできます。
 
 > [!div class="mx-imgBorder"]
 > ![線形入力コンポーネント](../media/linear-input-control.png "線形入力コンポーネント")

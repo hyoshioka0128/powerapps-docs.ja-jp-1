@@ -1,20 +1,20 @@
 ---
 title: ポータルの Azure AD B2C プロバイダー設定 | MicrosoftDocs
 description: ポータルの Azure AD B2C プロバイダー設定を有効にするための手順。
-author: sbmjais
+author: tapanm-msft
 manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 01/03/2020
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: e8275fa256b00736501990c3abf127777097d938
-ms.sourcegitcommit: 82eec5da9c97fcb6ed50ae8e582f326af9278aa7
+ms.openlocfilehash: 5328415e8f55d9997bbe14a9ecca271b12a9ae31
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "2935209"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979562"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>ポータルの Azure AD B2C プロバイダー設定
 
@@ -124,7 +124,7 @@ ms.locfileid: "2935209"
 
 **値**: 登録が無効になっています。
 
-## <a name="customize-the-includeazureincludespn-azure-shortestmd-ad-b2c-user-interface"></a>[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C のユーザー インターフェイスをカスタマイズする
+## <a name="customize-the-includeazure-ad-b2c-user-interface"></a>[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C のユーザー インターフェイスをカスタマイズする
 
 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C はユーザー インターフェイスのカスタマイズをサポートしています。 サインアップおよびサインイン シナリオのユーザー エクスペリエンスをカスタマイズできます。
 
@@ -467,7 +467,7 @@ ms.locfileid: "2935209"
 
 他の CORS 設定の完全なリストについては、「[CORS プロトコル サポート](../add-web-resource.md#cors-protocol-support)」を参照してください。
 
-### <a name="step-5-includeazureincludespn-azure-shortestmd-configuration"></a>ステップ 5: [!include[Azure](../../../includes/pn-azure-shortest.md)] の構成
+### <a name="step-5-includeazure-configuration"></a>ステップ 5: [!include[Azure](../../../includes/pn-azure-shortest.md)] の構成
 
 1. [!include[Azure portal](../../../includes/pn-azure-portal.md)]にサインインします。
 2. **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C テナント管理** ブレードに移動します。
@@ -483,7 +483,7 @@ ms.locfileid: "2935209"
 
 初めてでもそれ以降でも、ユーザーがサインインすると、フェデレーション ID プロバイダーはユーザーのサインインに関するデータベースに基づいたクレームを提供します。 これらのクレームは、ID プロバイダーで構成できます。
 
-### <a name="includeazureincludespn-azure-shortestmd-ad-b2c-email-claims"></a>[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C 電子メール クレーム
+### <a name="includeazure-ad-b2c-email-claims"></a>[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C 電子メール クレーム
 
 [!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C はコレクションとして電子メール クレームを送信します。 ポータルは、コレクション内で提供される最初の電子メールを取引先担当者の既定電子メールアドレスとして受け取ります。
 

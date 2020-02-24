@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c6625d36c889825a7cd4d68a17996e5ef8118284
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5609889a75a6179430288687408db6218ba35976
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859940"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005075"
 ---
 # <a name="enhanced-quick-start"></a>拡張クイック スタート
 
@@ -191,11 +191,11 @@ using System.Configuration;
     > [!NOTE]
     > `SampleHelpers` クラス自体の中にこれを追加しないでください。
 
-    このクラスにより、操作が実行されるたびにアクセス トークンが更新されます。 各アクセス トークンは約 1 時間後に期限切れとなります。 このクラスは <xref:System.Net.Http.DelegatingHandler> を実装します。これは、操作が実行されるたびに Azure Active Directory Authentication Library (ADAL) 認証コンテキストと連携して `AcquireToken` を呼び出すため、トークンの有効期限を明示的に管理する必要はありません。
+    このクラスにより、操作が実行されるたびにアクセス トークンが更新されます。 各アクセス トークンは約 1 時間後に期限切れとなります。 このクラスでは <xref:System.Net.Http.DelegatingHandler> を実装します。これは、操作が実行されるたびに Azure Active Directory Authentication Library (ADAL) 認証コンテキストと連携して `AcquireToken` を呼び出すため、トークンの有効期限を明示的に管理する必要はありません。
 
     ```csharp
     /// <summary>
-    ///Custom HTTP message handler that uses OAuth authentication thru ADAL.
+    ///Custom HTTP message handler that uses OAuth authentication through ADAL.
     /// </summary>
     class OAuthMessageHandler : DelegatingHandler
     {

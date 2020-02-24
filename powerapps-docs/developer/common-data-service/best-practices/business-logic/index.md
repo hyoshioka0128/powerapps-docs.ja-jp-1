@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ca0c34bfb12ba417c14426cbb14dc2382d8ffc55
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 8cf5d26243fe3c4f19eebebcdaea64477e364552
+ms.sourcegitcommit: 5e23beed96cc14efae9ff264405956d59fae1e7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883549"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2944988"
 ---
 # <a name="best-practices-and-guidance-regarding-plug-in-and-workflow-development-for-the-common-data-service"></a>Common Data Serviceのプラグインとワークフローの開発に関する最良の導入手法とガイド
 
@@ -33,7 +33,7 @@ ms.locfileid: "2883549"
 
 |ベスト プラクティス  |説明  |
 |---------|---------|
-|[プラグインおよびワークフロー活動でバッチ要求の種類の使用を回避する](avoid-batch-requests-plugin.md)     |プラグインまたはワークフロー活動では ExecuteMultipleRequest または ExecuteTransactionRequest メッセージ要求クラスを使用すべきではありません。         |
+|[プラグインおよびワークフロー活動でバッチ要求の種類の使用を回避する](avoid-batch-requests-plugin.md)|プラグインまたはワークフロー活動では ExecuteMultipleRequest または ExecuteTransactionRequest メッセージ要求クラスを使用すべきではありません。|
 |[詳細: IPlugin の実装をステートレスとして開発する](develop-iplugin-implementations-stateless.md)     |IPlugin を実装するクラス メンバーは、データの不整合性やパフォーマンスの問題につながる可能性のある潜在的なスレッドの安全性の問題にさらされます。         |
 |[プラグイン ステップ登録を重複させない](do-not-duplicate-plugin-step-registration.md)     |プラグイン ステップ登録を重複させると、同じメッセージまたはイベントに対してプラグインが複数回実行されます。         |
 |[プラグインおよびワークフロー アクティビティ内でパラレル実行を使用しないでください](do-not-use-parallel-execution-in-plug-ins.md)|プラグインまたはカスタム ワークフロー アクティビティ内では、マルチスレッドまたは並列スレッドはサポートされていません。|
@@ -45,6 +45,7 @@ ms.locfileid: "2883549"
 |[プラグインで外部ホストを操作するときは、キープアライブを false に設定する](set-keepalive-false-interacting-external-hosts-plugin.md)     |キープアライブ プロパティを HTTP 要求ヘッダーで True に設定します。明示的に false に定義されていない場合、プラグインの実行時間が長くなる可能性があります。         |
 |[プラグインで外部呼び出しをする場合のタイムアウトを設定する](set-timeout-for-external-calls-from-plug-ins.md)     |外部呼び出しがプラグイン内での応答を期待する時間の長さを制限します。|   
 |[プラグインおよびワークフロー活動で InvalidPluginExecutionException を使用する](use-invalidpluginexecutionexception-plugin-workflow-activities.md)     |エラーをプラグインまたはワークフロー活動で上げる場合は InvalidPluginExecutionException を使用します。         |
+|[発信呼を行うプラグインの証明書の依存関係を確認する](verify-certification-dependencies.md)|コードが発信呼に依存する証明書には、有効な証明書チェーンがあることを確認してください。|
 
 ### <a name="see-also"></a>関連項目
 

@@ -10,18 +10,18 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a77bf37-8ea0-4fe3-9fe7-2769387167c3
-ms.openlocfilehash: 507a2f68c331556d7085f3add597996175130572
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: fa21dbb8d141f06066a2d7d61ad68cadcd77124a
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861973"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017455"
 ---
 # <a name="implementing-control-state-api-component"></a>コントロールの状態 API コンポーネントの実装
 
 Power Apps component framework を使用すると、同一のセッション内におけるコンポーネントの複数のレンダリングを横断してコンポーネントの状態を保持できます。 ユーザーがコンポーネント間を移動する際に、そのセッション全体を通した状態を維持することができるコンポーネントを構築することが可能となります。
 
-たとえば、コード コンポーネントがスクロールが必要なほど長いリストである場合、 **_SetControlState_** 機能を活用してユーザーがフォームから離れたときに見ていたリストの位置を記憶することができます。 その後、コンポーネントの初期化にロジックを追加して、保存された状態を確認し、ユーザーが以前読んだ位置のコンポーネントのリストを表示できます。
+たとえば、コード コンポーネントがスクロールが必要なほど長いリストである場合、 **_SetControlState_** 機能を活用してユーザーがフォームから離れたときに見ていたリストの位置を記憶することができます。 その後、コンポーネントの初期化にロジックを追加して、保存された状態を確認し、ユーザーが以前読んだ位置のコンポーネントのリストを表示できます。 サンプルのコンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_ControlStateAPI) からダウンロードできます。
 
 > [!div class="mx-imgBorder"] 
 > ![コントロール の状態API](../media/control-state-api.png "コントロール の状態API")

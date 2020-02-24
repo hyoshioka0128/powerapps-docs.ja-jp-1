@@ -2,7 +2,7 @@
 title: エンティティ関係の作成および取得 (Common Data Service) | Microsoft Docs
 description: コード サンプルを表示し、エンティティ関係を作成および取得します。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 01/28/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,21 +14,21 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1582f7c524f50cf967b0eff81aae20f1975292d5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a11458cae9e38a3ff5ab26cae5185836b10b82af
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749112"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017364"
 ---
 # <a name="create-and-retrieve-entity-relationships"></a>エンティティ関係の作成および取得
 
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/org-service/create-retrieve-entity-relationships -->
-
-このトピックでは、エンティティ関係の作成および取得方法について説明します。  
+このトピックでは、エンティティ関係の作成および取得方法について説明します。 サンプルは [ここ](https://github.com/microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/CreateRetrieveEntityRelationships) からダウンロードできます。
   
 <a name="BKMK_Create1NEntityRelationship"></a>   
+
 ## <a name="create-a-1n-entity-relationship"></a>1:N のエンティティ関連付けの作成  
+
  次のサンプルでは、[EligibleCreateOneToManyRelationship](#eligiblecreateonetomanyrelationship) メソッドを使用して、`Account` および `Campaign` エンティティが 1:N のエンティティ関連付けに参加できることを確認し、<xref:Microsoft.Xrm.Sdk.Messages.CreateOneToManyRequest> を使用してエンティティ関連付けを作成します。  
   
 ```csharp
@@ -74,7 +74,7 @@ if (eligibleCreateOneToManyRelationship)
 
 
     CreateOneToManyResponse createOneToManyRelationshipResponse =
-        (CreateOneToManyResponse)_serviceProxy.Execute(
+        (CreateOneToManyResponse)service.Execute(
         createOneToManyRelationshipRequest);
 
     _oneToManyRelationshipId =
@@ -112,7 +112,7 @@ public bool EligibleCreateOneToManyRelationship(string referencedEntity,
     };
 
     CanBeReferencedResponse canBeReferencedResponse =
-        (CanBeReferencedResponse)_serviceProxy.Execute(canBeReferencedRequest);
+        (CanBeReferencedResponse)service.Execute(canBeReferencedRequest);
 
     if (!canBeReferencedResponse.CanBeReferenced)
     {
@@ -129,7 +129,7 @@ public bool EligibleCreateOneToManyRelationship(string referencedEntity,
     };
 
     CanBeReferencingResponse canBeReferencingResponse =
-        (CanBeReferencingResponse)_serviceProxy.Execute(canBereferencingRequest);
+        (CanBeReferencingResponse)service.Execute(canBereferencingRequest);
 
     if (!canBeReferencingResponse.CanBeReferencing)
     {
@@ -195,7 +195,7 @@ if (accountEligibleParticipate && campaignEligibleParticipate)
     };
 
     CreateManyToManyResponse createManytoManyRelationshipResponse =
-        (CreateManyToManyResponse)_serviceProxy.Execute(
+        (CreateManyToManyResponse)service.Execute(
         createManyToManyRelationshipRequest);
 
 
@@ -230,7 +230,7 @@ public bool EligibleCreateManyToManyRelationship(string entity)
     };
 
     CanManyToManyResponse canManyToManyResponse =
-        (CanManyToManyResponse)_serviceProxy.Execute(canManyToManyRequest);
+        (CanManyToManyResponse)service.Execute(canManyToManyRequest);
 
     if (!canManyToManyResponse.CanManyToMany)
     {
@@ -254,7 +254,7 @@ public bool EligibleCreateManyToManyRelationship(string entity)
 RetrieveRelationshipRequest retrieveOneToManyRequest =
     new RetrieveRelationshipRequest { MetadataId = _oneToManyRelationshipId };
 RetrieveRelationshipResponse retrieveOneToManyResponse =
-    (RetrieveRelationshipResponse)_serviceProxy.Execute(retrieveOneToManyRequest);
+    (RetrieveRelationshipResponse)service.Execute(retrieveOneToManyRequest);
 
 Console.WriteLine("Retrieved {0} One-to-many relationship by id", retrieveOneToManyResponse.RelationshipMetadata.SchemaName);
 
@@ -262,7 +262,7 @@ Console.WriteLine("Retrieved {0} One-to-many relationship by id", retrieveOneToM
 RetrieveRelationshipRequest retrieveManyToManyRequest =
     new RetrieveRelationshipRequest { Name = _manyToManyRelationshipName};
 RetrieveRelationshipResponse retrieveManyToManyResponse =
-    (RetrieveRelationshipResponse)_serviceProxy.Execute(retrieveManyToManyRequest);
+    (RetrieveRelationshipResponse)service.Execute(retrieveManyToManyRequest);
 
 Console.WriteLine("Retrieved {0} Many-to-Many relationship by Name", retrieveManyToManyResponse.RelationshipMetadata.MetadataId);
 ```

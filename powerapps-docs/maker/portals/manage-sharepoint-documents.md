@@ -1,20 +1,20 @@
 ---
 title: ポータルの SharePoint ドキュメントの管理 | MicrosoftDocs
 description: ポータルで SharePoint ドキュメントを管理するための手順。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: a4ba89a1497a6ed81d2e71f7d7a43813d47b6583
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: d774b3ccd584cdf9872979d2df09eb49cff926df
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873314"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977404"
 ---
 # <a name="manage-sharepoint-documents"></a>SharePoint ドキュメントの管理
 

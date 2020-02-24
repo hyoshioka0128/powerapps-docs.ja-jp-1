@@ -2,7 +2,7 @@
 title: エンティティのメイン フォームにドキュメント タブを追加する | MicrosoftDocs
 description: エンティティのメインフォームにドキュメント タブを追加する方法を説明します
 s.custom: ''
-ms.date: 09/05/2019
+ms.date: 01/06/2020
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -17,14 +17,14 @@ search.audienceType:
 - customizer
 search.app:
 - D365CE
-ms.openlocfilehash: fae464925ea755a1f9fd0cd77426bfdbaad6141c
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: c08c3fa1f6291278728db15200e9cb71de699f8a
+ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909333"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "2952009"
 ---
-# <a name="add-the-sharepoint-documents-tab-to-the-main-form-for-an-entity"></a>エンティティのメイン フォームに SharePoint ドキュメント タブを追加する
+# <a name="add-or-remove-the-sharepoint-documents-tab-to-the-main-form-for-any-entity"></a>エンティティのメイン フォームに SharePoint のドキュメント タブを追加、または削除する
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 エンティティのメイン フォームにタブを追加して SharePoint ドキュメントを表示すると、ユーザーはモデル駆動型アプリで利用できる SharePoint 統合機能を見つけて使用できます。 
@@ -86,6 +86,16 @@ ms.locfileid: "2909333"
     </parameters> 
   </control> 
 ```
+
+## <a name="remove-the-documents-tab"></a>ドキュメント タブの追加または削除
+1.   [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左のウィンドウで **データ**を展開し、 **エンティティ**を選択します。 
+2.  必要なエンティティを選択し、 **フォーム** タブをクリックし、ファイル タブの削除をするフォームを開きます。 
+3. **ファイル** タブを選択してから、フォーム デザイナーのツールバーで **削除**を選択します。 
+
+    ![ファイル タブの削除](media/delete-files-tab.png)
+
+4. フォーム デザイナーのツール バーで、**公開**を選択します。
+
 
 ### <a name="see-also"></a>関連項目
 [SharePoint を使用してドキュメントを管理する](/dynamics365/customer-engagement/admin/manage-documents-using-sharepoint)

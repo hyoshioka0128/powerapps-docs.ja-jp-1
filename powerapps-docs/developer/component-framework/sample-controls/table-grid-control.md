@@ -8,17 +8,17 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: d466c748a6ad46cef37094f3413acdcaf61f1992
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f2cd6ca1e1d534cd15b65998edb965753777669b
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861925"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017394"
 ---
 # <a name="implementing-table-grid-component"></a>テーブル グリッド コンポーネントの実装
 
 このサンプルでは、簡単なデータセット コンポーネントの作成方法、ビューの列メタデータのバインド、レコード バインド、ページングからのレコード追加、フォームへのレコード ナビゲーションを紹介します。
-コンポーネント ヘッダー列と内部レコード値は既存のビューにバインドされています。
+コンポーネント ヘッダー列と内部レコード値は既存のビューにバインドされています。 サンプル コンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_TableGrid) からダウンロードできます。
 
 > [!div class="mx-imgBorder"]
 > ![テーブル グリッド コンポーネント](../media/table-grid-control.png "テーブル グリッド コンポーネント")

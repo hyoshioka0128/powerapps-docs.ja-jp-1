@@ -8,16 +8,16 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
-ms.openlocfilehash: 15a0314f043d130ac5afabf1591dbd4b0b789d1e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: bb2af534bbe6484a9b16ec0a165727456e06c18f
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861921"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017389"
 ---
 # <a name="implementing-web-api-component"></a>Web API コンポーネントの実装
 
-Web API コンポーネントは、作成、取得、更新、および削除機能を実行するように設計されています。 コンポーネントは 4 つのボタンを表示して、これらのボタンをクリックして異なる Web API のアクションを呼び出せます。 Web API 呼び出しの結果は、コード コンポーネント下部の HTML div 要素に挿入されます。  
+Web API コンポーネントは、作成、取得、更新、および削除機能を実行するように設計されています。 コンポーネントは 4 つのボタンを表示して、これらのボタンをクリックして異なる Web API のアクションを呼び出せます。 Web API 呼び出しの結果は、コード コンポーネント下部の HTML div 要素に挿入されます。 サンプル コンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_WebAPI) からダウンロードできます。
 
 > [!div class="mx-imgBorder"]
 > ![Web API コンポーネント](../media/web-api-control.png "Web API コンポーネント")

@@ -1,6 +1,6 @@
 ---
 title: ユーザエクスペリエンスと統合インターフェイスへの移行 | MicrosoftDocs
-description: 従来のWebクライアントから 統合インターフェイスへの移行を計画し、実行する方法を説明します。
+description: 従来の Webクライアント から 統合インターフェイス への移行を計画し、実行する方法を解説します
 ms.custom: ''
 ms.date: 07/24/2019
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 934aae075d185551cd1e3025880887b10689cc6d
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 3c170168a15680878986b132485531054b931750
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2869352"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004795"
 ---
 # <a name="approaching-a-user-experience-and-unified-interface-transition"></a>ユーザエクスペリエンスと統合インターフェイスへの移行
 

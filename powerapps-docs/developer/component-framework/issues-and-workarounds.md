@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: d9a5d345204d82a1e5f6629a3f0bb7cf2159ddd7
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 5f8be754e8042001fa331183e39df61eb4db2226
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914468"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956230"
 ---
 # <a name="common-issues-and-workarounds"></a>共通の問題と回避策
 
@@ -78,3 +78,12 @@ ms.locfileid: "2914468"
         </packageSourceCredentials>  
        </configuration>
      ```
+
+**Web リソース サイズが大きすぎます**
+
+エラー  **ソリューションのインポート エラー: Web リソースのコンテンツサイズが大きすぎます**。
+
+**回避策**
+
+1. CLI ツールから `bundle.js` ファイルを作成する場合、ファイルを大きくする多くのコンポーネントがバンドルされます。 不要なコンポーネントをいくつか削除します。 
+2. `node_modules/pcf-scripts/webpackconfig.js` ファイルを変更して、コンポーネントを `production` モードでビルドします。

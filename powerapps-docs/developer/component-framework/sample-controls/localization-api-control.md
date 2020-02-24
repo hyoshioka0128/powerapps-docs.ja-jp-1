@@ -8,18 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 43be87e84ea321db6f5df6919914bbccb48e0130
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5a60884e6cefab9b4bfa0735e03b5d5eb4761523
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861945"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017424"
 ---
 # <a name="implementing-localization-api-component"></a>ローカライズ API コンポーネントの実装
 
-このサンプルはカスタム コントロールのローカライズ方法を紹介します。 このサンプルでは [増分コンポーネント](increment-control.md) を使用して、ユーザーが選択した言語に基づいた増分ボタンに表示されるテキストをローカライズします。 
+このサンプルはコード コンポーネントのローカライズ方法を紹介します。 このサンプルでは [増分コンポーネント](increment-control.md) を使用して、ユーザーが選択した言語に基づいた増分ボタンに表示されるテキストをローカライズします。 
 
-Power Apps component framework は、ローカライズされた文字列の管理に使用される文字列 (resx) Web リソースを実装する概念を使用し、任意のユーザー インターフェイスに表示されます。 詳細: [文字列 (Resx) Web リソース](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources) 
+Power Apps component framework は、ローカライズされた文字列の管理に使用される文字列 (resx) Web リソースを実装する概念を使用し、任意のユーザー インターフェイスに表示されます。 詳細: [文字列 (Resx) Web リソース](https://docs.microsoft.com/dynamics365/customer-engagement/developer/resx-web-resources) サンプル コンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_LocalizationAPI) からダウンロードできます。
 
 > [!div class="mx-imgBorder"]
 > ![ローカライズ API のコンポーネント](../media/localization-api-control.png "ローカライズ API のコンポーネント")

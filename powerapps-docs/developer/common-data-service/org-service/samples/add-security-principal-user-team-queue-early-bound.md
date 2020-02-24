@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c41dfe21ad8a706b5502b637e0a9a3c68317c6a0
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: cc5c62686b936053099ab2d70673894d2ee283fe
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934439"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956246"
 ---
 # <a name="sample-add-a-security-principal-user-or-team-to-a-queue"></a>サンプル: キューへのセキュリティ プリンシパル (ユーザーまたはチーム) の追加 
 
@@ -44,9 +44,9 @@ ms.locfileid: "2934439"
 3. `QueryExpression` は、チームおよびロールの作成に対する既定の部署を取得します。
 4. サンプルに必要な、新しいチームおよびロールの例を作成します。
 5. `prvReadQueue` および `prvAppendToQueue` 特権を取得します。
-6. `AddPrivilegeRoleRequest` メソッドでは、ロールの例に `prvReadQueue` および `prvAppendToQueue` が追加されます。
+6. `AddPrivilegeRoleRequest` メソッドでは、 `prvReadQueue` と `prvAppendToQueue` の権限が役割に追加されます。
 
-### <a name="demonstrate"></a>使用方法
+### <a name="demonstrate"></a>実際にやってみます
 
 `AddPrincipalToQueueRequest` メソッドでは、キューにチームが追加されます。
 

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d8aebdc81d225369fbe8b964713c145242c6312e
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: ab669bca920aee564a2ad0b8fe3fee06ad06165e
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934383"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956218"
 ---
 # <a name="sample-create-a-connection-role"></a>サンプル: つながりロールの作成
 
@@ -44,6 +44,7 @@ ms.locfileid: "2934383"
 組織の現在のバージョンをチェックします。
 
 ### <a name="demonstrate"></a>使用方法
+
 1. いくつかの匿名型を定義し、可能なつながりプロパティ値の範囲を定義します。
 2. 取引先企業および取引先担当者のつながりロールを作成します。
 3. 取引先企業および取引先担当者エンティティに対するつながりロールのオブジェクトの種類のレコードを作成します。

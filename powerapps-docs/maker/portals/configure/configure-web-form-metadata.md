@@ -1,20 +1,20 @@
 ---
 title: ポータルの Web フォーム メタデータ | MicrosoftDocs
 description: ポータル用 Web フォームのメタデータを追加して構成するための手順。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 63e64fe49d62be944cc040a3539b0b717f5c2f84
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 04201baf8406a6a9c9c66e1668406594334be754
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760661"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2978990"
 ---
 # <a name="configure-web-form-metadata-for-portals"></a>ポータルの Web フォーム メタデータを構成します
 

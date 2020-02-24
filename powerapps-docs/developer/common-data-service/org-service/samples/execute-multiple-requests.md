@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6f9617f1320de9f9e1ad3d0dc807e76797d98623
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: e5c0d2697037852bdd12986bc56b55fb7e445009
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934295"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956202"
 ---
 # <a name="sample-execute-multiple-requests"></a>サンプル: 複数の要求を実行する
 
@@ -41,12 +41,12 @@ ms.locfileid: "2934295"
 
 ### <a name="setup"></a>セットアップ
 
-1. 組織の現在のバージョンをチェックします。
+組織の現在のバージョンをチェックします。
 
 ### <a name="demonstrate"></a>使用方法
 
 1. `ExecuteMultipleRequest` メソッドが `ExecuteMultipleRequest` オブジェクトを作成します。
-1. `ExecutingMultipleSettings` メソッドは、実行時の動作を定義する設定を割り当てます: エラー時に続行し、応答を返します。
+1. `ExecutingMultipleSettings` メソッドでは、実行時の動作を定義する設定を割り当てます: エラー時に続行し、応答を返します。
 1. `OrganizationRequestCollection` メソッドは、空の組織要求コレクションを作成します。
 1. `CreateRequest` メソッドは、各エンティティごとに要求コレクションに追加されます。
 1. `GetCollectionOdEntitiesToUpdate` クラスは、以前に作成されたエンティティを更新します。

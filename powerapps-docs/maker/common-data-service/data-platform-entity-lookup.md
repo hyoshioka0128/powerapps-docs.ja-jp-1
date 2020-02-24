@@ -13,12 +13,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 468f31eeb48a3e79f79db9188be78a7fa6d28c18
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: a3c9916cf6520dc1b271006b68d0c9fad61918bf
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883577"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005018"
 ---
 # <a name="create-a-relationship-between-entities"></a>エンティティ間の関連付けを作成
 1 つのエンティティのデータは、多くの場合、別のエンティティのデータに関連しています。 たとえば、**教師**エンティティと**クラス**エンティティがある場合、**クラス**エンティティには**教師**エンティティへの検索関係があり、どの教師がクラスを教えるかを示します。 **教師**エンティティからのデータを表示するための検索フィールドを使用できます。 これは一般的に検索フィールドと呼ばれます。
@@ -108,7 +108,7 @@ ms.locfileid: "2883577"
 
 ![高度な動作](./media/data-platform-cds-newrelationship/advanced-1.png "高度な動作")
 
-これらのオプションは関連するエンティティの階層を伝播するため、伝播動作とも呼ばれます。 たとえば、学生がシステムから削除された場合、学生の関連するテストや宿題を削除することが望ましい場合があります。 この種類の行動は上位関係と呼ばれます。
+これらのオプションは関連するエンティティの階層を伝播するため、伝播動作とも呼ばれます。 たとえば、学生がシステムから削除された場合、学生に関連するテストや宿題を削除することが望ましい場合があります。 この種類の行動は上位関係と呼ばれます。
 
 一方、アクションを階層の下に伝播する必要がないと決めることもあります。 たとえば、クラスに対する教師の関連付けでは、親 (教師) が削除されたときに子エンティティ (クラス) が削除され *ない* ように決定できます。 これは参照の関連付けと呼ばれます。
 

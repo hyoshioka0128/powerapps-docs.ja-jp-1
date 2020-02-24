@@ -1,20 +1,20 @@
 ---
 title: ポータル用 OpenID 接続プロバイダー設定の構成 | MicrosoftDocs
 description: ポータルの OpenID 接続プロバイダー設定を追加およびコンフィギュレーションする指示をします。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 2b4d31165ccd12b2cb5c8c2a4c8ec6f9dd04a7c7
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: b36150e7193975305fb8a478852070628268d4ee
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2755360"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2979210"
 ---
 # <a name="configure-open-id-connect-provider-settings-for-portals"></a>ポータルの Open ID 接続プロバイダー設定を構成します
 
@@ -30,7 +30,7 @@ ms.locfileid: "2755360"
 > [!Note]
 > Google の OpenID 接続エンドポイントは、現在サポートされていません。これは、基盤とするライブラリが互換性問題のある初期リリース段階にあるためです。 [ポータル用 OAuth2 プロバイダーの設定](configure-oauth2-settings.md) エンドポイントを代わりに使用できます。
 
-## <a name="openid-settings-for-includepn-azure-active-directoryincludespn-azure-active-directorymd"></a>[!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]に対する OpenID 設定
+## <a name="openid-settings-for-pn-azure-active-directory"></a>[!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)]に対する OpenID 設定
 
 開始するには、[[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] 管理ポータル](https://msdn.microsoft.com/library/azure/hh967611.aspx#bkmk_azureportal) にサインインして、既存ディレクトリを作成または選択します。 ディレクトリが使用可能な場合、ディレクトリに [アプリケーションを追加](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) するための説明に従います。  
 

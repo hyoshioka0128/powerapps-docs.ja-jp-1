@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 893e10844ee6e4c5f4e35b228d23ddf06e3c90e7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: bba0a473d76fc69832e05ec316a6ed6da6ad899d
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749234"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975742"
 ---
 # <a name="register-a-plug-in"></a>プラグインの登録
 
@@ -77,7 +77,7 @@ PRT を使用しないでアプリケーション ソリューション エク�
 
 ![すべてのソリューション (内部)](media/all-solutions-internal-view.png)
 
-ここでは、この環境に登録されているアセンブリすべてを検索できます。
+内部ソリューション リストで規定のソリューションの名前を選択した後、この環境に登録されているすべてのアセンブリを見つけることができます。
 
 ![すべての登録されたアセンブリの表示](media/view-plug-in-assemblies-default-solution.png)
 
@@ -134,7 +134,7 @@ version
 
 [登録済みアセンブリの表示](#view-registered-assemblies)で説明されているように、作成したアセンブリ登録はシステムの **既定のソリューション** に追加されています。 アンマネージド ソリューションにアセンブリを追加する必要があるため、他の組織に配布できます。
 
-使用しているアンマネージド ソリューションで、**プラグイン アセンブリ** に移動するためにソリューション エクスプローラー使用します。 リスト メニューで、**既存を追加** を選択します。
+使用しているアンマネージド ソリューションで、**プラグイン アセンブリ** に移動するためにソリューション エクスプローラー使用します。 リスト メニューで、**既存を追加** を選択します。 次の図では、Common Data Service規定のソリューションという名前のカスタムソリューションが使用されます。
 
 ![既存のプラグイン アセンブリを追加](media/add-existing-plug-in-assembly.png)
 
@@ -294,7 +294,7 @@ PRT は、アセンブリ、種類、ステップ、イメージの登録を解�
 
 [PluginAssembly](reference/entities/pluginassembly.md)、[PluginType](reference/entities/plugintype.md), [SdkMessageProcessingStep](reference/entities/sdkmessageprocessingstep.md)、[SdkMessageProcessingStepImage](reference/entities/sdkmessageprocessingstepimage.md) エンティティには削除操作があります。
 
-ソリューション エクスプローラーで**プラグイン アセンブリ**と **Sdk メッセージ処理ステップ**を削除して、同じ結果を生み出すこともできます。
+ソリューション エクスプローラーで**プラグイン アセンブリ**と **Sdk メッセージ処理ステップ**を削除して、同じ結果を生み出すこともできます。 次の図では、Common Data Service規定のソリューションという名前のカスタムソリューションが表示されます。
 
 ![ソリューション エクスプローラーでの削除手順](media/delete-sdk-message-processing-step.png)
 

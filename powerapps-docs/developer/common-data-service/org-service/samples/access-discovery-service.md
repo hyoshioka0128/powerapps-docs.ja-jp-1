@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3f707eef358454053436d633c4ad48e30348ea17
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d33f6cedbbfdaa22f4de7da6348c22c1e25cbc53
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748965"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956294"
 ---
 # <a name="sample-access-the-discovery-service"></a>サンプル: 探索サービスへのアクセス
 
@@ -29,7 +29,7 @@ ms.locfileid: "2748965"
 
 このサンプルでは接続情報の入力を求めるダイアログが開きません。
 
-App.config 接続文字列で `Username` および `Password` 値を設定すると、それらを使用できます’。 それ以外の場合は、`username` および `password` 変数を `SampleProgram.Main` メソッドで設定します。
+App.config 接続文字列内で値を設定すると、それらを使用できます。 それ以外の場合は、`username` および `password` 変数を `SampleProgram.Main` メソッドで設定します。
 
 ## <a name="what-this-sample-does"></a>このサンプルの概要
 

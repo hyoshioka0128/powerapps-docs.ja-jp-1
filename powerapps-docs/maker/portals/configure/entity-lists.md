@@ -1,20 +1,20 @@
 ---
 title: ポータル上のレコードのリストを表示するウェブ ページを追加 | MicrosoftDocs
 description: エンティティ リストを追加および設定して、ポータルのレコードのリストを表示する手順。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/18/2019
-ms.author: shjais
+ms.date: 02/05/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4fa68ace39f9a1b2dbcb2d9111e71364fde49fbc
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 96c5ede672a57b6f01a87cf8aacf093db57ab234
+ms.sourcegitcommit: 2d21c2c65875f97dff6d5843611d4221a4282f22
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874391"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "3027690"
 ---
 # <a name="about-entity-lists"></a> エンティティ リストについて
 
@@ -284,6 +284,10 @@ $(document).ready(function (){
 さらに、リストに対して定義されたアクションは、そのアクションの対応する権限をレコード単位で尊重します。 つまり、レコードの編集アクセス許可がある場合、そのレコードに対して編集アクションが有効になります。 削除や作成などにも同じことが適用されます。 レコードがない場合、リストが読み込まれる時に、そのことを示すメッセージが表示されることに注意してください。
 
 しかし、良いウェブサイト デザインでは、ユーザーがエンティティに対するアクセス許可を持つロールに属していない場合 (つまり、レコードを参照する状況がない) のページには、アクセスできないようにする必要があります。 理想的には、ウェブページにアクセス許可を使用してページを保護する必要があります。
+
+**エンティティのアクセス許可を有効にする** を選択してエンティティ リストを保護し、かつログインしているユーザーに適用可能なレコードレベルのアクションを表示するには、 **EntityList/ShowRecordLevelActions** サイトの値 **true** に設定する必要があります。 たとえば、プレストン と テディ という2人のユーザーがいるとします。 プレストン にはケース エンティティに対する連絡先レベルのすべてにアクセス権があり、テディ にはグローバルな読み取りアクセス権があります。 すべてのケースのレコードを表示するエンティティ リストが作成された場合、プレストンには自分の取引先担当者に関連するレコードに対するすべてのアクション (表示、編集、および削除) が表示されます。 その他のレコードでは、**表示する** アクションのみが表示されます。 一方、テディにはすべてのレコードに対して **表示する** アクションが表示されます。
+
+**EntityList/ShowRecordLevelActions**サイトの設定に、 **false** が設定されていて、かつエンティティに複数の権限が設定されている場合、すべてのレコード レベルのアクションが表示されます。 ただし、ユーザーが許可されていないアクションを実行しようとすると、エラーが表示されます。
 
 ## <a name="adding-a-view-details-page"></a>ビュー詳細ページの追加
 

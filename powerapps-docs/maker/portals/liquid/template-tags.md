@@ -1,24 +1,90 @@
 ---
 title: ポータルでテンプレート タグを使用する | MicrosoftDocs
 description: ポータルで使用可能なテンプレート タグについて説明します
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
+ms.date: 01/24/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 951b4055aa47a6fba31df5473bd517ed67c8f17d
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: a152fc23b71b2e564bad28a9f1717c15acfe9a60
+ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873226"
+ms.lasthandoff: 01/25/2020
+ms.locfileid: "2987992"
 ---
 # <a name="template-tags"></a>テンプレート タグ
 
 テンプレート タグは、さまざまな方法でテンプレートの出力を制御し、複数のテンプレートを 1 つの出力にまとめることができます。
+
+## <a name="fetchxml"></a>FetchXML
+
+ユーザーが CDS からデータを照会し、結果をページに表示できるようにします。
+
+> [!NOTE]
+> FetchXML を使用したデータのクエリの詳細については、[FetchXML を使用してデータをクエリする](https://docs.microsoft.com/powerapps/developer/common-data-service/use-fetchxml-construct-query)をご覧ください。
+
+```
+{% fetchxml resultVariable %}
+<!— Fetchxml query -->
+...
+{% endfetchxml %}
+```
+
+### <a name="results-attribute"></a>結果属性
+
+提供された変数の結果属性 (上記のサンプルの "resultVariable"など) は、FetchXML クエリ結果と他のいくつかの属性を保持します。
+
+- *エンティティ*
+
+    この属性には、FetchXML クエリの結果が含まれます。 結果を繰り返して、Web テンプレートで使用できます。
+
+    ```
+    <table> 
+    {% for entityVariable in resultVariable.results.entities %} 
+    <tr> 
+    <td>Attribut-1: {{ entityVariable.attribute1 }}</td> 
+    <td>Attribut-2: {{ entityVariable.attribute2 }}</td> 
+    </tr> 
+    {% endfor %} 
+    </table> 
+    ```
+
+- *EntityName*
+
+    エンティティの論理名を取得します。
+
+- *ExtensionData*
+
+    追加のデータを格納する構造を取得します。
+
+- *MinActiveRowVersion*
+
+    アクティブな行の最小バージョン値を取得します。
+
+- *MoreRecords*
+
+    使用可能なレコードがさらにあるかどうかを取得します。
+
+- *PagingCookie*
+
+    現在のページング情報を取得します。
+
+- *TotalRecordCount*
+
+    コレクション内のレコードの総数を取得します。 <br/>
+    クエリが実行されたとき、ReturnTotalRecordCount は true でした。
+
+- *TotalRecordCountLimitExceeded*
+
+    クエリの結果が合計レコード数を超えるかどうかを取得します。
+
+### <a name="xml-attribute"></a>XML 属性
+
+提供された変数 (上記のサンプルの "resultVariable" など) の XML 属性は、Common Data Service からデータを取得するために使用できる結果のクエリを保持します。 この属性は、エンティティ アクセス許可が *fetchxml* タグにどのように適用されるかを理解したい場合にデバッグ目的で役立ちます。  
 
 ## <a name="include"></a>include
 

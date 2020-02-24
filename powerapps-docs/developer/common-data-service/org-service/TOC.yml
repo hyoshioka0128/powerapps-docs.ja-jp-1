@@ -43,8 +43,8 @@
               href: page-large-result-sets-with-queryexpression.md
             - name: 左外部結合を QueryExpression で使用して "存在しない" 記録をクエリする
               href: use-left-outer-join-queryexpression-query-records-not-in.md
-            - name: QueryByAttribute クラスの使用
-              href: use-querybyattribute-class.md
+        - name: QueryByAttribute クラスの使用
+          href: use-querybyattribute-class.md
     - name: エンティティの作成
       href: entity-operations-create.md
     - name: エンティティの取得

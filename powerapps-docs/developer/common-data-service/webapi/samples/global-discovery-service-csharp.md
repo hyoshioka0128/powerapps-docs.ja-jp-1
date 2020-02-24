@@ -1,29 +1,29 @@
 ---
-title: Web API グローバル検索サービスのサンプル (C#) (Common Data Service) | Microsoft Docs
-description: このサンプルは、Web API グローバル検索サービスの使用方法について説明します
+title: グローバル探索サービス サンプル (C#) (Common Data Service) | Microsoft Docs
+description: このサンプルは、OData v4 RESTful API を使用してグローバル探索サービスにアクセスする方法を示しています
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 1/16/2020
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
 ms.author: jdaly
 ms.reviewer: susikka
-manager: ryjones
+manager: kvivek
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 057810ed53433f29b2f514b20b3b20cbbfd3f919
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 11c2d71263ac9c60e9dc88b00f78da81755d40f0
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909297"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975714"
 ---
-# <a name="web-api-global-discovery-service-sample-c"></a>Web API グローバル検索サービスのサンプル (C#)
+# <a name="global-discovery-service-sample-c"></a>グローバル検索サービスのサンプル (C#)
 
-このサンプルは、Web API グローバル検索サービスの使用方法について説明します
+このサンプルは、OData v4 RESTful API を使用してグローバル探索にアクセスする方法を示しています。
 
 ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 
@@ -40,13 +40,13 @@ ms.locfileid: "2909297"
 
 ### <a name="demonstrates"></a>説明
 
-このサンプルは、HttpClient を使用して ADAL (v2.29) を使用した認証を行い、グローバル検索サービスを呼び出してユーザーが接続できる利用可能なインスタンスに関する情報を返します。
+このサンプルは、HttpClient を使用して ADAL (v2.29) を使用した認証を行い、グローバル検索を呼び出して、ユーザーが接続できる利用可能なインスタンスに関する情報を返します。
 
 サンプルは、次のように `GetInstances` メソッドおよび `Instance` クラスに依存しています。
 
 ```csharp
     /// <summary>
-    /// Uses the global web api discovery service to return instances
+    /// Uses the Discovery Service to return organization instances.
     /// </summary>
     /// <param name="clientId">The Azure AD client (app) registration</param>
     /// <param name="username">The user name</param>
@@ -93,7 +93,7 @@ ms.locfileid: "2909297"
 
 ```csharp
 /// <summary>
-  /// Object returned by the discovery service
+  /// Object returned from the Discovery Service.
   /// </summary>
   class Instance
   {

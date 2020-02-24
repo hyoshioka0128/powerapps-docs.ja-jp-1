@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 714ac2ede999e423ef310a2d0fe738bc6bad97da
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a029fa57a3caf02414e20127ba24dc961c85551b
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753643"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004961"
 ---
 # <a name="web-api-types-and-operations"></a>Web API の種類および操作
 
@@ -256,7 +256,7 @@ OData はさまざまなデータの種類をサポートしますが、Common D
 |ManagedProperty|適用なし|内部のみで使用。|  
 |メモ|Edm.String|UTF-8 文字のシーケンス|  
 |金額|Edm.Decimal|固定された小数以下の精度およびスケールを持つ数値|  
-|所有者|単一値ナビゲーション プロパティ|<xref href="Microsoft.Dynamics.CRM.principal?text=principal EntityType" /> への参照です。 systemuser および team エンティティの種類はどちらも、ownerid プロパティを prinicipal エンティティの種類から継承します。|  
+|所有者|単一値ナビゲーション プロパティ|<xref href="Microsoft.Dynamics.CRM.principal?text=principal EntityType" /> への参照です。 systemuser および team エンティティの種類はどちらも、ownerid プロパティを principal エンティティの種類から継承します。|  
 |Picklist|Edm.Int32|署名済 32 ビット整数|  
 |都道府県|Edm.Int32|署名済 32 ビット整数|  
 |状態|Edm.Int32|署名済 32 ビット整数|  

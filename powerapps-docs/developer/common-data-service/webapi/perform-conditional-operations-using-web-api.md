@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 079aa0d3e55ea72a725023cd155f7269f345a8e2
-ms.sourcegitcommit: c2de40124037825308fbccf71f3a221198a928f9
+ms.openlocfilehash: beadf1822a46067efaa6b5a113338d85f40d153c
+ms.sourcegitcommit: 5e23beed96cc14efae9ff264405956d59fae1e7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "2944303"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "2944976"
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Web API を使用する条件付き演算を実行する
 
@@ -44,8 +44,6 @@ Common Data Service により、各エンティティ インスタンスに対�
 ## <a name="if-match-and-if-none-match-headers"></a>If-Match ヘッダーおよび If-None-Match ヘッダー
 
 [If-Match](https://tools.ietf.org/html/rfc7232#section-3.1) と [If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2) ヘッダーを ETag の値と共に使用し、リソースの現在のバージョンが最後に取得したものと一致するか、以前のバージョンと一致するか、またはすべてのバージョンと一致しないかを確認します。  これらの比較を行うことによって、条件付きの操作サポートのベースが作られます。 Common Data Service は条件付き検索、オプティミスティック同時実行、および制限付き upsert 操作をサポートする ETags を提供します。
- 
-コレクション値ナビゲーション プロパティを展開するクエリは、最新の変更を反映しないそれらのプロパティのキャッシュされたデータを返す場合があります。 ブラウザのキャッシュを上書きするには、`If-None-Match` ヘッダーと値 `null` を使用することをお勧めします。 詳細については、「[HTTP ヘッダー](compose-http-requests-handle-errors.md#bkmk_headers)」を参照してください。 `If-None-Match` ヘッダーと特定の ETag 値を使用すると、変更されたデータのみが返されるようになります。
   
 > [!WARNING]
 > クライアント コードは ETag の特定値に、または平等または不平等以外の ETag 間の明確な関連付けに意味を持たせることはできません。 たとえば、リソースの新バージョンの ETag 値がそれ以前のバージョンの ETag 値を超えることは保証されません。 また、新しい ETag 値を生成するのに使用されるアルゴリズムはサービスのリリース通知なしに変更する場合があります。  

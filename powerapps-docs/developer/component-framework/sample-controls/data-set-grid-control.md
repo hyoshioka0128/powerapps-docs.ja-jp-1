@@ -11,16 +11,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: 216199c227d0fd201d5ce14992a576e689b58296
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: c879f6d73e8ae8d2244e20080fdf64d376ff9bfd
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909096"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017450"
 ---
 # <a name="implementing-data-set-component"></a>データセット コンポーネントの実装
 
-このサンプル コンポーネントは、データセットを操作する際のユーザー エクスペリエンスを変更する方法を示します。 たとえば、エンティティ ホームページのホームページ グリッドはテーブルとしてのみ表示されます。 独自の選択によってデータを表示できるコード コンポーネントを構築できます。 このサンプルは、通常の表形式グリッドではなく、タイルとしてレコードを表示します。
+このサンプル コンポーネントは、データセットを操作する際のユーザー エクスペリエンスを変更する方法を示します。 たとえば、エンティティ ホームページのホームページ グリッドはテーブルとしてのみ表示されます。 独自の選択によってデータを表示できるコード コンポーネントを構築できます。 このサンプルは、通常の表形式グリッドではなく、タイルとしてレコードを表示します。 サンプルのコンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_DataSetGrid) からダウンロードできます。
 
 > [!div class="mx-imgBorder"]
 > ![データセット グリッド コンポーネント](../media/data-set-grid.png "データセット グリッド コンポーネント")

@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2b5a84179a4d9c6598331a6e728326a2318f9a9a
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 8e7bb5e6ac623b1fc3cbf9a496746ebf2bbf71c7
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883621"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3004847"
 ---
 # <a name="what-is-common-data-service"></a>Common Data Service とは何か？
 Common Data Service を使用することで、ビジネス アプリケーションで使用されるデータを安全に保存、管理することできます。 Common Data Service 内のデータは、一連のエンティティ内に格納されています。 *エンティティ*はデータベース内にデータを格納する方法と同様に、データの格納に使用される一連のレコードです。 Common Data Service には一般的なシナリオをカバーする標準エンティティの基本セットが含まれていますが、組織固有のカスタム エンティティを作成し、Power Queryを使用したデータ取り込みを行うことも可能です。 アプリ作成者は Power Apps を使用して、このデータを使用する機能豊富なアプリケーションを作成することができます。
@@ -47,7 +47,7 @@ Dynamics 365 Sales、Dynamics 365 Customer Service、 Dynamics 365 Talent など
 * **Dynamics 365 と Power Apps全体で再利用可能なスキル** &ndash; これまで Power Apps や Dynamics 365 のスキルを持っているユーザーは、Common Data Service プラットフォームでそのスキルを活用することができます。 エンティティ、フォーム、チャートなどの作成は、アプリケーション全体で共通になりました。
 
     > [!NOTE]
-    > Finance and Operations アプリは現在、Finance and Operations アプリのビジネスデータを Common Data Service で利用可能にするにあたって [Data Integrator](/power-platform/admin/data-integrator) の設定が必要となります。
+    > 現在 Finance and Operations アプリを使用するには、 [Data Integrator](/power-platform/admin/data-integrator) の設定を使用して、 Finance and Operations アプリ のビジネス データを Common Data Service 内で使用可能にする必要があります。
 
 ## <a name="integrating-data-into-the-common-data-service"></a>データを Common Data Serviceに統合する
 
@@ -57,7 +57,7 @@ Dynamics 365 Sales、Dynamics 365 Customer Service、 Dynamics 365 Talent など
 * **PowerQueryを使用したデータの変換とインポート** &ndash; Common Data Serviceへのインポートする際のデータ変換は、Excel と Power BIにて共通のツールである多くのオンライン データソースから、PowerQueryを使って行うことができます。
 * **データの一括インポート** &ndash; ExcelおよびCSVファイルの簡単なインポート/エクスポートは、データの Common Data Serviceへの1回限りのインポート、または不定期のインポートに使用できます。
 
-Common Data Serviceへのデータの統合についての詳細にていては、 [Power Queryを使用して Common Data Service のエンティティにデータを追加する](data-platform-cds-newentity-pq.md) を参照してください。
+Common Data Service へのデータの統合についての詳細については、 [Power Query を使用して Common Data Service のエンティティにデータを追加する](data-platform-cds-newentity-pq.md) を参照してください。
 
 ## <a name="interacting-with-entities"></a>エンティティとのやりとり
 アプリケーションを開発する場合は、標準エンティティ、ユーザー定義エンティティ、または両方を使用できます。 Common Data Service は、既定で標準エンティティを提供します。 組織内の最も一般的な概念やシナリオを取得するよう、推奨事項に従って設計されています。

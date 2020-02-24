@@ -2,7 +2,7 @@
 title: ソリューションのインポート | MicrosoftDocs
 description: Power Apps でソリューションをインポートする方法について
 ms.custom: ''
-ms.date: 09/30/2019
+ms.date: 01/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,29 +22,29 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0eb65eb9ac1240769ba0cc885cb9c2e30a8f83f9
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 504e66801c122810da12810d9b19e5069136f7d6
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909465"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017626"
 ---
 # <a name="import-solutions"></a>ソリューションのインポート 
 
  次の手順に従って手動でソリューションをインポートできます。 信頼できるソースから取得したソリューションだけをインポートしてください。 カスタマイズには、外部ソースにデータを送信できるコードが含まれている場合があります。   
   
-1.  左のナビゲーション ウィンドウから、**ソリューション**を選択します。  
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左側のナビゲーションから**ソリューション**を選択します。  
   
-2.  ソリューションの一覧メニューで、**インポート**を選択します。  
+2.  コマンド バーで **インポート** を選択します。  
 
     > [!div class="mx-imgBorder"]  
     > ![ソリューションのインポート](media/solution-import.png "ソリューションのインポート") 
   
-3.  **ソリューションのインポート** ダイアログの、**ソリューション パッケージの選択**のステップにおいて、**ファイルの選択**を選択し、インポートするソリューションが含まれている圧縮 (.zip または .cab) ファイルを参照します。 
+3.  **ソリューション パッケージの選択** ページで、**参照** を選択し、インポートするソリューションが含まれている圧縮 (.zip または .cab) ファイルを検索します。 
   
 4.  **次へ**を選択します。  
   
-5.  ソリューションに関する情報を表示します。 **インポート**を選択します。  
+5.  ソリューションについての情報が表示されます。 **インポート**を選択します。  
   
 6. インポートが完了するまで、数分待つ必要がある場合があります。 結果を表示し、**閉じる**を選択します。  
   

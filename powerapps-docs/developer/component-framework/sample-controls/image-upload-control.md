@@ -8,18 +8,18 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: nkrb
-ms.openlocfilehash: c1e61cc74d3ee739a0b25cd84153e9040d18e7d1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0183e1b9e9b9a10bf3d33cf3c18ab262d012d71f
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861957"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017430"
 ---
 # <a name="implementing-an-image-upload-component"></a>画像アップロード コンポーネントの実装
 
 このサンプル コンポーネントは、画像と既定の画像をアップロードする `Upload` ボタンとしてコンポーネントが初めて読み込まれたとき表示されます。 `Upload` をクリックすると、 画像を選択するファイル エクスプローラがポップアップします。
  
-選択した画像はコンポーネント内に表示されます。 同時に、リセットする必要がある場合は `Remove` ボタンが表示されます。 `Remove` ボタンをクリックすると、既定の画像が表示されます。  
+選択した画像はコンポーネント内に表示されます。 同時に、リセットする必要がある場合は `Remove` ボタンが表示されます。 `Remove` ボタンをクリックすると、既定の画像が表示されます。  サンプル コンポーネントは [こちら](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework/TS_ImageUploadControl) からダウンロードできます。
 
 > [!div class="mx-imgBorder"]
 > ![画像アップロード コンポーネント](../media/image-upload-control.png "画像アップロード コンポーネント")

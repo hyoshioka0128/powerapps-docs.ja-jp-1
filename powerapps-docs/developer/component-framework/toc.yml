@@ -195,6 +195,8 @@
                   href: reference/linking/getlinkedentities.md
             - name: LookupOptions
               href: reference/lookupoptions.md
+            - name: メタデータ
+              href: reference/metadata.md
             - name: モード
               href: reference/mode.md
               items:
@@ -253,6 +255,8 @@
                   href: reference/popupservice/setpopupsid.md
                 - name: updatePopup
                   href: reference/popupservice/updatepopup.md
+            - name: 位置
+              href: reference/position.md
             - name: プロパティ
               href: reference/property.md
             - name: RetrieveMultipleResponse

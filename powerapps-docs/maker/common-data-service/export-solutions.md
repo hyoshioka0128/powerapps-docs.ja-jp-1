@@ -2,7 +2,7 @@
 title: ソリューションのエクスポート | MicrosoftDocs
 description: Power Apps で ソリューション を エクスポート する方法
 ms.custom: ''
-ms.date: 09/30/2019
+ms.date: 01/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ab3bc284b6bc9e6749d8aabae5e0fbd7a1edbec
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 496cc3bcf55dfdff26a51f221df7b22d5ac7479f
+ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914356"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "3017671"
 ---
 # <a name="export-solutions"></a>エクスポート ソリューション  
  カスタマイズを使用またはエクスポートするには、アンマネージド ソリューションを作成することをお勧めします。 その後、カスタマイズを定期的にエクスポートすることで、万一のためのバックアップを持つことができます。 管理ソリューションはエクスポートできません。 Power Apps からソリューションをエクスポートするか、またはクラシック エクスペリエンスを使用してエクスポートすることができます。 
@@ -34,18 +34,26 @@ ms.locfileid: "2914356"
 > [!IMPORTANT]
 > 既定のソリューションのエクスポートはサポートされていません。 
 
-### <a name="export-from-power-apps"></a>Power Apps からのエクスポート
+## <a name="export-from-power-apps"></a>Power Apps からのエクスポート
   
-1.  左のナビゲーション ウィンドウから、**ソリューション**を選択します。   
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左側のナビゲーションから**ソリューション**を選択します。   
   
-2.  一覧でエクスポートするソリューションを選択し、**エクスポート**を選択します。 
+2.  ソリューションの一覧で、エクスポートするアンマネージド ソリューションを選択し、**エクスポート** を選択します。 管理ソリューションはエクスポートできないことを留意してください。 
 
-3.  **アンマネージド**または**マネージド**のパッケージ タイプを選択します。 エクスポートを開始するのに、数分間かかる場合があります。 終了後、エクスポートされた zip ファイルは、Web ブラウザーで指定されたダウンロード フォルダーで使用可能になります。
+3. **エクスポートする前に** が右側に表示されます。 以下のオプションを選んだ後で、 **次へ** を選択してください。  
+    - **すべての変更を公開する**。 ソリューションのコンポーネントは、エクスポートする前に公開する必要があります。 
+    - **問題を確認する**。 ソリューションに対してソリューション チェッカーを実行して、パフォーマンスと安定性の問題を検出します。
 
-    > [!div class="mx-imgBorder"]  
-    > ![ソリューションのエクスポート](media/solution-export.png "ソリューションのエクスポート") 
+4.  **このソリューションをエクスポートする** が右側に表示されます。 次のオプションを入力または選択してから、**エクスポート**を選択してください。  
+    - **バージョン ナンバー**：Power Apps現在のバージョンを表示し、ソリューションのバージョンを自動的にインクリメントします。 既定のバージョンを受け入れるか、独自のバージョンを入力できます。 
+    - **エクスポート方式**:  **管理** 、または **非管理** のパッケージ タイプを選択します。 
 
-### <a name="export-from-the-classic-experience"></a>クラシック エクスペリエンスからのエクスポート
+   <!-- UI has changed  [!div class="mx-imgBorder"]  
+    > ![Export solution](media/solution-export.png "Export solution")  -->
+
+エクスポートが完了するまでに数分かかる場合があります。 終了後、エクスポートされた zip ファイルは、Web ブラウザーで指定されたダウンロード フォルダーで使用可能になります。
+
+## <a name="export-from-the-classic-experience"></a>クラシック エクスペリエンスからのエクスポート
 
 1.  左側のナビゲーションから**ソリューション**を選択し、それから**クラシックに切り替え**を選択します。 
   
@@ -69,7 +77,7 @@ ms.locfileid: "2914356"
 
 <a name="BKMK_SettingsOptionsOnSolutionExport"></a>  
  
-## <a name="settings-options-for-solution-export"></a>ソリューション エクスポートのオプションの設定  
+### <a name="settings-options-for-solution-export"></a>ソリューション エクスポートのオプションの設定  
  Power Apps からソリューションをエクスポートする場合は、このセクションを無視してください。 次の表には、クラシック エクスペリエンスからソリューションをエクスポートするときに使用できるオプションが示されます。  
   
 |グループ|設定|説明|  
@@ -120,7 +128,7 @@ ms.locfileid: "2914356"
 |自動タグ付けの間隔|Outlook で電子メールの自動タグ付けに使用される通常のポーリング間隔です。|  
 |ISV 構成|サービス カレンダーの外観の構成|サービス カレンダーの表示上のスタイルを定義できます。
 
-詳細情報: [サービス カレンダーの外観の構成](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)|
+詳細については、 [サービス カレンダーの外観の構成](https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/service-calendar-appearance-configuration)を参照してください
 
 ### <a name="see-also"></a>関連項目
 [ソリューションのインポート](import-update-export-solutions.md) <br />

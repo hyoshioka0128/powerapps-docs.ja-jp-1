@@ -1,20 +1,20 @@
 ---
 title: ポータル向けのLiquid とWeb テンプレート ページを使用してユーザー定義ページのテンプレートを作成する | MicrosoftDocs
 description: Liquid の演算子を使用してカスタム ページ テンプレートを作成するための手順。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/07/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 8fe2d6f6496c609a9811ddb4ca28c3df47d8e04d
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0dd7b50b8fc9ffdc4a3518afd1cc2a3998cfec17
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757405"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2976966"
 ---
 # <a name="create-a-custom-page-template"></a>ユーザー定義ページ テンプレートを作成する
 

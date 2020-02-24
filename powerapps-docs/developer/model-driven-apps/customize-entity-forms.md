@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d108949576e682e88a140f62426d4351cb3ef82c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5bec04a5f2104eb2dda3cc7515390c7d52573a7f
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749045"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012606"
 ---
 # <a name="customize-entity-forms"></a>エンティティ フォームのカスタマイズ
 
@@ -69,14 +69,76 @@ ms.locfileid: "2749045"
 |        `Type`         |       `<forms>` 要素 `type` 属性        |                                                       フォームで有効な値は以下の通りです。<br /><br /> -   2: `main`<br />-   5: `mobile`<br />-   6: `quick`<br />-   7: `quickCreate`                                                        |
 
 <a name="BKMK_CreateAndEditForms"></a>   
+
 ## <a name="create-and-edit-forms"></a>フォームを作成して編集する  
+
  エンティティの新しいフォームは、<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>. <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.CanCreateForms> が許可する場所にのみ作成することができます。  
 
  新しいフォームは、<xref:Microsoft.Xrm.Sdk.Messages.CreateRequest> または <xref:Microsoft.Crm.Sdk.Messages.CopySystemFormRequest> のいずれかを使用して作成できます。 <xref:Microsoft.Crm.Sdk.Messages.CopySystemFormRequest> を使用するか、フォーム エディターの**名前を付けて保存**使用するとき、フォーム間に継承がないことに注意してください。 したがって、基本フォームを変更しても、そこから作成されたフォームにはその変更は自動的に適用されません。  
 
  エンティティ フォームを編集するサポートされる方法は、エクスポートされた管理ソリューションからフォーム定義を編集し、ソリューションを再度インポートすることです。 手動でフォームを編集するとき、スキーマ検証を使用できる XML エディターの使用を強くお勧めします。 詳細: [スキーマ検証を使用した XML カスタマイズ ファイルの編集](edit-customizations-xml-file-schema-validation.md)  
 
+## <a name="open-main-form-in-a-dialog-using-client-api"></a>ダイアログでクライアント API を使用してメイン フォームを開く
+
+クライアント API を使用してダイアログでメイン フォームを開くには、 [Xrm.Navigation.navigateTo](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/navigateto) メソッドを使用して呼び出す必要があります。 [Xrm.Navigation.navigateTo](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/navigateto)API メソッドを使用すると、サイズや位置などのオプションが表示されたダイアログを開くことができます。
+
+> [!IMPORTANT]
+> - クライアント API を使用したダイアログでメインフォームを開く機能は現在プレビューの状態です。
+> - プレビュー機能は運用環境での使用を想定しておらず、機能が制限されている可能性があります。 これらの機能を公式リリースの前に使用できるようにすることで、顧客が一足先にアクセスし、そこからフィードバックを得ることができます。
+
+
+> [!NOTE]
+> [Xrm.Navigation.openForm](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/openform)メソッドでは、メインフォームをダイアログで開くことには対応していません。
+
+## <a name="examples"></a>例
+
+### <a name="open-a-new-record"></a>新しいレコードを開く
+
+この例では、ダイアログが新規レコードを作成する新たな取引先企業のフォームを開きます。 ダイアログは、呼び出し元のフォームの最上部にモード形式の使用可能なウィンドウの最大50%を使用して中央にポップアップされます。
+
+```JavaScript
+Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2}, {target: 2, position: 1, width: {value: 50, unit:"%"}});
+```
+> [!div class="mx-imgBorder"]
+> ![新しいレコードを開く](media/open-new-record-mfd.png "新しいレコードを開く")
+
+### <a name="open-an-existing-record"></a>既存のレコードを開く
+
+この例では、ダイアログが連絡先フォームの取引先企業のエンティティID値を使用して既存の取引先企業レコードを開きます。 このエンティティの ID を、ダイアログにて開くレコードの ID に置き換えます。
+
+```JavaScript
+Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2, entityId:"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"}, {target: 2, position: 1, width: {value: 80, unit:"%"}});
+```
+> [!div class="mx-imgBorder"]
+> ![既存のレコードを開く](media/open-existing-record-mfd.png "既存のレコードを開く")
+
+### <a name="open-a-new-record-on-the-side-pane"></a>サイド ウィンドウで新しいレコードを開きます
+
+この例では、ダイアログ ウィンドウの右隅で新しいレコードを開きます。 これは、ピクセル オプションを使用して実現できます。
+
+```JavaScript
+Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2}, {target: 2, position: 2, width: {value: 500, unit:"px"}});
+```
+> [!div class="mx-imgBorder"]
+> ![サイド ウィンドウで既存のレコードを開きます](media/open-record-side-pane-mfd.png "サイド ウィンドウで既存のレコードを開きます")
+
+### <a name="open-main-form-in-a-dialog-with-callback-method"></a>コールバック メソッドを使用してダイアログでメインフォームを開く
+
+この例では、レコードを保存してダイアログを閉じた後に、メインフォームのダイアログがコールバック メソッドでどのように呼び出されるかを示しています。
+
+```Javascript
+Xrm.Navigation.navigateTo({pageType:"entityrecord", entityName:"account", formType:2},{target: 2, position: 2, width: {value: 80, unit:"%"}}).then(
+    function (retVal) {
+        console.log(retVal.savedEntityReference[0].id + ", " + retVal.savedEntityReference[0].name)
+    },
+    function (error) {
+        console.log(error);
+    });
+```
+
 ### <a name="see-also"></a>関連項目  
+
  [フォームの作成および設計](../../maker/model-driven-apps/create-design-forms.md)   
  [SystemForm エンティティ](../common-data-service/reference/entities/systemform.md)  
- [フォーム XML スキーマ](form-xml-schema.md)
+ [フォーム XML スキーマ](form-xml-schema.md)<br/>
+ [Xrm.Navigation.navigateTo](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/navigateto)

@@ -1,20 +1,20 @@
 ---
 title: ポータル用 WS-Federation プロバイダー設定の構成 | MicrosoftDocs
 description: ポータル用WS-Federationの構成を追加して構成するための手順ついての説明です。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 10/18/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 2a668f501a54472da0335344997c049794794783
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: f210a5c806ce3ac894e647fc882a4e3d8f4c0167
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2759605"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977670"
 ---
 # <a name="configure-ws-federation-provider-settings-for-portals"></a>ポータル用 WS-Federation プロバイダー設定を構成します
 
@@ -107,7 +107,7 @@ Get-ADFSEndpoint -AddressPath /FederationMetadata/2007-06/FederationMetadata.xml
 |  Authentication/WsFederation/ADFS/ValidateIssuerSigningKey  |                                                                                                                                                         securityToken xmlns=<https://ddue.schemas.microsoft.com/authoring/2003/5> に署名したSystem.IdentityModel.Tokens.SecurityKey の検証を呼び出すかどうかを制御するブール値です。                                                                                                                                                          |
 |            Authentication/WsFederation/ADFS/Whr             |                                                                                                                                       ID プロバイダー リダイレクト URL に "whr" パラメーターを指定します。 詳細情報:  [wsFederation](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/windows-identity-foundation/wsfederation)。                                                                                                                                       |
 
-## <a name="ws-federation-settings-for-includepn-azure-active-directoryincludespn-azure-active-directorymd"></a>[!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)] の WS-Federation 設定
+## <a name="ws-federation-settings-for-pn-azure-active-directory"></a>[!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)] の WS-Federation 設定
 
 [!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] AD は標準の [WS-Federation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide) に準拠した Security Token Service として動作するため、AD FS を説明した前のセクションは [!INCLUDE[pn-azure-active-directory](../../../includes/pn-azure-active-directory.md)] ([[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] AD](https://msdn.microsoft.com/library/azure/mt168838.aspx)) にも適用できます。 開始するには、[[!INCLUDE[pn-azure-shortest](../../../includes/pn-azure-shortest.md)] 管理ポータル](https://msdn.microsoft.com/library/azure/hh967611.aspx#bkmk_azureportal) にサインインして、既存ディレクトリを作成または選択します。 ディレクトリが使用可能な場合、ディレクトリに [アプリケーションを追加](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) するための説明に従います。
 

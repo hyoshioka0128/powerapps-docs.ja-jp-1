@@ -430,6 +430,8 @@
       items:
         - name: NuGetからツールをダウンロードする
           href: download-tools-nuget.md
+        - name: Power Apps CLI のインストール
+          href: powerapps-cli.md
     - name: コミュニティ ツール
       href: community-tools.md
     - name: テスト ツール

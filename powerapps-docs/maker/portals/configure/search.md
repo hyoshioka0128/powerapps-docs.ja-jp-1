@@ -1,20 +1,20 @@
 ---
 title: Power Apps ポータルのグローバル検索 | MicrosoftDocs
 description: ポータルでグローバル検索がどのように機能するかを説明します。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 11/04/2019
-ms.author: shjais
+ms.date: 01/30/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 71a06d24e628ddae508af031aa80b8a08b380905
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 9b2a2333c3e8422470521a7af135ea2c7d7040f2
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866712"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012631"
 ---
 # <a name="search"></a>Search
 
@@ -222,35 +222,23 @@ Power Apps ポータルの検索インデックスの更新は、キャッシュ
 
 インデックスを作成することからサポート案件エンティティをブロックするには、ポータルでインデックスを作成するように設定されたレコードを定義するサポート案件エンティティのビューの名前を変更する必要があります (Search/IndexQueryName サイト設定で定義)。 既定では、そのビューの名前は、ポータル検索です。
 
-1.  [ポータル管理アプリ](configure-portal.md)を開きます。
+1.  https://make.powerapps.com に移動し、ソリューション を選択します。 
 
-2.  ページの上部にあるツールバーの **設定** アイコンを選択してから **詳細設定** を選択します。
+    ![ソリューション](../media/solutions-page.png)
 
-2.  **設定** > **カスタマイズ** > **システムのカスタマイズ**の順に移動します。
+1. **既定のソリューション**を検索し、[編集] を選択して開きます。
 
-    ![システムのカスタマイズ](../media/customize-system.png "システムのカスタマイズ")
+    ![ソリューションを編集](../media/edit-solution.png)
 
-3.  カスタマイズ ダイアログでは、左側のナビゲーション ウィンドウで**コンポーネント** > **エンティティ** > **サポート案件**の順に移動します。 
+1. **サポート案件** エンティティを検索および編集し、そのコンポーネントを表示します。 
 
-4.  **サポート案件**エンティティを展開し、 **ビュー**を選択します。
+1. **ビュー** タブを選択し、**ポータル検索** を選択してビュー エディターで開きます。
 
-5.  **ポータル検索**ビューをリストから選択し、ビュー エディターでそれを開きます。
+1. ビュー エディターで、要件に応じてビューの名前を変更します。 新しい名前にはその中に*ポータル検索*という用語はないことを確認します。 
 
-    ![サポート案件ビュー](../media/case-view.png "サポート案件ビュー")
+1. 変更を保存して発行し、ビュー エディターを閉じます。
 
-6.  ビュー エディターで、**ビューのプロパティ**を選択します。
-
-    ![ビュー エディター](../media/view-editor.png "ビュー エディター")
-
-7.  要件に従ってビューの名前を変更します。 新しい名前にはその中に「ポータル検索」という用語はないことを確認します。
-
-    ![プロパティの表示](../media/view-properties.png "プロパティの表示")
-
-8.  変更を保存して、ビュー エディターを閉じます。
-
-9.  **すべてのカスタマイズの公開**を選択します。
-
-10. [フル検索インデックスの再作成](#rebuild-full-search-index) セクションで説明されているようにフル インデックスを再作成します。
+1. [フル検索インデックスの再作成](#rebuild-full-search-index) セクションで説明されているようにフル インデックスを再作成します。
 
 > [!NOTE]
 > この例では、ビューを直接編集して、アンマネージド層に変更を加えています。 これはアンマネージド ソリューションを介しても行うことができます。

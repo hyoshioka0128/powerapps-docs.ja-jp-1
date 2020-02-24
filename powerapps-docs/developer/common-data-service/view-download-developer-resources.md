@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d0d3a36795506c7127be61657fee8d46baaae28e
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 52c4b3217b9520db99679ddad0e773d17705fdb4
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862029"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975722"
 ---
 # <a name="view-or-download-developer-resources"></a>開発者リソースの表示またはダウンロード
 
@@ -81,7 +81,7 @@ ms.locfileid: "2862029"
 
 ユーザーは複数の Common Data Service 環境にアクセスできる場合があるので、探索サービスでは、ユーザーがユーザーの資格情報に基づいてアクセスできる使用可能な環境を取得できます。
 
-### <a name="discovery-web-api"></a>検出 Web API
+### <a name="discovery-restful-api"></a>探索 RESTful API
 
 これは、インスタンスで使用するための探索サービスの RESTful OData v4 バージョンのエンドポイント アドレスです。 サービス ドキュメントはここでダウンロードできます。
 詳細情報: [開発者ドキュメント: Web API を使用して組織の URL を検出する](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api)

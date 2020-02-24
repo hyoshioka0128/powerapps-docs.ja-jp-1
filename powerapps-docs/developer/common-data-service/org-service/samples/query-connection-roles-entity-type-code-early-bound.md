@@ -1,6 +1,6 @@
 ---
 title: 'サンプル: エンティティの種類コードによるつながりロールの照会 (Common Data Service) | Microsoft Docs'
-description: このサンプルは、つながりロールの照会方法を説明します。
+description: このサンプルは、接続ロールのクエリ方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
 ms.reviewer: ''
@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fe9e2d9ec06a6248bbe8f2d432fcee3decaf9e4c
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 25432f43350b6c32dc31a87f913233c3e71bd427
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934263"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956190"
 ---
-# <a name="sample-query-connection-roles-by-entity-type-code"></a>サンプル: エンティティの種類コードによるつながりロールの照会
+# <a name="sample-query-connection-roles-by-entity-type-code-early-bound"></a>サンプル: エンティティの種類コードによるつながりロールのクエリ (事前バインド)
 
 このサンプルは、クエリを使用し、エンティティ タイプ コードを指定して、アカウント エンティティの接続ロールを検索する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/QueryRoleByEntityType) からダウンロードできます。
 

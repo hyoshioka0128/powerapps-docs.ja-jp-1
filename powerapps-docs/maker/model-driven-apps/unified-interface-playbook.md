@@ -1,6 +1,6 @@
 ---
 title: 統合インターフェイスの活用プレイブック | MicrosoftDocs
-description: 従来のWebクライアントから 統合インターフェイスへの移行を計画し、実行する方法を説明します。
+description: 従来の Webクライアント から 統合インターフェイス への移行を計画し、実行する方法を解説します
 ms.custom: ''
 ms.date: 08/29/2019
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c7a9a9cda8b8fc3d5cb80d661a484f28617bea70
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fe0f90d888ae1a3e5b12cfac8929fa7fbb934eab
+ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2756085"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "3005131"
 ---
 # <a name="unified-interface-playbook"></a>統合インターフェイスの活用プレイブック
 

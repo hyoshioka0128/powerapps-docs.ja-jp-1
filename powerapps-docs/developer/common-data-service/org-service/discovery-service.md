@@ -1,32 +1,36 @@
 ---
 title: SDK アセンブリで検出サービスを使用 (Common Data Service) | Microsoft Docs
-description: .NET SDK アセンブリで探出サービスの使用方法について説明します。
+description: SDK アセンブリで利用可能な API を使用した、検出サービスの使用方法について説明します。
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 1/16/2020
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
 ms.author: jdaly
-manager: ryjones
+manager: kvivek
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e4790ae64c38cbf89a9af90822ff5b5910f64634
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1eaf51018a94a226a5fa240a6f18f6107dc833dd
+ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748977"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2975686"
 ---
 # <a name="use-the-discovery-service-with-the-sdk-assemblies"></a>SDK アセンブリで検出サービスを使用
 
+> [!IMPORTANT]
+> 2020年3月2日より、*地域* の検出サービスは [廃止](/power-platform/important-changes-coming#regional-discovery-service-is-deprecated) されます。
+> 
+> *グローバル* 検出サービスへの移行方法については、[コードを変更してグローバル検出サービスを使用する](../webapi/discovery-orgsdk-to-webapi.md)を参照してください。
+
 [!INCLUDE [cc-discovery-service-description](../includes/cc-discovery-service-description.md)]
 
-
-SDK アセンブリで検出サービスを使用するには、 `Microsoft.Xrm.Sdk.dll` アセンブリへの詳細を Visual Studio プロジェクトに追加し、 `using` に関する声明を追加して <xref:Microsoft.Xrm.Sdk.Discovery> の名前空間にアクセスします。 
+SDK アセンブリ API を使用して検出サービスにアクセスするには、 Visual Studio プロジェクトの `Microsoft.Xrm.Sdk.dll` アセンブリへの参照を追加し、続いて `using` ステートメントを追加して<xref:Microsoft.Xrm.Sdk.Discovery> の名前空間へアクセスします。
 
 <xref:Microsoft.Xrm.Sdk.WebServiceClient.DiscoveryWebProxyClient> は、<xref:Microsoft.Xrm.Sdk.Discovery.IDiscoveryService> インターフェイスを実装します。
 
@@ -39,7 +43,7 @@ SDK アセンブリで検出サービスを使用するには、 `Microsoft.Xrm.
 [!INCLUDE [regional-discovery-services](../../../includes/regional-discovery-services.md)]
 
 > [!NOTE]
-> ユーザーの地域が不明な場合は、結果を得るまで利用可能な地域からループする必要があります。 Web API には、単一のグローバル 検出サービスがあります。 詳細: [Web API を使用して組織の URL を検出する](../webapi/discover-url-organization-web-api.md)
+> ユーザーの地域が不明な場合は、結果を得るまで利用可能な地域からループする必要があります。 単一のグローバル検出サービスも利用できます。 詳細については [組織の URL を検出する](../webapi/discover-url-organization-web-api.md) を参照してください
 
 ## <a name="discovery-service-messages"></a>探出サービスのメッセージ
 
@@ -166,4 +170,4 @@ Endpoints:
 ### <a name="see-also"></a>関連項目
 
 [検出サービス](../discovery-service.md)<br />
-[Web API を使用して組織の URL を検出します](../webapi/discover-url-organization-web-api.md)
+[組織の URL を見つける](../webapi/discover-url-organization-web-api.md)

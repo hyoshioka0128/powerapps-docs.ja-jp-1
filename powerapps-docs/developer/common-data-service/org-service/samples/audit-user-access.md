@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 77d3e219adadec3baa01f1eacf014318062e3735
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 5e2f07225b842821a32ad6818842c8e08f1ab198
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934419"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956226"
 ---
 # <a name="sample-audit-user-access"></a>サンプル: ユーザー アクセスの監査
 
@@ -44,9 +44,9 @@ ms.locfileid: "2934419"
 1. 組織の現在のバージョンをチェックします。
 1. 新しい取引先企業エンティティを作成し、新しい取引先企業エンティティでの監査を有効化します。
 
-### <a name="demonstrate"></a>使用方法
+### <a name="demonstrate"></a>実際にやってみます
 
-1. システム ユーザー レコードからの組織の ID を取得し、組織レコードを取得します。
+1. システム ユーザーのレコードから組織の ID を取得し、組織レコードを取得します。
 2. ユーザーアクセスの監査を含む、組織の監査を有効にします。
 3. 監査によって追跡される取引先企業エンティティへの更新要求を作成します。
 4. 組織および取引先企業の監査フラグを古い値に設定し、実際に変更された場合はそれらを取得します。

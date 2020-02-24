@@ -1,20 +1,20 @@
 ---
 title: 複数言語によるポータル サポートの有効化 | MicrosoftDocs
 description: ポータルで複数の言語を有効化、複数の言語でコンテンツを作成するための手順。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: f8da1ac4be7098fc712faef82f6c9566d5f10512
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: a91ffe1c00b7dbcc40b786731e956bfdd8fc6d94
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2760664"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012730"
 ---
 # <a name="enable-multiple-language-portal-support"></a>複数言語ポータルサポートを有効にする
 ビジネスは単一の地域または言語に限定されてはいません。 単一ポータルは、世界中のお客様にお届けするため複数の言語でコンテンツを表示できます。 単一のコンテンツ階層を維持しながら、ポータルのコンテンツを複数の言語に翻訳することができます。
@@ -32,6 +32,8 @@ ms.locfileid: "2760664"
    ![新しいポータル言語を追加](../media/add-new-portal-language.png "新しいポータル言語を追加")
 
    ![ポータルの既定の言語を設定](../media/set-default-language-portal.png "ポータルの既定の言語を設定")
+
+   ![サポートされている言語](../media/supported-languages.png "サポートされている言語")
 
 > [!Note]
 > ポータルをプロビジョニングした後に新しい言語を有効にする場合は、[1 つのメタデータの翻訳をインポートする](../admin/import-metadata-translation.md) を使用して、新しく有効にされた言語のメタデータを翻訳します。

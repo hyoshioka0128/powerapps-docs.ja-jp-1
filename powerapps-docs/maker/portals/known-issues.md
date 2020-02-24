@@ -1,25 +1,27 @@
 ---
 title: Power Apps ポータルの既知の問題 | Microsoft Docs
 description: Power Apps ポータルでの既知の問題について
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
-ms.author: shjais
+ms.date: 01/17/2020
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 584dc1518179c17e929c46b3659fad37085f1c31
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 4c7f5aaa46acd255f15e0a040f44710a608d34a2
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2866575"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977366"
 ---
 # <a name="known-issues"></a>既知の問題
 
 
 ## <a name="general-issues"></a>一般的な問題
+
+- 更新されたYahoo YDN Oauth プロバイダー エンドポイントと Power Apps ポータルの間で互換性の問題が継続しているため、ユーザーは一時的に [Yahoo ID プロバイダー](./configure/configure-oauth2-settings.md#yahoo-ydn-app-settings) で認証できません。
 
 - アプリの**変更された日付**は、事前にプロビジョニングされたアプリがあり、前にプロビジョニングされている可能性があるため、不正確である場合があります。
 

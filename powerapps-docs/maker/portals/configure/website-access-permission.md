@@ -1,20 +1,20 @@
 ---
 title: Power Apps ポータルで Web サイトのアクセス許可を作成する | MicrosoftDocs
 description: Web サイトのアクセス許可を作成してポータル内の要素に関連付ける方法を説明します。
-author: sbmjais
-manager: shujoshi
+author: tapanm-msft
+manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 11/04/2019
-ms.author: shjais
+ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: ab85eb4feca871089366c8675305b4f6c741f0af
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: c333039eddb7e0e8bb376a8b6850b18f9d1a46ad
+ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2873467"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "2977846"
 ---
 # <a name="create-website-access-permissions"></a>Web サイトのアクセス許可の作成
 

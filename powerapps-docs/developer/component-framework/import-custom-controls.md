@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: b53995a6ce9d7c0e6d19f0f1305a41a0c45a998d
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 46bfdf070970e89cbe6eeb9aa4d3864ab493794b
+ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909277"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "3012660"
 ---
 # <a name="package-a-code-component"></a>コード コンポーネントをパッケージ化する
 
@@ -73,7 +73,7 @@ Common Data Service 環境に接続することで Power Apps CLI から直接�
 3. 前に作成した認証プロファイル間を切り替えるには、次のコマンドを使用します: 
    
    ```CLI
-    Pac auth select --index <index of the active profile>
+    pac auth select --index <index of the active profile>
     ``` 
 
 4. 環境に関する基本情報を取得するには、次のコマンドを使用します。 接続は既定の認証のプロファイルを使用しておこないます。 
@@ -82,7 +82,7 @@ Common Data Service 環境に接続することで Power Apps CLI から直接�
     pac org who 
     ```
  
-5. 特定の認証プロファイルを削除するには、`pac auth delete --index < index of the profile >` コマンドを使用します。 
+5. 特定の認証プロファイルを削除するには、`pac auth delete --index <index of the profile>` コマンドを使用します。 
 6. ローカル コンピューターからすべての認証プロファイルをオフにする場合は、`pac auth clear` コマンドを使用します。 この操作は、ローカル コンピュータから完全に `authprofile.json` ファイルやトークン キャッシュ ファイルを削除するため不可逆です。 
 
 ## <a name="deploying-code-components"></a>コード コンポーネントのデプロイ 

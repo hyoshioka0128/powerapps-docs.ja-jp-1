@@ -28,6 +28,8 @@
           href: business-logic/set-timeout-for-external-calls-from-plug-ins.md
         - name: プラグインおよびワークフロー活動で InvalidPluginExecutionException を使用する
           href: business-logic/use-invalidpluginexecutionexception-plugin-workflow-activities.md
+        - name: 発信呼を行うプラグインの証明書の依存関係を確認する
+          href: business-logic/verify-certification-dependencies.md
     - name: コードを使用したデータに関する作業
       href: work-with-data/index.md
       items:

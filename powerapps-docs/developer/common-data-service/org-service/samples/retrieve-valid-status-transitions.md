@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dd99019e867b4bc95540c5bb4c08af768891086b
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: e4e69e22dbe8a4e9ec59866bc60026e998779a8b
+ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934187"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "2956166"
 ---
 # <a name="sample-retrieve-valid-status-transitions"></a>サンプル: 有効な状態の遷移を取得する
 
- このサンプルは、エンティティのカスタム状態の遷移が定義されているかどうかに関係なく、有効な状態の遷移を取得する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveValidTransitions) からダウンロードできます。
+このサンプルは、エンティティのカスタム状態の遷移が定義されているかどうかに関係なく、有効な状態の遷移を取得する方法を示します。 サンプルは [ここ](https://github.com/Microsoft/PowerApps-Samples/tree/master/cds/orgsvc/C%23/RetrieveValidTransitions) からダウンロードできます。
  
- ## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
+## <a name="how-to-run-this-sample"></a>このサンプルを実行する方法
 
 [!include[cc-how-to-run-samples](../../includes/cc-how-to-run-samples.md)]
 
@@ -43,6 +43,7 @@ ms.locfileid: "2934187"
 1. `MetadataFilterExpression` メソッドは、エンティティ メタデータをチェックします。
 
 ### <a name="demonstrate"></a>使用方法
+
 1. `MetadataFilterExpression` メソッドは、`Incident` エンティティの状態オプションを取得します。
 1. `RetrieveMetadataChangeRequest` メソッドは、メタデータを取得します。
 1. `GetValidStatusOptions` メソッドは、各状態オプションの有効な状態遷移を取得します。
