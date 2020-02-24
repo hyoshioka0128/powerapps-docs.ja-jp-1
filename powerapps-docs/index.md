@@ -9,12 +9,12 @@ featureFlags:
 ms.service: powerapps
 ms.custom:
 - PowerApps-hub
-ms.openlocfilehash: c32a87a38029f4a01750f04ecc2f9c0d0314ac66
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 113f2f25016ba7470264f66380a1955c6fda3d08
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282385"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77530836"
 ---
 <div id="main"
    class="v2">
@@ -70,7 +70,7 @@ ms.locfileid: "77282385"
                               </a>
                            </li>
                            <li>
-                              <a href="https://docs.microsoft.com/learn/browse/?products=powerapps&resource_type=learning%20path">
+                              <a href="/powerapps/learning-catalog/get-started">
                                  <div class="cardSize">
                                     <div class="cardPadding">
                                        <div class="card">
@@ -80,8 +80,8 @@ ms.locfileid: "77282385"
                                              </div>
                                           </div>
                                           <div class="cardText">
-                                             <h3>Power Apps について学習する</h3>
-                                             <p>Power Apps を学習するための詳細なガイダンスが用意されている、Microsoft Learn のラーニング パスを調べます。 無料!</p>
+                                             <h3>ラーニング カタログ</h3>
+                                             <p>Power Apps のユーザーとして、自分のロールの適切なオンライン トレーニング、個人ワークショップ、イベントを検索します。</p>
                                           </div>
                                        </div>
                                     </div>

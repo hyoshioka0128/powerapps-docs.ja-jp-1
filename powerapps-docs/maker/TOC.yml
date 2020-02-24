@@ -8,6 +8,22 @@
       href: dev-community-plan.md
     - name: 新機能
       href: ../whats-new.md
+    - name: ラーニング カタログ
+      items:
+        - name: ラーニング カタログ
+          href: ../learning-catalog/get-started.md
+        - name: ビジネスの意思決定者
+          href: ../learning-catalog/bdm.md
+        - name: アプリ メーカー
+          href: ../learning-catalog/app-maker.md
+        - name: 開発者
+          href: ../learning-catalog/developer.md
+        - name: 管理者
+          href: ../learning-catalog/administrator.md
+        - name: 機能コンサルタント
+          href: ../learning-catalog/functional-consultant.md
+        - name: ソリューション アーキテクト
+          href: ../learning-catalog/solution-architect.md
 - name: アプリの検索と実行
   href: ../user/index.md
   items:
