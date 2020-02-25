@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6c6f033027fb9ce29ba443efab2b5c14ec5ea013
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.openlocfilehash: 2f41edb15bec061887ebe41f375cb1498280857c
+ms.sourcegitcommit: 0e41cc0c944e6b0ee22a7e183e40c52fd553b7be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77145336"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77563659"
 ---
 # <a name="keyboard-shortcuts-for-canvas-apps"></a>キャンバスアプリのキーボードショートカット
 
@@ -32,6 +32,7 @@ ms.locfileid: "77145336"
 | Ctrl + O (または Alt + F) | ファイルを開きます。 |
 | Ctrl + Shift + S (または Alt + P) | アプリを別の名前で保存します。 |
 | Ctrl + S | アプリを同じ名前で、または初めて保存します。 |
+| Ctrl + Shift + P | アプリを保存し、[発行] ダイアログをアクティブにします。 |
 | F12 | アプリファイル (msapp) をダウンロードします。 |
 | Alt + F | **[ファイル]** メニューを開きます。 |
 

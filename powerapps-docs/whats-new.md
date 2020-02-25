@@ -7,7 +7,7 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
 ms.reviewer: ''
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.author: kvivek
 search.audienceType:
 - maker
@@ -19,12 +19,12 @@ search.app:
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: f3eaab5226946c3a5cfbb99c7b4029d587fca247
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: d07cec7afb328917b7fe8e01038fad0fa5d3d516
+ms.sourcegitcommit: 1137abc4660ffb3432adbc702b1c5dae3293aa58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74680353"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77479153"
 ---
 # <a name="whats-new-in-power-apps"></a>Power Apps の新機能
 
@@ -41,7 +41,9 @@ ms.locfileid: "74680353"
 
 ## <a name="release-plan"></a>リリース計画
 
-今後の数か月でリリースされる新機能については、「[2019 年リリース ウェーブ 2 の予定](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features)」を参照してください (計画のために使用できます)。
+今後の数か月でリリースされる新機能については、次をご覧ください (計画のために使用できます)。
+- [2019 リリース ウェーブ 2 の予定](https://docs.microsoft.com/power-platform-release-plan/2019wave2/microsoft-powerapps/planned-features)
+- [2020 リリース ウェーブ 1 の予定](https://docs.microsoft.com/power-platform-release-plan/2020wave1/microsoft-powerapps/planned-features)
 
 ## <a name="known-limitations"></a>既知の制限事項
 
