@@ -91,6 +91,12 @@
               href: ../user/track-your-progress-with-dashboard-and-charts.md
             - name: Power BI ダッシュボードにピン留めする
               href: ../user/add-powerbi-dashboards.md
+        - name: コラボレーション
+          items:
+            - name: OneDrive for Business を使用する
+              href: ../user/one-drive.md
+            - name: OneNote を使用したメモの取得
+              href: ../user/onenote.md
             - name: SharePoint を使用した共同作業
               href: ../user/collaborate-using-sharepoint.md
         - name: レコードを調べる
