@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: bc3a27960a95b47115e1b7a43863572ce0c44334
-ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
+ms.openlocfilehash: 9a4facf4689ed09e7628411f1c55739f8980336f
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78204394"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78265536"
 ---
 # <a name="notify-function-in-power-apps"></a>Power Apps での通知機能
 バナー メッセージをユーザーに表示します。
@@ -60,9 +60,11 @@ Power Apps は、**通知**とはまったく異なるメカニズムを使用�
 
 1. 画面に**ボタン** コントロールを追加します。
 
-2. **Button** の **OnSelect** プロパティを次のように設定します。
+2. **ボタン**の**onselect**プロパティを数式に設定します。
 
-    **Notify( "Hello, World" )**
+    ```powerapps-dot
+    Notify( "Hello, World" )
+    ```
 
 3. ボタンをクリックするか、押します。  
 
@@ -72,7 +74,9 @@ Power Apps は、**通知**とはまったく異なるメカニズムを使用�
 
 4. エラーを示すようにメッセージの種類を変更します。  次の式に 2 つ目の引数を追加します。
 
-    **Notify( "Hello, World", NotificationType.Error )**
+    ```powerapps-dot
+    Notify( "Hello, World", NotificationType.Error )
+    ```
 
 5. ボタンをクリックするか、押します。
 
@@ -82,7 +86,9 @@ Power Apps は、**通知**とはまったく異なるメカニズムを使用�
 
 4. 警告を示すようにメッセージの種類を変更します。  次の式の 2 つ目の引数を変更します。
 
-    **Notify ("Hello, World", NotificationType, 4000)**
+    ```powerapps-dot
+    Notify( "Hello, World", NotificationType.Warning, 4000 )
+    ```
 
 5. ボタンをクリックするか、押します。
 
@@ -92,7 +98,9 @@ Power Apps は、**通知**とはまったく異なるメカニズムを使用�
 
 4. 成功を示すようにメッセージの種類を変更します。  次の式の 2 つ目の引数を変更します。
 
-    **Notify ("Hello, World", NotificationType, 0)**
+    ```powerapps-dot
+    Notify( "Hello, World", NotificationType.Success, 0 )
+    ```
 
 5. ボタンをクリックするか、押します。
 

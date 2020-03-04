@@ -13,24 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 30046f0b9f2a47e7231b00aafe1633a7242e43c6
-ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
-ms.translationtype: HT
+ms.openlocfilehash: c70d73cb2dcdd9fd1832a10c4c89029cdb5c45ad
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76315402"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78264924"
 ---
 # <a name="formula-reference-for-power-apps"></a>Power Apps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
 
-* **関数**: パラメーターを受け取り、演算を実行し、値を返します。 たとえば、**Sqrt(25)** は **5** を返します。 関数は、Microsoft Excel 関数をモデルにしています。  関数の中には、副作用を生じるものがあります。たとえば、**SubmitForm** 関数は、**Button.OnSelect** のような[動作の数式](working-with-formulas-in-depth.md)でのみ正しく機能します。
+* **関数**: パラメーターを受け取り、演算を実行し、値を返します。 たとえば、**Sqrt(25)** は **5** を返します。 関数は、Microsoft Excel 関数をモデルにしています。  関数の中には、副作用を生じるものがあります。たとえば、**SubmitForm** 関数は、[Button.OnSelect](working-with-formulas-in-depth.md) のような**動作の数式**でのみ正しく機能します。
 * **シグナル**: 環境に関する情報を返します。 たとえば、 **[Location](functions/signals.md)** は、デバイスの現在の GPS 座標を返します。 シグナルは、パラメーターを受け取らず、副作用もありません。
 * **列挙型**: 事前定義された定数値を返します。 たとえば、 **[Color](functions/function-colors.md)** は、**Color.Red** や **Color.Blue** などの事前定義された値を持つ列挙型です。  一般的な列挙体がこのページに記載されています。関数に固有の列挙型は、関数と併せて説明しています。
-* **[ThisItem](functions/operators.md#thisitem-operator)** や **[Parent](functions/operators.md#parent-operator)** などの**名前付き演算子**を使用すると、コンテナー内から情報にアクセスできます。
+* ThisItem **[ や ](functions/operators.md#thisitem-operator)** Parent **[ などの](functions/operators.md#parent-operator)名前付き演算子**を使用すると、コンテナー内から情報にアクセスできます。
 
 上記の他にも、次のような要素を使用できます。
 
-* [すべての演算子](functions/operators.md)
+* [演算子と識別子](functions/operators.md)
 * [コントロールとそのプロパティ](reference-properties.md)
 * [データ型](functions/data-types.md)
 
@@ -174,7 +174,7 @@ ms.locfileid: "76315402"
 
 **[Hour](functions/function-datetime-parts.md)** – 日付/時刻値の時間の部分を取得します。
 
-## <a name="i"></a>I
+## <a name="i"></a>i
 **[If](functions/function-if.md)** – 条件が true の場合とそうでない場合とで異なる値を返します。 
 
 **[IfError](functions/function-iferror.md)** – エラーを検出し、代替値を提供するか、操作を実行します。 
@@ -209,7 +209,7 @@ ms.locfileid: "76315402"
 
 **[Ln](functions/function-numericals.md)** – 自然対数を返します。
 
-**[LoadData](functions/function-savedata-loaddata.md)** – Power Apps プライベート ストレージからコレクションを読み込みます。
+**[LoadData](functions/function-savedata-loaddata.md)** –ローカルデバイスのストレージからコレクションを読み込みます。
 
 **[Location](functions/signals.md)** – GPS (Global Positioning System) などの情報を使用して現在地を地図座標として返します。
 
@@ -297,7 +297,7 @@ ms.locfileid: "76315402"
 **[RoundUp](functions/function-round.md)** – 元の数値以上の最小値になるように切り上げます。
 
 ## <a name="s"></a>S
-**[SaveData](functions/function-savedata-loaddata.md)** – Power Apps プライベート ストレージにコレクションを保存します。
+**[SaveData](functions/function-savedata-loaddata.md)** –コレクションをローカルデバイスのストレージに保存します。
 
 **[Search](functions/function-filter-lookup.md)** – テーブル内で、いずれかの列に文字列が含まれているレコードを検索します。  
 

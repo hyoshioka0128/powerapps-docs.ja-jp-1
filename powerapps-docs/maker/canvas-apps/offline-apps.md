@@ -7,28 +7,30 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 01/31/2019
+ms.date: 02/29/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1dbf192664f2c8a812650b487a9931de0160eeab
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6ec1a55713b3cce0a98c02058124b5b3d159b376
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74675533"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78265563"
 ---
 # <a name="develop-offline-capable-canvas-apps"></a>オフライン対応キャンバス アプリを開発する
 
 モバイルユーザーは、接続が制限されている場合でも、接続がない場合でも、生産性を維持する必要があります。 キャンバスアプリをビルドするときに、次のタスクを実行できます。
 
 - Power Apps Mobile を開き、オフラインのときにアプリを実行します。
-- [Connection](../canvas-apps/functions/signals.md#connection) シグナル オブジェクトを使用して、アプリの接続状態 (オフライン、オンライン、または従量制課金接続) を判別します。
-- オフライン時の基本的なデータ ストレージで、[コレクション](../canvas-apps/create-update-collection.md) と [LoadData や SaveData](../canvas-apps/functions/function-savedata-loaddata.md) などの関数を使用します。
+- [Connection](functions/signals.md#connection) シグナル オブジェクトを使用して、アプリの接続状態 (オフライン、オンライン、または従量制課金接続) を判別します。
+- [コレクション](create-update-collection.md)を使用し、オフライン時に基本的なデータストレージに対して[ **LoadData**関数と**SaveData** ](functions/function-savedata-loaddata.md)関数を活用します。
 
-## <a name="limitations"></a>事項
+この記事には、Twitter データの使用例が含まれています。  [ **LoadData**および**SaveData**関数参照](functions/function-savedata-loaddata.md)には、接続を必要としない、より単純な例が含まれています。
+
+## <a name="limitations"></a>制限事項
 
 **LoadData**と**SaveData**を組み合わせると、小さなデータをローカルデバイスに格納するための単純なメカニズムが形成されます。 これらの関数を使用すると、単純なオフライン機能をアプリに追加できます。
 
