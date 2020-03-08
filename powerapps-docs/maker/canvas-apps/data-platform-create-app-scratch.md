@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 624dd66a2f0574a33f4bb796b88e3e4d5845c973
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74709564"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403929"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Common Data Service を使用してキャンバス アプリを最初から作成する
 
@@ -34,7 +34,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
 ## <a name="open-a-blank-app"></a>空のアプリを開く
 
-1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインします。
+1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 1. **[自分のアプリを作成する]** で **[キャンバス アプリを一から作成]** を選択します。
 
@@ -72,7 +72,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
      ![ギャラリーの Items プロパティを設定する](./media/data-platform-create-app-scratch/gallery-items.png)
 
-1. 「[ギャラリーのカスタマイズ](customize-layout-sharepoint.md)」の説明に従って、各アカウントの名前のみが表示されるようにギャラリーのレイアウトを設定し、**参照**という単語が表示されるようにタイトル バーを構成します。
+1. 「**ギャラリーのカスタマイズ**」の説明に従って、各アカウントの名前のみが表示されるようにギャラリーのレイアウトを設定し、[参照](customize-layout-sharepoint.md)という単語が表示されるようにタイトル バーを構成します。
 
     ![ブラウズ画面](./media/data-platform-create-app-scratch/final-browse.png)
 
@@ -122,7 +122,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     `Refresh(Accounts)`
 
-    ![アイコンを更新する](./media/data-platform-create-app-scratch/refresh-icon.png)
+    ![更新アイコン](./media/data-platform-create-app-scratch/refresh-icon.png)
 
 1. プラス アイコンの **OnSelect** プロパティに次の式を設定します。
 
@@ -166,7 +166,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
 1. アカウントを追加し、追加したアカウントを編集し、アカウントを更新して変更をキャンセルし、アカウントを削除します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ:
 
 - [ソリューションにこのアプリをリンク](add-app-solution.md)することにより、たとえば、別の環境にデプロイしたり、AppSource に発行できるようになります。
 - [1 つまたは複数のサンプル アプリを開き](open-and-run-a-sample-app.md)、作成可能なさまざまな種類のアプリを調べます。

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e5c321617f08b6747824757344e3cc61b1abf27b
-ms.sourcegitcommit: 2fd8b682e2d4c1e6a45c851b56f37f842ef18224
-ms.translationtype: HT
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "76708780"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403302"
 ---
 # <a name="dateadd-datediff-and-timezoneoffset-functions-in-power-apps"></a>Power Apps の DateAdd、DateDiff、TimeZoneOffset 関数
 日付/時刻値に加算または日付/時刻値の差を検出し、ローカル時刻と UTC の間で変換します。
@@ -41,24 +41,24 @@ ms.locfileid: "76708780"
 
 * *DateTime* - 必須。 操作する日付/時刻値。
 * *Addition* - 必須。 *DateTime* に追加する数値 (単位は *Units*)。
-* *Units* - 省略可能。 追加する*単位*の種類:**Milliseconds**、**Seconds**、**Minutes**、**Hours**、**Days**、**Months**、**Quarters**、**Years** のいずれかです。  指定しない場合は、**Days** が使用されます。
+* *Units* - 省略可能。 追加する *Units* の種類: **Milliseconds**、**Seconds**、**Minutes**、**Hours**、**Days**、**Months**、**Quarters**、**Years** のいずれかです。  指定しない場合は、**Days** が使用されます。
 
 **DateDiff**( *StartDateTime*, *EndDateTime* [, *Units* ] )
 
 * *StartDateTime* - 必須。 開始の日付/時刻値。
 * *EndDateTime* - 必須。 終了の日付/時刻値。
-* *Units* - 省略可能。 追加する*単位*の種類:**Milliseconds**、**Seconds**、**Minutes**、**Hours**、**Days**、**Months**、**Quarters**、**Years** のいずれかです。  指定しない場合は、**Days** が使用されます。
+* *Units* - 省略可能。 追加する *Units* の種類: **Milliseconds**、**Seconds**、**Minutes**、**Hours**、**Days**、**Months**、**Quarters**、**Years** のいずれかです。  指定しない場合は、**Days** が使用されます。
 
 **TimeZoneOffset**( [ *DateTime* ] )
 
 * *DateTime* - 省略可能です。  オフセットを取得する日付/時刻値。  既定では、現在の日付/時刻が使用されます。
 
-## <a name="examples"></a>例
+## <a name="examples"></a>使用例
 これらすべての例では、現在の日付と時刻を **July 15, 2013, 1:02 PM** と想定しています。
 
 ### <a name="simple-dateadd"></a>単純な DateAdd
 
-| Formula | 説明 | 結果 |
+| [数式] | 説明 | 結果 |
 | --- | --- | --- |
 | **Text( DateAdd( Now(), 3 ),<br>"dd-mm-yyyy hh:mm" )** |現在の日付と時刻に 3 日 (既定の単位) を加算します。 |"18-07-2013 13:02" |
 | **Text( DateAdd( Now(), 4, Hours ),<br>"dd-mm-yyyy hh:mm" )** |現在の日付と時刻に 4 時間を加算します。 |"15-07-2013 17:02" |
@@ -67,7 +67,7 @@ ms.locfileid: "76708780"
 
 ### <a name="simple-datediff"></a>単純な DateDiff
 
-| Formula | 説明 | 結果 |
+| [数式] | 説明 | 結果 |
 | --- | --- | --- |
 | **DateDiff( Now(), DateValue("1/1/2014") )** |既定の **Days** を単位として 2 つの単位の差を返します。 |170 |
 | **DateDiff( Now(), DateValue("1/1/2014"), Months )** |**Months** を単位として 2 つの値の差を返します。 |6 |

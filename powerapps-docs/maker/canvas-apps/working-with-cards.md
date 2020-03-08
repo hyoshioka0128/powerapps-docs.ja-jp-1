@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 4b159bbfe568e4f3a6501a0d98af83ac062b8c19
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732942"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404249"
 ---
 # <a name="understand-data-cards-in-power-apps"></a>Power Apps のデータカードについて
 
@@ -45,7 +45,7 @@ Power Apps には、文字列、数値、およびその他のデータ型に対
 ![](./media/working-with-cards/add-security-code.png)
 
 ## <a name="customize-a-card"></a>カードをカスタマイズ
-カードには、他のコントロールが含まれます。 **編集フォーム** コントロールで、 **[挿入]** タブから追加する標準の **[テキスト入力](controls/control-text-input.md)** コントロールにデータを入力します。  
+カードには、他のコントロールが含まれます。 **編集フォーム** コントロールで、 **[挿入][ タブから追加する標準の ](controls/control-text-input.md)** テキスト入力 コントロールにデータを入力します。  
 
 カードのコントロールを操作して、その見た目を変更する方法の例を見てみましょう。
 
@@ -120,7 +120,7 @@ Power Apps には、文字列、数値、およびその他のデータ型に対
 
 カード内の各コントロールでは、**Parent.Default** を参照してフィールドの値を取得する必要があります。 これによりある程度のカードのカプセル化が提供されるため、カードの内部数式を変更することなく、カードの **[Default](controls/properties-core.md)** プロパティを変更できます。
 
-既定では、 **[DataField](controls/control-card.md)** プロパティに基づいて、**DefaultValue** プロパティと **[Required](controls/control-card.md)** プロパティがデータ ソースのメタデータから取得されます。 これらの数式を独自のロジックでオーバーライドし、 **[DataSourceInfo](functions/function-datasourceinfo.md)** 関数を使用してデータ ソースのメタデータを統合することができます。
+既定では、DataField **[ プロパティに基づいて、](controls/control-card.md)DefaultValue** プロパティと **[Required](controls/control-card.md)** プロパティがデータ ソースのメタデータから取得されます。 これらの数式を独自のロジックでオーバーライドし、 **[DataSourceInfo](functions/function-datasourceinfo.md)** 関数を使用してデータ ソースのメタデータを統合することができます。
 
 ### <a name="information-flowing-out"></a>出力される情報
 ユーザーによってカード内のコントロールが使用され、レコードが変更されたら、 **[SubmitForm](functions/function-form.md)** 関数を使用してこれらの変更をデータ ソースに保存します。 この関数が実行されると、フォーム コントロールは、変更するフィールドを識別するために各カードの **[DataField](controls/control-card.md)** プロパティの値を読み取ります。  
@@ -142,7 +142,7 @@ Power Apps には、文字列、数値、およびその他のデータ型に対
 
 このカードは、次の 4 つのコントロールで構成されています。
 
-| 名前 | 種類 | Description |
+| Name | 種類 | 説明 |
 | --- | --- | --- |
 | **TextRequiredStar** |**[ラベル](controls/control-text-box.md)** コントロール |星印を表示します。この印は、データ入力フォームで必須フィールドを示すためによく使用されます。 |
 | **TextFieldDisplayName** |**[ラベル](controls/control-text-box.md)** コントロール |このフィールドのユーザー フレンドリ名を表示します。 この名前は、データ ソースのスキーマに含まれる名前と同じである必要はありません。 |
@@ -151,7 +151,7 @@ Power Apps には、文字列、数値、およびその他のデータ型に対
 
 これらのコントロールにデータを入力するために、これらの重要な数式を使用して、そのプロパティをカードのプロパティから設定することができます。 これらの数式のいずれも特定のフィールドを参照していないことに注意してください。 代わりに、すべての情報がカードから取得されます。
 
-| コントロールのプロパティ | 数式 | Description |
+| コントロールのプロパティ | [数式] | 説明 |
 | --- | --- | --- |
 | **TextRequiredStar.Visible** |**Parent.Required** |星印は、フィールドが必須フィールドの場合にのみ表示されます。 Required は、開発者またはデータ ソースのメタデータによって設定される数式です。 |
 | **TextFieldDisplayName.Text** |**Parent.DisplayName** |このテキスト ボックス コントロールには、ユーザー フレンドリ名が表示されます。ユーザー フレンドリ名は、開発者またはデータ ソースのメタデータから提供され、カードの **[DisplayName](controls/control-card.md)** プロパティに設定されます。 |
@@ -163,7 +163,7 @@ Power Apps には、文字列、数値、およびその他のデータ型に対
 
 これらのコントロールから情報を取得し、データ ソースにプッシュ転送するための重要な数式として、次の数式があります。
 
-| コントロール名 | 数式 | Description |
+| コントロール名 | [数式] | 説明 |
 | --- | --- | --- |
 | **DataCard.DataField** |**"ApproverEmail"** |このカードでユーザーが表示して編集できるフィールドの名前。 |
 | **DataCard.Update** |**InputText.Text** |**[SubmitForm](functions/function-form.md)** が実行されたときに検証され、データ ソースにプッシュ転送される値。 |
