@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a7e41f9becc6cf974bffdeca127e549191ee9379
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74730683"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403254"
 ---
 # <a name="language-function-in-power-apps"></a>Power Apps の言語機能
 現在のユーザーの言語タグを返します。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 **Language** 関数は、現在のユーザーの言語、スクリプト、地域を言語タグとして返します。
 
 言語情報を使用すると、ロケールに応じてアプリをカスタマイズできます。  たとえば、イタリアとフランスでの使用を予定しているアプリを作成している場合、**Language** を使用することで、これらの異なる場所のユーザーにイタリア語とフランス語の文字列が自動的に表示されるようにできます。 
@@ -31,7 +31,7 @@ ms.locfileid: "74730683"
 ### <a name="language-tags"></a>言語タグ
 "*言語タグ*" の形式は、次の 3 つのいずれかになります。
 
-| 戻り値 | Description |
+| 戻り値 | 説明 |
 | --- | --- |
 | **"*lg&#8209;RE*"** |*lg* は "language" (言語) の 2 文字の省略形であり、*RE* は "region" (地域) の 2 文字の省略形です。  この形式の戻り値が最も一般的です。  たとえば、英国では "en-GB" が返されます。 |
 | **"*lg*"** |*lg* は "language" (言語) の 2 文字の省略形です。  これは、Power Apps に言語に関する情報が含まれていても、特定の地域の情報がない場合に使用される形式です。 |
@@ -46,17 +46,17 @@ Power Apps では、 [IETF BCP-47 言語タグ](https://tools.ietf.org/html/bcp4
 ## <a name="syntax"></a>構文
 **Language**()
 
-## <a name="examples"></a>例
+## <a name="examples"></a>使用例
 ### <a name="users-locale"></a>ユーザーのロケール
 ホスト オペレーティング システムやブラウザーで、場所に既定のロケールが使用されていると仮定しています。
 
-| 数式 | Location | 戻り値 |
+| [数式] | 場所 | 戻り値 |
 | --- | --- | --- |
 | **Language()** |リスボン、ポルトガル |"pt-PT" |
 | **Language()** |リオデジャネイロ、ブラジル |"pt-BR" |
 | **Language()** |アトランタ、USA |"en-US" |
 | **Language()** |マンチェスター、英国 |"en-GB" |
-| **Language()** |パリ、フランス |"fr-FR" |
+| **Language()** |パリ (フランス) |"fr-FR" |
 | **Language()** |ロゾー、ドミニカ |"en" |
 | **Language()** |ベオグラード、セルビア |"sr-cyrl-RS" または "sr-latn-RS" (ユーザーのシステム設定による) |
 
@@ -67,7 +67,7 @@ Power Apps では、 [IETF BCP-47 言語タグ](https://tools.ietf.org/html/bcp4
    
     ![](media/function-language/loc-table.png)
    
-    **言語**の列が *blank* のエントリは、特定のテキスト文字列が所定の言語で見つからなかった場合に、既定値として使用されます。 このエントリは、特定の **TextID** に関するエントリの一番後ろに配置する必要があります。
+    *言語*の列が **blank** のエントリは、特定のテキスト文字列が所定の言語で見つからなかった場合に、既定値として使用されます。 このエントリは、特定の **TextID** に関するエントリの一番後ろに配置する必要があります。
    
     ローカライズが目的のため、注目する必要があるのはロケールの言語だけで、地域は必要ありません。  もし地域を考慮することが重要であれば、言語タグの完全な値を上記のテーブルに入力することもできました。 
 2. **[挿入]** リボンの **[テーブル]** コマンドを使用して、これを適切な Excel テーブルに変更します。  既定ではこのテーブルの名前は **Table1** になりますが、 **[テーブル ツール] リボンの [デザイン]** タブの左端にある **[テーブル名:]** ボックスで、好きな名前に変更できます。

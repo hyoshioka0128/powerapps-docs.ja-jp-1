@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4ef67695603f3badeba92f46c6da90e21715c98b
-ms.sourcegitcommit: 01fefd7a06bf5d6509acd0bb54ea6479208cbbc8
+ms.openlocfilehash: 482d06a91d3cb3a7c22e41e4e880aa72294d2b3f
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74177846"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78264977"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>レコードのルックアップ フィールドを使用する
 
@@ -54,9 +54,9 @@ ms.locfileid: "74177846"
   > ![ルックアップ フィールドを参照する](media/MRU.png "ルックアップ フィールドを参照する")  
   
 >[!NOTE]   
-> ルックアップ検索の既定の検索結果は、"で始まる" です。 つまり、結果には特定の単語で始まるレコードが含まれます。 たとえば、**Alpine Ski House** を検索する場合、検索ボックスに「**alp**」と入力します。「**ski**」と入力すると、そのレコードは検索結果に表示されません。
+> ルックアップ検索の既定の検索結果は、"**で始まる**" です。 つまり、結果には特定の単語で始まるレコードが含まれます。 たとえば、**Alpine Ski House** を検索する場合、検索ボックスに「**alp**」と入力します。「**ski**」と入力すると、そのレコードは検索結果に表示されません。
 >
-> ワイルドカード検索の場合は、アスタリスクを使用します。「*ski」などと入力します。
+> ワイルドカード検索の場合は、アスタリスクを使用します。「\*ski」、「\*ski\*」などと入力します。
 
 ## <a name="browse-in-a-lookup-field"></a>ルックアップ フィールドで参照する
 ルックアップを参照するには、ルックアップ アイコン (虫眼鏡) を選択します。 項目の完全な一覧がドロップダウンに表示されます。

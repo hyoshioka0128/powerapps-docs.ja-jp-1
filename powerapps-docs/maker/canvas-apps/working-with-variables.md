@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d7fb0e386309f207809204d4f9f582aa3aedfe7e
-ms.sourcegitcommit: 80120b59d440bb7a3ddca93cd51154607f749f6b
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77089928"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403170"
 ---
 # <a name="understand-canvas-app-variables-in-power-apps"></a>Power Apps でのキャンバスアプリ変数について
 
@@ -154,9 +154,9 @@ Power Apps には、次の3種類の変数があります。
 
 | 変数の種類 | スコープ | 説明 | を確立する関数 |
 | --- | --- | --- | --- |
-| グローバル変数 |App |使い方が最も単純です。 数値、テキスト文字列、ブール値、レコード、テーブルなどを保持し、アプリ内のどこからでも参照できます。 |[**Set**](functions/function-set.md) |
+| グローバル変数 |アプリ |使い方が最も単純です。 数値、テキスト文字列、ブール値、レコード、テーブルなどを保持し、アプリ内のどこからでも参照できます。 |[**Set**](functions/function-set.md) |
 | コンテキスト変数 |画面 |他の言語のプロシージャにパラメーターを渡す場合など、画面に値を渡すのに最適です。 は、1つの画面からのみ参照できます。 |[**UpdateContext**](functions/function-updatecontext.md)<br>[**Navigate**](functions/function-navigate.md) |
-| コレクション |App |アプリ内のどこからでも参照できるテーブルを保持します。 全体として設定するのではなく、テーブルのコンテンツごとに変更できます。 後で使用するためにローカル デバイスに保存できます。 |[**Collect**](functions/function-clear-collect-clearcollect.md)<br>[**ClearCollect**](functions/function-clear-collect-clearcollect.md) |
+| コレクション |アプリ |アプリ内のどこからでも参照できるテーブルを保持します。 全体として設定するのではなく、テーブルのコンテンツごとに変更できます。 後で使用するためにローカル デバイスに保存できます。 |[**Collect**](functions/function-clear-collect-clearcollect.md)<br>[**ClearCollect**](functions/function-clear-collect-clearcollect.md) |
 
 ## <a name="create-and-remove-variables"></a>変数の作成と削除
 

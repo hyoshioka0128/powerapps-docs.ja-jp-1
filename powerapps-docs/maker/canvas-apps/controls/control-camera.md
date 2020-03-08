@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f70e6d8015a75f26d0716a144c7f524181f34664
-ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
-ms.translationtype: HT
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76315264"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403991"
 ---
 # <a name="camera-control-in-power-apps"></a>Power Apps のカメラ コントロール
 ユーザーがデバイスのカメラを使って写真を撮影するために使用できるコントロールです。
@@ -62,7 +62,7 @@ ms.locfileid: "76315264"
 
 **[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
-**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 
@@ -85,8 +85,8 @@ ms.locfileid: "76315264"
     **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 2. F5 キーを押した後、**MyCamera** をクリックまたはタップして写真を撮影します。
 3. **[垂直ギャラリー](control-gallery.md)** コントロールを追加してから、その **[イメージ](control-image.md)** コントロール、テンプレート、さらに **画像ギャラリー** コントロール自体のサイズを画面内に収まるように変更します。
-4. **画像ギャラリー** コントロールの **[Items](properties-core.md)** プロパティを以下に設定します。<br>**MyPix**
-5. ギャラリーで、**画像**コントロールの **[Image](properties-visual.md)** プロパティを次の式に設定します。<br>
+4. **画像ギャラリー[ コントロールの ](properties-core.md)** Items プロパティを以下に設定します。<br>**MyPix**
+5. ギャラリーで、**画像[コントロールの ](properties-visual.md)** Image プロパティを次の式に設定します。<br>
    **ThisItem.Url**
 
     撮影した写真が**イメージ ギャラリー** コントロールに表示されます。
