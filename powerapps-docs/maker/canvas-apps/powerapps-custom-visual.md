@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 12/02/2019
+ms.date: 03/06/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c5814eedfd05ea5bba19a469dad1b3e28c311974
-ms.sourcegitcommit: 6f94650ea540db69d2723c3c5dff9de8c59056cd
+ms.openlocfilehash: 3e06023319cdc799dd7573e830f499fbcf15348d
+ms.sourcegitcommit: 14723b60c9568169c7d7becea06051e7314080bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75859128"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856868"
 ---
 # <a name="power-apps-custom-visual-for-power-bi"></a>Power BI 用の Power Apps カスタムビジュアル
 
@@ -82,6 +82,7 @@ Power Apps カスタムビジュアルには、次の制限事項が適用され
     - この機能をアプリで使用できるようにするには、Power BI レポートの Power Apps カスタムビジュアルから新しいアプリを作成する必要があります。
     - [Directquery](https://docs.microsoft.com/power-bi/desktop-directquery-data-sources)をサポートするソースを使用する必要があり、データ接続は directquery メソッドを使用して作成する必要があります。
 - Power BI Desktop の power Apps は、アプリを作成するときに Power Apps Studio にデータを提供しますが、編集中は提供しません。 Power BI Web を使用して、アプリの編集中にデータをプレビューします。
+- Power BI モバイルアプリは、Power Apps ビジュアルのマイクコントロールをサポートしていません。
 
 > [!NOTE]
 > 最初にレポートを Power BI サービスに発行してから、アプリを作成または変更することをお勧めします。
@@ -90,9 +91,9 @@ Power Apps カスタムビジュアルには、次の制限事項が適用され
 
 次の表に、Power Apps カスタムビジュアルの表示、作成、および変更アクションのブラウザーのサポートを示します。 サポートされているブラウザーとアクションは、チェックマーク (&check;) によって識別されます。
 
-|ブラウザー|ビュー|作成|変更
+|ブラウザー|表示|作成|変更
 |-|-|-|-
-|Microsoft エッジ|&check;|&check;|&check;
+|Microsoft Edge|&check;|&check;|&check;
 |Internet Explorer 11|&check;
 |Google Chrome|&check;|&check;|&check;
 |Safari \*|&check;
@@ -113,7 +114,7 @@ Safari で \*、サイト間の追跡を有効にする必要があります ( *
 詳細については、 [Power BI アクセシビリティのドキュメント]( https://docs.microsoft.com/power-bi/desktop-accessibility)を参照してください。
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ:
 
 * 単純な[ステップ バイ ステップ チュートリアル](embed-powerapps-powerbi.md)を実行する。
 * [ビデオ](https://aka.ms/powerappscustomvisualvideo)をご覧ください。

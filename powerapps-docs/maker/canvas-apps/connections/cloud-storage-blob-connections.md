@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dd5135aa04a552fc5606918a8158b40457a6eb6f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724004"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404255"
 ---
 # <a name="connect-to-cloud-storage-from-power-apps"></a>Power Apps からクラウドストレージに接続する
 Power Apps には、いくつかのクラウドストレージ接続が用意されています。 いずれかの接続を利用し、Excel ファイルを保存したり、それに含まれる情報をアプリ全体で利用したりできます。 接続の種類:  
@@ -34,7 +34,7 @@ Power Apps には、いくつかのクラウドストレージ接続が用意さ
   1. Excel ファイルを開き、使用するデータの任意のセルを選択します。
   2. **[挿入]** タブの **[テーブル]** を選択します。
   3. **[Save as Table (テーブルとして保存)]** ダイアログ ボックスで **[My table has headers (先頭行をテーブルの見出しとして使用する)]** チェックボックスを選択し、 **[OK]** を選択します。
-  4. 変更を保存します。
+  4. 変更を [保存] します。
 
 ## <a name="connect-to-the-cloud-storage-connection"></a>クラウド ストレージ接続に接続する
 1. [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、 **[管理]** を展開し、 **[接続]** を選択します。  
@@ -70,7 +70,7 @@ Power Apps には、いくつかのクラウドストレージ接続が用意さ
    
     ![3 番目のラベル](./media/cloud-storage-blob-connections/items-thirdtextbox.png)  
    
-    サンプル出力:  
+    出力例  
     ![2 番目と 3 番目のラベル](./media/cloud-storage-blob-connections/secondthirdtextboxes.png)
    
 > [!NOTE]
@@ -85,7 +85,7 @@ Dropbox のフォルダーを共有する場合は、共有フォルダーをユ
 
 Excel ファイルに関連するコネクタには、[いくつかの制限](#sharing-excel-tables)があります。
 
-## <a name="known-limitations"></a>既知の制限
+## <a name="known-limitations"></a>既知の制限事項
 アプリで Excel 接続を利用しようとしたとき、 **[Data type unsupported (サポートされていないデータ型)]** または **[Not formatted as a table (表として書式設定されていません)]** が表示された場合、[データを表として書式設定](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)してください。
 
 Excel データに計算列が含まれる場合、それを利用してアプリを作成することはできません。そのデータを既存のアプリに追加することはできません。

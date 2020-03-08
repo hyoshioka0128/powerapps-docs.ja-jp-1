@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/04/2020
+ms.date: 03/06/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a547eac25e71467fb751e0a0c6eb30eccdac48ec
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: afd7875b804822aa264b134764ed6c35349a3dcf
+ms.sourcegitcommit: b65d5a0cbd5f97a5fa9137c44fe146fb900fd1b9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78293467"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78909517"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Power Apps での危機通信のサンプルテンプレートのセットアップと学習
 
@@ -153,6 +153,9 @@ ms.locfileid: "78293467"
 1. コマンドバーの **[インポート]** を選択します。
 1. GitHub リポジトリから**CrisisCommunication**ファイルをアップロードします。
 
+    > [!NOTE]
+    > テナントが GCC 環境の場合は、 **CrisisCommunicationGCC**を使用します。
+
     ![アプリパッケージのインポート](media/sample-crisis-communication-app/31-Import-App.png)
 
 1. **[インポート]** を選択します。
@@ -220,18 +223,31 @@ ms.locfileid: "78293467"
 1. チャネル ID を抽出します。これは `https://teams.microsoft.com/l/channel/` の後、`/General`する前のものです。 <br> たとえば、次の URL では、チャネル ID は `19%3ab2fa9fc20f3042a9b63fc5890e1813f8%40thread.tacv2`になります。
    
    `https://teams.microsoft.com/l/channel/19%3ab2fa9fc20f3042a9b63fc5890e1813f8%40thread.tacv2/General?groupId=8bc7c0c2-0d4c-4fb8-af99-32da74c9237b&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47`、
-   
+
 1. [Flow.microsoft.com](https://flow.microsoft.com)に移動します。
+
 1. 左側のナビゲーションから **[自分のフロー]** を選択します。
-1. **その他のコマンド**を選択する (...) **CrisisCommunication を RequestHelp** 、 **[編集]** を選択します。
-    アプリ](media/sample-crisis-communication-app/20-Edit-Flow.png) を編集 ![には
+
+1. **その他のコマンド**を選択する (...) **CrisisCommunication**を選択し、 **[編集]** を選択します。
+
+    ![アプリの編集](media/sample-crisis-communication-app/20-Edit-Flow.png)
+
 1. **チーム Id**カードを開きます。
+
 1. チーム ID を **[値]** フィールドに貼り付けます。
+
 1. **チャンネル ID**カードを開きます。
+
 1. チャンネル ID を **[値]** フィールドに貼り付けます。
-    チーム Id を設定 ![](media/sample-crisis-communication-app/22-Set-Team-IDs.png)
+
+    ![チーム Id の設定](media/sample-crisis-communication-app/22-Set-Team-IDs.png)
+
+1. **[Get time]** アクションまで下にスクロールし、 **[タイムゾーンの変換]** のアクションを、選択したソースと宛先の時刻に更新します。
+
+    ![タイムゾーンの変換](media/sample-crisis-communication-app/convert-time-zone.png)
 
 ## <a name="import-and-set-up-the-admin-app"></a>管理アプリをインポートしてセットアップする
+
 インポートしたアプリを管理するには、管理アプリに対して同じ手順を繰り返す必要があります。
 
 1. [Power Apps](https://make.powerapps.com) にサインインします。
@@ -417,6 +433,9 @@ ms.locfileid: "78293467"
 1. コマンドバーの **[インポート]** をクリックします。
 1. GitHub リポジトリから**CrisisCommunicationNewsNotification**パッケージをアップロードします。
 
+    > [!NOTE]
+    > テナントが GCC 環境の場合は、 **CrisisCommunicationNewsNotificationGCC**を使用します。
+
     ![CrisisCommunicationNewsNotification のアップロード](media/sample-crisis-communication-app/upload-news-notification.png)
 
 1. 新しいフローの接続を追加するには、各接続の **[インポート中に選択]** リンクを選択し、次のように入力します。
@@ -460,6 +479,10 @@ ms.locfileid: "78293467"
 
 1. インポートが完了したら、 **[マイフロー**] に戻ります。
 1. 新しくインポートされたフローを選択して、**新しい危機的通信ニュースをユーザーに通知**します。
+
+    > [!NOTE]
+    > GCC パッケージをアップロードした場合、フロー名は、**新しい危機通信ニュース (gcc) を使用してユーザーに通知**します。
+
 1. コマンドバーの **[編集]** を選択します。
 1. **新しい項目が投稿されたときに**呼び出されるカードを開きます。
 1. **サイトアドレス**を SharePoint サイトの名前に変更します。
@@ -511,6 +534,20 @@ Power Query エディターが開いたら、 **CI_Employee の状態**データ
 
 ![詳細エディター更新プログラムの Power Query](media/sample-crisis-communication-app/005-PowerQuery-AdvancedEditorUpdates-nolines.PNG)
 
+接続情報の更新後に接続エラーが発生した場合は、SharePoint リストへの接続に使用する資格情報の更新が必要になることがあります。 接続を更新するには、次の手順に従います。
+
+1. **[ファイル]** メニュー、 **[オプションと設定]** を選択し、 **[データソースの設定]** を選択します。
+
+    ![データ ソースの設定](media/sample-crisis-communication-app/PBI-1-DataSourceSettings.PNG)
+
+1. **[アクセス許可の編集]** を選択します。
+
+    ![アクセス許可の編集](media/sample-crisis-communication-app/PBI-2-DataSourceSettings-EditPermissions.PNG)
+
+1. [*資格情報*の種類] が [*組織アカウント*] に設定されていることを確認し、資格情報を使用して SharePoint リストにアクセスします。
+
+    ![アクセス許可の編集](media/sample-crisis-communication-app/PBI-3-OrganizationalAccount.PNG)
+
 SharePoint リストからデータをプルするようにレポートを更新するには、 **[閉じる & 適用]** を選択します。
 
 ![Power Query 閉じて適用](media/sample-crisis-communication-app/006-PowerQuery-CloseAndApply-nolines.PNG)
@@ -518,6 +555,8 @@ SharePoint リストからデータをプルするようにレポートを更新
 現在の日における office の休暇に関する地理情報と、数日にわたるそのような休暇の傾向を示す Power BI レポートが作成されました。 これで、組織内の他の担当者が表示できるようにレポートを発行できるようになりました。
 
 ![レポートのパブリッシュ Power BI](media/sample-crisis-communication-app/007-PowerBI-Publish-nolines.PNG)
+
+これで、レポートが発行されました。 組織内の他のユーザーと共有することができます。 また[、レポートの更新頻度をスケジュール](https://docs.microsoft.com/power-bi/refresh-scheduled-refresh)することもできます。
 
 ## <a name="integrate-your-app-into-teams"></a>アプリをチームに統合する
 
@@ -596,6 +635,9 @@ Power BI レポートを追加するには:
 1. Power BI レポートを検索して選択します。
 1. **[保存]** を選択します。
 
+***免責事項:*** *このアプリはサンプルであり、Microsoft Power Apps および Teams と共に使用して、参照情報のみを伝達することができます。このアプリは、医療デバイス、臨床サポート、診断ツール、その他のテクノロジとして使用することを目的としたものではありません。また、病気やその他の条件の診断、治療、軽減、取り扱い、または防止に使用することを意図したものではありません。 このアプリは、専門的な医療のアドバイス、診断、取り扱い、または略しの代わりとして設計されていないため、使用しないでください。 お客様は、このアプリの使用に関して唯一のリスクと責任を負うものとします。 Microsoft では、接続関連に用意されているアプリまたはマテリアルが、医療目的、または任意のユーザーの健康や医療の要件を満たすために十分であることを保証していません。*  
+
 ## <a name="next-steps"></a>次のステップ:
+
 - [数式のリファレンス](https://docs.microsoft.com/powerapps/maker/canvas-apps/formula-reference)
 - [コントロールのリファレンス](https://docs.microsoft.com/powerapps/maker/canvas-apps/reference-properties)

@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a1385e45fbbd932e0575c5c5b69b051dc292c824
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 77ccf02395c4d697a6d2054dd1a6dedda26d6e6e
+ms.sourcegitcommit: 56c8c7cc64695ccb00e0d021c9f98cf70b69b4a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282337"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78845178"
 ---
 # <a name="share-canvas-app-resources-in-power-apps"></a>キャンバスの共有-アプリのリソースを Power Apps で共有する
 
@@ -40,7 +40,7 @@ ms.locfileid: "77282337"
 
 ## <a name="connections"></a>接続
 
-他のユーザーとアプリを共有すると、一部の接続 (SQL 認証や Windows 認証の SQL Server など) がアプリと[暗黙的に共有](share-app-resources.md#implicit-sharing)されます。 他の接続では、ユーザーが独自の接続を作成する必要があります (OneDrive for Business や SQL Server Azure AD 認証を使用したなど)。
+他のユーザーとアプリを共有すると、一部の接続 (SQL 認証や Windows 認証の SQL Server など) がアプリと[暗黙的に共有](share-app-resources.md#implicit-sharing)されます。 その他の接続では、ユーザーは独自の接続を作成し、セキュリティ権限 (Common Data Service のセキュリティロール、OneDrive for Business、Azure AD 認証で SQL Server) を明示的に付与する必要があります。
 
 アプリを他のユーザーと共有するときに、アプリの一部として接続を自動的に共有するかどうかを決定できます。共有のアクセス許可を更新できます。 これを行うには、make.powerapps.com に移動し、左側のナビゲーションから [**データ** -> **接続**] を選択します。 次に、必要な接続を選択します。 上部のナビゲーションに **[共有]** ボタンが表示される場合、または [*その他のコマンド*(...)] を選択したときに **[共有]** オプションが表示された場合は、選択した接続を他のユーザーと共有できます。
 

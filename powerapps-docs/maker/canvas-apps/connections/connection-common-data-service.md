@@ -6,21 +6,23 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: ''
-ms.date: 11/27/2019
-ms.author: tapanm
+ms.reviewer: tapanm
+ms.date: 03/04/2020
+ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: e2b11b536c29a31053353f3c2616a594208e8acf
-ms.sourcegitcommit: 54d52a9c3c9242f95be54f4444054d9c41ed577c
+ms.openlocfilehash: 227482b383acd3117cc78eddf97698ffa9146698
+ms.sourcegitcommit: 56c8c7cc64695ccb00e0d021c9f98cf70b69b4a2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75928870"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78845194"
 ---
 # <a name="connect-to-common-data-service"></a>Common Data Service への接続
+
+## <a name="overview"></a>概要
 
 ユーザーがデータを管理できるように、Common Data Service にビジネスデータを安全に格納し、強力なアプリを Power Apps に構築することができます。 また、そのデータを、Dynamics 365 の電源自動化、Power BI、データなどのソリューションに統合することもできます。
 
@@ -40,4 +42,6 @@ Common Data Service コネクタを使用してデータソースを追加する
 
 Common Data Service コネクタは、Dynamics 365 コネクタより堅牢で、機能のパリティに近づいています。
 
-詳細情報: [Common Data Service とは何ですか](../../common-data-service/data-platform-intro.md)。
+### <a name="common-data-service-and-the-improved-data-source-experience"></a>Common Data Service と強化されたデータソースエクスペリエンス
+
+2019年11月より前に Common Data Service コネクタを使用してキャンバスアプリを作成した場合、最新バージョンの Common Data Service の利点が得られない可能性があります。 詳細については、 [Common Data Service 接続の機能強化](../use-native-cds-connector.md)に関する説明と、接続のアップグレードに関する情報を参照してください。
