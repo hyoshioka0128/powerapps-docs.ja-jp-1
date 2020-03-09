@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d1397f9fd2859611a3cd54023210a27cd5977834
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724945"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404586"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-power-apps"></a>Power Apps でキャンバスアプリにデータ接続を追加する
 
@@ -82,7 +82,7 @@ Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインア
 
     ![接続の変更](./media/add-data-connection/change-connection.png)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ:
 
 * Excel、SharePoint、Common Data Service、SQL Server などのソースのデータを表示および更新するには、[ギャラリーを追加](add-gallery.md)し、[フォームを追加](add-form.md)します。
 * [Office 365 Outlook](connections/connection-office365-outlook.md)、[Twitter](connections/connection-twitter.md)、[Microsoft Translator](connections/connection-microsoft-translator.md) などのソースの場合は、各コネクタに用意された機能を使用して表示や更新を行います。

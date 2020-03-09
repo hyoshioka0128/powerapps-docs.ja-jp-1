@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1d98f01920dbcbf960b1e2bb21159586318e0386
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74679594"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403545"
 ---
 # <a name="understand-delegation-in-a-canvas-app"></a>キャンバス アプリでの委任について
 Power Apps には、キャンバスアプリでのデータテーブルのフィルター処理、並べ替え、および整形を行うための強力な一連の関数が含まれています。 **[Filter](functions/function-filter-lookup.md)** 、 **[Sort](functions/function-sort.md)** 、 **[addcolumns](functions/function-table-shaping.md)** の各関数では、いくつかの名前を指定します。 これらの関数を使用すると、ユーザーが必要とする情報に絞り込んでアクセスするようにすることができます。 データベースに関する知識がある方にとっては、これらの関数の使用はデータベース クエリの記述に似ています。
@@ -49,7 +49,7 @@ Power Apps には、キャンバスアプリでのデータテーブルのフィ
 この一覧は随時変更されます。 より多くの関数と演算子で委任がサポートされるよう取り組んでいます。
 
 ### <a name="filter-functions"></a>フィルター関数
-**[Filter](functions/function-filter-lookup.md)** , **[Search](functions/function-filter-lookup.md)** 、および **[LookUp](functions/function-filter-lookup.md)** は委任できます。  
+**[Filter](functions/function-filter-lookup.md)** **[Search](functions/function-filter-lookup.md)** 、および **[LookUp](functions/function-filter-lookup.md)** は委任できます。  
 
 **Filter** 関数と **LookUp** 関数内では、テーブルの列でこれらを使用して、適切なレコードを選択できます。
 
@@ -138,7 +138,7 @@ AddColumns( Products,
 
 委任の警告は、委任可能なデータ ソースを操作する式にのみ表示されます。 警告が表示されないものの、式が適切に委任されていないと思われる場合は、前に示した[委任可能なデータ ソース](delegation-overview.md#delegable-data-sources)の一覧で、データ ソースの種類を確認してください。
 
-## <a name="examples"></a>例
+## <a name="examples"></a>使用例
 この例では、 **[dbo].[Fruit]** という名前の SQL Server テーブルを基にして、3 画面のアプリを自動的に生成します。 アプリを生成する方法については、 [「Common Data Service について」のトピック](data-platform-create-app.md)で同様の原則を適用して SQL Server することができます。
 
 ![3 画面アプリ](./media/delegation-overview/products-afd.png)
