@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 346bb27911549715b6c4fdc40f64552c524527be
-ms.sourcegitcommit: d194d2fa009ca7bfcbe95e5f31473832a130e0a6
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74959451"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403381"
 ---
 # <a name="create-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>SharePoint リストから Power Apps でキャンバスアプリを作成する
 
@@ -42,7 +42,7 @@ ms.locfileid: "74959451"
 
 ## <a name="create-an-app-from-within-power-apps"></a>Power Apps 内からアプリを作成する
 
-1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)にサインインします。
+1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、 **[このアプリの作成]** を選択します。
 
@@ -74,7 +74,7 @@ SharePoint Online コマンド バーからカスタム リストのアプリを
 
 1. SharePoint Online でカスタム リストを開き、コマンド バーで **[PowerApps]** 、 **[アプリの作成]** の順に選択します。
 
-    ![アプリを作成する](./media/app-from-sharepoint/generate-new-app.png)
+    ![アプリの作成](./media/app-from-sharepoint/generate-new-app.png)
 
 2. 表示されるパネルに、使用するアプリの名前を入力し、 **[作成]** を選択します。
 
@@ -89,7 +89,7 @@ SharePoint Online コマンド バーからカスタム リストのアプリを
     - (別のブラウザー タブで) アプリを実行するには、 **[開く]** を選択します。
     - 組織内の他のユーザーがアプリを実行できるようにするには、 **[Make this view public]\(このビューを公開する\)** を選択します。
 
-        ご利用のアプリを他のユーザーが編集できるようにするには、 **[編集可能]** アクセス許可を使用して[そのアプリを共有](share-app.md)します。
+        ご利用のアプリを他のユーザーが編集できるようにするには、[[編集可能]](share-app.md) アクセス許可を使用して**そのアプリを共有**します。
 
     - SharePoint からビューを削除するには、 **[Remove this view]\(このビューを削除する\)** を選択します。
 
@@ -98,7 +98,7 @@ SharePoint Online コマンド バーからカスタム リストのアプリを
 > [!NOTE]
 > 現在、SharePoint リストから作成されたアプリは、Power Apps モバイルには表示されません。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ:
 このトピックでは、SharePoint リスト内のデータを管理するアプリを作成しました。 次の手順として、より複雑なリストからアプリを作成し、必要に応じてアプリをカスタマイズします (参照画面から開始します)。
 
 > [!div class="nextstepaction"]
