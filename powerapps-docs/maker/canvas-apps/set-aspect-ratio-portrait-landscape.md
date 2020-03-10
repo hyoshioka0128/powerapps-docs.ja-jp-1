@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b6ec2006266a15b7552d1a83b2d7d67c14560470
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732981"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404306"
 ---
 # <a name="change-screen-size-and-orientation-of-a-canvas-app-in-power-apps"></a>Power Apps でのキャンバスアプリの画面サイズと向きの変更
 キャンバス アプリは、その画面のサイズと向きを変更することでカスタマイズできます。
@@ -63,5 +63,5 @@ ms.locfileid: "74732981"
 
 1. **[Apply (適用)]** を選択して変更を保存します。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 **[File (ファイル)]** メニューの **[Save (保存)]** を選択して、新しい設定でアプリを再発行します。

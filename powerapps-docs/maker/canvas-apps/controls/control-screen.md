@@ -14,19 +14,19 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b0e189bc2bfd922839373f009fcc54a34217daba
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732075"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404293"
 ---
 # <a name="screen-control-in-power-apps"></a>Power Apps での画面コントロール
 
 アプリ内で 1 つまたは複数の他のコントロールを含む UI 要素。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 
-ほとんどのアプリには、 **[ラベル](control-text-box.md)** コントロールや **[ボタン](control-button.md)** コントロールのほか、データを表示したりナビゲーションをサポートしたりするその他のコントロールを含む複数の**画面**コントロールがあります。 画面を追加する方法、画面の順序を変更する方法、およびナビゲーションを構成する方法の詳細については、「[画面の追加](../add-screen-context-variables.md)」を参照してください。
+ほとんどのアプリには、ラベル **[ コントロールや](control-text-box.md)** ボタン **[ コントロールのほか、データを表示したりナビゲーションをサポートしたりするその他のコントロールを含む複数の](control-button.md)画面**コントロールがあります。 画面を追加する方法、画面の順序を変更する方法、およびナビゲーションを構成する方法の詳細については、「[画面の追加](../add-screen-context-variables.md)」を参照してください。
 
 ## <a name="key-properties"></a>主要なプロパティ
 
@@ -76,7 +76,7 @@ ms.locfileid: "74732075"
 
     `Navigate(Source, ScreenTransition.Fade)`
 
-1. **Target** の **[Fill](properties-color-border.md)** プロパティを次の数式に設定します。
+1. **Target[ の ](properties-color-border.md)** Fill プロパティを次の数式に設定します。
 
     `If("Red" in ScreenFills.Selected.Value, RGBA(255, 0, 0, 1), RGBA(54, 176, 75, 1))`
 
@@ -92,7 +92,7 @@ ms.locfileid: "74732075"
 
     **ターゲット**は、ユーザーがアプリを開いたときに最初に表示されます。
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 
 ### <a name="color-contrast"></a>色のコントラスト
 

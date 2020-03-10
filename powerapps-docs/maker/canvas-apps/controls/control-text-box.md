@@ -14,23 +14,23 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 66de4ee34cf52f3c351fe3f9c624596e5dd1211d
-ms.sourcegitcommit: 8e42a5996799d9831f8c5a52b0b051a6088d9ce7
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73649837"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404132"
 ---
 # <a name="label-control-in-canvas-apps"></a>キャンバスアプリのラベルコントロール
 
 テキスト、数値、日付、通貨などのデータを表示するボックスです。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 
 ラベルには、入力した内容がそのまま表示されるリテラル文字列として、またはテキスト文字列に評価される数式として指定したデータが表示されます。 ラベルは通常、他のコントロール (画面を識別するためのバナーなど) の外側に、別のコントロール (評価コントロール、オーディオ コントロールなど) を識別するラベルとして、またはギャラリー内の項目に関する特定の種類の情報を示すために表示されます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 
-**[Autoheight](properties-core.md)** –ラベルの高さが自動的に拡大され、すべてのテキストが表示されるようにする場合は true に設定します。 割り当てた高さでテキストを切り捨てる場合は false に設定します。
+**[Autoheight](properties-core.md)** –ラベルの高さが自動的に拡大され、すべてのテキストが表示されるようにする場合は true に設定します。 false に設定すると、割り当てられた高さでテキストが切り捨てられます。
 
 **[Color](properties-color-border.md)** – コントロールのテキストの色です。
 
@@ -38,13 +38,13 @@ ms.locfileid: "73649837"
 
 **[Text](properties-core.md)** – コントロールに表示されるテキスト、またはコントロールにユーザーが入力するテキストです。
 
-**[DelayOutput](properties-core.md)**  – テキスト入力時に操作を遅延させる場合は true に設定します。
+**[DelayOutput](properties-core.md)** – テキスト入力時に操作を遅延させる場合は true に設定します。
 
 ## <a name="additional-properties"></a>その他のプロパティ
 
 **[Align](properties-text.md)** – コントロールの水平方向の中心に対するテキストの位置です。
 
-**AutoHeight** – **[Text](properties-core.md)** プロパティの内容がコントロールで一度に表示できる文字数を超えている場合に、自動的に **[Height](properties-size-location.md)** プロパティを大きくするかどうかを指定します。
+**AutoHeight** – **[Text](properties-size-location.md)** プロパティの内容がコントロールで一度に表示できる文字数を超えている場合に、自動的に **[Height](properties-core.md)** プロパティを大きくするかどうかを指定します。
 
 **[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
 
@@ -112,7 +112,7 @@ ms.locfileid: "73649837"
 
 **[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
-**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
 
@@ -132,13 +132,13 @@ ms.locfileid: "73649837"
 
 [**Text**( *Number*, "*FormatCodes*" )](../functions/function-text.md)
 
-## <a name="examples"></a>例
+## <a name="examples"></a>使用例
 
 ### <a name="show-a-literal-string"></a>リテラル文字列を表示する
 
 * ラベルを追加し、その **[Text](properties-core.md)** プロパティを **"Hello, world"** (二重引用符を含む) に設定します。
   
-    [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
+    [コントロールの追加および構成方法](../add-configure-controls.md)については関連記事を参照してください。
 
 ### <a name="show-the-result-of-a-formula"></a>数式の結果を表示する
 
@@ -162,7 +162,7 @@ ms.locfileid: "73649837"
     ギャラリーを選択すると、右側のペインにそのギャラリーのオプションが表示されます。
 4. **Gallery1** ペインで、上部の一覧を **Population** に、中央の一覧を **City** に、下部の一覧を **Country** にそれぞれ設定します。
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 
 名前とは異なり、**ラベル** コントロールを別のコントロールのラベルとして使用する必要はありません。 任意のテキストを表示するために使用できます。
 
@@ -181,7 +181,7 @@ ms.locfileid: "73649837"
 * スクリーンリーダーが**Text**プロパティの値に変更を通知する場合は、 **[Live](properties-accessibility.md)** を**丁寧**または**Assertive**に設定する必要があります。
 
   > [!NOTE]
-  > **[TabIndex](properties-accessibility.md)** が 0 以上の場合、スクリーン リーダーは**ラベル**をボタンとして扱います。
+  > TabIndex **[ が 0 以上の場合、スクリーン リーダーは](properties-accessibility.md)ラベル**をボタンとして扱います。
 
 ### <a name="low-vision-support"></a>弱視のサポート
 

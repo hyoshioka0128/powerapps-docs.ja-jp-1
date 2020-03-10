@@ -7,29 +7,29 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 03/09/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 1fe22d1503193c7c26f0ac8532085bb9b7db2eac
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 5d5144db3147defa43c5e11cb169a6ebc9b02105
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74727297"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970965"
 ---
 # <a name="export-control-and-import-control-in-power-apps"></a>Power Apps でのコントロールのエクスポートとコントロールのインポート
 データをローカルファイルにエクスポートし、そのデータを Power Apps の別のアプリにインポートするためのコントロールです。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 同じデータを使用する複数のアプリを作成し、これら以外のアプリとはそのデータを共有しない場合には、**エクスポート** コントロールと**インポート** コントロールを使用してデータをエクスポートおよびインポートできます。 データをエクスポートするときに、別のコンピューターにコピーできる圧縮ファイルを作成しますが、Power Apps 以外のプログラムでは読み取ることができません。
 
-## <a name="warning"></a>警告
+## <a name="warning"></a>［警告］
 アプリでこの機能を有効にすると、セキュリティが弱まりデータが漏洩する可能性があります。  インポートするファイルは認定済みの信頼できるファイルのみとし、エクスポートするデータは機密情報または取扱いに注意が必要なもの以外のみとするようにユーザーに指示することが推奨されます。
 
-## <a name="limitations"></a>事項
+## <a name="limitations"></a>制限事項
 エクスポート機能は、Web ブラウザーではサポートされていません。
 
 ## <a name="key-properties"></a>主要なプロパティ
@@ -115,21 +115,20 @@ ms.locfileid: "74727297"
 **[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
 
 ## <a name="example"></a>例
-1. **[[ボタン]](control-button.md)** コントロールを追加し、 **[OnSelect](properties-core.md)** プロパティに次の式を設定します。
-   <br>**ClearCollect(Products, {Name:"Europa", Price:"10.99"}, {Name:"Ganymede", Price:"12.49"}, {Name:"Callisto", Price:"11.79"})**
-   
-    [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-   
-    **[ClearCollect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-2. F5 キーを押し、 **[ボタン](control-button.md)** コントロールをクリックまたはタップしてから、Esc キーを押します。
+1. **[[ボタン]](control-button.md)** コントロールを追加し、 **[OnSelect](properties-core.md)** プロパティに次の式を設定します。 <br>
+   ```
+   ClearCollect(Products, {Name:"Europa", Price:"10.99"}, {Name:"Ganymede", Price:"12.49"}, {Name:"Callisto", Price:"11.79"})
+   ```
+   詳細については、「コントロール、 **[clearcollect](../functions/function-clear-collect-clearcollect.md)** 、および[その他の関数](../formula-reference.md)の[追加、名前付け、および構成](../add-configure-controls.md)」を参照してください。
+2. F5 キーを押して [ **[ボタン](control-button.md)** コントロール] を選択し、Esc キーを押します。
 3. **[エクスポート]** コントロールを追加し、**Data** プロパティに **Products**を設定します。
-4. F5 キーを押して、**エクスポート** コントロールをクリックまたはタップしてから、データのエクスポート先のファイル名を指定します。
-5. **[保存]** をクリックまたはタップしてから、Esc キーを押して既定のワークスペースに戻ります。
+4. F5 キーを押して、**エクスポート**コントロールを選択し、ファイル*データ .zip*をダウンロードします。
+5. **[保存]** を選択し、Esc キーを押して既定のワークスペースに戻ります。
 6. 新規アプリまたは既存のアプリに **[インポート]** コントロールを追加して **MyData** という名前を付け、 **[OnSelect](properties-core.md)** プロパティに次の式を設定します。<br>
    **Collect(ImportedProducts, MyData.Data)**
-7. F5 キーを押して、 **[MyData]** をクリックまたはタップしてからエクスポートしたファイルをクリックまたはタップし、 **[開く]** をクリックまたはタップします。
-8. Esc キーを押し、 **[ファイル]** メニューの **[コレクション]** をクリックまたはタップして、エクスポート済みのデータが現在のアプリに存在することを確認します。
+7. F5 キーを押して **[MyData]** を選択し、エクスポートしたファイルを選択して、 **[開く]** を選択します。
+8. Esc キーを押して **[ファイル]** メニューの **[コレクション]** を選択し、エクスポートしたデータが現在のアプリにあることを確認します。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
-**Export** と **Import** は特殊なボタンなので、 **[ボタン](control-button.md)** と同じガイドラインが適用されます。
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+**Export[ と ](control-button.md)Import** は特殊なボタンなので、ボタンと同じガイドラインが適用されます。

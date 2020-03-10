@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 04/23/2018
+ms.date: 03/09/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f5288e6a8ee655cf24479a7de3a5904b7f1a4e07
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 35e4107934134a229817deb258bacf5e36c9dbb6
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204044"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970978"
 ---
 # <a name="attachments-control-in-power-apps"></a>Power Apps での添付ファイルの制御
 ユーザーがデバイスにファイルをダウンロードしたり、SharePoint リストまたは Common Data Service エンティティからファイルをアップロードしたり削除したりできるようにするコントロール。
@@ -27,11 +27,11 @@ ms.locfileid: "75204044"
 添付ファイル コントロールには、次の制限があります。
 1. 添付ファイルは、SharePoint リストおよび Common Data Service エンティティでサポートされています。
 
-1. アップロードおよび削除機能は、フォーム内でのみ動作します。 添付コントロールは、編集モードのときは無効になり、フォーム内では表示されません。 ファイルの追加と削除を保存するには、アプリユーザーがフォームを保存する必要があります。 この制限のため、添付ファイルコントロールは [**挿入**] タブからは使用できませんが、SharePoint または Common Data Service フォームで添付ファイルフォームフィールドが有効になっている場合はフォームに表示されます。
+1. アップロードおよび削除機能は、フォーム内でのみ動作します。 添付コントロールは、編集モードのときは無効になり、フォーム内では表示されません。 ファイルの追加と削除を保存するには、アプリユーザーがフォームを保存する必要があります。 この制限のため、添付ファイルコントロールは **[挿入]** タブからは使用できませんが、SharePoint または Common Data Service フォームで添付ファイルフォームフィールドが有効になっている場合はフォームに表示されます。
 
 1. ファイルをアップロードできるのは、10 MB 以下の場合だけです。  
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 **添付**ファイルコントロールを使用すると、SharePoint リストまたは Common Data Service エンティティからファイルを開いたり、追加したり、削除したりできます。
 
 ## <a name="key-properties"></a>主要なプロパティ
@@ -82,20 +82,22 @@ ms.locfileid: "75204044"
 
 
 ## <a name="example"></a>例
-1. データ ソースとして SharePoint リストを使用してデータからアプリを作成します。 または、アプリにフォームを追加し、そのデータ ソースとして SharePoint リストを設定します。
+1. フォームをアプリに追加し、SharePoint リストをデータソースとして設定します。
 
-2. 左側にあるツリー ビュー内の **Form** コントロールを選択します。
+2. 左側のツリービューで、 **[フォームの表示]** コントロールを選択します。 代わりに、**編集フォーム**を使用することもできます。
 
-3. 右側の [オプション] パネルの [プロパティ] タブで **[データ]** をクリックします。
+3. 右側の オプション パネルの プロパティ タブで **データソース** を選択し、接続した SharePoint リストを選択します。
 
-4. **[フィールド]** の下で、**[添付ファイル]** フィールドを有効にします。
+4. [*フィールド内の*フィールドを**編集**] セクションを選択し、 **[フィールドの追加]** を選択します。 
+
+5. **[添付ファイル]** フィールドを選択し、 **[追加]** を選択します。
 
     SharePoint リストに関連付けられている添付ファイル フィールドが、フォームに表示されます。
 
 [コントロールを追加して構成する方法について説明します。](../add-configure-controls.md)
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
 以下の間には適切な色のコントラストが必要です。
 * **ItemColor** と **ItemFill**

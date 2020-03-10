@@ -14,17 +14,17 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f5f09bab44f3f229b47d9a801703b3aa10cba06d
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729774"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404305"
 ---
 # <a name="app-object-in-power-apps"></a>Power Apps のアプリオブジェクト
 
 現在実行中のアプリに関する情報を提供し、アプリの動作を制御します。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 
 コントロールと同様に、 **App**オブジェクトには、表示されている画面を識別するプロパティが用意されています。また、変更内容を保存するようにユーザーに要求することもできます。 すべてのアプリには**アプリ**オブジェクトがあります。
 

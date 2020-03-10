@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: cc9b12f6cf899d0a57e56eda9fe0dd4bc5ba6c2e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723110"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403939"
 ---
 # <a name="drop-down-control-in-power-apps"></a>Power Apps のドロップダウンコントロール
 ユーザーがそれを開く場合を除き、最初の項目のみを表示するリストです。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 **ドロップダウン** コントロールを使うと、特にリストに多数の選択肢が含まれている場合に画面スペースを節約できます。 ユーザーが下向き矢印を選択して選択肢を表示しない限り、コントロールが使うのは 1 行のみです。  コントロールは、最大で 500 の項目を表示します。
 
 ## <a name="key-properties"></a>主要なプロパティ
@@ -33,7 +33,7 @@ ms.locfileid: "74723110"
   
 **Value** – (データ ソースに複数の列がある場合など) コントロールに表示するデータの列です。
 
-**Selected** –選択された項目を表すデータレコード。
+**Selected** – 選択された項目を表すデータ レコードです。
 
 **Allowemptyselection** –項目が選択されていない場合に、コントロールが空の選択を示すかどうかを指定します。 アプリユーザーは、空の項目を選択して選択を解除することもできます。
 
@@ -100,7 +100,7 @@ ms.locfileid: "74723110"
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
 
-**Selectedtext (非推奨)** –選択された項目を表す文字列値。
+**SelectedText (非推奨)** – 選択した項目を表す文字列値です。
 
 **[SelectionColor](properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色です。
 
@@ -112,7 +112,7 @@ ms.locfileid: "74723110"
 
 **[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
-**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
 
@@ -153,7 +153,7 @@ ms.locfileid: "74723110"
 
     この **[Filter](../functions/function-filter-lookup.md)** 関数は、市区町村が **Cities** コントロールの選択された値と一致する **Accounts** エンティティのレコードのみを表示します。
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
 以下の間には適切な色のコントラストが必要です。
 * **ChevronFill** と **ChevronBackground**

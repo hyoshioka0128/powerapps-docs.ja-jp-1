@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a5645f2f0d515d7eca125f3cd89ecff0c63cfa51
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729059"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403956"
 ---
 # <a name="pen-input-control-in-power-apps"></a>Power Apps でのペン入力コントロール
 ユーザーが画像の領域を描画、削除、強調表示できるコントロールです。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 ユーザーはこのコントロールをホワイトボードのように使用して、図を描いたり、入力テキストに変換可能な文字を書いたりすることができます。
 
 ## <a name="key-properties"></a>主要なプロパティ
@@ -60,7 +60,7 @@ ms.locfileid: "74729059"
 
 **[Size](properties-text.md)** – コントロールに表示されるテキストのフォント サイズです。
 
-**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 
@@ -78,23 +78,23 @@ ms.locfileid: "74729059"
 1. **ペン入力**コントロールを追加して **MyDoodles** という名前を付け、**ShowControls** プロパティを **true** に設定します。
    
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-2. **[ボタン](control-button.md)** コントロールを追加して **MyDoodles** の下に移動し、 **[ボタン](control-button.md)** コントロールの **[Text](properties-core.md)** プロパティを、**Add** (追加) と表示するように設定します。
-3. **[ボタン](control-button.md)** コントロールの **[OnSelect](properties-core.md)** プロパティに次の式を設定します。<br>
+2. **[ボタン](control-button.md)** コントロールを追加して **MyDoodles** の下に移動し、 **[ボタン](properties-core.md)** コントロールの **[Text](control-button.md)** プロパティを、**Add** (追加) と表示するように設定します。
+3. **[ボタン](properties-core.md)** コントロールの **[OnSelect](control-button.md)** プロパティに次の式を設定します。<br>
    **Collect(Doodles, {Sketch:MyDoodles.Image})**
 4. **イメージ ギャラリー** コントロールを追加して **[ボタン](control-button.md)** コントロールの下に移動させ、**イメージ ギャラリー**の幅を表示項目が 3 つになるまで縮小します。
-5. **イメージ ギャラリー** コントロールの **[Items](properties-core.md)** プロパティを **[Doodles]** に設定し、F5 キーを押します。
+5. **イメージ ギャラリー[ コントロールの ](properties-core.md)** Items プロパティを **[Doodles]** に設定し、F5 キーを押します。
 6. **MyDoodles** に絵を描いてから、 **[ボタン](control-button.md)** コントロールをクリックまたはタップします。
    
     描いた絵が、**イメージ ギャラリー** コントロールに表示されます。
 7. (省略可能) **ペン入力** コントロール内で描いた絵を消去するアイコンをクリックまたはタップし、別の絵を描いてから、 **[ボタン](control-button.md)** コントロールをクリックまたはタップします。
-8. **イメージ ギャラリー** コントロール内で、 **[イメージ](control-image.md)** コントロールの  **[OnSelect](properties-core.md)** プロパティに次の式を設定します。<br>
+8. **イメージ ギャラリー** コントロール内で、 **[イメージ](properties-core.md)** コントロールの **[OnSelect](control-image.md)** プロパティに次の式を設定します。<br>
    **Remove(Doodles, ThisItem)**
 9. **イメージ ギャラリー** コントロール内の絵をクリックまたはタップすると、その絵を削除できます。
 
 **[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して絵をローカルに保存するか、 **[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースに保存します。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
 以下の間には適切な色のコントラストが必要です。
 * **[BorderColor](properties-color-border.md)** とコントロールの外側の色 (境界線がある場合)

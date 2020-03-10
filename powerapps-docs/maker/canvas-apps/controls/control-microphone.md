@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: b2da6fd3ac8c4d69eb702ac7537dfefa2e5e94f6
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729108"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403986"
 ---
 # <a name="microphone-control-in-power-apps"></a>Power Apps のマイクコントロール
 アプリのユーザーが自分のデバイスのサウンドを録音できるようにするコントロール。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 アプリのユーザーは、アプリが実行されているデバイスにマイクがある場合、オーディオ録音ができます。
 
 オーディオは、Android では 3gp 形式、iOS では AAC 形式、Web ブラウザーでは OGG 形式で保存されます。
@@ -84,7 +84,7 @@ ms.locfileid: "74729108"
 
 **[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
-**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 
@@ -105,7 +105,7 @@ ms.locfileid: "74729108"
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 
     **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-2. **カスタム ギャラリー** コントロールを追加し、**MyMic** の下に移動し、**カスタム ギャラリー** コントロールの **[Items](properties-core.md)** プロパティを **MySounds** に設定します。
+2. **カスタム ギャラリー** コントロールを追加し、**MyMic** の下に移動し、**カスタム ギャラリー[ コントロールの ](properties-core.md)** Items プロパティを **MySounds** に設定します。
 3. **カスタム ギャラリー** コントロール用のテンプレートで、 **[オーディオ](control-audio-video.md)** コントロールを追加し、**Media** プロパティを **ThisItem.Url** に設定します。
 4. F5 キーを押して、**MyMic** をクリックまたはタップして録音を開始し、もう一度クリックまたはタップして録音を停止します。
 5. **カスタム ギャラリー** コントロールで、 **[オーディオ](control-audio-video.md)** コントロールの再生ボタンをクリックまたはタップして録音を再生します。
@@ -115,8 +115,8 @@ ms.locfileid: "74729108"
 **[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して録音をローカルに保存するか、 **[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースを更新します。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
-**マイク**は特殊なボタンなので、 **[ボタン](control-button.md)** と同じガイドラインが適用されます。 さらに次の点について考慮してください。
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
+**マイク[は特殊なボタンなので、](control-button.md)** ボタンと同じガイドラインが適用されます。 さらに次の点について考慮してください。
 
 ### <a name="audio-alternatives"></a>音声の代替手段
 * 言語障碍があるユーザーまたはマイクがないユーザー向けに、代替形式の入力を追加することを検討してください。 たとえば、 **[テキスト入力](control-text-input.md)** を追加してユーザーがテキストを入力できるようにします。

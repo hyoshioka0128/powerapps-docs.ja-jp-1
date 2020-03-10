@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1cd90e345b41f8316e8cd8c50f4077ee1f64ee91
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77145387"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403437"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-power-apps"></a>パワーアプリのアクセラレーション、アプリ、コンパス、接続、位置通知
 
@@ -43,7 +43,7 @@ ms.locfileid: "77145387"
 | **Acceleration.Y** |前後。  正数は前を表します。 |
 | **Acceleration.Z** |上下。  正数は上を表します。 |
 
-### <a name="app"></a>App
+### <a name="app"></a>アプリ
 
 他のプロパティの中で、 **App**オブジェクトには、表示されている画面を示すシグナルが含まれています。
 

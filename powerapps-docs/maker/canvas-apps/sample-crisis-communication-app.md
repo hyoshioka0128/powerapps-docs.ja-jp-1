@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: afd7875b804822aa264b134764ed6c35349a3dcf
-ms.sourcegitcommit: b65d5a0cbd5f97a5fa9137c44fe146fb900fd1b9
+ms.openlocfilehash: 7dd989bcd87e910812bf41509585c31c1fc107a9
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "78909517"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78971001"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Power Apps での危機通信のサンプルテンプレートのセットアップと学習
 
@@ -158,6 +158,7 @@ ms.locfileid: "78909517"
 
     ![アプリパッケージのインポート](media/sample-crisis-communication-app/31-Import-App.png)
 
+1. *[インポート時に選択]* ハイパーリンクを使用して適切な接続を選択することで、 **Microsoft Teams 接続**と**Office 365 ユーザー接続**の**インポートセットアップ**を完了します。 既に存在しない場合は、[新しい接続](add-data-connection.md)の作成が必要になることがあります。
 1. **[インポート]** を選択します。
 
 ### <a name="update-the-sharepoint-connections"></a>SharePoint 接続を更新する
@@ -197,6 +198,81 @@ ms.locfileid: "78909517"
     ![SharePoint リストに接続する](media/sample-crisis-communication-app/sharepoint-lists.png)
 
 1. アプリを**保存**して**発行**します。
+
+#### <a name="disable-location-updates"></a>位置情報の更新を無効にする
+
+このアプリは、ユーザーが状態を設定するたびにユーザーの場所を記録し、SharePoint サイトに保存します。 これにより、危機管理チームは、このデータを Power BI レポートに表示できます。
+
+この機能を無効にするには、次の手順を実行します。
+
+  1. **BtnDateRange**コントロールを検索する
+  1. 数式バーで、 **btnDateRante**コントロールの**onselect**プロパティを開きます。
+  1. **Onselect**プロパティの数式バーに次のスニペットをコピーして貼り付けます。
+
+  ```
+  UpdateContext({locSaveDates: true});
+
+// Store the output properties of the calendar in static variables and collections.
+Set(varStartDate,First(Sort(Filter(selectedDates,ComponentId=CalendarDatePicker_1.Id),Date,Ascending)).Date);
+Set(varEndDate,First(Sort(Filter(selectedDates,ComponentId=CalendarDatePicker_1.Id),Date,Descending)).Date);
+
+// Create a new record for work status for each date selected in the date range.
+ForAll(
+    Filter(
+        RenameColumns(selectedDates,"Date","DisplayDate"),
+        ComponentId=CalendarDatePicker_1.Id,
+        !(DisplayDate in colDates.Date)
+    ),
+    Patch('CI_Employee Status',Defaults('CI_Employee Status'),
+        {
+            Title: varUser.userPrincipalName,
+            Date: DisplayDate,
+            Notes: "",
+            PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value),
+            
+             
+            Latitude: Blank(),
+            Longitude: Blank()
+        }
+    )
+);
+
+// Update existing dates with the new status.
+ForAll(
+    AddColumns(
+        Filter(
+            RenameColumns(selectedDates,"Date","DisplayDate"),
+            ComponentId=CalendarDatePicker_1.Id,
+            DisplayDate in colDates.Date
+        ),
+        
+        // Get the current record for each existing date.
+        "LookUpId",LookUp(RenameColumns(colDates,"ID","DateId"),And(Title=varUser.userPrincipalName,Date=DisplayDate)).DateId
+    ),
+    Patch('CI_Employee Status',LookUp('CI_Employee Status',ID=LookUpId),
+        {
+            PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value)
+        }
+    )
+);
+
+If(
+    IsEmpty(Errors('CI_Employee Status')),
+    Notify("You successfully submitted your work status.",NotificationType.Success,5000);
+    
+    // Update the list of work status for the logged-in user.
+    ClearCollect(colDates,Filter('CI_Employee Status',Title=varUser.userPrincipalName));
+    
+    Navigate('Share to Team Screen',LookUp(colStyles,Key="navigation_transition").Value),
+    
+    Notify(
+        LookUp(colTranslations,Locale=varLanguage).WorkStatusError,
+        NotificationType.Warning
+    )
+);
+
+UpdateContext({locSaveDates: false})
+```
 
 ### <a name="update-the-request-help-flow"></a>要求のヘルプフローを更新する
 

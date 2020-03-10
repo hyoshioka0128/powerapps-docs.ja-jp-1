@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 777dd5452af8662569e2e51452142a1bbce3f619
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732847"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403438"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-power-apps"></a>Power Apps のキャンバスアプリのテーブルとレコードについて
 
@@ -49,7 +49,7 @@ Excel の数式が 1 つ以上のセル参照を引数として受け取るの�
 
 フィールドには、 **[GroupBy](functions/function-groupby.md)** 関数の例が示すように、別のレコードやテーブルを格納できます。 レコードとテーブルは入れ子構造にすることができ、入れ子レベルの数に制限はありません。
 
-### <a name="columns"></a>列
+### <a name="columns"></a>[列]
 列は、テーブル内の 1 つ以上のレコードに設定された同じフィールドを指します。 上記の例では、各製品に価格フィールドがあり、すべての製品で同じ列に価格が格納されています。  上のテーブルには 4 つの列があります。一番上には左から順に下記のように示されています。
 
 * **Name**
@@ -64,7 +64,7 @@ Excel の数式が 1 つ以上のセル参照を引数として受け取るの�
 他のツールでは、列が "フィールド" と呼ばれることもあります。
 
 > [!NOTE]
-> 列名にスペースが含まれている SharePoint および Excel データソースの場合、Power Apps ではスペースが **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint または Excel の **"列名"** は、データレイアウトに表示されている場合や数式で使用されている場合に、Power Apps の **"Column_x0020_Name"** として表示されます。
+> 列名にスペースが含まれている SharePoint および Excel データソースの場合、Power Apps ではスペースが **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint または Excel の **"Column Name"** は、Power Apps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
 
 ### <a name="table"></a>Table
 テーブルは 1 つ以上のレコードで構成されます。各レコードは複数のフィールドで構成され、フィールドにはレコード全体で一貫したフィールド名が使用されます。
@@ -95,7 +95,7 @@ Excel と Power Apps では、次のような数式を使用して、数値や�
 
 1. スマートフォン用の空のアプリを作成し、他のコントロールを含む垂直方向の **[ギャラリー](controls/control-gallery.md)** コントロールを追加します。
 
-    既定では、画面には **CustomGallerySample** という名前のテーブルから取得したプレースホルダー テキストが表示されます。 画面の **[[ギャラリー]](controls/control-gallery.md)** コントロールの **[Items](controls/properties-core.md)** プロパティは自動的にこのテーブルに設定されます。
+    既定では、画面には **CustomGallerySample** という名前のテーブルから取得したプレースホルダー テキストが表示されます。 画面の **[[ギャラリー]](controls/properties-core.md)** コントロールの **[Items](controls/control-gallery.md)** プロパティは自動的にこのテーブルに設定されます。
 
     ![](media/working-with-tables/gallery-items.png)
 
@@ -114,7 +114,7 @@ Excel と Power Apps では、次のような数式を使用して、数値や�
 
     `FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)`
 
-    この数式では、 **[FirstN](functions/function-first-last.md)** 関数を使って、テーブルから特定の数のレコードを取得しています。 **[FirstN](functions/function-first-last.md)** の 1 つ目の引数として **[Sort](functions/function-sort.md)** 関数を使用し、2 つ目の引数として数字 (この例では **2**) を指定しています。この数字は返すレコードの数を表しています。
+    この数式では、 **[FirstN](functions/function-first-last.md)** 関数を使って、テーブルから特定の数のレコードを取得しています。 **[FirstN](functions/function-sort.md)** の 1 つ目の引数として **[Sort](functions/function-first-last.md)** 関数を使用し、2 つ目の引数として数字 (この例では **2**) を指定しています。この数字は返すレコードの数を表しています。
 
     全体の数式は、**CustomGallerySample** テーブルの最初の 2 つのレコードを格納して **SampleHeading** 列で降順に並べ替えたテーブルを返します。
 
@@ -174,7 +174,7 @@ Power Apps には、同じ方法でテーブルを操作する一連の関数が
 > [!NOTE]
 > このトピックで指定する要素以外の要素を追加した場合、**Subtitle1** 列には **Subtitle2** または類似する名前が付けられる場合があります。
 
-選択したレコードが用意できたので、このレコードから個々のフィールドを抽出しましょう。これには、 **.** 。
+選択したレコードが用意できたので、このレコードから個々のフィールドを抽出しましょう。これには、 **.** 演算子を使用します。
 
 1. **[ラベル](controls/control-text-box.md)** コントロールを追加し、ギャラリーとボタンの下に移動します。
 
@@ -284,7 +284,7 @@ ShowColumns(
 * 入れ子になったレコード スコープの値にアクセスするには、次のパターンを使用した操作対象のテーブルの名前の **@** 演算子を使います。<br>_Table_ **[@** _フィールド名_ **]**
 * データ ソース、コレクション、コンテキスト変数などのグローバル値にアクセスするには、 **[@** _オブジェクト名_ **]** のパターンを使用します (テーブルは指定しません)。
 
-演算対象のテーブルが **Filter(** _テーブル_ **,** ... **)** のような式である場合は、曖昧性除去演算子を使用することはできません。  最も内側のレコード スコープのみが、曖昧性除去演算子を使用せずに、このテーブル式のフィールドにアクセスできます。
+操作対象のテーブルが**フィルター (** _table_ **,** ... などの式である場合は、 **)** の場合、あいまいさを排除する演算子は使用できません。  最も内側のレコード スコープのみが、曖昧性除去演算子を使用せずに、このテーブル式のフィールドにアクセスできます。
 
 たとえば、次のようなコレクション **X** があるとします。
 

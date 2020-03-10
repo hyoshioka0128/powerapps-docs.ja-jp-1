@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 6cabcfe58841a5d507ec31b6279cc9a00922850f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74731989"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78404129"
 ---
 # <a name="slider-control-in-power-apps"></a>Power Apps のスライダーコントロール
 ハンドルをドラッグして値を指定できるコントロールです。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 ユーザーは、スライダーのハンドルを左右または上下 (あなたが選択した方向) にドラッグして、指定された最小値と最大値の間の値を指定できます。
 
 ## <a name="key-properties"></a>主要なプロパティ
@@ -84,7 +84,7 @@ ms.locfileid: "74731989"
 
 **[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
-**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **ValueFill** – 値が **true** の場合の、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。
 
@@ -115,10 +115,10 @@ ms.locfileid: "74731989"
    **Filter(CityPopulations, Population > MinPopulation)**
 6. ギャラリーの最初の項目で、上のラベルの **[Text](properties-core.md)** プロパティを「**ThisItem.City**」に、下のラベルの **[Text](properties-core.md)** プロパティを次の数式に設定します。<br> **Text(ThisItem.Population, "##,###")**
 7. F5 キーを押して、**MinPopulation** を調整し、指定した値よりも人口が多い都市のみを表示します。
-8. 既定のワークスペースに戻るには、Esc キーを押します。
+8. 既定のワークスペースに戻るために、Esc キーを押します。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
 以下の間には適切な色のコントラストが必要です。
 * **ValueFill** と **RailFill**

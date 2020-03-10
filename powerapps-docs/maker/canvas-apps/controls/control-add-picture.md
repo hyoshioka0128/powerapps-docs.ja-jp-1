@@ -13,24 +13,24 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d7c1361593595c89bb67781f78a8f67e23f97cac
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 37c98470d3239cefa008235f295aaf9af2db3f5a
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723131"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78403833"
 ---
 # <a name="add-picture-control-in-power-apps"></a>Power Apps に画像コントロールを追加する
 写真を撮影したり、ローカルのデバイスから画像を読み込んだりします。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 このコントロールを使用すると、ユーザーは写真を撮影したり、デバイスから画像ファイルをアップロードしたりして、このコンテンツでデータ ソースを更新できます。 モバイル デバイスでは、デバイスの選択ダイアログが表示され、ユーザーは写真を撮影するか、既存の画像を使用するかを選択できます。
 
-このコントロールは、 **[イメージ]** と **[メディアの追加] ボタン**の 2 つのコントロールを含むグループ化されたコントロールです。 **イメージ** コントロールには、アップロードされたイメージか、イメージがアップロードされていない場合はプレースホルダーが表示されます。 **[メディアの追加] ボタン**は、イメージをアップロードするように求めます。
+このコントロールは、**イメージ**と [**画像の追加] ボタン**の2つのコントロールを含むグループ化されたコントロールです。 **イメージ** コントロールには、アップロードされたイメージか、イメージがアップロードされていない場合はプレースホルダーが表示されます。 [**画像の追加] ボタンをクリック**すると、アップロードする画像が表示されます。
 
-**Image** プロパティについては、[イメージ コントロールのリファレンス](control-image.md)を参照してください。
+[Image](control-image.md) プロパティについては、**イメージ コントロールのリファレンス**を参照してください。
 
-## <a name="add-media-button-properties"></a>メディア ボタンのプロパティを追加する
+## <a name="add-picture-button-properties"></a>画像ボタンのプロパティの追加
 **[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。 画像追加の目的を説明する必要があります。
 
 **[Align](properties-text.md)** – コントロールの水平方向の中心に対するテキストの位置です。
@@ -75,7 +75,7 @@ ms.locfileid: "74723131"
 
 **[Italic](properties-text.md)** – コントロール内のテキストを斜体にするかどうかを指定します。
 
-**Media** – オーディオまたはビデオ コントロールが再生するクリップの ID です。
+**Media** - オーディオまたはビデオ コントロールが再生するクリップの ID です。
 
 **[OnChange](properties-core.md)** – ユーザーが (スライダーを調整するなどして) コントロールの値を変更した場合のアプリの反応を指定します。
 
@@ -99,7 +99,7 @@ ms.locfileid: "74723131"
 
 **[Text](properties-core.md)** – イメージがアップロードされていないときにボタンに表示されるテキスト。
 
-**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
 
@@ -116,20 +116,20 @@ ms.locfileid: "74723131"
 ## <a name="related-functions"></a>関連する関数
 [**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
 
-## <a name="examples"></a>例
+## <a name="examples"></a>使用例
 ### <a name="add-images-to-an-image-gallery-control"></a>イメージ ギャラリー コントロールへの画像の追加
 1. **画像の追加**コントロールを追加し、それをトリプル クリックします。
    
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
 2. **[Open (開く)]** ダイアログ ボックスで、画像ファイルをクリックまたはタップしてから、 **[Open (開く)]** をクリックまたはタップします。
-3. **[ボタン](control-button.md)** コントロールを追加して**画像の追加**コントロールの下に移動し、 **[ボタン](control-button.md)** コントロールの **[OnSelect](properties-core.md)** プロパティを次の数式に設定します。<br>
+3. **[ボタン](control-button.md)** コントロールを追加して**画像の追加**コントロールの下に移動し、 **[ボタン](properties-core.md)** コントロールの **[OnSelect](control-button.md)** プロパティを次の数式に設定します。<br>
    **Collect(MyPix, AddMediaButton1.Media)**
    
     **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 4. **イメージ ギャラリー** コントロールを追加し、その **[Items](properties-core.md)** プロパティを **MyPix** に設定します。
 5. F5 キーを押して、 **[ボタン](control-button.md)** コントロールをクリックまたはタップします。
    
-    **画像の追加**コントロールの画像が**イメージ ギャラリー** コントロールに表示されます。 画像の縦横比が**イメージ ギャラリー** コントロール内の **[イメージ](control-image.md)** コントロールと同じでない場合は、 **[イメージ](control-image.md)** コントロールの **[ImagePosition](properties-visual.md)** プロパティを **Fit** に設定します。
+    **画像の追加**コントロールの画像が**イメージ ギャラリー** コントロールに表示されます。 画像の縦横比が**イメージ ギャラリー[ コントロール内の ](control-image.md)** イメージ コントロールと同じでない場合は、 **[イメージ](properties-visual.md)** コントロールの **[ImagePosition](control-image.md)** プロパティを **Fit** に設定します。
 6. **画像の追加**コントロールをクリックまたはタップし、別の画像ファイルをクリックまたはタップし、 **[Open (開く)]** をクリックまたはタップしてから、追加した **[ボタン](control-button.md)** コントロールをクリックまたはタップします。
    
     2 番目の画像が**イメージ ギャラリー** コントロールに表示されます。
@@ -138,16 +138,16 @@ ms.locfileid: "74723131"
 **[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して画像をローカルに保存するか、 **[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースを更新します。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 **[ボタン](control-button.md)** および **[イメージ](control-image.md)** と同じガイドラインが適用されます。 さらに次の点について考慮してください。
 
 ### <a name="color-contrast"></a>色のコントラスト
-* **[メディアの追加] ボタン**のテキストと背景の間には、適切なコントラストが必要です。 アップロードされるイメージにはさまざまな色が存在する可能性があるので、 **[メディアの追加] ボタン**には不透明な **[Fill](properties-color-border.md)** を使用して一貫したコントラストにします。
+* **[画像の追加] ボタン**のテキストと背景の間には適切なコントラストが必要です。 アップロードされたイメージは色が異なる場合があるため、[**画像の追加] ボタン**の不透明な **[塗りつぶし](properties-color-border.md)** を使用して、一貫したコントラストを確保します。
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
-* **[メディアの追加] ボタン**には、ユーザーに画像の追加または変更を求める **Text** と **ChangePictureText** を設定する必要があります。
+* [**画像の追加] ボタン**には、画像を追加または変更するようにユーザーに求める**テキスト**と**ChangePictureText**が必要です。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
-* **[メディアの追加] ボタン**の **[TabIndex](properties-accessibility.md)** は 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
-* **[メディアの追加] ボタン**には、明確に判別できるフォーカス インジケーターが必要です。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+* **[画像の追加] ボタン**は、キーボードユーザーが移動できるように、 **[TabIndex](properties-accessibility.md)** が0以上の値である必要があります。
+* **[画像の追加] ボタン**には、明確に表示されるフォーカスインジケーターが必要です。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
  
