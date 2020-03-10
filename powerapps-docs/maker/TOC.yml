@@ -208,7 +208,11 @@
             - name: 一般的なコネクタ
               items:
                 - name: Common Data Service
-                  href: canvas-apps/connections/connection-common-data-service.md
+                  items:
+                    - name: 概要
+                      href: canvas-apps/connections/connection-common-data-service.md
+                    - name: 機能強化
+                      href: canvas-apps/use-native-cds-connector.md
                 - name: クラウド ストレージ
                   href: canvas-apps/connections/cloud-storage-blob-connections.md
                 - name: Dynamics 365
@@ -1555,6 +1559,8 @@
           href: ./common-data-service/update-solutions.md
         - name: ソリューションのエクスポート
           href: ./common-data-service/export-solutions.md
+        - name: ソリューションの修正プログラムを作成する
+          href: ./common-data-service/solution-patches.md
         - name: 管理ソリューションのマージ方法
           href: ./common-data-service/how-managed-solutions-merged.md
         - name: 環境変数を使用する
