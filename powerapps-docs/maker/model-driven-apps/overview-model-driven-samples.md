@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 13ec511c692af8694012f94f881cb02ee1280ee2
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 65a650b979c4196eff8c103717a63aea5309ec57
+ms.sourcegitcommit: 551af7e0273862b28d9b2387671a4eeaf719eb37
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404454"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "79084602"
 ---
 # <a name="model-driven-sample-apps"></a>モデル駆動型サンプル アプリ
 
@@ -33,10 +33,10 @@ ms.locfileid: "78404454"
 
 ## <a name="get-sample-apps"></a>サンプル アプリを入手する
 
-モデル駆動型アプリを実行または編集するには、最初に Common Data Service データベースでアプリをプロビジョニングする必要があります。 まず、試用版環境とデータベースを作成し、 **[サンプル アプリとデータを含める]** を必ずオンにします。
+モデル駆動型アプリを実行または編集するには、最初に Common Data Service データベースでアプリをプロビジョニングする必要があります。 まず、評価環境とデータベースを作成し、 **[Depoly sample apps and data]** を選択します。
 
-![データベースの作成](media/overview-model-driven-samples/create-database1.png)
-
+> [!div class="mx-imgBorder"] 
+> Create database](media/overview-model-driven-samples/create-database1.png) ![
 
 > [!IMPORTANT]
 > このオプションをオンにすると、使用可能なすべてのサンプル アプリがデータベースにインストールされます。 サンプル アプリは学習およびデモンストレーションを目的としたものであり、運用環境のデータベースにはインストールしないことをお勧めします。 
@@ -45,13 +45,13 @@ ms.locfileid: "78404454"
 
 1. [Powerapps.com](https://powerapps.com)にサインインします。  
 
-    
+2. **[作成]** ページでサンプルアプリを選択し、 **[作成]** をクリックします。
 
-2. **[作成]** ページでサンプルアプリをポイントし、 **[このアプリの作成]** をクリックします。
+> [!div class="mx-imgBorder"] 
+> ![モデルサンプルアプリ](media/overview-model-driven-samples/model-driven-create-page-sample.png)
 
-![モデルサンプルアプリ](media/overview-model-driven-samples/model-driven-create-page-sample.png)
+3. アプリ デザイナーが開き、アプリをカスタマイズするための複数のオプションが表示されます。
 
-3. アプリ デザイナーが開き、アプリをカスタマイズするための複数のオプションが表示されます。 
 4. その他のカスタマイズオプションについては、ポータルの左側のナビゲーションで **[詳細設定]** をクリックしてください。
 
 ## <a name="remove-sample-apps-and-data"></a>サンプル アプリとデータを削除する 

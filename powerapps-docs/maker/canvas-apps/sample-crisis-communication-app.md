@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/06/2020
+ms.date: 03/11/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7dd989bcd87e910812bf41509585c31c1fc107a9
-ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
+ms.openlocfilehash: 742d33b2d87969df19fe6c0e82f96ecfa9da27e4
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "78971001"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133628"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Power Apps での危機通信のサンプルテンプレートのセットアップと学習
 
@@ -37,12 +37,20 @@ ms.locfileid: "78971001"
 - フローをインポートしてユーザーに通知を送信する
 - 集中管理されたチームチームを作成してデータを集計し、問題に効果的に対応する
 
+> [!NOTE]
+> 危機通信のサンプルテンプレートは、Power Apps と Power App の米国政府計画の自動化にも使用できます。 Power Apps のサービス Url と米国政府バージョンの自動化は、商用バージョンとは異なります。 詳細については、「 [Power Apps の米国政府サービス url](https://docs.microsoft.com/power-platform/admin/powerapps-us-government#power-apps-us-government-service-urls) 」と「[米国政府機関向けサービス url の自動化](https://docs.microsoft.com/power-automate/us-govt#power-automate-us-government-service-urls)」を参照してください。
+
 ## <a name="prerequisites"></a>前提条件
 
 - Power Apps 用の[サインアップ](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) 。
 - 有効な SharePoint Online ライセンスと、リストを作成するためのアクセス許可が必要です。
 - アプリのデータを格納できるパブリック SharePoint サイトが必要です。
 - [Aka.ms/CrisisCommunicationSolution](https://aka.ms/CrisisCommunicationSolution)から資産をダウンロードします。
+
+> [!IMPORTANT]
+> **危機通信アプリ**に関連するフィードバックまたは問題については、次のリンクを参照してください。
+> - **[皆様](https://aka.ms/crisis-communication-feedback)**
+> - **[問題](https://aka.ms/crisis-communication-issues)**
 
 ## <a name="create-a-home-for-your-data"></a>データのホームを作成する
 
@@ -119,7 +127,7 @@ ms.locfileid: "78971001"
 
 > [!NOTE]
 > ロケーションサービスが必要であることを示すエラーが表示される場合があります。
-この問題が発生した場合は、位置情報サービスの自動化を許可し、ページを更新してから再試行してください。
+この問題が発生した場合は、位置情報サービスによる自動化を許可し、ページを更新してから再試行してください。
 
 その後、フローによって、SharePoint サイト内に次の SharePoint リストが作成されます。
 
@@ -136,7 +144,7 @@ ms.locfileid: "78971001"
 
 > [!NOTE]
 > - 上記の一覧のすべての列は、依存関係と見なす必要があります。
-    誤ったスキーマ変更からリストを保護してください (たとえば、新しい列の追加は許可されますが、列を削除するとアプリが壊れる可能性があります)。
+    誤ったスキーマ変更からリストを保護します (たとえば、新しい列の追加は許可されますが、列を削除するとアプリが壊れる可能性があります)。
 > - リスト項目を削除するときは注意が必要です。リスト項目を削除すると、履歴レコードが削除されます。 非推奨の値を [*いいえ* *] から [はい]* に切り替えて、連絡先、ニュース、faq、リンクからレコードを削除することができます。
 
 ## <a name="import-and-set-up-the-crisis-communication-app"></a>危機通信アプリをインポートしてセットアップする
@@ -171,8 +179,6 @@ ms.locfileid: "78971001"
 
 1. **サインイン**するか、必要な接続を作成して、 **[許可]** を選択します。
 
-    ![接続を許可する](media/sample-crisis-communication-app/allow-connections.png)
-
 1. 左側のウィンドウでデータソースに移動します。
 
     ![データ ソース](media/sample-crisis-communication-app/data-sources.png)
@@ -199,11 +205,11 @@ ms.locfileid: "78971001"
 
 1. アプリを**保存**して**発行**します。
 
-#### <a name="disable-location-updates"></a>位置情報の更新を無効にする
+#### <a name="enable-location-updates"></a>位置情報の更新を有効にする
 
-このアプリは、ユーザーが状態を設定するたびにユーザーの場所を記録し、SharePoint サイトに保存します。 これにより、危機管理チームは、このデータを Power BI レポートに表示できます。
+このアプリを使用すると、ユーザーが状態を設定するたびにユーザーの場所を記録し、SharePoint サイトに保存することができます。 危機管理チームは、このデータを Power BI レポートで表示できます。
 
-この機能を無効にするには、次の手順を実行します。
+この機能を有効にするには、次の手順を実行します。
 
   1. **BtnDateRange**コントロールを検索する
   1. 数式バーで、 **btnDateRante**コントロールの**onselect**プロパティを開きます。
@@ -231,8 +237,8 @@ ForAll(
             PresenceStatus: LookUp(Choices('CI_Employee Status'.PresenceStatus),Value=WorkStatus_1.Selected.Value),
             
              
-            Latitude: Blank(),
-            Longitude: Blank()
+            Latitude: Location.Latitude,
+            Longitude: Location.Longitude
         }
     )
 );
@@ -329,7 +335,7 @@ UpdateContext({locSaveDates: false})
 1. [Power Apps](https://make.powerapps.com) にサインインします。
 1. 左側のナビゲーションから **[アプリ]** を選択します。
 1. コマンドバーの **[インポート]** を選択します。
-1. GitHub リポジトリから**CrisisCommunicationAdminApp**ファイルをアップロードします。
+1. GitHub リポジトリから**CrisisCommunicationAdmin**ファイルをアップロードします。
 
     ![アプリパッケージのインポート](media/sample-crisis-communication-app/import-app.png)
 
@@ -390,15 +396,19 @@ UpdateContext({locSaveDates: false})
 
 すべてのフィールドを入力し、 **[保存]** を選択します。
 
-| **フィールド名** | **SharePoint での論理名** | **目的** |
-|-|-|-|
-| 管理者の電子メール | AdminContactEmail | アプリケーションを管理している他のユーザーに通知するために使用します。 |
-| ロゴの URL | Logo | 左上隅に表示されるアプリのロゴ。 |
-| AAD グループ ID | AADGroupID | *新しい緊急時の通信に関するニュース*フローのユーザーへの通知を通じて、社内の更新に関する通知をエンドユーザーに送信するために使用されます。 |  
-| アプリの URL | AppURL | [**詳細**を表示] を選択した後、[*新しい緊急通信のユーザーに通知] ニュースフローで*ユーザーをリダイレクトできるようにするためのアプリの場所。 | 
-| Government の RSS フィード | GovernmentRSSFeed | アプリ内の世界のニュース機能を設定するために使用されます。 信頼できる発行元から従業員に追加情報を提供する場合に便利です。 |
-| 通知方法 | PreferredSentNotification | *新しい緊急時通信ニュース*フローのユーザーへの通知によって、通知を送信するときにどの配布チャネルを使用する必要があるかを判断するために使用されます。 |
-| 機能フラグ | Feature1.feature...8 | アプリケーション内の各機能を無効または有効にするために使用します。 |
+| **フィールド名** | **SharePoint での論理名** | **目的** | **例** |
+|-|-|-|-|
+| 管理者の電子メール | AdminContactEmail | アプリケーションを管理している他のユーザーに通知するために使用します。  | admin@contoso.com |
+| ロゴの URL | Logo | 左上隅に表示されるアプリのロゴ。 | https://contoso.com/logo.png |
+| AAD グループ ID | AADGroupID | *新しい緊急時の通信に関するニュース*フローのユーザーへの通知を通じて、社内の更新に関する通知をエンドユーザーに送信するために使用されます。 次の手順に従って、グループの AAD ID を取得します。 | c0ddf873-b4fe-4602-b3a9-502dd944c8d5 |
+| アプリの URL | AppURL | [**詳細**を表示] を選択した後、[*新しい緊急通信のユーザーに通知] ニュースフローで*ユーザーをリダイレクトできるようにするためのエンドユーザーアプリの場所。 | https://apps.preview.powerapps.com/play/<app URL>? tenantId =<tenant ID>
+| Government の RSS フィード | GovernmentRSSFeed | アプリ内の世界のニュース機能を設定するために使用されます。 信頼できる発行元から従業員に追加情報を提供する場合に便利です。 | https://www.who.int/rss-feeds/news-english.xml |
+| 通知方法 | PreferredSentNotification | *新しい緊急時通信ニュース*フローのユーザーへの通知によって、通知を送信するときにどの配布チャネルを使用する必要があるかを判断するために使用されます。 このフィールドは必須です。 | 電子メール、チームの通知、プッシュ通知 |
+| 機能フラグ | Feature1.feature...8 | アプリケーション内の各機能を無効または有効にするために使用します。 |  |
+
+> [!NOTE]
+> 現在 GCC では、チームの通知とプッシュ通知はサポートされていません。
+
 
 #### <a name="finding-the-aad-of-your-distribution-group"></a>配布グループの AAD の検索
 1. [Aad.portal.azure.com](https://aad.portal.azure.com)に移動します。
@@ -587,7 +597,7 @@ UpdateContext({locSaveDates: false})
 
 ## <a name="monitor-office-absences-with-power-bi"></a>Power BI でオフィスの休暇を監視する
 
-アプリを展開した後、さまざまな理由 (病気や自宅での作業など) のために、ユーザーがオフィスの外に出ることを通知することができるようになりました。 Power BI レポートを使用して、それらのユーザーの数と場所を追跡できるようになりました。
+アプリを展開した後、さまざまな理由 (病気や自宅での作業など) のために、ユーザーがオフィスの外に出ることを通知することができるようになりました。 Power BI レポートを使用して、それらのユーザーの数と場所を追跡できるようになりました。 マップコントロールを機能させるには、[場所の追跡を有効](#enable-location-updates)にする必要があることに注意してください。
 
 開始するには、ダウンロードした[アセットパッケージ](#prerequisites)から使用可能なサンプルレポートの "プレゼンス状態レポート .pbix" を使用します。
 必要に応じて、 [Power BI Desktop](https://powerbi.microsoft.com/downloads)をダウンロードします。 また、前に作成した**CI_Employee Status** SharePoint リストからいくつかの情報が必要になるので、先に説明します。 サイトの一覧を開き、[設定] アイコンの下の [リストの設定] を選択します。
@@ -710,6 +720,25 @@ Power BI レポートを追加するには:
 1. **Power BI**を検索して選択します。
 1. Power BI レポートを検索して選択します。
 1. **[保存]** を選択します。
+
+## <a name="faq"></a>よく寄せられる質問
+
+1. **このソリューションを実行するにはどのようなライセンスが必要ですか?**
+
+    - このアプリのソリューションでは、Office コネクタを使用します。 そのため、Office からのシードされた電源アプリライセンスで、ユーザーと管理者のアプリを実行して再生するだけで十分です。 詳細については、 [「Power Platform ライセンスの概要」](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)を参照してください。 
+    - (ソリューションの一部としてパッケージ化された) Power BI レポートを使用する場合は、Power BI ライセンスを持っている必要があります。 詳細については、「 [Power BI 料金](https://powerbi.microsoft.com/pricing/)」を参照してください。
+
+1. **ソリューションに関するフィードバックがある場合は、どこに移動すればよいですか?**
+
+    このソリューションのデプロイとカスタマイズについて、皆様のご意見をお待ちしております。 経験を共有するには、 [aka.ms/crisis-communication-feedback](https://aka.ms/crisis-communication-feedback)にアクセスしてください。
+
+1. **アプリでバグが見つかったようです。どこに移動すればよいですか。**
+
+   ソリューションでバグを報告するには、 [aka.ms/crisis-communication-issues](https://aka.ms/crisis-communication-issues)にアクセスしてください。
+
+1. **GCC で現在サポートされていない機能は何ですか。**
+
+    現在、Power オートメーション bot connector for Teams およびプッシュ通知コネクタは、GCC では使用できません。 [電子メール] オプションを使用して、GCC 用の内部ニュースの更新についてユーザーに警告します。
 
 ***免責事項:*** *このアプリはサンプルであり、Microsoft Power Apps および Teams と共に使用して、参照情報のみを伝達することができます。このアプリは、医療デバイス、臨床サポート、診断ツール、その他のテクノロジとして使用することを目的としたものではありません。また、病気やその他の条件の診断、治療、軽減、取り扱い、または防止に使用することを意図したものではありません。 このアプリは、専門的な医療のアドバイス、診断、取り扱い、または略しの代わりとして設計されていないため、使用しないでください。 お客様は、このアプリの使用に関して唯一のリスクと責任を負うものとします。 Microsoft では、接続関連に用意されているアプリまたはマテリアルが、医療目的、または任意のユーザーの健康や医療の要件を満たすために十分であることを保証していません。*  
 

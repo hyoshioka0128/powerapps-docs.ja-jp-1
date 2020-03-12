@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 23bfbb3b97764a427d5422e4ad207d4af7cc1589
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: 927b8dae59a4dc6fc55d74c1998b0d434eb8356c
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530790"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "79133567"
 ---
 # <a name="trace-function"></a>Trace 関数 
 
@@ -28,10 +28,10 @@ Trace は、テスト スタジオで使用する場合、**OnTestCaseComplete**
 
 ## <a name="syntax"></a>構文
 
-*Trace(message, severity, custom_record )*
+*Trace (message、trace_severity、custom_record)*
 
 - *Message* – 必須。 トレースされる情報。 テストでは、これにより TestCaseResult レコードの Traces テーブルにレコードが作成されます。 
-- *Severity* - 省略可能。 Application Insights に記録されたトレースの重大度レベル。 オプションは、Information、Warning、または Error です。 
+- *Trace_severity* -省略可能。 Application Insights に記録されたトレースの重大度レベル。 オプションは TraceSeverity. Information, TraceSeverity. Warning または TraceSeverity. Error です。 
 - *custom_record* - 省略可能。 Application Insights に記録されるカスタム データを含むレコード。 
   
 
