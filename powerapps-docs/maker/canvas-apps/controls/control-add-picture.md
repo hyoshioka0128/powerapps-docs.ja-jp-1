@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 37c98470d3239cefa008235f295aaf9af2db3f5a
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403833"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211528"
 ---
 # <a name="add-picture-control-in-power-apps"></a>Power Apps に画像コントロールを追加する
 写真を撮影したり、ローカルのデバイスから画像を読み込んだりします。

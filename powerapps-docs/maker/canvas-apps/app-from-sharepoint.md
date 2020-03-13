@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 346bb27911549715b6c4fdc40f64552c524527be
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403381"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211919"
 ---
 # <a name="create-a-canvas-app-in-power-apps-from-a-sharepoint-list"></a>SharePoint リストから Power Apps でキャンバスアプリを作成する
 
@@ -44,39 +44,39 @@ ms.locfileid: "78403381"
 
 1. [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
-1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、 **[このアプリの作成]** を選択します。
+1. **[Make your own app]\(独自アプリの作成\)** の下の **[Start from data]\(データから開始\)** にポインターを合わせ、**[このアプリの作成]** を選択します。
 
     ![アプリを作成するためのオプション](./media/app-from-sharepoint/start-from-data.png)
 
-1. SharePoint タイルで、 **[携帯電話レイアウト]** を選択します。
+1. SharePoint タイルで、**[携帯電話レイアウト]** を選択します。
 
     ![アプリを作成するためのオプション](./media/app-from-sharepoint/sharepoint-tile.png)
 
-1. **[直接接続]** オプションを選択し、 **[作成]** を選択します。
+1. [**直接接続**] オプションを選択し、[**作成**] を選択します。
 
     ![接続の作成](./media/app-from-sharepoint/create-connection.png)
 
-1. **[SharePoint サイトへの接続]** で、SharePoint Online サイトの URL を入力するか貼り付け、 **[移動]** を選択します。
+1. [**SharePoint サイトへの接続**] で、SharePoint Online サイトの URL を入力するか貼り付け、[**移動**] を選択します。
 
     この例のように、リストの名前ではなくサイトの URL のみを含めます。<br>`https://microsoft.sharepoint.com/teams/Contoso`
 
-1. **[リストを選択してください]** で、**SimpleApp** を選択し、 **[接続]** を選択します。
+1. [**リストを選択してください**] で、**SimpleApp** を選択し、[**接続**] を選択します。
 
     数分待機すると、アプリがブラウザー画面に開き、一覧で作成した項目が表示されます。 リストに **Title** 以外の列が含まれている場合は、アプリにそのデータが表示されます。 画面上部あたりのタイトル バーに、リストの更新、リストの並べ替え、リスト内の項目の作成用のアイコンが表示されます。 オプションで、タイトル バーの下の検索ボックスを使用して、入力または貼り付けたテキストで一覧をフィルタリングできます。 
 
     ![ブラウズ画面](./media/app-from-sharepoint/browse-screen.png)
 
-    このアプリを使用したり、他のユーザーと共有する前に、さらに変更を加えたいことでしょう。 続行する前に、ベスト プラクティスとして、Ctrl キーと S キーを押し、これまでの作業を保存します。 アプリの名前を指定し、 **[保存]** を選択します。
+    このアプリを使用したり、他のユーザーと共有する前に、さらに変更を加えたいことでしょう。 続行する前に、ベスト プラクティスとして、Ctrl キーと S キーを押し、これまでの作業を保存します。 アプリの名前を指定し、[**保存**] を選択します。
 
 ## <a name="create-an-app-from-within-sharepoint-online"></a>SharePoint Online 内からアプリを作成する
 
 SharePoint Online コマンド バーからカスタム リストのアプリを作成する場合、アプリはそのリストのビューとして表示されます。 Web ブラウザーだけでなく、iOS または Android デバイスでもアプリを実行できます。
 
-1. SharePoint Online でカスタム リストを開き、コマンド バーで **[PowerApps]** 、 **[アプリの作成]** の順に選択します。
+1. SharePoint Online でカスタム リストを開き、コマンド バーで **[PowerApps]**、**[アプリの作成]** の順に選択します。
 
     ![アプリの作成](./media/app-from-sharepoint/generate-new-app.png)
 
-2. 表示されるパネルに、使用するアプリの名前を入力し、 **[作成]** を選択します。
+2. 表示されるパネルに、使用するアプリの名前を入力し、**[作成]** を選択します。
 
     ![アプリの名前の指定](./media/app-from-sharepoint/app-name.png)
 
@@ -86,12 +86,12 @@ SharePoint Online コマンド バーからカスタム リストのアプリを
 
 3. (省略可能) ご利用の SharePoint リスト用のブラウザー タブを更新し (それを選択してから、たとえば、F5 キーを押すことにより)、次に以下の手順を行って、アプリを実行または管理します。
 
-    - (別のブラウザー タブで) アプリを実行するには、 **[開く]** を選択します。
-    - 組織内の他のユーザーがアプリを実行できるようにするには、 **[Make this view public]\(このビューを公開する\)** を選択します。
+    - (別のブラウザー タブで) アプリを実行するには、**[開く]** を選択します。
+    - 組織内の他のユーザーがアプリを実行できるようにするには、**[Make this view public]\(このビューを公開する\)** を選択します。
 
         ご利用のアプリを他のユーザーが編集できるようにするには、[[編集可能]](share-app.md) アクセス許可を使用して**そのアプリを共有**します。
 
-    - SharePoint からビューを削除するには、 **[Remove this view]\(このビューを削除する\)** を選択します。
+    - SharePoint からビューを削除するには、**[Remove this view]\(このビューを削除する\)** を選択します。
 
         アプリを Power Apps から削除するには、[アプリを削除](delete-app.md)します。
 

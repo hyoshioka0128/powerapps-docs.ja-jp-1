@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: dd5135aa04a552fc5606918a8158b40457a6eb6f
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404255"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212264"
 ---
 # <a name="connect-to-cloud-storage-from-power-apps"></a>Power Apps からクラウドストレージに接続する
 Power Apps には、いくつかのクラウドストレージ接続が用意されています。 いずれかの接続を利用し、Excel ファイルを保存したり、それに含まれる情報をアプリ全体で利用したりできます。 接続の種類:  
@@ -33,19 +33,19 @@ Power Apps には、いくつかのクラウドストレージ接続が用意さ
   
   1. Excel ファイルを開き、使用するデータの任意のセルを選択します。
   2. **[挿入]** タブの **[テーブル]** を選択します。
-  3. **[Save as Table (テーブルとして保存)]** ダイアログ ボックスで **[My table has headers (先頭行をテーブルの見出しとして使用する)]** チェックボックスを選択し、 **[OK]** を選択します。
+  3. **[Save as Table (テーブルとして保存)]** ダイアログ ボックスで **[My table has headers (先頭行をテーブルの見出しとして使用する)]** チェックボックスを選択し、**[OK]** を選択します。
   4. 変更を [保存] します。
 
 ## <a name="connect-to-the-cloud-storage-connection"></a>クラウド ストレージ接続に接続する
-1. [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、 **[管理]** を展開し、 **[接続]** を選択します。  
+1. [powerapps.com](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で、**[管理]** を展開し、**[接続]** を選択します。  
    
     ![接続を選択する](./media/cloud-storage-blob-connections/connections.png)
-2. **[新しい接続]** を選択し、クラウド ストレージ接続を選択します。 たとえば、 **[OneDrive]** を選択します。
-3. クラウド ストレージ アカウントのユーザー名とパスワードが求められます。 それらを入力し、 **[サインイン]** を選択します。  
+2. **[新しい接続]** を選択し、クラウド ストレージ接続を選択します。 たとえば、**[OneDrive]** を選択します。
+3. クラウド ストレージ アカウントのユーザー名とパスワードが求められます。 それらを入力し、**[サインイン]** を選択します。  
     ![ユーザー名とパスワードを入力する](./media/cloud-storage-blob-connections/signin.png)
    
     サインインしたら、アプリ内でこの接続を利用できます。
-4. アプリ内のリボンの **[ビュー]** タブで、 **[データ ソース]** をクリックまたはタップします。 右側のウィンドウで、 **[データ ソースの追加]** をクリックまたはタップし、使用するクラウド ストレージ接続をクリックまたはタップしてから Excel テーブルを選択します。
+4. アプリ内のリボンの **[ビュー]** タブで、**[データ ソース]** をクリックまたはタップします。 右側のウィンドウで、**[データ ソースの追加]** をクリックまたはタップし、使用するクラウド ストレージ接続をクリックまたはタップしてから Excel テーブルを選択します。
 5. **[接続]** を選択します。
    
     そのテーブルがデータ ソースとして一覧表示されます。
@@ -56,7 +56,7 @@ Power Apps には、いくつかのクラウドストレージ接続が用意さ
    > Excel データはテーブルとして書式設定されている必要があります。
 
 ## <a name="using-the-excel-data-in-your-app"></a>アプリで Excel データを使用する
-1. **[挿入]** タブで **ギャラリー**を選択し、**テキスト付き** ギャラリー コントロールを選択します。
+1. [**挿入**] タブで **ギャラリー**を選択し、**テキスト付き** ギャラリー コントロールを選択します。
 2. ギャラリーの **[Items](../controls/properties-core.md)** プロパティを Excel テーブルに設定します。 たとえば、Excel テーブルの名前が **Table1** の場合、Table1 に設定します。  
    
     ![Items プロパティ](./media/cloud-storage-blob-connections/itemsproperty.png)  
@@ -86,7 +86,7 @@ Dropbox のフォルダーを共有する場合は、共有フォルダーをユ
 Excel ファイルに関連するコネクタには、[いくつかの制限](#sharing-excel-tables)があります。
 
 ## <a name="known-limitations"></a>既知の制限事項
-アプリで Excel 接続を利用しようとしたとき、 **[Data type unsupported (サポートされていないデータ型)]** または **[Not formatted as a table (表として書式設定されていません)]** が表示された場合、[データを表として書式設定](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)してください。
+アプリで Excel 接続を利用しようとしたとき、**[Data type unsupported (サポートされていないデータ型)]** または **[Not formatted as a table (表として書式設定されていません)]** が表示された場合、[データを表として書式設定](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-E81AA349-B006-4F8A-9806-5AF9DF0AC664)してください。
 
 Excel データに計算列が含まれる場合、それを利用してアプリを作成することはできません。そのデータを既存のアプリに追加することはできません。
 

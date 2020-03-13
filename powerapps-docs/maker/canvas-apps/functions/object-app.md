@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: f5f09bab44f3f229b47d9a801703b3aa10cba06d
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404305"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212172"
 ---
 # <a name="app-object-in-power-apps"></a>Power Apps のアプリオブジェクト
 
@@ -39,7 +39,7 @@ ms.locfileid: "78404305"
 
 このプロパティは、画面オブジェクトを返します。このオブジェクトを使用して、画面のプロパティを参照したり、別の画面と比較して、どの画面が表示されているかを判断したりすることができます。 また、式**App.ActiveScreen.Name**を使用して、表示されている画面の名前を取得することもできます。
 
-表示されている画面を変更するには、 **[Back](function-navigate.md)** または **[Navigate](function-navigate.md)** 関数を使用します。
+表示されている画面を変更するには、 **[Back](function-navigate.md)** または**[Navigate](function-navigate.md)** 関数を使用します。
 
 ## <a name="onstart-property"></a>OnStart プロパティ
 
@@ -51,7 +51,7 @@ ms.locfileid: "78404305"
 
 この数式は、最初の画面が表示される前に評価されます。 画面が読み込まれていないため、 **[Updatecontext](function-updatecontext.md)** 関数でコンテキスト変数を設定することはできません。 ただし、 **Navigate**関数でコンテキスト変数を渡すことはできます。
 
-**Onstart**プロパティを変更した後、**ツリービュー**ペインで**アプリ**オブジェクトをポイントし、表示される省略記号 (...) を選択して、 **[実行 onstart]** を選択してテストします。 アプリが初めて読み込まれるときとは異なり、既存のコレクションと変数は既に設定されています。 空のコレクションから始めるには、 **collect**関数ではなく、 **[clearcollect](function-clear-collect-clearcollect.md)** 関数を使用します。
+**Onstart**プロパティを変更した後、**ツリービュー**ペインで**アプリ**オブジェクトをポイントし、表示される省略記号 (...) を選択して、[**実行 onstart**] を選択してテストします。 アプリが初めて読み込まれるときとは異なり、既存のコレクションと変数は既に設定されています。 空のコレクションから始めるには、 **collect**関数ではなく、 **[clearcollect](function-clear-collect-clearcollect.md)** 関数を使用します。
 
 > [!div class="mx-imgBorder"]
 > 実行 OnStart](media/object-app/appobject-runonstart.png) の ![アプリ項目ショートカットメニュー
@@ -64,7 +64,7 @@ ms.locfileid: "78404305"
 > **Confirmexit**は、Power BI や SharePoint など、に埋め込まれているアプリでは機能しません。
 
 > [!NOTE]
-> 現時点では、**遅延読み込み**のプレビュー機能が有効になっている場合 (新しいアプリでは既定)、これらのプロパティは最初の画面でのみコントロールを参照できます。 参照が行われた場合、Power Apps Studio ではエラーは表示されませんが、結果として発行されるアプリは、Power Apps モバイルまたはブラウザーで開かれません。 この制限を引き上げるために積極的に取り組んでいます。 それまでの間は、[**ファイル** > **アプリの設定**] >  **[詳細設定]** ( **[プレビュー機能]** の下) で**遅延読み込み**をオフにすることができます。
+> 現時点では、**遅延読み込み**のプレビュー機能が有効になっている場合 (新しいアプリでは既定)、これらのプロパティは最初の画面でのみコントロールを参照できます。 参照が行われた場合、Power Apps Studio ではエラーは表示されませんが、結果として発行されるアプリは、Power Apps モバイルまたはブラウザーで開かれません。 この制限を引き上げるために積極的に取り組んでいます。 それまでの間は、[**ファイル** > **アプリの設定**] > [**詳細設定**] ([**プレビュー機能**] の下) で**遅延読み込み**をオフにすることができます。
 
 ### <a name="confirmexit"></a>ConfirmExit
 

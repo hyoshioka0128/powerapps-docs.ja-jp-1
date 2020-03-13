@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 624dd66a2f0574a33f4bb796b88e3e4d5845c973
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403929"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211758"
 ---
 # <a name="create-a-canvas-app-from-scratch-using-common-data-service"></a>Common Data Service を使用してキャンバス アプリを最初から作成する
 
@@ -40,7 +40,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![空白アプリのタイル](./media/data-platform-create-app-scratch/blank-app.png)
 
-1. アプリに名前を指定し、 **[電話]** を選択し、 **[作成]** を選択します。
+1. アプリに名前を指定し、**[電話]** を選択し、**[作成]** を選択します。
 
     アプリはタブレット向けにゼロから作成できますが、このトピックではスマートフォン向けのアプリの構築について示します。
 
@@ -48,17 +48,17 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
 1. 画面の中央で **[データに接続]** を選択します。
 
-1. **[データ]** ウィンドウで **[Common Data Service]** を選択し、 **[アカウント]** チェックボックスをオンにして、 **[接続]** を選択します。
+1. **[データ]** ウィンドウで **[Common Data Service]** を選択し、**[アカウント]** チェックボックスをオンにして、**[接続]** を選択します。
 
-1. 右上の [閉じる] アイコンを選んで、 **[データ]** ウィンドウを閉じます。
+1. 右上の [閉じる] アイコンを選んで、**[データ]** ウィンドウを閉じます。
 
 ## <a name="add-a-list-screen"></a>リスト画面を追加する
 
-1. **[ホーム]** タブで **[新しい画面]** の下向き矢印を選択し、 **[List]\(リスト\)** を選択します。
+1. **[ホーム]** タブで **[新しい画面]** の下向き矢印を選択し、**[List]\(リスト\)** を選択します。
 
     ![リスト画面を追加する](./media/data-platform-create-app-scratch/list-screen.png)
 
-1. 左側のナビゲーション バーで、 **[BrowseGallery1]** を選択し、**Items** プロパティの値を次の式に設定します。
+1. 左側のナビゲーション バーで、**[BrowseGallery1]** を選択し、**Items** プロパティの値を次の式に設定します。
 
     `SortByColumns(Search(Accounts, TextSearchBox1.Text, "name"), "name", If(SortDescending1, SortOrder.Descending, SortOrder.Ascending))`
 
@@ -66,7 +66,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
    - ギャラリーは、**アカウント** エンティティからのデータを表示する必要があります。
    - ユーザーが並べ替えボタンを選択して並べ替え順序を切り替えるまで、データは昇順で並べ替えられる必要があります。
-   - ユーザーが検索バー ( **[TextSearchBox1]** ) に 1 つ以上の文字を入力するか貼り付けた場合、ユーザーが指定した文字が **[名前]** フィールドに含まれるアカウントのみがリストに表示されます。
+   - ユーザーが検索バー (**[TextSearchBox1]**) に 1 つ以上の文字を入力するか貼り付けた場合、ユーザーが指定した文字が **[名前]** フィールドに含まれるアカウントのみがリストに表示されます。
 
      [これらの関数とその他の多くの関数](formula-reference.md)を使用して、アプリの表示と動作の方法を指定できます。
 
@@ -76,9 +76,9 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![ブラウズ画面](./media/data-platform-create-app-scratch/final-browse.png)
 
-1. 左のナビゲーション バーで、 **[Screen1]** にカーソルを合わせ、省略記号 [...] を選び、 **[削除]** を選びます。
+1. 左のナビゲーション バーで、**[Screen1]** にカーソルを合わせ、省略記号 [...] を選び、**[削除]** を選びます。
 
-1. 左のナビゲーション バーで、 **[Screen2]** にカーソルを合わせ、省略記号 [...] を選び、 **[名前の変更]** を選びます。
+1. 左のナビゲーション バーで、**[Screen2]** にカーソルを合わせ、省略記号 [...] を選び、**[名前の変更]** を選びます。
 
 1. 「**BrowseScreen**」を入力または貼り付け、その画面でギャラリーの名前を **BrowseGallery** に変更します。
 
@@ -92,7 +92,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
 
     ![フォームのデータ ソースと項目のプロパティを設定する](./media/data-platform-create-app-scratch/form-datasource.png)
 
-1. 右側のペインの **[プロパティ]** タブで、 **[フィールドの編集]** を選択して **[フィールド]** ウィンドウを開きます。
+1. 右側のペインの [**プロパティ**] タブで、[**フィールドの編集**] を選択して [**フィールド**] ウィンドウを開きます。
 
 1. **[フィールドの追加]** を選択し、次のフィールドのチェックボックスをオンにします。
 
@@ -104,7 +104,7 @@ Common Data Service からアプリを構築する場合、SharePoint、Dynamics
     - **年間売上高**
 
     > [!NOTE]
-    > このシナリオ以外では、カスタムフィールドを作成するには、 **[新しいフィールド]** を選択し、必要な情報を入力して、 **[完了]** を選択します。 詳細については[、「フィールドを作成する」を](../common-data-service/create-edit-field-portal.md#create-a-field)参照してください。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "Select and add a field")
+    > このシナリオ以外では、カスタムフィールドを作成するには、[**新しいフィールド**] を選択し、必要な情報を入力して、[**完了**] を選択します。 詳細については[、「フィールドを作成する」を](../common-data-service/create-edit-field-portal.md#create-a-field)参照してください。<br><br>![](media/data-platform-create-app-scratch/choose-or-add-fields.png "Select and add a field")
 
 1. **[追加]** を選択します。
 

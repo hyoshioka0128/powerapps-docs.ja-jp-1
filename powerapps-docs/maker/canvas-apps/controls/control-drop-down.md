@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: cc9b12f6cf899d0a57e56eda9fe0dd4bc5ba6c2e
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403939"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212218"
 ---
 # <a name="drop-down-control-in-power-apps"></a>Power Apps のドロップダウンコントロール
 ユーザーがそれを開く場合を除き、最初の項目のみを表示するリストです。
@@ -141,11 +141,11 @@ ms.locfileid: "78403939"
 
 1. [空のアプリを開き](../data-platform-create-app-scratch.md#open-a-blank-app)、次いで [**Accounts** エンティティ](../data-platform-create-app-scratch.md#specify-an-entity)を指定します。
 
-1. **ドロップ ダウン** コントロールを追加し、 **[Items](properties-core.md)** プロパティを以下の式に設定します。
+1. **ドロップ ダウン** コントロールを追加し、**[Items](properties-core.md)** プロパティを以下の式に設定します。
 
     `Distinct(Accounts, address1_city)`
 
-    この数式では、**Accounts** エンティティの市区町村がすべて表示されます。 複数のレコードの市区町村が同じである場合、重複するものは、 **[Distinct](../functions/function-distinct.md)** 関数によりドロップダウン コントロールで非表示となります。
+    この数式では、**Accounts** エンティティの市区町村がすべて表示されます。 複数のレコードの市区町村が同じである場合、重複するものは、**[Distinct](../functions/function-distinct.md)** 関数によりドロップダウン コントロールで非表示となります。
 
 1. (オプション) **ドロップダウン** コントロールを **Cities** に名前変更し、垂直方向の **Gallery** コントロールを追加し、ギャラリーの **[Items](properties-core.md)** プロパティをこの数式に設定します。
 

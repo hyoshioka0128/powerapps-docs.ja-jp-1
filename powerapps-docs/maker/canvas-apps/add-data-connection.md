@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d1397f9fd2859611a3cd54023210a27cd5977834
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404586"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212287"
 ---
 # <a name="add-a-data-connection-to-a-canvas-app-in-power-apps"></a>Power Apps でキャンバスアプリにデータ接続を追加する
 
@@ -37,25 +37,25 @@ Power Apps に[サインアップ](../signup-for-powerapps.md)し、サインア
 
 ## <a name="open-a-blank-app"></a>空のアプリを開く
 
-1. **[ホーム]** タブで、 **[キャンバスアプリを空白から]** を選択します。
+1. [**ホーム**] タブで、[**キャンバスアプリを空白から**] を選択します。
 
-1. アプリの名前を指定し、 **[作成]** を選択します。
+1. アプリの名前を指定し、[**作成**] を選択します。
 
-1. **[Power Apps Studio へようこそ]** ダイアログボックスが表示されたら、 **[スキップ]** を選択します。
+1. [ **Power Apps Studio へようこそ**] ダイアログボックスが表示されたら、[**スキップ**] を選択します。
 
 ## <a name="add-data-source"></a>データ ソースの追加
 
-1. 中央のペインで、 **[データに接続]** を選択して**データ**ペインを開きます。
+1. 中央のペインで、[**データに接続**] を選択して**データ**ペインを開きます。
 
     これが既存のアプリで、画面に既にコントロールが含まれている場合は、[**データソース**の > **表示**] を選択して同じウィンドウを開きます。
 
-1. **[データソースの追加]** を選択します。
+1. [**データソースの追加**] を選択します。
 
 1. 接続の一覧に必要なものが含まれている場合は、それを選択してアプリに追加します。 それ以外の場合、次のステップに進んでください。
 
     ![既存の接続を選択する](./media/add-data-connection/choose-existing-connection.png)
 
-1. **[新しい接続]** を選択して、接続の一覧を表示します。
+1. [**新しい接続**] を選択して、接続の一覧を表示します。
 
     ![接続の追加](./media/add-data-connection/add-connection.png)
 

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 777dd5452af8662569e2e51452142a1bbce3f619
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403438"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212770"
 ---
 # <a name="understand-canvas-app-tables-and-records-in-power-apps"></a>Power Apps のキャンバスアプリのテーブルとレコードについて
 
@@ -32,13 +32,13 @@ Power Apps では、Microsoft Excel、SharePoint、SQL Server の情報にアク
 Excel の数式が 1 つ以上のセル参照を引数として受け取るのと同じように、テーブルの名前を引数として受け取るさまざまな数式を作成できます。 Power Apps の一部の数式は、指定した他の引数を反映するテーブルを返します。 たとえば、次のような数式を作成できます。
 
 * **[Patch](functions/function-patch.md)** 関数が受け取る複数の引数の 1 つとしてテーブルを指定することで、テーブル内のレコードを更新する。
-* **[AddColumns](functions/function-table-shaping.md)** 関数、 **[DropColumns](functions/function-table-shaping.md)** 関数、または **[RenameColumns](functions/function-table-shaping.md)** 関数の引数としてテーブルを指定することで、テーブル内の列の追加、削除、名前の変更を行う。 これらの関数によって元のテーブルが変更されることはありません。 指定された他の引数に基づいて別のテーブルが作成されて返されます。
+* **[AddColumns](functions/function-table-shaping.md)** 関数、**[DropColumns](functions/function-table-shaping.md)** 関数、または **[RenameColumns](functions/function-table-shaping.md)** 関数の引数としてテーブルを指定することで、テーブル内の列の追加、削除、名前の変更を行う。 これらの関数によって元のテーブルが変更されることはありません。 指定された他の引数に基づいて別のテーブルが作成されて返されます。
 
 ## <a name="elements-of-a-table"></a>テーブルの要素
 ![](media/working-with-tables/elements-of-a-table.png)
 
 ### <a name="records"></a>レコード
-各テーブルには、ある人、場所、または物事に関する 1 つ以上のカテゴリの情報が格納されます。 上記の例では、製品 (**Chocolate (チョコレート)** 、**Bread (パン)** 、**Water (水)** ) ごとにレコードがあり、各情報カテゴリ (**Price (価格)** 、**Quantity on Hand (在庫数量)** 、**Quantity on Order (注文数量)** ) に対応した列があります。
+各テーブルには、ある人、場所、または物事に関する 1 つ以上のカテゴリの情報が格納されます。 上記の例では、製品 (**Chocolate (チョコレート)**、**Bread (パン)**、**Water (水)**) ごとにレコードがあり、各情報カテゴリ (**Price (価格)**、**Quantity on Hand (在庫数量)**、**Quantity on Order (注文数量)**) に対応した列があります。
 
 数式でレコードを参照する際は、テーブルとは切り離して、中かっこを使用してレコードそのものを記述できます。 たとえば、レコードを **{ Name: "Strawberries", Price: 7.99 }** のように書きますが、これはテーブルとは関連付けられていません。 この例では、**Name** や **Price** などのフィールド名が二重引用符で囲まれていないことに注意してください。
 
@@ -47,7 +47,7 @@ Excel の数式が 1 つ以上のセル参照を引数として受け取るの�
 
 コントロールの場合と同様、レコードのフィールドを参照する際は、レコードに **.** [演算子](functions/operators.md)を付けます。  たとえば、**First(Products).Name** と指定すると、**Products** テーブル内の 1 つ目のレコードの **Name** フィールドが返されます。
 
-フィールドには、 **[GroupBy](functions/function-groupby.md)** 関数の例が示すように、別のレコードやテーブルを格納できます。 レコードとテーブルは入れ子構造にすることができ、入れ子レベルの数に制限はありません。
+フィールドには、**[GroupBy](functions/function-groupby.md)** 関数の例が示すように、別のレコードやテーブルを格納できます。 レコードとテーブルは入れ子構造にすることができ、入れ子レベルの数に制限はありません。
 
 ### <a name="columns"></a>[列]
 列は、テーブル内の 1 つ以上のレコードに設定された同じフィールドを指します。 上記の例では、各製品に価格フィールドがあり、すべての製品で同じ列に価格が格納されています。  上のテーブルには 4 つの列があります。一番上には左から順に下記のように示されています。
@@ -71,7 +71,7 @@ Excel の数式が 1 つ以上のセル参照を引数として受け取るの�
 
 データ ソースやコレクションに格納されているテーブルにもすべて名前があります。この名前は、テーブルを参照したり、引数として受け取る関数にテーブルを渡したりする際に使用します。  関数や数式の結果をテーブルにすることもできます。
 
-数式でテーブルを表すには、次の例に示すように、 **[Table](functions/function-table.md)** 関数を使用してレコードのセットを指定します。各レコードは中かっこで囲みます。
+数式でテーブルを表すには、次の例に示すように、**[Table](functions/function-table.md)** 関数を使用してレコードのセットを指定します。各レコードは中かっこで囲みます。
 
 `Table( { Value: "Strawberry" }, { Value: "Vanilla" } )`
 
@@ -83,13 +83,13 @@ Excel の数式が 1 つ以上のセル参照を引数として受け取るの�
 Excel と Power Apps では、次のような数式を使用して、数値やテキスト文字列を操作できます。
 
 * Excel では、セル **A1** に「**42**」などの値を入力し、別のセルに「**A1+2**」などの数式を入力すると **44** という値が表示されます。
-* Power Apps で、 **slider1.value**の **[Default](controls/properties-core.md)** プロパティを**42**に設定し、ラベルの **[Text](controls/properties-core.md)** プロパティを**slider1.value + 2**に設定して**44**の値を表示します。
+* Power Apps で、 **slider1.value**の**[Default](controls/properties-core.md)** プロパティを**42**に設定し、ラベルの**[Text](controls/properties-core.md)** プロパティを**slider1.value + 2**に設定して**44**の値を表示します。
 
 どちらの場合も、引数の値 (上の例では、セル **A1** や **Slider1** の数値) を変更すると、計算された値が自動的に変更されます。
 
 同様に、数式を使用して、テーブルやレコード内のデータにアクセスし、操作することができます。 たとえば、引数としてテーブルの名前を使用できる数式があります。**Min(Catalog, Price)** という数式は **Catalog** テーブルの **Price** 列内の最小値を返します。 また、テーブル全体を戻り値として返す数式もあります。**RenameColumns(Catalog, "Price", "Cost")** という数式では、**Catalog** テーブルのすべてのレコードを返し、**Price** 列の名前を **Cost** に変更します。
 
-数値の場合と同様、テーブルやレコードが含まれた数式でも、基になるテーブルやレコードが変更されると自動的に再計算が行われます。 **Catalog** テーブルに格納されている製品のコストが以前の最小値よりも小さくなった場合、 **[Min](functions/function-aggregates.md)** 数式ではそれに合わせて自動的に値が変更されます。
+数値の場合と同様、テーブルやレコードが含まれた数式でも、基になるテーブルやレコードが変更されると自動的に再計算が行われます。 **Catalog** テーブルに格納されている製品のコストが以前の最小値よりも小さくなった場合、**[Min](functions/function-aggregates.md)** 数式ではそれに合わせて自動的に値が変更されます。
 
 単純な例をいくつか見てみましょう。
 
@@ -114,7 +114,7 @@ Excel と Power Apps では、次のような数式を使用して、数値や�
 
     `FirstN(Sort(CustomGallerySample, SampleHeading, Descending), 2)`
 
-    この数式では、 **[FirstN](functions/function-first-last.md)** 関数を使って、テーブルから特定の数のレコードを取得しています。 **[FirstN](functions/function-sort.md)** の 1 つ目の引数として **[Sort](functions/function-first-last.md)** 関数を使用し、2 つ目の引数として数字 (この例では **2**) を指定しています。この数字は返すレコードの数を表しています。
+    この数式では、**[FirstN](functions/function-first-last.md)** 関数を使って、テーブルから特定の数のレコードを取得しています。 **[FirstN](functions/function-sort.md)** の 1 つ目の引数として **[Sort](functions/function-first-last.md)** 関数を使用し、2 つ目の引数として数字 (この例では **2**) を指定しています。この数字は返すレコードの数を表しています。
 
     全体の数式は、**CustomGallerySample** テーブルの最初の 2 つのレコードを格納して **SampleHeading** 列で降順に並べ替えたテーブルを返します。
 
@@ -126,13 +126,13 @@ Excel と Power Apps では、次のような数式を使用して、数値や�
 
 Power Apps には、同じ方法でテーブルを操作する一連の関数が用意されています。 これらの関数は、テーブルを入力として受け取り、データのテーブル全体をフィルター処理、並べ替え、変換、縮小、および集計します。 実際には、**少なく**とも1つの値を受け取る他の多くの関数は、単一列のテーブルを入力として受け取ることができます。
 
-* **[Sort](functions/function-sort.md)** 、 **[Filter](functions/function-filter-lookup.md)** - レコードの並べ替えとフィルター処理を行います。
-* **[FirstN](functions/function-first-last.md)** 、 **[LastN](functions/function-first-last.md)** - テーブル内の最初の N 個または最後の N 個のレコードを返します。
-* **[Abs](functions/function-numericals.md)** 、 **[Sqrt](functions/function-numericals.md)** 、 **[Round](functions/function-round.md)** 、 **[RoundUp](functions/function-round.md)** 、 **[RoundDown](functions/function-round.md)** - 単一列テーブルの各レコードに対して行う算術演算で、演算結果が含まれた単一列テーブルを返します。
-* **[Left](functions/function-left-mid-right.md)** 、 **[Mid](functions/function-left-mid-right.md)** 、 **[Right](functions/function-left-mid-right.md)** 、 **[Replace](functions/function-replace-substitute.md)** 、 **[Substitute](functions/function-replace-substitute.md)** 、 **[Trim](functions/function-trim.md)** 、 **[Lower](functions/function-lower-upper-proper.md)** 、 **[Upper](functions/function-lower-upper-proper.md)** 、 **[Proper](functions/function-lower-upper-proper.md)** - 単一列テーブルの各レコードに対して行う文字列操作で、操作後の文字列が含まれた単一列テーブルを返します。
+* **[Sort](functions/function-sort.md)**、**[Filter](functions/function-filter-lookup.md)** - レコードの並べ替えとフィルター処理を行います。
+* **[FirstN](functions/function-first-last.md)**、**[LastN](functions/function-first-last.md)** - テーブル内の最初の N 個または最後の N 個のレコードを返します。
+* **[Abs](functions/function-numericals.md)**、**[Sqrt](functions/function-numericals.md)**、**[Round](functions/function-round.md)**、**[RoundUp](functions/function-round.md)**、**[RoundDown](functions/function-round.md)** - 単一列テーブルの各レコードに対して行う算術演算で、演算結果が含まれた単一列テーブルを返します。
+* **[Left](functions/function-left-mid-right.md)**、 **[Mid](functions/function-left-mid-right.md)**、 **[Right](functions/function-left-mid-right.md)**、**[Replace](functions/function-replace-substitute.md)**、 **[Substitute](functions/function-replace-substitute.md)**、 **[Trim](functions/function-trim.md)**、 **[Lower](functions/function-lower-upper-proper.md)**、 **[Upper](functions/function-lower-upper-proper.md)**、 **[Proper](functions/function-lower-upper-proper.md)** - 単一列テーブルの各レコードに対して行う文字列操作で、操作後の文字列が含まれた単一列テーブルを返します。
 * **[Len](functions/function-len.md)** - 文字列が格納されている 1 列を調べて、各文字列の長さを格納した単一列テーブルを返します。
 * **[Concatenate](functions/function-concatenate.md)** - 文字列が格納されている複数の列を連結して、文字列の単一列テーブルを返します。
-* **[AddColumns](functions/function-table-shaping.md)** 、 **[DropColumns](functions/function-table-shaping.md)** 、 **[RenameColumns](functions/function-table-shaping.md)** 、 **[ShowColumns](functions/function-table-shaping.md)** - テーブルの列を操作し、元のテーブルとは異なる列で構成された新しいテーブルを返します。
+* **[AddColumns](functions/function-table-shaping.md)**、**[DropColumns](functions/function-table-shaping.md)**、**[RenameColumns](functions/function-table-shaping.md)**、**[ShowColumns](functions/function-table-shaping.md)** - テーブルの列を操作し、元のテーブルとは異なる列で構成された新しいテーブルを返します。
 * **[Distinct](functions/function-distinct.md)** - 重複したレコードを削除します。
 * **[Shuffle](functions/function-shuffle.md)** - レコードをランダムな順序でシャッフルします。
 * **[HashTags](functions/function-hashtags.md)** - 文字列にハッシュタグがないかを検索します。
@@ -140,7 +140,7 @@ Power Apps には、同じ方法でテーブルを操作する一連の関数が
 
 これらの関数の多くは、1列のテーブルを入力として受け取ります。 テーブル全体に列が1つしかない場合は、名前で指定できます。 テーブルに複数の列がある場合は、テーブルの構文を使用して、列のいずれかを指定できます *。* たとえば、 **Products.Name**は、 **Products**テーブルの**名前**値のみを持つ単一列テーブルを返します。
 
-**[Addcolumns](functions/function-table-shaping.md)** 、 **[RenameColumns](functions/function-table-shaping.md)** 、 **[Showcolumns](functions/function-table-shaping.md)** 、または **[dropcolumns](functions/function-table-shaping.md)** 関数を使用すると、必要なときにテーブルの形状を完全に変えることができます。 ここでも、これらの関数は出力のみを変更し、ソースは変更しません。
+**[Addcolumns](functions/function-table-shaping.md)**、 **[RenameColumns](functions/function-table-shaping.md)**、 **[Showcolumns](functions/function-table-shaping.md)**、または**[dropcolumns](functions/function-table-shaping.md)** 関数を使用すると、必要なときにテーブルの形状を完全に変えることができます。 ここでも、これらの関数は出力のみを変更し、ソースは変更しません。
 
 コントロールのプロパティは、テーブルにすることもできます。
 
@@ -151,16 +151,16 @@ Power Apps には、同じ方法でテーブルを操作する一連の関数が
 
 その他の関数は、特にデータを変更し、副作用があるように設計されています。 これらの関数は純粋ではないため、慎重にビルドする必要があり、アプリの値の自動再計算に参加することはできません。 これらの関数は、動作の[数式](working-with-formulas-in-depth.md)内でのみ使用できます。
 
-* **[Collect](functions/function-clear-collect-clearcollect.md)** 、 **[Clear](functions/function-clear-collect-clearcollect.md)** 、 **[clearcollect](functions/function-clear-collect-clearcollect.md)** -コレクションを作成してクリアし、データをそれらに追加します。
+* **[Collect](functions/function-clear-collect-clearcollect.md)**、 **[Clear](functions/function-clear-collect-clearcollect.md)**、 **[clearcollect](functions/function-clear-collect-clearcollect.md)** -コレクションを作成してクリアし、データをそれらに追加します。
 * **[Patch](functions/function-patch.md)** -レコード内の1つまたは複数のフィールドを変更します。
-* **[Update](functions/function-update-updateif.md)** 、 **[UpdateIf](functions/function-update-updateif.md)** - 指定した 1 つ以上の条件に一致するレコードを更新します。
-* **[Remove](functions/function-remove-removeif.md)** 、 **[RemoveIf](functions/function-remove-removeif.md)** - 指定した 1 つ以上の条件に一致するレコードを削除します。
+* **[Update](functions/function-update-updateif.md)**、**[UpdateIf](functions/function-update-updateif.md)** - 指定した 1 つ以上の条件に一致するレコードを更新します。
+* **[Remove](functions/function-remove-removeif.md)**、**[RemoveIf](functions/function-remove-removeif.md)** - 指定した 1 つ以上の条件に一致するレコードを削除します。
 
 ## <a name="record-formulas"></a>レコードの数式
 
 レコード単位でデータを計算したり、個々のレコードを引数として受け取ったり、戻り値として返したりする数式を作成できます。 前のセクションで使用したギャラリーの例に戻り、**Gallery1.Selected** プロパティを使用して、ギャラリーでユーザーが選択した任意のレコードから情報を取得しましょう。
 
-1. [**ボタン**](controls/control-button.md)を追加し、その **[onselect](controls/properties-core.md)** プロパティを次の数式に設定します。<br>
+1. [**ボタン**](controls/control-button.md)を追加し、その**[onselect](controls/properties-core.md)** プロパティを次の数式に設定します。<br>
     **Collect( SelectedRecord, Gallery1.Selected )**
 
 2. Alt キーを押しながら、ボタンを選択します。
@@ -174,7 +174,7 @@ Power Apps には、同じ方法でテーブルを操作する一連の関数が
 > [!NOTE]
 > このトピックで指定する要素以外の要素を追加した場合、**Subtitle1** 列には **Subtitle2** または類似する名前が付けられる場合があります。
 
-選択したレコードが用意できたので、このレコードから個々のフィールドを抽出しましょう。これには、 **.** 演算子を使用します。
+選択したレコードが用意できたので、このレコードから個々のフィールドを抽出しましょう。これには、**.** 演算子を使用します。
 
 1. **[ラベル](controls/control-text-box.md)** コントロールを追加し、ギャラリーとボタンの下に移動します。
 
@@ -196,7 +196,7 @@ Power Apps には、同じ方法でテーブルを操作する一連の関数が
 ## <a name="record-functions-and-control-properties"></a>レコードの関数とコントロール プロパティ
 レコードを返す関数:
 
-* **[FirstN](functions/function-first-last.md)** 、 **[LastN](functions/function-first-last.md)** - テーブルの最初のレコードまたは最後のレコードを返します。
+* **[FirstN](functions/function-first-last.md)**、**[LastN](functions/function-first-last.md)** - テーブルの最初のレコードまたは最後のレコードを返します。
 * **[Lookup](functions/function-filter-lookup.md)** - テーブル内で、1 つ以上の条件に一致する最初のレコードを返します。
 * **[Patch](functions/function-patch.md)** - データ ソースを更新するか、レコードをマージします。
 * **[Defaults](functions/function-defaults.md)** - データ ソースの既定値を返します。
@@ -279,12 +279,12 @@ ShowColumns(
 
 ## <a name="disambiguation"></a>曖昧性の除去
 
-レコード スコープによって追加されたフィールド名は、アプリの別の場所にある同じ名前をオーバーライドします。  このような状況が発生した場合でも、[ **@** 曖昧性除去](functions/operators.md)演算子を使用すれば、レコード スコープの外部の値にアクセスできます。
+レコード スコープによって追加されたフィールド名は、アプリの別の場所にある同じ名前をオーバーライドします。  このような状況が発生した場合でも、[**@** 曖昧性除去](functions/operators.md)演算子を使用すれば、レコード スコープの外部の値にアクセスできます。
 
-* 入れ子になったレコード スコープの値にアクセスするには、次のパターンを使用した操作対象のテーブルの名前の **@** 演算子を使います。<br>_Table_ **[@** _フィールド名_ **]**
-* データ ソース、コレクション、コンテキスト変数などのグローバル値にアクセスするには、 **[@** _オブジェクト名_ **]** のパターンを使用します (テーブルは指定しません)。
+* 入れ子になったレコード スコープの値にアクセスするには、次のパターンを使用した操作対象のテーブルの名前の **@** 演算子を使います。<br>_Table_**[@**_フィールド名_**]**
+* データ ソース、コレクション、コンテキスト変数などのグローバル値にアクセスするには、**[@**_オブジェクト名_**]** のパターンを使用します (テーブルは指定しません)。
 
-操作対象のテーブルが**フィルター (** _table_ **,** ... などの式である場合は、 **)** の場合、あいまいさを排除する演算子は使用できません。  最も内側のレコード スコープのみが、曖昧性除去演算子を使用せずに、このテーブル式のフィールドにアクセスできます。
+操作対象のテーブルが**フィルター (** _table_**,** ... などの式である場合は、**)** の場合、あいまいさを排除する演算子は使用できません。  最も内側のレコード スコープのみが、曖昧性除去演算子を使用せずに、このテーブル式のフィールドにアクセスできます。
 
 たとえば、次のようなコレクション **X** があるとします。
 
@@ -375,7 +375,7 @@ Products.Product
 **Price** 列内の値にドル記号などの通貨記号が含まれていない点に注意してください。 この書式は、値が表示される際に適用されます。  
 
 ## <a name="inline-tables"></a>インラインテーブル
-テーブルの作成には、 **[Table](functions/function-table.md)** 関数とレコードのセットを使用します。 このトピックの冒頭で出てきたテーブルを、次の数式で表すことができます。
+テーブルの作成には、**[Table](functions/function-table.md)** 関数とレコードのセットを使用します。 このトピックの冒頭で出てきたテーブルを、次の数式で表すことができます。
 
 ```powerapps-dot
 Table( 

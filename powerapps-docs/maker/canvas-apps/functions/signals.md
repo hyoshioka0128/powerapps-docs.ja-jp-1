@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 1cd90e345b41f8316e8cd8c50f4077ee1f64ee91
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403437"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212632"
 ---
 # <a name="acceleration-app-compass-connection-and-location-signals-in-power-apps"></a>パワーアプリのアクセラレーション、アプリ、コンパス、接続、位置通知
 
@@ -28,7 +28,7 @@ ms.locfileid: "78403437"
 
 シグナルは、ユーザーがアプリと対話する方法に関係なく、いつでも変更できる値です。 シグナルに基づく数式は、これらの値が変更されると自動的に再計算されます。
 
-シグナルは通常、情報の[レコード](../working-with-tables.md#records)を返します。 この情報は、レコードとして使用や保存ができるほか、 **.** [演算子](operators.md).
+シグナルは通常、情報の[レコード](../working-with-tables.md#records)を返します。 この情報は、レコードとして使用や保存ができるほか、**.** [演算子](operators.md).
 
 > [!NOTE]
 > **アクセラレーション**と**コンパス**関数は、iOS や Android などのネイティブプレーヤーで正確な値を返しますが、ブラウザーでアプリを作成または変更すると、これらの関数はゼロ値を返します。
@@ -49,7 +49,7 @@ ms.locfileid: "78403437"
 
 | プロパティ | 説明 |
 | --- | --- |
-| **App.ActiveScreen** |画面が表示されます。 画面オブジェクトを返します。このオブジェクトを使用して、画面のプロパティを参照したり、別の画面と比較して、どの画面が表示されているかを判断したりすることができます。 表示されている画面を変更するには、 **[Back](function-navigate.md)** または **[Navigate](function-navigate.md)** 関数を使用します。 |
+| **App.ActiveScreen** |画面が表示されます。 画面オブジェクトを返します。このオブジェクトを使用して、画面のプロパティを参照したり、別の画面と比較して、どの画面が表示されているかを判断したりすることができます。 表示されている画面を変更するには、 **[Back](function-navigate.md)** または**[Navigate](function-navigate.md)** 関数を使用します。 |
 
 詳細については、「 [ **App** object](object-app.md) documentation」を参照してください。
 
@@ -73,7 +73,7 @@ ms.locfileid: "78403437"
 
 ユーザーは、位置情報に初めてアクセスするとき、その情報へのアクセスを許可するようデバイスから求められる場合があります。
 
-位置との従属関係は、位置が変化する過程で絶えず再計算され、デバイスのバッテリが消費されます。 バッテリの駆動時間を節約するために、 **[Enable](function-enable-disable.md)** 関数と **[Disable](function-enable-disable.md)** 関数を使って位置情報の更新のオンとオフを切り替えることができます。 表示されている画面が位置情報に依存していない場合は、位置情報が自動的にオフになります。
+位置との従属関係は、位置が変化する過程で絶えず再計算され、デバイスのバッテリが消費されます。 バッテリの駆動時間を節約するために、**[Enable](function-enable-disable.md)** 関数と **[Disable](function-enable-disable.md)** 関数を使って位置情報の更新のオンとオフを切り替えることができます。 表示されている画面が位置情報に依存していない場合は、位置情報が自動的にオフになります。
 
 | プロパティ | 説明 |
 | --- | --- |

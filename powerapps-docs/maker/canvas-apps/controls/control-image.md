@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: d35150434d8fec7694f493f2d62c67997e2c839c
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404174"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212471"
 ---
 # <a name="image-control-in-power-apps"></a>Power Apps のイメージコントロール
 ローカル ファイルやデータ ソースの画像を表示するコントロールです。

@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 6cabcfe58841a5d507ec31b6279cc9a00922850f
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78404129"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212126"
 ---
 # <a name="slider-control-in-power-apps"></a>Power Apps のスライダーコントロール
 ハンドルをドラッグして値を指定できるコントロールです。
@@ -102,7 +102,7 @@ ms.locfileid: "78404129"
 [**Sum**( *Value1*, *Value2* )](../functions/function-aggregates.md)
 
 ## <a name="example"></a>例
-1. ボタンを追加し、 **[OnSelect](properties-core.md)** プロパティを次の数式に設定します。
+1. ボタンを追加し、**[OnSelect](properties-core.md)** プロパティを次の数式に設定します。
    <br>**ClearCollect(CityPopulations, {City:"London", Country:"United Kingdom", Population:8615000}, {City:"Berlin", Country:"Germany", Population:3562000}, {City:"Madrid", Country:"Spain", Population:3165000}, {City:"Rome", Country:"Italy", Population:2874000}, {City:"Paris", Country:"France", Population:2273000}, {City:"Hamburg", Country:"Germany", Population:1760000}, {City:"Barcelona", Country:"Spain", Population:1602000}, {City:"Munich", Country:"Germany", Population:1494000}, {City:"Milan", Country:"Italy", Population:1344000})**
    
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。

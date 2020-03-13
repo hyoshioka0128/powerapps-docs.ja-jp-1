@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 12/10/2019
+ms.date: 03/12/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d78ce9b571ed925e68747f2307d59f5f143e13eb
-ms.sourcegitcommit: 366f0d1b8309ab1fd533ebd7e1b41a69a99fd25a
+ms.openlocfilehash: 00273fefd24b9e0f76ed284b2f9ab526fb7706d6
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302898"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211850"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Power Apps のキャンバスアプリコネクタの概要
 データは、Power Apps で構築したものも含め、ほとんどのアプリの中核になります。 *データ ソース*に格納されたデータは、*接続*を作成することでアプリに取り込まれます。 接続は特定の*コネクタ*を使用してデータ ソースと通信します。 Power Apps には、多くの人気のあるサービスやオンプレミスのデータソース (SharePoint、SQL Server、Office 365、Salesforce、Twitter など) 用のコネクタが用意されています。 キャンバスアプリへのデータの追加を開始するには、「 [Power Apps でのデータ接続の追加](add-data-connection.md)」を参照してください。
@@ -45,7 +45,7 @@ ms.locfileid: "75302898"
   > [!NOTE]
   > Excel データ内のデータに接続するには、そのブックを OneDrive のようなクラウド ストレージ サービスでホストする必要があります。 詳細については、「 [Power Apps からのクラウドストレージへの接続](connections/cloud-storage-blob-connections.md)」を参照してください。
 
-## <a name="actions"></a>アクション
+## <a name="actions"></a>操作
 
 ご利用のコネクタによってアクションが提供される場合も、前に行ったように使用するデータ ソースを選択する必要があります。 ただし、次の手順としては、テーブルを選択するのでなく、コントロールをアクションに手動で接続します。そのためには、ご利用のデータを表示するコントロールの **Items** プロパティを編集します。 **Items** プロパティを設定した数式では、データを取得するアクションが指定されています。 たとえば、Yammer に接続してから、**Items** プロパティをデータ ソースの名前に設定した場合、アプリによってデータは取得されません。 コントロールにデータを設定するには、**GetMessagesInGroup(5033622).messages** のようなアクションを指定します。
 
@@ -66,21 +66,21 @@ ms.locfileid: "75302898"
 
 | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- | --- |
-| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](connections/connection-common-data-service.md) |&nbsp; |![クラウドの記憶域](./media/connections-list/onedrive.png) |[**クラウドストレージ**](connections/cloud-storage-blob-connections.md) ** |
+| ![Common Data Service](./media/connections-list/cdm.png) |[**Common Data Service**](connections/connection-common-data-service.md) |&nbsp; |![一方、クラウド ストレージ](./media/connections-list/onedrive.png) |[**クラウドストレージ**](connections/cloud-storage-blob-connections.md) ** |
 | ![Dynamics 365](./media/connections-list/dynamics-365.png) |[**Dynamics 365**](connections/connection-dynamics-crmonline.md) |&nbsp; | ![Dynamics AX](./media/connections-list/dynamics-ax.png) |[**Dynamics AX**](connections/connection-dynamicsax.md) |
 |![Excel](./media/connections-list/excel.png) |[**Excel**](connections/connection-excel.md) |&nbsp; |![Microsoft Translator](./media/connections-list/microsoft-translator.png) |[**Microsoft Translator**](connections/connection-microsoft-translator.md) |
 |![Office 365 Outlook](./media/connections-list/office365.png) |[**Office 365 Outlook**](connections/connection-office365-outlook.md) |&nbsp; | ![Office 365 Users](./media/connections-list/office365.png) |[**Office 365 Users**](connections/connection-office365-users.md) |
-| ![Oracle](./media/connections-list/oracle-icon.png) |[**Oracle11i**](connections/connection-oracledb.md) |&nbsp; | ![Power BI](./media/connections-list/powerbi.png) |[**Power BI**](connections/connection-powerbi.md) |
+| ![Oracle](./media/connections-list/oracle-icon.png) |[**Oracle11i**](connections/connection-oracledb.md) |&nbsp; | ![表示する](./media/connections-list/powerbi.png) |[**Power BI**](connections/connection-powerbi.md) |
 | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
 * * Azure Blob、Box、Dropbox、Google Drive、OneDrive、OneDrive for Business に適用されます。
 
 ## <a name="standard-and-custom-connectors"></a>標準コネクタとカスタム コネクタ
-Power Apps には、上記のような一般的に使用される多くのデータソース用の*標準*コネクタが用意されています。 使用するデータソースの種類に対して、Power Apps に標準コネクタがある場合は、そのコネクタを使用する必要があります。 自分で構築したサービスなど、別の種類のデータ ソースに接続する必要がある場合は、「[Microsoft Flow でカスタム コネクタを登録して使用する](../canvas-apps/register-custom-api.md)」を参照してください。
+Power Apps は、一般的に使用される多くのデータソースに対して*標準*のコネクタを提供します。 使用するデータソースの種類に対して、Power Apps に標準コネクタがある場合は、そのコネクタを使用する必要があります。 自分で構築したサービスなど、別の種類のデータ ソースに接続する必要がある場合は、「[Microsoft Flow でカスタム コネクタを登録して使用する](../canvas-apps/register-custom-api.md)」を参照してください。
 
 ## <a name="all-standard-connectors"></a>すべての標準コネクタ
-すべての標準コネクタの一覧については、[Microsoft Connector リファレンス](https://docs.microsoft.com/connectors/)に関するページを参照してください。 Premium コネクタでは、アプリプランごとの電源アプリ、ユーザープランごとの電源アプリが必要です。 詳細については、「 [Power Apps のプラン](https://powerapps.microsoft.com/pricing/)」を参照してください。
+標準コネクタでは、特別なライセンスは必要ありません。 詳細については、「 [Power Apps のプラン](https://powerapps.microsoft.com/pricing/)」を参照してください。
 
 [Power apps フォーラム](https://powerusers.microsoft.com/t5/PowerApps-Community/ct-p/PowerApps1)で特定のコネクタに関する質問をすることができます。また、追加するコネクタや、 [Power apps のアイデア](https://powerusers.microsoft.com/t5/PowerApps-Ideas/idb-p/PowerAppsIdeas)を作成するためのその他の機能強化を提案することもできます。
 

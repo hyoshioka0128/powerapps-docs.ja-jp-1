@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: a5645f2f0d515d7eca125f3cd89ecff0c63cfa51
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78403956"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211942"
 ---
 # <a name="pen-input-control-in-power-apps"></a>Power Apps でのペン入力コントロール
 ユーザーが画像の領域を描画、削除、強調表示できるコントロールです。
