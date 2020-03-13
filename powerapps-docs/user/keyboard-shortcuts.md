@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7fbcbe315f3af9554d53329f35469af4ca236181
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: b5f273fcc14b7c8bd9cbde947133fd70d4a2a432
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733196"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79035626"
 ---
 # <a name="use-keyboard-shortcuts-in-power-apps"></a>Power Apps でキーボード ショートカットを使用する
 
@@ -31,7 +31,7 @@ ms.locfileid: "74733196"
 
 ## <a name="form-shortcuts"></a>フォームのショートカット
 
-<!--does the N/A mean not available? If so, why include them? -->
+
 
 
 |タスク  | 統一インターフェイス |
@@ -152,8 +152,6 @@ ms.locfileid: "74733196"
 |グラフ内の最初の要素に移動する | タブ |
 |次のデータ ポイントに移動する | 右 (→) 方向キー**または**下 (↓) 方向キー|
 |前のデータ ポイントに移動する | 左 (←) 方向キー**または**上 (↑) 方向キー|
-|最初のデータ ポイントに移動する | ホーム |
-|最後のデータ ポイントに移動する | 終了 |
 |タグ グラフ内の **[詳細表示]** ボタンに移動する | タブ |
 |タグ グラフ内のタグに対する **[詳細表示]** ボタンから戻る | Shift + Tab |
 |対話型のダッシュボード内のデータ ポイントにフォーカスがある場合、ダッシュボードをフィルター処理する | Enter **または** Space キー |
