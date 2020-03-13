@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: e21db21ff9c161e8ae8ab55d4d3ef295da7d419e
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75676243"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79211390"
 ---
 # <a name="share-a-canvas-app-in-power-apps"></a>Power Apps でキャンバスアプリを共有する
 
@@ -52,7 +52,7 @@ ms.locfileid: "75676243"
 1. アプリを共有する Azure Active Directory のユーザーまたはセキュリティグループの名前またはエイリアスを指定します。
 
     - 組織全体でアプリを実行できるようにする (ただし、変更または共有することはできません) には、[共有] パネルで「 **Everyone** 」と入力します。
-    - 項目がセミコロンで区切られている場合は、エイリアスの一覧、フレンドリ名、またはそれらの組み合わせ (たとえば、 **Jane Doe &lt;jane.doe@contoso.com** ) を使用して、アプリを共有できます。 複数の人が同じ名前でエイリアスが異なる場合は、最初に見つかった人がリストに追加されます。 名前またはエイリアスに既にアクセス許可がある場合、または解決できない場合は、ツールヒントが表示されます。 
+    - 項目がセミコロンで区切られている場合は、エイリアス、フレンドリ名、またはそれらの組み合わせの一覧を使用して、アプリを共有できます (たとえば、 **Jane Doe &lt;jane.doe@contoso.com>** )。 複数の人が同じ名前でエイリアスが異なる場合は、最初に見つかった人がリストに追加されます。 名前またはエイリアスに既にアクセス許可がある場合、または解決できない場合は、ツールヒントが表示されます。 
 
     ![ユーザーと共同所有者を指定する](./media/share-app/share-everyone.png)
 
@@ -111,7 +111,7 @@ Office 365 グループでセキュリティが有効になっているかどう
 
 1. PowerShell を使用して[Azure AD に接続](https://docs.microsoft.com/powershell/module/azuread/connect-azuread)します。
 
-    ![Connect-AzureAD](media/share-app/azure_cmdlet_connect.png)
+    ![AzureAD](media/share-app/azure_cmdlet_connect.png)
 
 1. ```Get-AzureADGroup -ObjectId <ObjectID\> |
     select *```を使用して[グループの詳細](https://docs.microsoft.com/powershell/module/AzureAD/Get-AzureADGroup)を取得します。 <br> 出力で、 **Securityenabled**プロパティが**True**に設定されていることを確認します。
@@ -133,7 +133,7 @@ Office 365 グループでセキュリティが有効になっているかどう
 
 ### <a name="common-data-service"></a>Common Data Service
 
-Common Data Service に基づいてアプリを作成する場合は、アプリを共有しているユーザーが、アプリが依存している 1 つまたは複数のエンティティに対して適切なアクセス許可を確実に持っているようにする必要があります。 具体的には、それらのユーザーは、関連するレコードの作成、読み取り、書き込み、削除などのタスクを実行できるセキュリティ ロールに属している必要があります。 多くの場合、アプリを実行するためにユーザーが必要とする当該アクセス許可を持つ 1 つまたは複数のカスタム セキュリティ ロールを作成します。 その後、必要に応じて各ユーザーにロールを割り当てることができます。
+Common Data Service に基づいてアプリを作成する場合は、アプリを共有するユーザーが、アプリが依存しているエンティティまたはエンティティに対する適切なアクセス許可を持っていることも確認する必要があります。 具体的には、これらのユーザーは、関連レコードの作成、読み取り、書き込み、削除などのタスクを実行できるセキュリティロールに属している必要があります。 多くの場合、ユーザーがアプリを実行するために必要なアクセス許可を持つ1つまたは複数のカスタムセキュリティロールを作成する必要があります。 その後、必要に応じて、各ユーザーにロールを割り当てることができます。
 
 > [!NOTE]
 > このドキュメントの執筆時点では、セキュリティロールを Azure Active Directory の個々のユーザーおよびセキュリティグループに割り当てることができますが、Office グループに割り当てることはできません。
@@ -219,7 +219,7 @@ Power Apps キャンバスアプリは、Azure Active Directory テナントの�
 > [!div class="mx-imgBorder"]  
 > ![ゲストの SharePoint にキャンバスアプリを埋め込む](media/share-app/guest_access_doc_5.PNG "ゲストの SharePoint にキャンバスアプリを埋め込む")
 
-IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋め込む場合は、完全な web URL を使用してアプリを参照します。 URL を検索するには、[https://make.powerapps.com ] にアクセスしてアプリを選択し、 **[詳細]** タブを選択します。 **[Web リンク]** の下に url が表示されます。
+IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋め込む場合は、完全な web URL を使用してアプリを参照します。 URL を検索するには、[https://make.powerapps.com] にアクセスしてアプリを選択し、 **[詳細]** タブを選択します。 **[Web リンク]** の下に url が表示されます。
 
 > [!div class="mx-imgBorder"]  
 > ![キャンバスアプリの詳細](media/share-app/guest_access_doc_6.PNG "キャンバスアプリの詳細")
@@ -243,7 +243,7 @@ IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋�
 自分のモバイルデバイス上にあるキャンバスアプリにアクセスしたユーザーは、そのホームテナントではない Azure AD テナントに公開されているすべてのユーザーが、Power Apps からサインアウトして、Power Apps Mobile に再度サインインする必要があります。  
 
 #### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>ゲストとアプリを共有する前に、ゲストが Azure AD ゲストの招待を受け入れる必要がありますか。
-できません。 ゲスト招待を受け入れる前にゲストが共有アプリを起動すると、ゲストは、アプリの起動時にサインインエクスペリエンスの一部として招待に同意するように求められます。  
+No: ゲスト招待を受け入れる前にゲストが共有アプリを起動すると、ゲストは、アプリの起動時にサインインエクスペリエンスの一部として招待に同意するように求められます。  
 
 #### <a name="what-azure-ad-tenant-are-connections-for-a-guest-user-created-in"></a>で作成されたゲストユーザーの接続は Azure AD テナント
 アプリの接続は、常にアプリが関連付けられている Azure AD テナントのコンテキストで作成されます。 たとえば、アプリが Contoso テナントに作成された場合、contoso の内部およびゲストユーザーに対して行われた接続は Contoso テナントのコンテキストで作成されます。
@@ -263,11 +263,11 @@ InTune では、ユーザーのホームテナントのポリシーのみが適�
 | Adobe Creative Cloud                              | いいえ                                                                     |
 | Adobe Sign                                        | いいえ                                                                     |
 | Asana                                             | いいえ                                                                     |
-| AtBot Admin                                       | いいえ                                                                     |
+| AtBot 管理者                                       | いいえ                                                                     |
 | AtBot Logic                                       | いいえ                                                                     |
 | Azure AD                                          | はい                                                                    |
 | Azure Automation                                  | はい                                                                    |
-| Azure Container Instances                          | はい                                                                    |
+| Azure Container Instance                          | はい                                                                    |
 | Azure Data Factory                                | はい                                                                    |
 | Azure Data Lake                                   | はい                                                                    |
 | Azure DevOps                                      | いいえ                                                                     |
@@ -281,26 +281,26 @@ InTune では、ユーザーのホームテナントのポリシーのみが適�
 | Bitbucket                                         | いいえ                                                                     |
 | Bitly                                             | いいえ                                                                     |
 | bttn                                              | いいえ                                                                     |
-| Buffer                                            | いいえ                                                                     |
-| Business Central                                  | いいえ                                                                     |
+| バッファー                                            | いいえ                                                                     |
+| 中央部                                  | いいえ                                                                     |
 | CandidateZip                                      | いいえ                                                                     |
 | Capsule CRM                                       | いいえ                                                                     |
-| Cloud PKI Management                              | いいえ                                                                     |
+| クラウド PKI の管理                              | いいえ                                                                     |
 | Cognito Forms                                     | いいえ                                                                     |
 | Common Data Service                               | いいえ                                                                     |
 | Common Data Service (レガシ)                      | いいえ                                                                     |
-| D&B Optimizer                                     | いいえ                                                                     |
+| D & B オプティマイザー                                     | いいえ                                                                     |
 | Derdack SIGNL4                                    | いいえ                                                                     |
 | Disqus                                            | いいえ                                                                     |
-| Document Merge                                    | いいえ                                                                     |
+| ドキュメントのマージ                                    | いいえ                                                                     |
 | Dynamics 365                                      | いいえ                                                                     |
 | Dynamics 365 AI for Sales                         | はい                                                                    |
-| Dynamics 365 for Fin & Ops                        | いいえ                                                                     |
-| Enadoc                                            | いいえ                                                                     |
+| Fin & Ops 用 Dynamics 365                        | いいえ                                                                     |
+| Enadoc my workspace                                            | いいえ                                                                     |
 | Eventbrite                                        | いいえ                                                                     |
 | Excel Online (Business)                           | いいえ                                                                     |
 | Excel Online (OneDrive)                           | いいえ                                                                     |
-| Expiration Reminder                               | いいえ                                                                     |
+| 有効期限リマインダー                               | いいえ                                                                     |
 | FreshBooks                                        | いいえ                                                                     |
 | GoToMeeting                                       | いいえ                                                                     |
 | GoToTraining                                      | いいえ                                                                     |
@@ -313,8 +313,8 @@ InTune では、ユーザーのホームテナントのポリシーのみが適�
 | JotForm                                           | いいえ                                                                     |
 | kintone                                           | いいえ                                                                     |
 | LinkedIn                                          | いいえ                                                                     |
-| Marketing Content Hub                             | いいえ                                                                     |
-| M                                            | いいえ                                                                     |
+| マーケティングコンテンツハブ                             | いいえ                                                                     |
+| 中                                            | いいえ                                                                     |
 | Metatask                                          | いいえ                                                                     |
 | Microsoft Forms                                   | いいえ                                                                     |
 | Microsoft Forms Pro                               | いいえ                                                                     |
@@ -323,25 +323,25 @@ InTune では、ユーザーのホームテナントのポリシーのみが適�
 | Microsoft School Data Sync                        | いいえ                                                                     |
 | Microsoft StaffHub                                | いいえ                                                                     |
 | Microsoft Teams                                   | はい                                                                    |
-| Microsoft To-Do (Business)                        | いいえ                                                                     |
+| Microsoft To Do (Business)                        | いいえ                                                                     |
 | Muhimbi PDF                                       | いいえ                                                                     |
 | NetDocuments                                      | いいえ                                                                     |
 | Office 365 グループ                                 | はい                                                                    |
 | Office 365 Outlook                                | いいえ                                                                     |
 | Office 365 Users                                  | はい                                                                    |
 | Office 365 ビデオ                                  | いいえ                                                                     |
-| 従来の OneDrive                                          | いいえ                                                                     |
+| OneDrive                                          | いいえ                                                                     |
 | OneDrive for Business                             | いいえ                                                                     |
 | OneNote (ビジネス)                                | いいえ                                                                     |
 | Outlook Customer Manager                          | いいえ                                                                     |
 | Outlook Tasks                                     | はい                                                                    |
 | Outlook.com                                       | いいえ                                                                     |
 | Paylocity                                         | いいえ                                                                     |
-| Planner                                           | いいえ                                                                     |
-| Plumsail Forms                                    | いいえ                                                                     |
-| する                                          | はい                                                                    |
+| プランナー                                           | いいえ                                                                     |
+| Plumsail フォーム                                    | いいえ                                                                     |
+| 表示する                                          | はい                                                                    |
 | Project Online                                    | いいえ                                                                     |
-| ProjectWise Design Integration                    | いいえ                                                                     |
+| ProjectWise 設計の統合                    | いいえ                                                                     |
 | Projectwise 共有                                 | いいえ                                                                     |
 | SharePoint                                        | はい                                                                    |
 | SignNow                                           | いいえ                                                                     |
@@ -353,6 +353,6 @@ InTune では、ユーザーのホームテナントのポリシーのみが適�
 | Toodledo                                          | いいえ                                                                     |
 | Typeform                                          | いいえ                                                                     |
 | Vimeo                                             | いいえ                                                                     |
-| Webex Teams                                       | いいえ                                                                     |
+| Webex チーム                                       | いいえ                                                                     |
 | Windows Defender Advanced Threat Protection (ATP) | いいえ                                                                     |
 | Word Online (Business)                            | いいえ                                                                     |

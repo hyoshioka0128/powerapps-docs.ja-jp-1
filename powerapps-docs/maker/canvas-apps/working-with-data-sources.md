@@ -14,11 +14,11 @@ search.audienceType:
 search.app:
 - PowerApps
 ms.openlocfilehash: 351e6cd6c680d4d5dc89f4e77c98bdd520f4c2ee
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74732332"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79212724"
 ---
 # <a name="understand-data-sources-for-canvas-apps-in-power-apps"></a>Power Apps でのキャンバスアプリのデータソースについて
 
@@ -55,12 +55,12 @@ Power Apps アプリの内部にあるテーブルは、数値または文字列
 [作業テーブル](working-with-tables.md)に関するページで内部テーブルについて詳しく説明されていますが、その説明はクラウド サービスに存在する外部テーブルにも当てはまります。
 
 ## <a name="working-with-tables"></a>テーブルの操作
-テーブルデータソースは、内部の Power Apps テーブルを使用するのと同じ方法で使用できます。  各データ ソースには、内部テーブルと同じように、[レコード](working-with-tables.md#records)、[列](working-with-tables.md#columns)、数式で使用できるプロパティがあります。 さらに、次の条件があります。
+テーブルデータソースは、内部の Power Apps テーブルを使用するのと同じ方法で使用できます。  各データ ソースには、内部テーブルと同じように、[レコード](working-with-tables.md#records)、[列](working-with-tables.md#columns)、数式で使用できるプロパティがあります。 さらに:
 
 * データ ソースの列名とデータ型は、接続の基になるテーブルと同じになります。
   
     > [!NOTE]
-  > 列名にスペースが含まれている SharePoint および Excel データソースの場合、Power Apps ではスペースが **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint または Excel の **"列名"** は、データレイアウトに表示されている場合や数式で使用されている場合に、Power Apps の **"Column_x0020_Name"** として表示されます。
+  > 列名にスペースが含まれている SharePoint および Excel データソースの場合、Power Apps ではスペースが **"\_x0020\_"** に置き換えられます。 たとえば、SharePoint または Excel の **"Column Name"** は、Power Apps のデータ レイアウトに表示されるときや数式で使用されるときは **"Column_x0020_Name"** と表示されます。
 * データ ソースは、アプリが読み込まれるときにサービスから自動的に読み込まれます。  **[Refresh](functions/function-refresh.md)** 関数を使用して、強制的にデータを更新できます。
 * ユーザーはアプリを実行するとき、レコードを作成、変更、削除して、その変更をサービスの基になるテーブルにプッシュ転送できます。
   * レコードを作成するには、 **[Patch](functions/function-patch.md)** 関数と **[Collect](functions/function-clear-collect-clearcollect.md)** 関数を使用します。  
@@ -98,7 +98,7 @@ Power Apps を使用して接続されたデータソースを作成したり、
 
 プロセスをより細かく制御するために、 **[Patch](functions/function-patch.md)** 関数と **[Errors](functions/function-errors.md)** 関数を使用することもできます。  **[編集フォーム](controls/control-form-detail.md)** コントロールでは **[Update](controls/control-form-detail.md)** プロパティが公開されるため、フォーム内のフィールドの値を読み取ることができます。  さらに、**Patch** 関数と **SubmitForm** 関数を完全にバイパスして、このプロパティを使用して接続上でカスタム コネクタを呼び出すこともできます。
 
-### <a name="validation"></a>検証
+### <a name="validation"></a>Validation
 アプリでは、レコードに変更を加える前に、変更が許容されるかどうかを確認する必要があります。  これには 2 つの理由があります。
 
 * "*ユーザーへの即座のフィードバック*"。  問題を修正するのに最適なタイミングは、ユーザーの記憶に新鮮な、その問題が発生したときです。  実際、タッチ操作またはキー入力ごとに、入力の問題を示す赤いテキストを表示できます。
@@ -116,7 +116,7 @@ Power Apps には、次の2つの検証ツールが用意されています。
 
 データ ソースでエラーが発生すると、アプリは自動的にエラー情報を記録し、これを **[Errors](functions/function-errors.md)** 関数を介して使用できるようにします。  エラーは、問題が発生したレコードに関連付けられます。  それがユーザーによって修正可能な問題 (たとえば、検証の問題) なら、レコードを送信し直すことでエラーが解決します。
 
-**[Patch](functions/function-patch.md)** または **[Collect](functions/function-clear-collect-clearcollect.md)** を使用してレコードが作成されたときにエラーが発生した場合、エラーが関連付けられるレコードはありません。  その場合、 **[Patch](functions/function-patch.md)** によって "*空白*" が返され、これを **[Errors](functions/function-errors.md)** のレコード引数として使用できます。  作成エラーは次の操作で解決されます。
+**[Patch](functions/function-patch.md)** または **[Collect](functions/function-clear-collect-clearcollect.md)** を使用してレコードが作成されたときにエラーが発生した場合、エラーが関連付けられるレコードはありません。  その場合、Patch **[ によって "](functions/function-patch.md)空白**" が返され、これを **[Errors](functions/function-errors.md)** のレコード引数として使用できます。  作成エラーは次の操作で解決されます。
 
 **[Errors](functions/function-errors.md)** 関数からは、エラー情報のテーブルが返されます。  特定の列にエラーの原因があると考えられる場合は、この情報に列情報を含めることができます。  列レベルのエラー メッセージは、編集画面上の列の近くにあるラベル コントロールで使用します。  エラー テーブルの **Column** が "*空白*" であるレコード レベルのエラー メッセージは、レコード全体の **[保存]** ボタンの近くの場所で使用します。  
 
@@ -132,7 +132,7 @@ Power Apps には、次の2つの検証ツールが用意されています。
 
 * コレクションは、 **[Collect](functions/function-clear-collect-clearcollect.md)** 関数を使用して動的に作成できます。  コレクションは、接続ベースのデータ ソースとは異なり、事前に確立する必要はありません。
 * コレクションの列は、 **[Collect](functions/function-clear-collect-clearcollect.md)** 関数を使用していつでも変更できます。
-* コレクションでは、重複するレコードが許可されます。  コレクションでは、同じレコードのコピーが複数個存在できます。  **All** 引数が指定されていない限り、 **[Remove](functions/function-remove-removeif.md)** などの関数は最初に見つかった一致に対して動作します。
+* コレクションでは、重複するレコードが許可されます。  コレクションでは、同じレコードのコピーが複数個存在できます。  **All[ 引数が指定されていない限り、](functions/function-remove-removeif.md)** Remove などの関数は最初に見つかった一致に対して動作します。
 * **[SaveData](functions/function-savedata-loaddata.md)** 関数と **[LoadData](functions/function-savedata-loaddata.md)** 関数を使用して、コレクションのコピーの保存と再読み込みを行うことができます。  情報は、他のユーザー、アプリ、またはデバイスがアクセスできないプライベートな場所に保存されます。
 * **[エクスポート](controls/control-export-import.md)** コントロールと **[インポート](controls/control-export-import.md)** コントロールを使用して、ユーザーが操作できるファイルとの間でコレクションのコピーの保存と再読み込みを行うことができます。  
 
