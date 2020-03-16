@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 02/13/2020
+ms.date: 03/10/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 91da88baa13204f8538ba3eb673a515e539f7fa7
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 58e64d275a7d1380cd580a86f9899053b140b99e
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77282517"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78970940"
 ---
 # <a name="add-an-appointment-email-phone-call-note-or-task-activity-to-the-timeline"></a>モデル駆動型アプリのタイムラインに予定、電子メール、電話、メモ、またはタスクのアクティビティを追加する 
 
@@ -63,7 +63,7 @@ ms.locfileid: "77282517"
 
 ## <a name="add-an-activity-from-within-a-record"></a>レコード内からアクティビティを追加する
 
-レコードを開いてから、レコードにアクティビティを追加することもできます。 
+レコードを開いてから、そのレコードにアクティビティを追加することもできます。 
 
    > [!div class="mx-imgBorder"]
    > ![Power Apps でアクティビティを追加するためのショートカット](media/add_new_activity_from_record.gif "Power Apps でアクティビティを追加するためのショートカット") 
@@ -204,6 +204,9 @@ ms.locfileid: "77282517"
 [タイムライン] ウォールでアクティビティ、メモ、または投稿をすばやくフィルター処理するには、フィルター ウィンドウでレコードの種類またはアクティビティの種類と日付を使います。 複数のフィルターおよびフィルター オプションを同時に選択できます。 アクティビティの期限、変更日、またはアクティビティの状態をフィルター処理して表示することができます。
 
 - **[タイムライン]** セクションで、 **[フィルター ウィンドウを開く]** を選択し、アクティビティをフィルター処理する方法を選択します。
+
+ > [!Note]
+ > ブラウザー内で縮小すると、フィルター ペインとタイムライン レコードが 2 つの列に表示されます。 複数の列にタイムラインが表示されている場合、フィルター ペインはタイムライン レコードの横の列として表示されます。 詳細については、[2 つの列モードでのフィルター ペインの表示](../maker/model-driven-apps/faqs-timeline-control.md#why-my-agents-see-the-filter-pane-even-when-the-expand-filter-pane-by-default-check-box-is-cleared)に関する記事をご覧ください。 
 
   > [!div class="mx-imgBorder"]
   > ![タイムラインのフィルター ウィンドウ](media/timeline-filter2.png "タイムラインのフィルター ウィンドウ") ![タイムラインのフィルター ウィンドウ](media/timeline-filter5.png "タイムラインのフィルター ウィンドウ")
