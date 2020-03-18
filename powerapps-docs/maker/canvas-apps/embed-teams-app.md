@@ -7,22 +7,22 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 02/18/2020
+ms.date: 03/16/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 7f98025fbc3a2f392b45cce22af41d075a3bfaac
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: 088e817c8ef829b340032af577193888079c832a
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77530871"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436830"
 ---
 # <a name="embed-an-app-in-teams"></a>Teams にアプリを埋め込む
 
-Microsoft Teams に直接埋め込むことで、作成した Power Apps を共有できます。 完了すると、ユーザーは [ **+** ] を選択して、チーム内**のチームチャネル**または会話にアプリを追加できます。 アプリは、**チームのタブ**の下にタイルとして表示されます。
+Microsoft Teams に直接埋め込むことで、作成したアプリを共有できます。 完了すると、ユーザーは [ **+** ] を選択して、チーム内**のチームチャネル**または会話にアプリを追加できます。 アプリは、**チームのタブ**の下にタイルとして表示されます。
 
 管理者はアプリをアップロードして、テナント内の**すべて**のチームに対して [**すべてのタブ] セクション**に表示されるようにすることができます。 「 [Microsoft Teams でのアプリの共有」を](https://docs.microsoft.com/power-platform/admin/embed-app-teams)参照してください。
 
@@ -59,9 +59,58 @@ Microsoft Teams に直接埋め込むことで、作成した Power Apps を共�
 
 2. **[追加]** を選択してアプリを個人用アプリとして追加するか、 **[チームに追加]** を選択して既存のチャネルまたはメッセージ交換内のタブとしてアプリを追加します。
 
-## <a name="publish-the-app-to-the-teams-catalogue"></a>Teams カタログにアプリを発行する
+## <a name="publish-the-app-to-the-teams-catalog"></a>Teams カタログにアプリを発行する
 
 管理者の場合は、Microsoft Teams カタログに[アプリを発行](https://docs.microsoft.com/microsoftteams/tenant-apps-catalog-teams)することもできます。
+
+## <a name="use-context-from-teams"></a>チームのコンテキストを使用する
+
+チームで緊密に統合されたアプリをビルドするには、`Param()` 関数でチームのコンテキスト変数を使用します。 たとえば、次の数式を画面の**Fill**プロパティで使用して、チーム内のユーザーのテーマに基づいてアプリの背景を変更します。
+
+```
+Switch(
+        Param("theme"),
+        "dark",
+        RGBA(
+            32,
+            31,
+            31,
+            1
+        ),
+        "contrast",
+        RGBA(
+            0,
+            0,
+            0,
+            1
+        ),
+        RGBA(
+            243,
+            242,
+            241,
+            1
+        )
+    )
+```
+
+アプリをテストするには、アプリを発行し、チーム内で再生します。
+
+チームからの次のコンテキスト変数がサポートされています。
+
+- ロケール (locale)
+- channelId
+- channelType
+- chatId
+- groupId
+- hostClientType
+- subEntityId
+- teamId
+- teamType
+- テーマ
+- userTeamRole
+
+> [!NOTE]
+> この機能は、2020年3月に追加されました。 この前にアプリをチーム内に埋め込んだ場合、この機能を使用するには、アプリをチームに再度追加することが必要になる場合があります。
 
 ## <a name="improve-the-performance-of-your-app"></a>アプリのパフォーマンスを向上させる
 
@@ -71,12 +120,14 @@ Microsoft Teams に直接埋め込むことで、作成した Power Apps を共�
 
 2. チームで共有するアプリの **[その他のアクション]** (...) を選択し、 **[設定]** を選択します。
 
-3. [設定] パネルで、[**パフォーマンスの向上のためにアプリのプリロード** **] を [はい]** に切り替えます。 その後、アプリがチームに埋め込まれるたびに、アプリが事前に読み込まれます。
+3. [設定] パネルで、[**パフォーマンスの向上のためにアプリのプリロード** **] を [はい]** に切り替えます。 アプリは、チームに埋め込まれるたびに事前に読み込まれます。
 
     ![アプリの詳細](./media/embed-teams-app/preload-app.png "パフォーマンスを向上させるためにアプリをプリロードする")
 
-4. 変更を有効にするには、アプリをチームに再インポートします。
+4. 変更を有効にするには、アプリを削除してチームに追加し直してください。
 
+> [!NOTE]
+> これにより、埋め込みシナリオで認証が実行されているときに、ユーザーがアプリファイルをダウンロードできるようになります。 ただし、ユーザーは、認証が成功した後にのみアプリを実行できます。 これにより、認証されていないユーザーはアプリデータを使用できなくなります。
 
 ### <a name="see-also"></a>参照
 

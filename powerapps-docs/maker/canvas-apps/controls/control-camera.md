@@ -6,109 +6,175 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 10/25/2016
+ms.date: 03/16/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: f70e6d8015a75f26d0716a144c7f524181f34664
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: fd3c468134e979732ead5e0144e60aaf1b3e38df
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211781"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79436805"
 ---
 # <a name="camera-control-in-power-apps"></a>Power Apps のカメラ コントロール
-ユーザーがデバイスのカメラを使って写真を撮影するために使用できるコントロールです。
+
+ユーザーがデバイスのカメラを使用して画像を撮影できるようにするコントロール。
 
 ## <a name="description"></a>説明
-このコントロールを追加した場合、ユーザーは、アプリを実行している任意の場所から 1 枚以上の写真でデータ ソースを更新できます。 カメラ コントロールによって生成される画像は、カメラの最大解像度ではありません。  最大解像度の画像が必要な場合は、 **[写真の追加](control-add-picture.md)** コントロールを検討してください。
+
+**カメラ**コントロールを使用して、デバイスのカメラで画像をキャプチャします。  デバイスにはカメラが必要です。ユーザーは、カメラを使用するようにアプリを承認する必要があります。 カメラコントロールは、web ブラウザーで実行する場合にサポートされます。
+
+最後にキャプチャした画像は、 **Photo**プロパティを通じて入手できます。 このプロパティを使用すると、イメージは次のようになります。
+
+- **イメージコントロールで表示されます。** [イメージ](control-image.md)コントロールを使用して、キャプチャしたイメージを表示します。 詳細については、[例](#examples)を参照してください。  
+- **変数またはコレクションに一時的に配置します。**  変数またはコレクションに画像を格納するには、 [Set](../functions/function-set.md)関数または[Collect](../functions/function-clear-collect-clearcollect.md)関数を使用します。  コレクション内の複数のイメージを同時に使用して、デバイスの制限されたメモリを消費する場合は注意してください。 [SaveData](../functions/function-savedata-loaddata.md)関数と[LoadData](../functions/function-savedata-loaddata.md)関数を使用して、イメージをデバイスのローカルストレージと[オフラインのシナリオ](../offline-apps.md)に移動します。
+- **データベースに格納されます。**  [Patch](../functions/function-patch.md)関数を使用して、データベースに画像を格納します。
+- **Base64 でエンコードされたテキスト文字列として送信されます。**  [JSON](../functions/function-json.md)関数を使用して、イメージを base64 エンコードします。
+
+**Stream**、 **Streamrate**、および**onstream**プロパティを使用して、タイマーの画像を自動的にキャプチャします。たとえば、画像を1分ごとにスナップして、時間の経過によるシーケンスを作成します。
+
+キャプチャしたメディアは、テキスト文字列 URI によって参照されます。 詳細については、[データ型のドキュメント](../functions/data-types.md#uris-for-images-and-other-media)を参照してください。
+
+カメラコントロールによって生成されるイメージは、通常、カメラの解像度が完全ではありません。 完全な解像度のイメージが必要な場合は、[[画像の追加](control-add-picture.md)] コントロールを使用します。
 
 ## <a name="key-properties"></a>主要なプロパティ
+
 **Camera** – 複数のカメラを備えたデバイスでの、アプリが使用するカメラの数値 ID です。
 
+**OnStream** – **Stream** プロパティが更新された場合のアプリの反応を指定します。
+
+**Photo** –ユーザーが画像を撮影したときにキャプチャされる画像です。 
+
+**Stream** – **StreamRate** プロパティに基づいて自動的に更新された画像です。
+
+**StreamRate** – **Stream** プロパティの画像を更新する頻度です (ミリ秒単位)。 この値の範囲は、100 (0.1 秒) から 3,600,000 (1 時間) です。
+
 ## <a name="additional-properties"></a>その他のプロパティ
-**[AccessibleLabel](properties-accessibility.md)** – スクリーン リーダー用のラベルです。 写真撮影の目的を説明する必要があります。
 
-**[BorderColor](properties-color-border.md)** – コントロールの境界線の色です。
+[AccessibleLabel](properties-accessibility.md) – スクリーン リーダー用のラベルです。 写真撮影の目的を説明する必要があります。
 
-**[BorderStyle](properties-color-border.md)** – コントロールの境界線を **Solid** (実線)、**Dashed** (破線)、**Dotted** (点線)、**None** (なし) のいずれに指定します。
+[BorderColor](properties-color-border.md) – コントロールの境界線の色です。
 
-**[BorderThickness](properties-color-border.md)** – コントロールの境界線の太さです。
+[BorderStyle](properties-color-border.md) – コントロールの境界線のスタイルです (**実線**、**破線**、**点線**、または**なし**)。
+
+[BorderThickness](properties-color-border.md) – コントロールの境界線の太さです。
 
 **Brightness** – ユーザーが画像で認識する可能性のある光の量を指定します。
 
 **Contrast** – ユーザーが画像内の似た色をどれだけ容易に区別できるかを指定します。
 
-**[DisplayMode](properties-core.md)** – コントロールで、ユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、許可しないか (**Disabled**) を設定します。
+[DisplayMode](properties-core.md) –コントロールでユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、または無効 (**無効**) にするかを指定します。
 
-**[FocusedBorderColor](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の色です。
+[FocusedBorderColor](properties-color-border.md) –コントロールがフォーカスされているときのコントロールの境界線の色です。
 
-**[FocusedBorderThickness](properties-color-border.md)** – コントロールにフォーカスがあるときのコントロールの境界線の太さです。
+[FocusedBorderThickness](properties-color-border.md) –コントロールがフォーカスされているときのコントロールの境界線の太さです。
 
-**[Height](properties-size-location.md)** – コントロールの上端と下端の距離です。
+[Height](properties-size-location.md) – コントロールの上端と下端の距離です。
 
-**[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
+[OnSelect](properties-core.md) – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
 
-**OnStream** – **Stream** プロパティが更新された場合のアプリの反応を指定します。
+[TabIndex](properties-accessibility.md) –他のコントロールと比較したキーボードナビゲーション順序。
 
-**Photo** – ユーザーが写真を撮影すると取得される画像です。
+[Tooltip](properties-core.md) – ポインターをコントロールに合わせたときに表示される説明テキストです。
 
-**Stream** – **StreamRate** プロパティに基づいて自動的に更新された画像です。
+[Visible](properties-core.md) – コントロールを表示するか非表示にするかを指定します。
 
-**StreamRate** – **Stream** プロパティの画像を更新する頻度です (ミリ秒単位)。  この値の範囲は、100 (0.1 秒) から 3,600,000 (1 時間) です。
+[Width](properties-size-location.md) – コントロールの左端と右端の間の距離です。
 
-**[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
+[X](properties-size-location.md) –コントロールの左端とその親コンテナーまたは画面の左端の間の距離です。
 
-**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
+[Y](properties-size-location.md) –コントロールの上端と親コンテナーまたは画面の上端との距離です。
 
-**[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
+## <a name="examples"></a>使用例
 
-**[Width](properties-size-location.md)** – コントロールの左端と右端の間の距離です。
+これらの例では、カメラ付きのデバイスが必要です。 アプリをテストするには、ブラウザーからアクセスできる web cam を使用します。 または、アプリを保存して、カメラを使用して iOS または Android デバイスに読み込むことができます。
 
-**[X](properties-size-location.md)** – コントロールの左端とその親コンテナー (親コンテナーがない場合は画面) の左端間の距離です。
+### <a name="simple-display-of-a-captured-picture"></a>キャプチャした画像の簡易表示
 
-**[Y](properties-size-location.md)** – コントロールの上端とその親コンテナー (親コンテナーがない場合は画面) の上端間の距離です。
+1. **カメラ**コントロールを[追加](../add-configure-controls.md)します。
 
-## <a name="related-functions"></a>関連する関数
-[**Patch**( *DataSource*, *BaseRecord*, *ChangeRecord* )](../functions/function-patch.md)
+1. メッセージが表示されたら、デバイスのカメラを使用するようにアプリを承認します。
 
-## <a name="example"></a>例
-### <a name="add-photos-to-an-image-gallery-control"></a>イメージ ギャラリー コントロールに写真を追加する
-1. **Camera** コントロールを追加して **MyCamera** という名前を付け、その **[OnSelect](properties-core.md)** プロパティを次の数式に設定します。<br>
-   **Collect(MyPix, MyCamera.Photo)**
+1. **イメージ**コントロールを追加します。
 
-    [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
+1. **イメージ**コントロールの**image**プロパティを次の数式に設定します。
 
-    **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-2. F5 キーを押した後、**MyCamera** をクリックまたはタップして写真を撮影します。
-3. **[垂直ギャラリー](control-gallery.md)** コントロールを追加してから、その **[イメージ](control-image.md)** コントロール、テンプレート、さらに **画像ギャラリー** コントロール自体のサイズを画面内に収まるように変更します。
-4. **画像ギャラリー[ コントロールの ](properties-core.md)** Items プロパティを以下に設定します。<br>**MyPix**
-5. ギャラリーで、**画像[コントロールの ](properties-visual.md)** Image プロパティを次の式に設定します。<br>
-   **ThisItem.Url**
+    ```powerapps-dot
+    Camera1.Photo
+    ```
 
-    撮影した写真が**イメージ ギャラリー** コントロールに表示されます。
-6. 必要な枚数の写真を撮影してから、Esc キーを押して既定のワークスペースに戻ります。
-7. (省略可能) **イメージ ギャラリー** コントロール内の**イメージ** コントロールの **OnSelect** プロパティを **Remove(MyPix, ThisItem)** に設定し、F5 キーを押して、写真をクリックまたはタップして削除します。
+    > [!NOTE]
+    > 必要に応じて、カメラコントロール名*Camera1*を置き換えます。
 
-**[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して写真をローカルに保存するか、 **[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースを更新します。
+1. F5 キーを押してアプリをプレビューします。
 
+1. カメラコントロールを選択またはタップして画像を撮影します。  イメージコントロールに結果が表示されます。
+
+### <a name="add-pictures-to-an-image-gallery-control"></a>画像ギャラリーコントロールへの画像の追加
+
+1. **カメラ**コントロールを追加し、 **mycamera**という名前を指定して、その[onselect](properties-core.md)プロパティを次の数式に設定します。
+
+    ```powerapps-dot
+    Collect( MyPix, MyCamera.Photo )
+    ```
+
+    詳しくは、次のトピックをご覧ください。
+
+    - [コントロールを追加、名前、および構成する方法](../add-configure-controls.md)
+    - 関数または[その他の関数の](../formula-reference.md)[収集](../functions/function-clear-collect-clearcollect.md)の詳細については、こちらをご覧ください。
+
+1. F5 キーを押し、 **[Mycamera]** を選択またはタップして画像を撮影します。
+
+1. [縦方向のギャラリー](control-gallery.md)コントロールを追加します。 その後、[イメージ](control-image.md)コントロール、テンプレート、および**イメージギャラリー**コントロール自体のサイズを画面に合わせて変更します。
+
+1. **イメージギャラリー**コントロールの[Items](properties-core.md)プロパティを次の数式に設定します。
+ 
+    ```powerapps-dot
+    MyPix
+    ```
+
+1. ギャラリー内の**イメージ**コントロールの[image](properties-visual.md)プロパティを次の数式に設定します。
+
+    ```powerapps-dot   
+    ThisItem.Url
+    ```
+
+    撮影した画像が**イメージギャラリー**コントロールに表示されます。
+
+1. 必要な数の画像を取得し、Esc キーを押して既定のワークスペースに戻ります。
+
+1. optional**イメージギャラリー**コントロール内の**イメージ**コントロールの**onselect**プロパティを数式に設定します。
+
+    ```powerapps-dot
+    Remove( MyPix, ThisItem )
+    ```
+
+1. F5 キーを押し、画像を選択して削除します。
+
+画像をローカルに保存する場合は[SaveData](../functions/function-savedata-loaddata.md)関数を使用し、データソースを更新する場合は[Patch](../functions/function-patch.md)関数を使用します。
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
-カメラのフィードを表示するだけでなく、カメラ コントロール全体も写真を撮るボタンとして機能します。 そのため、ボタンと同様のアクセシビリティの考慮事項があります。
+
+カメラコントロールは、カメラのフィードを表示し、画像を撮影するボタンとしても機能します。 そのため、ボタンと同様のアクセシビリティの考慮事項があります。
 
 ### <a name="video-alternatives"></a>ビデオの代替手段
-* 視覚障碍があるユーザー向けに、代替形式の入力を追加することを検討してください。 たとえば、 **[[画像の追加]](control-add-picture.md)** があると、ユーザーはデバイスから画像をアップロードできます。
+
+視覚障碍があるユーザー向けに、代替形式の入力を追加することを検討してください。 たとえば、[画像を追加](control-add-picture.md)して、ユーザーが自分のデバイスからイメージをアップロードできるようにします。
 
 ### <a name="color-contrast"></a>色のコントラスト
-以下の間には適切な色のコントラストが必要です。
-* **[FocusedBorderColor](properties-color-border.md)** と外側の色
+
+[FocusedBorderColor](properties-color-border.md)と外側の色の間には適切な色のコントラストが必要です。
 
 ### <a name="screen-reader-support"></a>スクリーン リーダーのサポート
-* **[AccessibleLabel](properties-accessibility.md)** が存在する必要があります。
+
+[AccessibleLabel](properties-accessibility.md)が存在している必要があります。
 
 ### <a name="keyboard-support"></a>キーボードのサポート
-* **[TabIndex](properties-accessibility.md)** を 0 以上にして、キーボード ユーザーがそこに移動できるようにする必要があります。
-* フォーカス インジケーターは明確に表示する必要があります。 これを実現するには **[FocusedBorderColor](properties-color-border.md)** と **[FocusedBorderThickness](properties-color-border.md)** を使用します。
+
+- [TabIndex](properties-accessibility.md)は、キーボードユーザーが移動できるように、0以上である必要があります。
+
+- フォーカス インジケーターは明確に表示する必要があります。 フォーカスインジケーターの表示を更新するには、 [FocusedBorderColor](properties-color-border.md)と[FocusedBorderThickness](properties-color-border.md)を使用します。

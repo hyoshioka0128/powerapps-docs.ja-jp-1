@@ -1233,6 +1233,8 @@
           href: ./portals/admin/portal-lifecycle.md
         - name: ポータルをアップグレードする
           href: ./portals/admin/upgrade-portal.md
+        - name: ポータルで使用される Cookie
+          href: ./portals/admin/portal-cookies.md
     - name: 高度なポータルの構成
       items:
         - name: 概要
