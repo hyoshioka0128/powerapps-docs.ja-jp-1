@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 60d8cf270c7706de8a82bc7fe3ee66787404264a
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: ce3974f399948f1f9ccd125c0b9727f51abc644b
+ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79209390"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431856"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Power Apps での危機通信のサンプルテンプレートのセットアップと学習
 
@@ -798,7 +798,12 @@ Power BI レポートを追加するには:
 
     現在、Power オートメーション bot connector for Teams およびプッシュ通知コネクタは、GCC では使用できません。 [電子メール] オプションを使用して、GCC 用の内部ニュースの更新についてユーザーに警告します。
 
-***免責事項:*** *このアプリはサンプルであり、Microsoft Power Apps および Teams と共に使用して、参照情報のみを伝達することができます。このアプリは、医療デバイス、臨床サポート、診断ツール、その他のテクノロジとして使用することを目的としたものではありません。また、病気やその他の条件の診断、治療、軽減、取り扱い、または防止に使用することを意図したものではありません。 このアプリは、専門的な医療のアドバイス、診断、取り扱い、または略しの代わりとして設計されていないため、使用しないでください。 お客様は、このアプリの使用に関して唯一のリスクと責任を負うものとします。 Microsoft では、接続関連に用意されているアプリまたはマテリアルが、医療目的、または任意のユーザーの健康や医療の要件を満たすために十分であることを保証していません。*  
+## <a name="issues--feedback"></a>問題 & フィードバック
+
+- *危機通信サンプルテンプレート*に関する**フィードバック**については、 [aka.ms/crisis-communication-feedback](https://aka.ms/crisis-communication-feedback)を参照してください。
+- *危機通信アプリ*の**問題を報告**するには、 [aka.ms/crisis-communication-issues](https://aka.ms/crisis-communication-issues)にアクセスしてください。
+
+***免責事項:*** *このアプリはサンプルであり、Microsoft Power Apps および Teams と共に使用して、参照情報のみを伝達することができます。このアプリは、医療デバイス、臨床サポート、診断ツール、その他のテクノロジとして使用することを目的としたものではありません。また、病気やその他の条件の診断、治療、軽減、取り扱い、または防止に使用することを意図したものではありません。 このアプリは、専門的な医療のアドバイス、診断、取り扱い、または略しの代わりとして設計されていないため、使用しないでください。 お客様は、このアプリの使用に関して唯一のリスクと責任を負うものとします。 Microsoft では、接続関連に用意されているアプリまたはマテリアルが、医療目的、または任意のユーザーの健康や医療の要件を満たすために十分であることを保証していません。* 
 
 ## <a name="next-steps"></a>次のステップ:
 
