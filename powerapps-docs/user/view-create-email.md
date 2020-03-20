@@ -8,12 +8,12 @@ ms.topic: article
 author: lalexms
 ms.author: lalexms
 manager: shujoshi
-ms.openlocfilehash: 7a0dee04334f52518c1746b6650f75ebfb67634d
-ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
+ms.openlocfilehash: 7d4930b03f175133a769226a407436d37f698633
+ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051915"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "79431741"
 ---
 # <a name="preview-view-and-create-email-through-the-activities-grid"></a>プレビュー:アクティビティ グリッドを使用して電子メールを表示し、作成する
 
@@ -37,7 +37,7 @@ Dynamics 365 のモデル駆動型アプリを使用すると、メールで顧�
 
 メールを表示するには:
 
-1. モデル駆動型アプリのサイトマップで、 **[活動]** を選択します。 
+1. モデル駆動型アプリのサイトマップで、 **[活動]** を選択します。 
 
 2. **[すべての活動]** ドロップダウンを選択し、 **[自分の受信済み電子メール]** を選択します。
 
