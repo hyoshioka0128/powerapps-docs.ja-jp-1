@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/07/2020
+ms.date: 02/12/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 8575bdc4379091204dbdfe4fd04d9d2d56a06cc9
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: ceb25954357efeafec6b33338ff4b617af82ebda
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2976834"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069764"
 ---
 # <a name="enable-azure-storage"></a>Azure Storage の有効化
 
@@ -24,6 +24,8 @@ ms.locfileid: "2976834"
 
 ストレージ アカウントの実行後に、ポータルは、ストレージ アカウントを検索する方法をアプリケーションに伝える特定のグローバル設定を必要とします。 ポータル管理アプリで、 **設定** > **新規** へと移動し、 **FileStorage/CloudStorageAccount** と呼ばれる新しい設定を追加します。
 
+Azure ストレージの統合は、エンティティ フォーム メタデータで構成された **ノート** でのみ動作します。 **タイムライン** を使用して設定された **ポータルのコメント** を使用している場合、ストレージとしての Azure Blob は使用されません。 ポータルのコメントには添付ファイルとしてファイルをアップロードする機能も実装されていますが、これらのファイルは Common Data Service にのみ格納されます。
+ 
 > [!NOTE]
 > ファイル アップロードの最大サイズは 125 MB です。
 

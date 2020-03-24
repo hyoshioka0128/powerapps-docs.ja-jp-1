@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf9b21936a0b1a9d843d248cf4941854dcdbbd7d
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 8db8442c7cb5a53d1c836f814e6d7b1d5e58a84a
+ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874567"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029679"
 ---
 # <a name="quick-start-for-transitioning-your-legacy-web-client-application-to-unified-interface"></a>クイックスタート: 従来の Web クライアント アプリケーションの統合インターフェイスへの移行
 
@@ -49,11 +49,6 @@ ms.locfileid: "2874567"
 
    > [!div class="mx-imgBorder"] 
    > ![統合インターフェイスのみを使用する設定](media/use-unified-interface-only-pac.png)
-
-これは、設定領域で設定することもできます。 **設定** > **管理** > **システム設定** へと移動し、 **一般** タブにて **統合インターフェイスのみを使用する** を **はい**に設定します。
-
-> [!div class="mx-imgBorder"] 
-> ![新しい統一インターフェイスのみを使用する](media/use-unified-interface-only.png "新しい統一インターフェイスのみを使用する")
 
 
 > [!NOTE]

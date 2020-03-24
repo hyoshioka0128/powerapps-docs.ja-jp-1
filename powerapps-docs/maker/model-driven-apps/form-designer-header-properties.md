@@ -21,19 +21,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1832d3bd9fc222f3c71089ae386e455a53f512f7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 67173c01bc6a96f0ada55c62688db76ca0af0596
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2868164"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069676"
 ---
 # <a name="configure-header-properties-in-the-form-designer"></a>フォーム デザイナーでヘッダーのプロパティを構成する
 
 作成者はフォームを使用している誰かのニーズに合わせてモデル駆動型のアプリケーション フォームのヘッダー密度を制御できます。
-
-> [!NOTE]
-> この機能は、2019 年リリース ウェーブ 2 機能の早期プレビューをオプトインした環境でのみ使用できます。 詳細: [2019 年リリース ウェーブ 2 への早期オプトイン](https://docs.microsoft.com/power-platform/admin/preview-october-2019-updates) 
 
 ## <a name="high-density-header"></a>高密度ヘッダー
 
@@ -147,6 +144,10 @@ ms.locfileid: "2868164"
 このメッセージは、フォームのボディからフォームのヘッダーにフィールドを移動しようとしていることを作成者に伝えています。 これをすることで、読み取り専用となります。 フィールドをヘッダーに移動するか、フィールドのコピーをヘッダーに追加するかを選択できます。 フィールドをヘッダーに移動すると、フォームボディの本来の場所でユーザーが編集することができなくなります。 フィールドのコピーをヘッダーに追加すると、フィールドは元の場所にそのまま残り、ユーザーはフォームのボディ内で引き続き編集がおこなえます。
 
 ### <a name="form-headers-now-default-to-high-density-to-display-more-data-use-the-new-form-designer-to-edit-header-density"></a>高密度のフォームヘッダーが既定となり、より多くのデータが表示されるようになりました。 新しいフォームデザイナーを使用して、ヘッダーの密度を編集します。  
+このメッセージは、低密度ヘッダーを使用するように設定されているメインフォームを編集などの目的で開いた場合に、旧式のフォームデザイナーで表示されます。  
+  
+このメッセージは、高密度ヘッダーとその利点についての認識を高めるのに役立ち、メーカーは新しいフォーム デザイナーを使用してヘッダーの密度を設定する必要があります。  
+
 このメッセージは、低密度ヘッダーを使用するように設定されているメインフォームを編集などの目的で開いた場合に、旧式のフォームデザイナーで表示されます。 
 
 このメッセージによって、高密度ヘッダーとその利点についての認識が高めることができ、新しいフォーム デザイナーへと切り替えてヘッダー密度を設定するように促します。  

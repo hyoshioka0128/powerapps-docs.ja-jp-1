@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f9a379824587f9e399ea215fa20d0b676480ab05
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d713bee10d98006e8310d614175cdaf6898631e2
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2752671"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080849"
 ---
 # <a name="create-packages-for-the-package-deployer"></a>Package Deployerのパッケージを作成する
 
@@ -149,7 +149,7 @@ Common Data Service には、これらのパッケージを作成するための
 
    ```  
 
-    `<filestoimportnode>`ノード  
+    `<filestoimport>`ノード  
     インポートする個々のファイルとzip ファイルを別々に説明するのに使用する`<configimportfile>`と`<zipimportdetails>`ノードの配列が含まれます。  
 
     `<configimportfile>`ノード  

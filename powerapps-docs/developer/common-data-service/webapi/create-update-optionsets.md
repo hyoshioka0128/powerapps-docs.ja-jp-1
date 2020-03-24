@@ -19,18 +19,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ce1c313c5c3b76f57d3ed2c04acba048a0772fe2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3aa755e0f6f0d5d403c6a4d1c6d585009aa912b2
+ms.sourcegitcommit: 04ba6f3773b23e4e89c23269b84707d19e9ed04c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749074"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "3094385"
 ---
 # <a name="create-and-update-option-sets-using-the-web-api"></a>Web API を使用してオプション セットを作成および更新
 
 通常、*グローバル* オプション セットでフィールドを設定するのは、さまざまなフィールドを同じオプション セットで共有して、それらを 1 つの場所でメンテナンスできるようにするためです。 特定の属性に対してのみ定義される*ローカル* オプション セットとは異なり、グローバル オプション セットは再利用できます。 要求パラメーターの中で列挙体のときと同じように使われる例もあります。  
   
-*自社組織のURI*`/api/data/v9.0/GlobalOptionSetDefinitions` への POST 要求を使用してグローバル オプション セットを設定するときは、値の設定をシステムに委任することを推奨します。 具体的には新規の `OptionMetadata` インスタンスを作成するとき、引数として **null** 値を渡します。 オプションを変更すると、そのオプション セットが作成されたソリューションに設定されている発行者のコンテキストに固有の接頭辞がオプション値に含められます。 この接頭辞は、マネージド ソリューションや、マネージド ソリューションのインストール先の組織で定義されている任意のオプション セットの中で、オプション セットの重複が生じる可能性を減らす効果があります。 詳細については、[オプション セット オプションのマージ](../understand-managed-solutions-merged.md#merge-option-set-options) を参照してください。
+*自社組織のURI*`/api/data/v9.0/GlobalOptionSetDefinitions` への POST 要求を使用してグローバル オプション セットを設定するときは、値の設定をシステムに委任することを推奨します。 具体的には新規の `OptionMetadata` インスタンスを作成するとき、引数として **null** 値を渡します。 オプションを変更すると、そのオプション セットが作成されたソリューションに設定されている発行者のコンテキストに固有の接頭辞がオプション値に含められます。 この接頭辞は、マネージド ソリューションや、マネージド ソリューションのインストール先の組織で定義されている任意のオプション セットの中で、オプション セットの重複が生じる可能性を減らす効果があります。 詳細については、[オプション セット オプションのマージ](../../../maker/common-data-service/how-managed-solutions-merged.md#merge-option-set-options) を参照してください。
 
  ## <a name="messages"></a>メッセージ  
  次の表に、グローバル オプション セットで使用できるメッセージを示します。  

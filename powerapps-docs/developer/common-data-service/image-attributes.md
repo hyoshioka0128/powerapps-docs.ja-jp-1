@@ -2,7 +2,7 @@
 title: イメージ属性 (Common Data Service) | Microsoft Docs
 description: イメージ データを保存するイメージ属性、サポートされている属性、イメージ データの取得、およびイメージ データのアップロードについて説明します。
 ms.custom: ''
-ms.date: 10/01/2019
+ms.date: 02/11/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,16 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f05345c50f5f1e907f17147a9006ca9eed29c09d
-ms.sourcegitcommit: 1c4ab1859febccf79a835bd2f168e7e12a953a18
+ms.openlocfilehash: 988a403bdd3badd720a46ee5b58a9539bc1ac9f9
+ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "2957601"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3037082"
 ---
 # <a name="image-attributes"></a>イメージ属性
 
 特定のシステム エンティティとすべてのユーザー定義エンティティがイメージをサポートしています。 イメージをサポートしているエンティティは、サムネイルとフルサイズのプライマリ イメージのどちらも含めることができます。 サムネイル イメージは、エンティティ フォームのデータを表示するとき、Web アプリケーションで表示できます。 エンティティ インスタンスには複数イメージ属性がありますが、プライマリ イメージは 1 つだけです。 ただし、その属性の [IsPrimaryImage](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.isprimaryimage?view=dynamics-general-ce-9#Microsoft_Xrm_Sdk_Metadata_ImageAttributeMetadata_IsPrimaryImage) を `true` に設定することにより、プライマリ イメージをある画像から別の画像に変更することができます。 各のフルサイズ イメージの属性は、30 MBに制限されています。 エンティティ イメージ属性の <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName> は、 `EntityImage` です。 詳細: [エンティティ イメージ](/dynamics365/customer-engagement/developer/introduction-entities#entity-images)。
+
+サムネイル画像と画像メタデータは Common Data Service に保存され、そこにはフル画像を取得するために必要な情報が含まれています。 フル画像は、Azure Blob のファイル ストレージに保存され、データ ストレージの消費を削減します。
 
 Web API (REST) | .NET API (SOAP) 
 ------- | -------

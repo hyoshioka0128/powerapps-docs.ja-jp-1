@@ -13,17 +13,19 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24164d6eb03de550a1f3f4a8f3e8402154d03046
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7cf24511fd8f314fde5f653608c1a4fa43ebc4e4
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865612"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040660"
 ---
 # <a name="open-entity-data-in-excel"></a>エンティティ データを Excel で開く
 Microsoft Excel でエンティティ データを開くことで、 Microsoft Power Apps Excel アドインを使用してすばやく簡単にデータを表示、編集することができます。 Power Apps Excel アドインには Microsoft Excel 2016 が必要になります。
 
 ![Excel アドイン](./media/data-platform-cds-excel-addin/ExcelAddin.png "Power Apps Excel アドイン")
+
+Power Apps Excel のアドインをインストールするには、[Microsoft PowerApps Office のアドイン](https://appsource.microsoft.com/en-us/product/office/WA104380330?tab=Overview)を参照してください。 Office Excel アドインを追加、削除する方法の詳細については、[Excel でアドインを追加、削除する](https://support.office.com/en-us/article/add-or-remove-add-ins-in-excel-0af570c4-5cf3-4fa9-9b88-403625a0b460)を参照してください。
 
 ## <a name="open-entity-data-in-excel"></a>エンティティ データを Excel で開く
 1. [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。 すべてのエンティティが表示されます。

@@ -1,7 +1,7 @@
 ---
 title: つながりロールを構成 | MicrosoftDocs
 ms.custom: ''
-ms.date: 10/17/2019
+ms.date: 02/11/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 434dea11e5238167e824561e247bc23ddbb7839b
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 0827acf9d7699e6bf88374d57a6e5218e3000ef5
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874171"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040504"
 ---
 # <a name="configure-connection-roles"></a>つながりロールの構成
 
@@ -49,46 +49,54 @@ Common Data Service を使用することで、エンティティの関係性を
 
 ## <a name="view-connection-roles"></a>つながりロールの表示
 
-Common Data Service には、標準的な接続に関するロールが多く含まれています。 これらを表示するには、設定領域に移動する必要があります。 
+Common Data Service には、標準的な接続に関するロールが多く含まれています。  
 
-### <a name="navigate-to-the-settings-area"></a>設定領域への移動
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、続いて左のウィンドウで **ソリューション** を選択します。 
+2. 任意のアンマネージド ソリューションを開きます。 
+3. コマンド バーで、**既存を追加** を選択し、続いて **接続ロール** を選択します。 
+   使用可能な接続ロールのリストが表示されます。 
+4. **キャンセル**を選択して、接続ロールをソリューションに追加せずに **既存の接続ロールを追加する** ダイアログを閉じます。
 
-1. モデル駆動型アプリで、**設定** > **詳細設定**を選択します。 
+> [!NOTE]
+> - ソリューションを使ってつながりロールを配布する場合、配布するソリューションに含まれていることを確認します。 詳細: [ソリューションへのつながりロールの追加](#add-connection-roles-to-a-solution)
+
+### <a name="view-and-edit-connection-roles-using-the-classic-experience"></a>クラシック エクスペリエンスを使用して接続ロールを表示、編集する
+
+ほとんどの **設定** のエリアに表示されている接続に関する役割は、 *内部***既定のソリューション** にて定義されています。( **Common Data Services既定のソリューション**と混同しないようにしてください)。 この内部の**既定のソリューション**には、システム内のすべてのカスタマイズが含まれます。 **既定のソリューション**を表示するには、**すべてのソリューション - 内部**ビューを選択します。 
+
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、続いてコマンド バーにて **設定**![設定](media/powerapps-gear.png) を選択し、続いて **高度な設定** を選択します。
 2. **設定** > **業務** > **事業部管理**に移動し、**つながりロール**を選択します。
 
    > [!div class="mx-imgBorder"] 
-    > ![事業部管理設定のつながりロール](media/navigate-settings-connection-roles.png "事業部管理設定のつながりロール")
+   > ![事業部管理設定のつながりロール](media/navigate-settings-connection-roles.png "事業部管理設定のつながりロール")
 
 このビューでは、この環境で使用できるすべてのつながりロールを確認し、編集できます。
 
-> [!NOTE]
-> ソリューションを使ってつながりロールを配布する場合、配布するソリューションに含まれていることを確認します。 詳細: [ソリューションへのつながりロールの追加](#add-connection-roles-to-a-solution)
-
-## <a name="view-connection-roles-in-the-solution-explorer"></a>ソリューション エクスプローラーでつながりロールを表示します。
-
+## <a name="add-connection-roles-to-a-solution"></a>ソリューションへのつながりロールの追加
 つながりロールは *ソリューション対応* である、つまりソリューションに含めることができるため、配布するソリューションにつながりロールを追加することもできます。
 
-[!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
+通常、内部の**既定のソリューション**のコンポーネントを編集することはお勧めしません。 作業用に作成したソリューション内で、  **ソリューション** エリアの **既存を追加** コマンドを使用して、アクティブな接続ロールをソリューションに取り込むことができます。
 
-**設定** に表示されているほとんどの接続に関する役割は、 *内部***既定のソリューション** にて定義されています。( **Common Data Service既定のソリューション**と混同しないようにしてください)。 この内部の**既定のソリューション**には、システム内のすべてのカスタマイズが含まれます。 **既定のソリューション**を表示するには、**すべてのソリューション - 内部**ビューを選択します。
-
-## <a name="add-connection-roles-to-a-solution"></a>ソリューションへのつながりロールの追加
-
-通常、内部の**既定のソリューション**のコンポーネントを編集することはお勧めしません。 **Common Data Service既定のソリューション** 、あるいは作業をするに当たって作成されたソリューションは、 **既存に追加** コマンドを使用することで接続役割をソリューションに取り込むことができます。
-
-![既存のつながりロールの追加](media/add-existing-connection-role.png)
+> [!div class="mx-imgBorder"] 
+> ![既存のつながりロールの追加](media/add-existing-connection-role.png)
 
 ソリューションにつながりロールを追加すると、表示されたどこででもこれを編集できます。
 
-## <a name="create-or-edit-connection-roles"></a>つながりロールを作成または編集します。
+> [!NOTE]
+> 接続ロールをソリューションからエクスポートする場合、接続ロールの状態は含まれません。 したがって、ソリューションをターゲット環境にインポートすると、状態は既定でアクティブに設定されます。 
+
+
+## <a name="create-a-connection-role"></a>つながりロールの作成
 
 > [!IMPORTANT]
 > 新しいつながりロールや既存のつながりロールへの変更が含まれるソリューションを配布する場合、配布するソリューションにそれらを追加する必要があります。 **設定**領域を使って新しいつながりロールを編集または追加すると、**既定のソリューション**にこのようなつながりロールが追加されます。ソリューションに最初に追加したのでない限り、配布するソリューションにそれらは含められません。 詳細: [ソリューションへのつながりロールの追加](#add-connection-roles-to-a-solution)
 
-**つながりロール**リストで、編集するためにつながりロールのいずれかを選択します。
-フォームで明確に呼び出されるつながりロールを定義するステップは 3 つです。
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、続いて左のウィンドウで **ソリューション** を選択します。 
+2. 対象のアンマネージド ソリューションを開き、コマンドバーで **新規** > **その他** > **接続ロール** を選択します。 
+3. フォーム上の3つの手順に従って、 [接続ロールを記述します](#describe-the-connection-role)。
 
-![つながりロール フォームの作成](media/create-connection-role-form.png)
+   > [!div class="mx-imgBorder"] 
+   > ![つながりロール フォームの作成](media/create-connection-role-form.png)
 
 ### <a name="describe-the-connection-role"></a>つながりロールを記述する
 
@@ -114,14 +122,14 @@ Common Data Service には、標準的な接続に関するロールが多く含
 
 **カテゴリ** グローバル オプション セットを編集することで、新しいカテゴリを追加したり、既存のカテゴリを変更できます。 詳細: [Common Data Service グローバル オプション設定の作成および編集](create-edit-global-option-sets.md)
 
-### <a name="select-record-types"></a>レコードの種類の選択
+#### <a name="select-record-types"></a>レコードの種類の選択
 
 つながりに使用できるようにするレコードの種類を接続します。
 
 > [!NOTE]
 > **すべて**が既定で選択されていますが、追加するつながりロールに適した種類について検討してください。
 
-### <a name="matching-connection-roles"></a>マッチングするつながりロール
+#### <a name="matching-connection-roles"></a>マッチングするつながりロール
 
 このオプションの手順では、相互的な方法に適用されるロールを定義できます。 これは必須ではありませんが、これらが定義されているとつながりがより多くの意味を持ちます。
 

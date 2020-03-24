@@ -6,21 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/17/2020
+ms.date: 03/04/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: bf76d2a8a3e91d9e20de9d70543af0bda4a57040
-ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
+ms.openlocfilehash: 9293288a8f3de86807342466771d197754b65706
+ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2988084"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "3100020"
 ---
 # <a name="power-apps-portals-faq"></a>Power Apps ポータルに関するよくあるご質問
 
 必要な情報がすぐに手に入るように、よく寄せられる質問とその簡潔な回答を一覧にまとめました。
 
 ## <a name="general"></a>全般
+
+### <a name="does-power-apps-portals-support-tls-12"></a>Power Apps ポータルは TLS 1.2 をサポートしていますか?
+
+Power Apps ポータル バージョン 8.3 以降で [TLS 1.2](https://support.microsoft.com/help/4041984/portal-capabilities-for-microsoft-dynamics-365-version-8-3-2-85-releas) をサポートしています。
 
 ### <a name="what-is-the-difference-between-power-apps-portals-dynamics-365-portals-and-add-on-portals"></a>Power Apps ポータル、Dynamics 365 ポータル、アドオン ポータルとの違いは?
 
@@ -32,9 +36,11 @@ ms.locfileid: "2988084"
 
 ![Power Apps ポータルの種類](./media/power-apps-portals-type.png)
 
-アドオン ポータルの場合、ポータルの種類に 'アドオン' という接尾辞が追加されます。 たとえば、運用アドオン ポータルの種類は '運用 (アドオン)' としてリストされます。
+容量ベースのライセンスとアドオン ベースのライセンスを持つ Power Apps ポータル間のその他の相違点:
 
-Power Apps 容量ベースのライセンスとアドオン ベースのライセンスを持つポータルに機能的な違いはありません。 ただし、容量ベースのライセンスとアドオンベースのライセンスを持つポータルのプロビジョニング方法は異なります。
+- アドオン ポータルの場合、ポータルの種類に 'アドオン' という接尾辞が追加されます。 たとえば、運用アドオン ポータルの種類は '運用 (アドオン)' としてリストされます。
+- Power Apps ポータルには、アドオン ベースのライセンス ポータルと比較して [異なるキャッシング メカニズム](https://powerapps.microsoft.com/en-us/blog/publishing-changes-to-powerapps-portals/) があります。
+- プロビジョニング方法は、容量ベースのライセンスを持つポータルとアドオン ベースのライセンスでは異なります。
 
 次の記事で説明されている手順を使用して、容量ベースのライセンスで Power Apps ポータル作成できます:
 
@@ -213,6 +219,10 @@ Common Data Service 環境のの URL を変更すると、ポータルは Common
 ポータルは再起動され、再び稼働を開始します。
 
 ## <a name="debugging-and-fixing-problems"></a>デバッグおよび問題の修正
+
+### <a name="performance-of-entity-forms-actions-such-as-createupdatedelete-on-entity-forms-take-a-lot-of-time-to-complete-or-timeout"></a>エンティティ フォームのパフォーマンス: エンティティ フォームの作成/更新/削除などのアクションは、完了またはタイムアウトするまでに多くの時間がかかります。
+
+これは、Common Data Service 内のそのエンティティで行われたデータとカスタマイズに依存する複数の理由により発生する可能性があります。 ポータルからのレコード アクションに関するこのようなパフォーマンス関連の問題をトラブルシューティングするときは、これらの遅延を引き起こす可能性のあるイベントに同期プラグインが登録されていないことを確認してください。 可能な限り、トランザクションを保持または遅延させたりしないように、非同期で実装してください。
 
 ### <a name="when-accessing-my-portal-i-see-a-generic-error-page-how-can-i-see-the-actual-error"></a>ポータルにアクセスすると、汎用エラー ページが表示されます。 どのように実際のエラーを表示しますか。
 

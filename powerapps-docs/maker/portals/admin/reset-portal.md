@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 02/11/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 96e661f5774cedff7a3bc2317f02273af7041d13
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: b788d0b1a0935949e7114e220ad714fa6495c294
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978682"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069456"
 ---
 # <a name="reset-a-portal"></a>ポータルのリセット
 
@@ -41,7 +41,8 @@ ms.locfileid: "2978682"
 > - 関連する Azure Active Directory アプリケーションで適切なアクセス許可を所有していない場合は、エラーが表示されます。 適切なアクセス許可についてグローバル管理者に連絡する必要があります。
 > - 古いポータルアドオンを使用してポータルをプロビジョニングし、ポータルが正常にリセットされた場合、**Dynamics 365 管理センター**ページ上にある**アプリケーション** タブのポータル名とそのステータスは変更されません。 たとえば、ポータル名および状態がポータル 1 および構成済みである場合、ポータルをリセット後、それらの値は変更されません。 ポータル名を変更したい場合は、Power Apps ポータル管理センターの **ポータル詳細** タブで変更することができます。 ただし、状態の値を未構成に変更することはできません。
 > - **アプリケーション** タブのポータルの状態はプロビジョニングの状態を表さず、ポータルの機能に影響を与えないことに注意してください。 これは単に、関係するポータルのために Power Apps ポータル管理センターに今までにアクセスしたことがあるかどうかを示します。
-
+> - 古いポータル アドオンを使用してポータルをプロビジョニングした場合は、ポータルを **未構成** 状態にリセットし、[新しいポータルを作成する](../provision-portal-add-on.md) ことができます。
+ 
 ポータルが正しくプロビジョニングされていない場合、エラー状態になり、以下の画面が表示されます。 この場合、エラー画面の**ポータルのリセット**を選択することによりポータルをリセットすることができます。
 
 > [!div class=mx-imgBorder]

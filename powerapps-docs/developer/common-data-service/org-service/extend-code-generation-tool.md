@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fdeea48a4bcdb996580d542a01a61fef22625b98
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3481ef129b91883df648b956a31fffc9aa55067e
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748973"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091254"
 ---
 # <a name="create-extensions-for-the-code-generation-tool"></a>コード生成ツール用の拡張機能の作成
 
@@ -133,5 +133,4 @@ Guid accountId = service.Create(account);
 
  [コード生成ツール (CrmSvcUtil.exe) を使用して事前バインド型エンティティ クラスを作成する](/dynamics365/customer-engagement/developer/create-early-bound-entity-classes-code-generation-tool)<br />
  [作成、更新、および削除の事前バインド エンティティ クラスの使用](/dynamics365/customer-engagement/developer/use-entity-class-create-update-delete)<br />
- [トラブルシューティングのヒント](/dynamics365/customer-engagement/developer/troubleshooting-tips)<br />
  [Web サービスを使用した単純なプログラムの実行](/dynamics365/customer-engagement/developer/simple-program-web-services)

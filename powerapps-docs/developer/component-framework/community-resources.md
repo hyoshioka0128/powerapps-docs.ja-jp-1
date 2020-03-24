@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: f0f397b6d355cc3189fcf211a677655c6ae49fd8
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 3454ef328b09b4df9b0ebe5a115b352ef13a5b46
+ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017374"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "3097311"
 ---
 # <a name="community-resources-for-power-apps-component-framework"></a>Power Apps Component Framework の コミュニティ リソース
 
@@ -36,6 +36,28 @@ Power Apps Component Framework ギャラリー (<https://pcf.gallery/>) は Powe
 > [!div class="mx-imgBorder"]
 > ![コンポーネント ギャラリー](media/pcf-gallery.PNG "コンポーネント ギャラリー")
 
+## <a name="videos"></a>ビデオ
+
+以下は、 Power Apps コミュニティが作成した動画のリストです。
+
+|名前|説明|
+|------|-------|
+|[自分のコード コンポーネントを構築する](https://www.youtube.com/watch?v=S3Z_IUf1ncg)| Power Apps component framework を使用して、モデル駆動型アプリとキャンバス アプリでコード コンポーネントを構築する方法を説明します。| 
+|[キャンバス アプリのコード コンポーネント](https://www.youtube.com/watch?v=bMSCkcb4xAQ&feature=emb_logo)| キャンバス アプリでコード コンポーネントを開発および使用する方法を説明します。|
+|[コード コンポーネントを開発する](https://www.youtube.com/watch?v=FxWF-LCCB4g&feature=youtu.be)| このビデオでは、Power Apps component framework を使用してコード コンポーネントを開発する要件を示しており、最初のコード コンポーネントを作成するにあたっての段階的なアプローチを示しています。|
+|[sourcemaps と Fiddler を使った簡単なデバッグ](https://www.youtube.com/watch?v=Ov-m5FBUj9g&feature=youtu.be)|Fiddler とソースマップを使用して、縮小された製品コードをデバッグする方法を説明します。|
+|[コード コンポーネントを使ってみる](https://www.youtube.com/watch?v=ylhVZUlGgQw)| Power Apps component framework とコードコンポーネントの構築の基本を扱う入門ビデオ。|
+|[Power Apps Component Framework アカデミー：はじめに](https://www.youtube.com/watch?v=YJ9hrKxAhTU)| 初めてのコード コンポーネントの構築方法を紹介するビデオです。|
+|[Power Apps component framework: データセット テンプレートの詳細なマニフェスト ファイル](https://www.youtube.com/watch?v=TsTrYaOGaGo&feature=youtu.be)| データセット タイプのコードコンポーネントのマニフェスト ファイルの定義方法を説明します。|
+|[Power Apps component framework Academy: フィールド テンプレートの詳細なマニフェスト ファイル](https://www.youtube.com/watch?time_continue=522&v=w40zqSsYEy0)| フィールド タイプのコード コンポーネントのマニフェスト ファイルを定義する方法を説明します。|
+|[Power Apps Component Framework アカデミー：データセット コンポーネント](https://www.youtube.com/watch?v=OEiM97nTD0w)| データセット コンポーネントの詳細、およびデータセット API のさまざまな方法の利用方法について説明します。|
+|[Power Apps Component Framework アカデミー：組織へのインポート](https://www.youtube.com/watch?v=2uO2L2xTPkc)| コード コンポーネントを Common Data Service にパッケージ化してインポートする方法を説明します。|
+|[革新的な Power Apps component framework](https://youtu.be/_SjEQ-7LK_Q)|コンポーネントフレームワークがモデル駆動型アプリとキャンバスアプリの視覚化をどのように強化したかを説明します|
+|[Power Apps Component Framework アカデミー：React と Office UI ファブリックの使用](https://www.youtube.com/watch?v=e7JNgGlI3nE)| コード コンポーネントで React と UI ファブリックを使う方法を説明します。|
+|[Power Apps Component Framework アカデミー：追加のフレームワークの使用](https://www.youtube.com/watch?v=cOPyyDdsEjQ)| 追加のフレームワークを使用して、コード コンポーネントを構築する方法を説明します。|
+[Power Apps Component Framework アカデミー：マニフェストファイル の操作](https://www.youtube.com/watch?v=qbSpDVTxt7U&t=5s)| マニフェスト ファイルとマニフェスト ファイル内のコード コンポーネントの開発にあたって定義する必要があるさまざまなメソッドについての解説ビデオ。|
+|[Power Apps component framework：Dynamics 365 の概要](https://youtu.be/3LnPaKtfKhw)|Microsoft Dynamics 365 でカスタム フォーム コンポーネントの限界を嘆いたことがある方は、このチュートリアルを読んで、まったく新しい可能性に目を向けてみてください。|
+
 ## <a name="blogs"></a>ブログ
 
 以下は、 Power Apps コミュニティが作成したブログのリストです。
@@ -50,24 +72,6 @@ Power Apps Component Framework ギャラリー (<https://pcf.gallery/>) は Powe
 - [Power Apps Component Framework– さらなる可能性へ](https://stevemordue.com/powerapps-component-framework-frosting-on-the-cake/)
 - [Power Apps Component Framework の一般公開 – 重要なマイルストーン](https://crmindian.com/2019/04/24/public-availability-of-powerapps-component-framework-an-important-milestone-for-powerapps-and-d365/)
 - [ Power Apps Component Framework を使用して コード コンポーネント を操作する](https://powermaverick.dev/2019/05/18/create-custom-controls-using-powerapp-component-framework)
-
-## <a name="videos"></a>ビデオ
-
-以下は、 Power Apps コミュニティが作成した動画のリストです。
-
-- [自分のコード コンポーネントを構築する](https://www.youtube.com/watch?v=S3Z_IUf1ncg)
-- [キャンバス アプリのコード コンポーネント](https://www.youtube.com/watch?v=bMSCkcb4xAQ&feature=emb_logo)
-- [sourcemaps と Fiddler を使った簡単なデバッグ](https://www.youtube.com/watch?v=Ov-m5FBUj9g&feature=youtu.be)
-- [コード コンポーネントを使ってみる](https://www.youtube.com/watch?v=ylhVZUlGgQw)
-- [Power Apps Component Framework アカデミー：はじめに](https://www.youtube.com/watch?v=YJ9hrKxAhTU)  
-- [Power Apps component framework: データセット テンプレートの詳細なマニフェスト ファイル](https://www.youtube.com/watch?v=TsTrYaOGaGo&feature=youtu.be)
-- [Power Apps component framework Academy: フィールド テンプレートの詳細なマニフェスト ファイル](https://www.youtube.com/watch?time_continue=522&v=w40zqSsYEy0)
-- [Power Apps Component Framework アカデミー：データセット コンポーネント](https://www.youtube.com/watch?v=OEiM97nTD0w)
-- [Power Apps Component Framework アカデミー：組織へのインポート](https://www.youtube.com/watch?v=2uO2L2xTPkc)
-- [Power Apps Component Framework アカデミー：React と Office UI ファブリックの使用](https://www.youtube.com/watch?v=e7JNgGlI3nE)
-- [Power Apps Component Framework アカデミー：追加のフレームワークの使用](https://www.youtube.com/watch?v=cOPyyDdsEjQ)
-- [Power Apps Component Framework アカデミー：マニフェストファイル の操作](https://www.youtube.com/watch?v=qbSpDVTxt7U&t=5s)
-- [Power Apps Component Framework コード コンポーネント](https://www.youtube.com/watch?v=FxWF-LCCB4g&feature=youtu.be)
 
 ## <a name="tools"></a>ツール
 

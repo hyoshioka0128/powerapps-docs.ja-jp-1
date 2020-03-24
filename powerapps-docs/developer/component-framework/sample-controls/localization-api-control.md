@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 5a60884e6cefab9b4bfa0735e03b5d5eb4761523
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 33ba9adb4e1f1d94973e8210a2eb32bdee0eaf7d
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017424"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091222"
 ---
 # <a name="implementing-localization-api-component"></a>ローカライズ API コンポーネントの実装
 
@@ -26,7 +26,7 @@ Power Apps component framework は、ローカライズされた文字列の管�
 
 ## <a name="available-for"></a>以下に使用できます 
 
-モデル駆動型アプリとキャンバス アプリ (実験的プレビュー) 
+モデル駆動型アプリとキャンバス アプリ (公開プレビュー) 
 
 ## <a name="manifest"></a>マニフェスト 
 

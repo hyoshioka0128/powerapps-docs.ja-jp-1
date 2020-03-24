@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 10/07/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: d1e8048f4cc4dbb2023788fcc3d3cf28fdfb7f7b
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 97c049394bac97106b6de970d40f07321ed927bd
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979694"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069632"
 ---
 # <a name="configure-notes-for-entity-forms-and-web-forms-on-portals"></a>ポータルのエンティティ フォームと Web フォームに注記をコンフィギュレーション
 
@@ -158,3 +158,6 @@ ms.locfileid: "2979694"
 ## <a name="notes-configuration-for-web-forms"></a>Web フォームの注記コンフィギュレーション
 
 Web フォームの注記は、[エンティティ フォームの注記](#notes-configuration-for-entity-forms) と同じ方法で構成されます。 注記がある Web フォーム ステップのメタデータ レコードを作成してから、注記の構成メタデータを追加する必要があります。
+
+> [!NOTE]
+> メモの説明の前には、接頭辞 *WEB*（前後にアスタリスク（*）が付いた「WEB」キーワード）を使用してポータルに表示します。

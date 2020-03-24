@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d52b3fa67863a43f82f020f3894bbabf5d38df84
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: b0528015899ccc624fed1d83566c445f348343c9
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865472"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040440"
 ---
 # <a name="define-alternate-keys-using-power-apps-portal"></a>Power Apps ポータルを使用した代替キーを定義する
 
@@ -37,9 +37,8 @@ ms.locfileid: "2865472"
 
 ## <a name="view-alternate-keys"></a>代替キーを表示
 
-1. [Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)から、 **モデル駆動型** または **キャンバス** 設計モードを選択します。
-2. **データ** > **エンティティ**を選択し、表示するエンティティを選択します。
-3. **キー**を選択すると、定義された代替キーのリストが表示されます。
+1. [Power Apps ポータル](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) から、**データ** > **エンティティ** を選択し、表示したいフィールドを含むエンティティを選択します。
+2. **キー**を選択すると、定義された代替キーのリストが表示されます。
 
     ![代替キーを表示](media/view-alternate-keys-portal.png)
 

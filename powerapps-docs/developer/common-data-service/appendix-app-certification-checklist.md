@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5dc66ce68c27ddf0ccea275c862e5c780a8d039c
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 795b7797c36a4491ed5e748bdbd42e0ad9add01f
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861856"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080845"
 ---
 # <a name="appendix-app-certification-checklist"></a>付録: アプリの認証チェックリスト
 
@@ -33,12 +33,12 @@ ms.locfileid: "2861856"
 <th>認定チェックリスト</th>
 </tr>
 <tr>
-<td rowspan=5>Common Data Service に接続する<a href="https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview">モデル駆動型アプリ</a>, <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">キャンバス アプリ</a>および <a href="https://docs.microsoft.com/flow/getting-started">フロー</a><br/></td>
+<td rowspan=5>Common Data Service に接続する<a href="https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview">モデル駆動型アプリ</a>, <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">キャンバス アプリ</a>および <a href="https://docs.microsoft.com/power-automate/getting-started">フロー</a><br/></td>
 <td>正常性確認</td>
 <td><ul>
-<li>アプリ登録の種類を確認: 無料、試用版またはお問い合わせ お問い合わせに登録されている場合、発行者はテスト ドライブを有効にする必要があります。</li>
+<li>アプリ登録の種類を確認: 無料、試用版またはお問い合わせ</li>
 <li>提出した <a href="https://docs.microsoft.com/powerapps/developer/common-data-service/create-package-app-appsource">パッケージ</a> に AppSourceで公開するために必要なすべてのアーティファクトが含まれていることを確認します。</li>
-<li>クラウド パートナー ポータルからエンド ツー エンド (E2E) 機能ドキュメントをダウンロードし、ドキュメントが機能シナリオとユーザー / 管理者の体験で更新されていることを検証します。</li>
+<li><a href="https://partner.microsoft.com/dashboard">パートナー センター</a> からエンド ツー エンド (E2E) 機能のドキュメントをダウンロードし、ドキュメントが機能シナリオとユーザー / 管理者の体験で更新されていることを検証します。</li>
 </ul>
 </td>
 </tr>
@@ -46,14 +46,15 @@ ms.locfileid: "2861856"
 <td>コード検証</td>
 <td>
 <ul>
-<li>キャンバス アプリのコード検証は Power Apps の <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/accessibility-checker">アクセシビリティ チェッカー ツール</a> を介して行われ、以下を確認します。
+<li>キャンバス アプリのコード検証は Power Apps の <a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/accessibility-checker">アクセシビリティ検査ツール</a> を介して行われ、以下を確認します。
 <ul>
 <li>静的数式エラーと警告: 何か問題があった場合は、検証チームが問題解決のためにフィードバックを共有し、AppSourceへと再提出します。</li>
 <li>実行時エラー: アプリを実行モードで開いて表示する時に発生する可能性があります。 問題が見つかったらすべて電子メールで報告されます。</li>
 <li>ユーザー補助のエラーと警告: ユーザー補助のエラーはすべてソリューション チェッカーのガイドラインに従って解決する必要があります。</li>
 </ul></li>
-<li>Common Data Service ソリューションのコード検証は、 <a href="https://experienceisv.microsoftcrmportals.com/precertification/#/">OnDemand コード 解析 (ODCA)</a> ツールを介して行われます。</li>
-<li>ODCA から報告された問題は手動で正確さが検証され、誤検知した問題は重大度が低く抑えられます。</li>
+<li>Common Data Service ソリューションのコード検証は、<a href="https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/overview">Power Apps Checker</a> を利用して行われます。</li>
+<li>Power Apps Checker で報告された問題は手動で検証され、誤検出された問題は重要度が低く抑えられます。</li>
+<li>ソリューションとパッケージの品質は、AppSource認証<a href="https://docs.microsoft.com/powerapps/developer/common-data-service/checker/webapi/retrieve-rulesets">ルールセット</a>に照らして検証されます。 
 <li>生成されたレポートは電子メールで発行者と共有されます。</li>
 </ul>
 </td>
@@ -74,7 +75,7 @@ ms.locfileid: "2861856"
 <td>
 <ul>
 <li>発行者が共有する機能ドキュメントに基づいてアプリの機能を検証します。 アプリに実装されたすべての機能が通過する必要があります。</li>
-<li>発行者はクラウド パートナー ポータルを通じて E2E 機能ドキュメントを送信するか、電子メールを通じてビデオ リンクを共有することができます。</li>
+<li>発行者は <a href="https://partner.microsoft.com/dashboard">パートナー センター</a> を通じて E2E 機能のドキュメントを送信するか、電子メールを通じてビデオのリンクを共有することができます。</li>
 <li>アプリがライセンス構成を必要とする場合、認証チームは必要なライセンスを更新するために発行者にインスタンス詳細を共有します。</li>
 </ul></td>
 </tr>
@@ -90,7 +91,7 @@ ms.locfileid: "2861856"
 </td>
 </tr>
 <tr>
-<td rowspan=5>Common Data Service <i>以外</i> のデータソースに接続する<a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">キャンバス アプリ</a> および <a href="https://docs.microsoft.com/flow/getting-started">フロー</a>
+<td rowspan=5>Common Data Service <i>以外</i> のデータソースに接続する<a href="https://docs.microsoft.com/powerapps/maker/canvas-apps/getting-started">キャンバス アプリ</a> および <a href="https://docs.microsoft.com/power-automate/getting-started">フロー</a>
 </td>
 <td>正常性確認</td>
 <td><ul>
@@ -134,7 +135,9 @@ ms.locfileid: "2861856"
 - キャンバス アプリは [キャンバス アプリのコード標準とガイドライン](https://aka.ms/powerappscanvasguidelines) を参照してください。
 - モデル駆動型アプリは [モデル駆動型アプリのコンポーネントについて](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-components) を参照してください。
 
-  
+### <a name="see-also"></a>関連項目
+
+[パートナーセンターのドキュメント](https://docs.microsoft.com/partner-center/)
 
 
 

@@ -272,6 +272,8 @@
       href: retrieve-time-zone-information.md
 - name: データのクエリ
   items:
+    - name: LINQ を使用したデータのクエリ
+      href: query-using-linq.md
     - name: ページング Cookie を使用した QueryExpression の使用
       href: use-queryexpression-with-a-paging-cookie.md
     - name: QueryExpression クラスを使用した複数取得

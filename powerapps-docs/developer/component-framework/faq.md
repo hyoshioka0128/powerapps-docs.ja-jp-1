@@ -1,39 +1,67 @@
 ---
-title: よくあるご質問 | MicrosoftDocs
+title: FAQ | MicrosoftDocs
 description: コンポーネント フレームワークに関してよく寄せられる質問
 manager: kvivek
 ms.date: 10/01/2019
 ms.service: powerapps
 ms.topic: index-page
 ms.assetid: 9f940264-d7d5-4930-8052-1bd582445d37
-ms.author: nabuthuk
-author: Nkrb
-ms.openlocfilehash: 89ca91795b0644b0b7275697864211a4d3263c80
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.author: grhurl
+author: ghurlman
+ms.reviewer: nkrb
+ms.openlocfilehash: e471cd617243b98635fa0db4a1487be4ddb1e5e9
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861997"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091246"
 ---
-# <a name="faq"></a>よくあるご質問
+# <a name="faqs"></a>よく寄せられる質問
 
 [!INCLUDE[cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-## <a name="multiple-components-in-single-manifest-file"></a>ひとつのマニフェスト ファイルに複数のコンポーネント
+### <a name="component-changes-are-not-reflected-after-the-updated-solution-import"></a>更新されたソリューションのインポート後にコンポーネントの変更は反映されませんか？
 
-単一のマニフェスト ファイルに複数のコンポーネントを定義できません。 
+コンポーネント マニフェスト ファイルのコンポーネント バージョン (マイナーまたはパッチ) を更新します (たとえば、1.0.0 から 1.0.1)。 コンポーネントの更新ごとに、Common Data Service サーバに反映されるコンポーネントのバージョンを上げる必要があります。
 
-## <a name="calling-processesactions"></a>プロセス / 操作の呼び出し
+> [!NOTE]
+> - メジャー バージョンを上げたい場合は、毎回新しいソリューションを作成する必要があります。 メジャー バージョン番号 (1.0 から 2.0 など) の増分は、アップグレードとしてサポートされていません。
+> - 3 つのバージョン セクションのみがサポートされています (つまり、MAJOR.MINOR.PATCH)。 これらのバージョン番号セクションは、0 ～ 65536 の範囲内である必要があります。
 
-これはサポートされていません。 今日の時点では [ナビゲーション](reference/navigation.md) メソッドを使用することでだけ、ダイアログ ボックスを呼び出すことができます。
+### <a name="what-are-the-things-to-be-considered-from-a-performance-perspective"></a>パフォーマンスの観点から考慮すべきことは何ですか?
 
-## <a name="calling-components-within-another-component"></a>別のコンポーネント内からコンポーネントを呼び出す
+1. 大量のデータ項目にアクセスする場合は、[フィルター処理](reference/filtering.md) と [ページング](reference/paging.md) を実装して、ロードするデータ量を制限します。
+2. ネットワーク呼び出しをバッチ処理し、ネットワーク呼び出しを非同期にします。 すべての必要な情報が 1 回の呼び出しで提供されるように、コンポーネントを設計します。 
+3. ユーザーが各データ項目を呼び出すのではなく、特定の項目のデータのロードを開始するアクション (ボタンをクリックするなど) を実行する必要があるようにコンポーネントを設計します。
+4. 必ず [破棄](reference/control/destroy.md) 機能を使用してリソースをクリーンアップしてください。 オープン ネットワークの呼び出し、接続、およびイベント ハンドラーをクリーンアップして、パフォーマンスを向上させる必要があります。
 
-これはサポートされていません。
+### <a name="where-can-i-find-some-good-examples-of-code-components"></a>コード コンポーネントの良い例はどこにありますか?
 
-## <a name="font-resource"></a>フォント リソース
+[Power Apps コミュニティ フォーラム](https://powerusers.microsoft.com/t5/Power-Apps-Component-Framework/Community-content-sample-components-blogs-etc-Link-to-this-page/td-p/280710) には、コミュニティからの素晴らしい例がたくさんあります。
 
-現在、フォント リソース (.tff) は Power Apps Component Framework ではサポートされていません。
+### <a name="how-to-use-rich-data-types-in-code-components-such-as-collections"></a>コレクションなどのコード コンポーネントでリッチ データ型を使用する方法は?
+
+この機能は現在、サポートされていません。 ただし、キャンバス アプリには [JSON 関数](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-json) があり、アプリ メーカーはデータを文字列化することができます。
+
+1. コレクションを JSON 関数に渡します。
+2. JSON 関数から返されるコレクション データの文字列表現を、コンポーネントの文字列プロパティの 1 つに渡します。
+3. コンポーネント コードの [JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) を使用して、JavaScript オブジェクト に変換します。
+
+### <a name="how-can-i-define-multiple-components-in-a-single-manifest-file"></a>単一のマニフェスト ファイルで複数のコンポーネントを定義するにはどうすればよいですか?
+
+単一のマニフェスト ファイルで複数のコンポーネントを定義することはサポートされていません。 
+
+### <a name="how-can-i-define-behavior-properties"></a>動作プロパティを定義するにはどうすればよいですか?
+
+これは現時点ではサポートされていません。 現在、モデル駆動型アプリでは、[ナビゲーション](reference/navigation.md) メソッドを使用してダイアログ ボックスを呼び出すことができます。
+
+### <a name="how-can-i-call-other-components-from-within-another-component"></a>別のコンポーネント内から他のコンポーネントを呼び出すにはどうすればよいですか?
+
+これは、フレームワークによって単純にサポートされていません。 多くのサード パーティ ライブラリの 1 つを使用して、コンポーネントでこの機能を有効にできます。
+
+### <a name="can-i-bundle-font-resources"></a>フォント リソースをバンドルできますか?
+
+現在、フォント リソース (.ttf ファイル拡張子を持つファイル) は、フレームワークでサポートされていません。
 
 ## <a name="related-topics"></a>関連トピック
 

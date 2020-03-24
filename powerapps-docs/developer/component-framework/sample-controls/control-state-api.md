@@ -10,12 +10,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 4a77bf37-8ea0-4fe3-9fe7-2769387167c3
-ms.openlocfilehash: fa21dbb8d141f06066a2d7d61ad68cadcd77124a
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 1b76b9b506dcf1842da9ddbddd8bb21d7190cb60
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017455"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091194"
 ---
 # <a name="implementing-control-state-api-component"></a>コントロールの状態 API コンポーネントの実装
 
@@ -28,7 +28,7 @@ Power Apps component framework を使用すると、同一のセッション内�
 
 ## <a name="available-for"></a>以下に使用できます
 
-モデル駆動型アプリとキャンバス アプリ (実験的プレビュー)
+モデル駆動型アプリとキャンバス アプリ (公開プレビュー)
 
 ## <a name="manifest"></a>マニフェスト
 

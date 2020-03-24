@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: a304ace5ed62bf831aafb2ae41d4e615213c84a6
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 651ada19ae34f40a04f6dca92c761148efa69241
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017414"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091190"
 ---
 # <a name="implementing-map-component"></a>マップ コンポーネントの実装
 
@@ -24,7 +24,7 @@ ms.locfileid: "3017414"
 
 ## <a name="available-for"></a>以下に使用できます 
 
-モデル駆動型アプリとキャンバス アプリ (実験的プレビュー) 
+モデル駆動型アプリとキャンバス アプリ (公開プレビュー) 
 
 ## <a name="manifest"></a>マニフェスト
 

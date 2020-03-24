@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 11/04/2019
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 4c657afc77e710769a803d313b36a7437c3e3f9a
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: e354a3a784a984e070f5948b4b14c9eb4c32417b
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977557"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069544"
 ---
 # <a name="add-a-custom-domain-name"></a>カスタム ドメイン名の追加
 
@@ -31,10 +31,12 @@ ms.locfileid: "2977557"
      > [!Note]
      > SSL証明書は、次のすべての要件を満たす必要があります:
      > - 信頼できる証明機関による署名済み
-     > - パスワード保護された PFX ファイルとしてエクスポート
+     > - パスワード保護された PFX ファイルとして [エクスポート](https://docs.microsoft.com/powershell/module/pkiclient/export-pfxcertificate?view=win10-ps)
      > - 2048 ビット以上の長さの秘密キーが含まれます
      > - 証明書チェーンにすべて中間証明書が含まれています
      > - SHA2を有効にする必要があります; 一般的なブラウザーから SHA1 サポートが削除されています
+     > 
+     > SSL 証明書をパスワードで保護された PFX ファイルとしてエクスポートする手順は、証明書プロバイダーによって異なる場合があります。 レコメンデーションについては、証明書プロバイダーに確認してください。 たとえば、特定のプロバイダーは、[OpenSSL](https://www.openssl.org/) または [OpenSSL バイナリ](https://wiki.openssl.org/index.php/Binaries) サイトから OpenSSL サードパーティ ツールの使用を提案する場合があります。 
 
 4. **次へ**を選択します。
 

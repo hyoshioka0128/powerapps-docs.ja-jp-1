@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6c6d37d688ad60054be4387d813dcb7d9c9305fb
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 01eb5a0a390ac399633e4f335f7322289056de1f
+ms.sourcegitcommit: 2b34de88c977c149e4c632b23d8e816901c15949
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749005"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "3040372"
 ---
 # <a name="configure-entity-relationship-cascading-behavior"></a>エンティティ関係のカスケード動作の構成  
 
@@ -62,7 +62,16 @@ Web API の作業をするときは、<xref href="Microsoft.Dynamics.CRM.OneToMa
 |リペアレント|後で [リペアレント操作について](#about-the-reparent-action) を参照してください。|Active<br />伝播<br />NoCascade<br />ユーザーによる所有|  
 |共有|参照先エンティティ レコードが別のユーザーと共有されるとき。|Active<br />伝播<br />NoCascade<br />ユーザーによる所有|  
 |共有の解除|参照先エンティティ レコードで共有が削除されるとき。|Active<br />伝播<br />NoCascade<br />ユーザーによる所有|  
-  
+
+> [!NOTE]
+> 次の状況では、割り当て、削除、マージ、リペアレントのアクションは実行されません。
+> - 元の親レコードと要求されたアクションに同じ値が含まれている場合。 例：割当のトリガーを試行し、すでにレコードの所有者となっている担当者を選択します
+> - 縦続する処理が既に実行されている親レコードに対して操作の実行を試行する
+
+
+> [!NOTE]
+> 割り当てを実行すると、レコードで現在アクティブなワークフローまたはビジネ スルールは、再割り当てが行われた際に自動的に非アクティブになります。 レコードの新たな所有者がワークフローまたはビジネス ルールを引き続き使用する場合は、そのワークフローまたはビジネス ルールを再度有効化する必要があります。
+
 <a name="BKMK_ReparentAction"></a>   
 ### <a name="about-the-reparent-action"></a>リペアレント操作について  
  リペアレント操作は共有操作ととてもよく似ていますが、明示的な読み取りアクセス権ではなく、継承された読み取りアクセス権を処理する点が異なります。 リペアレント操作とは、上位下位の関連付けで参照属性の値を変更する場合です。 リペアレント操作が発生すると、関連するエンティティの継承された読み取りアクセス権の対象範囲が変化する場合があります。 リペアレント操作に関連するカスケード操作は、関連する特定のエンティティ レコードとあらゆるエンティティ レコードに対する読み取りアクセス権に対する変更を参照します。  

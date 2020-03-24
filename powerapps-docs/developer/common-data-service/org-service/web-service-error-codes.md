@@ -2,8 +2,8 @@
 title: Web サービスのエラー コード (Common Data Service) | Microsoft Docs
 description: 'このトピックでは、コードをデバッグする際に発生する可能性のあるエラー コードの一覧を示します。 '
 ms.custom: ''
-ms.date: 05/09/2019
-ms.reviewer: ''
+ms.date: 02/21/2020
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3ba89c9798286e8aaf8a2a068c99347452b0effa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5da0e8248a1a65115f6c3ae2d084a6a6dec56cac
+ms.sourcegitcommit: 0e41cc0c944e6b0ee22a7e183e40c52fd553b7be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861276"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "3081451"
 ---
 # <a name="web-service-error-codes"></a>Web サービス エラー コード
 
@@ -35,6 +35,7 @@ ms.locfileid: "2861276"
 >
 > |エラー|メッセージ|
 > |---|---|
+> |**名前**:<br />AADError<br />**16 進数**:<br />80072559<br />**数値**:<br />-2147015335|AAD のエラー|
 > |**名前**:<br />AccessDenied<br />**16 進数**:<br />80048405<br />**数値**:<br />-2147187707|アクセスが拒否されました。|
 > |**名前**:<br />AccessDeniedSharePointRecord<br />**16 進数**:<br />80060904<br />**数値**:<br />-2147088124|Dynamics 365 の SharePoint レコードで、アクセスが拒否されました。|
 > |**名前**:<br />AccessTokenExpired<br />**16 進数**:<br />8005F101<br />**数値**:<br />-2147094271|要求されたリソースには認証が必要です。|
@@ -68,6 +69,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />AggregateQueryRecordLimitExceeded<br />**16 進数**:<br />8004E023<br />**数値**:<br />-2147164125|レコード数の上限を超えています。 レコード数を減らしてください。|
 > |**名前**:<br />AlreadyLinkedToAnotherAttribute<br />**16 進数**:<br />8004F0FE<br />**数値**:<br />-2147159810|指定されたリンクされた属性は、他の属性に既にリンクされています。|
 > |**名前**:<br />AppConfigFeatureNotEnabled<br />**16 進数**:<br />80072200<br />**数値**:<br />-2147016192|アプリ内カスタマイズのアプリ構成機能が有効ではありません。|
+> |**名前**:<br />AppEntityLimitExceeded<br />**16 進数**:<br />80048547<br />**数値**:<br />-2147187385|{0}|
 > |**名前**:<br />ApplicationMetadataConverterFailed<br />**16 進数**:<br />8005F231<br />**数値**:<br />-2147093967|問題が発生しました。 操作をやり直すか、アプリを再起動してください。|
 > |**名前**:<br />ApplicationMetadatadaCreateFailed<br />**16 進数**:<br />8005F233<br />**数値**:<br />-2147093965|問題が発生しました。 操作をやり直すか、アプリを再起動してください。|
 > |**名前**:<br />ApplicationMetadatadaNullData<br />**16 進数**:<br />8005F232<br />**数値**:<br />-2147093966|問題が発生しました。 操作をやり直すか、アプリを再起動してください。|
@@ -107,7 +109,9 @@ ms.locfileid: "2861276"
 > |**名前**:<br />ArticleIsPublished<br />**16 進数**:<br />800404fe<br />**数値**:<br />-2147220226|この記事はすでに公開状態にあるため、更新または削除はできません|
 > |**名前**:<br />AssociateProductFailureDifferentUom<br />**16 進数**:<br />80061040<br />**数値**:<br />-2147086272|製品をバンドルに追加できません。 製品の出荷単位一覧に属している製品出荷単位を使用する必要があります。|
 > |**名前**:<br />AssociationRoleOrdinalInvalid<br />**16 進数**:<br />80048468<br />**数値**:<br />-2147187608|関連付けロール序数は無効です - 1 または 2 にする必要があります。|
+> |**名前**:<br />AsyncAssignOperationOngoing<br />**16 進数**:<br />80048555<br />**数値**:<br />-2147187371|このエンティティは現在、非同期カスケード割り当てジョブの一部として割り当てられています。 非同期ジョブが完了するまで待ってから、このエンティティを再度割り当ててください。 (EntityId: {0}, EntityName: {1}, AsyncJobName: {2}, AsyncJobId: {3}, AsyncAssignOperationId: {4})|
 > |**名前**:<br />AsyncCommunicationError<br />**16 進数**:<br />80044307<br />**数値**:<br />-2147204345|この非同期操作の処理中に通信エラーが発生しました。|
+> |**名前**:<br />AsyncAssignOperationOngoing<br />**16 進数**:<br />80048549<br />**数値**:<br />-2147187383|このエンティティは現在、非同期カスケード削除ジョブの一部として削除されています。 非同期ジョブが完了するまで待ってから、このエンティティを再度削除してください。 (EntityId: {0}, EntityName: {1}, AsyncJobName: {2}, AsyncJobId: {3}, AsyncDeleteOperationId: {4})|
 > |**名前**:<br />AsyncNetworkError<br />**16 進数**:<br />80044306<br />**数値**:<br />-2147204346|ネットワークにアクセス中にエラーが発生しました。|
 > |**名前**:<br />AsyncOperationCannotCancel<br />**16 進数**:<br />80044F00<br />**数値**:<br />-2147201280|このシステム ジョブを取り消すことができません。|
 > |**名前**:<br />AsyncOperationCannotDeleteUnlessCompleted<br />**16 進数**:<br />8004416a<br />**数値**:<br />-2147204758|完了状態にある場合を除き、非同期操作を削除できません。|
@@ -136,6 +140,9 @@ ms.locfileid: "2861276"
 > |**名前**:<br />AttributeFormulaDefinitionIsEmpty<br />**16 進数**:<br />80060439<br />**数値**:<br />-2147089351|計算式が空です。|
 > |**名前**:<br />AttributeIsNotCustomAttribute<br />**16 進数**:<br />80047009<br />**数値**:<br />-2147192823|指定された属性は、ユーザー定義属性ではありません|
 > |**名前**:<br />AttributeIsNotFacetable<br />**16 進数**:<br />80060305<br />**数値**:<br />-2147089659|属性が {1} facetable ではないため、エンティティに {0} 対するユーザー検索ファセットを設定できません。 続行のためにリストから削除してください。|
+> |**名前**:<br />AttributeMapHasAnUnmanagedBaseInstance<br />**16 進数**:<br />8004F223<br />**数値**:<br />-2147159517|エンティティ {3} と {4} の属性 {1}と {2} の間にあるID: {0} を持つ AttributeMap には、管理されていないベースインスタンスがあるため、管理されたソリューションで更新できません。|
+> |**名前**:<br />AttributeMapIsManagedException<br />**16 進数**:<br />8004F224<br />**数値**:<br />-2147159516|エンティティ {3}および {4} の属性 {1} と {2} の間の ID : {0} の管理属性マップを削除できません。|
+> |**名前**:<br />AttributeNameConflictWithNavigationPropertyName<br />**16 進数**:<br />80048834<br />**数値**:<br />-2147186636|属性名 {0} がエンティティの NavigationProerty 名と競合しています。 属性には一意の名前を使用してください。|
 > |**名前**:<br />AttributeNotCreatedForOfficeGraphError<br />**16 進数**:<br />80044237<br />**数値**:<br />-2147204553|officegraph の属性を有効にするサポートが使用できないため、この属性は作成できません。|
 > |**名前**:<br />AttributeNotOfTypePicklist<br />**16 進数**:<br />8004033c<br />**数値**:<br />-2147220676|この属性は、ドロップダウン リスト、ブール値、または状態 / ステータス属性にはマップされていません。 ただし、それに ListValueMap 要素を含めました。  この不整合を修正してから、もう一度このデータ マップをインポートしてください。|
 > |**名前**:<br />AttributeNotOfTypeReference<br />**16 進数**:<br />80040390<br />**数値**:<br />-2147220592|この属性は、参照属性としてはマップされていません。 ただし、それに ReferenceMap 要素を含めました。  この不整合を修正してから、もう一度このデータ マップをインポートしてください。|
@@ -158,6 +165,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />AutoDataCaptureAuthorizationFailureException<br />**16 進数**:<br />80091042<br />**数値**:<br />-2146889662|追跡対象でない電子メールを取得するための適切な Office 365 ライセンスがありません。 システム管理者にお問い合わせください。|
 > |**名前**:<br />AutoDataCaptureDisabledError<br />**16 進数**:<br />80091041<br />**数値**:<br />-2146889663|自動取り込みの機能が有効になっていません。|
 > |**名前**:<br />AutoDataCaptureResponseRetrievalFailureException<br />**16 進数**:<br />80091043<br />**数値**:<br />-2146889661|Exchange から未追跡の電子メールをフェッチ中にエラーが発生しました。|
+> |**名前**:<br />AutoNumberAttributeSequenceMissing<br />**16 進数**:<br />80060885<br />**数値**:<br />-2147088251|エンティティ {1} の自動付番属性 {0} の SQL シーケンスがありません。 今すぐ SQL シーケンスの再作成を試みます。|
 > |**名前**:<br />AzureApplicationIdNotFound<br />**16 進数**:<br />8004F510<br />**数値**:<br />-2147158768|CorrelationID {1} を使用する Azure Active Directory (Azure AD) で、アプリケーション ID {0} が見つかりませんでした。 アプリケーションが Azure AD に登録されていることを確認してください。|
 > |**名前**:<br />AzureApplicationIdNotFoundInOrgDB<br />**16 進数**:<br />8004F512<br />**数値**:<br />-2147158766|Azure applicationid が見つかりません。 CRM データベースでアプリケーション ID {0} を見つけることができませんでした。 アプリケーション ID を修正して更新を再送信します。|
 > |**名前**:<br />AzureOperationResponseTimedOut<br />**16 進数**:<br />80061635<br />**数値**:<br />-2147084747|Azure 操作要求は、提示されたタイムアウト期間内に反応を返しませんでした。 操作を再試行するか、操作のタイムアウトを増やしてください。|
@@ -304,7 +312,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />BusinessProcessFlowStepHasInvalidParent<br />**16 進数**:<br />80060405<br />**数値**:<br />-2147089403|{0} 親はタイプが {1} ではありません|
 > |**名前**:<br />BusinessRuleEditorSupportsOnlyIfConditionBranch<br />**16 進数**:<br />80060008<br />**数値**:<br />-2147090424|業務ルール エディターは If 条件を 1 つのみサポートします。 ルールを修正してください。|
 > |**名前**:<br />BusinessUnitCannotBeDisabled<br />**16 進数**:<br />80041d59<br />**数値**:<br />-2147213991|部署を無効にできませんでした: システム管理者の役割を持つアクティブなユーザーが部署のサブツリーの外側に存在しません。|
-> |**名前**:<br />BusinessUnitDefaultTeamOwnsRecords<br />**16 進数**:<br />80041d62<br />**数値**:<br />-2147213982|部署の既定のチームはレコードを所有します。 部署を削除することはできません。|
+> |**名前**:<br />BusinessUnitDefaultTeamOwnsRecords<br />**16 進数**:<br />80041d62<br />**数値**:<br />-2147213982|部署の既定のチームはレコードを所有します。 部署 (Id = {0}) は削除することはできません。|
 > |**名前**:<br />BusinessUnitHasChildAndCannotBeDeleted<br />**16 進数**:<br />80041d61<br />**数値**:<br />-2147213983|下位の部署を持つ部署は、削除することはできません。|
 > |**名前**:<br />BusinessUnitIsNotDisabledAndCannotBeDeleted<br />**16 進数**:<br />80041d60<br />**数値**:<br />-2147213984|無効ではない部署を削除することはできません。|
 > |**名前**:<br />BusinessUnitQueuesAssociatedWithBU<br />**16 進数**:<br />80072526<br />**数値**:<br />-2147015386|id = {1}、Name = {2} でこの BusinessUnit を参照するキューが {0} あります。 この部署を削除する前にキューを削除するか、別の部署に割り当ててください。|
@@ -343,6 +351,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CancelActiveChildCaseFirst<br />**16 進数**:<br />8003F451<br />**数値**:<br />-2147224495|親サポート案件を取り消す前に、アクティブな子サポート案件をキャンセルしてください。|
 > |**名前**:<br />CannotAcceptEmail<br />**16 進数**:<br />8005E20B<br />**数値**:<br />-2147098101|送信しようとする電子メールは Microsoft Dynamics 365 で受理できません。 理由コード: {0}。|
 > |**名前**:<br />CannotAccessExchangeOptinStatus<br />**16 進数**:<br />80071110<br />**数値**:<br />-2147020528|Exchange optin の状態にアクセスできません。|
+> |**名前**:<br />CannotActivateDeactivateOnAnyEntityRoutingRuleFCBOff<br />**16 進数**:<br />8004F849<br />**数値**:<br />-2147157943|エンティティ レコード ルーティングの機能コントロール ビットが無効なため、エンティティ (サポート案件エンティティを除く) のルーティング規則セット レコードをアクティブまたは非アクティブにできません。|
 > |**名前**:<br />CannotActivateMailboxForDisabledUserOrQueue<br />**16 進数**:<br />8005E230<br />**数値**:<br />-2147098064|メールボックスに関連付けられているユーザーまたはキューが無効の状態であるため、メールボックスをアクティブ化できません。 メールボックスはアクティブなユーザー/キューに対してのみアクティブ化することができます。|
 > |**名前**:<br />CannotActivateRecord<br />**16 進数**:<br />80081017<br />**数値**:<br />-2146955241|廃止された製品ファミリ、またはバンドルは追加できません。 さらに製品ファミリの一部である廃止された製品をアクティブ化することはできません。|
 > |**名前**:<br />CannotActOnBehalfOfAnotherUser<br />**16 進数**:<br />8004A110<br />**数値**:<br />-2147180272|ユーザーには別のユーザーの代わりに操作する特権がありません。|
@@ -372,13 +381,13 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CannotAddRetiredProductToKit<br />**16 進数**:<br />80061027<br />**数値**:<br />-2147086297|廃止された製品をセット製品に追加することはできません。|
 > |**名前**:<br />CannotAddRetiredProductToPricelist<br />**16 進数**:<br />80061009<br />**数値**:<br />-2147086327|廃止された製品を価格表に追加することはできません。|
 > |**名前**:<br />CannotAddSingleQueueEnabledEntityToQueue<br />**16 進数**:<br />8004051c<br />**数値**:<br />-2147220196|既に別のキューに存在しているため、キューにエンティティ レコードを追加することはできません。|
-> |**名前**:<br />CannotAddSolutionComponentWithoutRoots <br />**16 進数**:<br />8004F018<br />**数値**:<br />-2147160040|この項目は有効なソリューション コンポーネントではありません。 ソリューション コンポーネントの詳細については、Microsoft Dynamics 365 SDK のドキュメントを参照してください。|
+> |**名前**:<br />CannotAddSolutionComponentWithoutRoots<br />**16 進数**:<br />8004F018<br />**数値**:<br />-2147160040|この項目は有効なソリューション コンポーネントではありません。 ソリューション コンポーネントの詳細については、Microsoft Dynamics 365 SDK のドキュメントを参照してください。|
 > |**名前**:<br />CannotAddUserToMobileOfflineProfile<br />**16 進数**:<br />800609A6<br />**数値**:<br />-2147087962|ユーザーのロールが設定されていないか、Dynamics 365 モバイル用特権がロールに関連付けられていないため、このユーザーをこの Mobile Offline プロファイルに追加することはできません。|
-> |**名前**:<br />CannotAddWorkflowActivationToSolution <br />**16 進数**:<br />8004F00C<br />**数値**:<br />-2147160052|ソリューションには、ワークフローのアクティブ化を追加できません |
+> |**名前**:<br />CannotAddWorkflowActivationToSolution<br />**16 進数**:<br />8004F00C<br />**数値**:<br />-2147160052|ソリューションには、ワークフローのアクティブ化を追加できません。|
 > |**名前**:<br />CannotAssignAddressBookFilters<br />**16 進数**:<br />80048448<br />**数値**:<br />-2147187640|アドレス帳のフィルターを割り当てることはできません|
 > |**名前**:<br />CannotAssignOfflineFilters<br />**16 進数**:<br />800404ff<br />**数値**:<br />-2147220225|オフライン フィルターを割り当てることはできません|
 > |**名前**:<br />CannotAssignOutlookFilters<br />**16 進数**:<br />80040264<br />**数値**:<br />-2147220892|Outlook フィルターを割り当てることはできません|
-> |**名前**:<br />CannotAssignRolesOrProfilesToAccessTeam<br />**16 進数**:<br />80048331<br />**数値**:<br />-2147187919|アクセス チームにロールまたはプロファイルを割り当てることはできません。|
+> |**名前**:<br />CannotAssignRolesOrProfilesToAccessTeam<br />**16 進数**:<br />80048331<br />**数値**:<br />-2147187919|アクセス チーム (Id = {0}) にロールまたはプロファイルを割り当てることはできません。|
 > |**名前**:<br />CannotAssignRolesToSupportUser<br />**16 進数**:<br />80041d51<br />**数値**:<br />-2147213999|サポート ユーザーは読み取り専用で、他のロールを割り当てることはできません|
 > |**名前**:<br />CannotAssignSupportUser<br />**16 進数**:<br />80041d44<br />**数値**:<br />-2147214012|サポート ユーザー ロールをユーザーに割り当てることはできません。|
 > |**名前**:<br />CannotAssignToAccessTeam<br />**16 進数**:<br />80048340<br />**数値**:<br />-2147187904|レコードをアクセス チームに割り当てることができません。 レコードを所有者チームに割り当てることができます。|
@@ -393,13 +402,14 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CannotCancelInvoice<br />**16 進数**:<br />80100001<br />**数値**:<br />-2146435071|請求書は、アクティブまたは支払い済みの状態でないためキャンセルできません。|
 > |**名前**:<br />CannotChangeAccessModeForInternetMarketingUser<br />**16 進数**:<br />80045035<br />**数値**:<br />-2147200971|インターネット マーケティング ユーザーはシステム ユーザーです。 アクセス モードを変更できません。|
 > |**名前**:<br />CannotChangeAttributeRequiredLevel<br />**16 進数**:<br />8004D293<br />**数値**:<br />-2147167597|レベルを必要とする属性は、SystemRequired から変更できません|
+> |**名前**:<br />CannotChangeConnectorDisplayName<br />**16 進数**:<br />80072607<br />**数値**:<br />-2147015161|コネクタの表示名属性は変更できません。|
 > |**名前**:<br />CannotChangeConvertRuleState<br />**16 進数**:<br />800608F4<br />**数値**:<br />-2147088140|[変換ルール] のアクティブ化中にエラーが発生しました。ワークフローで特権の確認をしてもう一度やり直すか、システム管理者にお問い合わせください。|
 > |**名前**:<br />CannotChangeDaysSinceRecordLastModified<br />**16 進数**:<br />800609A4<br />**数値**:<br />-2147087964|レコードが最後に修正されてからの日数を設定または変更するには、このエンティティで Mobile Offline を有効にする必要があります。|
 > |**名前**:<br />CannotChangeInvitationStatusForInternetMarketingUser<br />**16 進数**:<br />80045036<br />**数値**:<br />-2147200970|インターネット マーケティング ユーザーはシステム ユーザーです。 招待の状態を変更することはできません。|
 > |**名前**:<br />CannotChangeProductRelationship<br />**16 進数**:<br />80061013<br />**数値**:<br />-2147086317|廃止製品の製品リレーションシップを追加または変更することはできません。|
 > |**名前**:<br />CannotChangeSelectedBundleToAnotherValue<br />**16 進数**:<br />8004F986<br />**数値**:<br />-2147157626|バンドルが既存の製品として選択されている場合は、そのバンドルを別の値に変更することはできません。|
 > |**名前**:<br />CannotChangeSelectedProductWithBundle<br />**16 進数**:<br />8004F987<br />**数値**:<br />-2147157625|製品が既存の製品として選択されている場合は、その製品をバンドルに変更することはできません。|
-> |**名前**:<br />CannotChangeState<br />**16 進数**:<br />8004F863<br />**数値**:<br />-2147157917|[SLA] のアクティブ化中にエラーが発生しました。ワークフローで特権の確認をしてもう一度やり直すか、システム管理者にお問い合わせください。|
+> |**名前**:<br />CannotChangeState<br />**16 進数**:<br />8004F863<br />**数値**:<br />-2147157917|SLA のアクティブ化中にエラーが発生しました。ワークフローであなたの特権を確認して、もう一度やり直すか、システム管理者にお問い合わせください。|
 > |**名前**:<br />CannotChangeStateOfNonpublicView<br />**16 進数**:<br />80040279<br />**数値**:<br />-2147220871|非アクティブ化、およびアクティブ化できるのは、共有ビューのみです。|
 > |**名前**:<br />CannotChangeTeamTypeDueToOwnership<br />**16 進数**:<br />80048337<br />**数値**:<br />-2147187913|チームが所有するレコードがあるため、チームの種類を変更できません。|
 > |**名前**:<br />CannotChangeTeamTypeDueToRoleOrProfile<br />**16 進数**:<br />80048336<br />**数値**:<br />-2147187914|チームにセキュリティ ロールまたはフィールド セキュリティ プロファイルが割り当てられているため、チームの種類を変更できません。|
@@ -408,6 +418,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CannotCloneBundleWithRetiredProducts<br />**16 進数**:<br />80061034<br />**数値**:<br />-2147086284|廃止された製品を含むバンドルを複製することはできません。|
 > |**名前**:<br />CannotCloneProductKit<br />**16 進数**:<br />80061020<br />**数値**:<br />-2147086304|セット製品を複製することはできません。|
 > |**名前**:<br />CannotCloseCase<br />**16 進数**:<br />8004F456<br />**数値**:<br />-2147158954|この操作を完了できません。 サポート案件に対して定義されている状態の移行ルールにより、1 つ以上の子サポート案件をクローズすることができません。|
+> |**名前**:<br />CannotCompleteLockRequest<br />**16 進数**:<br />8004026c<br />**数値**:<br />-2147220884|{0} ロックを取得中のタイムアウトにより、リクエストを完了できません。|
 > |**名前**:<br />CannotConnectToSelf<br />**16 進数**:<br />80048217<br />**数値**:<br />-2147188201|レコードをそれ自身に接続することはできません。|
 > |**名前**:<br />CannotConvertBundleToKit<br />**16 進数**:<br />80061030<br />**数値**:<br />-2147086288|バンドルをセット製品に変換することはできません。|
 > |**名前**:<br />CannotConvertProductAssociatedWithBundleToKit<br />**16 進数**:<br />80061018<br />**数値**:<br />-2147086312|バンドルの一部である製品をセット製品に変換することはできません。|
@@ -428,6 +439,8 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CannotCreatePropertyOptionSetItem<br />**16 進数**:<br />80081013<br />**数値**:<br />-2146955245|データの種類がオプション セットに設定されているプロパティを参照するプロパティのオプション セット項目レコードのみを作成できます。|
 > |**名前**:<br />CannotCreateQueueItemInactiveObject<br />**16 進数**:<br />8004051e<br />**数値**:<br />-2147220194|非アクティブ化されたオブジェクトを、キューに追加することはできません。|
 > |**名前**:<br />CannotCreateResponseForTemplate<br />**16 進数**:<br />80040312<br />**数値**:<br />-2147220718|テンプレート キャンペーンに対して CampaignResponse を作成できません。|
+> |**名前**:<br />CannotCreateRuleOnAnyEntityRoutingRuleFCBOff<br />**16 進数**:<br />8004F848<br />**数値**:<br />-2147157944|エンティティ レコード ルーティングの機能コントロール ビットが無効なため、エンティティ (ケース エンティティを除く) のルーティング規則セット レコードを作成できません。|
+> |**名前**:<br />CannotCreateSelfReferencingParentChild<br />**16 進数**:<br />8007200C<br />**数値**:<br />-2147016692|親子関係 {0} は自己参照することはできません。|
 > |**名前**:<br />CannotCreateSLAForEntity<br />**16 進数**:<br />80055005<br />**数値**:<br />-2147135483|サービス レベル アグリーメント (SLA) の作成が有効になっていないため、このエンティティでは SLA を作成できません|
 > |**名前**:<br />CannotCreateSyncUserIsLicensedField<br />**16 進数**:<br />80041d4d<br />**数値**:<br />-2147214003|プロパティ IsLicensed は同期ユーザー作成に対して設定することはできません。|
 > |**名前**:<br />CannotCreateSyncUserObjectMissing<br />**16 進数**:<br />80041d4b<br />**数値**:<br />-2147214005|これは、この組織に有効な Microsoft Online Services ID ではありません。|
@@ -495,7 +508,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CannotDeleteSystemEmailTemplate<br />**16 進数**:<br />80048432<br />**数値**:<br />-2147187662|システム電子メール テンプレートは削除できません。|
 > |**名前**:<br />CannotDeleteSystemForm<br />**16 進数**:<br />8004F652<br />**数値**:<br />-2147158446|システム フォームは削除できません。|
 > |**名前**:<br />CannotDeleteSystemTheme<br />**16 進数**:<br />800608DA<br />**数値**:<br />-2147088166|システム テーマは削除できません。|
-> |**名前**:<br />CannotDeleteTeamOwningRecords<br />**16 進数**:<br />8004830E<br />**数値**:<br />-2147187954|レコードを所有するチームを削除できません。 レコードを再割り当てし、やり直してください。|
+> |**名前**:<br />CannotDeleteTeamOwningRecords<br />**16 進数**:<br />8004830E<br />**数値**:<br />-2147187954|レコードを所有するチーム (Id = {0}) を削除できません。 レコードを再割り当てし、やり直してください。|
 > |**名前**:<br />CannotDeleteUpdateInUseRule<br />**16 進数**:<br />80048428<br />**数値**:<br />-2147187672|重複データ検出ルールは現在使用中であり、更新または削除できません。 後でもう一度お試しください。|
 > |**名前**:<br />CannotDeleteUserMailbox<br />**16 進数**:<br />8005E200<br />**数値**:<br />-2147098112|ユーザーまたはキューに関連付けられているメールボックスは削除できません。|
 > |**名前**:<br />CannotDeleteUserProfile<br />**16 進数**:<br />800609A3<br />**数値**:<br />-2147087965|アクティブな Mobile Offline プロファイルは削除できません。 すべてのユーザーをプロファイルから削除して、やり直してください。|
@@ -517,7 +530,9 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CannotEnableEntityForRelevanceSearch<br />**16 進数**:<br />80060302<br />**数値**:<br />-2147089662|マネージド プロパティの構成が原因で、エンティティ {0} の関連性検索を有効にできません。|
 > |**名前**:<br />CannotExceedFilterLimit<br />**16 進数**:<br />8004027c<br />**数値**:<br />-2147220868|同期フィルターの制限を超えることはできません。|
 > |**名前**:<br />CannotExecuteRequestBecauseHttpsIsRequired<br />**16 進数**:<br />8004852C<br />**数値**:<br />-2147187412|この種類の要求には HTTPS プロトコルが必要です。HTTPS プロトコルを有効にしてからやり直してください。|
+> |**名前**:<br />CannotExportRuleOnAnyEntityRoutingRuleFCBOff<br />**16 進数**:<br />8004F847<br />**数値**:<br />-2147157945|エンティティ レコード ルーティングの機能コントロール ビットが無効なため、エンティティ (ケース エンティティを除く) のルーティング規則セット レコードをエクスポートできません。|
 > |**名前**:<br />CannotFindDomainAccount<br />**16 進数**:<br />80044342<br />**数値**:<br />-2147204286|無効なドメイン アカウントです。|
+> |**名前**:<br />CannotFindLayerToMerge<br />**16 進数**:<br />8004F060<br />**数値**:<br />-2147159968|ID: [{1}] を持つコンポーネント: [{0}] にマージする適切なレイヤ―が見つかりません。 この操作では続行できません。 コンポーネントのレイヤーを確認してください。|
 > |**名前**:<br />CannotFindObjectInQueue<br />**16 進数**:<br />800404eb<br />**数値**:<br />-2147220245|オブジェクトは、指定されたキューで見つかりませんでした|
 > |**名前**:<br />CannotFindUserQueue<br />**16 進数**:<br />800404ec<br />**数値**:<br />-2147220244|ユーザー キューが見つかりません|
 > |**名前**:<br />CannotFollowInactiveEntity<br />**16 進数**:<br />8004F6A3<br />**数値**:<br />-2147158365|非アクティブなレコードはフォローできません。 |
@@ -527,6 +542,8 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CannotHaveDuplicateYomi<br />**16 進数**:<br />80047018<br />**数値**:<br />-2147192808|1 つの属性は、1 度に 1 つの yomi のみ結び付けられます。|
 > |**名前**:<br />CannotHaveMultipleDefaultFilterTemplates<br />**16 進数**:<br />8004027d<br />**数値**:<br />-2147220867|単一のエンティティに対して、複数の既定の同期テンプレートを使用することはできません。|
 > |**名前**:<br />CannotImportNullStringsForBaseLanguage<br />**16 進数**:<br />80044246<br />**数値**:<br />-2147204538|ワークシート {0}、行 {1}は、列 {2} にある基本言語翻訳文字列が null です。|
+> |**名前**:<br />CannotImportRuleOnAnyEntityRoutingRuleFCBOff<br />**16 進数**:<br />8004F845<br />**数値**:<br />-2147157947|エンティティ レコード ルーティングの機能コントロール ビットが無効なため、エンティティ (ケース エンティティを除く) のルーティング規則セット レコードをインポートできません。|
+> |**名前**:<br />CannotImportRuleOnFieldMetadataUnavailable<br />**16 進数**:<br />8004F846<br />**数値**:<br />-2147157946|msdyn_entitylogicalname のメタデータが利用できないため、エンティティ (ケース エンティティを除く) のルーティング規則セット レコードをインポートできません。|
 > |**名前**:<br />CannotInviteDisabledUser<br />**16 進数**:<br />8004D212<br />**数値**:<br />-2147167726|無効なユーザーに招待状を送信することはできません|
 > |**名前**:<br />CannotLocateRecordForWorkflowActivity<br />**16 進数**:<br />80045031<br />**数値**:<br />-2147200975|このワークフロー ジョブで要求されたレコードが見つかりませんでした。|
 > |**名前**:<br />CannotMakeReadOnlyUser<br />**16 進数**:<br />80041d38<br />**数値**:<br />-2147214024|システム管理者ロールを持つ最後の読み取り専用でないユーザーの場合、ユーザーを読み取り専用ユーザーにすることはできません。|
@@ -633,6 +650,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CannotUpdateExternalPartyWithSameCorrelationKey<br />**16 進数**:<br />80061114<br />**数値**:<br />-2147086060|同じ関連付けキー値を持つ外部パーティ レコードが既に存在します。|
 > |**名前**:<br />CannotUpdateGoalPeriodInfoChildGoal<br />**16 進数**:<br />80044901<br />**数値**:<br />-2147202815|下位目標の目標期間に関連する属性は更新できません。|
 > |**名前**:<br />CannotUpdateGoalPeriodInfoClosedGoal<br />**16 進数**:<br />80044910<br />**数値**:<br />-2147202800|クローズした下位目標が 1 つ以上あるため、この目標の期間は変更できません。|
+> |**名前**:<br />CannotUpdateLogicalAttribute<br />**16 進数**:<br />80048461<br />**数値**:<br />-2147187615|論理属性 {0} を更新できません。 |
 > |**名前**:<br />CannotUpdateManagedSolution<br />**16 進数**:<br />8004F024<br />**数値**:<br />-2147160028|ネージド ソリューションであるため、ソリューション {0} を更新できません。|
 > |**名前**:<br />CannotUpdateMetricOnChildGoal<br />**16 進数**:<br />80044900<br />**数値**:<br />-2147202816|下位目標の指標は更新できません。|
 > |**名前**:<br />CannotUpdateMetricOnGoalWithChildren<br />**16 進数**:<br />80044902<br />**数値**:<br />-2147202814|下位目標が関連付けられている目標の指標は更新できません。|
@@ -647,6 +665,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CannotUpdateProductCurrency<br />**16 進数**:<br />80048cfa<br />**数値**:<br />-2147185414|価格設定方法の割合による価格表品目があるため、製品の通貨は更新できません。|
 > |**名前**:<br />CannotUpdateQuoteCurrency<br />**16 進数**:<br />8004480e<br />**数値**:<br />-2147203058|この見積りには関連付けられている [製品] があるため、通貨は使用できません。 通貨を変更する場合は、すべての [製品] を削除してから通貨を変更するか、または適切な通貨で新しい見積もりを作成します。|
 > |**名前**:<br />CannotUpdateReadOnlyPublisher<br />**16 進数**:<br />8004F033<br />**数値**:<br />-2147160013|読み取り専用の発行元のみ更新します。|
+> |**名前**:<br />CanNotUpdateRequiredBundleItem<br />**16 進数**:<br />80100009<br />**数値**:<br />-2146435063|このバンドル品目は、バンドル内の必須の製品であるため更新できません。|
 > |**名前**:<br />CannotUpdateRestrictedPublisher<br />**16 進数**:<br />8004F017<br />**数値**:<br />-2147160041|制限された発行者 ({0}) は更新することができません。|
 > |**名前**:<br />CannotUpdateRestrictedSolution<br />**16 進数**:<br />8004F00A<br />**数値**:<br />-2147160054|制限されたソリューション ({0}) は更新することができません。|
 > |**名前**:<br />CannotUpdateRollupAttributeWithClosedGoals<br />**16 進数**:<br />80044801<br />**数値**:<br />-2147203071|関連する目標指標がクローズした 1 つ以上の目標で使用されているため、ロールアップ フィールド定義への変更を保存できません。|
@@ -669,9 +688,9 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CanvasAppsExpectedFileMissing<br />**16 進数**:<br />80072356<br />**数値**:<br />-2147015850|ソリューションは想定される資産ファイルを指定しましたが、そのファイルは見つからないか無効でした。|
 > |**名前**:<br />CanvasAppsInvalidSolutionFileContent<br />**16 進数**:<br />80072354<br />**数値**:<br />-2147015852|キャンバス アプリをインポートする要求は、少なくとも 1 つの資産ファイルを含む必要があります。|
 > |**名前**:<br />CanvasAppsNotEnabled<br />**16 進数**:<br />80072351<br />**数値**:<br />-2147015855|キャンバス アプリの作成および編集が有効になっていません。|
-> |**名前**:<br />CanvasAppsServiceRequestClientFailure<br />**16 進数**:<br />80072352<br />**数値**:<br />-2147015854|Power Apps サービスへの要求がクライアント障害で失敗しました。|
-> |**名前**:<br />CanvasAppsServiceRequestServerFailure<br />**16 進数**:<br />80072353<br />**数値**:<br />-2147015853|Power Apps サービスへの要求がサーバー障害で失敗しました。|
-> |**名前**:<br />CanvasAppsUnexpectedCanvasAppId<br />**16 進数**:<br />80072355<br />**数値**:<br />-2147015851|以前存在した値が予期されたときに、Power Apps サービスへの要求で新しい canvasappid が生成されました。|
+> |**名前**:<br />CanvasAppsServiceRequestClientFailure<br />**16 進数**:<br />80072352<br />**数値**:<br />-2147015854|PowerApps サービスへの要求がクライアント障害で失敗しました。|
+> |**名前**:<br />CanvasAppsServiceRequestServerFailure<br />**16 進数**:<br />80072353<br />**数値**:<br />-2147015853|PowerApps サービスへの要求がサーバー障害で失敗しました。|
+> |**名前**:<br />CanvasAppsUnexpectedCanvasAppId<br />**16 進数**:<br />80072355<br />**数値**:<br />-2147015851|以前存在した値が予期されたときに、PowerApps サービスへの要求で新しい canvasappid が生成されました。|
 > |**名前**:<br />CanvasAppVersionDoesNotMatchLatestPublishedVersion<br />**16 進数**:<br />80072358<br />**数値**:<br />-2147015848|キャンバス アプリの最新の公開バージョンが、Dynamics サービスから認識されるバージョンと一致しません。|
 > |**名前**:<br />CanvasAppVersionMissingOrInvalid<br />**16 進数**:<br />80072357<br />**数値**:<br />-2147015849|キャンバス アプリのアプリ バージョンが設定されていないか、無効な値でした。|
 > |**名前**:<br />CAPolicyValidationFailedLateBind<br />**16 進数**:<br />80072561<br />**数値**:<br />-2147015327|ユーザーは管理者限定の場所にいます。|
@@ -681,6 +700,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CascadeInvalidLinkType<br />**16 進数**:<br />80048102<br />**数値**:<br />-2147188478|無効な CascadeLink の種類|
 > |**名前**:<br />CascadeInvalidLinkTypeTransition<br />**16 進数**:<br />80044155<br />**数値**:<br />-2147204779|システム エンティティ カスケード アクションのリンクの種類が無効です。|
 > |**名前**:<br />CascadeMergeInvalidSpecialColumn<br />**16 進数**:<br />80048106<br />**数値**:<br />-2147188474|特別な形式の結合の列名が無効です。|
+> |**名前**:<br />CascadeOperationConcurrentRequested<br />**16 進数**:<br />80048105<br />**数値**:<br />-2147188475|複数の同時実行 {0} 要求がエンティティ {1} および ObjectTypeCode {2} で検出されました。|
 > |**名前**:<br />CascadeProxyEmptyCallerId<br />**16 進数**:<br />8004810b<br />**数値**:<br />-2147188469|空の呼び出し元 ID|
 > |**名前**:<br />CascadeProxyInvalidNativeDAPtr<br />**16 進数**:<br />80048109<br />**数値**:<br />-2147188471|無効なアンマネージド データ オブジェクト アクセスのポインター|
 > |**名前**:<br />CascadeProxyInvalidPrincipalType<br />**16 進数**:<br />8004810a<br />**数値**:<br />-2147188470|無効なセキュリティ プリンシパルの種類です。|
@@ -707,6 +727,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />ChildUserDoesNotExist<br />**16 進数**:<br />80041d26<br />**数値**:<br />-2147214042|下位ユーザー ID が無効です。|
 > |**名前**:<br />ChildWorkflowNotFound<br />**16 進数**:<br />8004502F<br />**数値**:<br />-2147200977|このワークフローが使用する複数の子ワークフローが公開または削除されているため、実行できません。 子ワークフローを確認し、このワークフローを再度実行してください。|
 > |**名前**:<br />ChildWorkflowParameterMismatch<br />**16 進数**:<br />80045048<br />**数値**:<br />-2147200952|親ワークフローの提供する引数が子ワークフローにリンクされた指定されたパラメーターと一致しないため、このワークフローを実行することはできません。 親ワークフローで子ワークフローの参照を確認し、このワークフローを再度実行します。|
+> |**名前**:<br />ChunkSizeExceeded<br />**16 進数**:<br />80090008<br />**数値**:<br />-2146893816|無効なファイル チャンク サイズ : {0}MB。 サポートされる最大チャンクサイズ : {1}MB。|
 > |**名前**:<br />CircularDependency<br />**16 進数**:<br />80071157<br />**数値**:<br />-2147020457|他のソリューションとの循環依存関係のため、ソリューション操作が失敗しました。 詳細については例外を確認してください: {0}|
 > |**名前**:<br />ClientAuthCanceled<br />**16 進数**:<br />8004D224<br />**数値**:<br />-2147167708|認証はユーザーによって取り消されました。|
 > |**名前**:<br />ClientAuthNoConnectivity<br />**16 進数**:<br />8004D226<br />**数値**:<br />-2147167706|接続されていません。|
@@ -727,6 +748,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />ColorStripAttributesInvalid<br />**16 進数**:<br />80061502<br />**数値**:<br />-2147085054|カラー ストリップ セクションには、種類が "2 つのオプション"、"オプション セット"、および "ステータス" である属性しか設定できません。|
 > |**名前**:<br />CombinedManagedPropertyFailure<br />**16 進数**:<br />8004F027<br />**数値**:<br />-2147160025|現在の操作 ({2}) 内の現在のコンポーネント (名前 ={0}、ID={1}) の評価は、少なくとも 1 つのマネージド プロパティの評価中に失敗しました: {3}|
 > |**名前**:<br />CommandNotSupported<br />**16 進数**:<br />80154B52<br />**数値**:<br />-2146088110|コマンドは、オフライン モードではサポートされません。|
+> |**名前**:<br />CommitFileFailure<br />**16 進数**:<br />80072556<br />**数値**:<br />-2147015338|ファイルの実行中にエラーが発生しました。 (chunkList size: {0}, uploadToken: {1}, fileName:{2}, mimeType:{3})|
 > |**名前**:<br />CommunicationBlocked<br />**16 進数**:<br />80044506<br />**数値**:<br />-2147203834|ソケットの例外が原因で、通信がブロックされています。|
 > |**名前**:<br />ComponentDefinitionDoesNotExists<br />**16 進数**:<br />8004F019<br />**数値**:<br />-2147160039|コンポーネントの種類に {0} コンポーネント定義は存在しません。|
 > |**名前**:<br />ConcurrencyVersionMismatch<br />**16 進数**:<br />80060882<br />**数値**:<br />-2147088254|既存レコードのバージョンは、提供された RowVersion のプロパティに対応していません。|
@@ -753,8 +775,9 @@ ms.locfileid: "2861276"
 > |**名前**:<br />ConnectionInvalidStartEndDate<br />**16 進数**:<br />80048209<br />**数値**:<br />-2147188215|開始日 / 終了日が無効です。|
 > |**名前**:<br />ConnectionNotSupported<br />**16 進数**:<br />80048213<br />**数値**:<br />-2147188205|選択したレコードはつながりをサポートしていません。 接続を追加することはできません。|
 > |**名前**:<br />ConnectionObjectsMissing<br />**16 進数**:<br />80048210<br />**数値**:<br />-2147188208|接続するオブジェクトがどちらも見つかりません。|
-> |**名前**:<br />ConnectionRoleNotValidForObjectType<br />**16 進数**:<br />80048215<br />**数値**:<br />-2147188203|レコードの種類 {0} は、つながりロール {1}の使用に対して定義されていません。|
+> |**名前**:<br />ConnectionRoleNotValidForObjectType<br />**16 進数**:<br />80048215<br />**数値**:<br />-2147188203|タイプ {0} (オブジェクト タイプ コード {1}) のレコードは、ID {3} を持つ接続ロール {2} で使用するために定義されていません。|
 > |**名前**:<br />ConnectionTimeOut<br />**16 進数**:<br />80071024<br />**数値**:<br />-2147020764|ネットワーク接続がタイムアウトしたため、ドキュメントをコピーできません。後でもう一度試すか、システム管理者にお問い合わせください。|
+> |**名前**:<br />ConnectorLogicalNameAlreadyExists<br />**16 進数**:<br />80072606<br />**数値**:<br />-2147015162|コネクタの論理名 '{0}' は組織に既に存在します。|
 > |**名前**:<br />ConnectorNotEnabled<br />**16 進数**:<br />80072600<br />**数値**:<br />-2147015168|コネクタの作成および編集が有効になっていません。|
 > |**名前**:<br />ContactDoesNotExist<br />**16 進数**:<br />80040503<br />**数値**:<br />-2147220221|取引先担当者が存在しません。|
 > |**名前**:<br />ContactLoopBeingCreated<br />**16 進数**:<br />8004050a<br />**数値**:<br />-2147220214|この上位下位の関連付けを作成すると、取引先担当者の階層にループが生成されます。|
@@ -785,7 +808,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />ConvertReportToCrmError<br />**16 進数**:<br />8004832d<br />**数値**:<br />-2147187923|指定されたレポートを Dynamics 365 形式への変換中に、予期しないエラーが発生しました。|
 > |**名前**:<br />ConvertRuleActivateDeactivateByNonOwner<br />**16 進数**:<br />8004F886<br />**数値**:<br />-2147157882|この変換ルール セットをアクティブ化または非アクティブ化できるのは所有者だけです。|
 > |**名前**:<br />ConvertRuleAlreadyActive<br />**16 進数**:<br />80060731<br />**数値**:<br />-2147088591|選択された ConvertRule は既にアクティブ状態です。 別のレコードを選択してからやり直してください|
-> |**名前**:<br />ConvertRuleAlreadyInDraftState <br />**16 進数**:<br />80060732<br />**数値**:<br />-2147088590|選択された ConvertRule は既にドラフト状態です。 別のレコードを選択してからやり直してください|
+> |**名前**:<br />ConvertRuleAlreadyInDraftState<br />**16 進数**:<br />80060732<br />**数値**:<br />-2147088590|選択された ConvertRule は既にドラフト状態です。 別のレコードを選択してからやり直してください|
 > |**名前**:<br />ConvertRuleInvalidAutoResponseSettings<br />**16 進数**:<br />8004F879<br />**数値**:<br />-2147157895|自動応答用の電子メール テンプレートを選択するか、自動応答オプションを [いいえ] に設定してください。|
 > |**名前**:<br />ConvertRulePermissionToPerformAction<br />**16 進数**:<br />80060733<br />**数値**:<br />-2147088589|ConvertRules およびプロセスに対してこの操作を実行するために必要なアクセス許可がありません。|
 > |**名前**:<br />ConvertRuleQueueIdMissingForEmailSource<br />**16 進数**:<br />8004F896<br />**数値**:<br />-2147157866|キューの値が必要です。 キューに値を入力してください。|
@@ -795,7 +818,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CorruptedHiddensheetData<br />**16 進数**:<br />800609B7<br />**数値**:<br />-2147087945|非表示シート データが破損しています。|
 > |**名前**:<br />CouldNotDecryptOAuthToken<br />**16 進数**:<br />8005F110<br />**数値**:<br />-2147094256|Yammer OAuth トークンを暗号化解除できませんでした。 もう一度 Yammer の構成を再試行してください。|
 > |**名前**:<br />CouldNotFindQueueItemInQueue<br />**16 進数**:<br />80040524<br />**数値**:<br />-2147220188|指定された SourceQueueId でターゲットと関連付けられているキュー アイテムが見つかりませんでした。 SourceQueueId または [ターゲット] が無効であるか、またはキュー アイテムが存在しないかのどちらかです。|
-> |**名前**:<br />CouldNotObtainLockOnResource<br />**16 進数**:<br />80044339<br />**数値**:<br />-2147204295|データベース リソース ロックを取得できませんでした。 詳細については、「https://docs.microsoft.com/dynamics365/customer-engagement/customize/best-practices-workflow-processes#limit-the-number-of-workflows-that-update-the-same-entity」を参照してください。|
+> |**名前**:<br />CouldNotObtainLockOnResource<br />**16 進数**:<br />80044339<br />**数値**:<br />-2147204295|データベース リソース ロックを取得できませんでした。 詳細については、「http://docs.microsoft.com/dynamics365/customer-engagement/customize/best-practices-workflow-processes#limit-the-number-of-workflows-that-update-the-same-entity」を参照してください。|
 > |**名前**:<br />CouldNotReadAccessToken<br />**16 進数**:<br />8005F105<br />**数値**:<br />-2147094267|空でないコードが渡されましたが、システムがユーザーの Yammer アクセス トークンを読み込めませんでした。|
 > |**名前**:<br />CouldNotSetLocationTypeToOneNote<br />**16 進数**:<br />80060905<br />**数値**:<br />-2147088123|ドキュメントの場所を表す場所の種類を OneNote に設定できません。|
 > |**名前**:<br />CountSpecifiedWithoutOrder<br />**16 進数**:<br />8004E01F<br />**数値**:<br />-2147164129|ビジュアル化のデータ記述は、件数属性の受注ノードを指定していないため無効です。|
@@ -811,8 +834,12 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CrmExpressionEvaluationError<br />**16 進数**:<br />80040260<br />**数値**:<br />-2147220896|CRM 式の評価エラーが発生しました。|
 > |**名前**:<br />CrmExpressionParametersParsingError<br />**16 進数**:<br />8004025f<br />**数値**:<br />-2147220897|CRM 式パラメーターの解析エラーが発生しました。|
 > |**名前**:<br />CrmExpressionParsingError<br />**16 進数**:<br />8004025d<br />**数値**:<br />-2147220899|CRM 式の解析エラーが発生しました。|
+> |**名前**:<br />CRMGlobalMetadataVersionMismatch<br />**16 進数**:<br />80072494<br />**数値**:<br />-2147015532|エンティティ : '{0}' のデータを取得する際の CRM グローバル メタデータ バージョンの不一致。 データ: '{1}' を取得する前のグローバル メタデータ バージョン。 データ: '{2}' を取得した後のグローバル メタデータ バージョン|
 > |**名前**:<br />CrmHttpError<br />**16 進数**:<br />8006088A<br />**数値**:<br />-2147088246|Dynamics 365 の Web API でエラーが発生しました。|
 > |**名前**:<br />CrmImpersonationError<br />**16 進数**:<br />80040245<br />**数値**:<br />-2147220923|CRM AutoReimpersonator でエラーが発生しました。|
+> |**名前**:<br />CrmLicensingError<br />**16 進数**:<br />80050300<br />**数値**:<br />-2147155200|ライセンスのチェック中にエラーが発生しました。|
+> |**名前**:<br />CrmLicensingNoServicePlan<br />**16 進数**:<br />80050301<br />**数値**:<br />-2147155199|このアプリケーションにはライセンスが必要です。 管理者に問い合わせてください。発信者 userId ={0} は、公開元={3}から ID ={2} の付いたエンティティ appmodule uniqueName ={1} を読み取るためのライセンスがありません。 いずれかのサービス プランでライセンスが必要です (count = {4}):{5}。|
+> |**名前**:<br />CrmLicensingNoUserPass<br />**16 進数**:<br />80050302<br />**数値**:<br />-2147155198|このアプリケーションにはライセンスが必要で、組織にはユーザーパスがありません。 管理者に問い合わせてください。発信者 userId ={0} は、公開元={3}から ID ={2} の付いたエンティティ appmodule uniqueName ={1} を読み取るためのライセンスがありません。|
 > |**名前**:<br />CrmLiveAddOnAddLicenseLimitReached<br />**16 進数**:<br />8004B056<br />**数値**:<br />-2147176362|ご使用のサブスクリプションで、最大数のユーザー ライセンスを使用できます。  追加ライセンスについては、1-877-Dynamics 365-CHOICE (276-2464) で営業窓口にお問い合わせください。|
 > |**名前**:<br />CrmLiveAddOnAddStorageLimitReached<br />**16 進数**:<br />8004B057<br />**数値**:<br />-2147176361|ストレージの消費量がこの環境に割り当てられた最大ストレージ制限に達しました。 試用環境には限られたリソースが割り当てられます。 試用版環境を使用していない場合は、サポートに連絡してください。|
 > |**名前**:<br />CrmLiveAddOnDataChanged<br />**16 進数**:<br />8004B05C<br />**数値**:<br />-2147176356|アカウントに対して最近実行された変更により、この時点でこれらの変更を実行することはできません。   このウィザードを閉じて、後でやり直してください。  問題が続く場合は、1-877-Dynamics 365-CHOICE (276-2464) で営業窓口にお問い合わせください。|
@@ -871,6 +898,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CurrencyFieldMissing<br />**16 進数**:<br />8004E026<br />**数値**:<br />-2147164122|種類が通貨のロールアップ フィールドを計算する場合、レコード通貨が必要です。 通貨を指定してからやり直してください。|
 > |**名前**:<br />CurrencyNotEqual<br />**16 進数**:<br />80048cea<br />**数値**:<br />-2147185430|{0} の通貨は、{1}の通貨に対応しません。|
 > |**名前**:<br />CurrencyRequiredForDiscountTypeAmount<br />**16 進数**:<br />80048cf7<br />**数値**:<br />-2147185417|通貨は、割引の種類の金額に対して null にすることはできません。|
+> |**名前**:<br />CurrentFormEntityIsNull<br />**16 進数**:<br />80060371<br />**数値**:<br />-2147089551|現在のフォーム エンティティを NULL 値にすることはできません。|
 > |**名前**:<br />CustomActionMustBeMarked<br />**16 進数**:<br />80060381<br />**数値**:<br />-2147089535|BPF アクション ステップとして使用するには、カスタム アクションを「業務プロセス フローのアクション ステップとして」とマークする必要があります。|
 > |**名前**:<br />CustomActivityCannotBeMailMergeEnabled<br />**16 進数**:<br />8004F124<br />**数値**:<br />-2147159772|活動として定義されているカスタム エンティティの差し込み印刷を有効にすることはできません。|
 > |**名前**:<br />CustomActivityInvalid<br />**16 進数**:<br />8004501D<br />**数値**:<br />-2147200995|無効なユーザー定義の活動です。|
@@ -881,7 +909,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CustomerIsInactive<br />**16 進数**:<br />80040517<br />**数値**:<br />-2147220201|非アクティブな顧客は、オブジェクトの親として設定できません。|
 > |**名前**:<br />CustomerOpportunityRoleExists<br />**16 進数**:<br />80048202<br />**数値**:<br />-2147188222|顧客営業案件ロールが存在します。|
 > |**名前**:<br />CustomerRelationshipCannotBeDeleted<br />**16 進数**:<br />8004847d<br />**数値**:<br />-2147187587|この関連付け {1} は {0} 属性によって要求されており、削除できません。 この関連付けを削除するには、検索属性を先に削除してください。|
-> |**名前**:<br />CustomerRelationshipExists<br />**16 進数**:<br />80048201<br />**数値**:<br />-2147188223|顧客リレーションシップは既に存在します。|
+> |**名前**:<br />CustomerRelationshipExists<br />**16 進数**:<br />80048201<br />**数値**:<br />-2147188223|顧客リレーションシップは既に存在します。 CustomerRelationshipId: {0}、CustomerId: {1}、CustomerIdType: {2}、PartnerId: {3}、PartnerIdType: {4}、CustomerRoleId: {5}、PartnerRoleId: {6}、UniqueDscId: {7}|
 > |**名前**:<br />CustomImageAttributeOnlyAllowedOnCustomEntity<br />**16 進数**:<br />80048531<br />**数値**:<br />-2147187407|ユーザー定義のイメージ属性は、ユーザー定義エンティティのみに追加することができます。|
 > |**名前**:<br />CustomOperationNotActivated<br />**16 進数**:<br />80045052<br />**数値**:<br />-2147200942|このプロセスに関連付けられたプロセス アクションがアクティブ化されていません。|
 > |**名前**:<br />CustomParentingSystemNotSupported<br />**16 進数**:<br />80047102<br />**数値**:<br />-2147192574|ユーザー定義エンティティは、システム エンティティとの上位関係で関連付けられていません|
@@ -892,7 +920,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />CyclicalRelationship<br />**16 進数**:<br />80047004<br />**数値**:<br />-2147192828|指定した関連付けでサイクルが発生します。|
 > |**名前**:<br />CyclicDependency<br />**16 進数**:<br />80071156<br />**数値**:<br />-2147020458|循環コンポーネント依存関係が検出されました。 詳細については例外を確認してください。 無効な依存関係を修正して、もう一度操作を試行してください。 詳細: {0}|
 > |**名前**:<br />CyclicReferencesNotSupported<br />**16 進数**:<br />8004417F<br />**数値**:<br />-2147204737|入力には循環参照を含んでおり、サポートされていません。|
-> |**名前**:<br />DatabaseCallsBlockedFailure<br />**16 進数**:<br />80072401<br />**数値**:<br />-2147015679|この呼び出しで許可されていないデータベースへの呼び出しが発生する可能性があります。|
+> |**名前**:<br />DatabaseCallsBlockedFailure<br />**16 進数**:<br />80072401<br />**数値**:<br />-2147015679|この呼び出しで許可されていないデータベースへの呼び出しが発生することがあります。|
 > |**名前**:<br />DatacenterNotAvailable<br />**16 進数**:<br />8004B065<br />**数値**:<br />-2147176347|このデータセンター エンドポイントは、現在この組織では利用できません。|
 > |**名前**:<br />DataColumnsNumberMismatch<br />**16 進数**:<br />80040345<br />**数値**:<br />-2147220667|フィールドの数が列見出しの数と異なります。|
 > |**名前**:<br />DataEngineQueryThrottling<br />**16 進数**:<br />80048544<br />**数値**:<br />-2147187388|このクエリは調整の最適化と競合するため実行できません。|
@@ -904,11 +932,14 @@ ms.locfileid: "2861276"
 > |**名前**:<br />DataSourceOfflineErrorCode<br />**16 進数**:<br />8005F211<br />**数値**:<br />-2147093999|オフラインのため、この操作に失敗しました。 再接続してからやり直してください。|
 > |**名前**:<br />DataSourceProhibited<br />**16 進数**:<br />8004830D<br />**数値**:<br />-2147187955|フェッチ ベース以外のデータ ソースは、このレポートで使用できません|
 > |**名前**:<br />DataStoreKeyNotFoundErrorCode<br />**16 進数**:<br />8005F21d<br />**数値**:<br />-2147093987|キー '{0}' 付きのローカル ストアにはありません|
+> |**名前**:<br />DataSyncBadRequest<br />**16 進数**:<br />80072514<br />**数値**:<br />-2147015404|要求がサーバーにより理解されませんでした。|
 > |**名前**:<br />DataSyncNoContent<br />**16 進数**:<br />80072512<br />**数値**:<br />-2147015406|データ同期コンテンツがありません|
 > |**名前**:<br />DataSyncRequestAccepted<br />**16 進数**:<br />80072511<br />**数値**:<br />-2147015407|データ同期要求を受理しました|
 > |**名前**:<br />DataTableNotAvailable<br />**16 進数**:<br />800609B0<br />**数値**:<br />-2147087952|元のデータ テーブルが、削除または名前変更されています。|
 > |**名前**:<br />DataTypeMismatchForLinkedAttribute<br />**16 進数**:<br />8004F0FC<br />**数値**:<br />-2147159812|リンクされた属性で、データ タイプの不一致が見つかりました。|
 > |**名前**:<br />DateTimeFormatFailed<br />**16 進数**:<br />8004025a<br />**数値**:<br />-2147220902|書式設定された日時の値を生成できませんでした。|
+> |**名前**:<br />DBConnectionOrTransactionInitializationFailed<br />**16 進数**:<br />80048551<br />**数値**:<br />-2147187375|データベース接続またはトランザクションの初期化に失敗しました。 この操作は後で再試行する必要があります。 初期化の例外メッセージです : {0}|
+> |**名前**:<br />DBUpgradeCauseTimeout<br />**16 進数**:<br />80048553<br />**数値**:<br />-2147187373|データベースが現在アップグレードされていることから、この操作はタイムアウトしました。 データベースのアップグレードが完了してからもう一度お試しください。|
 > |**名前**:<br />DecimalValueOutOfRange<br />**16 進数**:<br />80044330<br />**数値**:<br />-2147204304|検証エラーが発生しました。 入力した 10 進数値が、この属性に対して許可された値の範囲外です。|
 > |**名前**:<br />DecoupleChildEntity<br />**16 進数**:<br />80048206<br />**数値**:<br />-2147188218|子エンティティを分離することはできません。|
 > |**名前**:<br />DecoupleUserOwnedEntity<br />**16 進数**:<br />80048207<br />**数値**:<br />-2147188217|ユーザーが所有するエンティティを分離することができるのみです。|
@@ -960,6 +991,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />DiscountRangeOverlap<br />**16 進数**:<br />80043b02<br />**数値**:<br />-2147206398|新しい数量が、既存の数量により扱われる範囲に重なっています。|
 > |**名前**:<br />DiscountTypeAndPriceLevelCurrencyNotEqual<br />**16 進数**:<br />80048cf8<br />**数値**:<br />-2147185416|割引の通貨は、割引の種類の金額に対する価格表の通貨に一致する必要があります。|
 > |**名前**:<br />DiskSpaceNotEnough<br />**16 進数**:<br />80050124<br />**数値**:<br />-2147155676|Temp フォルダーに十分なスペースがありません。|
+> |**名前**:<br />DistinctWithImageAttributeError<br />**16 進数**:<br />80072531<br />**数値**:<br />-2147015375|画像属性が選択されている場合、区別は許可されません。|
 > |**名前**:<br />DistributeListAssociatedVary<br />**16 進数**:<br />80048453<br />**数値**:<br />-2147187629|このキャンペーン活動は配布できません。 差し込み印刷活動は、すべてのレコードの種類が同一のマーケティング リストでのみ実行できます。 このキャンペーン活動では、マーケティング リストを削除することによりその他が同じレコードの種類になるようにし、もう一度やり直してください。|
 > |**名前**:<br />DistributeNoListAssociated<br />**16 進数**:<br />80048454<br />**数値**:<br />-2147187628|このキャンペーン活動は配布できません。 関連付けられたマーケティング リストがありません。 マーケティング リストを少なくとも 1 つ追加てからやり直してください。|
 > |**名前**:<br />DocumentManagementDisabled<br />**16 進数**:<br />8004F0FF<br />**数値**:<br />-2147159809|この組織ではドキュメント管理が無効になっています。|
@@ -976,11 +1008,12 @@ ms.locfileid: "2861276"
 > |**名前**:<br />DownloadAllEntityRecordsChangedOrCreatedWithinTheseDays<br />**16 進数**:<br />8006098F<br />**数値**:<br />-2147087985|この日数内で変更または作成されたすべてのエンティティ レコードをダウンロードします。|
 > |**名前**:<br />DownloadRelatedDataOnlyMustHaveRelationship<br />**16 進数**:<br />80071140<br />**数値**:<br />-2147020480|プロファイル '{1}' のエンティティ '{0}' は、フィルター ダウンロード関連のデータのみで構成されています。ただし、プロファイル項目の関連付けでこのエンティティに指定された関係はありません。 エンティティが関連データのみをダウンロードするように設定されている場合は、このエンティティへのプロファイル項目の関連付けを指定する必要があります。|
 > |**名前**:<br />DraftBundleToProduct<br />**16 進数**:<br />8004F994<br />**数値**:<br />-2147157612|ドラフト バンドルには、製品のみを追加できます。|
+> |**名前**:<br />DSSThrottlingConcurrencyLimitExceededError<br />**16 進数**:<br />80072327<br />**数値**:<br />-2147015897|検出された同時実行要求が多すぎます。|
 > |**名前**:<br />DuplicateAliasFound<br />**16 進数**:<br />8004E00B<br />**数値**:<br />-2147164149|データの説明が無効です。 重複したエイリアスが見つかりました。|
 > |**名前**:<br />DuplicateApplicationUser<br />**16 進数**:<br />8004F511<br />**数値**:<br />-2147158767|既に存在するアプリケーション ID = {0} を作成しようとしています。|
 > |**名前**:<br />DuplicateAppModuleUniqueName<br />**16 進数**:<br />8005011F<br />**数値**:<br />-2147155681|入力された名前は既に使用されています。|
 > |**名前**:<br />DuplicateAttributePhysicalName<br />**16 進数**:<br />80060304<br />**数値**:<br />-2147089660|エンティティ {1} の属性 {0} は既に存在します。|
-> |**名前**:<br />DuplicateAttributeSchemaName<br />**16 進数**:<br />80047013<br />**数値**:<br />-2147192813|指定された名前の属性は既に存在しています|
+> |**名前**:<br />DuplicateAttributeSchemaName<br />**16 進数**:<br />80047013<br />**数値**:<br />-2147192813|{0}|
 > |**名前**:<br />DuplicateChannelPropertyName<br />**16 進数**:<br />800608F1<br />**数値**:<br />-2147088143|チャネル プロパティは指定された名前で既に存在しています。 もう 1 つ作成することはできません。|
 > |**名前**:<br />DuplicateCheckNotEnabled<br />**16 進数**:<br />80048412<br />**数値**:<br />-2147187694|重複データ検出が有効になっていません。 重複データ検出を有効にするには、[設定] をクリックし、[データ管理] をクリックしてから [重複データ検出設定] をクリックします。|
 > |**名前**:<br />DuplicateCheckNotSupportedOnEntity<br />**16 進数**:<br />80048410<br />**数値**:<br />-2147187696|重複データ検出は、このレコードの種類ではサポートされません。|
@@ -1103,6 +1136,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />EntityIsUnlocked<br />**16 進数**:<br />80043b1e<br />**数値**:<br />-2147206370|このエンティティは既にロック解除されています。|
 > |**名前**:<br />EntityKeyNameExists<br />**16 進数**:<br />80060893<br />**数値**:<br />-2147088237|名前が {0} のエンティティ キーが、エンティティ {1} に既に存在します。|
 > |**名前**:<br />EntityKeyNotDefined<br />**16 進数**:<br />80060890<br />**数値**:<br />-2147088240|指定されているキー属性は、{0} エンティティに対して定義されているキーではありません|
+> |**名前**:<br />EntityKeyNotSupportedForSolutionAwareComponents<br />**16 進数**:<br />8006089F<br />**数値**:<br />-2147088225|このエンティティはソリューション対応コンポーネントであるため、エンティティ キーはエンティティ {0} ではサポートされていません。|
 > |**名前**:<br />EntityKeyWithSelectedAttributesExists<br />**16 進数**:<br />80060894<br />**数値**:<br />-2147088236|選択された属性を持つエンティティ キーが、エンティティに既に存在します。|
 > |**名前**:<br />EntityLimitExceeded<br />**16 進数**:<br />80060200<br />**数値**:<br />-2147089920|MultiEntitySearchで、組織用に定義されたエンティティ数の上限を超えました。|
 > |**名前**:<br />EntityLoopBeingCreated<br />**16 進数**:<br />80040387<br />**数値**:<br />-2147220601|この上位下位の関連付けを作成すると、このエンティティ階層にループが生成されます。|
@@ -1114,6 +1148,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />EntityNotEnabledForThisDevice<br />**16 進数**:<br />8005F200<br />**数値**:<br />-2147094016|このデバイスで表示するのに、エンティティが無効です|
 > |**名前**:<br />EntityNotRule<br />**16 進数**:<br />8004E112<br />**数値**:<br />-2147163886|コレクションの名は、定期的なアイテムのルールではありません。|
 > |**名前**:<br />EntityReferenceArgumentsNotBound<br />**16 進数**:<br />80060395<br />**数値**:<br />-2147089515|種類が EntityReference である必須の引数は何らかのエンティティにバインドされている必要があります。|
+> |**名前**:<br />EntityReferenceLinkNull<br />**16 進数**:<br />80048466<br />**数値**:<br />-2147187610|EntityRefererence リンクは null 値にできません|
 > |**名前**:<br />EntityRelationshipRoleCustomLabelsMissing<br />**16 進数**:<br />80044328<br />**数値**:<br />-2147204312|エンティティ関係ロールに UseCustomLabels の表示オプションがある場合、カスタム ラベルが提供されます|
 > |**名前**:<br />EntityRelationshipSchemaNameNotUnique<br />**16 進数**:<br />8004432B<br />**数値**:<br />-2147204309|指定された名前の関連付けは、既に存在しています。 一意の名前を指定してください。|
 > |**名前**:<br />EntityRelationshipSchemaNameRequired<br />**16 進数**:<br />8004432A<br />**数値**:<br />-2147204310|エンティティ関係には名前が必要です|
@@ -1204,7 +1239,16 @@ ms.locfileid: "2861276"
 > |**名前**:<br />ExpiredKey<br />**16 進数**:<br />8004A106<br />**数値**:<br />-2147180282|ハッシュ値を計算するために指定されるキーは期限切れですが、アクティブ キーのみが有効です。  期限切れキー: {0}。|
 > |**名前**:<br />ExpiredOAuthToken<br />**16 進数**:<br />80041d52<br />**数値**:<br />-2147213998|OAuth トークンは有効期限が切れています|
 > |**名前**:<br />ExpiredVersionStamp<br />**16 進数**:<br />80044352<br />**数値**:<br />-2147204270|クライアントに関連付けられているバージョン スタンプが期限切れになりました。 完全な同期を実行します。|
+> |**名前**:<br />ExportAttributeMapException<br />**16 進数**:<br />80044415<br />**数値**:<br />-2147204075|ソリューションのエクスポート中に、エンティティ {2} から {3} への EntityMap の属性 {0} から {1} への AttributeMap のエクスポートに失敗しました。 AttributeMapId = {4}、EntityMapId = {5}|
 > |**名前**:<br />ExportDefaultAsPackagedError<br />**16 進数**:<br />80048048<br />**数値**:<br />-2147188664|既定のソリューションをパッケージとしてエクスポートできません。|
+> |**名前**:<br />ExportEntityMapException<br />**16 進数**:<br />80044416<br />**数値**:<br />-2147204074|ソリューションのエクスポート中に、EntityMap をエンティティ {0} から {1} にエクスポートできませんでした。 EntityMapId = {2}|
+> |**名前**:<br />ExportKeyAttributeInvalidPrefix<br />**16 進数**:<br />800608AD<br />**数値**:<br />-2147088211|コンポーネント {1} のエクスポートキー属性 {0} は、有効なカスタマイズ接頭辞で開始する必要があります。|
+> |**名前**:<br />ExportKeyAttributeNotBeginWithLetterOrNonAlphaNumericCharacters<br />**16 進数**:<br />800608AB<br />**数値**:<br />-2147088213|コンポーネント {1} のエクスポート キー属性 {0} は、文字で始まり、英数字とアンダースコア文字のみで構成されている必要があります。|
+> |**名前**:<br />ExportKeyAttributeValuesIncorrectNumber<br />**16 進数**:<br />800608AC<br />**数値**:<br />-2147088212|エンティティ {1} のためのエクスポートキー {0} のエクスポート キー属性値の数が正しくありません。|
+> |**名前**:<br />ExportKeyNotSupported<br />**16 進数**:<br />800608A8<br />**数値**:<br />-2147088216|エクスポートキーはサポートされていないため、エクスポート キーはエンティティ {0} ではサポートされていません。|
+> |**名前**:<br />ExportKeyNotSupportedForMaxAttributes<br />**16 進数**:<br />800608AA<br />**数値**:<br />-2147088214|エンティティ {0} のエクスポート キーを作成できません。このキーは {1} 属性を超えています。|
+> |**名前**:<br />ExportKeyNotSupportedForNonCustomizableComponents<br />**16 進数**:<br />800608A7<br />**数値**:<br />-2147088217|このエンティティはカスタマイズできないため、エクスポート キーはエンティティ {0} ではサポートされていません|
+> |**名前**:<br />ExportKeyNotSupportedForNonSolutionAwareComponents<br />**16 進数**:<br />800608A6<br />**数値**:<br />-2147088218|このエンティティはソリューション対応コンポーネントではないため、エクスポート キーはエンティティ {0} ではサポートされていません|
 > |**名前**:<br />ExportManagedSolutionError<br />**16 進数**:<br />80048036<br />**数値**:<br />-2147188682|ソリューションのエクスポートでエラーが発生しました。 マネージド ソリューションはエクスポートできません。|
 > |**名前**:<br />ExportMissingSolutionError<br />**16 進数**:<br />80048037<br />**数値**:<br />-2147188681|ソリューションのエクスポートでエラーが発生しました。 ソリューションはこのシステムに存在しません。|
 > |**名前**:<br />ExportSolutionError<br />**16 進数**:<br />80048035<br />**数値**:<br />-2147188683|ソリューションのエクスポートでエラーが発生しました。|
@@ -1215,6 +1259,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />ExternalSearchAttributeLimitExceeded<br />**16 進数**:<br />80060300<br />**数値**:<br />-2147089664|インデックス付きフィールドの最大数に達しました。 関連性検索の構成を更新して、インデックス付きフィールド {1} の合計数を {0} より少なくなるように減らしてください。|
 > |**名前**:<br />ExtraPartyInformation<br />**16 進数**:<br />80040316<br />**数値**:<br />-2147220714|追加のパーティ情報は、この操作で提供されるべきではありません。|
 > |**名前**:<br />FailedToDeserializeAsyncOperationData<br />**16 進数**:<br />80044304<br />**数値**:<br />-2147204348|非同期操作データをシリアル化解除できませんでした。|
+> |**名前**:<br />FailedToFindDependentConnectorsForModernFlow<br />**16 進数**:<br />80060475<br />**数値**:<br />-2147089291|現在のモダン フローの依存するカスタム コネクタが見つかりませんでした。|
 > |**名前**:<br />FailedToGetNetworkServiceName<br />**16 進数**:<br />80047103<br />**数値**:<br />-2147192573|NetworkService アカウントのローカライズ名を取得できませんでした|
 > |**名前**:<br />FailedToLoadAssembly<br />**16 進数**:<br />8004024e<br />**数値**:<br />-2147220914|アセンブリを読み込むことができませんでした|
 > |**名前**:<br />FailedToScheduleActivity<br />**16 進数**:<br />80047000<br />**数値**:<br />-2147192832|活動をスケジュールできませんでした。|
@@ -1236,6 +1281,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />FeedbackRatingValue<br />**16 進数**:<br />80061773<br />**数値**:<br />-2147084429|評価は {0} から {1} までの値である必要があります。|
 > |**名前**:<br />FetchDataSetQueryTimeout<br />**16 進数**:<br />8005E00E<br />**数値**:<br />-2147098610|{0} 秒後にフェッチ データ セット クエリがタイムアウトしました。 クエリのタイムアウトの値を増やし、もう一度実行してください。|
 > |**名前**:<br />FieldLevelSecurityNotSupported<br />**16 進数**:<br />80044817<br />**数値**:<br />-2147203049|フィールド レベルのセキュリティは仮想エンティティでサポートされていません。|
+> |**名前**:<br />FileContentIsNull<br />**16 進数**:<br />80090004<br />**数値**:<br />-2146893820|ファイル コンテンツは null 値にはできません。|
 > |**名前**:<br />FileInUse<br />**16 進数**:<br />80048837<br />**数値**:<br />-2147186633|別のアプリケーションで使用されているので、ファイルを読み取ることができません。|
 > |**名前**:<br />FileNotFound<br />**16 進数**:<br />80048440<br />**数値**:<br />-2147187648|添付ファイルが見つかりませんでした。|
 > |**名前**:<br />FilePickerErrorApplicationInSnapView<br />**16 進数**:<br />8005F20D<br />**数値**:<br />-2147094003|このアクションをやり直してください。 問題が解決しない場合は、ソリューションの {0} を確認するか、{#Brand_CRM} 管理者に問い合わせてください。 それでも解決しない場合には {1}に問い合わせてください。|
@@ -1245,6 +1291,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />FilePickerErrorUnableToOpenFile<br />**16 進数**:<br />8005F207<br />**数値**:<br />-2147094009|このアクションをやり直してください。 問題が解決しない場合は、ソリューションの {0} を確認するか、{#Brand_CRM} 管理者に問い合わせてください。 それでも解決しない場合には {1}に問い合わせてください。|
 > |**名前**:<br />FileReadError<br />**16 進数**:<br />80048437<br />**数値**:<br />-2147187657|ファイル システムからのファイルの読み取りでエラーが発生しました。 このファイルの読み取りアクセス許可があることを確認し、ファイルの移行をもう一度実行してください。|
 > |**名前**:<br />FileSizeExceeded<br />**16 進数**:<br />80071026<br />**数値**:<br />-2147020762|ドキュメントをコピーできません。 選択されたファイルが、128 MB のサイズ制限の上限値を超えています。|
+> |**名前**:<br />FileSizeExceededForNonChunkedRequest<br />**16 進数**:<br />80090001<br />**数値**:<br />-2146893823|{0} でサポートされるファイルの最大サイズは [{1}] MB です。 [{2} MB] サイズのファイルは、段階的なチャンク {0} の使用してのみ {0}されています。|
 > |**名前**:<br />FileStoreFeatureNotEnabled<br />**16 進数**:<br />80072520<br />**数値**:<br />-2147015392|この組織で機能が有効になっていません|
 > |**名前**:<br />FileTypeNotSupported<br />**16 進数**:<br />800609B4<br />**数値**:<br />-2147087948|指定されたファイルの種類はテンプレートとしてサポートされていません。|
 > |**名前**:<br />FilteredDuetoAntiSpam<br />**16 進数**:<br />80040325<br />**数値**:<br />-2147220699|スパム対応設定によりこの顧客はフィルターされます。|
@@ -1274,6 +1321,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />GenericMetadataSyncFailed<br />**16 進数**:<br />8005F246<br />**数値**:<br />-2147093946|問題が発生しました。 操作をやり直すか、アプリを再起動してください。|
 > |**名前**:<br />GenericMetadataSyncFailedWithContinue<br />**16 進数**:<br />8005F247<br />**数値**:<br />-2147093945|申し訳ございません。サーバー構成の変更のダウンロードに問題が発生しました。  アプリは引き続き古い構成で使用できます。しかし、保存時のエラーなど何らかの問題が発生することがあります。  この問題が続く場合は、Dynamics 365 管理者に問い合わせて、'詳細情報' を選択する際に利用可能な情報を提供してください。|
 > |**名前**:<br />GenericTransformationInvocationError<br />**16 進数**:<br />8004037b<br />**数値**:<br />-2147220613|変換は無効なデータを返しました。|
+> |**名前**:<br />GetOnPolymorphicAttributeError<br />**16 進数**:<br />80072532<br />**数値**:<br />-2147015374|{0} のクエリを {1} 上ではできません|
 > |**名前**:<br />GetPhotoFromGalleryFailed<br />**16 進数**:<br />8005F208<br />**数値**:<br />-2147094008|このアクションをやり直してください。 問題が解決しない場合は、ソリューションの {0} を確認するか、{#Brand_CRM} 管理者に問い合わせてください。 それでも解決しない場合には {1}に問い合わせてください。|
 > |**名前**:<br />GetTenantIdFailure<br />**16 進数**:<br />80071109<br />**数値**:<br />-2147020535|TenantId の取得中にエラーが発生しました。|
 > |**名前**:<br />GoalAttributeAlreadyMapped<br />**16 進数**:<br />80044807<br />**数値**:<br />-2147203065|指定された目標属性の指標の詳細は既に存在します。|
@@ -1285,6 +1333,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />GoOfflineFailedMoveData<br />**16 進数**:<br />80044225<br />**数値**:<br />-2147204571|クライアントはデータをダウンロードできませんでした。 システム管理者に問い合わせて、オフラインにし直してください。|
 > |**名前**:<br />GoOfflineFailedPrepareMsde<br />**16 進数**:<br />80044226<br />**数値**:<br />-2147204570|MSDE の準備に失敗しました。 システム管理者に問い合わせて、オフラインにし直してください。|
 > |**名前**:<br />GoOfflineFailedReloadMetadataCache<br />**16 進数**:<br />80044227<br />**数値**:<br />-2147204569|Microsoft Dynamics 365 for Outlook をオフラインにできませんでした。 オフラインにし直してください。|
+> |**名前**:<br />GoOfflineFeatureNotEnabled<br />**16 進数**:<br />8004422a<br />**数値**:<br />-2147204566|Microsoft Dynamics 365 for Outlook ではオフライン機能はサポートされていません。|
 > |**名前**:<br />GoOfflineFileWasDeleted<br />**16 進数**:<br />80044229<br />**数値**:<br />-2147204567|データ ファイルは、クライアントへ送信される前にサーバーで削除されました。|
 > |**名前**:<br />GoOfflineGetBCPFileException<br />**16 進数**:<br />80044221<br />**数値**:<br />-2147204575|Dynamics 365 server が要求を処理できませんでした。 システム管理者に問い合わせて、オフラインにし直してください。|
 > |**名前**:<br />GoOfflineMetadataVersionsMismatch<br />**16 進数**:<br />80044220<br />**数値**:<br />-2147204576|クライアントおよびサーバー メタデータのバージョンは、サーバーの新しいカスタマイズにより異なります。 オフラインにし直してください。|
@@ -1301,6 +1350,8 @@ ms.locfileid: "2861276"
 > |**名前**:<br />HonorPauseWithoutSLAKPIError<br />**16 進数**:<br />80045000<br />**数値**:<br />-2147201024|SLA は、一時停止を履行し、[はい] に設定されている SLA KPI が使用されている場合のみ再開するように設定できます。|
 > |**名前**:<br />HybridSSSExchangeOnlineS2SCertActsExpired<br />**16 進数**:<br />80131500<br />**数値**:<br />-2146233088|Dynamics 365 設置型 + Exchange Online の S2S 認証を使用した証明書が期限切れになりました。|
 > |**名前**:<br />HybridSSSExchangeOnlineS2SCertExpired<br />**16 進数**:<br />80131509<br />**数値**:<br />-2146233079|Dynamics 365 設置型 + Exchange Online の S2S 認証を使用した証明書が期限切れになりました。|
+> |**名前**:<br />ImageAttributeNotSupportedFullImage<br />**16 進数**:<br />8009000D<br />**数値**:<br />-2146893811|エンティティ {1} の画像属性 {0} は画像全体の保存はサポートしていません。|
+> |**名前**:<br />ImageInvalidMaxSizeInKB<br />**16 進数**:<br />8009000E<br />**数値**:<br />-2146893810|エンティティ {1} の画像属性 {0} の無効な MaxSizeInKB です。 有効なサイズは [ {2} - {3} ] KB の間である必要があります。|
 > |**名前**:<br />ImportArticleTemplateError<br />**16 進数**:<br />8004800D<br />**数値**:<br />-2147188723|Import Xml で記事テンプレートの解析中にエラーが発生しました|
 > |**名前**:<br />ImportAttributeNameError<br />**16 進数**:<br />80048062<br />**数値**:<br />-2147188638|属性の名前が無効です {0}。  カスタム属性名は、有効なカスタマイズの接頭辞で始まる必要があります。 ソリューション コンポーネントの接頭辞は、ソリューションの発行者に対して指定された接頭辞に対応している必要があります。|
 > |**名前**:<br />ImportChannelPropertyGroupError<br />**16 進数**:<br />800608F3<br />**数値**:<br />-2147088141|チャネル プロパティ グループをインポート中にエラーが発生しました。|
@@ -1329,6 +1380,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />ImportFileFailed<br />**16 進数**:<br />80050125<br />**数値**:<br />-2147155675|ファイルのインポートと抽出に失敗しました。|
 > |**名前**:<br />ImportFileSignatureInvalid<br />**16 進数**:<br />80048065<br />**数値**:<br />-2147188635|インポート ファイルのデジタル署名が無効です。|
 > |**名前**:<br />ImportFileTooLargeToUpload<br />**16 進数**:<br />80040375<br />**数値**:<br />-2147220619|インポート ファイルは大きすぎるため、アップロードできません。|
+> |**名前**:<br />ImportFileUnprocessed<br />**16 進数**:<br />80072035<br />**数値**:<br />-2147016651|処理されなかったファイルが見つかりました : {0}|
 > |**名前**:<br />ImportFormXmlError<br />**16 進数**:<br />80048007<br />**数値**:<br />-2147188729|入力文字列に渡されたフォーマット パラメーター数が正しくありません|
 > |**名前**:<br />ImportGenericEntitiesError<br />**16 進数**:<br />80048020<br />**数値**:<br />-2147188704|汎用エンティティのインポート中にエラーが発生しました。|
 > |**名前**:<br />ImportGenericError<br />**16 進数**:<br />8004801E<br />**数値**:<br />-2147188706|インポートに失敗しました。 詳細については、関連するエラー メッセージを参照してください。|
@@ -1420,16 +1472,19 @@ ms.locfileid: "2861276"
 > |**名前**:<br />IncomingServerLocationAndSslSetToYes<br />**16 進数**:<br />8005E240<br />**数値**:<br />-2147098048|HTTP を使用する受信サーバーの場所を URL で指定しましたが、[受信接続に SSL を使用する] オプションが [はい] に設定されています。 HTTPS を使用するサーバーの場所を指定し、やり直してください。|
 > |**名前**:<br />IncompatibleStepsEncountered<br />**16 進数**:<br />8006088B<br />**数値**:<br />-2147088245|データを変更するプラグインが読み取り専用の SDK メッセージとして登録されているため、EnforceReadOnlyPlugins 設定を有効にできません。 {0}|
 > |**名前**:<br />IncompleteTransformationParameterMappingsFound<br />**16 進数**:<br />8004037d<br />**数値**:<br />-2147220611|1 つまたは複数の必須変換パラメーター値は定義済みのマッピングがありません。|
+> |**名前**:<br />InconsistentAttributeConfiguration<br />**16 進数**:<br />80072009<br />**数値**:<br />-2147016695|ID {0} を持つ属性に複数の構成が見つかりました。|
 > |**名前**:<br />InconsistentAttributeNameCasing<br />**16 進数**:<br />8004F043<br />**数値**:<br />-2147159997|属性名に不整合な大文字小文字の区別を検出しました。予想される値: {0}、実際の値: {1}。|
 > |**名前**:<br />InconsistentProductRelationshipState<br />**16 進数**:<br />8004F996<br />**数値**:<br />-2147157610|製品リレーションシップの他方にある行は使用できません。|
 > |**名前**:<br />IncorrectActiveStageEntity<br />**16 進数**:<br />80060462<br />**数値**:<br />-2147089310|'{0}' エンティティにアクティブ ステージはありません。|
 > |**名前**:<br />IncorrectAttributeValueType<br />**16 進数**:<br />80044354<br />**数値**:<br />-2147204268|{0} の無効な属性値の種類。 予想: {1}、検出: {2}|
 > |**名前**:<br />IncorrectEntitySetName<br />**16 進数**:<br />8006089C<br />**数値**:<br />-2147088228|エンティティ セット名 {0} は、有効なカスタマイズの接頭辞で始まる必要があります。|
+> |**名前**:<br />IncorrectFileFormat<br />**16 進数**:<br />80072037<br />**数値**:<br />-2147016649|ファイル {0} がインポートできません。|
 > |**名前**:<br />IncorrectSingleFileMultipleEntityMap<br />**16 進数**:<br />80048502<br />**数値**:<br />-2147187454|ImportMap の EntitiesPerFile が複数に設定されている場合、2 つ以上の定義済みエンティティ マッピングが必要です|
 > |**名前**:<br />IncreasingDaysWillResetMobileOfflineData<br />**16 進数**:<br />80060991<br />**数値**:<br />-2147087983|モバイル デバイスの再同期および、Mobile offline データをリセットする日数を増やします。|
 > |**名前**:<br />IndexOutOfRange<br />**16 進数**:<br />8005E008<br />**数値**:<br />-2147098616|インデックス {0} は {1}の範囲を超えています。 存在する要素数は {2} です。|
 > |**名前**:<br />IndexSizeConstraintViolated<br />**16 進数**:<br />80060895<br />**数値**:<br />-2147088235|インデックス サイズがサイズの上限 {0} バイトを超えています。 キーが大きすぎます。 いくつかの列を削除するか、文字列列の文字列を短くしてください。|
 > |**名前**:<br />InitializeErrorNoReadOnSource<br />**16 進数**:<br />8004F800<br />**数値**:<br />-2147158016|{0} レコードのいくつかのフィールドで読み取りアクセス権がないため、操作を完了できませんでした。|
+> |**名前**:<br />InitializeFileRequestFailure<br />**16 進数**:<br />80072555<br />**数値**:<br />-2147015339|ファイルの初期化要求中にエラーが発生しました。 (RecordId: {0}, EntityName: {1}) Details:{2}|
 > |**名前**:<br />InputParameterFieldIncorrect<br />**16 進数**:<br />80060378<br />**数値**:<br />-2147089544|入力パラメータ “{0}” が、構成された入力パラメータ フィールドと一致しません。 エラーが解決しない場合は、システム管理者に連絡して構成メタデータを確認してください。|
 > |**名前**:<br />InsertOptionValueInvalidType<br />**16 進数**:<br />80044320<br />**数値**:<br />-2147204320|候補リスト、および状態属性にのみオプション値を追加できます。|
 > |**名前**:<br />InstanceOutsideEffectiveRange<br />**16 進数**:<br />8004E115<br />**数値**:<br />-2147163883|操作を実行できません。 インスタンスは、有効な展開範囲の系列外にあります。|
@@ -1468,6 +1523,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidAppModuleComponentType<br />**16 進数**:<br />80050112<br />**数値**:<br />-2147155694|アプリは、コンポーネントの種類 “{0}” を参照できません。|
 > |**名前**:<br />InvalidAppModuleEventHandlers<br />**16 進数**:<br />8005012F<br />**数値**:<br />-2147155665|アプリに提供されたイベント ハンドラーは無効です。|
 > |**名前**:<br />InvalidAppModuleId<br />**16 進数**:<br />80050116<br />**数値**:<br />-2147155690|アプリの ID が無効、またはアプリへのアクセス権がありません。|
+> |**名前**:<br />InvalidAppModuleOptimizedFor<br />**16 進数**:<br />8005013A<br />**数値**:<br />-2147155654|アプリ用に提供された最適化された値が無効です。|
 > |**名前**:<br />InvalidAppModuleSiteMap<br />**16 進数**:<br />80050110<br />**数値**:<br />-2147155696|適切に構成されていないため、このアプリ モジュール用のカスタマイズされたサイト マップを使用できませんでした。 この問題を解決するには、フル機能のエクスペリエンスに移動し、カスタマイズされたサイト マップを修復して、インポートし直してください。|
 > |**名前**:<br />InvalidAppModuleSiteMapXml<br />**16 進数**:<br />80050109<br />**数値**:<br />-2147155703|アプリ モジュールのサイトマップが無効です。|
 > |**名前**:<br />InvalidAppModuleUniqueName<br />**16 進数**:<br />8005011E<br />**数値**:<br />-2147155682|一意の名前が最大長の 40 文字を超えたか、または無効な文字が含まれています。 文字、および数値のみを使用できます。|
@@ -1485,6 +1541,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidAssociatedSavedQuery<br />**16 進数**:<br />800609AE<br />**数値**:<br />-2147087954|選択した保存済みクエリは、Mobile Offline プロファイル項目の関連エンティティに属していません。|
 > |**名前**:<br />InvalidAttachmentsFolder<br />**16 進数**:<br />80048490<br />**数値**:<br />-2147187568|圧縮 (.zip) ファイルをアップロードできません。"Attachments" フォルダーに 1 つ以上のサブフォルダーが含まれています。 サブフォルダーを削除し、もう一度やり直してください。|
 > |**名前**:<br />InvalidAttribute<br />**16 進数**:<br />8005E009<br />**数値**:<br />-2147098615|属性 {0} はエンティティ {1} で見つかりません。|
+> |**名前**:<br />InvalidAttributeCopyTarget<br />**16 進数**:<br />80048545<br />**数値**:<br />-2147187387|ターゲット属性は、コピーするときに設定解除するか、ソース属性と同じ値にする必要があります。|
 > |**名前**:<br />InvalidAttributeDataType<br />**16 進数**:<br />80044815<br />**数値**:<br />-2147203051|属性データの種類: {0} はこのエンティティーに無効です。|
 > |**名前**:<br />InvalidAttributeFieldType<br />**16 進数**:<br />80044816<br />**数値**:<br />-2147203050|属性フィールドの種類: {0} は仮想エンティティに無効です。|
 > |**名前**:<br />InvalidAttributeFound<br />**16 進数**:<br />8004E303<br />**数値**:<br />-2147163389|ダッシュボード フォーム XML は、属性: {0} を含めることはできません。|
@@ -1498,6 +1555,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidBaseUnit<br />**16 進数**:<br />80043b0b<br />**数値**:<br />-2147206389|基本出荷単位はスケジュールに属していません。|
 > |**名前**:<br />InvalidBehavior<br />**16 進数**:<br />800608A1<br />**数値**:<br />-2147088223|この属性の [動作] の値は変更できません。|
 > |**名前**:<br />InvalidBehaviorSelection<br />**16 進数**:<br />800608A0<br />**数値**:<br />-2147088224|この [日付と時間] フィールドの動作は、"日付のみ" にしか変更できません。|
+> |**名前**:<br />InvalidBlockList<br />**16 進数**:<br />80090006<br />**数値**:<br />-2146893818|ファイルのコミット操作に失敗しました。 指定されたブロック リストが無効であるか、アップロードする一部のチャンクがありません。|
 > |**名前**:<br />InvalidBrowserToConfigureOrganization<br />**16 進数**:<br />8004D255<br />**数値**:<br />-2147167659|組織の構成と互換性のないブラウザー|
 > |**名前**:<br />InvalidBusinessProcess<br />**16 進数**:<br />80060389<br />**数値**:<br />-2147089527|無効なビジネス プロセスです。|
 > |**名前**:<br />InvalidCaller<br />**16 進数**:<br />80040257<br />**数値**:<br />-2147220905|最初に呼び出し元を設定せずに ExecutionContext をシステム ユーザーに切り替えることはできません。|
@@ -1508,13 +1566,16 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidChannelForCampaignActivityPropagate<br />**16 進数**:<br />80040310<br />**数値**:<br />-2147220720|指定チャネルの種類のキャンペーン活動に対する活動を配布することはできません。|
 > |**名前**:<br />InvalidChannelOrigin<br />**16 進数**:<br />80060602<br />**数値**:<br />-2147088894|同じチャネルの権利チャネルの期間は、既に存在します。 異なるチャネルを指定して、やり直してください。|
 > |**名前**:<br />InvalidCharactersInField<br />**16 進数**:<br />80040278<br />**数値**:<br />-2147220872|フィールド '{0}' には 1 つ以上の無効な文字が含まれています。|
+> |**名前**:<br />InvalidCharInConnectorName<br />**16 進数**:<br />80072604<br />**数値**:<br />-2147015164|コネクタ名は英数字、'-', または '_' であり、英数字で始まる必要があります。|
 > |**名前**:<br />InvalidClassIdInReferencePanelSection<br />**16 進数**:<br />80061503<br />**数値**:<br />-2147085053|参照パネル セクションには、サブグリッド、簡易表示フォーム、サポート情報検索、i-frame および HTML Web リソースの各コントロールのみを設定できます。 無効なクラス ID {0}のコントロールが見つかりました。|
 > |**名前**:<br />InvalidCollectionName<br />**16 進数**:<br />8006088E<br />**数値**:<br />-2147088242|コレクション名のエンティティは、既に存在します。 一意の名前を指定してください。|
 > |**名前**:<br />InvalidColumnMapping<br />**16 進数**:<br />80040377<br />**数値**:<br />-2147220617|ColumnMapping が無効です。 ターゲット属性が存在することを確認します。|
 > |**名前**:<br />InvalidColumnNumber<br />**16 進数**:<br />80040336<br />**数値**:<br />-2147220682|データ マップで指定された列番号が存在しません。|
 > |**名前**:<br />InvalidCommand<br />**16 進数**:<br />8005E100<br />**数値**:<br />-2147098368|無効なコマンドです。|
 > |**名前**:<br />InvalidComplexControlId<br />**16 進数**:<br />8005E103<br />**数値**:<br />-2147098365|複合コントロール ID が無効です。|
+> |**名前**:<br />InvalidComponentType<br />**16 進数**:<br />80072004<br />**数値**:<br />-2147016700|コンポーネントの種類 {0} が見つかりません|
 > |**名前**:<br />InvalidConnectionString<br />**16 進数**:<br />8004023f<br />**数値**:<br />-2147220929|接続文字列は見つからないか、または無効です。|
+> |**名前**:<br />InvalidContentRangeForFileUpload<br />**16 進数**:<br />80090005<br />**数値**:<br />-2146893819|コンテンツ範囲が無効であるか、ペイロード [{0}] のサイズが指定されたチャンク サイズと一致しません。|
 > |**名前**:<br />InvalidContractDetailId<br />**16 進数**:<br />800404f6<br />**数値**:<br />-2147220234|契約詳細 ID が無効です|
 > |**名前**:<br />InvalidControlClass<br />**16 進数**:<br />8004E307<br />**数値**:<br />-2147163385|ダッシュボード フォーム XML は、クラス ID を持つコントロール要素を含めることはできません: {0}。|
 > |**名前**:<br />InvalidConversionRule<br />**16 進数**:<br />800608F6<br />**数値**:<br />-2147088138|指定された ConversionRule {0} は無効です。 有効な ConversionRule を指定してください。|
@@ -1527,6 +1588,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidCustomActivityType<br />**16 進数**:<br />8004F125<br />**数値**:<br />-2147159771|活動として定義されているカスタム エンティティは、通信活動タイプである必要があります。|
 > |**名前**:<br />InvalidCustomDataDownloadFilters<br />**16 進数**:<br />80060996<br />**数値**:<br />-2147087978|[レコード配布条件] が [他のデータ フィルター] に設定されていないため、カスタム ダウンロード フィルターを設定できません。|
 > |**名前**:<br />InvalidCustomer<br />**16 進数**:<br />8004022d<br />**数値**:<br />-2147220947|顧客が無効です。|
+> |**名前**:<br />InvalidCustomerLookupXml<br />**16 進数**:<br />80048051<br />**数値**:<br />-2147188655|顧客ルックアップ XML が無効です。 1 つ以上の関係がありません。|
 > |**名前**:<br />InvalidCustomReportingWizardXml<br />**16 進数**:<br />80040491<br />**数値**:<br />-2147220335|無効なウィザード xml|
 > |**名前**:<br />InvalidDataDescription<br />**16 進数**:<br />8004E000<br />**数値**:<br />-2147164160|ビジュアル化のデータ記述が無効です。|
 > |**名前**:<br />InvalidDataDownloadFilterBusinessUnit<br />**16 進数**:<br />8005F222<br />**数値**:<br />-2147093982|事業主が所有するエンティティには、次のデータ ダウンロード フィルターのみを使用できます: すべてのレコードまたはダウンロード関連データのみです。|
@@ -1557,6 +1619,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidElementFound<br />**16 進数**:<br />8004E300<br />**数値**:<br />-2147163392|ダッシュボード フォーム XML は、要素: {0} を含めることはできません。|
 > |**名前**:<br />InvalidEmail<br />**16 進数**:<br />8004B016<br />**数値**:<br />-2147176426|テンプレートから生成された電子メールが無効です|
 > |**名前**:<br />InvalidEmailAddressFormat<br />**16 進数**:<br />80044192<br />**数値**:<br />-2147204718|無効な電子メール アドレス。 詳細については、システム管理者に問い合わせてください。|
+> |**名前**:<br />InvalidEmailAddressFormatWithEntityTypeAndId<br />**16 進数**:<br />80040b0b<br />**数値**:<br />-2147218677|ID が '{1}' で種類が '{0}' の受信者のメールアドレスが無効です|
 > |**名前**:<br />InvalidEmailAddressInMailbox<br />**16 進数**:<br />8005E221<br />**数値**:<br />-2147098079|メールボックスの電子メール アドレスが正しくありません。 メールを処理するために正しい電子メール アドレスを入力してください。|
 > |**名前**:<br />InvalidEmailServerLocation<br />**16 進数**:<br />8005E218<br />**数値**:<br />-2147098088|サーバーの場所をが存在しないか、または無効です。 サーバーの場所を修正してください。|
 > |**名前**:<br />InvalidEmailTemplate<br />**16 進数**:<br />80040313<br />**数値**:<br />-2147220717|有効なテンプレート ID を指定する必要があります|
@@ -1582,7 +1645,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidEntitySetName<br />**16 進数**:<br />8006089B<br />**数値**:<br />-2147088229|特定のエンティティ セット名 {0} のエンティティは既に存在します。 一意の名前を指定してください。|
 > |**名前**:<br />InvalidEntitySpecified<br />**16 進数**:<br />800609B1<br />**数値**:<br />-2147087951|テンプレートでは、エンティティは指定されません。|
 > |**名前**:<br />InvalidExchangeRate<br />**16 進数**:<br />80048cfd<br />**数値**:<br />-2147185411|為替レートは無効です。|
-> |**名前**:<br />InvalidExportProcessFlowNotActivated<br />**16 進数**:<br />80060376<br />**数値**:<br />-2147089546|ビジネス プロセス “{0}” をエクスポートできませんでした。対応するビジネス プロセス エンティティ “{1}” がソリューションに含まれていません。 これがドラフト状態で新しく作成されたビジネス プロセスである場合は、一度アクティブ化してビジネス プロセス エンティティを生成し、それをソリューションに含めます。 詳細については、「https://support.microsoft.com/kb/4337537」を参照してください。|
+> |**名前**:<br />InvalidExportProcessFlowNotActivated<br />**16 進数**:<br />80060376<br />**数値**:<br />-2147089546|ビジネス プロセス “{0}” をエクスポートできませんでした。対応するビジネス プロセス エンティティ “{1}” がソリューションに含まれていません。 これがドラフト状態で新しく作成されたビジネス プロセスである場合は、一度アクティブ化してビジネス プロセス エンティティを生成し、それをソリューションに含めます。 詳細については、「http://support.microsoft.com/kb/4337537」を参照してください。|
 > |**名前**:<br />InvalidExternalCollectionName<br />**16 進数**:<br />80046BA7<br />**数値**:<br />-2147193945|指定した外部コレクション名が無効です。|
 > |**名前**:<br />InvalidExternalName<br />**16 進数**:<br />80046BC0<br />**数値**:<br />-2147193920|指定した外部名が無効です。|
 > |**名前**:<br />InvalidExternalPartyConfiguration<br />**16 進数**:<br />8006110F<br />**数値**:<br />-2147086065|複数の外部パーティ アイテムが要求パラメーターに対して存在します。|
@@ -1591,7 +1654,9 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidFeatureType<br />**16 進数**:<br />80044272<br />**数値**:<br />-2147204494|機能の種類が無効です。|
 > |**名前**:<br />InvalidFetchCollection<br />**16 進数**:<br />8004E019<br />**数値**:<br />-2147164135|ビジュアル化のフェッチ コレクションが無効です。|
 > |**名前**:<br />InvalidFetchXml<br />**16 進数**:<br />80040303<br />**数値**:<br />-2147220733|形式が正しくない FetchXml です。|
+> |**名前**:<br />InvalidFileAttributeName<br />**16 進数**:<br />80090007<br />**数値**:<br />-2146893817|無効なファイル属性名 : {0}。|
 > |**名前**:<br />InvalidFileBadCharacters<br />**16 進数**:<br />80040396<br />**数値**:<br />-2147220586|無効な文字が含まれているため、ファイルをアップロードできませんでした|
+> |**名前**:<br />InvalidFileRangeRequested<br />**16 進数**:<br />80090000<br />**数値**:<br />-2146893824|この呼び出しで使用されるチャンク範囲が無効であるか、許可されている {0} MB を超えています。|
 > |**名前**:<br />InvalidFileType<br />**16 進数**:<br />800608CC<br />**数値**:<br />-2147088180|ファイルの種類が無効です。|
 > |**名前**:<br />InvalidFilterCriteriaForVisualization<br />**16 進数**:<br />8004E01E<br />**数値**:<br />-2147164130|指定されたフィルター条件でビジュアル化できませんでした。|
 > |**名前**:<br />InvalidFiscalPeriod<br />**16 進数**:<br />80044814<br />**数値**:<br />-2147203052|会計期間 {0} は、組織の会計設定により、会計期間の許容範囲内に入りません。|
@@ -1614,12 +1679,14 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidHexColorValue<br />**16 進数**:<br />800608D0<br />**数値**:<br />-2147088176|16 進数の値のみ使用できます。|
 > |**名前**:<br />InvalidHierarchicalRelationship<br />**16 進数**:<br />8004701F<br />**数値**:<br />-2147192801|この関係は自己参照ではないため、階層化できません。|
 > |**名前**:<br />InvalidHierarchicalRelationshipChange<br />**16 進数**:<br />8004701a<br />**数値**:<br />-2147192806|{0} 階層型の関連付けをカスタマイズできないため、このエンティティの階層を変更できません。|
+> |**名前**:<br />InvalidIconFileFormatForConnector<br />**16 進数**:<br />80072603<br />**数値**:<br />-2147015165|無効なアイコン ファイル形式。 サポートされている形式は PNG と JPG です。|
 > |**名前**:<br />InvalidImportFileContent<br />**16 進数**:<br />80040374<br />**数値**:<br />-2147220620|インポートされたファイルの内容は有効ではありません。 テキスト ファイルを選択してください。|
 > |**名前**:<br />InvalidImportFileData<br />**16 進数**:<br />80040351<br />**数値**:<br />-2147220655|データの形式が指定された形式と違います|
 > |**名前**:<br />InvalidImportFileParseData<br />**16 進数**:<br />80040349<br />**数値**:<br />-2147220663|このファイルのフィールド区切り文字とデータ区切り文字が指定されていません。|
 > |**名前**:<br />InvalidImportJobId<br />**16 進数**:<br />80044252<br />**数値**:<br />-2147204526|要求された importjob は存在しません。|
 > |**名前**:<br />InvalidImportJobTemplateFile<br />**16 進数**:<br />80044251<br />**数値**:<br />-2147204527|ImportJobTemplate.xml ファイルが無効です。|
 > |**名前**:<br />InvalidIncomingDeliveryExpectingEmailConnector<br />**16 進数**:<br />8005E224<br />**数値**:<br />-2147098076|受信メールの配信方法は、電子メール コネクタではありません。 メールを受信するには、受信メールの配信方法を [電子メール コネクタ] に設定する必要があります。|
+> |**名前**:<br />InvalidInputArgumentForModernFlowExecute<br />**16 進数**:<br />80060480<br />**数値**:<br />-2147089280|モダン フロー ' {0}' を実行できません。'{1}' はサポートされている入力引数ではありません。|
 > |**名前**:<br />InvalidInstanceEntityName<br />**16 進数**:<br />8004E10D<br />**数値**:<br />-2147163891|無効なインスタンス エンティティ名です。|
 > |**名前**:<br />InvalidInstanceTypeCode<br />**16 進数**:<br />8004E107<br />**数値**:<br />-2147163897|インスタンスの種類のコードが無効です。|
 > |**名前**:<br />InvalidInteractiveUserQuota<br />**16 進数**:<br />8004B049<br />**数値**:<br />-2147176375|対話型 / フル ユーザーの最大値に到達しました。|
@@ -1651,15 +1718,16 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidManifestFilePath<br />**16 進数**:<br />80048533<br />**数値**:<br />-2147187405|指定された場所でマニフェスト ファイルを配置できませんでした|
 > |**名前**:<br />InvalidMatchingAttributeError<br />**16 進数**:<br />80044244<br />**数値**:<br />-2147204540|一致する属性が無効です。|
 > |**名前**:<br />InvalidMaximumResourceLimit<br />**16 進数**:<br />8004B02B<br />**数値**:<br />-2147176405|リソースの種類 {0} には {1}の上限が存在しません。|
-> |**名前**:<br />InvalidMaxLengthForControl <br />**16 進数**:<br />80060879<br />**数値**:<br />-2147088263|コントロール {0} に無効な MaxLength パラメーターが指定されています。MaxLength は {1} ～ {2} の間で設定する必要があります。|
-> |**名前**:<br />InvalidMaxValueForControl <br />**16 進数**:<br />8006087B<br />**数値**:<br />-2147088261|コントロール {0} に無効な MaxValue パラメーターが指定されています。MaxValue は {1} ～ {2} の間で設定する必要があります。|
+> |**名前**:<br />InvalidMaxLengthForControl<br />**16 進数**:<br />80060879<br />**数値**:<br />-2147088263|コントロール {0} に無効な MaxLength パラメーターが指定されています。MaxLength は {1} ～ {2} の間で設定する必要があります。|
+> |**名前**:<br />InvalidMaxSizeInKB<br />**16 進数**:<br />80090009<br />**数値**:<br />-2146893815|ファイル タイプ属性の無効なサイズです。 有効なサイズは [0-{0}] KB の間である必要があります。|
+> |**名前**:<br />InvalidMaxValueForControl<br />**16 進数**:<br />8006087B<br />**数値**:<br />-2147088261|コントロール {0} に無効な MaxValue パラメーターが指定されています。MaxValue は {1} ～ {2} の間で設定する必要があります。|
 > |**名前**:<br />InvalidMeasureCollection<br />**16 進数**:<br />8004E00A<br />**数値**:<br />-2147164150|メジャー コレクションが無効です。 1 つのメジャー コレクションのすべてのメジャーが、同じグループ group bys を持っているわけではありません。|
 > |**名前**:<br />InvalidMetadata<br />**16 進数**:<br />8004023a<br />**数値**:<br />-2147220934|無効なメタデータです。|
 > |**名前**:<br />InvalidMetadataSqlOperation<br />**16 進数**:<br />80072343<br />**数値**:<br />-2147015869|現在のメタデータ操作で SQL 例外がスローされました。 詳細については例外を確認してください。|
 > |**名前**:<br />InvalidMigrationFileContent<br />**16 進数**:<br />8005F033<br />**数値**:<br />-2147094477|インポートされたファイルの内容は有効ではありません。 テキスト ファイルを選択してください。|
-> |**名前**:<br />InvalidMinAndMaxValueForControl <br />**16 進数**:<br />8006087C<br />**数値**:<br />-2147088260|コントロール {0} に無効な MinValue および MaxValue パラメーターが指定されています。MinValue は MaxValue より小さく設定する必要があります。|
+> |**名前**:<br />InvalidMinAndMaxValueForControl<br />**16 進数**:<br />8006087C<br />**数値**:<br />-2147088260|コントロール {0} に無効な MinValue および MaxValue パラメーターが指定されています。MinValue は MaxValue より小さく設定する必要があります。|
 > |**名前**:<br />InvalidMinimumResourceLimit<br />**16 進数**:<br />8004B02A<br />**数値**:<br />-2147176406|リソースの種類 {0} には {1}の下限が存在しません。|
-> |**名前**:<br />InvalidMinValueForControl <br />**16 進数**:<br />8006087A<br />**数値**:<br />-2147088262|コントロール {0} に無効な MinValue パラメーターが指定されています。MinValue は {1} ～ {2} の間で設定する必要があります。|
+> |**名前**:<br />InvalidMinValueForControl<br />**16 進数**:<br />8006087A<br />**数値**:<br />-2147088262|コントロール {0} に無効な MinValue パラメーターが指定されています。MinValue は {1} ～ {2} の間で設定する必要があります。|
 > |**名前**:<br />InvalidMobileOfflineFiltersFetchXml<br />**16 進数**:<br />80071113<br />**数値**:<br />-2147020525|XML 形式が一致しません。 XML の正確さを確認します。|
 > |**名前**:<br />InvalidMultipleMapping<br />**16 進数**:<br />80048498<br />**数値**:<br />-2147187560|ソース フィールドが、種類が検索/候補リストの 1 つ以上の Dynamics 365 フィールドにマップされています。|
 > |**名前**:<br />InvalidMultipleSiteMapReferenceSingleAppModule<br />**16 進数**:<br />80050111<br />**数値**:<br />-2147155695|アプリは複数のサイト マップを持つことができません。|
@@ -1668,11 +1736,13 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidNonInteractiveUserQuota<br />**16 進数**:<br />8004B050<br />**数値**:<br />-2147176368|非対話型ユーザーの最大値に到達しました/|
 > |**名前**:<br />InvalidNumberGroupFormat<br />**16 進数**:<br />80043700<br />**数値**:<br />-2147207424|NumberGroupFormat に無効な入力文字列があります。 入力文字列には、整数の配列を含める必要があります。 値の配列での各要素は 0 になる最後の要素を除いて、1 ～ 9 であるべきです。|
 > |**名前**:<br />InvalidNumberOfCardFormSections<br />**16 進数**:<br />80061505<br />**数値**:<br />-2147085051|カード フォームのセクション数は 4 つにする必要があります。 {0}が見つかりました。|
+> |**名前**:<br />InvalidNumberOfParametersForFileUpload<br />**16 進数**:<br />80090002<br />**数値**:<br />-2146893822|リクエスト URL で提供されたパラメーター [{0}] が無効です。|
 > |**名前**:<br />InvalidNumberOfPartitions<br />**16 進数**:<br />8004E200<br />**数値**:<br />-2147163648|現在使用中のパーティションに含まれている監査データ、または今後監査データを保存するために作成されたパーティションを削除することはできません。|
 > |**名前**:<br />InvalidNumberOfReferencePanelSections<br />**16 進数**:<br />80061504<br />**数値**:<br />-2147085052|MainInteractionCentric フォームに設定できる参照パネル セクションは 1 つだけです。 {0}が見つかりました。|
 > |**名前**:<br />InvalidNumberOfSectionsInTab<br />**16 進数**:<br />80060872<br />**数値**:<br />-2147088270|ダイアログのフォーム XML に複数のセクションを含めることはできません。|
 > |**名前**:<br />InvalidNumberOfTabsInDialog<br />**16 進数**:<br />80060871<br />**数値**:<br />-2147088271|ダイアログのフォーム XML に複数のタブを含めることはできません。|
 > |**名前**:<br />InvalidOAuthToken<br />**16 進数**:<br />80041d50<br />**数値**:<br />-2147214000|OAuth トークンは無効です。|
+> |**名前**:<br />InvalidObjectTypeCode<br />**16 進数**:<br />80072005<br />**数値**:<br />-2147016699|オブジェクトの種類コード {0} が見つかりません。 メタデータ : {1} です|
 > |**名前**:<br />InvalidObjectTypes<br />**16 進数**:<br />8004021f<br />**数値**:<br />-2147220961|オブジェクトの種類が無効です。|
 > |**名前**:<br />InvalidOccurrenceNumber<br />**16 進数**:<br />8004E125<br />**数値**:<br />-2147163867|系列の有効な終了日は、今日以前にすることはできません。 有効な回数を選択してください。|
 > |**名前**:<br />InvalidOfflineOperation<br />**16 進数**:<br />8004410e<br />**数値**:<br />-2147204850|オフラインの場合は、操作が無効です。|
@@ -1682,6 +1752,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidOperation<br />**16 進数**:<br />8004023b<br />**数値**:<br />-2147220933|無効な操作が実行されました。|
 > |**名前**:<br />InvalidOperationForClosedOrCancelledCampaignActivity<br />**16 進数**:<br />80040314<br />**数値**:<br />-2147220716|クローズした (取り消された) campaignactivity には項目を追加できません。|
 > |**名前**:<br />InvalidOperationForDynamicList<br />**16 進数**:<br />8004F701<br />**数値**:<br />-2147158271|この操作は、動的なマーケティング リストに対しては使用できません。|
+> |**名前**:<br />InvalidOperationWhenBusinessRuleIsActive<br />**16 進数**:<br />80060015<br />**数値**:<br />-2147090411|無効な操作 - このビジネス ルールを有効または無効にすることはできません|
 > |**名前**:<br />InvalidOperationWhenListIsNotActive<br />**16 進数**:<br />8004033a<br />**数値**:<br />-2147220678|リストがアクティブではありません。 この操作を実行できません。|
 > |**名前**:<br />InvalidOperationWhenListLocked<br />**16 進数**:<br />80040302<br />**数値**:<br />-2147220734|リストはロックされています。 この操作を実行できません。|
 > |**名前**:<br />InvalidOperationWhenPartyIsNotActive<br />**16 進数**:<br />8004033b<br />**数値**:<br />-2147220677|パーティがアクティブではありません。 この操作を実行できません。|
@@ -1703,7 +1774,10 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidOwnerID<br />**16 進数**:<br />80040229<br />**数値**:<br />-2147220951|所有者 ID が無効であるか、見つかりません。|
 > |**名前**:<br />InvalidOwnershipTypeMask<br />**16 進数**:<br />8004700d<br />**数値**:<br />-2147192819|指定された所有権の種類マスクはこの操作では無効です|
 > |**名前**:<br />InvalidPageResponse<br />**16 進数**:<br />8004E00D<br />**数値**:<br />-2147164147|無効なページ応答が生成されました。|
+> |**名前**:<br />InvalidParameterForFileOperation<br />**16 進数**:<br />80090003<br />**数値**:<br />-2146893821|リクエスト URL で提供されたパラメーター [{0}] が無効です。|
 > |**名前**:<br />InvalidParent<br />**16 進数**:<br />80040205<br />**数値**:<br />-2147220987|上位オブジェクトが無効であるか、見つかりません。|
+> |**名前**:<br />InvalidParentChildCascadeBehavior<br />**16 進数**:<br />8007200D<br />**数値**:<br />-2147016691|親子関係 {0} には親のカスケード動作が必要です。|
+> |**名前**:<br />InvalidParentChildRelationshipUpdate<br />**16 進数**:<br />8007200B<br />**数値**:<br />-2147016693|ParentChild タイプの関係を更新することはできません。|
 > |**名前**:<br />InvalidParentId<br />**16 進数**:<br />80040206<br />**数値**:<br />-2147220986|親 ID が無効であるか、見つかりません。|
 > |**名前**:<br />InvalidPartnerSolutionCustomizationProvider<br />**16 進数**:<br />8004A109<br />**数値**:<br />-2147180279|無効なパートナー ソリューション カスタマイズ プロバイダーの種類|
 > |**名前**:<br />InvalidPartyMapping<br />**16 進数**:<br />80043515<br />**数値**:<br />-2147207915|無効なパーティ マッピングです。|
@@ -1713,7 +1787,9 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidPluginStrongNameRequired<br />**16 進数**:<br />80081114<br />**数値**:<br />-2146954988|プラグイン アセンブリは厳密な名前で署名されていません。|
 > |**名前**:<br />InvalidPluginTypeImplementation<br />**16 進数**:<br />8004418c<br />**数値**:<br />-2147204724|プラグインの種類は、以下のクラスからひとつだけ実行する必要があります: Microsoft.Xrm.Sdk.IPlugin、Microsoft.Crm.Sdk.IPlugin、System.Activities.Activity、System.Workflow.ComponentModel.Activity。|
 > |**名前**:<br />InvalidPointer<br />**16 進数**:<br />80040218<br />**数値**:<br />-2147220968|オブジェクトは破棄されます。|
-> |**名前**:<br />InvalidPrecisionForControl <br />**16 進数**:<br />8006087D<br />**数値**:<br />-2147088259|コントロール {0} に無効な Precision パラメーターが指定されています。Precision は {1} ～ {2} の間で設定する必要があります。|
+> |**名前**:<br />InvalidPostponeUntilTimeForModernFlowExecute<br />**16 進数**:<br />80060478<br />**数値**:<br />-2147089288|モダン フロー '{0}' を実行できません。'{1}' はサポートされている DateTimeOffset 形式ではありません。|
+> |**名前**:<br />InvalidPrecisionForControl<br />**16 進数**:<br />8006087D<br />**数値**:<br />-2147088259|コントロール {0} に無効な Precision パラメーターが指定されています。Precision は {1} ～ {2} の間で設定する必要があります。|
+> |**名前**:<br />InvalidPrefixInConnectorName<br />**16 進数**:<br />80072605<br />**数値**:<br />-2147015163|コネクタ名は、長さが 2〜8 文字の英数字の接頭辞で始まり、その後に '_' と英数字名が続く必要があります。|
 > |**名前**:<br />InvalidPresentationDescription<br />**16 進数**:<br />8004E002<br />**数値**:<br />-2147164158|プレゼンテーションの説明が無効です。|
 > |**名前**:<br />InvalidPreviewModeOperation<br />**16 進数**:<br />8005f219<br />**数値**:<br />-2147093991|この操作はプレビュー モードでは実行できません。|
 > |**名前**:<br />InvalidPriceLevelCurrencyForPricingMethod<br />**16 進数**:<br />80048cf9<br />**数値**:<br />-2147185415|価格表の通貨は、価格設定方法の割合に対する製品の通貨に一致する必要があります。|
@@ -1742,6 +1818,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidRecurrencePattern<br />**16 進数**:<br />8004E100<br />**数値**:<br />-2147163904|定期的なアイテムのパターンが無効です。|
 > |**名前**:<br />InvalidRecurrenceRule<br />**16 進数**:<br />80040246<br />**数値**:<br />-2147220922|RecurrencePatternFactory でのエラー。|
 > |**名前**:<br />InvalidRecurrenceRuleForBulkDeleteAndDuplicateDetection<br />**16 進数**:<br />8004D2A0<br />**数値**:<br />-2147167584|一括削除および重複データ検出の実行頻度は、日ごとに指定する必要があります。|
+> |**名前**:<br />InvalidReferencesFound<br />**16 進数**:<br />80072032<br />**数値**:<br />-2147016654|無効な参照が見つかりました : {0}|
 > |**名前**:<br />InvalidRegardingObjectTypeCode<br />**16 進数**:<br />80040319<br />**数値**:<br />-2147220711|関連オブジェクトの種類コードは、一括操作に対して無効です。|
 > |**名前**:<br />InvalidRegistryKey<br />**16 進数**:<br />8004024c<br />**数値**:<br />-2147220916|指定されたレジストリ キーは無効です。|
 > |**名前**:<br />InvalidRelationshipDescription<br />**16 進数**:<br />80047003<br />**数値**:<br />-2147192829|指定された関連付けは作成できません|
@@ -1758,6 +1835,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidRequestParameters<br />**16 進数**:<br />8006110E<br />**数値**:<br />-2147086066|要求パラメーターはサーバー外部パーティ要求に対して有効ではありません。|
 > |**名前**:<br />InvalidResourceType<br />**16 進数**:<br />8004B029<br />**数値**:<br />-2147176407|要求されたアクションは、リソースの種類 {0}では無効です。|
 > |**名前**:<br />InvalidRestore<br />**16 進数**:<br />80040258<br />**数値**:<br />-2147220904|RestoreCaller は SwitchToSystemUser の後に呼び出す必要があります。|
+> |**名前**:<br />InvalidRoboticProcessAutomationFlowProcessClientData<br />**16 進数**:<br />80060473<br />**数値**:<br />-2147089293|Clientdata の形式が無効です。 詳細: "{0}"。|
 > |**名前**:<br />InvalidRole<br />**16 進数**:<br />8004B012<br />**数値**:<br />-2147176430|このユーザーにロールを割り当てていません|
 > |**名前**:<br />InvalidRoleOccurrencesForOneToManyRelationship<br />**16 進数**:<br />8006089A<br />**数値**:<br />-2147088230|1 対多の関係に対し、2 つ以上のエンティティ関係ロールを関連付けすることはできません {0}。|
 > |**名前**:<br />InvalidRoleTypeForOneToManyRelationship<br />**16 進数**:<br />80060899<br />**数値**:<br />-2147088231|この顧客間関係ロールの種類は、一対多関連付け {0} に対して有効ではありません。|
@@ -1777,8 +1855,10 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidSingletonResults<br />**16 進数**:<br />8004024f<br />**数値**:<br />-2147220913|CRM 内部例外: 単一の取得クエリは、1 つ以上のレコードを返す必要がありません。|
 > |**名前**:<br />InvalidSiteRelativeUrlFormat<br />**16 進数**:<br />80048053<br />**数値**:<br />-2147188653|相対 URL に無効な文字が含まれています。 別の名前を使用してください。 有効な相対 URL 名には、末尾に .aspx、.ashx、.asmx、.svc を使用したり、先頭または末尾にドットやスラッシュを使用したりできません。また、連続するドットやスラッシュ、~ " # % & * : < > ? の各文字も使用できません。 \ { | }。|
 > |**名前**:<br />InvalidSolutionAwarenessDeclaration<br />**16 進数**:<br />80072000<br />**数値**:<br />-2147016704|更新操作でエンティティをソリューション対応として宣言できません。 エンティティ: {0}|
+> |**名前**:<br />InvalidSolutionComponentKey<br />**16 進数**:<br />8007200E<br />**数値**:<br />-2147016690|キー {1} およびエンティティ {2} からの属性 {0} は、エクスポートキーとしてエクスポートできる必要があります。|
 > |**名前**:<br />InvalidSolutionConfigurationPage<br />**16 進数**:<br />8004701B<br />**数値**:<br />-2147192805|このソリューションに対する指定された構成ページは、無効です。|
-> |**名前**:<br />InvalidSolutionUniqueName<br />**16 進数**:<br />8004F002<br />**数値**:<br />-2147160062|ソリューションの一意の名前として指定された文字列に、無効な文字が含まれています。 使用できる文字は、\[A-Z\]、\[a-z\]、\[0-9\]、および \_ のみです。 最初の文字には、\[A-Z\]、\[a-z\]、または \_ のみを使用できます。|
+> |**名前**:<br />InvalidSolutionDependencies<br />**16 進数**:<br />80072006<br />**数値**:<br />-2147016698|このソリューションに存在するすべてのコンポーネントには依存関係があります。 このソリューションのアンインストールは実行できないため、これは許可されません。|
+> |**名前**:<br />InvalidSolutionUniqueName<br />**16 進数**:<br />8004F002<br />**数値**:<br />-2147160062|ソリューションの一意の名前として指定された文字列に、無効な文字が含まれています。 使用できる文字は、A-Z、a-z、0-9、および _ のみです。 最初の文字には、A-Z、a-z、または _ のみを使用できます。|
 > |**名前**:<br />InvalidSolutionVersion<br />**16 進数**:<br />8004F01E<br />**数値**:<br />-2147160034|無効なソリューション バージョンが指定されました。|
 > |**名前**:<br />InvalidSourceAttributeType<br />**16 進数**:<br />80044808<br />**数値**:<br />-2147203064|ソース属性の種類が指定された金額のデータの種類と一致しません。|
 > |**名前**:<br />InvalidSourceEntityAttribute<br />**16 進数**:<br />80044806<br />**数値**:<br />-2147203066|属性は {0} エンティティ {1} の属性ではありません。|
@@ -1797,6 +1877,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidSubmitFromUnapprovedArticle<br />**16 進数**:<br />80048dff<br />**数値**:<br />-2147185153|未承認の状態にある記事を送信しようとしています。 下書き状態にある記事のみ送信できます。|
 > |**名前**:<br />InvalidSubstituteProduct<br />**16 進数**:<br />80043aff<br />**数値**:<br />-2147206401|製品に製品自体とのリレーションシップを持たせることはできません。|
 > |**名前**:<br />InvalidSyncDirectionValueForUpdate<br />**16 進数**:<br />80060742<br />**数値**:<br />-2147088574|1 つ以上の属性マッピングについて許可された同期方向に基づいて、同期方向は無効です。|
+> |**名前**:<br />InvalidSyncToken<br />**16 進数**:<br />80072515<br />**数値**:<br />-2147015403|無効な同期トークン|
 > |**名前**:<br />InvalidTargetEntity<br />**16 進数**:<br />80040369<br />**数値**:<br />-2147220631|指定したターゲット レコードの種類が存在しません。|
 > |**名前**:<br />InvalidTargetEntityTypeForControl<br />**16 進数**:<br />80060878<br />**数値**:<br />-2147088264|コントロール {0} に対象エンティティの種類が指定されていません。[対象エンティティ] は必須フィールドです。|
 > |**名前**:<br />InvalidTargetFrameworkVersion<br />**16 進数**:<br />8004420b<br />**数値**:<br />-2147204597|プラグイン アセンブリは、サポートされていないバージョンの .NET Framework を対象としています。|
@@ -1808,6 +1889,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />InvalidThemeDeleteOperation<br />**16 進数**:<br />800608D7<br />**数値**:<br />-2147088169|システム テーマまたは既定のテーマを削除することはできません。|
 > |**名前**:<br />InvalidThemeId<br />**16 進数**:<br />800608D4<br />**数値**:<br />-2147088172|テーマ ID が無効です。|
 > |**名前**:<br />InvalidTimeZoneCode<br />**16 進数**:<br />800608F7<br />**数値**:<br />-2147088137|指定されたタイム ゾーン コード {0} が認識されません。 有効なタイム ゾーンコード値を指定してください。|
+> |**名前**:<br />InvalidToDeleteFileAttachmentBulkDelete<br />**16 進数**:<br />8009000A<br />**数値**:<br />-2146893814|ファイル添付の一括削除ジョブは削除できません。|
 > |**名前**:<br />InvalidToken<br />**16 進数**:<br />8004B061<br />**数値**:<br />-2147176351|このトークンは無効です。|
 > |**名前**:<br />InvalidTotalDiscount<br />**16 進数**:<br />800404f4<br />**数値**:<br />-2147220236|合計割引が無効です|
 > |**名前**:<br />InvalidTotalPrice<br />**16 進数**:<br />800404f5<br />**数値**:<br />-2147220235|合計価格が無効です|
@@ -1886,12 +1968,24 @@ ms.locfileid: "2861276"
 > |**名前**:<br />IsNotLiveToSendInvitation<br />**16 進数**:<br />8004B009<br />**数値**:<br />-2147176439|この機能はサポートされていません。Online ソリューションでのみ使用可能です。|
 > |**名前**:<br />IsvAborted<br />**16 進数**:<br />80040265<br />**数値**:<br />-2147220891|ISV コードが操作を中止しました。|
 > |**名前**:<br />IsvExtensionsPrivilegeNotPresent<br />**16 進数**:<br />80048029<br />**数値**:<br />-2147188695|ISV.Config をインポートするには、ISV 拡張の特権が含まれるセキュリティ ロールに関連付けられたユーザー アカウントを使用する必要があります。|
+> |**名前**:<br />IsvTransactionCount<br />**16 進数**:<br />8009000C<br />**数値**:<br />-2146893812|ISV コードは、開いているトランザクションの数を減らしました。 ユーザー設定プラグインは、OrganizationService の呼び出しからの例外をキャッチして処理を続行しないでください。|
 > |**名前**:<br />IsvUnExpected<br />**16 進数**:<br />80040224<br />**数値**:<br />-2147220956|ISV コードで予期しないエラーが発生しました。|
 > |**名前**:<br />JobNameIsEmptyOrNull<br />**16 進数**:<br />80048457<br />**数値**:<br />-2147187625|ジョブ名は、null または空白にすることはできません。|
 > |**名前**:<br />KBInvalidCreateAssociation<br />**16 進数**:<br />80060861<br />**数値**:<br />-2147088287|このサポート情報記事は既に {0} にリンクされています。|
 > |**名前**:<br />KnowledgeSearchActiveModelsAlreadyExist<br />**16 進数**:<br />80061680<br />**数値**:<br />-2147084672|ソース エンティティ {0} にはアクティブな構成が既に存在します。 ソース エンティティごとに許可されるアクティブな構成は 1 つだけです。|
 > |**名前**:<br />LabelIdDoesNotMatchStepId<br />**16 進数**:<br />80060419<br />**数値**:<br />-2147089383|ラベル ID {0} はステップ ID {1}と一致しません。|
 > |**名前**:<br />LanguageProvisioningSrsDataConnectorNotInstalled<br />**16 進数**:<br />8004F710<br />**数値**:<br />-2147158256|この組織に対して言語を準備するためには、Microsoft Dynamics 365 Reporting Extensions をインストールする必要があります。|
+> |**名前**:<br />LayerDesiredOrderFCBIsOff<br />**16 進数**:<br />8004F057<br />**数値**:<br />-2147159977|インポートメッセージには LayerDesiredOrder 句がありますが、FCB は有効ではありません。 誤った階層を防ぐため、プロセスは終了します。|
+> |**名前**:<br />LayerDesiredOrderHintDiffFormOnBase<br />**16 進数**:<br />8004F055<br />**数値**:<br />-2147159979|LayerDesiredOrder 句には、フォーム [{0}] がベースになりますが、着信ソリューションのフォームは差分です。 これは端末障害です。再試行しても役に立ちません。|
+> |**名前**:<br />LayerDesiredOrderHintTypeNotAvailable<br />**16 進数**:<br />8004F054<br />**数値**:<br />-2147159980|この LayerDesiredOrder 句には、使用できないタイプ [{0}] が含まれています。 これは端末障害です。再試行しても役に立ちません。|
+> |**名前**:<br />LayerDesiredOrderInvalidLayerState<br />**16 進数**:<br />8004F051<br />**数値**:<br />-2147159983|LayerDesiredOrder 句でソリューションに一致しましたが、コンポーネント [{0}]、ID [{1}] のレイヤーの破損により、それを尊重することはできません。 これは端末障害です。再試行しても役に立ちません。 カスタマー サポートに電話をしてください。 レイヤーの状態は [{2}] です。|
+> |**名前**:<br />LayerDesiredOrderInvalidXML<br />**16 進数**:<br />8004F049<br />**数値**:<br />-2147159991|LayerDesiredOrder 句に無効な XML スキーマが含まれています。|
+> |**名前**:<br />LayerDesiredOrderInvalidXMLDetail<br />**16 進数**:<br />8004F050<br />**数値**:<br />-2147159984|LayerDesiredOrder 句に無効な XML スキーマが含まれています。 プロパティ [{0}] を確認してください。|
+> |**名前**:<br />LayerDesiredOrderNotAllowedOnPatch<br />**16 進数**:<br />8004F052<br />**数値**:<br />-2147159982|パッチをインポートする場合、LayerDesiredOrder 句は使用できません。 句を削除して、操作を再試行してください。|
+> |**名前**:<br />LayerDesiredOrderNotSamePublisher<br />**16 進数**:<br />8004F048<br />**数値**:<br />-2147159992|ソリューション [{0}] は、LayerDesiredOrder 句で使用されましたが、その公開元 [{1}] は、インストールされているソリューションの発行者と一致しません : [{2}]。 これはサポートされていません。|
+> |**名前**:<br />LayerDesiredOrderPendingUpgrade<br />**16 進数**:<br />8004F047<br />**数値**:<br />-2147159993|ソリューション [{0}] は、LayerDesiredOrder 句で使用されましたが、これには保留中のアップグレードがあります。 アップグレードを完了して、操作を再試行してください。|
+> |**名前**:<br />LayerDesiredOrderPublisherNotAllowed<br />**16 進数**:<br />8004F056<br />**数値**:<br />-2147159978|公開元 [{0}] は、LayerDesiredOrder 句を使用することは許可されていません。|
+> |**名前**:<br />LayerDesiredOrderRestrictedSolution<br />**16 進数**:<br />8004F058<br />**数値**:<br />-2147159976|句の LayerDesiredOrder は、[{0}] では使用できません。 これは端末障害です。再試行しても役に立ちません。|
 > |**名前**:<br />LeadAlreadyInClosedState<br />**16 進数**:<br />80040519<br />**数値**:<br />-2147220199|リードは既にクローズしています。|
 > |**名前**:<br />LeadAlreadyInOpenState<br />**16 進数**:<br />80040518<br />**数値**:<br />-2147220200|潜在顧客は、既にオープン状態にあります。|
 > |**名前**:<br />LegacyXlsxFileNotSupported<br />**16 進数**:<br />800608CF<br />**数値**:<br />-2147088177|レガシ .xlsx ファイルは Excel テンプレートに使用できません。|
@@ -1921,6 +2015,13 @@ ms.locfileid: "2861276"
 > |**名前**:<br />LowerVersionUpgrade<br />**16 進数**:<br />80048541<br />**数値**:<br />-2147187391|インポート ソリューションは、更新している既存のソリューションよりも新しいバージョンである必要があります。|
 > |**名前**:<br />LowQuantityGreaterThanHighQuantity<br />**16 進数**:<br />80043b01<br />**数値**:<br />-2147206399|下限数量は上限数量未満である必要があります。|
 > |**名前**:<br />LowQuantityLessThanZero<br />**16 進数**:<br />80043b00<br />**数値**:<br />-2147206400|下限数量は 0 より大きい必要があります。|
+> |**名前**:<br />MailApp_AppModuleDashboardFormInactive<br />**16 進数**:<br />80061227<br />**数値**:<br />-2147085785|Outlook ダッシュボード フォームのアプリは非アクティブです。|
+> |**名前**:<br />MailApp_AppModuleDashboardFormMissing<br />**16 進数**:<br />80061223<br />**数値**:<br />-2147085789|Outlook ダッシュボード フォームのアプリがありません。|
+> |**名前**:<br />MailApp_AppModuleDashboardFormRoleNotAssigned<br />**16 進数**:<br />80061228<br />**数値**:<br />-2147085784|ユーザーは Outlook ダッシュボード用アプリにアクセスできません。|
+> |**名前**:<br />MailApp_AppModulePermission<br />**16 進数**:<br />80070004<br />**数値**:<br />-2147024892|現在のユーザー ロールは、Outlook 用アプリにアクセスするために必要なアクセス許可がありません。|
+> |**名前**:<br />MailApp_AppModuleSitemapDashboardMissing<br />**16 進数**:<br />80061224<br />**数値**:<br />-2147085788|Outlook AppModule のアプリがサイトマップにありません|
+> |**名前**:<br />MailApp_AppModuleSitemapDashboardNotDefault<br />**16 進数**:<br />80061225<br />**数値**:<br />-2147085787|Outlook ダッシュボード用のアプリは、サイトマップで規定として設定されていません。|
+> |**名前**:<br />MailApp_AppModuleSitemapMissing<br />**16 進数**:<br />80061226<br />**数値**:<br />-2147085786|Outlook AppModuleサイトマップのアプリがありません|
 > |**名前**:<br />MailApp_AppointmentFeatureNotEnabled<br />**16 進数**:<br />80061218<br />**数値**:<br />-2147085800|アプリケーションへのアクセスは、この Microsoft Dynamics 365 組織の予定に対して有効になりませんでした。 システム管理者に問い合わせて、予定に対するアクセスを有効にしてください。|
 > |**名前**:<br />MailApp_DifferentSecurityZoneError<br />**16 進数**:<br />80061210<br />**数値**:<br />-2147085808|次の URL を信頼済みサイトに追加してみてください: {0} {1} {2}|
 > |**名前**:<br />MailApp_EmailAddressMismatch<br />**16 進数**:<br />80061211<br />**数値**:<br />-2147085807|認識できない電子メール アドレスから Outlook 用 CRM アプリにアクセスしようとしている可能性があります。 Dynamics CRM 用に使用している電子メールアドレスでサインアウトおよびサインインします。またはシステム管理者に、電子メール メールボックスの設定をこの電子メール アドレスを反映するよう更新してもらってください。|
@@ -1956,6 +2057,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />MaxActiveSLAKPIError<br />**16 進数**:<br />8004F898<br />**数値**:<br />-2147157864|この SLA をアクティブ化できません。組織でエンティティごとに許可されるアクティブな SLA KPI の最大数を超えています。|
 > |**名前**:<br />MaxChildCasesLimitExceeded<br />**16 進数**:<br />8003F454<br />**数値**:<br />-2147224492|親サポート案件は、許可される子サポート案件の最大数を超えることはできません。 詳細については、管理者に問い合わせてください。|
 > |**名前**:<br />MaxConditionsMobileOfflineFilters<br />**16 進数**:<br />80071114<br />**数値**:<br />-2147020524|エンティティごとに定義できる Mobile Offline 組織フィルター条件は 3 つのみです。|
+> |**名前**:<br />MaxIconSizeExceededForConnector<br />**16 進数**:<br />80072602<br />**数値**:<br />-2147015166|コネクタ アイコン ファイルが大きすぎます。サイズは 1 MB を超えることはできません。|
 > |**名前**:<br />MaximumControlsLimitExceeded<br />**16 進数**:<br />8004E301<br />**数値**:<br />-2147163391|ダッシュボード フォーム XML にはコントロール要素の許容最大数以上が含まれます: {0}。|
 > |**名前**:<br />MaximumCountForUpdateModeExceeded<br />**16 進数**:<br />8004F602<br />**数値**:<br />-2147158526|更新操作では、一度に 1 つのファイルのみインポートできます。|
 > |**名前**:<br />MaximumNumberHandlersExceeded<br />**16 進数**:<br />80048505<br />**数値**:<br />-2147187451|このソリューションによってフォーム イベント ハンドラーが追加されると、フォーム イベントのイベント ハンドラーの数が最大数を超えます。|
@@ -1988,7 +2090,9 @@ ms.locfileid: "2861276"
 > |**名前**:<br />MissingControlStep<br />**16 進数**:<br />80060385<br />**数値**:<br />-2147089531|必要なコントロールのステップがありません。|
 > |**名前**:<br />MissingCrmAuthenticationToken<br />**16 進数**:<br />80044300<br />**数値**:<br />-2147204352|CrmAuthenticationToken がありません。|
 > |**名前**:<br />MissingCrmAuthenticationTokenOrganizationName<br />**16 進数**:<br />80044308<br />**数値**:<br />-2147204344|組織名は CrmAuthenticationToken で指定してください。|
+> |**名前**:<br />MissingDependentConnectorsForModernFlow<br />**16 進数**:<br />80060474<br />**数値**:<br />-2147089292|現在のフローのカスタム コネクタがありません、予想される数 : {0} 名前付き : {1}、実際のカウント : {2}|
 > |**名前**:<br />MissingHierarchicalRelationshipForOperator<br />**16 進数**:<br />80047020<br />**数値**:<br />-2147192800|このクエリは階層演算子を使用していますが、{0} エンティティには階層関係がありません。|
+> |**名前**:<br />MissingKeyValue<br />**16 進数**:<br />80072034<br />**数値**:<br />-2147016652|エンティティ {0} は {1} 属性のキー値を含みません。|
 > |**名前**:<br />MissingOpportunityId<br />**16 進数**:<br />80043b15<br />**数値**:<br />-2147206379|営業案件 ID が見つからないか、無効です。|
 > |**名前**:<br />MissingOrganizationFriendlyName<br />**16 進数**:<br />8004B00A<br />**数値**:<br />-2147176438|組織のフレンドリ名なしで Dynamics 365 をインストールすることはできません。|
 > |**名前**:<br />MissingOrganizationUniqueName<br />**16 進数**:<br />8004B00B<br />**数値**:<br />-2147176437|組織の一意の名前なしで Dynamics 365 をインストールすることはできません。|
@@ -1998,13 +2102,16 @@ ms.locfileid: "2861276"
 > |**名前**:<br />MissingParameterToMethod<br />**16 進数**:<br />8004B021<br />**数値**:<br />-2147176415|パラメーター {0} が メソッド {1} に指定されていません|
 > |**名前**:<br />MissingParameterToStoredProcedure<br />**16 進数**:<br />8004C000<br />**数値**:<br />-2147172352|パラメーターがストアド プロシージャ  {0} に指定されていません。|
 > |**名前**:<br />MissingPriceLevelId<br />**16 進数**:<br />80043b12<br />**数値**:<br />-2147206382|価格レベル ID がありません。|
+> |**名前**:<br />MissingPrimaryKey<br />**16 進数**:<br />80072033<br />**数値**:<br />-2147016653|エンティティ {0} ぶが主キー {1} がありません。|
 > |**名前**:<br />MissingProductId<br />**16 進数**:<br />80043b11<br />**数値**:<br />-2147206383|製品 ID がありません。|
 > |**名前**:<br />MissingQuantity<br />**16 進数**:<br />80081012<br />**数値**:<br />-2146955246|数量がありません。|
 > |**名前**:<br />MissingQueryType<br />**16 進数**:<br />80040235<br />**数値**:<br />-2147220939|クエリの種類がありません。|
 > |**名前**:<br />MissingRecipient<br />**16 進数**:<br />8004350d<br />**数値**:<br />-2147207923|FAX を送信するには、受信者を指定する必要があります。|
+> |**名前**:<br />MissingRelationshipInSolution<br />**16 進数**:<br />80048548<br />**数値**:<br />-2147187384|エンティティ {1} の次の属性 {0} には、関連する関連付けがありません。|
 > |**名前**:<br />MissingRequiredAttributes<br />**16 進数**:<br />80061037<br />**数値**:<br />-2147086281|regardingobjectid、データ型、または名前属性が見つからないため、プロパティは作成または更新できませんでした。|
 > |**名前**:<br />MissingRequiredComponentAttributes<br />**16 進数**:<br />80072002<br />**数値**:<br />-2147016702|必須属性を Null にできません。 属性: {0}|
 > |**名前**:<br />MissingTeamName<br />**16 進数**:<br />80041d0b<br />**数値**:<br />-2147214069|チーム名が想定に反して不足しています。|
+> |**名前**:<br />MissingTransactionCurrencyId<br />**16 進数**:<br />80048546<br />**数値**:<br />-2147187386|金額フィールド (ID : {0}、名前 : {1}、値 : {2}、エンティティ : {3}）をフォーマットするには、TransactionCurrencyId を指定する必要があります。|
 > |**名前**:<br />MissingUomId<br />**16 進数**:<br />80043b0d<br />**数値**:<br />-2147206387|ユニット ID がありません。|
 > |**名前**:<br />MissingUomScheduleId<br />**16 進数**:<br />80043b0a<br />**数値**:<br />-2147206390|出荷単位スケジュール ID がありません。|
 > |**名前**:<br />MissingUserId<br />**16 進数**:<br />8004021b<br />**数値**:<br />-2147220965|ユーザー ID またはチーム ID がありません。|
@@ -2020,6 +2127,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />MobileOfflineProfileNameCanNotBeNullOrEmpty<br />**16 進数**:<br />800609A9<br />**数値**:<br />-2147087959|Mobile offline プロフィール名は null または空にできません。 このプロファイルの名前を入力します。|
 > |**名前**:<br />MobileOfflineRuleEnhancementFeatureNotAvailaible<br />**16 進数**:<br />80071117<br />**数値**:<br />-2147020521|この機能は組織に対して有効になっていません。 詳しい情報についてはシステム管理者にお問い合わせください。|
 > |**名前**:<br />MobileServiceError<br />**16 進数**:<br />8004B070<br />**数値**:<br />-2147176336|モバイル サービスと通信する際のエラー|
+> |**名前**:<br />ModernFlowMustBeMarkedAsOnDemandForExecuteWorkflow<br />**16 進数**:<br />80060479<br />**数値**:<br />-2147089287|オンデマンドとしてマークされていないため、モダンフロー '{0}' を実行できません。|
 > |**名前**:<br />ModernFlowProcessesNotEnabled<br />**16 進数**:<br />80060464<br />**数値**:<br />-2147089308|モダン フロー プロセスの作成が有効になっていません。|
 > |**名前**:<br />ModernFlowProcessesOnlyAvailableOnline<br />**16 進数**:<br />80060465<br />**数値**:<br />-2147089307|モダン フロー プロセスの作成はオンラインでのみ利用可能です。|
 > |**名前**:<br />MoneySizeExceeded<br />**16 進数**:<br />80040317<br />**数値**:<br />-2147220713|指定された値は、金額型のフィールドの最小/最大値を超えています。|
@@ -2030,12 +2138,16 @@ ms.locfileid: "2861276"
 > |**名前**:<br />MultilevelParentChildRelationshipNotAllowed<br />**16 進数**:<br />8003F453<br />**数値**:<br />-2147224493|子サポート案件を既存の子サポート案件に関連付けることはできません。|
 > |**名前**:<br />MultipleChartAreasFound<br />**16 進数**:<br />8004E008<br />**数値**:<br />-2147164152|複数のグラフ エリアはサポートされていません。|
 > |**名前**:<br />MultipleChildPicklist<br />**16 進数**:<br />80040250<br />**数値**:<br />-2147220912|CRM 内部例外: 複数の childAttribute を持つ候補リストはサポートされていません。|
+> |**名前**:<br />MultipleExportKeyNotSupported<br />**16 進数**:<br />800608A9<br />**数値**:<br />-2147088215|エンティティ {0} のエクスポートキーを作成できません。このエンティティにはすでにエクスポート キーが定義されています。|
 > |**名前**:<br />MultipleFilesFound<br />**16 進数**:<br />80048439<br />**数値**:<br />-2147187655|添付ファイルの名前が一意ではありません。|
 > |**名前**:<br />MultipleFormElementsFound<br />**16 進数**:<br />8004E304<br />**数値**:<br />-2147163388|ダッシュボード フォーム XML は、1 つのフォーム要素のみ含めることができます。|
+> |**名前**:<br />MultipleImportFilesFound<br />**16 進数**:<br />80072036<br />**数値**:<br />-2147016650|属性 {0} の複数のファイルがエンティティ {1} で見つかりました。|
+> |**名前**:<br />MultipleInstancesOnEntity<br />**16 進数**:<br />80060373<br />**数値**:<br />-2147089549|プロセス '{0}' の複数のインスタンスが '{1}':'{2}' に存在します。 ビジネス プロセス フロー API を使用して、プロセス関連のアクションを実行します。|
 > |**名前**:<br />MultipleLabelsInUserDashboard<br />**16 進数**:<br />8004E30D<br />**数値**:<br />-2147163379|ユーザー ダッシュボードでは、フォーム要素に最大 1 つのラベルを含めることができます。|
 > |**名前**:<br />MultipleMeasureCollectionsFound<br />**16 進数**:<br />8004E01C<br />**数値**:<br />-2147164132|複数のメジャー コレクションはサブカテゴリを含むグラフ、つまり比較グラフはサポートされません。|
 > |**名前**:<br />MultipleMeasuresFound<br />**16 進数**:<br />8004E007<br />**数値**:<br />-2147164153|複数のメジャーはサブカテゴリを含むグラフ、つまり比較グラフはサポートされません。|
 > |**名前**:<br />MultipleOrganizationsNotAllowed<br />**16 進数**:<br />80041d35<br />**数値**:<br />-2147214027|1 つの組織、および 1 つのルート部署のみ使用できます。|
+> |**名前**:<br />MultipleParentEntitiesFoundByEntity<br />**16 進数**:<br />8006089E<br />**数値**:<br />-2147088226|{0} に複数の親が存在します。1 つのエンティティは、1 つの親エンティティのみを持つことができます。|
 > |**名前**:<br />MultipleParentReportsFound<br />**16 進数**:<br />80040485<br />**数値**:<br />-2147220347|複数のレポート リンクが見つかりました。 各レポートは、1 つの親のみ持つことができます。|
 > |**名前**:<br />MultipleParentsNotSupported<br />**16 進数**:<br />80047007<br />**数値**:<br />-2147192825|エンティティの上位関係は 1 つのみです|
 > |**名前**:<br />MultiplePartnerSecurityRoleWithSameInformation<br />**16 進数**:<br />8004A10a<br />**数値**:<br />-2147180278|複数のセキュリティ ロールがパートナーのユーザに対して見つかりました。|
@@ -2050,16 +2162,20 @@ ms.locfileid: "2861276"
 > |**名前**:<br />MustContainAtLeastACharInMention<br />**16 進数**:<br />8004F6A4<br />**数値**:<br />-2147158364|表示名には空白以外の文字が 1 つ以上含まれている必要があります。|
 > |**名前**:<br />NavigationPropertyAlreadyExists<br />**16 進数**:<br />80072551<br />**数値**:<br />-2147015343|NavigationPropertyName {0} がエンティティ内で一意ではありません|
 > |**名前**:<br />NavigationPropertyNameCannotBeTheSameOnBothSidesOfRel<br />**16 進数**:<br />80072550<br />**数値**:<br />-2147015344|自己参照の関連付けの両側でナビゲーション プロパティの名前を同じにできません。 SchemaName - {0}|
+> |**名前**:<br />NavigationPropertyNameNodeMissing<br />**16 進数**:<br />80048452<br />**数値**:<br />-2147187630|エンティティ関係 {0} の NavigationPropertyName ノードがありません。|
+> |**名前**:<br />NavigationPropertyNameValueMissing<br />**16 進数**:<br />80048836<br />**数値**:<br />-2147186634|エンティティ関係 {0} の NavigationPropertyName 値がありません。|
 > |**名前**:<br />NavPaneNotCustomizable<br />**16 進数**:<br />80044329<br />**数値**:<br />-2147204311|この関係のナビゲーション ウィンドウ プロパティはカスタマイズ可能ではありません|
 > |**名前**:<br />NavPaneOrderValueNotAllowed<br />**16 進数**:<br />80044327<br />**数値**:<br />-2147204313|提供されたナビゲーション ウィンドウの順序値は許可されていません|
+> |**名前**:<br />NegativeAutoNumberSeed<br />**16 進数**:<br />80060886<br />**数値**:<br />-2147088250|値が 0 より小さいため、{2} のエンティティ {1} の属性 {0} に自動付番シードを設定できません。|
 > |**名前**:<br />NetworkIssue<br />**16 進数**:<br />8005F104<br />**数値**:<br />-2147094268|不明なネットワークの問題、ゲートウェイの問題またはサーバーの問題により、要求が失敗しました。|
 > |**名前**:<br />NewStatusHasInvalidState<br />**16 進数**:<br />80044322<br />**数値**:<br />-2147204318|この新しい状態オプションの状態値はこれ以上ありません。|
 > |**名前**:<br />NewStatusRequiresAssociatedState<br />**16 進数**:<br />80044321<br />**数値**:<br />-2147204319|新しい状態オプションには、関連した状態値が必要です。|
 > |**名前**:<br />NoActiveLocation<br />**16 進数**:<br />80060900<br />**数値**:<br />-2147088128|アクティブな場所が見つかりません。|
+> |**名前**:<br />NoAddressFoundForRecipient<br />**16 進数**:<br />80040b0a<br />**数値**:<br />-2147218678|ID が '{1}' で種類が '{0}' の受信者の電子メールアドレスが見つかりませんでした|
 > |**名前**:<br />NoAppModuleComponentReferred<br />**16 進数**:<br />8005011B<br />**数値**:<br />-2147155685|コンポーネントが参照されていません|
 > |**名前**:<br />NoAttributesForEntityCreate<br />**16 進数**:<br />80047014<br />**数値**:<br />-2147192812|エンティティ アクションに属性はありません。|
 > |**名前**:<br />NoConditionRuleCreationNotAllowedForSetValueShowError<br />**16 進数**:<br />80060013<br />**数値**:<br />-2147090413|"エラー メッセージの表示" および "値の設定" の操作は、条件が設定されていない業務ルールでは使用できません。|
-> |**名前**:<br />NoConnectionRoleAndObjectTypeCodePairPresent<br />**16 進数**:<br />8004F222<br />**数値**:<br />-2147159518|ConnectionRoleId と AssociatedObjectTypeCode のペアが存在しません。 接続中のエンティティ: ({0},{1}); 接続中のエンティティ レコード: ({2},{3}); Record1ConnectionRoleName: {4}、Record2ConnectionRoleName: {5}。 ConnectionRoleIds : {6}|
+> |**名前**:<br />NoConnectionRoleAndObjectTypeCodePairPresent<br />**16 進数**:<br />8004F222<br />**数値**:<br />-2147159518|ConnectionRoleId と AssociatedObjectTypeCode のペアが存在しません。 接続中のエンティティ: ({0},{1}); 接続中のエンティティ レコード: ({2},{3}); Record1ConnectionRoleName: {4}、Record2ConnectionRoleName: {5}。 ConnectionRoleIds: {6};|
 > |**名前**:<br />NoConversionRule<br />**16 進数**:<br />800608F5<br />**数値**:<br />-2147088139|ツールを実行するには ConversionRule が必要です。|
 > |**名前**:<br />NoDataFilterSelectedForOtherDataFilter<br />**16 進数**:<br />80071138<br />**数値**:<br />-2147020488|プロファイル '{1}' のエンティティ '{0}' にデータ ダウンロード フィルター 'その他のデータ フィルター' が含まれていますが、データ フィルター オプションが選択されていません。 エンティティはデータ フィルター オプションを指定する必要があります。|
 > |**名前**:<br />NoDataForVisualization<br />**16 進数**:<br />8004E011<br />**数値**:<br />-2147164143|このビジュアル化を作成するためのデータがありません。|
@@ -2076,6 +2192,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />NoLicenseInConfigDB<br />**16 進数**:<br />8004D241<br />**数値**:<br />-2147167679|MSCRM_CONFIG データベースにライセンスが存在しません。|
 > |**名前**:<br />NoMinimumRequiredPrivilegesForTabletApp<br />**16 進数**:<br />8005F20F<br />**数値**:<br />-2147094001|このサーバーでアプリケーションを読み込むアクセス許可がありません。\n管理者に問い合わせて、アクセス許可を更新してください。|
 > |**名前**:<br />NoMoreCustomOptionValuesExist<br />**16 進数**:<br />8004431F<br />**数値**:<br />-2147204321|使用可能なすべてのカスタム オプション値が使用されました。|
+> |**名前**:<br />NonAutoNumberAttributeSpecified<br />**16 進数**:<br />80060884<br />**数値**:<br />-2147088252|エンティティ {1} の属性 {0} は自動付番属性ではありません。 属性とエンティティの入力が自動付番属性に対して正常にマップされていることを確認してください。|
 > |**名前**:<br />NoncompliantXml<br />**16 進数**:<br />80048425<br />**数値**:<br />-2147187675|入力 XML は、XML スキーマに準拠していません。|
 > |**名前**:<br />NonCrmUIInteractiveWorkflowNotSupported<br />**16 進数**:<br />80045044<br />**数値**:<br />-2147200956|Microsoft Dynamics 365 Web アプリケーションの外部で作成されているため、この対話型ワークフローを作成、更新、または公開できません。|
 > |**名前**:<br />NonCrmUIWorkflowsNotSupported<br />**16 進数**:<br />80045040<br />**数値**:<br />-2147200960|Microsoft Dynamics 365 Web アプリケーションの外部で作成されているため、このワークフローを作成、更新、または公開できません。 この組織では、この種類のワークフローは使用できません。|
@@ -2105,15 +2222,18 @@ ms.locfileid: "2861276"
 > |**名前**:<br />NotSupported<br />**16 進数**:<br />80040315<br />**数値**:<br />-2147220715|この操作はサポートされていません。|
 > |**名前**:<br />NotVerifiedAdmin<br />**16 進数**:<br />8005F106<br />**数値**:<br />-2147094266|このセットアップを完了するには、Yammer の企業アカウントが必要です。 Yammer 管理者アカウントを使用してサインインするか、または Yammer 管理者にサポートを依頼してください。|
 > |**名前**:<br />NoUserPrivilege<br />**16 進数**:<br />80154B50<br />**数値**:<br />-2146088112|十分なアクセス許可がありません。|
+> |**名前**:<br />NoValidModernFlowTriggerForExecute<br />**16 進数**:<br />80060476<br />**数値**:<br />-2147089290|モダンフロー '{0}' は ExecuteWorkflow には無効です。  いつでも Common Data Service エンティティが作成、更新、または削除される際トリガーするフローを選択してください。|
 > |**名前**:<br />NoWritePermission<br />**16 進数**:<br />80071023<br />**数値**:<br />-2147020765|ドキュメントをコピーするための書き込みアクセス許可がありません。|
 > |**名前**:<br />NoYammerNetworksFound<br />**16 進数**:<br />8005F108<br />**数値**:<br />-2147094264|Yammer ネットワークに対する権限がありません。 Yammer 管理者アカウントを使用して Yammer のセットアップを再認証、または Yammer 管理者にサポートを依頼してください。|
 > |**名前**:<br />NullArticleTemplateFormatXml<br />**16 進数**:<br />800404f8<br />**数値**:<br />-2147220232|記事テンプレート formatxml を NULL にすることはできません。|
 > |**名前**:<br />NullArticleTemplateStructureXml<br />**16 進数**:<br />800404f9<br />**数値**:<br />-2147220231|記事テンプレート structurexml を NULL にすることはできません。|
 > |**名前**:<br />NullArticleXml<br />**16 進数**:<br />800404f7<br />**数値**:<br />-2147220233|記事の xml を NULL にすることはできません|
+> |**名前**:<br />NullAutoNumberParameterSpecfied<br />**16 進数**:<br />80060887<br />**数値**:<br />-2147088249|自動付番属性またはエンティティ パラメータを null 値または空の文字列にすることはできません。|
 > |**名前**:<br />NullDashboardName<br />**16 進数**:<br />8004E305<br />**数値**:<br />-2147163387|ダッシュボードの名前を null にすることはできません。|
 > |**名前**:<br />NullKBArticleTemplateId<br />**16 進数**:<br />800404fa<br />**数値**:<br />-2147220230|kbarticletemplateid を NULL にすることはできません|
 > |**名前**:<br />NullOrEmptyAttributeInXaml<br />**16 進数**:<br />80060406<br />**数値**:<br />-2147089402|属性 - {1} の {0} を null または空にすることはできません|
 > |**名前**:<br />NumberFormatFailed<br />**16 進数**:<br />80040259<br />**数値**:<br />-2147220903|書式設定された数値を生成できませんでした。|
+> |**名前**:<br />O365RoleUnsupportedForEmailApproval<br />**16 進数**:<br />8009000B<br />**数値**:<br />-2146893813|メール アドレスは、Office 365 グローバル管理者または Exchange 管理者のみが承認できます。 詳細については、システム管理者に問い合わせてください。|
 > |**名前**:<br />OAuthTokenNotFound<br />**16 進数**:<br />8005F109<br />**数値**:<br />-2147094263|Yammer OAuth トークンが見つかりません。 関連機能にアクセスする前に、Yammer を構成してください。|
 > |**名前**:<br />ObjectAlreadyExists<br />**16 進数**:<br />8004E30A<br />**数値**:<br />-2147163382|ID {0} を持つオブジェクトは既に存在します。 IDを変更し、もう一度やり直してください。|
 > |**名前**:<br />ObjectDoesNotExist<br />**16 進数**:<br />80040217<br />**数値**:<br />-2147220969|指定されたオブジェクトは見つかりませんでした。|
@@ -2155,11 +2275,12 @@ ms.locfileid: "2861276"
 > |**名前**:<br />OpenDocumentErrorCodeGeneric<br />**16 進数**:<br />8005F20C<br />**数値**:<br />-2147094004|このアクションをやり直してください。 問題が解決しない場合は、ソリューションの {0} を確認するか、{#Brand_CRM} 管理者に問い合わせてください。 それでも解決しない場合には {1}に問い合わせてください。|
 > |**名前**:<br />OpenDocumentErrorCodeUnableToFindAnActivity<br />**16 進数**:<br />8005F20A<br />**数値**:<br />-2147094006|このアクションをやり直してください。 問題が解決しない場合は、ソリューションの {0} を確認するか、{#Brand_CRM} 管理者に問い合わせてください。 それでも解決しない場合には {1}に問い合わせてください。|
 > |**名前**:<br />OpenDocumentErrorCodeUnableToFindTheDataId<br />**16 進数**:<br />8005F20B<br />**数値**:<br />-2147094005|このアクションをやり直してください。 問題が解決しない場合は、ソリューションの {0} を確認するか、{#Brand_CRM} 管理者に問い合わせてください。 それでも解決しない場合には {1}に問い合わせてください。|
-> |**名前**:<br />OpenMailboxException<br />**16 進数**:<br />8005E216<br />**数値**:<br />-2147098090|Exchange 電子メール サーバーのメールボックスを開くときに例外が発生します。|
+> |**名前**:<br />OpenMailboxException<br />**16 進数**:<br />8005E216<br />**数値**:<br />-2147098090|Exchange メール サーバーのメールボックスを開くときに例外が発生しました。|
 > |**名前**:<br />OperationCanBeCalledOnlyOnce<br />**16 進数**:<br />80040334<br />**数値**:<br />-2147220684|指定した操作は一度しか実行できません。|
 > |**名前**:<br />OperationCanceled<br />**16 進数**:<br />80060912<br />**数値**:<br />-2147088110|更新はユーザーによって取り消されました。|
 > |**名前**:<br />OperationFailedTryAgain<br />**16 進数**:<br />80154B53<br />**数値**:<br />-2146088109|現時点では操作を実行できませんでした。 やり直してください。|
 > |**名前**:<br />OperationOrganizationNotFullyDisabled<br />**16 進数**:<br />8004D23a<br />**数値**:<br />-2147167686|{1} 操作は組織 {0} が完全に無効にされていないため失敗しました。  FORCE を使用して上書きする|
+> |**名前**:<br />OperationReservedForSolutionAwareEntities<br />**16 進数**:<br />80072008<br />**数値**:<br />-2147016696|この操作は、ソリューション対応エンティティ専用です。|
 > |**名前**:<br />OperatorCodeNotPresentError<br />**16 進数**:<br />80044241<br />**数値**:<br />-2147204543|condition xml 内に OperatorCode が存在する必要があります。|
 > |**名前**:<br />OperatorsInViewNotSupportedOffline<br />**16 進数**:<br />80071127<br />**数値**:<br />-2147020505|このビューの 1 つ以上のオペレーターはオフラインでサポートされていません。|
 > |**名前**:<br />OpportunityAlreadyInOpenState<br />**16 進数**:<br />8004051a<br />**数値**:<br />-2147220198|営業案件は、既にオープン状態にあります。|
@@ -2208,7 +2329,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />ParsingMetadataNotFound<br />**16 進数**:<br />80040367<br />**数値**:<br />-2147220633|ファイルの解析に必要なデータ (データ区切り文字、フィールド区切り文字、タイトル行など) が見つかりませんでした。|
 > |**名前**:<br />PartialExpansionSettingLoadError<br />**16 進数**:<br />8004E102<br />**数値**:<br />-2147163902|構成データベースから部分展開の設定を取得できませんでした。|
 > |**名前**:<br />PartialHolidayScheduleCreation<br />**16 進数**:<br />8004F873<br />**数値**:<br />-2147157901|部分的な休日スケジュールは作成できません。|
-> |**名前**:<br />ParticipatingEntityDoesNotAppearInTraversedPath<br />**16 進数**:<br />80060441<br />**数値**:<br />-2147089343|業務プロセス コントロールの表示エラー。 参加エンティティは渡ったパスの一部である必要がありますが、エンティティ '{0}' はパス '{1}' に表示されません。 システム管理者にお問い合わせください。|
+> |**名前**:<br />ParticipatingEntityDoesNotAppearInTraversedPath<br />**16 進数**:<br />80060441<br />**数値**:<br />-2147089343|エンティティ '{0}' のレコードが渡ったパス '{1}' に含まれていません。 システム管理者にお問い合わせください。|
 > |**名前**:<br />ParticipatingQueryEntityMismatch<br />**16 進数**:<br />80044909<br />**数値**:<br />-2147202807|関与クエリの entitytype は、fetchxml で指定されているエンティティと同じであるべきです。|
 > |**名前**:<br />PasswordRequiredForImpersonation<br />**16 進数**:<br />8005E24E<br />**数値**:<br />-2147098034|パスワードを入力して保存し直してください|
 > |**名前**:<br />PatchMissingBase<br />**16 進数**:<br />80048540<br />**数値**:<br />-2147187392|ソリューション ({1}) 用の修正プログラム ({0}) をインポートできません。このソリューションは存在しません。 操作が取り消されました。|
@@ -2227,6 +2348,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />PluginSecureStoreAdalAcquireToken<br />**16 進数**:<br />80091005<br />**数値**:<br />-2146889723|リソースに AcquireToken できません。|
 > |**名前**:<br />PluginSecureStoreKeyVaultClient<br />**16 進数**:<br />80091000<br />**数値**:<br />-2146889728|サンドボックス ワーカー プロセス下の KeyVaultClientProvider を初期化できません|
 > |**名前**:<br />PluginSecureStoreKeyVaultClientDecrypt<br />**16 進数**:<br />80091003<br />**数値**:<br />-2146889725|Key Vault を使用して暗号化解除できません|
+> |**名前**:<br />PluginSecureStoreKeyVaultClientDeleteSecret<br />**16 進数**:<br />80091010<br />**数値**:<br />-2146889712|Key Vault に DeleteSecret できません。|
 > |**名前**:<br />PluginSecureStoreKeyVaultClientEncrypt<br />**16 進数**:<br />80091004<br />**数値**:<br />-2146889724|Key Vault を使用して暗号化できません|
 > |**名前**:<br />PluginSecureStoreKeyVaultClientGetSecret<br />**16 進数**:<br />80091001<br />**数値**:<br />-2146889727|Key VaultからGetSecret できません。|
 > |**名前**:<br />PluginSecureStoreKeyVaultClientSetSecret<br />**16 進数**:<br />80091002<br />**数値**:<br />-2146889726|Key Vault に SetSecret できません。|
@@ -2247,6 +2369,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />PreviousOperationNotComplete<br />**16 進数**:<br />80048464<br />**数値**:<br />-2147187612|この操作が依存する操作は、正常に完了しませんでした。|
 > |**名前**:<br />PriceLevelNameExists<br />**16 進数**:<br />80043b0f<br />**数値**:<br />-2147206385|名前が既に存在します。|
 > |**名前**:<br />PriceLevelNoName<br />**16 進数**:<br />80043b0e<br />**数値**:<br />-2147206386|名前を null にすることはできません。|
+> |**名前**:<br />PriceListIsMandatory<br />**16 進数**:<br />80100010<br />**数値**:<br />-2146435056|エンティティの作成には PriceList が必須です。|
 > |**名前**:<br />PrimaryEntityInvalid<br />**16 進数**:<br />8004501E<br />**数値**:<br />-2147200994|無効な主エンティティです。|
 > |**名前**:<br />PrimaryEntityIsNull<br />**16 進数**:<br />80060401<br />**数値**:<br />-2147089407|業務プロセス フロー カテゴリを作成中に、主エンティティを NULL にすることはできません。|
 > |**名前**:<br />PrimaryNameAttributeNotFound<br />**16 進数**:<br />80044355<br />**数値**:<br />-2147204267|エンティティ: {0} の PrimaryName 属性が見つかりません|
@@ -2261,10 +2384,13 @@ ms.locfileid: "2861276"
 > |**名前**:<br />ProcessActionWithInvalidInputParam<br />**16 進数**:<br />80045057<br />**数値**:<br />-2147200937|プロセス アクションには、アクション ステップでサポートされない入力パラメーターのフィールドが含まれます。 参照先 {0} |
 > |**名前**:<br />ProcessActionWithInvalidOutputParam<br />**16 進数**:<br />80045056<br />**数値**:<br />-2147200938|プロセス アクションには、アクション ステップでサポートされない出力パラメーターのフィールドが含まれます。 参照先 {0}。|
 > |**名前**:<br />ProcessActionWorkflowNotEnabledForOnDemand<br />**16 進数**:<br />80060380<br />**数値**:<br />-2147089536|アクション ステップでオンデマンド実行を使用可能にするには、プロセス アクションまたはワークフローを有効にする必要があります。|
+> |**名前**:<br />ProcessControlDoesNotExistOnForm<br />**16 進数**:<br />80060372<br />**数値**:<br />-2147089550|フォームにプロセス コントロールが存在しません|
 > |**名前**:<br />ProcessEmptyBranches<br />**16 進数**:<br />80060399<br />**数値**:<br />-2147089511|このプロセスには空の分岐が含まれます。 これらの分岐を定義または削除し、もう一度やり直してください。|
+> |**名前**:<br />ProcessFileFailure<br />**16 進数**:<br />80072554<br />**数値**:<br />-2147015340|ファイルの処理中にエラーが発生しました。 理由: {0}|
 > |**名前**:<br />ProcessIdDoesNotMatchBusinessProcessDefinition<br />**16 進数**:<br />80060460<br />**数値**:<br />-2147089312|検証エラー: プロセス ID がビジネス プロセスの定義と一致しません。|
 > |**名前**:<br />ProcessIdIsEmpty<br />**16 進数**:<br />80060459<br />**数値**:<br />-2147089319|検証エラー: プロセス ID を空にできません。|
 > |**名前**:<br />ProcessImageFailure<br />**16 進数**:<br />80072553<br />**数値**:<br />-2147015341|画像の処理中にエラーが発生しました。 理由: {0}|
+> |**名前**:<br />ProcessInstanceNotFound<br />**16 進数**:<br />80060370<br />**数値**:<br />-2147089552|提供されるプロセス インスタンス {0} は、このエンティティ {1} の既存のインスタンスと一致しません。|
 > |**名前**:<br />ProcessNameContainsInvalidCharacters<br />**16 進数**:<br />80060398<br />**数値**:<br />-2147089512|ビジネス プロセス名に無効な文字が含まれています。|
 > |**名前**:<br />ProcessNameIsNullOrEmpty<br />**16 進数**:<br />80060418<br />**数値**:<br />-2147089384|業務プロセス フローの名前が NULL または空です。 |
 > |**名前**:<br />ProcessStageIdIsEmpty<br />**16 進数**:<br />80060461<br />**数値**:<br />-2147089311|検証エラー: 主ステージ ID を空にできません。|
@@ -2374,7 +2500,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />QueueMailboxUnexpectedDeliveryMethod<br />**16 進数**:<br />8005E210<br />**数値**:<br />-2147098096|キューに関連付けられているメールボックスの配信方法を、Outlook クライアントにすることはできません。|
 > |**名前**:<br />QuickCreateDisabledOnEntity<br />**16 進数**:<br />80060911<br />**数値**:<br />-2147088111|{0} エンティティに簡易作成フォームがないか、入れ子になっている簡易作成フォームの数が許可されている最大数を超えました。|
 > |**名前**:<br />QuickCreateInvalidEntityName<br />**16 進数**:<br />80060910<br />**数値**:<br />-2147088112|entityLogicalName が無効です。 この値は NULL または空白にすることはできず、組織のエンティティを表す必要があります。|
-> |**名前**:<br />QuickFindQueryRecordLimitExceeded<br />**16 進数**:<br />8004E024<br />**数値**:<br />-2147164124|QuickFindQueryRecordLimit が超過しています。 この操作を実行できません。|
+> |**名前**:<br />QuickFindQueryRecordLimitExceeded<br />**16 進数**:<br />8004E024<br />**数値**:<br />-2147164124|この検索のレコード数がクイック検索のレコード制限を超えています。 クエリを絞り込んで、やり直してください。|
 > |**名前**:<br />QuickFindSavedQueryAlreadyExists<br />**16 進数**:<br />8004853A<br />**数値**:<br />-2147187398|"1 つの簡易検索保存済みクエリのみが、エンティティで存在できます。 以下の objecttypecode を持つ簡易検索保存済みクエリが既に存在します。{0}"|
 > |**名前**:<br />QuickFormNotCustomizableThroughSdk<br />**16 進数**:<br />8004F659<br />**数値**:<br />-2147158439|SDK は、"クイック" 型のフォームの作成をサポートしていません。 このフォームの種類は、内部で使用するためにのみ確保されます。|
 > |**名前**:<br />QuoteAndSalesOrderCurrencyNotEqual<br />**16 進数**:<br />80048cee<br />**数値**:<br />-2147185426|レコードの通貨は、価格表の通貨に対応しません。|
@@ -2385,6 +2511,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />ReadOnlyUpdateValidationFailed<br />**16 進数**:<br />80061003<br />**数値**:<br />-2147086333|プロパティ インスタンスを読み取り専用プロパティに更新することはできません。|
 > |**名前**:<br />ReadOnlyUserNotSupported<br />**16 進数**:<br />80041d40<br />**数値**:<br />-2147214016|読み取り専用アクセス モードはサポートされていません|
 > |**名前**:<br />RecalculateNotSupportedOnNonRollupField<br />**16 進数**:<br />80060554<br />**数値**:<br />-2147089068|種類 {1} のフィールド {0} は [再計算] 操作をサポートしていません。 再計算の操作はロールアップ フィールドに対してのみ呼び出せます。|
+> |**名前**:<br />RecipientMarkedDoNotEmail<br />**16 進数**:<br />80040b09<br />**数値**:<br />-2147218679|ID が '{1}' で種類が '{0}' の受信者は、電子メール不可としてマークされています|
 > |**名前**:<br />RecommendationAzureConnectionCascadeActivateFailed<br />**16 進数**:<br />80061633<br />**数値**:<br />-2147084749|1 つまたは複数のレコメンデーション モデルはアクティブ化できませんでした。 Azure サービス接続とは別に既存の推奨モデルのアクティブ化を試してください。|
 > |**名前**:<br />RecommendationAzureConnectionFailed<br />**16 進数**:<br />80061631<br />**数値**:<br />-2147084751|Azure Recommendations サービスに接続できませんでした。 サービス URL と Azure アカウント キーが有効で、サービスのサブスクリプションがアクティブであることを確認してください。|
 > |**名前**:<br />RecommendationModelActivateConnectionMustBeActive<br />**16 進数**:<br />80061607<br />**数値**:<br />-2147084793|Azure Machine Learning レコメンデーション サービスの接続は、モデルのアクティブ化の前にアクティブ化する必要があります。 レコメンデーション サービスの接続のライセンス認証を行い、もう一度やり直してください。|
@@ -2429,6 +2556,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />RelatedEntityGenericError<br />**16 進数**:<br />8005F220<br />**数値**:<br />-2147093984|プロファイル関連付けの作成中に予期しないエラーが発生しました。 やり直してください。|
 > |**名前**:<br />RelatedRecordsFailure<br />**16 進数**:<br />80071013<br />**数値**:<br />-2147020781|関連レコードを取得できませんでした。|
 > |**名前**:<br />RelationshipGraphLimitExceeded<br />**16 進数**:<br />80071139<br />**数値**:<br />-2147020487|プロファイル '{0}'で定義されたエンティティに対して 1 つ以上のプロファイル項目の関連付けを指定しました。 関連付け数が {2} で、サポートされている制限の {3} を超えているエンティティ '{1}' を含むプロファイル項目の関連付けを確認してください。|
+> |**名前**:<br />RelationshipGraphLimitExceededForIntersectEntity<br />**16 進数**:<br />80071135<br />**数値**:<br />-2147020491|プロファイル '{0}' で定義され、交差エンティティ '{1}' に関連付けられたエンティティに対して 1 つ以上のプロファイル項目の関連付けを指定しました。 関連付け総数が {4} で、サポートされている制限の {5} を超えているエンティティ '{2}' と '{3}' を含むプロファイル項目の関連付けを確認してください。|
 > |**名前**:<br />RelationshipInsightsFeatureDisableError<br />**16 進数**:<br />80044292<br />**数値**:<br />-2147204462|リレーションシップ インサイト機能を無効にできません|
 > |**名前**:<br />RelationshipInsightsFeatureNotEnabledError<br />**16 進数**:<br />80044293<br />**数値**:<br />-2147204461|Relationship Insights 機能が有効になっていないか、RI パッケージがインストールされていません|
 > |**名前**:<br />RelationshipIntelligenceSDKInvocationError<br />**16 進数**:<br />80044276<br />**数値**:<br />-2147204490|リレーションシップ インサイト SDK を使用するには Dynamics 365 (online) が必要です。|
@@ -2438,7 +2566,9 @@ ms.locfileid: "2861276"
 > |**名前**:<br />RelationshipNotUpdatedForOfficeGraphError<br />**16 進数**:<br />80044236<br />**数値**:<br />-2147204554|いずれのエンティティでも officegraph が有効になっていないため、この関連付けを officegraph 向けに更新できません。|
 > |**名前**:<br />RelationshipRoleMismatch<br />**16 進数**:<br />80048467<br />**数値**:<br />-2147187609|顧客間関係ロール名 {0} は、{1} または {2}の予期したエンティティ名のいずれかに対応していません。|
 > |**名前**:<br />RelationshipRoleNodeNumberInvalid<br />**16 進数**:<br />80048469<br />**数値**:<br />-2147187607|多対多のエンティティ関係を作成する際には、2 つのエンティティ関係ロール ノードが必要です。|
+> |**名前**:<br />RelationshipSchemaNameConflictWithFieldNameOnReferencedEntity<br />**16 進数**:<br />80048835<br />**数値**:<br />-2147186635|RelationshipName {0}がエンティティ {1} (entityid = {2}) の属性名と競合しています。 関連付けには一意の名前を使用してください。|
 > |**名前**:<br />RelatioshipAlreadyExists<br />**16 進数**:<br />8005F221<br />**数値**:<br />-2147093983|エンティティの選択された関連付はプロファイルにすでに存在します。 |
+> |**名前**:<br />RemoveActiveCustomizationsNotSupported<br />**16 進数**:<br />8004F059<br />**数値**:<br />-2147159975|RemoveActiveCustomizations はタイプ {0} のコンポーネントではサポートされていません|
 > |**名前**:<br />ReportDoesNotExist<br />**16 進数**:<br />80040499<br />**数値**:<br />-2147220327|レポートが存在しません。 ReportId:{0}|
 > |**名前**:<br />ReportFileTooBig<br />**16 進数**:<br />80048297<br />**数値**:<br />-2147188073|ファイルが大きすぎて、アップロードできません。 ファイルのサイズを小さくして、やり直してください。|
 > |**名前**:<br />ReportFileZeroLength<br />**16 進数**:<br />80048296<br />**数値**:<br />-2147188074|空のファイルをアップロードしました。  新しいファイルを選択してからやり直してください。|
@@ -2472,6 +2602,8 @@ ms.locfileid: "2861276"
 > |**名前**:<br />RequiredChildReportHasOtherParent<br />**16 進数**:<br />8004F029<br />**数値**:<br />-2147160023|レポートのカテゴリ オプションは見つかりませんでした。|
 > |**名前**:<br />RequiredColumnsNotFoundInImportFile<br />**16 進数**:<br />80040383<br />**数値**:<br />-2147220605|変換に使用された 1 つまたは複数のソース列がソース ファイルに存在しません。|
 > |**名前**:<br />RequiredFieldMissing<br />**16 進数**:<br />80040200<br />**数値**:<br />-2147220992|必須フィールドが不足しています。|
+> |**名前**:<br />RequiredProcessFlowStepIsNotComplete<br />**16 進数**:<br />8006041d<br />**数値**:<br />-2147089379|現在のステージで必要なフロー ステップまたは承認ステップを完了するまでは、次のステージに移動する、またはプロセスを完了することはできません。|
+> |**名前**:<br />RequiredProcessFlowStepIsNotStarted<br />**16 進数**:<br />8006041e<br />**数値**:<br />-2147089378|次のステージに移動するかプロセスを完了するには、現在のステージで必要なフロー ステップまたは承認ステップをクリックします。 現在のステージで必要なフロー ステップまたは承認ステップを完了するまでは、ステージの移動やプロセスを完了することはできません。|
 > |**名前**:<br />RequiredProcessStepIsNull<br />**16 進数**:<br />8006041a<br />**数値**:<br />-2147089382|次のステージに進むには、必須ステップを完了してください。|
 > |**名前**:<br />RequireValidImportMapForUpdate<br />**16 進数**:<br />8004F600<br />**数値**:<br />-2147158528|更新で使用されたインポート マップが正しくないため、更新操作を完了できません。|
 > |**名前**:<br />RestrictedSolutionName<br />**16 進数**:<br />8004F022<br />**数値**:<br />-2147160030|ソリューションの一意の名前 '{0}' は、制限されており、内部ソリューションでのみ使用できます。|
@@ -2495,6 +2627,8 @@ ms.locfileid: "2861276"
 > |**名前**:<br />RibbonImportModifyingTopLevelNode<br />**16 進数**:<br />8004F108<br />**数値**:<br />-2147159800|リボンのカスタマイズは、次の最上位レベルのリボン ノードに対して行うことはできません: <Ribbon>、<ContextualGroups>、<Tabs>。|
 > |**名前**:<br />RibbonImportRibbonDiffIdInvalidLength<br />**16 進数**:<br />8004F10C<br />**数値**:<br />-2147159796|ID の長さが最大長の 128 文字を超えているため、このリボン要素をインポートできません: {0}|
 > |**名前**:<br />RINotProvisioned<br />**16 進数**:<br />80044281<br />**数値**:<br />-2147204479|組織 {0} のリレーションシップ インサイトが有効になっていません。|
+> |**名前**:<br />RoboticProcessAutomationFlowProcessesNotEnabled<br />**16 進数**:<br />80060471<br />**数値**:<br />-2147089295|予約済みプロセスの作成が有効になっていません。|
+> |**名前**:<br />RoboticProcessAutomationFlowProcessesOnlyAvailableOnline<br />**16 進数**:<br />80060472<br />**数値**:<br />-2147089294|予約済みプロセスの作成はオンラインでのみ利用可能です。|
 > |**名前**:<br />RoleAlreadyExists<br />**16 進数**:<br />80041403<br />**数値**:<br />-2147216381|指定された名前 '{0}' のロールは、部署 {1} およびソリューション ID {3} に既に存在します。 ロール ID: {2}|
 > |**名前**:<br />RoleNotEnabledForTabletApp<br />**16 進数**:<br />8005F203<br />**数値**:<br />-2147094013|このアプリを使用する権限がありません。\nシステム管理者に問い合わせて、設定を更新してください。|
 > |**名前**:<br />RollupAggregateQueryRecordLimitExceeded<br />**16 進数**:<br />8004E025<br />**数値**:<br />-2147164123|関連レコードの計算の制限 {0} に達したため、計算をオンラインで実行できません。|
@@ -2579,6 +2713,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />SalesPeopleEmptyEffectiveDate<br />**16 進数**:<br />80043801<br />**数値**:<br />-2147207167|会計カレンダーの有効日は空にすることはできません|
 > |**名前**:<br />SalesPeopleEmptySalesPerson<br />**16 進数**:<br />80043800<br />**数値**:<br />-2147207168|上位の営業担当者は空にすることはできません。|
 > |**名前**:<br />SalesPeopleManagerNotAllowed<br />**16 進数**:<br />80043805<br />**数値**:<br />-2147207163|担当地域マネージャーが他の担当地域に属することはできません|
+> |**名前**:<br />SameSolutionCircularDependenciesIdentified<br />**16 進数**:<br />80072007<br />**数値**:<br />-2147016697|このソリューションの循環依存関係が特定されました。|
 > |**名前**:<br />SandboxClientPluginTimeout<br />**16 進数**:<br />80044171<br />**数値**:<br />-2147204751|サンドボックス クライアントで操作がタイムアウトしたため、プラグイン実行に失敗しました。|
 > |**名前**:<br />SandboxHostNotAvailable<br />**16 進数**:<br />8004418e<br />**数値**:<br />-2147204722|サンドボックス ホストが現在利用できないため、プラグイン実行に失敗しました。 構成されているサンドボックス サーバーが存在し、実行していることを確認してください。|
 > |**名前**:<br />SandboxHostPluginTimeout<br />**16 進数**:<br />80044172<br />**数値**:<br />-2147204750|サンドボックス ホストで操作がタイムアウトしたため、プラグイン実行に失敗しました。|
@@ -2667,7 +2802,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />SharePointUnableToRemoveUserFromGroup<br />**16 進数**:<br />8004F0F2<br />**数値**:<br />-2147159822|SharePoint のグループ {1} からユーザー {0} を削除できません。|
 > |**名前**:<br />SharePointUnableToRetrieveGroup<br />**16 進数**:<br />8004F0F4<br />**数値**:<br />-2147159820|SharePoint からグループ {0} を取得できません。|
 > |**名前**:<br />SharePointUrlHostValidator<br />**16 進数**:<br />8004F301<br />**数値**:<br />-2147159295|URL を IP に解決できません。|
-> |**名前**:<br />SharePointUrlIsRootWebValidator<br />**16 進数**:<br />8004F306<br />**数値**:<br />-2147159290|無効な URL です。 URL は有効なサイト コレクションである必要があり、サブサイトを含めることはできません。 URL は https://SharePointServer/sites/CrmSite などの、有効な形式である必要があります。|
+> |**名前**:<br />SharePointUrlIsRootWebValidator<br />**16 進数**:<br />8004F306<br />**数値**:<br />-2147159290|無効な URL です。 URL は有効なサイト コレクションである必要があり、サブサイトを含めることはできません。 URL は http://SharePointServer/sites/CrmSite などの、有効な形式である必要があります。|
 > |**名前**:<br />SharePointVersionUnsupported<br />**16 進数**:<br />800608B6<br />**数値**:<br />-2147088202|Sharepoint バージョンがサポートされていないため、Microsoft Dynamics 365 は Sharepoint に接続できません。 正しいバージョンをインストールし、もう一度実行してください。 |
 > |**名前**:<br />SimilarityRuleDisabled<br />**16 進数**:<br />80071016<br />**数値**:<br />-2147020778|このエンティティでアクティブな類似ルールはありません。|
 > |**名前**:<br />SimilarityRuleFCBOff<br />**16 進数**:<br />80071018<br />**数値**:<br />-2147020776|類似ルールが有効になっていません。|
@@ -2677,11 +2812,12 @@ ms.locfileid: "2861276"
 > |**名前**:<br />SkipValidDateTimeBehavior<br />**16 進数**:<br />800608A3<br />**数値**:<br />-2147088221|このフィールドの動作値は無視されました。 システム カスタマイザーは、このフィールドの動作値を直接構成する必要があります。|
 > |**名前**:<br />SlaActivateDeactivateByNonOwner<br />**16 進数**:<br />8004F872<br />**数値**:<br />-2147157902|この SLA をアクティブ化または非アクティブ化できるのは所有者だけです。|
 > |**名前**:<br />SlaAlreadyInactiveState<br />**16 進数**:<br />8004F861<br />**数値**:<br />-2147157919|このレコードは既にアクティブなため、アクティブ化することはできません。|
-> |**名前**:<br />SlaAlreadyInDraftState <br />**16 進数**:<br />8004F862<br />**数値**:<br />-2147157918|このレコードは下書き状態のため、非アクティブ化できません。|
+> |**名前**:<br />SlaAlreadyInDraftState<br />**16 進数**:<br />8004F862<br />**数値**:<br />-2147157918|このレコードは下書き状態のため、非アクティブ化できません。|
 > |**名前**:<br />SlaNotEnabledEntity<br />**16 進数**:<br />80055003<br />**数値**:<br />-2147135485|SLA はこのエンティティでは有効ではありません。|
 > |**名前**:<br />SlaPermissionToPerformAction<br />**16 進数**:<br />8004F875<br />**数値**:<br />-2147157899|SLA およびプロセスに対してこの操作を実行するために必要なアクセス許可がありません。|
 > |**名前**:<br />SnapshotReportNotReady<br />**16 進数**:<br />80040489<br />**数値**:<br />-2147220343|指定されたレポートは、表示できる状態になっていません。 レポートがまだ作成中か、レポート スナップショットが使用できません。 ReportId:{0}|
 > |**名前**:<br />SocialCareDisabledError<br />**16 進数**:<br />80060621<br />**数値**:<br />-2147088863|Dynamics 365 組織との通信に問題があります。 組織は利用できない、または機能が設定されており、ソーシャル データを受信できないようになっています。 後でもう一度試してみてください。 問題が解決しない場合は、Microsoft Dynamics 365 管理者に問い合わせてください。|
+> |**名前**:<br />SolutionComponentDefinitionNotAvailable<br />**16 進数**:<br />8007200A<br />**数値**:<br />-2147016694|ソリューション対応エンティティ {0} のコンポーネント定義を作成できません。|
 > |**名前**:<br />SolutionConcurrencyFailure<br />**16 進数**:<br />80071151<br />**数値**:<br />-2147020463|ソリューションのインストールまたは削除が失敗しました。別のソリューションのインストールまたは削除が同時に行われていることが原因です。 後でやり直してください。|
 > |**名前**:<br />SolutionConfigurationPageMustBeHtmlWebResource<br />**16 進数**:<br />8004701C<br />**数値**:<br />-2147192804|ソリューション構成ページは、対応するソリューション内に存在する必要があります。|
 > |**名前**:<br />SolutionImportCauseTimeout<br />**16 進数**:<br />80048543<br />**数値**:<br />-2147187389|操作がタイムアウトしました。考えられる原因はソリューションが現在この環境にインポートされているからです。 ソリューションのインポートが完了した後にもう一度やり直してください。 可能な場合はソリューションを作業時間外にインポートする必要があります。|
@@ -2689,6 +2825,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />SolutionUniqueNameViolation<br />**16 進数**:<br />8004F023<br />**数値**:<br />-2147160029|ソリューションの一意の名前 '{0}' は既に使用されており、再び使用することはできません。|
 > |**名前**:<br />SolutionUpgradeFailed<br />**16 進数**:<br />8004F046<br />**数値**:<br />-2147159994|保留としてインポートした後、ソリューションのアップグレード操作が失敗しました。 InnerException は次のとおりです: {1}。|
 > |**名前**:<br />SolutionUpgradeNotAvailable<br />**16 進数**:<br />8004853B<br />**数値**:<br />-2147187397|" {0} ソリューションには、適用できるアップグレードがありません。"|
+> |**名前**:<br />SolutionUpgradeOfApiManagedSolutionError<br />**16 進数**:<br />8004803C<br />**数値**:<br />-2147188676|ApiManaged ソリューションを更新できないため、インポートに失敗しました。|
 > |**名前**:<br />SolutionUpgradeWrongSolutionSelected<br />**16 進数**:<br />8004853C<br />**数値**:<br />-2147187396|"このアクションを使用するには、最初に古いソリューションを選択してからやり直してください。"|
 > |**名前**:<br />SourceAttributeHeaderTooBig<br />**16 進数**:<br />80044340<br />**数値**:<br />-2147204288|列見出しは 160 文字以内にする必要があります。 列見出しを修正し、データ移行マネージャを再度実行します。|
 > |**名前**:<br />SourceEntityMappedToMultipleTargets<br />**16 進数**:<br />8004033d<br />**数値**:<br />-2147220675|このソース エンティティは複数の Microsoft Dynamics 365 エンティティにマッピングされています。 重複するマッピングを削除してから、もう一度このデータ マップをインポートしてください。|
@@ -2798,6 +2935,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />StageIdIsEmpty<br />**16 進数**:<br />80060454<br />**数値**:<br />-2147089324|検証エラー: ステージ ID を空にできません。|
 > |**名前**:<br />StageIdIsNotPresentInBusinessProcess<br />**16 進数**:<br />80060450<br />**数値**:<br />-2147089328|検証エラー: ステージ ID ‘{0}’ がビジネス プロセスに存在しません。 システム管理者にお問い合わせください。|
 > |**名前**:<br />StageIdIsNotValid<br />**16 進数**:<br />80060458<br />**数値**:<br />-2147089320|検証エラー: ステージ ID がビジネス プロセスに対して無効です。|
+> |**名前**:<br />StandAloneBpfNotActivated<br />**16 進数**:<br />80060470<br />**数値**:<br />-2147089296|フロー ページでスタンドアロン BPF をアクティブ化する必要があります。|
 > |**名前**:<br />StateTransitionActivateNewStatus<br />**16 進数**:<br />8004F857<br />**数値**:<br />-2147157929|状態の移行ルール上、このレコードはアクティブ化できません。システム管理者に問い合わせてください。|
 > |**名前**:<br />StateTransitionActiveToCanceled<br />**16 進数**:<br />8004F855<br />**数値**:<br />-2147157931|状態の移行ルールにより、現在の状態のサポート案件を取り消すことはできません。サポート案件の状態を変更してから取り消すか、システム管理者に問い合わせてください。|
 > |**名前**:<br />StateTransitionActiveToResolve<br />**16 進数**:<br />8004F854<br />**数値**:<br />-2147157932|状態の移行ルールにより、現在の状態のサポート案件を解決することができません。サポート案件の状態を変更してから解決するか、システム管理者に問い合わせてください。|
@@ -2822,7 +2960,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />SupportUserCannotBeCreateNorUpdated<br />**16 進数**:<br />80041d41<br />**数値**:<br />-2147214015|サポート ユーザーは更新できません|
 > |**名前**:<br />SyncAttributeMappingCannotBeUpdated<br />**16 進数**:<br />80060741<br />**数値**:<br />-2147088575|同期属性マッピングを更新できません。|
 > |**名前**:<br />SyncToMsdeFailure<br />**16 進数**:<br />80048407<br />**数値**:<br />-2147187705|オフライン モードの MSDE データベースの開始または接続を行えませんでした。|
-> |**名前**:<br />SystemAttributeMap<br />**16 進数**:<br />80046205<br />**数値**:<br />-2147196411|SystemAttributeMap のエラーが発生しました|
+> |**名前**:<br />SystemAttributeMap<br />**16 進数**:<br />80046205<br />**数値**:<br />-2147196411|{4} から {5} の ID {3} のエンティティマップに属する ID {0} のシステム属性マップを {1} から {2} に作成または削除できません。|
 > |**名前**:<br />SystemEntityMap<br />**16 進数**:<br />80046202<br />**数値**:<br />-2147196414|SystemEntityMap のエラーが発生しました|
 > |**名前**:<br />SystemFormCopyUnmatchedEntity<br />**16 進数**:<br />8004F656<br />**数値**:<br />-2147158442|Target と SourceId のエンティティが一致する必要があります。|
 > |**名前**:<br />SystemFormCopyUnmatchedFormType<br />**16 進数**:<br />8004F657<br />**数値**:<br />-2147158441|SourceId のフォームの種類が Target エンティティに対して有効ではありません。|
@@ -2882,6 +3020,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />TooManyConditionsInQuery<br />**16 進数**:<br />8004430C<br />**数値**:<br />-2147204340|クエリの条件数が最大制限値を超えました。|
 > |**名前**:<br />TooManyEntitiesEnabledForAutoCreatedAccessTeams<br />**16 進数**:<br />80048332<br />**数値**:<br />-2147187918|自動作成のアクセス チームに対して有効になっているエンティティが多すぎます。|
 > |**名前**:<br />TooManyLinkEntitiesInQuery<br />**16 進数**:<br />8004430D<br />**数値**:<br />-2147204339|クエリのリンク エンティティが最大制限値を超えました。|
+> |**名前**:<br />TooManyModernFlowTriggersForExecute<br />**16 進数**:<br />80060477<br />**数値**:<br />-2147089289|複数のコールバックが登録されているため、モダンフロー '{0}' を実行できません。|
 > |**名前**:<br />TooManyMultiSelectConditionParametersInQuery<br />**16 進数**:<br />80050223<br />**数値**:<br />-2147155421|クエリの複数選択条件パラメーターの数が最大制限: {0} を超えました。|
 > |**名前**:<br />TooManyPicklistValues<br />**16 進数**:<br />80048492<br />**数値**:<br />-2147187566|個別候補リスト値が最大制限値を超えました。|
 > |**名前**:<br />TooManyRecipients<br />**16 進数**:<br />8004350e<br />**数値**:<br />-2147207922|複数の受信者への送信はサポートされていません。|
@@ -2894,6 +3033,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />TopicModelTestWithoutConfiguration<br />**16 進数**:<br />80061654<br />**数値**:<br />-2147084716|ビルドに使用する構成を指定してください。|
 > |**名前**:<br />TraceMessageConstructionError<br />**16 進数**:<br />8004F900<br />**数値**:<br />-2147157760|トレース レコードに無効なトレース コードがあるか、トレース パラメーターの数が不足しています。|
 > |**名前**:<br />TransactionAborted<br />**16 進数**:<br />80040255<br />**数値**:<br />-2147220907|トランザクションは中止されました。|
+> |**名前**:<br />TransactionAbortedByIsvException<br />**16 進数**:<br />80048550<br />**数値**:<br />-2147187376|コミット前の段階で ISV コードの例外によりトランザクションが中止されました。 詳細情報については、内部例外を参照してください。|
 > |**名前**:<br />TransactionNotCommited<br />**16 進数**:<br />80040252<br />**数値**:<br />-2147220910|トランザクションはコミットされません。|
 > |**名前**:<br />TransactionNotStarted<br />**16 進数**:<br />80040251<br />**数値**:<br />-2147220911|トランザクションが開始されません。|
 > |**名前**:<br />TransactionNotSupported<br />**16 進数**:<br />8005E007<br />**数値**:<br />-2147098617|実行しようとしている操作では、トランザクションはサポートされません。|
@@ -3357,7 +3497,7 @@ ms.locfileid: "2861276"
 > |**名前**:<br />UserNameRequiredForImpersonation<br />**16 進数**:<br />8005E24D<br />**数値**:<br />-2147098035|ユーザー名を入力して保存し直してください|
 > |**名前**:<br />UserNeverLoggedIntoYammer<br />**16 進数**:<br />8005F111<br />**数値**:<br />-2147094255|他のユーザーをフォローするには、Yammer にログインする必要があります。 Yammer アカウントにログインし、やり直してください。|
 > |**名前**:<br />UserNotAssignedLicense<br />**16 進数**:<br />8004D24B<br />**数値**:<br />-2147167669|ユーザーにライセンスが割り当てられていません|
-> |**名前**:<br />UserNotAssignedRoles<br />**16 進数**:<br />80042f09<br />**数値**:<br />-2147209463|ユーザーにロールが割り当てられていません。|
+> |**名前**:<br />UserNotAssignedRoles<br />**16 進数**:<br />80042f09<br />**数値**:<br />-2147209463|ユーザー (Id = {0}) にロールが割り当てられていません。|
 > |**名前**:<br />UserNotInParentHierarchy<br />**16 進数**:<br />80041d07<br />**数値**:<br />-2147214073|ユーザーは、上位ユーザーの事業階層にはありません。|
 > |**名前**:<br />UserNotMemberOfOrg<br />**16 進数**:<br />80072560<br />**数値**:<br />-2147015328|ユーザーが組織のメンバーではありません。|
 > |**名前**:<br />UserSettingsInvalidAdvancedFindStartupMode<br />**16 進数**:<br />80041d34<br />**数値**:<br />-2147214028|無効な高度検索スタートアップ モードです。|
@@ -3407,10 +3547,12 @@ ms.locfileid: "2861276"
 > |**名前**:<br />WebResourceNameInvalidCharacters<br />**16 進数**:<br />8004F117<br />**数値**:<br />-2147159785|Web リソース名には、文字、数字、ピリオド、および連続していないスラッシュのみを含めることができます。|
 > |**名前**:<br />WebResourceNameInvalidFileExtension<br />**16 進数**:<br />8004F119<br />**数値**:<br />-2147159783|Web リソースには次の拡張子は使用できません: .aspx、.ascx、.asmx、または .ashx。|
 > |**名前**:<br />WebResourceNameInvalidPrefix<br />**16 進数**:<br />8004F118<br />**数値**:<br />-2147159784|Web リソース名に有効な接頭辞が含まれていません。|
+> |**名前**:<br />WebResourcePreventingFormSave<br />**16 進数**:<br />80060369<br />**数値**:<br />-2147089559|preventDefault を呼び出す onSave に登録された Web リソースがあるため、フォーム データを保存できません。|
 > |**名前**:<br />WopiApplicationUrl<br />**16 進数**:<br />80060802<br />**数値**:<br />-2147088382|WOPI アプリケーション URL から情報を取得中にエラーが発生しました。|
 > |**名前**:<br />WopiDiscoveryFailed<br />**16 進数**:<br />80060800<br />**数値**:<br />-2147088384|WOPI 検索 XML を取得する要求が失敗しました。|
 > |**名前**:<br />WopiMaxFileSizeExceeded<br />**16 進数**:<br />80060803<br />**数値**:<br />-2147088381|{0} ファイルは {1} のサイズの上限を超えています。|
 > |**名前**:<br />WordTemplateFeatureNotEnabled<br />**16 進数**:<br />800608DB<br />**数値**:<br />-2147088165|Word ドキュメント テンプレート機能が有効になっていません。|
+> |**名前**:<br />WorkerProcessCrashFailure<br />**16 進数**:<br />80072031<br />**数値**:<br />-2147016655|ワーカー プロセスがクラッシュしたため、この操作は失敗しました。|
 > |**名前**:<br />WorkflowActivityNotSupported<br />**16 進数**:<br />80045045<br />**数値**:<br />-2147200955|サポートされていないワークフロー ステップを参照しているため、このワークフローを作成、更新、または公開できません。|
 > |**名前**:<br />WorkflowAutomaticallyDeactivated<br />**16 進数**:<br />80045042<br />**数値**:<br />-2147200958|元のワークフロー定義は非アクティブ化され、置き換えられました。|
 > |**名前**:<br />WorkflowCompileFailure<br />**16 進数**:<br />80045001<br />**数値**:<br />-2147201023|ワークフローのコンパイル中にエラーが発生しました。|

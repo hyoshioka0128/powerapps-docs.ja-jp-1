@@ -4,8 +4,8 @@ description: エラーをプラグインまたはワークフロー活動で上�
 services: ''
 suite: powerapps
 documentationcenter: na
-author: jowells
-manager: austinj
+author: JimDaly
+manager: ryjones
 editor: ''
 tags: ''
 ms.service: powerapps
@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 1/15/2019
-ms.author: jowells
+ms.date: 3/5/2020
+ms.author: JimDaly
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c4ccc11cf09c00a2430e736d6e8ab6f532dee8e6
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0657e9b39713f4f11d68daac1c60fa144dc6ab08
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748815"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109140"
 ---
 # <a name="use-invalidpluginexecutionexception-in-plug-ins-and-workflow-activities"></a>プラグインおよびワークフロー活動で InvalidPluginExecutionException を使用する
 
@@ -37,72 +37,22 @@ ms.locfileid: "2748815"
 
 ## <a name="symptoms"></a>現象
 
-同期プラグインがプラットフォームに <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> 以外の例外を返す場合、エラー ダイアログ ボックスが、スタック トレース付きの例外メッセージ <xref:System.Exception.Message> とともに表示されます。 これは、すでに発生している可能性のある不満を感じる状況で、好ましくないユーザー エクスペリエンスを提供します。
+同期プラグインがプラットフォームに <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> 以外の例外を返す場合、Power Apps クライアント上でエラーがスタック トレース付きの例外メッセージ <xref:System.Exception.Message>  とともに表示されます。 これは、すでに発生している可能性のある不満を感じる状況で、好ましくないユーザー エクスペリエンスを提供します。
+
+データ検証のロジックに問題があり、操作を意図的にキャンセルするために <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> を使用している場合、アプリケーション ユーザーに適用可能なガイダンスを提供して、問題を修正して続行できるようにする必要があります。
+
+エラーが予期しないものである場合、エラーをキャッチし、<xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> に変換することをお勧めします。ユーザーや技術スタッフが問題をすばやく特定できるように、アプリケーションにガイダンス付きのわかりやすいエラーメッセージを表示できます。
 
 <a name='guidance'></a>
 
 ## <a name="guidance"></a>ガイダンス
 
-以下の理由から、プラグインは <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> のみをプラットフォームに返すことをお勧めします。
+プラグインは、次の理由からのみ <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> を返します。
 
-- ユーザーへわかりやすいメッセージを表示する
+- ユーザーに対して役に立つメッセージを表示する
 - イベント ログ / トレース ファイルの肥大化を回避する
 
-他の型の未処理の例外は、実行時に予期しないエラーが発生した場合にのみ発生します。 以下は、有効な方法の例です。
-
-- 保護されていない InvalidPluginExecutionException をスローする
-
-    ```csharp
-    public void Execute(IServiceProvider serviceProvider)
-    {
-        // Invocation of a valid scenario that throws an appropriate exception type
-        ThrowPluginException();
-    }
-    
-    private void ThrowPluginException()
-    {
-        throw new InvalidPluginExecutionException("Throwing a plug-in exception in a member method body");
-    }
-    ```
-
-- 保護された例外が、新しい InvalidPluginExecutionException として処理またはスローします
-
-    ```csharp
-    public void Execute(IServiceProvider serviceProvider)
-    {
-        try
-        {
-            ThrowGuardedMemberException();
-        }
-        catch (CustomException ex)
-        {
-            throw new InvalidPluginExecutionException("Unable to save the contact. This is likely caused by..."), ex);
-        }
-    
-        // Invocation of a valid scenario in a member method
-        HandleMemberException();
-    }
-    
-    private void HandleMemberException()
-    {
-        try
-        {
-            // Invocation of a scenario where CustomException is thrown
-            ThrowGuardedMemberException();
-        }
-        catch (CustomException ex)
-        {
-            // Handle the exception.
-            // Note - Debug.WriteLine is likely not the appropriate way to handle the exception. This is for demonstration purposes only
-            Debug.WriteLine(ex.Message);
-        }
-    }
-    
-    private void ThrowGuardedMemberException()
-    {
-        throw new CustomException("Throwing a custom exception in a guarded member");
-    }
-    ```
+メッセージを <xref:Microsoft.Xrm.Sdk.InvalidPluginExecutionException> に変換しないと、Power Apps クライアントからユーザーにメッセージが表示されない `IsvUnExpected` エラーが発生します。
 
 <a name='problem'></a>
 
@@ -111,52 +61,10 @@ ms.locfileid: "2748815"
 > [!WARNING]
 > これらのパターンは、回避する必要があります。
 
-- 保護されていない例外がスローされています
+エラー メッセージ テキスト内で HTML を使用しないでください。 
 
-    ```csharp
-    public void Execute(IServiceProvider serviceProvider)
-    {
-        // Invocation of a scenario where violation occurs during an unguarded throw
-        UnguardedMemberThrowException();
-    }
-    
-    private void UnguardedMemberThrowException()
-    {
-        throw new CustomException("Throwing an unguarded custom exception in a member method body");
-    }
-    ```
+CDS データにアクセスする Web アプリケーションは、ユーザーに表示する前にエラー メッセージ テキストを HTML にエンコードする必要があります。 これにより、メッセージ内の HTML が意図したとおりに表示されなくなります。 HTML コードを表示するだけです。
 
-- 保護されていない再スローを伴う、保護された例外がスローされています
-
-    ```csharp
-    public void Execute(IServiceProvider serviceProvider)
-    {
-        // Invocation of a scenario where violation occurs during an unguarded rethrow
-        UnguardedMemberRethrowException();
-    }
-    
-    private void UnguardedMemberRethrowException()
-    {
-        try
-        {
-            // Guarded invoking of a method member that throws a custom exception
-            GuardedMemberThrowException();
-        }
-        catch (CustomException ex)
-        {
-            // Handle and rethrow
-            Debug.WriteLine(ex.Message);
-    
-            // This is where the issue occurs
-            throw;
-        }
-    }
-    
-    private void GuardedMemberThrowException()
-    {
-        throw new CustomException("Throwing a guarded custom exception in a member method body");
-    }
-    ```
 
 <a name='seealso'></a>
 

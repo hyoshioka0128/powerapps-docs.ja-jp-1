@@ -2,7 +2,7 @@
 title: API 制限の概要 (Common Data Service) | Microsoft Docs
 description: Common Data Service の API 要求に対する制限について理解します。
 ms.custom: ''
-ms.date: 12/08/2019
+ms.date: 03/05/2020
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: aee2a6b256c991c178506c68a38f4821c341b1b5
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 69e55b7b917a95158caa13322be21471bd43df3a
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909509"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109112"
 ---
 # <a name="common-data-service-api-limits-overview"></a>Common Data Service の API 制限の概要
 
@@ -55,9 +55,9 @@ Common Data Service の場合、API 要求には、レコードが作成、取�
 ユーザー アカウントごとのコンカレント接続の数、接続ごとの API 要求の数、および各接続に使用できる実行時間を制限します。 これらは、5 分間のスライド枠内で評価されます。 これらの制限のひとつを超えると、例外がプラットフォームによってスローされます。
 
 > [!NOTE]
-> サービス保護の制限は、権利の制限に対してカウントされるエンティティに対する CRUD 操作だけでなく、すべての要求に適用されます。
+> サービス保護の制限は、資格制限に対してカウントされるエンティティーへの CRUD 操作だけでなく、すべての外部の Web サービス要求に適用されます。
 > 
-> プラグインとカスタム ワークフロー活動はログオンしているユーザーから独立してサーバー上で実行されるため、サービス保護 API 制限はプラグイン コードから生成された API 呼び出しに対して適用されません。
+> サービス保護 API の制限は、ワークフロー、カスタムワークフローアクティビティ、またはプラグインコード内で行われた API の呼び出しには適用されません。 これらの操作は内部で呼び出されます。
 
 通常、サービス保護の制限は大量のデータ操作を実行するアプリケーションによってのみ発生するため、これらの例外が返された後、それらのアプリケーションを構築する開発者はパターンを適用して再試行操作を行うことをお勧めします。 これにより、アプリケーションはサービスが送信する例外に応答し、要求の総数を減らし、可能な限り最高のスループットを達成できます。
 

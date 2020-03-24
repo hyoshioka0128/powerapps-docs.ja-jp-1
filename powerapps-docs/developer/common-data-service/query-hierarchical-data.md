@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3a87868d86dca1326dcff1ad9b1c052606943de4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 006dccecfed21b29f3af48f657c2bb64b1708cf3
+ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749237"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "3037138"
 ---
 # <a name="query-hierarchical-data"></a>クエリ階層型データ
 
@@ -38,8 +38,8 @@ ms.locfileid: "2749237"
 |`under`|`Under`|階層で参照されているレコードの下にあるすべての子レコードを返します。|  
 |`eq-or-under`|`UnderOrEqual`|参照されているレコードと階層でそれより下にあるすべての子レコードを返します。|  
 |`not-under`|`NotUnder`|階層で参照されているレコードの下にないすべてのレコードを返します。|  
-|`eq-owneduseroruserhierarchy`|`OwnedByMeOrMyReports`|階層セキュリティ モデルが使用されている場合、現在のユーザーまたはユーザーのレポート階層を等しくします。|  
-|`eq-useroruserhierarchyandteams`|`OwnedByMeOrMyReportsAndTeams`|階層セキュリティ モデルが使用されている場合、現在のユーザーとそのチームまたはユーザーのレポート階層とそのチームを等しくします。|  
+|`eq-owneduseroruserhierarchy`|`OwnedByMeOrMyReports`|階層セキュリティ モデルが使用されている場合、現在のユーザーまたはユーザーのレポート階層に等しくなります|  
+|`eq-useroruserhierarchyandteams`|`OwnedByMeOrMyReportsAndTeams`|階層セキュリティ モデルが使用されている場合、現在のユーザーとユーザーのチームまたはユーザーのレポート階層とそのチームに等しくなります|  
   
 ### <a name="recursion-limits-when-querying-hierarchical-data"></a>再帰は階層データを照会する時を制限する  
  階層データを照会するとリソースを大量に消費するので、`Above`、`AboveOrEqual`、`Under`、`UnderOrEqual`、および `NotUnder`条件演算子を使用して階層を照会できる再帰を、既定で 100 に限定しています。  

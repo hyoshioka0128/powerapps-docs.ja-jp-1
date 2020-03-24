@@ -8,24 +8,30 @@ ms.topic: article
 ms.assetid: 135481cd-4583-4e49-8f58-02f32a9b054a
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 93d60cb1e6c00951e51acd4f92d8c62dce84fc28
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: 6b563136dba6cc2144e66654860c1f760adbea60
+ms.sourcegitcommit: 27cb5ad024d43f208ef6acfbea456a05df3edf8e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909080"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "3082816"
 ---
 # <a name="what-are-code-components"></a>コード コンポーネントとは
 
 コード コンポーネントはソリューション コンポーネントの一種です。つまり、コード コンポーネントをソリューション ファイルに含めて異なる環境にインストールできます。 詳細: [ソリューションを使用した拡張機能のパッケージ化および配布](https://docs.microsoft.com/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions).
 
-コード コンポーネントをソリューションに含めて追加し、そして Common Data Service にインポートします。 コンポーネントが Common Data Service に組み込まれたら、システム管理者とシステム カスタマイザーは既定のコンポーネントの代わりにそれらを使用するよう、フォーム フィールド、サブグリッド、ビュー、ダッシュボード の サブグリッドを構成できます。 キャンバス アプリでこれたのコード コンポーネントも追加できます。 
+> [!div class="mx-imgBorder"] 
+> ![コード コンポーネント](media/code-components.gif "コード コンポーネント")
+
+コード コンポーネントをソリューションに含めて追加し、そして Common Data Service にインポートします。 コンポーネントが Common Data Service に組み込まれたら、システム管理者とシステム カスタマイザーは既定のコンポーネントの代わりにそれらを使用するよう、フォーム フィールド、サブグリッド、ビュー、ダッシュボード の サブグリッドを構成できます。 これらのコードコンポーネント **モデル駆動型とキャンバスアプリ**のを両方に追加できます。 
 
 コードコンポーネントは、3つの要素で構成されています:
 
 - [マニフェスト](#manifest)
 - [コンポーネントの実装](#component-implementation)
 - [リソース](#resources)
+
+> [!NOTE]
+> Power Apps component framework を使用したコード コンポーネントの定義と実装は、モデル駆動型アプリとキャンバスアプリの両方で同じとなります。 両者の唯一の違いはその構成の部分です。 
 
 ## <a name="manifest"></a>マニフェスト
 

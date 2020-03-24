@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 46bfdf070970e89cbe6eeb9aa4d3864ab493794b
-ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
+ms.openlocfilehash: 8a84d9b52f913f3c7f6da2bf07e11124277f2f52
+ms.sourcegitcommit: 5b6e6b41a3fc4d7f1aea46ec66c086b784efacac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3012660"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "3095489"
 ---
 # <a name="package-a-code-component"></a>コード コンポーネントをパッケージ化する
 
@@ -22,7 +22,7 @@ ms.locfileid: "3012660"
 
 ソリューション ファイルを作成およびインポートするには:
 
-1.  `cdsproj` ファイルを持つフォルダー内に、`mkdir Solutions`と言うコマンドを使用して新しいフォルダーを作成して **ソリューション** (または任意の名前) として名前を付けます。 コマンド `cd Solutions` を使用して、ディレクトリに移動します。
+1.  `pcfproj` ファイルを持つフォルダー内に、`mkdir Solutions`と言うコマンドを使用して新しいフォルダーを作成して **ソリューション** (または任意の名前) として名前を付けます。 コマンド `cd Solutions` を使用して、ディレクトリに移動します。
 
 2. 次のコマンドを使用して新しいソリューション プロジェクトを作成します。 ソリューション プロジェクトは、Common Data Service へインポートするために使用されるソリューション zip ファイルにコード コンポーネントをビルドするために使用されます。
    

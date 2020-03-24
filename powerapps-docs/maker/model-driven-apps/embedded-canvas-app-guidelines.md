@@ -7,11 +7,7 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
-applies_to:
-- Dynamics 365 (online)
-- Dynamics 365 Version 9.x
-- PowerApps
-author: Aneesmsft
+author: RichdiMSFT
 ms.author: matp
 manager: kvivek
 tags:
@@ -21,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 20b37d6e4a75560a74fb31779dfd6965247baa7f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 1b74b1a9e7cd86240d361fadd2590a704f707176
+ms.sourcegitcommit: 564b939577aae9fbedb2186bea3d4740d32e7473
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2868408"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "3043589"
 ---
 # <a name="guidelines-on-working-with-embedded-canvas-apps"></a>埋め込みキャンバス アプリの作業のガイドライン
 このトピックでは、埋め込みキャンバス アプリの作業のガイドライン、および発生する可能性がある問題のトラブルシューティングを実行するために役立つヒントを提供します。

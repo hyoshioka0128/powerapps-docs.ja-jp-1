@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: c879f6d73e8ae8d2244e20080fdf64d376ff9bfd
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 2a87a321db887e9d56f8be30da67465f084a1089
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017450"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091202"
 ---
 # <a name="implementing-data-set-component"></a>データセット コンポーネントの実装
 
@@ -28,6 +28,9 @@ ms.locfileid: "3017450"
 ## <a name="available-for"></a>以下に使用できます 
 
 モデル駆動型アプリ
+
+> [!NOTE]
+> 一部のデータセット API メソッドは、キャンバス アプリにはまた対応していません。 データセット タイプのコンポーネントがキャンバス アプリにどのように実装されているかについては、[キャンバス アプリに使用するデータセット コンポーネント](data-set-component-canvas.md) を参照してください。
 
 ## <a name="manifest"></a>マニフェスト 
 

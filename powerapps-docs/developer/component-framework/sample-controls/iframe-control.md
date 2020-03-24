@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: af13a83b675ad097e532b0c04eda9766e6c1818e
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 43cfc92c988ea2d01e88c850b0845bcf276c25e5
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017435"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091214"
 ---
 # <a name="implementing-a-iframe-component"></a>IFRAME コンポーネントの実装
 
@@ -24,7 +24,7 @@ ms.locfileid: "3017435"
 
 ## <a name="available-for"></a>以下に使用できます 
 
-モデル駆動型アプリとキャンバス アプリ (実験的プレビュー) 
+モデル駆動型アプリとキャンバス アプリ (公開プレビュー) 
 
 ## <a name="manifest"></a>マニフェスト
 

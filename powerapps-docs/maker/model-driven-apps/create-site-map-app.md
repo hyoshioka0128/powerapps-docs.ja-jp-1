@@ -1,5 +1,5 @@
 ---
-title: Power Apps でモデル駆動型アプリのサイト マップを作成 | MicrosoftDocs
+title: Power Apps でモデル駆動型アプリのサイト マップを作成する | MicrosoftDocs
 description: アプリのサイト マップの作成方法を学習する
 keywords: ''
 ms.date: 05/29/2018
@@ -24,14 +24,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d225bba7469ba25f170bfa1f77af226996a9946b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2dcfea33867b6a5113ed6fd36e20d529608ed0ab
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2860328"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091363"
 ---
-# <a name="tutorial-create-a-model-driven-app-site-map-for-an-app-using-the-site-map-designer"></a>チュートリアル: サイト マップ デザイナーを使用してアプリのモデル駆動型アプリ サイト マップを作成する
+# <a name="create-a-model-driven-app-site-map-using-the-site-map-designer"></a>サイト マップ デザイナーを使用してモデル駆動型アプリのサイト マップを作成する
 
 このチュートリアルでは、新しいサイト マップを作成する、エリア、グループ、およびサブエリアを追加するなど、いくつかのサイト マップ タスクを実行します。
 

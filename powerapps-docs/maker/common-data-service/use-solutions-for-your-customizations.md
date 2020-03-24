@@ -2,7 +2,7 @@
 title: 既定のソリューションを使用して Power Apps でカスタマイズ | MicrosoftDocs
 description: 既定のソリューションをカスタマイズする方法を学習
 ms.custom: ''
-ms.date: 10/29/2018
+ms.date: 02/20/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,30 +22,38 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: da116f81addf057a5f3fd4c44264bc6305e7b884
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 1525cdb41cb7e809a54b6389472e5be842a87697
+ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2869681"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "3093624"
 ---
-# <a name="use-the-common-data-services-default-solution"></a>Common Data Service の既定のソリューションを使用する  
-  
- すべての Power Apps 環境に、次のソリューションがあります。
--   **Common Data Service の既定のソリューション** - これはメーカーが環境内のカスタマイズのために既定で使用できる基本ソリューションです。
--   **既定のソリューション**- これは環境内のすべてのソリューションからのすべてのカスタマイズを含む特別なソリューションです。 
-<!-- **Base Custom Controls Core** - This solution includes a core set of controls. Controls are used in user interface elements, such as fields, lists, and views. -->
+# <a name="use-a-solution-to-customize"></a>カスタマイズするためのソリューションを使用する
+カスタマイズを管理するソリューションを作成することをお勧めします。 カスタム ソリューションを使用すると、カスタマイズしたソリューション コンポーネントだけを簡単に見つけて、ソリューション発行者プレフィックスを一貫して適用し、他の環境に配布するためにソリューションをエクスポートできます。  
 
-他のアプリケーションやソリューションをインストールまたはインポートした場合、追加のソリューションがソリューション リストで使用可能なことがあります。 
+カスタム ソリューションを使用しない場合は、アンマネージド レイヤーの既定のソリューションで作業します。 すべての Common Data Service 環境に 2 つの規定のソリューションがあります :  
+- Common Data Service 既定のソリューション。 これは、作成者がある環境で自分たちのカスタマイズするための既定によって使用できる基本ソリューションです。 Common Data Service 規定のソリューションは、Power Apps を評価したい場合に役立ちます。  
+- 既定のソリューション。 これは、システムですべてのコンポーネントを含む特別なソリューションです。 規定のソリューションは、システム内のすべてのコンポーネントと構成を検出するのに役立ちます。  
 
-既定では、モデル駆動型アプリを作成またはカスタマイズするとき、Common Data Service の既定のソリューションを使用します。 Common Data Service の既定のソリューションを開くと、そのソリューションに含まれるコンポーネントを表示して編集できます。 これを行うには、以下の手順を実行します。
+## <a name="why-you-shouldnt-use-the-default-solutions-to-manage-customizations"></a>既定のソリューションを使用してカスタマイズを管理すべきではない理由
+規定のソリューションのいずれかでアプリを作成してカスタマイズを行うべきではない理由はいくつかあります。  
+- 既定のソリューションには、環境内のすべてのソリューションからのすべてのコンポーネントとカスタマイズを含みます。 
+- 規定では、環境内のすべての有効なユーザーは、アプリケーションを作成し、Common Data Services 規定のソリューションでコンポーネントをカスタマイズできます。 
+- 規定のソリューションのいずれかを使用して、環境内で行ったカスタマイズを見つけたり特定したりすることは困難です。 
+- 規定のソリューションのいずれかを使用すると、コンポーネントを作成するときに、それに割り当てられた規定の公開元も使用します。 これにより、一部のコンポーネントに誤った発行元プレフィックスが適用される場合があります。 
+- 既定のソリューションはエクスポートできません。 したがって、規定のソリューションを別の環境に配布することはできません。 
+
+<!-- Notice that if you have installed or imported other applications or solutions, additional solutions may be available in the solutions list. 
+
+By default,  when you build or customize a model-driven app, you work with the solution called Common Data Services Default Solution. You can open the Common Data Services Default Solution to view and edit the components that are contained in it. To do this, follow these steps.
  
-1.  左のナビゲーション ウィンドウで、**ソリューション** を選択します。
+1.  On the left navigation pane select **Solutions**.
 
-2.  ソリューションの一覧で **Common Data Service の既定のソリューション** を選択します。
+2.  In the list of solutions, select **Common Data Services Default Solution**.
   
 > [!TIP]
->  作成したアプリケーションを配布する予定の場合は、発行者のカスタマイズの接頭辞を変更することを検討してください。 詳細: [ソリューション発行者の接頭辞](change-solution-publisher-prefix.md)。  
+>  If you plan to distribute the applications your make, consider changing the publisher customization prefix. More information: [Solution publisher prefix](change-solution-publisher-prefix.md).  -->
   
 <a name="BKMK_PrivacyNotice"></a>   
 
@@ -54,7 +62,8 @@ ms.locfileid: "2869681"
   
  [!INCLUDE[cc_privacy_crm_customizations](../../includes/cc-privacy-crm-customizations.md)]  
   
-## <a name="see-also"></a>関連項目  
+### <a name="see-also"></a>関連項目  
+[ソリューションの作成](create-solution.md) <br />
 [モデル駆動型アプリのコンポーネントについて](../model-driven-apps/model-driven-app-components.md)
- <br/>
- [ホワイト ペーパー: Solution Builders のパターンと原則](https://go.microsoft.com/fwlink/p/?LinkID=533946)
+
+

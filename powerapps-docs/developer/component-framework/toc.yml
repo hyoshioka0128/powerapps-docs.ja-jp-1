@@ -3,9 +3,13 @@
     - name: 概要
       href: overview.md
     - name: コード コンポーネントとは
-      href: custom-controls-overview.md
-    - name: キャンバス アプリのコード コンポーネント
-      href: component-framework-for-canvas-apps.md
+      items:
+        - name: 概要
+          href: custom-controls-overview.md
+        - name: モデル駆動型アプリのコード コンポーネント
+          href: code-components-model-driven-apps.md
+        - name: キャンバス アプリのコード コンポーネント
+          href: component-framework-for-canvas-apps.md
     - name: Power Apps CLI の入手
       href: get-powerapps-cli.md
     - name: チュートリアル
@@ -34,6 +38,8 @@
           href: issues-and-workarounds.md
         - name: 制限
           href: limitations.md
+    - name: よく寄せられる質問
+      href: faq.md
     - name: サンプル コンポーネント
       items:
         - name: サンプルコンポーネントの使用方法
@@ -42,8 +48,10 @@
           href: sample-controls/angular-flip-control.md
         - name: コントロールの状態 API コンポーネント
           href: sample-controls/control-state-api.md
-        - name: データセット グリッド コンポーネント
+        - name: モデル駆動型アプリのためのデータセット グリッド コンポーネント
           href: sample-controls/data-set-grid-control.md
+        - name: キャンバス アプリのためのデータセット コンポーネント
+          href: sample-controls/data-set-component-canvas.md
         - name: API コンポーネントの書式設定
           href: sample-controls/formatting-api-control.md
         - name: IFRAME コンポーネント
@@ -340,7 +348,13 @@
               href: manifest-schema-reference/feature-usage.md
             - name: uses-feature
               href: manifest-schema-reference/uses-feature.md
-    - name: コミュニティ リソース
-      href: community-resources.md
+    - name: リソース
+      items:
+        - name: コミュニティ リソース
+          href: community-resources.md
+        - name: コミュニティ フォーラム
+          href: 'https://aka.ms/PCFForum'
+        - name: 機能のアイデア
+          href: 'https://aka.ms/PCFIdea'
     - name: フィードバックの共有
       href: share-your-feedback-for-pcf.md

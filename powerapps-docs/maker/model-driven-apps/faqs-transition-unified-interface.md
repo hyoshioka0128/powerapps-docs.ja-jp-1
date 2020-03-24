@@ -2,7 +2,7 @@
 title: 'よくある質問: 統一インターフェイス への切り替え | MicrosoftDocs'
 description: 従来の Web クライアント から 統一インターフェイス に ユーザー を移行する プロセス に関する FAQ。
 ms.custom: ''
-ms.date: 12/20/2019
+ms.date: 02/26/2020
 ms.reviewer: kvivek
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e06fa6901ec123307adaabdbbb6071e5a11c47cc
-ms.sourcegitcommit: 41a78575a6533c45c7cf4c012f8ed30c4e43aae8
+ms.openlocfilehash: 003bc58cc0c4db717a92d75d6157b7b53eb3629c
+ms.sourcegitcommit: bb1a684d4ce2d342ad092a29ebca2bb502736e6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2918115"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "3087797"
 ---
 # <a name="faqs-transition-to-unified-interface"></a>よくある質問: 統一インターフェイス への切り替え
 
@@ -79,10 +79,10 @@ ms.locfileid: "2918115"
 
 ### <a name="my-environment-has-been-transitioned-but-i-am-finding-blocking-issues-for-my-users-and-want-to-move-back-to-the-legacy-web-client-is-this-possible"></a>環境の移行が完了したが、ユーザーがブロックされる問題が発生しており、従来の Webクライアントに戻したい。 これは可能ですか?
 
-はい、切り替え後最大10日間、レガシ Web クライアントに切り替えることができます。 最初の 4 日間は [手動で切り替える](https://docs.microsoft.com/power-platform/admin/enable-unified-interface-only) ことができますが、それ以降は手動切り替えが無効となるため、通常のチャネルからサポート要求を上げます。 
+はい、切り替え後最大10日間、レガシ Web クライアントに切り替えることができます。 最初の10日間は [手動で切り替え](https://docs.microsoft.com/power-platform/admin/enable-unified-interface-only) を行うか、[標準サポートリクエスト](https://admin.powerplatform.microsoft.com/support?referer=mbssupport) を報告し、手動切り替えが無効になるため、問題のタイプを "レガシ Web クライアント から 統合インターフェイス への移行" に設定できます。 
 
 > [!NOTE]
-> 2020 年 10 月1日以降、レガシ Web クライアントは利用できなくなるので、10日間はその日付より前で指定する必要があります。
+> 10日は、2020 年 10 月 1 日より前にする必要があります。その日以降、レガシー Web クライアントは利用できなくなります。
 
 ### <a name="i-want-to-transition-after-october-1-2020-is-that-possible"></a>2020 年 10 月 1 日以降に切り替えたいです。 これは可能か。
 
@@ -116,9 +116,9 @@ ms.locfileid: "2918115"
 
 ### <a name="if-i-already-have-an-environment-transitioned-to-unified-interface-will-i-still-be-able-to-switch-back-to-the-legacy-web-client-manually"></a>既に統一インターフェイスに移行した環境の場合、レガシー Web クライアントにまだ手動で切替えられますか?
 
-環境が少なくとも4日間移行された場合は、レガシー Web クライアントへの手動切り替えを無効にします。 
+環境が少なくとも 10 日間移行されている場合、レガシー Web クライアントへの手動切り替えを無効にします。 
 
-これが無効になっていて、元に戻す必要がある場合は、評価用の通常チャネルからサポート要求を上げます。
+これが無効になっており、元に戻す必要がある場合は、[標準サポートリクエスト](https://admin.powerplatform.microsoft.com/support?referer=mbssupport) を発行し、問題のタイプを "レガシ Web クライアント から 統合インターフェイス への移行" に設定します。
 
 ### <a name="is-there-a-specific-day-and-time-when-approved-transitions-will-take-place"></a>承認した移行処理を実行する具体的な日時は決まっていますか？ 
 
@@ -126,6 +126,6 @@ ms.locfileid: "2918115"
 
 ### <a name="are-environments-from-all-data-centers-included-within-this-transition-service"></a>この移行サービスには、全データセンターの環境が含まれていますか?
 
-現時点では、Government Community Cloud（GCC）などの特定の データセンター の環境は ポータル には含まれません。 2020年6月までには、これら環境の推奨される移行日を提供します。 統一インターフェイス への移行をご希望のお客様は、2020年10月1日 以前であればいつでも [手動で切り替える](/power-platform/admin/enable-unified-interface-only#how-to-enable-unified-interface-only-mode) ことができます。
+現時点では、Government Community Cloud（GCC）などの特定の データセンター の環境は ポータル には含まれません。 2020年6月までには、これら環境の推奨される移行日を提供します。 統一インターフェイスへの移行を希望するお客様は、2020 年 10 月 1 日より前であればいつでも [手動で切り替える](/power-platform/admin/enable-unified-interface-only#how-to-enable-unified-interface-only-mode) ことができます。
 
 

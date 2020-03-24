@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 4182b32f0291d729ac15c609ee8a1c549cebca59
-ms.sourcegitcommit: 64d816a759c5cc6343928d56a673812c3ea066c2
+ms.openlocfilehash: a674b37fd4616a21fe8d61336f255debafd552dd
+ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "2895009"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "3080841"
 ---
 # <a name="how-to-use-the-sample-components"></a>サンプルコンポーネントの使用方法
 
@@ -34,20 +34,22 @@ ms.locfileid: "2895009"
 1. サンプル コンポーネントをダウンロードしたコンピューター上のフォルダーに移動し、.zip ファイルを展開します。  
 1. Visual Studio 2017 の開発者コマンド プロンプトを開き、ランタイムで表示する展開フォルダー内のサンプル コンポーネント フォルダーに移動します。 たとえば、\<extract_folder>/TS_IncrementComponent フォルダに移動します。
 1. 次のコマンドを実行して、必要なすべての依存関係を取得します。
-    ```
+    ```CLI
     npm install
     ```
 1. サンプル コンポーネント フォルダ内のコマンド`mkdir <folder name>`を使用して新しいフォルダを作成し、 コマンド `cd <folder name>` を使用してフォルダ内に移動します。 
 1. 次のコマンドを使用して、フォルダー内に新しいソリューション プロジェクトを作成します。
-    ```
+    ```CLI
     pac solution init --publisher-name <Name of the publisher> --publisher-prefix <Publisher prefix>
     ```
 1. 新しいソリューション プロジェクトを作成したら、サンプル コンポーネントが配置されている場所を参照します。 次のコマンドを使用して参照を追加できます。
-    ```
+    ```CLI
     pac solution add-reference --path <Path to the root of the sample component>
     ```
 1. ソリューション プロジェクトから zip ファイルを生成するには、ソリューション プロジェクト ディレクトリに `cd` して、以下のコマンドを使ってプロジェクトをビルドする必要があります:
-    ```msbuild /t:restore
+    
+     ```CLI
+     msbuild /t:restore
     ```
 1. 再度、コマンド`msbuild`を実行します。
 1. 生成されたソリューション zip ファイルは`Solution\bin\debug`フォルダーで使用できます。 zip ファイルの準備ができたら、Web ポータルを使用して、Common Data Service環境に手動で[ソリューションをインポート](/powerapps/maker/common-data-service/import-update-export-solutions)します。 または、Power Apps CLI コマンドを使用してソリューションをインポートするには、[環境への接続](https://docs.microsoft.com/powerapps/developer/component-framework/import-custom-controls#connecting-to-your-environment)および[デプロイメント](https://docs.microsoft.com/powerapps/developer/component-framework/import-custom-controls#deploying-code-components)セクションを参照してください。

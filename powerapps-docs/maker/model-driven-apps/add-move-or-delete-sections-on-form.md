@@ -21,12 +21,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c8ead91a40fc0f79f801fee64c8eff2891723264
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2731520659633c305e19e02b67670bb12796dc50
+ms.sourcegitcommit: ed583eb94720a9645bfd79776311792a958077b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863839"
+ms.lasthandoff: 03/01/2020
+ms.locfileid: "3094027"
 ---
 # <a name="add-configure-move-or-delete-sections-on-a-form"></a>フォーム上のセクションを追加、構成、移動、削除する 
 フォーム デザイナーを使用してフォームのセクションを追加、構成、移動、削除します。 
@@ -113,7 +113,8 @@ ms.locfileid: "2863839"
     >   - セクションを誤って削除した場合は、コマンド バーで **元に戻す** を選択してフォームを以前の状態に戻します。 
     >   - 必須またはロック済みフィールドがあるセクションは削除できません。 
     >   - ロックされたセクションは削除することができません。 
-    >   - タブには各タブ列に少なくとも 1 つのセクションを含む必要があります。 タブ列の最後の残りのセクションを削除すると、新しいセクションが自動的に追加されます。 
+    >   - タブには各タブ列に少なくとも 1 つのセクションを含む必要があります。 タブ列の最後の残りのセクションを削除すると、新しいセクションが自動的に追加されます。
+    >   - 統一インターフェイスでは、タイトルと境界線を含むセクションを非表示としている場合には、セクションのレンダリングがされません。  従来の Web クライアントとは異なり、幅が広いものから狭いものまで、異なるビューポートをまたいでフォームが適切にレンダリングされるように設計されています。
 
 ### <a name="see-also"></a>関連項目
 [モデル駆動型フォーム デザイナーの概要](form-designer-overview.md)  

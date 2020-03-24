@@ -394,6 +394,8 @@
           href: authenticate-dot-net-framework.md
         - name: OAuth を使用
           href: authenticate-oauth.md
+        - name: WS-Trust を使用した Office365 認証
+          href: authenticate-office365-deprecation.md
     - name: 'チュートリアル: アプリを Azure Active Directory に登録する'
       href: walkthrough-register-app-azure-active-directory.md
     - name: サーバー間 (S2S) の認証を使用して Web アプリケーションを作成する

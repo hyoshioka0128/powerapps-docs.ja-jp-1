@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 59351fbc8afa450a0de88e5e38ca9bcf812fee2b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3250c9e22881d24924997395a744a5bd45018786
+ms.sourcegitcommit: 4728372a4a467f65bab9ae17e91738f420e17374
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748826"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "3029986"
 ---
 # <a name="authentication-with-common-data-service-web-services"></a>Common Data Service の Web サービス を使用した認証
 
@@ -49,7 +49,7 @@ Office 365 の認証では、SOAP Web サービスのみで .NET Framework SDK �
 
 Office 365 の認証を使用する場合、OAuth で行うようにアプリケーションを登録する必要はありません。 有効なユーザーに対して、ユーザー プリンシパル名 (UPN) およびパスワードを単に提供する必要があります。
 
-詳細: [.NET Framework アプリケーションでの認証](authenticate-dot-net-framework.md)
+詳しくは：[ .NET Frameworkアプリケーションを使用した認証](authenticate-dot-net-framework.md)、[WS-Trust セキュリティ プロトコルを使用した Office365 認証の運用](authenticate-office365-deprecation.md) を参照してください
 
 ## <a name="all-other-software-frameworks"></a>他のすべてのソフトウェア フレームワーク
 

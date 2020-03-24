@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2a8656eb85ff7812aff2c395b4a63e239dfdb375
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: e99433c2fce04ec5b72579645ccfda838892dbea
+ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753607"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "3091302"
 ---
 # <a name="open-forms-views-dialogs-and-reports-with-a-url"></a>URL を使用してフォーム、ビュー、ダイアログ、およびレポートを開く
 
@@ -216,7 +216,9 @@ function getReportURL(action,fileName,id) {
 ```  
 
 ### <a name="see-also"></a>関連項目   
- [フォームに渡すパラメーターを使用してフィールド値を設定する](set-field-values-using-parameters-passed-form.md)   
+
+ [フォームに渡すパラメーターを使用してフィールド値を設定する](set-field-values-using-parameters-passed-form.md)<br/>
+ [Xrm.Navigation.openUrl](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-navigation/openurl)<br/>
  [カスタム クエリストリング パラメーターが許可されるフォームの構成](configure-form-accept-custom-querystring-parameters.md)    
  [リボンのカスタマイズ](customize-commands-ribbon.md)<br/>
  [JavaScript を使用したクライアント スクリプト](client-scripting.md)<br/>

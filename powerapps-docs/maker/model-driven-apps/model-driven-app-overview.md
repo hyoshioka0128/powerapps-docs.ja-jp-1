@@ -10,23 +10,23 @@ ms.service: powerapps
 ms.devlang: na
 ms.topic: conceptual
 ms.component: model
-ms.date: 08/09/2018
+ms.date: 02/12/2020
 ms.author: matp
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 11febe03a69fe774f2c0394ee5d3a016c901498d
-ms.sourcegitcommit: 5e6d71967902c463f34a9254f988b9c10e431eb4
+ms.openlocfilehash: d29ec6ca429efb4a7c221b888c77f01841542a18
+ms.sourcegitcommit: 6cffa70358fd2e388d64a01f906c8c196fbbdefb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "2890671"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "3069808"
 ---
 # <a name="what-are-model-driven-apps-in-power-apps"></a>Power Apps におけるモデル駆動型アプリとは?
 
-モデル駆動型アプリの設計は、アプリ開発へのコンポーネントを重視した手法です。 モデル駆動型アプリの設計は、コードを必要とせず、作成するアプリはシンプルにもきわめて複雑にもすることができます。  デザイナーがアプリ レイアウトを完全に制御するキャンバス アプリ開発とは違い、モデル駆動型アプリではレイアウトの多くが自動的に決まり、アプリに追加するコンポーネントによって大部分が指定されます。 
+モデル駆動型アプリの設計は、アプリ開発へのコンポーネントを重視した手法です。 モデル駆動型アプリの設計は、コードを必要とせず、作成するアプリはシンプルにもきわめて複雑にもすることができます。  デザイナーがアプリ レイアウトを完全に制御するキャンバス アプリ開発とは違い、モデル駆動型アプリではレイアウトの多くが自動的に決まり、アプリに追加するコンポーネントによって大部分が指定されます。
 
 ![サンプル モデル駆動型アプリ](media/model-driven-app-overview/model-app-sample.png)
 

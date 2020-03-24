@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9859fd06ca31ed44d22474cd92491fc3194252c6
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: cf8fdf1b14ef7bbc503c49fac217bb071bd56305
+ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861740"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "3029771"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>ソリューション チェッカーの一般的な問題と解決策
 
@@ -220,7 +220,7 @@ PowerApps-アドバイザー エンタープライズ アプリケーション I
 
 問題についての詳細と解決の手順については、 [KB 文書 #4337537: 無効なエクスポート - 不足しているビジネス プロセス エンティティ](https://support.microsoft.com/en-hk/help/4337537/invalid-export-business-process-entity-missing) を参照してください。
 
-## <a name="solution-cchecker-fails-to-export-patched-solutions"></a>ソリューション チェッカーがパッチを適用した ソリューション をエクスポートできない
+## <a name="solution-checker-fails-to-export-patched-solutions"></a>ソリューション チェッカーがパッチを適用したソリューションをエクスポートできない
 
 ソリューションに [修正プログラム](https://docs.microsoft.com/powerapps/developer/common-data-service/create-patches-simplify-solution-updates) が適用済の場合、ソリューション チェッカーは分析のためのソリューションをエクスポートできません。 ソリューションに修正プログラムが適用されていると、元のソリューションがロックされそのソリューションを親ソリューションとして識別する依存修正プログラムが組織内に存在する限り、変更またはエクスポートができません。
 
