@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 12/19/2019
+ms.date: 03/21/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c70d73cb2dcdd9fd1832a10c4c89029cdb5c45ad
-ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.openlocfilehash: 49f25d01c646916738e583729e12e7b0544f7390
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264924"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122800"
 ---
 # <a name="formula-reference-for-power-apps"></a>Power Apps の数式のリファレンス
 数式では、多くの要素を組み合わせて使用します。  使用できる要素は、次のとおりです。
@@ -149,7 +149,7 @@ ms.locfileid: "78264924"
 
 **[EncodeUrl](functions/function-encode-decode.md)** – URL エンコードを使用して特殊文字をエンコードします。
 
-**[Exit](functions/function-exit.md)** – 現在実行中のアプリを終了します。
+**[Exit](functions/function-exit.md)** –現在実行中のアプリを終了し、必要に応じて現在のユーザーをサインアウトします。
 
 **[Exp](functions/function-numericals.md)** - *e* の累乗を返します。
 

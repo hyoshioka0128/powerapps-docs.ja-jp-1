@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/12/2020
+ms.date: 03/19/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 00273fefd24b9e0f76ed284b2f9ab526fb7706d6
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: c0710f36b5c49037d5104ab1085d1c990290b967
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211850"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122877"
 ---
 # <a name="overview-of-canvas-app-connectors-for-power-apps"></a>Power Apps のキャンバスアプリコネクタの概要
 データは、Power Apps で構築したものも含め、ほとんどのアプリの中核になります。 *データ ソース*に格納されたデータは、*接続*を作成することでアプリに取り込まれます。 接続は特定の*コネクタ*を使用してデータ ソースと通信します。 Power Apps には、多くの人気のあるサービスやオンプレミスのデータソース (SharePoint、SQL Server、Office 365、Salesforce、Twitter など) 用のコネクタが用意されています。 キャンバスアプリへのデータの追加を開始するには、「 [Power Apps でのデータ接続の追加](add-data-connection.md)」を参照してください。
@@ -74,7 +74,7 @@ ms.locfileid: "79211850"
 | ![SharePoint](./media/connections-list/sharepoint.png) |[**SharePoint**](connections/connection-sharepoint-online.md) |&nbsp; | ![SQL Server](./media/connections-list/sql.png) |[**SQL Server**](connections/connection-azure-sqldatabase.md) 
 |![Twitter](./media/connections-list/twitter.png) |[**Twitter**](connections/connection-twitter.md)
 
-* * Azure Blob、Box、Dropbox、Google Drive、OneDrive、OneDrive for Business に適用されます。
+\* * Azure Blob、Box、Dropbox、Google Drive、OneDrive、OneDrive for Business に適用されます。
 
 ## <a name="standard-and-custom-connectors"></a>標準コネクタとカスタム コネクタ
 Power Apps は、一般的に使用される多くのデータソースに対して*標準*のコネクタを提供します。 使用するデータソースの種類に対して、Power Apps に標準コネクタがある場合は、そのコネクタを使用する必要があります。 自分で構築したサービスなど、別の種類のデータ ソースに接続する必要がある場合は、「[Microsoft Flow でカスタム コネクタを登録して使用する](../canvas-apps/register-custom-api.md)」を参照してください。
@@ -102,4 +102,4 @@ Power Apps は、一般的に使用される多くのデータソースに対し
 
 ### <a name="windows-authentication"></a>Windows 認証
 
-この種類の接続は、エンドユーザーの認証に依存しないため、非常に安全ではありません。  **オンプレミス**のデータソースに接続する必要がある場合は、Windows 認証を使用します。  この種類の接続の例として、SQL Server を持つオンプレミスのサーバーが挙げられます。  接続はゲートウェイを経由する必要があります。  コネクタはゲートウェイを通過するため、そのデータソースのすべてのデータにアクセスできます。 このため、指定した Windows 資格情報を使用してアクセスできる情報は、コネクタで利用できます。 アプリケーションが発行されると、接続も公開され、ユーザーが使用できるようになります。   これは、エンドユーザーが同じ接続を使用してアプリケーションを作成し、そのコンピューター上のデータにアクセスすることも可能であることを意味します。  データソースへの接続も、アプリが共有されているユーザーと**暗黙的に共有**されます。  この種類の接続は、データソースがオンプレミスのサーバーにのみ存在し、そのソースのデータを自由に共有できる場合に有効です。
+この種類の接続は、エンドユーザー認証に依存しないため、非常に安全ではありません。 **オンプレミス**のデータソースに接続する必要がある場合は、Windows 認証を使用します。 この種類の接続の例として、SQL Server を持つオンプレミスのサーバーが挙げられます。 接続はゲートウェイを経由する必要があります。 コネクタはゲートウェイを通過するため、そのデータソースのすべてのデータにアクセスできます。 このため、指定した Windows 資格情報を使用してアクセスできる情報は、コネクタで利用できます。 アプリケーションが発行されると、接続も公開され、ユーザーが使用できるようになります。  これは、エンドユーザーが同じ接続を使用してアプリケーションを作成し、そのコンピューター上のデータにアクセスすることも可能であることを意味します。 データソースへの接続も、アプリが共有されているユーザーと**暗黙的に共有**されます。 この種類の接続は、データソースがオンプレミスのサーバーにのみ存在し、そのソースのデータを自由に共有できる場合に有効です。

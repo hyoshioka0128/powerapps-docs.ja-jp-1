@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/30/2019
+ms.date: 03/19/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 18abbc91426c74b48aefd51f1867d8bff806d718
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 7e434de24af417b5871c762d1aecd64cc41c5c72
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211505"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122753"
 ---
 # <a name="system-requirements-limits-and-configuration-values-for-canvas-apps"></a>キャンバス アプリのシステム要件、制限、構成値
 このトピックには、デバイスプラットフォームと web ブラウザーの要件に加えて、キャンバスアプリの制限と構成値が含まれています。
@@ -57,7 +57,7 @@ ms.locfileid: "79211505"
 
 | Name | ［制限値］ |
 | --- | --- |
-| Timeout |180 秒 |
+| タイムアウト |180 秒 |
 | 再試行回数 |4 |
 
 > [!NOTE]
@@ -73,13 +73,13 @@ ms.locfileid: "79211505"
 > [!IMPORTANT]
 >   既存の構成がある場合は、2018年9月30日までにできるだけ早く更新してください。そのため、Power Apps アプリが存在するリージョンについて、この一覧の IP アドレスが含まれ、一致していることを確認してください。
 
-| Region | 送信 IP |
+| Region (リージョン) | 送信 IP |
 | --- | --- |
 | アジア | 13.75.36.64-13.75.36.79、13.67.8.240-13.67.8.255、52.175.23.169、52.187.68.19、127.0.0.1 |
 | オーストラリア  | 13.70.72.192-13.70.72.207、13.72.243.10、13.77.50.240-13.77.50.255、13.70.136.174、127.0.0.1 |
 | ブラジル | 191.233.203.192-191.233.203.207、104.214.19.48-104.214.19.63、13.65.86.57、104.41.59.51、127.0.0.1 |
 | カナダ | 13.71.170.208-13.71.170.223、13.71.170.224-13.71.170.239、52.237.24.126、40.69.106.240、40.69.106.255、127.0.0.1|
-| Europe | 13.69.227.208-13.69.227.223、52.178.150.68、13.69.64.208-13.69.64.223、52.174.88.118、137.117.161.181、127.0.0.1|
+| ヨーロッパ | 13.69.227.208-13.69.227.223、52.178.150.68、13.69.64.208-13.69.64.223、52.174.88.118、137.117.161.181、127.0.0.1|
 | インド  | 104.211.81.192-104.211.81.207、52.172.211.12、40.78.194.240-40.78.194.255、13.71.125.22、104.211.146.224、104.211.146.239、127.0.0.1 |
 | Japan | 13.78.108.0-13.78.108.15、13.71.153.19、40.74.100.224-40.74.100.239、104.215.61.248、127.0.0.1 |
 | 南アメリカ | 191.233.203.192-191.233.203.207、104.214.19.48-104.214.19.63、13.65.86.57、104.41.59.51、127.0.0.1 |
@@ -92,6 +92,7 @@ ms.locfileid: "79211505"
 
 | ドメイン | プロトコル | 用途 |
 | --- | --- | --- |
+| api.bap.microsoft.com<br/>api.businessappdiscovery.microsoft.com | https | 環境のアクセス許可の管理|
 | management.azure.com |https |RP |
 | msmanaged-na.azure-apim.net |https |コネクタ/API のランタイム |
 | login.microsoft.com<br>login.windows.net<br>login.microsoftonline.com<br>secure.aadcdn.microsoftonline-p.com |https |ADAL |
@@ -102,9 +103,10 @@ ms.locfileid: "79211505"
 | \*。 azureedge.net |https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および make.powerapps.com |
 | \*。 blob.core.windows.net |https | Blob Storage |
 | \*。 flow.microsoft.com | https | create.powerapps.com、make.powerapps.com、content.powerapps.com、および make.powerapps.com |
-| *. dynamics.com | https | Common Data Service |
+| \*。 dynamics.com | https | Common Data Service |
 | vortex.data.microsoft.com |https |製品利用統計情報 |
-| localhost | https | Power Apps モバイル
+| localhost | https | Power Apps モバイル|
+
 
 > [!NOTE]
 > VPN を使用している場合は、Power Apps Mobile のトンネリングから localhost を除外するように構成する必要があります。

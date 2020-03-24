@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: a8ef720b45f3a9e02129c79f883b007a1fac3b22
-ms.sourcegitcommit: 0ca700b2982a4dec430f0b02b00cb1b3a045cf1c
+ms.openlocfilehash: febec328c291972563599eb56a32f80e22eb070a
+ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "79543060"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80122527"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Power Apps での危機通信のサンプルテンプレートのセットアップと学習
 <!--note from editor: Suggest moving the overview into the usual overview position (i.e. after the H1). Other notes: According to the Docs Contributor Guide, graphic file names should be all lowercase, including the extension. I didn't change this, but something to note for next time. -->
@@ -192,7 +192,7 @@ ms.locfileid: "79543060"
 
 1. 左側のウィンドウでデータソースに移動します。
 
-    ![データ ソース](media/sample-crisis-communication-app/data-sources.png)
+    ![[データ ソース]](media/sample-crisis-communication-app/data-sources.png)
 
 1. アプリ内の既存の SharePoint リストを削除する<!--Alternatively, this could be "Right-click the name of each existing SharePoint list, and then select **Remove**" if that's how the context menu works here. I think the graphic will be clear enough for the reader, though.-->は、現在の SharePoint サイトを指していないためです。
 
@@ -466,7 +466,7 @@ CrisisCommunication フローは、要求をチームに送信する前に、受
 
 1. 左側のウィンドウでデータソースに移動します。
 
-    ![データ ソース](media/sample-crisis-communication-app/data-sources.png)
+    ![[データ ソース]](media/sample-crisis-communication-app/data-sources.png)
 
 1. 現在の SharePoint サイトを指していないため、アプリ内の既存の SharePoint リストを削除します。<!--Please see previous editor's note.-->
 
@@ -577,8 +577,8 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 | **フィールド名** | **SharePoint での論理名** | **目的** |
 |-|-|-|
 | タイトル | タイトル | 役に立つヒントのタイトル。 |
-| リソース URL | ResourceURL | 追加の読み取り資料へのリンク。 (オプション) |
-| サブタイトル | サブタイトル | チップのサブタイトル。 (オプション) |
+| リソース URL | ResourceURL | 追加の読み取り資料へのリンク。 (省略可能) |
+| サブタイトル | サブタイトル | チップのサブタイトル。 (省略可能) |
 | 説明 | 説明 | 役に立つヒントの詳しい説明。 |
 | 非推奨 | 非推奨 | 役に立つヒントを非表示にするには、を使用します。 |
 
@@ -594,7 +594,7 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 |-|-|-|
 | タイトル | タイトル | リンクのテキスト。 |
 | URL | URL | リンクの URL。 |
-| 説明 | 説明 | リンクに関する追加情報。 (オプション) |
+| 説明 | 説明 | リンクに関する追加情報。 (省略可能) |
 | 非推奨 | 非推奨 | リンクを非表示にするには、を使用します。 |
 
 ### <a name="set-up-faqs"></a>Faq の設定
@@ -700,6 +700,31 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 > [!NOTE]
 > 接続のいずれかがまだ承認されていない場合、エラーが表示されることがあります。
 この問題が発生した場合は、許可されていない接続と再認証を使用してカードを開いてください。
+
+
+### <a name="optional-sending-notifications-to-more-than-999-users"></a>省略可能: 999 人を超えるユーザーに通知を送信する
+
+現在の**グループメンバーの取得**アクションは、999ユーザー (既定では100ユーザー) のプルに限定されています。 より多くのユーザーに配布するには、代わりに、配布グループに電子メールを送信するようにフローを変更します。
+
+1. 次のカードを削除します:**グループメンバーを取得**し、**優先する送信通知設定で切り替え**ます。
+
+    ![アクションの削除](media/sample-crisis-communication-app/36-delete-actions.png)
+
+1. 新しいアクションを追加します。
+
+1. を検索し、 **[電子メールの送信 (V2)]** を選択します。
+
+    ![追加の電子メール送信](media/sample-crisis-communication-app/37-add-send-an-email.png)
+
+1. **[宛先]** フィールドに、配布グループの名前を入力します。
+
+1. **[件名]** フィールドで、 **[動的な値の追加]** ボタンを選択し、 **[ニュース項目が投稿されたとき]** カードの **[タイトル]** フィールドを追加します。
+
+    ![タイトルを追加します](media/sample-crisis-communication-app/38-add-title.png)
+
+1. **[本文]** フィールドで、 **[動的な値の追加]** ボタンを選択し、 **[ニュース項目が投稿されたとき]** カードの **[詳細]** フィールドを追加します。
+
+1. **[保存]** を選択します。
 
 ### <a name="test-the-news-notification-flow"></a>ニュース通知フローをテストする
 
