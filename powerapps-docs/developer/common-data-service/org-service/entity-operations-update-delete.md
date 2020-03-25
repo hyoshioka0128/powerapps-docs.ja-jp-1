@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 974835002e6c65ce553d93393132dfa225baba7e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749117"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109048"
 ---
 # <a name="update-and-delete-entities-using-the-organization-service"></a>組織サービスを使用したエンティティの更新と削除
 

@@ -10,11 +10,11 @@ ms.date: 01/17/2020
 ms.author: tapanm
 ms.reviewer: ''
 ms.openlocfilehash: 6065c842831aa9aa0c225d12470a4469fe51146d
-ms.sourcegitcommit: 4349eefb1fd788f5e27d91319bc878ee9aba7a75
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3012685"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108460"
 ---
 # <a name="configure-oauth2-provider-settings-for-portals"></a>ポータル用 OAuth2 プロバイダー設定を構成します
 

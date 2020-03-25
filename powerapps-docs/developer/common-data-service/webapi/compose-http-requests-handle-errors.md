@@ -21,11 +21,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 405e27d3461f78a2452de1c8b19d99d4d827d879
-ms.sourcegitcommit: abeedb952afc5e09ae4c158611e4813b63cb49b3
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "2854677"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109054"
 ---
 # <a name="compose-http-requests-and-handle-errors"></a>HTTP 要求の作成とエラーの処理
 

@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: d905bdcdd8cccccf841c16579243d4788faa6ab3
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749166"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109603"
 ---
 # <a name="work-with-data-using-code-in-common-data-service"></a>Common Data Service でコードを使用して作業する
 

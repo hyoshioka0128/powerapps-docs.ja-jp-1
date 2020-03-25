@@ -21,11 +21,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: beadf1822a46067efaa6b5a113338d85f40d153c
-ms.sourcegitcommit: 5e23beed96cc14efae9ff264405956d59fae1e7c
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "2944976"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109058"
 ---
 # <a name="perform-conditional-operations-using-the-web-api"></a>Web API を使用する条件付き演算を実行する
 

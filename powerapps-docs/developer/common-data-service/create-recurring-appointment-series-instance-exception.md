@@ -15,11 +15,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 57778f4520a305061c8f598ad82e033a89565033
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749144"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109052"
 ---
 # <a name="create-a-recurring-appointment-series-instance-or-exception"></a>定期的な予定の系列、インスタンス、または例外の作成
 

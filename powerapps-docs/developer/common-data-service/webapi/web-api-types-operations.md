@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a029fa57a3caf02414e20127ba24dc961c85551b
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: 2a93239f648c5f69676ad7903d1379b4cb1cd2a4
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004961"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109036"
 ---
 # <a name="web-api-types-and-operations"></a>Web API の種類および操作
 
@@ -344,7 +344,7 @@ Web API の使用時は、一対多と多対多の関連付けの違いは重要
 
 *複合型*は、プロパティ セットで構成される、キーを持たない名前付き構造化の種類です。 複合型は、一般的にモデル エンティティのプロパティの値や、パラメーター、操作の戻り値として使用されます。  
   
-<xref:Microsoft.Dynamics.CRM.ComplexTypeIndex> は、すべてのシステム複合型を一覧表示します。 *複合型*は、プロパティ セットで構成される、キーを持たない名前付き構造化の種類です。 これらは、一般的にモデル エンティティのプロパティの値や、パラメーター、操作の戻り値として使用されます。 次は、$metadata からの <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" /> です。  
+<xref:Microsoft.Dynamics.CRM.ComplexTypeIndex> は、すべてのシステム複合型を一覧表示します。 次は、$metadata からの <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" /> です。  
   
 ```xml  
 <ComplexType Name="WhoAmIResponse">  

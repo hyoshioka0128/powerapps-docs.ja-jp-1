@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9c9fe500fc2f3a7991b09c346b4fd931f8802160
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d85aa0cf9b27647a64631b5b39ba01e432b6148c
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749001"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109055"
 ---
 # <a name="create-install-and-update-a-managed-solution"></a>管理ソリューションの作成、インストール、および更新
 
@@ -51,7 +51,7 @@ ms.locfileid: "2749001"
 > [!IMPORTANT]
 >  ソリューションをインストールまたはカスタマイズを公開すると、標準システム操作を妨げる可能性があります。 ユーザーに対する影響が最小であるうちに、ソリューションのインポートを予定することを推奨します。  
   
- ソリューションが正常にインポートされなかった場合は、ダイアログ ボックスの**ログのダウンロード**をクリックしてレポートをダウンロードできます。このレポートには、マネージド ソリューションのインポート中に発生したエラーについての情報が記載されています。 このログ ファイルは XML ドキュメントで、Office Excel で開くように構成されています。  
+ ソリューションが正常にインポートされなかった場合は、ダイアログ ボックスの**ログのダウンロード**をクリックしてレポートをダウンロードできます。このレポートには、マネージド ソリューションのインポート中に発生したエラーについての情報が記載されています。 このファイルは 、Office Excel で開くように構成されている XML ドキュメントです。  
   
  <xref:Microsoft.Crm.Sdk.Messages.ImportSolutionRequest> メッセージを使用して、マネージド ソリューションをプログラムでインポートまたは更新できます。 このメッセージを使用しているときは、正常に実行されたインポートについての詳細情報を含む `ImportJob` エンティティ レコードの参照を要求することができます。 詳細: [ソリューションのインストールまたはアップグレード](work-solutions.md#BKMK_InstallUpgradeSolution)  
   

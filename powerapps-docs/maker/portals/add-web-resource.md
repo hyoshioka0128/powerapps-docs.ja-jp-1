@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 01/07/2020
+ms.date: 02/11/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 32bde2ec2c97f33c426a57b17216a7086930eaca
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 0c011c61c2084662d1e759d7226140dcf3ddfad6
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2977934"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109364"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>フォームに Azure Storage Web リソースを追加する
 
@@ -22,8 +22,8 @@ Common Data Service に直接ではなく Azure Storage にアップロードし
 
 特定のフォームからの添付ファイルを Azure Storage にアップロードできるようにするには、Web リソースをそのフォームに追加し、[組織に Azure Storage を構成する](enable-azure-storage.md) 必要があります。
 
-> [!Note]
-> この例では、フォームは潜在顧客エンティティの潜在顧客フォームに追加されます。 既存のフォームを編集する場合は注意なさるようお勧めします。
+> [!NOTE]
+この例では、フォームは潜在顧客エンティティの潜在顧客フォームに追加されます。 既存のフォームを編集する場合は注意なさるようお勧めします。
 
 ポータルを使用してファイル (たとえば attachments.zip) を Azure Storage にアップロードする場合、それはエンティティ上のメモと添付ファイルのプレースホルダーで表されます。
 
@@ -87,13 +87,15 @@ Azure に保存されているファイルを表示したり操作したりす�
 [クロス オリジン リソース共有 (CORS)](https://www.w3.org/TR/cors/) プロトコルは、反応が別のドメイン内で共有できるかどうかを表す一連のヘッダーで構成されます。
 次のサイト設定は CORS を構成するのに使用されます。
 
-|                 件名                  |                                                                            内容                                                                            |
-|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| HTTP/Access-Control-Allow-Credentials | このヘッダーの唯一の有効な値は true です (文字と小文字が区別されます)。 資格情報を必要としなくなった場合、(値を false に設定するよりもむしろ) このヘッダー全体を省略します。 |
-|   HTTP/Access-Control-Allow-Headers   |                                                   サポートされた HTTP 要求ヘッダーのコンマ区切りの一覧。                                                   |
-|   HTTP/Access-Control-Allow-Methods   |                                      GET、POST、OPTIONS などの、許可された HTTP 要求メソッドのコンマ区切りの一覧。                                       |
-|   HTTP/Access-Control-Allow-Origin    |                   任意のリソースがユーザーのリソースにアクセスできるように、\* を指定することができます。 それ以外の場合は、リソースにアクセスできる URL を指定します。                   |
-|  HTTP/Access-Control-Expose-Headers   |                リソースが使用するまたは公開できる簡単な応答ヘッダー以外の、HTTP ヘッダー名のコンマ区切りの一覧。                 |
-|      HTTP/Access-Control-Max-Age      |                                                       結果がキャッシュされる最大秒数。                                                        |
-|                                       |                                                                                                                                                                   |
-
+| サイト設定 | 要求ヘッダー | 説明 |
+|-|-|-|
+| HTTP/Access-Control-Allow-Credentials | Access-Control-Allow-Credentials | このヘッダーの唯一の有効な値は true です (文字と小文字が区別されます)。 資格情報を必要としなくなった場合、(値を false に設定するよりもむしろ) このヘッダー全体を省略します。 
+| HTTP/Access-Control-Allow-Headers | Access-Control-Allow-Headers | サポートされた HTTP 要求ヘッダーのコンマ区切りの一覧。
+| HTTP/Access-Control-Allow-Methods | Access-Control-Allow-Methods | GET、POST、OPTIONS などの、許可された HTTP 要求メソッドのコンマ区切りの一覧。
+| HTTP/Access-Control-Allow-Origin | Access-Control-Allow-Origin | 任意のリソースがユーザーのリソースにアクセスできるように、\* を指定することができます。 それ以外の場合は、リソースにアクセスできる URL を指定します。                   |
+|  HTTP/Access-Control-Expose-Headers | Access-Control-Expose-Headers | リソースが使用するまたは公開できる簡単な応答ヘッダー以外の、HTTP ヘッダー名のコンマ区切りの一覧。
+| HTTP/Access-Control-Max-Age | Access-Control-Max-Age |  結果がキャッシュされる最大秒数。
+| HTTP/Content-Security-Policy | Content-Security-Policy | 特定のページに対してユーザーエージェントが読み込みことができるリソースを制御します。
+| HTTP/Content-Security-Policy-Report-Only | Content-Security-Policy-Report-Only | Web開発者は、ポリシーの効果を監視するだけであり、ポリシーの効果を強制することはできません。 これらの違反レポートは、HTTP POST リクエストを介して指定された URI に送信される JSON ドキュメントで構成されます。
+| HTTP/X-Frame-Options | X-Frame-Options | *\<frame\>*、*\<iframe \>*、*\<embed\>*、*\<object\>* にて、ブラウザでページのレンダリングを許可するかどうかを示します。
+| HTTP/X-Content-Type-Options | X-Content-Type-Options | *Content-Type* で、MIME スニッフィングを無効にし、ブラウザで指定したタイプを使用するように強制します。

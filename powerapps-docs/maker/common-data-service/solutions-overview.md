@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 309b6721d60d06e81926bfc0f97ff192f936686a
-ms.sourcegitcommit: 6b2961308c41867756ecdd55f55eccbebf70f7f0
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2975810"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108459"
 ---
 # <a name="solutions-overview"></a>ソリューションの概要  
 
@@ -167,7 +167,7 @@ ms.locfileid: "2975810"
  
 ## <a name="solution-publisher-prefix"></a>ソリューション発行者の接頭辞 
 
-既定では、Power Apps で使用するソリューションは **Common Data Service の既定の発行者** に関連付けられている **Common Data Service の既定のソリューション** になります。 既定のカスタマイズ接頭辞はこの発行者に対してランダムに割り当てられます。例えば `cr8a3` などです。 つまり、組織のために作成された新しいメタデータの項目名は、項目を一意に識別するために使用される名前の前にこれを追加します。 
+既定では、Power Apps  で機能するソリューションは **Common Data Service デフォルト公開元** に関連付けられている **Common Data Services デフォルト ソリューション** になります。 既定のカスタマイズ接頭辞はこの発行者に対してランダムに割り当てられます。例えば `cr8a3` などです。 つまり、組織のために作成された新しいメタデータの項目名は、項目を一意に識別するために使用される名前の前にこれを追加します。 
 
 ソリューション発行者接頭辞を変更して、よりわかりやすいものにすることをお勧めします。 詳細: [ソリューション発行者の接頭辞を変更する](change-solution-publisher-prefix.md)
   

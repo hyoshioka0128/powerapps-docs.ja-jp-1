@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8e7bb5e6ac623b1fc3cbf9a496746ebf2bbf71c7
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: 11e131918e629f9373441c4307b0f4fc51e6dd30
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3004847"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3108451"
 ---
 # <a name="what-is-common-data-service"></a>Common Data Service とは何か？
 Common Data Service を使用することで、ビジネス アプリケーションで使用されるデータを安全に保存、管理することできます。 Common Data Service 内のデータは、一連のエンティティ内に格納されています。 *エンティティ*はデータベース内にデータを格納する方法と同様に、データの格納に使用される一連のレコードです。 Common Data Service には一般的なシナリオをカバーする標準エンティティの基本セットが含まれていますが、組織固有のカスタム エンティティを作成し、Power Queryを使用したデータ取り込みを行うことも可能です。 アプリ作成者は Power Apps を使用して、このデータを使用する機能豊富なアプリケーションを作成することができます。

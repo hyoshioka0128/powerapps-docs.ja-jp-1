@@ -11,31 +11,26 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: 300da15802a7132115b91773544792a921f0a827
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: b7d93d18ee9e176d936912235f71920f3cdeff48
+ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909289"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "3109043"
 ---
 # <a name="code-components-for-canvas-apps"></a>キャンバス アプリのコード コンポーネント
 
-> [!IMPORTANT]
-> この機能はまだ実験的であり既定で無効になっています。 詳細については [実験的機能とプレビュー機能](../../maker/canvas-apps/working-with-experimental.md) を参照してください。
-
 Power Apps Component Framework を使用すると、アプリ作成者はアプリ内やアプリ全体で使用するコード コンポーネントを作成できます。 詳細: [Power Apps Component Framework の概要](overview.md) 
 
-この実験的プレビューでは、Power Apps component framework により、アプリ作成者は Power Apps CLI ツールを使用してコード コンポーネントを作成、デバッグ、インポート、キャンバス アプリに追加できます。 この実験的プレビューでは特定の API のみがサポートされています。 キャンバス アプリがサポートされているかどうか、それぞれの API を確認することをお勧めします。 
+Power Apps  component framework を使うと、アプリの作成者は Power Apps CLI ツールを使ってコード コンポーネントを作成、デバッグ、インポートを行い、キャンバス アプリに追加することができます。 このパブリック プレビューでは、特定の API のみに対応しています。 各 API がキャンバス アプリに対応しているかどうかを確認することを推奨します。 
 
 > [!WARNING]
 > コード コンポーネントには Microsoft が生成していない可能性があるコードが含まれており、セキュリティ トークンやデータにアクセスする可能性があります。 コード コンポーネントをアプリに追加するときは、コード コンポーネント ソリューションが信頼できるソースのものであることを確認してください。
 
 ## <a name="prerequisites"></a>前提条件
 
-環境で Power Apps コンポーネント機能を有効にするには、システム管理者特権が必要です。
-
-> [!IMPORTANT]
-> 既定で、Power Apps Component Framework はモデル駆動型アプリに対して有効です。
+1. Power Apps ライセンスの更新が必要です。 詳しくは：[Power Apps component framework のライセンス](overview.md#licensing)を参照してください
+2. 環境で Power Apps コンポーネント機能を有効にするには、システム管理者特権が必要です。
 
 ## <a name="enable-power-apps-component-framework-feature"></a>Power Apps Component Framework 機能を有効にする
 
@@ -67,13 +62,7 @@ Power Apps Component Framework を使用すると、アプリ作成者はアプ�
 
  [はじめてのコード コンポーネント作成](implementing-controls-using-typescript.md) トピックでは、コード コンポーネントを作成するにあたっての段階的なプロセスを示しています。
 
-> [!NOTE]
-> コード コンポーネントの実装は、モデル駆動型アプリでもキャンバス アプリ (試験的プレビュー) でも同じです。 唯一の違いはコード コンポーネントの追加です。 
-
 ## <a name="add-components-to-a-canvas-app"></a>キャンバス アプリにコンポーネントを追加する
-
-> [!NOTE]
-> モデル駆動型アプリのフィールドやエンティティにコード コンポーネントを追加する方法は [モデル駆動型アプリにコード コンポーネントを追加する](add-custom-controls-to-a-field-or-entity.md) を参照してください。
 
 キャンバス アプリにコード コンポーネントを追加する方法:
 
@@ -97,7 +86,7 @@ Power Apps Component Framework を使用すると、アプリ作成者はアプ�
 
 ## <a name="delete-a-code-component"></a>コード コンポーネントの削除 
 
-キャンバス アプリからコード コンポーネントを削除するには、削除するコード コンポーネントを選択してから、メニューの**削除**ボタンを選択します。 コード コンポーネント が アプリ から削除されると、すべてのコード コンポーネント の要素が アプリ と アプリのパッケージから削除されます。 
+キャンバス アプリからコード コンポーネントを削除するには、削除するコード コンポーネントを選択してから、メニューの**削除**ボタンを選択します。 コード コンポーネント が アプリ から削除されると、すべてのコード コンポーネント の要素が アプリ と アプリのパッケージから削除されます。
 
 ## <a name="update-existing-code-components"></a>既存のコード コンポーネントの更新
 
@@ -110,4 +99,3 @@ Power Apps Component Framework を使用すると、アプリ作成者はアプ�
 
 [Power Apps Component Framework の概要](overview.md)<br/>
 [初めてコード コンポーネントを作成する](implementing-controls-using-typescript.md)
-
