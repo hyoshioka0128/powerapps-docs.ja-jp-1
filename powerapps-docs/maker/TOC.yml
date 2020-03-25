@@ -1559,8 +1559,6 @@
           href: ./common-data-service/update-solutions.md
         - name: ソリューションのエクスポート
           href: ./common-data-service/export-solutions.md
-        - name: ソリューションの修正プログラムを作成する
-          href: ./common-data-service/solution-patches.md
         - name: 管理ソリューションのマージ方法
           href: ./common-data-service/how-managed-solutions-merged.md
         - name: 環境変数を使用する
@@ -1579,6 +1577,10 @@
           href: ./common-data-service/set-managed-properties-metadata.md
         - name: ベスト プラクティス
           href: ./common-data-service/solution-best-practices.md
+        - name: 高度なトピック
+          items:
+            - name: ソリューションの修正プログラムを作成する
+              href: ./common-data-service/solution-patches.md
     - name: データフローの操作
       href: ./common-data-service/self-service-data-prep-with-dataflows.md
       items:
