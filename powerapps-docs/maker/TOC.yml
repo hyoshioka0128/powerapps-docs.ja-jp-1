@@ -1551,36 +1551,41 @@
           href: ./common-data-service/use-solutions-for-your-customizations.md
         - name: ソリューション パブリッシャーの概要
           href: ./common-data-service/change-solution-publisher-prefix.md
-        - name: ソリューションを作成する
-          href: ./common-data-service/create-solution.md
-        - name: ソリューションのインポート
-          href: ./common-data-service/import-update-export-solutions.md
-        - name: ソリューションの更新またはアップグレード
-          href: ./common-data-service/update-solutions.md
-        - name: ソリューションのエクスポート
-          href: ./common-data-service/export-solutions.md
-        - name: 管理ソリューションのマージ方法
-          href: ./common-data-service/how-managed-solutions-merged.md
-        - name: 環境変数を使用する
-          href: ./common-data-service/EnvironmentVariables.md
-        - name: ソリューションのレイヤーを表示する
-          href: ./common-data-service/solution-layers.md
-        - name: ソリューション履歴を表示する
-          href: ./common-data-service/solution-history.md
-        - name: ソリューションのチェックを使う
-          href: ./common-data-service/use-powerapps-checker.md
-        - name: '一般的な問題と解決策: ソリューションのチェック'
-          href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: セグメント化されたソリューションを使用する
           href: ./common-data-service/use-segmented-solutions-patches-simplify-updates.md
-        - name: メタデータの管理プロパティを設定する
-          href: ./common-data-service/set-managed-properties-metadata.md
+        - name: 管理ソリューションのマージ方法
+          href: ./common-data-service/how-managed-solutions-merged.md
+        - name: ソリューションのチェックを使う
+          href: ./common-data-service/use-powerapps-checker.md
+          items:
+            - name: '一般的な問題と解決策: ソリューションのチェック'
+              href: ./common-data-service/common-issues-resolutions-solution-checker.md
         - name: ベスト プラクティス
           href: ./common-data-service/solution-best-practices.md
-        - name: 高度なトピック
+        - name: 操作方法
           items:
             - name: ソリューションの修正プログラムを作成する
               href: ./common-data-service/solution-patches.md
+            - name: ソリューションを作成する
+              href: ./common-data-service/create-solution.md
+            - name: ソリューションの更新またはアップグレード
+              href: ./common-data-service/update-solutions.md
+            - name: ソリューションのインポート
+              href: ./common-data-service/import-update-export-solutions.md
+            - name: ソリューションのエクスポート
+              href: ./common-data-service/export-solutions.md
+            - name: 環境変数を使用する
+              href: ./common-data-service/EnvironmentVariables.md
+            - name: ソリューションのレイヤーを表示する
+              href: ./common-data-service/solution-layers.md
+            - name: ソリューション履歴を表示する
+              href: ./common-data-service/solution-history.md
+            - name: メタデータの管理プロパティを設定する
+              href: ./common-data-service/set-managed-properties-metadata.md
+            - name: 高度なトピック
+              items:
+                - name: ソリューションの修正プログラムを作成する
+                  href: ./common-data-service/solution-patches.md
     - name: データフローの操作
       href: ./common-data-service/self-service-data-prep-with-dataflows.md
       items:
