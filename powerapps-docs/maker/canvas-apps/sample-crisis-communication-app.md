@@ -7,21 +7,21 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/18/2020
+ms.date: 03/25/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: febec328c291972563599eb56a32f80e22eb070a
-ms.sourcegitcommit: 1b29cd1fa1492037ef04188dd857a911edeb4985
+ms.openlocfilehash: b4a356903c741b97a9b8dbe49d402f71f7196f0b
+ms.sourcegitcommit: 77e00640a59a7db9d67d3ac52f74d264cbe3a494
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80122527"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "80328594"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Power Apps での危機通信のサンプルテンプレートのセットアップと学習
-<!--note from editor: Suggest moving the overview into the usual overview position (i.e. after the H1). Other notes: According to the Docs Contributor Guide, graphic file names should be all lowercase, including the extension. I didn't change this, but something to note for next time. -->
+
 危機通信アプリは、ユーザーにとって、危機に関する情報をユーザーに接続するための使いやすいエクスペリエンスを提供します。 社内の社内ニュースをすばやく更新し、よく寄せられる質問への回答を取得し、リンクや緊急連絡先などの重要な情報にアクセスします。 このアプリをお使いの環境に合わせるには、少し設定が必要です。
 
 このチュートリアルでは、次の方法について説明します。
@@ -67,12 +67,12 @@ ms.locfileid: "80122527"
 
 ### <a name="create-a-sharepoint-site"></a>SharePoint サイトの作成
 
-1. [Office online](https://www.office.com)にサインインし、 **[SharePoint]** を選択します。
-1. **[サイトの作成]** を選択します。
+1. [Office online](https://www.office.com)にサインインし、[ **SharePoint**] を選択します。
+1. [**サイトの作成**] を選択します。
 
     ![SharePoint サイトのサンプル](media/sample-crisis-communication-app/01-Create-Site.png)
 
-1. **[チームサイト]** を選択します。
+1. [**チームサイト**] を選択します。
 
     ![チームサイト](media/sample-crisis-communication-app/02-Team-Site.png)
 
@@ -83,7 +83,7 @@ ms.locfileid: "80122527"
 
 1. **[次へ]** を選択します。
 1. サイトの所有者を追加します (省略可能)。
-1. **[完了]** を選択します。
+1. [**完了**] を選択します。
 
 ### <a name="create-sharepoint-lists-for-the-app"></a>アプリの SharePoint リストを作成する
 
@@ -92,8 +92,8 @@ ms.locfileid: "80122527"
 #### <a name="import-the-sharepoint-list-deployment-flow"></a>SharePoint リストのデプロイフローをインポートする
 
 1. [Flow.microsoft.com](https://flow.microsoft.com)にアクセスします。
-1. 左側のナビゲーションウィンドウで **[マイフロー]** を選択します。
-1. コマンドバーの **[インポート]** を選択します。
+1. 左側のナビゲーションウィンドウで [**マイフロー** ] を選択します。
+1. コマンドバーの [**インポート**] を選択します。
 1. DeploySPLists をアップロードし**ます。**<!--edit to the file name okay, here and in the following instances?--> GitHub リポジトリからのパッケージ。
 
     ![パッケージのインポート](media/sample-crisis-communication-app/import-package.png)
@@ -102,8 +102,8 @@ ms.locfileid: "80122527"
 
     ![［設定のインポート］](media/sample-crisis-communication-app/import-settings.png)
 
-1. 新しい SharePoint 接続を作成する必要がある場合は、セットアップの **[インポート]** ウィンドウで **[新規作成]** を選択します。
-1. コマンドバーの **[新しい接続]** を選択します。
+1. 新しい SharePoint 接続を作成する必要がある場合は、[セットアップの**インポート**] ウィンドウで [**新規作成**] を選択します。
+1. コマンドバーの [**新しい接続**] を選択します。
 
     ![新しい接続を作成する](media/sample-crisis-communication-app/create-connection.png)
 
@@ -116,11 +116,11 @@ ms.locfileid: "80122527"
 
 1. インポートが完了したら、 **[マイフロー** ] に移動し、フローの一覧を更新します。
 1. 新しくインポートされたフロー **DeploySPLists**を選択します。
-1. コマンドバーの **[編集]** を選択します。
+1. コマンドバーの [**編集**] を選択します。
 1. [**変数–リストカードのターゲットサイト] を**開きます。
-1. **[値]** には、SharePoint サイトの名前を入力します。
+1. [**値**] には、SharePoint サイトの名前を入力します。
 1. [**変数-アプリ名カード]** を開きます。
-1. **[値]** に、アプリの名前を入力します。既定では、名前は "**危機通信**" になります。
+1. [**値**] に、アプリの名前を入力します。既定では、名前は "**危機通信**" になります。
 
     ![フローパラメーター](media/sample-crisis-communication-app/04-Flow-Settings.png)
 
@@ -129,8 +129,8 @@ ms.locfileid: "80122527"
 #### <a name="run-the-sharepoint-list-deployment-flow"></a>SharePoint リスト配置フローの実行
 
 1. **DeploySPLists** flow の詳細画面に戻ります。
-1. コマンドバーの **[実行]** を選択します。
-1. **[続行]** を選択し、 **[フローの実行]** を選択します。
+1. コマンドバーの [**実行**] を選択します。
+1. [**続行**] を選択し、[**フローの実行**] を選択します。
 
     ![サインインしてフローを実行する](media/sample-crisis-communication-app/sign-in-flow.png)
 
@@ -148,7 +148,7 @@ ms.locfileid: "80122527"
 | CI_configAdminSetup | アプリの管理者による機能の構成に使用されます。<br>**注**: この一覧は、管理者ではないすべてのメンバーに対して読み取り専用である必要があります。 | *[App Name]* アプリの管理者構成の一覧。
 | CI_Contacts | 既定の連絡先のコンテンツタイプを使用して、連絡先に関する情報をキャプチャします。 (People 選択は含まれていないため、この一覧は手動で管理する必要がある場合があります。<!--edit okay?--> データが最新の状態であることを確認してください。)<br>**注**: これは、リスト内の既定のコンテンツタイプであるグローバル連絡先リストの種類によって異なります。 | *[App Name]* アプリの連絡先リスト。|
 | CI_CompanyNews | 会社の**ニュース**項目のコレクション。 | *[アプリ名]* アプリに表示されるニュース項目を管理するための一覧。 **非推奨**の列を使用して、アプリビューからニュース項目を削除できます。<!--edit okay, here and below? You use this pattern ("remove ___ from the app views") in the "Helpful tips" description, and it seems a bit more descriptive than "filter ___ out of the app".-->。レコードとして保持します。 | 
-| CI_FAQ  | よく寄せられる質問。 | *[App Name]* アプリに関してよく寄せられる質問の一覧です。 **[非推奨]** 列を使用して、アプリビューから FAQ 項目を削除し、レコードとして保持することができます。 |
+| CI_FAQ  | よく寄せられる質問。 | *[App Name]* アプリに関してよく寄せられる質問の一覧です。 [**非推奨**] 列を使用して、アプリビューから FAQ 項目を削除し、レコードとして保持することができます。 |
 | CI_UsefulLinks<!--edit okay? The sharepoint-lists.png screenshot later in this article shows it as "Usefulinks," which probably isn't correct either.--> | 役に立つハイパーリンクの一覧。 | *[App Name]* アプリの便利なハイパーリンクの一覧。 **非推奨**の列を使用すると、アプリビューからハイパーリンク項目を削除し、レコードとして保持することができます。 |
 | CI_Employee | 現在の従業員のプレゼンス状態を追跡しています。 例:**自宅**、**病欠**、**欠勤**、**休暇**中の仕事。  **注**:**作業**中の状態は想定されており、リストオプションには含まれていません。 | <!--Please check the following edit carefully. This cell was duplicated by mistake from the previous row. Does the note about the "Deprecated" column apply here?-->*[App Name]* アプリの従業員プレゼンスの状態を示すメッセージの一覧。 **非推奨**の列を使用して、アプリビューからステータスメッセージを削除し、レコードとして保持することができます。 |
 | CI_HelpfulTips             | ユーザーが自分の同僚に貢献している便利なヒント。 | *[App Name]* アプリの共有ヒントを管理するための一覧です。 **非推奨**の列を使用して、アプリビューからヒントを削除しながら、レコードとして保持することができます。  |
@@ -168,8 +168,8 @@ ms.locfileid: "80122527"
 ### <a name="import-the-app"></a>アプリをインポートする
 
 1. [Power Apps](https://make.powerapps.com) にサインインします。
-1. 左側のナビゲーションウィンドウで **[アプリ]** を選択します。
-1. コマンドバーの **[インポート]** を選択します。
+1. 左側のナビゲーションウィンドウで [**アプリ**] を選択します。
+1. コマンドバーの [**インポート**] を選択します。
 1. GitHub リポジトリから**CrisisCommunication**ファイルをアップロードします。
 
     > [!NOTE]
@@ -184,11 +184,11 @@ ms.locfileid: "80122527"
 
 1. **アプリ**の一覧に戻ります。
 1. **危機通信**アプリの [**その他のコマンド**(...)] を選択します。
-1. コンテキストメニューの **[編集]** を選択します。
+1. コンテキストメニューの [**編集**] を選択します。
 
     ![アプリを編集する](media/sample-crisis-communication-app/05-Edit-App.png)
 
-1. サインインするか、必要な接続を作成して、 **[許可]** を選択します。
+1. サインインするか、必要な接続を作成して、[**許可**] を選択します。
 
 1. 左側のウィンドウでデータソースに移動します。
 
@@ -202,19 +202,19 @@ ms.locfileid: "80122527"
 
     ![SharePoint の検索](media/sample-crisis-communication-app/sharepoint.png)
 
-1. **[SharePoint]** を選択し、接続を選択します。
+1. [ **SharePoint**] を選択し、接続を選択します。
 
     ![SharePoint 接続](media/sample-crisis-communication-app/sharepoint-connection.png)
 
-1. SharePoint サイトの URL をコピーし、テキスト フィールドに貼り付けて、**接続** を選択します。
+1. SharePoint サイトの URL をコピーし、[テキスト] フィールドに貼り付けて、[**接続**] を選択します。
 
     ![SharePoint サイトの URL](media/sample-crisis-communication-app/site-url.png)
 
-1. SharePoint のリストとライブラリをすべて選択し、 **[接続]** を選択します。
+1. SharePoint のリストとライブラリをすべて選択し、[**接続**] を選択します。
 
     ![SharePoint リストに接続する](media/sample-crisis-communication-app/sharepoint-lists.png)
 
-1. **[保存]** を選択し、 **[発行]** を選択します。
+1. [**保存**] を選択し、[**発行**] を選択します。
 
 ### <a name="optional-enable-location-updates"></a>省略可能: 場所の更新を有効にする
 
@@ -318,24 +318,24 @@ ms.locfileid: "80122527"
 
 作業状態をさらに追加する場合<!--Interesting fact: there is no plural of "status."--> 次の手順を実行すると、自宅や外出先から**のメッセージ**を**処理**できます。 まず、SharePoint サイトを更新する必要があります。
 
-1. SharePoint サイトに戻り、 **[サイトコンテンツ]** を選択します。
-1. **[CI_Employee の状態]** を選択します。
-1. **[Presencestatus]** 列が表示されていない場合は、 **[列の追加]** を選択します。
-1. **[列の表示/非表示]** を選択します。
+1. SharePoint サイトに戻り、[**サイトコンテンツ**] を選択します。
+1. [ **CI_Employee の状態**] を選択します。
+1. [ **Presencestatus** ] 列が表示されていない場合は、[**列の追加**] を選択します。
+1. [**列の表示/非表示**] を選択します。
 
     ![列の表示/非表示](media/sample-crisis-communication-app/36-hide-show-columns.png)
 
 1. [選択]<!--edit okay? I didn't know what "Check" meant here.--> **Presencestatus**。
 1. **[適用]** を選択します。
-1. **[Presencestatus]** 列を選択します。
+1. [ **Presencestatus** ] 列を選択します。
 
     ![[PresenceStatus] 列を選択します。](media/sample-crisis-communication-app/37-show-presence.png)
 
-1. **[列の設定]** を選択し、 **[編集]** を選択します。
+1. [**列の設定**] を選択し、[**編集**] を選択します。
 
     ![PresenceStatus 列の編集](media/sample-crisis-communication-app/38-edit-column.png)
 
-1. 追加の作業ステータスメッセージを **[選択肢]** フィールドに追加します。
+1. 追加の作業ステータスメッセージを [**選択肢**] フィールドに追加します。
 
 > [!NOTE]
 > 新しい選択肢の名前を記録します。これらは、後続の手順で使用します。
@@ -343,7 +343,7 @@ ms.locfileid: "80122527"
 次に、新しい作業ステータスメッセージを表示するために、アプリ自体にいくつかの調整を行う必要があります。
 
 1. Power Apps Studio でアプリを開く<!--edit okay?-->。
-1. **[作業状態]** 画面を選択します。
+1. [**作業状態**] 画面を選択します。
 1. 数式バーを**Onvisible**関数に設定します。
 
     ![プレゼンスの表示](media/sample-crisis-communication-app/39-onvisible-for-screen.png)
@@ -364,7 +364,7 @@ ms.locfileid: "80122527"
     ```
 
 1. `/* TEMPLATE FOR ADDITIONAL WORK STATUS OPTIONS */` 文字列をテンプレートに置き換えます。
-1. **[保存]** を選択し、 **[発行]** を選択します。
+1. [**保存**] を選択し、[**発行**] を選択します。
 
 ### <a name="update-the-request-for-help-flow"></a>ヘルプフローの要求を更新する
 
@@ -376,7 +376,7 @@ ms.locfileid: "80122527"
 
 1. すべてのヘルプ要求を投稿するチームチャネルにアクセスします。
 1. チャネルの [**その他のオプション**(...)] を選択します。
-1. **[チャネルへのリンクの取得]** を選択します。
+1. [**チャネルへのリンクの取得**] を選択します。
 
     ![チャネルへのリンクを取得する](media/sample-crisis-communication-app/17-Get-link-to-channel.png)
 
@@ -394,23 +394,23 @@ ms.locfileid: "80122527"
 
 1. [Flow.microsoft.com](https://flow.microsoft.com)にアクセスします。
 
-1. 左側のナビゲーションウィンドウで **[マイフロー]** を選択します。
+1. 左側のナビゲーションウィンドウで [**マイフロー** ] を選択します。
 
-1. **その他のコマンド**を選択する (...) **CrisisCommunication**の場合は、 **[編集]** を選択します。
+1. **その他のコマンド**を選択する (...) **CrisisCommunication**の場合は、[**編集**] を選択します。
 
     ![ヘルプフローの要求の編集](media/sample-crisis-communication-app/20-Edit-Flow.png)
 
 1. **チーム Id**カードを開きます。
 
-1. チーム ID を **[値]** フィールドに貼り付けます。
+1. チーム ID を [**値**] フィールドに貼り付けます。
 
 1. **チャンネル ID**カードを開きます。
 
-1. チャンネル ID を **[値]** フィールドに貼り付けます。
+1. チャンネル ID を [**値**] フィールドに貼り付けます。
 
     ![チーム Id とチャネル Id を設定する](media/sample-crisis-communication-app/22-Set-Team-IDs.png)
 
-1. **[Get time]** アクションまで下にスクロールし、選択したソースとターゲットの時刻を使用して、 **[タイムゾーンの変換]** アクションを更新します。
+1. [ **Get time** ] アクションまで下にスクロールし、選択したソースとターゲットの時刻を使用して、[**タイムゾーンの変換**] アクションを更新します。
 
     ![タイムゾーン設定の変換](media/sample-crisis-communication-app/convert-time-zone.png)
 
@@ -428,16 +428,16 @@ CrisisCommunication フローは、要求をチームに送信する前に、受
      ![コネクタを削除します。](media/sample-crisis-communication-app/33-delete-connector.png)
 
 1. **共有メールボックス (V2) に新しい電子メールが届いたとき**に検索して選択します。
-1. **[メールボックスアドレス]** に共有受信トレイのアドレスを入力します。
+1. [**メールボックスアドレス**] に共有受信トレイのアドレスを入力します。
 1. **コメント**カードを開きます。
 1. [**値**に**動的な値を追加する**] を選択します。
-1. **[本文]** を検索して選択します。
+1. [**本文**] を検索して選択します。
 
      ![本文の選択](media/sample-crisis-communication-app/35-body.png)
 
 1. **Get user profile card (V2)** カードを開きます。
-1. **[動的な値の追加]** を選択します。
-1. を検索し、 **[開始]** を選択します。
+1. [**動的な値の追加**] を選択します。
+1. を検索し、[**開始**] を選択します。
 
      ![Select From](media/sample-crisis-communication-app/34-from.png)
 
@@ -446,8 +446,8 @@ CrisisCommunication フローは、要求をチームに送信する前に、受
 インポートしたアプリを管理するには、管理アプリについても同じ手順を繰り返します。
 
 1. [Power Apps](https://make.powerapps.com) にサインインします。
-1. 左側のナビゲーションウィンドウで **[アプリ]** を選択します。
-1. コマンドバーの **[インポート]** を選択します。
+1. 左側のナビゲーションウィンドウで [**アプリ**] を選択します。
+1. コマンドバーの [**インポート**] を選択します。
 1. GitHub リポジトリから**CrisisCommunicationAdmin**ファイルをアップロードします。
 
     ![管理アプリケーションパッケージをインポートする](media/sample-crisis-communication-app/import-app.png)
@@ -458,11 +458,11 @@ CrisisCommunication フローは、要求をチームに送信する前に、受
 
 1. **アプリ**の一覧に戻ります。
 1. [**緊急通信の管理] アプリ**の [**その他のコマンド**(...)] を選択します。
-1. コンテキストメニューの **[編集]** を選択します。
+1. コンテキストメニューの [**編集**] を選択します。
 
     ![管理アプリの編集](media/sample-crisis-communication-app/08-Edit-Admin-App.png)
 
-1. サインインするか、必要な接続を作成して、 **[許可]** を選択します。
+1. サインインするか、必要な接続を作成して、[**許可**] を選択します。
 
 1. 左側のウィンドウでデータソースに移動します。
 
@@ -476,19 +476,19 @@ CrisisCommunication フローは、要求をチームに送信する前に、受
 
     ![SharePoint の検索](media/sample-crisis-communication-app/sharepoint.png)
 
-1. **[SharePoint]** を選択し、接続を選択します。
+1. [ **SharePoint**] を選択し、接続を選択します。
 
     ![SharePoint 接続](media/sample-crisis-communication-app/sharepoint-connection.png)
 
-1. SharePoint サイトの URL をコピーし、テキスト フィールドに貼り付けて、**接続** を選択します。
+1. SharePoint サイトの URL をコピーし、[テキスト] フィールドに貼り付けて、[**接続**] を選択します。
 
     ![SharePoint サイトの URL](media/sample-crisis-communication-app/site-url.png)
 
-1. すべての SharePoint リストとライブラリ を選択し、**接続** を選択します。
+1. [すべての SharePoint リストとライブラリ] を選択し、[**接続**] を選択します。
 
     ![SharePoint リストに接続する](media/sample-crisis-communication-app/sharepoint-lists.png)
 
-1. **[保存]** を選択し、 **[発行]** を選択します。
+1. [**保存**] を選択し、[**発行**] を選択します。
 
 ## <a name="create-initial-content-for-the-app"></a>アプリの初期コンテンツを作成する
 
@@ -505,16 +505,16 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 
 ### <a name="set-up-key-parameters-under-admin-settings"></a>[管理者の設定] でキーパラメーターを設定する
 
-アプリを初期化するには、 **[管理者の設定]** に移動して、必要なフィールドをすべて指定する必要があります。
+アプリを初期化するには、[**管理者の設定**] に移動して、必要なフィールドをすべて指定する必要があります。
 
-次の表に示すようにすべてのフィールドを入力し、 **[保存]** を選択します。
+次の表に示すようにすべてのフィールドを入力し、[**保存**] を選択します。
 
 | **フィールド名** | **SharePoint での論理名** | **目的** | **例** |
 |-|-|-|-|
 | 管理者の電子メール | AdminContactEmail | ここで、電子メール要求が送信されます。 ユーザーの電子メールアドレスに設定する必要があります。 別の受信トレイに通知を送信する場合は、この記事の「[オプションの共有受信トレイの構成](#optional-configure-shared-inbox)」を参照してください。 | admin@contoso.com |
 | ロゴの URL | Logo | 左上隅に表示されるアプリのロゴ。 | https://contoso.com/logo.png |
 | AAD グループ ID | AADGroupID | **新しい緊急時の通信ニュースをユーザーに通知**することで、社内の更新に関する通知をユーザーに送信するために使用されます。<!--Can you rename this flow to "Notify users of new crisis communication news"? Or maybe even "Notify users of breaking news about the crisis"?--> フロー. 次の手順に従って、グループの Azure Active Directory (Azure AD) ID を取得します。 | c0ddf873-b4fe-4602-b3a9-502dd944c8d5 |
-| アプリの URL | AppURL | ユーザーアプリの場所。 [**新しい危機通信のユーザーへの通知] ニュース**フローでは、 **[読み取り]** を選択した後にユーザーをリダイレクトできます。 | https://apps.preview.powerapps.com/play/<app URL>? tenantId =<tenant ID>
+| アプリの URL | AppURL | ユーザーアプリの場所。 [**新しい危機通信のユーザーへの通知] ニュース**フローでは、[**読み取り**] を選択した後にユーザーをリダイレクトできます。 | https://apps.preview.powerapps.com/play/<app URL>? tenantId =<tenant ID>
 | Government の RSS フィード | GovernmentRSSFeed | アプリの世界のニュース機能を設定するために使用されます。 信頼できる発行元から従業員に追加情報を提供する場合に便利です。 | https://www.who.int/rss-feeds/news-english.xml |
 | 通知方法 | PreferredSentNotification | **新しい緊急時通信ニュース**フローのユーザーへの通知によって、通知を送信するときにどの配布チャネルを使用する必要があるかを判断するために使用されます。 このフィールドは必須です。 | 電子メール、チームの通知、プッシュ通知 |
 | 機能フラグ | Feature1.feature...8 | アプリケーションの各機能を無効または有効にするために使用します。 |  |
@@ -526,10 +526,10 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 #### <a name="finding-the-azure-ad-id-for-your-distribution-group"></a>配布グループの Azure AD ID を検索しています
 <!--note from editor: The Cloud Style Guide says don't use "AAD" for "Azure AD."-->
 1. [Aad.portal.azure.com](https://aad.portal.azure.com)にアクセスします。
-1. 左側のナビゲーションウィンドウで **[Azure Active Directory]** を選択します。
-1. **[グループ]** を選択します。
+1. 左側のナビゲーションウィンドウで [ **Azure Active Directory** ] を選択します。
+1. [**グループ**] を選択します。
 1. 配布グループを検索して選択します。
-1. **[オブジェクト Id]** フィールドをコピーします。
+1. [**オブジェクト Id** ] フィールドをコピーします。
 
     ![Azure AD ID を取得しています](media/sample-crisis-communication-app/11-AAD-Group-ID.png)
 
@@ -537,8 +537,8 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 
 ### <a name="set-up-emergency-contacts"></a>緊急連絡先の設定
 
-1. **[会社の連絡先]** にアクセスします。
-1. **[新しい連絡先の作成]** を選択します。
+1. [**会社の連絡先**] にアクセスします。
+1. [**新しい連絡先の作成**] を選択します。
 1. 連絡先の詳細を使用してフォームを完成させます。
 
 *リストスキーマ:*
@@ -553,8 +553,8 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 
 ### <a name="set-up-initial-company-news"></a>会社の最初のニュースを設定する
 
-1. **[会社のニュース]** にアクセスします。
-1. **[新しい投稿の作成]** を選択します。
+1. [**会社のニュース**] にアクセスします。
+1. [**新しい投稿の作成**] を選択します。
 1. フォームに入力します。
 
 *リストスキーマ:*
@@ -569,7 +569,7 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 ### <a name="set-up-helpful-tips"></a>役に立つヒントを設定する
 
 1. 役に**立つヒント**を参照してください。
-1. **[新しいヒント]** を選択します。
+1. [**新しいヒント**] を選択します。
 1. フォームに入力します。
 
 *リストスキーマ:*
@@ -585,7 +585,7 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 ### <a name="set-up-links"></a>リンクの設定
 
 1. **リンク**にアクセスします。
-1. **[新しいリンクの作成]** を選択します。
+1. [**新しいリンクの作成**] を選択します。
 1. フォームに入力します。
 
 *リストスキーマ:*
@@ -600,7 +600,7 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 ### <a name="set-up-faqs"></a>Faq の設定
 
 1. **FAQ**にアクセスします。
-1. **[新しい FAQ の作成]** を選択します。
+1. [**新しい FAQ の作成**] を選択します。
 1. フォームに入力します。
 
 *リストスキーマ:*
@@ -617,8 +617,8 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 すべてのデータが正常に設定されたので、アプリをテストして動作することを確認できます。
 
 1. [Power Apps](https://make.powerapps.com) にサインインします。
-2. 左側のナビゲーションウィンドウで **[アプリ]** を選択します。
-3. アプリを再生するには、 **[危機通信]** を選択します。
+2. 左側のナビゲーションウィンドウで [**アプリ**] を選択します。
+3. アプリを再生するには、[**危機通信**] を選択します。
 
 アプリのテストが正常に完了したら、社内のすべてのユーザーと共有できます。
 
@@ -629,8 +629,8 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 ### <a name="import-the-news-notification-flow"></a>ニュース通知フローをインポートする
 
 1. [Flow.microsoft.com](https://flow.microsoft.com)にアクセスします。
-1. 左側のナビゲーションウィンドウで **[マイフロー]** を選択します。
-1. コマンドバーの **[インポート]** を選択します。
+1. 左側のナビゲーションウィンドウで [**マイフロー** ] を選択します。
+1. コマンドバーの [**インポート**] を選択します。
 1. GitHub リポジトリから**CrisisCommunicationNewsNotification**パッケージをアップロードします。
 
     > [!NOTE]
@@ -642,8 +642,8 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 
     ![インポート時に選択](media/sample-crisis-communication-app/select-during-import.png)
 
-1. 新しい接続を作成する必要がある場合は、セットアップの **[インポート]** ウィンドウで **[新規作成]** を選択します。
-1. コマンドバーの **[新しい接続]** を選択します。
+1. 新しい接続を作成する必要がある場合は、[セットアップの**インポート**] ウィンドウで [**新規作成**] を選択します。
+1. コマンドバーの [**新しい接続**] を選択します。
 
     ![新しい接続を作成する](media/sample-crisis-communication-app/create-connection.png)
 
@@ -657,7 +657,7 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
     ![[通知] ダイアログボックス](media/sample-crisis-communication-app/notifications-dialog.png)
 
 1. ID を取得するには、**アプリ**の一覧に移動します。
-1. **危機通信**アプリの **[その他のコマンド]** (...) を選択し、 **[詳細]** を選択します。
+1. **危機通信**アプリの [**その他のコマンド**(...)] を選択し、[**詳細**] を選択します。
 
     ![接続の詳細](media/sample-crisis-communication-app/06-App-Details.png)
 
@@ -665,13 +665,13 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 
     ![アプリ ID](media/sample-crisis-communication-app/07-App-ID.png)
 
-1. 接続の作成 ダイアログボックスにアプリ ID を貼り付け、**作成** を選択します。
+1. [接続の作成] ダイアログボックスにアプリ ID を貼り付け、[**作成**] を選択します。
 
     ![接続を作成する](media/sample-crisis-communication-app/target-app-id.png)
 
-1. 新しい接続を作成したら、 **[セットアップのインポート]** ウィンドウに戻り、 **[更新リスト]** を選択します。
-1. 新しい接続が表示されます。 それを選択し、 **[保存]** を選択します。
-1. すべての接続の追加が完了したら、 **[インポート]** を選択します。
+1. 新しい接続を作成したら、[**セットアップのインポート**] ウィンドウに戻り、[**更新リスト**] を選択します。
+1. 新しい接続が表示されます。 それを選択し、[**保存**] を選択します。
+1. すべての接続の追加が完了したら、[**インポート**] を選択します。
 
     ![インポートの接続](media/sample-crisis-communication-app/imported-connections.png)
 
@@ -683,15 +683,15 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
     > [!NOTE]
     > GCC パッケージをアップロードした場合、フロー名は、**新しい危機通信ニュース (gcc) を使用してユーザーに通知**します。
 
-1. コマンドバーの **[編集]** を選択します。
-1. **[新しい項目が投稿されたとき]** カードを開きます。
-1. **[サイトアドレス]** に、SharePoint サイトの名前を入力します。
-1. **[リスト名]** に「 **CI_CompanyNews**」と入力します。
-1. **[管理構成設定の取得]** カードを開きます。
-1. **[サイトアドレス]** に、SharePoint サイトの名前を入力します。
-1. **[リスト名]** に「 **CI_configAdminSetup**」と入力します。
+1. コマンドバーの [**編集**] を選択します。
+1. [**新しい項目が投稿されたとき**] カードを開きます。
+1. [**サイトアドレス**] に、SharePoint サイトの名前を入力します。
+1. [**リスト名**] に「 **CI_CompanyNews**」と入力します。
+1. [**管理構成設定の取得**] カードを開きます。
+1. [**サイトアドレス**] に、SharePoint サイトの名前を入力します。
+1. [**リスト名**] に「 **CI_configAdminSetup**」と入力します。
 1. [**変数の初期化–追加のテキストカードを読み取る]** を開きます。
-1. **[値]** に **「(ネイティブ言語)」と**入力します。
+1. [**値**] に **「(ネイティブ言語)」と**入力します。
 
     ![フローの設定](media/sample-crisis-communication-app/flow-options.png)
 
@@ -702,27 +702,21 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 この問題が発生した場合は、許可されていない接続と再認証を使用してカードを開いてください。
 
 
-### <a name="optional-sending-notifications-to-more-than-999-users"></a>省略可能: 999 人を超えるユーザーに通知を送信する
+### <a name="optional-sending-notifications-to-more-than-5000-users"></a>省略可能: 5000 人を超えるユーザーに通知を送信する
 
-現在の**グループメンバーの取得**アクションは、999ユーザー (既定では100ユーザー) のプルに限定されています。 より多くのユーザーに配布するには、代わりに、配布グループに電子メールを送信するようにフローを変更します。
+Power の自動化の Office ライセンスを使用している場合、現在の**グループメンバーの取得**アクションは、5000ユーザーのプルに限定されます。 Premium ライセンスを所有していて、最大10万ユーザーに配布する場合は、次の手順に従って、より多くのユーザーに送信することができます。
 
-1. 次のカードを削除します:**グループメンバーを取得**し、**優先する送信通知設定で切り替え**ます。
+1. [**グループメンバーの取得**] カードの [.. **.** ] メニューを選択します。
 
-    ![アクションの削除](media/sample-crisis-communication-app/36-delete-actions.png)
+    ![選択...メニュー](media/sample-crisis-communication-app/40-Settings.png)
 
-1. 新しいアクションを追加します。
+1. [**設定**] を選択します。
 
-1. を検索し、 **[電子メールの送信 (V2)]** を選択します。
+1. [**しきい値**] フィールドを10万に変更します。
 
-    ![追加の電子メール送信](media/sample-crisis-communication-app/37-add-send-an-email.png)
+    ![しきい値フィールドの設定](media/sample-crisis-communication-app/41-Threshold.png)
 
-1. **[宛先]** フィールドに、配布グループの名前を入力します。
-
-1. **[件名]** フィールドで、 **[動的な値の追加]** ボタンを選択し、 **[ニュース項目が投稿されたとき]** カードの **[タイトル]** フィールドを追加します。
-
-    ![タイトルを追加します](media/sample-crisis-communication-app/38-add-title.png)
-
-1. **[本文]** フィールドで、 **[動的な値の追加]** ボタンを選択し、 **[ニュース項目が投稿されたとき]** カードの **[詳細]** フィールドを追加します。
+1. **完了**の選択
 
 1. **[保存]** を選択します。
 
@@ -739,9 +733,9 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 マップコントロールを機能させるには、[場所の追跡を有効](#optional-enable-location-updates)にする必要があることに注意してください。 
 
 > [!IMPORTANT]
-> Power BI レポートを機能させるには、 **[CI_Employee の状態]** ボックスの一覧に少なくとも1つのエントリが必要です。
+> Power BI レポートを機能させるには、[ **CI_Employee の状態**] ボックスの一覧に少なくとも1つのエントリが必要です。
 
-先ほど作成した**CI_Employee Status** SharePoint リストからいくつかの情報が必要なので、先に説明します。 サイトの一覧を開き、 **[設定]** アイコンの下の **[リストの設定]** を選択します。
+先ほど作成した**CI_Employee Status** SharePoint リストからいくつかの情報が必要なので、先に説明します。 サイトの一覧を開き、[**設定**] アイコンの下の [**リストの設定**] を選択します。
 
 ![従業員の状態の一覧の設定](media/sample-crisis-communication-app/001-SharePointList-ListSettings-nolines.PNG)
 
@@ -749,17 +743,17 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 
 ![従業員の状態の一覧とサイト Id](media/sample-crisis-communication-app/002-SharePointList-AddressAndId-nolines.PNG)
 
-この時点で、Power BI レポートを開く準備が整いました。 Power BI を開き、**プレゼンス状態レポート .pbix**ファイルを開きます。 **CI_Employee 状態**データソースの右側にマウスポインターを合わせると、省略記号が表示されます。 それを選択し、 **[クエリの編集]** を選択します。
+この時点で、Power BI レポートを開く準備が整いました。 Power BI を開き、**プレゼンス状態レポート .pbix**ファイルを開きます。 **CI_Employee 状態**データソースの右側にマウスポインターを合わせると、省略記号が表示されます。 それを選択し、[**クエリの編集**] を選択します。
 
 ![クエリの編集](media/sample-crisis-communication-app/003-PowerBI-EditQuery-nolines.PNG)
 
-Power Query エディターが開いたら、 **[CI_Employee ステータス]** データソースを右クリックし、 **[詳細エディター]** を選択します。
+Power Query エディターが開いたら、[ **CI_Employee ステータス**] データソースを右クリックし、[**詳細エディター**] を選択します。
 
 ![Power Query 詳細エディター](media/sample-crisis-communication-app/004-PowerQuery-AdvancedEditor-nolines.PNG)
 
 ここでは、SharePoint リストのサイト名とリスト ID を使用します。
 
-次の図に示すように、新しい SharePoint サイトを SharePoint. Tables 文字列にコピーします。<!--Edit okay? This is a case where the image shows information that the text doesn't, so I'm not sure how to make this descriptive enough for people who aren't looking at the graphics, or people with low vision.--> GUID が強調表示されている3か所のリスト ID を入力し、 **[完了]** を選択します。
+次の図に示すように、新しい SharePoint サイトを SharePoint. Tables 文字列にコピーします。<!--Edit okay? This is a case where the image shows information that the text doesn't, so I'm not sure how to make this descriptive enough for people who aren't looking at the graphics, or people with low vision.--> GUID が強調表示されている3か所のリスト ID を入力し、[**完了**] を選択します。
 
 ![詳細エディター更新プログラムの Power Query](media/sample-crisis-communication-app/005-PowerQuery-AdvancedEditorUpdates-nolines.PNG)
 
@@ -767,19 +761,19 @@ Power Query エディターが開いたら、 **[CI_Employee ステータス]** 
 
 **接続を更新するには**
 
-1. **[ファイル]** メニューの **[オプションと設定]** をクリックし、 **[データソースの設定]** を選択します。
+1. [**ファイル**] メニューの [**オプションと設定**] をクリックし、[**データソースの設定**] を選択します。
 
     ![データ ソースの設定](media/sample-crisis-communication-app/PBI-1-DataSourceSettings.PNG)
 
-1. **[アクセス許可の編集]** を選択します。
+1. [**アクセス許可の編集**] を選択します。
 
     ![アクセス許可の編集](media/sample-crisis-communication-app/PBI-2-DataSourceSettings-EditPermissions.PNG)
 
-1. **[資格情報]** の種類 が **[組織アカウント]** に設定されていることを確認し、資格情報を使用して SharePoint リストにアクセスします。
+1. [**資格情報**の種類] が [**組織アカウント**] に設定されていることを確認し、資格情報を使用して SharePoint リストにアクセスします。
 
     ![アクセス許可の編集](media/sample-crisis-communication-app/PBI-3-OrganizationalAccount.PNG)
 
-SharePoint リストからデータをプルするようにレポートを更新するには、 **[閉じる & 適用]** を選択します。
+SharePoint リストからデータをプルするようにレポートを更新するには、[**閉じる & 適用**] を選択します。
 
 ![Power Query 閉じて適用](media/sample-crisis-communication-app/006-PowerQuery-CloseAndApply-nolines.PNG)
 
@@ -800,31 +794,31 @@ Teams 管理者の場合は、Teams アプリバーのすべてのユーザー�
 ![チーム内のアプリバー](media/sample-crisis-communication-app/19-App-in-Teams.png)
 
 1. [Power Apps](https://make.powerapps.com) にサインインします。
-1. 左側のナビゲーションウィンドウで **[アプリ]** を選択します。
+1. 左側のナビゲーションウィンドウで [**アプリ**] を選択します。
 1. **危機通信**アプリの [**その他のコマンド**(...)] を選択します。
-1. **[チームに追加]** を選択します。
+1. [**チームに追加**] を選択します。
 
     ![チームに追加](media/sample-crisis-communication-app/24-Add-to-Teams.png)
 
-1. **[アプリのダウンロード]** を選択します。
+1. [**アプリのダウンロード**] を選択します。
 
     ![アプリのダウンロード](media/sample-crisis-communication-app/25-Download-App.png)
 
 1. チームを開きます。
-1. アプリバーの **[アプリ]** にアクセスします。
-1. **[カスタムアプリのアップロード]** を選択します。
-1. チームの管理者は、テナント全体のアプリをアップロードすることができます。 **[Contoso のアップロード]** を選択します ( *contoso*はテナントの名前を表します)。<!--Edit okay? The screenshot said "Contoto," which I fixed.-->。
+1. アプリバーの [**アプリ**] にアクセスします。
+1. [**カスタムアプリのアップロード**] を選択します。
+1. チームの管理者は、テナント全体のアプリをアップロードすることができます。 [ **Contoso のアップロード**] を選択します ( *contoso*はテナントの名前を表します)。<!--Edit okay? The screenshot said "Contoto," which I fixed.-->。
 
     ![アプリをアップロードする](media/sample-crisis-communication-app/26-Upload-for-Contoso.png)
 
 1. Power Apps からダウンロードしたファイルをアップロードします。
 1. [Teams 管理センター](https://admin.teams.microsoft.com/dashboard)にアクセスします。
-1. 左側のナビゲーションウィンドウの **[Teams apps]** で、 **[セットアップポリシー]** を選択します。
+1. 左側のナビゲーションウィンドウの [ **Teams apps**] で、[**セットアップポリシー**] を選択します。
 
     ![アプリセットアップポリシー](media/sample-crisis-communication-app/27-Setup-Policies.png)
 
-1. **[グローバル (組織全体のセットアップ)]** を選択します。
-1. **[アプリの追加]** を選択します。
+1. [**グローバル (組織全体のセットアップ)**] を選択します。
+1. [**アプリの追加**] を選択します。
 
     ![アプリの追加](media/sample-crisis-communication-app/28-Add-App.png)
 
@@ -840,12 +834,12 @@ Teams 管理者の場合は、Teams アプリバーのすべてのユーザー�
 
 ### <a name="create-a-central-crisis-management-team-in-teams"></a>チームで中心的な危機管理チームを作成する<a name="create-a-central-crisis-management-teams-team"></a>
 
-危機的な応答を調整するには、チームで中心的な危機管理チームを作成し、関連するすべての情報を設定する必要があります。
+危機的な応答を調整するには、チームで中心的な危機管理チームを作成し、関連するすべての情報を設定する必要があります。 このチームは、中央の応答チームとのみ共有する必要があります。
 
 1. [チーム] にアクセスします。
-1. 左側のアプリバーから **[チーム]** を選択します。
+1. 左側のアプリバーから [**チーム**] を選択します。
 1. [**参加] または [チームの作成**] を選択します。
-1. **[チームの作成]** を選択し、残りの手順を完了します。
+1. [**チームの作成**] を選択し、残りの手順を完了します。
 
     ![チームを作成する](media/sample-crisis-communication-app/23-Create-Team.png)
 
@@ -854,7 +848,7 @@ Teams 管理者の場合は、Teams アプリバーのすべてのユーザー�
 **管理アプリをタブとして追加するには**
 
 1. [ **+** ] ボタンを選択します。
-1. **[Power Apps]** を検索して選択します。
+1. [ **Power Apps**] を検索して選択します。
 1. [**緊急情報] 管理者**を検索して選択します。
 
     ![アプリのピン留め](media/sample-crisis-communication-app/32-Pin-Teams-app.png)
@@ -886,6 +880,10 @@ Teams 管理者の場合は、Teams アプリバーのすべてのユーザー�
 * **GCC で現在サポートされていない機能は何ですか。**
 
     現在、Power オートメーション bot connector for Teams およびプッシュ通知コネクタは、GCC では使用できません。 [電子メール] オプションを使用して、内部のニュースの更新に関する警告をユーザーに通知します。
+
+* **アプリケーションを更新するにはどうすればよいですか。**
+
+    アプリケーションを更新する場合は、 [aka.ms/CrisisCommunicationSolution](https://aka.ms/CrisisCommunicationSolution)に記載されている手順に従ってください。
 
 ## <a name="issues-and-feedback"></a>問題とフィードバック
 

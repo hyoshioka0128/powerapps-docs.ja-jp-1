@@ -169,8 +169,6 @@
           href: ./canvas-apps/help-desk-install.md
         - name: 会議キャプチャ アプリ
           href: ./canvas-apps/sample-meeting-capture.md
-        - name: 危機通信アプリ
-          href: ./canvas-apps/sample-crisis-communication-app.md
     - name: 最初のアプリを作成する
       items:
         - name: 1 - アプリをテンプレートから作成する
@@ -1624,6 +1622,18 @@
   items:
     - name: Power Apps で AI Builder を使う
       href: ../use-ai-builder.md
+- name: サンプル アプリとソリューション
+  items:
+    - name: 危機通信アプリ
+      href: ./canvas-apps/sample-crisis-communication-app.md
+    - name: 緊急時対応ソリューション
+      items:
+        - name: 概要
+          href: ../sample-apps/emergency-response/overview.md
+        - name: アプリの展開と構成
+          href: ../sample-apps/emergency-response/deploy-configure.md
+        - name: アプリの使用
+          href: ../sample-apps/emergency-response/use.md
 - name: 他のユーザーの声
   items:
     - name: ウェビナー
