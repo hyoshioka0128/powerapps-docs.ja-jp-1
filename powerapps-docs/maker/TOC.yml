@@ -827,6 +827,8 @@
           href: ./canvas-apps/edit-app.md
         - name: アプリを削除する
           href: ./canvas-apps/delete-app.md
+        - name: アプリのライセンスの指定
+          href: ./canvas-apps/license-designation.md
         - name: 以前のバージョンに復元する
           href: ./canvas-apps/restore-an-app.md
         - name: アプリ名とタイルを変更する
@@ -877,6 +879,8 @@
           href: ./canvas-apps/cognitive-services-api.md
         - name: InfoPath フォームを Power Apps に変換する
           href: ./canvas-apps/transform-infopath.md
+        - name: Application Insights を使用してアプリのテレメトリを分析する
+          href: ./canvas-apps/application-insights.md
     - name: 開発者向け
       items:
         - name: 企業の開発者、パートナー、ISV のためのキャンバス アプリ
