@@ -7,28 +7,28 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 10/29/2019
+ms.date: 03/30/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 4980d7989a65032cec28aab1bc70ae3e01d1747d
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: c17fff957091a13e26e4bbbb3bc90f34fa5659f7
+ms.sourcegitcommit: 204d73f30be2fd63e13e3c64cbfa62b8d667df33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74724155"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80406083"
 ---
 # <a name="preview-create-a-canvas-app-from-azure-sql-database"></a>プレビュー: Azure SQL Database からキャンバスアプリを作成する
 
-[このトピックはプレリリース資料であり、変更されることがあります。]
+[このトピックはプレリリース版のドキュメントであり、変更される可能性があります。]
 
 このトピックでは、Azure SQL Database のデータを使用して、数分で Power Apps を使用してアプリを作成します。 ビジネスニーズに合わせてカスタマイズし、任意のデバイスで共有できる、完全に機能するアプリをお客様のデータと共に利用できます。
 
 > [!IMPORTANT]
 > - これはプレビュー機能です。
-> - プレビュー機能では、可用性と制限された機能が制限される場合があります。 プレビュー機能は、公式リリースの前に提供されており、お客様が早期にアクセスしてフィードバックを提供することができます。
+> - プレビュー機能では、可用性と機能が制限される場合があります。 プレビュー機能を正式リリースの前に提供することで、お客様にいち早くご利用いただき、フィードバックを送っていただくことができます。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -37,23 +37,25 @@ ms.locfileid: "74724155"
 - 既存の SQL Database にアクセスする必要があります。 </br> 既存の SQL Database がない場合は、[新しいデータベースを作成](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-get-started?tabs=azure-portal)します。
 - ファイアウォール設定で、Power Apps のリージョンの[IP アドレスまたは Azure サービス](#app-access-to-sql-database)へのアクセスを SQL Database に許可する必要があります。
 - SQL Database テーブルには、text データ型の列が少なくとも1つ必要です。
-- 有効な Power Apps ライセンスが必要です。または、 [30 日間の試用版ライセンス](../signup-for-powerapps.md)にサインアップしてください。
 
-## <a name="create-an-app"></a>アプリを作成する
+## <a name="create-an-app-from-azure-portal"></a>Azure portal からアプリを作成する
 
-1. [Azure Portal](https://portal.azure.com)にサインインします。
+> [!TIP]
+> また、 [Power Apps](https://make.powerapps.com)から Azure SQL database を使用するアプリを作成することもできます。 詳細については、「 [Power Apps の SQL Server コネクタ](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections/connection-azure-sqldatabase)」を参照してください。
+
+1. [Azure portal](https://portal.azure.com)にサインインします。
 2. SQL Database に移動します。
 3. [Power Apps] を選択します。
-
     
     ![SQL Database オプションの [Power Apps] オプション](./media/app-from-azure-sql-database/powerapps-link-azure-portal.png "SQL Database 内の電源アプリオプション")
-
-    > [!NOTE]
-    > Power Apps のライセンスをお持ちでない場合は、評価を開始するためのリンクを含む青色の情報バーが表示されます。 試用版の開始を選択すると、新しいタブが表示され、ライセンスにサインアップします。 完了したら Azure portal に戻り、ブレードを更新して続行します。
 
 4. "Site インスペクション"、"Fundraiser"、"Budget Tracker" など、アプリの名前を入力します。
 
 5. SQL 認証パスワードを入力し、必要に応じてユーザー名を変更します。
+    
+    > [!NOTE]
+    > Azure SQL database で SQL 認証の代わりに Azure AD 統合認証を使用する場合は、代わりに[Power Apps](https://make.powerapps.com)からアプリを作成し、 [SQL Server コネクタ](https://docs.microsoft.com/powerapps/maker/canvas-apps/connections/connection-azure-sqldatabase)を使用します。
+
 6. アプリの作成に使用するドロップダウンリストからテーブルを選択します。
 
 7. **[作成]** を選択します。
@@ -91,27 +93,27 @@ Power Apps は、Azure portal を使用して**Azure サービスコントロー
 > [!IMPORTANT]
 > コントロールを [オン] のままにした場合、Azure SQL Database サーバーは、azure の境界内の任意のサブネットからの通信を受け入れます。これは、Azure のデータセンターに定義されている範囲内の IP アドレスのいずれかから送信されます。 コントロールを ON に設定したままにすると、セキュリティの観点からアクセスが過剰になる可能性があります。
 
-## <a name="limitations"></a>事項
+## <a name="limitations"></a>制限事項
 
 - アプリ名には、アルファベット、数字、ハイフン、かっこ、またはアンダースコアのみを含めることができます。
-- Power Apps を SQL Database に接続するには、SQL 認証が必要です。
+- Azure portal からアプリを作成するには、SQL 認証が必要です。
 - Azure portal からキャンバスアプリを作成するときは、1つのテーブルのみを選択できます。 さらに多くのデータ接続を追加してテーブルやその他のデータソースを追加する場合は、アプリを作成した後でアプリをカスタマイズします。
-- Power Apps は、VNet サービスエンドポイントを使用して SQL Database に接続できません。 詳細については、「 [VNet サービスエンドポイント経由のアクセスの許可](https://docs.microsoft.com/azure/sql-database/sql-database-vnet-service-endpoint-rule-overview)」を参照してください。
+- VNet サービスエンドポイントを使用して SQL Database に接続することはできません。 詳細については、「 [VNet サービスエンドポイント経由のアクセスの許可](https://docs.microsoft.com/azure/sql-database/sql-database-vnet-service-endpoint-rule-overview)」を参照してください。
 
-## <a name="other-considerations"></a>その他の考慮事項
+## <a name="other-considerations"></a>その他の注意事項
 
 - SQL Database するアプリのアクセスは、[このアプリを共有](share-app.md)するすべてのユーザーに暗黙的に共有されます。 SQL 認証資格情報に、データの読み取りと書き込みのための適切なアクセス権があることを確認します。 </br> たとえば、異なる SQL 認証資格情報を使用して同じ SQL Database に接続し、読み取りと読み取り/書き込みのアクセス権を分離する別のアプリを作成できます。
 - スロットルの制限、デリゲート可能関数と操作、既知の問題、およびこの機能がパフォーマンスに関する考慮事項に使用する[SQL Database](https://docs.microsoft.com/connectors/sql/)コネクタの制限事項を確認します。
 - 既定以外の環境用のアプリを作成する必要がある場合は、 [make.powerapps.com](https://make.powerapps.com)からアプリを作成し、SQL Database のデータを使用してテナント用の別のリージョンを作成します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ:
 
-このクイックスタートでは、Azure portal を使用して、SQL Database のデータを使用してアプリを作成しました。 次の手順として、ビジネスニーズに合わせて、コントロール、イメージ、ロジックを使用してアプリをカスタマイズします。
+次の手順として、 [Power Apps](https://make.powerapps.com) studio を使用して、ビジネスニーズに合わせてコントロール、イメージ、ロジックを追加することで、アプリをカスタマイズします。
 
 > [!div class="nextstepaction"]
 > [Power Apps でキャンバスアプリインターフェイスを設計する](add-configure-controls.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>参照
 
 - [Power Apps でキャンバスアプリを共有する](share-app.md) </br>
 - [Power Apps でキャンバスアプリにデータ接続を追加する](add-data-connection.md#add-data-source)</br>

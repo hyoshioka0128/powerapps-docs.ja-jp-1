@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: ''
-ms.date: 03/24/2020
+ms.date: 03/30/2020
 ms.author: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 6cbbc3442a54a0c84ff82b7e32f255c2b400d073
-ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
+ms.openlocfilehash: 7d47d5fc808ebd13a101093b58b1e3e890730f25
+ms.sourcegitcommit: 204d73f30be2fd63e13e3c64cbfa62b8d667df33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "80242880"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80406336"
 ---
 # <a name="share-a-canvas-app-in-power-apps"></a>Power Apps でキャンバスアプリを共有する
 
@@ -27,7 +27,7 @@ ms.locfileid: "80242880"
 > [!IMPORTANT]
 > 共有アプリが期待どおりに機能するためには、アプリの基になるデータソース ( [Common Data Service](#common-data-service)や[Excel](share-app-data.md)など) のアクセス許可も管理する必要があります。 アプリが依存する[その他のリソース](share-app-resources.md) (フロー、ゲートウェイ、接続など) を共有する必要がある場合もあります。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 アプリを共有するには、そのアプリを (ローカルではなく) クラウドに保存して、アプリを発行する必要があります。
 
@@ -107,7 +107,7 @@ Office 365 グループでセキュリティが有効になっているかどう
 
 1. [Azure AD コマンドレット](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-v2-cmdlets)にアクセスできることを確認します。
 
-1. [Azure Portal](https://portal.azure.com/) \> Azure Active Directory \> [グループ] にアクセスして、適切なグループを選択 \>、オブジェクト Id をコピー \> ます。
+1. [Azure Portal](https://portal.azure.com/) \> Azure Active Directory \> グループにアクセスして、適切なグループを選択 \>、オブジェクト Id をコピー \> ます。
 
 1. PowerShell を使用して[Azure AD に接続](https://docs.microsoft.com/powershell/module/azuread/connect-azuread)します。
 
@@ -162,9 +162,9 @@ Power Apps キャンバスアプリは、Azure Active Directory テナントの�
 > - ゲストに割り当てることができるのは**共同所有者**ロールではなく、**ユーザー**ロールだけです。
 > - Power Apps キャンバスアプリのゲストアクセスは、Azure B2B を活用します。 Power Apps では、 [AZURE B2B ドキュメント](https://docs.microsoft.com/azure/active-directory/b2b/user-properties)に記載されている州 1 ~ 4 のゲストを認識します。 Power Apps は[Azure AD 直接フェデレーション](https://docs.microsoft.com/azure/active-directory/b2b/direct-federation)を使用して認証を行うゲストを認識できません。 
 
-### <a name="prerequisites"></a>必須コンポーネント
-- Azure Active Directory (Azure AD) で、テナントの B2B 外部コラボレーションを有効にします。 詳細情報: [B2B 外部コラボレーションを有効にし、ゲストを招待できるユーザーを管理します](/azure/active-directory/b2b/delegate-invitations)
-    - 既定では、[B2B 外部コラボレーションを有効にする] がオンになっています。 ただし、この設定は、テナント管理者が変更できます。B2B Azure AD の詳細については、「 [AZURE AD b2b のゲストユーザーアクセスとは](/azure/active-directory/b2b/what-is-b2b)」を参照してください。  
+### <a name="prerequisites"></a>前提条件
+- Azure Active Directory (Azure AD) で、テナントの B2B 外部コラボレーションを有効にします。 詳細情報: [B2B 外部コラボレーションを有効にし、ゲストを招待できるユーザーを管理する](/azure/active-directory/b2b/delegate-invitations)
+    - 既定では、[B2B 外部コラボレーションを有効にする] がオンになっています。 ただし、この設定は、テナント管理者が変更できます。 B2B Azure AD の詳細については、「 [AZURE AD b2b のゲストユーザーアクセスとは](/azure/active-directory/b2b/what-is-b2b)」を参照してください。  
 - Azure AD テナントにゲストユーザーを追加できるアカウントへのアクセス。 管理者とゲスト招待元ロールを持つユーザーは、テナントにゲストを追加できます。   
 - ゲストユーザーには、次のいずれかのテナントを通じて割り当てられたアプリの機能と一致する、パワーアプリの使用権を持つライセンスが必要です。
     - 共有されているアプリをホストしているテナント。
@@ -174,7 +174,7 @@ Power Apps キャンバスアプリは、Azure Active Directory テナントの�
 > アプリプランごとの Power Apps は、特定の環境内のアプリにスコープが設定されるため、テナント全体で認識できません。 Office と Power Apps のユーザープランに含まれる電源アプリは、特定の環境にバインドされていないため、ゲストシナリオでテナント全体で認識されます。 
 
 ### <a name="steps-to-grant-guest-access"></a>ゲストアクセスを許可する手順
-1. Azure AD にゲストユーザーを追加するには、 **[新しいゲストユーザー]** を選択します。 詳細情報: [クイック スタート:Azure AD](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)に新しいゲストユーザーを追加します。
+1. Azure AD にゲストユーザーを追加するには、 **[新しいゲストユーザー]** を選択します。 詳細については[、「クイックスタート: Azure AD に新しいゲストユーザーを追加する」](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)を参照してください。
     > [!div class="mx-imgBorder"] 
     > ![Azure AD にゲストを追加する](media/share-app/guest_access_doc_1.png "Azure AD にゲストを追加する")
 2. ゲストユーザーがホームテナントにライセンスを持っていない場合は、ゲストユーザーにライセンスを割り当てます。
@@ -187,11 +187,11 @@ Power Apps キャンバスアプリは、Azure Active Directory テナントの�
 3. キャンバスアプリを共有します。 
     1. https://make.powerapps.com にサインインします  
     2. **[アプリ]** にアクセスし、キャンバスアプリを選択してから、コマンドバーで **[共有]** を選択します。 
-    3. Azure AD テナントのゲストユーザーの電子メールアドレスを入力します。 詳細情報: [Azure AD B2B でのゲストユーザーアクセスとは](/azure/active-directory/b2b/what-is-b2b)
+    3. Azure AD テナントのゲストユーザーの電子メールアドレスを入力します。 詳細情報: [AZURE AD B2B でのゲストユーザーアクセスとは](/azure/active-directory/b2b/what-is-b2b)
           > [!div class="mx-imgBorder"] 
           > ![ゲストと共有する](media/share-app/guest_access_doc_2.png "ゲストと共有する")
  
-ゲストアクセスのためにアプリを共有した後、ゲストは、共有の一部として送信された電子メールから、それらと共有されているアプリを検出してアクセスできます。
+ゲストアクセスのためにアプリを共有した後、ゲストは、共有の一部として送信された電子メールから、それらと共有されているアプリを検出してアクセスできます。 代わりに、アプリの URL をゲストと直接共有することもできます。 URL を検索するには、[ [Power Apps](https://make.powerapps.com)] に移動し、左側のウィンドウから **[アプリ]** を選択して、**アプリを選択**し、 **[詳細]** タブを選択します。 **[Web リンク]** の下にアプリの URL が表示されます。
 
 > [!div class="mx-imgBorder"]  
 > ![ゲストはアプリ共有電子メールを受け取ります](media/share-app/guest_access_doc_4.png "ゲストはアプリ共有電子メールを受け取ります")
@@ -199,7 +199,7 @@ Power Apps キャンバスアプリは、Azure Active Directory テナントの�
 ### <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 #### <a name="whats-the-difference-between-canvas-app-guest-access-and-power-apps-portals"></a>キャンバスアプリのゲストアクセスと Power Apps ポータルの違いは何ですか。 
-キャンバスアプリを使用すると、などの従来のプログラミング言語でコードを記述しなくても、ビジネスプロセスC#をデジタル化することに合わせてアプリを構築できます。 キャンバスアプリのゲストアクセスを使用すると、共通のビジネスプロセスに参加しているさまざまな組織で構成されている個人チームが、さまざまな Microsoft やサードパーティのソースと統合されている同じアプリリソースにアクセスできます。 詳細情報: [Power Apps のキャンバスアプリコネクタの概要](/powerapps/maker/canvas-apps/connections-list)。
+キャンバスアプリを使用すると、などの従来のプログラミング言語でコードを記述しなくても、ビジネスプロセスC#をデジタル化することに合わせてアプリを構築できます。 キャンバスアプリのゲストアクセスを使用すると、共通のビジネスプロセスに参加しているさまざまな組織で構成されている個人チームが、さまざまな Microsoft やサードパーティのソースと統合されている同じアプリリソースにアクセスできます。 詳細につい[ては、「Power Apps のキャンバスアプリコネクタの概要」](/powerapps/maker/canvas-apps/connections-list)を参照してください。
 
 [Power Apps ポータル](/powerapps/maker/portals/overview) は、外部ユーザーが Common Data Service に格納されているデータを操作できるようにする、低コードで応答性の高い web サイトを構築する機能を提供します。 組織は、匿名で、または LinkedIn、Microsoft アカウント、またはその他の商用ログインプロバイダーなど、選択したログインプロバイダーを使用して、組織の外部のユーザーと共有できる web サイトを作成できます。 
 
@@ -220,7 +220,7 @@ Power Apps キャンバスアプリは、Azure Active Directory テナントの�
 > [!div class="mx-imgBorder"]  
 > ![ゲストの SharePoint にキャンバスアプリを埋め込む](media/share-app/guest_access_doc_5.PNG "ゲストの SharePoint にキャンバスアプリを埋め込む")
 
-IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋め込む場合は、完全な web URL を使用してアプリを参照します。 URL を検索するには、[https://make.powerapps.com ] にアクセスしてアプリを選択し、 **[詳細]** タブを選択します。 **[Web リンク]** の下に url が表示されます。
+IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋め込む場合は、完全な web URL を使用してアプリを参照します。 URL を検索するには、[https://make.powerapps.com] にアクセスしてアプリを選択し、 **[詳細]** タブを選択します。 **[Web リンク]** の下に url が表示されます。
 
 > [!div class="mx-imgBorder"]  
 > ![キャンバスアプリの詳細](media/share-app/guest_access_doc_6.PNG "キャンバスアプリの詳細")
@@ -233,10 +233,10 @@ IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋�
 
 |                                 | SharePoint カスタマイズフォーム | Premium 以外のコネクタを使用するスタンドアロンキャンバスアプリ | Premium コネクタを使用したスタンドアロンのキャンバスアプリ | モデル駆動型アプリ |
 |---------------------------------|----------------------------|----------------------------------------------------|------------------------------------------------|------------------|
-| SharePoint ユーザー (PA ライセンスなし) | ○                          |                                                    |                                                |                  |
-| Office に含まれる電源アプリ    | ○                          | ○                                                  |                                                |                  |
-| アプリごとの電源アプリの計画          | ○                          | ○                                                  | ○                                              | ○                |
-| ユーザーあたりの電力アプリプラン         | ○                          | ○                                                  | ○                                              | ○                |
+| SharePoint ユーザー (PA ライセンスなし) | x                          |                                                    |                                                |                  |
+| Office に含まれる電源アプリ    | x                          | x                                                  |                                                |                  |
+| アプリごとの電源アプリの計画          | x                          | x                                                  | x                                              | x                |
+| ユーザーあたりの電力アプリプラン         | x                          | x                                                  | x                                              | x                |
 
 さまざまなプランの価格と機能の詳細については[、「Microsoft Power Apps と Power 自動化ライセンスガイド](https://go.microsoft.com/fwlink/?linkid=2085130)」を参照してください。
 
@@ -247,7 +247,7 @@ IFrame HTML タグを使用して SharePoint にキャンバスアプリを埋�
 ゲストユーザーとして、ゲストテナントのアプリが共有されているときに受信した電子メールを開き、 **[アプリを開く]** ボタンを選択します。 これは Azure Active Directory と Microsoft アカウントユーザーの両方に適用されます。   
 
 #### <a name="must-a-guest-accept-the-azure-ad-guest-invitation-prior-to-sharing-an-app-with-the-guest"></a>ゲストとアプリを共有する前に、ゲストが Azure AD ゲストの招待を受け入れる必要がありますか。
-いいえ。 ゲスト招待を受け入れる前にゲストが共有アプリを起動すると、ゲストは、アプリの起動時にサインインエクスペリエンスの一部として招待に同意するように求められます。  
+No: ゲスト招待を受け入れる前にゲストが共有アプリを起動すると、ゲストは、アプリの起動時にサインインエクスペリエンスの一部として招待に同意するように求められます。  
 
 #### <a name="what-azure-ad-tenant-are-connections-for-a-guest-user-created-in"></a>で作成されたゲストユーザーの接続は Azure AD テナント
 アプリの接続は、常にアプリが関連付けられている Azure AD テナントのコンテキストで作成されます。 たとえば、アプリが Contoso テナントに作成された場合、contoso の内部およびゲストユーザーに対して行われた接続は Contoso テナントのコンテキストで作成されます。
@@ -318,7 +318,7 @@ InTune では、ユーザーのホームテナントのポリシーのみが適�
 | kintone                                           | いいえ                                                                     |
 | LinkedIn                                          | いいえ                                                                     |
 | マーケティングコンテンツハブ                             | いいえ                                                                     |
-| Medium                                            | いいえ                                                                     |
+| 中                                            | いいえ                                                                     |
 | Metatask                                          | いいえ                                                                     |
 | Microsoft Forms                                   | いいえ                                                                     |
 | Microsoft Forms Pro                               | いいえ                                                                     |
@@ -334,16 +334,16 @@ InTune では、ユーザーのホームテナントのポリシーのみが適�
 | Office 365 Outlook                                | いいえ                                                                     |
 | Office 365 Users                                  | はい                                                                    |
 | Office 365 ビデオ                                  | いいえ                                                                     |
-| 従来の OneDrive                                          | いいえ                                                                     |
+| OneDrive                                          | いいえ                                                                     |
 | OneDrive for Business                             | いいえ                                                                     |
 | OneNote (ビジネス)                                | いいえ                                                                     |
 | Outlook Customer Manager                          | いいえ                                                                     |
 | Outlook Tasks                                     | はい                                                                    |
 | Outlook.com                                       | いいえ                                                                     |
 | Paylocity                                         | いいえ                                                                     |
-| Planner                                           | いいえ                                                                     |
+| プランナー                                           | いいえ                                                                     |
 | Plumsail フォーム                                    | いいえ                                                                     |
-| Power BI                                          | はい                                                                    |
+| 表示する                                          | はい                                                                    |
 | Project Online                                    | いいえ                                                                     |
 | ProjectWise 設計の統合                    | いいえ                                                                     |
 | Projectwise 共有                                 | いいえ                                                                     |
