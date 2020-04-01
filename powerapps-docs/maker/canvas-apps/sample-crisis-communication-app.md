@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: sample
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/25/2020
+ms.date: 03/31/2020
 ms.author: mabolan
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 465f18474c7054467db8e22bb1702db250177395
-ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
+ms.openlocfilehash: fedcec7c8f3f093bf59b3ef607cbe4fbeea6ac54
+ms.sourcegitcommit: f5d15c973b2a129a0cc29a74cf8eaf6b24fbf36d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "80375061"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80516693"
 ---
 # <a name="set-up-and-learn-about-the-crisis-communication-sample-template-in-power-apps"></a>Power Apps での危機通信のサンプルテンプレートのセットアップと学習
 
@@ -725,6 +725,30 @@ GCC 環境を使用している場合は、GCC モードを有効にする必要
 1. **[本文]** フィールドで、 **[動的な値の追加]** ボタンを選択し、 **[ニュース項目が投稿されたとき]** カードの **[詳細]** フィールドを追加します。
 
 1. **[保存]** を選択します。
+
+### <a name="optional-deep-link-teams-notification-into-teams-app"></a>省略可能: チームアプリへのディープリンクチームの通知
+
+チーム内のキャンバスアプリにチームの通知を直接開く場合は、次の手順を実行します。
+
+1. アプリの URL を更新して、管理アプリのチームディープリンクをポイントします。 <br>
+管理アプリで、アプリの URL を次のように変更します。 `App ID` はアプリの ID です。
+
+    ```
+    https://teams.microsoft.com/l/entity/<APP ID>/<APP ID>
+    ```
+
+    ![管理アプリ](media/sample-crisis-communication-app/42-admin-app.png)
+
+1. 通知フローの内部で生成されたアプリリンクを更新します。 <br> [アプリリンク変数の設定] カードを開き、[値] の式を次のように変更します。
+
+    ```
+    concat(items('Apply_to_each')?['AppUrl'], if(greater(indexOf(items('Apply_to_each')?['AppUrl'], '?'),0),'&','?'), 'context=%7B%22subEntityId%22%3A%22',triggerBody()?['ID'],'%22%7D')
+    ```
+    ![フロー設定の変更](media/sample-crisis-communication-app/43-flow-settings.png)
+
+1. Canvas アプリを更新し、teams コンテキスト変数を使用して、正しいニュース記事へのディープリンクを行います。 <br> アプリの**OnStart**プロパティについて、パラメーターを `newsid` から `subEntityId`に変更します。
+
+    ![変更 OnStart](media/sample-crisis-communication-app/44-onstart.png)
 
 ### <a name="test-the-news-notification-flow"></a>ニュース通知フローをテストする
 
