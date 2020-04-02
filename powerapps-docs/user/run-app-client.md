@@ -1,12 +1,12 @@
 ---
 title: キャンバス ベースのアプリをモバイル デバイス上で実行する | Microsoft Docs
 description: キャンバス アプリをモバイル デバイス上で実行する方法について説明します。
-author: Mattp123
+author: mduelae
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: quickstart
-ms.date: 11/16/2018
-ms.author: matp
+ms.date: 04/1/2020
+ms.author: mkaur
 ms.custom: ''
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ad34f7daacf07ebc8ecde2a8ce29c163d0c28e95
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 1494c1624fc37b59b5e20b0cdaa15a9c9edb33e3
+ms.sourcegitcommit: 39f6feb699512e9c2bf71ef1a1238b32b639da02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74733340"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80527458"
 ---
 # <a name="run-a-canvas-app-on-a-mobile-device"></a>キャンバス アプリをモバイル デバイス上で実行する
 自分でアプリを作成したり、他のユーザーがあなたとアプリを共有したりしたときは、Windows、iOS、Android、または Web ブラウザーでそのアプリを実行できます。 このトピックでは、モバイル デバイス上でキャンバス アプリを実行する方法について説明します。 モバイル デバイスで実行されるアプリでは、位置情報サービスやカメラなどのデバイス機能を活用できます。
@@ -66,7 +66,7 @@ ms.locfileid: "74733340"
 
 Power Apps を初めて使う場合は、アプリを閉じるためのスワイプ ジェスチャが画面に表示されます。
 
-![アプリの起動](./media/run-app-client/run-client-app.png)
+![アプリの起動](media/run_client.png)
 
 ## <a name="give-consent"></a>同意
 アプリでデータ ソースへの接続またはデバイスの機能 (カメラや位置情報サービスなど) を使うためのアクセス許可が必要な場合は、アプリを使う前に同意する必要があります。 通常、これが求められるのは初回のみです。

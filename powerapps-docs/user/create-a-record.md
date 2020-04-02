@@ -6,7 +6,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 02/03/2020
+ms.date: 03/31/2020
 ms.author: mduelae
 ms.reviewer: ''
 ms.assetid: ''
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf8ee15b37e9fcae5027bb91e89ceb225325dcc5
-ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
+ms.openlocfilehash: 0aa3d23289ed296b2c8cc45725ab4e2fd9a7b0e0
+ms.sourcegitcommit: f5d15c973b2a129a0cc29a74cf8eaf6b24fbf36d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77054871"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80516645"
 ---
 # <a name="create-a-new-record"></a>新しいレコードの作成
 
@@ -31,7 +31,7 @@ ms.locfileid: "77054871"
 > [!NOTE]
 > **[簡易作成]** オプションは、管理者が有効にしたレコードに対してのみ使用できます。
     
-1. ナビゲーション バーで、**プラス記号** ![レコードの作成ボタン](media/create-record-button.png "レコードの作成ボタン") を選択してから、目的の項目を選択します。  
+1. ナビゲーション バーで、**プラス記号** ![レコードの作成ボタン](media/create-record-button.png "[レコードの作成] ボタン") を選択してから、目的の項目を選択します。  
 
     > [!div class="mx-imgBorder"] 
     > ![レコードの作成ボタン](media/newrecord1.png "レコードの作成ボタン")
@@ -55,28 +55,14 @@ ms.locfileid: "77054871"
     > [!div class="mx-imgBorder"] 
     > ![新規作成ボタン](media/newrecord2.png "新規作成ボタン")
   
-3. 新しい連絡先の適切な詳細情報を入力し、 **[保存して閉じる]** を選択します。
-
-    > [!NOTE]
-    > 保存していない変更がある場合に別のレコードまたはフォームにアクセスしようとすると、 **[未保存の変更]** ダイアログ ボックスがポップアップ表示されます。 **[保存して続行]** を選択すると、情報が保存され、アクセスしようとしていたページが開きます。 保存して続行する場合、フィールドにエラーがあると、ダイアログが閉じられるので、別のページに移動する前に、このページに残ってエラーを修正します。
-
-    > [!div class="mx-imgBorder"] 
-    > ![新規作成ボタン](media/newrecord3.png "新規作成ボタン")
-
- 
- ## <a name="preview-use-the-save-or-save--close-option-when-editing-a-record"></a>プレビュー:レコード編集時に [保存して閉じる] オプションを使用する 
- 
-既存のレコードを編集するときは、コマンド バーの **[保存]** または **[保存して閉じる]** を使用します。 このリリースより前のバージョンでは、右下隅の **[保存]** オプションのみ使用できました。
-
-> [!NOTE]
-> これは先行アクセス機能です。 お使いの環境でこの機能を有効にすることを先行してオプトインでき、これらの機能をテストして環境全体に導入することができるようになります。 これらの機能を有効にする方法の詳細については、[2020 リリース ウェーブ 1 更新プログラムへのオプトイン](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates)に関するページをご覧ください。
-
-
-1. 左側のナビゲーション ウィンドウで、編集するレコードの種類を選択します。 たとえば、 **[アカウント]** を選択します。
-2. 編集するアカウント レコードを開き、レコードに変更を加えます。
 3. 変更を保存するには、コマンド バーで **[保存]** または **[保存して閉じる]** を選択します。 右下隅の **[保存]** オプションも使用できます。
 
     > [!div class="mx-imgBorder"] 
     > ![レコードの保存オプション](media/saveoptionalwaysvisible.png "レコードの保存オプション")
+
+   > [!NOTE]
+   > 保存していない変更がある場合に別のレコードまたはフォームにアクセスしようとすると、 **[未保存の変更]** ダイアログ ボックスがポップアップ表示されます。 **[保存して続行]** を選択すると、情報が保存され、アクセスしようとしていたページが開きます。 保存して続行する場合、フィールドにエラーがあると、ダイアログが閉じられるので、別のページに移動する前に、このページに残ってエラーを修正します。
+
+ 
 
 

@@ -5,7 +5,7 @@ manager: kvivek
 ms.service: powerapps
 ms.component: pa-user
 ms.topic: conceptual
-ms.date: 02/03/2019
+ms.date: 03/31/2020
 ms.author: mkaur
 ms.reviewer: ''
 ms.assetid: ''
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3489266ab82600c1d902dcd6ec0383b4ef6b408a
-ms.sourcegitcommit: db8005866acab318c2fa894db64df88aaf7e3785
+ms.openlocfilehash: 54ddcf717b26859e71ed1339caa533fa9c6bcbb8
+ms.sourcegitcommit: f5d15c973b2a129a0cc29a74cf8eaf6b24fbf36d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77076064"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "80516663"
 ---
 # <a name="use-grid-filters"></a>グリッド フィルターを使用する 
 
@@ -52,30 +52,22 @@ ms.locfileid: "77076064"
    > [!div class="mx-imgBorder"]
    > ![新しいウィンドウで開く](media/newtab.png "新しいウィンドウで開く")
   
-
-## <a name="preview-new-grid-filters-and-search-option"></a>プレビュー:新しいグリッド フィルターと検索オプション
-
-このセクションは、先行アクセス機能に関するものです。 お使いの環境でこれらの機能を有効にするために、先行してオプトインできます。 これらの機能をテストして環境全体で導入することができるようになります。 これらの機能を有効にする方法については、[2020 リリース ウェーブ 1 更新プログラムへのオプトイン](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates)に関するページをご覧ください。
-
-
-   > [!NOTE]
-   > 時間、数値、通貨、時刻、または日付の既定の表示形式を変更しないでください。変更すると、問題が発生します。 詳細については、「[既知の問題](https://docs.microsoft.com/powerapps/user/grid-filters#known-issue)」を参照してください。
-
-### <a name="lookup-field-column"></a>ルックアップ フィールド列
+  
+## <a name="lookup-field-column"></a>ルックアップ フィールド列
 
 ルックアップ列でフィルター処理を行うときは、データを手動で入力するのではなく、フィルター処理するレコードの一覧から選択できます。 たとえば、 **[取引先責任者]** ルックアップ列では、フィルター処理するレコードの一覧から取引先担当者名を選択できます。
 
    > [!div class="mx-imgBorder"]
    > ![ルックアップ フィルター処理](media/lookup-filter.png "ルックアップ フィルター処理")
 
-### <a name="date-filter"></a>日付フィルター
+## <a name="date-filter"></a>日付フィルター
 
 堅牢な **[日付]** フィルターでは、正確な日付で検索する **[次の日付]** や、年度または四半期で検索するための **[今後 X 年の会計年度]** や **[会計期間内]** など、多くの異なる値から選択できます。
 
    > [!div class="mx-imgBorder"]
    > ![日付のフィルター処理](media/date-filter.png "日付のフィルター処理")
 
-### <a name="filter-the-list-of-activities"></a>活動の一覧をフィルター処理する
+## <a name="filter-the-list-of-activities"></a>活動の一覧をフィルター処理する
 
 活動の一覧をフィルター処理して、関心のあるものだけを表示することができます。 たとえば、活動種類フィルターを使用して、ビューに表示される活動をさらに制限することができます。 活動種類フィルターを使用すると、メール、タスク、電話などの種類に基づいて、活動をフィルター処理できます。
 
@@ -84,7 +76,7 @@ ms.locfileid: "77076064"
    > ![活動フィルター](media/activity_filter.png "活動フィルター")
 
 
-### <a name="known-issue"></a>既知の問題
+### <a name="known-issue"></a>既知の問題 
 
 数値、通貨、時刻、または日付の既定の表示形式を変更してから、グリッドのデータをフィルター処理すると、フィルターは選択した表示形式で表示されません。 フィルターはまだシステムの既定の形式で表示され、フィルター処理がまったく機能しない場合もあります。 
 
@@ -100,7 +92,7 @@ ms.locfileid: "77076064"
 この問題への対処を行っていますので、修正を利用できるかどうかはもう一度ご確認ください。
 
   
-### <a name="use-search-on-a-grid"></a>グリッドで検索を使用する
+## <a name="use-search-on-a-grid"></a>グリッドで検索を使用する
 
 グリッド ページの **[このビューを検索]** オプションを使用すると、現在表示されているビューのデータが検索されます。 次の例では、 **[取引先担当者]** グリッドで検索を行います。
 
@@ -120,7 +112,7 @@ ms.locfileid: "77076064"
    > ![ビューを検索する](media/search-view2.png "[このビューを検索] コマンドの検索結果")
 
 
-#### <a name="use-the-quick-find-search-experience"></a>簡易ク検索の検索エクスペリエンスを使用する
+## <a name="use-the-quick-find-search-experience"></a>簡易ク検索の検索エクスペリエンスを使用する
 
 エンティティの簡易検索ビュー定義を使用して検索が実行される従来のクイック検索検索エクスペリエンスに切り替えるには、管理者権限が必要です。
 
