@@ -29,13 +29,13 @@
   items:
     - name: ブラウザーで
       href: ../user/run-app-browser.md
+    - name: 電話で (プレビュー)
+      href: ../user/run-canvas-and-model-apps-on-mobile.md
     - name: スマートフォンで (キャンバス)
       href: ../user/run-app-client.md
-    - name: スマートフォンで (モデル駆動型)
-      href: ../user/run-app-client-model-driven.md
-    - name: SharePoint Online ページで (キャンバス)
+    - name: SharePoint Online ページで (キャンバス アプリ)
       href: ../user/powerapps-web-part.md
-    - name: Microsoft Teams で (キャンバス)
+    - name: Microsoft Teams で (キャンバス アプリ)
       href: ../user/open-app-embedded-in-teams.md
     - name: AppSource から
       href: ../user/app-source.md
@@ -143,6 +143,8 @@
               href: ../user/work-with-business-processes.md
             - name: フローを使う
               href: ../user/use-flows.md
+    - name: モバイルでモデル駆動型アプリを使用する (プレビュー)
+      href: ../user/use-custom-model-driven-app-on-mobile.md
     - name: Outlook 用 Dynamics 365 アプリを使用する
       href: ../user/use-outlook-app.md
 - name: アプリの作成
