@@ -6,18 +6,18 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/26/2020
+ms.date: 03/30/2020
 ms.author: kvivek
 ms.reviewer: kvivek
 searchScope:
 - GetStarted
 - PowerApps
-ms.openlocfilehash: e58b23503e1730c8606a833cb05f7253b5b96f49
-ms.sourcegitcommit: 77e00640a59a7db9d67d3ac52f74d264cbe3a494
+ms.openlocfilehash: f126a415cfe42e38e2131967a29564fc0255f6bb
+ms.sourcegitcommit: b6beb1b76d9ddb0f9846253f895d581bda9012ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "80327772"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "80417478"
 ---
 # <a name="deploy-and-configure-the-emergency-response-app"></a>緊急時対応アプリをデプロイして構成する
 
@@ -42,8 +42,8 @@ ms.locfileid: "80327772"
 - [手順 2:デプロイ パッケージをダウンロードする](#step-2-download-the-deployment-package)
 - [ステップ 3:ソリューション ファイルを環境にインポートする](#step-3-import-the-solution-file-into-your-environment)
 - [手順 4:組織の構成データとマスター データを読み込む](#step-4-load-configuration-and-master-data-for-your-organization)
-    - [手順 4.1: データ ファイルからデータを読み込む方法](#step-41-how-to-load-data-from-data-files)
-    - [手順 4.2: 必須の構成データをインポートする](#step-42-import-mandatory-configuration-data)
+    - [手順 4.1: 必須の構成データを読み込む](#step-41-load-mandatory-configuration-data)
+    - [手順 4.2: マスター データを読み込む](#step-42-load-master-data)
 - [手順 5:モバイル アプリのブランドを更新する](#step-5-update-the-mobile-app-branding)
 - [手順 6:モバイル アプリの同意をバイパスする](#step-6-bypass-consent-for-mobile-apps)
 - [手順 7:テレメトリ用に Azure Application Insights キーをモバイル アプリに追加する](#step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry)
@@ -65,6 +65,9 @@ Power Apps を購入した後、Common Data Service データベースを使用�
 1.  [Power Platform 管理センター](https://aka.ms/ppac)にサインインします。
 
 2.  データベースを使用して Common Data Service 環境を作成します。 詳細情報: [環境を作成および管理する](https://docs.microsoft.com/power-platform/admin/create-environment)
+
+    > [!IMPORTANT]
+    > データベースの作成中に、データベースのセキュリティ グループを選択した場合は、そのセキュリティ グループのメンバーであるユーザーと*のみ*アプリを共有できます。
 
 3.  環境に適切なユーザーを作成します。 詳細情報: [ユーザーを作成し、セキュリティ ロールを割り当てる](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
 
@@ -97,7 +100,7 @@ Power Apps を購入した後、Common Data Service データベースを使用�
 
 5.  **[ソリューションのインポート]** ダイアログ ボックスで、手順 1 で説明したソリューション ファイルを選択し、ウィザードの手順に従ってソリューションをインポートします。
 
-6.  ソリューションが正常にインポートされたら、インポート ダイアログ ボックスで **[閉じる]** を選択し、 **[すべてのカスタマイズの発行]** を選択します。 完了するまでに時間がかかることがあります。
+6.  ソリューションが正常にインポートされたら、インポート ダイアログ ボックスで **[閉じる]** を選択します。
 
 **[アプリ]** に新しいアプリが表示されるようになります。
 
@@ -111,7 +114,7 @@ Power Apps を購入した後、Common Data Service データベースを使用�
 
 管理アプリのいくつかのエンティティで、病院システムのデータを追加したり管理したりできます。 左側のナビゲーション ペインの下部にある領域ピッカーを使用して、異なる領域を選択できます。
 
-### <a name="step-4-load-configuration-and-master-data-for-your-organization"></a>手順 4:組織の構成データとマスター データを読み込む
+### <a name="step-4-load-configuration-and-master-data-for-your-organization"></a>手順 4.組織の構成データとマスター データを読み込む
 
 緊急時対応アプリに必要なすべてのデータは、抽出したデプロイ フォルダーの下にある **Data Files** フォルダーから入手できます。
 
@@ -136,7 +139,7 @@ Power Apps を購入した後、Common Data Service データベースを使用�
 <ul>
 <li>Acuities</li>
 <li>App Config</li>
-<li>アプリケーション</li>
+<li>アプリ</li>
 <li>Request Roles</li>
 <li>Supplies Import</li>
 </ul>
@@ -151,10 +154,10 @@ Power Apps を購入した後、Common Data Service データベースを使用�
 <p>緊急時対応アプリのマスター サンプル データを含む次のエンティティにデータをインポートする必要があります。
 <ul>
 <li>システム</li>
-<li>リージョン</li>
+<li>地域</li>
 <li>Facilities</li>
 <li>場所</li>
-<li>Departments</li>
+<li>部門</li>
 </ul>
 <p>サンプル データではなく自分の組織のデータをインポートしたい場合は、これらの Excel ファイル内のサンプル データを、自分の組織のデータに置き換えてから、アプリにデータをインポートできます。</p>
 <p>これらのエンティティのデータを手動で入力することもできます。 これらの各エンティティおよびエンティティ内の各フィールドについて詳しくは、「<a href="#manually-configure-and-manage-master-data-for-your-organization">組織のマスター データを手動で構成して管理する</a>」をご覧ください。</p></td>
@@ -168,29 +171,7 @@ Power Apps を購入した後、Common Data Service データベースを使用�
 </tr>
 </table>
 
-#### <a name="step-41-how-to-load-data-from-data-files"></a>手順 4.1: データ ファイルからデータを読み込む方法
-
-データ ファイルの 1 つからエンティティにサンプル データを読み込むには:
-
-1.  管理アプリの左側のナビゲーション ペインで、データを読み込むエンティティを選択します。 たとえば、領域ピッカーで **Location** を選択してから、**Systems** を選択します。
-
-2.  **[Excel からインポート]** を選択し、**Sample Data** フォルダーから **01 - Load Systems.xlsx** ファイルを選択します。
-
-    > [!div class="mx-imgBorder"] 
-    > ![Excel からインポート](media/conf-import-from-excel.png "Excel からインポート")
-
-3.  インポート ウィザードの手順に従って、データをインポートします。
-
-4.  サンプル データがインポートされると、エンティティにインポートされたレコードが表示されます。
-
-    > [!div class="mx-imgBorder"] 
-    > ![エンティティ レコード](media/conf-entity-record.png "インポート後のエンティティのレコード")
-
-他のエンティティについて上記の手順を繰り返します。
-
-または、マスター データを手動で入力する場合は、「[組織のマスター データを手動で構成して管理する](#manually-configure-and-manage-master-data-for-your-organization)」をご覧ください。
-
-#### <a name="step-42-import-mandatory-configuration-data"></a>手順 4.2: 必須の構成データをインポートする
+#### <a name="step-41-load-mandatory-configuration-data"></a>手順 4.1: 必須の構成データを読み込む
 
 次の手順に進む前に、管理アプリで次のエンティティに構成データをインポートする**必要があります**。
 
@@ -198,22 +179,51 @@ Power Apps を購入した後、Common Data Service データベースを使用�
 |-|-|-
 | 場所 | Acuities | 00 - Acuities Import.xlsx
 | 管理 | Apps Config | 00 - App Config Import.xlsx
-| 管理 | アプリケーション | 00 - App Import.xlsx
+| 管理 | アプリ | 00 - App Import.xlsx
 | Staffing | Request Roles | 00 - Request Roles Import.xlsx
 | 場所 | Supplies | 00 - Supplies Import.xlsx
 
-他のエンティティのデータは、後で[手動](#manually-configure-and-manage-master-data-for-your-organization)で、または前に説明したサンプル データ ファイルを使用して、追加することができます。
+##### <a name="how-to-load-data-from-data-files"></a>データ ファイルからデータを読み込む方法
 
-### <a name="step-5-update-the-mobile-app-branding"></a>手順 5:モバイル アプリのブランドを更新する
+データ ファイルの 1 つからエンティティにデータをインポートするには:
 
-モバイル アプリのアイコンや配色を、組織のブランドに合わせて変更することができます。
+1.  管理アプリの左側のナビゲーション ペインで、データを読み込むエンティティを選択します。 たとえば、領域ピッカーで **Administration** を選択してから、**Acuities** を選択します。
 
-これを行うには、前の手順で説明したように、デプロイ パッケージの **Data Files** フォルダーにある Excel ファイルからアプリとアプリ構成のデータをインポートして、**Administration** 領域の **App** エンティティと **App Config** エンティティを使用します。
+2.  **[Excel からインポート]** を選択し、**Data Files** フォルダーから **00 - Acuities Import.xlsx** ファイルを選択します。
+
+    > [!div class="mx-imgBorder"]
+    > ![Excel からインポート](media/conf-import-from-excel.png "Excel からインポート")
+
+3.  インポート ウィザードの手順に従って、データをインポートします。
+
+4.  データがインポートされると、エンティティにインポートされたレコードが表示されます。
+
+    > [!div class="mx-imgBorder"] 
+    > ![エンティティ レコード](media/conf-entity-record.png "インポート後のエンティティのレコード")
+
+他の構成データ エンティティについて上記の手順を繰り返します。
+
+または、マスター データを手動で入力する場合は、「[組織のマスター データを手動で構成して管理する](#manually-configure-and-manage-master-data-for-your-organization)」をご覧ください。
+
+#### <a name="step-42-load-master-data"></a>手順 4.2: マスター データを読み込む
+
+前述のように、次の操作を行うことができます。
+- **Data Files/Sample Data** フォルダーにあるマスター データ エンティティのサンプル データ ファイルを使用して、必要なエンティティにサンプル データをインポートできます。 
+
+- **Data Files/Data Template File for Master Data** フォルダーにあるマスター エンティティの "空の" データ ファイルを使用して、組織のデータを設定した後、必要なエンティティにデータをインポートできます。
+
+マスター データは、後で手動で追加することもできます。 詳細情報: [組織のマスター データを手動で構成して管理する](#manually-configure-and-manage-master-data-for-your-organization)
+
+### <a name="step-5-update-the-mobile-app-branding"></a>手順 5.モバイル アプリのブランドを更新する
+
+モバイル アプリのアプリ アイコン、配色、または表示名を組織のブランドに合わせて変更することができます。
+
+**Administration** 領域の **App** エンティティと **App Config** エンティティを使用してこの操作を行うには、デプロイ パッケージの **Data Files** フォルダーにある Excel ファイルおよび **App Icons** フォルダーにあるアイコン ファイルからアプリとアプリ構成のデータをインポートします (「[手順 2:デプロイ パッケージをダウンロードする](#step-2-download-the-deployment-package)」を参照してください)。
 
 > [!div class="mx-imgBorder"] 
 > ![Apps と App Config エンティティ](media/conf-app-app-config-entities.png "Apps エンティティと App Config エンティティ")
 
-1.  抽出したデプロイ パッケージのそれぞれ **App Import.xlsx** ファイルと **App Config Import.xlsx** ファイルから、**Apps** エンティティと **App Config** エンティティの構成データをインポートしたことを確認します。
+1.  **App Import.xlsx** ファイルと **App Config Import.xlsx** ファイルをそれぞれ使用して、**Apps** エンティティと **App Config** エンティティの構成データをインポートしたことを確認します。
 
 1.  次に、インポートした **Apps** レコードに設定できるように、キャンバス アプリのアプリ ID をコピーします。 [Power Apps](https://make.powerapps.com) にサインインします。
 
@@ -229,7 +239,7 @@ Power Apps を購入した後、Common Data Service データベースを使用�
     > [!div class="mx-imgBorder"] 
     > ![アプリ ID の詳細](media/conf-details-app-id.png "アプリ ID の詳細")
 
-1.  各キャンバス アプリについて、手順 3 と 4 を繰り返します。
+1.  各キャンバス アプリについて、手順 4 と 5 を繰り返します。
 
 1.  Admin App を開き、管理アプリの左側のナビゲーション ペインの領域ピッカーで **Administration** を選択して、**Apps** を選択します。 これにより、**App Import.xlsx** ファイルからインポートしたすべてのキャンバス アプリ レコードが表示されます。
 
@@ -241,19 +251,29 @@ Power Apps を購入した後、Common Data Service データベースを使用�
     > [!div class="mx-imgBorder"] 
     > ![[Power App ID] フィールド](media/conf-powerapp-id-field.png "[Power App ID] フィールド")
 
-1.  前の手順 2-6 でメモ帳にコピーしたアプリ ID を、 **[Power App ID]** フィールドにコピーします。 アプリ アイコンをダブルクリックして別の画像を指定することで、アプリ アイコンを更新することもできます。 レコードを保存します。
+1.  アプリの詳細ページで、次の操作を行います。
 
-1.  **Apps** の下にある各キャンバス アプリ レコードに対して手順 9 を繰り返し、**Power App ID** の値を追加します。
+    1. 前の手順でメモ帳にコピーしたアプリ ID を **[Power App ID]** フィールドにコピーします。
+
+    2. アプリ アイコンをダブルクリックして、**App Icons** フォルダーからアプリのアイコン ファイルを選択します。 正しいアイコンを簡単に選択できるように、画像ファイルにはわかりやすい名前が付けられています。 たとえば、**Emergency Response App** の場合は、"Emergency Response App.png" ファイルを選択します。 また、組織のブランドに従ってカスタム イメージを選択することもできます。
+
+    3. 必要に応じて、アプリの**説明**または**表示名**を更新します。
+
+    4. 必要に応じて、 **[Hide App from Menu] (メニューでアプリを非表示にする)** の値を更新して、アプリをアプリ一覧に表示するかどうかを設定します。 **Emergency Response App** はコンテナー アプリであるため、この値は既定で **[いいえ]** に設定されています。
+
+    5. 必要に応じて、 **[App Display Rank] (アプリの表示順位)** の値を更新して、アプリ一覧内のアプリの表示位置を設定します。
+
+    6. **[保存]** を選択します。
+
+1.  **Apps** にある各キャンバス アプリ レコードについて、手順 8 と 9 を繰り返します。
 
 1.  左側のペインで、**App Config** を選択します。
 
 1.  **Emergency Response App** レコードを選択して、編集用に開きます。
 
-    1.  アイコンをダブルクリックし、アプリ アイコンとして新しい画像を指定します。
+    1.  必要に応じて、アプリの色を更新します。
 
-    2.  アプリの名前と色を更新します。
-
-    3.  **[Device Sharing Enabled]\(デバイスの共有を有効にする\)** フィールドで **[はい]** または **[いいえ]** を選択して、モバイル アプリで **[サインアウト]** オプションを使用できるようにするかどうかを指定します。 **[はい]** を選択すると、 **[サインアウト]** オプションが使用できるようになります。
+    2.  **[Device Sharing Enabled]\(デバイスの共有を有効にする\)** フィールドで **[はい]** または **[いいえ]** を選択して、モバイル アプリで **[サインアウト]** オプションを使用できるようにするかどうかを指定します。 **[はい]** を選択すると、 **[サインアウト]** オプションが使用できるようになります。
 
     > [!div class="mx-imgBorder"] 
     > ![[Device Sharing Enabled]\(デバイスの共有を有効にする\) フィールド](media/conf-device-sharing-enabled-field.png "[Device Sharing Enabled]\(デバイスの共有を有効にする\) フィールド")
@@ -289,7 +309,7 @@ Power Apps を購入した後、Common Data Service データベースを使用�
     Set-AdminPowerAppApisToBypassConsent -AppName APPGUIDHERE
     ```
 
-2.  各行の `APPGUIDHERE` の値を、キャンバス アプリの実際のアプリ ID に置き換えます。
+2.  `APPGUIDHERE` の値を、キャンバス アプリの実際のアプリ ID に置き換えます。
 
 3.  ファイルを .ps ファイルとして保存します。
 
@@ -299,7 +319,7 @@ Power Apps を購入した後、Common Data Service データベースを使用�
 
 ### <a name="step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry"></a>手順 7:テレメトリ用に Azure Application Insights キーをモバイル アプリに追加する
 
-Azure Application Insights を使用して、モバイル アプリ (キャンバス アプリ) の詳細なテレメトリを収集し、アプリの使用状況に関する分析情報を取得できます。 これについて詳しくは、「[Azure Application Insights を使用したアプリのログ テレメトリ](https://powerapps.microsoft.com/blog/log-telemetry-for-your-apps-using-azure-application-insights/)」をご覧ください
+Azure Application Insights を使用して、モバイル アプリ (キャンバス アプリ) の詳細なテレメトリを収集し、アプリの使用状況に関する分析情報を取得できます。 これについて詳しくは、「[Application Insights を使用したアプリ テレメトリの分析](https://docs.microsoft.com/powerapps/maker/canvas-apps/application-insights)」をご覧ください
 
 ### <a name="step-8-share-canvas-apps-with-users-in-your-organization"></a>手順 8:組織内のユーザーとキャンバス アプリを共有する
 
@@ -314,7 +334,7 @@ Azure Application Insights を使用して、モバイル アプリ (キャン�
     > [!div class="mx-imgBorder"] 
     > ![キャンバス アプリを共有する](media/conf-share-canvas-apps.png "キャンバス アプリを共有する")
 
-4.  このアプリを共有する Azure AD グループまたはユーザーを指定します。 アプリは Common Data Service のデータに接続するので、エンティティに対するアクセス許可を付与する必要もあります。 共有パネルでは、エンティティに対するセキュリティの管理を求められます。 このアプリで使用されるエンティティに **[COVID 19 End User]\(COVID 19 エンド ユーザー\)** および **[Common Data Service ユーザー]** セキュリティ ロールを割り当てて、 **[共有]** を選択します。
+4.  このアプリを共有する Azure AD グループまたはユーザーを指定します。 アプリは Common Data Service のデータに接続するので、エンティティに対するアクセス許可を付与する必要もあります。 共有パネルでは、エンティティに対するセキュリティの管理を求められます。 このアプリで使用されるエンティティに **[Emergency Response User] (緊急時対応ユーザー)** および **[Common Data Service ユーザー]** のセキュリティ ロールを割り当てて、 **[共有]** を選択します。
 
     > [!div class="mx-imgBorder"] 
     > ![Azure AD のグループまたはユーザーとアプリを共有する](media/conf-share-app-groups-users.png "Azure AD のグループまたはユーザーとアプリを共有する")
@@ -357,11 +377,12 @@ Azure Application Insights を使用して、モバイル アプリ (キャン�
     Set-AdminPowerAppAsHero -AppName APPGUIDHERE
     ```
 
-2.  各行の `APPGUIDHERE` の値を、それぞれおすすめおよびヒーローとして設定するアプリの実際のアプリ ID に置き換えます。
+2.  スクリプト内の `APPGUIDHERE` の値を、それぞれおすすめおよびヒーローとして設定するアプリの実際のアプリ ID に置き換えます。
 
 3.  ファイルを .ps ファイルとして保存します。
 
 4.  管理者として PowerShell を実行し、作成した .ps ファイルを実行します。
+ 
 
 ### <a name="step-10-share-model-driven-app-with-admins-in-your-organization"></a>手順 10: 組織内の管理者とモデル駆動型アプリを共有する
 
@@ -501,7 +522,7 @@ Azure Application Insights を使用して、モバイル アプリ (キャン�
     | 場所の名前        | 場所の名前を入力します。                                                                       |
     | Facility             | 施設を選択します。 この一覧は、前に作成した **Facilities** データを基にして設定されます。 |
     | 床                | 施設のフロア情報を入力します。                                                         |
-    | ユニット                 | 施設のユニット情報を入力します                                                           |
+    | 単位                 | 施設のユニット情報を入力します                                                           |
     | Location Acuity      | この場所に関連付けられている救急度レコードを選択します。                                                                                                     |
     | Total Beds           | 施設内のベッドの合計数を入力します。                                                       |
     | Blocked beds         | 施設内でブロックされているベッドの数を入力します。                                                     |
@@ -654,7 +675,7 @@ Azure Application Insights を使用して、モバイル アプリ (キャン�
     > [!div class="mx-imgBorder"]
     > ![詳細エディターを選択する](media/select-advanced-editor.png)
 
-5. 変更を保存します。 保留中の変更をクエリに適用することを求めるメッセージが表示されます。 **[適用]** を選択します。
+5. 変更を保存します。 保留中の変更をクエリに適用することを求めるメッセージが表示されます。 **[適用]** を選びます。
 
 6. Common Data Service 環境に接続するための資格情報を入力するように求められます。 **[組織アカウント]**  >  **[サインイン]** を選択して、Common Data Service の資格情報を指定ます。  
 
