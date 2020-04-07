@@ -51,6 +51,8 @@
               href: ../user/navigation.md
             - name: グリッド フィルターを使用する
               href: ../user/grid-filters.md
+            - name: 高度なグリッド フィルターでの個人用ビューの作成
+              href: ../user/grid-filters-advanced.md
             - name: 自分のプロファイルを表示する
               href: ../user/view-your-user-profile.md
             - name: 管理者またはサポート担当者を見つける
@@ -937,7 +939,7 @@
                   href: ./model-driven-apps/create-site-map-app.md
                 - name: アプリのコンポーネントを追加または編集する
                   href: ./model-driven-apps/add-edit-app-components.md
-                - name: 参照オプションとしてチーム エンティティを追加する
+                - name: エンティティを参照として追加する
                   href: ./model-driven-apps/team-entity-lookup.md
             - name: フォームを操作する
               href: ./model-driven-apps/create-design-forms.md
@@ -1630,9 +1632,9 @@
       href: ../use-ai-builder.md
 - name: サンプル アプリとソリューション
   items:
-    - name: 危機通信アプリ
+    - name: 危機管理コミュニケーション
       href: ./canvas-apps/sample-crisis-communication-app.md
-    - name: 緊急時対応ソリューション
+    - name: 病院の緊急時対応
       items:
         - name: 概要
           href: ../sample-apps/emergency-response/overview.md
