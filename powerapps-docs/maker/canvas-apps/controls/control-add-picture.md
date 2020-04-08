@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 37c98470d3239cefa008235f295aaf9af2db3f5a
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 3f2afd3a1097ec0b201b5857509f1ff42d1fedad
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211528"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871283"
 ---
 # <a name="add-picture-control-in-power-apps"></a>Power Apps に画像コントロールを追加する
 写真を撮影したり、ローカルのデバイスから画像を読み込んだりします。
@@ -121,19 +121,20 @@ ms.locfileid: "79211528"
 1. **画像の追加**コントロールを追加し、それをトリプル クリックします。
    
     [コントロールの追加、命名、構成についてはこちらをご覧ください](../add-configure-controls.md)。
-2. **[Open (開く)]** ダイアログ ボックスで、画像ファイルをクリックまたはタップしてから、 **[Open (開く)]** をクリックまたはタップします。
-3. **[ボタン](control-button.md)** コントロールを追加して**画像の追加**コントロールの下に移動し、 **[ボタン](properties-core.md)** コントロールの **[OnSelect](control-button.md)** プロパティを次の数式に設定します。<br>
+1. **[Open (開く)]** ダイアログ ボックスで、画像ファイルをクリックまたはタップしてから、 **[Open (開く)]** をクリックまたはタップします。
+1. **[ボタン](control-button.md)** コントロールを追加して**画像の追加**コントロールの下に移動し、 **[ボタン](properties-core.md)** コントロールの **[OnSelect](control-button.md)** プロパティを次の数式に設定します。<br>
    **Collect(MyPix, AddMediaButton1.Media)**
    
     **[Collect](../functions/function-clear-collect-clearcollect.md)** 関数または[その他の関数](../formula-reference.md)については各関連記事を参照してください。
-4. **イメージ ギャラリー** コントロールを追加し、その **[Items](properties-core.md)** プロパティを **MyPix** に設定します。
-5. F5 キーを押して、 **[ボタン](control-button.md)** コントロールをクリックまたはタップします。
+1. 縦の**ギャラリー**コントロールを追加し、 **[Items](properties-core.md)** プロパティを**mypix**に設定します。
+1. ギャラリーで **[イメージ](control-image.md)** コントロールを選択し、 **[イメージ]** プロパティを この **[項目の値]** に設定します。
+1. F5 キーを押して、 **[ボタン](control-button.md)** コントロールをクリックまたはタップします。
    
-    **画像の追加**コントロールの画像が**イメージ ギャラリー** コントロールに表示されます。 画像の縦横比が**イメージ ギャラリー[ コントロール内の ](control-image.md)** イメージ コントロールと同じでない場合は、 **[イメージ](properties-visual.md)** コントロールの **[ImagePosition](control-image.md)** プロパティを **Fit** に設定します。
-6. **画像の追加**コントロールをクリックまたはタップし、別の画像ファイルをクリックまたはタップし、 **[Open (開く)]** をクリックまたはタップしてから、追加した **[ボタン](control-button.md)** コントロールをクリックまたはタップします。
+    **画像の追加**コントロールの画像は、**垂直方向**のコントロールに表示されます。 イメージの縦横比が、**縦方向のギャラリー**コントロール **[のイメージ](control-image.md)** コントロールと同じでない場合は、 **[イメージ](control-image.md)** コントロールの **[imageposition](properties-visual.md)** プロパティを**合わせ**て設定します。
+1. **画像の追加**コントロールをクリックまたはタップし、別の画像ファイルをクリックまたはタップし、 **[Open (開く)]** をクリックまたはタップしてから、追加した **[ボタン](control-button.md)** コントロールをクリックまたはタップします。
    
     2 番目の画像が**イメージ ギャラリー** コントロールに表示されます。
-7. (オプション) 前の手順を 1 回以上繰り返してから、Esc キーを押して既定のワークスペースに戻ります。
+1. (オプション) 前の手順を 1 回以上繰り返してから、Esc キーを押して既定のワークスペースに戻ります。
 
 **[SaveData](../functions/function-savedata-loaddata.md)** 関数を使用して画像をローカルに保存するか、 **[Patch](../functions/function-patch.md)** 関数を使用してデータ ソースを更新します。
 

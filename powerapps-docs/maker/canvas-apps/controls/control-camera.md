@@ -6,19 +6,19 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
-ms.date: 03/16/2020
+ms.date: 04/07/2020
 ms.author: chmoncay
 ms.reviewer: tapanm
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fd3c468134e979732ead5e0144e60aaf1b3e38df
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: 59c0f85dd71c9dc512e348d6d8ee9686d6945fa1
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436805"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871122"
 ---
 # <a name="camera-control-in-power-apps"></a>Power Apps のカメラ コントロール
 
@@ -43,7 +43,15 @@ ms.locfileid: "79436805"
 
 ## <a name="key-properties"></a>主要なプロパティ
 
-**Camera** – 複数のカメラを備えたデバイスでの、アプリが使用するカメラの数値 ID です。
+利用可能な**デバイス**–デバイスで使用可能なカメラのテーブルです。
+
+テーブルには次の2つの列があります。 
+- **カメラ**のプロパティで使用する*Id*番号 
+- カメラを識別するためにデバイスによって提供される*名前*。 カメラ*を特定するの*に役立つプラットフォーム*もあります*。
+
+*注*: テーブル内のすべてのデバイスがアプリで使用できるとは限りません。  特定の目的を想定した特殊なドライバーやアプリケーションもあります。  
+
+**カメラ**–使用するカメラの数値 ID。  複数のカメラがあるデバイスで役に立ちます。  
 
 **OnStream** – **Stream** プロパティが更新された場合のアプリの反応を指定します。
 
@@ -99,9 +107,9 @@ ms.locfileid: "79436805"
 
 1. メッセージが表示されたら、デバイスのカメラを使用するようにアプリを承認します。
 
-1. **イメージ**コントロールを追加します。
+1. [**イメージ**](../controls/control-image.md)コントロールを追加します。
 
-1. **イメージ**コントロールの**image**プロパティを次の数式に設定します。
+1. **イメージ**コントロールの**image**プロパティを次の式に設定します。
 
     ```powerapps-dot
     Camera1.Photo
@@ -112,7 +120,7 @@ ms.locfileid: "79436805"
 
 1. F5 キーを押してアプリをプレビューします。
 
-1. カメラコントロールを選択またはタップして画像を撮影します。  イメージコントロールに結果が表示されます。
+1. カメラコントロールを選択またはタップして画像を撮影します。 イメージコントロールに結果が表示されます。
 
 ### <a name="add-pictures-to-an-image-gallery-control"></a>画像ギャラリーコントロールへの画像の追加
 
@@ -156,6 +164,34 @@ ms.locfileid: "79436805"
 1. F5 キーを押し、画像を選択して削除します。
 
 画像をローカルに保存する場合は[SaveData](../functions/function-savedata-loaddata.md)関数を使用し、データソースを更新する場合は[Patch](../functions/function-patch.md)関数を使用します。
+
+### <a name="change-the-active-camera-from-a-drop-down"></a>アクティブなカメラをドロップダウンから変更する
+
+1. **カメラ**コントロールを[追加](../add-configure-controls.md)します。
+
+1. メッセージが表示されたら、デバイスのカメラを使用するようにアプリを承認します。
+    
+1. [ドロップダウン](control-drop-down.md)コントロールを[追加](../add-configure-controls.md)します。
+
+1. ドロップダウンリストの**項目**prroperty を次のように設定します。
+
+    ```powerapps-dot
+    Camera1.AvailableDevices
+    ```
+
+    > [!NOTE]
+      > 必要に応じて、カメラコントロール名*Camera1*を置き換えます。
+    
+1. カメラの**カメラ**プロパティを次のように設定します。 
+
+    ```powerapps-dot
+    Dropdown1.Selected.Id
+    ```
+
+    > [!NOTE]
+      > 必要に応じて、ドロップダウンコントロール名*Dropdown1*を置き換えます。
+
+1. F5 キーを押し、ドロップダウンから項目を選択して、カメラを変更します。
 
 ## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 

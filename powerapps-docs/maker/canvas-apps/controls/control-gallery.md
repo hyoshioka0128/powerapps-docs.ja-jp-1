@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 75450ef67217bdc7a1b86086fd07f1d3adbd7831
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: ca48ccaf4aca72301d3a8b7f2eb79885d7c7cdf5
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436770"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871329"
 ---
 # <a name="gallery-control-in-canvas-apps"></a>キャンバスアプリのギャラリーコントロール
 
@@ -61,6 +61,8 @@ ms.locfileid: "79436770"
 
 [BorderThickness](properties-color-border.md) – コントロールの境界線の太さです。
 
+**Delayitemloading** -画面が最初に読み込まれるまで項目 (行) の遅延読み込みを実行します。
+
 [DisplayMode](properties-core.md) –コントロールでユーザー入力を許可するか (**Edit**)、データの表示のみを許可するか (**View**)、または無効 (**無効**) にするかを指定します。
 
 [Fill](properties-color-border.md) – コントロールの背景色です。
@@ -68,6 +70,10 @@ ms.locfileid: "79436770"
 [Height](properties-size-location.md) – コントロールの上端と下端の距離です。
 
 **ItemAccessibleLabel** –スクリーンリーダー用の各ギャラリー項目のラベルです。 各項目の内容を説明する必要があります。
+
+**Loadingspinner ボタン**(**なし**、**コントロール**、または**データ**)-none の場合、スピンボタンは表示されません。 When Controls |データは、表示されている空の行を生成するレンダリングパスが発生すると表示されます。
+
+**Loadingspinnercolor** -読み込みスピンボタンの塗りつぶしの色。  既定値は BorderColor に設定されています。
 
 **NavigationStep** – **ShowNavigation** プロパティが **true** に設定されている場合、ギャラリーの端にあるナビゲーション矢印の選択操作でギャラリーをどの程度スクロールするかを指定します。
 

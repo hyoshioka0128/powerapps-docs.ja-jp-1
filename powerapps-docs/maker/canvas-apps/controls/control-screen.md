@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b0e189bc2bfd922839373f009fcc54a34217daba
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: ac06720b1d7037cab540c91ab8a42f6c269b0edb
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79211896"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871306"
 ---
 # <a name="screen-control-in-power-apps"></a>Power Apps での画面コントロール
 
@@ -39,6 +39,10 @@ ms.locfileid: "79211896"
 **Height** -画面の高さ。 アプリの応答**性が高く**、アプリが実行されているデバイスがこのプロパティより短い場合は、画面を垂直[**方向にスクロール**](../set-aspect-ratio-portrait-landscape.md#change-screen-size-and-orientation)できます。
 
 **[ImagePosition](properties-visual.md)** – 画面またはコントロールのサイズが画像と異なる場合の、画面またはコントロール内の画像の位置です (**Fill** (フィル)、**Fit** (サイズに合わせる)、**Stretch** (伸ばす)、**Tile** (タイル表示)、または **Center** (中央に表示))。
+
+**Loadingspinner ボタン**(**なし**、**コントロール**、または**データ**)-none の場合、スピンボタンは表示されません。 When Controls |データは、画面レベルのすべての子コントロールが表示されるまでスピンボタンを表示します。 **付箋.入れ子になったコントロールは考慮されません。**
+
+**Loadingspinnercolor** -読み込みスピンボタンの塗りつぶしの色。
 
 **[名前]** -画面の名前。
 
