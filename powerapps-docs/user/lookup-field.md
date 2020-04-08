@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 482d06a91d3cb3a7c22e41e4e880aa72294d2b3f
-ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.openlocfilehash: 91f027af2f7d8b10fcfd15380fae46f62bc5603b
+ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78264977"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "80615416"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>レコードのルックアップ フィールドを使用する
 
@@ -96,8 +96,11 @@ ms.locfileid: "78264977"
 
     ![連絡先の表示の種類を変更する](media/change-view.png "連絡先の表示の種類を変更する")
 
->[!IMPORTANT] 
->管理者がビューに表示するオプションを構成していない場合、 **[ビューの変更]** オプションは表示されません。
+### <a name="filter-by-only-my-records-or-filter-by-related-primary-contact"></a>[Only my records] (自分のレコードのみ) または [Filter by related Primary Contact] (関連する主要連絡先によるフィルター処理) でフィルター処理する
+
+追加のフィルターを適用するには、 **[ビューの変更]** メニューで、 **[Only my records] (自分のレコードのみ)** または **[Filter by related Primary Contact] (関連する主要連絡先によるフィルター処理)** を選択します。
+
+![フィルターをさらに追加する](media/extra_filters.png "フィルターをさらに追加する")
 
 ### <a name="choose-from-multiple-records"></a>複数のレコードから選択する
 
