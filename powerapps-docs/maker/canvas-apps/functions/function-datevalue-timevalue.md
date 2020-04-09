@@ -7,18 +7,18 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 03/16/2020
+ms.date: 04/08/2020
 ms.author: gregli
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: fc28b370b36be8d309c292e110d0b927d08c4a11
-ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
+ms.openlocfilehash: 2fc1a91b4468926ee98351f79d7ce2e84133aa46
+ms.sourcegitcommit: 7d3caf698d367a56af9e16c43af8005adb9f87cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79436719"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "80987236"
 ---
 # <a name="datevalue-timevalue-and-datetimevalue-functions-in-power-apps"></a>Power Apps の DateValue、TimeValue、および DateTimeValue 関数
 
@@ -39,8 +39,11 @@ ms.locfileid: "79436719"
 
 日付は、以下の形式のいずれかである必要があります。
 
-- MM/DD/YYYY
-- DD/MM/YYYY
+- MM/DD/YYYY または MM-DD-YYYY
+- DD/MM/YYYY または DD-MM-YYYY
+- YYYY/MM/DD または YYYY-MM-DD
+- MM/DD/YY または MM-DD-YY
+- DD/MM/YY または DD-MM-YY
 - DD Mon YYYY
 - Month DD, YYYY
 
@@ -76,7 +79,7 @@ ms.locfileid: "79436719"
     [ **En** locale に設定されたデバイス] ラベルを、 **2014 年10月 11**日の土曜日として表示します。
   
     > [!NOTE]
-    > **Longdatetime**と比較して、 **DateTimeFormat**ではいくつかのオプションを使用できます。 オプションの一覧を表示するには、数式バーにパラメーターを入力し、その後に感嘆符 ( **!** ) を入力します。
+    > **DateTimeFormat**列挙型では、いくつかのオプションを使用できます。 オプションの一覧を表示するには、数式バーまたはチェック[**テキスト**関数の参照](function-text.md)で、パラメーターの後にドットまたはピリオド ( **.** ) を入力します。
 
 - フランス語のロケールの文字列から日付を変換し、その結果を長い日付として表示します。 この例では、月と日は英語とは異なる方法で解釈されます。
 
@@ -109,7 +112,7 @@ ms.locfileid: "79436719"
     [ **En** locale に設定されたデバイス] ラベルを、 **2014 年10月11日 1:50:24 PM**として表示します。
   
   > [!NOTE]
-  > **Longdatetime**と比較して、 **DateTimeFormat**ではいくつかのオプションを使用できます。 オプションの一覧を表示するには、数式バーにパラメーターを入力し、その後に感嘆符 ( **!** ) を入力します。
+  > **DateTimeFormat**列挙型では、いくつかのオプションを使用できます。 オプションの一覧を表示するには、数式バーまたはチェック[**テキスト**関数の参照](function-text.md)で、パラメーターの後にドットまたはピリオド ( **.** ) を入力します。
 
 - フランス語のロケールで日付と時刻の両方の文字列を変換します。 月と日は異なる方法で解釈されます。
 
