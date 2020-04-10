@@ -1,23 +1,21 @@
 ---
 title: モデル駆動型アプリで電子メールを表示および作成する | MicrosoftDocs
 description: モデル駆動型アプリを使用しながら、電子メールを表示および作成します。
-ms.date: 02/03/2020
+ms.date: 04/09/2020
 ms.service:
 - dynamics-365
 ms.topic: article
 author: lalexms
 ms.author: lalexms
 manager: shujoshi
-ms.openlocfilehash: 7d4930b03f175133a769226a407436d37f698633
-ms.sourcegitcommit: 3066c2800a939fbcaaac4262c802843e2d80b88c
+ms.openlocfilehash: 1ec0a3f6903bb5bcccf429e6f11941206a5e4f72
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79431741"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81008010"
 ---
-# <a name="preview-view-and-create-email-through-the-activities-grid"></a>プレビュー:アクティビティ グリッドを使用して電子メールを表示し、作成する
-
-アクティビティ グリッドを使用した電子メールの表示と作成は、先行アクセス機能です。 お使いの環境でこれらの機能を有効にするために、先行してオプトインできます。 これらの機能をテストして環境全体で導入することができるようになります。 これらの機能を有効にする方法については、[2020 リリース ウェーブ 1 更新プログラムへのオプトイン](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates)に関するページをご覧ください。
+# <a name="view-and-create-email-through-the-activities-grid"></a>アクティビティ グリッドを使用して電子メールを表示し、作成する
 
 Dynamics 365 のモデル駆動型アプリを使用すると、メールで顧客とやり取りできます。 メール機能を利用すると、次のことが可能になります。
 

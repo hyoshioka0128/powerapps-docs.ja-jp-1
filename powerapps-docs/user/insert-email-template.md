@@ -1,23 +1,21 @@
 ---
 title: モデル駆動型アプリで電子メールを作成するときに電子メール テンプレートを挿入する |Microsoft Docs
 description: 電子メールの作成時に、あらかじめ書式設定された電子メール メッセージを挿入します。
-ms.date: 02/03/2020
+ms.date: 04/09/2020
 ms.service:
 - dynamics-365-sales
 ms.topic: article
 author: sbmjais
 ms.author: shjais
 manager: shujoshi
-ms.openlocfilehash: abbef00f3b93809dadf617c4180b52a1372e625a
-ms.sourcegitcommit: 68a31e3fa4d1635ccf4cd8bd9da5fba1bfecefa4
+ms.openlocfilehash: 8f5b607375cccd03b3bcea2bd5d50664e7033ae4
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051846"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "81007987"
 ---
-# <a name="preview-insert-an-email-template"></a>プレビュー:電子メール テンプレートを挿入する
-
-電子メール テンプレートの挿入は、先行アクセス機能です。 お使いの環境でこれらの機能を有効にするために、先行してオプトインできます。 これらの機能をテストして環境全体で導入することができるようになります。 これらの機能を有効にする方法については、[2020 リリース ウェーブ 1 更新プログラムへのオプトイン](https://docs.microsoft.com/power-platform/admin/opt-in-early-access-updates)に関するページをご覧ください。
+# <a name="insert-an-email-template"></a>電子メール テンプレートを挿入する
 
 電子メール テンプレート (あらかじめ書式設定された電子メール メッセージ) を使用して、電子メール メッセージをすばやく作成して送信することができます。 電子メールの作成中に、コマンド バーで **[テンプレートの挿入]** を選択して、テンプレートを挿入することができます。 使用できるテンプレートの一覧は、 **[電子メール テンプレート]** ウィンドウに表示されます。 **[最近使用した項目]** セクションでは、お客様が最近使用した 4 つのテンプレートが表示されます。 **[すべてのテンプレート]** セクションには、そのままで使用できるすべての電子メール テンプレート (グローバルおよびエンティティ固有) の一覧がアルファベット順に表示されます。 グローバル テンプレートは、ユーザー タイプとして表示されます。 カスタム電子メール テンプレートを作成した場合は、ここでも使用できます。 カスタム電子メール テンプレートの作成については、「[電子メールのテンプレートの作成](https://docs.microsoft.com/power-platform/admin/create-templates-email)」を参照してください。
 
