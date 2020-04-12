@@ -7,30 +7,33 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 09/13/2017
+ms.date: 04/10/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 68fad4cb2c73bcaeb448212012133c171d682cb4
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 9193b3d4ba16b5dca10a8dab471eb731f07d56bf
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74723000"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223382"
 ---
 # <a name="combo-box-control-in-power-apps"></a>Power Apps のコンボボックスコントロール
 ユーザーが、提供された選択肢から選択できるようにするコントロール。  検索と複数選択をサポートしています。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 **コンボ ボックス**コントロールで、選択する項目を検索することができます。  検索は、SearchField プロパティについてサーバー側で実行されるので、パフォーマンスが非常に大規模なデータ ソースによって影響を受けることはありません。  
 
 単一選択モードまたは複数選択モードは SelectMultiple プロパティを介して構成されます。
 
 選択する項目を検索するとき、[データ] ウィンドウの [レイアウト] 設定を変更することで、項目ごとに、1 つのデータ値、2 つの値、または画像および 2 つの値 (Person) の表示を選択できます。
 
-## <a name="people-picker"></a>メンバーの選択
+> [!NOTE]
+> *数値*を含む項目を検索する場合は、数値を text [()](https://docs.microsoft.com/powerapps/maker/canvas-apps/functions/function-text)関数でテキストに変換します。 たとえば、 *Text (12345)* のようになります。
+
+## <a name="people-picker"></a>ユーザーの選択機能
 **コンボ ボックス**をメンバーの選択に使用するには、[データ] ウィンドウの [レイアウト] 設定で **Person** テンプレートを選択し、メンバーの下に表示される関連データのプロパティを構成します。
 
 ## <a name="key-properties"></a>主要なプロパティ
@@ -100,7 +103,7 @@ ms.locfileid: "74723000"
 
     `First(DataSource)`
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
 以下の間には適切な色のコントラストが必要です。
 * **ChevronFill** と **ChevronBackground**

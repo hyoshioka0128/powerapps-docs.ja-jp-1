@@ -7,26 +7,26 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 04/10/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: df568e6a61ca43f6c98ee80c33ed9efe4148de9e
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: a8136fc1ce04ed696aeb68af7139d1b538dd879e
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729073"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223336"
 ---
 # <a name="pdf-viewer-control-experimental-in-power-apps"></a>Power Apps での PDF ビューアーコントロール (試験段階)
 PDF ファイルの内容を表示する試験段階のコントロールです。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 PDF ファイルのテキスト、グラフィック、他の内容を表示するには、この種類のコントロールを追加し、その **Document** プロパティに、表示するファイルの URL を二重引用符で囲んで設定します。
 
-## <a name="limitations"></a>事項
+## <a name="limitations"></a>制限事項
 1. Power Apps のセキュリティアーキテクチャでは、PDF ビューアーでは HTTP ではなく HTTPS リンクのみがサポートされている必要があります。  
 
 2. **Document**プロパティは、PDF ファイルに直接リンクする必要があります。 ドキュメントのサーバーリダイレクトまたは HTML ビューはサポートされていません。
@@ -36,8 +36,6 @@ PDF ファイルのテキスト、グラフィック、他の内容を表示す�
 4. クロスオリジンリソース共有 (CORS) 設定が制限されているサーバー上にドキュメントが存在する場合、アプリで PDF ドキュメントを表示できないことがあります。 この問題を解決するには、PDF ドキュメントをホストするサーバーで、powerapps.com からのクロスオリジン要求を許可する必要があります。
 
 アプリユーザーは、外部ブラウザーで PDF ドキュメントを開くことで、これらの制限を回避できます。コントロールでドキュメントを開くことができない場合は、メッセージが表示されます。 このオプションはすべての外部ドキュメントのコントロール メニューでも使用できます。
-
-アプリの製造元は、PDF ドキュメントをアプリのメディアリソースとして含めることで、これらの制限を回避できます。 これにより、PDF ビューアーコントロールは常にドキュメントを表示できます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **Document** – 二重引用符で囲んだ、PDF ファイルの URL です。
@@ -91,7 +89,7 @@ PDF ファイルのテキスト、グラフィック、他の内容を表示す�
 
 **ShowControls** – オーディオ プレイヤーまたはビデオ プレイヤーに再生ボタンと音量スライダーなどを表示するかどうか、およびペン コントロールに描画、削除、クリアなどのアイコンを表示するかどうかを指定します。
 
-**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 
@@ -111,9 +109,9 @@ PDF ファイルのテキスト、グラフィック、他の内容を表示す�
 
 コントロールに PDF ファイルが表示されます。
 
-[コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
+[コントロールの追加および構成方法](../add-configure-controls.md)については関連記事を参照してください。
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 
 **PDF ビューアー**はまだ実験段階にあるため、PDF ドキュメントのすべてのアクセシビリティ機能がサポートされているわけではありません。 そのため、ユーザーが外部アプリケーションでドキュメントを開くことができるように、**ShowControls** を **true**に設定する必要があります。
 

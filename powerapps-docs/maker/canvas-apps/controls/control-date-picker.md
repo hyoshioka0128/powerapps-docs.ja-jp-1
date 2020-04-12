@@ -7,31 +7,31 @@ ms.service: powerapps
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/25/2016
+ms.date: 04/10/2020
 ms.author: chmoncay
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 3275c93aea5492384727701d1074982a345fae67
-ms.sourcegitcommit: fa88889cd109651d403ab03287b7f0521bb90e02
+ms.openlocfilehash: 4d241eb8ce8ec9f6d0fa17ac802aeddbd142de25
+ms.sourcegitcommit: af653cd30f5879fea97a594d458d355fe18f4834
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "75324944"
+ms.lasthandoff: 04/12/2020
+ms.locfileid: "81223359"
 ---
 # <a name="date-picker-control-in-power-apps"></a>Power Apps の日付の選択コントロール
 クリックまたはタップして日付を指定できるコントロールです。
 
-## <a name="description"></a>Description
-**[テキスト入力](control-text-input.md)** コントロールの代わりに**日付の選択**コントロールを追加すると、ユーザーが適切な形式で日付を指定しやすくなります。
+## <a name="description"></a>説明
+テキスト入力 **[コントロールの代わりに](control-text-input.md)日付の選択**コントロールを追加すると、ユーザーが適切な形式で日付を指定しやすくなります。
 
 ## <a name="key-properties"></a>主要なプロパティ
 **DefaultDate** – 日付コントロールの初期値 (ユーザーが変更していない場合) です。
 
 **SelectedDate** – 日付コントロールで現在選択されている日付です。  この日付は現地時刻で表されます。
 
-**Format** – コントロールで日付を表示するときのテキスト形式です。日付はユーザーが指定します。 このプロパティを **ShortDate** (既定) または **LongDate** に設定すると、このコントロールの **Language** プロパティに基づいて日付の形式を指定できます。 また、言語に関係なく同じ形式を使用する場合は、このプロパティを **yyyy/mm/dd** などの式に設定できます。 例:
+**Format** – コントロールで日付を表示するときのテキスト形式です。日付はユーザーが指定します。 このプロパティを **ShortDate** (既定) または **LongDate** に設定すると、このコントロールの **Language** プロパティに基づいて日付の形式を指定できます。 また、言語に関係なく同じ形式を使用する場合は、このプロパティを **yyyy/mm/dd** などの式に設定できます。 例 :
 
 * ユーザーが 2017 年の最終日をクリックまたはタップし、**Format** プロパティが **ShortDate** に、**Language** プロパティが **en-us** に設定されている場合、コントロールは **12/31/2017** を表示します。
 * ユーザーが 2017 年の最終日をクリックまたはタップし、**Format** プロパティが **LongDate** に、**Language** プロパティが **fr-fr** に設定されている場合、コントロールは **dimanche 31 decembre 2017** を表示します。
@@ -85,6 +85,10 @@ ms.locfileid: "75324944"
 
 **[OnSelect](properties-core.md)** – ユーザーがコントロールをタップまたはクリックした場合のアプリの反応を指定します。
 
+**[OnChange](properties-core.md)** –ユーザーがコントロールの値を変更した場合のアプリの反応を指定します。 
+
+ユーザーの*クリック*によって変更が発生した場合に、同じユーザーアクションでの**Onchange**と**Onselect**: onselect と onchange トリガーの違い。 この場合、OnSelect は、OnChange の**前に**トリガーされます。
+
 **[PaddingBottom](properties-size-location.md)** – コントロール内のテキストとそのコントロールの下端間の距離です。
 
 **[PaddingLeft](properties-size-location.md)** – コントロール内のテキストとそのコントロールの左端間の距離です。
@@ -123,10 +127,10 @@ ms.locfileid: "75324944"
 3. F5 キーを押して **Deadline** の日付を選択し、 **[OK]** をクリックまたはタップします。
 
     **[ラベル](control-text-box.md)** コントロールに、当日から選択した日付までの日数が表示されます。
-4. 既定のワークスペースに戻るには、Esc キーを押します。
+4. 既定のワークスペースに戻るために、Esc キーを押します。
 
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 ### <a name="color-contrast"></a>色のコントラスト
 * [標準の色のコントラスト要件](../accessible-apps-color.md)が適用されます。
 
