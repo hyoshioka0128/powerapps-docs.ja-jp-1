@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 91f027af2f7d8b10fcfd15380fae46f62bc5603b
-ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
+ms.openlocfilehash: bdb1b0bf1a500087f11804f6da55d1c3abe2eaf3
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "80615416"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "80871352"
 ---
 #  <a name="use-the-lookup-field-on-a-record"></a>レコードのルックアップ フィールドを使用する
 
@@ -68,7 +68,7 @@ ms.locfileid: "80615416"
 最近使用したレコードの一覧には、レコードの種類を区別するのに役立つ画像が表示されます。
 
 >[!NOTE] 
->最近使用したレコードは、検索用語や選択したビューでフィルター処理されません。
+>最近使用したレコードは、検索用語、選択したビュー、または関連レコードでフィルター処理されません。
 
   > [!div class="mx-imgBorder"]
   > ![ルックアップ フィールドに画像が表示される](media/Lookup_03-MRU_Entity_Images_56[1].png "ルックアップ フィールドに画像が表示される")  

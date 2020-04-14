@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5523ef67ed6912f7eae36228884b0c9a300d0785
-ms.sourcegitcommit: 39f6feb699512e9c2bf71ef1a1238b32b639da02
+ms.openlocfilehash: fbd6233eb775fb7f1c48ec6cc05006ac0237f72d
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "80530011"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80645572"
 ---
 # <a name="run-canvas-apps-and-model-driven-apps-on-a-mobile-device"></a>モバイル デバイスでキャンバス アプリやモデル駆動型アプリを実行する
 
@@ -155,8 +155,7 @@ Power Apps モバイル アプリを使用してキャンバス アプリを初�
 
 現在、いくつかの既知の問題に引き続き取り組んでおり、修正プログラムを継続的にリリースしていく予定です。 最新のプレビュー ビルドが入手可能になり次第、直ちに手動で更新してください。 
 
-次のような既知の問題があります。
+既知の問題:
 
-- Power Apps アプリをオフライン モードで開いたときにアプリの一覧にアプリが表示されない
 - モデル駆動型アプリ内のアイコンが非表示になることがある。
 
