@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: b7d93d18ee9e176d936912235f71920f3cdeff48
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: e10a7c01e40e65e0a65f82713ba920500b8ee5bf
+ms.sourcegitcommit: 13d4042c7bd73580cc8c595e137de7e7fec22875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109043"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3170227"
 ---
 # <a name="code-components-for-canvas-apps"></a>キャンバス アプリのコード コンポーネント
 
@@ -98,4 +98,5 @@ Power Apps  component framework を使うと、アプリの作成者は Power Ap
 ## <a name="see-also"></a>関連項目
 
 [Power Apps Component Framework の概要](overview.md)<br/>
-[初めてコード コンポーネントを作成する](implementing-controls-using-typescript.md)
+[初めてコード コンポーネントを作成する](implementing-controls-using-typescript.md)<br/>
+[Power Apps component framework の学習](https://docs.microsoft.com/learn/paths/use-power-apps-component-framework)

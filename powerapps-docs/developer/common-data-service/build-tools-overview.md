@@ -3,7 +3,7 @@ title: Azure DevOps 構築ツールの概要| Microsoft Docs
 description: Power Apps build tools は、一連の Power Apps 固有の Azure DevOps 構築タスクです。これを使用することで Power Apps の開発を管理するためにスクリプトを手動でダウンロードする必要がなくなります。
 ms.custom: ''
 ms.date: 07/21/2019
-ms.reviewer: Dean-Haas
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mikkelsen2000
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 62570ded1e682bde50482fbdaa8f00d29dde77f3
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 111169c35463ba082a734082ea5eca1f4bab5c21
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883529"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156419"
 ---
 # <a name="power-apps-build-tools-for-azure-devops-overview"></a>Azure DevOps の Power Apps build tools の概要
 

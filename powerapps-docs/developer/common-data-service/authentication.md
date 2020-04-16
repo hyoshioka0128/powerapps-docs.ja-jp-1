@@ -3,7 +3,7 @@ title: Common Data Service の Web サービスを使用した認証 (Common Dat
 description: 使用するソフトウェア フレームワークに依存する認証オプションを紹介します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3250c9e22881d24924997395a744a5bd45018786
-ms.sourcegitcommit: 4728372a4a467f65bab9ae17e91738f420e17374
+ms.openlocfilehash: 0503114883dd93a2b57d380cf5686853e0315ea8
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "3029986"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156435"
 ---
 # <a name="authentication-with-common-data-service-web-services"></a>Common Data Service の Web サービス を使用した認証
 

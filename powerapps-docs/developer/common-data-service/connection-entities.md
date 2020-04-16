@@ -3,7 +3,7 @@ title: レコードを相互にリンクする接続の使用 (Common Data Servi
 description: つながりエンティティは、接続を有効化、作成および照会するのに役立ちます。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7ad1b1874f71c958204119a35440922361746252
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3365407b4ed719f1b9f6c8eef2a73c81bd0a8b43
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749003"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156355"
 ---
 # <a name="use-connections-to-link-records-to-each-other"></a>レコードを相互にリンクする接続の使用
 

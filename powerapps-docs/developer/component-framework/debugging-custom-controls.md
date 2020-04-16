@@ -8,12 +8,12 @@ ms.topic: article
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 8d1da235f93f98a8104c69511bb8c50f86ddcbda
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: cc4e4dd513cc627c7c9622854151f6a3f85c3e77
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909285"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162168"
 ---
 # <a name="debug-code-components"></a>コード コンポーネントのデバッグ
 
@@ -26,7 +26,7 @@ ms.locfileid: "2909285"
 
 - **コンテキストの入力** では、フォームファクターを指定する方法、および各フォームファクター (Web、タブレット、電話) でコード コンポーネントをテストする方法が記載されています。 これは、コード コンポーネントが特定のフォームファクター機能に依存している場合に有用です。
 - **データの入力** は、[マニフェスト](manifest-schema-reference/manifest.md) ファイルで定義されている、すべてのプロパティと [種別](manifest-schema-reference/types.md) あるいは [種別グループ](manifest-schema-reference/type-group.md) を表示する対話型の UI です。 これにより、各プロパティの模擬データを入力することができます。 
-- **出力** はコンポーネントの [getOutputs](reference/control/getoutputs.md) メソッドが呼ばれるたびに出力を表示します。  
+- **出力** はコンポーネントの [getOutputs](reference/control/getoutputs.md) メソッドが呼ばれるたびに出力をレンダーします。  
 
      > [!div class="mx-imgBorder"]
      > ![テストハーネス 2](media/test-harness-2.png "テストハーネス 2")
@@ -61,10 +61,10 @@ ms.locfileid: "2909285"
 
 テスト ハーネスは、 Power Apps component framework は、 プロジェクトで使用できる `watch` モードに対応しています。 `watch` モードを有効にするには、コマンド `npm start watch` を使用してテスト ハーネスを起動します。 `watch` モード では、以下のコンポーネントアセットに加えた変更は、再起動をしなくても自動的にテストハーネスに反映されます:
 
-1.  `index.ts` ファイル。
-2.  `ControlManifest.Input.xml` ファイル。
-3.  `index.ts` でインポートされたライブラリ。
-4.  マニフェスト ファイルにリストされているすべてのリソース。
+1.    `index.ts` ファイル。
+2.    `ControlManifest.Input.xml` ファイル。
+3.    `index.ts` でインポートされたライブラリ。
+4.    マニフェスト ファイルにリストされているすべてのリソース。
 
 ## <a name="debug-code-components-using-native-browsers"></a>ネイティブ ブラウザーを使用してコード コンポーネントをデバッグする
 

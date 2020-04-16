@@ -2,7 +2,7 @@
 title: ソリューションを作成する | MicrosoftDocs
 description: ソリューションの作成方法を学習する
 ms.custom: ''
-ms.date: 02/28/2020
+ms.date: 03/20/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f4f2b4941e049a08bde978a318f5fda39f3dd30e
-ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
+ms.openlocfilehash: 59c041d7fe74e1a1dbbce9f1516057d324447478
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "3093733"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162200"
 ---
 # <a name="create-a-solution"></a>ソリューションの作成
 
@@ -61,12 +61,13 @@ ms.locfileid: "3093733"
   
  このダイアログでは、ソリューション コンポーネントが別のソリューション コンポーネントと依存関係があることが警告されます。 **いいえ、必須コンポーネントを含めません**を選択すると、これらの必須コンポーネントのすべてが揃っていない別の組織にインポートする場合、ソリューションは失敗することがあります。 ソリューションのインポートが成功した場合でも、他のソリューションの動作が元の組織と同じでない場合があります。これはコンポーネントがソース ソリューションのコンポーネントとは異なる方法で構成されるためです。  
   
- 通常、別の組織にソリューションをエクスポートする場合、必須コンポーネントを含める方が安全です。 個々のソリューション コンポーネントを追加するときこれらのコンポーネントを追加しない場合、後ほど、追加したソリューション コンポーネントを選択して、メニューから**必須コンポーネントの追加**を選択することができます。  
+エンティティ コンポーネントを選択するときは、ソリューションのセグメンテーションを使用して、ソリューションの更新を配布するときに新規または更新されたエンティティコンポーネントのみを含めることをお勧めします。 ソリューションのセグメント化により、すべての資産を含むエンティティ全体ではなく、選択したエンティティ資産 (エンティティ フィールド、フォーム、ビューなど) とともにソリューションで作業できます。 詳細: [セグメント化されたソリューションを使用する](use-segmented-solutions-patches-simplify-updates.md)
   
  ソリューションをエクスポートしない場合、またはアンマネージド ソリューションとしてエクスポートし同じ組織にインポートし直す場合、必須コンポーネントが含まれている必要はありません。 そのようなソリューションをエクスポートすると、必須コンポーネントの一部が存在しないことを示す別の警告が表示されます。 同じ組織にソリューションをインポートし直す場合にのみ、この警告を無視してもかまいません。 サード パーティの編集ツールを使用せずにアプリケーション ナビゲーションやリボンを編集する手順では、同じ組織にソリューションをエクスポートし直すことを仮定しています。  
 
+<!-- >
 > [!IMPORTANT]
->  ソリューションに予定を含める場合は、予定のみを含むソリューションと定期的な予定のみを含むソリューションに分けないことを強くお勧めします。 さまざまな予定の種類を持つ個々のソリューションをインストールしてアンインストールすると、SQL Server エラーが発生して、予定を再作成する必要があります。 
+>  If you plan to include appointments in solutions, we strongly recommend that you don’t include only appointments and only recurring appointments in separate solutions. If you install and uninstall separate solutions with different appointment types, you’ll encounter a SQL Server error and you’ll have to re-create the appointments.  -->
 
 ## <a name="publish-changes"></a>変更の公開 
 

@@ -3,7 +3,7 @@ title: Common Data Service (Common Data Service) でOAuthを使用する | Micro
 description: Common Data ServiceでOAuthを使用してどのように認証を行うかを説明します
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bfd90a4b16bc420933e36a4a4ab7d1b4a2de37d9
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: 0d424eb70f56ad5b948bd934ff41a1cee7556520
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3005053"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156447"
 ---
 # <a name="use-oauth-with-common-data-service"></a>Common Data ServiceでOAuthを使用する
 
@@ -375,7 +375,7 @@ string serviceUrl = "https://yourorg.crm.dynamics.com";
 string clientId = "<your app id>";
 string secret = "<your app secret>";
 
-AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.com/common", false);
+AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.com/<Tenant-ID-here>");
 ClientCredential credential = new ClientCredential(clientId, secret);
 
 AuthenticationResult result = authContext.AcquireToken(serviceUrl, credential);

@@ -3,7 +3,7 @@ title: ソリューション コンポーネントの依存関係の追跡 (Comm
 description: ソリューション コンポーネントの依存関係は、ソリューションの操作の信頼性を確保するのに役立ちます。 [依存関係の表示] をクリックすることによりアプリケーション内に表示することができます
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf8e53658fce9599cb0f0415f130fb5afd5e7e01
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 538c26f0f0a0dfbd1347137e0086945783dec441
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748811"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156255"
 ---
 # <a name="dependency-tracking-for-solution-components"></a>ソリューション コンポーネントの依存関係の追跡
 

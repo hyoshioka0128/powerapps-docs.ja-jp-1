@@ -3,7 +3,7 @@ title: イメージ属性 (Common Data Service) | Microsoft Docs
 description: イメージ データを保存するイメージ属性、サポートされている属性、イメージ データの取得、およびイメージ データのアップロードについて説明します。
 ms.custom: ''
 ms.date: 02/11/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 988a403bdd3badd720a46ee5b58a9539bc1ac9f9
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.openlocfilehash: 79cacd85ae1478ed43ee21e499fdfd4b1e606c14
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3037082"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156183"
 ---
 # <a name="image-attributes"></a>イメージ属性
 

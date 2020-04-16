@@ -6,8 +6,8 @@ ms.date: 10/31/2018
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 5b1d7633-ab0d-94ec-166f-f5bc1af2a657
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3e1f1bc810923f7a470c9e89569a33c4222ed735
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: ed08b46825e5cbf4d4045fe95df8266d326a4a44
+ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749341"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172586"
 ---
 # <a name="command-bar-or-ribbon-presentation"></a>バーまたはリボンの表示
 
@@ -107,4 +107,4 @@ Common Data Service のコマンドを定義するデータは、クライアン
  [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
  [利用できるリボン](/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365)   
  [リボン定義のエクスポート](export-ribbon-definitions.md)   
- [カスタマイズの開発者ガイド](/dynamics365/customer-engagement/developer/customize-dev/customize-applications)
+ [リボンの問題のトラブルシューティング](https://support.microsoft.com/help/4552163)

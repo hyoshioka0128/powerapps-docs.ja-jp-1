@@ -3,7 +3,7 @@ title: .NET Framework アプリケーションによる認証 (Common Data Servi
 description: Common Data Service を使用した .NET Framework アプリケーションの認証方法
 ms.custom: ''
 ms.date: 01/25/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1cfe6bf09d274f7b465ffbcc97f220e3374af72f
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3cb5256130773472af60fbfbc3b6f062f24db1a5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749162"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156451"
 ---
 # <a name="authentication-with-net-framework-applications"></a>.NET Framework アプリケーションでの認証
 

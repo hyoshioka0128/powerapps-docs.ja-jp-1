@@ -11,16 +11,18 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: 311bb23bac05ffc49be9366d281226fd755c8faa
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: febda5c1c52b482db449b370d114c771cb2984eb
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862017"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162172"
 ---
 # <a name="component-implementation-library"></a>コンポーネント実装ライブラリ
 
-Power Apps component framework を使用してコード コンポーネントを開発する場合は、コンポーネント ライブラリの実装は重要なステップのひとつです。 開発者は TypeScript を使用してコンポーネント ライブラリを実装できます。 各コード コンポーネントは、コード コンポーネント インタフェースに記述されたメソッドを実装したオブジェクトを返すことができる、関数の定義を含むライブラリが必要です 
+Power Apps component framework を使用してコード コンポーネントを開発する場合、コンポーネント ライブラリの実装は重要なステップのひとつです。 開発者は TypeScript を使用してコンポーネント ライブラリを実装できます。
+
+各コード コンポーネントは、コード コンポーネント インタフェースに記述されたメソッドを実装したオブジェクトを返すことができる、関数の定義を含むライブラリが必要となります。 
 
 オブジェクトは次のメソッドを実装します:
 

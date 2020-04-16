@@ -13,20 +13,20 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6f3f47882800252c91de0efc572954f7397ac251
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 375ead78421dae021841009c5c6d1308fa4ed24b
+ms.sourcegitcommit: ca7df48f819795d28ccfcd4a862639e20a7fe8fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2757625"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3169078"
 ---
 # <a name="create-an-option-set"></a>オプション セットの作成
 
 オプション セットを使用して、アプリケーション内のユーザーに固定値のドロップダウン リストを含めることができ、データの一貫性を保証します。他のアプリケーションのピックリストまたは選択フィールドと呼ばれることもあります。 エンティティと同様に、標準のオプション セットと、アプリ内で使用するユーザー定義のオプション セットを作成する機能があります。
 
-オプション セットは、ポータル内のオプション セット リストから、またはフィールド作成中にエンティティ内で直接にという、2 つの方法で作成できます。 エンティティを作成する方法の詳細については、「[エンティティの作成](data-platform-create-entity.md)」を参照してください。
+オプション セットは、ポータル内の **オプション セット** リストから、またはフィールド作成中にエンティティ内で直接の 2 つの方法で作成できます。 エンティティを作成する方法の詳細については、「[エンティティの作成](data-platform-create-entity.md)」を参照してください。
 
-## <a name="creating-an-option-set-while-adding-a-field"></a>フィールドを追加する際にオプション セットを作成します。
+## <a name="creating-an-option-set-while-adding-a-field"></a>フィールドを追加する際にオプション セットを作成する
 
 1. [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**エンティティ**をクリックまたはタップします。
 
@@ -38,10 +38,10 @@ ms.locfileid: "2757625"
 
 4. 新しいフィールド パネルで、フィールドの**表示名**を入力すると、フィールドで**名前**が自動的に設定され、一意の名前として使用されます。 **表示名**はこのフィールドをユーザーに表示するときに使用され、**名前**は式や数式でアプリを構築するときに使用されます。
 
+5. **データの種類** ドロップダウンをクリックし **オプション セット** 、または **複数選択オプション セット** をクリックします。
+
     > [!div class="mx-imgBorder"] 
     > ![新しいフィールド](./media/data-platform-cds-create-entity/newfieldpanel.png "新規フィールドのパネル")
-
-5. **データの種類**ドロップダウンをクリックし、**オプション セット**、または**複数選択オプション セット**をクリックします。
 
 6. **オプション セット**ドロップダウンをクリックし、**新しいオプション セット**を選択します。
 
@@ -70,7 +70,7 @@ ms.locfileid: "2757625"
 
 ## <a name="creating-an-option-set-from-the-option-set-list"></a>オプション セット リストからオプション セットの作成
 
-1. [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で**データ**セクションを展開し、左側のナビゲーション ウィンドウで**オプション セット**をクリックまたはタップします。
+1. [powerapps.com](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) で **データ** セクションを展開し、左側のナビゲーション ウィンドウで **オプション セット** をクリックまたはタップします。
 
     > [!div class="mx-imgBorder"] 
     > ![オプション セット](./media/data-platform-cds-newoptionset/optionsetlist.png "オプション セットのリスト")
@@ -91,7 +91,7 @@ ms.locfileid: "2757625"
 
 ## <a name="global-and-local-option-sets"></a>グローバルおよびローカル オプション セット
 
-既定では、オプション セットは複数のエンティティ間で再利用されるようグローバル オプション セットとして作成されます。 新しいオプション セットを作成するときに、**詳細を表示**オプションで、オプション セットを**ローカル**に選択できます。 このオプションはフィールドを追加している間にオプション セットを作成する場合にのみ使用でき、オプション セット リストを通しては使用できません。 ローカル オプション セットは作成されたエンティティおよびフィールドでのみ使用でき、他のエンティティで再利用することはできません。 この方法は、ローカル オプション セットの特定のニーズがある上級ユーザーにのみお勧めします。
+既定では、オプション セットは複数のエンティティ間で再利用されるようグローバル オプション セットとして作成されます。 新しいオプション セットを作成するときに、**詳細を表示**オプションで、オプション セットを**ローカル**に選択できます。 このオプションはフィールドを追加している間にオプション セットを作成する場合にのみ使用でき、 **オプション セット** リストを通しては使用できません。 ローカル オプション セットは作成されたエンティティおよびフィールドでのみ使用でき、他のエンティティで再利用することはできません。 この方法は、ローカル オプション セットの特定のニーズがある上級ユーザーにのみお勧めします。
 
 > [!IMPORTANT]
 > オプション セットがローカルまたはグローバルとして作成されると、これを変更することはできません。

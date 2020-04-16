@@ -3,7 +3,7 @@ title: デバッグのプラグイン (Common Data Service) | Microsoft Docs
 description: プラグイン登録ツールを使用して、プラグインをデバッグする方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a7cc74105b5724114ecaad9a9836b6ef118f805c
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 637ed40097ff29cc74cdfc671eb4e2f6cf7edf2b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109051"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156275"
 ---
 # <a name="debug-plug-ins"></a>プラグインのデバッグ
 

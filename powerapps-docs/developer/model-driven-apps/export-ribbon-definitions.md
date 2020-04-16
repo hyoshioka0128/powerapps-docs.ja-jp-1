@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d6c342d1b5c3b5864aaf556af800c0f439a3e272
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 4c30de17ecf3653baeebb3f3de015e982bc5b2bf
+ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753619"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172577"
 ---
 # <a name="export-ribbon-definitions"></a>リボン定義のエクスポート
 
@@ -210,7 +210,12 @@ foreach (System.String entityName in entitiesWithRibbons)
   }
  }
 }  
-```  
+``` 
+
+## <a name="troubleshoot-ribbon-issues"></a>リボンの問題のトラブルシューティング
+
+リボン コマンドバー ボタンで問題が発生している場合は、次のトラブルシューティング ガイドを使用して問題を見つけ解決してください: <https://support.microsoft.com/help/4552163>
+
 ### <a name="see-also"></a>関連項目  
  [リボンのカスタマイズ](customize-commands-ribbon.md)   
  [バーまたはリボンの表示](command-bar-ribbon-presentation.md)   

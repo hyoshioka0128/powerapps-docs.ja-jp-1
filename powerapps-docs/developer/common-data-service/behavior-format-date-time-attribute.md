@@ -3,7 +3,7 @@ title: 日時属性の動作と形式 (Common Data Service) | Microsoft Docs
 description: DateTimeAttributeMetadata クラスを、Common Data Service のタイプ DateTime の属性を定義および管理するのに使用します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a2f2fbbf8b541945d665cf9203c9f9112cdea1a4
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4fbc971751fd552caaec31d77b19e7ca2dd39aa3
+ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748827"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165336"
 ---
 # <a name="behavior-and-format-of-the-date-and-time-attribute"></a>日時属性の動作と形式
 
@@ -243,10 +243,34 @@ ConvertDateAndTimeBehaviorResponse response = (ConvertDateAndTimeBehaviorRespons
 ```
   
  完全なコード サンプルは、 [サンプル: 日時の値の変換](/dynamics365/customer-engagement/developer/org-service/sample-convert-date-time-behavior)を参照してください。  
+ 
+ ## <a name="best-practices-for-using-time-zone"></a>タイムゾーンを使用するためのベスト プラクティス
+
+### <a name="for-my-datetime-field-i-was-expecting-utclocal-and-i-am-seeing-the-opposite-value"></a>期待していた自分の日付/時刻フィールド (UTC/ローカル) で、反対の値が表示されています
+
+これは、エンティティフィールドの設定とアプリフォームの設定の間にパリティがないために発生します。 エンティティ フィールドが [タイムゾーン非依存] または [ユーザーローカル] に構成されている場合、データがストアから取得されるときに、タイムゾーンのオフセットが適用されるかどうかが決まります。 ただし、アプリ フォームには UTC またはローカルの設定もあります。 
+ 
+これは Common Data Service から受け取ったデータを解釈する方法をフォームに伝えます。 ストアから取得したデータがタイムゾーンに依存しないが、フォームがローカルに設定されている場合、UTC データはユーザーのタイムゾーンに基づいてユーザーのローカルタイムとしてプロファイルに表示されます。 この逆も当てはまります。フォームが UTC に設定されている場合、ストアからのユーザーローカル値は UTC として表示されます。 幸い、フォームの日付タイムゾーン値は、既存のレコードを中断することなく変更できます。
+
+### <a name="i-picked-date-only-in-my-entity-field-but-my-form-is-showing-a-time-picker-along-with-the-date"></a>エンティティ フィールドで [日付のみ] を選択しましたが、フォームには日付ピッカーが表示されています。
+
+これは、日付のみのフィールドに対してタイムゾーン非依存またはユーザー ローカルの動作を選択した場合に発生します。 規定では Common Data Service が 00:00:00 の時刻を保存しますが、フィールドをフォームに追加する場合は時刻も設定する必要があると想定します。 フォームに時間ピッカーを残した場合、ユーザーは時間を入力でき 00:00:00 以外として保存されます。 こちらがこれを修正する方法です。
+* フォームを編集して、時間ピッカーと関連する数式を削除します。 これにより、時刻が 00:00:00 として保存され、タイムゾーン ベースの日付計算が可能になります。
+* 現在、フィールドはユーザー ローカルに設定されており、日付をタイムゾーンで計算する必要がない場合は、日付のみに変更できます。 この変更は永続的であり、元に戻すことができません。 この変更は、タイムゾーンに依存しない動作フィールドに対して行うことはできません。 他のアプリ、プラグイン、ワークフローがデータに依存している可能性があるため、動作の変更には常に注意してください。
+
+### <a name="i-have-a-date-only-field-but-it-is-showing-the-wrong-date-for-some-users"></a>日付のみのフィールドがありますが、一部のユーザーに間違った日付が表示されています
+これが発生した場合は、日付のみのフィールドに設定されている動作を確認してください。 フィールドがタイムゾーン非依存またはユーザーローカルに設定されている場合、含まれるタイム スタンプにより、日付がユーザーごとに異なって表示されます。 UTC やローカルのフォーム表示設定により、表示される日付がユーザーのタイムゾーン設定を使用して計算されるのか、それとも UTC 値として表示されるのかが決まります。 フォームの値をユーザー ローカルではなく UTC に変更すると、タイムゾーン オフセットの計算ができなくなり、保存されたレコードの UTC での日付が表示されます。 または、これを変更しない静的な日付にする必要があり、フィールドが現在ユーザー ローカルである場合は、フィールド動作を日付のみに変更できます。 これは元に戻すことはできませんのでご注意ください。
+
+### <a name="my-scriptplug-in-is-supposed-to-intercept-the-date-submitted-using-the-universal-client-before-the-user-local-conversion-occurs-but-instead-it-is-being-treated-as-user-local-data"></a>私 (スクリプト/プラグイン) は、ユーザー ローカル変換が発生する前に、ユニバーサル クライアントを使用して送信された日付をインターセプトする必要がありますが、代わりにユーザー ローカル データとして扱われます 
+
+UTC とユーザー ローカルの間でデータが変換される場合、Web クライアントとユニバーサル クライアントの動作は少し異なります。 Web クライアントでは、日付がクライアントに入力され、提供されたとおりに API に渡され、後でユーザーのローカル時間に変換されます。 これにより、スクリプト/プラグインがデータを取得し、データがプラットフォーム サービスに渡されてユーザーのローカル時間に変換される前にアクションを実行できるようになりました。 ユニバーサル クライアントでは、データが API に渡される前に日付からユーザーローカル値への変換が行われます。これにより、提供されるデータは UTC 日付ではなく、取得または投稿したユーザーに基づいてユーザー ローカルになります。 これを解決するには、ユーザーは次のいずれかを実行できます。
+
+* フォームを UTC 値を保持するタイムゾーン非依存に変更します。 これは、ユーザーがユーザー ローカル時間でフォームを表示する必要がない場合にのみ機能します。
+* スクリプトを変更して、使用されているタイムゾーン オフセットを検出し、スクリプト内で UTC に再計算して、アクションを実行します。
   
 ### <a name="see-also"></a>関連項目  
  [サンプル: 日時の値の変換](/dynamics365/customer-engagement/developer/org-service/sample-convert-date-time-behavior.md)   
  [日時フィールドの動作と形式](/dynamics365/customer-engagement/developer/customize/behavior-format-date-time-field)   
  [エンティティ属性メタデータのカスタマイズ](/dynamics365/customer-engagement/developer/customize-entity-attribute-metadata)          
  <xref:Microsoft.Xrm.Sdk.Messages.ConvertDateAndTimeBehaviorRequest>      
- <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata> 
+ <xref:Microsoft.Xrm.Sdk.Metadata.DateTimeAttributeMetadata> [ブログ: Common Data Service でタイムゾーンを使用して作業する](https://powerapps.microsoft.com/en-us/blog/working-with-time-zones-in-the-common-data-service/)

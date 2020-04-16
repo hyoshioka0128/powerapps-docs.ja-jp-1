@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f393f227-7a88-4f25-9036-780b3bf14070
-ms.openlocfilehash: fd887f50453875f1f22cf1ab4eaa5d5d0f8029ee
-ms.sourcegitcommit: 60a721432b3fa2abd14ccb3bd16a6b34e13ada85
+ms.openlocfilehash: 3075a33615112694ccc7e06d2eadf601630aac13
+ms.sourcegitcommit: 13d4042c7bd73580cc8c595e137de7e7fec22875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "3026404"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3170215"
 ---
 # <a name="get-tooling-for-power-apps-component-framework"></a>Power Apps Component Framework のツールを入手します。
 
@@ -25,6 +25,7 @@ Power Apps Component Framework を使用して、コード コンポーネント
 > [!IMPORTANT]
 > Power Apps CLI を使用してコード コンポーネントを展開するには、システム管理者またはシステム カスタマイザー特権を持つ Common Data Service 環境が必要です。
 
-### <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目
 
 [初めてコード コンポーネントを作成する](implementing-controls-using-typescript.md)<br/>
+[Power Apps component framework の学習](https://docs.microsoft.com/learn/paths/use-power-apps-component-framework)

@@ -3,7 +3,7 @@ title: NuGet からツールをダウンロード (Common Data Service) | Micros
 description: Nuget からプラグイン登録、パッケージ展開、および他のコア ツールをダウンロードします。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,18 +13,18 @@ applies_to:
 ms.assetid: feb3e634-7c60-46fd-8b92-3f5682b1570b
 author: shmcarth
 ms.author: jdaly
-manager: amyla
+manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c7c548751f54a813116cd18112bbfaa5e7e3f3a0
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 42ed5678c31f615ba4a051d3423beb509053f033
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748799"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156243"
 ---
 # <a name="download-tools-from-nuget"></a>NuGetからツールをダウンロードする 
 

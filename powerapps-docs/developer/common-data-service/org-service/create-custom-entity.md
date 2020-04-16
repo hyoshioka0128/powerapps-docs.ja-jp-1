@@ -3,7 +3,7 @@ title: ユーザー定義エンティティの作成 (Common Data Service) | Mic
 description: このトピックでは、Common Data Service におけるプログラムに基づいた、ユーザー定義エンティティの作成方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 385a616ada3294d300fb77433893e7b79256569c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 127317260eb873e3565cfa7de5a24569263b4522
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749126"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156083"
 ---
 # <a name="create-custom-entity"></a>ユーザー定義エンティティの作成
 

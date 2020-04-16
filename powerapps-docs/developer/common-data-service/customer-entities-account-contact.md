@@ -1,9 +1,9 @@
 ---
-title: 顧客エンティティ (取引先企業、取引先担当者) (Common Data Service) | Microsoft Docs
+title: 顧客エンティティ (取引先企業、取引先担当者、CustomerAddress) (Common Data Service) | Microsoft Docs
 description: Dynamics 365 の取引先企業および取引先担当者エンティティは、顧客の特定および管理、製品やサービスの販売、および顧客への優れたサービスの提供に必要なエンティティです。 "顧客住所" エンティティは、顧客の住所と発送情報の保存に使用します。
 ms.custom: ''
-ms.date: 10/31/2018
-ms.reviewer: ''
+ms.date: 03/30/2020
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,14 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 48a9f4e8a18fcf6db639e2a17c21779fa8de90c3
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4181206bef39f6834b5aef096ed90931f725d310
+ms.sourcegitcommit: b6beb1b76d9ddb0f9846253f895d581bda9012ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748997"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "3176668"
 ---
-# <a name="customer-entities-account-contact"></a>顧客エンティティ (取引先企業、取引先担当者)
+# <a name="customer-entities-account-contact-customeraddress"></a>顧客エンティティ (取引先企業、取引先担当者、CustomerAddress)
 
 <!-- 
 Was Mike Carter
@@ -66,7 +66,14 @@ Common Data Service では、取引先担当者は、通常は部署と関係が
   
 取引先担当者に対して実行できる基本操作には、作成、読み取り、更新、および削除があります。  
   
-活動やメモなどのエンティティを取引先担当者エンティティにリンクすると、ユーザーは、顧客との間の通信、顧客のためにとったアクション、および顧客に関する必要な情報のすべてを確認できるようになります。  
+活動やメモなどのエンティティを取引先担当者エンティティにリンクすると、ユーザーは、顧客との間の通信、顧客のためにとったアクション、および顧客に関する必要な情報のすべてを確認できるようになります。
+
+## <a name="customeraddress-entity"></a>CustomerAddress エンティティ
+
+このエンティティには住所と出荷情報が含まれます。 取引先企業または取引先担当者のストアの追加住所を保存する場合にも使用されます。
+
+>[!NOTE]
+>顧客住所テーブルは、取引先企業または取引先担当者のエンティティに変更が加えられると、プラットフォーム レベルで更新されます。 このため、顧客住所エンティティを更新または作成するための個別の SDK の呼び出しは行われません。 住所の更新または作成時にトリガーされるコードは、取引先担当者または取引先企業エンティティを指している必要があります。
   
 ## <a name="in-this-section"></a>このセクションの内容  
  [取引先企業エンティティ](reference/entities/account.md)  

@@ -1,6 +1,6 @@
 ---
 title: コンポーネントのインポート | Microsoft Docs
-description: このトピックでは、コード コンポーネントをインポートする方法について説明します
+description: この記事では、コード コンポーネントをインポートする方法について説明します
 keywords: ''
 ms.author: nabuthuk
 manager: kvivek
@@ -9,16 +9,16 @@ ms.service: powerapps
 ms.suite: ''
 ms.topic: article
 author: Nkrb
-ms.openlocfilehash: 8a84d9b52f913f3c7f6da2bf07e11124277f2f52
-ms.sourcegitcommit: 5b6e6b41a3fc4d7f1aea46ec66c086b784efacac
+ms.openlocfilehash: 717fb3a5ceba7b2136382736b462206c72a3d8e0
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095489"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218540"
 ---
 # <a name="package-a-code-component"></a>コード コンポーネントをパッケージ化する
 
-このトピックでは、コード コンポーネントを Common Data Service にインポートする方法について説明します。 Power Apps CLIを使用してコード コンポーネントを実装した後、次の手順としては、すべてのコード コンポーネント要素をソリューション ファイルにバンドルし、ソリューション ファイルを  Common Data Service にインポートします。これによりランタイムでコード コンポーネントを表示できるようになります。
+この記事では、コード コンポーネントを Common Data Service にインポートする方法について説明します。 Power Apps CLIを使用してコード コンポーネントを実装した後、次の手順としては、すべてのコード コンポーネント要素をソリューション ファイルにバンドルし、ソリューション ファイルを  Common Data Service にインポートします。これによりランタイムでコード コンポーネントを表示できるようになります。
 
 ソリューション ファイルを作成およびインポートするには:
 
@@ -56,7 +56,9 @@ ms.locfileid: "3095489"
 
 ## <a name="connecting-to-your-environment"></a>環境に接続しています
 
-Common Data Service 環境に接続することで Power Apps CLI から直接コード コンポーネントを展開し、更新されたコンポーネントをプッシュできます。 認証プロファイルを作成して、Common Data Service に接続し、更新コンポーネントをプッシュするには次の手順を使用します。 
+Common Data Service 環境に接続することで Power Apps CLI から直接コード コンポーネントを展開し、更新されたコンポーネントをプッシュできます。
+
+認証プロファイルを作成して、Common Data Service に接続し、更新コンポーネントをプッシュするには次の手順を使用します。 
  
 1. 次のコマンドを使用して、認証プロファイルを作成します。 
  
@@ -118,26 +120,26 @@ Common Data Service で既存のソリューションに基づくソリューシ
 > [!NOTE]
 > プラグイン コマンドはパブリック プレビューにあり、 Power Apps CLI は、プラグイン プロジェクトへの参照を追加することで、プラグインプロジェクトの作成とソリューションへのパッケージ化をサポートするようになりました。 `pac plugin init` コマンドは、ディレクトリにテンプレートファイル (csproj、＃Plugin.cs＆ServiceHelper.cs) を作成します。 それには、次を実行します。 
 
-1.  有効な認証のプロファイルを作成したことを確認します。
-2.  プロジェクトを作成するルート ディレクトリに移動します。
-3.   コマンドを実行します。 
+1.    有効な認証のプロファイルを作成したことを確認します。
+2.    プロジェクトを作成するルート ディレクトリに移動します。
+3.     コマンドを実行します。 
 
      ```CLI
      pac auth create –url <https://xyz.crm.dynamics.com>
      ```
-4.  コマンドを実行してプラグイン プロジェクトを作成します
+4.    コマンドを実行してプラグイン プロジェクトを作成します
 
     ```CLI
     pac plugin init
     ```
 
-5.  ソリューションのビルド時にプラグイン プロジェクトがビルドされるように、次のコマンドを使用してソリューション プロジェクトへの参照を追加します。
+5.    ソリューションのビルド時にプラグイン プロジェクトがビルドされるように、次のコマンドを使用してソリューション プロジェクトへの参照を追加します。
 
     ```CLI
     pac solution add-reference –path <path to your plugin project>
     ```
 
-6.  コマンドを実行して、ソリューションと参照プラグインをビルドします。
+6.    コマンドを実行して、ソリューションと参照プラグインをビルドします。
     ```CLI
     msbuild
     ```

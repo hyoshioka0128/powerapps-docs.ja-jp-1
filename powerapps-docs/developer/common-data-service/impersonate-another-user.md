@@ -3,7 +3,7 @@ title: 他のユーザーを偽装する (Common Data Service) | Microsoft Docs
 description: 偽装を使用して、Common Data Service ユーザーに代わってビジネス ロジックを実行し、偽装されるユーザーの適切なロール ベースとオブジェクトベースのセキュリティを使用して任意の機能やサービスを提供するために使用されます。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0701f48caa7b45d49cd85c6d8c97ff6568e4813e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: e817468da9cf506acbaedf6b1617ca1a563661e9
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748857"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156159"
 ---
 # <a name="impersonate-another-user"></a>もう一方のユーザーの偽装
 

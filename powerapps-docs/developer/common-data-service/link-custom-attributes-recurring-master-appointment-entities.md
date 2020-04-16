@@ -3,7 +3,7 @@ title: 定期的な予定マスターと予定エンティティのユーザー�
 description: 定期的な予定マスター エンティティを予定エンティティのユーザー定義属性にリンクして、自動的にデータをコピーします。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b592f23ee8907902a206be8012249c4db2e7bac2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c867790a7ffa9fecd68ff838d829618dc2a431c6
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748848"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156155"
 ---
 # <a name="link-custom-attributes-of-the-recurring-appointment-master-and-appointment-entities"></a>定期的な予定マスター エンティティと予定エンティティのユーザー定義属性をリンクする
 

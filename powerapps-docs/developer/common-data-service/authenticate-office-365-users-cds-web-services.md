@@ -3,7 +3,7 @@ title: Common Data Service Web サービスで Office 365 ユーザーを認証�
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fcd32cc463a09f6404a89c5171f718e7841ea847
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 1466666773fdf79e079a0d52ab830d568f954b58
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749160"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156443"
 ---
 # <a name="authenticate-office-365-users-with-common-data-service-web-services"></a>Common Data Service Web サービスでの Office 365 ユーザーの認証
 

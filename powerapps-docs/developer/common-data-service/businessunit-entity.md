@@ -3,7 +3,7 @@ title: BusinessUnit エンティティ (Common Data Service) | Microsoft Docs
 description: Common Data Service における持株会社や法人などの組織は、部署で構成されています。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 82ee0de5cf08c36d19afd5e9e7527390107367fc
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8b10a53a1dde7e0a86d92a9601bcbc01d8577010
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749011"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156391"
 ---
 # <a name="businessunit-entity"></a>BusinessUnit エンティティ
 

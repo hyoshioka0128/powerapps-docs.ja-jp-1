@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: aaaa3e01902f1e2a9a96b1d2501d9931a6c8d085
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: ee265ae0c82cc6b8fe82595ae555b989579177d2
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3099908"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218536"
 ---
 # <a name="common-issues-and-workarounds"></a>共通の問題と回避策
 
@@ -44,7 +44,7 @@ ms.locfileid: "3099908"
 **回避策**:
 
 - Common Data Serviceからソリューションに関連するコンポーネントを削除します。 
-- コンポーネントが依存関係を回避するように既に構成されている場合、コンポーネントをフィールドまたはグリッドから削除する必要があります。
+- コンポーネントが依存関係を回避するようにすでに構成されている場合は、コンポーネントをフィールドまたはグリッドから削除する必要があります。
 - 最新の CLI バージョンで構築されたコンポーネントに対する更新を使用して、新しいソリューションをインポートします。
 - 新たに読み込まれたコンポーネントは、フォームまたはグリッド上で設定できるようになっています。  
 
@@ -79,14 +79,41 @@ ms.locfileid: "3099908"
        </configuration>
      ```
 
-## <a name="web-resource-size-is-too-big"></a>Web リソース サイズが大きすぎます
+## <a name="web-resource-size-is-too-large"></a>Web リソース サイズが大きすぎます
 
 エラー  **ソリューションのインポート エラー: Web リソースのコンテンツサイズが大きすぎます**。
 
 **回避策**
 
-- CLI ツールから `bundle.js` ファイルを作成する場合、ファイルを大きくする多くのコンポーネントがバンドルされます。 不要なコンポーネントをいくつか削除します。
-- `node_modules/pcf-scripts/webpackconfig.js` ファイルを変更して、コンポーネントを `production` モードでビルドします。
+- コマンドを使用して webpack を運用モードに設定するリリース構成として `.pcfproj` をビルドします 
+  ```CLI
+  msbuild /property:configuration=Release
+  ```
+- 以下に示すように、追加のプロパティを指定して msbuild コマンドを実行します: 
+  ```CLI
+  msbuild /p:PcfBuildMode=production
+  ```
+- プロパティ `PcfBuildMode` を運用に設定して、常に運用モードで webpack をビルドするように `.pcfproj` を編集します:
+  ```XML
+  <PropertyGroup>
+    <Name>TS_ReactStandardControl</Name>
+    <ProjectGuid>0df84c56-2f55-4a80-ac9f-85b7a14bf378</ProjectGuid>
+    <OutputPath>$(MSBuildThisFileDirectory)out\controls</OutputPath>
+    <PcfBuildMode>production</PcfBuildMode>
+  </PropertyGroup>
+  ```
+## <a name="solution-checker-issue"></a>ソリューション チェッカーの問題
+
+**エラー: eval 関数または同等の機能は使用しないでください。**
+
+このエラーは、ユーザーが CLI を使用してコード コンポーネントを作成、ビルド、パッケージ化し、`msbuild` を使用してソリューション ファイルをビルドし、ソリューション ファイルを Common Data Service にインポートしてソリューション チェッカーを実行すると発生します。
+
+**回避策**
+
+次のコマンドを使用してソリューション ファイルを再構築し、ソリューションを Common Data Service に再インポートして、ソリューション チェッカーを実行します。
+```CLI
+msbuild/property:configuration:Release
+```
 
 ## <a name="power-apps-component-framework-datasets-getvalue-by-property-alias-doesnt-work"></a>Power Apps component framework Datasets プロパティ エイリアスによる getValue が機能しない
 

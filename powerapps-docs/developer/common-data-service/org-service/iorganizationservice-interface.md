@@ -3,7 +3,7 @@ title: OrganizationService インターフェイス (Common Data Service) | Micr
 description: Common Data Service を使ったデータ操作を実行するための、公開されている共通メソッドについて説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bccb65e72c967ab973de106f1010ad95164db3ee
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 28ac02182471d35b77d2c45dc1f3148d881ff5d9
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748972"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156043"
 ---
 # <a name="iorganizationservice-interface"></a>IOrganizationService インターフェイス
 

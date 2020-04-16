@@ -2,7 +2,7 @@
 title: Web APIを使用したバッチ処理の実行 (Common Data Service)| Microsoft Docs
 description: バッチ操作を使用すると、単一の HTTP 要求で複数のオペレーションをグループ化することができます。 Web API を使用してバッチ操作を実行する方法を読みます
 ms.custom: ''
-ms.date: 12/10/2019
+ms.date: 03/30/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,19 +13,19 @@ ms.assetid: 799b2346-bda1-4a26-a330-79d0927a7743
 caps.latest.revision: 11
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1c7d738212bee75306ed5a693087c4ae7d6324d2
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 3d1b6d2e3abcef9101210d659dc155d6d4cb9a2f
+ms.sourcegitcommit: ee60386ecdd26df1d48176beb96f5e74874f2e5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109035"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "3175468"
 ---
 # <a name="execute-batch-operations-using-the-web-api"></a>Web API を使用してバッチ操作を実行する
 
@@ -37,12 +37,12 @@ ms.locfileid: "3109035"
 
 バッチ要求が指定した値は、変更セットを含められるので、グループとして成功または失敗するいくつかの操作をまとめる手段を提供します。 Web API を使用して実行できる他の操作と比べ、HTTP プロトコルのより深い理解またはオブジェクトのシリアル化を含むいくつかのオブジェクト モデルなしに構成することは困難です。なぜなら要求本文は元来とても具体的な要件に一致する必要があるテキスト ドキュメントだからです。  
   
-バッチ要求を使用するよりも簡単に、関連付けられたエンティティを 1 回の操作で作成できることに注意してください。 バッチ要求は、1 つのトランザクション操作ですべての操作を実行する必要がある場合に、相互に関連付けられていないエンティティに対して操作を実行するのに最も適しています。  
+バッチ要求を使用するよりも簡単に、関連付けられたエンティティを 1 回の操作で作成できることに注意してください。 バッチ要求は 1 つのトランザクション操作ですべての操作を実行する必要がある場合に、相互に関連付けられていないエンティティに対して操作を実行するのに最も適しています。  
   
 また、返された応答は、簡単に JSON に解析できるオブジェクトではなく、基本的にはテキスト ドキュメントです。 応答内のテキストを解析するか、応答内のデータにアクセスするためのヘルパー ライブラリを検索する必要があります。  
  
 >[!NOTE]
->  バッチ要求には最大 100 個の別々要求を含めることができるが、他のバッチ要求を含めることはできません。  
+>  バッチ要求には最大 1000 個の別々要求を含めることができるが、他のバッチ要求を含めることはできません。  
   
 <a name="bkmk_BatchRequests"></a> 
 
@@ -56,7 +56,7 @@ POST 要求を使用して、複数の要求が含まれているバッチ操作
 --batch_<unique identifier>
 ```  
   
-一意の識別子は、GUID である必要はありませんが、一意である必要があります。 バッチ内の各項目の前に、次のようなコンテンツ タイプおよびコンテンツ転送エンコーディング ヘッダーを持つバッチ識別子が必要です。  
+一意識別子は GUID である必要はありませんが、一意である必要があります。 バッチ内の各項目の前に、次のようなコンテンツ タイプおよびコンテンツ転送エンコーディング ヘッダーを持つバッチ識別子が必要です。  
   
 ```  
 --batch_WKQS9Yui9r
@@ -80,7 +80,7 @@ Content-Transfer-Encoding:binary
 --changeset_<unique identifier>
 ```  
   
-一意の識別子は、GUID である必要はありませんが、一意である必要があります。 変更セット内の各項目の前に、次のようなコンテンツ タイプおよびコンテンツ転送エンコーディング ヘッダーを持つ変更セット識別子が必要です。  
+一意識別子は GUID である必要はありませんが、一意である必要があります。 変更セット内の各項目の前に、次のようなコンテンツ タイプおよびコンテンツ転送エンコーディング ヘッダーを持つ変更セット識別子が必要です。  
   
 ```  
 --changeset_BBB456

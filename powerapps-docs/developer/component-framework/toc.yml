@@ -12,6 +12,8 @@
           href: component-framework-for-canvas-apps.md
     - name: Power Apps CLI の入手
       href: get-powerapps-cli.md
+    - name: Power Apps component framework の学習
+      href: 'https://docs.microsoft.com/learn/paths/use-power-apps-component-framework'
     - name: チュートリアル
       items:
         - name: 最初のコンポーネントを作成する

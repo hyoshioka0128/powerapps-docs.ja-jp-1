@@ -6,24 +6,24 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: conceptual
-ms.date: 05/01/2018
+ms.date: 03/20/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a44bdc829defb8434b9b6de24392e360039de3c4
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0a6b950c35043ecf47f45373f758ce62953945e7
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2864217"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156531"
 ---
 # <a name="license-requirements-for-entities"></a>エンティティのライセンス要件
 
 > [!IMPORTANT]
-> このトピックは最新ではなく、2019 年 10 月 1 日から適用される最新のライセンス変更を反映するため、間もなく更新されます。 エンティティに対するライセンス要件の最新情報については、 [Power Apps ライセンス ガイド](https://go.microsoft.com/fwlink/?linkid=2085130) を参照してください。
+> エンティティに対するライセンス要件の最新情報については、 [Power Apps ライセンス ガイド](https://go.microsoft.com/fwlink/p/?linkid=2085130) を参照してください。
 
 アプリ作成者は、 Common Data Service 内 (Common Data Service の部分であるカスタム エンティティとエンティティを含む) で、使用可能なエンティティのほとんどを使用して 、 Power Apps Plan 1 または Power Automate Plan 1 を持つユーザーのアプリとフローを作成できます。 場合によっては、エンティティは、複雑なビジネス ロジックが含まれるか、アプリ ユーザーに特定のライセンスを求める Dynamics 365 アプリケーションに連結されます。 
 

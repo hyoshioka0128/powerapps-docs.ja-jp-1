@@ -3,7 +3,7 @@ title: ユーザー定義の活動 (Common Data Service) | Microsoft Docs
 description: ユーザー定義の活動は、Dynamics 365 のインスタント メッセージング (IM) やショート メッセージ サービス (SMS) などの業務上の通信ニーズをサポートします。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ee86c88222c0385f1fec8458af6ee9d2cfeabf18
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 942680191db63b6238efdaaa07b5b113d9a5604e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749141"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156315"
 ---
 # <a name="custom-activities"></a>ユーザー定義の活動
 

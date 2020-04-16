@@ -11,16 +11,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d2cbf58a-9112-45c2-b823-2c07a310714c
-ms.openlocfilehash: 70532cfb3cc5cfad0f274f123857eedc5d54cae2
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: ccdb91def96f485d4641a71a6d12199117063e78
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909281"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162164"
 ---
 # <a name="create-and-build-a-code-component"></a>コードコンポーネントを作成、構築する
 
-このトピックでは、 Power Apps CLIコンポーネントを使用してコードを作成および展開する方法を説明します。 [Microsoft Power Apps CLI](https://aka.ms/PowerAppsCLI) がインストールされていることが前提となります。
+この記事では、Power Apps CLI を使用してコード コンポーネントを作成してデプロイする方法について説明します。 [Microsoft Power Apps CLI](https://aka.ms/PowerAppsCLI) がインストールされていることが前提となります。
 
 ## <a name="create-a-new-component"></a>新しいコンポーネントの作成
 
@@ -39,11 +39,13 @@ ms.locfileid: "2909281"
 
 4. 必要なプロジェクトの依存関係をすべて取得するには、コマンド `npm install` を実行します。
 5. 任意の開発者環境でプロジェクト フォルダ ( `C:\Users\<your name>\Documents\<My_code_Component>` ) を開き、コード コンポーネントの開発を始めます。 最も手軽に開始するには、 `C:\Users\<your name>\Documents\<My_code_Component>` に移動してコマンド プロンプトで `code .` を実行する方法があります。 このコマンドは、 Visual Studio コードにあるコンポーネントプロジェクトを開きます。
-6. マニフェスト、コンポーネントロジック、スタイル設定などのコンポーネントに必要なアーティファクトを実装し、コンポーネントプロジェクトを構築します。 詳しくは： [初めてのコードコンポーネント作成](implementing-controls-using-typescript.md) を参照してください。
+6. マニフェスト、コンポーネント ロジック、スタイル設定などのコンポーネントに必要なアーティファクトを実装し、コンポーネント プロジェクトを構築します。 詳しくは： [初めてのコードコンポーネント作成](implementing-controls-using-typescript.md) を参照してください。
 
 ## <a name="build-your-component"></a>コンポーネントを構築する
 
-コンポーネント プロジェクト を構築するには、 Visual Studio コードで `package.json` を含むプロジェクトのフォルダを開きます。(Ctrl-Shift-B) コマンドを使用して、構築オプションを選択します。 または、VS 2017 ウィンドウの開発者向けコマンド プロンプトで  `npm run build` コマンドを使用することで、簡単にコンポーネントを構築することができます。
+コンポーネント プロジェクト を構築するには、 Visual Studio コードで `package.json` を含むプロジェクトのフォルダを開きます。(Ctrl-Shift-B) コマンドを使用して、構築オプションを選択します。 
+
+または、VS 2017 ウィンドウの開発者向けコマンド プロンプトで  `npm run build` コマンドを使用することで、簡単にコンポーネントを構築することができます。
 
 > [!TIP]
 > 構築中、または構築完了後にコンポーネントのデバッグを行うには、 [コード コンポーネントのデバッグ](debugging-custom-controls.md) を参照してください。

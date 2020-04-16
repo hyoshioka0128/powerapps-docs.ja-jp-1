@@ -11,12 +11,12 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 356561d0-a36b-4b93-8b76-3e1abf9414e9
-ms.openlocfilehash: 44cad6fe7eafb457db7b2d5d3204612a42944a02
-ms.sourcegitcommit: 5b6e6b41a3fc4d7f1aea46ec66c086b784efacac
+ms.openlocfilehash: 6bc0f3da0b66dc929b1f6410453df88b3069bf8d
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "3095485"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162148"
 ---
 # <a name="implementing-data-set-component-for-canvas-apps"></a>キャンバス アプリに使用する データセット コンポーネントの実装
 
@@ -582,7 +582,7 @@ private onLoadPrevButtonClick(event: Event): void {
 
 ### <a name="related-topics"></a>関連トピック
 
-[サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[サンプル コンポーネントをダウンロード](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
 [Power Apps Component Framework API の参照](../reference/index.md)<br/>
 [Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

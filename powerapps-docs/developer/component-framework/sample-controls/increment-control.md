@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 3a9b6880b681cffac05f98f623116c4748091ea8
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: 88180c903e5e7d9675cd2f67fad5c47b0df0634f
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091198"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162076"
 ---
 # <a name="implementing-increment-component"></a>増分コンポーネントの実装
 
@@ -256,7 +256,7 @@ export class TSIncrementControl
 
 ### <a name="related-topics"></a>関連トピック
 
-[サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[サンプル コンポーネントをダウンロード](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
 [Power Apps Component Framework API の参照](../reference/index.md)<br/>
 [Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

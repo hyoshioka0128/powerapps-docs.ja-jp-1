@@ -19,12 +19,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 060d749fe3f8c7f3d2e0870b99a836571c29bd86
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 68663e52d3e0111d5a374b2fc434edcaa2294074
+ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865920"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165312"
 ---
 # <a name="create-and-edit-global-option-sets-for-common-data-service-using-solution-explorer"></a>ソリューション エクスプローラーを使用して、 Common Data Service にグローバル オプション セットを作成、編集する
 
@@ -76,6 +76,9 @@ ms.locfileid: "2865920"
 グローバル オプション セットが表示されているとき、編集するパネルを開くよう編集したいオプション セットを選択します。
 
 オプションに割り当てられた**名前**フィールドの値または件数の**値**の変更を除いて、グローバル オプション セットを作成するときにできることは何でも可能です。
+
+> [!NOTE]
+> 管理ソリューションの一部である場合、オプション セットを編集することはできません。 管理ソリューション オプション セットを編集するには、ソリューションの所有者に連絡する必要があります。
 
 [!INCLUDE [cc_remove-option-warning](../../includes/cc_remove-option-warning.md)]
 

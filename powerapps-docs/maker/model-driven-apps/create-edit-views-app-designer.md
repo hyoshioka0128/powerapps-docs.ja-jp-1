@@ -2,7 +2,7 @@
 title: Power Apps を使用して共有またはシステム モデル駆動型アプリ ビューを作成、編集する | MicrosoftDocs
 description: アプリ デザイナーを使用してビューを作成または編集する方法を学習する
 keywords: ''
-ms.date: 11/27/2018
+ms.date: 03/23/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 03bfaec424624be1094314dbae763114892d2a59
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 10aa1623cbc3ff90788257641afd71ac0e149375
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2884874"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166843"
 ---
 # <a name="create-and-edit-public-or-system-model-driven-app-views"></a>共有またはシステム モデル駆動型アプリ ビューを作成および編集
 
@@ -52,10 +52,6 @@ Power Apps において、ビューは特定のエンティティのレコード
 アプリの作成者は、Power Apps を使用して、共有ビューを作成および編集することができます。
 1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
-
-    > [!IMPORTANT]
-    > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。   
-  
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**ビュー** タブを選択します。 
 
 3. ツール バーで、**ビューの追加** を選択します。 
@@ -109,7 +105,7 @@ Power Apps において、ビューは特定のエンティティのレコード
     ![列の追加](media/ViewAppDesigner_AddColumn.png "ビューへの列の追加") 
 
 3. リストから、必要な属性を選択して列のヘッダーにドラッグします。 ダブル クリックして、属性を追加することもできます。
-4. ビューに表示したい全ての属性が追加するまで、ステップ 3 を繰り返します。
+4. ビューに表示したい全ての属性を追加するまで、ステップ 3 を繰り返します。
 
 属性を追加すると、既存の列の見出しにあるあらゆる場所にそれらをドラッグすることができます。 ビューに追加した後、列を動かすこともできます。
 
@@ -142,9 +138,9 @@ Power Apps において、ビューは特定のエンティティのレコード
 複数のフィールドを使用してレコードをフィルター処理する場合は、複数のビューにフィルターを追加できます。 
 
 1. グループ化したいフィルターを選択します。
-    ![グループフィルターの設定](media/ViewAppDesigner_GroupFilter.png "Seグループフィルターの
+    ![グループフィルターの設定](media/ViewAppDesigner_GroupFilter.png "グループ フィルターを設定する")
 2. フィルターをグループ化するために、グループ AND または グループ OR を選択します。
-    ![グループ フィルター の選択](media/ViewAppDesigner_GroupFilterSelection.png "Seフィルター グループの **グループ And**を選択すると、両方の条件に合うレコードのみがビューに表示されます。 **グループ Or** を選択すると、フィルター条件のいずれかに合うレコードが表示されます。 たとえば、高または標準およびアクティブ状態の優先度を持つレコードのみが表示される場合は、**グループ And** を選択します。
+    ![グループ フィルター の選択](media/ViewAppDesigner_GroupFilterSelection.png "グループ フィルターを選択する") **グループ And**を選択すると、両方の条件に合うレコードのみがビューに表示されます。 **グループ Or** を選択すると、フィルター条件のいずれかに合うレコードが表示されます。 たとえば、高または標準およびアクティブ状態の優先度を持つレコードのみが表示される場合は、**グループ And** を選択します。
 
 グループからフィルターを削除するには、そのグループを選び、**グループ化の解除**を選択します。 
 
@@ -172,7 +168,7 @@ Power Apps において、ビューは特定のエンティティのレコード
 ### <a name="edit-a-public-or-system-view-in-app-designer"></a>アプリ デザイナーで共有ビューまたはシステム ビューを編集する
 列の追加、構成、または削除による共有またはシステム ビューの表示方法を変更することができます。
 1. エンティティの **ビュー** 一覧で、 **参照の一覧を表示** の下向き矢印 ![ドロップダウン](media/DownArrow.png "ドロップダウンアロー") を選択します。
-    ![ビューの編集](media/ViewAppDesigner_EditView.png "Ed共有またはシステム ビューの
+    ![ビューの編集](media/ViewAppDesigner_EditView.png "共有またはシステム ビューの編集")
 2. 編集をするビューの横で、 **ビュー デザイナーを開く** ![ビュー デザイナーを開く](media/dynamics365-open-designer.png "ビュー デザイナーを開く") を選択します。 
 
     ビューはビュー デザイナーで開きます。 

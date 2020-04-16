@@ -6,24 +6,25 @@ manager: kvivek
 ms.service: powerapps
 ms.component: cds
 ms.topic: reference
-ms.date: 09/26/2019
+ms.date: 03/20/2020
 ms.author: lanced
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a87b41fd2688992b85fb4dde36a2e7119f4e7a9f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: e497b7dcf1b815acfaad7df170e3801083b8433e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861252"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156575"
 ---
 # <a name="complex-entities-and-licensing"></a>複雑なエンティティとライセンス付与
 
 > [!IMPORTANT]
-> このトピックは最新ではなく、2019 年 10 月 1 日から適用される最新のライセンス変更を反映するため、間もなく更新されます。 エンティティに対するライセンス要件の最新情報については、 [Power Apps ライセンス ガイド](https://go.microsoft.com/fwlink/?linkid=2085130) を参照してください。
+> 複雑なエンティティは、Power Apps Plan 1 と Plan 2 のライセンスに対してのみ適用可能で、アプリごとの Power Apps やユーザープランごとの Power Apps には適用されません。
+> エンティティに対するライセンス要件の最新情報については、 [Power Apps ライセンス ガイド](https://go.microsoft.com/fwlink/p/?linkid=2085130) を参照してください。
 
 次の複数のサーバー側ロジックを含むエンティティは、これらのエンティティを使用するアプリまたはフローのユーザーに、Power Apps Plan 2 または Power Automate Plan 2 ライセンスを要求します。
 

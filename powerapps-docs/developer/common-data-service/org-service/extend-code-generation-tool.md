@@ -3,7 +3,7 @@ title: コード生成ツール用の拡張機能の作成 (Common Data Service)
 description: SDK ダウンロード パッケージには、グローバル オプション セット、候補リスト、状態、ステータスの値などすべてのオプション セット値の列挙体を生成するために使用できる、CrmSvcUtil コード生成ツールへの拡張が含まれています。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3481ef129b91883df648b956a31fffc9aa55067e
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: ebc09cf522fa7847f087dc772bf23fed0ddb27fb
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091254"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156055"
 ---
 # <a name="create-extensions-for-the-code-generation-tool"></a>コード生成ツール用の拡張機能の作成
 

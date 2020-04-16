@@ -2,7 +2,7 @@
 title: モデル駆動型のアプリ ビュー定義にアクセス | MicrosoftDocs
 description: このトピックでは、エンティティ ビューにアクセスする方法を説明します
 ms.custom: ''
-ms.date: 11/27/2018
+ms.date: 03/23/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 43a35f82f93260b4f4a8f6b5084e6827e46eff8f
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 26d9abdd0703519d36c5f51a20a8617e4801f552
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2885138"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166667"
 ---
 # <a name="access-a-model-driven-app-view-definition-in-power-apps"></a>Power Apps でモデル駆動型アプリのビュー定義にアクセスする
 
@@ -41,11 +41,8 @@ ms.locfileid: "2885138"
 
 1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
 
-
-    > [!IMPORTANT]
-    > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。 
-
 2.  **データ**を展開して、**エンティティ**を選択し、**アカウント**などの目的のエンティティを選択します。   
+
 3. **ビュー** タブを選択します。
 
     > [!div class="mx-imgBorder"] 

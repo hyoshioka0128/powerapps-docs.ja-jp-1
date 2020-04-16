@@ -9,12 +9,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: grhurl
 ms.reviewer: nkrb
-ms.openlocfilehash: 6c56f40ebc741e591eae1bd6a0b1d0dbdc5296f8
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: 606f76c4956a5f2249d8d42f78ade3e91c1cda64
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091218"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162072"
 ---
 # <a name="implementing-the-facepile-component"></a>フェイスパイル コンポーネントの実装
 
@@ -56,7 +56,7 @@ ms.locfileid: "3091218"
 - コンポーネントが読み込まれると、スライダーはバインド属性値に設定されます。 `context.parameters.[property_name].attributes` プロパティは関連するメタデータを含みます。
 - イベント ハンドラーは、リアクト コンポーネントのプロップ内を通過されます。これにより、リアクト コンポーネントは値が変更されたホスト Power Apps component framework コントロールを通知できます。 イベント ハンドラーは、 **notifyOutputEvents** メソッドへの呼び出しが必要かどうかを判断します。
 - スライダーをスライドさせると、リアクトはバインド値を更新し、イベントハンドラーに応答しますバインド値を更新して、渡されたイベントハンドラーを呼び出します。 このハンドラー内では、呼び出しが **notifyOutputEvents** メソッドに実行されると、コントロールの [getOutputs](../reference/control/getoutputs.md) メソッドが非同期的に呼び出され、 Power Apps component framework に流れます。 
-- フレームワーク ホストはバインド属性値を更新し、更新された値は [updateView](../reference/control/updateview.md) メソッドをトリガーするコンポーネントへと流れます。 その後コントロールは新しい値を持つリアクト コンポーネントを再表示します。
+- フレームワーク ホストはバインド属性値を更新し、更新された値はコンポーネントに渡され、[updateView](../reference/control/updateview.md) メソッドがトリガーされます。 その後コントロールは新しい値を持つリアクト コンポーネントを再表示します。
 
 
 ## <a name="code"></a>Code
@@ -135,7 +135,7 @@ export class ReactStandardControl
 
   /**
    * It is called by the framework prior to a control receiving new data.
-   * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as “bound” or “output”
+   * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as "bound" or "output"
    */
   public getOutputs(): IOutputs {
     return {
@@ -420,6 +420,7 @@ export const TestImages = {
 
 ### <a name="related-topics"></a>関連トピック
 
+[サンプル コンポーネントをダウンロード](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
 [Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)<br />
 [Power Apps Component Framework API の参照](../reference/index.md)<br />

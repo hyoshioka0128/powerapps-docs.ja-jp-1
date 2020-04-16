@@ -8,12 +8,12 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: e2a9ceb90ec91e7c13c50b966b3a2808d988cf31
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 3dfb75a6d4ccf70863436bae8c7c6264f96f18d8
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017369"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218544"
 ---
 # <a name="create-your-first-component"></a>最初のコンポーネントを作成する 
 
@@ -25,6 +25,7 @@ ms.locfileid: "3017369"
 - [マニフェストの実装](#implementing-manifest)
 - [TypeScript を使ってコンポーネント ロジックを実装する](#implementing-component-logic)
 - [コード コンポーネントにスタイルを追加する](#adding-style-to-the-code-component)
+- [コード コンポーネントを構築する](#build-your-code-components)
 - [コード コンポーネントのパッケージ化](#packaging-your-code-components)
 - [コンポーネントをモデル駆動型アプリに追加する](#adding-code-components-in-model-driven-apps)
 - [コンポーネントをキャンバス アプリに追加する](#adding-code-components-to-a-canvas-app)
@@ -33,14 +34,13 @@ ms.locfileid: "3017369"
 
 新しいプロジェクトを作成するには:
 
-1. **VS 2017 のコマンド プロンプトの作成** ウィンドウを開きます。
-1. 次のコマンドを使用してプロジェクトの新しいフォルダを作成します: 
+1. **VS 2017 のコマンド プロンプトの作成** ウィンドウを開きます。 次のコマンドを使用してプロジェクトの新しいフォルダを作成します: 
     ```CLI
-    mkdir LinearComponent
+     mkdir LinearComponent
     ```
-
+                     
 1. コマンド `cd LinearComponent` を使用してコンポーネントへ移動します。 
-   
+         
 1. このコマンドを実行して、基本パラメータを渡して新しいコンポーネントプロジェクトを作成します。
 
    ```CLI
@@ -48,7 +48,7 @@ ms.locfileid: "3017369"
     ``` 
 
 1. `npm install` コマンドを使用して、プロジェクトのビルド ツールをインストールします。 
-1. 任意の開発者環境でプロジェクト フォルダ `C:\Users\<your name>\Documents\<My_code_Component>` を開き、コード コンポーネント開発を始めます。 開始する最も手軽な方法は、`C:\Users\<your name>\Documents\<My_code_Component>` ディレクトリに入った後、コマンド プロンプトから `code .` を実行することです。 このコマンドは、 Visual Studio コードにあるコンポーネントプロジェクトを開きます。
+1. 任意の開発者環境でプロジェクト フォルダ を開き、コード コンポーネントの開発を開始します。 最も簡単な方法は、プロジェクト ディレクトリに移動して、コマンド プロンプトから `code .` を実行することです。 このコマンドは、 Visual Studio コードにあるコンポーネントプロジェクトを開きます。
 
 ## <a name="implementing-manifest"></a>マニフェストの実装
 
@@ -68,7 +68,7 @@ ms.locfileid: "3017369"
      ```XML
       <?xml version="1.0" encoding="utf-8" ?>
       <manifest>
-      <control namespace="SampleNameSpace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="Linear Input Component" description-key="Allows you to enter the numeric values using the visual slider." control-type="standard">
+      <control namespace="SampleNameSpace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="TSLinearInputComponent_Display_Key" description-key="TSLinearInputComponent_Desc_Key" control-type="standard">
      ```
 
 2. [プロパティ](manifest-schema-reference/property.md) ノードは、フィールドのデータ型の定義など、コード コンポーネントのプロパティを定義します。 プロパティ ノードに、`control` 要素下で子要素として指定されます。 ここに示されている通り、[プロパティ](manifest-schema-reference/property.md) ノードを定義します:
@@ -92,14 +92,14 @@ ms.locfileid: "3017369"
       <resources>
         <code path="index.ts" order="1" />
         <css path="css/TS_LinearInputComponent.css" order="1" />
-        </resources>
+      </resources>
         ```
       マニフェスト ファイル全体は、次のように表示されます。 
 
      ```XML
       <?xml version="1.0" encoding="utf-8" ?>
       <manifest>
-      <control namespace="SampleNamespace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="Linear Input Component" description-key="Allows you to enter the numeric values using the visual slider." control-type="standard">
+      <control namespace="SampleNamespace" constructor="TSLinearInputComponent" version="1.0.0" display-name-key="TSLinearInputComponent_Display_Key" description-key="TSLinearInputComponent_Desc_Key" control-type="standard">
         <type-group name="numbers">
           <type>Whole.None</type>
           <type>Currency</type>
@@ -116,10 +116,6 @@ ms.locfileid: "3017369"
      ```
 
 4. `ControlManifest.Input.xml` ファイルに加えた変更を保存します。
-5. 次に、 `TSLinearInputComponent` フォルダー内に新しいフォルダーを作成し、 **css** という名前を付けます。
-6. CSS ファイルを[コード コンポーネントにスタイルを追加する](#adding-style-to-the-code-component)に作成します。
-7. コマンド `npm run build` を使用してコンポーネント プロジェクトをビルドします
-8. ビルドは、`TSLinearInputComponent/generated` フォルダーの TypeScript 型の宣言ファイルを作成および更新します。
 
 ## <a name="implementing-component-logic"></a>コンポーネント ロジックの実装
 
@@ -232,12 +228,7 @@ export class TSLinearInputComponent
 
 ```
 
-3. コマンド `npm run build` を使用してコントロール プロジェクトを再構築します。 
- 
-4. コンポーネントは `out/controls/TSLinearInputComponent` フォルダにコンパイルされます。 構築アーティファクトには以下が含まれます:
-
-   - bundle.js – バンドルされたコンポーネントのソースコード。 
-   - ControlManifest.xml – Common Data Service にアップロードされるコンポーネント マニフェスト ファイル。
+3. `index.ts` ファイルへの変更を保存します。
 
 ## <a name="adding-style-to-the-code-component"></a>コード コンポーネントにスタイルを追加する
 
@@ -245,7 +236,7 @@ export class TSLinearInputComponent
 
 1. `TSLinearInputComponent` フォルダの下に新しい `css` サブフォルダを作成します。 
 2. `css` サブ フォルダの中に新しい `TS_LinearInputComponent.css` ファイルを作成します。 
-3. 以下のスタイル コンテンツを `TS_LinearInputComponent.css` ファイルに追加します:
+3. 以下のスタイル コンテンツを `TS_LinearInputComponent.css` ファイルに追加します:""""""""
 
     ```CSS
     .SampleNamespace\.TSLinearInputComponent input[type=range].linearslider {
@@ -325,11 +316,19 @@ export class TSLinearInputComponent
       <css path="css/TS_LinearInputComponent.css" order="1"/> 
     </resources> 
      ```
-7. 次のコマンドを使ってプロジェクトを再構築します: 
-   ```CLI
-   npm run build
-   ```
-8. **./out/controls/TSLinearInputComponent** にあるビルド出力を調査して、**TS_LinearInputComponent.css** ファイルがコンパイル済みビルド生成物に含まれていることを確認します。 
+
+## <a name="build-your-code-components"></a>コード コンポーネントを構築する
+
+マニフェスト、コンポーネント ロジック、スタイルの追加が完了したら、次のコマンドを使用してコード コンポーネントをビルドします:
+```
+npm run build
+```
+
+または、コンポーネント プロジェクトをビルドするには、Visual Studio Code の `package.json` を含むプロジェクト フォルダを開き、(Ctrl-Shift-B) コマンドを使用して、ビルド オプションを選択します。 ビルドは、`TSLinearInputComponent/generated` フォルダーの TypeScript 型の宣言ファイルを作成および更新します。
+コンポーネントは `out/controls/TSLinearInputComponent` フォルダにコンパイルされます。 構築アーティファクトには以下が含まれます:
+
+   - bundle.js – バンドルされたコンポーネントのソースコード。 
+   - ControlManifest.xml – Common Data Service にアップロードされるコンポーネント マニフェスト ファイル。
 
 ## <a name="debugging-your-code-component"></a>コード コンポーネントのデバッグ
 
@@ -365,11 +364,14 @@ npm start
      msbuild /t:restore
     ```
 
-5. 次の msbuild コマンドを再度実行します:
+5. 再度、次のコマンドを実行します:
     ```CLI
      msbuild
     ```
-
+    > [!TIP]
+    > 次のエラーが発生します: `msbuild` コマンドを使用してソリューションファイルをビルドし、Common Data Service にインポートして、ソリューション チェッカーを実行する場合は、*`eval` 関数または同等の機能を使用しないでください*。
+    > コマンド `msbuild/property:configuration:Release` を使用してソリューション ファイルを再構築し、ソリューションを Common Data Service に再インポートして、ソリューション チェッカーを実行します。
+      
     > [!NOTE]
     > **NuGet ターゲットおよび構成タスク** のチェックボックスをオンにしてください。 これを有効にするには、次の手順を行います。
     > - **Visual Studio インストーラー** を開きます。
@@ -382,15 +384,16 @@ npm start
 
 ## <a name="adding-code-components-in-model-driven-apps"></a>モデル駆動型のアプリのコード コンポーネントの追加
 
-線形入力コンポーネントのようなコード コンポーネントを追加するには、トピック[エンティティおよびフィールドにコンポーネントを追加する](add-custom-controls-to-a-field-or-entity.md)で説明されている手順に従います。
+線形入力コンポーネントのようなコード コンポーネントを追加するには、記事 [コンポーネントをフィールドとエンティティに追加する](add-custom-controls-to-a-field-or-entity.md) に記載されている手順に従ってください。
 
 ## <a name="adding-code-components-to-a-canvas-app"></a>キャンバス アプリにコード コンポーネントを追加する
 
-コード コマンドをキャンバス アプリに追加するには、トピック [キャンバス アプリへコード コンポーネントを追加する](component-framework-for-canvas-apps.md#add-components-to-a-canvas-app) で次の手順に従います。
+コード コンポーネントをキャンバス アプリに追加するには、記事 [キャンバス アプリにコード コンポーネントを追加する](component-framework-for-canvas-apps.md#add-components-to-a-canvas-app) の手順に従ってください。
 
 ### <a name="see-also"></a>関連項目
 
-[サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[サンプル コンポーネントをダウンロード](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
+[Power Apps component framework の学習](https://docs.microsoft.com/learn/paths/use-power-apps-component-framework)<br/>
 [既存の Power Apps component framework のコンポーネントを更新する](updating-existing-controls.md)<br/>
 [Power Apps Build Tools](https://docs.microsoft.com/powerapps/developer/common-data-service/build-tools-overview)<br/>
 [Power Apps Component Framework API の参照](reference/index.md)<br/>

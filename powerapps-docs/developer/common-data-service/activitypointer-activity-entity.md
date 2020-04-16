@@ -3,7 +3,7 @@ title: ActivityPointer (活動) エンティティ (Common Data Service) | Micro
 description: 活動ポインター (活動) エンティティは、ユーザーが実行した活動またはタスク、あるいはこれから実行する活動またはタスクを表します。 活動とは、エントリをカレンダー上に作成できる任意の操作です
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f979296356ba5cce562272ae1291a4aa39189a33
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0131950c398c1a21e05205a64ddb4b0bf79f7b62
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748839"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156495"
 ---
 # <a name="activitypointer-activity-entity"></a>ActivityPointer (活動) エンティティ
 

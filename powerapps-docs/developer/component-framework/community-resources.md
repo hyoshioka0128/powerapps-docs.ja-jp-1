@@ -10,25 +10,25 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 3454ef328b09b4df9b0ebe5a115b352ef13a5b46
-ms.sourcegitcommit: 129d004e3d33249b21e8f53e0217030b5c28b53f
+ms.openlocfilehash: 0163e6d71caf307e3e952c0f8fcb3d21a82949cc
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "3097311"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218548"
 ---
 # <a name="community-resources-for-power-apps-component-framework"></a>Power Apps Component Framework の コミュニティ リソース
 
-以下は Power Apps が作成したコミュニティ リソースのリストです。これらを使用して Power Apps Component Framework と  Power Apps CLI を使用したモデル駆動型アプリやキャンバス アプリ で コードコンポーネント を作成することができます。 
+以下は、Power Apps component framework と Power Apps CLI を使用してモデル駆動型およびキャンバス アプリでコード コンポーネントを作成するために使用できる、 Power Apps  コミュニティによって作成されたいくつかのコミュニティ リソースのリストです。 
 
-> [!NOTE]
+> [!NOTE]            
 > コミュニティ が 作成した リソースについては Microsoft ではサポートすることができません。 コミュニティ リソースに関するご質問または問題については、リソースの発行元にお問い合わせください。 これらのリソースを使用する前に、これらのコミュニティ リソースが Power Apps Component Framework の ガイドラインを満たしていることと、参照目的でのみ使用されることを確認してください。 
 
 ## <a name="code-components-gallery"></a>コード コンポーネント ギャラリー
 
 Power Apps Component Framework ギャラリー (<https://pcf.gallery/>) は Power Apps コミュニティが作成した コードコンポーネントの集合です。 ビジネス ケース に適合するさまざまなコード コンポーネントが含まれています。 
 
-ダウンロードをするにあたって、ライセンス条項とソースコードをご確認ください。 ソリューション パッケージ の作成法と、 Common Data Service へのインポート方法については、 [サンプルの実行方法](use-sample-components.md) のトピックを参照してください。
+ダウンロードをするにあたって、ライセンス条項とソースコードをご確認ください。 [サンプルを実行する方法](use-sample-components.md) 記事で、ソリューション パッケージを作成して Common Data Service にインポートする方法についてご覧ください。
 
 > [!WARNING]
 > コード コンポーネントは、コンポーネントを使用しているエンドユーザーのコンテキストで実行され、データへのアクセス、キャプチャ、変更などの操作を行うことができます。 
@@ -36,7 +36,7 @@ Power Apps Component Framework ギャラリー (<https://pcf.gallery/>) は Powe
 > [!div class="mx-imgBorder"]
 > ![コンポーネント ギャラリー](media/pcf-gallery.PNG "コンポーネント ギャラリー")
 
-## <a name="videos"></a>ビデオ
+## <a name="videos"></a>ビデオ        
 
 以下は、 Power Apps コミュニティが作成した動画のリストです。
 
@@ -44,13 +44,13 @@ Power Apps Component Framework ギャラリー (<https://pcf.gallery/>) は Powe
 |------|-------|
 |[自分のコード コンポーネントを構築する](https://www.youtube.com/watch?v=S3Z_IUf1ncg)| Power Apps component framework を使用して、モデル駆動型アプリとキャンバス アプリでコード コンポーネントを構築する方法を説明します。| 
 |[キャンバス アプリのコード コンポーネント](https://www.youtube.com/watch?v=bMSCkcb4xAQ&feature=emb_logo)| キャンバス アプリでコード コンポーネントを開発および使用する方法を説明します。|
-|[コード コンポーネントを開発する](https://www.youtube.com/watch?v=FxWF-LCCB4g&feature=youtu.be)| このビデオでは、Power Apps component framework を使用してコード コンポーネントを開発する要件を示しており、最初のコード コンポーネントを作成するにあたっての段階的なアプローチを示しています。|
-|[sourcemaps と Fiddler を使った簡単なデバッグ](https://www.youtube.com/watch?v=Ov-m5FBUj9g&feature=youtu.be)|Fiddler とソースマップを使用して、縮小された製品コードをデバッグする方法を説明します。|
+|[コード コンポーネントを開発する](https://www.youtube.com/watch?v=FxWF-LCCB4g&feature=youtu.be)| このビデオでは Power Apps component framework を使用してコード コンポーネントを開発する要件を示しており、最初のコード コンポーネントを作成するにあたってのステップ バイ ステップのアプローチを示しています。|
+|[ソース マップと Fiddler を使用したより簡単なデバッグ](https://www.youtube.com/watch?v=Ov-m5FBUj9g&feature=youtu.be)|Fiddler とソース マップを使用して、縮小された製品コードをデバッグする方法を説明します。|
 |[コード コンポーネントを使ってみる](https://www.youtube.com/watch?v=ylhVZUlGgQw)| Power Apps component framework とコードコンポーネントの構築の基本を扱う入門ビデオ。|
 |[Power Apps Component Framework アカデミー：はじめに](https://www.youtube.com/watch?v=YJ9hrKxAhTU)| 初めてのコード コンポーネントの構築方法を紹介するビデオです。|
-|[Power Apps component framework: データセット テンプレートの詳細なマニフェスト ファイル](https://www.youtube.com/watch?v=TsTrYaOGaGo&feature=youtu.be)| データセット タイプのコードコンポーネントのマニフェスト ファイルの定義方法を説明します。|
+|[Power Apps component framework: データセット テンプレートの詳細なマニフェスト ファイル](https://www.youtube.com/watch?v=TsTrYaOGaGo&feature=youtu.be)| データセット タイプのコード コンポーネントのマニフェスト ファイルの定義方法を説明します。|
 |[Power Apps component framework Academy: フィールド テンプレートの詳細なマニフェスト ファイル](https://www.youtube.com/watch?time_continue=522&v=w40zqSsYEy0)| フィールド タイプのコード コンポーネントのマニフェスト ファイルを定義する方法を説明します。|
-|[Power Apps Component Framework アカデミー：データセット コンポーネント](https://www.youtube.com/watch?v=OEiM97nTD0w)| データセット コンポーネントの詳細、およびデータセット API のさまざまな方法の利用方法について説明します。|
+|[Power Apps Component Framework アカデミー：データセット コンポーネント](https://www.youtube.com/watch?v=OEiM97nTD0w)| データセット コンポーネントに関する詳細、およびデータセット API が使用されるさまざまなメソッドについて説明します。|
 |[Power Apps Component Framework アカデミー：組織へのインポート](https://www.youtube.com/watch?v=2uO2L2xTPkc)| コード コンポーネントを Common Data Service にパッケージ化してインポートする方法を説明します。|
 |[革新的な Power Apps component framework](https://youtu.be/_SjEQ-7LK_Q)|コンポーネントフレームワークがモデル駆動型アプリとキャンバスアプリの視覚化をどのように強化したかを説明します|
 |[Power Apps Component Framework アカデミー：React と Office UI ファブリックの使用](https://www.youtube.com/watch?v=e7JNgGlI3nE)| コード コンポーネントで React と UI ファブリックを使う方法を説明します。|
@@ -72,6 +72,8 @@ Power Apps Component Framework ギャラリー (<https://pcf.gallery/>) は Powe
 - [Power Apps Component Framework– さらなる可能性へ](https://stevemordue.com/powerapps-component-framework-frosting-on-the-cake/)
 - [Power Apps Component Framework の一般公開 – 重要なマイルストーン](https://crmindian.com/2019/04/24/public-availability-of-powerapps-component-framework-an-important-milestone-for-powerapps-and-d365/)
 - [ Power Apps Component Framework を使用して コード コンポーネント を操作する](https://powermaverick.dev/2019/05/18/create-custom-controls-using-powerapp-component-framework)
+- [Web リソースがそのコンポーネントの setVisible / setDisabled を呼び出すとどうなるか](https://www.itaintboring.com/dynamics-crm/pcf-components-and-setvisible-setdisabled)
+- [updateView メソッドを呼び出すのはいつですか](https://dianabirkelbach.wordpress.com/2020/03/29/pcf-when-is-updateview-called)
 
 ## <a name="tools"></a>ツール
 

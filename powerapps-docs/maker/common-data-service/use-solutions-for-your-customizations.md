@@ -1,6 +1,6 @@
 ---
-title: 既定のソリューションを使用して Power Apps でカスタマイズ | MicrosoftDocs
-description: 既定のソリューションをカスタマイズする方法を学習
+title: ソリューションを使用して Power Apps をカスタマイズする | MicrosoftDocs
+description: Power Apps をカスタマイズする方法について
 ms.custom: ''
 ms.date: 02/20/2020
 ms.reviewer: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1525cdb41cb7e809a54b6389472e5be842a87697
-ms.sourcegitcommit: d98dd90a7dda11f434a13a7f8976459856d6142b
+ms.openlocfilehash: e32920e3a3ae2bd3c65bfaae6da4b875d4dff645
+ms.sourcegitcommit: 3e6c499a65ada8a9f28022a02f64030b0c069a17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "3093624"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226430"
 ---
 # <a name="use-a-solution-to-customize"></a>カスタマイズするためのソリューションを使用する
 カスタマイズを管理するソリューションを作成することをお勧めします。 カスタム ソリューションを使用すると、カスタマイズしたソリューション コンポーネントだけを簡単に見つけて、ソリューション発行者プレフィックスを一貫して適用し、他の環境に配布するためにソリューションをエクスポートできます。  

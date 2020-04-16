@@ -2,12 +2,12 @@
 title: コマンドとリボンのカスタマイズ (モデル駆動型アプリ) | MicrosoftDocs
 description: Common Data Service は、エンティティおよびクライアントに応じてさまざまな方法でコマンドを表示します。 Web アプリケーションの大抵の場所で、リボンの代わりにコマンド バーが表示されます。 また、タブレット PC 用 Dynamics 365 はリボンとして定義されたデータを使用して、タッチ操作のために最適化されたコマンド バーを使用してどのコマンドを使用できるかコントロールします。
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 926364b0-ede6-00e9-39d4-5aae5e00be0b
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,18 +15,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 508ea8788f0fbaf9823721958229c3ed3cd21d55
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: bf61faabb150e45f80227ed8c776795f2e319d82
+ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754584"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172570"
 ---
 # <a name="customize-commands-and-the-ribbon"></a>コマンド、およびリボンをカスタマイズする
 
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/customize-dev/customize-commands-ribbon -->
-
- Common Data Service は、エンティティおよびクライアントに応じてさまざまな方法でコマンドを表示します。 Web アプリケーションの大抵の場所で、リボンの代わりに*コマンド バー*が表示されます。 また、Dynamics 365 for Tablets はリボンとして定義されたデータを使用して、タッチ操作のために最適化されたコマンド バーを使用してどのコマンドを使用できるかコントロールします。  
+Common Data Service は、エンティティおよびクライアントに応じてさまざまな方法でコマンドを表示します。 Web アプリケーションの大抵の場所で、リボンの代わりに*コマンド バー*が表示されます。 また、Dynamics 365 for Tablets はリボンとして定義されたデータを使用して、タッチ操作のために最適化されたコマンド バーを使用してどのコマンドを使用できるかコントロールします。  
   
  コマンド バーは、より良いパフォーマンスを提供します。 リボンは、特定のエンティティ フォームでは Web アプリケーションでまだ表示され、 Dynamics 365 for Outlook のリスト ビューにも使用されます。  
   
@@ -37,15 +35,16 @@ ms.locfileid: "2754584"
 > [!NOTE]
 >  基礎となる XML スキーマはリボンとしてコマンドを表示するように設計されているため、*リボン* という用語はドキュメントで引き続き使用されます。  
   
- SDK では、customization.xml ファイルを直接編集することでリボンを編集するプロセスについて説明します。 リボンの編集を簡単にするためのユーザー インターフェイスを提供するリボン エディターは、複数の担当者によって作成されました。 現在、Codeplex と他の場所で使用できるプロジェクトは以下のとおりです。  
-  
-- [リボン ワークベンチ](https://www.develop1.net/public/rwb/ribbonworkbench.aspx)  
-  
-- [MS CRM 2011 : プラグマ ツールキット: リボン, サイトマップ エディタ](https://pragmatoolkit.codeplex.com/)  
-  
-- [CRM 2011 Visual Ribbon Editor (CRM 2011 Visual のリボン エディター)](https://crmvisualribbonedit.codeplex.com/)  
-  
-  これらのプログラムを使用するためのサポートまたヘルプを得るには、プログラムの発行元にお問い合わせください。  
+## <a name="troubleshoot-ribbon-issues"></a>リボンの問題のトラブルシューティング
+
+リボン コマンドバー ボタンで問題が発生している場合は、次のトラブルシューティング ガイドを使用して問題を見つけ解決してください: <https://support.microsoft.com/help/4552163>
+
+
+## <a name="community-tool"></a>コミュニティツール
+SDK では、customization.xml ファイルを直接編集することでリボンを編集するプロセスについて説明します。 コミュニティ ツール [リボン ワークベンチ](https://www.develop1.net/public/rwb/ribbonworkbench.aspx) を使って、UI を使用してリボンを視覚的に編集します。 
+
+> [!NOTE]
+> Microsoft は、コミュニティ ツールのヘルプやサポートは提供していません。 これらのプログラムを使用するためのサポートまたヘルプを得るには、プログラムの発行元にお問い合わせください。  
   
   
 ## <a name="see-also"></a>関連項目  

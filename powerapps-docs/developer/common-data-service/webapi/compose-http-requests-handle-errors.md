@@ -2,7 +2,7 @@
 title: HTTP 要求の作成とエラーの処理 (Common Data Service) | Microsoft Docs
 description: Web APIと対話するHTTPリクエストの一部を形成するHTTPメソッドおよびヘッダー、ならびに応答で返されるエラーを特定し、処理する方法について説明します
 ms.custom: ''
-ms.date: 11/05/2018
+ms.date: 04/03/2020
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,19 +13,19 @@ ms.assetid: 64a39182-25de-4d31-951c-852025a75811
 caps.latest.revision: 13
 author: JimDaly
 ms.author: jdaly
-ms.reviewer: susikka
+ms.reviewer: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 405e27d3461f78a2452de1c8b19d99d4d827d879
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 4ce55b03411e7a7d3e3a8695a97db96ea350b95a
+ms.sourcegitcommit: 3e6c499a65ada8a9f28022a02f64030b0c069a17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109054"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226366"
 ---
 # <a name="compose-http-requests-and-handle-errors"></a>HTTP 要求の作成とエラーの処理
 
@@ -44,7 +44,7 @@ Web API にアクセスするには、次の表にある部分を使用して UR
 |地域|環境は通常、地理的に近いデータ センターで利用できます。<br />北米: `crm`<br />南米: `crm2`<br />カナダ: `crm3`<br />ヨーロッパ、中東、およびアフリカ (EMEA): `crm4`<br />アジア太平洋地域 (APAC): `crm5`<br />オセアニア: `crm6`<br />日本: `crm7`<br />インド: `crm8`<br />北米 2: `crm9`<br />英国: `crm11`<br />フランス: `crm12`<br />新しいデータ センター領域が開かれるにつれて、より多くの値が追加されます。|
 |基本 URL|`dynamics.com.`|
 |Web API パス|Web API へのパスは `/api/data/` です。|
-|[バージョン]|   バージョンは次のように表記されます: `v[Major_version].[Minor_version][PatchVersion]/`。 このリリースの有効なバージョンは `v9.0` です。|
+|[バージョン]|    バージョンは次のように表記されます: `v[Major_version].[Minor_version][PatchVersion]/`。 このリリースの有効なバージョンは `v9.1` です。|
 |リソース |使用するエンティティの名前、機能、またはアクション。|
 
 
@@ -74,7 +74,7 @@ Web API にアクセスするには、次の表にある部分を使用して UR
 |POST|エンティティを作成するとき、またはアクションを呼び出すときに使用します。|  
 |PATCH|エンティティを更新するとき、または upsert 操作を実行するときに使用します。|  
 |DELETE|エンティティまたはエンティティの個々のプロパティを削除するときに使用します。|  
-|PUT|エンティティの個々のプロパティを更新するために、限られた状況で使用します。 このメソッドは、ほとんどのエンティティを更新するときにお勧めしません。 モデル エンティティを更新するときにこのメソッドを使用します。|  
+|PUT|エンティティの個々のプロパティを更新するために、限られた状況で使用します。 このメソッドは、ほとんどのエンティティを更新する場合には推奨できません。 モデル エンティティを更新する場合にこのメソッドを使用します。|  
   
 <a name="bkmk_headers"></a>
 
@@ -82,11 +82,11 @@ Web API にアクセスするには、次の表にある部分を使用して UR
 
 OData プロトコルでは JSON と ATOM の両方の形式を使用できますが、Wb API では JSON のみがサポートされています。 したがって、次のヘッダーは適用可能です。  
   
-すべての要求には、Acceptヘッダー値として `application/json` を含める必要があります。予期される応答がない場合でも、含める必要があります。 応答でエラーが返される場合、エラーは JSON として返されます。 このヘッダーが含まれていなくてもコードは動作しますが、ベスト プラクティスとして、このヘッダーを含めることをお勧めします  
+すべての要求には、Acceptヘッダー値として `application/json` を含める必要があります。予期される応答がない場合でも、含める必要があります。 応答でエラーが返される場合、エラーは JSON として返されます。 このヘッダーが含まれていなくてもコードは動作しますが、ベスト プラクティスとしてこのヘッダーを含めることが推奨されます  
   
 現在の  OData バージョンの 4.0 ですが、今後のバージョンで新機能が使用できるようになる可能性があります。 将来のその特定の時点でコードに適用される  OData バージョンについてのあいまいさをなくすため、現在の  OData バージョンとコードに適用する最大バージョンを表す明示的なステートメントを必ず含める必要があります。 値として 4.0 が設定された OData-Version  および  OData-MaxVersion ヘッダーの両方を使用します。  
  
-コレクション値ナビゲーション プロパティを展開するクエリは、最新の変更を反映しないそれらのプロパティのキャッシュされたデータを返す場合があります。 Web API要求のブラウザのキャッシュを上書きするためには、要求の本体に `If-None-Match: null` ヘッダーを含めます。 詳細については、[HTTP/1.1 ハイパーテキスト トランスファー プロトコル (HTTP/1.1) : 条件要求 3.2: If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2)を参照してください。
+コレクション値ナビゲーション プロパティを展開するクエリは、最新の変更を反映しないそれらのプロパティのキャッシュされたデータを返すことがあります。 Web API要求のブラウザのキャッシュを上書きするためには、要求の本体に `If-None-Match: null` ヘッダーを含めます。 詳細については、[HTTP/1.1 ハイパーテキスト トランスファー プロトコル (HTTP/1.1) : 条件要求 3.2: If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2)を参照してください。
  
 すべての HTTP ヘッダーに、少なくとも次のヘッダーを含める必要があります。  
   
@@ -107,15 +107,15 @@ Content-Type: application/json
   
 -   エンティティに対して作成 (POST) または更新 (PATCH) 操作でデータを返すには、`return=representation` 基本設定を含めます。 この基本設定を POST リクエストに適用する場合、正常な応答として、201 (Created) というステータスが表示されます。 PATCH リクエストの場合は、正常な応答として、200 (OK) というステータスが表示されます。 この基本設定を適用しない場合、既定では応答の本文メッセージにはデータが返されないことを反映して、両方の操作に対して、204 (No Content) というステータスが返されます。  
   
--   クエリに書式設定された値を返すには、[設定](https://tools.ietf.org/html/rfc7240)ヘッダーを使用してMicrosoft.Dynamics.CRM.formattedvalueに設定されているodata.include-annotations 基本設定を含めます。 詳細: [書式設定値を含める](query-data-web-api.md#bkmk_includeFormattedValues)  
+-   クエリで書式設定された値を返すには、[Prefer](https://tools.ietf.org/html/rfc7240) ヘッダーを使用して odata.include-annotations プリファレンスを `Microsoft.Dynamics.CRM.formattedvalue` に設定して含めます。 詳細: [書式設定値を含める](query-data-web-api.md#bkmk_includeFormattedValues)  
   
--   また、 Prefer ヘッダーと odata.maxpagesize オプションを使用して、返されるページ数を指定することもできます。 詳細: [ページに戻すエンティティ数の指定](query-data-web-api.md#bkmk_specifyNumber)  
+-   また、`Prefer` ヘッダーと `odata.maxpagesize` オプションを使用して、返されるページ数を指定することもできます。 詳細: [ページに戻すエンティティ数の指定](query-data-web-api.md#bkmk_specifyNumber)  
   
--   別のユーザーを偽装するには (呼び出し元がこれを行う権限を持っている場合)、MSCRMCallerID ヘッダーと、偽装する対象となるユーザーの systemuserid 値を追加します。 詳細情報: [Web API を使用して別のユーザーを偽装する](impersonate-another-user-web-api.md)。  
+-   別のユーザーを偽装するには (呼び出し元がこれを行う権限を持っている場合)、 `CallerObjectId` ヘッダーと、偽装する対象となるユーザーの Azure Active Directory オブジェクト ID  値を追加します。 このデータは [SystemUser エンティティ](/reference/entities/systemuser) [AzureActiveDirectoryObjectId](/reference/entities/systemuser#BKMK_AzureActiveDirectoryObjectId) 属性にあります。 詳細情報: [Web API を使用して別のユーザーを偽装する](impersonate-another-user-web-api.md)。  
   
--   オプティミスティック同時実行を適用するには、[If-Match ヘッダー](https://tools.ietf.org/html/rfc7232#section-3.1)と Etag 値 を適用できます。 詳細: [オプティミスティック同時実行の適用](perform-conditional-operations-using-web-api.md#bkmk_Applyoptimisticconcurrency)。  
+-   オプティミスティック同時実行を適用するには、[If-Match](https://tools.ietf.org/html/rfc7232#section-3.1) ヘッダーと `Etag` 値を適用できます。 詳細: [オプティミスティック同時実行の適用](perform-conditional-operations-using-web-api.md#bkmk_Applyoptimisticconcurrency)。  
   
--   upsert 操作でエンティティを実際に作成または更新するかどうかを制御するために、If-Match および [If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2) ヘッダーを使用することもできます。 詳細: [エンティティの Upsert](update-delete-entities-using-web-api.md#bkmk_upsert)。  
+-   upsert 操作でエンティティを実際に作成または更新するかどうかを制御するために、`If-Match` および [If-None-Match](https://tools.ietf.org/html/rfc7232#section-3.2) ヘッダーを使用することもできます。 詳細: [エンティティの Upsert](update-delete-entities-using-web-api.md#bkmk_upsert)。  
   
 -   バッチ操作を実行する場合、要求では本文で送信される部分ごとに多数の異なるヘッダーを適用する必要があります。 詳細: [Web API を使用してバッチ操作を実行する](execute-batch-operations-using-web-api.md)。  
   
@@ -135,32 +135,53 @@ Content-Type: application/json
 |401 承認されていません|次のような種類のエラーの場合に発生します。<br /><br /> -   BadAuthTicket<br />-   ExpiredAuthTicket<br />-   InsufficientAuthTicket<br />-   InvalidAuthTicket<br />-   InvalidUserAuth<br />-   MissingCrmAuthenticationToken<br />-   MissingCrmAuthenticationTokenOrganizationName<br />-   RequestIsNotAuthenticated<br />-   TamperedAuthTicket<br />-   UnauthorizedAccess<br />-   UnManagedInvalidSecurityPrincipal|クライアント エラー|  
 |413 ペイロードが大きすぎます|要求の長さが大きすぎるときに発生します。|クライアント エラー|  
 |400 不正なリクエスト|引数が無効である場合に発生します。|クライアント エラー|  
-|404 見つかりません|リソースが存在しない場合に発生します。|クライアント エラー|  
-|405 許可されていないメソッド|このエラーは、メソッドとリソースの組み合わせが正しくない場合に発生します。 たとえば、DELETE または PATCH をエンティティのコレクションに対して使用することはできません。<br /><br /> 次のような種類のエラーの場合に発生します。<br /><br /> -   CannotDeleteDueToAssociation<br />-   InvalidOperation<br />-   NotSupported|クライアント エラー|  
+|404 見つかりません|これはリソースが存在しない場合に発生します。|クライアント エラー|  
+|405 許可されていないメソッド|このエラーは、メソッドとリソースの組み合わせが正しくない場合に発生します。 たとえば、DELETE や PATCH をエンティティのコレクションに対して使用することはできません。<br /><br /> 次のような種類のエラーの場合に発生します。<br /><br /> -   CannotDeleteDueToAssociation<br />-   InvalidOperation<br />-   NotSupported|クライアント エラー|  
 |412 前提条件失敗|次のような種類のエラーの場合に発生します。<br /><br /> -   ConcurrencyVersionMismatch<br />-   DuplicateRecord|クライアント エラー|
 |429 リクエストが多すぎます|API 制限を超えた場合に発生します。 詳しくは：[サービス保護APIの制限](../api-limits.md)を参照してください。|クライアント エラー|  
 |501 実装されていません|要求した何らかの操作が実装されていない場合に発生します。|サーバー エラー|  
-|503 サービスは利用できません|Web API サービスを使用できない場合に発生します。|サーバー エラー|  
+|503 サービスは利用できません|これは Web API サービスを使用できない場合に発生します。|サーバー エラー|  
   
 <a name="bkmk_parseErrors"></a>
 
 ## <a name="parse-errors-from-the-response"></a>応答からのエラーの解析
 
- エラーに関する詳細が応答に JSON として含まれています。 エラーはこの形式になります。  
+エラーに関する詳細が応答に JSON として含まれています。 エラーはこの形式になります。  
   
 ```json  
 {  
  "error":{  
   "code": "<This code is not related to the http status code and is frequently empty>",  
-  "message": "<A message describing the error>",  
-  "innererror": {  
-   "message": "<A message describing the error, this is frequently the same as the outer message>",  
-   "type": "Microsoft.Crm.CrmHttpException",  
-   "stacktrace": "<Details from the server about where the error occurred>"  
-  }  
+  "message": "<A message describing the error>"  
  }  
 }  
-```  
+```
+
+> [!IMPORTANT]
+> エラーメッセージの構造が変更しています。 この変更は、2020 年 4 月下旬から 5 月までの期間にさまざまな地域に展開される予定です。
+> 
+> この変更前は、返されたエラーは次の形式でした。
+> 
+> ```json  
+> {  
+>  "error":{  
+>   "code": "<This code is not related to the http status code and is frequently empty>",  
+>   "message": "<A message describing the error>",  
+>   "innererror": {  
+>    "message": "<A message describing the error, this is frequently the same as the outer message>",  
+>    "type": "Microsoft.Crm.CrmHttpException",  
+>    "stacktrace": "<Details from the server about where the error occurred>"  
+>   }  
+>  }  
+> }  
+> ```
+> 
+> 弊社はエラーメッセージの `innererror` プロパティを削除しています。 このプロパティの解析が必要なコードはすべて削除する必要があります。
+>
+> OData [エラー応答ガイダンス](https://docs.oasis-open.org/odata/odata-json-format/v4.0/os/odata-json-format-v4.0-os.html#_Toc372793091)状態 "*この内部エラーの名前と値のペアは、情報開示に関する潜在的なセキュリティの懸念から保護するために、開発環境でのみ使用しなければなりません*"。 このガイダンスに合わせるために、弊社ではこのプロパティを削除しています。
+> 
+> この変更がデプロイされた後、使用しているアプリケーションがこのプロパティに依存していることが判明した場合は、サポートに連絡して、環境の変更を一時的に削除するように要求できます。 これは、アプリケーション開発者がこの依存関係を削除するために適切な変更を行う時間を提供します。
+
   
 ### <a name="see-also"></a>関連項目  
 

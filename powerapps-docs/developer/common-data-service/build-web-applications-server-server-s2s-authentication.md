@@ -3,7 +3,7 @@ title: サーバー間 (S2S) の認証を使用して Web アプリケーショ�
 description: サーバー間 (S2S) の認証を使用して、 Common Data Service と Web アプリケーションおよびサービスと安全かつシームレスに通信します。 S2S 認証は Microsoft AppSource に登録されたアプリがサブスクライバーの Common Data Service のデータにアクセスする一般的な方法です。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0fc18f342257eaaa878107ae5b729c672c2f0433
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: f8e435a3f3a899e9d15d173b1f33b0f07ca7f265
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861840"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156399"
 ---
 # <a name="build-web-applications-using-server-to-server-s2s-authentication"></a>サーバー間 (S2S) の認証を使用して Web アプリケーションを作成する
 

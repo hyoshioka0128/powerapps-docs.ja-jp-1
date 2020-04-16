@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: e17ad5f8e792b6759e917017a8c2b2b056727d46
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: edba323d663befebfa328a877e33e7aa75194181
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017409"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162044"
 ---
 # <a name="implementing-navigation-api-component"></a>ナビゲーション API コンポーネントの実装
 
@@ -244,7 +244,7 @@ public destroy()
 
 ### <a name="related-topics"></a>関連トピック
 
-[サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[サンプル コンポーネントをダウンロード](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
 [Power Apps Component Framework API の参照](../reference/index.md)<br/>
 [Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

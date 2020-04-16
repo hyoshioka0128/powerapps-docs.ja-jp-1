@@ -3,7 +3,7 @@ title: 構築ツールのチュートリアルと、よく寄せられる質問|
 description: 'Power Apps build tools は、一連の Power Apps 固有の Azure DevOps 構築タスクです。これを使用することで Power Apps の開発を管理するためにスクリプトを手動でダウンロードする必要がなくなります。 このトピックでは、これらのツールの詳細情報を提供するチュートリアルとFAQについて説明します。 '
 ms.custom: ''
 ms.date: 07/21/2019
-ms.reviewer: Dean-Haas
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mikkelsen2000
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ac7b2aeabe6121ee45b8593abb3234cfb6fb566b
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0aa106f7d4f162f20d7274f596f1b5354d968ffa
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861832"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156412"
 ---
 # <a name="tutorial-and-faq"></a>チュートリアルとよく寄せられる質問
 
@@ -49,7 +49,7 @@ ms.locfileid: "2861832"
 
 **Power Apps Build Tools は Power Apps のみで動作しますか。**  
 
-*Power Apps Build Tools は、Power Apps と、Dynamics 365 Sales や Dynamics 365 Customer Service など Dynamics 365 のモデル駆動型アプリの両方で動作します。Microsoft Dynamics for Finance and Operations には個別の構築タスクを使用できます。*
+*Power Apps Build Toolsは Power Apps 、および Dynamics 365 Sales や Dynamics 365 Customer Service などの Dynamics 365 Sales のモデル駆動型アプリの両方で機能します。個別のビルド タスクが Microsoft Dynamics for Finance and Operations で使用可能です。*
 
 **FlowとCanvasアプリを含めることはできますか?**
 

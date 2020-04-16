@@ -3,7 +3,7 @@ title: クライアント アプリケーションを作成する (Common Data S
 description: <Description>
 ms.custom: ''
 ms.date: 05/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61d035d3aaa38c20932a9b189a55f63b5536b482
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: d79e2635ec5f0dcd4e4a73a9e0c86d069be97fc6
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749127"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156088"
 ---
 # <a name="create-a-client-application"></a>クライアント アプリケーションの作成
 

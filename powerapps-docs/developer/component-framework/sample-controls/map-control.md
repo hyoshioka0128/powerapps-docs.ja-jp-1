@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 651ada19ae34f40a04f6dca92c761148efa69241
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: b5eeecdee0d16ed345549159a63f030cd9f11fff
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091190"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162048"
 ---
 # <a name="implementing-map-component"></a>マップ コンポーネントの実装
 
@@ -173,7 +173,7 @@ Google Map API を使用すると `IFRAME` にマップを表示することの�
 
 ### <a name="related-topics"></a>関連トピック
 
-[サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[サンプル コンポーネントをダウンロード](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
 [Power Apps Component Framework API の参照](../reference/index.md)<br/>
 [Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

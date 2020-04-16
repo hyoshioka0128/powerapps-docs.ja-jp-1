@@ -3,7 +3,7 @@ title: '付録: アプリ認定チェックリスト (PowerApps) | Microsoft Doc
 description: アプリ認定チェックリストはモデル駆動型の確認に関する情報を提供し、キャンバス アプリとフローは AppSource に公開する前に通過する必要があります。
 ms.custom: ''
 ms.date: 03/20/2019
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: omarcdoc
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 795b7797c36a4491ed5e748bdbd42e0ad9add01f
-ms.sourcegitcommit: 3b68c4e29be4e8f68c0bfb88abdd1bbdf0187c57
+ms.openlocfilehash: d36fe4c8d62ea8cbc2750d44fbe28901fd7a827a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "3080845"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156479"
 ---
 # <a name="appendix-app-certification-checklist"></a>付録: アプリの認証チェックリスト
 

@@ -8,12 +8,12 @@ ms.service: powerapps
 ms.topic: article
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 8c252b8b5baff22400aa510d0d71a3546c6361c4
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: f0433228435212f6b8cff13bd459799a94b5153b
+ms.sourcegitcommit: 310dd3dc68ffebe6a416450836ac0ba988b84fb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091206"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "3162064"
 ---
 # <a name="implementing-linear-input-component"></a>線形入力コンポーネントの実装
 
@@ -269,7 +269,7 @@ public updateView(context: ComponentFramework.IPropBag<InputsOutputs.IInputBag>)
 
 ### <a name="related-topics"></a>関連トピック
 
-[サンプル コンポーネントをダウンロード](https://go.microsoft.com/fwlink/?linkid=2088525)<br/>
+[サンプル コンポーネントをダウンロード](https://github.com/microsoft/PowerApps-Samples/tree/master/component-framework)<br/>
 [サンプルコンポーネントの使用方法](../use-sample-components.md)<br/>
 [Power Apps Component Framework API の参照](../reference/index.md)<br/>
 [Power Apps component framework のマニフェスト スキーマ リファレンス](../manifest-schema-reference/index.md)

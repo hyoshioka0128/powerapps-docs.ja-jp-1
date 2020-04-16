@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 41b33926303c6211636c6a20e4e12651ae6a7586
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6494c278f147be996beb10d0e295666ae39a564b
+ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749329"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3172582"
 ---
 # <a name="export-prepare-to-edit-and-import-the-ribbon"></a>リボンのエクスポート、編集の準備、およびインポート
 
@@ -142,7 +142,11 @@ ms.locfileid: "2749329"
     >  インポートに失敗する原因として最も多いのは、RibbonDiffXml 内の依存要素を参照するときにエラーが起こることです。 どこかから参照される LocLabel を含めるのを忘れたと考えられます。 別の要素を参照する XML 属性の末尾に余計な空白文字が存在する可能性があります。 すべての参照は正確に一致する必要があります。  
   
 4.  エラーを修正した後で、リボンをインポートする手順を再度実行してください。  
-  
+
+## <a name="troubleshoot-ribbon-issues"></a>リボンの問題のトラブルシューティング
+
+リボン コマンドバー ボタンで問題が発生している場合は、次のトラブルシューティング ガイドを使用して問題を見つけ解決してください: <https://support.microsoft.com/help/4552163>
+
 ### <a name="see-also"></a>関連項目  
  [リボンのカスタマイズ](customize-commands-ribbon.md)   
  [リボン定義のエクスポート](export-ribbon-definitions.md)   

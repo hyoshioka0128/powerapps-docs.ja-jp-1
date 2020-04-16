@@ -3,7 +3,7 @@ title: '手順 2: アプリの管理ソリューションを作成する (Common
 description: すべてのコンポーネントを含めるアプリの管理ソリューションを作成する方法を学習します。 これは Appsource にアプリを公開するために必要です。
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: KumarVivek
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 25b80be0190fa2b520706d72166879e687a30f30
-ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
+ms.openlocfilehash: d1c5407f408f11ce8bfed3443cc29be2b3f27675
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "2922326"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156327"
 ---
 # <a name="step-2-create-a-managed-solution-for-your-app"></a>手順 2: アプリの管理ソリューションを作成する
 

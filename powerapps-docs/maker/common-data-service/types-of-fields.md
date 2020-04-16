@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2b54cad59b1f5a6cc4199675308f5cd48d05240d
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: 2c98ab7d40d89460995e69aed86dcdecc97ada25
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108453"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225633"
 ---
 # <a name="types-of-fields"></a>フィールドの種類
 
@@ -152,7 +152,7 @@ ms.locfileid: "3108453"
 |-----------------|-----------------|  
 |**簡易**|特定のエンティティに対して 1 つの参照が可能になります。 すべてのカスタム検索は、このタイプです。|  
 |**顧客**|取引先企業または取引先担当者のレコードに対する単一の参照を使用できます。|  
-|**所有者**|チームまたはユーザーのレコードに対して単一の参照が可能になります。 すべてのチームまたはユーザー所有のエンティティには、次のうち 1 つがあります。 詳細については次を参照してください:  [チーム エンティティをアプリの検索オプションとして追加する](../model-driven-apps/team-entity-lookup.md)|  
+|**所有者**|チームまたはユーザーのレコードに対して単一の参照が可能になります。 すべてのチームまたはユーザー所有のエンティティには、次のうち 1 つがあります。 詳細: [エンティティをアプリの検索オプションとして追加する](../model-driven-apps/team-entity-lookup.md)|  
 |**関係者リスト**|複数のエンティティに対する複数の参照を使用できます。 これらの検索は、E-mail エンティティの**宛先**および **CC** フィールドに見られます。 これらは、電話および予定エンティティでも使用されます。|  
 |**関連**|複数のエンティティに対する単一の参照を使用できます。 これらの検索は、活動で使用する関連フィールドにあります。|  
 

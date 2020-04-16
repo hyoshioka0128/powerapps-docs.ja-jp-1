@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7645910490aee24b7f3c2b239f1a6dd841b67df2
-ms.sourcegitcommit: eda3382ade50efe66611518c8f36e3a2ada7a91d
+ms.openlocfilehash: 3a36cf57710da4e6306c7de48e19d4af6c722f10
+ms.sourcegitcommit: abdc8c609a7a221ce4ca6b051a84b7083bdbe1ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "3060225"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3225589"
 ---
 # <a name="create-or-edit-filters-in-model-driven-app-views"></a>モデル駆動型アプリのビューでフィルターを作成、編集する
 
@@ -142,7 +142,8 @@ Power Apps ビューのフィルターは、ビューが提供される値にと
     > [!div class="mx-imgBorder"] 
     > ![グループ化された条件のフィルター](media/group-conditions-filter.png "グループ化された条件のフィルター")
 
-### <a name="next-steps"></a>次のステップ
-[列の選択および構成](choose-and-configure-columns.md)  
+### <a name="see-also"></a>関連項目
+[高度なグリッド フィルターを使用して個人用ビューを編集または作成する](../../user/grid-filters-advanced.md)
+[列を選択して構成する](choose-and-configure-columns.md)  
 [フィルター条件の編集](edit-filter-criteria.md)  
 [1:N (一対多) または N:1 (多対一) の関連付けを作成する](../common-data-service/create-edit-1n-relationships.md)

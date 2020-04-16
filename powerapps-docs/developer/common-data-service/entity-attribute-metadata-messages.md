@@ -3,7 +3,7 @@ title: エンティティ属性のメタデータのメッセージ (Common Data
 description: プロパティまたはフィールドとも呼ばれる、エンティティ属性メタデータの編集に使用されるメッセージについて。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d99931592887405c6c3f3d2b057719c85f1b8d2e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 2b03cc7aa48f6f4a732e45dc0201c184baa59631
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748870"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156219"
 ---
 # <a name="entity-attribute-metadata-messages"></a>エンティティ属性のメタデータのメッセージ
 

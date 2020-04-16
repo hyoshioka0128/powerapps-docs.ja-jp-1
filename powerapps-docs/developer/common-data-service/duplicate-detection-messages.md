@@ -3,7 +3,7 @@ title: 重複データ検出メッセージ (Common Data Service) | Microsoft Do
 description: BulkDetectDuplicatesRequest または RetrieveDuplicatesRequest メッセージを使用して重複を検知します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ed2d9180bfb148c59efb679f6a44d8d184a9c2d7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 5a4e8b7f3a962cdc2c3c3b2b82211189bba2a05d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748798"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156235"
 ---
 # <a name="duplicate-detection-messages"></a>重複データ検出のメッセージ
 

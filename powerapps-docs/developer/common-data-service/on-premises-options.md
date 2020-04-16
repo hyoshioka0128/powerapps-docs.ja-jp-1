@@ -3,7 +3,7 @@ title: オンプレミス開発オプション (Common Data Service) | Microsoft
 description: <Description>
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ae0de503011c67e4b62b765274b1d620bd5f0505
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a5437f2c0d7b6471f4b62ab355cf07a0d18c8b02
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749135"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156127"
 ---
 # <a name="on-premises-deployment-options"></a>設置型展開のオプション
 

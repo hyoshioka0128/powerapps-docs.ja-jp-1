@@ -3,7 +3,7 @@ title: 注釈 (メモ) エンティティ (Common Data Service) | Microsoft Docs
 description: データベース内の任意のレコードに追加的な情報を付加する簡便な手段を提供する注釈 (メモ) エンティティについて。 コメント エンティティはコメントを表します。このエンティティには、コメントのテキスト、コメントの作成者および変更者、コメントの添付ファイルの有無などの情報が含まれます。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9b065d6fc88ecd0662034f6fa95667679d667922
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3db4131efc8242233eeaab2ae85d9c8e42417015
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749015"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156476"
 ---
 # <a name="annotation-note-entity"></a>コメント (Annotation) (メモ) エンティティ
 

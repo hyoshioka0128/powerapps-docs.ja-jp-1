@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 70d150d0405bf6196387a39c807a26ba3e6efbfa
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 4f5378eb97f452c0a7dc57fa5b8e8cc314f7779b
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2883505"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3167131"
 ---
 # <a name="best-practices-and-guidance-for-model-driven-apps"></a>モデル駆動型アプリのベスト プラクティスとガイダンス
 
@@ -33,7 +33,12 @@ ms.locfileid: "2883505"
 
 このセクションでは、Microsoft で特定した問題とその影響について学習し、それらを解決するためのガイダンスを理解します。 ここでは、特定の手法の理由についての背景と、将来遭遇するかもしれない問題の回避について説明します。 これは、環境の使いやすさ、サポート、パフォーマンスのメリットになります。 ガイダンス ドキュメントは、管理者ガイド ページ内の既存の情報をサポートします。
 
+> [!NOTE]
+> 現在、クライアント スクリプトのベスト プラクティスのみが TOC に記載されており、残りはいずれ追加されます。
+> このドキュメントでは、セクションとガイドラインとともにベスト プラクティス ページの全体的な構造について説明します。
+
 ## <a name="targeted-customization-types"></a>対象カスタマイズの種類
+
 ドキュメントは、次の種類のカスタマイズを対象とします:
 
 - モデル駆動型アプリの設計
@@ -42,6 +47,7 @@ ms.locfileid: "2883505"
 - Web リソース
 
 ## <a name="sections"></a>セクション
+
 各ガイダンス記事には、次のセクションのほとんどまたはすべてが含まれます:
 
 - タイトル - ガイダンスの説明
@@ -54,6 +60,7 @@ ms.locfileid: "2883505"
 - 関連項目 - この記事に記載されている内容の詳細の参照先
 
 ## <a name="categories"></a>カテゴリ
+
 各ガイダンス記事は、次のカテゴリの 1 つ以上に分類されます:
 
 - 使用法 – 特定の API、パターン、または構成の不適切な使い方

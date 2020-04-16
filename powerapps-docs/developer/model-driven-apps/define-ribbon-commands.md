@@ -2,12 +2,12 @@
 title: リボン コマンドを定義する (モデル駆動型アプリ) | MicrosoftDocs
 description: リボン コマンドは、リボン コントロール要素から参照できる再使用可能な定義を作成します。
 keywords: ''
-ms.date: 10/31/2018
+ms.date: 03/27/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: 60933770-8c7c-499c-12b4-8b64f6eedb35
-author: JimDaly
-ms.author: jdaly
+author: Nkrb
+ms.author: nabuthuk
 manager: shilpas
 ms.reviewer: ''
 search.audienceType:
@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ef323b97c8f051519b8d9755e808d8a2f2dfd64c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3ea2f5cfdffb19589719780e7da1afaf3c510243
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749042"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218556"
 ---
 # <a name="define-ribbon-commands"></a>リボン コマンドを定義する
 
@@ -45,4 +45,4 @@ ms.locfileid: "2749042"
 ### <a name="see-also"></a>関連項目  
  [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
  [リボンでのローカライズされたラベルの使用](use-localized-labels-ribbons.md)   
- [リボンの有効化ルールの定義](define-ribbon-enable-rules.md)
+ [リボン有効化ルールを定義する](define-ribbon-enable-rules.md) [リボンの問題のトラブルシューティング](https://support.microsoft.com/help/4552163)

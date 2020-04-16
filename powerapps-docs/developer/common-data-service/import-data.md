@@ -3,7 +3,7 @@ title: データのインポート (Common Data Service) | Microsoft Docs
 description: Common Data Service にデータをインポートする場合は、*データ インポート* 機能を使用できます。 データ インポートを使用して、さまざまな顧客関係管理システムやデータ ソースから Common Data Service にデータをアップロードできます。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 562072c6d63b0abfeaa6c9f44f9cccfc5fdc960c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a6dbd7fb1f94a0824cd28e643057c2c3bf3b8100
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748856"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156167"
 ---
 # <a name="import-data"></a>データのインポート
 

@@ -3,7 +3,7 @@ title: コードを使用してメタデータで作業する (Common Data Servi
 description: '[Web API](webapi/overview.md) および [組織サービス](org-service/overview.md) の両方には、エンティティのスキーマの CRUD 操作を実行する機能があります。'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 853fc53221f82a25aeab271c5fca53b19d17eabe
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f226814935e7a0c4b7a005897dc2ae7fbb7f93c5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749134"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156139"
 ---
 # <a name="work-with-metadata-using-code"></a>コードを使用してメタデータを扱う
 

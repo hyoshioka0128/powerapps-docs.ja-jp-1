@@ -3,7 +3,7 @@ title: ソリューションの更新を簡略化する修正プログラムを�
 description: エンティティをソリューションに追加して、そのソリューションをエクスポートするときにエンティティおよびすべての関連資産を管理するために役立つ修正プログラム
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 24e1410afbf7323daad3e274f1aedfc4fe39ff6c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c737f1c2db371342b4e0586b268cbca0da7fb216
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749000"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156331"
 ---
 # <a name="create-patches-to-simplify-solution-updates"></a>ソリューションの更新プログラムを簡易化する修正プログラムの作成
 

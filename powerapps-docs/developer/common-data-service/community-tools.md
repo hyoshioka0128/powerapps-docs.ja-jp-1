@@ -3,10 +3,10 @@ title: Common Data Service のコミュニティ ツール (Common Data Service)
 description: Power Apps Common Data Service で、さまざまなタスクを実行するのに役立つコミュニティ作成ツールについてご覧ください。
 ms.custom: ''
 ms.date: 02/09/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
-author: KUmarVivek
+author: KumarVivek
 ms.author: kvivek
 manager: annbe
 search.audienceType:
@@ -14,18 +14,23 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5aee328227074de39d3856cdee1ceca162d9650d
-ms.sourcegitcommit: ee1960fe32136a621e653d6ff2f13d87017830a2
+ms.openlocfilehash: bd5e53ab606f5d2d9a33a8fa4185e9c00070768b
+ms.sourcegitcommit: f5d15c973b2a129a0cc29a74cf8eaf6b24fbf36d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "3037134"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "3180255"
 ---
 # <a name="community-tools-for-common-data-service"></a>Common Data Service のコミュニティ ツール
 
 Power Apps コミュニティはツールを作成します。 
 
-最も人気のあるものの多くが [XrmToolBox](https://www.xrmtoolbox.com/) で配布されています。 XrmToolBox は Common Data Service に接続する Windows アプリケーションで、カスタマイズ、構成および操作タスクをしやすくするためのツールを提供します。 管理、カスタマイズまたは構成作業を簡単に、短時間で実行するための 30 以上のプラグインが載っています。 以下は Common Data Service と共に使用できる XrmToolBox を通じて配布されるコミュニティ ツールの選択した一覧です。
+最も人気のあるものの多くが [XrmToolBox](https://www.xrmtoolbox.com/) で配布されています。 XrmToolBox は Common Data Service に接続する Windows アプリケーションで、カスタマイズ、構成および操作タスクをしやすくするためのツールを提供します。 管理、カスタマイズまたは構成作業を簡単に、短時間で実行するための 30 以上のプラグインが載っています。 
+
+> [!IMPORTANT]
+> コミュニティにより作成されたツールは Microsoft ではサポートされていません。 コミュニティ ツールに関するご質問または問題については、ツールの発行元にお問い合わせください。
+
+以下は Common Data Service と共に使用できる XrmToolBox を通じて配布されるコミュニティ ツールの選択した一覧です。
 
 |ツール  |説明  |
 |---------|---------|
@@ -39,5 +44,4 @@ Power Apps コミュニティはツールを作成します。
 
 別のツール [Chromiumメタデータ ブラウザー](https://community.dynamicslabs.io/feed/metadata-browser) を使用すると、エンティティー、属性、関係、 Common Data Service 環境のオプション セットなどのメタデータをブラウズできます。 Microsoft Edge および Google Chrome ブラウザーで動作します。 
 
-> [!IMPORTANT]
-> コミュニティにより作成されたツールは Microsoft ではサポートされていません。 コミュニティ ツールに関するご質問または問題については、ツールの発行元にお問い合わせください。
+

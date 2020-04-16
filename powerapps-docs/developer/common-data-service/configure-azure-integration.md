@@ -3,7 +3,7 @@ title: Azure 統合の構成 (Common Data Service) | Microsoft Docs
 description: このトピックは Common Data Service との Azure 統合の構成について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b030ca4e60d9f51f53706d682146c9acd46d5aa0
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 718d895ddaccff14569d3acb70cfe8360d406139
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749151"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156383"
 ---
 # <a name="configure-azure-integration-with-common-data-service"></a>Azure と Common Data Service との統合の構成
 

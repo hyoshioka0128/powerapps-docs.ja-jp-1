@@ -12,12 +12,12 @@ ms.custom:
 ms.topic: article
 ms.assetid: 7923e36d-3640-49f7-9f2f-c97358a632db
 ms.author: nabuthuk
-ms.openlocfilehash: cc809d81b7b9adf7327aa9cb8f74515816022118
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: 10344af0eca776ae6cc32547e2e61bde5ce9713d
+ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091234"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "3218532"
 ---
 # <a name="power-apps-component-framework-overview"></a>Power Apps component frameworkの概要
 
@@ -25,6 +25,10 @@ Power Apps component framework により、プロの開発者とアプリ メー
 
 - 数値テキスト値を表示するフィールドを `dial` や `slider` コード コンポーネントで置き換えます。
 - リストを `Calendar` や `Map` のようにデータセットに結び付けられた全く異なる視覚的エクスペリエンスに変換します。
+
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4slRe]
+
 
 > [!IMPORTANT]
 > - PowerApps component framework は、キャンバス アプリのパブリック プレビューにあり、一般的にモデル駆動型アプリで利用可能です。 これは、モデル駆動型アプリでサポートされているすべての API が、キャンバス アプリではサポートされていない場合があることを意味します。
@@ -67,5 +71,6 @@ Power Apps component framework のライセンス要件は、既存のコネク�
 [コード コンポーネントとは](custom-controls-overview.md)<br/>
 [キャンバス アプリのコード コンポーネント](component-framework-for-canvas-apps.md)<br/>
 [コードコンポーネントを作成、構築する](create-custom-controls-using-pcf.md)<br/>
+[Power Apps component framework の学習](https://docs.microsoft.com/learn/paths/use-power-apps-component-framework)<br/>
 [開発者向け Power Apps](https://docs.microsoft.com/powerapps/#pivot=home&panel=developer)
 

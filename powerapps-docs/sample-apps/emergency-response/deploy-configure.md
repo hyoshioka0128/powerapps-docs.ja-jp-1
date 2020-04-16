@@ -1,321 +1,297 @@
 ---
-title: 病院の緊急時対応アプリをデプロイして構成する | Microsoft Docs
-description: 病院の IT 管理者が組織用のサンプル アプリをデプロイして構成するための詳細な手順について説明します。
+title: 病院緊急時対応アプリをデプロイして構成する | Microsoft Docs
+description: 病院の IT 管理者が、自分たちの組織のためのサンプル アプリをデプロイして構成するための詳細な手順を示します。
 author: pankajarora-msft
 manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 04/07/2020
+ms.date: 04/05/2020
 ms.author: pankar
 ms.reviewer: kvivek
 searchScope:
+- GetStarted
 - PowerApps
-ms.openlocfilehash: 97de25b8c1f80ad4bd89242a2c71f97eeec1c9aa
-ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
+ms.openlocfilehash: 624c465ea812e4fe650dda3750259acf91476bb0
+ms.sourcegitcommit: 83b35be5df4864e15be9122647b17465e050284c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "80871651"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "3229070"
 ---
-# <a name="deploy-and-configure-the-hospital-emergency-response-app"></a>病院の緊急時対応アプリをデプロイして構成する
+# <a name="deploy-and-configure-the-hospital-emergency-response-app"></a>病院緊急時対応アプリをデプロイして構成する
 
-病院の緊急時対応アプリは、少量のセットアップでお客様のニーズに合わせることができます。 この記事では、病院の IT 管理者が組織用のアプリケーションをデプロイして構成するための詳細な手順について説明します。
+病院緊急時対応アプリでは、ニーズに適応するために多少の設定が必要です。 この記事では、病院の IT 管理者が、自分たちの組織のためのサンプル アプリケーションをデプロイして構成するための詳細な手順を示します。
 
-これらの手順の推定所要時間: **35 – 40 分**。
+これらの手順を完了するための推定時間: **35〜40 分**。
 
-## <a name="demo-deploy-and-configure-the-hospital-emergency-response-app"></a>デモ:病院の緊急時対応アプリをデプロイして構成する
+## <a name="demo-deploy-and-configure-the-hospital-emergency-response-app"></a>デモ: 病院緊急時対応アプリをデプロイして構成する
 
-病院の緊急時対応アプリをデプロイして構成する方法をご覧ください。
+病院緊急時対応アプリをデプロイして構成する方法を見てください。
 
 <br/>
 
 > [!VIDEO https://www.youtube.com/embed/-1g44wNiuWI]
 
 
-## <a name="service-urls-for-us-government-customers"></a>米国政府機関のお客様向けのサービス URL
+## <a name="deploy-the-hospital-emergency-response-app"></a>病院緊急時対応アプリをデプロイする
 
-病院の緊急時対応ソリューションは、米国政府機関のお客様もご利用いただけます。 Power Apps US Government 環境および Power BI にアクセスするための、商用バージョンとは異なる URL のセットが用意されています。
+組織に病院緊急時対応サンプル アプリを展開するには、次の手順を実行します。
 
-この記事全体では、商用バージョンのサービス URL が使用されています。 米国政府機関のお客様は、デプロイ用に、次に記載するそれぞれの米国政府機関用 URL をご使用ください。
+- [ステップ 1: Power Apps にサインアップして、環境を作成する](#step-1-sign-up-for-power-apps-and-create-an-environment)
+- [ステップ 2: パッケージの展開後のステップ](#step-2-download-the-deployment-package)
+- [ステップ 3: ソリューション ファイルを環境にインポートする](#step-3-import-the-solution-file-into-your-environment)
+- [ステップ 4: 組織の構成とマスター データを読み込む](#step-4-load-configuration-and-master-data-for-your-organization)
+    - [ステップ 4.1: 必須構成データを読み込む](#step-41-load-mandatory-configuration-data)
+    - [ステップ 4.2: マスターデータを読み込む](#step-42-load-master-data)
+- [ステップ 5: モバイル アプリのブランド名を更新する](#step-5-update-the-mobile-app-branding)
+- [ステップ 6: モバイル アプリの同意をバイパスする](#step-6-bypass-consent-for-mobile-apps)
+- [ステップ 7: Azure Application Insights キーをテレメトリのモバイル アプリに追加する](#step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry)
+- [ステップ 8: 組織内のユーザーとキャンバス アプリを共有する](#step-8-share-canvas-apps-with-users-in-your-organization)
+- [ステップ 9: モバイルアプリをヒーローおよびおすすめアプリとして設定する](#step-9-set-your-mobile-app-as-hero-and-featured-app)
+- [ステップ10: モデル駆動型アプリを組織の管理者と共有する](#step-10-share-model-driven-app-with-admins-in-your-organization)
 
+### <a name="step-1-sign-up-for-power-apps-and-create-an-environment"></a>ステップ 1: Power Apps にサインアップして、環境を作成する
 
-| **商用バージョンの URL**                | **米国政府機関バージョンの URL**  |
-|-------------------------------------------|--------------------------------|
-| https://make.powerapps.com                | https://make.gov.powerapps.us (GCC)<br/><br/>https://make.high.powerapps.us (GCC High)                |
-| https://admin.powerplatform.microsoft.com | https://gcc.admin.powerplatform.microsoft.us (GCC)<br/><br/>https://high.admin.powerplatform.microsoft.us (GCC High) |
-| https://app.powerbi.com/                  | <https://app.powerbigov.us> (GCC)<br/><br/>https://app.high.powerbigov.us (GCC High)                  |
+Power Apps をまだ持っていない場合は Power Apps にサインアップして適切なライセンスを購入します。
 
-Power Apps と Power BI の米国政府機関向けプランの詳細については、以下を参照してください。
-- [米国政府機関向け Power Apps](https://docs.microsoft.com/power-platform/admin/powerapps-us-government)
-- [米国政府機関向け Power BI](https://docs.microsoft.com/power-bi/service-govus-overview)
+詳細:
 
+-   [Power Apps 価格設定](https://powerapps.microsoft.com/pricing/)
+-   [購入Power Apps](https://docs.microsoft.com/power-platform/admin/signup-for-powerapps-admin)
 
-## <a name="deploy-the-hospital-emergency-response-app"></a>病院の緊急時対応アプリをデプロイする
+Power Apps を購入後、Common Data Service データベースで環境を作成します。
 
-ご自身の組織用に病院の緊急時対応サンプル アプリをデプロイするには、以下の手順を実行します。
+1.  [Power Platform 管理センター](https://aka.ms/ppac) にサインインします。
 
-- [ステップ 1:Power Apps にサインアップして環境を作成する](#step-1-sign-up-for-power-apps-and-create-an-environment)
-- [手順 2:デプロイ パッケージをダウンロードする](#step-2-download-the-deployment-package)
-- [ステップ 3:ソリューション ファイルを環境にインポートする](#step-3-import-the-solution-file-into-your-environment)
-- [手順 4:組織の構成データとマスター データを読み込む](#step-4-load-configuration-and-master-data-for-your-organization)
-    - [手順 4.1: 必須の構成データを読み込む](#step-41-load-mandatory-configuration-data)
-    - [手順 4.2: マスター データを読み込む](#step-42-load-master-data)
-- [手順 5:モバイル アプリのブランドを更新する](#step-5-update-the-mobile-app-branding)
-- [手順 6:モバイル アプリの同意をバイパスする](#step-6-bypass-consent-for-mobile-apps)
-- [手順 7:テレメトリ用に Azure Application Insights キーをモバイル アプリに追加する (省略可能)](#step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry-optional)
-- [手順 8: 組織内のユーザーとキャンバス アプリを共有する](#step-8-share-canvas-apps-with-users-in-your-organization)
-- [手順 9:モバイル アプリをヒーロー アプリおよびおすすめアプリとして設定する](#step-9-set-your-mobile-app-as-hero-and-featured-app)
-- [手順 10: 組織内の管理者とモデル駆動型アプリを共有する](#step-10-share-model-driven-app-with-admins-in-your-organization)
-
-### <a name="step-1-sign-up-for-power-apps-and-create-an-environment"></a>手順 1:Power Apps にサインアップして環境を作成する
-
-Power Apps をまだ持っていない場合は、Power Apps にサインアップし、適切なライセンスを購入します。
-
-詳細情報:
-
--   [Power Apps の価格](https://powerapps.microsoft.com/pricing/)
--   [Power Apps を購入する](https://docs.microsoft.com/power-platform/admin/signup-for-powerapps-admin)
-
-Power Apps を購入した後、Common Data Service データベースを使用して環境を作成します。
-
-1.  [Power Platform 管理センター](https://aka.ms/ppac)にサインインします。
-
-2.  データベースを使用して Common Data Service 環境を作成します。 詳細情報: [環境を作成および管理する](https://docs.microsoft.com/power-platform/admin/create-environment)
+2.  データベースで Common Data Service 環境を作成します。 詳細: [環境の作成と管理](https://docs.microsoft.com/power-platform/admin/create-environment)
 
     > [!IMPORTANT]
-    > データベースの作成中に、データベースのセキュリティ グループを選択した場合は、そのセキュリティ グループのメンバーであるユーザーと*のみ*アプリを共有できます。
+    > データベースの作成中に、データベースのセキュリティ グループを選択すると、セキュリティ グループのメンバーであるユーザーと *のみ* アプリを共有できます。
 
-3.  環境に適切なユーザーを作成します。 詳細情報: [ユーザーを作成し、セキュリティ ロールを割り当てる](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
+3.  自分の環境に適切なユーザーを作成します。 詳細情報: [ユーザーを作成し、セキュリティ ロールを割り当てる](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
 
-### <a name="step-2-download-the-deployment-package"></a>手順 2:デプロイ パッケージをダウンロードする
+### <a name="step-2-download-the-deployment-package"></a>ステップ 2: デプロイ パッケージのダウンロード
 
-病院の緊急時対応アプリ用のアプリとビジネス ロジックを設定するためのソリューション ファイル、画像、データ ファイルが含まれる、最新のデプロイ パッケージ (.zip) を <https://aka.ms/emergency-response-solution> から取得します。
+病院緊急時対応アプリのアプリとビジネス ロジックを設定するためのソリューション ファイル、画像、データ ファイルが含まれている <https://aka.ms/emergency-response-solution> から最新のデプロイ パッケージ (.zip) を取得します。
 
-> [!IMPORTANT]
-> デプロイ パッケージ (.zip ファイル) を抽出する前に、ファイルのブロックを解除してください。 ブロックを解除するには:
-> 1. .zip ファイルを右クリックし、 **[プロパティ]** を選択します。
-> 2. [プロパティ] ダイアログ ボックスで、 **[ブロックの解除]** を選択してから、 **[適用]** 、 **[OK]** の順に選択します。
-
-<br/>
-
-デプロイ ファイル (.zip ファイル) のブロックを解除した後、ご自分のコンピューター上の場所にファイルを抽出します。 抽出されたフォルダーには、次のフォルダーが含まれます。
+デプロイ プロセスを開始するには、デプロイ ファイル（.zip）を自分のコンピューター上の場所に抽出します。 抽出されたフォルダーには、次のフォルダーが含まれます。
 
 | **フォルダー/ファイル**       | **説明**  |
 |-----------------------|------------------|
-| **App Icons**         | モバイル アプリ (キャンバス アプリ) 用の既定のアプリ アイコンが格納されています|
-| **Data Files**        | ソリューションおよびアプリが動作するためのマスター ファイルとサンプル データ ファイル (.xlsx) が格納されています。 これらのファイルからデータをインポートして、アプリでの作業を始められます。 詳細情報: [手順 4: 組織の構成データとマスター データを読み込む](#step-4-load-configuration-and-master-data-for-your-organization) |
-| **Power BI Template** | 組織向けのレポートを構成するために使用する Power BI レポート テンプレート ファイル (.pbit) が格納されています。 詳細情報:[Power BI ダッシュボードを使用して分析情報を取得する](#get-insights-using-power-bi-dashboards)|
-| **PowerShell**        | モバイル アプリ (キャンバス アプリ) の構成に使用するスクリプトが格納されています。 |
-| **Solution File**     | 病院の緊急時対応アプリに必要なアプリとメタデータを作成する Common Data Service ソリューション ファイルが格納されています。  |
+| **アプリ アイコン**         | モバイル アプリ (キャンバス アプリ) のデフォルトのアプリ アイコンが含まれています|
+| **データ ファイル**        | ソリューション/アプリが機能するためのマスターとサンプル データ ファイル (.xlsx) が含まれています。 これらのファイルからデータをインポートして、アプリで作業を開始できます。 詳細については、 [ステップ 4: 組織の構成とマスター データを読み込む](#step-4-load-configuration-and-master-data-for-your-organization) を参照してください。 |
+| **Power BI テンプレート** | 組織のレポートを構成するために使用する Power BI レポート テンプレート ファイル (.pbit) が含まれています。 詳細: [Power BI ダッシュボードを使用してインサイトを取得する](#get-insights-using-power-bi-dashboards)|
+| **PowerShell**        | モバイル アプリ (キャンバス アプリ) の構成に使用するスクリプトが含まれています。 |
+| **ソリューション ファイル**     | 病院緊急時対応アプリのアプリとメタデータを作成する Common Data Service ソリューション ファイルが含まれています。  |
 
-### <a name="step-3-import-the-solution-file-into-your-environment"></a>手順 3:ソリューション ファイルを環境にインポートする
+### <a name="step-3-import-the-solution-file-into-your-environment"></a>ステップ 3: ソリューション ファイルを自分の環境にインポートする
 
-1.  デプロイ ファイル (.zip) を抽出した場所に移動します。**Solution File** フォルダーが見つかります。 **Solution File** フォルダーにあるマネージド ソリューション (.zip) ファイルを環境にインポートします。
+1.  展開ファイル (.zip) を抽出した場所に移動し、そうすると **ソリューション ファイル** フォルダがあります。 **ソリューション ファイル** の管理ソリューション (.zip) ファイルを弊社の環境へインポートします。
 
 2.  [Power Apps](https://make.powerapps.com) にサインインします。
 
-3.  右上隅で環境を選択します。
+3.  右上隅から自分の環境を選択します。
 
-4.  左側のペインで **[ソリューション]** を選択した後、 **[インポート]** を選択します。
+4.  左ウィンドウで **ソリューション** を選択して、その後 **インポート** を選択します。
 
     > [!div class="mx-imgBorder"] 
-    > ![ソリューションをインポートする](media/conf-import-solution.png "ソリューションをインポートする")
+    > ![ソリューションのインポート](media/conf-import-solution.png "ソリューションのインポート")
 
-5.  **[ソリューションのインポート]** ダイアログ ボックスで、手順 1 で説明したソリューション ファイルを選択し、ウィザードの手順に従ってソリューションをインポートします。
+5.  **インポート ソリューション** ダイアログ ボックスで、ステップ 1 で説明したソリューション ファイルを選択し、ウィザードの手順に従ってソリューションをインポートします。
 
-6.  ソリューションが正常にインポートされたら、インポート ダイアログ ボックスで **[閉じる]** を選択します。
+6.  ソリューションが正常にインポートされたら、インポート ダイアログ ボックスで **閉じる** を選択します。
 
-**[アプリ]** に新しいアプリが表示されるようになります。
+これで **アプリ** に次の新しいアプリが表示されます。
 
 > [!div class="mx-imgBorder"] 
 > ![新しいアプリ](media/conf-apps-new-apps.png "新しいアプリ")
 
-**Admin App** を選択して、残りのデプロイ設定を構成できるモデル駆動型アプリを開きます。 詳細情報: [モデル駆動型アプリとは](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
+**管理アプリ** を選択して、残りのデプロイ設定を構成できるモデル駆動型アプリを開きます。 詳細: [モデル駆動型アプリとは](https://docs.microsoft.com/powerapps/maker/model-driven-apps/model-driven-app-overview)
 
 > [!div class="mx-imgBorder"] 
 > ![管理アプリを開く](media/conf-admin-app-open.png "管理アプリを開く")
 
-管理アプリのいくつかのエンティティで、病院システムのデータを追加したり管理したりできます。 左側のナビゲーション ペインの下部にある領域ピッカーを使用して、異なる領域を選択できます。
+管理アプリには、自分の病院システムのデータを追加および管理できるエンティティがいくつかあります。 左側のナビゲーション ウィンドウの下部にあるエリア ピッカーを使用して、別のエリアを選択できます。
 
-### <a name="step-4-load-configuration-and-master-data-for-your-organization"></a>手順 4.組織の構成データとマスター データを読み込む
+### <a name="step-4-load-configuration-and-master-data-for-your-organization"></a>ステップ 4: 組織の構成とマスター データを読み込む
 
-病院の緊急時対応アプリに必要なすべてのデータは、抽出したデプロイ フォルダーの下にある **Data Files** フォルダーから入手できます。
+病院緊急時対応アプリに必要なすべてのデータは、抽出したデプロイ フォルダーの **データファイル** フォルダーにあります。
 
-**Data Files** フォルダーには、次のファイルとフォルダーがあります。
+**データファイル** フォルダには、次のファイルとフォルダがあります。
 
 <table style="width:100%">
 <tr>
 <th>名前</th>
-<th>Description</th>
+<th>説明</th>
 </tr>
 <tr>
-<td>ルートには次のファイルがあります。
+<td>ルートには、次のファイルが使用可能です。
 <ul>
-<li>00 - Acuities Import.xlsx</li>
-<li>00 - App Config Import.xlsx</li>
-<li>00 - App Import.xlsx</li>
-<li>00 - Request Roles Import.xlsx</li>
-<li>00 - Supplies Import.xlsx</li>
+<li>00 - 視覚インポート.xlsx</li>
+<li>00 - アプリ構成インポート.xlsx</li>
+<li>00 - アプリインポート.xlsx</li>
+<li>00 - ロール要求インポート.xlsx</li>
+<li>00 - サプライインポート.xlsx</li>
 </ul>
 </td>
-<td>これらは構成データ ファイルであり、管理アプリを使用して次のエンティティにインポートする必要があります。
+<td>これらは、管理アプリを使用して次のエンティティにインポートする必要がある構成データファイルです。
 <ul>
-<li>Acuities</li>
-<li>App Config</li>
-<li>Apps</li>
-<li>Request Roles</li>
-<li>Supplies Import</li>
+<li>視覚</li>
+<li>アプリ構成</li>
+<li>アプリ</li>
+<li>要求 ロール</li>
+<li>サプライのインポート</li>
 </ul>
-<br/>これらのエンティティにデータをインポートすると、病院の緊急時対応アプリが動作するために必要な、これらのエンティティのレコードが作成されます。
+<br/>これらのエンティティにデータをインポートすると、病院緊急時対応アプリが機能するために必要なこれらのエンティティのレコードが作成されます。
 <br/>
 <br/>
-<strong>注意</strong>: 後で説明する <strong>Apps</strong> エンティティと <strong>App Config</strong> エンティティを除き、これらのエンティティの構成値を更新しないでください。</td>
+<strong>注意</strong>: 後に説明する <strong>アプリ</strong> そして <strong>アプリ構成</strong> エンティティを除いて、これらのエンティティの構成値を更新しないでください。</td>
 </tr>
 <tr>
-<td><strong>Sample Data</strong> フォルダー</td>
-<td><p>このフォルダーには、インポートすることでアプリケーションにサンプル データを設定できるサンプル データ ファイル (.xlsx) が格納されています。 これらのファイルには、データをアプリにインポートする必要がある順序がわかる名前が付けられています。 </p>
-<p>病院の緊急時対応アプリのマスター サンプル データを含む次のエンティティに、データをインポートします。
+<td><strong>サンプル データ</strong> フォルダー</td>
+<td><p>このフォルダーには、アプリケーションにサンプル データを入力するためにインポートできるサンプル データ ファイル (.xlsx) が含まれています。 このファイルには、データをアプリにインポートする順序を示す名前が付けられています。 </p>
+<p>病院緊急時対応アプリのマスター サンプル データを含む次のエンティティのデータをインポートする必要があります。
 <ul>
-<li>Systems</li>
-<li>Regions</li>
+<li>システム</li>
+<li>領域</li>
 <li>Facilities</li>
-<li>Locations</li>
-<li>部門</li>
+<li>場所</li>
+<li>部署</li>
 </ul>
-<p>サンプル データではなく自分の組織のデータをインポートしたい場合は、これらの Excel ファイル内のサンプル データを、自分の組織のデータに置き換えてから、アプリにデータをインポートできます。</p>
-<p>これらのエンティティのデータを手動で入力することもできます。 これらの各エンティティおよびエンティティ内の各フィールドについて詳しくは、「<a href="#manually-configure-and-manage-master-data-for-your-organization">組織のマスター データを手動で構成して管理する</a>」をご覧ください。</p></td>
+<p>サンプル データの代わりに自分の組織データをインポートする場合は、これらの Excel ファイルのサンプル データを自分の組織データに置き換えてから、アプリにデータをインポートできます。</p>
+<p>これらのエンティティのデータを手動で入力することもできます。 これらのエンティティとこれらのエンティティのフィールドの詳細については、 <a href="#manually-configure-and-manage-master-data-for-your-organization">組織のマスター データを手動で構成および管理する</a> を参照してください</p></td>
 </tr>
 <tr>
-<td><strong>Data Template File for Master Data</strong> フォルダー</td>
-<td><p>このフォルダーには、実際の組織のデータを設定してアプリにインポートするために使用できる、マスター エンティティの "空の" データ ファイル (.xlsx) が格納されています。</p>
-<p>これらのファイルには、データをアプリにインポートする必要がある順序がわかる名前が付けられています。 <strong>Sample Data</strong> フォルダーについて前述したエンティティの一覧と同じです。</p>
-<p>これらのエンティティのデータを手動で入力することもできます。 これらの各エンティティおよびエンティティ内の各フィールドについて詳しくは、「<a href="#manually-configure-and-manage-master-data-for-your-organization">組織のマスター データを手動で構成して管理する</a>」をご覧ください。</p>
+<td><strong>マスター データのデータ テンプレート ファイル</strong> フォルダ</td>
+<td><p>このフォルダーには、組織データを入力してアプリにインポートするために使用できるマスター エンティティ用の "空の" データ ファイル (.xlsx) が含まれています。</p>
+<p>このファイルには、データをアプリにインポートする順序を示す名前が付けられています。 これは、前述の <strong>サンプル データ</strong> フォルダのエンティティのリストと同じです。</p>
+<p>これらのエンティティのデータを手動で入力することもできます。 これらのエンティティとこれらのエンティティのフィールドの詳細については、 <a href="#manually-configure-and-manage-master-data-for-your-organization">組織のマスター データを手動で構成および管理する</a> を参照してください</p>
 </td>
 </tr>
 </table>
 
-#### <a name="step-41-load-mandatory-configuration-data"></a>手順 4.1: 必須の構成データを読み込む
+#### <a name="step-41-load-mandatory-configuration-data"></a>ステップ 4.1: 必須構成データを読み込む
 
-次の手順に進む前に、管理アプリで次のエンティティに構成データをインポートする**必要があります**。
+管理アプリの次のエンティティ下にある構成データのインポートは、次のステップに進む前に **必須** です。
 
 | 領域名 | エンティティ名| ファイル名
 |-|-|-
-| Locations | Acuities | 00 - Acuities Import.xlsx
-| Administration | Apps Config | 00 - App Config Import.xlsx
-| Administration | Apps | 00 - App Import.xlsx
-| Staffing | Request Roles | 00 - Request Roles Import.xlsx
-| Locations | Supplies | 00 - Supplies Import.xlsx
+| 場所 | 視覚 | 00 - 視覚インポート.xlsx
+| 管理 | アプリ構成 | 00 - アプリ構成インポート.xlsx
+| 管理 | アプリ | 00 - アプリインポート.xlsx
+| スタッフ | 要求 ロール | 00 - ロール要求インポート.xlsx
+| 場所 | サプライ | 00 - サプライインポート.xlsx
 
-##### <a name="how-to-load-data-from-data-files"></a>データ ファイルからデータを読み込む方法
+##### <a name="how-to-load-data-from-data-files"></a>データ ファイルからデータを読み込む方法は?
 
 データ ファイルの 1 つからエンティティにデータをインポートするには:
 
-1.  管理アプリの左側のナビゲーション ペインで、データを読み込むエンティティを選択します。 たとえば、領域ピッカーで **Administration** を選択してから、**Acuities** を選択します。
+1.  管理アプリの左側のナビゲーション ウィンドウで、データをロードするエンティティを選択します。 たとえば、エリアピッカーから **管理** を選択して、その後 **視覚** を選択します。
 
-2.  **[Excel からインポート]** を選択し、**Data Files** フォルダーから **00 - Acuities Import.xlsx** ファイルを選択します。
+2.  **Excel からインポート** を選択して、さらに **データ ファイル** フォルダーから **00 - 視覚インポート.xlsx** ファイルを選択します。
 
     > [!div class="mx-imgBorder"]
-    > ![Excel からインポート](media/conf-import-from-excel.png "Excel からインポート")
+    > ![Excel からのインポート](media/conf-import-from-excel.png "Excel からのインポート")
 
-3.  インポート ウィザードの手順に従って、データをインポートします。
+3.  インポート ウィザードへと進んで、データをインポートします。
 
-4.  データがインポートされると、エンティティにインポートされたレコードが表示されます。
+4.  データがインポートされると、インポートされたレコードがエンティティに表示されます。
 
     > [!div class="mx-imgBorder"] 
-    > ![エンティティ レコード](media/conf-entity-record.png "インポート後のエンティティのレコード")
+    > ![エンティティ レコード](media/conf-entity-record.png "インポート後にエンティティに記録する")
 
-他の構成データ エンティティについて上記の手順を繰り返します。
+上記のステップをその他の構成データ エンティティで繰り返します。
 
-または、マスター データを手動で入力する場合は、「[組織のマスター データを手動で構成して管理する](#manually-configure-and-manage-master-data-for-your-organization)」をご覧ください。
+または、マスタ データを手動で入力する場合は [組織のマスターデータを手動で構成および管理する](#manually-configure-and-manage-master-data-for-your-organization) を参照してください。
 
-#### <a name="step-42-load-master-data"></a>手順 4.2: マスター データを読み込む
+#### <a name="step-42-load-master-data"></a>ステップ 4.2: マスターデータを読み込む
 
-前述のように、次の操作を行うことができます。
-- **Data Files/Sample Data** フォルダーにあるマスター データ エンティティのサンプル データ ファイルを使用して、必要なエンティティにサンプル データをインポートできます。 
+前に説明したように：
+- **データ ファイル/サンプル データ** フォルダー下でマスター データ エンティティのサンプルデータファイルを使用して、必要なエンティティのサンプル データをインポートできます。 
 
-- **Data Files/Data Template File for Master Data** フォルダーにあるマスター エンティティの "空の" データ ファイルを使用して、組織のデータを設定した後、必要なエンティティにデータをインポートできます。
+- 組織のデータを入力するために使用できる **マスター データのデータ ファイル/データ テンプレート ファイル** フォルダー下でマスターエンティティの "空の" データ ファイルを使用して、必要なエンティティでデータをインポートします。
 
-マスター データは、後で手動で追加することもできます。 詳細情報: [組織のマスター データを手動で構成して管理する](#manually-configure-and-manage-master-data-for-your-organization)
+また、後でマスター データを手動で追加することもできます。 詳細: [組織の構成とマスター データを読み込む](#manually-configure-and-manage-master-data-for-your-organization) を参照してください
 
-### <a name="step-5-update-the-mobile-app-branding"></a>手順 5.モバイル アプリのブランドを更新する
+### <a name="step-5-update-the-mobile-app-branding"></a>ステップ 5: モバイル アプリのブランド名を更新する
 
-モバイル アプリのアプリ アイコン、配色、または表示名を組織のブランドに合わせて変更することができます。
+モバイル アプリのアプリ アイコン、配色、または表示名を変更して、組織のブランドに合わせることができます。
 
-**Administration** 領域の **App** エンティティと **App Config** エンティティを使用してこの操作を行うには、デプロイ パッケージの **Data Files** フォルダーにある Excel ファイルおよび **App Icons** フォルダーにあるアイコン ファイルからアプリとアプリ構成のデータをインポートします (「[手順 2:デプロイ パッケージをダウンロードする](#step-2-download-the-deployment-package)」を参照してください)。
+これは **データ ファイル** フォルダー、または [ステップ 2: デプロイ パッケージのダウンロード](#step-2-download-the-deployment-package) で説明されているデプロイ パッケージ下にある **アプリ アイコン** 下のアイコン ファイルで使用可能な Excel ファイルからアプリやアプリ構成データをインポートすることで、 **管理** 領域の **アプリ** と **アプリ構成** エンティティを使用することでおこないます。
 
 > [!div class="mx-imgBorder"] 
-> ![Apps と App Config エンティティ](media/conf-app-app-config-entities.png "Apps エンティティと App Config エンティティ")
+> ![アプリとアプリ構成エンティティ](media/conf-app-app-config-entities.png "アプリとアプリ構成エンティティ")
 
-1.  **App Import.xlsx** ファイルと **App Config Import.xlsx** ファイルをそれぞれ使用して、**Apps** エンティティと **App Config** エンティティの構成データをインポートしたことを確認します。
+1.  **アプリのインポート.xlsx** と **アプリ構成インポート.xlsx** ファイルをそれぞれ使用して **アプリ** と **アプリ構成** エンティティの構成データをインポートしたことを確認してください。
 
-1.  次に、インポートした **Apps** レコードに設定できるように、キャンバス アプリのアプリ ID をコピーします。 [Power Apps](https://make.powerapps.com) にサインインします。
+1.  次に、キャンバス アプリのアプリ ID をコピーして、インポートした **アプリ** レコードに入力できます。 [Power Apps](https://make.powerapps.com) にサインインします。
 
-1.  右上隅で環境を選択します。
+1.  右上隅から自分の環境を選択します。
 
-1.  左側のペインで **Apps** を選択し、キャンバス アプリの省略記号 [...] を選択してから、 **[詳細]** を選択します。
-
-    > [!div class="mx-imgBorder"] 
-    > ![Apps の詳細](media/conf-environments-apps-details.png "アプリの詳細")
-
-1.  そのアプリの **[詳細]**  ペインの下部に、アプリ ID が表示されます。 アプリ ID とその名前をメモ帳ファイルにコピーします。
+1.  左側のウィンドウで **アプリ** を選択し、次に **詳細** に続いてキャンバス アプリの省略記号 (…) を選択します。
 
     > [!div class="mx-imgBorder"] 
-    > ![アプリ ID の詳細](media/conf-details-app-id.png "アプリ ID の詳細")
+    > ![アプリの詳細](media/conf-environments-apps-details.png "アプリの詳細")
 
-1.  各キャンバス アプリについて、手順 4 と 5 を繰り返します。
+1.  アプリ ID はアプリの **詳細** ウィンドウの下部に表示されます。 アプリ ID とその名前をメモ帳ファイルにコピーします。
 
-1.  Admin App を開き、管理アプリの左側のナビゲーション ペインの領域ピッカーで **Administration** を選択して、**Apps** を選択します。 これにより、**App Import.xlsx** ファイルからインポートしたすべてのキャンバス アプリ レコードが表示されます。
+    > [!div class="mx-imgBorder"] 
+    > ![詳細のアプリ ID](media/conf-details-app-id.png "詳細のアプリ ID")
+
+1.  キャンバス アプリごとにステップ 4 と 5 を繰り返します。
+
+1.  管理アプリを開き、管理アプリの左側のナビゲーション ウィンドウで、エリアピッカーから **管理** を選択し、次に **アプリ** を選択します。 これにより **アプリ インポート.xlsx** ファイルからインポートしたすべてのキャンバス アプリ レコードが表示されます。
 
     > [!div class="mx-imgBorder"] 
     > ![管理アプリ](media/conf-admin-app-records.png "管理アプリ")
 
-1.  いずれかのアプリ レコードを選択して開きます。 **[Power App ID]** フィールドが空白になっていることに注意してください。
+1.  アプリレコードの1つを選択して開きます。 **Power App ID** フィールドは空白ですのでご留意ください。
 
     > [!div class="mx-imgBorder"] 
-    > ![[Power App ID] フィールド](media/conf-powerapp-id-field.png "[Power App ID] フィールド")
+    > ![Power App ID フィールド ](media/conf-powerapp-id-field.png "Power App ID フィールド")
 
-1.  アプリの詳細ページで、次の操作を行います。
+1.  アプリの詳細ページ:
 
-    1. 前の手順でメモ帳にコピーしたアプリ ID を **[Power App ID]** フィールドにコピーします。
+    1. (前にコピーした) メモ帳から アプリ ID を **Power App ID** フィールドにコピーします。
 
-    2. アプリ アイコンをダブルクリックして、**App Icons** フォルダーからアプリのアイコン ファイルを選択します。 正しいアイコンを簡単に選択できるように、画像ファイルにはわかりやすい名前が付けられています。 たとえば、**Emergency Response App** の場合は、"Emergency Response App.png" ファイルを選択します。 また、組織のブランドに従ってカスタム イメージを選択することもできます。
+    2. アプリ アイコンをダブルクリックして **アプリ アイコン** フォルダからのアプリのアイコン ファイルを選択します。 画像ファイルには直感的に名前が付けられるため、正しいアイコンを簡単に選択できます。 たとえば、 **緊急対応アプリ** の "緊急時対応アプリ.png" ファイルを選択します 組織のブランド化に従ってカスタム画像を選択することもできます。
 
-    3. 必要に応じて、アプリの **[説明]** または **[表示名]** を更新します。
+    3. 必要に応じて、アプリの **説明文** または **表示名** をアップデートします。
 
-    4. 必要に応じて、 **[Hide App from Menu]\(メニューでアプリを非表示にする\)** の値を更新して、アプリをアプリ一覧に表示するかどうかを設定します。 **Emergency Response App** はコンテナー アプリであるため、この値は既定で **[いいえ]** に設定されています。
+    4. 必要に応じて、アプリをアプリ リストに表示すべき場合は **メニューからアプリを隠す** 値を更新します。 **緊急対応アプリ** はコンテナー アプリですので、この値は規定では **いいえ** に設定します。
 
-    5. 必要に応じて、 **[App Display Rank]\(アプリの表示順位\)** の値を更新して、アプリ一覧内のアプリの表示位置を設定します。
+    5. 必要に応じて、**アプリ表示ランク** 値をアプリ リストのアプリの表示位置を設定するように更新します。
 
-    6. **[保存]** を選択します。
+    6. **保存**を選択します。
 
-1.  **Apps** にある各キャンバス アプリ レコードについて、手順 8 と 9 を繰り返します。
+1.  **アプリ** 下の各キャンバス アプリ レコードに対してステップ 8 と 9 を繰り返します。
 
-1.  左側のペインで、**App Config** を選択します。
+1.  左側のウィンドウで、**アプリの構成** を選択します。
 
-1.  **Emergency Response App** レコードを選択して、編集用に開きます。
+1.  **緊急対応アプリ** レコードを選択して、編集のために開きます。
 
-    1.  必要に応じて、アプリの色を更新します。
+    1.  必要に応じて、自分のアプリの色を更新します。
 
-    2.  **[Device Sharing Enabled]\(デバイスの共有を有効にする\)** フィールドで **[はい]** または **[いいえ]** を選択して、モバイル アプリで **[サインアウト]** オプションを使用できるようにするかどうかを指定します。 **[はい]** を選択すると、 **[サインアウト]** オプションが使用できるようになります。 詳細情報: ユーザー ガイドの「[シフトの終了 - サインアウト](use.md#end-shift---sign-out)」を参照してください。
+    2.  **デバイス共有を有効にする** フィールドで **はい** または **いいえ** を選択して、モバイルアプリで **サインアウト** オプションが利用できるかどうかを指定します。 **はい** を選ぶと **サインアウト** オプションが使用可能になります。 詳細については、ユーザーガイドの [シフト終了 - サインアウト](use.md#end-shift---sign-out) を参照してください。
 
     > [!div class="mx-imgBorder"] 
-    > ![[Device Sharing Enabled]\(デバイスの共有を有効にする\) フィールド](media/conf-device-sharing-enabled-field.png "[Device Sharing Enabled]\(デバイスの共有を有効にする\) フィールド")
+    > ![デバイス共有有効化フィールド](media/conf-device-sharing-enabled-field.png "デバイス共有有効化フィールド")
 
-1.  右下隅にある **[保存]** を選択して、変更を保存します。
+1.  変更を保存するには、画面の右下隅にある **保存** を選択します。
 
-### <a name="step-6-bypass-consent-for-mobile-apps"></a>手順 6:モバイル アプリの同意をバイパスする
+### <a name="step-6-bypass-consent-for-mobile-apps"></a>ステップ 6: モバイル アプリの同意をバイパスする
 
-この手順を完了するには、テナント管理者である必要があります。 また、この手順を実行する前に、各モバイル アプリ (キャンバス アプリ) のアプリ ID を確認しておく必要があります。
+このステップを完了するには、テナント管理者である必要があります。 また、このステップを実行する前に、各モバイル アプリ (キャンバス アプリ) のアプリ ID が必要になります。
 
-アプリのアプリ ID を確認するには、管理アプリの左側のナビゲーション ペインの領域ピッカーで **Administration** を選択して、**Apps** を選択します。 これにより、すべてのモバイル アプリ (キャンバス アプリ) が表示されます。 モバイル アプリを選択して、そのアプリ ID を表示します。 各アプリのアプリ ID をメモ帳ファイルにコピーします。
+自分のアプリにアプリ ID を取得するには、管理アプリの左側のナビゲーション ウィンドウで、エリアピッカーから **管理** を選択し、次に **アプリ** を選択します。 これにより、すべてのモバイル アプリ (キャンバス アプリ) が表示されます。 アプリ ID を表示するには、モバイル アプリを選択します 各アプリのアプリ ID をメモ帳ファイルにコピーします。
 
 > [!div class="mx-imgBorder"] 
-> ![アプリ ID を調べる](media/conf-admin-get-app-id.png "アプリ ID を調べる")
+> ![アプリ ID を取得する](media/conf-admin-get-app-id.png "アプリ ID を取得する")
 
-続けて次の作業を行います。
+次に以下のステップを実行します。
 
-1.  メモ帳を開き、次の PowerShell スクリプトをコピーします。
+1.  メモ帳を開いて、この PowerShell スクリプトをコピーします:
 
     ```powershell
     # MUST BE A TENANT ADMIN TO RUN THIS
@@ -333,52 +309,52 @@ Power Apps を購入した後、Common Data Service データベースを使用�
     Set-AdminPowerAppApisToBypassConsent -AppName APPGUIDHERE
     ```
 
-2.  `APPGUIDHERE` の値を、キャンバス アプリの実際のアプリ ID に置き換えます。
+2.  キャンバスアプリの実際のアプリ ID を持つ `APPGUIDHERE` 値を置き替えます。
 
 3.  ファイルを .ps ファイルとして保存します。
 
-4.  管理者として PowerShell を実行し、作成した .ps ファイルを実行します。
+4.  管理者として PowerShell を実行し、今作成した .ps ファイルを実行します。
 
-5.  各キャンバス アプリについて、手順 2 から 4 を繰り返します。
+5.  各キャンバス アプリごとにステップ 2 - 4 を繰り返します。
 
-### <a name="step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry-optional"></a>手順 7:テレメトリ用に Azure Application Insights キーをモバイル アプリに追加する (省略可能)
+### <a name="step-7-add-azure-application-insights-key-to-mobile-apps-for-telemetry"></a>ステップ 7: Azure Application Insights キーをテレメトリのモバイル アプリに追加します
 
-必要に応じて、Azure Application Insights を使用して、モバイル アプリ (キャンバス アプリ) の詳細なテレメトリを収集し、アプリの使用状況に関する分析情報を取得できます。 これについて詳しくは、「[Application Insights を使用したアプリ テレメトリの分析](https://docs.microsoft.com/powerapps/maker/canvas-apps/application-insights)」をご覧ください
+Azure Application Insights を使用して、モバイル アプリ (キャンバス アプリ) の詳細なテレメトリを収集して、アプリの使用状況に関するインサイトを得ることができます。 この詳細については、[Application Insights を使用してアプリのテレメトリを分析する](https://docs.microsoft.com/powerapps/maker/canvas-apps/application-insights) を参照してください
 
-### <a name="step-8-share-canvas-apps-with-users-in-your-organization"></a>手順 8:組織内のユーザーとキャンバス アプリを共有する
+### <a name="step-8-share-canvas-apps-with-users-in-your-organization"></a>ステップ 8: 組織内のユーザーとキャンバス アプリを共有する
 
-現場のユーザーが自分のモバイル デバイスのキャンバス アプリでデータを使用するには、アプリがユーザーと共有されている必要があります。 Azure AD グループを使用すると、ユーザーのグループと簡単にアプリを共有できます。
+最前線にいるユーザーがモバイル デバイスのキャンバス アプリを使用してデータを使用するには、アプリが共有されていなければなりません。 Azure AD グループを使用すると、ユーザーのグループとアプリをより簡単に共有できます。
 
 > [!IMPORTANT]
-> アプリを共有するユーザーまたはグループが*既に*環境にアクセスできることを確認します。 通常は、[環境の設定](#step-1-sign-up-for-power-apps-and-create-an-environment)時にユーザーまたはグループを追加します。 または、ここに記載されている手順に従ってユーザーを環境に追加し、アプリを共有する前に適切なアクセスを提供することもできます。[ユーザーを作成し、セキュリティ ロールを割り当てる](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
+> アプリを共有する予定のユーザーまたはグループが *既に* 自分の環境へのアクセスができていることを確認してください。 通常、[環境を設定する](#step-1-sign-up-for-power-apps-and-create-an-environment) 間には、ユーザーまたはグループはすでに追加されています。 または、こちらのステップに従ってユーザーを環境に追加し、アプリをユーザーと共有する前に適切なアクセスを提供できます: [ユーザーを作成してセキュリティ ロールを割り当てる](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)。
 
-1.  [Power Apps](https://make.powerapps.com) にサインインします
+1.  [Power Apps](https://make.powerapps.com) へのサインイン
 
-2.  左側のナビゲーション ペインで **[アプリ]** を選択して、すべてのアプリの一覧を表示します。
+2.  左側のナビゲーション ウィンドウで **アプリ** を選択して、すべてのアプリのリストを表示します。
 
-3.  モバイル アプリ (キャンバス アプリ) を選択し、バナーで **[共有]** を選択します。
+3.  モバイル アプリ (キャンバス アプリ) を選択し、バナーの **共有** を選択します。
 
     > [!div class="mx-imgBorder"] 
     > ![キャンバス アプリを共有する](media/conf-share-canvas-apps.png "キャンバス アプリを共有する")
 
-4.  このアプリを共有する Azure AD グループまたはユーザーを指定します。 アプリは Common Data Service のデータに接続するので、エンティティに対するアクセス許可を付与する必要もあります。 共有パネルでは、エンティティに対するセキュリティの管理を求められます。 このアプリで使用されるエンティティに **[Emergency Response User] (緊急時対応ユーザー)** および **[Common Data Service ユーザー]** のセキュリティ ロールを割り当てて、 **[共有]** を選択します。
+4.  このアプリを共有する Azure AD グループまたはユーザーを指定します。 アプリが Common Data Service データに接続するので、エンティティへのアクセス許可も提供する必要もあります。 共有パネルでは、エンティティのセキュリティを管理するように求められます。 **緊急対応ユーザー** と **Common Data Service ユーザー** のセキュリティ ロールをこのアプリを使用してエンティティに割り当て、**共有** を選択します。
 
     > [!div class="mx-imgBorder"] 
-    > ![Azure AD のグループまたはユーザーとアプリを共有する](media/conf-share-app-groups-users.png "Azure AD のグループまたはユーザーとアプリを共有する")
+    > ![アプリを Azure AD グループまたはユーザーと共有する](media/conf-share-app-groups-users.png "アプリを Azure AD グループやユーザーと共有する")
 
-5.  各モバイル アプリについて、手順 3 と 4 を繰り返します。
+5.  各モバイル アプリごとにステップ 3 と 4 を繰り返します。
 
 アプリの共有に関する詳細情報: [キャンバス アプリを共有する](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app)
 
-### <a name="step-9-set-your-mobile-app-as-hero-and-featured-app"></a>手順 9:モバイル アプリをヒーロー アプリおよびおすすめアプリとして設定する
+### <a name="step-9-set-your-mobile-app-as-hero-and-featured-app"></a>ステップ 9: モバイル アプリをヒーローおよびおすすめアプリとして設定する
 
-この手順では、**Power Apps** モバイル アプリ内のヒーロー アプリおよびおすすめアプリとして、モバイル アプリを設定します。 この手順を完了するには、テナント管理者である必要があります。
+このステップでは、モバイル アプリを **Power Apps** モバイル アプリ内でヒーローおよびお薦めアプリとして設定できます。 このステップを完了するには、テナント管理者である必要があります。
 
-この手順を実行する前に、ヒーロー アプリおよびおすすめアプリとして設定する各モバイル アプリ (キャンバス アプリ) のアプリ ID を、確認しておく必要があります。 キャンバス アプリのアプリ ID を取得する方法については、次のセクションを参照してください: [手順 6: モバイル アプリの同意をバイパスする](#step-6-bypass-consent-for-mobile-apps)
+このステップを実行する前に、ヒーローおよびおすすめアプリとして設定する各モバイル アプリ (キャンバス アプリ) のアプリ ID が必要です。 キャンバス アプリのアプリ ID の取得については、[ステップ 6: モバイル アプリの同意をバイパスする](#step-6-bypass-consent-for-mobile-apps) を参照してください
 
-続けて次の作業を行います。
+次に以下を実行します。
 
-1.  メモ帳を開き、次の PowerShell スクリプトをコピーします。
+1.  メモ帳を開いて、この PowerShell スクリプトをコピーします:
 
 
     ```powershell
@@ -404,489 +380,487 @@ Power Apps を購入した後、Common Data Service データベースを使用�
     Set-AdminPowerAppAsHero -AppName APPGUIDHERE
     ```
 
-2.  スクリプト内の `APPGUIDHERE` の値を、それぞれおすすめおよびヒーローとして設定するアプリの実際のアプリ ID に置き換えます。
+2.  スクリプトの `APPGUIDHERE` 値を、それぞれお薦めやヒーローとして設定するアプリの実際のアプリ ID と置き換えます。
 
 3.  ファイルを .ps ファイルとして保存します。
 
-4.  管理者として PowerShell を実行し、作成した .ps ファイルを実行します。
+4.  管理者として PowerShell を実行し、今作成した .ps ファイルを実行します。
  
 
-### <a name="step-10-share-model-driven-app-with-admins-in-your-organization"></a>手順 10: 組織内の管理者とモデル駆動型アプリを共有する
+### <a name="step-10-share-model-driven-app-with-admins-in-your-organization"></a>ステップ10: モデル駆動型アプリを組織の管理者と共有する
 
-管理者ユーザーが管理アプリ (モデル駆動型アプリ) を使用できるようにするには、アプリを管理者ユーザーと共有する必要があります。 Azure AD グループを使用すると、管理者ユーザーのグループと簡単にアプリを共有できます。
+管理ユーザーが管理アプリ (モデル駆動型アプリ) を使用するには、それを管理者と共有する必要があります。 Azure AD グループを使用すると、管理ユーザーのグループとアプリをより簡単に共有できます。
 
 > [!IMPORTANT]
-> アプリを共有するユーザーまたはグループが*既に*環境にアクセスできることを確認します。 通常は、[環境の設定](#step-1-sign-up-for-power-apps-and-create-an-environment)時にユーザーまたはグループを追加します。 または、ここに記載されている手順に従ってユーザーを環境に追加し、アプリを共有する前に適切なアクセスを提供することもできます。[ユーザーを作成し、セキュリティ ロールを割り当てる](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)
+> アプリを共有する予定のユーザーまたはグループが *既に* 環境へのアクセスができていることを確認してください。 通常、[環境を設定する](#step-1-sign-up-for-power-apps-and-create-an-environment) 間には、ユーザーまたはグループはすでに追加されています。 または、こちらのステップに従ってユーザーを環境に追加し、アプリをユーザーと共有する前に適切なアクセスを提供できます: [ユーザーを作成してセキュリティ ロールを割り当てる](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles)。
 
 1. [Power Apps](https://make.powerapps.com) にサインインします。
 
-2. 左側のナビゲーション ペインで [アプリ] を選択して、すべてのアプリの一覧を表示します。
+2. 左側のナビゲーション ウィンドウで、アプリ を選択してすべてのアプリのリストを表示します。
 
-3. モデル駆動型アプリ (**Admin App – Emergency Response App**) を選択し、バナーで **[共有]** を選択します。
+3. モデル駆動型アプリ (**管理アプリ – 緊急対応アプリ**) を選択して、バナーで **共有** を選択します。
 
-4. このアプリを共有する Azure AD グループまたは管理者ユーザーを指定し、**Emergency Response Admin** セキュリティ ロールを割り当てて、 **[共有]** を選択します。
+4. このアプリを共有する Azure AD グループまたは管理ユーザーを指定して、**緊急対応管理者** セキュリティ ロールを割り当て、**共有** を選択します。
 
 
-## <a name="manually-configure-and-manage-master-data-for-your-organization"></a>組織のマスター データを手動で構成して管理する
+## <a name="manually-configure-and-manage-master-data-for-your-organization"></a>手動での構成と組織のマスター データの管理
 
-管理者は、[Power Apps](https://make.powerapps.com) のモデル駆動型アプリを使用して、組織のマスター データを作成および管理できます。 病院の緊急時対応アプリが動作するためには、このデータが必要です。
+管理者は [Power Apps](https://make.powerapps.com) のモデル駆動型アプリを使用して、組織のマスター データを作成および管理します。 このデータは病院緊急時対応アプリが機能するために必要です。
 
 > [!NOTE]
-> また、デプロイ パッケージで使用可能なデータ ファイルに組織のデータをインポートし、これらのエンティティにインポートすることもできます。 詳細情報: [手順 4:組織の構成データとマスター データを読み込む](#step-4-load-configuration-and-master-data-for-your-organization)
+> 組織のデータをデプロイ パッケージで利用可能なデータ ファイルにインポートしてから、これらのエンティティにインポートすることもできます。 詳細については、 [ステップ 4: 組織の構成とマスター データを読み込む](#step-4-load-configuration-and-master-data-for-your-organization) を参照してください
 
 次の順序でこれらのエンティティにマスター データを追加する必要があります。
 
-1. [Systems](#systems-data)
+1. [システム](#systems-data)
 
-1. [リージョン](#regions-data)
+1. [地域](#regions-data)
 
 1. [Facilities](#facilities-data)
 
 1. [場所](#locations-data)
 
-1. [Departments](#departments-data)
+1. [部署](#departments-data)
 
-マスター データは、管理アプリの左側のナビゲーションにある **Locations** 領域から管理します。
+マスター データは、管理アプリの左側のナビゲーションにある **場所** エリアから管理します。
 
 > [!div class="mx-imgBorder"]
-> ![Locations 領域](media/locations-area.png)
+> ![locations-area](media/locations-area.png)
 
-**[階層]** 領域の下のエンティティは、データを設定する必要がある順序で一覧表示されます。
+**階層** 領域下のエンティティは、データを入力する順序でリストされています。
 
-### <a name="systems-data"></a>Systems のデータ
+### <a name="systems-data"></a>システム データ
 
-**Systems** エンティティを使用すると、病院システムのエントリを作成して管理できます。 これにより、同じ組織内で複数の病院システムを管理できます。
+**システム** エンティティを使用すると、病院システムのエントリを作成および管理できます。 これにより、同じ組織内の複数の病院システムを管理できます。
 
 レコードを作成するには:
 
-1. 左側のペインで **Systems** を選択し、 **[+ 新規]** を選択します。  
+1. 左ウィンドウで **システム** を選択して **新規** を選択します。  
     > [!div class="mx-imgBorder"]
-    > ![Systems で [+ 新規] を選択する](media/select-systems-new.png)
+    > ![select-systems-new](media/select-systems-new.png)
 
-2. **[New System]\(新しい System\)** ページで、適切な値を指定します。  
+2. **新しいシステム** ページで、次の適切な値を指定します。  
    > [!div class="mx-imgBorder"]
-   > ![新しいシステムの詳細を入力する](media/enter-details-new-system.png)
+   > ![enter-details-new-system](media/enter-details-new-system.png)
 
    | **フィールド**            | **説明**                                    |
    |----------------------|----------------------------------------------------|
-   | System Name          | 病院の名前を入力します。                     |
-   | Description          | 説明 (省略可能) を入力します。                      |
-   | 有効期限の開始日 | この病院システムの開始日時を入力します。 |
-   | 有効期限の終了日   | この病院システムの終了日時を入力します。   |
+   | システム名          | 自分の病院の名前を入力します。                     |
+   | 説明          | オプションの説明を入力します。                      |
+   | 有効開始日データ | この病院システムの開始日時を入力します。 |
+   | 有効終了日   | この病院システムの終了日時を入力します。   |
 
-3. **[保存して閉じる]** を選択します。 新しく作成したレコードは、**Systems** の一覧に表示されます。
+3. **保存して閉じる**を選択します。 新しく作成されたレコードは **システム** リストで使用できるようになります。
 
-レコードを編集するには、レコードを選択し、必要に応じて値を更新して、 **[保存して閉じる]** を選択します。
+このレコードを編集するには、レコードを選択し、必要に応じて値を更新して、**保存して閉じる** を選択します。
 
-### <a name="regions-data"></a>Regions のデータ
+### <a name="regions-data"></a>地域データ
 
-**Regions** エンティティを使用すると、病院システムの地理的リージョンを管理できます。
+**地域** エンティティを使用することで、病院システムの地理的領域を管理できます。
 
 レコードを作成するには:
 
-1. 左側のペインで **Regions** を選択し、 **[+ 新規]** を選択します。
+1. 左ウィンドウで **地域** を選択して、 **新規** を選択します。
 
-2. **[New Region]\(新しい Region\)** ページで、適切な値を指定します。  
+2. **新しい地域** ページで、次の適切な値を指定します。  
 
     > [!div class="mx-imgBorder"]
-    > ![新しいリージョンの詳細を入力する](media/enter-details-new-region.png)
+    > ![enter-details-new-region](media/enter-details-new-region.png)
 
     | **フィールド**            | **説明**                                                                                          |
     |----------------------|----------------------------------------------------------------------------------------------------------|
-    | System               | 病院システムを選択します。 この一覧は、前に作成した **Systems** データを基にして設定されます。 |
-    | Region Name          | リージョン名を入力します。 たとえば、Seattle などです。                                                              |
-    | Description          | 説明 (省略可能) を入力します。                                                                            |
-    | 有効期限の開始日 | この地域の開始日時を入力します。                                                       |
-    | 有効期限の終了日   | この地域の終了日時を入力します。                                                         |
+    | System               | 病院システムを選択します。 このリストは、以前に作成した **システム** データに基づいて入力されます。 |
+    | 地域名          | 地域名を入力します。 例えば、シアトルです。                                                              |
+    | 説明          | オプションの説明を入力します。                                                                            |
+    | 有効開始日データ | この地域の開始日時を入力します。                                                       |
+    | 有効終了日   | この地域の終了日時を入力します。                                                         |
 
-3. **[保存して閉じる]** を選択します。 新しく作成したレコードは、**Regions** の一覧に表示されます。
+3. **保存して閉じる**を選択します。 新しく作成されたレコードは **地域** リストで使用できるようになります。
 
-レコードを編集するには、レコードを選択し、必要に応じて値を更新して、 **[保存して閉じる]** を選択します。
+このレコードを編集するには、レコードを選択し、必要に応じて値を更新して、**保存して閉じる** を選択します。
 
-### <a name="facilities-data"></a>Facilities のデータ
+### <a name="facilities-data"></a>設備データ
 
-**Facilities** エンティティを使用すると、各リージョン内の病院の場所を管理できます。 たとえば、**Seattle** リージョン内の **Redmond** や **Bellevue** などです。
+**設備** エンティティを使用すると、各地域内の病院の場所を管理できます。 例えば、**シアトル** 地域内の **レドモンド** と **ベルビュー** です。
 
 レコードを作成するには:
 
-1. 左側のペインで **Facilities** を選択し、 **[+ 新規]** を選択します。
+1. 左ウィンドウで **設備** を選択して、 **新規** を選択します。
 
-2. **[New Facility]\(新しい Facility\)** ページで、適切な値を指定します。 
+2. **新しい設備** ページで、次の適切な値を指定します。 
 
     > [!div class="mx-imgBorder"] 
-    > ![新しい施設の詳細を入力する](media/enter-details-new-facility.png)
+    > ![enter-details-new-facility](media/enter-details-new-facility.png)
 
     | **フィールド**            | **説明**                                                                                 |
     |----------------------|-------------------------------------------------------------------------------------------------|
-    | リージョン               | リージョンを選択します。 この一覧は、前に作成した **Regions** データを基にして設定されます。 |
-    | Facility Name        | 施設の名前を入力します。 たとえば、Bellevue などです。                                                  |
-    | Description          | 説明 (省略可能) を入力します。                                                                   |
-    | Total Vents          | 施設で使用可能な人工呼吸器の合計数を入力します                                  |
-    | 有効期限の開始日 | この施設の開始日時を入力します。                                                     |
-    | 有効期限の終了日   | この施設の終了日時を入力します。                                                       |
+    | 地域               | 地域を選択してください。 このリストは、以前に作成した **地域** データに基づいて入力されます。 |
+    | 設備名        | 設備名を入力します。 例えば、ベルビューです。                                                  |
+    | 説明          | オプションの説明を入力します。                                                                   |
+    | 人工呼吸器の総数          | 施設で利用可能な人工呼吸器の総数を入力してください                                  |
+    | 有効開始日データ | この設備の開始日時を入力します。                                                     |
+    | 有効終了日   | この設備の終了日時を入力します。                                                       |
 
-    必要に応じて、施設の住所を入力します。
+    必要に応じて、設備の住所を入力します。
 
-3. **[保存して閉じる]** を選択します。 新しく作成したレコードは、**Facilities** の一覧に表示されます。
+3. **保存して閉じる**を選択します。 新しく作成されたレコードは **設備** リストで使用できるようになります。
 
-レコードを編集するには、レコードを選択し、必要に応じて値を更新して、 **[保存して閉じる]** を選択します。
+このレコードを編集するには、レコードを選択し、必要に応じて値を更新して、**保存して閉じる** を選択します。
 
-### <a name="locations-data"></a>Locations のデータ
+### <a name="locations-data"></a>場所データ
 
-**Locations** エンティティを使用すると、各病院施設内の特定の場所を管理できます。
+**場所** エンティティを使用すると、各病院設備内の特定場所を管理できます。
 
 > [!NOTE]
-> **Locations** レコードを作成する前に、**00 - Acuities Import.xlsx** ファイルを使用して救急度データをインポートしたことを確認します。これについては、以下で説明されています: [手順 4: 組織の構成データとマスター データを読み込む](#step-4-load-configuration-and-master-data-for-your-organization)。 これは、**Location** レコードを作成するには、救急情報が必要であるためです。
+> **場所** レコードを作成する前に、[ステップ 4: 組織の構成とマスター データを読み込みます](#step-4-load-configuration-and-master-data-for-your-organization) で説明されているように **00 - 視覚インポート.xlsx** ファイルを使用して視覚データがインポートされていることを確認します。 これは、視覚情報が **場所** レコードを作成するために必要だからです。
 
 レコードを作成するには:
 
-1. 左側のペインで **Locations** を選択し、 **[+ 新規]** を選択します。
+1. 左ウィンドウで **場所** を選択して、 **新規** を選択します。
 
-2. **[New Location]\(新しい Location\)** ページで、適切な値を指定します。  
+2. **新しい場所** ページで、次の適切な値を指定します。  
  
     > [!div class="mx-imgBorder"]
-    > ![新しい場所の詳細を入力する](media/enter-details-new-location.png)
+    > ![enter-details-new-location](media/enter-details-new-location.png)
 
     | **フィールド**            | **説明**                                                                                      |
     |----------------------|------------------------------------------------------------------------------------------------------|
-    | Location Name        | 場所の名前を入力します。                                                                       |
-    | Facility             | 施設を選択します。 この一覧は、前に作成した **Facilities** データを基にして設定されます。 |
-    | Floor                | 施設のフロア情報を入力します。                                                         |
-    | Unit                 | 施設のユニット情報を入力します                                                           |
-    | Acuity (救急度)      | この場所に関連付けられている救急度レコードを選択します。                                                                                                     |
-    | COVID Location (COVID 用の場所)      | この場所が COVID 患者の治療用に使用されているかどうかを選択します ( **[はい]** または **[いいえ]** )。                                                                                                      |
-    | Total Beds           | 施設内のベッドの合計数を入力します。                                                       |
-    | Surge Beds (サージ ベッド)           | 施設内のサージ ベッドの台数を入力します。 サージ ベッドとは、患者を収容する必要があれば、認可されたベッド容量を超えて収容できるベッドのことです。                                                      |
-    | Blocked beds         | 施設内でブロックされているベッドの数を入力します。                                                     |
-    | Last Census          | 最後に作成された人数レコードに基づいて設定します。                                             |
-    | Occupancy Percentage | 最後の人数と総ベッド数に基づいて自動的に計算されます                                         |
-    | 有効期限の開始日 | この場所の開始日時を入力します。                                                   |
-    | 有効期限の終了日   | この場所の終了日時を入力します。                                                     |
-    | Location Order       | 場所のドロップダウン リストで場所を並べ替える数値を入力します。                               |
-    | Alternate Site Flag  | 内部使用です。                                                                                     |
+    | 場所の名前        | 場所の名前を入力します。                                                                       |
+    | 設備             | 設備を選択します。 このリストは、以前に作成した **設備** データに基づいて入力されます。 |
+    | 下限                | 設備の下限情報を入力します。                                                         |
+    | 出荷単位                 | 設備の単位情報を入力します                                                           |
+    | 視覚      | この場所に関連付けられている視覚レコードを選択します。                                                                                                     |
+    | COVID 場所      | この場所を COVID 患者の治療に使用するかどうかを選択します (**はい** または **番号**。)                                                                                                      |
+    | 総ベッド数           | 設備で利用可能なベッドの総数を入力します。                                                       |
+    | サージ ベッド           | その設備のサージ ベッド数を入力します。 サージ ベッドは、患者を受け入れる必要がある場合に、認可されたベッド数を超えてスタッフを配備できるベッドです。                                                      |
+    | ブロックされたベッド         | この設備のブロックされたベッド数を入力します。                                                     |
+    | 前回の国勢調査          | 作成されている前回の国勢調査レコードに基づいて入力されます。                                             |
+    | 占有率 | 最新の国勢調査と総ベッド数に基づいて自動的に計算                                         |
+    | 有効開始日データ | この設備の開始日時を入力します。                                                   |
+    | 有効終了日   | この場所の終了日時を入力します。                                                     |
+    | 場所オーダー       | 場所のドロップダウン リストで場所を並べ替える番号を入力します。                               |
+    | 代替サイト フラグ  | 内部使用のみ。                                                                                     |
 
-3. **[保存して閉じる]** を選択します。 新しく作成したレコードは、**Locations** の一覧に表示されます。
+3. **保存して閉じる**を選択します。 新しく作成されたレコードは **場所** リストで使用できるようになります。
 
-レコードを編集するには、レコードを選択し、必要に応じて値を更新して、 **[保存して閉じる]** を選択します。
+このレコードを編集するには、レコードを選択し、必要に応じて値を更新して、**保存して閉じる** を選択します。
 
-### <a name="departments-data"></a>Departments のデータ
+### <a name="departments-data"></a>部署データ
 
-**Departments** エンティティを使用すると、病院の部門情報を管理できます。
+**部署** エンティティを使用すると、病院の部門情報を管理できます。
 
 レコードを作成するには:
 
-1. 左側のペインで **Departments** を選択し、 **[+ 新規]** を選択します。
+1. 左ウィンドウで **部署** を選択して、 **新規** を選択します。
 
-2. **[New Department]\(新しい Department\)** ページで、適切な値を指定します。
+2. **新しい部署** ページで、次の適切な値を指定します。
 
     > [!div class="mx-imgBorder"]
-    > ![新しい部門の詳細を入力する](media/enter-details-new-department.png)
+    > ![enter-details-new-department](media/enter-details-new-department.png)
 
     | **フィールド**            | **説明**                                    |
     |----------------------|----------------------------------------------------|
-    | Department Name      | 部門の名前を入力します。                            |
-    | Description          | 説明 (省略可能) を入力します。                      |
-    | 有効期限の開始日 | この部署の開始日時を入力します。 |
-    | 有効期限の終了日   | この部署の終了日時を入力します。   |
+    | 部署名      | 部署名を入力します。                            |
+    | 説明          | オプションの説明を入力します。                      |
+    | 有効開始日データ | この部署の開始日時を入力します。 |
+    | 有効終了日   | この部署の終了日時を入力します。   |
 
-3. **[保存して閉じる]** を選択します。 新しく作成したレコードは、**Departments** の一覧に表示されます。
+3. **保存して閉じる**を選択します。 新しく作成されたレコードは **部署** リストで使用できるようになります。
 
-レコードを編集するには、レコードを選択し、必要に応じて値を更新して、 **[保存して閉じる]** を選択します。
+このレコードを編集するには、レコードを選択し、必要に応じて値を更新して、**保存して閉じる** を選択します。
 
-## <a name="get-insights-using-common-data-service-dashboards"></a>Common Data Service ダッシュボードを使用して分析情報を得る
+## <a name="get-insights-using-common-data-service-dashboards"></a>Common Data Service ダッシュボードを使用してインサイトを取得する
 
-病院の緊急時対応管理者アプリ (モデル駆動型) では、次のダッシュボードを既定で利用できます。
+以下のダッシュボードは、規定で病院緊急時対の管理 (モデル駆動型) アプリで使用できます。
 
-- **Bed Management** (ベッド管理)
+- **ベッド管理**
 
-   各施設の使用可能ベッド数、占有率、総ベッド数が表示されます。
+   ベッドの空き状況、占有率、さまざまな設備のベッド総数を表示します。
 
-- **Equipment and Supply** (機器と供給)
+- **機器とサプライ**
 
-  各施設で使用中の重要な機器と、利用可能な供給品が表示されます。
+  使用中のクリティカルな機器と、さまざまな施設で利用可能な消耗品を表示します。
 
-- **Staff Management** (スタッフ管理)
+- **スタッフ管理**
 
-  各施設で、要求された、割り当てられた、および利用可能なスタッフの数が表示されます。
+  さまざまな設備全体で、要求、割り当て、および利用可能なスタッフ メンバーの数を示します。
 
-- **COVID Patients** (COVID 患者)
+- **COVID 患者**
 
-  各施設で COVID-19 の検査中および陽性の患者の数が表示されます。
+  検査結果待ちの患者数を示し、さまざまな施設で COVID-19 陽性が発見されました。
 
-- **Discharges** (退院)
+- **退院**
 
-  退院が予定されている患者および実際に退院した患者の数が表示されます。
+  退院が予想される患者と実際に退院する患者の数を表示します。
 
-既定で利用可能なダッシュボードに加えて、独自のダッシュボードを作成することもできます。
+規定で使用可能なダッシュボードに加え、自分自身のダッシュボードを作成することもできます。
 
 ### <a name="manage-dashboards"></a>ダッシュボードの管理
 
 ダッシュボードを管理するには:
 
-1. [Power Apps](https://make.powerapps.com) にサインインし、管理アプリを参照します。
+1. [Power Apps](https://make.powerapps.com) にサインインして、自分の管理アプリを検索します。
 
-2. 左側のナビゲーション ペインの領域ピッカーで **[ダッシュボード]** を選択します。
-
-    > [!div class="mx-imgBorder"]
-    > ![ダッシュボードを選択する](media/select-dashboards.png)
-
-3. 左側のナビゲーションでダッシュボード名を選択すると、グラフが表示されます。
+2. 左側のナビゲーション ウィンドウで、エリアピッカーから **ダッシュボード** を選択します。
 
     > [!div class="mx-imgBorder"]
-    > ![グラフを表示する](media/view-charts.png)
+    > ![ダッシュボードの選択](media/select-dashboards.png)
+
+3. 左側のナビゲーションでダッシュボード名を選択して、グラフを表示します。
+
+    > [!div class="mx-imgBorder"]
+    > ![ビュー チャート](media/view-charts.png)
 
     > [!NOTE]
-    > 画面の下部でデータをフィルター処理でき、上のグラフはフィルター処理された値で自動的に更新されます。
+    > 画面の下部でデータをフィルタ―し、上部のグラフはフィルターされた値で自動的に更新されます。
 
-4. グラフを全画面表示モードで表示するには、 **[展開]** オプションを選択します。
-
-    > [!div class="mx-imgBorder"]
-    > ![展開を選択する](media/select-expand.png)
-
-### <a name="additional-analysis"></a>その他の分析
-
-- **ドリルダウン**: グラフ領域を選択し、エンティティの追加の属性 (フィールド) でさらにドリルダウンできます。
+4. **展開する** オプションを選択して、全画面モードでグラフを表示します。
 
     > [!div class="mx-imgBorder"]
-    > ![グラフ領域のドリルダウンを選択する](media/select-chart-area-drill-down.png)
+    > ![select-expand](media/select-expand.png)
 
-- **[更新]** :ダッシュボードを最新の情報に更新し、更新されたデータを反映することができます。 **[すべて最新の情報に更新]** で特定のダッシュボードのすべてのグラフを更新するか、または **[最新の情報に更新]** で選択したグラフだけを更新することができます。
+### <a name="additional-analysis"></a>追加分析
 
-    > [!div class="mx-imgBorder"]
-    > ![ダッシュボードを更新する](media/refresh-dashboards.png)
-
-- **レコードの表示**: **[その他のコマンド]** ( **[...]** ) を選択し、 **[View Records]\(レコードの表示\)** を選択すると、特定のグラフに関連付けられているすべてのレコードが表示されます。
+- **ドリルダウン**: エンティティの追加の属性 (フィールド) を使用して、チャートエリアをドリルダウンすることを選択できます。
 
     > [!div class="mx-imgBorder"]
-    > ![[その他のコマンド] を選択する](media/select-more-commands.png)
+    > ![select-chart-area-drill-down](media/select-chart-area-drill-down.png)
+
+- **リフレッシュ**: ダッシュボードを更新して、更新されたデータを最新の情報に更新できます。 特定のダッシュボード上で **すべて更新** を選択してすべてのグラフ、または **最新の情報に更新** を使って選択したチャートを最新の状態に更新できます。
+
+    > [!div class="mx-imgBorder"]
+    > ![refresh-dashboards](media/refresh-dashboards.png)
+
+- **レコードを表示する**: **その他のコマンド** (**…**) を選択して、その後 **レコードを表示** を選択して、特定のグラフに関連付けられているすべてのレコードを表示します。
+
+    > [!div class="mx-imgBorder"]
+    > ![select-more-commands](media/select-more-commands.png)
 
     > [!NOTE] 
-    > **[View records]\(レコードの表示\)** を選択すると、グラフとレコードに分割されたエンティティのビューが表示されます。 右側でレコードのフィルターを変更すると、画面左側のグラフに更新が自動的に反映されます。
+    > **レコードを表示する** を選択する場合、エンティティのビューがグラフとレコードに分割されて表示されます。 右側のレコードのフィルターを変更すると、画面左側のグラフが自動的に更新されます。
 
-既存のダッシュボードの編集と、グラフのプロパティの更新について詳しくは、「[既存のダッシュボードの編集](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-edit-dashboards#edit-an-existing-dashboard)」をご覧ください。
+既存のダッシュボードの編集とグラフのプロパティの更新の詳細については、[既存のダッシュボードを編集する](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-edit-dashboards#edit-an-existing-dashboard) をお読みください。
 
-### <a name="create-new-dashboards"></a>ダッシュボードの新規作成
+### <a name="create-new-dashboards"></a>新しいダッシュボードの作成
 
-独自のダッシュボードを作成したり、ニーズに合わせてカスタマイズしたりすることもできます。 新しいダッシュボードを作成するには、 **[新規]** を選択し、 **[Dynamics 365 Dashboard]\(Dynamics 365 ダッシュボード\)** を選択します。
+自身のダッシュボードの作成やニーズに合わせてカスタマイズすることもできます。 新しいダッシュボードを作成するには、**新規** を選択して、次に **Dynamics 365 ダッシュボード** を選択します。
 
 > [!div class="mx-imgBorder"]
-> ![新しい Dynamics ダッシュボードを選択する](media/select-new-dynamics-dashboard.png)
+> ![select-new-dynamics-dashboard](media/select-new-dynamics-dashboard.png)
 
-新しいダッシュボードの作成について詳しくは、「[新しいダッシュボードを作成します](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-edit-dashboards#create-a-new-dashboard)」をご覧ください。
+新しいダッシュボードの作成については、[新しいダッシュボードの作成](https://docs.microsoft.com/powerapps/maker/model-driven-apps/create-edit-dashboards#create-a-new-dashboard) をお読みください。
 
-## <a name="get-insights-using-power-bi-dashboards"></a>Power BI ダッシュボードを使用して分析情報を取得する
+## <a name="get-insights-using-power-bi-dashboards"></a>Power BI ダッシュボードを使用してインサイトを取得する
 
-ダッシュボードを使用して分析情報の取得や意思決定を行うことができるように、Power BI ダッシュボードを発行し、組織内のユーザーと共有します。
+Power BI ダッシュボードを公開し、組織内のユーザーと共有することで、インサイトと意思決定のためにダッシュボードを使用できます。
 
 ### <a name="prerequisites"></a>前提条件
 
-- レポートにアクセスするユーザーに、Power BI Premium 容量または Power BI Pro ライセンスが割り当てられていること。 
+- レポートにアクセスするユーザーに割り当てられる Power BI Premium 容量または Power BI Pro ライセンス。 
 
-- レポートを発行するワークスペースを Power BI で作成します。 Power BI にサインインしてワークスペースを作成します。 詳細情報: [Power BI で新しいワークスペースを作成する](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces)
+- レポートを公開する Power BI でワークスペースを作成します。 Power BI にサインインして、ワークスペースを作成します。 詳細: [Power BI で新しいワークスペースを作成する](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces)
 
-- Windows アプリ ストア <https://aka.ms/pbidesktop> から Power BI Desktop をインストールします
+- Windows の App Store: <https://aka.ms/pbidesktop> からの Power BI Desktop のインストール
 
    > [!NOTE] 
-   > 以前に Power BI Desktop を、ダウンロード センターのページから実行可能ファイルとして直接ダウンロードしてインストールした場合は、それを削除し、Microsoft Store のものを使用してください。 Microsoft Store のバージョンは、新しいリリースが利用可能になると自動的に更新されます。
-   >
-   > Microsoft Store からインストールできない場合は、[ダウンロード センターのページ](https://www.microsoft.com/download/details.aspx?id=58494)から、最新の非 Microsoft Store バージョンをインストールしてください。
+   > 過去に Power BI サイトから実行可能ファイルとして直接ダウンロードして Power BI をインストールした場合、App Store からのものを使用してください。 App Stpre のバージョンは、新しいリリースが利用可能になると自動的に更新されます。
 
-- アプリ ストアから Power BI Desktop をインストールした後、それを実行し、組織内で Power BI アプリを発行するためのアクセス許可を持つアカウントを使用してサインインします。
+- App Store から Power BI Desktop をインストールし、実行し、組織内で Power BI アプリを公開するための権限を持つアカウントを使用してログインします。
 
-### <a name="publish-the-power-bi-dashboard"></a>Power BI ダッシュボードを発行する
+### <a name="publish-the-power-bi-dashboard"></a>Power BI ダッシュボードの公開
 
-1. デプロイ パッケージを抽出した場所に移動します。 **Power BI Template** フォルダーに **Emergency Response App.pbit** ファイルがあります。
+1. デプロイ パッケージを抽出する場所に移動します。 **Power BI テンプレート** フォルダー下に **緊急時対応アプリ.pbit** ファイルがあります。
 
-2. Power BI Desktop で **Emergency Response App.pbit** ファイルを開きます。 次の値を入力するように求められます。
+2. Power BI Desktop で **緊急時対応アプリ.pbit** ファイルを開きます。 次の値を入力するように求められます。
 
-    - **Organization_name**:各レポート ページの左上隅に設定される、ご自分の組織名を入力します。
-    - **CDS_base_solution_URL**:ご自分の Common Data Service 環境インスタンスの URL を入力します。 例: 「 https:// *[myenv]* .crm.dynamics.com」
+    - **組織名**: 各レポート ページの左上隅に表示される組織名を入力します。
+    - **CDS_base_solution_URL**: Common Data Service 環境インスタンスの URL を入力します。 例: https://*[myenv]*.crm.dynamics.com
 
     > [!div class="mx-imgBorder"]
-    > ![組織名とベース URL を指定する](media/pbi-pub-rep1.png)
+    > ![組織名とベースURLを指定する](media/pbi-pub-rep1.png)
 
-    **[読み込み]** を選択します。
+    **読み込み** を選択します。
 
-3. Common Data Service 環境に接続するための資格情報を入力するように求められます。 **[組織アカウント]**  >  **[サインイン]** を選択して、Common Data Service の資格情報を指定ます。  
-
-    > [!div class="mx-imgBorder"]
-    > ![組織アカウントを選択する](media/select-organizational-account.png)
-
-4. サインインしたら、 **[接続]** を選択して、Common Data Service 内のデータに接続します。
-
-5. 接続が成功すると、Power BI レポートにデータが表示されます。 クエリに対して保留中の変更を適用するように求められます。 **[変更の適用]** を選択します。
-
-6. **[発行]** を選択し、Power BI ワークスペースにデータを発行します。 変更内容を保存するように求められます。 **[保存]** を選択します。
+3. Common Data Service 環境に接続するための資格情報を入力するように求められます。 **組織アカウント** > **サインイン** を選択して、自分の Common Data Service 資格情報を指定します。  
 
     > [!div class="mx-imgBorder"]
-    > ![更新の発行を選択する](media/select-refresh-publish.png)
+    > ![select-organizational-account](media/select-organizational-account.png)
 
-7. Common Data Service の環境情報と共に、ファイルを .pbix ファイルとして保存するように求められます。 名前を指定し、コンピューターに保存します。
+4. サインイン後、**接続** を選択して、Common Data Service のデータに接続します。
 
-8. .pbix ファイルを保存した後、レポートを発行するように求められます。 **[Power BI へ発行]** ページで、発行するワークスペースを選択してから、 **[選択]** をクリックします。
+5. 接続に成功すると、データが Power BI レポートに表示されます。 保留中の変更をクエリに適用するように求められ、**変更を適用** を選択します。
 
-12. ワークスペースでレポートを使用できるようになります。 次に、データセットに対するデータの更新設定を構成します。 ワークスペースでデータセットを選択し、 **[更新のスケジュール設定]** アイコンを選択します。  
+6. **公開** を選択してデータを自分の Power BI ワークスペースに公開します。 変更を保存するように求められますので **保存** を選択します。
+
+    > [!div class="mx-imgBorder"]
+    > ![select-refresh-publish](media/select-refresh-publish.png)
+
+7. ファイルを Common Data Service 環境情報とともに、 .pbix ファイルとして保存するように求められます。 名前を入力して、コンピューターに保存します。
+
+8. .pbix ファイルを保存すると、レポートを公開するように求められます。 **Power BI** へ公開ページで、公開するワークスペースを選択して **選択する** をクリックします。
+
+12. レポートがワークスペースで使用可能になります。 次に、データセットのデータ更新設定を構成します。 ワークスペースでデータセットを選択し **更新のスケジュール** アイコンを選択します。  
     
     > [!div class="mx-imgBorder"]
-    > ![更新のスケジュールを設定する](media/schedule-refresh.png)
+    > ![schedule-refresh](media/schedule-refresh.png)
 
-13. データ更新設定を初めて設定しようとすると、 **[設定]** ページと共に、資格情報が無効であることを示すメッセージが表示されます。 **[データ ソースの資格情報]** の下で、 **[資格情報の編集]** を選択して、使用する資格情報を指定します。  
+13. データ更新設定を初めて設定しようとすると、**設定** ページに認証情報が無効であることを示すメッセージが表示されます。 **データ ソース資格情報** から **資格情報を編集する** を選択して、自分の資格情報を指定します。  
 
     > [!div class="mx-imgBorder"]
-    > ![[資格情報の編集] を選択する](media/select-edit-credentials.png)
+    > ![select-edit-credentials](media/select-edit-credentials.png)
 
-14. 次の画面で以下の操作を行います。
-    - **[認証方法]** として **[OAuth2]** を選択します。
-    - **[このデータ ソースのプライバシー レベルの設定]** として **[組織]** を選択します。
-    - **[サインイン]** をクリックします。
+14. 次の画面で次の操作を行います。
+    - **認証方法** を **OAuth2** として選択します。
+    - **このデータ ソースのプライバシー レベルの設定** を **組織的** として設定します。
+    - **サインイン**を選択します。
 
-    資格情報を指定してサインインするように求められます。 サインインに成功すると、 **[設定]** ページに戻ります。
+    資格情報を指定してサインインするように求められます。 サインインに成功すると **設定** ページに戻ります。
 
-15. **[設定]** ページで、 **[スケジュールされている更新]** を展開し、スケジュールに基づいてデータを更新するために必要な詳細を指定します。 **[適用]** を選びます。
+15. **設定** ページで **スケジュールされた更新** を展開して、スケジュールに基づいてデータを更新するために必要な詳細を指定します。 **適用**を選択します。
 
     > [!div class="mx-imgBorder"]
     > ![スケジュールされた更新](media/refresh-schedule.png)
 
     > [!NOTE] 
-    > データを更新できる回数には制限があります。 Power BI では、共有された容量にあるデータセットに対して、1 日の更新を 8 回までに制限しています。 データセットが Premium 容量にある場合は、データセットの設定で、1 日に最大 48 回まで更新をスケジュールできます。 詳細情報: [データを更新する](https://docs.microsoft.com/power-bi/refresh-data#data-refresh)
+    > データを更新できる回数には制限があります。 Power BI は共有容量のデータセットを 1 日 8 回の更新に制限します。 データセットが Premium 容量にある場合、データセット設定で 1 日あたり最大 48 回の更新をスケジュールできます。 詳細: [データを差真の状態に更新](https://docs.microsoft.com/power-bi/refresh-data#data-refresh)
 
-16. 左側のペインでワークスペース名を選択し、右上隅で **[アプリの作成]** を選択します。  
+16. 左側のウィンドウでワークスペース名を選択し、次に右上隅にある **アプリを作成** を選択します。  
 
     > [!div class="mx-imgBorder"]
-    > ![[アプリの作成] を選択する](media/select-create-app.png)
+    > ![select-create-app](media/select-create-app.png)
 
-17. アプリ発行ページで次のようにします。
+17. アプリ公開ページで次のことをおこないます。
 
-    1. **[セットアップ]** タブで、アプリの名前と説明を指定します。
+    1. **セットアップ** タブで、アプリの名前と説明を指定します。
 
-    2. **[ナビゲーション]** タブで、発行するダッシュボードの場所を指定します。
+    2. **ナビゲーション** タブで、ダッシュボードを公開する場所を指定します。
 
-    3. **[アクセス許可]** タブで、このアプリを表示できるユーザーまたはグループを指定します。 **[このアプリを自動的にインストールします]** チェック ボックスをオンにして、このアプリがエンド ユーザーに自動的にインストールされるようにします。 詳細情報: [エンド ユーザーにアプリを自動的にインストールする](https://docs.microsoft.com/power-bi/service-create-distribute-apps#automatically-install-apps-for-end-users)  
+    3. **許可** タブで、このアプリを表示できるユーザーまたはグループを指定します。 エンドユーザー向けにこのアプリを自動的にインストールするために **このアプリを自動的にインストール** チェックボックスをオンにします。 詳細: [エンドユーザー向けのアプリを自動的にインストールする](https://docs.microsoft.com/power-bi/service-create-distribute-apps#automatically-install-apps-for-end-users)  
 
         > [!div class="mx-imgBorder"]
-        > ![アプリの自動インストールを選択する](media/select-install-apps-automatically.png)
+        > ![select-install-apps-automatically](media/select-install-apps-automatically.png)
 
-18. **[アプリの発行]** を選択します。 Power BI でのアプリの発行について詳しくは、「[アプリを発行する](https://docs.microsoft.com/power-bi/service-create-distribute-apps#publish-your-app)」をご覧ください。
+18. **アプリの公開** を選択します。 Power BI でのアプリの公開についての詳細は [アプリの公開](https://docs.microsoft.com/power-bi/service-create-distribute-apps#publish-your-app) を参照してください。
 
-### <a name="view-the-power-bi-dashboard"></a>Power BI ダッシュボードを表示する
+### <a name="view-the-power-bi-dashboard"></a>Power BI のダッシュボードの表示
 
-Power BI ダッシュボードにアクセスして表示するには、[Power BI](https://apps.powerbi.com) にサインインします。
-
-> [!div class="mx-imgBorder"]
-> ![Power BI ダッシュボードを表示する](media/view-power-dashboard.png)
-
-レポートの上部にあるフィルターを使用して、病院のシステム、地域、施設に対してデータをフィルター処理できます。 また、COVID 用の場所に対してフィルター処理することもできます。
+[Power BI](https://apps.powerbi.com) にサインインして Power BI ダッシュボードにアクセスして表示します。
 
 > [!div class="mx-imgBorder"]
-> ![レポートのフィルター](media/report-filters.png)
+> ![Power BI ダッシュボードの表示](media/view-power-dashboard.png)
 
-#### <a name="system-at-a-glance-page"></a>[System at a glance]\(システムの概要\) ページ 
+レポートの上部にあるフィルターを使用して、病院システム、地域、設備のデータをフィルターできます。 COVID の場所をフィルターすることもできます。
 
-**[System at a glance]\(システムの概要\) ページ**は、全体像を提供する既定の、またはトップレベルのページです。  
+> [!div class="mx-imgBorder"]
+> ![レポート フィルター](media/report-filters.png)
 
-このページには、次の要約ビューが表示されます。 
+#### <a name="system-at-a-glance-page"></a>システム一覧ページ 
 
-- **[COVID patients]\(COVID 患者\)** :COVID 患者の合計数、COVID-19 陽性だった患者の数、および検査中の患者の数が表示されます。 
+**システム一覧ページ** は、全体ビューを提供する来てのまたは最上位のページです。  
 
-- **[Bed Management]\(ベッド管理\)** :使用可能なベッドの台数、占有率、サージ ベッドの台数、ベッドの合計台数が表示されます。 下のグリッドを使用して、救急度の単位別の数を確認することもできます。 
+このページには、以下の要約ビューが表示されます。 
 
-- **[Nurse staffing management]\(看護師のスタッフ配置の管理\)** :ICU の患者数、割り当て済みの看護師数、看護師と患者の比率が表示されます。  
+- **COVID 患者**: COVID 患者の総数、COVID-19 で陽性と判明した患者の数、調査中の患者の数を示します。 
 
-- **[Discharges]\(退院\)** :長期入院患者数、退院が予定されている患者数、実際に退院した患者数が表示されます。 
+- **ベッド管理**: ベッドの可用性、占有率、サージベッドの数、およびベッドの総数を示します。 下のグリッドを使用して、鋭単位で数値を表示することもできます。 
 
-- **[Equipment]\(機器\)** :人工呼吸器の総数、使用中の人工呼吸器の数、使用可能な人工呼吸器の数が表示されます。 
+- **看護師人材管理**: ICU の患者数、割り当てられた看護師、患者と看護師の比率を示します。  
 
-- **[Supplies]\(消耗品\)** :消耗品の手持ち日数が表示されます。
+- **退院**: 長期滞在患者の総数、退院が予想される患者の数、および実際の退院を示します。 
+
+- **機器**: 人工呼吸器の総数、使用中の人工呼吸器の数、および使用可能な人工呼吸器が表示されます。 
+
+- **サプライ**: 手元にあるサプライの数を日別に表示します。
 
 > [!NOTE]
-> - 任意の要約領域の情報アイコン (i) を選択すると、該当する領域の詳細ページが表示されます。 
-> - レポートに対して、データのフィルター処理と並べ替え、PDF および PowerPoint へのレポートのエクスポート、Spotlight の追加など、その他のアクションを実行することもできます。 Power BI のレポート機能の詳細については、「[Power BI のレポート](https://docs.microsoft.com/power-bi/consumer/end-user-reports)」をご覧ください
-> - これらのレポートの一部では、最新の列または最後に更新された列に、データが最後に更新された日時が表示されます。 それらの列の日時の値の色を確認することでも、鮮度を簡単に識別することができます。
->    - 黒:20 時間以内にデータが更新されました
->    - 灰色:20 - 24 時間前にデータが更新されました
->    - 赤:24 時間より前にデータが更新されました 
+> - 要約された領域のいずれかで情報アイコン (i) を選択すると、その領域のそれぞれの詳細ページが表示されます。 
+> - データのフィルターや並べ替え、レポートの PDF や PowerPoint へのエクスポート、スポットライトの追加など、レポートに対して他のアクションを実行することもできます。 Power BI でのレポート機能の詳細については、[ Power BIのレポート](https://docs.microsoft.com/power-bi/consumer/end-user-reports) を参照してください
+> - これらのレポートの一部の最新更新または最後に更新された列には、データが最後に更新された日時が表示されます。 これらの列で日付と時刻の値の色を確認することで、鮮度を簡単に特定することもできます。
+>    - 黒: データは 20 時間以内に更新されます
+>    - 灰色: データは 20〜24 時間前に更新されます
+>    - 赤: データは 24 時間以上空けて更新されます 
  
-#### <a name="system-view-page"></a>[System View]\(システム ビュー\) ページ
+#### <a name="system-view-page"></a>システム ビュー ページ
 
-**[System View]\(システム ビュー\)** ページには、病院システムの次の情報を含むグラフが表示されます。
-- 使用中の人工呼吸器の数と使用可能な人工呼吸器の数
-- ベッドと救急治療ベッドの使用可能な台数、占有率
-- 要請されたスタッフの総数、患者数 (国勢調査)、看護師と患者の比率。
-- 消耗品の手持ち日数
-
-> [!div class="mx-imgBorder"]
-> ![[System View]\(システム ビュー\)](media/report-system-view.png)
-
-#### <a name="location-details-page"></a>[Location Details]\(場所の詳細\) ページ 
-
-場所別にレポートをドリルダウンするには、右上隅にある **[Location Details]\(場所の詳細\)** をクリックします。 **[Location Details]\(場所の詳細\)** ページには、ベッドの合計台数、使用可能なベッド台数、サージ ベッド台数、COVID 患者数などのデータが場所別に表示されます。 
+**システム ビュー** ページには、病院システムに関する以下の情報を含むグラフが表示されます。
+- 使用中の人工呼吸器と使用可能な人工呼吸器
+- ベッドと救急医療ベッドの可用性と占有率
+- リクエストされたスタッフの総数、患者数 (国勢調査)、看護師と患者の比率。
+- 手持ちサプライがある日数
 
 > [!div class="mx-imgBorder"]
-> ![[Location Details]\(場所の詳細\)](media/report-location-details.png) 
+> ![システム ビュー](media/report-system-view.png)
 
-#### <a name="covid-patient-details-page"></a>[COVID Patient Details]\(COVID 患者の詳細\) ページ 
+#### <a name="location-details-page"></a>場所の詳細ページ 
 
-**[COVID Patient Details]\(COVID 患者の詳細\)** ページには、場所ごとの患者数、検査中の患者 (PUI) 数の上下動を示す時間経過に伴う患者の傾向、陽性と判明した患者数など、COVID 患者に関する詳細な情報が表示されます。また、病院内のどこに患者が配置されているかについての概要を得られます。
-
-> [!div class="mx-imgBorder"]
-> ![[COVID Patient Details]\(COVID 患者の詳細\)](media/report-covid-details.png)
-
-#### <a name="bed-management-page"></a>[Bed Management]\(ベッド管理\) ページ 
-
-**[Bed Management]\(ベッド管理\)** ページには、使用可能なベッドの合計台数や占有率などの詳細な情報が場所別に表示されます。
+場所別にレポートをドリルダウンするには、右上隅の **場所の詳細** にあります。 **場所の詳細** ページには、ベッドの総数、使用可能なベッド、サージベッド、COVID 患者などの場所ごとのデータが表示されます。 
 
 > [!div class="mx-imgBorder"]
-> ![Bed Management](media/report-bed-details.png) (ベッド管理)
+> ![場所の詳細](media/report-location-details.png) 
 
-#### <a name="staff-details-page"></a>[Staff Details]\(スタッフの詳細\) ページ  
+#### <a name="covid-patient-details-page"></a>COVID 患者詳細ページ 
 
-**[Staff Details]\(スタッフの詳細\)** ページには、場所別のスタッフ、割り当て済みの看護師数、合計患者数、COVID 患者数に関する詳細が表示されます。 また、一定期間にわたる看護師と患者の比率と、ICU の看護師と患者の比率も表示されます。
-
-> [!div class="mx-imgBorder"]
-> ![[Staff Details]\(スタッフの詳細\)](media/report-staff-details.png)
-
-#### <a name="equipment-details-page"></a>[Equipment Details]\(機器の詳細\) ページ 
-
-**[Equipment Details]\(機器の詳細\)** ページには、場所別の機器、使用中の人工呼吸器の数とその上に重ねられた COVID 患者数や、使用中のベルト、充電器、フードなどのその他の機器に関する詳細が表示されます。
+**COVID 患者の詳細** ページには、各場所の患者、調査中の患者 (PUI) の数のピークと谷を示す経時的な患者の傾向、陽性と判明した患者の数など、COVID 患者に関するドリルダウン情報が表示され、患者が病院内のどこにいるのかを把握できます。
 
 > [!div class="mx-imgBorder"]
-> ![[Equipment Details]\(機器の詳細\)](media/report-equipment-details.png)
+> ![COVID 患者詳細](media/report-covid-details.png)
 
-#### <a name="discharge-details-page"></a>[Discharge Details]\(退院の詳細\) ページ 
+#### <a name="bed-management-page"></a>ベッド管理ページ 
 
-**[Discharge Details]\(退院の詳細\)** ページには、長期入院患者数、一定期間にわたる退院の障壁、実際の退院数と予想された退院数の差異に関する詳細が表示されます。
-
-> [!div class="mx-imgBorder"]
-> ![[Equipment Details]\(機器の詳細\)](media/report-discharge-details.png)
-
-#### <a name="supplies-on-hand-details-page"></a>[Supplies on Hand Details]\(手持ちの消耗品の詳細\) ページ 
-
-**[Supplies on Hand Details]\(手持ちの消耗品の詳細\)** ページには、場所別の消耗品と消耗品に関する詳細が表示されます。また、一定期間にわたる手持ちの利用可能な消耗品に関するデータも表示されます。
+**ベッド管理** ページでは、利用可能なベッドの総数や占有率など、場所ごとのドリルダウン情報を提供します。
 
 > [!div class="mx-imgBorder"]
-> ![[Equipment Details]\(機器の詳細\)](media/report-discharge-details.png)
+> ![ベッド管理](media/report-bed-details.png)
 
-## <a name="view-and-manage-app-feedback"></a>アプリのフィードバックを表示して管理する
+#### <a name="staff-details-page"></a>スタッフ詳細ページ  
 
-モバイル デバイスでキャンバス アプリを使用している現場のスタッフによって提供されるすべてのフィードバックは、**App Feedback** エンティティに格納されます。管理者は、管理アプリの左側のナビゲーション ペインにある **[Administration]\(管理\)** 領域を使用して、これを表示および管理できます。
+**スタッフ詳細** ページには、スタッフの場所、割り当てられた看護師の数、患者の総数、COVID 患者の数などの詳細が表示されます。 また、一定期間の看護師と患者の比率および ICU 看護師と患者の比率も表示します。
 
-アプリのフィードバックを表示して管理するには:
+> [!div class="mx-imgBorder"]
+> ![スタッフ詳細](media/report-staff-details.png)
 
-1. [Power Apps](https://make.powerapps.com) にサインインし、管理アプリを参照します。
+#### <a name="equipment-details-page"></a>機器の詳細ページ 
 
-2. 左側のナビゲーション ペインの領域ピッカーで、 **[Administration]\(管理\)** を選択します。
+**機器の詳細** ページには、場所ごとの機器、使用中の人工呼吸器の総数、COVID 患者の数、および使用中の人工呼吸器、充電器、使用中のフードなどのその他の機器の詳細が表示されます。
 
-3. ユーザーによって送信されたアプリのフィードバックの一覧を表示するには、**App Feedback** を選択します。 レコードをクリックして詳細を表示し、レビュー済みとしてマークすることができます。  
+> [!div class="mx-imgBorder"]
+> ![機器の詳細ページ](media/report-equipment-details.png)
+
+#### <a name="discharge-details-page"></a>退院詳細ページ 
+
+**退院詳細** ページでは、長期の患者、一定期間における退院の障壁、および実際の退院と予想される退院に関する差異について詳しく説明しています。
+
+> [!div class="mx-imgBorder"]
+> ![機器の詳細ページ](media/report-discharge-details.png)
+
+#### <a name="supplies-on-hand-details-page"></a>手持サプライの詳細ページ 
+
+**手持サプライの詳細** ページには、場所とサプライごとの供給に関する詳細が表示されます。また、一定期間の手持サプライに関するデータも提供します。
+
+> [!div class="mx-imgBorder"]
+> ![機器の詳細](media/report-discharge-details.png)
+
+## <a name="view-and-manage-app-feedback"></a>アプリ フィードバックの表示および管理
+
+最前線のスタッフがモバイル デバイス上でキャンバス アプリを使用して提供するすべてのフィードバックは、**アプリのフィードバック** エンティティに保管され、管理者は管理アプリのナビゲーション ウィンドウの **管理** 領域を使用して表示および管理できます。
+
+アプリ フィードバックを表示および管理するには:
+
+1. [Power Apps](https://make.powerapps.com) にサインインして、自分の管理アプリを検索します。
+
+2. ナビゲーション ウィンドウで、エリアピッカーから **管理** を選択します。
+
+3. **アプリ フィードバック** を選択して、ユーザーが送信したアプリのフィードバックのリストを表示します。 レコードをクリックして詳細を表示し、レビュー済みかどうかをマークできます。  
 
     > [!div class="mx-imgBorder"]
-    > ![アプリのフィードバックを選択する](media/select-app-feedback.png)
+    > ![select-app-feedback](media/select-app-feedback.png)
 
 ## <a name="issues-and-feedback"></a>問題とフィードバック
 
-- 病院の緊急時対応サンプル アプリに関する問題を報告するには、<https://aka.ms/emergency-response-issues> にアクセスしてください。
+- 病院緊急時対応サンプル アプリに関する問題を報告するには、<https://aka.ms/emergency-response-issues> にアクセスしてください。
 
-- 病院の緊急時対応サンプル アプリに関するフィードバックについては、<https://aka.ms/emergency-response-feedback> にアクセスしてください。
+- 病院緊急時対応サンプル アプリに関するフィードバックについては、<https://aka.ms/emergency-response-feedback> にアクセスしてください。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
-[病院の緊急時対応アプリを使用する](use.md)
+[病院緊急時対応アプリを使用する](use.md)

@@ -2,7 +2,7 @@
 title: Common Data Service を使用した仮想エンティティの作成および編集 | MicrosoftDocs
 description: 仮想エンティティの作成方法の説明
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 03/03/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 07a6d262aeaba818d5a965409ce28a90934536c3
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: c8fdc0a1f6cd29117b78c19526f0e03dfe28718e
+ms.sourcegitcommit: 3e6c499a65ada8a9f28022a02f64030b0c069a17
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861300"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "3226474"
 ---
 # <a name="create-and-edit-virtual-entities-that-contain-data-from-an-external-data-source"></a>外部データ ソースからのデータを格納する仮想エンティティの作成および編集
 
@@ -150,6 +150,7 @@ Common Data Service には、外部データにアクセスする OData v4 Web �
 - 高度な検索で仮想エンティティを使用するとき、単一のデータ ソースを対象にすることをお勧めします。 たとえば、 Common Data Service ネイティブデータと仮想エンティティ外部データの結合を作成するような高度な検索の作成には対応していません。  
 - 更新で検証されるフィールド メタデータ プロパティは仮想エンティティには適用されません。 たとえば、仮想エンティティ フィールドの整数フィールドには、最小値のゼロに設定できます。 ただし、値は外部データ ソースから取得されるため、仮想エンティティから取得した場合、クエリはゼロ未満の値を返します。  クエリでは最小値のプロパティは示唆されていません。  0を超える値が望ましい場合は、値をそのようにフィルター処理する必要があります。
 - 仮想エンティティでは変更の追跡には対応していないため、データ エクスポート サービスなどのアプリ用 Common Data Service 機能を使用して同期することができません。
+- 付属の OData v4 データ プロバイダーを使用する仮想エンティティは、送信ポート 443 で有効になります。
   
 ### <a name="see-also"></a>関連項目  
 

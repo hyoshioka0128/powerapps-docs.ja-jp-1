@@ -3,7 +3,7 @@ title: エンティティ関連付けメタデータ メッセージ (Common Dat
 description: この記事では、Web API と組織サービスを使用してエンティティの関連付けの作成、取得、更新、および削除に使用することができるメッセージについて説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8e574711366f7f47cdce758867293a17cb01bf3e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 88ced3454045917012c3736dcc6faad5dfcdf091
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748869"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156211"
 ---
 # <a name="entity-relationship-metadata-messages"></a>エンティティの関連付けのメタデータ メッセージ
 

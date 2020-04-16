@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b0bcb58ceab5c0fd711bbe7316b93ce2b8c036e8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 66f0516651d73fbf881a1bfa36529cc9998cfbd6
+ms.sourcegitcommit: 10861337ce87866b58cc98dda6eab8d985c9220c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748948"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "3218317"
 ---
 # <a name="set-field-values-using-parameters-passed-to-a-form"></a>フォームに渡すパラメーターを使用してフィールド値を設定する
 
@@ -35,7 +35,7 @@ ms.locfileid: "2748948"
   
  URL アドレスを使用して新しいフォームを開くとき、フィールドの値を設定する引数を `extraqs` パラメーターに含めることができます。 次の要件を満たす必要があります。  
   
-- `extraqs` パラメーターで受け渡すパラメーターをエンコードすること。 パラメーターのエンコードには [encodeURIComponent](https://msdn.microsoft.com/library/aeh9cef7\(VS.85\).aspx) を使用します。  
+- `extraqs` パラメーターで受け渡すパラメーターをエンコードすること。 パラメーターのエンコードには [encodeURIComponent](https://msdn.microsoft.com/library/aeh9cef7\(VS.85\).aspx) を使用します。  パラメータ値で "=" や "＆" などの特殊文字を使用するには、二重エンコードする必要があります (たとえば、`name` を `A=B&C` に設定するには、`extraqs=name%3DA%253DB%2526C` になります)。
   
 - クエリ文字列の引数の名前を該当するエンティティの属性の名前と一致させること。あるいは、それらの名前に属性の名前が含まれるようにすること。  
   

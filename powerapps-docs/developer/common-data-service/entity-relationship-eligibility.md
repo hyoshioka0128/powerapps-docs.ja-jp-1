@@ -3,7 +3,7 @@ title: エンティティの関連付けの有効性 (Common Data Service) | Mic
 description: この記事では、エンティティがエンティティ関係に参加できるかどうかを判断するのに使用できるメッセージを示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3d5899cebc5e52ed48e99f2ae36fcaabbd5dddc3
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 62a432a4fc493f5575a397be979398a0ba3b56c5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748867"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156215"
 ---
 # <a name="entity-relationship-eligibility"></a>エンティティの関連付けの有効性
 

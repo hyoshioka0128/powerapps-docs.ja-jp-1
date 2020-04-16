@@ -9,7 +9,7 @@ applies_to:
 - powerapps
 ms.author: Mattp123
 manager: kvivek
-ms.date: 06/07/2018
+ms.date: 03/17/2020
 ms.service: powerapps
 ms.topic: article
 ms.assetid: e0790865-c5a4-4e86-bce2-584af2b8ed93
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d0653ad2089be03ff06bfd5495c8995d92ec704e
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: 613352e9ec86101b776fce5b0bf18d64b175f363
+ms.sourcegitcommit: 9f2694bd14d70798310b89a4673672c1bfad989d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2874611"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "3166535"
 ---
 # <a name="tab-properties-for-model-driven-app-forms-overview"></a>モデル駆動型アプリのフォーム用タブのプロパティの概要
 
@@ -32,19 +32,29 @@ ms.locfileid: "2874611"
  タブには 3 個まで列を含めることができ、各列の幅は全体の幅の割合で設定できます。 新しいタブを作成すると、各列はセクションで事前入力されています。  
 
 Power Apps サイトから **タブ プロパティ** にアクセスできます。 
-1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc)サイトで、**モデル駆動型** (ナビゲーション ウィンドウの左下) を選択します。  
-
-     ![モデル駆動型の設計モード](media/model-driven-switch.png)
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。
 
 2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選択して**フォーム** タブを選択します。  
 
-3.  フォームの一覧で、種類が**メイン**のフォームを開きます。 次に、フォーム キャンバス上でいずれかのタブ内をダブルクリックして、タブのプロパティを表示します。
+3.  フォームの一覧で、種類が**メイン**のフォームを開きます。 次に、フォームでいずれかのタブを選択して、タブのプロパティを表示します。
 
-    ![タブのプロパティ](media/tab-properties.png)
+|プロパティ|説明|  
+|--------------|-----------------|  
+|**タブ ラベル**|**必須**: ユーザーに表示されるタブのローカライズ可能なラベル。|  
+|**名前**|**必須**: スクリプト内でタブが参照されたとき使用される一意の名前。 名前には、英数字とアンダースコアのみを使用できます。|  
+|**既定でこのタブを展開する**|フォーム スクリプトを使用するか、ラベルを選択して、タブの状態を展開または折りたたみに切り替えることができます。 タブの既定の状態を選択します。|  
+|**非表示タブ**|タブの表示は任意で、スクリプトを使用して管理します。 タブが表示されるようにするかどうかを選択します。 詳細情報: [表示オプション](visibility-options-legacy.md)|  
+|**電話の非表示**|タブを電話で使用できるようにするかどうかを選択します。 電話画面のこのフォームの要約版では、タブを非表示にできます。|  
+|**形式**|タブには最大 3 つの列があります。 これらのオプションを使用して、タブの数とそのタブが占める幅全体の割合を定義します。|  
+
+  > [!div class="mx-imgBorder"] 
+  > ![タブ プロパティ](media/newform-tab-properties.png "タブのプロパティ")
+
+## <a name="tab-properties-for-model-driven-app-main-forms-classic"></a>モデル駆動型アプリのメイン フォーム用タブのプロパティ: クラシック
+
+これらは、クラシック フォーム デザイナーを使用してフォーム上のタブを使用するときに構成できるプロパティです。 次の表に、フォーム上のタブに設定できるプロパティを示します:
   
- 次の表はフォーム上のタブに設定できるプロパティを示します。
-  
-|タブ​​|プロパティ|説明|  
+|タブ|プロパティ|説明|  
 |---------|--------------|-----------------|  
 |**表示**|**名前**|**必須**: スクリプト内でタブが参照されたとき使用される一意の名前。 名前には、英数字とアンダースコアのみを使用できます。|  
 ||**ラベル**|**必須**: ユーザーに表示されるタブのローカライズ可能なラベル。|  
@@ -55,7 +65,10 @@ Power Apps サイトから **タブ プロパティ** にアクセスできま�
 |**形式**|**レイアウト**|タブには最大 3 つの列があります。 これらのオプションを使用して、タブの数とそのタブが占める幅全体の割合を定義します。|  
 |**イベント**|**フォーム ライブラリ**|タブの `TabStateChange` イベント ハンドラーで使用される JavaScript Web リソースを指定します。<br /><br />|  
 ||**イベント ハンドラー**|タブの `TabStateChange` イベントに要求されるライブラリの関数を構成します。 詳細情報: [イベント ハンドラーを構成する](configure-event-handlers-legacy.md)|  
-  
+
+  > [!div class="mx-imgBorder"] 
+  > ![タブ プロパティ: クラシック](media/tab-properties.png "クラシックのタブ プロパティ")
+
 ## <a name="next-steps"></a>次のステップ
 
 [メイン フォームとそのコンポーネントの使用](use-main-form-and-components.md)

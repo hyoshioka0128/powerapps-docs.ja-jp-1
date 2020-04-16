@@ -3,7 +3,7 @@ title: プラグインを登録する (Common Data Service)| Microsoft Docs
 description: プラグインを登録して  Common Data Service にカスタム ビジネス ロジックを適用する方法について説明します。
 ms.custom: ''
 ms.date: 02/19/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bba0a473d76fc69832e05ec316a6ed6da6ad899d
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: a4b9bdbc10af7afcc3fd5165c98d25c60727a5dd
+ms.sourcegitcommit: 3f89b04359df19f8fa5167e2607509bb97e60fe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109605"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "3165200"
 ---
 # <a name="register-a-plug-in"></a>プラグインの登録
 
@@ -46,6 +46,7 @@ ms.locfileid: "3109605"
 - [チュートリアル: プラグインを書き込み登録する](tutorial-write-plug-in.md)
 - [チュートリアル: プラグインをデバッグする](tutorial-debug-plug-in.md)
 - [チュートリアル: プラグインを更新する](tutorial-update-plug-in.md)
+
 
 ## <a name="plugin-registration-tool-prt"></a>Plugin Registration Tool (PRT)
 
@@ -169,10 +170,6 @@ version
 |**実行順序**|同じメッセージの同じステージに対して複数のステップを登録することができます。 このフィールドの数値により、最も小さい数字から最も大きい数字が適用される順序が決定されます。 <br/> **注**: ステージでプラグインが適用される順序を制御するには、このオプションを設定します。 既定値をそのまま受け入れることは推奨されません。 同じステージ、エンティティ、メッセージのすべてのプラグインで値が同じ場合は、[SdkMessageProcessingStep.SdkMessageFilterId](/dynamics365/customer-engagement/developer/entities/sdkmessageprocessingstep#BKMK_SdkMessageFilterId) 値でプラグインの実行順序が決まります。|
 |**説明**|ステップの説明です この値は、事前設定されますが、上書きできます。|
 
-> [!NOTE]
-> `Update` イベント用に登録されたプラグインを 2 回呼び出すことができるケースがあります。 詳細: [特化された更新操作の動作](special-update-operation-behavior.md)
-
-
 ### <a name="event-pipeline-stage-of-execution"></a>実行のイベント パイプライン ステージ
 
 プラグインの目的に最適なイベント パイプラインのステージを選択します。
@@ -194,7 +191,13 @@ version
 |**非同期**|操作の完了後に実行するシステム ジョブに、適用するビジネス ロジックの実行コンテキストと定義が移動されます。|
 |**同期**|プラグインは、実行の段階および実行順序に応じてすぐに実行されます。 すべての操作全体が、これらが完了するまで待機します。|
 
-非同期プラグインは **PostOperation** ステージでのみ登録することができます。 システム ジョブのしくみの詳細については、[非同期サービス](asynchronous-service.md)を参照してください。
+非同期プラグインは **PostOperation** ステージでのみ登録することができます。 システム ジョブのしくみの詳細については、[非同期サービス](asynchronous-service.md)を参照してください。       
+
+### <a name="special-step-registration-scenarios"></a>特別なステップの登録シナリオ
+メッセージとエンティティの組み合わせのステップの登録が明確でない特定のシナリオがあります。 これは、エンティティまたは操作間に特別な関係がある場合に、システムが内部でどのように設計されているかの結果です。 以下の情報は、これらのケースを識別し、ステップの登録ガイダンスを提供します。
+
+- _更新_ イベントに登録されたプラグインは 2 回呼び出される場合があります。 詳細: [特化された更新操作の動作](https://github.com/MicrosoftDocs/powerapps-docs-pr/blob/8c969ed391d6fc8e423bde15c65db1f60f5fab2f/powerapps-docs/developer/common-data-service/special-update-operation-behavior.md)
+- **customeraddress**、**leadaddress**、**publisheraddress**、または **competitoraddress** エンティティ インスタンスへのデータ変更を処理する場合は、**取引先企業** と **取引先担当者** にプラグイン ステップを登録します。
 
 ### <a name="deployment"></a>展開
 

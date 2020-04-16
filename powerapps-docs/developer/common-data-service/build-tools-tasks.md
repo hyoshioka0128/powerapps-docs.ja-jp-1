@@ -3,7 +3,7 @@ title: 構築ツールのタスク| Microsoft Docs
 description: 'Power Apps Build Tools は、一連の Power Apps 固有の Azure DevOps 構築タスクです。これを使用することで Power Apps のアプリケーション ライフサイクルの管理にあたって、ツールやスクリプトを手動でダウンロードする必要がなくなります。 このトピックでは、利用可能なタスクについて説明します。 '
 ms.custom: ''
 ms.date: 07/21/2019
-ms.reviewer: Dean-Haas
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mikkelsen2000
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7271fb611f6ddff6d36dd1984b760ce3bbf19b45
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 20c4dfe96f7293f9a00a97867beda7ac8a0f4b41
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2861836"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156415"
 ---
 # <a name="build-tools-tasks"></a>ツール構成タスク
 
@@ -52,9 +52,9 @@ Power Apps タスク チェッカーを構成する前に、Power Apps チェッ
 > この手順を完了するには、Power Apps (P1/P2) または D365 CE にライセンスされた AAD テナントにサービスプリンシパルを作成するための権限が必要となります。 
 
 1. 管理者権限で PowerShell コマンドを開きます。
-![Powershell コマンド ウィンドウ](media/pscommand.png "PPowershell コマンド ウィンドウ)
+![Powershell コマンド ウィンドウ](media/pscommand.png "Powershell コマンド ウィンドウ")
 2. PowerShellで次のコマンドを実行します: *Install-Module -Name AzureAD*
-![インストール モジュール コマンド](media/pscommand-install.png "Iインストール モジュール コマンド画面)
+![インストール モジュール コマンド](media/pscommand-install.png "Install-Module コマンド スクリーン")
  
 3.  このコマンドでは、PSGalleryのモジュールを信頼するように求められます。 **A (すべて はい)** を選択します。
 1. 以下の内容をコピーし、 PowerShell プロンプトに貼り付けます:
@@ -119,17 +119,17 @@ $newApp = New-PowerAppsCheckerAzureADApplication -ApplicationDisplayName "Power 
  ```
 
 5.  プロンプトが表示されたら、 **A (常に実行)** を選択します。
-![PowerShell コマンド画面](media/pscommand-always-run.png "PPowerShell コマンドのスクリーンショット)
+![PowerShell コマンド画面](media/pscommand-always-run.png "PowerShell コマンドのスクリーンショット")
 6. ログイン ダイアログが表示されます。 サインインしてください。 場合によっては2回サインインする必要があるかもしれない点に留意してください。
 7. スクリプトが完了すると、アプリケーションID と テナントがコマンド ウィンドウに表示されます。
 8. 次に、 [Azure AD](https://portal.azure.com) にログインしてクライアント シークレットを取得します。
 9. Microsoft Azure で **Azure Active Directory –> アプリ 登録 -> Power Apps チェッカー クライアント** と順に選択します。
-![Azure でチェッカー クライアントを選択する](media/azure-select-checker.png "AAzure のスクリーンショット)
+![Azure でチェッカー クライアントを選択する](media/azure-select-checker.png "Azure スクリーンショット")
 10. 左のナビゲーション ウィンドウの **管理**配下にある **証明書とシークレット** を選択します。
 11. **証明書とシークレット** 画面の **証明書とシークレット**配下の **新規クライアント シークレット**を選択します。 
 12. クライアント シークレットの説明を入力し、有効期限の設定を選択して、 **追加**をクリックします。
 13. 次の画面に表示されるクライアント シークレットの値をコピーします。 
-![クライアント シークレットをコピーする](media/client-secret-copy.png "Clクライアント シークレットのスクリーンショット")
+![クライアント シークレットをコピーする](media/client-secret-copy.png "クライアント シークレットのスクリーンショット")
     > [!NOTE]
     > クライアント シークレットが表示されるのはこの時だけです。
 14. Power Apps チェッカー サービス接続を開いて、**サービス プリンシパル キー** フィールドにクライアント シークレットを貼り付けて **OK** をクリックします。

@@ -3,7 +3,7 @@ title: 重複データ検出の有効化と無効化 (Common Data Service) | Mic
 description: このトピックでは、組織のすべてのエンティティ、特定のエンティティおよび特定のオペレーションに対する重複データ検出を有効にする方法、および重複データ検出ルールを非公開にすることによりまたは公開済みルールを削除することにより、グローバルまたはエンティティの種類に対して重複データ検出を無効にする方法に関する情報をカバーしています。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 381cb4eb4a9f5372e218d71a7372f0161605f950
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b1690e7d9d000770823e6d0164a1bf0812054bc3
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748794"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156223"
 ---
 # <a name="enable-and-disable-duplicate-detection"></a>重複データ検出の有効化と無効化
 

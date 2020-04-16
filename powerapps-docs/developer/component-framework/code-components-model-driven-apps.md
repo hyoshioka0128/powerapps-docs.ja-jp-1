@@ -11,16 +11,16 @@ ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5d100dc3-bd82-4b45-964c-d90eaebc0735
-ms.openlocfilehash: 4380d99439b9103ea40800ea8a5a20e1e13768d8
-ms.sourcegitcommit: 27cb5ad024d43f208ef6acfbea456a05df3edf8e
+ms.openlocfilehash: 7011c11ef8beb9549e864f650fad891f9c3d61bc
+ms.sourcegitcommit: 13d4042c7bd73580cc8c595e137de7e7fec22875
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "3082824"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "3170219"
 ---
 # <a name="code-components-for-model-driven-apps"></a>モデル駆動型アプリのコード コンポーネント
 
-Power Apps component framework により、開発者はモデル駆動型アプリの視覚化を拡張することができます。 プロの開発者は、[Power Apps CLI](get-powerapps-cli.md) を使用して、コード コンポーネントを作成、デバッグ、インポートし、モデル駆動型アプリケーションに追加できます。 モデル駆動型アプリのフィールド、グリッド、サブグリッドにコード コンポーネントを追加できます。 
+Power Apps component framework により、開発者はモデル駆動型アプリの視覚化を拡張することができます。 プロの開発者は [Power Apps CLI ](get-powerapps-cli.md) を使用して、コード コンポーネントを作成、デバッグ、インポートしモデル駆動型アプリに追加できます。 モデル駆動型アプリのフィールド、グリッド、サブグリッドにコード コンポーネントを追加できます。 
 
 > [!IMPORTANT]
 > Power Apps component framework は、モデル駆動型アプリに対して既定で有効となっています。 キャンバス アプリで Power Apps  component framework を有効化する方法については、[キャンバス アプリのコード コンポーネント](component-framework-for-canvas-apps.md)を参照してください。
@@ -29,7 +29,7 @@ Power Apps component framework により、開発者はモデル駆動型アプ�
 
 コード コンポーネントの作成を開始する前に、Power Apps  component framework を使用したコンポーネントの開発に必要な前提条件がすべてインストールされていることを確認してください。 
 
-[はじめてのコード コンポーネント作成](implementing-controls-using-typescript.md) のトピックでは、コード コンポーネントを作成する手順について説明しています。
+[はじめてのコード コンポーネント作成](implementing-controls-using-typescript.md) の記事では、コード コンポーネントを作成するステップ バイ ステップの手順について説明しています。
 
 ## <a name="add-code-components-to-model-driven-apps"></a>モデル駆動型アプリにコード コンポーネントを追加する
 
@@ -48,4 +48,5 @@ Power Apps component framework により、開発者はモデル駆動型アプ�
 ## <a name="see-also"></a>関連項目
 
 [Power Apps Component Framework の概要](overview.md)<br/>
-[初めてコード コンポーネントを作成する](implementing-controls-using-typescript.md)
+[初めてコード コンポーネントを作成する](implementing-controls-using-typescript.md)<br/>
+[Power Apps component framework の学習](https://docs.microsoft.com/learn/paths/use-power-apps-component-framework)

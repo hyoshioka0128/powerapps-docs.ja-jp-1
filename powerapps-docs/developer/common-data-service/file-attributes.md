@@ -3,7 +3,7 @@ title: ファイル属性 (Common Data Service) | Microsoft Docs
 description: アプリケーション内にファイル データを保存するファイル属性、サポートされている属性、データの取得、およびファイル データのアップロードについて説明します。
 ms.custom: ''
 ms.date: 10/04/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: phecke
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 73858109ed8e43c5693061a2141e8e30e68f8623
-ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
+ms.openlocfilehash: d8a64f994f035f61506a26836386f5f087777928
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "2987922"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156195"
 ---
 # <a name="file-attributes"></a>ファイル属性
 

@@ -3,7 +3,7 @@ title: 電子メールのアクティビティをレコードに送信するエ�
 description: エンティティのレコードに電子メール活動を送信するために使用可能な、電子メール アドレスを含むエンティティの作成について学習します。
 ms.custom: ''
 ms.date: 04/05/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4fd4b3f6cf80d81eda15cb559e711925c53c6171
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b5a33e558747eb605ffed08025c3681134666093
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749125"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156098"
 ---
 # <a name="create-and-update-an-entity-to-send-email-activities-to-records"></a>電子メール アクティビティをレコードに送信するエンティティを作成および更新する
 

@@ -3,7 +3,7 @@ title: 属性メタデータを使って作業する (Common Data Service) | Mic
 description: 属性メタデータの一般的な操作について説明します。
 ms.custom: ''
 ms.date: 04/05/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 069e8723ebdbb99d02c16b3d734d8bc5f76f9560
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 2ae64d15ac0b5213f2f34c69cf771e8ab725021f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748983"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156035"
 ---
 # <a name="work-with-attribute-metadata"></a>属性メタデータに関する作業
 

@@ -3,7 +3,7 @@ title: データ インポートのエンティティ (Common Data Service) | Mi
 description: データ マップを作成し、データのインポートを構成して実行し、エラー情報を記録するために使用するデータ インポート エンティティをリスト表示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 83d77703b9ec5190f2852283b0f661a6af818324
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6413ec48edc17310cd312e82acae435b2af9ffd4
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749137"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156283"
 ---
 # <a name="data-import-entities"></a>データ インポート エンティティ
 

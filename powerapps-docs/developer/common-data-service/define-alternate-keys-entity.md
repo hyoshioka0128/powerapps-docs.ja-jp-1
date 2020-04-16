@@ -2,8 +2,8 @@
 title: 代替キーを使用する (Common Data Service) | Microsoft Docs
 description: このトピックスではエンティティの代替キーの作成方法について説明します。 代替キーはプログラムで、またはカスタマイズ ツールを使用して作成することができます
 ms.custom: ''
-ms.date: 06/04/2019
-ms.reviewer: ''
+ms.date: 03/16/2020
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bd5b71f6817aed5de4c34220a2d27e9f9cb02c86
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 03c15a27a20dc36609438d82fe4789af1dc1f95c
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748991"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3156271"
 ---
 # <a name="work-with-alternate-keys"></a>代替キーに関する作業
 
-すべての Common Data Service レコードには、GUID として定義されている一意の識別子を持っています。 これは、各エンティティの主キーです。 外部データ ストアと統合する必要がある場合は、Common Data Service 内の一意の識別子への参照を格納するために、外部データベース テーブルに列を追加できる場合があります。 これにより、Common Data Service レコードにリンクするためのローカル参照を設けることができます。 ただし、外部データベースを変更できないことがあります。 ユーザーは、現在は、代替キーを使用して、外部のデータ ストアが使用する一意の識別子 (または一意の列の組み合わせ) に一致するように、Common Data Service エンティティの属性を定義できます。 主キーの代わりにこの代替キーを使用して、Common Data Service 内のレコードを一意に識別できます。 どの属性が、レコードごとの一意の ID を表すかを定義できるようにする必要があります。 エンティティに対して一意となる属性を識別したら、それらの属性をカスタマイズ ユーザー インターフェイス (UI) によって、またはコードで、代替キーとして宣言できます。 このトピックでは、データ モデルでの代替キーの定義について説明します。  
+すべての Common Data Service レコードには、GUID として定義されている一意の識別子を持っています。 これは、各エンティティの主キーです。 外部データ ストアと統合する必要がある場合は、Common Data Service 内の一意の識別子への参照を格納するために、外部データベース テーブルに列を追加できる場合があります。 これにより、Common Data Service レコードにリンクするためのローカル参照を設けることができます。 ただし、外部データベースを変更できないこともあります。 ユーザーは、現在は、代替キーを使用して、外部のデータ ストアが使用する一意の識別子 (または一意の列の組み合わせ) に一致するように、Common Data Service エンティティの属性を定義できます。 主キーの代わりにこの代替キーを使用して、Common Data Service 内のレコードを一意に識別できます。 どの属性が、レコードごとの一意の ID を表すかを定義できるようにする必要があります。 エンティティに対して一意となる属性を識別したら、それらの属性をカスタマイズ ユーザー インターフェイス (UI) によって、またはコードで、代替キーとして宣言できます。 このトピックでは、データ モデルでの代替キーの定義について説明します。  
 
 <a name="BKMK_Declare"></a>
 
@@ -60,7 +60,7 @@ ms.locfileid: "2748991"
 
 - **キー値内の Unicode 文字**
 
-  代替キーで使用されるフィールド内のデータに `<`,`>`,`*`,`%`,`&`,`:`,`\\` などの文字が含まれている場合は、get アクションまたは patch アクションは機能しません。  一意性のみを必要とする場合はこの方法も使用することができますが、これらのキーをデータ統合の一部として使用する必要がある場合は、これらの文字を持つデータを持たないフィールド上でキーを作成するのが最善です。
+  代替キーで使用されるフィールド内のデータに `/`、`<`、`>`、`*`、`%`、`&`、`:`、`\\` などの文字が含まれている場合は、get アクションまたは patch アクションは機能しません。  一意性のみを必要とする場合はこの方法も使用することができますが、これらのキーをデータ統合の一部として使用する必要がある場合は、これらの文字を持つデータを持たないフィールド上でキーを作成するのが最善です。
 
 <a name="BKMK_crud"></a>   
 
@@ -94,3 +94,4 @@ API を使用して代替キーを作成するとき、インデックスの作�
  [代替キーの使用](use-alternate-key-create-record.md)<br />
  [変更の追跡を使用してデータを外部システムに同期](use-change-tracking-synchronize-data-external-systems.md)<br />
  [Upsert を使用してレコードを挿入または更新](use-upsert-insert-update-record.md) [レコードを参照する代替キーの定義](../../maker/common-data-service/define-alternate-keys-reference-records.md)
+ 

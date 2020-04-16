@@ -3,23 +3,23 @@ title: 組織のメタデータの参照 (Common Data Service) | Microsoft Docs
 description: エンティティ メタデータ ブラウザーを使用して、Common Data Service のエンティティとそのプロパティを表示できます。 エンティティ メタデータ ブラウザーは、ダウンロードして組織にインストール可能な管理ソリューションです。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
-author: JimDaly
-ms.author: jdaly
+author: phecke
+ms.author: pehecke
 manager: ryjones
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 50a7c59ac5655fdcf6928f626c5714a75fe3f57e
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: fed8e202cd7deb17b8861b43444be228fb5ccb92
+ms.sourcegitcommit: 204d73f30be2fd63e13e3c64cbfa62b8d667df33
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753055"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "3176152"
 ---
 # <a name="browse-the-metadata-for-your-environment"></a>環境のメタデータの参照
 
@@ -79,7 +79,7 @@ Common Data Service はアプリとして構成されています。 **エンテ
     - `PrivilegeId` を使用して表示した特権をフィルター処理します。
 
 > [!NOTE]
-> エンティティの詳細プロパティを表示すると、多数の複雑なプロパティが展開可能な状態になります。 最も頻繁に使用する値はリンク付きで表示され、リンクを使用して詳細な表示に切り替えることができます。 データをプログラムから取得した場合は、データの構造が詳細ビューに反映されます。 詳細ビューには、同じ領域で取得できるその他の関連データも表示されます (たとえば、**表示名**プロパティに対してローカライズされたラベルが存在する場合)。
+> エンティティの詳細プロパティを表示すると、多数の複雑なプロパティが展開可能になります。 最も頻繁に使用する値はリンク付きで表示され、リンクを使用して詳細な表示に切り替えることができます。 データをプログラムから取得した場合は、データの構造が詳細ビューに反映されます。 詳細ビューには、同じ領域で取得できるその他の関連データも表示されます (たとえば、**表示名**プロパティに対してローカライズされたラベルが存在する場合)。
 
 > [!TIP]
 > ページからテキストをコピーするには、テキストを選択し、Ctrl+C キーボード ショートカットまたはコンテキスト メニューの**コピー**のコマンドを使用します。
@@ -89,10 +89,10 @@ Common Data Service はアプリとして構成されています。 **エンテ
 **メタデータ ブラウザー** は Common Data Service に対して XrmToolbox コミュニティが開発したツールです。 コミュニティ開発ツールのトピック、[開発者ツール](developer-tools.md) を参照してください。
 
 > [!NOTE]
-> コミュニティ ツールは Common Data Service の製品ではなく、コミュニティ ツールに対するサポートは提供しません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。
+> コミュニティ ツールは Common Data Service や Microsoft の製品ではなく、コミュニティ ツールに対するサポートは提供されません。 このツールに関するご質問は、その発行元にお問い合わせください。 詳細: [XrmToolBox](https://www.xrmtoolbox.com)。
 
 ### <a name="see-also"></a>関連項目
 
  [Common Data Service の開発者ツール](developer-tools.md)<br />
  [エンティティ メタデータのカスタマイズ](customize-entity-metadata.md)<br />
- 
+  
