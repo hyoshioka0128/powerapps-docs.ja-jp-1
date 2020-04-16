@@ -3,7 +3,7 @@ title: 'サンプル: エンティティでのフィールド セキュリティ
 description: このサンプルでは、エンティティのフィールド セキュリティを有効にする方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e905c2a1e687eef65535c9dcaa0a05432150b1ba
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 49cb0b73972e31d567931ae42258dec60a3779c5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934303"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155780"
 ---
 # <a name="sample-enable-field-security-for-an-entity"></a>サンプル: エンティティでのフィールド セキュリティの有効化
 

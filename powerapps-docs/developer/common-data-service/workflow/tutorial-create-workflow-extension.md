@@ -3,7 +3,7 @@ title: 'チュートリアル: ワークフロー拡張を作成する (Common D
 description: このチュートリアルは、ワークフロー デザイナーを拡張してカスタム活動を追加するプロセスおよびワークフロー アセンブリを使用するロジックが示されます
 ms.custom: ''
 ms.date: 07/16/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0e143eba56729944bf04d11736a949cfca538449
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: fc3f08ac3422a50c3e1580d923aa941bba253c23
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2872674"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154907"
 ---
 # <a name="tutorial-create-workflow-extension"></a>チュートリアル: ワークフロー拡張の作成
 

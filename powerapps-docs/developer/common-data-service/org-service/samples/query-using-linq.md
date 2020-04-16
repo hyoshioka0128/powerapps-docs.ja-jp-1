@@ -3,7 +3,7 @@ title: LINQ を使用したデータのクエリ (Common Data Service) | Microso
 description: このサンプルではチームにレコードを割り当てる方法を示します。
 ms.custom: ''
 ms.date: 02/05/2020
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: phecke
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 20b68c32ccdf7a716b3bc021e7869e22f25f8526
-ms.sourcegitcommit: d572c38a411e8588203d0909bc34c844ee508330
+ms.openlocfilehash: 00717d61a34fa600c7dd6139f2c1d7bc3ca9d8f4
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029264"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155683"
 ---
 # <a name="sample-query-data-using-linq"></a>サンプル: LINQ を使用したデータのクエリ
 

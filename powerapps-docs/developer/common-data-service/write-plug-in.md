@@ -3,7 +3,7 @@ title: プラグインを記述する (Common Data Service)| Microsoft Docs
 description: プラグインを記述する場合に必要な概念と技術的詳細について説明します。
 ms.custom: ''
 ms.date: 07/03/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d1fa83ed9ac70bcacfc1d76065f09dcae9e96555
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: d3611db4461f199995543a70064bd8de9375155a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109044"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154895"
 ---
 # <a name="write-a-plug-in"></a>プラグインを記述する
 

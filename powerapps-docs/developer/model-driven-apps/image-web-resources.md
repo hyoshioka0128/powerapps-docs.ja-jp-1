@@ -2,7 +2,7 @@
 title: イメージ Web リソース (モデル駆動型アプリ) | MicrosoftDocs
 description: イメージ Web リソースを使用して、イメージを利用可能にする方法について説明します。
 ms.custom: ''
-ms.date: 10/31/2018
+ms.date: 03/11/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.topic: article
@@ -14,16 +14,14 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: a31cdc5c3c987f68ab9e46aef985501737d3c0f9
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9b87b36d0262a3bf634b9d8e22cc79f7f1816373
+ms.sourcegitcommit: d500f44e77747a3244b6691ad9b3528e131dbfa5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749037"
+ms.lasthandoff: 03/12/2020
+ms.locfileid: "3119757"
 ---
 # <a name="image-web-resources"></a>イメージ Web リソース
-
-<!-- https://docs.microsoft.com/dynamics365/customer-engagement/developer/image-web-resources -->
 
 イメージ Web リソースを使用して、モデル駆動型アプリでイメージを利用可能にします。  
 
@@ -48,6 +46,9 @@ ms.locfileid: "2749037"
 - CSS Web リソースが使用するバックグラウンド イメージ  
 
 アプリケーションに表示されるすべてのアイコンにベクター形式 (SVG) Web リソースを使用します。 ベクター イメージは、スケーラブル ベクター グラフィックス (SVG) (XML ベースのベクター イメージ形式) として定義されます。 他のイメージ Web リソースに対するベクター イメージの利点は、拡大縮小できることです。 サイズ別に複数のイメージを用意するのではなく、1 つのベクター イメージを定義して再利用できます。 これらを新しい <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata>.<xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IconVectorName> で使用します `IconLargeName`、`IconMediumName`、または `IconSmallName` プロパティではなく、ユーザー定義エンティティのアイコンを定義するプロパティ。
+
+> [!NOTE]
+> ベクター形式 (SVG) Web リソースは、[スクリプト (JScript)](/powerapps/developer/model-driven-apps/script-jscript-web-resources) Web リソースと同様に扱われ、SVG ファイルでは JScript の埋め込みが可能なため、スクリプト (JScript) Web リソースと同じセキュリティ リスクを伴います。
   
 <a name="BKMK_Limitations"></a>   
 ## <a name="limitations-of-image-web-resources"></a>イメージ Web リソースの制限  

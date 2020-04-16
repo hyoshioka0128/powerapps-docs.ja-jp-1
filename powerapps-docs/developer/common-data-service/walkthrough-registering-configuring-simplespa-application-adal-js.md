@@ -9,18 +9,18 @@ ms.assetid: a327d2ff-e252-61cf-1190-6a974130ef19
 author: paulliew
 ms.author: nabuthuk
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 874fb17ddb2911f1464b07e7dacd597f89fc8c75
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 91e51f55a6a2066f8a72d61aa4ef6f889bd8f6c4
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859936"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155131"
 ---
 # <a name="walkthrough-registering-and-configuring-a-spa-application-with-adaljs"></a>チュートリアル: adal.js で SPA アプリケーションを登録および構成する
 
@@ -293,7 +293,7 @@ ms.locfileid: "2859936"
 1. 管理者権限を持つアカウントを使用して [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) にサインインします。 アプリの登録に使用するものと同じ Office 365 サブスクリプション (テナント) のアカウントを使用する必要があります。 左のナビゲーション ウィンドウで **管理** アイテムを展開し、**Azure AD** を選択することによって、Microsoft 365 管理センターから Azure ポータルにもアクセスできます。  
   
     > [!NOTE]
-    > ユーザーが Azure テナント (アカウント) を持っていないか、または持っているが Office 365 Azure でのサブスクリプションCommon Data Serviceが Azure サブスクリプションで使用できない場合は、トピック[設定Azure Active Directoryの手順に従って開発者サイト](https://docs.microsoft.com/office/developer-program/office-365-developer-program)にアクセスし、2 つのアカウントを関連付けます。<br/><br/> アカウントがない場合は、クレジット カードを使用して、アカウントにサインアップすることができます。 ただし、このトピックの手順を実行して 1 つまたは複数のアプリケーションを登録する場合は、アカウントは無料なのでクレジット カードに請求はありません。 詳細: [Active Directory 価格設定詳細](https://azure.microsoft.com/pricing/details/active-directory/)。  
+    > ユーザーが Azure テナント (アカウント) を持っていないか、または持っているが Common Data Service の Office 365 サブスクリプションが Azure サブスクリプションで利用できない場合は、トピック [開発者サイトへの Azure Active Directory アクセスの設定](https://docs.microsoft.com/office/developer-program/office-365-developer-program) の手順に従って、2 つのアカウントを関連付けます。<br/><br/> アカウントがない場合は、クレジット カードを使用して、アカウントにサインアップすることができます。 ただし、アカウントはアプリケーション登録のため無料であり、このトピックで説明されている手順に従って 1 つ以上のアプリケーションを登録するだけでは、クレジット カードに請求はありません。 詳細: [Active Directory 価格設定詳細](https://azure.microsoft.com/pricing/details/active-directory/)。  
   
 2. ページの左側の列で、**Azure Active Directory** をクリックします。 左側の列をスクロールして、**Azure Active Directory** アイコンおよびラベルを参照する必要があります。  
   
@@ -371,7 +371,7 @@ ms.locfileid: "2859936"
   
 2.  [F5] キーを押して、デバッグを開始します。 [チュートリアルのゴール](walkthrough-registering-configuring-simplespa-application-adal-js.md#bkmk_goal) で、説明する動作を考慮する必要があります。  
   
-予期している結果が得られない場合は、アプリケーションの登録時および `SimpleSPA.html` コードの構成時にセットしたときの値を再確認します。  
+期待した結果が得られない場合は、アプリケーションの登録と `SimpleSPA.html` コードの構成時に設定した値を再確認してください。  
   
 ## <a name="see-also"></a>関連項目  
  [クライアント アプリケーション作成](connect-cds.md)<br />

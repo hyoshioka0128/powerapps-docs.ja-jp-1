@@ -3,7 +3,7 @@ title: 'サンプル: 相互ロールによる接続のクエリ (Common Data Se
 description: このサンプルは、相互関係ロールによりつながりを照会する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 86cd5b567d6db0ede136530a51511beb8febb07e
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: e3c61a2d9205aedb37f0956960ed78fc7b27494f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956186"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155691"
 ---
 # <a name="sample-query-connections-by-reciprocal-roles-early-bound"></a>サンプル: 相互ロールによる接続のクエリ (事前バインド)
 

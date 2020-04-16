@@ -3,7 +3,7 @@ title: 定期的な予約の更新 (Common Data Service) | Microsoft Docs
 description: RecurringAppointmentMaster エンティティに対して IOrganizationService.Entity メソッドまたは UpdateRequest メッセージを使用して、定期的な予定の系列を更新します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f94fc31cf468e3ad51ceb3961a764391edb5ec0b
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 3332258f41aaab4f0222bfc3f46cd795a27cf0ea
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749204"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155219"
 ---
 # <a name="update-a-recurring-appointment"></a>定期的な予約の更新
 

@@ -3,7 +3,7 @@ title: 左外部結合を FetchXML で使用して &bdquo; に存在しない &b
 description: 左外部結合を FetchXML で使用して、結合の表をフィルタリングするクエリを実行して、セットに "存在しない" 記録を探すクエリを作成する方法について説明します
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e50ff095affda6c976b838b1f368026640fcb2b2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: bb92127d93f13f021258f678443e428b7e183b15
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749084"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155179"
 ---
 # <a name="use-a-left-outer-join-in-fetchxml-to-query-for-records-not-in"></a>左外部結合を FetchXML で使用して "存在しない" 記録をクエリする
 

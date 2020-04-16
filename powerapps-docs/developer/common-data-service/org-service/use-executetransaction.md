@@ -3,7 +3,7 @@ title: 単一のデータベース トランザクションでメッセージを
 description: ExecuteTransactionRequest メッセージ要求を使用して、1 度のデータベース トランザクションで組織サービスの要求を 2 つ以上実行できます。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2e1d8b71ff915cc49f2c711adee4095043af000c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fef789f0626affeccca39a4abfc8f194c62bd703
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749264"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155455"
 ---
 # <a name="execute-messages-in-a-single-database-transaction"></a>単一のデータベース トランザクションでメッセージを実行する
 

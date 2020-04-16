@@ -3,7 +3,7 @@ title: " チームにレコードを割り当てる (Common Data Service) | Micr
 description: このサンプルではチームにレコードを割り当てる方法を示します。
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 578cb901780699dd7141567bdeeda72221da86e5
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 1dbf2a9c068c9085e1d3dc2e88db23f33ef58f38
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956242"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155955"
 ---
 # <a name="assign-a-record-to-a-team"></a>チームへのレコードの割り当て
 

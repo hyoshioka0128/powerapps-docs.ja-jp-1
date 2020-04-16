@@ -3,7 +3,7 @@ title: プラグインのトラブルシューティング (アプリの場合Co
 description: プラグインが原因で発生する可能性があるエラーと、その修正方法に関する情報が含まれます。
 ms.custom: ''
 ms.date: 09/18/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ea933534c38686a3766d52b98b82c96f878c13f0
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 49a89646c28c649947b4a44f7dd332b072a41c4b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749207"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155239"
 ---
 # <a name="troubleshoot-plug-ins"></a>プラグインのトラブルシューティング 
 

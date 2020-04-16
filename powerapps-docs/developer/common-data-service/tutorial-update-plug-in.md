@@ -3,7 +3,7 @@ title: 'チュートリアル: プラグインを更新する (Common Data Servi
 description: 'このチュートリアルでは、プラグインの使用方法を説明するシリーズの 3 番目のチュートリアルです。 '
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e28493c3790e49e616157124d49acae65c5bd9a0
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f00c30c25c1038edbd444bfdfffc5b6597f67f42
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749205"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155235"
 ---
 # <a name="tutorial-update-a-plug-in"></a>チュートリアル: プラグインを更新する
 

@@ -3,7 +3,7 @@ title: 'サンプル: オペレーションの更新プログラムおよび削�
 description: このサンプルは、オペレーションの更新プログラムおよび削除でオプティミスティック同時実行を使用する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f9d0761eee54dc7e6416beefaf5a28f482ef6d97
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: e673548562159db58a7473f20fc0a18865fedcea
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934059"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155527"
 ---
 # <a name="sample-use-optimistic-concurrency-with-update-and-delete-operations"></a>サンプル: オペレーションの更新プログラムおよび削除でオプティミスティック同時実行を使用する
 

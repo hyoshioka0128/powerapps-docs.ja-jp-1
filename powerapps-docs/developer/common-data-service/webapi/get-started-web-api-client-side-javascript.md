@@ -3,26 +3,26 @@ title: モデル駆動型アプリにおける Web API を使用したクライ�
 description: HTML Web リソース、フォーム スクリプトまたはリボン コマンドで JavaScript を使用して、Web API を使った Common Data Service アプリ データの操作ができます
 ms.custom: ''
 ms.date: 03/28/2019
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: get-started-dynamics-365-web-api-client-side-JavaScript
 author: JimDaly
-ms.author: kvivek
+ms.author: pehecke
 manager: annbe
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8d499d7188919e3cce2eaed7a820394b6743b4db
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 09ff233b4b405f03a22d8e644433ba0c27cf3192
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748930"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155072"
 ---
 # <a name="client-side-javascript-using-web-api-in-model-driven-apps"></a>モデル駆動型アプリにおける Web API を使用したクライアント側の JavaScript
 

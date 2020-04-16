@@ -3,7 +3,7 @@ title: " Outlook フィルターの作成と取得 (Common Data Service) | Micro
 description: この例では、 Outlook のフィルターの作成と取得方法を示します。
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7835bd8552a19e5440380a470acc700f2280e1f5
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 165dfaaa8fe419257fc552be0f4e9e231fb7c2e8
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017359"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155871"
 ---
 # <a name="create-and-retrieve-outlook-filters"></a>Outlook フィルターの作成と取得
 

@@ -3,7 +3,7 @@ title: 'サンプル: ページング Cookie を使用した FetchXML の使用 
 description: 'この例は FetchXML でのページング Cookie の使用方法を示します:'
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7325fc94f4a73616dbd679ba0800879dc7c6ea2f
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 97fef0ab9a697653a9c00d2b9e78ce38144b7291
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934079"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155531"
 ---
 # <a name="sample-use-fetchxml-with-a-paging-cookie"></a>サンプル: ページング Cookie を使用した FetchXML の使用
 

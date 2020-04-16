@@ -3,7 +3,7 @@ title: 'サンプル: 関連するレコードの事前バインドを作成お�
 description: 'このサンプルは、事前バインド クラスを使用して、アカウントの作成、取得、更新、および削除の各操作を実行する方法を示します。 '
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 955353953f5c015c4e332773d550d0c478d5f02e
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 5f0866632fe0f4f7dd8ec26ca4e1aa356d766485
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934311"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155803"
 ---
 # <a name="sample-early-bound-entity-operations"></a>サンプル: 事前バインド エンティティのオペレーション
 

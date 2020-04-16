@@ -3,7 +3,7 @@ title: 'サンプル: 定期的な予定の再スケジュールと取り消し 
 description: このサンプルでは、定期的な予定の再スケジュールおよび取り消し方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: fe900da6db667d4ffb5ceffc61430b7acab9befe
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 238ddd8b01fd31c4e9bc39b47b45d7283410b3e5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956174"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155663"
 ---
 # <a name="sample-reschedule-and-cancel-a-recurring-appointment"></a>サンプル: 定期的な予定の再スケジュールおよび取り消し
 

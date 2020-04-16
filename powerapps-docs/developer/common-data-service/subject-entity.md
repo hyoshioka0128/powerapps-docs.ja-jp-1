@@ -3,7 +3,7 @@ title: 情報カテゴリ エンティティ (Common Data Service) | Microsoft D
 description: 記事や営業資料など、Power Apps での情報カテゴリのエンティティ レコードについて学びます。 情報カテゴリを使用して、トピックの階層を作成し、 内の情報を整理および管理することができます。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: aa2159f458ab02d9e1a38c9d8e2edd760778f9e8
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: deafd208f16d20407d1a5615560a98b973f20061
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859912"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155271"
 ---
 # <a name="subject-entity"></a>情報カテゴリ エンティティ
 

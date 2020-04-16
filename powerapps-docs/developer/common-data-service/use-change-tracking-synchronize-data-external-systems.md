@@ -3,7 +3,7 @@ title: 変更の追跡を使用してデータを外部システムに同期す�
 description: 新しい変更追跡機能では、データが最初に抽出されてから、または最後に同期されてからどのデータが変更されたかを検出して、同期されるデータを効率の良い方法で維持する方法を提供します
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 61f1103153a2ad70de050ce2980fb2ed6bc9c3a8
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 157ddf1f1ddcfce1e479caf12c2a7197c5dc96c1
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753771"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155195"
 ---
 # <a name="use-change-tracking-to-synchronize-data-with-external-systems"></a>変更の追跡を使用してデータを外部システムに同期
 

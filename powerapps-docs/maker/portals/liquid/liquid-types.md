@@ -10,11 +10,11 @@ ms.date: 10/07/2019
 ms.author: tapanm
 ms.reviewer: ''
 ms.openlocfilehash: e84ec3363f492231c218e0bb9f6e8a8d8b45fce6
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3108443"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3125050"
 ---
 # <a name="available-liquid-types"></a>使用可能な Liquid の種類
 

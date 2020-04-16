@@ -2,7 +2,7 @@
 title: Power Apps でアプリ デザイナーを使用してモデル駆動型アプリを作成、編集する | MicrosoftDocs
 description: アプリ デザイナーを使用してアプリを作成または編集する方法を学習する
 keywords: ''
-ms.date: 02/05/2019
+ms.date: 03/05/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -24,12 +24,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ef8fa8e20afd7d0e4ad1593ae169a132246d3992
-ms.sourcegitcommit: 861ba8e719fa16899d14e4a628f9087b47206993
+ms.openlocfilehash: d5909d704863dbf88673ac35e3b36b59143d9f5f
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "2875427"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136570"
 ---
 # <a name="create-a-model-driven-app-by-using-the-app-designer"></a>アプリ デザイナーを使用してモデル駆動型アプリを作成する
 
@@ -45,10 +45,9 @@ ms.locfileid: "2875427"
 
 1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) **ホーム** ページで、 **空白からモデル駆動型アプリケーション** オプションを選択します。  
 
-    > [!IMPORTANT]
-    > **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。 
+2.  **作成**を選びます。
 
-2. **新しいアプリケーションの作成**ページ上に、以下の情報を入力します。 
+3.  **新しいアプリケーションの作成**ページ上に、以下の情報を入力します。 
 
     - **名前** : アプリの名前を入力します。  
   
@@ -66,16 +65,17 @@ ms.locfileid: "2875427"
       > [!NOTE]
       > サイト マップの追加時に**既定のソリューション**を選択することにより、そのサイト マップに関連付けられたコンポーネントは自動的にアプリに追加されます。  
 
-      ![既存のソリューションを使用してアプリ ページを作成する](media/use-existing-solution-to-create-the-app.png "既存のソリューションを使用してアプリを作成する。") 
+      > [!div class="mx-imgBorder"] 
+      > ![既存のソリューションを使用してアプリ ページを作成する](media/use-existing-solution-to-create-the-app.png "既存のソリューションを使用してアプリを作成する。") 
 
-    - **アプリの [ようこそ] ページを選択**: このオプションを使用すると、組織で利用できる Web リソースの中から選択することができます。 作成した [ようこそ] ページには、ビデオへのリンク、アップグレードの手順、開始方法に関する情報など、ユーザーにとって有用な情報を含めることができます。 [ようこそ] ページはアプリを開くと表示されます。 ユーザーは、[ようこそ] ページの**この [ようこそ] 画面を次回は表示しない**を選択して、アプリを次回起動するときにこのページを表示させないようにすることができます。 **次回このようこそ画面を表示しない** オプションはユーザーレベルの設定であり、管理者やアプリ メーカーによって制御できないことに注意してください。 [ようこそ] ページとして使用することができる HTML ファイルなどの Web リソースの作成方法の詳細については、[Web リソースを作成および編集して Web アプリケーションを拡張](create-edit-web-resources.md)を参照してください。  
+    - **アプリの [ようこそ] ページを選択**: このオプションを使用すると、組織で利用できる Web リソースの中から選択することができます。 作成した [ようこそ] ページには、ビデオへのリンク、アップグレードの手順、開始方法に関する情報など、ユーザーにとって有用な情報を含めることができます。 [ようこそ] ページはアプリを開くと表示されます。 ユーザーは [ようこそ] ページの **この [ようこそ] 画面を次回は表示しない** を選択して、アプリを次回起動するときにこのページを表示させないようにすることができます。 **次回この [ようこそ] 画面を表示しない** オプションはユーザーレベルの設定であり、管理者やアプリ メーカーは制御できませんのでご注意ください。 [ようこそ] ページとして使用することができる HTML ファイルなどの Web リソースの作成方法の詳細については、[Web リソースを作成および編集して Web アプリケーションを拡張](create-edit-web-resources.md)を参照してください。  
       
     アプリのプロパティを後に編集するには、アプリ デザイナーの**プロパティ**タブに移動します。 詳細: [アプリ プロパティの管理](manage-app-properties.md)  
   
      > [!NOTE]
      >  **プロパティ**タブ上で一意の名前とアプリの URL の接頭辞を変更することはできません。  
   
-3. **完了**を選択、または &mdash; **既存のソリューションを使用してアプリを作成する**を選択した場合は &mdash; **次へ**を選択して、組織でインポートした使用可能なソリューションから選択します。  
+4. **完了**を選択、または &mdash; **既存のソリューションを使用してアプリを作成する**を選択した場合は &mdash; **次へ**を選択して、組織でインポートした使用可能なソリューションから選択します。  
   
     新しいアプリが作成されて下書き状態が表示されます。 新しいアプリのアプリ デザイナー キャンバスが表示されます。 そこでは、エンティティ、ビュー、ダッシュボードなどのコンポーネントを追加してアプリを有用にできます。 詳細情報: [アプリ コンポーネントの追加または編集](add-edit-app-components.md)  
    
@@ -83,9 +83,6 @@ ms.locfileid: "2875427"
 ## <a name="edit-an-app"></a>アプリの編集  
   
 1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
-
-> [!IMPORTANT]
-> **モデル駆動型** デザイン モードがない場合は、[環境の作成](https://docs.microsoft.com/powerapps/administrator/create-environment)が必要となることがあります。 
 
 2. 左側のナビゲーション ウィンドウで**アプリ**を選択して、モデル駆動型アプリを選択し、ツール バーの**編集**を選択します。   
 

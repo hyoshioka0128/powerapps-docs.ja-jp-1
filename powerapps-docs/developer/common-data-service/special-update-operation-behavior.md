@@ -3,7 +3,7 @@ title: 特化された更新操作の動作 (Common Data Service) | Microsoft Do
 description: 廃止されたメッセージが原因で生じる更新イベントのプラグインおよびワークフローにおける特殊な動作について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 358af7fc079ecd9da372411df35d96f5993a1135
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 97f9c0a917504400170d00cf7764cfeace2cc8a6
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749217"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155287"
 ---
 # <a name="behavior-of-specialized-update-operations"></a>特化された更新操作の動作
 

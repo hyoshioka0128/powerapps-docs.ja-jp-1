@@ -3,7 +3,7 @@ title: " エンティティの権限をファイル に ダンプする (Common 
 description: このサンプルでは、エンティティの権限をファイルにダンプする方法を説明します。
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 645977524a8d90bf4c241aba672a311da044419b
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 73f9db92db99bb8d1275f80b26f0967439f6b510
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934327"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155807"
 ---
 # <a name="dump-entity-privileges-information-to-a-file"></a>エンティティの権限情報をファイルにダンプする
 

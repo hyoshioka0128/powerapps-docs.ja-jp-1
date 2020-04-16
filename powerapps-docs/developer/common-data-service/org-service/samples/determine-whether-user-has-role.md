@@ -3,7 +3,7 @@ title: " ユーザー に ロール が 割り当てられているかどうか�
 description: このサンプルでは、ユーザーが特定のロールに関連付けられているかどうかを確認する方法を説明します。
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 77474ebc6f46800a3b1c28bea0a0dd1e1fb89c7e
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: f403df191d8845edcc48ebef7e961130217152ff
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2914473"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155827"
 ---
 # <a name="determine-whether-a-user-has-a-role"></a>ユーザー に ロール があるかどうかを確認する
 

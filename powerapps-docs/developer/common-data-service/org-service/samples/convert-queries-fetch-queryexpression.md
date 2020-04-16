@@ -3,7 +3,7 @@ title: 'サンプル: Fetch と QueryExpression の間でクエリを変換す�
 description: このサンプルは、FetchXML と QueryExpression の間でクエリを変換する方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 59c41333cf48e6372c1f69f249da92cc34b02e74
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 7eafaf7efc28e592cf35280777c1e08a83d3b0ae
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934391"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155899"
 ---
 # <a name="sample-convert-queries-between-fetchxml-and-queryexpression"></a>サンプル: FetchXML と QueryExpression の間でクエリを変換
 

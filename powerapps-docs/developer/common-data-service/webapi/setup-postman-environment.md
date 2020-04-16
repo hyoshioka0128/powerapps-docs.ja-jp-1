@@ -3,7 +3,7 @@ title: Postman 環境の設定 (Common Data Service for Apps)| MicrosoftDocs
 description: Common Data Service 環境に接続する Postman 環境を設定と構成する方法を説明します。
 ms.custom: ''
 ms.date: 04/09/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -17,12 +17,12 @@ search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: da8d3ac44d9993aee813347b327442789e7fb8a7
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 2d92959cddce2046f3cd88acb5dfde56e2b297de
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859924"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155003"
 ---
 # <a name="set-up-a-postman-environment"></a>Postman 環境の設定
 
@@ -57,7 +57,7 @@ Common Data Service インスタンスと接続するのに使用できる Postm
 
     | 変数名 | Value |
     |----|---|
-    |`url`|`https://<add your environment name, like ‘myorg.crm’>.dynamics.com`|
+    |`url`|`https://<add your environment name, like 'myorg.crm'>.dynamics.com`|
     |`clientid`|`51f81489-12ee-4a9e-aaae-a2591f45987d`|
     |`version`|`9.0`|
     |`webapiurl`|`{{url}}/api/data/v{{version}}/`|
@@ -98,7 +98,7 @@ Common Data Service インスタンスと接続するのに使用できる Postm
 
 Common Data Service インスタンスと接続するテストのための新しい Web API 要求を作成します。 <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI function" />を使用するには、次の操作を実行します。
 1. HTTP メソッドとして `GET` を選択し、編集スペースで `{{webapiurl}}WhoAmI` を追加します。
-  ![WhoAmI 関数要求](media/postman-whoami-request.png "WWhoAmI 関数要求)
+  ![WhoAmI 関数要求](media/postman-whoami-request.png "WhoAmI 関数要求")
 2. この要求を送信するには **送信** を選択します。
 3. 要求が成功した場合は <xref href="Microsoft.Dynamics.CRM.WhoAmI?text=WhoAmI Function" /> によって返される <xref href="Microsoft.Dynamics.CRM.WhoAmIResponse?text=WhoAmIResponse ComplexType" /> からのデータを確認します。
 

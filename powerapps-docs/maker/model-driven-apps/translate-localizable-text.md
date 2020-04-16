@@ -2,7 +2,7 @@
 title: モデル駆動型アプリのローカライズ可能なテキストの変換 | MicrosoftDocs
 description: ローカライズ可能なテキストを複数の言語をサポートするように翻訳する方法について説明します
 ms.custom: ''
-ms.date: 06/03/2018
+ms.date: 03/05/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,12 +22,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 32e6eb8439cdd5a685f761b1326a0cc891f0e6bb
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: d0f8f154d4a2cb92a062b7ce37f9e6a0b17e9b6b
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2754876"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136394"
 ---
 # <a name="translate-localizable-text-for-model-driven-apps"></a>モデル駆動型アプリのローカライズ可能なテキストの変換
 
@@ -47,24 +47,29 @@ ms.locfileid: "2754876"
 > 各言語の有効化には数分かかることがあります。 この間、環境の他のユーザーは、アプリを使用できなくなる場合があります。 ユーザーへの影響が最も少ないタイミングで言語を有効にしてください。
 
 > [!TIP]
-> 言語を有効にするときは、各言語に使用される LCID 値をメモします。 この値は、ローカライズ可能なテキストのエクスポートされたデータにおける言語を表します。 言語コードは 4 桁または 5 桁のロケール ID です。 有効なロケール ID 値は、[ロケール ID (LCID) の一覧](https://go.microsoft.com/fwlink/?LinkId=122128)のページで確認できます。
+> 言語を有効にするときは、各言語で使用される LCID 値に注意してください。 この値は、ローカライズ可能なテキストのエクスポートされたデータにおける言語を表します。 言語コードは 4 桁または 5 桁のロケール ID です。 有効なロケール ID 値は、[ロケール ID (LCID) の一覧](https://go.microsoft.com/fwlink/?LinkId=122128)のページで確認できます。
 
 ## <a name="export-the-localizable-text"></a>ローカライズ可能なテキストをエクスポートする
 
-エクスポートされるローカライズ可能なテキストのスコープは、ローカライズ可能なテキストを含むアンマネージド ソリューションです。 これは、ソリューション エクスプローラーを使用してのみ行うことができます
+エクスポートされるローカライズ可能なテキストのスコープは、ローカライズ可能なテキストを含むアンマネージド ソリューションです。
 
-[!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)]
+<!-- [!INCLUDE [cc_navigate-solution-from-powerapps-portal](../../includes/cc_navigate-solution-from-powerapps-portal.md)] -->
 
-ローカライズ可能なテキストを含むアンマネージド ソリューションを開き、メニュー バーの **翻訳** > **翻訳のエクスポート** を選択します。 
+1. Power Apps ポータルから **ソリューション** を選択します。
 
-![翻訳のエクスポート](media/export-localizable-text.png)
+2. **すべてのソリューション** 一覧で、ローカライズ可能なテキストを含むアンマネージド ソリューションを選択します。
 
-以下の内容の通知が表示されます。
-> 翻訳用にカスタマイズされたラベルをエクスポートするには、数分かかる場合があります。 最初のエクスポートが終了するまで、エクスポート リンクをもう一度クリックしないでください。 今すぐエクスポートしますか? 
+3. メニュー バーで **翻訳** > **翻訳のエクスポート** を選択します。 
 
-続行する場合は **OK** をクリックしてください。
+    > [!div class="mx-imgBorder"] 
+    > ![翻訳のエクスポート](media/export-localizable-text.png "翻訳のエクスポート")
 
-エクスポートが完了すると、ダウンロード フォルダーに `CrmTranslations_{0}_{1}.zip` という名前のファイルが存在します。ここで、`{0}` は、ソリューションの一意の名前で、`{1}` はソリューションのバージョン番号です。
+    以下の内容の通知が表示されます:
+    > 翻訳用にカスタマイズされたラベルをエクスポートするには、数分かかる場合があります。 最初のエクスポートが終了するまで、エクスポート リンクをもう一度クリックしないでください。 今すぐエクスポートしますか?
+    
+    > 続行する場合は **OK** をクリックしてください。
+
+エクスポートが完了したら、翻訳 zip ファイルを保存します。 ファイル名は `CrmTranslations_{0}_{1}.zip` のようなになり、`{0}` はソリューションの一意の名前、`{1}` はソリューションのバージョン番号です。
 
 ## <a name="get-the-localizable-text-translated"></a>ローカライズ可能なテキストを翻訳する
 
@@ -84,7 +89,7 @@ Microsoft Office Excel を含む CrmTranslations.xml ファイルを開くこと
 
 Excel でデータを表示したら、**ローカライズされたラベル** タブを参照してください。
 
-![ローカライズ用にエクスポートされたテキスト](media/localized-labels-tab-exported-languages.png)
+![ローカライズ用にエクスポートされたテキスト](media/localized-labels-tab-exported-languages.png "ローカライズ用にエクスポートされたテキスト")
 
 ユーザー定義エンティティまたはフィールドには、ローカライズ可能なテキストの空白セルがあります。 それらのアイテムのローカライズ済みの値を追加します。
 
@@ -117,13 +122,14 @@ Excel でデータを表示したら、**ローカライズされたラベル** 
 
 翻訳のエクスポート元の同じアンマネージド ソリューションから、メニューで **翻訳** > **翻訳のインポート** を選択します。 
 
-![翻訳のインポート](media/import-translations.png)
+<!-- ![Import translations](media/import-translations.png) -->
+
+> [!div class="mx-imgBorder"] 
+> ![選択したファイルのインポート](media/import-translated-text-dialog.png "ローカライズ済みテキストをインポートする")
 
 圧縮された翻訳済みのテキストが含まれているファイルを選択し、**インポート** を選択します。
 
-![選択したファイルのインポート](media/import-translated-text-dialog.png)
-
-翻訳済みテキストをインポートすると、アプリでの変更を確認するためにすべてのカスタマイズをする必要があります。
+翻訳済みテキストをインポートすると、アプリでの変更を確認するためにすべてのカスタマイズを公開する必要があります。
 
 ## <a name="community-tools"></a>コミュニティ ツール
 
@@ -137,4 +143,3 @@ Excel でデータを表示したら、**ローカライズされたラベル** 
 ## <a name="next-steps"></a>次のステップ
 [組織の地域と言語のオプション](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-languages)<br />
 [システム エンティティ メッセージの編集](../common-data-service/edit-system-entity-messages.md)
-

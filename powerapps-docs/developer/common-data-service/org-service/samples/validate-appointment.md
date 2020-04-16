@@ -3,7 +3,7 @@ title: 'サンプル: 予定の検証（Common Data Service）| Microsoft Docs'
 description: このサンプルは予定の検証方法を示しています。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d49ad9ed6440076d20e771b099227b35dbf7ae36
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 0957dba2c54c1d2592802e177cd39e30d87cb2e1
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934159"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155511"
 ---
 # <a name="sample-validate-an-appointment"></a>サンプル: 予定の検証
 

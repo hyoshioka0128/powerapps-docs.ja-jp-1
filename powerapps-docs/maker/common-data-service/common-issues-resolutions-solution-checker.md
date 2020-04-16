@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cf8fdf1b14ef7bbc503c49fac217bb071bd56305
-ms.sourcegitcommit: 4f2e9e8f9bd3204ca9eee9e2a46f797c957c55ec
+ms.openlocfilehash: 2280ea28178a85429367ea0359660b3b94f5f99b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "3029771"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154727"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>ソリューション チェッカーの一般的な問題と解決策
 
@@ -222,9 +222,9 @@ PowerApps-アドバイザー エンタープライズ アプリケーション I
 
 ## <a name="solution-checker-fails-to-export-patched-solutions"></a>ソリューション チェッカーがパッチを適用したソリューションをエクスポートできない
 
-ソリューションに [修正プログラム](https://docs.microsoft.com/powerapps/developer/common-data-service/create-patches-simplify-solution-updates) が適用済の場合、ソリューション チェッカーは分析のためのソリューションをエクスポートできません。 ソリューションに修正プログラムが適用されていると、元のソリューションがロックされそのソリューションを親ソリューションとして識別する依存修正プログラムが組織内に存在する限り、変更またはエクスポートができません。
+ソリューションに [修正プログラム](https://docs.microsoft.com/powerapps/developer/common-data-service/create-patches-simplify-solution-updates) が適用済の場合、ソリューション チェッカーは分析のためのソリューションをエクスポートできません。 ソリューションに修正プログラムが適用されている場合、元のソリューションがロックされそのソリューションを親ソリューションとして識別する依存修正プログラムが組織内に存在する限り、変更やエクスポートはできません。
 
-この問題を解決するには、新しく作成されたソリューションに関連するすべてのパッチが含まれるように、ソリューションの完全なコピーを作成します。 これによりソリューションのロックが解除され、ソリューションをシステムからエクスポートできます。  詳細については、 [ソリューションの完全なコピーをする](use-segmented-solutions-patches-simplify-updates.md#clone-a-solution) を参照してください。
+この問題を解決するには、新しく作成されたソリューションに関連するすべてのパッチが含まれるように、ソリューションの完全なコピーを作成します。 これによりソリューションのロックが解除され、ソリューションをシステムからエクスポートできます。  詳細については  [ソリューションをクローンする](solution-patches.md#clone-a-solution) を参照してください。
 
 ## <a name="solution-checker-will-not-analyze-empty-solutions"></a>ソリューション チェッカーは、空白の ソリューション の分析をすることはできません。
 

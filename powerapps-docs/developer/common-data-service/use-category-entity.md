@@ -3,7 +3,7 @@ title: カテゴリ エンティティの使用 (Common Data Service) | Microsof
 description: カテゴリ エンティティを使用したエンティティ レコードの分類について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2f19ba3babc0d2a57395fc04296c6ccce5e07dc1
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: b506c926fd2ac43d7fd15782e0f32d3402ed8989
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749203"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155199"
 ---
 # <a name="use-the-category-entity"></a>カテゴリ エンティティを使用してください。
 

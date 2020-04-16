@@ -3,7 +3,7 @@ title: マルチ テナント型でのサーバー間認証の使用 (Common Dat
 description: サーバー間認証のために、 Common Data Service でアプリケーション ユーザーを構成する方法について説明します。
 ms.custom: ''
 ms.date: 2/28/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: paulliew
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: dd0bacbd2743100380c67a8e0a0da14bd643465f
-ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
+ms.openlocfilehash: cdc3a2c20f8459787e01001e070ed01b684ceb83
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "2922346"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155171"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>マルチ テナント型でのサーバー間認証の使用
 

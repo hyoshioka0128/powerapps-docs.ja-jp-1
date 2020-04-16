@@ -3,7 +3,7 @@ title: 'サンプル: 複雑なデータ マップを使用してデータをイ
 description: このサンプルは、データ インポートによって、新しいレコードを作成する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 721b4da846aaca0433caf8aac8759fb35dd8199d
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: fcf95a73c6cf1c24407bc494d530b201fc47ee6a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934287"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155755"
 ---
 # <a name="sample-import-data-using-complex-data-map"></a>サンプル: 複雑なデータ マップを使用してデータをインポートする
 

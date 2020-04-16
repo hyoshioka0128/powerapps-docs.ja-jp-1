@@ -3,7 +3,7 @@ title: " 既存レコードのレコードを初期化 (Common Data Service) | M
 description: このサンプルでは、既存のレコードから新しいレコードを作成する方法を示します。
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 17dd5e9d6b3699d8bbc0b931da360e5219012109
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: fec83820324efc2e8a155f13dee4c74f5d3da806
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956198"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155747"
 ---
 # <a name="initialize-a-record-from-existing-record"></a>既存レコードのレコードの初期化
 

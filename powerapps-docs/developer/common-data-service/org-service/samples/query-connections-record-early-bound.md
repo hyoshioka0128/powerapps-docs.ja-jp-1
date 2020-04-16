@@ -3,7 +3,7 @@ title: 'サンプル: レコードによる接続のクエリ (Common Data Servi
 description: このサンプルは、特定のレコードの接続を照会する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8e588c6dedf4326e5a5bb38793d1de6d588e74d8
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 296e6ccedacfaac4504f47c8356bb12de3ad286c
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956182"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155687"
 ---
 # <a name="sample-query-connections-by-a-record-early-bound"></a>サンプル: レコードによる接続の照会 (事前バインド)
 

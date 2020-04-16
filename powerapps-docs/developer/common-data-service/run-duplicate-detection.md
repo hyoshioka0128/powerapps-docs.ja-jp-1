@@ -3,7 +3,7 @@ title: 重複データ検出を実行する (Common Data Service) | Microsoft Do
 description: 特定のレコードやエンティティの種類に対して、あるいは作成または更新の操作中に重複データ検出を実行します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: df4f10fe4bff9ea32fa6d66f0f3a6ca8ac5350bf
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 42aea9a1348cd7cbda2ce66f2819b34795064121
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749229"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155327"
 ---
 # <a name="run-duplicate-detection"></a>重複データ検出を実行する
 

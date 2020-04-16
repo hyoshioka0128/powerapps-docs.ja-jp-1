@@ -3,7 +3,7 @@ title: サーバー側の同期エンティティ (Common Data Service) | Micros
 description: サーバーサイドの同期は、Common Data Service と、受信電子メール用の 1 台以上の Exchange サーバーまたは POP3 サーバーの間、および送信電子メール用の 1 台以上の SMTP または Exchange サーバーの間のインターフェイスを提供します。
 ms.custom: ''
 ms.date: 02/21/2019
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5c0a12acd097c477860e2f472055ec47ca259493
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 0f79600f0c3851ec248cb5d482ac9c0cfacadf30
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859920"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155291"
 ---
 # <a name="server-side-synchronization-entities"></a>サーバー側の同期エンティティ
 
@@ -39,7 +39,7 @@ Power Apps で、サーバーサイドの同期は、Common Data Service と、�
   
 - メールボックスすべての電子メールを処理するために、関係する電子メール プロファイル レコードからの情報を使用します。  
   
-- 非アクティブなメールボックスまたは関連付けられた電子メール プロファイルのないメールボックスに対する電子メールの処理を防ぎます。  
+- 非アクティブなメールボックス、またはメール プロファイルが関連付けられていないメールボックスのメール処理を防止します。  
   
 - ユーザーまたはキューがサーバー側の同期として設定した電子メールの配信方法で作成される場合、自動的に既定の電子メール プロファイルに、関連する電子メールボックスを関係付けます。  
   

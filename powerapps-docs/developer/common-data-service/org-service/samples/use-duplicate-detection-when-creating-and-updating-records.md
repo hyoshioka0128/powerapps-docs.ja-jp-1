@@ -3,7 +3,7 @@ title: 'サンプル: レコードの作成および更新時の重複データ�
 description: このサンプルではエンティティ レコードの作成および更新のために、重複データ検出を呼び出す方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3a2d39ee12b098698115c77ee78a6ae71107f755
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: 9ed76891324d591715652a56c9df7e034ad0f4d9
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3005048"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155535"
 ---
 # <a name="sample-use-duplicate-detection-when-creating-and-updating-records"></a>サンプル: レコードの作成および更新時の重複データ検出の使用
 

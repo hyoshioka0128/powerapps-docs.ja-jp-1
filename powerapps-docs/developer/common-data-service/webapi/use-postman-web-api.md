@@ -3,7 +3,7 @@ title: Postman を Common Data Service Web API で使用する (Common Data Serv
 description: Common Data Service Web API での作業に Postman を使用する方法に関する説明
 ms.custom: ''
 ms.date: 04/22/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,18 @@ ms.topic: article
 ms.assetid: 5829C16D-417D-4A82-9093-C576ADB683D1
 caps.latest.revision: 7
 author: susikka
-ms.author: susikka
+ms.author: Sushant.Sikka
 manager: shujoshi
 search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: 4632922d1c297fd1f856afbca5b6127f6edfbfd4
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 2f98db9a777b8efd7b0dde961c4eff913df97f16
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753655"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154986"
 ---
 # <a name="use-postman-with-the-web-api"></a>Web API で Postman を使用する
 

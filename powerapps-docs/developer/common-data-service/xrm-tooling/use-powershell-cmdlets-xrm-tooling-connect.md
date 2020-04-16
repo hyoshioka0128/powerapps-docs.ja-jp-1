@@ -3,7 +3,7 @@ title: XRMツールに PowerShell cmdlets を使用して Common Data Service �
 description: Get-CrmConnection や Get-CrmOrganizations などの XRMツール の PowerShell cmdlets を使用して Common Data Service に接続し、現在のユーザーがアクセスできる組織を取得する方法を説明します。
 ms.custom: ''
 ms.date: 03/27/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bdf7fd2f1fe10d23b0d99d03e9c5652a98dc3dfa
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 7875c0b4c407f2c5da5a0cce9e334747a4abf1ab
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753627"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154871"
 ---
 # <a name="use-powershell-cmdlets-for-xrm-tooling-to-connect-to-common-data-service"></a>XRMツールにPowerShell cmdlets を使用して Common Data Serviceに接続する
 

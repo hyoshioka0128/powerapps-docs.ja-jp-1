@@ -3,7 +3,7 @@ title: タイム ゾーンのエンティティ (Common Data Service) | Microsof
 description: タイム ゾーン エンティティには、サポートされているタイム ゾーン、タイム ゾーン コード、ローカライズされたタイム ゾーンなどタイム ゾーンの情報が含まれ、時間の計算方法に関する情報が格納されています。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: edff87a40b10e99024df4e85d4d46a073a79f6d8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 987457c96c25f3c3b9a9482fc0f22371fc659d44
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749097"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155247"
 ---
 # <a name="time-zone-entities"></a>タイム ゾーンのエンティティ
 

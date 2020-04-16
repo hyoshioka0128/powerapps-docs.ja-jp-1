@@ -3,7 +3,7 @@ title: 'サンプル: 交差テーブルからレコードを取得する(Common
 description: このサンプルでは、交差テーブルからレコードを取得する方法を示しています。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8ca8e3ec207627eb1b54024f1b05ee4730b70aef
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 2d61d7e4554946e263c4e0aa4efe3fe6debc88e1
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934199"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155619"
 ---
 # <a name="sample-retrieve-records-from-an-intersect-table"></a>サンプル: 交差テーブルからレコードを取得する
 

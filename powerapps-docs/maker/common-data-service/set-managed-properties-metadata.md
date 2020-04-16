@@ -23,11 +23,11 @@ search.app:
 - PowerApps
 - D365CE
 ms.openlocfilehash: 0f75c9c38b3fbd74f330de5e80a2c0f7df8d6e13
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109371"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "3124962"
 ---
 # <a name="set-managed-properties-in-common-data-service-metadata"></a>Common Data Service メタデータの管理プロパティの設定 
 マネージド プロパティを使用すると、どのマネージド ソリューション コンポーネントがカスタマイズ可能であるかを制御できます。 ISV では、有効と思われるソリューション コンポーネントをカスタマイズできるようにする必要があります。 こうすることで、組織はソリューションを自分たちの一意の要件に合わせてカスタマイズできます。 ソリューションのコア機能を提供する重要なソリューション コンポーネントのカスタマイズについては、そのサポートとメンテナンスが予測可能なものになるように、制限するか除外します。 ほとんどの非 ISV 開発環境では、管理ソリューション コンポーネントのカスタマイズを許可しないことをお勧めします。 

@@ -3,7 +3,7 @@ title: クライアント アプリケーションで、XRM ツール共通ロ�
 description: Common Data Service SDK では Visual Studio 用テンプレートが用意され、これによりクライアント アプリケーションで共通ログイン コントロールを使用できるようにできます。 Common Data Service 認証、資格情報の保管および検索、および診断ロギングのためのコードがテンプレートに組み込まれ、自分の Common Data Service 用 Windows クライアント アプリケーションで、これらの機能を素早く活用できます。
 ms.custom: ''
 ms.date: 03/27/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 28342954a5ee996b151265f738673ffef3b4b0d2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 235132665462441616bfcdb9d05811584464fd6e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749066"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154867"
 ---
 # <a name="use-the-xrm-tooling-common-login-control-in-your-client-applications"></a>クライアント アプリケーションで、XRM ツール共通ログイン コントロールを使用する
 

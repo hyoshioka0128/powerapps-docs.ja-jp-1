@@ -3,7 +3,7 @@ title: 'サンプル: ソリューションの使用（Common Data Service）| M
 description: このサンプルは、ソリューションに関する作業方法を説明します
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 807cd14c385fecddb03f783b9fa7acab6c535ac7
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 6a85a4643b5cc15f2c258893e538de96ef95231b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956162"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155491"
 ---
 # <a name="sample-work-with-solutions"></a>サンプル: ソリューションに関する作業
 

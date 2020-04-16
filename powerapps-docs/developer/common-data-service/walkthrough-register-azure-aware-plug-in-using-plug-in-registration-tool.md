@@ -9,18 +9,18 @@ ms.assetid: b5ef50fa-8085-f425-3968-804d012fc840
 author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf065cc4b2eb1c76156e5373fecfc0193a870380
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 727b627a3069d8010828c829f5c133a0e868700f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749078"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155163"
 ---
 # <a name="tutorial-register-an-azure-aware-plug-in-using-the-plug-in-registration-tool"></a>チュートリアル: プラグイン登録ツールを使用した Azure 対応プラグインの登録
 
@@ -88,9 +88,10 @@ ms.locfileid: "2749078"
 1. **Dynamics 365 - カスタム** 駆動型のアプリで、**設定 > システム > システム ジョブ**選択します。  
 1. サービス エンドポイントに対して指定したのと同じ名前のシステム ジョブを開きます。 ステータスをチェックして、送信が成功、待機、失敗のいずれの状態かを確認します。  
   
-必要な場合は、エンドポイントの登録を解除できます。解除するには、ツールのツリー ビューでエンドポイントを選択し、**登録を解除**をクリックします。  
+必要な場合は、エンドポイントの登録を解除できます。解除するには、ツールのツリー ビューでエンドポイントを選択し、**登録を解除** をクリックします。  
   
 ### <a name="see-also"></a>関連項目
 
 [CDS のための Azure 統合](azure-integration.md)<br />
 [CDS での Microsoft Azure 統合の概要](azure-integration.md)
+ 

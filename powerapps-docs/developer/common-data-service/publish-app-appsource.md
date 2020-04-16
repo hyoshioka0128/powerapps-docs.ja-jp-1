@@ -3,7 +3,7 @@ title: AppSourceでアプリケーションを公開 する (Common Data Service
 description: Microsoft AppSource の Power Apps 公開して、サブスクライバーを検索して試用、購入できる方法について説明します。
 ms.custom: ''
 ms.date: 03/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: KumarVivek
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bbb8853a1193cffbf11840f847394466db61bd17
-ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
+ms.openlocfilehash: a75431956c916aa6b2f39141fccc8b8d13b02305
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "2922402"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155363"
 ---
 # <a name="publish-your-app-on-appsource"></a>AppSource でアプリを公開する
 

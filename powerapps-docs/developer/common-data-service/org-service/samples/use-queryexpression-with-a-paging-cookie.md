@@ -3,7 +3,7 @@ title: 'サンプル: ページング Cookie と共に QueryExpresion を使用�
 description: このサンプルは QueryExpresion でページング Cookie を使用する方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 88066bb262c92a08a85d55f357505f9f526f6e6c
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 4e130a5c03567771f38a201ada5ef4e7457bb724
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934067"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155523"
 ---
 # <a name="sample-use-queryexpression-with-a-paging-cookie"></a>サンプル: ページング Cookie を使用した QueryExpression の使用
 

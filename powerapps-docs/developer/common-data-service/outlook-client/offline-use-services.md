@@ -3,7 +3,7 @@ title: サービスをオフラインで使用する (Common Data Service) | Mic
 description: さまざまなサービスをオフラインで使用する方法について説明します。 オフラインでサポートされているいくつかのメッセージがあります。 IOrganizationService のメッセージがオフラインで機能するかどうかは、そのメッセージの SdkMessage.Availability 属性をチェックすることでも確認できます。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: sriharibs
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9f6aa213b93e9406356d96798584b76e3b370eae
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8a75ec933ad347bc90ea6710959178710733128a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749248"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155391"
 ---
 # <a name="offline-use-of-services"></a>サービスをオフラインで使用する
 

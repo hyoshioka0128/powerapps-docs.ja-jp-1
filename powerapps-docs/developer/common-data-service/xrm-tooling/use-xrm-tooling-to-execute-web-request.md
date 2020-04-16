@@ -3,7 +3,7 @@ title: XRMツールを使用して Common Data Serviceでアクションを実�
 description: CrmServiceClient クラスのオブジェクトは、Dynamics 365 データの作成、取得、更新、および削除の操作を実行するために使用できます。
 ms.custom: ''
 ms.date: 03/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -19,12 +19,12 @@ search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: ff161483f631fbd1673f36465041c5e0dbc0ac8c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 17560de9f14ff900cfcfa9d36cc0c72748d53ea4
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749063"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154843"
 ---
 # <a name="use-xrm-tooling-to-execute-a-web-request-against-web-api"></a>XRM ツールキットを使用して Web API に対する Web 要求を実行する
 

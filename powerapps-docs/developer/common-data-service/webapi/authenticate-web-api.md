@@ -3,7 +3,7 @@ title: Web API を使用した Common Data Service への認証 (Common Data Ser
 description: Web API を使用して認証を管理するさまざまな異なる方法について
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: susikka
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cdd453145c5b30642669e3a7a2b6a052753117a5
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 85dbea11497c05393c1376f53318ae8a50e22930
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748938"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155111"
 ---
 # <a name="authenticate-to-common-data-service-with-the-web-api"></a>Web API を使用して Common Data Service への認証
 

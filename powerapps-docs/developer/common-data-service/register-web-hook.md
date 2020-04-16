@@ -3,7 +3,7 @@ title: webhookを登録する (Common Data Service) | Microsoft Docs
 description: このトピックでは、プラグイン登録ツールを使用して webhook を登録する方法について説明します
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 27bf02f8b050e9638b281f74018c9e914364fa94
-ms.sourcegitcommit: 303d5aed44f2bbb406cabeb6b9c8474d738d9114
+ms.openlocfilehash: fcddd11548be64f80a1f2e7518431537c8343efb
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "3005100"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155339"
 ---
 # <a name="register-a-webhook"></a>webhook の登録
 

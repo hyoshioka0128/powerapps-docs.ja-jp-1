@@ -3,7 +3,7 @@ title: 'スケーラブルなカスタマイズ設計: 概要 (Common Data Servi
 description: '1 つめのトピック。 このトピックでは、コードのカスタマイズが最適化されていない場合に発生する現象と、それらの現象を回避するためにコードのカスタマイズで適用する制約について説明します。 '
 ms.custom: ''
 ms.date: 1/15/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: rogergilchrist
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4584904aa50bc4b4b9ec2fb75322a884c1aa8cfa
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 6dd7163c10e9b10dd7cdb91a6e1571ffef63f566
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749224"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155307"
 ---
 # <a name="scalable-customization-design-in-common-data-service"></a>Common Data Service でのスケーラブルなカスタマイズ設計
 

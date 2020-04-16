@@ -3,7 +3,7 @@ title: ソリューション ファイルでのソース コントロールの�
 description: SolutionPackager ツールは、ソース コントロール システムで使用できます。 ソリューション .zip ファイルがフォルダーに解凍された後、ファイルをソース 管理 システムに追加して送信します。 これらのファイルは他のコンピューター上で同期し、新しい一意のソリューション .zip ファイルにまとめることができます。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 77e938315461948c5dc5507f68be290560e728d2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 8f09fe8c955a7108c4df62b1f4abddeeba5eb08d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749083"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155159"
 ---
 # <a name="source-control-with-solution-files"></a>ソリューション ファイルを使用したソース コントロール
 

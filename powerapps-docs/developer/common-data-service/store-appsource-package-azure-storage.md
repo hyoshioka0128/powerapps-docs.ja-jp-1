@@ -3,7 +3,7 @@ title: '手順 4: AppSource パッケージを Azure ストレージ に保存�
 description: ファイルのセキュリティを維持するために、すべてのアプリ開発者は AppSource パッケージファイルを Microsoft Azure Blobストレージ アカウントに保存し、Shared Access Signature (SAS) キーを使用してパッケージファイルを共有する必要があります。 パッケージファイルは Azure ストレージ から取得され、その後認証と AppSource のトライアルが行われます。
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8eb263efed13149ea8abcce217116783fdb4b598
-ms.sourcegitcommit: f70be39855e4931312fe0035525586a15ed4487b
+ms.openlocfilehash: cb6436f85a9961bad403c3a6c97440f154877b00
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "2922338"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155275"
 ---
 # <a name="step-4-store-your-appsource-package-on-azure-storage-and-generate-a-url-with-sas-key"></a>手順 4: AppSource パッケージをAzureストレージに保存し、SASキーでURLを生成する
 

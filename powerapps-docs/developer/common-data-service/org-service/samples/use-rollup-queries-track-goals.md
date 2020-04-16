@@ -3,7 +3,7 @@ title: 'サンプル: 目標を追跡するユーザー ロールアップ ク�
 description: このサンプルはロールアップ クエリを使用して目標を追跡する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 00461f0edf24e9d35d9e0b97233da34bb6faefd8
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 3ee2a184b57a03b60ba8d5fce93bd107495036d1
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934083"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155515"
 ---
 # <a name="sample-use-rollup-queries-to-track-goals"></a>サンプル: ロールアップ クエリを使用して目標を追跡する
 

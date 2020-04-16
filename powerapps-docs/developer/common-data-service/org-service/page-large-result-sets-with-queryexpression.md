@@ -3,7 +3,7 @@ title: QueryExpression 使用して大量の結果セットをページングす
 description: ページング Cookie 機能を使用すると、アプリケーションの大きなデータセットのページングを高速化できます。 この機能は、FetchXML クエリと QueryExpression クエリの両方で使用できます。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: f518f8b47347399d3670b89f67db8978f591430c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 534c7c0266a0152c8e2e15a4c7e4290f537fd8ae
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748967"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155991"
 ---
 # <a name="page-large-result-sets-with-queryexpression"></a>QueryExpression を使用して大きな結果セットをページングする
 

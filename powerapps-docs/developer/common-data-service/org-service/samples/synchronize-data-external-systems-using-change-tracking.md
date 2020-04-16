@@ -3,7 +3,7 @@ title: 'サンプル: 変更追跡システムを使用して外部システム�
 description: このサンプルは、エンティティから変更を取得し、そのデータを外部システムと同期させる方法を示しています。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c6b855102f595460fd2324e94fff56a9ccd949d7
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 380a4c5e959b1cd7dac0c9b491cea753038db60e
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934147"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155555"
 ---
 # <a name="sample-synchronize-data-with-external-systems-using-change-tracking"></a>サンプル: 変更の追跡を使用してデータを外部システムに同期
 

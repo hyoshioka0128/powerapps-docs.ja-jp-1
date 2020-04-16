@@ -17,17 +17,17 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 4f1c05ca41e6873a0072e8ea6720343e468e38bb
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 31578198bb468a2a4269b7fda23a2ac2cc2cab73
+ms.sourcegitcommit: cf492063eca27fdf73459ff2f9134f2ca04ee766
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863065"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "3136306"
 ---
 # <a name="understand-model-driven-app-components"></a>モデル駆動型アプリのコンポーネントについて
 適切に設計されたモデル駆動型アプリは、完成したアプリの外観と機能を構築するためにデザイナーを使用して選択したいくつかのコンポーネントで構成されます。 デザイナーがアプリの構成に使用するコンポーネントとコンポーネント プロパティがメタデータになります。 
 
-これらの各コンポーネントがアプリの設計にどのように関連するかについて理解するため、*データ*、*UI*、*ロジック*、*ビジュアル化*のカテゴリに分割されています。 
+これらの各コンポーネントがアプリの設計にどのように関連するかについて理解するため、*データ*、*UI*、*ロジック*、*ビジュアル化* のカテゴリに分割されています。 
 
 ## <a name="data"></a>データ
 これらのコンポーネントは、どのデータをアプリに基づいて、コンポーネントの作成、または編集しますが、デザイナーを使用するかを決定します。
@@ -52,7 +52,8 @@ ms.locfileid: "2863065"
 |[フォーム]     | 組織がエンティティを追跡するアイテムに一致する特定のエンティティのデータ入力フィールドのセット。 たとえば、具体的に要求された再注文日と共に、顧客の以前の注文を追跡するためにユーザーが関連情報を入力する一連のデータ入力フィールドなどです。        | フォーム デザイナー        |
 |ビュー     | ビューは、特定のエンティティに関するレコードの一覧をアプリケーションで表示する方法を定義します。 ビューは、表示する列、各列の幅、並べ替えの動作、既定のフィルターを定義します。   |  ビュー デザイナー       |
 
-![アプリ デザイナーとフォーム デザイナー](media/model-driven-app-overview/app-and-form-designers.png)
+> [!div class="mx-imgBorder"] 
+> ![アプリ デザイナーとフォーム デザイナー](media/model-driven-app-overview/app-and-form-designers.png "アプリ デザイナーとフォーム デザイナー")
 
 ## <a name="logic"></a>ロジック
 ビジネス プロセス、ルール、アプリが持つ自動化を決定します。 [!INCLUDE [powerapps](../../includes/powerapps.md)] 作成者は、プロセスまたはルールの種類に固有のデザイナーを使用します。 
@@ -66,7 +67,7 @@ ms.locfileid: "2863065"
 |業務ルール     | 要件の設定、フィールドの非表示、データの検証など、ルールまたはレコメンデーション ロジックをフォームに適用するために使用されます。 アプリ デザイナーは、変化が急速で、よく使用される業務ルールを実装および保守するための、単純なインターフェイスを使用します。         |  業務ルール デザイナー       |
 |フロー     | フローは、通知の取得、アプリの同期、データの収集などを行うために、アプリとサービス間の自動化されたワークフローを作成できるクラウド ベースのサービスです。        | Power Automate        |
 
-![ワークフロー、操作、業務プロセス フローのデザイナー](media/model-driven-app-overview/designer-mash.png)
+![ワークフロー、操作、業務プロセス フローのデザイナー](media/model-driven-app-overview/designer-mash.png "ワークフロー、操作、業務プロセス フローのデザイナー")
 
 詳細情報: [モデル駆動型アプリでビジネス ロジックを適用する](guide-staff-through-common-tasks-processes.md) 
 
@@ -84,18 +85,23 @@ ms.locfileid: "2863065"
 |ダッシュボード     | 操作可能な業務データの概要を提供する 1 つ以上のグラフィック ビジュアル化のパレットとして機能します。        | ダッシュボード デザイナー        |
 |埋め込み Power BI     | 埋め込み  Power BI タイルとダッシュボードをアプリに追加します。 Power BIは、ビジネス インテリジェンス インサイトを提供するクラウドベースのサービスです。        |  グラフ デザイナー、ダッシュボード デザイナー、および Power BI の組み合わせ       |
 
-![サンプル ダッシュボード](media/model-driven-app-overview/dashboard-designer.png)
+> [!div class="mx-imgBorder"] 
+> ![サンプル ダッシュボード](media/model-driven-app-overview/dashboard-designer.png "サンプル ダッシュボード")
 
 ## <a name="advanced-model-driven-app-making"></a>高度なモデル駆動型アプリの作成
 ソリューション エクスプローラーは、高度なモデル駆動型アプリのビルドで使用される包括的なツールです。 ソリューション エクスプローラー内で、ツールの左側のナビゲーション ウィンドウを使用して、すべてのアプリ コンポーネントで構成される階層を移動できます。
 
-![ソリューション エクスプローラー](media/model-driven-app-overview/solutionexplorer-entitiescollapsed.png)
+> [!div class="mx-imgBorder"] 
+> ![ソリューション エクスプローラー](media/model-driven-app-overview/solutionexplorer-entitiescollapsed.png "ソリューション エクスプローラー")
 
-ソリューション エクスプローラーを開くには、[!INCLUDE [powerapps](../../includes/powerapps.md)] の左側のウィンドウで **モデル駆動型** を選択します。
+ソリューション エクスプローラーを開くには、 
 
-  ![モデル駆動型を選択する](media/model-driven-app-overview/app-type-picker-mod.png)
+1. [!INCLUDE [powerapps](../../includes/powerapps.md)] ホーム ページで **設定** を選択し、**詳細設定** を選択します。
 
-次に、**詳細設定** タブを選択します。
+2. Dynamics 365 ビジネス管理ページで、**設定** を選択し、**カスタマイズ** を選択して、**システムのカスタマイズ** を選択します。
+
+  > [!div class="mx-imgBorder"] 
+  > ![ソリューション エクスプローラーを開きます](media/model-driven-app-overview/app-settings-solutions-explorer.png "ソリューション エクスプローラーを開く")
 
 詳細情報: [高度なアプリの作成とカスタマイズ](advanced-navigation.md)
 

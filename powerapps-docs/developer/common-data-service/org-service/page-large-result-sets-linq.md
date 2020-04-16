@@ -3,7 +3,7 @@ title: LINQ による大量の結果セットのページング (Common Data Ser
 description: Take および Skip 演算子を使用して大規模な .NET 統合言語クエリ (LINQ) のクエリ結果をページングする方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 386708448701c05a0896fcf05333c9054c350743
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 324f2e275dd9ec2b2d8aceaafe0a076488ca4bb7
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748966"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155999"
 ---
 # <a name="page-large-result-sets-with-linq"></a>LINQ による大量の結果セットのページング
 

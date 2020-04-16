@@ -3,7 +3,7 @@ title: 'サンプル: 基本プラグインの作成 (Common Data Service) | Mic
 description: このサンプルはフォローアップ活動を作成する簡単なプラグインの作成方法を示します。
 ms.custom: ''
 ms.date: 1/29/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 43e914fd10d05b4c93857fe05b414562070c7907
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: c3df411b45640551781e37d5b349ee4c4640086d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749105"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155919"
 ---
 # <a name="sample-create-a-basic-plug-in"></a>サンプル: 基本プラグインの作成
 

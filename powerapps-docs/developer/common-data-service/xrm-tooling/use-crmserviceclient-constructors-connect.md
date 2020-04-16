@@ -3,7 +3,7 @@ title: CrmServiceClient コンストラクターを使用した Common Data Serv
 description: CrmServiceClient クラスのインスタンスを作成すると、コンストラクターの 1 つを使用して Common Data Service に接続できます。
 ms.custom: ''
 ms.date: 03/27/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 3b42f674ef9bfe53d1665d4c0489450274f93d33
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: fe382d76dc314680c1da66a37227ad441567324f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748899"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154875"
 ---
 # <a name="use-crmserviceclient-constructors-to-connect-to-common-data-service"></a>CrmServiceClient コンストラクターを使用した Common Data Service への接続
 

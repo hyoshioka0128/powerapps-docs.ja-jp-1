@@ -10,12 +10,12 @@ ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
-ms.openlocfilehash: 89dacd67f5a7876f7fd0950d0bba4cd60218f296
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 6f801328a4fc6b400cecd9ae7d8d233d8f3241a7
+ms.sourcegitcommit: 551af7e0273862b28d9b2387671a4eeaf719eb37
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2862025"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "3116872"
 ---
 # <a name="add-code-components-to-a-field-or-entity-in-model-driven-apps"></a>モデル駆動型アプリでフィールドやエンティティにコード コンポーネントを追加する
 
@@ -29,7 +29,7 @@ ms.locfileid: "2862025"
 
 次の手順に従うと、**予算金額**フィールドの既定のラベルとテキスト ボックス フィールドが、営業案件エンティティ上のスライダー コード コンポーネントに変更されます。 同様のステップを使用して、既存のフィールドをコード コンポーネントに置き換え、またはカスタム フィールドのコード コンポーネントを構成することができます。
 
-1. ソリューション エクスプローラーを開きます。
+1. **設定** > **カスタマイズ** > **システムのカスタマイズ**の順に移動します。
 
 2. **エンティティ**を展開して、**営業案件**エンティティなどの目的のエンティティを展開し、**フォーム**を選択してから、**メイン**フォームなどのフォームをオープンします。
 

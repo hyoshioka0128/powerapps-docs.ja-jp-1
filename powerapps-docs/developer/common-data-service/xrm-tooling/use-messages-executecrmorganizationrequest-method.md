@@ -3,7 +3,7 @@ title: ExecuteCrmOrganizationRequest メソッドでメッセージを使用す�
 description: ExecuteCrmOrganizationRequest メソッドでメッセージを使用する方法について説明します。 サンプルは、CrmServiceClient.String) メソッドを使用して CreateRequest および RetrieveMultipleRequest メッセージを実行する方法について示しています。
 ms.custom: ''
 ms.date: 03/27/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 02930412dfb6eb3825a9606befea3c24624914e2
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 84b19521e1fb9103de7339d6fbade544a1d210ee
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749068"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154863"
 ---
 # <a name="use-messages-with-the-executecrmorganizationrequest-method"></a>ExecuteCrmOrganizationRequest メソッドでメッセージを使用する
   

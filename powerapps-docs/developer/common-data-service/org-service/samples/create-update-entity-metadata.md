@@ -3,7 +3,7 @@ title: 'サンプル: エンティティのメタデータを作成、更新す�
 description: このサンプルでは、エンティティ の メタデータ の 作成と更新方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 394bd033c7664542c58286c117f0fce679040066
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 379df3a1b3f3bfd75b86bf07d82b3f0508d099d1
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934571"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155847"
 ---
 # <a name="create-and-update-entity-metadata"></a>エンティティ メタデータ の作成と更新
 

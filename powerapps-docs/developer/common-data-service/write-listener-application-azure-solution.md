@@ -9,18 +9,18 @@ ms.assetid: cf68e0a9-c240-59e7-c501-68cbfa0df455
 author: JimDaly
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e4247a7561bc0fc2116030737db72f99390f46c3
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 4988b5c3210b083658c539c53a9479abdd03d2ee
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2748914"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154899"
 ---
 # <a name="write-a-listener-application-for-a-azure-solution"></a>Azure ソリューション用のリスナー アプリケーションの記述
 
@@ -48,7 +48,7 @@ ms.locfileid: "2748914"
 
 ## <a name="write-a-one-way-two-way-or-rest-listener"></a>一方向、二方向、または REST リスナーの記述
 
-先に説明したキュー リスナーに加えて、Common Data Service でサポートされているその他 3 つのサービス バス コントラクト用のリスナーを記述できます。それらのリスナーは、一方向、二方向、および REST リスナーです。 一方向リスナーは、サービス バスにポストされたメッセージを読み取って処理できます。 二方向リスナーは、同じことをできますが、いくつかの情報の文字列を Common Data Service に返します。 REST リスナーは、REST エンドポイントを使用して機能する点を除いて二方向リスナーと同じです。 これらのリスナーは、サービス バス経由で送信されたメッセージを読み取るために、サービス エンドポイントをアクティブにリッスンする必要があります。 Common Data Service が Message をサービス バスへ投稿しようとしたときにリスナーがリッスンしていなかった場合、Message は送信されません。
+先に説明したキュー リスナーに加えて、Common Data Service でサポートされているその他 3 つのサービス バス コントラクト用のリスナーを記述できます。それらのリスナーは、一方向、二方向、および REST リスナーです。 一方向リスナーは、サービス バスにポストされたメッセージを読み取って処理できます。 二方向リスナーは、同じことをできますが、いくつかの情報の文字列を Common Data Service に返します。 REST リスナーは、REST エンドポイントを使用して機能する点を除いて二方向リスナーと同じです。 これらのリスナーは、サービス バス経由で送信されたメッセージを読み取るために、サービス エンドポイントをアクティブにリッスンする必要があります。 Common Data Service が Message をサービス バスへ投稿しようとしたときにリスナーがリッスンしていなかった場合、メッセージ は送信されません。
   
 リスナーの記述は、ABC (アドレス、バインディング、コントラクト) と呼ばれる要素によって構造化されます。 
 
@@ -85,7 +85,7 @@ REST コントラクトの場合、<xref:Microsoft.Xrm.Sdk.IWebHttpServiceEndpoi
 > [!NOTE]
 >  二方向または REST リスナーで標準のプラグイン (ServiceBusPlugin) を使用する場合、プラグインはリスナーから返される文字列データを使用しません。 ただし、カスタム Azure 対応のプラグインではこの情報を使用できます。  
 > 
->  リスナー サンプルを実行する場合、尋ねられる発行者シークレットは、Azure Service Bus の管理キーです。 WS2007 Federation HTTP バインディングでは、`token` と WS-Trust 1.3 プロトコルが使用されます。  
+>  リスナー サンプルを実行すると、入力を求められる発行者シークレットは、Azure Service Bus 管理キーです。 WS2007 Federation HTTP バインディングでは、`token` と WS-Trust 1.3 プロトコルが使用されます。  
   
 <a name="filter"></a>
 
@@ -140,3 +140,4 @@ else if (receivedMessage.ContentType = "application/xml")
 [サンプル: REST リスナー](org-service/samples/rest-listener.md)<br />
 [Azure ソリューションの Common Data Service データとの連携](work-data-azure-solution.md)<br />
 [Azure イベント ハブ ソリューションの Common Data Service イベント データとの連携](work-event-data-azure-event-hub-solution.md)
+ 

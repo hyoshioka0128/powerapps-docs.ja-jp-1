@@ -3,7 +3,7 @@ title: FetchXML を使用したデータのクエリ (Common Data Service)| Micr
 description: FetchXML は、Common Data Service で使用されている独自のクエリ言語です。 これは言語の機能を記述するスキーマを基に作成されています。
 ms.custom: ''
 ms.date: 07/23/2019
-ms.reviewer: susikka
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,16 +14,16 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1337df809d0f696d81882089877c4ab9304ef3d8
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 70dd2fe43d882d36f54fa6b13c87f5a6782d692f
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749087"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155187"
 ---
 # <a name="use-fetchxml-to-construct-a-query"></a>FetchXML の使用によるクエリの作成
 
-FetchXML は、Common Data Service で使用されている独自のクエリ言語です。 これは言語の機能を記述するスキーマを基に作成されています。 FetchXML 言語では、クエリ式と同様のクエリ機能がサポートされています。 さらに、この言語は主にクエリ式のシリアル化されたフォームとして使用され、[UserQuery エンティティ](reference/entities/userquery.md) 内のユーザー所有の保存済みビューとして、または [SavedQuery エンティティ](reference/entities/savedquery.md) 内の組織所有の保存済みビューとしてクエリを保存するために使用されます。  
+FetchXML は、Common Data Service で使用されている独自のクエリ言語です。 これは言語の機能を記述するスキーマを基に作成されています。 FetchXML 言語では、クエリ式と同様のクエリ機能がサポートされています。 さらに、クエリのシリアル化されたフォームとして使用され、[UserQuery エンティティ](reference/entities/userquery.md) にユーザー所有の保存済みビューとして、および [SavedQuery エンティティ](reference/entities/savedquery.md) に組織所有の保存済みビューとしてクエリを保存するために使用されます。  
   
 FetchXML クエリを実行するには **Web API** または **組織サービス** のいずれかを使用します。
 
@@ -143,3 +143,4 @@ foreach (var c in result.Entities)
 ## <a name="fetchxml-query-results"></a>FetchXML クエリ結果  
  <xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy>.<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.RetrieveMultiple(Microsoft.Xrm.Sdk.Query.QueryBase)> メソッドを使用して FetchXML クエリを実行すると、ユーザーが認証されます。 メソッド、戻り値はクエリの結果を格納している <xref:Microsoft.Xrm.Sdk.EntityCollection> です。 これで、エンティティ コレクション内を反復できます。 前述の例では、`foreach` ループを使用して、FetchXML クエリの結果コレクション内を反復しています。  
   
+ 

@@ -3,7 +3,7 @@ title: トランザクション通貨 (通貨) エンティティ (Common Data S
 description: ユーザーが複数の通貨で金融取引を実行できるようにする、複数通貨機能である取引通貨について。 基本通貨を使用すると、さまざまな取引通貨の複数レコードを 1 つの通貨で集計、比較、または分析できます。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 28dac174671b4577a42e488afa4e007f7e0d9212
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 9744ed3acb2758cede516f55f1eba764d366c8ab
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749210"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155243"
 ---
 # <a name="transaction-currency-currency-entity"></a>トランザクション通貨 (通貨) エンティティ
 

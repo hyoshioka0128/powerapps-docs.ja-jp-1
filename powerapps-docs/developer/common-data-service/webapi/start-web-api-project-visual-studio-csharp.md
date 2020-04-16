@@ -3,7 +3,7 @@ title: Visual Studio (C#) で Common Data Service Web API プロジェクトを�
 description: Common Data Service Web APIを使用するコンソール アプリケーションを構築するために Visual Studio で新しいプロジェクトを作成します。
 ms.custom: ''
 ms.date: 04/22/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -17,12 +17,12 @@ search.audienceType:
 - developer
 search.app:
 - D365CE
-ms.openlocfilehash: 37548edcebb037a64599f405b3cf4d121d38d517
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 8914412cd7189a1b0e79de1d13690dcd877a9b8a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753659"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154992"
 ---
 # <a name="start-a-common-data-service-web-api-project-in-visual-studio-c"></a>Visual Studio (C#) で Common Data Service Web API プロジェクトを使う
 
@@ -55,9 +55,9 @@ ms.locfileid: "2753659"
   
    ![Common Data Service の新しいコンソール アプリケーションのプロジェクト ダイアログ](media/new-project.PNG "Common Data Service の新しいコンソール アプリケーションのプロジェクト ダイアログ")  
   
-5. フォームの下部近くのテキスト ボックスに、プロジェクトの名前と場所を入力し、[OK] を選択します。 (このトピックでは、ソリューション名「StartWebAPI-CS」が使用されています。) 最初ソリューションのファイルが作成され、ソリューションは Visual Studio に読み込まれます。  
+5. フォームの下部近くのテキスト ボックスに、プロジェクトの名前と場所を入力し、[OK] を選択します。 (このトピックでは、ソリューション名 "StartWebAPI-CS" が使用されています。) 最初のソリューション ファイルが作成され、ソリューションは Visual Studio に読み込まれます。  
   
-6. **プロジェクト**メニューで、プロジェクトのプロパティ フォームを開き、ターゲット フレームワークが **.NET Framework 4.6.2** に設定されていることを確認します。  
+6. **プロジェクト** メニューで、プロジェクトのプロパティ フォームを開き、ターゲット フレームワークが **.NET Framework 4.6.2** に設定されていることを確認します。  
   
 #### <a name="install-and-verify-the-required-assembly-references"></a>必要なアセンブリ参照をインストールして確認します。  
 

@@ -4,7 +4,7 @@ description: 開発者がモデル駆動型アプリ内で Web リソースを�
 services: ''
 suite: powerapps
 documentationcenter: na
-author: JimDaly
+author: Nkrb
 manager: kvivek
 editor: ''
 tags: ''
@@ -14,18 +14,18 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2018
-ms.author: jdaly
+ms.author: nabuthuk
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8786c43f78438e993853b683e31a602bf86c3584
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 0985b9248887246b55f8796d88c4db7c31bdb75b
+ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749363"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3115807"
 ---
 # <a name="use-web-resources"></a>Web リソースの使用
 

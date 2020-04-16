@@ -3,7 +3,7 @@ title: データ インポートの実行 (Common Data Service) | Microsoft Docs
 description: データ インポートは、Dynamics 365 Server 上で直接実行され、解析、マップ ガイド付き変換、およびアップロードのための 3 つの非同期ジョブを必要とします。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 42f69903abb225f2746e0ff79eb2d13232e8cc12
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: 0bf8b29fe59683effeb68c93f2161074e04ef2e2
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753783"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155331"
 ---
 # <a name="run-data-import"></a>データ インポートの実行
 

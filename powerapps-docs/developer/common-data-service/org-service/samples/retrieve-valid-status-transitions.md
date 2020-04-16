@@ -3,7 +3,7 @@ title: 'サンプル: 有効な状態の遷移を取得する (Common Data Servi
 description: このサンプルは、有効な状態遷移を取得する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e4e69e22dbe8a4e9ec59866bc60026e998779a8b
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: e6eb7b939430b2f21f961bfd85b0d3b6179eb3d7
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956166"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155603"
 ---
 # <a name="sample-retrieve-valid-status-transitions"></a>サンプル: 有効な状態の遷移を取得する
 

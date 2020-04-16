@@ -3,7 +3,7 @@ title: Upsert を使用してレコードを挿入または更新 (Common Data S
 description: UpsertRequest (更新または挿入) メッセージのヘルプは、Dynamics 365 にレコードが存在するかどうかわからない場合にさまざまなデータ統合シナリオを簡略化するのに役立ちます。 このような場合、UpdateRequest または CreateRequest 操作を呼び出す必要があるかどうかが分かりません。 この結果、適切な操作を実行する前に、そのレコードが存在するかどうかを決定するために、最初にそのレコードをクエリすることになります。 UpsertRequest メッセージはそのような問題の解決に役立ちます
 ms.custom: ''
 ms.date: 02/23/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 67b8793ae57633d6e5ffa15b1aa68f4104829c67
-ms.sourcegitcommit: d9cecdd5a35279d78aa1b6c9fc642e36a4e4612c
+ms.openlocfilehash: aa262c8371af0b0154269f2fe7b47b9308f0f577
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "2753712"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155151"
 ---
 # <a name="use-upsert-to-insert-or-update-a-record"></a>Upsert を使用してレコードを挿入または更新
 

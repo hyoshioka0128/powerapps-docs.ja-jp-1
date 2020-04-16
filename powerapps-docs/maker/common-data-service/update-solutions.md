@@ -1,8 +1,8 @@
 ---
-title: ソリューションの更新およびアップグレード | MicrosoftDocs
+title: ソリューションの更新 | MicrosoftDocs
 description: Power Apps でのソリューションの更新またはアップグレード方法について説明します
 ms.custom: ''
-ms.date: 01/24/2020
+ms.date: 03/18/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -21,17 +21,27 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 178c4e6d618ad29975c37c5e690847b27899fc08
-ms.sourcegitcommit: cb533c30252240dc298594e74e3189d7290a4bd7
+ms.openlocfilehash: 0bebbc9eeead8fb4f02c4bf958c33b79c0d9cc1c
+ms.sourcegitcommit: 48414442a10210d49911c3eda8b49f68db85f684
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "3017530"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "3151179"
 ---
-# <a name="update-or-upgrade-a-solution"></a>ソリューションの更新またはアップグレード  
-既存の管理ソリューションに更新をインストールする場合があります。 手順は、各種オプションを取得することを除けば、新しく管理ソリューションをインストールする場合と同じです。 他から取得したソリューションを更新している場合は、どのオプションを選択する必要があるかについてソリューション発行者からのガイダンスが必要です。  
+# <a name="upgrade-or-update-a-solution"></a>ソリューションのアップグレードまたは更新  
+既存の管理ソリューションを更新する必要がある場合があります。 ソリューションを更新するには、次の手順に従います: 
 
-1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、左側のナビゲーションから**ソリューション**を選択します。  
+1.  開発環境でアンマネージド ソリューションを開き、新しいものを作成するか、必要な既存のコンポーネントを追加および削除します。 
+2.  ソリューションを管理ソリューションとしてエクスポートする場合は、バージョン番号を大きくします。 詳細: [更新のバージョン番号について](#understanding-version-numbers-for-updates) 
+
+    > [!div class="mx-imgBorder"] 
+    > ![ソリューション バージョンを更新する](media/update-solution-version.png)
+3. [ターゲット環境にアップグレードまたは更新を適用する](#apply-the-upgrade-or-update-in-the-target-environment)
+
+## <a name="apply-the-upgrade-or-update-in-the-target-environment"></a>ターゲット環境にアップグレードまたは更新を適用する
+更新済ソリューションをインポートする手順は、いくつか異なるオプションが取得されることを除けば、新しい管理ソリューションをインストールする場合と同じです。 他から取得したソリューションを更新している場合は、どのオプションを選択する必要があるかについてソリューション発行者からのガイダンスが必要です。  
+
+1. [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインし、必要なターゲット環境を選択して、左側のナビゲーションから **ソリューション** を選択します。  
 
 2. コマンド バーで **インポート** を選択します。  
 
@@ -70,8 +80,11 @@ ms.locfileid: "3017530"
 
 **ソリューションのアップグレードを完了する** アップグレードのステージングを選択した場合、またはシステムでアップグレード完了時に問題が発生した場合は、元のソリューションがまだシステムにインストールされていることと、基本ソリューションと同じソリューション名に \_ Upgradeが付加された新しいソリューションがあることが確認できます。  アップグレードを完了するには、ソリューションの一覧から基本のソリューションを選択し、 **ソリューションのアップグレードを適用する** を選択します。  これによって、すべての古いパッチと基本ソリューションをアンインストールし、\_アップグレード ソリューションを古い基本ソリューションと同じ名前に変更します。  元のソリューションに含まれていたコンポーネントと \_アップグレード ソリューションに含まれていないパッチは、この処理の一環として削除されます。
 
+## <a name="understanding-version-numbers-for-updates"></a>更新のバージョン番号について
+ソリューションのバージョンの形式は major.minor.build.revision です。 更新には、上位のソリューションよりも大きいメジャー、マイナー、ビルド、またはリビジョン番号が必要です。 たとえば、基本ソリューションのバージョンが 3.1.5.7 の場合、小規模な更新はバージョン 3.1.5.8 になり、もう少し重要な更新はバージョン 3.1.7.0 になります。 さらに重要な更新は、バージョン 3.2.0.0 です。
+
 
 ### <a name="see-also"></a>関連項目
+[ソリューション コンポーネントの追加](create-solution.md#add-solution-components) <br />
 [エクスポート ソリューション](export-solutions.md) <br />
-[ソリューションと修正プログラムの配布](use-segmented-solutions-patches-simplify-updates.md) <br />
 [ソリューションのインポート](import-update-export-solutions.md)

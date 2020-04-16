@@ -3,7 +3,7 @@ title: Azure 対応の カスタム プラグイン (Common Data Service) | Micr
 description: これはパイプライン実行コンテキストを Azure Service Bus にポストできるプラグインのサンプルです。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1148a8e6194a5aa78cda9f01c458c8c817dd261c
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: f9dd7300882307bd06941b91ece152bf97002f83
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749103"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155923"
 ---
 # <a name="sample-azure-aware-custom-plug-in"></a>サンプル: Azure 対応のカスタム プラグイン
 

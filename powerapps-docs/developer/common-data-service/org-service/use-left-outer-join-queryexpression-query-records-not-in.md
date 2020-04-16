@@ -3,7 +3,7 @@ title: 左外部結合を QueryExpression で使用して &quot;存在しない&
 description: 左外部結合を QueryExpression クラスで使用して、結合の表をフィルタリングするクエリを実行して、セットに &quot;存在しない&quot; 記録を探すクエリを作成する方法について説明します
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 009621e7e749255d64eae851629e5d7f0bd61e79
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 30ddf17cc593c172ee55dfa984088b781d2b9c95
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749261"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155443"
 ---
 # <a name="use-a-left-outer-join-in-queryexpression-to-query-for-records-not-in"></a>左外部結合を QueryExpression で使用して "存在しない" 記録をクエリする
 

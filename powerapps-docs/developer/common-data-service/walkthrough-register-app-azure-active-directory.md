@@ -9,18 +9,18 @@ ms.assetid: 86c4a8a8-7401-6d75-7979-3b04b506eb0c
 author: paulliew
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: kvivek
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b2cf649ad1bcba55e32192a8f72f3a7c7aabf10f
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 7ea2afe0b3a4770be48a7df13f9378069926b0b5
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2859932"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155135"
 ---
 # <a name="walkthrough-register-an-app-with-azure-active-directory"></a>チュートリアル: アプリを Azure Active Directory に登録します
 
@@ -44,7 +44,7 @@ Azure Active Directory へのアプリの登録は一般的に、外部クライ
 1. 管理者権限を持つアカウントを使用して [Azure portal](https://go.microsoft.com/fwlink/?linkid=2083908) にサインインします。 アプリの登録に使用するものと同じ Office 365 サブスクリプション (テナント) のアカウントを使用する必要があります。 Office 365 [管理センター](https://admin.microsoft.com/adminportal) から Azure portal にアクセスするには、左側のナビゲーション ウィンドウで **管理センター** の項目を展開し、 **Azure Active Directory**を選択します。  
   
    > [!NOTE]
-   > Azure のテナント (取引先企業) がない場合、またはテナントがあるが、 Common Data Service のOffice365 サブスクリプションが Azure サブスクリプションで利用できない場合は、 [開発者サイトへの Azure Active Directory アクセスの設定](https://msdn.microsoft.com/office/office365/HowTo/setup-development-environment) トピックの手順に従って、2つの取引先企業を関連付けます。<br><br> アカウントがない場合は、クレジット カードを使用して、アカウントにサインアップすることができます。 ただし、このトピックの手順を実行して 1 つまたは複数のアプリケーションを登録する場合は、アカウントは無料なのでクレジット カードに請求はありません。 詳細: [Active Directory 価格設定詳細](https://azure.microsoft.com/pricing/details/active-directory/)  
+   > Azure のテナント (アカウント) がない場合、またはテナントがあるが、Common Data Service の Office365 サブスクリプションが Azure サブスクリプションで利用できない場合は、[開発者サイトへの Azure Active Directory アクセスの設定](https://msdn.microsoft.com/office/office365/HowTo/setup-development-environment) トピックの手順に従って、2 つのアカウントを関連付けます。<br><br> アカウントがない場合は、クレジット カードを使用して、アカウントにサインアップすることができます。 ただし、アカウントはアプリケーション登録のため無料であり、このトピックで説明されている手順に従って 1 つ以上のアプリケーションを登録するだけでは、クレジット カードに請求はありません。 詳細: [Active Directory 価格設定詳細](https://azure.microsoft.com/pricing/details/active-directory/)  
   
 2. Azure portal では、左側のウィンドウの **Azure Active Directory** を選択し、 **アプリの登録** を選択し、 **新規登録** をクリックします。
     
@@ -58,7 +58,7 @@ Azure Active Directory へのアプリの登録は一般的に、外部クライ
 
       ![新規アプリの登録ページ](media/new-app-registration-page.png "新規アプリの登録ページ")
 
-5. アプリケーションの認証コード、または app.config ファイルで必要に応じて指定するため、アプリの **概要** ページで **アプリケーション (クライアント) ID** 値の上にカーソルを移動し、 **クリップボードにコピーする** アイコンを選択して値をコピーします。
+5. アプリケーションの認証コード、または app.config ファイルで必要に応じて指定するため、アプリの **概要** ページで **アプリケーション (クライアント) ID** 値の上にカーソルを移動し、**クリップボードにコピー** アイコンを選択して値をコピーします。
 
     ![アプリケーション ID のコピー](media/app-registration-overview-page.png "アプリケーション ID のコピー")
   

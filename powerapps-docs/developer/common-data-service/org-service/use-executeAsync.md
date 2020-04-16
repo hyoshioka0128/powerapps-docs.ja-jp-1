@@ -3,7 +3,7 @@ title: 'メッセージを非同期的に実行するために ExecuteAsync を�
 description: ExecuteAsync メッセージを使用して非同期的にソリューションをインポートできます
 ms.custom: ''
 ms.date: 06/08/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8a2a00a5fb8a60282b12d3a966e46fddd8b0a8b7
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 101934aa1e114d85dd1059ba62dd1f7e1c5bd686
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749265"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155459"
 ---
 # <a name="use-executeasync-to-execute-messages-asynchronously"></a>メッセージを非同期に実行するために ExecuteAsync を使用します
 

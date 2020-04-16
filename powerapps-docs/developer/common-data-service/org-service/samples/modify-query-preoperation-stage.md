@@ -3,7 +3,7 @@ title: 'サンプル: PreOperation ステージのクエリを変更する (Comm
 description: このサンプルは、RetrieveMultiple 要求の PreOperation ステージ内に定義したクエリを変更するプラグインの作成方法を示します。
 ms.custom: ''
 ms.date: 09/23/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 92a8a5889eba5068b3cf4eddb095fe98ce6fc097
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: a9e0cfa0a639d50a60fbc793ad87b35ed4faf8d8
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749315"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155711"
 ---
 # <a name="sample-modify-query-in-preoperation-stage"></a>サンプル: PreOperation ステージのクエリを変更する
 

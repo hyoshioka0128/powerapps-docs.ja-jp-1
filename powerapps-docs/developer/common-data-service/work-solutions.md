@@ -9,18 +9,18 @@ ms.assetid: 33c9da5b-27dd-d82d-1eb1-7b3b69b6032b
 author: shmcarth
 ms.author: jdaly
 manager: ryjones
-ms.reviewer: ''
+ms.reviewer: pehecke
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6a99ee0bbc5487575d56b571442db5e6a6d2f329
-ms.sourcegitcommit: 629e47c769172e312ae07cb29e66fba8b4f03efc
+ms.openlocfilehash: eb5d340bcd1f12926925791678d12dc98cbdf387
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "3109053"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3154919"
 ---
 # <a name="work-with-solutions"></a>ソリューションに関する作業
 
@@ -184,7 +184,7 @@ Solution SampleSolution = (Solution)_serviceProxy.RetrieveMultiple(querySampleSo
   
 ## <a name="add-a-new-solution-component"></a>新しいソリューション コンポーネントの追加 
  
-このサンプルでは、特定のソリューションに関連付けられたソリューション コンポーネントの作成方法を示します。 ソリューション コンポーネントを作成したときに、特定のソリューションと関連付けないと、コンポーネントは既定のソリューションだけに追加され、手動でコンポーネントをソリューションに追加するか、または「[既存のソリューション コンポーネントの追加](work-solutions.md#BKMK_AddExistingSolutionComponent)」で示されているコードを使用する必要が生じます。  
+このサンプルでは、特定のソリューションに関連付けられたソリューション コンポーネントの作成方法を示します。 作成時に、ソリューション コンポーネントを特定のソリューションに関連付けない場合、既定のソリューションにのみ追加され、手動または [既存のソリューション コンポーネントの追加](work-solutions.md#BKMK_AddExistingSolutionComponent) に含まれるコードを使用使用してソリューションに追加する必要があります。  
   
  このコードでは、新しいグローバル オプション セットを作成し、一意の名前が `_primarySolutionName` であるソリューションに追加します。  
   
@@ -719,3 +719,4 @@ if (_globalOptionSetId != null)
  [ソリューションのアンインストールまたは削除](uninstall-delete-solution.md)   
  [ソリューション エンティティ](/dynamics365/customer-engagement/developer/solution-entities)   
  [サンプル: ソリューションに関する作業](org-service/samples/work-solutions.md) [サンプル: ソリューションの依存関係の検出](/dynamics365/customer-engagement/developer/sample-detect-solution-dependencies)
+ 

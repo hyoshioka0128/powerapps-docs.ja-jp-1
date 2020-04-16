@@ -3,7 +3,7 @@ title: 'サンプル: 作成、取得、更新、および削除 (遅延バイ�
 description: このサンプルは、遅延バインド エンティティ クラスを使用して、アカウントの作成、取得、更新、および削除の各操作を実行する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9e97dfc4ab319c30decbc07fa866ab5f6c861e28
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 8228f099689526594274e406147b26956b9a1ff3
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934275"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155735"
 ---
 # <a name="sample-late-bound-entity-operations"></a>サンプル: 遅延バインド エンティティの操作
 

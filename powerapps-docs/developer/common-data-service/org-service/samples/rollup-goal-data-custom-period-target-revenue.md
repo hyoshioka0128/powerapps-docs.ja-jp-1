@@ -3,7 +3,7 @@ title: 'サンプル: ターゲット収益に対するカスタム期間の目�
 description: このサンプルは、対象の売り上げに対するカスタム期間の目標のデータをロールアップする方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: bf14a36516f107314c3d26b99dad6d7d33d96e29
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: b55d00e42c1823358103400d6cff731251c6ae87
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934183"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155607"
 ---
 # <a name="sample-rollup-goal-data-for-a-custom-period-against-the-target-revenue"></a>サンプル: カスタム期間の目標データを、対象の売上に対してロールアップする
 

@@ -3,7 +3,7 @@ title: 'Sample: ユーザー アクセスの監査 (Common Data Service) | Micro
 description: このサンプルでは、ユーザー アクセスを監査する方法を説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 5e2f07225b842821a32ad6818842c8e08f1ab198
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 901b42e1edfe184beae6844b991cee7a87af325b
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956226"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155943"
 ---
 # <a name="sample-audit-user-access"></a>サンプル: ユーザー アクセスの監査
 

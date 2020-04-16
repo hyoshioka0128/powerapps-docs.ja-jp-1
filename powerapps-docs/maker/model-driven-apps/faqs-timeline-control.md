@@ -1,7 +1,7 @@
 ---
 title: Power Apps でタイムラインの制御 (セクション) を設定する | MicrosoftDocs
 description: Power Apps で タイムラインの制御 (セクション) を設定する
-ms.date: 02/03/2020
+ms.date: 03/10/2020
 ms.service: powerapps
 author: kabala123
 ms.assetid: 7F495EE1-1208-49DA-9B02-17855CEB2FDF
@@ -12,12 +12,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6556ee415f2ee3340f6e36f417a25299871c1860
-ms.sourcegitcommit: c5b9bdf820c7d60f00bf1b16d9e9f7d046fd7252
+ms.openlocfilehash: c664ca490f3a03d02dfe273c26d061698242a6c3
+ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "3013062"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "3114371"
 ---
 # <a name="faqs-for-timeline-control"></a>タイム ライン 制御に関するよくある質問
 
@@ -98,6 +98,11 @@ ms.locfileid: "3013062"
 ## <a name="why-my-users-see-different-activities-and-records-in-their-my-activities-stream-in-the-dashboard"></a>ユーザーがダッシュボードの自分の活動ストリームに、さまざまなアクティビティとレコードを表示するのはなぜですか?
 
 ダッシュボードの **自分の活動** ストリームには、特定のユーザーが所有するレコードとアクティビティが表示されます。 たとえば、ユーザー **A** は **A** が所有するレコードとアクティビティを参照し、ユーザー **B** は **B** が所有するレコードとアクティビティを参照します。
+
+
+## <a name="why-my-agents-see-the-filter-pane-even-when-the-expand-filter-pane-by-default-check-box-is-cleared"></a>規定で [フィルターペインを展開する] チェックボックスがオフになっているのに、エージェントにフィルター ペインが表示されるのはなぜですか?
+
+タイムラインが複数の列に表示される場合、フィルター ウィンドウはタイムライン レコードの横に列として表示されます。 タイムライン構成で **既定でフィルター ウィンドウを展開** チェック ボックスをオフにしても、フィルター ウィンドウは常にエージェントに表示されます。
 
 ## <a name="see-also"></a>関連項目
 

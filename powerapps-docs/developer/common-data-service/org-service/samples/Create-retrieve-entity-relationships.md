@@ -3,7 +3,7 @@ title: 'サンプル: エンティティの関連付けを作成、取得する 
 description: この例では、エンティティの関連付けの作成と取得の方法について説明します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 9542b7b9b76530cdfc40318fbd237657d7dc6134
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: fab6347b512d0048c5e666c551a99c43c99915df
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956330"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155983"
 ---
 # <a name="create-and-retrieve-entity-relationships"></a>エンティティ関係の作成および取得
 

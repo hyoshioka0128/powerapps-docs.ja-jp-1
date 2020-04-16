@@ -3,7 +3,7 @@ title: " セキュリティ ロール を チーム に関連付ける（Common 
 description: 'このサンプルではチームにセキュリティ ロールを割り当てる方法を示します '
 ms.custom: ''
 ms.date: 12/20/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: c7c6549156f200b547b6dc8083fd41777fd79bd8
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: 6ea2984f5fd8ad276581307edf3ff76ca1abeef8
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934427"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155951"
 ---
 # <a name="sample-associate-security-role-to-a-team"></a>サンプル: チーム に セキュリティ ロール を関連付ける 
 

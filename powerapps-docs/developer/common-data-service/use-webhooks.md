@@ -3,7 +3,7 @@ title: WebHooks を使用してサーバー イベントの外部ハンドラー
 description: webhook を使用してサーバーで発生するイベントに関するデータを Web アプリケーションに送信できます。 ｗebhook は、Web API およびサービスをパブリッシュ/サブスクライブ モデルと接続するためのライトウェイト HTTP パターンです。 ｗebhook の送信側は、イベントに関する情報を使用して受信側のエンドポイントに要求を行うことで、受信側にイベントについて通知します。
 ms.custom: ''
 ms.date: 09/04/2019
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ae74c23170feb73bc128dff74e4e842190d3d50e
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 360bf7689406195c369e74b0f255cd8db32bda8d
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749198"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155167"
 ---
 # <a name="use-webhooks-to-create-external-handlers-for-server-events"></a>ｗebhook を使用してサーバー イベント用に外部ハンドラーを作成する
 

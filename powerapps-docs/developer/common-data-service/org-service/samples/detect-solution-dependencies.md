@@ -3,7 +3,7 @@ title: 'サンプル: ソリューションの依存関係の検出 (Common Data
 description: このサンプルはソリューションの依存関係を検出する方法を示します。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: samples
 author: shmcarth
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 7e960b1a593f0c3d940f3a43ab2e369f459d3648
-ms.sourcegitcommit: 3bf59896a98e5f01289a2489e185f27518aeaec3
+ms.openlocfilehash: 8f84ecba9af675d6027276bc307621a71476735a
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "2956206"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155835"
 ---
 # <a name="sample-detect-solution-dependencies"></a>サンプル: ソリューションの依存関係の検出
 

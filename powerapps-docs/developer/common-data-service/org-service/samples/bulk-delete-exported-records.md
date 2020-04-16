@@ -3,7 +3,7 @@ title: 'サンプル: エクスポートしたレコードを一括で削除す�
 description: このサンプルは、レコードの一括削除を実行する方法を示します
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: JimDaly
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8b690bb3a7a27c278c9354073f5e4140dfe33b4d
-ms.sourcegitcommit: 5ec7c7f04fe41896dec966706a3b3d295648726f
+ms.openlocfilehash: bb4a145e74f31e0cdd1c230a8bacca3340e38148
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "2934411"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155931"
 ---
 # <a name="sample-bulk-delete-exported-records"></a>サンプル: エクスポート済みレコードの一括削除
 

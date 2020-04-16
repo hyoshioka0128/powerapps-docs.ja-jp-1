@@ -3,7 +3,7 @@ title: 定期的な予定の部分展開モデル (Common Data Service) | Micros
 description: この部分展開モデルは、あらかじめ指定された間隔で実行される非同期ジョブです。このジョブは組織レベルで定義され、定期的な予定インスタンスを作成するために使用されます。
 ms.custom: ''
 ms.date: 10/31/2018
-ms.reviewer: ''
+ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
 author: mayadumesh
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1f8db578a771cca7985a3a52110257ee35692a16
-ms.sourcegitcommit: 8185f87dddf05ee256491feab9873e9143535e02
+ms.openlocfilehash: 266bc4c0b6a5d2517ec1f003034b77853392b244
+ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "2749235"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "3155351"
 ---
 # <a name="recurring-appointment-partial-expansion-model"></a>定期的な予定の部分展開モデル
 
