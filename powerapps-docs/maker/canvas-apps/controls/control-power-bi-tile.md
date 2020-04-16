@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: ac8f7a3838d29324408a6041c9ad0e9cdbcfa666
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 959f8eaee539febbb7c00441453da9bab23a1812
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74728330"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81441767"
 ---
 # <a name="power-bi-tile-control-in-power-apps"></a>Power Apps でのタイルコントロールの Power BI
 
@@ -26,7 +26,7 @@ ms.locfileid: "74728330"
 
 Power BI をお持ちではありませんか? [サインアップ](https://docs.microsoft.com/power-bi/service-self-service-signup-for-power-bi)してください。
 
-## <a name="description"></a>Description
+## <a name="description"></a>説明
 
 アプリ内の **[Power BI タイル](https://docs.microsoft.com/power-bi/service-dashboard-tiles)** を表示して、既存のデータ分析とレポートを活用します。 オプション パネルの **[データ]** タブで **Workspace**、**Dashboard**、**Tile** プロパティを設定して、表示するタイルを指定します。
 
@@ -34,7 +34,7 @@ Power BI をお持ちではありませんか? [サインアップ](https://docs
 
 Power BI コンテンツを含むアプリを共有するときは、アプリ自体だけでなく、タイルが表示されている[ダッシュボード](https://docs.microsoft.com/power-bi/service-how-to-collaborate-distribute-dashboards-reports)も共有する必要があります。 そうしないと、アプリを開いたユーザーであっても、Power BI コンテンツは表示されません。 Power BI コンテンツを含むアプリには、そのコンテンツに対するアクセス許可が適用されます。
 
-## <a name="performance"></a>速度
+## <a name="performance"></a>パフォーマンス テスト
 
 アプリ内に同時に 4 つ以上の Power BI タイルを読み込むことは推奨されません。 タイルの読み込みとアンロードは、**LoadPowerBIContent** プロパティを設定することによって制御できます。
 
@@ -54,7 +54,13 @@ Power BI コンテンツを含むアプリを共有するときは、アプリ�
 &$filter=<TableName>/<ColumnName> eq '<Value>'
 ```
 
-パラメーターは、タイルが生成されたレポートのデータセット内の値をフィルター処理します。
+パラメーターは、タイルが生成されたレポートのデータセット内の値をフィルター処理します。 ただし、フィルター機能には次の制限があります。
+
+- 適用できるフィルターは1つだけです。
+- `eq` 演算子のみがサポートされています。
+- フィールドの型は文字列である必要があります。
+
+Power BI レポートで計算フィールドを使用すると、他の値の型を文字列に変換したり、複数のフィールドを1つに結合したりすることができます。
 
 ## <a name="key-properties"></a>主要なプロパティ
 
@@ -94,7 +100,7 @@ Power BI コンテンツを含むアプリを共有するときは、アプリ�
 
 1. **[挿入]** タブで **[コントロール]** メニューを開き、 **[Power BI タイル]** コントロールを追加します。
 
-    [コントロールの追加および構成](../add-configure-controls.md)についてはこちらをご覧ください。
+    [コントロールの追加および構成方法](../add-configure-controls.md)については関連記事を参照してください。
 
 2. オプション パネルの **[データ]** タブで、 **[ワークスペース]** の設定の **[マイ ワークスペース]** をクリックまたはタップします。
 
@@ -102,7 +108,7 @@ Power BI コンテンツを含むアプリを共有するときは、アプリ�
 
     コントロールが Power BI タイルを表示します。
 
-## <a name="accessibility-guidelines"></a>アクセシビリティ ガイドライン
+## <a name="accessibility-guidelines"></a>アクセシビリティのガイドライン
 
 **Power BI タイル**は、Power BI コンテンツの単なるコンテナーです。 アクセシビリティ対応のコンテンツを作成する方法については、[Power BI のアクセシビリティに関するヒント](https://docs.microsoft.com/power-bi/desktop-accessibility)のページを参照してください。
 
