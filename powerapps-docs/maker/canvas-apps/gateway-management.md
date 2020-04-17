@@ -7,24 +7,24 @@ ms.service: powerapps
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: tapanm
-ms.date: 10/16/2019
+ms.date: 04/14/2020
 ms.author: arthii
 search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: b7d4471fde0bf22ec2900f303347d5d4783381ed
-ms.sourcegitcommit: 6b27eae6dd8a53f224a8dc7d0aa00e334d6fed15
+ms.openlocfilehash: 0956668fa3576dca58c728396d0c4c08473df73f
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74729560"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385214"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-power-apps"></a>Power Apps でのオンプレミスデータゲートウェイの管理
 
 オンプレミスのデータゲートウェイをインストールすると、パワーアプリに組み込まれているキャンバスアプリと、オンプレミスの SQL Server データベースやオンプレミスの SharePoint サイトなど、クラウドにないデータソースとの間でデータをすばやく安全に転送できます。 管理者権限があるすべてのゲートウェイを表示し、それらの権限と接続を管理することができます。
 
-ゲートウェイを使用すると、次の接続を介して、オンプレミス データに接続できます。
+ゲートウェイでは、次の接続を通じてオンプレミスのデータに接続することができます。
 
 * SharePoint
 * SQL Server
@@ -36,13 +36,13 @@ ms.locfileid: "74729560"
 ## <a name="prerequisites"></a>前提条件
 
 * Power Apps の[サインアップ](../signup-for-powerapps.md)に使用したユーザー名とパスワード。
-* ゲートウェイの管理者アクセス許可。 (ゲートウェイをインストールしたユーザーには、ゲートウェイごとにこれらのアクセス許可が既定で割り当てられます。また、他のゲートウェイの管理者から、そのゲートウェイの管理者アクセス許可を付与してもらうこともできます。)
+* ゲートウェイでの管理アクセス許可。 これらのアクセス許可は、インストールするゲートウェイごとに既定で付与されます。また、他のゲートウェイの管理者から、そのゲートウェイに対するこのアクセス許可が付与される場合もあります。
 * オンプレミス ゲートウェイを使用したオンプレミス データへのアクセスをサポートするライセンス。 詳細については、[料金に関するページ](https://powerapps.microsoft.com/pricing/)の「Connectivity (接続)」セクションを参照してください。
-* ゲートウェイとオンプレミス接続は、ユーザーの[既定の環境](working-with-environments.md)でのみ作成し、使用できます。
+* ゲートウェイとオンプレミス接続は、ユーザーの[既定の環境](working-with-environments.md)でのみ作成および使用できます。
 
 ## <a name="install-a-gateway"></a>ゲートウェイのインストール
 
-ゲートウェイをインストールするには、「[オンプレミスデータゲートウェイをインストール](/data-integration/gateway/service-gateway-install)する」の手順に従います。 _オンプレミスデータゲートウェイ (個人用モード)_ は Power BI に対してのみ使用できるため、ゲートウェイを標準モードでインストールします。
+ゲートウェイをインストールするには、「[オンプレミス データ ゲートウェイをインストールする](/data-integration/gateway/service-gateway-install)」に記載の手順に従います。 _オンプレミス データ ゲートウェイ (個人用モード)_ は Power BI にのみ使用できるため、ゲートウェイを標準モードでインストールします。
 
 ## <a name="view-and-manage-gateway-permissions"></a>ゲートウェイ アクセス許可の表示と管理
 
@@ -55,6 +55,9 @@ ms.locfileid: "74729560"
    * **管理者**: ユーザーの追加、アクセス許可の設定、使用可能なすべてのユーザー ソースに対する接続の作成、ゲートウェイの削除を含む、ゲートウェイのフル コントロール権限を持つ管理者です。
 
 **[使用可能]** と **[使用と共有が可能]** のアクセス許可レベルについては、ユーザーがゲートウェイを経由して接続できるデータ ソースを選択します。
+
+> [!NOTE]
+> を**使用でき**ます。また、**使用できる + 共有**はカスタムコネクタには適用されません。
 
 ## <a name="view-and-manage-gateway-connections"></a>ゲートウェイ接続の表示と管理
 
@@ -73,7 +76,7 @@ ms.locfileid: "74729560"
 
 ゲートウェイに関する問題のトラブルシューティングの詳細については、「[オンプレミスデータゲートウェイのトラブルシューティング](/data-integration/gateway/service-gateway-tshoot)」を参照してください。 構成の詳細については、「[オンプレミスデータゲートウェイアプリを使用する](/data-integration/gateway/service-gateway-app)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ:
 
 * [オンプレミスデータゲートウェイをインストール](/data-integration/gateway/service-gateway-install)します。
 * [SQL Server](connections/connection-azure-sqldatabase.md) や [SharePoint](connections/connection-sharepoint-online.md) などのオンプレミス データ ソースに接続するアプリを作成する

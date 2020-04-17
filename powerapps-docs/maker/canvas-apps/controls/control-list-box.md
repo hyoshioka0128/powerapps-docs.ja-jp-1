@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: c52b6779e5875e1304a80b2c63d0cf7b70e2c8b2
-ms.sourcegitcommit: db62bf0f8210b5ba2d1d5fc2c7d362ab23ec8c63
-ms.translationtype: HT
+ms.openlocfilehash: 0e55963dfb93e3bfe913b53f90160cb87ed147d8
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76315356"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385283"
 ---
 # <a name="list-box-control-in-power-apps"></a>Power Apps のリスト ボックス コントロール
 ユーザーが 1 つまたは複数の項目を選択できるリストです。
@@ -98,6 +98,12 @@ ms.locfileid: "76315356"
 
 **[Reset](properties-core.md)** – コントロールを既定値に戻すかどうかを指定します。
 
+**Selected** – 選択された項目を表すデータ レコードです。  既定で選択できる項目は 1 つのみです。  複数の項目を選択する必要がある場合は、[コンボ ボックス](control-combo-box.md) コントロールを使用します。
+
+**SelectedItems** - **読み取り**専用です。 複数選択のリストボックスに対して選択された項目の datatable を表します。
+
+**SelectedItemsText** - **読み取り**専用です。 複数選択のリストボックスの選択項目テキストの datatable を表します。
+
 **SelectedText (非推奨)** – 選択した項目を表す文字列値です。
 
 **[SelectionColor](properties-color-border.md)** – リスト内で選択された項目のテキストの色、またはペン コントロールの選択ツールの色です。
@@ -112,7 +118,7 @@ ms.locfileid: "76315356"
 
 **[TabIndex](properties-accessibility.md)** – 他のコントロールに関連するキーボード ナビゲーションの順序です。
 
-**[Tooltip](properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。
+**[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
 
 **[Underline](properties-text.md)** – コントロールに表示されるテキストの下に線を引くかどうかを指定します。
 
@@ -135,18 +141,18 @@ ms.locfileid: "76315356"
    
     ![リスト ボックス内の床のカテゴリ](./media/control-list-box/category-listbox.png)
 2. 3 つの **[ドロップ ダウン](control-drop-down.md)** コントロールを追加し、**CategoryList** の下に移動して、**CarpetList**、**HardwoodList**、**TileList** という名前を付けます。
-3. 各 **[ドロップ ダウン](control-drop-down.md)** コントロールの **[Items](properties-core.md)** プロパティに、次の値の 1 つを設定します。
+3. 各 **[ドロップ ダウン](properties-core.md)** コントロールの **[Items](control-drop-down.md)** プロパティに、次の値の 1 つを設定します。
    
    * CarpetList: **["Caserta Stone Beige","Ageless Beauty Clay", "Lush II Tundra"]**
    * HardwoodList: **["Golden Teak","Natural Hickory", "Victoria Mahogany"]**
    * TileList: **["Honey Onyx Marble","Indian Autumn Slate", "Panaria Vitality Ceramic"]**
      
      ![ドロップダウン リストの床の名前](./media/control-list-box/flooring-names.png)
-4. 各 **[ドロップ ダウン](control-drop-down.md)** コントロールの **[Visible](properties-core.md)** プロパティに、次の値の 1 つを設定します。
+4. 各 **[ドロップ ダウン](properties-core.md)** コントロールの **[Visible](control-drop-down.md)** プロパティに、次の値の 1 つを設定します。
    
-   * CarpetList:**If("Carpet" in CategoryList.SelectedItems.Value, true)**
-   * HardwoodList:**If("Hardwood" in CategoryList.SelectedItems.Value, true)**
-   * TileList:**If("Tile" in CategoryList.SelectedItems.Value, true)**
+   * CarpetList: **If("Carpet" in CategoryList.SelectedItems.Value, true)**
+   * HardwoodList: **If("Hardwood" in CategoryList.SelectedItems.Value, true)**
+   * TileList: **If("Tile" in CategoryList.SelectedItems.Value, true)**
      
      **[If](../functions/function-if.md)** 関数や[その他の関数](../formula-reference.md)については各関連記事を参照してください。
 5. F5 キーを押し、**CategoryList** で 1 つまたは複数の項目を選択します。

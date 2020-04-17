@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: d35150434d8fec7694f493f2d62c67997e2c839c
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 0610e1cfabde8bd62e083ca1cff65825c28918e4
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79212471"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385260"
 ---
 # <a name="image-control-in-power-apps"></a>Power Apps のイメージコントロール
 ローカル ファイルやデータ ソースの画像を表示するコントロールです。
@@ -100,7 +100,7 @@ ms.locfileid: "79212471"
 
 **[Tooltip](properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。
 
-**Transparency** – 画像の背後にあるコントロールを表示する度合いです。
+**Transparency** – 画像の背後にあるコントロールを表示する度合いです。 10進値の範囲は 0 ~ 1 です。  0は不透明で、0.5 は半透明で、1は透明です。 
 
 **[Visible](properties-core.md)** – コントロールを表示するか非表示にするかを指定します。
 
@@ -113,7 +113,7 @@ ms.locfileid: "79212471"
 ## <a name="related-functions"></a>関連する関数
 [**Remove**( *DataSource*, ThisItem )](../functions/function-remove-removeif.md)
 
-## <a name="examples"></a>使用例
+## <a name="examples"></a>例
 ### <a name="show-an-image-from-a-local-file"></a>ローカル ファイルの画像の表示
 1. **[ファイル]** メニューの **[メディア]** をクリックまたはタップして、 **[参照]** をクリックまたはタップします。
 2. 追加する画像ファイルをクリックまたはタップし、 **[開く]** をクリックまたはタップしてから Esc キーを押して既定のワークスペースに戻ります。

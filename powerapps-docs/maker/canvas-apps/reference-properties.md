@@ -13,18 +13,18 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 119c3c22d93c7b8985b9c9c5bf08129372c78409
-ms.sourcegitcommit: b250e63e881d9bd10c0b3dea36c7f12e8a9c6ac2
-ms.translationtype: HT
+ms.openlocfilehash: 9233de7632332b1ea5e6b0041dfbe84a8632af42
+ms.sourcegitcommit: c0508e233a03ac4846c04d5caae79eccca3e2843
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2020
-ms.locfileid: "76750773"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "81385191"
 ---
 # <a name="controls-and-properties-in-power-apps"></a>Power Apps のコントロールとプロパティ
 
 プロパティのいずれかを設定して、コントロールの見た目と動作を構成します。 コントロールの種類ごとに、さまざまなプロパティのセットがあります。 一部のプロパティ (**Height** や **Width** など) はほぼすべての種類のコントロールで共通ですが、他のプロパティ (**CheckboxSize** など) は、コントロールの 1 つの種類に固有のものです。
 
-## <a name="controls"></a>コントロール
+## <a name="controls"></a>Controls
 
 **[画像の追加](controls/control-add-picture.md)** – データ ソースへのアップロードのために、ローカル デバイスから画像を読み込みます。
 
@@ -60,7 +60,7 @@ ms.locfileid: "76750773"
 
 **[フォームの編集](controls/control-form-detail.md)** – フォームを使用してデータ ソースのレコードを編集および作成します。
 
-**[エンティティ フォーム](entity-form-control.md)** - 試験段階の機能: ユーザーが Common Data Service のリレーショナル データを表示、移動、編集できる動的なフォームを追加します。
+**[エンティティ フォーム](entity-form-control.md)** - 試験的機能: ユーザーが Common Data Service からリレーショナル データを表示、移動、編集できる動的フォームを追加します。
 
 **[エクスポート](controls/control-export-import.md)** – Power Apps の別の場所で使用するためにデータをエクスポートします。
 
@@ -140,7 +140,7 @@ ms.locfileid: "76750773"
 
 **[AutoHeight](controls/properties-size-location.md)** – **[Text](controls/properties-core.md)** プロパティの内容がコントロールで表示できる文字数を超えている場合に、自動的にラベルの高さを増やすかどうかを指定します。 **[ラベル](controls/control-text-box.md)** コントロールに適用されます。
 
-**AutoPause** – ユーザーが別の画面に移動した場合、オーディオまたはビデオ クリップを自動的に一時停止するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)** 、 **[タイマー](controls/control-timer.md)** 、および **[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
+**AutoPause** – ユーザーが別の画面に移動した場合は、オーディオまたはビデオ クリップを自動的に一時停止するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)** 、 **[タイマー](controls/control-timer.md)** 、および **[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
 
 **AutoStart** – ユーザーがオーディオまたはビデオ コントロールを含む画面に移動したときに、自動的にクリップの再生を開始するかどうかを指定します。  **[オーディオ](controls/control-audio-video.md)** 、 **[タイマー](controls/control-timer.md)** 、および **[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
 
@@ -268,7 +268,7 @@ ms.locfileid: "76750773"
 
 **[HTMLText](controls/control-html-text.md)** – HTML テキスト コントロールに表示される、HTML タグを含む可能性のあるテキストです。  **[HTML テキスト](controls/control-html-text.md)** コントロールに適用されます。
 
-### <a name="i"></a>I
+### <a name="i"></a>i
 
 **[Image](controls/properties-visual.md)** – イメージ、オーディオ、マイクの各コントロールに表示される画像の名前です。  **[オーディオ](controls/control-audio-video.md)** 、 **[イメージ](controls/control-image.md)** 、 **[マイク](controls/control-microphone.md)** 、および **[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
 
@@ -314,7 +314,7 @@ ms.locfileid: "76750773"
 
 **[MaxLength](controls/control-text-input.md)** – ユーザーがテキスト入力コントロールに入力できる文字数です。  **[テキスト入力](controls/control-text-input.md)** コントロールに適用されます。
 
-**Media** – オーディオまたはビデオ コントロールが再生するクリップの ID です。  **[画像の追加](controls/control-add-picture.md)** 、 **[オーディオ](controls/control-audio-video.md)** 、および **[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
+**Media** - オーディオまたはビデオ コントロールが再生するクリップの ID です。  **[画像の追加](controls/control-add-picture.md)** 、 **[オーディオ](controls/control-audio-video.md)** 、および **[ビデオ](controls/control-audio-video.md)** の各コントロールに適用されます。
 
 **[Mic](controls/control-microphone.md)** – 複数のマイクを備えたデバイスでの、アプリが使用するマイクの数値 ID です。  **[マイク](controls/control-microphone.md)** コントロールに適用されます。
 
@@ -492,11 +492,11 @@ ms.locfileid: "76750773"
 
 **[Time](controls/control-audio-video.md)** – メディア コントロールの現在位置です。  **[オーディオ](controls/control-audio-video.md)** コントロールと **[ビデオ](controls/control-audio-video.md)** コントロールに適用されます。
 
-**[Tooltip](controls/properties-core.md)** – ポインターをコントロールに合わせたときに表示される説明テキストです。  多くのコントロールに適用されます。
+**[Tooltip](controls/properties-core.md)** – ユーザーがポインターをコントロールに合わせたときに表示される説明テキストです。  多くのコントロールに適用されます。
 
 **[Transition](controls/control-gallery.md)** – ユーザーがポインターをギャラリー内の項目に合わせたときの視覚効果 (**ポップ**、**プッシュ**、または **None**) を指定します。  **[ギャラリー](controls/control-gallery.md)** コントロールに適用されます。
 
-**[Transparency](controls/control-image.md)** – 画像の背後にあるコントロールを表示する度合いです。  **[イメージ](controls/control-image.md)** コントロールに適用されます。
+**[Transparency](controls/control-image.md)** – 画像の背後にあるコントロールを表示する度合いです。  **[イメージ](controls/control-image.md)** コントロールに適用されます。 10進値の範囲は 0 ~ 1 です。  0は不透明で、0.5 は半透明で、1は透明です。
 
 ### <a name="u"></a>U
 
@@ -516,7 +516,7 @@ ms.locfileid: "76750773"
 
 **ValueFill** – 値が **true** の場合の、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
 
-**ValueHoverFill** – 値が **true** の場合に、トグル コントロールまたはスライダーにポインターを合わせたときの、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
+**ValueHoverFill** – 値が **true** の場合に、トグル コントロールまたはスライダーをポイントしたときの、トグル コントロール内の四角形の背景色、またはスライダー コントロールのハンドルの左側の線の色です。  **[スライダー](controls/control-slider.md)** コントロールと **[トグル](controls/control-toggle.md)** コントロールに適用されます。
 
 **[VerticalAlign](controls/properties-text.md)** – コントロールの垂直方向の中心に対するコントロール上でのテキストの位置です。  多くのコントロールに適用されます。
 
