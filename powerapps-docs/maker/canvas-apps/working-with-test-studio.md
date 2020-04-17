@@ -13,12 +13,12 @@ search.audienceType:
 - maker
 search.app:
 - PowerApps
-ms.openlocfilehash: 79ae7206c729a9628ee183e0c64c395f6a235b7c
-ms.sourcegitcommit: 86c81c9efb105d11f4def49eef823af6c69059a4
+ms.openlocfilehash: 9e3192d6eda9730250e35b7ce6cd488b89037d43
+ms.sourcegitcommit: 223c3d19ec4fbe43fcc7a16b76423c00f8602ecd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034398"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81489044"
 ---
 # <a name="working-with-test-studio-experimental"></a>テスト スタジオの操作 (試験段階)
 
@@ -114,7 +114,7 @@ Kudos アプリにテスト ステップとテスト アサーションを追加
     > [!NOTE]
     > **[上にステップを挿入]** を選択すると、現在のステップの上に新しい空のステップが追加されます。 それ以外に **Assert**、**SetProperty**、**Select** または **Trace** アクションを使用することもできます。 これにより、編集可能な各アクション式がステップに追加されます。
 
-3. ステップの説明を更新します。 たとえば、"Count Kudo in database" (データベース内の Kudo をカウントする) とします。
+3. ステップの説明を更新します。 たとえば、"Count Kudo in database" のようになります。
 
 4. アクションの入力に、テスト実行前にデータベース内のレコードをカウントする式または数式を入力します。
 
@@ -311,7 +311,7 @@ Kudos アプリにテスト ステップとテスト アサーションを追加
 
 - 結果を電子メールで送信する:
 
-    ```Office365.SendMailV2(“someone@example.com”, “Test case results”, JSON(TestCaseResult, JSONFormat.IndentFour))```
+    ```Office365.SendMailV2("someone@example.com", "Test case results", JSON(TestCaseResult, JSONFormat.IndentFour))```
 
 - テスト結果のアプリ通知を受信する:
 
@@ -336,3 +336,7 @@ Power Apps で使用可能な[関数](formula-reference.md)に加えて、テス
 - [SetProperty](./functions/function-setproperty.md)
 - [アサート](./functions/function-assert.md)
 - [トレース](./functions/function-trace.md)
+
+## <a name="next-steps"></a>次のステップ:
+
+- [Azure DevOps pipeline クラシックエディターを使用したテストの自動化](test-studio-classic-pipeline-editor.md)
