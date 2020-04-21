@@ -6,17 +6,17 @@ manager: annbe
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 04/05/2020
+ms.date: 04/15/2020
 ms.author: pankar
 ms.reviewer: kvivek
 searchScope:
 - PowerApps
-ms.openlocfilehash: 39c7b61b596b786a72e1602ff5a5aaf2981b33e6
-ms.sourcegitcommit: c0f3152ee44a7027eb4b2038db0f7dfbf1b56d65
+ms.openlocfilehash: 1923c9a39fe4cc820de05acc8d8225500c2711af
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "3228833"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3264889"
 ---
 # <a name="hospital-emergency-response---power-platform-sample-solution"></a>病院緊急時対応 - Power Platform サンプル ソリューション
 
@@ -28,8 +28,11 @@ ms.locfileid: "3228833"
 病院緊急時対応ソリューションの主なコンポーネントは次のとおりです:
 
 - **現場スタッフ向けのモバイル アプリ**: 看護師や医師などの現場スタッフは、モバイル アプリを使用して、必要に応じてすばやく情報の表示と入力を行うことができます。
-- **病院の IT 管理者向けの Web アプリ**: 病院の管理者は、このアプリを使用して、ソリューションを機能させるために必要なシステム データの追加と管理を行うことができます。
+- **病院管理者向け Web アプリ**：病院の管理者はこのアプリを使用して、ソリューションが機能するために必要なシステムデータを追加、管理できます。
 - **医療の意思決定者向けのダッシュボード**: ダッシュボードを使用すると、効率的な意思決定に役立つ重要なデータとメトリックをすばやく表示できます。
+
+Hospital Emergency Response のサンプル ソリューションは、英語、フランス語、ドイツ語、イタリア語、日本語、ブラジル-ポルトガル語、スペイン語で利用できます。
+
 
 ## <a name="demo-quick-overview"></a>デモ: 概要
 
@@ -48,15 +51,22 @@ ms.locfileid: "3228833"
 
 関連項目: [Power Platform のライセンスの概要](https://docs.microsoft.com/power-platform/admin/pricing-billing-skus)
 
+## <a name="start-here"></a>ここから開始
+
+|タスク | 対象ユーザー|次を参照ください|
+|--|--|--|
+|サンプル アプリとダッシュボードを展開する|IT 管理者|[病院緊急時対応アプリをデプロイする](deploy-configure.md)|
+|管理アプリを使用してマスター データを追加/管理する|ビジネス管理者|[組織のマスター データを構成、管理する](configure-data-reporting.md#configure-and-manage-master-data-for-your-organization)|
+|ダッシュボードを表示して情報分析と意思決定に使用する|ビジネス管理者|[Common Data Service ダッシュボードを表示する](configure-data-reporting.md#view-common-data-service-dashboards)<br/><br/>[Power BI ダッシュボードの表示](configure-data-reporting.md#view-power-bi-dashboard)|
+|モバイル アプリを使用して、人工呼吸器、人員配置、退院保留、COVID-19 に関連する患者のデータを追跡します|現場スタッフ|[Hospital Emergency Response モバイル アプリを使用する](use.md)
+|管理アプリを使用してモバイル アプリからフィードバックを追跡する|業務管理者、IT 管理者|[アプリ フィードバックの表示および管理](configure-data-reporting.md#view-and-manage-app-feedback)|
+
+
 ## <a name="issues-and-feedback"></a>問題とフィードバック
 
 - 病院緊急時対応サンプル アプリに関する問題を報告するには、<https://aka.ms/emergency-response-issues> にアクセスしてください。
 
 - 病院緊急時対応サンプル アプリに関するフィードバックについては、<https://aka.ms/emergency-response-feedback> にアクセスしてください。
-
-## <a name="next-step"></a>次の手順
-
-[病院緊急時対応アプリをデプロイして構成する](deploy-configure.md)
 
 ### <a name="disclaimer"></a>免責事項
 

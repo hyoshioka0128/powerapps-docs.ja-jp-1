@@ -9,12 +9,12 @@ ms.custom: ''
 ms.date: 01/03/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 5328415e8f55d9997bbe14a9ecca271b12a9ae31
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: 37a515486afd2c57fa07cea24905584e9515ba60
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2979562"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238507"
 ---
 # <a name="azure-ad-b2c-provider-settings-for-portals"></a>ポータルの Azure AD B2C プロバイダー設定
 
@@ -28,29 +28,31 @@ ms.locfileid: "2979562"
 |-------------------|-------|-----------------------------------------------------------------------|
 | アプリケーション名  |       | 証明書利用者としてのポータルを表すアプリケーションの名前 |
 | アプリケーション ID    |       | Azure Active Directory B2C で作成されたアプリケーションに関連付けられているアプリケーション ID。  |
-| ポリシー サインイン URL |       | メタデータ エンドポイントで定義された発行者 (iss) URL。                |
+| 発行者 URL |       | メタデータ エンドポイントで定義された発行者 (iss) URL。                |
 | フェデレーション名   |       | 'B2C' などのフェデレーション プロバイダーの種類を識別する一意の名前。 これは、この特定のプロバイダの構成設定をグループ化するためにサイト設定名の中で使用されます。                                                                      |
 | | | |
 
 ### <a name="use-azure-ad-b2c-as-an-identity-provider-for-your-portal"></a>Azure AD B2C をポータル用の ID プロバイダーとして使用する
 
 1. [Azure ポータル](https://portal.azure.com/)にサインインします。
-2. [Azure AD B2C テナントの作成](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started)。
-3. 左端のナビゲーション バーの **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** を選択します。
-4. [Azure アプリケーションを作成](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application)します。
+1. [Azure AD B2C テナントの作成](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-get-started)。
+1. 左端のナビゲーション バーの **[!include[Azure](../../../includes/pn-azure-shortest.md)] AD B2C** を選択します。
+1. [Azure アプリケーションを作成](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-app-registration#register-a-web-application)します。
 
    > [!Note]
    > **暗黙的なフローの許可**フィールドで**はい**を選択し、**返信 URL** フィールドでポータルの URL を指定する必要があります。 **返信 URL** フィールドの値は [ポータル ドメイン]/signin-[フェデレーション名] という形式である必要があります。 たとえば、`https://contosocommunity.microsoftcrmportals.com/signin-B2C` などとします。
 
-5. アプリケーション名をコピーして、それを上記の表の「アプリケーション名」の値として入力します。
-6. アプリケーション ID をコピーして、それを上記の表の「アプリケーション ID」の値として入力します。
-7. [サインアップまたはサインイン ポリシーを作成](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy)します。
-8. ポリシーを選択し、**編集**を選択します。
-9. **トークン、セッション & SSO 構成**を選択します。
-10. **発行者 (iss) 要求**リストから、パスに **/tfp** が入っている URL を選択します。
-11. ポリシーを保存します。
-12. **このポリシーの メタデータ エンドポイント**フィールドで URL を選択します。
-13. 発行者フィールドの値をコピーして、それを上記の表の「ポリシー サインイン URL」の値として入力します。 
+1. アプリケーション名をコピーして、それを上記の表の「アプリケーション名」の値として入力します。
+1. アプリケーション（クライアント）の ID をコピーして、それを上記の表の 「アプリケーション ID」 の値として入力します。
+1. [サインアップまたはサインイン ポリシーを作成](https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-policies#create-a-sign-up-or-sign-in-policy)します。
+1. **Azure AD B2C** リソースに移動します。
+1. ポリシー配下の **ユーザー フロー** を選択します。
+1. 新たに作成したサイン アップとログインのポリシーを選択します。
+1. **設定**リストから、**プロパティ**を選択します
+1. **トークンの互換性設定** 配下の **発行者 (iss) 要求** リストから、パスに **/tfp** が入っている URL を選択します。
+1. ポリシーを保存します。
+1. **このポリシーの メタデータ エンドポイント**フィールドで URL を選択します。
+1. 発行者フィールドの値をコピーして、それを前述の表の「発行者 URL」の値として入力します。 
 
 ## <a name="portal-configuration"></a>ポータル構成
 
@@ -64,7 +66,7 @@ ms.locfileid: "2979562"
 5. 次のサイト設定を作成します。
    -   **名前**: Authentication/OpenIdConnect/[フェデレーション名]/Authority
 
-       **Value**: [ポリシー サインイン URL]
+       **値**：[発行元の URL]
    -   **名前**: Authentication/OpenIdConnect/[フェデレーション名]/ClientId
 
        **値**: [アプリケーション ID]
@@ -80,7 +82,7 @@ ms.locfileid: "2979562"
 7. ポータルを単一の ID プロバイダーにハードコードするには、次のサイト設定を作成します。
    - **名前**: Authentication/Registration/LoginButtonAuthenticationType
 
-     **値**: [ポリシー サインイン URL]
+     **値**：[発行元の URL]
 
 8. パスワード リセットをサポートするには、[こちら](#password-reset)で説明されている必要なサイト設定を作成します。
 9. クレーム マッピングをサポートするには、[こちら](#claims-mapping)で説明されている必要なサイト設定を作成します。
@@ -94,7 +96,7 @@ ms.locfileid: "2979562"
 | サイト設定                                                        | 説明                                                                                                          |
 |---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Authentication/OpenIdConnect/[フェデレーション名]/PasswordResetPolicyId | パスワード リセット ポリシーの ID。                                                                                     |
-| Authentication/OpenIdConnect/[フェデレーション名]/ValidIssuers         | ポリシー サインイン URL とパスワード リセット ポリシーの発行者を含む、発行者のコンマ区切りリスト。 |
+| Authentication/OpenIdConnect/[フェデレーション名]/ValidIssuers         | [発行者 URL] とパスワード リセット ポリシーの発行者を含む、発行者のコンマ区切りリスト。 |
 |Authentication/OpenIdConnect/[フェデレーション名]/DefaultPolicyId | サインインまたはサインアップ ポリシーの ID。|
 |||
 

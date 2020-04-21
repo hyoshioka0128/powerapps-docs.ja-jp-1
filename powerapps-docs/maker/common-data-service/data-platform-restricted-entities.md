@@ -1,29 +1,27 @@
 ---
 title: Dynamics 365 のライセンスを必要とする制限付きエンティティ | Microsoft Docs
 description: Dynamics 365 ライセンスが必要な Common Data Service の制限付きエンティティの一覧です。
-author: lancedMicrosoft
-manager: kfile
+author: KumarVivek
 ms.service: powerapps
-ms.component: cds
 ms.topic: reference
-ms.date: 03/20/2020
-ms.author: lanced
+ms.date: 04/15/2020
+ms.author: kvivek
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: e6f2518a4ee7b141c9c480d9a8f32bc923882f73
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 9656f9db1a00fe82a2788b20513014bc49a09d4f
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154771"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3264933"
 ---
 # <a name="restricted-entities-requiring-dynamics-365-licenses"></a>Dynamics 365 のライセンスを必要とする制限付きエンティティ
 
 > [!IMPORTANT]
-> エンティティに対するライセンス要件の最新情報については、 [Power Apps ライセンス ガイド](https://go.microsoft.com/fwlink/p/?linkid=2085130) を参照してください。
+> このトピックは最新ではなく、2019 年 10 月 1 日から適用される最新のライセンス変更を反映するため、間もなく更新されます。 エンティティに対するライセンス要件の最新情報については、 [Power Apps ライセンス ガイド](https://go.microsoft.com/fwlink/p/?linkid=2085130) を参照してください。
 
 アプリ作成者は Common Data Service で使用可能なほとんどのエンティティを使用し、 Power Apps Plan 1 ライセンス のみを持つユーザー向けにアプリおよびフローを作成することができます。 ただし、一部のエンティティには、アプリ ユーザーが Power Apps Plan 2 または Power Automate Plan 2 ライセンスを持つことを必要とする複雑なビジネス ロジックが含まれます (詳細については、 [エンティティ ライセンスの要件](data-platform-entity-licenses.md) を参照してください)。 Dynamics 365 製品に関連付けられているさらに小さいエンティティ セットについて、エンティティ内でレコードの作成、更新、または削除を行う必要がある場合、キャンバスおよびモデル駆動型アプリのユーザーは対応する Dynamics 365 製品のライセンスを持っていることが必要です。 これらを*制限付き*エンティティと呼びます。
 

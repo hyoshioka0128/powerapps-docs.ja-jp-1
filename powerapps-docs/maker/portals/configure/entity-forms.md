@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/11/2020
+ms.date: 04/09/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 372b710115609115e8090d21821c45a1037472ab
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 4ddc8daba01d281a483d51b1ce7a42205d0c6e93
+ms.sourcegitcommit: 2484ebce6563cfd1c849e1e2f66dd2d29fdb7b64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125578"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "3256684"
 ---
 # <a name="about-entity-forms"></a>エンティティ フォームについて
 
@@ -33,7 +33,7 @@ ms.locfileid: "3125578"
 > [!Note]
 > - サイトでフォームを表示できるようにするには、 **エンティティ フォーム** を特定の Web サイト の Web ページに関連付ける必要があります。
 > - つながり (Connection) エンティティのサブグリッドは、エンティティ フォームではサポートされません。 フォーム デザイナーを使用してフォームにつながり (Connection) エンティティのサブグリッドを追加した場合、ポータルにフォームを表示させ、つながりエンティティを使用すると、エラー メッセージが表示されます。
-> - 重複したフィールド、複数が選択されたオプション セット、カスタム コントロール、業務ルールはエンティティ フォームでサポートされません。
+> - 重複したフィールド、複数が選択されたオプション セット、カスタム コントロール、パーティー リスト フィールド、業務ルールはエンティティ フォームに対応していません。
 > - ビジネス ルールおよびクライアントAPIでは、読取り専用フォームのロックされたフィールドを有効化することができます。
 > - 挿入モードでエンティティ フォームを作成する場合は、ボタンの展開の変更、またはエンティティ フォーム上部にアクション ボタンを配置することはできません。
 > - 検索コントロールをフォーム上のドロップダウン リストとして表示する場合は、関連するレコード フィルターは動作しません。

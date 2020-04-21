@@ -2,7 +2,7 @@
 title: ソリューションのレイヤ― | MicrosoftDocs
 description: ソリューションの階層を使用する方法を説明します。
 keywords: ''
-ms.date: 02/05/2020
+ms.date: 03/13/2020
 ms.service: powerapps
 ms.custom: ''
 ms.topic: article
@@ -20,12 +20,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 1b5d71f8683b5cb86f79d90540dcf5aa99f6415d
-ms.sourcegitcommit: a02b20113164acb11955d27ef4ffa421ee0fba9d
+ms.openlocfilehash: 9c9e95e477e2ccb0bce9eac2256221486412f584
+ms.sourcegitcommit: 6fce86edacd9bfe49f8114a2a69bc18302cd01f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3114227"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260689"
 ---
 # <a name="solution-layers"></a>ソリューションのレイヤ―
 
@@ -67,6 +67,12 @@ Common Data Service のカスタマイズをマージするプロセスは、ソ
 
    > [!div class="mx-imgBorder"] 
    > ![ソリューションの階層のすべてのプロパティ](media/solution-layers-all-prop.png "ソリューションの階層のすべてのプロパティ")
+5. **LocalizedLabels** タブを選択し、ソリューション レイヤーのラベル フィールドを持つコンポーネントの情報を表示します。 ベース言語とインポートされた翻訳テキストは、**言語 ID** 列に表示されます。 ラベルが存在しない場合は、タブが表示されません。  
+   > [!div class="mx-imgBorder"] 
+   > ![ソリューション レイヤーのローカライズされたラベル](media/localized-labels.png "ソリューション レイヤーのローカライズされたラベル")
+
+    ラベルを選択して、完全なレイヤーを表示します。
 
 ### <a name="see-also"></a>関連項目
+[モデル駆動型アプリのローカライズ可能なテキストの変換](../model-driven-apps/translate-localizable-text.md) <br />
 [ソリューションの概要](solutions-overview.md)

@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 42ba7e8416477890614b00f6aa89ea241287475b
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: e1187757c90af2ec245ace51031f5e0345c92bd2
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3099932"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238463"
 ---
 # <a name="share-a-model-driven-app-with-power-apps"></a>Power Apps を使用してモデル駆動型アプリを共有する
 
@@ -151,7 +151,7 @@ ms.locfileid: "3099932"
 *特権は、特に指定されていない限り、グローバル スコープです。
 
 ## <a name="use-azure-active-directory-groups-to-manage-access"></a>Azure Active Directory グループを使用してアクセスを管理する
-管理者は、組織の Azure Active Directory (Azure AD) グループを使って、ライセンスを持った Common Data Service ユーザーのアクセス権を管理できます。 Officeとセキュリティ、両方の Azure AD グループを使用して、ユーザーのアプリへのアクセス権を保護することができます。 詳細 : [グループ チームについて](/power-platform/admin/manage-teams.md#about-group-teams) 
+管理者は、組織の Azure Active Directory (Azure AD) グループを使って、ライセンスを持った Common Data Service ユーザーのアクセス権を管理できます。 Officeとセキュリティ、両方の Azure AD グループを使用して、ユーザーのアプリへのアクセス権を保護することができます。 詳細 : [グループ チームについて](/power-platform/admin/manage-teams#about-group-teams) 
 
 
 ### <a name="see-also"></a>関連項目

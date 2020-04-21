@@ -2,7 +2,7 @@
 title: ソリューション チェッカーの一般的な問題と解決策 | Microsoft Docs
 description: " ソリューション チェッカーにおける一般的な問題と解決策の一覧"
 keywords: ''
-ms.date: 02/11/2019
+ms.date: 04/07/2020
 ms.service: powerapps
 ms.custom:
 - ''
@@ -18,12 +18,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2280ea28178a85429367ea0359660b3b94f5f99b
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: fb40f10fae12afb16f59c98c6e1a43c3acf64e89
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3154727"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238419"
 ---
 # <a name="common-issues-and-resolutions-for-solution-checker"></a>ソリューション チェッカーの一般的な問題と解決策
 
@@ -46,6 +46,12 @@ ms.locfileid: "3154727"
 ポータル通知を選択すると、本ページにリンクがされ、詳細なトラブルシューティングを行います。 提供された一般的な問題にてエラーが解決できなかった場合、参照番号が返されます。 この参照番号をMicrosoftサポートに提供することで、詳細な調査が行われます。
 
 ![エラーの通知](media/solution-checker-failure-notification.png)
+
+
+## <a name="solution-checker-fails-to-check-default-solution"></a>ソリューション チェッカー が既定のソリューションをチェックできない
+
+ソリューションチェッカーは、 Common Data Service 環境のソリューションをエクスポートし、解析します。 既定のソリューションのエクスポートには対応していないため、チェックが正常に完了しない場合があります。 詳しくは：[ソリューション チェッカーでが大規模なソリューションをエクスポートできない](#solution-checker-fails-to-export-large-solutions)。
+
 
 ## <a name="solution-checker-fails-due-to-unsupported-version-of-power-apps-checker"></a>サポートしていないバージョンの Power Apps チェッカーによりソリューション チェッカーが失敗する
 

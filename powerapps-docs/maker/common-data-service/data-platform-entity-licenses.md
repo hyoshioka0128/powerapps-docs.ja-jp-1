@@ -1,29 +1,27 @@
 ---
 title: エンティティのライセンス要件 | Microsoft Docs
 description: Common Data Service 内のエンティティのライセンス要件の説明。
-author: lancedMicrosoft
-manager: kvivek
+author: KumarVivek
 ms.service: powerapps
-ms.component: cds
 ms.topic: conceptual
-ms.date: 03/20/2020
-ms.author: lanced
+ms.date: 04/15/2020
+ms.author: kvivek
 search.audienceType:
 - maker
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0a6b950c35043ecf47f45373f758ce62953945e7
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: eddcaff1464b0ac541b97f19889e2635f47d9cd9
+ms.sourcegitcommit: 263a12aefa72a3d73e07b2660bf1e89eba532a16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156531"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "3264789"
 ---
 # <a name="license-requirements-for-entities"></a>エンティティのライセンス要件
 
 > [!IMPORTANT]
-> エンティティに対するライセンス要件の最新情報については、 [Power Apps ライセンス ガイド](https://go.microsoft.com/fwlink/p/?linkid=2085130) を参照してください。
+> このトピックは最新ではなく、2019 年 10 月 1 日から適用される最新のライセンス変更を反映するため、間もなく更新されます。 エンティティに対するライセンス要件の最新情報については、 [Power Apps ライセンス ガイド](https://go.microsoft.com/fwlink/p/?linkid=2085130) を参照してください。
 
 アプリ作成者は、 Common Data Service 内 (Common Data Service の部分であるカスタム エンティティとエンティティを含む) で、使用可能なエンティティのほとんどを使用して 、 Power Apps Plan 1 または Power Automate Plan 1 を持つユーザーのアプリとフローを作成できます。 場合によっては、エンティティは、複雑なビジネス ロジックが含まれるか、アプリ ユーザーに特定のライセンスを求める Dynamics 365 アプリケーションに連結されます。 
 

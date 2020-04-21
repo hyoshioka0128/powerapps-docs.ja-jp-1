@@ -2,7 +2,7 @@
 title: Common Data Service における多対多のエンティティ関連付けの作成についての概要 | MicrosoftDocs
 description: 多対多のエンティティの関連付けを作成する方法に関する説明
 ms.custom: ''
-ms.date: 05/29/2018
+ms.date: 04/07/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -22,16 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 907a1147630cc779e6c1af7be2486548f1907c5a
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 5f5c0f78f94ae2ec452bcbf6f5d677723d5ede52
+ms.sourcegitcommit: 6acc6ac7cc1749e9681d5e55c96613033835d294
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2865757"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "3238287"
 ---
 # <a name="create-many-to-many-entity-relationships-overview"></a>多対多のエンティティの関連付けの作成の概要
 
 一対多 (1:N) のエンティティの関連付けはレコード間の階層を確立します。 多対多 (N:N) の関連付けでは、明示的階層がありません。 構成する検索フィールドまたは動作はありません。 多対多の関連付けを使用して作成されたレコードは同等であると考えられ、この関係は相互的なものです。  
+
+多対多の関係の一例は、Dynamics 365 Sales アプリに含まれている 2 つの標準エンティティ間で定義されています。 営業案件エンティティには、競合企業エンティティとの N 対 N の関連付けがあります。 これにより、複数の競合他社を商談に追加したり、同じ競合他社に関連する複数の商談を追加することができます。 
   
 多対多の関係では、関係 (または交差する) エンティティは、エンティティを関連付けるデータを格納します。 このエンティティには、関連エンティティの両方で一対多のエンティティの関連付けがあり、関連付けの定義に必要となる値のみを格納します。 関連付けのエンティティにユーザー定義フィールドを追加することはできず、ユーザー インターフェイスにも表示されません。 
   
