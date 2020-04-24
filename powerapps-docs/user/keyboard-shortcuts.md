@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: b5f273fcc14b7c8bd9cbde947133fd70d4a2a432
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: a3e1bb7acbe645a6a1c9ae39dfe37634ac2c2deb
+ms.sourcegitcommit: 365155c2d81a78958561b89b46285f5bcbffa853
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79035626"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81224605"
 ---
 # <a name="use-keyboard-shortcuts-in-power-apps"></a>Power Apps でキーボード ショートカットを使用する
 
@@ -69,8 +69,8 @@ ms.locfileid: "79035626"
 
 |タスク  | 統一インターフェイス|
 |---------|---------|
-|列ヘッダーにフォーカスがある場合、列で並べ替える | Enter キー |
-|列ヘッダーにフォーカスがある場合、フィルター ダイアログを開く | Space キー|
+|列ヘッダーにフォーカスがある場合、列で並べ替える | Space キーでドロップ ダウン リストに移動し、下方向キーでアクションを選択した後、Enter キー |
+|列ヘッダーにフォーカスがある場合、フィルター ダイアログを開く | Space キーでドロップ ダウン リストに移動し、下方向キーで **[フィルター条件]** オプションを選択した後、Enter キー |
 |セルにフォーカスがある場合、次のフィールドに移動する |  右方向 (→) キー  | 
 |セルにフォーカスがある場合、前のフィールドに移動する   |  左方向 (←) キー|
 |列ヘッダーにフォーカスがある場合、次の列ヘッダーに移動する |  タブ  | 
