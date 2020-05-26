@@ -1,5 +1,5 @@
 ---
-title: Power Apps でセグメント化されたソリューションを使用する | MicrosoftDocs
+title: Power Apps でセグメント化されたソリューションの作成 | MicrosoftDocs
 description: ソリューションのセグメント化を使用してソリューションを更新する方法の学習
 ms.custom: ''
 ms.date: 02/04/2020
@@ -22,28 +22,15 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 16730151eb6d7ec45fad7a6803eed3e76f68f8d4
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 50e9e467727ab637d46dbc82ad0a313b5fe817db
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125490"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341572"
 ---
-# <a name="use-segmented-solutions"></a>セグメント化されたソリューションの使用 
-
-ソリューションのアップデートを配布するときに更新されるエンティティ コンポーネントのみを含めるように、ソリューションのセグメンテーションを使用します。 ソリューションのセグメント化では、すべての資産を含むエンティティ全体ではなく、選択したエンティティ資産 (エンティティ フィールド、フォーム、ビューなど) をソリューション アップデートと共にエクスポートできます。 <!-- Depending on the complexity of your app, segmentation of the solution can be as simple as everything in a single solution to segmenting by component type, such as entities in one solution, canvas apps in another, and plugins in a third. --> セグメント化されたソリューションを作成するには、 Power Apps で **ソリューション** 領域を使用します。  
-
-次のオプションから選択して既存のエンティティをソリューションに追加すると、ソリューションをセグメント化できます。 
-- コンポーネントは含ませません。 コンポーネントまたはメタデータを選択しない場合、最小限のエンティティ情報がソリューションに追加されます。 したがって、フレンドリ名を除き、エンティティ属性 (メタデータ) またはコンポーネントは含まれません。   
-- **コンポーネントを選択する**。 フィールド、リレーションシップ、ビジネス ルール、ビュー、フォーム、グラフなど、エンティティに関連付けられている各コンポーネントを個別に選択することで、ソリューションをセグメント化することができます。 このオプションを使用して、新しいカスタムフィールドやフォームの追加など、エンティティで追加または変更されたコンポーネントのみを選択します。  
-- **エンティティ メタデータを含める**。 このオプションには、関連エンティティなどのコンポーネントは含まれませんが、エンティティに関連付けられた *すべて* のメタデータを含みます。 メタデータには、監査、重複データ検出、変更追跡などのエンティティ属性が含まれます。 
-- **すべてのコンポーネントを含める**。 このオプションにはすべてのコンポーネント*かつ*エンティティに関連付けられたメタデータが含まれます。 ビジネス プロセス フロー、レポート、接続、キューなどの他のエンティティまたはエンティティ コンポーネントを含めることができます。 このオプションは、ターゲット環境に存在しないアンマネージド エンティティを配布する場合にのみ使用してください。 
-
-    > [!WARNING]
-    > 意図しないコンポーネントをソリューションに追加しないでください。 更新をターゲット環境にインポートすると、意図しないコンポーネントを含むソリューションが、ソリューションの更新で導入したレイヤーの下にある既存のコンポーネントに予期しない動作を引き起こす可能性があります。 たとえば、更新されていないエンティティにビューを追加し、既存のレイヤーのビューにカスタマイズがある場合、既存のカスタマイズが非アクティブになる場合があります。 詳細については、[ソリューション レイヤ―](solution-layers.md) を参照してください。
-
-<!-- The below was from Per but I don't think it fits in this topic that is only about solution segmentation with entities. 
-Similar to the planning that goes into how you model the data that goes into your app, planning for segmentation should be considered before you distribute your solution. Segmenting solutions from a single solution into multiple solutions a month or two years after the initial app has been built can be complex and is prone to cause issues.  -->
+# <a name="create-segmented-solutions"></a>セグメント化されたソリューションの作成 
+ソリューションのアップデートを配布するときに更新されるエンティティ コンポーネントのみを含めるように、ソリューションのセグメンテーションを使用します。 ソリューションのセグメント化では、すべての資産を含むエンティティ全体ではなく、選択したエンティティ資産 (エンティティ フィールド、フォーム、ビューなど) をソリューション アップデートと共にエクスポートできます。 セグメント化されたソリューションを作成するには、 Power Apps で **ソリューション** 領域を使用します。 詳細: [セグメント化されたソリューションを使用する](/power-platform/alm/segmented-solutions-alm)
 
 ## <a name="create-a-segmented-solution-with-entity-assets"></a>エンティティ資産を使用してセグメント化したソリューションを作成 
  セグメント化したソリューションを作成するには、アンマネージド ソリューションの作成と既に更新したコンポーネントのみの追加から開始します。 ウィザード風のセットアップにより、エンティティ資産の追加のプロセスを段階的に進みます。 

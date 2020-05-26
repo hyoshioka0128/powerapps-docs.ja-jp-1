@@ -22,18 +22,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 309b6721d60d06e81926bfc0f97ff192f936686a
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: 1838f1303d706ab7b9c2ec7356a4ad447a6d0d23
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3125446"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341392"
 ---
 # <a name="solutions-overview"></a>ソリューションの概要  
 
-  Power Apps では、別の環境にアプリケーションおよびコンポーネントを移動したり、既存のアプリケーションに一連のカスタマイズを適用するために、ソリューションが利用されます。 ソリューションには、1 つ以上のアプリに加えて、サイト マップ、エンティティ、プロセス、Web リソース、オプション セットなど、それ以外のコンポーネントを含めることができます。  ソリューションは [AppSource](https://appsource.microsoft.com/) または独立系ソフトウェア ベンダー (ISV) から取得することができます。
+Power Apps では、別の環境にアプリケーションおよびコンポーネントを移動したり、既存のアプリケーションに一連のカスタマイズを適用するために、ソリューションが利用されます。 ソリューションには、1 つ以上のアプリに加えて、サイト マップ、エンティティ、プロセス、Web リソース、オプション セットなど、それ以外のコンポーネントを含めることができます。  ソリューションは [AppSource](https://appsource.microsoft.com/) または独立系ソフトウェア ベンダー (ISV) から取得することができます。
   
-詳細: [ホワイトペーパー: ラソリューションのライフサイクルの管理](https://www.microsoft.com/download/details.aspx?id=57777)  
+詳細: [ソリューションの概要](/power-platform/alm/solution-concepts-alm)
   
 > [!NOTE]
 >  配布するアプリを作成する ISV の場合は、ソリューションを使用する必要があります。 ソリューションの使用に関する詳細は [開発者ガイド: ソリューションの概要](/powerapps/developer/common-data-service/introduction-solutions) を参照してください。  
@@ -46,7 +46,17 @@ ms.locfileid: "3125446"
 > [!div class="mx-imgBorder"] 
 > ![ソリューションのコンポーネント](media/components-in-solution.png "ソリューションのコンポーネント") 
 
-ソリューションに追加できるコンポーネントの種類のリストを表示するには、[ComponentType オプション](../../developer/common-data-service/reference/entities/solutioncomponent.md#componenttype-options) をご参照してください。
+ソリューションに追加できるコンポーネントの種類のリストを表示するには、[ComponentType オプション](../../developer/common-data-service/reference/entities/solutioncomponent.md#componenttype-options) をご参照してください。 
+
+ソリューションの詳細については、これらの記事を参照してください。 
+- [ソリューションの概念](/power-platform/alm/solution-concepts-alm)
+- [ソリューションの階層](/power-platform/alm/solution-layers-alm)
+- [管理ソリューションのマージ方法について](/power-platform/alm/how-managed-solutions-merged)
+- [カスタマイズするためのソリューションを使用する](/power-platform/alm/use-solutions-for-your-customizations)
+- [マネージド プロパティ](/power-platform/alm/managed-properties-alm)
+- [セグメント化されたソリューションの使用](/power-platform/alm/segmented-solutions-alm)
+- [ソリューションの更新](/power-platform/alm/update-solutions-alm)
+
 
 <!-- The following is a list of components that you can view in a solution:  
   
@@ -119,59 +129,60 @@ ms.locfileid: "3125446"
  コンポーネントによっては、他のコンポーネントにネストしています。 たとえば、エンティティには、フォーム、ビュー、グラフ、フィールド、エンティティ関係、メッセージや業務ルールが含まれています。 各コンポーネントには、エンティティの存在が必要です。 フィールドはエンティティの外部に存在することはできません。 フィールドは、エンティティに依存していると言えます。 実際には、上記の一覧に示したコンポーネントの 2 倍の種類のソリューション コンポーネントがありますが、そのほとんどが他のコンポーネント内にテストされておらず、アプリケーションに表示されません。  
   
  コンポーネントの目的は、マネージド プロパティおよびすべてのソリューションの依存関係を使用してカスタマイズできることの制限を追跡し、何も残さずにエクスポート、インポート、および (管理ソリューション内で) 削除することです。  
-  
+
+<!--  
 <a name="BKMK_ManagedAndUnmanagedSolutions"></a>   
-## <a name="managed-and-unmanaged-solutions"></a>管理ソリューションとアンマネージド ソリューション  
- **管理**ソリューションおよび**非管理**ソリューションがあります。 **管理**ソリューションは、変更できず、インポートされた後アンインストールできます。 ソリューションのすべてのコンポーネントは、ソリューションのアンインストールによって削除されます。  
+## Managed and unmanaged solutions  
+ There are **managed** and **unmanaged** solutions. A **managed** solution cannot be modified and can be uninstalled after it is imported. All the components of that solution are deleted by uninstalling the solution.  
   
- **アンマネージド**ソリューションをインポートする場合は、環境にソリューションのすべてのコンポーネントを追加します。 ソリューションをアンインストールしてもコンポーネントは削除できません。  
+ When you import an **unmanaged** solution, you add all the components of that solution into your environment. You can’t delete the components by uninstalling the solution.  
   
- すでにカスタマイズしたコンポーネントを含む**アンマネージド**ソリューションをインポートした場合、カスタマイズはインポートされたアンマネージド ソリューションのカスタマイズによって上書きされます。 これを元に戻すことはできません。  
+ When you import an **unmanaged** solution that contains components that you have already customized, your customizations will be overwritten by the customizations in the imported unmanaged solution. You can’t undo this.  
   
 > [!IMPORTANT]
->  環境にすべてのコンポーネントを追加し、既存のカスタマイズを上書きする場合にのみ、アンマネージド ソリューションをインストールします。  
+>  Install an unmanaged solution only if you want to add all the components to your environment and overwrite any existing customizations.  
   
- アプリまたはカスタマイズの配布を計画していない場合でも、アンマネージド ソリューションを作成および使用し、カスタマイズしたアプリケーションのそれらの部分のみを含む個別のビューが表示されるようにできます。 何かをカスタマイズするときはいつでも、作成したアンマネージド ソリューションに追加するだけです。  
+ Even if you don’t plan on distributing your apps or customizations, you may want to create and use an unmanaged solution to have a separate view that only includes those parts of the application that you have customized. Whenever you customize something, just add it to the unmanaged solution that you created.  
   
- **管理**ソリューションを作成するには、ソリューションをエクスポートするときに **管理** オプションを選択します。 管理ソリューションを作成する場合、使用した同じ環境にその管理ソリューションをインポートし直すことはできません。 別の環境にのみインポートできます。  
+ To create a **managed** solution, you choose the **As managed** option when you export the solution. If you create a managed solution, you can’t import it back into the same environment you used to create it. You can only import it into a different environment.  
   
 <a name="BKMK_HowSolutionsAreApplied"></a>   
-### <a name="how-solutions-are-applied"></a>ソリューションの適用方法  
- すべてのソリューションは層として評価され、 アプリが実際に行うことを確認します。 次の図は、管理ソリューションとアンマネージド ソリューションが評価される方法と、その変更が環境に表示される方法を示します。  
+### How solutions are applied  
+ All solutions are evaluated as layers to determine what your app will actually do. The following diagram shows how managed and unmanaged solutions are evaluated and how changes in them will appear in your environment.  
   
- ![ソリューションの階層](media/solution-layering.png "ソリューションの階層")  
+ ![Solution layering](media/solution-layering.png "Solution layering")  
   
- 下から上に向かって動作する。  
+ Starting from the bottom and working up to top:  
   
- **システム ソリューション**  
- システム ソリューションは、すべての環境に含まれている管理ソリューションと似ています。 システム ソリューションは、システムのすべての「すぐに使用できる」コンポーネントの定義です。  
+ **System Solution**  
+ The system solution is like a managed solution that every environment has. The system solution is the definition of all the out-of-the box components in the system.  
   
- **マネージド ソリューション**  
- 管理ソリューションは、システム ソリューション コンポーネントを変更して、新しいコンポーネントを追加できます。 複数の管理ソリューションがインストールされている場合、インストールされた最初のものは、後にインストールされた管理ソリューションの下にあります。 これは、インストールされている 2 番目のソリューションが前にインストールされたものをカスタマイズできるという意味です。 2 つの管理ソリューションに競合する定義があると、一般ルールは "後のもの勝ち" です。 管理ソリューションをアンインストールすると、その下の管理ソリューションが有効になります。 すべての管理ソリューションをアンインストールした場合、システム ソリューション内に定義された既定の動作が適用されます。  
+ **Managed Solutions**  
+ Managed solutions can modify the system solution components and add new components. If multiple managed solutions are installed, the first one installed is below the managed solution installed later. This means that the second solution installed can customize the one installed before it. When two managed solutions have conflicting definitions, the general rule is “Last one wins”. If you uninstall a managed solution, the managed solution below it takes effect. If you uninstall all managed solution, the default behavior defined within the system solution is applied.  
   
- **アンマネージド カスタマイズ**  
- アンマネージド カスタマイズは、アンマネージド ソリューションを使用して環境に加えた変更です。 システム ソリューションは、マネージド プロパティ を使用してカスタマイズできることまたはできないことを定義します。 管理ソリューションの発行者には、ソリューションに追加するソリューション コンポーネントをカスタマイズする能力を制限するのと同じ能力があります。 ソリューション コンポーネントのカスタマイズを阻む管理プロパティがないどのようなソリューション コンポーネントもカスタマイズできます。  
+ **Unmanaged Customizations**  
+ Unmanaged customizations are any change you have made to your environment through an unmanaged solution. The system solution defines what you can or can't customize by using managed properties. Publishers of managed solutions have the same ability to limit your ability to customize solution components that they add in their solution. You can customize any of the solution components that do not have managed properties that prevent you from customizing them.  
   
- **アプリケーションの動作**  
- これは、環境内で実際に表示されるものです。 適用した既定のシステム ソリューション、任意の管理ソリューション、任意のアンマネージド カスタマイズ。  
+ **Application Behavior**  
+ This is what you actually see in your environment. The default system solution plus any managed solutions, plus any unmanaged customizations you have applied.  
   
 <a name="BKMK_ManagedProperties"></a>   
-## <a name="managed-properties"></a>マネージド プロパティ  
- 一部のコンポーネントはカスタマイズすることができません。 システム ソリューション内のこれらのコンポーネントには、カスタマイズすることを防ぐメタデータがあります。 これらは**管理プロパティ**と呼ばれます。 管理ソリューションの発行者は、管理プロパティを設定して、不要な方法でソリューションがカスタマイズされることを防止できます。  
+## Managed properties  
+ Some components can’t be customized. These components in the system solution have metadata that prevents you from customizing them. These are called **managed properties**. The publisher of a managed solution can also set the managed properties to prevent you from customizing their solution in ways they don’t want you to.  
   
 <a name="BKMK_Dependencies"></a>   
-## <a name="solution-dependencies"></a>ソリューションの依存関係  
- 管理化ソリューションが階層化されているため、一部の管理ソリューションは、その他の管理ソリューションでソリューション コンポーネントに依存される可能性があります。 一部のソリューション発行者は、これを活用して、モジュール形式のソリューションを開発します。 最初に 「基本」管理ソリューションをインストールし、その後基本管理ソリューションのコンポーネントをさらにカスタマイズするもう一つの管理ソリューションをインストールする必要があります。 2 番目の管理ソリューションは、最初のソリューションに含まれているソリューション コンポーネントに依存しています。  
+## Solution dependencies  
+ Because of the way that managed solutions are layered, some managed solutions can be dependent on solution components in other managed solutions. Some solution publishers will take advantage of this to build solutions that are modular. You may need to install a “base” managed solution first and then you can install a second managed solution that will further customize the components in the base managed solution. The second managed solution depends on solution components that are part of the first solution.  
   
- システムはこれらのソリューション間の依存関係を追跡します。 インストールされていない基本ソリューションが必要なソリューションをインストールしようとしても、そのソリューションをインストールできません。 ソリューションは別のソリューションが最初にインストールされている必要があるという内容のメッセージが表示されます。 同様に、依存関係により、基本ソリューションに依存するソリューションがまだインストールされている間は、その基本ソリューションはアンインストールできません。 基本ソリューションをアンインストールする前に、依存ソリューションをアンインストールする必要があります。  
+ The system tracks these dependencies between solutions. If you try to install a solution that requires a base solution that isn’t installed, you won’t be able to install the solution. You will get a message saying that the solution requires another solution to be installed first. Similarly, because of the dependencies, you can’t uninstall the base solution while a solution that depends on it is still installed. You have to uninstall the dependent solution before you can uninstall the base solution.  
  
-## <a name="solution-publisher-prefix"></a>ソリューション発行者の接頭辞 
+## Solution publisher prefix 
 
-既定では、Power Apps  で機能するソリューションは **Common Data Service デフォルト公開元** に関連付けられている **Common Data Services デフォルト ソリューション** になります。 既定のカスタマイズ接頭辞はこの発行者に対してランダムに割り当てられます。例えば `cr8a3` などです。 つまり、組織のために作成された新しいメタデータの項目名は、項目を一意に識別するために使用される名前の前にこれを追加します。 
+By default, the solution you will work with in Power Apps will be the **Common Data Services Default Solution** which is associated with the **Common Data Service Default Publisher**. The default customization prefix will be randomly assigned for this publisher, for example it could be `cr8a3`. This means that the name of every new item of metadata created for your organization will have this prepended to the names used to uniquely identify the items. 
 
-ソリューション発行者接頭辞を変更して、よりわかりやすいものにすることをお勧めします。 詳細: [ソリューション発行者の接頭辞を変更する](change-solution-publisher-prefix.md)
+We recommend that you change the solution publisher prefix so that it will be more meaningful. More information: [Change the solution publisher prefix](change-solution-publisher-prefix.md) -->
   
 ### <a name="next-steps"></a>次のステップ  
-[ソリューションのインポート、更新およびエクスポート](import-update-export-solutions.md) <br/>
-[特定のソリューションへの移動](navigate-specific-solution.md)
+[Power Apps でのソリューションの使用](use-solution-explorer.md) <br/>
+
  

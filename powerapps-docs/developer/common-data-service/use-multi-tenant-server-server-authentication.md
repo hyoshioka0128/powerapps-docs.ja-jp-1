@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: cdc3a2c20f8459787e01001e070ed01b684ceb83
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 3ba1bdb37eef71584a2992855c61f0ac0799e2b9
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3155171"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341368"
 ---
 # <a name="use-multi-tenant-server-to-server-authentication"></a>マルチ テナント型でのサーバー間認証の使用
 
@@ -209,7 +209,7 @@ ms.locfileid: "3155171"
   
   [Common Data Service] ソリューションの作成に関する詳細は、次のトピックを参照してください:
   
-- [カスタマイズでのソリューションの使用](../../maker/common-data-service/use-solutions-for-your-customizations.md)  
+- [カスタマイズでのソリューションの使用](/power-platform/alm/use-solutions-for-your-customizations)  
 - [ソリューションを使用した拡張機能のパッケージ化および配布](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)  
   
   ただし、アプリケーション ユーザーをソリューションに含めることはできないため、このアプリケーション ユーザーを作成しカスタム セキュリティ ロールを関連付ける方法を提供する必要があります。  

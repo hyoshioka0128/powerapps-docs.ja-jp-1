@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.reviewer: pehecke
 ms.workload: na
-ms.date: 01/28/2019
+ms.date: 05/06/2020
 ms.author: jdaly
 search.audienceType:
 - developer
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ff175320897f156027cd394cf8319032c9f8a6ff
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: db2dd730f172810a571d8d6289ce4ae8b25dcdbe
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156163"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341442"
 ---
 # <a name="introduction-to-solutions"></a>ソリューションの概要
 
@@ -36,7 +36,7 @@ Common Data Service または以前にインストールされたソリューシ
 異なる Common Data Service 環境間のカスタマイズまたは拡張を転送する場合、また AppSource を使用してソリューションを配布する場合、ソリューション フレームワークを理解している必要があります。
 
 > [!NOTE]
-> ソリューションを効率的に使用してアプリケーション ライフサイクル管理 (ALM) の実装を成功させる方法の詳細については、[ホワイトペーパー: ライフサイクル管理ソリューション](https://www.microsoft.com/download/details.aspx?id=57777) を参照してください
+> ソリューションを効率的に使用してアプリケーション ライフサイクル管理 (ALM) の実装を成功させる方法の詳細については、[Microsoft Power Platform アプリケーション ライフサイクル管理 (ALM)](/power-platform/alm) を参照してください。
 
 ## <a name="managed-and-unmanaged-solutions"></a>管理ソリューションとアンマネージド ソリューション
 

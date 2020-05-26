@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 20c4dfe96f7293f9a00a97867beda7ac8a0f4b41
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 7f2d41bcc951b2044f2a70b62e683525e98e5bcc
+ms.sourcegitcommit: 8e76afb331745f1da929a39e831634680dfa6008
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156415"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3346864"
 ---
 # <a name="build-tools-tasks"></a>ツール構成タスク
 
@@ -37,7 +37,7 @@ Power Apps チェッカー タスクは、一連の最良の規則に対して�
 
 | **パラメーター** | **説明** |
 | --- | --- |
-| Power Apps チェッカーサービス  |   Power Apps チェッカーのサービス エンドポイントを選択します。 サービス エンドポイントは **プロジェクト設定** 配下の **サービスの接続** で定義されています。  **注意:** この特定のタスクにのみ使用する必要があるサービス接続の種類は「Power Apps チェッカー」であり、これはサービス プリンシパル接続です。 タスクが使用する前に、サービスプリンシパルを構成する方法の詳細情報については [こちら](https://aka.ms/buildtoolsconnection)を参照してください。  |
+| Power Apps チェッカーサービス  |   Power Apps チェッカーのサービス エンドポイントを選択します。 サービス エンドポイントは **プロジェクト設定** 配下の **サービスの接続** で定義されています。  **注意:** この特定のタスクにのみ使用する必要があるサービス接続の種類は「Power Apps チェッカー」であり、これはサービス プリンシパル接続です。 タスクが使用する前に、サービスプリンシパルを構成する方法の詳細情報については [こちら](build-tools-tasks#configure-service-connection-for-power-apps-checker)を参照してください。  |
 | 分析を行うファイルの場所  | ローカルのファイルを参照するか、SASのURLから参照するかを指定します。 
 | 分析を行うローカルファイル/解析するファイルのSAS URI |  分析を行うzipファイルのパスとファイル名を指定します。   ワイルドカードを使用することができます。 たとえば、すべてのサブフォルダのzipファイルを指定するには **\*.zip と入力します。 ファイルを直接指定するか、Sasのuriからファイルを参照することができます。   |
 |  ルールセット |   適用するルールセットを指定します。 次の二つのルールセットを使用できます:  **ソリューションのチェッカー:** [メーカー ポータル](https://make.powerapps.com/) から実行するルールセットと同じです。    **AppSource:** これは、 [AppSource](https://appsource.microsoft.com/)に公開されるに先立って、アプリケーションを認証するために使用される拡張ルールセットです。   |
