@@ -2,7 +2,7 @@
 title: ファイル属性 (Common Data Service) | Microsoft Docs
 description: アプリケーション内にファイル データを保存するファイル属性、サポートされている属性、データの取得、およびファイル データのアップロードについて説明します。
 ms.custom: ''
-ms.date: 10/04/2019
+ms.date: 04/27/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: d8a64f994f035f61506a26836386f5f087777928
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 55b9e10d0d6e40394f8c4119ff1b47a11edb1540
+ms.sourcegitcommit: 9f83d4c09f09256493bc5d49c7b4a4fc02d9342a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156195"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3292979"
 ---
 # <a name="file-attributes"></a>ファイル属性
 
@@ -32,7 +32,9 @@ FileAttributeMetadata | <xref:Microsoft.Xrm.Sdk.Metadata.FileAttributeMetadata>
 許可されないファイルの種類については、 **ブロックする添付ファイルの拡張子の設定** 設定の [システム設定全般タブ](/power-platform/admin/system-settings-dialog-box-general-tab) を参照してください。
 
 > [!IMPORTANT]
-> いくつかの制限は、 Common Data Service のファイルおよび拡張イメージ データ型を使用するときに適用されます。 顧客管理キー (CMK) がテナントで有効になっている場合、テナントの組織は、ファイル、イメージ、IoTデータ型を使用できません。 除外されたデータ型を含むソリューションはインストールされません。 これらのデータ型を使用するには、顧客が CMK をオプトアウトする必要があります。
+> いくつかの制限は、 Common Data Service のファイルおよび拡張イメージ データ型を使用するときに適用されます。 顧客管理キー (CMK) がテナントで有効になっている場合、テナントの組織は、ファイル、イメージ、IoTデータ型を使用できません。 除外されたデータ型を含むソリューションはインストールされません。 これらのデータ型を使用するには、顧客が CMK をオプトアウトする必要があります。<p/>
+> ファイル属性は、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.SdkClientVersion> 9.0.45.329 以降および Web API バージョン 9.1 以降でサポートされています。
+
 
 <!--File data is not passed to plug-ins for performance reasons. You must retrieve the file data in plug-in code using an explicit retrieve call. -->
   

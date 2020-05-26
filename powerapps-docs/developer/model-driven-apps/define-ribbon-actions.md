@@ -16,12 +16,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8f17a21544a1f218b7f3c21264e723bd3750a843
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 13efb9c8962f14dffe73beb67aff1f1c229a9286
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115643"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275959"
 ---
 # <a name="define-ribbon-actions"></a>リボン アクションの定義
 
@@ -45,7 +45,7 @@ ms.locfileid: "3115643"
 [!INCLUDE[ribbon_element_BoolParameter](../../includes/ribbon-element-boolparameter.md)]
   
  `<CrmParameter>`  
- [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] 詳細: [データをページからパラメーターとしてリボン操作に渡す](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  <!-- TODO need to update the relevant link from the powerapps repo -->
+ [!INCLUDE[ribbon_element_CrmParameter](../../includes/ribbon-element-crmparameter.md)] 詳細: [データをページからパラメーターとしてリボン操作に渡す](pass-data-page-parameter-ribbon-actions.md) 
   
  `<DecimalParameter>`  
  [!INCLUDE[ribbon_element_DecimalParameter](../../includes/ribbon-element-decimalparameter.md)]
@@ -56,13 +56,14 @@ ms.locfileid: "3115643"
  `<StringParameter>`  
  [!INCLUDE[ribbon_element_StringParameter](../../includes/ribbon-element-stringparameter.md)]
   
- パラメーターは、`<Url>` 要素に渡される場合、クエリ文字列として渡されます。 そのため、クエリ文字列のキー/値のペアの "キー" を表す名前値を含める必要があります。  
+ パラメーターは、`<Url>` 要素に渡される場合、クエリ文字列として渡されます。 そのため、クエリ文字列のキー/値のペアの「キー」を表す名前値を含める必要があります。  
   
  `<JavaScriptFunction>` に渡すパラメーターに名前は必要ありませんが、これらのパラメーターは、関数が必要とする順序で指定し、正しいデータ型を使用する必要があります。  
   
 ## <a name="see-also"></a>関連項目  
 
- [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
+ [コマンドとリボンのカスタマイズ](customize-commands-ribbon.md)   
  [リボンの表示ルールの定義](define-ribbon-display-rules.md)   
- [データをページからパラメーターとしてリボン操作に渡す](/dynamics365/customer-engagement/developer/customize-dev/pass-dynamics-365-data-page-parameter-ribbon-actionsd)  
-<!-- TODO need to update the relevant link from the powerapps repo-->
+ [データをページからパラメーターとしてリボン操作に渡す](pass-data-page-parameter-ribbon-actions.md)  
+
+

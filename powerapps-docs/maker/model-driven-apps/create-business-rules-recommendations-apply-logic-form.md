@@ -1,7 +1,7 @@
 ---
 title: モデル駆動型アプリの業務ルールおよび推奨事項の作成 | MicrosoftDocs
 ms.custom: ''
-ms.date: 03/15/2019
+ms.date: 03/30/2020
 ms.reviewer: ''
 ms.service: powerapps
 ms.suite: ''
@@ -23,12 +23,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: eff15d356b1ec37e0a2528f11b73d7ee99ea5af1
-ms.sourcegitcommit: dd2a8a0362a8e1b64a1dac7b9f98d43da8d0bd87
+ms.openlocfilehash: 403320ee4a0c7d73bf2c386b538de311e7242c90
+ms.sourcegitcommit: 3c6c5594b73abd5ff438d50f3b579d56cef7241c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "2863341"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3285885"
 ---
 # <a name="create-business-rules-and-recommendations-to-apply-logic-in-a-model-driven-app-form"></a>モデル駆動型アプリ フォームでロジックを適用するための業務ルールと推奨事項を作成
 
@@ -41,31 +41,29 @@ ms.locfileid: "2863341"
   
 -   フィールド値を設定する  
   
--   フィールド値のクリア  
+-   フィールド値をクリアする  
   
--   フィールドの入力要求レベルを設定する  
+-   フィールド要件レベルを設定する  
   
--   フィールドを表示または非表示にする  
+-   フィールドを表示/非表示にする  
   
--   フィールドを有効化または無効化する  
+-   フィールドを有効化/無効化する  
   
 -   データを検証し、エラー メッセージを表示する  
   
--   ビジネス インテリジェンスに基づくビジネス レコメンデーションを作成する  
+-   ビジネス インテリジェンスに基づいてビジネス レコメンデーションを作成します。  
   
 ## <a name="create-a-business-rule-or-business-recommendation"></a>ビジネス ルールまたはビジネス レコメンデーションの作成
-  
-1. [ソリューション エクスプローラー](advanced-navigation.md#solution-explorer)を開きます。  
-  
-2.  業務ルールを作成するエンティティを開き (例えば、**取引先企業**エンティティを開く)、**業務ルール**をダブルクリックします。  
-  
- ![既定のソリューションでの業務ルールの作成](media/create-business-rule-the-default-solution.png "既定のソリューションでの業務ルールの作成")  
-  
-3.  **新規**を選択します。  
-  
+
+1.  [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc) にサインインします。  
+
+2.  **データ**を展開して**エンティティ**を選択し、目的のエンティティを選び**ビジネス ルール**タブを選択します。
+
+3.  コマンド バーで、**ビジネス ルールに追加**を選択します。
+
      業務ルールの設計ウィンドウはユーザーに対して既に作成された 1 つの条件で開きます。 あらゆる規則は条件から始まります。 業務ルールはその条件に基づいて 1 つ以上のアクションをとります。  
   
- ![業務ルールの設計ウィンドウ](media/business-rules-design-window.png "業務ルールの設計ウィンドウ")  
+    ![業務ルールの設計ウィンドウ](media/business-rules-design-window.png "業務ルールの設計ウィンドウ")  
   
    > [!TIP]
 > 既存の業務ルールを修正する場合は、その修正を行う前に、非アクティブ化する必要があります。
@@ -141,20 +139,23 @@ ms.locfileid: "2863341"
 ### <a name="full-name-field-not-supported-with-unified-interface-apps"></a>統一インターフェイス アプリで氏名フィールドはサポートされません。
 **氏名** (fullname) フィールドを使用する操作や条件は、統一インターフェイスに基づくアプリでサポートされていません。  代わりに **名** (firstname) および **姓** (lastname) フィールドで操作または条件を使用できます。 
 
-### <a name="is-your-business-rule-not-firing-for-a-form"></a>ビジネス ルールがフォームに対して実行されない場合
+### <a name="business-rules-dont-fire-on-editable-grid-on-a-dashboard"></a>ダッシュボードの編集可能なグリッドでビジネス ルールが起動しません
+ビジネス ルールをスコープしたエンティティは、編集可能グリッドがダッシュボード ページで構成されている場合、編集可能グリッドで起動しません。
+
+### <a name="is-your-business-rule-not-firing-for-a-form"></a>フォームにビジネス ルールは生成されていませんか?
 ビジネス ルールで参照されるフィールドがフォームと共に含まれていないため、ビジネス ルールが実行されない可能性があります。 
-1.  ソリューション エクスプローラーを開きます。 目的のエンティティを展開してから**フォーム**を選択します。 
-2.  目的のフォームを開いてから、フォーム デザイナー リボン上で**ビジネス ルール**を選択します。 
-3.  フォーム デザイナーで、ビジネス ルールを開きます。 
-4.  ビジネス ルール デザイナーで各条件およびアクションを選択して、各条件およびアクションで参照されるすべてのフィールドを検証します。 
+1.    ソリューション エクスプローラーを開きます。 目的のエンティティを展開してから**フォーム**を選択します。 
+2.    目的のフォームを開いてから、フォーム デザイナー リボン上で**ビジネス ルール**を選択します。 
+3.    フォーム デザイナーで、ビジネス ルールを開きます。 
+4.    ビジネス ルール デザイナーで各条件およびアクションを選択して、各条件およびアクションで参照されるすべてのフィールドを検証します。 
 
-     > [!div class="mx-imgBorder"] 
-     > ![](media/business-rule-field.png "Field referenced in business rule exists in entity")
+        > [!div class="mx-imgBorder"] 
+        > ![](media/business-rule-field.png "Field referenced in business rule exists in entity")
 
- 5. また、ビジネス ルールで参照される各フィールドがフォーム上にも含まれていることを確認します。 含まれていない場合、不足しているフィールドをフォームに追加します。
+ 5.    また、ビジネス ルールで参照される各フィールドがフォーム上にも含まれていることを確認します。 含まれていない場合、不足しているフィールドをフォームに追加します。
 
-     > [!div class="mx-imgBorder"] 
-     > ![](media/account-name-on-form.png "Account name field on form")
+        > [!div class="mx-imgBorder"] 
+        > ![](media/account-name-on-form.png "Account name field on form")
 
 ## <a name="frequently-asked-questions-faq"></a>よくあるご質問 (FAQ)
 *業務ルールは読み取り専用フォームのフィールドのロックを解除できますか。*

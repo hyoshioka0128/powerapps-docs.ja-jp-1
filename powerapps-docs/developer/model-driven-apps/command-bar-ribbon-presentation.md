@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: ed08b46825e5cbf4d4045fe95df8266d326a4a44
-ms.sourcegitcommit: be9b8c0f5c7c7e9992e93fa0d03e961b4ac7e3ae
+ms.openlocfilehash: b4eda2dd6d5414a60837729a18a3ff62632033a4
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "3172586"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275855"
 ---
 # <a name="command-bar-or-ribbon-presentation"></a>バーまたはリボンの表示
 
@@ -104,7 +104,7 @@ Common Data Service のコマンドを定義するデータは、クライアン
   また既存の `<CrmClientTypeRule>` 要素が含まれていますが、その要素の `Type` 属性は `Web` と `Outlook` クライアントの間でのみ識別できます。 このルールは、Web クライアントとしてタブレット クライアント用 Dynamics 365 を評価します。  
   
 ### <a name="see-also"></a>関連項目  
- [コマンド、およびリボンをカスタマイズする](customize-commands-ribbon.md)   
+ [コマンドとリボンのカスタマイズ](customize-commands-ribbon.md)   
  [利用できるリボン](/dynamics365/customer-engagement/developer/customize-dev/ribbons-available-microsoft-dynamics-365)   
  [リボン定義のエクスポート](export-ribbon-definitions.md)   
  [リボンの問題のトラブルシューティング](https://support.microsoft.com/help/4552163)

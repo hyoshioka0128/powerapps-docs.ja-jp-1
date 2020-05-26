@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 8d6669c644b3ecc9419f7900030eb663cf25ebe1
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: bc5eeb970ecd8d54b7276e0f932e4822456e04e4
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115651"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276127"
 ---
 # <a name="data-xml-web-resources"></a>データ (XML) Web リソース
 
@@ -41,8 +41,8 @@ ms.locfileid: "3115651"
 ### <a name="see-also"></a>関連項目  
  [Web リソース](web-resources.md)   
  [Web ページ (HTML) の Web リソースの使用](webpage-html-web-resources.md)   
- [スタイルシート (CSS) ウェブ リソースを使用する](css-web-resources.md)   
+ [スタイル シート (CSS) Web リソースの使用](css-web-resources.md)   
  [スクリプト (JScript) Web リソースの使用](script-jscript-web-resources.md)   
- [画像 (JPG、PNG、GIF、ICO) Web リソースの使用](image-web-resources.md)   
+ [画像 (JPG、PNG、GIF) Web リソースの使用](image-web-resources.md)   
  [Silverlight (XAP) Web リソースの使用](/dynamics365/customer-engagement/developer/silverlight-xap-web-resources)<br/>   <!-- TODO need to update the relevant link from the powerapps repo-->
  [スタイル シート (XSL) Web リソースの使用](/dynamics365/customer-engagement/developer/stylesheet-xsl-web-resources) <!-- TODO need to update the relevant link from the powerapps repo-->

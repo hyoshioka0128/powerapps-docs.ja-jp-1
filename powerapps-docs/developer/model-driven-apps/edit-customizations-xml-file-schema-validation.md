@@ -17,12 +17,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 2634fe9dcc9d0a68f200c2af0fcb47169fdbdb0c
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 39948d6193a156fe67ec282bbdea4310105f016b
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115843"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276151"
 ---
 # <a name="edit-the-customizations-xml-file-with-schema-validation"></a>スキーマ検証を使用した XML カスタマイズ ファイルの編集
 
@@ -54,7 +54,8 @@ customizations.xml ファイルは、ソリューションとしてエクスポ�
 - VisualizationDataDescription.xsd  
   
   
-<a name="BKMK_UseSchemaValidation"></a>   
+<a name="BKMK_UseSchemaValidation"></a>
+
 ## <a name="using-schema-validation"></a>スキーマ検証の使用  
  エクスポートされた XML ファイルはテキスト ファイルなので、[!INCLUDE[pn_Notepad](../../includes/pn-notepad.md)] などのテキスト エディターを使用して編集できます。 ただし、XSD スキーマ検証機能を備えた [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] などのアプリケーションの使用を強く推奨します。 [!INCLUDE[pn_Visual_Studio](../../includes/pn-visual-studio.md)] における XSD の検証 <!-- TODO - need to fix this link. The page is not available (or [Visual Studio Express 2012 for Web](https://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-web))--> エラーを防ぐのに役立つ [!INCLUDE[pn_IntelliSense](../../includes/pn-intellisense.md)] の情報とスキーマ検証を提供します。  
   
@@ -79,7 +80,7 @@ customizations.xml ファイルは、ソリューションとしてエクスポ�
   
 ### <a name="see-also"></a>関連項目
 
-[ Common Data Serviceのカスタマイズファイルを編集する場合](when-edit-customization-file.md)<br/> 
+[ Common Data Service のカスタマイズ ファイルを編集する場合](when-edit-customization-file.md)<br/> 
 [リボン コアのスキーマ](ribbon-core-schema.md)<br/>
 [リボン タイプのスキーマ](ribbon-types-schema.md)<br/>
 [リボン WSS のスキーマ](ribbon-wss-schema.md)<br/>

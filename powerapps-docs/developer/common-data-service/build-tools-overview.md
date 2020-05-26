@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 111169c35463ba082a734082ea5eca1f4bab5c21
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 8909a11491a068dd623cc911887418ff49f37151
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156419"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341225"
 ---
 # <a name="power-apps-build-tools-for-azure-devops-overview"></a>Azure DevOps の Power Apps build tools の概要
 
@@ -33,6 +33,7 @@ Power Apps build tools を使用することで、Power Apps に関連する一�
 > - Power Apps build tools はプレビュー機能です。
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
+アプリケーション ライフサイクル管理で構築ツールを使用する方法の詳細については、[Azure DevOps 用 Power Apps build tools](/power-platform/alm/devops-build-tools) を参照してください。
   
 ## <a name="what-are-power-apps-build-tools"></a>Power Apps build tools とは。
 

@@ -2,7 +2,7 @@
 title: イメージ属性 (Common Data Service) | Microsoft Docs
 description: イメージ データを保存するイメージ属性、サポートされている属性、イメージ データの取得、およびイメージ データのアップロードについて説明します。
 ms.custom: ''
-ms.date: 02/11/2020
+ms.date: 04/27/2020
 ms.reviewer: pehecke
 ms.service: powerapps
 ms.topic: article
@@ -14,18 +14,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 79cacd85ae1478ed43ee21e499fdfd4b1e606c14
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 924fb17728ff1681bcba3d4dd60dc6723156694e
+ms.sourcegitcommit: 9f83d4c09f09256493bc5d49c7b4a4fc02d9342a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156183"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "3293008"
 ---
 # <a name="image-attributes"></a>イメージ属性
 
 特定のシステム エンティティとすべてのユーザー定義エンティティがイメージをサポートしています。 イメージをサポートしているエンティティは、サムネイルとフルサイズのプライマリ イメージのどちらも含めることができます。 サムネイル イメージは、エンティティ フォームのデータを表示するとき、Web アプリケーションで表示できます。 エンティティ インスタンスには複数イメージ属性がありますが、プライマリ イメージは 1 つだけです。 ただし、その属性の [IsPrimaryImage](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.isprimaryimage?view=dynamics-general-ce-9#Microsoft_Xrm_Sdk_Metadata_ImageAttributeMetadata_IsPrimaryImage) を `true` に設定することにより、プライマリ イメージをある画像から別の画像に変更することができます。 各のフルサイズ イメージの属性は、30 MBに制限されています。 エンティティ イメージ属性の <xref:Microsoft.Xrm.Sdk.Metadata.AttributeMetadata.SchemaName> は、 `EntityImage` です。 詳細: [エンティティ イメージ](/dynamics365/customer-engagement/developer/introduction-entities#entity-images)。
 
-サムネイル画像と画像メタデータは Common Data Service に保存され、そこにはフル画像を取得するために必要な情報が含まれています。 フル画像は、Azure Blob のファイル ストレージに保存され、データ ストレージの消費を削減します。
+サムネイル画像と画像のメタデータは、画像全体を取得するために必要な情報を含む Common Data Service に格納されます。 フル画像は、Azure Blob のファイル ストレージに保存され、データ ストレージの消費を削減します。
 
 Web API (REST) | .NET API (SOAP) 
 ------- | -------
@@ -33,6 +33,9 @@ Web API (REST) | .NET API (SOAP)
 IsPrimaryImage、MaxHeight、MaxWidth | [IsPrimaryImage](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.isprimaryimage?view=dynamics-general-ce-9#Microsoft_Xrm_Sdk_Metadata_ImageAttributeMetadata_IsPrimaryImage)、 [MaxHeight](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.maxheight?view=dynamics-general-ce-9)、 [MaxWidth](https://docs.microsoft.com/dotnet/api/microsoft.xrm.sdk.metadata.imageattributemetadata.maxwidth?view=dynamics-general-ce-9)
 
 イメージ属性に加え、ユーザー定義エンティティは、ファイル データを格納できるゼロ以上のファイル属性をサポートします。 これらのファイル 属性は、イメージ 属性より大量のデータを持つことができます。 詳細については [ファイル属性](file-attributes.md) を参照してください。
+
+> [!NOTE]
+> 1 つのエンティティー インスタンスに複数のイメージ属性を格納する機能、Azure BLOB の画像データの格納、30 MB の最大画像サイズ、およびファイル属性は、<xref:Microsoft.Xrm.Sdk.Client.OrganizationServiceProxy.SdkClientVersion> 9.0.45.329 以降、および Web API バージョン 9.1 以降でサポートされています。
 
 <a name="BKMK_SupportingAttributes"></a>   
 ## <a name="supporting-attributes"></a>属性のサポート  

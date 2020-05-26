@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 6176e627bde57c71424cf657e698ed8aef66de20
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: fdb1fc5ceb8ec5ead1b5e43bc79e500de0f6a39a
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115971"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3276135"
 ---
 # <a name="actions-on-dashboards"></a>ダッシュボードに対するアクション
 
@@ -56,6 +56,7 @@ ms.locfileid: "3115971"
   ユーザー所有のダッシュボード エンティティでサポートされるメッセージの一覧については、「[UserForm エンティティ](../common-data-service/reference/entities/userform.md)」を参照してください。  
   
 ### <a name="see-also"></a>関連項目  
+
  [Microsoft Dynamics 365 用ダッシュボード](analyze-data-with-dashboards.md)   
  [ダッシュボード用FormXMLを使用](understand-dashboards-dashboard-components-formxml.md)   
  [ダッシュボードの作成](create-dashboard.md)   

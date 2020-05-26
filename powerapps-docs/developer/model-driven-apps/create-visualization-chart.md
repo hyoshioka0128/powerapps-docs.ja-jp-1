@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 48245a8034c8dde9da77e7cbd6e2c8d9163bb5d5
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: ef9bb60a64b4b7b88d252fcfbbc99e74307eb298
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115867"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275839"
 ---
 # <a name="create-a-visualization-chart"></a>ビジュアル化の作成 (グラフ)
 
@@ -72,7 +72,7 @@ _orgOwnedVisualizationId = _serviceProxy.Create(newWebResourceVisualization);
   
 ```  
   
- Dynamics 365 Common Data Service Webアプリケーションを使用してWebリソースの視覚化を作成する場合は、以下の形式のXMLファイルを作成し、リボンの **チャートのインポート** を使用して視覚化をインポートする必要があります。  
+ Common Data Service を使用して Web リソース ビジュアル化を作成する場合は、次の形式の XML ファイルを作成し、その後、リボン内の**グラフのインポート**を使用してビジュアル化をインポートする必要があります。  
   
 ```xml  
 <visualization>  

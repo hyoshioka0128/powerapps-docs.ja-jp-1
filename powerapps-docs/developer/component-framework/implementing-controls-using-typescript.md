@@ -8,12 +8,12 @@ ms.topic: index-page
 ms.assetid: 18e88d702-3349-4022-a7d8-a9adf52cd34f
 ms.author: nabuthuk
 author: Nkrb
-ms.openlocfilehash: 3dfb75a6d4ccf70863436bae8c7c6264f96f18d8
-ms.sourcegitcommit: ebb4bb7ea7184e31dc95f0c301ebef75fae5fb14
+ms.openlocfilehash: d60bbb70b4f716868aa5f7090750d8f334808444
+ms.sourcegitcommit: 6fce86edacd9bfe49f8114a2a69bc18302cd01f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "3218544"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "3260657"
 ---
 # <a name="create-your-first-component"></a>最初のコンポーネントを作成する 
 
@@ -234,9 +234,12 @@ export class TSLinearInputComponent
 
 開発者およびアプリ作成者は、CSS を使用してコード コンポーネントを表するためのスタイルを定義できます。 CSS は、スタイル、、色、レイアウトやフォントを含む、コード コンポーネントのプレゼンテーションを開発者が説明できるようにします。 線形入力コンポーネントの [init](reference/control/init.md) メソッドは、入力の要素を作成し、クラス属性を `linearslider` に設定します。 `linearslider` クラスのスタイルは別に `CSS` ファイルで定義されます。 `CSS` ファイルのような追加のコンポーネント リソースをコード コンポーネントに含め、さらにカスタマイズをサポートすることができます。
 
+> [!IMPORTANT]
+> CSS を使用してコード コンポーネントにスタイルを実装する場合は、コンポーネントのコンテナー `DIV` 要素に適用される自動生成された CSS クラスを使用して、CSS がコントロールにスコープ設定されていることを確認してください。 CSS がグローバルにスコープ設定されている場合、コード コンポーネントが表示されるフォームまたは画面の既存のスタイルが損なわれる可能性があります。 サード パーティの CSS フレームワークを使用している場合は、すでに名前空間が設定されているフレームワークのバージョンを使用するか、手動で、または CSS プリプロセッサを使用して、そのフレームワークを名前空間にラップします。
+
 1. `TSLinearInputComponent` フォルダの下に新しい `css` サブフォルダを作成します。 
 2. `css` サブ フォルダの中に新しい `TS_LinearInputComponent.css` ファイルを作成します。 
-3. 以下のスタイル コンテンツを `TS_LinearInputComponent.css` ファイルに追加します:""""""""
+3. 以下のスタイル コンテンツを `TS_LinearInputComponent.css` ファイルに追加します:
 
     ```CSS
     .SampleNamespace\.TSLinearInputComponent input[type=range].linearslider {

@@ -15,12 +15,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 0006367c852d5f3490c4c63cc5b923b952f997e8
-ms.sourcegitcommit: 5701e7a755fade6c3bac5c4a5774fcc74627e168
+ms.openlocfilehash: 28bf6d2499cf5739421a548d0ac9e8030e95a6cb
+ms.sourcegitcommit: 4a88daac42180283314f6bedee3d6810fd5a6c25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "3115859"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "3275951"
 ---
 # <a name="customization-xml-reference"></a>カスタマイズ XML リファレンス
 

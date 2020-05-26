@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 04/24/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: cc1a2107b6e0b5bcdbad1dacff396791b61627c3
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: bbc5cc51fceadb5dfb836ca36483002f6537620b
+ms.sourcegitcommit: 943672dad0041d3bab25b44cd8c4d25e88f39b93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978374"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "3289351"
 ---
 # <a name="portal-checker"></a>ポータル チェッカー
 
@@ -23,8 +23,8 @@ ms.locfileid: "2978374"
 ポータル チェッカーを すると、結果がグリッド形式で **診断結果** セクションに表示されます。 結果グリッドには、次の列があります。
 
 - **問題**: 顧客が直面する最上位の問題が表示されます (パフォーマンスの問題など)。
-- **カテゴリ**: 問題を分類できる最上位の領域が表示されます (たとえば、プロビジョニング、ソリューションのアップグレードなど)。
-- **結果**: 問題の状態が表示されます (たとえば、エラー、警告など)。
+- **カテゴリ** : 問題を分類できる最上位の領域が表示されます ; たとえば、プロビジョニング、またはソリューションのアップグレードです。
+- **結果** : 問題の状態が表示されます ; たとえば、エラー、または警告です。
 
 既定では、グリッドの情報は、**結果** 列で、エラー、警告、合格の順序で並べ替えられます。
 

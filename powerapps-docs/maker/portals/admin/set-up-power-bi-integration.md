@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 10/07/2019
+ms.date: 04/27/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 18ae2abded4208a3caf2e02408c4cf0eef7af09f
-ms.sourcegitcommit: a0d069f63d2ce9496d578f81e65cd32bec2faa4d
+ms.openlocfilehash: aa5bf8a76097f1f2885487ac9550326e7e0eba23
+ms.sourcegitcommit: 8dd68565e03a4e66db1f8937630fa4c52eb93871
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "2978638"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "3321250"
 ---
 # <a name="set-up-power-bi-integration"></a>Power BI 統合の設定
 
@@ -23,10 +23,11 @@ Power BI は、簡単な対話型のビジュアル化を使用した洞察を�
 > [!NOTE]
 > - 適切な Power BI ライセンスが必要です。
 > - Power BI Embedded サービスを使用するには、適切な Power BI Embedded ライセンスが必要です。 詳細については、[ライセンス](https://docs.microsoft.com/power-bi/developer/embedded-faq#licensing)を参照してください。
+> - Power BI テナント [開発者設定](https://docs.microsoft.com/power-bi/guidance/admin-tenant-settings#developer-settings) で**アプリにコンテンツを埋め込む**が*有効*であることを確認します。 無効にすると、ポータルは埋め込まれた Power BI ダッシュボードまたはレポートを表示できません。
 
 ## <a name="enable-power-bi-visualization"></a>Power BI のビジュアル化を有効にする
 
-Power BI ビジュアル化を有効にすると、POWERBI の Liquid タグを使用してポータルの Web ページにダッシュボードおよびレポートを埋め込むことができます。
+Power BI のビジュアル化を有効にすると、*Power BI* の Liquid タグを使用してポータルの Web ページにダッシュボードおよびレポートを埋め込むことができます。
 
 1.  [Power Apps ポータル管理センター](admin-overview.md) を開きます。
 
@@ -68,7 +69,7 @@ Power BI サービス統合を有効にすることで、Power BI Embedded の�
     > [!div class=mx-imgBorder]
     > ![Power BI Embedded サービスを有効にする](../media/enable-powerbi-embedded-button.png "Power BI Embedded サービスを有効にする")
 
-3. **Power BI Embedded サービス統合の有効化**ウィンドウで、Power BI ダッシュボードおよびレポートをポータルに表示する必要があるワークスペースを選択し、**選択済みワークスペース の一覧**に移動します。
+3. **Power BI Embedded サービス統合の有効化**ウィンドウで、ダッシュボードおよびレポートをポータルに表示する必要がある Power BI ワークスペースを選択し、**選択済みワークスペース**の一覧に移動します。
 
     > [!div class=mx-imgBorder]
     > ![Power BI ワークスペースを選択する](../media/enable-powerbi-embedded-window.png "Power BI ワークスペースを選択する")
@@ -163,7 +164,7 @@ Power BI Embedded サービス統合を有効にしたら、Azure Active Directo
     > [!div class=mx-imgBorder]
     > ![Power BI Embedded サービスの管理](../media/manage-powerbi-embedded-button.png "Power BI Embedded サービスの管理")
 
-3. **Power BI Embedded サービス統合の管理**ウィンドウで、 ダッシュボードおよびレポートをポータルに表示する必要がある Power BI ワークスペースを削除または移動し、**選択済みワークスペース**の一覧に移動します。
+3. **Power BI Embedded サービス統合の管理**ウィンドウで、ダッシュボードおよびレポートをポータルに表示する必要がある Power BI ワークスペースを削除するか、または**選択済みワークスペース**の一覧に移動します。
 
     > [!div class=mx-imgBorder]
     > ![Power BI ワークスペースの選択](../media/manage-powerbi-embedded-window.png "Power BI ワークスペースを選択する")

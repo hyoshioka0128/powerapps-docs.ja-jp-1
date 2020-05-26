@@ -14,12 +14,12 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 538c26f0f0a0dfbd1347137e0086945783dec441
-ms.sourcegitcommit: f4cf849070628cf7eeaed6b4d4f08c20dcd02e58
+ms.openlocfilehash: 922dc4affafcd6232857dfd99f8d552812848de3
+ms.sourcegitcommit: 94d66a2e1bc7f45f1a8ae97cc5ec4fce89aefdee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "3156255"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "3325655"
 ---
 # <a name="dependency-tracking-for-solution-components"></a>ソリューション コンポーネントの依存関係の追跡
 
@@ -179,6 +179,7 @@ ms.locfileid: "3156255"
 >  Web リソースが、相対リンクに基づいて他の Web リソースに依存することがあります。 たとえば、HTML Web リソースが CSS またはスクリプト Web リソース を使用する可能性があります。 エンティティ フォームやグラフ以外に表示される Silverlight Web リソースには、ホストする HTML Web リソースが必要です。 このような依存関係はソリューションの依存関係として追跡されません。  
   
 ### <a name="see-also"></a>関連項目  
+ [依存関係の削除](removing-dependencies.md)   
  [Dynamics 365 ソリューションを使用した拡張機能のパッケージ化および配布](/dynamics365/customer-engagement/developer/package-distribute-extensions-use-solutions)   
  [ソリューションの概要](introduction-solutions.md)   
  [ソリューション開発の計画](/dynamics365/customer-engagement/developer/plan-solution-development)   

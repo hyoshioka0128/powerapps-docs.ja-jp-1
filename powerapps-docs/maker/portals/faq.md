@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 03/04/2020
+ms.date: 04/23/2020
 ms.author: tapanm
 ms.reviewer: ''
-ms.openlocfilehash: 9293288a8f3de86807342466771d197754b65706
-ms.sourcegitcommit: efb05dbd29c4e4fb31ade1fae340260aeba2e02b
+ms.openlocfilehash: 9d74d408cc6a1000b9f8d29e4c91d62952b70e40
+ms.sourcegitcommit: 504bf052f7fe276484fa8c9b1ea04b19ad63484f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "3100020"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "3288425"
 ---
 # <a name="power-apps-portals-faq"></a>Power Apps ポータルに関するよくあるご質問
 
@@ -39,7 +39,7 @@ Power Apps ポータル バージョン 8.3 以降で [TLS 1.2](https://support.
 容量ベースのライセンスとアドオン ベースのライセンスを持つ Power Apps ポータル間のその他の相違点:
 
 - アドオン ポータルの場合、ポータルの種類に 'アドオン' という接尾辞が追加されます。 たとえば、運用アドオン ポータルの種類は '運用 (アドオン)' としてリストされます。
-- Power Apps ポータルには、アドオン ベースのライセンス ポータルと比較して [異なるキャッシング メカニズム](https://powerapps.microsoft.com/en-us/blog/publishing-changes-to-powerapps-portals/) があります。
+- Power Apps ポータルには、アドオン ベースのライセンス ポータルと比較して [異なるキャッシング メカニズム](admin/clear-server-side-cache.md) があります。
 - プロビジョニング方法は、容量ベースのライセンスを持つポータルとアドオン ベースのライセンスでは異なります。
 
 次の記事で説明されている手順を使用して、容量ベースのライセンスで Power Apps ポータル作成できます:

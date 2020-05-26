@@ -27,6 +27,8 @@
           href: use-fetchxml-left-outer-join-query-records-not-in.md
         - name: FetchXML による大量の結果セットのページング
           href: org-service/page-large-result-sets-with-fetchxml.md
+    - name: SQL を使用してデータを照会する (プレビュー)
+      href: cds-sql-query.md
     - name: 保存済みクエリ
       href: saved-queries.md
     - name: クエリ階層型データ
@@ -135,6 +137,8 @@
           href: data-import-entities.md
     - name: データ エクスポート サービス
       href: data-export-service.md
+    - name: OData データフローを使用する環境間でデータを移行する
+      href: cds-odata-dataflows-migration.md
     - name: データの同期
       href: data-synchronization.md
       items:
@@ -302,6 +306,8 @@
       items:
         - name: ソリューション コンポーネントの依存関係の追跡
           href: dependency-tracking-solution-components.md
+        - name: 依存関係の削除
+          href: removing-dependencies.md
         - name: 管理ソリューションの保守
           href: maintain-managed-solutions.md
         - name: ソリューションを組織する
@@ -374,7 +380,7 @@
           href: appendix-app-design-best-practices-checklist.md
         - name: '付録: アプリの認証チェックリスト'
           href: appendix-app-certification-checklist.md
-    - name: ISV アプリの管理と監視
+    - name: ISV Studio でアプリを監視する
       items:
         - name: ISV Studio の概要
           href: isv-app-management.md
@@ -384,6 +390,10 @@
           href: isv-app-management-apppage.md
         - name: テナント ページ
           href: isv-app-management-tenantpage.md
+        - name: AppSource チェッカー
+          href: isv-app-management-appsource-checker.md
+        - name: コネクタ認定
+          href: isv-app-management-certification.md
 - name: クライアント アプリケーション作成
   href: connect-cds.md
   items:

@@ -20,16 +20,18 @@ search.audienceType:
 search.app:
 - PowerApps
 - D365CE
-ms.openlocfilehash: 01ef77aba8b6380b39c1514d317567132894c4af
-ms.sourcegitcommit: 212bd841595db0d6f41002f7ff9a1c8eb33a0724
+ms.openlocfilehash: ed1900a217d0f193f3026b6e48219489eb58d0cf
+ms.sourcegitcommit: c6906775005aec98973b1f5c3dbe5924aff6d26e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "2909581"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "3341360"
 ---
 # <a name="use-the-power-apps-checker-web-api"></a>Power Apps チェッカー Web API を使用する
 
 Power Apps チェッカーの Web API は、カスタマイズに対して実行されたスタティック分析のチェックや Common Data Service プラットフォームへと拡張するメカニズムを提供します。 作成者や開発者は一連のベスト プラクティス ルールに対してソリューションで機能豊富なスタティック分析チェックを実行し、これらの問題となるパターンを識別できます。 このサービスは、[Power Apps](https://make.powerapps.com) の [ソリューション チェッカー機能](../../../../maker/common-data-service/use-powerapps-checker.md)のためのロジックを提供し、[AppSource に提出されるアプリケーション](../../publish-app-appsource.md)のための自動化の一部として含まれています。 この方式でサービスと直接やり取りすることで、設置型 (すべてのサポートされているバージョン) とOnline環境の一部として含まれているソリューションの分析をおこなうことができます。
+
+PowerShell コードからのチェッカー サービスの使用に関する詳細については、[PowerShell を使用したソリューションに関する作業](/power-platform/alm/powershell-api) を参照してください。
 
 <a name="bkmk_altApproaches"></a>
 

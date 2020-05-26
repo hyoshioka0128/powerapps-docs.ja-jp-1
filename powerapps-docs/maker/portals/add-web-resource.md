@@ -6,15 +6,15 @@ manager: kvivek
 ms.service: powerapps
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/11/2020
+ms.date: 05/05/2020
 ms.author: tapanm
 ms.reviewer: tapanm
-ms.openlocfilehash: 0c011c61c2084662d1e759d7226140dcf3ddfad6
-ms.sourcegitcommit: a1b54333338abbb0bc3ca0d7443a5a06b8945228
+ms.openlocfilehash: d00b323b33f971ff9c55a7590d3630baadfc09fe
+ms.sourcegitcommit: eaf423817d61b57cbde7c4b820b3e44940c3f8af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "3126194"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "3340275"
 ---
 # <a name="add-the-azure-storage-web-resource-to-a-form"></a>フォームに Azure Storage Web リソースを追加する
 
@@ -23,13 +23,13 @@ Common Data Service に直接ではなく Azure Storage にアップロードし
 特定のフォームからの添付ファイルを Azure Storage にアップロードできるようにするには、Web リソースをそのフォームに追加し、[組織に Azure Storage を構成する](enable-azure-storage.md) 必要があります。
 
 > [!NOTE]
-この例では、フォームは潜在顧客エンティティの潜在顧客フォームに追加されます。 既存のフォームを編集する場合は注意なさるようお勧めします。
+> この例では、フォームは潜在顧客エンティティの潜在顧客フォームに追加されます。 既存のフォームを編集する場合は注意なさるようお勧めします。
 
 ポータルを使用してファイル (たとえば attachments.zip) を Azure Storage にアップロードする場合、それはエンティティ上のメモと添付ファイルのプレースホルダーで表されます。
 
 ![フォームの添付ファイル](media/notes-attachment-lead-form.png "フォームの添付ファイルのプレースホルダー")
 
-添付ファイルが attachment.zip.txt という名前になっていることに注意してください。 既定では、Common Data Service に Azure ファイルの概念がないので、代わりにこのプレースホルダー .txt ファイルは Common Data Service に保存されます。 プレースホルダー ファイルの Azure Storage コンテキストが、そのファイルについての詳細を示します。
+添付ファイルは、attachment.zip.txt という名前になりました。 既定では、Common Data Service に Azure ファイルの概念がないので、代わりにこのプレースホルダー .txt ファイルは Common Data Service に保存されます。 プレースホルダー ファイルの Azure Storage コンテキストが、そのファイルについての詳細を示します。
 ```
 {
  Name: attachment.zip,
@@ -53,7 +53,7 @@ Azure に保存されているファイルを表示したり操作したりす�
 
 6. **OK** を選択してリソースを保存します。
 
-7. 必要に応じて、既存のメモ コントロールを削除するか、既定で非表示になるようマークされているタブまたはセクションに移動することができます。
+7. 必要に応じて、既存のメモ コントロールを削除できます。 または、既定で非表示になるようマークされているタブまたはセクションに移動することができます。
 
 8. フォームを保存してから、その変更を公開します。
 
@@ -70,7 +70,7 @@ Azure に保存されているファイルを表示したり操作したりす�
 > - **許可されているオリジン**: ドメインの指定。 たとえば、`https://contoso.crm.dynamics.com` などとします。
 > - **許可されている動詞**: GET, PUT, DELETE, HEAD, POST
 > - **許可されているヘッダー**: オリジン ドメインが CORS 要求で指定できる要求ヘッダーを指定。 例えば、x-ms-meta-data\*、x-ms-meta-target\*。 このシナリオでは、* を指定する必要があります。それ以外の場合は、Web リソースは適切に表示されません。
-> - **公開されたヘッダー**: CORS 要求への応答で送信され、ブラウザが要求発行者に公開する応答ヘッダーを指定。 例えば、x-ms-meta-\*。
+> - **公開されたヘッダー**: CORS 要求への応答で送信され、ブラウザが要求発行者に公開する応答ヘッダーを指定。 例 - \*or x-ms-meta-\*。 このシナリオでは、* を指定する必要があります。それ以外の場合は、Web リソースは適切に表示されません。
 > - **最大期日経過日数 (秒)**: ブラウザがプリフライト OPTIONS 要求をキャッシュする最大時間を指定。 例えば、200 です。
 > 
 > [!include[More information](../../includes/proc-more-information.md)] [Azure Storage サービスの CORS サポート](https://docs.microsoft.com/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services)。
@@ -82,6 +82,14 @@ Azure に保存されているファイルを表示したり操作したりす�
 
 ![メモのサムネイル](media/notes-thumbnail.png "メモのサムネイル")
 
+### <a name="processes-for-azure-blob-storage"></a>Azure Blob Storage のプロセス
+
+添付ファイルを Azure Storage にアップロードするには、2 つのプロセスが必要です。**Azure Blob Storage の URL** と **AzureBlobStorageEnabled** です。
+
+![Blob Storage のプロセス](media/blob-storage-processes.png "Blob Storage のプロセス")
+
+移行中に、プロセスが非アクティブになる場合があります。 これにより、Web リソースを追加する手順に従って、添付ファイルが Azure Storage ではなく Common Data Service にアップロードされる可能性があります。 添付ファイルを Azure Storage にアップロードするために、これら 2 つのプロセスがアクティブ化されていることを確認してください。
+
 ## <a name="cors-protocol-support"></a>CORS プロトコル サポート
 
 [クロス オリジン リソース共有 (CORS)](https://www.w3.org/TR/cors/) プロトコルは、反応が別のドメイン内で共有できるかどうかを表す一連のヘッダーで構成されます。
@@ -92,7 +100,7 @@ Azure に保存されているファイルを表示したり操作したりす�
 | HTTP/Access-Control-Allow-Credentials | Access-Control-Allow-Credentials | このヘッダーの唯一の有効な値は true です (文字と小文字が区別されます)。 資格情報を必要としなくなった場合、(値を false に設定するよりもむしろ) このヘッダー全体を省略します。 
 | HTTP/Access-Control-Allow-Headers | Access-Control-Allow-Headers | サポートされた HTTP 要求ヘッダーのコンマ区切りの一覧。
 | HTTP/Access-Control-Allow-Methods | Access-Control-Allow-Methods | GET、POST、OPTIONS などの、許可された HTTP 要求メソッドのコンマ区切りの一覧。
-| HTTP/Access-Control-Allow-Origin | Access-Control-Allow-Origin | 任意のリソースがユーザーのリソースにアクセスできるように、\* を指定することができます。 それ以外の場合は、リソースにアクセスできる URL を指定します。                   |
+| HTTP/Access-Control-Allow-Origin | Access-Control-Allow-Origin | Dynamics 365 インスタンスの URL (https://contoso.crm.dynamics.com など)。 URI がリソースにアクセスできるようにするには、\* を使用します。                 |
 |  HTTP/Access-Control-Expose-Headers | Access-Control-Expose-Headers | リソースが使用するまたは公開できる簡単な応答ヘッダー以外の、HTTP ヘッダー名のコンマ区切りの一覧。
 | HTTP/Access-Control-Max-Age | Access-Control-Max-Age |  結果がキャッシュされる最大秒数。
 | HTTP/Content-Security-Policy | Content-Security-Policy | 特定のページに対してユーザーエージェントが読み込みことができるリソースを制御します。

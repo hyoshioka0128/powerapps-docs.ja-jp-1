@@ -9,12 +9,12 @@ ms.assetid: 9f940264-d7d5-4930-8052-1bd582445d37
 ms.author: grhurl
 author: ghurlman
 ms.reviewer: nkrb
-ms.openlocfilehash: e471cd617243b98635fa0db4a1487be4ddb1e5e9
-ms.sourcegitcommit: 59f0b3adc56279b5673cbf04b4a55bd7678e1ea7
+ms.openlocfilehash: 12b8f136c717ad61f958df5869034f204c03cea5
+ms.sourcegitcommit: 943672dad0041d3bab25b44cd8c4d25e88f39b93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "3091246"
+ms.lasthandoff: 04/25/2020
+ms.locfileid: "3289279"
 ---
 # <a name="faqs"></a>よく寄せられる質問
 
@@ -62,6 +62,10 @@ ms.locfileid: "3091246"
 ### <a name="can-i-bundle-font-resources"></a>フォント リソースをバンドルできますか?
 
 現在、フォント リソース (.ttf ファイル拡張子を持つファイル) は、フレームワークでサポートされていません。
+
+### <a name="can-i-use-img-resource-property-in-canvas-apps"></a>キャンバス アプリで img リソース プロパティを使用できますか。
+
+現在、[img](manifest-schema-reference/img.md) リソースはキャンバス アプリでサポートされていません。
 
 ## <a name="related-topics"></a>関連トピック
 
