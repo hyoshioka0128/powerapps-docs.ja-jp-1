@@ -4,7 +4,7 @@
       "docset_name": "powerapps-docs",
       "build_source_folder": "powerapps-docs",
       "build_output_subfolder": "powerapps-docs",
-      "locale": "ja-jp",
+      "locale": "ja-JP",
       "monikers": [],
       "moniker_ranges": [],
       "xref_query_tags": [
@@ -39,10 +39,6 @@
           "ReferenceTOCUrl": "/dotnet/api/ce-9-general/toc.json"
         },
         {
-          "ConceptualTOC": "powerapps-docs/developer/common-data-service/package-deployer/toc.yml",
-          "ReferenceTOCUrl": "/dotnet/api/ce-9-packagedeployer/toc.json"
-        },
-        {
           "ConceptualTOC": "powerapps-docs/developer/common-data-service/workflow/toc.yml",
           "ReferenceTOCUrl": "/dotnet/api/ce-9-workflow/toc.json"
         },
@@ -69,7 +65,7 @@
     "master-sxs",
     "live"
   ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/powerapps-docs.ja-jp",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/powerapps-docs.ja-JP",
   "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
@@ -80,7 +76,7 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.ja-jp",
+      "url": "https://github.com/Microsoft/templates.docs.msft.ja-JP",
       "branch": "master",
       "branch_mapping": {}
     },
