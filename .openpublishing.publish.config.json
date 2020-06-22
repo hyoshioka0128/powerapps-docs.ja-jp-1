@@ -63,7 +63,7 @@
   ],
   "branches_to_filter": [
     "master-sxs",
-    "live"
+    "live-sxs"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/powerapps-docs.ja-JP",
   "git_repository_branch_open_to_public_contributors": "live",
@@ -71,7 +71,7 @@
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "contribution_branch_mappings": {
-    "live-sxs": "live"
+    "live": "live"
   },
   "dependent_repositories": [
     {
@@ -115,10 +115,6 @@
     }
   ],
   "branch_target_mapping": {
-    "live-sxs": [
-      "Publish",
-      "PDF"
-    ],
     "live": [
       "Publish",
       "PDF"
